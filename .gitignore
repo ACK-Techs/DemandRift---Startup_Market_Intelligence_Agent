@@ -1,0 +1,56 @@
+# Dependencies and package-manager state
+node_modules/
+.pnp.*
+.yarn/cache/
+.yarn/install-state.gz
+
+# Build, test, and generated output
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+test-results/
+playwright-report/
+
+# Python worker artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime environment and credentials
+.env
+.env.*
+!.env.example
+!.env.test.example
+*.pem
+*.key
+
+# Logs and local runtime data
+*.log
+logs/
+tmp/
+temp/
+.temporal/
+.minio/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local tooling caches
+.eslintcache
+.cache/
+
+# Generated orchestrator run state
+.orchestrator/runs/*
+!.orchestrator/runs/.gitkeep
