@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "roles": {
+    "pm-manager": {
+      "file": ".orchestrator/roles/pm-manager.md",
+      "defaultKinds": ["pm-planning", "scope", "acceptance", "comparison"]
+    },
+    "architecture-manager": {
+      "file": ".orchestrator/roles/architecture-manager.md",
+      "defaultKinds": ["specification", "contract", "architecture-review", "migration-plan"]
+    },
+    "code-implementer": {
+      "file": ".orchestrator/roles/code-implementer.md",
+      "defaultKinds": ["implement", "workflow", "connector", "crawler", "ai-gateway", "citation", "decision-policy"]
+    },
+    "independent-reviewer": {
+      "file": ".orchestrator/roles/independent-reviewer.md",
+      "defaultKinds": ["review", "architecture-review"]
+    },
+    "verifier": {
+      "file": ".orchestrator/roles/verifier.md",
+      "defaultKinds": ["verify", "test", "evaluation"]
+    },
+    "security-data-reviewer": {
+      "file": ".orchestrator/roles/security-data-reviewer.md",
+      "defaultKinds": ["security-review", "security-verify", "tenant-security", "crawler", "cost-budget"]
+    },
+    "integration-manager": {
+      "file": ".orchestrator/roles/integration-manager.md",
+      "defaultKinds": ["integration", "release-acceptance"]
+    }
+  },
+  "phaseCapabilities": {
+    "phase-1": ["intake", "structured-output", "field-origin", "state-machine"],
+    "phase-2": ["research-planning", "query-compiler", "source-registry", "cost-envelope"],
+    "phase-3": ["connector", "egress-security", "provenance", "source-policy"],
+    "phase-4": ["normalization", "dedup", "entity-resolution", "lineage"],
+    "phase-5": ["gap-auditor", "research-controller", "policy-gateway"],
+    "phase-6": ["eligibility", "claim-extraction", "citation", "clustering", "market-maturity"],
+    "phase-7": ["sufficiency-gate", "decision-policy", "counterfactual", "primary-validation"]
+  }
+}

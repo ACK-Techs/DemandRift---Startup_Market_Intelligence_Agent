@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "systemName": "startup-research-platform-orchestrator",
+  "paths": {
+    "entrypoints": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      ".agents/skills/orchestrate-research-platform/SKILL.md"
+    ],
+    "skillRoots": [
+      ".agents/skills",
+      ".agent/skills",
+      ".cursor/skills",
+      ".claude/skills",
+      ".codex/skills"
+    ],
+    "sourceRoots": [
+      "apps",
+      "packages",
+      "infra",
+      "tests",
+      "Faz1-Plan.md",
+      "Faz2-Plan.md",
+      "Faz3-Plan.md",
+      "Faz4-Plan.md",
+      "Faz5-Plan.md",
+      "Faz6-Plan.md",
+      "Faz7-Plan.md",
+      "Platform-Temeli.md",
+      "Ust-Yonetim-Ana-Mimari-Plani.md"
+    ],
+    "requiredContext": [
+      "AGENTS.md",
+      "Ust-Yonetim-Ana-Mimari-Plani.md",
+      "Platform-Temeli.md",
+      ".orchestrator/SYSTEM.md",
+      ".orchestrator/roles/pm-manager.md"
+    ],
+    "runs": ".orchestrator/runs",
+    "catalog": ".orchestrator/catalog/repo-context.json",
+    "adapters": ".orchestrator/adapters"
+  },
+  "lifecycle": {
+    "statuses": ["draft", "ready", "active", "blocked", "done", "failed", "cancelled"],
+    "terminalStatuses": ["done", "failed", "cancelled"],
+    "transitions": {
+      "draft": ["ready", "cancelled"],
+      "ready": ["active", "blocked", "cancelled"],
+      "active": ["done", "blocked", "failed", "cancelled"],
+      "blocked": ["ready", "cancelled"],
+      "done": [],
+      "failed": [],
+      "cancelled": []
+    }
+  },
+  "riskPolicy": {
+    "levels": ["low", "medium", "high", "critical"],
+    "independentGateKinds": [
+      "implement",
+      "contract",
+      "workflow",
+      "connector",
+      "crawler",
+      "ai-gateway",
+      "tenant-security",
+      "cost-budget",
+      "citation",
+      "claim-extraction",
+      "decision-policy",
+      "data-storage",
+      "migration",
+      "deployment"
+    ],
+    "requireIndependentReviewAt": ["high", "critical"],
+    "requireVerificationAt": ["high", "critical"],
+    "requireHumanDecisionFor": [
+      "production-write",
+      "destructive-operation",
+      "secret-access",
+      "paid-provider-enable",
+      "external-message",
+      "legal-source-approval",
+      "schema-policy-change",
+      "faz8-start"
+    ],
+    "forceQualityGateKinds": [
+      "contract",
+      "connector",
+      "crawler",
+      "ai-gateway",
+      "tenant-security",
+      "cost-budget",
+      "citation",
+      "decision-policy",
+      "data-storage",
+      "migration"
+    ]
+  },
+  "authorityPolicy": {
+    "managerHasDelegatedProjectAuthority": true,
+    "managerMayApproveBoundaries": false,
+    "platformApprovalsRemainExternal": true
+  },
+  "parallelPolicy": {
+    "defaultMaxWriters": 3,
+    "serializeUnknownWriteScope": true,
+    "readOnlyItemsMayShareBatch": true,
+    "preferWorktreeForParallelWriters": true
+  },
+  "historyPolicy": {
+    "format": "jsonl",
+    "appendOnly": true,
+    "storeRawPrompts": false,
+    "redactKeyFragments": [
+      "authorization",
+      "cookie",
+      "password",
+      "secret",
+      "token",
+      "apiKey",
+      "privateKey",
+      "personalData"
+    ],
+    "commitGeneratedRunsByDefault": false
+  },
+  "repoGuardrails": {
+    "protectedPrefixes": [".git"],
+    "doNotTouch": [],
+    "controlledWritePaths": [],
+    "commitRequiresExplicitRequest": true,
+    "commitAfterValidatedWriteItemWhenApproved": true,
+    "commitMessageConvention": "conventional-commits",
+    "commitMessageFormat": "type(scope): summary",
+    "commitWorkItemIdInBodyOrFooter": true,
+    "pushRequiresExplicitRequest": true,
+    "defaultTargetBranch": "main",
+    "atomicCommitsRequired": true,
+    "pushAcceptedIntegrationOnly": true,
+    "forcePushAllowed": false
+  }
+}

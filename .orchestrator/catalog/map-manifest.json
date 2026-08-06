@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-06T13:42:32.452Z",
+  "sourceRoots": [
+    "apps",
+    "packages",
+    "infra",
+    "tests",
+    "Faz1-Plan.md",
+    "Faz2-Plan.md",
+    "Faz3-Plan.md",
+    "Faz4-Plan.md",
+    "Faz5-Plan.md",
+    "Faz6-Plan.md",
+    "Faz7-Plan.md",
+    "Platform-Temeli.md",
+    "Ust-Yonetim-Ana-Mimari-Plani.md"
+  ]
+}

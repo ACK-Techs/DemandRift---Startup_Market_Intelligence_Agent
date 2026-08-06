@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "runId": "replace-run-id",
+  "title": "Replace title",
+  "goal": "Replace goal",
+  "createdAt": "2026-08-06T00:00:00.000Z",
+  "updatedAt": "2026-08-06T00:00:00.000Z",
+  "revision": 0,
+  "context": {
+    "requiredPaths": [
+      "AGENTS.md",
+      "Ust-Yonetim-Ana-Mimari-Plani.md",
+      "Platform-Temeli.md",
+      ".orchestrator/SYSTEM.md",
+      ".orchestrator/roles/pm-manager.md"
+    ],
+    "optionalPaths": [],
+    "catalogSnapshot": null,
+    "assumptions": [],
+    "extensions": {
+      "targetPhase": null,
+      "architectureDecisions": [],
+      "evaluationSets": []
+    }
+  },
+  "constraints": [
+    "Kapsam süre uğruna daraltılmaz.",
+    "Faz 8 kullanıcı açıkça başlatmadan tasarlanmaz.",
+    "Commit onayı varsa her başarıyla tamamlanan write item atomik Conventional Commit ile kaydedilir; implementer push yapmaz, ayrı push onayıyla kabul edilen integration checkpoint'ini üst manager push eder."
+  ],
+  "policy": {
+    "requiresIntegration": true,
+    "extensions": {
+      "requiresContractFirst": true,
+      "requiresDocumentationSync": true,
+      "requiresEvaluationEvidence": true
+    }
+  },
+  "decisions": [],
+  "items": [],
+  "extensions": {
+    "pmOwner": "pm-manager",
+    "architectureOwner": "architecture-manager"
+  }
+}

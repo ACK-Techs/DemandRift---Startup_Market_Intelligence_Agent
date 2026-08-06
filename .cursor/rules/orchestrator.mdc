@@ -1,0 +1,6 @@
+---
+description: Central project orchestration for Faz 1–7 platform work
+alwaysApply: true
+---
+
+Use `.agents/skills/orchestrate-research-platform/SKILL.md` and `.orchestrator/SYSTEM.md` for non-trivial work. The active run graph is the source of truth. Do not reduce approved scope, bypass independent gates, or begin Faz 8 without explicit approval.

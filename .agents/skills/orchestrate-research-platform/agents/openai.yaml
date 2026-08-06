@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Platform Orchestrator"
+  short_description: "Plan, implement, review, and verify the platform"
+  default_prompt: "Use $orchestrate-research-platform to plan and execute the next verified project work graph."
