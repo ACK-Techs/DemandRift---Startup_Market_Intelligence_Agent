@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A global, open, stable, and secure Internet that serves the entire Asia Pacific community">
+
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.apnic.net/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.apnic.net/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.apnic.net/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.apnic.net/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.apnic.net/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.apnic.net/apple-touch-icon-152x152.png"/>
+
+    <link rel="icon" type="image/png" href="https://www.apnic.net/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="https://www.apnic.net/favicon-16x16.png" sizes="16x16"/>
+
+    <meta name="application-name" content="APNIC"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="//www.apnic.net/mstile-144x144.png"/>
+
+    <!-- Facebook preview card -->
+    <script>
+        var link = document.createElement('meta');
+        link.setAttribute('property', 'og:url');
+        link.content = document.location;
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Home | APNIC"/>
+    <meta property="og:description" content="A global, open, stable, and secure Internet that serves the entire Asia Pacific community"/>
+    <meta property="og:image" content="https://www.apnic.net/facebook-og.png"/>
+    <meta property="og:image:alt" content="APNIC Logo"/>
+
+    <!-- Twitter preview card -->
+    <meta name="twitter:title" content="Home | APNIC"/>
+    <meta name="twitter:image" content="https://www.apnic.net/facebook-og.png"/>
+    <meta name="twitter:description" content="A global, open, stable, and secure Internet that serves the entire Asia Pacific community"/>
+    <meta name="twitter:site" content="@apnic"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+
+    <meta name="apnic-user-ip" content="213.199.38.235"/>
+
+    <title>APNIC</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//webdist.data.apnic.net' />
+<link rel="alternate" type="application/rss+xml" title="APNIC &raquo; Feed" href="https://www.apnic.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="APNIC &raquo; Comments Feed" href="https://www.apnic.net/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.apnic.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.apnic.net%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.apnic.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.apnic.net%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.apnic.net/wp-includes/css/dist/block-library/style.min.css?ver=6.9.5' type='text/css' media='all' />
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='related-frontend-css-css' href='https://www.apnic.net/wp-content/plugins/related/css/frontend-style.css?ver=3.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-fonts-css' href='https://www.apnic.net/fonts/835628/D99FF905ACA9D69D2.css?ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='apnic-css-style-css' href='https://www.apnic.net/wp-content/themes/apnic/style.css?ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ninjaform-custom-css' href='https://www.apnic.net/wp-content/themes/apnic/css/ninjaform-custom.css?ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css' href='https://www.apnic.net/wp-content/themes/apnic/css/print.css?ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='apnic-web-style-guide-css' href='https://webdist.data.apnic.net/web-framework-theme/9.1.5/css/theme.min.css?ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='datatables-css' href='https://www.apnic.net/wp-content/themes/apnic/assets/DataTables/datatables.min.css?v=31925836ea92c4d55cdf4ffbb599e65754a52b32ac8eabd1d45184735b78f2ec&#038;ver=6.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='apnic-legacy-css-css' href='https://www.apnic.net/wp-content/themes/apnic/dist/legacy.min.css?v=dae1dc6bb5082fbd58a6082b221c403620b6132076714859f33d068e6405fac0&#038;ver=6.9.5' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.apnic.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.apnic.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.apnic.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.apnic.net/wp-json/wp/v2/pages/176" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.apnic.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.5" />
+<link rel="canonical" href="https://www.apnic.net/" />
+<meta name="apnic-auth-authority-url" content="https://login.apnic.net/oauth2/apnic"/><meta name="apnic-auth-client-id" content="0oa4ns75t4zA1gwFc3l7"/><meta name="apnic-auth-redirect-uri" content="https://www.apnic.net//auth-callback"/><meta name="apnic-auth-home-redirect-uri" content="https://www.apnic.net/"/><meta name="apnic-auth-silent-redirect-uri" content="https://www.apnic.net/silent-renew-oidc"/><meta name="apnic-theme-data-list" content="eyJmb290ZXJBc2lkZUxpbmtzIjpbeyJsYWJlbF9lbl91cyI6IlByaXZhY3kiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2Fib3V0LWFwbmljXC9jb3Jwb3JhdGUtZG9jdW1lbnRzXC9kb2N1bWVudHNcL2NvcnBvcmF0ZVwvcHJpdmFjeVwvIn0seyJsYWJlbF9lbl91cyI6IkNvbnRhY3QiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2Fib3V0LWFwbmljXC9vcmdhbml6YXRpb25cL2NvbnRhY3QtYXBuaWNcLyJ9LHsibGFiZWxfZW5fdXMiOiJIZWxwIENlbnRyZSIsImxpbmsiOiJodHRwczpcL1wvaGVscC5hcG5pYy5uZXRcLyJ9LHsibGFiZWxfZW5fdXMiOiJOUk8gTmV3cyIsImxpbmsiOiJodHRwczpcL1wvd3d3Lm5yby5uZXRcL2NhdGVnb3J5XC9uZXdzIn0seyJsYWJlbF9lbl91cyI6IlNlcnZpY2UgU3RhdHVzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvc2VydmljZS11cGRhdGVzXC8ifSx7ImxhYmVsX2VuX3VzIjoiQ2FyZWVycyIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvYWJvdXQtYXBuaWNcL2VtcGxveW1lbnRcLyJ9LHsibGFiZWxfZW5fdXMiOiJGZWVkYmFjayIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvY29tbXVuaXR5XC9zZW5kLXVzLWZlZWRiYWNrIn1dLCJmb290ZXJMb2dvIjp7ImxhYmVsX2VuX3VzIjoiQVBOSUMgSG9tZSIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvIn0sImZvb3RlclNvY2lhbExpbmtzIjpbeyJsYWJlbF9lbl91cyI6IkZhY2Vib29rIiwibGluayI6Imh0dHBzOlwvXC93d3cuZmFjZWJvb2suY29tXC9BUE5JQyIsImljb25DbGFzcyI6ImZhYiBmYS1mYWNlYm9vayJ9LHsibGFiZWxfZW5fdXMiOiJUd2l0dGVyIiwibGluayI6Imh0dHBzOlwvXC90d2l0dGVyLmNvbVwvYXBuaWMiLCJpY29uQ2xhc3MiOiJmYWIgZmEtdHdpdHRlciJ9LHsibGFiZWxfZW5fdXMiOiJZb3VUdWJlIiwibGluayI6Imh0dHBzOlwvXC93d3cueW91dHViZS5jb21cL3VzZXJcL2FwbmljbXVsdGltZWRpYSIsImljb25DbGFzcyI6ImZhYiBmYS15b3V0dWJlIn0seyJsYWJlbF9lbl91cyI6IkZsaWNrciIsImxpbmsiOiJodHRwczpcL1wvd3d3LmZsaWNrci5jb21cL3Bob3Rvc1wvYXBuaWNcLyIsImljb25DbGFzcyI6ImZhYiBmYS1mbGlja3IifSx7ImxhYmVsX2VuX3VzIjoiV2VpYm8iLCJsaW5rIjoiaHR0cHM6XC9cL3dlaWJvLmNvbVwvQVBOSUNyaXIiLCJpY29uQ2xhc3MiOiJmYWIgZmEtd2VpYm8ifSx7ImxhYmVsX2VuX3VzIjoiU2xpZGVzaGFyZSIsImxpbmsiOiJodHRwczpcL1wvd3d3LnNsaWRlc2hhcmUubmV0XC9hcG5pYyIsImljb25DbGFzcyI6ImZhYiBmYS1zbGlkZXNoYXJlIn0seyJsYWJlbF9lbl91cyI6IkxpbmtlZEluIiwibGluayI6Imh0dHBzOlwvXC93d3cubGlua2VkaW4uY29tXC9jb21wYW55XC9hcG5pYyIsImljb25DbGFzcyI6ImZhYiBmYS1saW5rZWRpbi1pbiJ9LHsibGFiZWxfZW5fdXMiOiJSU1MiLCJsaW5rIjoiaHR0cHM6XC9cL2Jsb2cuYXBuaWMubmV0XC9mZWVkXC8iLCJpY29uQ2xhc3MiOiJmYXMgZmEtcnNzIn1dLCJvbW5pYmFyQ3VycmVudFVzZXJBY2NvdW50TGlua3MiOlt7ImxhYmVsX2VuX3VzIjoiTXlBUE5JQyIsImxpbmsiOiJodHRwczpcL1wvbXkuYXBuaWMubmV0In0seyJsYWJlbF9lbl91cyI6IlBlcnNvbmFsIHByb2ZpbGUiLCJsaW5rIjoiaHR0cHM6XC9cL3Byb2ZpbGUuYXBuaWMubmV0XC8ifSx7ImxhYmVsX2VuX3VzIjoiUGFzc3dvcmRzICYgU2VjdXJpdHkiLCJsaW5rIjoiaHR0cHM6XC9cL3Byb2ZpbGUuYXBuaWMubmV0XC9wYXNzd29yZC1zZWN1cml0eSJ9XSwib21uaWJhckN1cnJlbnRVc2VyTWVtYmVyc2hpcExpbmtzIjpbeyJsYWJlbF9lbl91cyI6Ik5ldyBtZW1iZXJzaGlwIGFwcGxpY2F0aW9uIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9nZXQtaXBcL2FwbmljLW1lbWJlcnNoaXBcLyIsImlzTG9nb3V0IjpmYWxzZX0seyJsYWJlbF9lbl91cyI6IkxvZyBvdXQiLCJsaW5rIjoiaHR0cHM6XC9cL3Byb2ZpbGUuYXBuaWMubmV0XC9zaW5nbGUtbG9nb3V0IiwiaXNMb2dvdXQiOnRydWV9XSwib21uaWJhckxvZ28iOnsibGFiZWxfZW5fdXMiOiJBUE5JQyBIb21lIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC8ifSwib21uaWJhclF1aWNrTGlua3MiOlt7ImxhYmVsX2VuX3VzIjoiTXlBUE5JQyIsImxpbmsiOiJodHRwczpcL1wvbXkuYXBuaWMubmV0XC8ifSx7ImxhYmVsX2VuX3VzIjoiQWNhZGVteSIsImxpbmsiOiJodHRwczpcL1wvYWNhZGVteS5hcG5pYy5uZXRcLyJ9LHsibGFiZWxfZW5fdXMiOiJCbG9nIiwibGluayI6Imh0dHBzOlwvXC9ibG9nLmFwbmljLm5ldFwvIn0seyJsYWJlbF9lbl91cyI6Ik9yYml0IiwibGluayI6Imh0dHBzOlwvXC9vcmJpdC5hcG5pYy5uZXRcLyJ9LHsibGFiZWxfZW5fdXMiOiJSRXgiLCJsaW5rIjoiaHR0cHM6XC9cL3JleC5hcG5pYy5uZXRcLyJ9LHsibGFiZWxfZW5fdXMiOiJEQVNIIiwibGluayI6Imh0dHBzOlwvXC9kYXNoLmFwbmljLm5ldFwvIn1dLCJhcG5pY1ByaW1hcnlOYXZpZ2F0aW9uIjpbeyJsYWJlbF9lbl91cyI6IkdldCBJUCIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvZ2V0LWlwXC9nZXQtaXAtYWRkcmVzc2VzLWFzblwvIiwiY2hpbGRyZW4iOlt7ImxhYmVsX2VuX3VzIjoiR2V0IElQIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9nZXQtaXBcL2dldC1pcC1hZGRyZXNzZXMtYXNuXC8ifSx7ImxhYmVsX2VuX3VzIjoiTWFrZSBhIHBheW1lbnQiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2dldC1pcFwvYXBuaWMtbWVtYmVyc2hpcFwvYmlsbGluZy1wcm9jZWR1cmVcL21ha2UtYS1wYXltZW50XC8ifSx7ImxhYmVsX2VuX3VzIjoiTWVtYmVyc2hpcCIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvZ2V0LWlwXC9hcG5pYy1tZW1iZXJzaGlwXC8ifSx7ImxhYmVsX2VuX3VzIjoiRkFRcyIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvZ2V0LWlwXC9mYXFzXC8ifV19LHsibGFiZWxfZW5fdXMiOiJNYW5hZ2UgSVAiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL21hbmFnZS1pcFwvIiwiY2hpbGRyZW4iOlt7ImxhYmVsX2VuX3VzIjoiTXlBUE5JQyIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvbWFuYWdlLWlwXC9teWFwbmljXC8ifSx7ImxhYmVsX2VuX3VzIjoiVXNpbmcgV2hvaXMiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL21hbmFnZS1pcFwvdXNpbmctd2hvaXNcLyJ9LHsibGFiZWxfZW5fdXMiOiJJUHY0IGV4aGF1c3Rpb24iLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL21hbmFnZS1pcFwvaXB2NC1leGhhdXN0aW9uXC8ifSx7ImxhYmVsX2VuX3VzIjoiR28gSVB2NiIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvY29tbXVuaXR5XC9pcHY2XC8ifSx7ImxhYmVsX2VuX3VzIjoiUm91dGluZyBSZWdpc3RyeSIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvbWFuYWdlLWlwXC9hcG5pYy1zZXJ2aWNlc1wvcm91dGluZy1yZWdpc3RyeVwvIn0seyJsYWJlbF9lbl91cyI6Ik1ha2UgYSBwYXltZW50IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9nZXQtaXBcL2FwbmljLW1lbWJlcnNoaXBcL2JpbGxpbmctcHJvY2VkdXJlXC9tYWtlLWEtcGF5bWVudFwvIn1dfSx7ImxhYmVsX2VuX3VzIjoiVHJhaW5pbmciLCJsaW5rIjoiaHR0cHM6XC9cL2FjYWRlbXkuYXBuaWMubmV0IiwiY2hpbGRyZW4iOlt7ImxhYmVsX2VuX3VzIjoiQWJvdXQiLCJsaW5rIjoiaHR0cHM6XC9cL2FjYWRlbXkuYXBuaWMubmV0XC9hYm91dCJ9LHsibGFiZWxfZW5fdXMiOiJFdmVudHMiLCJsaW5rIjoiaHR0cHM6XC9cL2FjYWRlbXkuYXBuaWMubmV0XC9ldmVudHMifSx7ImxhYmVsX2VuX3VzIjoiQVBOSUMgQWNhZGVteSIsImxpbmsiOiJodHRwczpcL1wvYWNhZGVteS5hcG5pYy5uZXQifSx7ImxhYmVsX2VuX3VzIjoiQ29tbXVuaXR5IFRyYWluZXJzIiwibGluayI6Imh0dHBzOlwvXC9hY2FkZW15LmFwbmljLm5ldFwvY29tbXVuaXR5LXRyYWluZXJzIn0seyJsYWJlbF9lbl91cyI6IkNvdXJzZXMiLCJsaW5rIjoiaHR0cHM6XC9cL2FjYWRlbXkuYXBuaWMubmV0XC9jYXRhbG9nIn1dfSx7ImxhYmVsX2VuX3VzIjoiRXZlbnRzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9ldmVudHNcLyIsImNoaWxkcmVuIjpbeyJsYWJlbF9lbl91cyI6IkNvbmZlcmVuY2VzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9ldmVudHNcL2NvbmZlcmVuY2VzXC8ifSx7ImxhYmVsX2VuX3VzIjoiQ2FsZW5kYXIiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2V2ZW50c1wvY2FsZW5kYXIifSx7ImxhYmVsX2VuX3VzIjoiU3BvbnNvcnNoaXAiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2V2ZW50c1wvc3BvbnNvci1hbi1ldmVudCJ9LHsibGFiZWxfZW5fdXMiOiJDb2RlIG9mIENvbmR1Y3QiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2V2ZW50c1wvYXBuaWMtY29tbXVuaXR5LWNvZGUtb2YtY29uZHVjdFwvIn1dfSx7ImxhYmVsX2VuX3VzIjoiSW5zaWdodHMiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2luc2lnaHRzIiwiY2hpbGRyZW4iOlt7ImxhYmVsX2VuX3VzIjoiQVBOSUMgTGFicyIsImxpbmsiOiJodHRwczpcL1wvbGFicy5hcG5pYy5uZXRcLyJ9LHsibGFiZWxfZW5fdXMiOiJEQVNIIHRvIHNlY3VyZSB5b3VyIG5ldHdvcmtzIiwibGluayI6Imh0dHBzOlwvXC9kYXNoLmFwbmljLm5ldFwvP3V0bV9zb3VyY2U9aW5zaWdodHMmYW1wO3V0bV9tZWRpdW09YnV0dG9uJmFtcDt1dG1fY2FtcGFpZ249aW5zaWdodHNfcGFnZSJ9LHsibGFiZWxfZW5fdXMiOiJSRXgiLCJsaW5rIjoiaHR0cHM6XC9cL3JleC5hcG5pYy5uZXRcLz91dG1fc291cmNlPWluc2lnaHRzJmFtcDt1dG1fbWVkaXVtPWJ1dHRvbiZhbXA7dXRtX2NhbXBhaWduPWluc2lnaHRzX3BhZ2UifSx7ImxhYmVsX2VuX3VzIjoiUmF3IERhdGEiLCJsaW5rIjoiaHR0cHM6XC9cL2Z0cC5hcG5pYy5uZXRcL3B1YmxpY1wvc3RhdHNcL2FwbmljIn1dfSx7ImxhYmVsX2VuX3VzIjoiQ29tbXVuaXR5IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcLyIsImNoaWxkcmVuIjpbeyJsYWJlbF9lbl91cyI6Ik9yYml0IiwibGluayI6Imh0dHBzOlwvXC9vcmJpdC5hcG5pYy5uZXRcL25ld3MtZmVlZFwvIn0seyJsYWJlbF9lbl91cyI6IkNvbW11bml0eSBkZW1vZ3JhcGhpY3MiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2NvbW11bml0eVwvY29tbXVuaXR5LWRlbW9ncmFwaGljc1wvIn0seyJsYWJlbF9lbl91cyI6IlBvbGljeSBEZXZlbG9wbWVudCIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvY29tbXVuaXR5XC9wb2xpY3lcLyJ9LHsibGFiZWxfZW5fdXMiOiJGZWxsb3dzaGlwIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL2ZlbGxvd3NoaXBcLyJ9LHsibGFiZWxfZW5fdXMiOiJBZGRyZXNzaW5nIHBvbGljaWVzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3BvbGljeVwvY3VycmVudFwvIn0seyJsYWJlbF9lbl91cyI6IkludGVybmV0IGNvbW11bml0eSIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvY29tbXVuaXR5XC9lY29zeXN0ZW1cLyJ9LHsibGFiZWxfZW5fdXMiOiJDb2RlIG9mIENvbmR1Y3QiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2V2ZW50c1wvYXBuaWMtY29tbXVuaXR5LWNvZGUtb2YtY29uZHVjdFwvIn0seyJsYWJlbF9lbl91cyI6IlRlY2huaWNhbCBBc3Npc3RhbmNlIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3N1cHBvcnRcL3RlY2huaWNhbC1hc3Npc3RhbmNlXC8ifSx7ImxhYmVsX2VuX3VzIjoiUm9vdCBzZXJ2ZXJzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3N1cHBvcnRcL3Jvb3Qtc2VydmVyc1wvIn0seyJsYWJlbF9lbl91cyI6IlNlY3VyaXR5IGF0IEFQTklDIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3NlY3VyaXR5XC8ifSx7ImxhYmVsX2VuX3VzIjoiSVNJRiBBc2lhIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3N1cHBvcnRcL2lzaWZcLyJ9LHsibGFiZWxfZW5fdXMiOiJBUE5JQyBGb3VuZGF0aW9uIiwibGluayI6Imh0dHBzOlwvXC9hcG5pYy5mb3VuZGF0aW9uIn0seyJsYWJlbF9lbl91cyI6Ik5STyBOdW1iZXIgQ291bmNpbCAoTkMpIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3BhcnRpY2lwYXRlXC9lbGVjdGlvbnNcL25yby1lbGVjdGlvbnNcLyJ9XX0seyJsYWJlbF9lbl91cyI6IkJsb2ciLCJsaW5rIjoiaHR0cHM6XC9cL2Jsb2cuYXBuaWMubmV0XC8ifSx7ImxhYmVsX2VuX3VzIjoiSGVscCBDZW50cmUiLCJsaW5rIjoiaHR0cHM6XC9cL2hlbHAuYXBuaWMubmV0XC9zXC8ifSx7ImxhYmVsX2VuX3VzIjoiQWJvdXQiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2Fib3V0LWFwbmljXC8iLCJjaGlsZHJlbiI6W3sibGFiZWxfZW5fdXMiOiJBUE5JQyBSZWdpb24iLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2Fib3V0LWFwbmljXC9vcmdhbml6YXRpb25cL2FwbmljLXJlZ2lvblwvIn0seyJsYWJlbF9lbl91cyI6IkFQTklDIE1lbWJlcnNoaXAiLCJsaW5rIjoiaHR0cHM6XC9cL3d3dy5hcG5pYy5uZXRcL2dldC1pcFwvYXBuaWMtbWVtYmVyc2hpcFwvIn0seyJsYWJlbF9lbl91cyI6IkV4ZWN1dGl2ZSBDb3VuY2lsIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvb3JnYW5pemF0aW9uXC9zdHJ1Y3R1cmVcL2FwbmljLWV4ZWN1dGl2ZS1jb3VuY2lsXC8ifSx7ImxhYmVsX2VuX3VzIjoiU2VydmljZSB1cGRhdGVzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvc2VydmljZS11cGRhdGVzXC8ifSx7ImxhYmVsX2VuX3VzIjoiVGVhbSIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvYWJvdXQtYXBuaWNcL3RlYW1cLyJ9LHsibGFiZWxfZW5fdXMiOiJBbm51YWwgUmVwb3J0cyIsImxpbmsiOiJodHRwczpcL1wvd3d3LmFwbmljLm5ldFwvYWJvdXQtYXBuaWNcL2NvcnBvcmF0ZS1kb2N1bWVudHNcL2FubnVhbC1yZXBvcnRzXC8ifSx7ImxhYmVsX2VuX3VzIjoiVHJhbnNwYXJlbmN5IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvdHJhbnNwYXJlbmN5XC8ifSx7ImxhYmVsX2VuX3VzIjoiQVBOSUMgU3VydmV5IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9jb21tdW5pdHlcL3BhcnRpY2lwYXRlXC9tZW1iZXItZmVlZGJhY2tcLyJ9LHsibGFiZWxfZW5fdXMiOiJDb3Jwb3JhdGUgRG9jdW1lbnRzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvY29ycG9yYXRlLWRvY3VtZW50c1wvIn0seyJsYWJlbF9lbl91cyI6IlB1YmxpY2F0aW9ucyBBcmNoaXZlIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvcHVibGljYXRpb25zLWFyY2hpdmVcLyJ9LHsibGFiZWxfZW5fdXMiOiJDYXJlZXJzIiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvZW1wbG95bWVudFwvIn0seyJsYWJlbF9lbl91cyI6Ikdsb3NzYXJ5IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvYS16LWdsb3NzYXJ5XC8ifV19LHsibGFiZWxfZW5fdXMiOiJDb250YWN0IiwibGluayI6Imh0dHBzOlwvXC93d3cuYXBuaWMubmV0XC9hYm91dC1hcG5pY1wvb3JnYW5pemF0aW9uXC9jb250YWN0LWFwbmljXC8ifV19"/><script type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"></script><link rel="prefetch" href="https://cloud.typography.com/6771312/722504/css/fonts.css">		<style type="text/css" id="wp-custom-css">
+			.grecaptcha-badge { visibility: hidden !important; }		</style>
+		
+    
+                <link href="https://www.apnic.net/wp-content/themes/apnic/dist/index-vCJLncgWf.css" rel="stylesheet"/>
+                <style>
+.grid-blog {
+    margin-bottom: -24px;
+}
+.thumbnail-highlight .thumbnail-header {
+    background-color: #000000;
+}
+.thumbnail-highlight .caption {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.thumbnail-highlight .thumbnail-title a,
+.thumbnail-highlight .thumbnail-title a:hover
+.thumbnail-highlight .thumbnail-title a:active
+.thumbnail-highlight .thumbnail-title a:focus {
+    color: #FFFFFF;
+}
+</style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5DX29TX');</script>
+    <!-- End Google Tag Manager -->
+
+    <style type="text/css">
+        body {
+            margin: 0 0 127px;
+        }
+
+        body.blog {
+            margin: 0 0 127px;
+        }
+    </style>
+
+</head>
+
+<body class="home wp-singular page-template-default page page-id-176 wp-theme-apnic">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DX29TX"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link sr-only sr-only-focusable"
+   href="#main">
+    <div class="container">
+        Skip to content    </div>
+</a>
+
+
+<nav class="omnibar omnibar--desktop-no-logo">
+    <div class="container omnibar__container">
+        <div class="omnibar__group-left">
+            <div class="omnibar-logo__container">
+                <a href="https://www.apnic.net">
+                    <img class="omnibar-logo__image"
+                         src="https://webdist.data.apnic.net/web-framework-theme/9.1.5/images/apnic-reverse.svg"
+                         alt="APNIC Home">
+                </a>
+            </div>
+        </div>
+        <div class="omnibar__group-right">
+            <div class="dropdown">
+                <button class="omnibar-hamburger__toggle omnibar-hamburger__toggle--desktop dropdown-toggle"
+                        id="omnibarHamburgerButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                    <img class="omnibar-hamburger__icon"
+                         src="https://webdist.data.apnic.net/web-framework-theme/9.1.5/images/icon-square-kebab.svg"
+                         aria-hidden="true" alt="">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right omnibar-quick-links__wrap"
+                     aria-labelledby="omnibarHamburgerButton"
+                     style="display: none;">
+                    <a class="dropdown-item omnibar-quick-links__link" href="https://my.apnic.net/">MyAPNIC</a><a class="dropdown-item omnibar-quick-links__link" href="https://academy.apnic.net/">Academy</a><a class="dropdown-item omnibar-quick-links__link" href="https://blog.apnic.net/">Blog</a><a class="dropdown-item omnibar-quick-links__link" href="https://orbit.apnic.net/">Orbit</a><a class="dropdown-item omnibar-quick-links__link" href="https://rex.apnic.net/">REx</a><a class="dropdown-item omnibar-quick-links__link" href="https://dash.apnic.net/">DASH</a>
+                </div>
+            </div>
+            <div id="apnic-omnibar-auth" style="display: flex;">
+            </div>
+        </div>
+    </div>
+
+    <div class="contextual contextual--grey">
+        <div class="container contextual__container">
+            <div class="container_group-left">
+                <a class="contextual__h1-link" href="/">
+                    <h1 class="contextual__h1">Home</h1>
+                </a>
+            </div>
+            <div class="container_group-right d-flex">
+                <div class="omnibar-contextual-navigation">
+                    <div class="omnibar-contextual-navigation-secondary">
+                        <div class="omnibar-contextual-navigation-secondary__item">
+                            <form role="search"
+                                  method="post"
+                                  action="https://www.apnic.net"
+                                  class="form-inline omnibar-contextual-navigation-secondary__search">
+                                <label class="sr-only"
+                                       for="form-search">Whois and website search</label>
+                                <input type="text"
+                                       class="omnibar-contextual-navigation-secondary__search-input"
+                                       id="form-search"
+                                       name="s"
+                                       value=""
+                                       aria-label="Search"
+                                       placeholder="WHOIS & WEBSITE">
+
+                                <button type="submit"
+                                        class="btn omnibar-contextual-navigation-secondary__search-submit apnic-recaptcha-verification-submit">
+                                    <span class="sr-only">Search</span>
+                                    <span class="fa fa-search"
+                                          aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="omnibar-contextual-navigation-secondary__item">
+                            <div class="omnibar-contextual-navigation-secondary__all-caps">
+                                <a href="https://wq.apnic.net/whois-search/static/search.html">Advanced Whois</a>
+                            </div>
+                        </div>
+                        <div class="omnibar-contextual-navigation-secondary__item">
+                            <div class="omnibar-contextual-navigation-secondary__all-caps">
+                                <a href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/">Make
+                                    a
+                                    payment</a>
+                            </div>
+                        </div>
+                        <div class="omnibar-contextual-navigation-secondary__item">
+                            <div id="ip"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contextual__navbar-mobile">
+                    <div class="dropdown omnibar-contextual-search__dropdown">
+                        <a class="btn btn-secondary dropdown-toggle omnibar-contextual-search__toggle"
+                           href="#"
+                           role="button"
+                           id="mobileContextualSearch"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            <span class="omnibar-contextual-search__toggle-text--toggled">Close Search</span>
+                        </a>
+                        <div class="dropdown-menu omnibar-contextual-search__wrap"
+                             aria-labelledby="mobileContextualSearch">
+                            <form class="form-inline omnibar-contextual-search__form"
+                                  role="search"
+                                  method="get"
+                                  action="https://www.apnic.net">
+                                <div class="input-group w-100">
+                                    <label class="sr-only"
+                                           for="contextualSearchInput">Search APNIC.net OR enter Whois database
+                                        query</label>
+                                    <input type="text"
+                                           class="form-control omnibar-contextual-search__input"
+                                           name="s"
+                                           value=""
+                                           id="contextualSearchInput"
+                                           placeholder="Search APNIC.net OR enter Whois database query">
+                                    <i class="fas fa-search omnibar-contextual-search__icon"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="dropdown contextual__dropdown">
+                        <a class="btn btn-secondary dropdown-toggle omnibar-contextual-hamburger__toggle"
+                           href="#"
+                           role="button"
+                           id="mobileContextualMenu"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                        </a>
+
+                        <div class="dropdown-menu omnibar-contextual__wrap"
+                             aria-labelledby="mobileContextualMenu">
+
+                            <!-- Navigation populated dynamically using Theme Data List, contact Web Team to modify. -->
+                            <ul class="omnibar-contextual-navigation-mobile-nav">
+                                <li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Get IP</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/get-ip-addresses-asn/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Get IP</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Make a payment</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Membership</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/faqs/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">FAQs</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Manage IP</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/manage-ip/myapnic/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">MyAPNIC</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/manage-ip/using-whois/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Using Whois</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/manage-ip/ipv4-exhaustion/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">IPv4 exhaustion</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/ipv6/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Go IPv6</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/manage-ip/apnic-services/routing-registry/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Routing Registry</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Make a payment</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Training</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://academy.apnic.net/about"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">About</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://academy.apnic.net/events"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Events</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://academy.apnic.net"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Academy</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://academy.apnic.net/community-trainers"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Community Trainers</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://academy.apnic.net/catalog"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Courses</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Events</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/events/conferences/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Conferences</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/events/calendar"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Calendar</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/events/sponsor-an-event"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Sponsorship</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/events/apnic-community-code-of-conduct/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Code of Conduct</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Insights</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://labs.apnic.net/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Labs</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://dash.apnic.net/?utm_source=insights&amp;utm_medium=button&amp;utm_campaign=insights_page"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">DASH to secure your networks</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://rex.apnic.net/?utm_source=insights&amp;utm_medium=button&amp;utm_campaign=insights_page"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">REx</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://ftp.apnic.net/public/stats/apnic"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Raw Data</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">Community</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://orbit.apnic.net/news-feed/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Orbit</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/community-demographics/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Community demographics</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/policy/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Policy Development</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/fellowship/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Fellowship</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/policy/current/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Addressing policies</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/ecosystem/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Internet community</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/events/apnic-community-code-of-conduct/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Code of Conduct</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/support/technical-assistance/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Technical Assistance</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/support/root-servers/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Root servers</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/security/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Security at APNIC</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/support/isif/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">ISIF Asia</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://apnic.foundation"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Foundation</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/participate/elections/nro-elections/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">NRO Number Council (NC)</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <a class="omnibar-contextual-navigation-mobile-nav__link <?php
+    echo  ?>"
+       href="https://blog.apnic.net/">
+        Blog
+    </a>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <a class="omnibar-contextual-navigation-mobile-nav__link <?php
+    echo  ?>"
+       href="https://help.apnic.net/s/">
+        Help Centre
+    </a>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <button class="omnibar-contextual-navigation-mobile-nav__button ">About</button>
+    <ul class="omnibar-contextual-navigation-mobile-sub-nav">
+      <li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/organization/apnic-region/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Region</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Membership</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/organization/structure/apnic-executive-council/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Executive Council</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/service-updates/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Service updates</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/team/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Team</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/corporate-documents/annual-reports/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Annual Reports</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/transparency/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Transparency</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/community/participate/member-feedback/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">APNIC Survey</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/corporate-documents/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Corporate Documents</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/publications-archive/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Publications Archive</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/employment/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Careers</a>
+</li><li class="omnibar-contextual-navigation-mobile-sub-nav__item">
+    <a href="https://www.apnic.net/about-apnic/a-z-glossary/"
+       class="omnibar-contextual-navigation-mobile-sub-nav__link">Glossary</a>
+</li>
+    </ul>
+</li><li class="omnibar-contextual-navigation-mobile-nav__item">
+    <a class="omnibar-contextual-navigation-mobile-nav__link <?php
+    echo omnibar-contextual-navigation-mobile-nav__link--last-of-section ?>"
+       href="https://www.apnic.net/about-apnic/organization/contact-apnic/">
+        Contact
+    </a>
+</li>
+                                <li class="omnibar-contextual-navigation-mobile-nav__item">
+                                    <a class="omnibar-contextual-navigation-mobile-nav__link omnibar-contextual-navigation-mobile-nav__link--alt"
+                                       href="https://wq.apnic.net/whois-search/static/search.html"
+                                    >Advanced Whois</a>
+                                </li>
+
+                                <li class="omnibar-contextual-navigation-mobile-nav__item">
+                                    <a class="omnibar-contextual-navigation-mobile-nav__link omnibar-contextual-navigation-mobile-nav__link--alt"
+                                       href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/"
+                                    >Make a payment</a>
+                                </li>
+                                <li class="omnibar-contextual-navigation-mobile-nav__item">
+                                    <div id="ipSecondary" class="omnibar-contextual-navigation-mobile-nav__link"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav><header class="apnic-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="apnic-header-brand">
+                    <a href="https://www.apnic.net/"
+                       aria-label="APNIC Home">
+                        <img src="https://webdist.data.apnic.net/web-framework-theme/9.1.5/images/apnic.svg"
+                             alt="APNIC Home">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block text-right">
+                <div id="glyph"
+                     class="header-glyph"
+                     style="z-index: 1;"></div>
+            </div>
+        </div>
+    </div>
+</header><nav class="navbar apnic-main-nav navbar-expand-lg" id="apnic-navbar-content">
+    <div class="container">
+        <ul class="navbar-nav nav nav-pills justify-content-end ml-auto">
+            <li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/get-ip/get-ip-addresses-asn/" aria-expanded="false">Get IP</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/get-ip-addresses-asn/">Get IP</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/">Make a payment</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/">Membership</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/faqs/">FAQs</a>
+</li>
+    </ul>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/manage-ip/" aria-expanded="false">Manage IP</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://www.apnic.net/manage-ip/myapnic/">MyAPNIC</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/manage-ip/using-whois/">Using Whois</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/manage-ip/ipv4-exhaustion/">IPv4 exhaustion</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/ipv6/">Go IPv6</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/manage-ip/apnic-services/routing-registry/">Routing Registry</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/billing-procedure/make-a-payment/">Make a payment</a>
+</li>
+    </ul>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://academy.apnic.net" aria-expanded="false">Training</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://academy.apnic.net/about">About</a>
+</li><li class="navigation-sub-item">
+    <a href="https://academy.apnic.net/events">Events</a>
+</li><li class="navigation-sub-item">
+    <a href="https://academy.apnic.net">APNIC Academy</a>
+</li><li class="navigation-sub-item">
+    <a href="https://academy.apnic.net/community-trainers">Community Trainers</a>
+</li><li class="navigation-sub-item">
+    <a href="https://academy.apnic.net/catalog">Courses</a>
+</li>
+    </ul>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/events/" aria-expanded="false">Events</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://www.apnic.net/events/conferences/">Conferences</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/events/calendar">Calendar</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/events/sponsor-an-event">Sponsorship</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/events/apnic-community-code-of-conduct/">Code of Conduct</a>
+</li>
+    </ul>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/insights" aria-expanded="false">Insights</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://labs.apnic.net/">APNIC Labs</a>
+</li><li class="navigation-sub-item">
+    <a href="https://dash.apnic.net/?utm_source=insights&amp;utm_medium=button&amp;utm_campaign=insights_page">DASH to secure your networks</a>
+</li><li class="navigation-sub-item">
+    <a href="https://rex.apnic.net/?utm_source=insights&amp;utm_medium=button&amp;utm_campaign=insights_page">REx</a>
+</li><li class="navigation-sub-item">
+    <a href="https://ftp.apnic.net/public/stats/apnic">Raw Data</a>
+</li>
+    </ul>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/community/" aria-expanded="false">Community</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://orbit.apnic.net/news-feed/">Orbit</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/community-demographics/">Community demographics</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/policy/">Policy Development</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/fellowship/">Fellowship</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/policy/current/">Addressing policies</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/ecosystem/">Internet community</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/events/apnic-community-code-of-conduct/">Code of Conduct</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/support/technical-assistance/">Technical Assistance</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/support/root-servers/">Root servers</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/security/">Security at APNIC</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/support/isif/">ISIF Asia</a>
+</li><li class="navigation-sub-item">
+    <a href="https://apnic.foundation">APNIC Foundation</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/participate/elections/nro-elections/">NRO Number Council (NC)</a>
+</li>
+    </ul>
+</li><li class="navigation-item">
+    <a href="https://blog.apnic.net/">
+        Blog
+    </a>
+</li><li class="navigation-item">
+    <a href="https://help.apnic.net/s/">
+        Help Centre
+    </a>
+</li><li class="navigation-item has-dropdown">
+    <a href="https://www.apnic.net/about-apnic/" aria-expanded="false">About</a>
+    <ul class="navigation-sub-menu">
+      <li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/organization/apnic-region/">APNIC Region</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/get-ip/apnic-membership/">APNIC Membership</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/organization/structure/apnic-executive-council/">Executive Council</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/service-updates/">Service updates</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/team/">Team</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/corporate-documents/annual-reports/">Annual Reports</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/transparency/">Transparency</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/community/participate/member-feedback/">APNIC Survey</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/corporate-documents/">Corporate Documents</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/publications-archive/">Publications Archive</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/employment/">Careers</a>
+</li><li class="navigation-sub-item">
+    <a href="https://www.apnic.net/about-apnic/a-z-glossary/">Glossary</a>
+</li>
+    </ul>
+</li><li class="navigation-item">
+    <a href="https://www.apnic.net/about-apnic/organization/contact-apnic/">
+        Contact
+    </a>
+</li>
+        </ul>
+    </div>
+    <div class="shadowbox"></div>
+</nav>    <main id="main">
+        <div class="container">
+            <div class="content">
+                <div class="hero">
+                    <p class="hero-tagline">APNIC is the Regional Internet Registry administering IP addresses for the Asia Pacific</p>
+                    <div class="grid grid-inline hero-buttons row">
+                        <div class="col-sm-12 col-md">
+                            <div class="hero-button get-ip">
+                                <a href="/get-ip/"
+                                   class="hero-button-link">
+                                    <span class="hero-button-icon-wrap">
+                                        <span class="hero-button-icon">
+                                            <svg class="hero-button-icon-svg"
+     width="100%"
+     height="100%"
+     viewbox="-170 294 253.9 253.9"
+     role="presentation">
+    <path
+        d="M-102.8,412.7h-1.9v-9.4h2c3.5,0,5.3,1.5,5.3,4.6C-97.3,411.2-99.3,412.7-102.8,412.7z M38.1,420.9c0,43.6-35.5,79-79,79 c-33.6,0-62.3-21-73.7-50.6c-19-1.2-34.1-17-34.1-36.3c0-20.1,16.3-36.4,36.4-36.4c1.9,0,3.8,0.2,5.7,0.5 c14.2-21.2,38.3-35.2,65.7-35.2C2.7,341.9,38.1,377.4,38.1,420.9z M-118.6,397.3h-7.9v32.1h7.9V397.3z M9.3,368.5l-24.1,7.8 c6.6,7.3,12.6,16.2,17.1,27l24.8-8.1C23.1,385,17,375.9,9.3,368.5z M-54.3,389.1l-22.2,7.2l20.3,16.7l-19.1,15.7l30.5-10 L-54.3,389.1z M-38.8,416.7l34.9-11.4c-4.6-10.8-10.9-19.7-17.8-26.8l-26.6,8.6L-38.8,416.7z M-77.7,436.2 c4.5,10.7,10.6,19.4,17.4,26.5l26.9-8.8l-9.4-29.2L-77.7,436.2z M-27.4,452l28.1-9.2c1.5-10,1.2-20.8-2.3-31.6l-35.2,11.6L-27.4,452 z M-52.9,349.3c8.6,3.7,21.4,10.5,33.2,21.9l23.4-7.6c-12.3-9.6-27.8-15.3-44.6-15.3C-45,348.3-49,348.6-52.9,349.3z M-59,353.7 l8.8,27.4l23.4-7.6C-39,362.6-51.8,356.6-59,353.7z M-65,355.7c-4.4,6.8-11.8,19.7-15.6,35.3l24.4-7.9L-65,355.7z M-100,378.8 c5.2,1.9,9.9,4.9,13.7,8.8c1.1-4.4,2.6-8.8,4.4-13.2c3.1-7.7,6.6-14.1,9.5-18.9C-83.5,360.8-93,368.9-100,378.8z M-112.5,429.4h7.9 v-10.6h2c7.8,0,12.9-3.7,12.9-11c0-7-4.8-10.5-12.6-10.5h-10.2V429.4z M-91.7,472.9l24.5-8c-6.4-7.3-12.3-16.1-16.7-26.7l-3.2,1.1 c-5.5,5.3-12.7,8.9-20.7,9.9C-104,458.2-98.5,466.2-91.7,472.9z M-28.5,492.5c-8.8-3.7-21.8-10.7-33.8-22.5l-23.8,7.8 c12.4,9.9,28.1,15.8,45.2,15.8C-36.7,493.6-32.5,493.2-28.5,492.5z M-22.5,488l-3.3-10.2l-5.7-17.8l-23.7,7.7 C-43,478.9-29.9,485.2-22.5,488z M-16.5,486.1C-12,479.2-4.4,466-0.7,450l-24.8,8.1L-16.5,486.1z M29.1,440.2l-22.8,7.4 c-1.2,6.5-3.2,13.1-5.9,19.8c-3.1,7.6-6.6,14-9.5,18.8C9.5,477.2,23.6,460.4,29.1,440.2z M30.7,433c0.7-3.9,1-8,1-12.1 c0-6.8-1-13.4-2.7-19.7l-24.5,8c3.2,9.8,4.1,20.3,2.9,31.3L30.7,433z"></path>
+</svg>
+                                        </span>
+                                    </span>
+
+                                    <span class="hero-button-label">GET IP ADDRESSES</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md">
+                            <div class="hero-button transfer">
+                                <a href="/manage-ip/manage-resources/transfer-resources/"
+                                   class="hero-button-link">
+                                    <span class="hero-button-icon-wrap">
+                                        <span class="hero-button-icon">
+                                            <svg class="hero-button-icon-svg"
+     width="100%"
+     height="100%"
+     viewbox="-170 294 253.9 253.9"
+     role="presentation">
+    <path d="M-41.7,417.6l-46-45.2l46-45.2v22.6H5.9V395h-47.6L-41.7,417.6L-41.7,417.6z M6.9,466.4l-46-45.2v22.6h-47.7V489h47.6v22.6 L6.9,466.4z"></path>
+</svg>
+                                        </span>
+                                    </span>
+
+                                    <span class="hero-button-label">TRANSFER IP ADDRESSES</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md">
+                            <div class="hero-button ipv6">
+                                <a href="/community/ipv6/"
+                                   class="hero-button-link">
+                                    <span class="hero-button-icon-wrap">
+                                        <span class="hero-button-icon">
+                                            <svg class="hero-button-icon-svg"
+     width="100%" height="100%"
+     viewbox="-170 294 253.9 253.9"
+     role="presentation">
+    <path d="M-129,437.6c-10.9,0-16.9-7.2-16.9-17.8c0-10.7,6.5-17.9,17.1-17.9c4.2,0,7.8,1,10.5,2.5l-1.1,7.4c-2.6-1.6-5.6-2.9-9.2-2.9 c-5.9,0-8.8,4.4-8.8,10.8c0,6.5,3,11,8.9,11c1.9,0,3.2-0.4,4.6-1.1v-6.1h-6l-1-6.3h14.4V434C-120.1,436.3-124.3,437.6-129,437.6z M-95.7,437.6c-9.9,0-16.3-7.2-16.3-17.8c0-10.7,6.5-17.9,16.4-17.9s16.4,7.2,16.4,17.8C-79.2,430.4-85.7,437.6-95.7,437.6z M-95.6,408.7c-4.9,0-7.9,4.3-7.9,11.1s2.9,11.1,7.9,11.1c5,0,7.9-4.3,7.9-11.1S-90.7,408.7-95.6,408.7z M19,422.4 c-1.9,0-3.6,0.8-5.3,2.1c0,6.1,2.3,8.8,5.3,8.8c2.8,0,4.6-2.2,4.6-5.7S22,422.4,19,422.4z M-34,409h-2.1v10.9h1.9 c3.6,0,5.7-1.8,5.7-5.6C-28.5,410.8-30.4,409-34,409z M25.2,385.3c-1.6-1.8-3.3-3.6-5.1-5.2l0,0v0c-9.7-8.7-22.5-14-36.5-14 c-30.3,0-54.8,24.5-54.8,54.8c0,30.3,24.5,54.8,54.8,54.8c14,0,26.8-5.3,36.5-14v0l0,0c1.8-1.6,3.5-3.4,5.1-5.2l34.7-35.6 L25.2,385.3z M-50.4,439h-8.2v-36.9h8.2V439z M-33.9,426.7H-36V439h-8.2v-36.9h10.6c8.1,0,13,4,13,12 C-20.5,422.5-25.9,426.7-33.9,426.7z M-3.8,439.1H-11l-8.1-25.7l7.8-1l4.4,16.5l4.2-16.1h7.1L-3.8,439.1z M18.9,439.7 c-7.4,0-12.5-5.3-12.5-15.3c0-12.9,8-20,18.8-22.3l1,7.1c-6.1,1.6-10.6,4.4-12.2,9.5c2.3-1.7,4.8-2.6,7.8-2.6c5,0,9.2,3.5,9.2,10.9 C31,434.7,25.7,439.7,18.9,439.7z"></path>
+</svg>
+                                        </span>
+                                    </span>
+
+                                    <span class="hero-button-label">GO IPv6</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md">
+                            <div class="hero-button participate">
+                                <a href="/community/participate/"
+                                   class="hero-button-link">
+                                    <span class="hero-button-icon-wrap">
+                                        <span class="hero-button-icon">
+                                            <svg class="hero-button-icon-svg" width="100%" height="100%"
+     viewbox="-170 294 253.9 253.9" role="presentation">
+    <path d="M-44,394.3c13.4,0.3,23.8-10.8,23.9-24.4c1.8-12.5-11.1-25.5-24.1-24.9c-14.2,0.7-25.1,10.7-25,24.5 C-69,381.9-59.2,394-44,394.3z M33.8,349.8c-9.7,14.8-19.4,29.5-29.2,44.4c-32.7,3.4-65.3,6.7-98.6,10.1c-1.7,5.4-3.5,10.7-5,16 c-5.1,18.3-10.2,36.6-15.3,54.8c-0.3,0.9-1.2,1.7-1.8,2.5c0,0.7,0,1.4,0,2.1c3.4-0.9,6.7-1.7,10-2.6c6.2-16.2,12.2-32,18.4-48.2 c4.1-1.4,8.2-2.9,13-4.5c1,7,2.1,12.9,2.5,18.8c1.1,14.5,2.9,29,2.5,43.4c-0.5,18.4-2.7,36.7-4.2,55.1c-0.2,2.1-0.4,4.1-0.5,6.2H-52 c2.5-11.3,5-22.6,7.5-33.9c2,11.4,4.7,22.7,7.6,33.9h23.6c-1-13.9-1.9-27.7-2.5-41.6c-0.3-7.7,1.3-15.5,1.9-23.3 c1-13.8,1.6-27.6,2.7-41.4c0.6-7.7,1.7-15.3,2.6-23.4c5.2,0,10.1,0,15.2,0c1.9-3.3,3.6-6.3,5.3-9.4c8.7-16.2,17.2-32.4,26-48.6 c1.6-3,3.9-5.6,5.9-8.3c0-0.7,0-1.4,0-2.1C40.6,349.8,37.4,349.8,33.8,349.8z"></path>
+</svg>
+                                        </span>
+                                    </span>
+
+                                    <span class="hero-button-label">PARTICIPATE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md">
+                            <div class="hero-button about">
+                                <a href="/about-apnic/organization/"
+                                   class="hero-button-link">
+                                    <span class="hero-button-icon-wrap">
+                                        <span class="hero-button-icon">
+                                            <svg class="hero-button-icon-svg"
+     width="100%"
+     height="100%"
+     viewbox="-170 294 253.9 253.9"
+     role="presentation">
+    <path d="M-33.2,388.6c0.1-8.9,7.5-15.7,16-15.7c8.7,0.2,15.6,7.1,15.7,15.7c0,4.3-1.8,8.2-4.6,11.1c-2.8,2.8-6.6,4.8-11,4.9 C-25.9,404.4-33.1,397.5-33.2,388.6z M-17.2,435.9c-8.6,0-15.9,6.8-16,15.7c0.1,8.9,7.3,15.9,16.1,15.9c4.4,0,8.3-2,11-4.9 c2.8-2.9,4.6-6.7,4.6-11.1C-1.7,443-8.5,436.1-17.2,435.9z M-64.7,404.5c4.4,0,8.3-2,11-4.9c2.8-2.9,4.6-6.7,4.6-11.1 c-0.2-8.6-7-15.5-15.7-15.7c-8.6,0-15.9,6.8-16,15.7C-80.7,397.5-73.5,404.4-64.7,404.5z M-64.8,435.9c-8.6,0-15.9,6.8-16,15.7 c0.1,8.9,7.3,15.9,16.1,15.9c4.4,0,8.3-2,11-4.9c2.8-2.9,4.6-6.7,4.6-11.1C-49.3,443-56.1,436.1-64.8,435.9z M-60.2,323.8 c-35.3,6.8-62.6,26.3-75.2,65.7c-10.3,32.1-3.8,63.8,25.1,92.8l5.5-4.9c-19.2-21.6-12.7-48.8-2.9-79.5c9.2-28.6,17-56,49.3-65.7 L-60.2,323.8z M19,363.4c20.7,26.6,11.2,53.4,2.1,82C11.3,476,0.8,502-27.4,508.6l1.6,7.2c40.4-7.1,64-29.2,74.3-61.3 c12.6-39.4,1.7-71-23.2-96.8L19,363.4z"></path>
+</svg>
+                                        </span>
+                                    </span>
+                                    <span class="hero-button-label">WHAT IS APNIC?</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-gray content">
+  <div class="container">
+    <div class="content-main">
+      <div class="row apnic-home-news-grid card-deck">
+      <div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/community/">Community</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/10/why-sigs-matter-and-why-the-guidelines-are-being-reviewed/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/07/Joint-sigs-ft.jpg"
+           class="card-img-top"
+           alt="Banner image for Why SIGs matter, and why the Guidelines are being reviewed article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/10/why-sigs-matter-and-why-the-guidelines-are-being-reviewed/">
+        <h5 class="card-title">Why SIGs matter, and why the Guidelines are being reviewed</h5>
+      </a>
+      <div class="card-text">
+        <p>By Gaurav Kansal</p>
+        <p>Guest Post: A review of APNIC’s SIG Guidelines proposes changes to term limits, elections, Working Groups, and fairness safeguards. Community feedback will help shape the updated Guidelines.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/tech-matters/">Tech matters</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/07/understanding-partial-reachability-in-the-internet-core/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/07/2026-07-featured-partial-connectivity.png"
+           class="card-img-top"
+           alt="Banner image for Understanding partial reachability in the Internet core article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/07/understanding-partial-reachability-in-the-internet-core/">
+        <h5 class="card-title">Understanding partial reachability in the Internet core</h5>
+      </a>
+      <div class="card-text">
+        <p>By Guillermo Baltra</p>
+        <p>Guest Post: Persistent partial reachability is not noise — it is a fundamental, measurable part of how the Internet behaves today. A small number of long-lived peninsulas cause most of the impact, and recognizing them can dramatically improve both operational clarity and measurement accuracy.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+    <div class="card text-left card-highlight">
+        <div class="card-header">Homepage highlight</div>
+        <a href="https://conference.apnic.net/62/register/register/index.html">
+          <img src="https://www.apnic.net/wp-content/uploads/2026/05/APNIC62-register-now-01-03.png" class="card-img-top" alt="Banner image for Register now for APNIC 62! article.">
+        </a>
+        <div class="card-body">
+            <a href="https://conference.apnic.net/62/register/register/index.html">
+              <h5 class="card-title">Register now for APNIC 62!</h5>
+            </a>
+            <div class="card-text">Take part in hands-on workshops, and get insights from experts and leaders on Internet operations. <a href="https://conference.apnic.net/62/register/register/index.html">Register now</a> and shape the future of the Internet!</div>
+        </div>
+    </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/tech-matters/">Tech matters</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/06/podcast-canonical-cache-representation/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/08/DN-SN-92-02046-scaled.jpeg"
+           class="card-img-top"
+           alt="Banner image for [Podcast] Canonical Cache Representation article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/06/podcast-canonical-cache-representation/">
+        <h5 class="card-title">[Podcast] Canonical Cache Representation</h5>
+      </a>
+      <div class="card-text">
+        <p>By George Michaelson</p>
+        <p>Job Snijders discusses a new, compact representation of RPKI-signed objects and an archive of spooled snapshots of the global RPKI repositories.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/community/">Community</a>, <a href="https://blog.apnic.net/category/development/">Development</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/05/apnic-community-engagement-january-june-2026-in-review/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/08/China-v6-training-ft.jpg"
+           class="card-img-top"
+           alt="Banner image for APNIC community engagement: January – June 2026 in review  article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/05/apnic-community-engagement-january-june-2026-in-review/">
+        <h5 class="card-title">APNIC community engagement: January – June 2026 in review </h5>
+      </a>
+      <div class="card-text">
+        <p>By Samantha Douglas</p>
+        <p>In H1 2026, APNIC worked with Members, partners, and stakeholders across the region to strengthen routing security, support emerging CERT communities, build technical capacity, and advance governance discussions.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/community/">Community</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/05/join-the-final-online-listening-session-on-diversity-in-apnic-community-leadership/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/07/APNIC-listening-session-design3-1110x404-01.png"
+           class="card-img-top"
+           alt="Banner image for Join the final online listening session on diversity in APNIC community leadership article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/05/join-the-final-online-listening-session-on-diversity-in-apnic-community-leadership/">
+        <h5 class="card-title">Join the final online listening session on diversity in APNIC community leadership</h5>
+      </a>
+      <div class="card-text">
+        <p>By Melody Bendindang</p>
+        <p>The APNIC Executive Council (EC) is seeking community input to better understand barriers affecting diversity in community leadership and EC candidacy. These insights will inform future initiatives to support a broader leadership pipeline.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/tech-matters/">Tech matters</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/08/03/ietf-126-in-space/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/08/2026-08-featured-ietf-space-geoff.png"
+           class="card-img-top"
+           alt="Banner image for IETF 126 in space article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/08/03/ietf-126-in-space/">
+        <h5 class="card-title">IETF 126 in space</h5>
+      </a>
+      <div class="card-text">
+        <p>By Geoff Huston</p>
+        <p>IP addressing, congestion control protocols, and a gold rush in space at IETF 126 in Vienna.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/tech-matters/">Tech matters</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/07/30/bgp-topics-from-ietf-126/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/07/2026-07-featured-ietf-bgp-geoff.png"
+           class="card-img-top"
+           alt="Banner image for BGP topics from IETF 126 article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/07/30/bgp-topics-from-ietf-126/">
+        <h5 class="card-title">BGP topics from IETF 126</h5>
+      </a>
+      <div class="card-text">
+        <p>By Geoff Huston</p>
+        <p>BGP ORIGIN, ASPAs, PAVA, and ASRAs at IETF 126.</p>
+      </div>
+    </div>
+  </div>
+</div><div class="col-md-6 col-lg-4 mb-4">
+  <div class="card text-left">
+    <div class="card-header">
+      <a href="https://blog.apnic.net/category/tech-matters/">Tech matters</a>
+    </div>
+    <a href="https://blog.apnic.net/2026/07/29/dns-topics-at-ietf-126/">
+      <img src="https://blog.apnic.net/wp-content/uploads/2026/07/2026-07-featured-ietf-dns-geoff.png"
+           class="card-img-top"
+           alt="Banner image for DNS topics at IETF 126 article.">
+    </a>
+    <div class="card-body">
+      <a href="https://blog.apnic.net/2026/07/29/dns-topics-at-ietf-126/">
+        <h5 class="card-title">DNS topics at IETF 126</h5>
+      </a>
+      <div class="card-text">
+        <p>By Geoff Huston</p>
+        <p>Recursive resolver DNS query behaviour, Post-quantum DNSSEC, Optimistic DNS, Automating DNS delegation management, and more from IETF 126.</p>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>    </main>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <a href="https://www.apnic.net/" aria-label="APNIC Home">
+          <div class="footer-logo">
+            <span class="sr-only">APNIC Home</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-10">
+        <div class="footer-social">
+          Connect with us
+          <ul>
+            <li>
+  <a href="https://www.facebook.com/APNIC"
+     class="fab fa-facebook"><span class="sr-only">Facebook</span>
+  </a>
+</li><li>
+  <a href="https://twitter.com/apnic"
+     class="fab fa-twitter"><span class="sr-only">Twitter</span>
+  </a>
+</li><li>
+  <a href="https://www.youtube.com/user/apnicmultimedia"
+     class="fab fa-youtube"><span class="sr-only">YouTube</span>
+  </a>
+</li><li>
+  <a href="https://www.flickr.com/photos/apnic/"
+     class="fab fa-flickr"><span class="sr-only">Flickr</span>
+  </a>
+</li><li>
+  <a href="https://weibo.com/APNICrir"
+     class="fab fa-weibo"><span class="sr-only">Weibo</span>
+  </a>
+</li><li>
+  <a href="https://www.slideshare.net/apnic"
+     class="fab fa-slideshare"><span class="sr-only">Slideshare</span>
+  </a>
+</li><li>
+  <a href="https://www.linkedin.com/company/apnic"
+     class="fab fa-linkedin-in"><span class="sr-only">LinkedIn</span>
+  </a>
+</li><li>
+  <a href="https://blog.apnic.net/feed/"
+     class="fas fa-rss"><span class="sr-only">RSS</span>
+  </a>
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-aside">
+      <small class="footer-aside-copyright">
+        <span>© <span class="footer-aside-copyright-year">2026</span>&nbsp;APNIC</span>
+        <span class="footer-aside-copyright-abn">ABN&nbsp;42&nbsp;081&nbsp;528&nbsp;010</span>
+      </small>
+      <ul class="footer-aside-links">
+        <li>
+  <a href="https://www.apnic.net/about-apnic/corporate-documents/documents/corporate/privacy/">Privacy</a>
+</li><li>
+  <a href="https://www.apnic.net/about-apnic/organization/contact-apnic/">Contact</a>
+</li><li>
+  <a href="https://help.apnic.net/">Help Centre</a>
+</li><li>
+  <a href="https://www.nro.net/category/news">NRO News</a>
+</li><li>
+  <a href="https://www.apnic.net/about-apnic/service-updates/">Service Status</a>
+</li><li>
+  <a href="https://www.apnic.net/about-apnic/employment/">Careers</a>
+</li><li>
+  <a href="https://www.apnic.net/community/send-us-feedback">Feedback</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</footer><script type="application/javascript">
+    // Remove no-js class.
+    document.documentElement.className = document.documentElement.className.replace("no-js", "js");
+</script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/apnic/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://www.apnic.net/wp-content/themes/apnic/js/bootstrap.min.js?v=d1042ea6501a109a06f6fee446072a580f50e99fc2467685b38f12cac06ae27e&amp;ver=6.9.5" id="bootstrap-js-js"></script>
+<script type="text/javascript" src="https://webdist.data.apnic.net/web-framework-theme/9.1.5/js/theme.min.js?ver=6.9.5" id="apnic-js-main-js"></script>
+<script type="text/javascript" src="https://www.apnic.net/wp-content/themes/apnic/assets/scripts/main.js?v=b7bc4304af2b2b2cfdde67ac70dee5df6e312ddfc94ffc8a71cbca82c8b85336&amp;ver=6.9.5" id="main-scripts-js"></script>
+<script type="text/javascript" src="https://www.apnic.net/wp-content/themes/apnic/assets/scripts/navigation.js?v=c0abcc557ddafcb45d156ed2d6cebdd2d73e242edc0c47060b538f8c45bb4416&amp;ver=6.9.5" id="navigation-scripts-js"></script>
+<script type="text/javascript" src="https://www.apnic.net/wp-content/themes/apnic/assets/DataTables/datatables.min.js?v=1757643c3b2b85f9752c28ec4247507ec179c87dcbd1eb7e7313bd933612165d&amp;ver=6.9.5" id="datatables-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.apnic.net/wp-includes/js/wp-emoji-release.min.js?ver=6.9.5"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.apnic.net/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+<script src="/wp-content/themes/apnic/js/masonry.pkgd.min.js"></script>
+<script src="/wp-content/themes/apnic/js/imagesloaded.pkgd.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+    /*
+    imagesLoaded( '.home-post-grid', function(){
+        var elem = document.querySelector('.grid-blog');
+        var msnry = new Masonry( elem, {
+          // options
+          itemSelector: '.col'
+        });
+    })
+    */
+    
+    var $grid = $('.grid-blog').imagesLoaded( function() {
+        // init Masonry after all images have loaded
+        $grid.masonry({
+            itemSelector: '.col',
+            percentPosition: true
+        });
+    });
+})
+</script>
+                <script src="https://www.apnic.net/wp-content/themes/apnic/dist/index-vItcTb-5j.js"></script>
+            <script type="text/javascript">
+    (function ($) {
+        window.onloadCallback = function() {
+            var primarySearchs = document.getElementsByClassName("apnic-recaptcha-verification-submit");
+
+            for (const primarySearch of primarySearchs) {
+                grecaptcha.render(primarySearch, {
+                  sitekey: '6LeuDdQrAAAAAGW2F0N7h7oF3Bj-wjgiE8AMvA2A',
+                  callback: function (token) {
+                    var captchaResponse = document.createElement("input");
+                    captchaResponse.setAttribute('type', 'hidden');
+                    captchaResponse.setAttribute('name', 'captcha_response');
+                    captchaResponse.setAttribute('value', token);
+
+                    primarySearch.parentElement.appendChild(captchaResponse);
+                    $(primarySearch).closest('form').unbind('submit').submit();
+                  }
+                });
+            }
+
+            // In the situation where a user visits the search without a token
+            // contained within the request, we will attempt a resubmission to
+            // return back to search with a valid token.
+            if (window.forceReCaptchaOnDemand === true && primarySearchs.length > 0) {
+                primarySearchs[0].click();
+            }
+        };
+    })(window.jQuery);
+</script>
+
+<script src="https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script></body>
+</html>

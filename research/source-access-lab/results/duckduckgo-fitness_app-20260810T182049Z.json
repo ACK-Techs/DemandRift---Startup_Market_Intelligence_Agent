@@ -1,0 +1,529 @@
+{
+  "schema_version": "0.2",
+  "probed_at": "2026-08-10T18:20:49.398570+00:00",
+  "site_key": "duckduckgo",
+  "site_name": "DuckDuckGo",
+  "topic_key": "fitness_app",
+  "topic_queries": {
+    "simple_tr": "spor uygulaması",
+    "simple_en": "fitness app",
+    "complex": "fitness app OR \"workout app\" OR \"spor uygulaması\" \"calorie tracking\" OR \"workout planner\" competitors pricing reviews users 2024 OR 2025 -job -hiring -career"
+  },
+  "expected_native_signals": [
+    "web_search_results",
+    "snippets",
+    "outbound_links",
+    "instant_answers"
+  ],
+  "home_probe": {
+    "url": "https://duckduckgo.com/",
+    "reachability": {
+      "reachable": true,
+      "status": 200,
+      "elapsed_ms": 450,
+      "final_url": "https://duckduckgo.com/",
+      "error": null
+    },
+    "bot_friction": {
+      "level": "none",
+      "signals": []
+    },
+    "content_mode": {
+      "mode": "js_heavy",
+      "text_length": 169,
+      "script_count": 40,
+      "result_markers_present": false
+    }
+  },
+  "search_attempts": [
+    {
+      "strategy_id": "html",
+      "strategy_label": "HTML search endpoint",
+      "query_name": "simple_tr",
+      "query": "spor uygulaması",
+      "request_url": "https://html.duckduckgo.com/html/?q=spor+uygulamas%C4%B1",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 811,
+      "final_url": "https://html.duckduckgo.com/html/?q=spor+uygulamas%C4%B1",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "static_html_results",
+        "text_length": 3575,
+        "script_count": 0,
+        "result_markers_present": true
+      },
+      "signal_types": [
+        "app_listing",
+        "pricing",
+        "snippets",
+        "web_search_results"
+      ],
+      "quality": {
+        "score": 9,
+        "label": "full_results",
+        "usable_item_count": 10,
+        "reason": "ok"
+      },
+      "sample_items": [
+        {
+          "title": "Ev Egzersizleri - Ekipmansız - Google Play'de Uygulamalar",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dhomeworkout.homeworkouts.noequipment%26hl%3Dtr&rut=f236a677e768eb2febd249426866d9627535e278666b2321da3c565c7508f363",
+          "snippet": "Ev Egzersizleri, tüm ana kas gruplarınız için günlük egzersiz rutinleri sunar. Günde sadece birkaç dakikada, spor salonuna gitmeye gerek kalmaksızın kas yapabilir ve zinde kalabilirsiniz....",
+          "kind": "web_result"
+        },
+        {
+          "title": "Spor - Google Play'de Android Uygulamaları",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fcategory%2FSPORTS%3Fhl%3Dtr&rut=2b70bae3006815d80e3b9c06d8bb96dbdd53c38a146c9bda4242b6649eb59154",
+          "snippet": "En son çıkan milyonlarca Android uygulamas ı, oyun, müzik, film, TV, kitap, dergi ve diğer içeriklerin keyfini çıkarın. İstediğiniz zaman, istediğiniz yerde, tüm cihazlarınızda.",
+          "kind": "web_result"
+        },
+        {
+          "title": "Evde Spor ve Egzersiz için En İyi Mobil Uygulamalar",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.turk.net%2Fblog%2Fevde%2Dspor%2Dve%2Degzersiz%2Dicin%2Den%2Diyi%2Dmobil%2Duygulamalar%2F&rut=538dc9f18720c66dff8df18208588407794e6c2eba938721698b486da87db767",
+          "snippet": "Evde spor yaparken hangi mobil uygulamalar en etkili sonuçları sunar? Spor hedeflerinize ulaşmanıza yardımcı olacak en iyi egzersiz uygulamaları bu yazıda!",
+          "kind": "web_result"
+        },
+        {
+          "title": "Evde Spor Yapabileceğiniz En İyi 10 Uygulama - Tamindir",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.tamindir.com%2Fliste%2Fevde%2Dspor%2Duygulamalari%2F&rut=9ae13fee9634f00554b616ef4c8635f6d84eca16f348c05b13d2ab20e6000f6d",
+          "snippet": "Birbirinden etkili evde spor hareketlerinin yer aldığı en iyi mobil uygulamalara yer verdiğimiz bu listedeki uygulama ile sizin için en uygun programa ulaşabilirsiniz.",
+          "kind": "web_result"
+        },
+        {
+          "title": "Fitness & Spor Uygulaması - MentalUP",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.mentalup.net%2Ffitness%2Dve%2Dspor%2Duygulamasi&rut=1536ddeaf410e7729cc1982e482306285f0d5e7a0e19725c425815e21af91cbf",
+          "snippet": "MentalUP, yetişkinler ve çocuklar için en sevilen fitness uygulaması oldu. Evde spor yapmak isteyen herkes için ideal. Detaylı incele, ücretsiz başla.",
+          "kind": "web_result"
+        }
+      ]
+    },
+    {
+      "strategy_id": "html",
+      "strategy_label": "HTML search endpoint",
+      "query_name": "simple_en",
+      "query": "fitness app",
+      "request_url": "https://html.duckduckgo.com/html/?q=fitness+app",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 934,
+      "final_url": "https://html.duckduckgo.com/html/?q=fitness+app",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "static_html_results",
+        "text_length": 3301,
+        "script_count": 0,
+        "result_markers_present": true
+      },
+      "signal_types": [
+        "app_listing",
+        "pricing",
+        "reviews",
+        "snippets",
+        "web_search_results"
+      ],
+      "quality": {
+        "score": 9,
+        "label": "full_results",
+        "usable_item_count": 10,
+        "reason": "ok"
+      },
+      "sample_items": [
+        {
+          "title": "Fitness App: Gym Workout Plan - Apps on Google Play",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dfitness.online.app%26hl%3Den&rut=9b2c96a022a9b2461bb4ee9ff4802fb88a7077eb1d78a3681e684649ebc4c786",
+          "snippet": "This fitness app stands out from other free gym workout apps , as it has a gym progress tracker and a workout planner that allows you to have your own workout diary, maintain your workout...",
+          "kind": "web_result"
+        },
+        {
+          "title": "Health & Fitness - Android Apps on Google Play",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fcategory%2FHEALTH_AND_FITNESS%3Fhl%3Den&rut=8d09e729b6a62ef0c709da90f38c8004fd673a5604ef0a78920418dd2cba315a",
+          "snippet": "Enjoy millions of the latest Android apps , games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your devices.",
+          "kind": "web_result"
+        },
+        {
+          "title": "Best Workout And Fitness Apps Of 2026 - Forbes Health",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.forbes.com%2Fhealth%2Fweight%2Dloss%2Fbest%2Dfitness%2Dapps%2F&rut=295ca7156bc3af7b0002fc815382bb90ac2ed3582ddd11a8230f61ce4ddb3656",
+          "snippet": "Forbes Health reviews the best workout and fitness apps of 2024, based on cost, key features and more. Explore our top-rated apps worth downloading.",
+          "kind": "web_result"
+        },
+        {
+          "title": "Ağırsağlam - Fitness'ta Altın Standart | Program ve Koçluk",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.agirsaglam.com%2F&rut=ff0d650ac026c84f17a36724f412f395d79b6ad850071ab6fab699652123e3e8",
+          "snippet": "Türkiye'nin en güçlü fitness platformu! Bilimsel rehberleri, online koçluk ve programlarla hedeflerine ulaş. Ağırsağlam App şimdi yayında!",
+          "kind": "web_result"
+        },
+        {
+          "title": "Apple Fitness+ - Apple",
+          "url": "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.apple.com%2Fapple%2Dfitness%2Dplus%2F&rut=b07b96b50e9ea17ae84e599b6b735276246da347b4529f1eeee08f573d82018b",
+          "snippet": "Track your fitness journey, learn tips from trainers, and get personalized recommendations based on your activity — all in the Summary tab on iPhone. Earn Fitness+ awards for your accomplishments, track your progress, and see which activities will bring you closer to your next ac",
+          "kind": "web_result"
+        }
+      ]
+    },
+    {
+      "strategy_id": "html",
+      "strategy_label": "HTML search endpoint",
+      "query_name": "complex",
+      "query": "fitness app OR \"workout app\" OR \"spor uygulaması\" \"calorie tracking\" OR \"workout planner\" competitors pricing reviews users 2024 OR 2025 -job -hiring -career",
+      "request_url": "https://html.duckduckgo.com/html/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 845,
+      "final_url": "https://html.duckduckgo.com/html/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "static_html_results",
+        "text_length": 1128,
+        "script_count": 0,
+        "result_markers_present": true
+      },
+      "signal_types": [
+        "app_listing",
+        "pricing",
+        "reviews"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "lite",
+      "strategy_label": "Lite HTML search",
+      "query_name": "simple_tr",
+      "query": "spor uygulaması",
+      "request_url": "https://lite.duckduckgo.com/lite/?q=spor+uygulamas%C4%B1",
+      "status": 202,
+      "ok": true,
+      "elapsed_ms": 280,
+      "final_url": "https://lite.duckduckgo.com/lite/?q=spor+uygulamas%C4%B1",
+      "error": null,
+      "bot_friction": {
+        "level": "hard",
+        "signals": [
+          "status_202_challenge",
+          "anomaly_challenge"
+        ]
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 328,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [],
+      "quality": {
+        "score": 0,
+        "label": "failed_challenge",
+        "usable_item_count": 0,
+        "reason": "blocked_or_challenge"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "lite",
+      "strategy_label": "Lite HTML search",
+      "query_name": "simple_en",
+      "query": "fitness app",
+      "request_url": "https://lite.duckduckgo.com/lite/?q=fitness+app",
+      "status": 202,
+      "ok": true,
+      "elapsed_ms": 229,
+      "final_url": "https://lite.duckduckgo.com/lite/?q=fitness+app",
+      "error": null,
+      "bot_friction": {
+        "level": "hard",
+        "signals": [
+          "status_202_challenge",
+          "anomaly_challenge"
+        ]
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 328,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "app_listing"
+      ],
+      "quality": {
+        "score": 0,
+        "label": "failed_challenge",
+        "usable_item_count": 0,
+        "reason": "blocked_or_challenge"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "lite",
+      "strategy_label": "Lite HTML search",
+      "query_name": "complex",
+      "query": "fitness app OR \"workout app\" OR \"spor uygulaması\" \"calorie tracking\" OR \"workout planner\" competitors pricing reviews users 2024 OR 2025 -job -hiring -career",
+      "request_url": "https://lite.duckduckgo.com/lite/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "status": 202,
+      "ok": true,
+      "elapsed_ms": 234,
+      "final_url": "https://lite.duckduckgo.com/lite/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "error": null,
+      "bot_friction": {
+        "level": "hard",
+        "signals": [
+          "status_202_challenge",
+          "anomaly_challenge"
+        ]
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 328,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "app_listing",
+        "pricing",
+        "reviews"
+      ],
+      "quality": {
+        "score": 0,
+        "label": "failed_challenge",
+        "usable_item_count": 0,
+        "reason": "blocked_or_challenge"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "api",
+      "strategy_label": "Instant Answer JSON API",
+      "query_name": "simple_tr",
+      "query": "spor uygulaması",
+      "request_url": "https://api.duckduckgo.com/?q=spor+uygulamas%C4%B1&format=json&no_redirect=1&no_html=1",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 245,
+      "final_url": "https://api.duckduckgo.com/?q=spor+uygulamas%C4%B1&format=json&no_redirect=1&no_html=1",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 1252,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "json_api_payload"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "api",
+      "strategy_label": "Instant Answer JSON API",
+      "query_name": "simple_en",
+      "query": "fitness app",
+      "request_url": "https://api.duckduckgo.com/?q=fitness+app&format=json&no_redirect=1&no_html=1",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 216,
+      "final_url": "https://api.duckduckgo.com/?q=fitness+app&format=json&no_redirect=1&no_html=1",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 1252,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "json_api_payload"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "api",
+      "strategy_label": "Instant Answer JSON API",
+      "query_name": "complex",
+      "query": "fitness app OR \"workout app\" OR \"spor uygulaması\" \"calorie tracking\" OR \"workout planner\" competitors pricing reviews users 2024 OR 2025 -job -hiring -career",
+      "request_url": "https://api.duckduckgo.com/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career&format=json&no_redirect=1&no_html=1",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 220,
+      "final_url": "https://api.duckduckgo.com/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career&format=json&no_redirect=1&no_html=1",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "mixed",
+        "text_length": 1252,
+        "script_count": 0,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "json_api_payload"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "main",
+      "strategy_label": "Main web UI",
+      "query_name": "simple_tr",
+      "query": "spor uygulaması",
+      "request_url": "https://duckduckgo.com/?q=spor+uygulamas%C4%B1",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 292,
+      "final_url": "https://duckduckgo.com/?q=spor+uygulamas%C4%B1",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "js_heavy",
+        "text_length": 142,
+        "script_count": 26,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "news"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "main",
+      "strategy_label": "Main web UI",
+      "query_name": "simple_en",
+      "query": "fitness app",
+      "request_url": "https://duckduckgo.com/?q=fitness+app",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 265,
+      "final_url": "https://duckduckgo.com/?q=fitness+app",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "js_heavy",
+        "text_length": 138,
+        "script_count": 26,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "app_listing",
+        "news"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    },
+    {
+      "strategy_id": "main",
+      "strategy_label": "Main web UI",
+      "query_name": "complex",
+      "query": "fitness app OR \"workout app\" OR \"spor uygulaması\" \"calorie tracking\" OR \"workout planner\" competitors pricing reviews users 2024 OR 2025 -job -hiring -career",
+      "request_url": "https://duckduckgo.com/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "status": 200,
+      "ok": true,
+      "elapsed_ms": 263,
+      "final_url": "https://duckduckgo.com/?q=fitness+app+OR+%22workout+app%22+OR+%22spor+uygulamas%C4%B1%22+%22calorie+tracking%22+OR+%22workout+planner%22+competitors+pricing+reviews+users+2024+OR+2025+-job+-hiring+-career",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "js_heavy",
+        "text_length": 284,
+        "script_count": 26,
+        "result_markers_present": false
+      },
+      "signal_types": [
+        "app_listing",
+        "news",
+        "pricing",
+        "reviews"
+      ],
+      "quality": {
+        "score": 2,
+        "label": "door_open_no_results",
+        "usable_item_count": 0,
+        "reason": "no_extractable_items"
+      },
+      "sample_items": []
+    }
+  ],
+  "summary": {
+    "classification": "partial_script_researchable",
+    "best_strategy": "html",
+    "best_query": "simple_tr",
+    "best_score": 9,
+    "keyword_coverage": {
+      "simple_tr": true,
+      "simple_en": true,
+      "complex": false
+    },
+    "native_signals_found": [
+      "app_listing",
+      "json_api_payload",
+      "news",
+      "pricing",
+      "reviews",
+      "snippets",
+      "web_search_results"
+    ],
+    "usable_items_total": 20
+  }
+}

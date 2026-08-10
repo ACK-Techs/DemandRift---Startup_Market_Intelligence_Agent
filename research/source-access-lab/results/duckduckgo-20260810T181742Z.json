@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1",
+  "probed_at": "2026-08-10T18:17:42.257921+00:00",
+  "site_key": "duckduckgo",
+  "site_name": "DuckDuckGo",
+  "notes": "HTML endpoint used intentionally to test script-readable search results without a browser.",
+  "home_probe": {
+    "url": "https://duckduckgo.com/",
+    "reachability": {
+      "reachable": true,
+      "status": 200,
+      "elapsed_ms": 363,
+      "final_url": "https://duckduckgo.com/",
+      "error": null,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    "bot_friction": {
+      "level": "soft",
+      "signals": [
+        "login_wall"
+      ]
+    },
+    "content_mode": {
+      "mode": "static_html",
+      "text_length": 82447,
+      "script_count": 40,
+      "noscript_present": true,
+      "result_markers_present": true
+    }
+  },
+  "access_surface": {
+    "type": "public_html_search",
+    "search_url_template": "https://html.duckduckgo.com/html/?q={query}",
+    "auth_required_observed": false
+  },
+  "search_probes": [
+    {
+      "ran": true,
+      "query_name": "simple",
+      "query": "startup market research",
+      "request_url": "https://html.duckduckgo.com/html/?q=startup+market+research",
+      "status": 202,
+      "ok": true,
+      "elapsed_ms": 251,
+      "final_url": "https://html.duckduckgo.com/html/?q=startup+market+research",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "static_html",
+        "text_length": 4704,
+        "script_count": 0,
+        "noscript_present": false,
+        "result_markers_present": false
+      },
+      "extractability": {
+        "score": 4,
+        "label": "medium",
+        "useful_link_count": 0,
+        "sample_links": [],
+        "title_present": true,
+        "snippet_markers": 2
+      }
+    },
+    {
+      "ran": true,
+      "query_name": "complex",
+      "query": "B2B \"market intelligence\" SaaS pricing \"customer discovery\" Turkey OR Europe 2024 OR 2025 -job -hiring",
+      "request_url": "https://html.duckduckgo.com/html/?q=B2B+%22market+intelligence%22+SaaS+pricing+%22customer+discovery%22+Turkey+OR+Europe+2024+OR+2025+-job+-hiring",
+      "status": 202,
+      "ok": true,
+      "elapsed_ms": 229,
+      "final_url": "https://html.duckduckgo.com/html/?q=B2B+%22market+intelligence%22+SaaS+pricing+%22customer+discovery%22+Turkey+OR+Europe+2024+OR+2025+-job+-hiring",
+      "error": null,
+      "bot_friction": {
+        "level": "none",
+        "signals": []
+      },
+      "content_mode": {
+        "mode": "static_html",
+        "text_length": 4704,
+        "script_count": 0,
+        "noscript_present": false,
+        "result_markers_present": false
+      },
+      "extractability": {
+        "score": 4,
+        "label": "medium",
+        "useful_link_count": 0,
+        "sample_links": [],
+        "title_present": true,
+        "snippet_markers": 2
+      }
+    }
+  ],
+  "summary": {
+    "classification": "partial",
+    "home_reachable": true,
+    "worst_friction": "soft",
+    "best_extractability": "medium",
+    "simple_useful_links": 0,
+    "complex_useful_links": 0
+  },
+  "classification": "partial"
+}

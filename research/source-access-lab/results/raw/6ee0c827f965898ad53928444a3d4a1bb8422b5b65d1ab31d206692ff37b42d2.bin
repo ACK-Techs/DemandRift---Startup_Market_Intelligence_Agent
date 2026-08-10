@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>PyPI recent updates</title>
+    <link>https://pypi.org/</link>
+    <description>Recent updates to the Python Package Index</description>
+    <language>en</language>    <item>
+      <title>trustgraph-vertexai 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-vertexai/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:26 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-unstructured 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-unstructured/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:25 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-ocr 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-ocr/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:24 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-mcp 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-mcp/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:23 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-flow 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-flow/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:22 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-embeddings-hf 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-embeddings-hf/2.8.13/</link>
+      <description>HuggingFace embeddings support for TrustGraph.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:21 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-docling 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-docling/2.8.13/</link>
+      <description>TrustGraph document decoder powered by Docling — lightweight alternative to the unstructured-based decoder.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:20 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-cli 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-cli/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:19 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-bedrock 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-bedrock/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:17 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph-base 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph-base/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:16 GMT</pubDate>
+    </item>    <item>
+      <title>trustgraph 2.8.13</title>
+      <link>https://pypi.org/project/trustgraph/2.8.13/</link>
+      <description>TrustGraph provides a means to run a pipeline of flexible AI processing components in a flexible means to achieve a processing pipeline.</description>
+<author>security@trustgraph.ai</author>      <pubDate>Mon, 10 Aug 2026 21:32:15 GMT</pubDate>
+    </item>    <item>
+      <title>GyRAPH 1.0.2</title>
+      <link>https://pypi.org/project/gyraph/1.0.2/</link>
+      <description>A Python framework for signal processing on directed graphs.</description>
+<author>miki998chan@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:32:09 GMT</pubDate>
+    </item>    <item>
+      <title>linq-python 0.21.0</title>
+      <link>https://pypi.org/project/linq-python/0.21.0/</link>
+      <description>The official Python library for the linq-api-v3 API</description>
+<author>support@linq.com</author>      <pubDate>Mon, 10 Aug 2026 21:31:58 GMT</pubDate>
+    </item>    <item>
+      <title>mindroom 2026.8.32</title>
+      <link>https://pypi.org/project/mindroom/2026.8.32/</link>
+      <description>A universal interface for AI agents with persistent memory, where every conversation has a home</description>
+      <pubDate>Mon, 10 Aug 2026 21:31:56 GMT</pubDate>
+    </item>    <item>
+      <title>tastytrade-cli 1.5.0</title>
+      <link>https://pypi.org/project/tastytrade-cli/1.5.0/</link>
+      <description>An easy-to-use command line interface for Tastytrade!</description>
+<author>graeme@tastyware.dev</author>      <pubDate>Mon, 10 Aug 2026 21:31:27 GMT</pubDate>
+    </item>    <item>
+      <title>odoo-addon-l10n-br-sale-blanket-order 16.0.2.4.0</title>
+      <link>https://pypi.org/project/odoo-addon-l10n-br-sale-blanket-order/16.0.2.4.0/</link>
+      <description>Brazilian Localization Sale Blanket Order</description>
+<author>support@odoo-community.org</author>      <pubDate>Mon, 10 Aug 2026 21:31:20 GMT</pubDate>
+    </item>    <item>
+      <title>cadence-diff 1.1.0</title>
+      <link>https://pypi.org/project/cadence-diff/1.1.0/</link>
+      <description>Local, read-only QC and diff tool for cadence Excel/PowerPoint deliverables.</description>
+      <pubDate>Mon, 10 Aug 2026 21:31:20 GMT</pubDate>
+    </item>    <item>
+      <title>local-zotero-mcp 0.2.1</title>
+      <link>https://pypi.org/project/local-zotero-mcp/0.2.1/</link>
+      <description>MCP server for the Zotero desktop app&#39;s Local API</description>
+      <pubDate>Mon, 10 Aug 2026 21:31:17 GMT</pubDate>
+    </item>    <item>
+      <title>vllm 0.27.0</title>
+      <link>https://pypi.org/project/vllm/0.27.0/</link>
+      <description>A high-throughput and memory-efficient inference and serving engine for LLMs</description>
+      <pubDate>Mon, 10 Aug 2026 21:31:00 GMT</pubDate>
+    </item>    <item>
+      <title>hea-bench 2.3.2</title>
+      <link>https://pypi.org/project/hea-bench/2.3.2/</link>
+      <description>An open, interpretable calculator of high-entropy-alloy and high-entropy-oxide thermodynamic and geometric descriptors plus the canonical empirical phase-prediction rules.</description>
+<author>dfieser9@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:30:54 GMT</pubDate>
+    </item>    <item>
+      <title>nolito 0.1.0</title>
+      <link>https://pypi.org/project/nolito/0.1.0/</link>
+      <description>Python interface for the Nolio API</description>
+<author>thomas.vandal@umontreal.ca</author>      <pubDate>Mon, 10 Aug 2026 21:30:20 GMT</pubDate>
+    </item>    <item>
+      <title>numba-enzyme 0.1.2</title>
+      <link>https://pypi.org/project/numba-enzyme/0.1.2/</link>
+      <description>Differentiate Numba-compiled Python functions with the standalone Enzyme LLVM plugin.</description>
+      <pubDate>Mon, 10 Aug 2026 21:30:17 GMT</pubDate>
+    </item>    <item>
+      <title>trisum 0.0.0</title>
+      <link>https://pypi.org/project/trisum/0.0.0/</link>
+      <description>Reserved for the Trisum platform — unified software asset management, FinOps and AI token economics.</description>
+      <pubDate>Mon, 10 Aug 2026 21:29:55 GMT</pubDate>
+    </item>    <item>
+      <title>jupyterlab-rtclauncher 0.2.0</title>
+      <link>https://pypi.org/project/jupyterlab-rtclauncher/0.2.0/</link>
+      <description>JupyterLab Launcher tile that starts or stops a Research Platform project&#39;s shared real-time-collaboration server.</description>
+<author>info@navteca.com</author>      <pubDate>Mon, 10 Aug 2026 21:29:22 GMT</pubDate>
+    </item>    <item>
+      <title>oldaplib 0.7.9</title>
+      <link>https://pypi.org/project/oldaplib/0.7.9/</link>
+      <description>Open Media Access Server Library (Linked Open Data middleware/RESTApi)</description>
+<author>lukas.rosenthaler@unibas.ch</author>      <pubDate>Mon, 10 Aug 2026 21:28:59 GMT</pubDate>
+    </item>    <item>
+      <title>actrail 1.1.0</title>
+      <link>https://pypi.org/project/actrail/1.1.0/</link>
+      <description>Runtime policies for agents — the open-source edge SDK (capture + check + enrichment).</description>
+      <pubDate>Mon, 10 Aug 2026 21:28:50 GMT</pubDate>
+    </item>    <item>
+      <title>deepchem 2.8.1.dev20260810212806</title>
+      <link>https://pypi.org/project/deepchem/2.8.1.dev20260810212806/</link>
+      <description>Deep learning models for drug discovery,         quantum chemistry, and the life sciences.</description>
+      <pubDate>Mon, 10 Aug 2026 21:28:08 GMT</pubDate>
+    </item>    <item>
+      <title>cogito-dft 0.3.10</title>
+      <link>https://pypi.org/project/cogito-dft/0.3.10/</link>
+      <description>Crystal Orbital Guided Iteration To atomic-Orbitals (COGITO) finds an adaptive atomic orbital basis for a given density functional theory (DFT) run, and then decodes the atom and bond contributions to electronic structure.</description>
+      <pubDate>Mon, 10 Aug 2026 21:27:58 GMT</pubDate>
+    </item>    <item>
+      <title>ravel-hls 1.2.4</title>
+      <link>https://pypi.org/project/ravel-hls/1.2.4/</link>
+      <description>Rate-Aware Vectorized Engine for Low-latency FPGA inference</description>
+      <pubDate>Mon, 10 Aug 2026 21:27:35 GMT</pubDate>
+    </item>    <item>
+      <title>fluidattacks-core 9.26.0</title>
+      <link>https://pypi.org/project/fluidattacks-core/9.26.0/</link>
+      <description>Fluid Attacks Core Library</description>
+<author>development@fluidattacks.com</author>      <pubDate>Mon, 10 Aug 2026 21:27:26 GMT</pubDate>
+    </item>    <item>
+      <title>liveapisec 0.1.4</title>
+      <link>https://pypi.org/project/liveapisec/0.1.4/</link>
+      <description>LiveAPISec Developer API client — push API specs, run security scans and gate your CI/CD from the command line.</description>
+      <pubDate>Mon, 10 Aug 2026 21:27:25 GMT</pubDate>
+    </item>    <item>
+      <title>kern-sandbox 0.1.21</title>
+      <link>https://pypi.org/project/kern-sandbox/0.1.21/</link>
+      <description>kern is a fast, rootless sandbox and virtual resource runtime for any workload, including untrusted and AI-generated code; kern-sandbox is its Python binding. Run untrusted or agent-generated code (Python/JS/Bash) in a real, kernel-enforced box in single-digit milliseconds, with no cloud, no account and no VM.</description>
+      <pubDate>Mon, 10 Aug 2026 21:27:05 GMT</pubDate>
+    </item>    <item>
+      <title>lightfall 0.2.0</title>
+      <link>https://pypi.org/project/lightfall/0.2.0/</link>
+      <description>Lightfall - control system for the ALS facility</description>
+      <pubDate>Mon, 10 Aug 2026 21:26:36 GMT</pubDate>
+    </item>    <item>
+      <title>bettermemory 5.1.1</title>
+      <link>https://pypi.org/project/bettermemory/5.1.1/</link>
+      <description>Memory you can verify — a trust layer between an AI coding agent and its own past: per-hit staleness verdicts, claim-level use attribution, measured effectiveness, episodic run-state. MCP-native, local-first, MIT, no cloud.</description>
+      <pubDate>Mon, 10 Aug 2026 21:26:09 GMT</pubDate>
+    </item>    <item>
+      <title>clervo-sdk 0.3.1</title>
+      <link>https://pypi.org/project/clervo-sdk/0.3.1/</link>
+      <description>Typed client for live Clervo Search and provider-neutral AI.</description>
+      <pubDate>Mon, 10 Aug 2026 21:25:40 GMT</pubDate>
+    </item>    <item>
+      <title>oxford-ledge-mcp 3.1.1</title>
+      <link>https://pypi.org/project/oxford-ledge-mcp/3.1.1/</link>
+      <description>MCP server for Oxford Ledge financial terminal — 13 gov-public-data tools for SEC filings, fundamentals, institutional &amp; insider ownership, macro rates, and BDC/private-credit holdings from Claude Desktop</description>
+<author>contact@oxfordledge.com</author>      <pubDate>Mon, 10 Aug 2026 21:25:34 GMT</pubDate>
+    </item>    <item>
+      <title>splotbf 1.0.13</title>
+      <link>https://pypi.org/project/splotbf/1.0.13/</link>
+      <description>splotbf is splot.dev&#39;s brainf implementation.</description>
+      <pubDate>Mon, 10 Aug 2026 21:25:34 GMT</pubDate>
+    </item>    <item>
+      <title>pymbusparser 0.4.2</title>
+      <link>https://pypi.org/project/pymbusparser/0.4.2/</link>
+      <description>Python bindings for m-bus-parser written in Rust</description>
+      <pubDate>Mon, 10 Aug 2026 21:25:10 GMT</pubDate>
+    </item>    <item>
+      <title>kpress 0.3.2</title>
+      <link>https://pypi.org/project/kpress/0.3.2/</link>
+      <description>Reusable document rendering and publishing layer for KPress-format documents.</description>
+<author>joshua@cal.berkeley.edu</author>      <pubDate>Mon, 10 Aug 2026 21:24:59 GMT</pubDate>
+    </item>    <item>
+      <title>ai-baton-tool 0.0.3</title>
+      <link>https://pypi.org/project/ai-baton-tool/0.0.3/</link>
+      <description>Portable, auditable, file-first handoff protocol for AI assistants.</description>
+      <pubDate>Mon, 10 Aug 2026 21:24:46 GMT</pubDate>
+    </item>    <item>
+      <title>risearch-tauso 1.4.0</title>
+      <link>https://pypi.org/project/risearch-tauso/1.4.0/</link>
+      <description>Prebuilt RIsearch1 binary (RNA-RNA / RNA-DNA / DNA-DNA interaction search), tauso fork, packaged for Python.</description>
+      <pubDate>Mon, 10 Aug 2026 21:24:30 GMT</pubDate>
+    </item>    <item>
+      <title>mdhtml 0.1.30</title>
+      <link>https://pypi.org/project/mdhtml/0.1.30/</link>
+      <description>A bounded-time, Pandoc-leaning Markdown parser with GFM, Extra/kramdown, math, fenced divs, and MDHTML output.</description>
+<author>j@fast.ai</author>      <pubDate>Mon, 10 Aug 2026 21:24:21 GMT</pubDate>
+    </item>    <item>
+      <title>johnston 0.21.0</title>
+      <link>https://pypi.org/project/johnston/0.21.0/</link>
+      <description>Textual AI Johnston Application</description>
+      <pubDate>Mon, 10 Aug 2026 21:23:53 GMT</pubDate>
+    </item>    <item>
+      <title>H2MM-C 2.3.0</title>
+      <link>https://pypi.org/project/h2mm-c/2.3.0/</link>
+      <description>C level implementation of H2MM algorithm by Pirchi. 2016</description>
+<author>harripd@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:23:29 GMT</pubDate>
+    </item>    <item>
+      <title>ocacaptcha 0.2.59</title>
+      <link>https://pypi.org/project/ocacaptcha/0.2.59/</link>
+      <description>This library for solving TikTok captcha via OCA captcha service</description>
+<author>oneclickactionsoft@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:23:21 GMT</pubDate>
+    </item>    <item>
+      <title>fluidattacks-core 9.27.0</title>
+      <link>https://pypi.org/project/fluidattacks-core/9.27.0/</link>
+      <description>Fluid Attacks Core Library</description>
+<author>development@fluidattacks.com</author>      <pubDate>Mon, 10 Aug 2026 21:23:09 GMT</pubDate>
+    </item>    <item>
+      <title>vladder 1.0.0rc23</title>
+      <link>https://pypi.org/project/vladder/1.0.0rc23/</link>
+      <description>Verified hardware-aware information-flow superoptimization for systems languages</description>
+      <pubDate>Mon, 10 Aug 2026 21:22:53 GMT</pubDate>
+    </item>    <item>
+      <title>agent-sanitizer 2.34.10</title>
+      <link>https://pypi.org/project/agent-sanitizer/2.34.10/</link>
+      <description>Python client for agent-sanitizer: a thin bridge to the Node.js CLI for byte-identical sanitization verdicts.</description>
+      <pubDate>Mon, 10 Aug 2026 21:22:35 GMT</pubDate>
+    </item>    <item>
+      <title>deadline-cloud-for-houdini 0.7.12</title>
+      <link>https://pypi.org/project/deadline-cloud-for-houdini/0.7.12/</link>
+      <description>AWS Deadline Cloud for Houdini</description>
+      <pubDate>Mon, 10 Aug 2026 21:22:25 GMT</pubDate>
+    </item>    <item>
+      <title>openscad-cpp-evaluator 0.28.2</title>
+      <link>https://pypi.org/project/openscad-cpp-evaluator/0.28.2/</link>
+      <description>C++ OpenSCAD evaluator with Python bindings</description>
+      <pubDate>Mon, 10 Aug 2026 21:22:02 GMT</pubDate>
+    </item>    <item>
+      <title>django-pgschemas 1.3.1</title>
+      <link>https://pypi.org/project/django-pgschemas/1.3.1/</link>
+      <description>Django multi-tenancy through Postgres schemas</description>
+<author>lorinkoz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:22:01 GMT</pubDate>
+    </item>    <item>
+      <title>polars-qr 0.3.1</title>
+      <link>https://pypi.org/project/polars-qr/0.3.1/</link>
+      <description>Dense numerical operations for Polars, backed by faer.</description>
+      <pubDate>Mon, 10 Aug 2026 21:22:00 GMT</pubDate>
+    </item>    <item>
+      <title>mdhtml 0.1.29</title>
+      <link>https://pypi.org/project/mdhtml/0.1.29/</link>
+      <description>A bounded-time, Pandoc-leaning Markdown parser with GFM, Extra/kramdown, math, fenced divs, and MDHTML output.</description>
+<author>j@fast.ai</author>      <pubDate>Mon, 10 Aug 2026 21:21:44 GMT</pubDate>
+    </item>    <item>
+      <title>symeraseme 0.10.3</title>
+      <link>https://pypi.org/project/symeraseme/0.10.3/</link>
+      <description>Automated data broker removal tool — close your accounts, erase your data.</description>
+<author>daniel@ohmyopen.com</author>      <pubDate>Mon, 10 Aug 2026 21:21:18 GMT</pubDate>
+    </item>    <item>
+      <title>lincl 4.0.2</title>
+      <link>https://pypi.org/project/lincl/4.0.2/</link>
+      <description>Use installed Linux commands as Python callables</description>
+<author>christfriedbalizou@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:20:31 GMT</pubDate>
+    </item>    <item>
+      <title>lograil 0.7.0</title>
+      <link>https://pypi.org/project/lograil/0.7.0/</link>
+      <description>Rich logging, status, progress-line, and log tail helpers</description>
+      <pubDate>Mon, 10 Aug 2026 21:20:07 GMT</pubDate>
+    </item>    <item>
+      <title>secchi 0.1.4</title>
+      <link>https://pypi.org/project/secchi/0.1.4/</link>
+      <description>Beautiful TUI dashboard to monitor packages across PyPI, crates.io, and npm</description>
+      <pubDate>Mon, 10 Aug 2026 21:19:57 GMT</pubDate>
+    </item>    <item>
+      <title>treeparse 0.3.4</title>
+      <link>https://pypi.org/project/treeparse/0.3.4/</link>
+      <description>Intuitive CLI framework using argparse, rich, and pydantic</description>
+      <pubDate>Mon, 10 Aug 2026 21:19:34 GMT</pubDate>
+    </item>    <item>
+      <title>ha-mcp-dev 8.2.0.dev2307</title>
+      <link>https://pypi.org/project/ha-mcp-dev/8.2.0.dev2307/</link>
+      <description>Home Assistant MCP Server - Complete control of Home Assistant through MCP</description>
+<author>github@qc-h.net</author>      <pubDate>Mon, 10 Aug 2026 21:19:26 GMT</pubDate>
+    </item>    <item>
+      <title>apilift 0.16.5</title>
+      <link>https://pypi.org/project/apilift/0.16.5/</link>
+      <description>Persistent local CLI interfaces over authenticated web-product APIs</description>
+      <pubDate>Mon, 10 Aug 2026 21:19:10 GMT</pubDate>
+    </item>    <item>
+      <title>memorysync 1.3.0</title>
+      <link>https://pypi.org/project/memorysync/1.3.0/</link>
+      <description>Official Python client for the MemorySync API.</description>
+      <pubDate>Mon, 10 Aug 2026 21:19:07 GMT</pubDate>
+    </item>    <item>
+      <title>litesearch 0.1.23</title>
+      <link>https://pypi.org/project/litesearch/0.1.23/</link>
+      <description>search through files with fts5, vectors and get reranked results. Fast</description>
+<author>karthik.rajgopal@hotmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:18:57 GMT</pubDate>
+    </item>    <item>
+      <title>heylead 0.10.191</title>
+      <link>https://pypi.org/project/heylead/0.10.191/</link>
+      <description>MCP-native autonomous LinkedIn SDR. Your AI sales rep, one command to fill your pipeline.</description>
+<author>hello@heylead.dev</author>      <pubDate>Mon, 10 Aug 2026 21:18:55 GMT</pubDate>
+    </item>    <item>
+      <title>renson-healthbox-go 0.1.0</title>
+      <link>https://pypi.org/project/renson-healthbox-go/0.1.0/</link>
+      <description>Async client for the local Renson Healthbox Go API</description>
+      <pubDate>Mon, 10 Aug 2026 21:18:55 GMT</pubDate>
+    </item>    <item>
+      <title>jupyterhub 5.5.1</title>
+      <link>https://pypi.org/project/jupyterhub/5.5.1/</link>
+      <description>JupyterHub: A multi-user server for Jupyter notebooks</description>
+<author>jupyter@googlegroups.com</author>      <pubDate>Mon, 10 Aug 2026 21:18:45 GMT</pubDate>
+    </item>    <item>
+      <title>clervo-sdk 0.3.0</title>
+      <link>https://pypi.org/project/clervo-sdk/0.3.0/</link>
+      <description>Typed client for live Clervo Search and provider-neutral AI.</description>
+      <pubDate>Mon, 10 Aug 2026 21:18:41 GMT</pubDate>
+    </item>    <item>
+      <title>agentgov-core 0.1.0</title>
+      <link>https://pypi.org/project/agentgov-core/0.1.0/</link>
+      <description>Shared invoke-boundary core for agent-governance-demo: host adapters, entitlement/policy resolution, the governance envelope, and the registry Postgres schema. Not published to PyPI yet — built as a local wheel and installed into registry-api/services-workflows images (Phase 5 §5.8).</description>
+<author>oss@receptor.bio</author>      <pubDate>Mon, 10 Aug 2026 21:18:15 GMT</pubDate>
+    </item>    <item>
+      <title>fastmcp 3.4.7</title>
+      <link>https://pypi.org/project/fastmcp/3.4.7/</link>
+      <description>The fast, Pythonic way to build MCP servers and clients.</description>
+      <pubDate>Mon, 10 Aug 2026 21:17:51 GMT</pubDate>
+    </item>    <item>
+      <title>tscv-vision 0.1.1</title>
+      <link>https://pypi.org/project/tscv-vision/0.1.1/</link>
+      <description>Computer-vision feature engineering for 1D time series (NumPy-first).</description>
+<author>dfr@esmad.ipp.pt</author>      <pubDate>Mon, 10 Aug 2026 21:17:49 GMT</pubDate>
+    </item>    <item>
+      <title>podpislon 1.1.0</title>
+      <link>https://pypi.org/project/podpislon/1.1.0/</link>
+      <description>SDK для работы с API сервиса электронной подписи Podpislon</description>
+<author>support@podpislon.ru</author>      <pubDate>Mon, 10 Aug 2026 21:17:48 GMT</pubDate>
+    </item>    <item>
+      <title>gitpr-cli 0.0.34</title>
+      <link>https://pypi.org/project/gitpr-cli/0.0.34/</link>
+      <description>AI-powered PR automation, commit messages, and code review (Gemini, DeepSeek, and Ollama)</description>
+<author>contato@natanfiuza.dev.br</author>      <pubDate>Mon, 10 Aug 2026 21:17:47 GMT</pubDate>
+    </item>    <item>
+      <title>fastmcp-remote 3.4.7</title>
+      <link>https://pypi.org/project/fastmcp-remote/3.4.7/</link>
+      <description>A Python stdio bridge for remote MCP servers, powered by FastMCP.</description>
+      <pubDate>Mon, 10 Aug 2026 21:17:47 GMT</pubDate>
+    </item>    <item>
+      <title>vems 0.1.18</title>
+      <link>https://pypi.org/project/vems/0.1.18/</link>
+      <description>funciones cool que uso en el dia a dia y esas cosas</description>
+      <pubDate>Mon, 10 Aug 2026 21:17:45 GMT</pubDate>
+    </item>    <item>
+      <title>fastmcp-slim 3.4.7</title>
+      <link>https://pypi.org/project/fastmcp-slim/3.4.7/</link>
+      <description>The dependency-slim FastMCP package.</description>
+      <pubDate>Mon, 10 Aug 2026 21:17:27 GMT</pubDate>
+    </item>    <item>
+      <title>fin-eda 2.0.0</title>
+      <link>https://pypi.org/project/fin-eda/2.0.0/</link>
+      <description>Comprehensive financial Exploratory Data Analysis for tickers, price series, and portfolios</description>
+<author>jr1concepcion@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:17:24 GMT</pubDate>
+    </item>    <item>
+      <title>amipilot 1.1.0</title>
+      <link>https://pypi.org/project/amipilot/1.1.0/</link>
+      <description>Host-side client for AmiPilot: object-level GUI automation for classic AmigaOS</description>
+<author>simond@irrelevant.org</author>      <pubDate>Mon, 10 Aug 2026 21:17:17 GMT</pubDate>
+    </item>    <item>
+      <title>claude-coordinator 0.5.29</title>
+      <link>https://pypi.org/project/claude-coordinator/0.5.29/</link>
+      <description>Coordinate Claude Code workers across multiple machines and repos.</description>
+<author>johnfdonaghy@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:16:50 GMT</pubDate>
+    </item>    <item>
+      <title>pUnit 1.13.5</title>
+      <link>https://pypi.org/project/punit/1.13.5/</link>
+      <description>A modernized unit-test framework for Python.</description>
+<author>mrshaunwilson@msn.com</author>      <pubDate>Mon, 10 Aug 2026 21:16:46 GMT</pubDate>
+    </item>    <item>
+      <title>pytypehint 1.0.0</title>
+      <link>https://pypi.org/project/pytypehint/1.0.0/</link>
+      <description>Compiles Python type hints into strict, inspectable, portable contracts</description>
+      <pubDate>Mon, 10 Aug 2026 21:16:32 GMT</pubDate>
+    </item>    <item>
+      <title>NEMO-CE 8.0.4</title>
+      <link>https://pypi.org/project/nemo-ce/8.0.4/</link>
+      <description>NEMO Community Edition is a laboratory logistics web application based of NEMO. Use it to schedule reservations, control tool access, track maintenance issues, and more.</description>
+<author>atlantis@atlantislabs.io</author>      <pubDate>Mon, 10 Aug 2026 21:16:27 GMT</pubDate>
+    </item>    <item>
+      <title>sase-core-rs 0.24.2</title>
+      <link>https://pypi.org/project/sase-core-rs/0.24.2/</link>
+      <description>Rust core for the sase TUI/CLI: PyO3 bindings exposing the Patch parser, query language, agent-artifact scan, status state machine, and git-query parsers.</description>
+      <pubDate>Mon, 10 Aug 2026 21:15:53 GMT</pubDate>
+    </item>    <item>
+      <title>mycord 1.1.6</title>
+      <link>https://pypi.org/project/mycord/1.1.6/</link>
+      <description>A minimalist Discord bot framework that communicates directly with Discord Gateway and REST.</description>
+<author>amri.supreme123@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:15:41 GMT</pubDate>
+    </item>    <item>
+      <title>vlrdevapi 2.2.0</title>
+      <link>https://pypi.org/project/vlrdevapi/2.2.0/</link>
+      <description>A Python library to scrape data from vlr.gg</description>
+      <pubDate>Mon, 10 Aug 2026 21:15:28 GMT</pubDate>
+    </item>    <item>
+      <title>fdstools 2.2.0</title>
+      <link>https://pypi.org/project/fdstools/2.2.0/</link>
+      <description>Forensic DNA Sequencing Tools</description>
+<author>j.hoogenboom@nfi.nl</author>      <pubDate>Mon, 10 Aug 2026 21:15:04 GMT</pubDate>
+    </item>    <item>
+      <title>pay402 0.2.1</title>
+      <link>https://pypi.org/project/pay402/0.2.1/</link>
+      <description>Buy anything behind an HTTP 402. No account, no API key.</description>
+      <pubDate>Mon, 10 Aug 2026 21:14:50 GMT</pubDate>
+    </item>    <item>
+      <title>hol-guard 3.0.0a75</title>
+      <link>https://pypi.org/project/hol-guard/3.0.0a75/</link>
+      <description>Open-source antivirus and runtime protection for AI agents, tools, MCP servers, plugins, skills, and package installs.</description>
+<author>support@hol.org</author>      <pubDate>Mon, 10 Aug 2026 21:14:47 GMT</pubDate>
+    </item>    <item>
+      <title>raimad 1.3.1</title>
+      <link>https://pypi.org/project/raimad/1.3.1/</link>
+      <description>RAIMAD Astronomical Instrument MAsk Designer</description>
+<author>maybetree48@proton.me</author>      <pubDate>Mon, 10 Aug 2026 21:14:44 GMT</pubDate>
+    </item>    <item>
+      <title>kx-cli 0.3.1</title>
+      <link>https://pypi.org/project/kx-cli/0.3.1/</link>
+      <description>kubectl wrapper with index-based resource selection</description>
+      <pubDate>Mon, 10 Aug 2026 21:14:44 GMT</pubDate>
+    </item>    <item>
+      <title>ltcai 11.2.0</title>
+      <link>https://pypi.org/project/ltcai/11.2.0/</link>
+      <description>Lattice AI — local-first Digital Brain that keeps your knowledge durable across any AI model.</description>
+      <pubDate>Mon, 10 Aug 2026 21:14:34 GMT</pubDate>
+    </item>    <item>
+      <title>ucec 0.1</title>
+      <link>https://pypi.org/project/ucec/0.1/</link>
+      <description>Pure Python UCEC library.</description>
+      <pubDate>Mon, 10 Aug 2026 21:13:55 GMT</pubDate>
+    </item>    <item>
+      <title>animica 9.6.0</title>
+      <link>https://pypi.org/project/animica/9.6.0/</link>
+      <description>Animica blockchain CLI and client libraries — node, wallet, miner, contracts, useful-work jobs, and Animica Studio serverless compute.</description>
+      <pubDate>Mon, 10 Aug 2026 21:13:47 GMT</pubDate>
+    </item>    <item>
+      <title>plotbb 0.9.2</title>
+      <link>https://pypi.org/project/plotbb/0.9.2/</link>
+      <description>Bloomberg-inspired chart styling for Matplotlib</description>
+      <pubDate>Mon, 10 Aug 2026 21:13:26 GMT</pubDate>
+    </item>    <item>
+      <title>surrealdb-embedded 3.0.0b4</title>
+      <link>https://pypi.org/project/surrealdb-embedded/3.0.0b4/</link>
+      <description>SurrealDB embedded database extension for the surrealdb Python SDK</description>
+      <pubDate>Mon, 10 Aug 2026 21:12:37 GMT</pubDate>
+    </item>    <item>
+      <title>not1mm 26.8.10</title>
+      <link>https://pypi.org/project/not1mm/26.8.10/</link>
+      <description>NOT1MM Logger</description>
+<author>michael.bridak@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:12:28 GMT</pubDate>
+    </item>    <item>
+      <title>verify-run 0.1.0a4</title>
+      <link>https://pypi.org/project/verify-run/0.1.0a4/</link>
+      <description>A local, deterministic action gate for consequential software.</description>
+      <pubDate>Mon, 10 Aug 2026 21:12:24 GMT</pubDate>
+    </item>    <item>
+      <title>gamesheet-sdk-py 0.4.17</title>
+      <link>https://pypi.org/project/gamesheet-sdk-py/0.4.17/</link>
+      <description>Unofficial Python SDK and CLI for the GameSheet Inc. platform — automates WebUI procedures where a native API is absent.</description>
+<author>bdperkin@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 21:12:19 GMT</pubDate>
+    </item>    <item>
+      <title>brnrd 0.6.3</title>
+      <link>https://pypi.org/project/brnrd/0.6.3/</link>
+      <description>Structured guardrails for AI agent work, managed from a chat</description>
+      <pubDate>Mon, 10 Aug 2026 21:12:19 GMT</pubDate>
+    </item>    <item>
+      <title>bedrock-image-mcp-server 0.4.0</title>
+      <link>https://pypi.org/project/bedrock-image-mcp-server/0.4.0/</link>
+      <description>Model Context Protocol (MCP) server for Amazon Bedrock image generation (Community Fork)</description>
+<author>kalleeh@users.noreply.github.com</author>      <pubDate>Mon, 10 Aug 2026 21:12:10 GMT</pubDate>
+    </item>    <item>
+      <title>distro-support 2026.8.10</title>
+      <link>https://pypi.org/project/distro-support/2026.8.10/</link>
+      <description>Get information about support dates for Linux distributions</description>
+<author>alex@lowe.dev</author>      <pubDate>Mon, 10 Aug 2026 21:12:08 GMT</pubDate>
+    </item>    <item>
+      <title>axilog 0.3.1</title>
+      <link>https://pypi.org/project/axilog/0.3.1/</link>
+      <description>Python bindings (PyO3) for axilog&#39;s Rust GW2 arcdps WvW parsing core</description>
+      <pubDate>Mon, 10 Aug 2026 21:12:02 GMT</pubDate>
+    </item>  </channel>
+</rss>

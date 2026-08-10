@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="1.09" name="version"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="AFRINIC is responsible for the allocation and management of Internet numbers (IPv4, IPv6 &amp; ASNs) resources in Africa." name="description"/>
+<meta content="ipv4, ipv6, asn, internet, africa, governance, community, head office in Mauritius" name="keywords"/>
+<title>AFRINIC - Regional Internet Registry for Africa</title>
+<link href="assets/png/favicon.png" rel="shortcut icon" type="image/png"/>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<!-- Main Stylesheet -->
+<link href="css/style.min.css?v=9" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AFRINIC",
+  "alternateName": "African Network Information Centre",
+  "url": "index.html",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "index.html/assets/png/logo.png",
+    "width": 200,
+    "height": 60
+  },
+  "description": "AFRINIC is the Regional Internet Registry (RIR) for Africa, responsible for allocating and managing IPv4, IPv6, and ASN Internet number resources.",
+  "foundingDate": "2004",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11th Floor, Standard Chartered Tower, Cybercity",
+    "addressLocality": "Ebene",
+    "addressCountry": "MU"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "hostmaster@afrinic.net",
+    "url": "index.html/contact.html"
+  },
+  "sameAs": [
+    "https://www.facebook.com/afrinic",
+    "https://twitter.com/afrinic",
+    "https://www.linkedin.com/company/afrinic",
+    "https://www.youtube.com/c/AFRINIC",
+    "https://www.flickr.com/photos/afrinic/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AFRINIC",
+  "url": "index.html",
+  "description": "Official website of AFRINIC — the Regional Internet Registry for Africa",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AFRINIC"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ==========================================================================
+       TOP UTILITY BAR
+       ========================================================================== -->
+<!-- TOP UTILITY BAR -->
+<!-- TOP UTILITY BAR -->
+<!-- TOP UTILITY BAR -->
+<section class="utility-bar">
+<div class="container flex justify-end align-center">
+<div class="quick-links">
+<a href="https://whois-web.afrinic.net" rel="noopener noreferrer" target="_blank"><strong>WHOIS SEARCH</strong></a>
+<a href="https://my.afrinic.net/login" rel="noopener noreferrer" target="_blank"><strong>LOGIN TO MYAFRINIC</strong></a>
+</div>
+</div>
+</section>
+<!-- ==========================================================================
+       MAIN HEADER & STICKY NAVBAR
+       ========================================================================== -->
+<header class="main-header">
+<div class="container header-container">
+<a class="logo" href="index.html">
+<img alt="AFRINIC Logo" src="assets/png/logo.png" width="202" height="85"/>
+</a>
+<!-- Desktop Menu -->
+<nav aria-label="Main Navigation" class="nav-menu">
+<div class="nav-item">
+<a class="nav-link" href="about.html">About us <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="about.html">About Us</a></li>
+<li class="dropdown-item"><a href="history.html">History</a></li>
+<li class="dropdown-item"><a href="service-region.html">Service Region</a></li>
+<li class="dropdown-item"><a href="https://stats.afrinic.net/" rel="noopener noreferrer" target="_blank">Statistics</a></li>
+<li class="dropdown-item"><a href="agmm.html">AGMM</a></li>
+<li class="dropdown-item"><a href="sgmm-2026.html">SGMM 2026</a></li>
+<li class="dropdown-item"><a href="governance.html">Governance</a></li>
+<li class="dropdown-item"><a href="corporate-documents.html">Corporate Documents</a></li>
+<li class="dropdown-item"><a href="careers.html">Careers</a></li>
+<li class="dropdown-item"><a href="vacancy.html">Vacancies</a></li>
+<li class="dropdown-item"><a href="team.html">Our Team</a></li>
+<li class="dropdown-item"><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="membership.html">Membership <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="membership.html">Membership Services</a></li>
+<li class="dropdown-item"><a href="fees-payment.html">Fees Schedule</a></li>
+<li class="dropdown-item"><a href="membership-agreements.html">Membership Agreements</a></li>
+<li class="dropdown-item"><a href="legacy-resource-holders.html">Legacy Resource Holders</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="resources.html">Our Work <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="resources.html">Resources Management</a></li>
+<li class="dropdown-item"><a href="reverse-dns.html">Reverse DNS</a></li>
+<li class="dropdown-item"><a href="resource-certification.html">Resource Certification</a></li>
+<li class="dropdown-item"><a href="internet-routing-registry.html">Internet Routing Registry (IRR)</a></li>
+<li class="dropdown-item"><a href="exhaustion.html">IPv4 Exhaustion</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="#">Participate <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="code.html">Code of Conduct</a></li>
+<li class="dropdown-item"><a href="email.html">Email &amp; Mailing Lists</a></li>
+<li class="dropdown-item"><a href="committees.html">Committees</a></li>
+<li class="dropdown-item"><a href="afgwg.html">Government Working Group (AFGWG)</a></li>
+<li class="dropdown-item"><a href="internet-development-programs.html">Internet Development Programs</a></li>
+<li class="dropdown-item"><a href="icp-2-review.html">ICP 2 Review</a></li>
+<li class="dropdown-item"><a href="policy.html">Policy</a></li>
+<li class="dropdown-item"><a href="https://afrinic.academy/" target="_blank" rel="noopener noreferrer">Training Workshop</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="support.html">Support <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="support.html">Support &amp; FAQs</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="#">Event <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="webinar-series.html">Webinar Series</a></li>
+<li class="dropdown-item"><a href="call-for-hosting-2026.html">Call for Hosting</a></li>
+</ul>
+</div>
+<div class="nav-item">
+<a class="nav-link" href="#">Media <i class="fa fa-angle-down"></i></a>
+<ul class="nav-dropdown">
+<li class="dropdown-item"><a href="news.html">News</a></li>
+</ul>
+</div>
+</nav>
+<button aria-label="Open navigation menu" class="mobile-nav-toggle" id="offcanvas-toggler">
+<i class="fa fa-bars"></i>
+</button>
+</div>
+</header>
+<!-- ==========================================================================
+       MOBILE OFF-CANVAS DRAWER
+       ========================================================================== -->
+<!-- MOBILE DRAWER -->
+<!-- MOBILE DRAWER -->
+<!-- MOBILE DRAWER -->
+<!-- MOBILE DRAWER -->
+<div class="offcanvas-overlay" id="offcanvas-overlay"></div>
+<div aria-label="Mobile Navigation Menu" class="offcanvas-drawer" id="offcanvas-drawer" role="dialog">
+<div class="offcanvas-header">
+<img alt="AFRINIC Logo" src="assets/png/logo.png" style="height: 40px;" width="202" height="85"/>
+<button aria-label="Close menu" class="close-offcanvas" id="close-offcanvas">×</button>
+</div>
+<ul class="mobile-menu-items">
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+<a href="about.html">About us</a>
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-about"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-about">
+<li><a href="about.html">About Us</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="service-region.html">Service Region</a></li>
+<li><a href="https://stats.afrinic.net/" rel="noopener noreferrer" target="_blank">Statistics</a></li>
+<li><a href="agmm.html">AGMM</a></li>
+<li><a href="sgmm-2026.html">SGMM 2026</a></li>
+<li><a href="governance.html">Governance</a></li>
+<li><a href="corporate-documents.html">Corporate Documents</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+<a href="membership.html">Membership</a>
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-membership"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-membership">
+<li><a href="membership.html">Membership Services</a></li>
+<li><a href="fees-payment.html">Fees Schedule</a></li>
+<li><a href="membership-agreements.html">Membership Agreements</a></li>
+<li><a href="legacy-resource-holders.html">Legacy Resource Holders</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+<a href="resources.html">Our Work</a>
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-resources"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-resources">
+<li><a href="resources.html">Resources Management</a></li>
+<li><a href="reverse-dns.html">Reverse DNS</a></li>
+<li><a href="resource-certification.html">Resource Certification</a></li>
+<li><a href="internet-routing-registry.html">Internet Routing Registry (IRR)</a></li>
+<li><a href="exhaustion.html">IPv4 Exhaustion</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+Participate
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-participate"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-participate">
+<li><a href="code.html">Code of Conduct</a></li>
+<li><a href="email.html">Email &amp; Mailing Lists</a></li>
+<li><a href="committees.html">Committees</a></li><li><a href="afgwg.html">Government Working Group (AFGWG)</a></li>
+<li><a href="internet-development-programs.html">Internet Development Programs</a></li>
+<li><a href="icp-2-review.html">ICP 2 Review</a></li>
+<li><a href="policy.html">Policy</a></li>
+<li><a href="https://afrinic.academy/" target="_blank" rel="noopener noreferrer">Training Workshop</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+<a href="support.html">Support</a>
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-support"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-support">
+<li><a href="support.html">Support &amp; FAQs</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+Event
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-event"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-event">
+<li><a href="webinar-series.html">Webinar Series</a></li>
+<li><a href="call-for-hosting-2026.html">Call for Hosting</a></li>
+</ul>
+</li>
+<li class="mobile-nav-item">
+<div class="mobile-nav-link">
+Media
+<button aria-expanded="false" aria-label="Toggle Submenu" class="mobile-submenu-toggle" data-target="m-submenu-media"><i class="fa fa-chevron-down"></i></button>
+</div>
+<ul class="mobile-nav-submenu" id="m-submenu-media">
+<li><a href="news.html">News</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- Translation notice banner -->
+<main id="main-content">
+<!-- ==========================================================================
+     NEW PREMIUM HERO SECTION
+     ========================================================================== -->
+<style>
+/* BRC consultation hero — aligned to site design tokens (clay palette, hairlines, LT Pro cuts) */
+.brc-hero{background:var(--black);padding:0;font-family:var(--font-sans);}
+.brc-hero__link{display:block;text-decoration:none;color:inherit;}
+.brc-hero__frame{position:relative;overflow:hidden;
+  padding:clamp(36px,5vw,72px) clamp(24px,4.6vw,64px);}
+.brc-hero__glow{position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(720px 420px at 85% 15%, rgba(209,94,20,.16), transparent 70%),
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='66' height='66'%3E%3Cpath d='M0 0.5H66M0.5 0V66' stroke='rgba(255,255,255,0.05)'/%3E%3Cpath d='M33 27V39M27 33H39' stroke='rgba(255,255,255,0.14)'/%3E%3C/svg%3E");}
+.brc-hero__inner{position:relative;z-index:1;display:flex;align-items:center;
+  justify-content:space-between;gap:clamp(28px,5vw,72px);flex-wrap:wrap;
+  max-width:1280px;margin:0 auto;}
+.brc-hero__main{flex:1 1 460px;min-width:0;}
+.brc-hero__chips{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px;}
+.brc-hero__chip{display:inline-block;border:1px solid rgba(255,255,255,.28);border-radius:999px;
+  color:#fff;font-family:var(--font-label);font-weight:500;font-size:.78rem;
+  letter-spacing:.06em;padding:6px 14px;}
+.brc-hero__chip--live{border-color:rgba(209,94,20,.55);color:var(--clay);}
+.brc-hero__title{color:#fff;font-family:var(--font-display);font-weight:700;line-height:1.12;
+  margin:0 0 16px;font-size:clamp(1.5rem,2.7vw,2.3rem);}
+.brc-hero__title--accent{color:var(--clay);}
+.brc-hero__sub{color:var(--g300);font-weight:400;font-size:clamp(.95rem,1.3vw,1.08rem);
+  line-height:1.6;max-width:600px;margin:0 0 28px;}
+.brc-hero__cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.brc-hero__btn{display:inline-flex;align-items:center;gap:10px;background:var(--clay);color:#fff;
+  font-family:var(--font-label);font-weight:600;font-size:1rem;border-radius:8px;
+  padding:0.9rem 2.2rem;transition:background var(--transition-fast);}
+.brc-hero__link:hover .brc-hero__btn{background:var(--clay-deep);}
+.brc-hero__window{flex:0 0 auto;padding:26px 32px;border:1px solid rgba(255,255,255,.18);
+  border-radius:12px;background:rgba(255,255,255,.04);}
+.brc-hero__window-label{color:var(--g300);font-family:var(--font-label);font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;margin:0 0 18px;}
+.brc-hero__dates{display:flex;align-items:center;gap:16px;}
+.brc-hero__date{display:flex;flex-direction:column;line-height:1;}
+.brc-hero__date--end{align-items:flex-end;}
+.brc-hero__date-num{color:#fff;font-family:var(--font-numeral);font-weight:700;
+  font-size:clamp(2rem,3.2vw,2.7rem);}
+.brc-hero__date--end .brc-hero__date-num{color:var(--clay);}
+.brc-hero__date-unit{color:var(--g300);font-family:var(--font-label);font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;font-size:.68rem;margin-top:8px;}
+.brc-hero__date-line{flex:1 1 70px;min-width:56px;height:1px;background:var(--clay);margin-bottom:22px;}
+.brc-hero__window-note{color:var(--g300);font-size:.78rem;margin:16px 0 0;
+  padding-top:14px;border-top:1px solid rgba(255,255,255,.12);}
+</style>
+<section class="premium-hero brc-hero">
+<a class="brc-hero__link" href="https://bit.ly/brc-secondcall" target="_blank" rel="noopener noreferrer" aria-label="Second Community Consultation on the Draft Amended AFRINIC Constitution — open the consultation platform">
+<div class="brc-hero__frame">
+<div class="brc-hero__glow" aria-hidden="true"></div>
+<div class="brc-hero__inner">
+<div class="brc-hero__main">
+<div class="brc-hero__chips">
+<span class="brc-hero__chip">Bylaws Review Committee</span>
+<span class="brc-hero__chip brc-hero__chip--live">Second round · Now open</span>
+</div>
+<h1 class="brc-hero__title">Community Consultation on the<br/><span class="brc-hero__title--accent">Draft Amended Constitution</span></h1>
+<p class="brc-hero__sub">Review the proposed amendments section by section — the existing provision, the amendment, and the rationale — and submit your comments.</p>
+<div class="brc-hero__cta">
+<span class="brc-hero__btn">Open the consultation platform <span aria-hidden="true">→</span></span>
+</div>
+</div>
+<div class="brc-hero__window">
+<p class="brc-hero__window-label">Consultation Window</p>
+<div class="brc-hero__dates">
+<span class="brc-hero__date"><span class="brc-hero__date-num">04</span><span class="brc-hero__date-unit">Aug</span></span>
+<span class="brc-hero__date-line" aria-hidden="true"></span>
+<span class="brc-hero__date brc-hero__date--end"><span class="brc-hero__date-num">21</span><span class="brc-hero__date-unit">Aug</span></span>
+</div>
+<p class="brc-hero__window-note">Closes 21 August 2026 · 23:59 UTC</p>
+</div>
+</div>
+</div>
+</a>
+</section>
+<!-- ==========================================================================
+     FLOATING QUICK LINKS
+     ========================================================================== -->
+<!-- ==========================================================================
+     LATEST NEWS
+     The three items below are a fallback (the current top 3 of news.html).
+     On load, the script at the end of this section refreshes them from
+     news.html so this always shows the latest 3 without editing index.html.
+     ========================================================================== -->
+<section class="section-padding premium-blogs" style="padding-bottom: 0;">
+<div class="container">
+<div class="section-header-modern">
+<h2>Latest News</h2>
+<a class="view-all-link" href="news.html">View All News <i class="fa fa-angle-right"></i></a>
+</div>
+<div class="news-list" id="home-latest-news" data-src="news.html" style="margin-top: 20px;">
+<div class="news-item" style="display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--g150); align-items: flex-start; flex-wrap: wrap;">
+<div style="flex: 0 0 160px; max-width: 160px; min-width: 120px;">
+<a href="second-community-consultation-on-the-draft-amended-afrinic-constitution.html">
+<img alt="Second Community Consultation on the Draft Amended AFRINIC Constitution" src="assets/png/news/brc-second-call.png" style="width: 100%; height: auto; border: 1px solid var(--g150); display: block;" loading="lazy" decoding="async" width="800" height="600"/>
+</a>
+</div>
+<div class="col-flex">
+<h3 style="margin: 0 0 8px 0; font-size: 1.3rem; font-weight: 700; line-height: 1.4;">
+<a href="second-community-consultation-on-the-draft-amended-afrinic-constitution.html" class="hov-color" style="color: #1A1A1A; text-decoration: none; font-weight: 700; transition: color 0.2s;">Second Community Consultation on the Draft Amended AFRINIC Constitution</a>
+</h3>
+<div style="font-size: 0.85rem; color: var(--g500); margin-bottom: 12px;">
+<i class="fa fa-calendar"></i> 4 August 2026
+    </div>
+<p style="margin: 0; color: #1A1A1A; line-height: 1.5">
+      The Bylaws Review Committee has published the draft proposed amended Constitution for a second round of community consultation. Review the amendments section by section and share your comments from 04 to 21 August 2026.
+    </p>
+<div style="margin-top: 12px;">
+<a href="second-community-consultation-on-the-draft-amended-afrinic-constitution.html" class="hov-underline" style="color: #A64A10; text-decoration: none; font-weight: 500; font-size: 0.9rem;" aria-label="Read more about Second Community Consultation on the Draft Amended AFRINIC Constitution">Read More »</a>
+</div>
+</div>
+</div>
+<div class="news-item" style="display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--g150); align-items: flex-start; flex-wrap: wrap;">
+<div style="flex: 0 0 160px; max-width: 160px; min-width: 120px;">
+<a href="rir-governance-document-delivered-to-the-nro-ec.html">
+<img alt="RIR Governance Document Delivered to the NRO EC" src="assets/png/news/nroec.png" style="width: 100%; height: auto; border: 1px solid var(--g150); display: block;" loading="lazy" decoding="async" width="800" height="600"/>
+</a>
+</div>
+<div class="col-flex">
+<h3 style="margin: 0 0 8px 0; font-size: 1.3rem; font-weight: 700; line-height: 1.4;">
+<a href="rir-governance-document-delivered-to-the-nro-ec.html" class="hov-color" style="color: #1A1A1A; text-decoration: none; font-weight: 700; transition: color 0.2s;">RIR Governance Document Delivered to the NRO EC</a>
+</h3>
+<div style="font-size: 0.85rem; color: var(--g500); margin-bottom: 12px;">
+<i class="fa fa-calendar"></i> 28 July 2026
+    </div>
+<p style="margin: 0; color: #1A1A1A; line-height: 1.5">
+      The NRO EC announces that the ASO AC has completed version 3 of the RIR Governance Document and formally delivered the Recommended Draft to the NRO Executive Council for its consideration.
+    </p>
+<div style="margin-top: 12px;">
+<a href="rir-governance-document-delivered-to-the-nro-ec.html" class="hov-underline" style="color: #A64A10; text-decoration: none; font-weight: 500; font-size: 0.9rem;" aria-label="Read more about Rir governance document delivered to the nro ec">Read More »</a>
+</div>
+</div>
+</div>
+<div class="news-item" style="display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--g150); align-items: flex-start; flex-wrap: wrap;">
+<div style="flex: 0 0 160px; max-width: 160px; min-width: 120px;">
+<a href="call-for-volunteers-reconstitution-of-the-afrinic-governance-committee.html">
+<img alt="Call for Volunteers: Reconstitution of the AFRINIC Governance Committee" src="assets/png/news/govcom.png" style="width: 100%; height: auto; border: 1px solid var(--g150); display: block;" loading="lazy" decoding="async" width="800" height="600"/>
+</a>
+</div>
+<div class="col-flex">
+<h3 style="margin: 0 0 8px 0; font-size: 1.3rem; font-weight: 700; line-height: 1.4;">
+<a href="call-for-volunteers-reconstitution-of-the-afrinic-governance-committee.html" class="hov-color" style="color: #1A1A1A; text-decoration: none; font-weight: 700; transition: color 0.2s;">Call for Volunteers: Reconstitution of the AFRINIC Governance Committee</a>
+</h3>
+<div style="font-size: 0.85rem; color: var(--g500); margin-bottom: 12px;">
+<i class="fa fa-calendar"></i> 17 July 2026
+    </div>
+<p style="margin: 0; color: #1A1A1A; line-height: 1.5">
+      The AFRINIC Board of Directors invites volunteers from the community for appointment as the two Board-appointed members of the Governance Committee. Applications close Tuesday, 28 July 2026.
+    </p>
+<div style="margin-top: 12px;">
+<a href="call-for-volunteers-reconstitution-of-the-afrinic-governance-committee.html" class="hov-underline" style="color: #A64A10; text-decoration: none; font-weight: 500; font-size: 0.9rem;" aria-label="Read more about Call for volunteers reconstitution of the afrinic governance committee">Read More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================================================
+     LATEST INSIGHTS (BLOGS)
+     ========================================================================== -->
+<section class="section-padding premium-blogs">
+<div class="container">
+<div class="section-header-modern">
+<h2>Latest blog post</h2>
+<a class="view-all-link" href="https://blog.afrinic.net/" rel="noopener noreferrer" target="_blank">View All Posts <i class="fa fa-angle-right"></i></a>
+</div>
+<div class="blog-grid-modern">
+<article class="blog-card-new">
+<div class="blog-img-new">
+<img alt="RPKI Banner" src="assets/png/checklist_banner.png" loading="lazy" decoding="async" width="1500" height="630"/>
+<span class="blog-category">Technology</span>
+</div>
+<div class="blog-content-new">
+<h3><a href="https://blog.afrinic.net/exploring-the-potential-of-rpki-signed-checklists-the-results-are-in" rel="noopener noreferrer" target="_blank">Exploring the Potential of RPKI Signed Checklists</a></h3>
+<p>New tools that strengthen the resilience and trustworthiness of the Internet's routing system.</p>
+</div>
+</article>
+<article class="blog-card-new">
+<div class="blog-img-new">
+<img alt="NRO Banner" src="assets/png/blog_nro.png" loading="lazy" decoding="async" width="1600" height="476"/>
+<span class="blog-category">Update</span>
+</div>
+<div class="blog-content-new">
+<h3><a href="https://blog.afrinic.net/nro-rpki-program-2025-in-review" rel="noopener noreferrer" target="_blank">NRO RPKI Program — 2025 in review</a></h3>
+<p>Reflecting on our achievements this year as part of the Number Resource Organization RPKI Program.</p>
+</div>
+</article>
+<article class="blog-card-new">
+<div class="blog-img-new">
+<img alt="NRO Resource" src="assets/png/blog_nro.png" loading="lazy" decoding="async" width="1600" height="476"/>
+<span class="blog-category">Resources</span>
+</div>
+<div class="blog-content-new">
+<h3><a href="https://blog.afrinic.net/a-new-nro-resource-for-network-operators-working-across-multiple-rirs" rel="noopener noreferrer" target="_blank">A new NRO resource for operators</a></h3>
+<p>A reference page to help network operators learn how to create Route Origin Authorizations (ROAs).</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ==========================================================================
+     SPECIAL ADVERTS (FEATURED OPPORTUNITIES)
+     ========================================================================== -->
+<section class="section-padding premium-adverts" style="padding-top: 0; background: #f8fafc;">
+<div class="container">
+<div class="blog-grid-modern">
+<!-- Vacancy Card -->
+<article class="blog-card-new" style="overflow: hidden; background: #ffffff;">
+<div class="blog-img-new" style="background: linear-gradient(135deg, #242e39 0%, #595959 100%); display: flex; align-items: center; justify-content: center; height: 180px; position: relative; overflow: hidden;">
+<div style="position: absolute; width: 120px; height: 120px; background: rgba(255,255,255,0.08); border-radius: 50%; top: -20px; right: -20px; filter: blur(10px);"></div>
+<div style="position: absolute; width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; bottom: -10px; left: -10px; filter: blur(5px);"></div>
+<i class="fa fa-briefcase" style="font-size: 3.5rem; color: #ffffff; filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2)); z-index: 1;"></i>
+<span class="blog-category" style="background: #242e39; color: #ffffff; font-weight: 700; border-radius: 4px; padding: 0.25rem 0.5rem; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; z-index: 2;">Career</span>
+</div>
+<div class="blog-content-new" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 2rem 1.5rem;">
+<div>
+<h3 style="margin-top: 0.5rem; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.3;"><a href="vacancy.html" style="color: #0f172a; text-decoration: none; transition: color 0.2s;">We are hiring: Join our team!</a></h3>
+<p style="color: #475569; line-height: 1.5; margin-top: 0.5rem">Explore exciting opportunities to contribute to Africa's digital transformation.</p>
+</div>
+<a class="cat-btn" href="vacancy.html" style="align-self: flex-start; margin-top: 1.25rem; background: linear-gradient(135deg, #242e39 0%, #595959 100%); color: #ffffff; border: none; width: auto; padding: 0.6rem 1.25rem; border-radius: 8px; font-weight: 700; font-size: 0.9rem; text-decoration: none; text-align: center; box-shadow: 0 4px 14px rgba(36, 46, 57, 0.3);">View Vacancies</a>
+</div>
+</article>
+<!-- Webinar Card -->
+<article class="blog-card-new" style="overflow: hidden; background: #ffffff;">
+<div class="blog-img-new" style="background: linear-gradient(135deg, #d15e14 0%, #f9ac34 100%); display: flex; align-items: center; justify-content: center; height: 180px; position: relative; overflow: hidden;">
+<div style="position: absolute; width: 120px; height: 120px; background: rgba(255,255,255,0.08); border-radius: 50%; top: -20px; right: -20px; filter: blur(10px);"></div>
+<div style="position: absolute; width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; bottom: -10px; left: -10px; filter: blur(5px);"></div>
+<i class="fa fa-laptop" style="font-size: 3.5rem; color: #ffffff; filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2)); z-index: 1;"></i>
+<span class="blog-category" style="background: #d15e14; color: #ffffff; font-weight: 700; border-radius: 4px; padding: 0.25rem 0.5rem; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; z-index: 2;">Webinar Series</span>
+</div>
+<div class="blog-content-new" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 2rem 1.5rem;">
+<div>
+<h3 style="margin-top: 0.5rem; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.3;"><a href="webinar-series.html" style="color: #0f172a; text-decoration: none; transition: color 0.2s;">Interactive Webinar Series</a></h3>
+<p style="color: #475569; line-height: 1.5; margin-top: 0.5rem">Grow your skills with our expert-led online training and capacity building sessions.</p>
+</div>
+<a class="cat-btn" href="webinar-series.html" style="align-self: flex-start; margin-top: 1.25rem; background: linear-gradient(135deg, #d15e14 0%, #f9ac34 100%); color: #ffffff; border: none; width: auto; padding: 0.6rem 1.25rem; border-radius: 8px; font-weight: 700; font-size: 0.9rem; text-decoration: none; text-align: center; box-shadow: 0 4px 14px rgba(209, 94, 20, 0.3);">Learn More</a>
+</div>
+</article>
+<!-- Events Card -->
+<article class="blog-card-new" style="overflow: hidden; background: #ffffff;">
+<div class="blog-img-new" style="background: linear-gradient(135deg, #aa3a26 0%, #91491d 100%); display: flex; align-items: center; justify-content: center; height: 180px; position: relative; overflow: hidden;">
+<div style="position: absolute; width: 120px; height: 120px; background: rgba(255,255,255,0.08); border-radius: 50%; top: -20px; right: -20px; filter: blur(10px);"></div>
+<div style="position: absolute; width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; bottom: -10px; left: -10px; filter: blur(5px);"></div>
+<i class="fa fa-calendar" style="font-size: 3.5rem; color: #ffffff; filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2)); z-index: 1;"></i>
+<span class="blog-category" style="background: #aa3a26; color: #ffffff; font-weight: 700; border-radius: 4px; padding: 0.25rem 0.5rem; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; z-index: 2;">Community</span>
+</div>
+<div class="blog-content-new" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 200px; padding: 2rem 1.5rem;">
+<div>
+<h3 style="margin-top: 0.5rem; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.3;"><a href="agmm.html" style="color: #0f172a; text-decoration: none; transition: color 0.2s;">Upcoming Events &amp; Meetings</a></h3>
+<p style="color: #475569; line-height: 1.5; margin-top: 0.5rem">Participate in the decisions that shape the internet policy landscape in Africa.</p>
+</div>
+<a class="cat-btn" href="agmm.html" style="align-self: flex-start; margin-top: 1.25rem; background: linear-gradient(135deg, #aa3a26 0%, #91491d 100%); color: #ffffff; border: none; width: auto; padding: 0.6rem 1.25rem; border-radius: 8px; font-weight: 700; font-size: 0.9rem; text-decoration: none; text-align: center; box-shadow: 0 4px 14px rgba(170, 58, 38, 0.3);">Learn More</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ==========================================================================
+     OUR WORK
+     ========================================================================== -->
+<!-- ==========================================================================
+     SERVICE CATEGORIES (Replaces old Quicklinks & Initiatives)
+     ========================================================================== -->
+<!-- ==========================================================================
+     SERVICE CATEGORIES (Card Grid Layout)
+     ========================================================================== -->
+<section class="section-padding premium-categories">
+<div class="container-fluid" style="max-width: 1400px; padding: 0 2rem; margin: 0 auto;">
+
+  <!-- SECTION TITLE -->
+  <header class="services-header">
+    <span class="services-kicker">afrinic.net</span>
+    <h2 class="services-title">AFRINIC Services</h2>
+    <p class="services-sub">Registry services, policy participation, learning and community — in one place</p>
+  </header>
+
+  <!-- DISCOVER AFRINIC -->
+  <div class="category-section">
+    <div class="cat-header-wrap">
+      <h3 class="cat-header" style="text-align: center;">DISCOVER AFRINIC</h3>
+      <p class="cat-sub" style="text-align: center;">Your window into Africa's Internet Registry</p>
+    </div>
+    <div class="cards-grid">
+      <div class="cat-card">
+        <img src="assets/svg/nmrp.svg" alt="NMRP Logo" loading="lazy" decoding="async"/>
+        <span class="cat-desc">NEW MEMBERSHIP<br/>REGISTRATION PORTAL</span>
+        <a href="https://apps.afrinic.net/nmrp" target="_blank" rel="noopener noreferrer" class="cat-btn">Access the Member Registration Portal</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/v6.svg" alt="V6" loading="lazy" decoding="async"/>
+        <span class="cat-desc">IPv6 RESOURCES</span>
+        <a href="resources.html" class="cat-btn">Manage Your Number Resources</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/domain.svg" alt="DOMAIN" loading="lazy" decoding="async"/>
+        <span class="cat-desc">NAME SYSTEM<br/>ANYCAST PROGRAMME</span>
+        <a href="https://dns.afrinic.net" target="_blank" rel="noopener noreferrer" class="cat-btn">Access the DNS Anycast Programme</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHAPE POLICY -->
+  <div class="category-section">
+    <div class="cat-header-wrap">
+      <h3 class="cat-header" style="text-align: center;">SHAPE POLICY</h3>
+      <p class="cat-sub" style="text-align: center;">Your voice in how Internet Resources are managed</p>
+    </div>
+    <div class="cards-grid">
+      <div class="cat-card">
+        <img src="assets/svg/pdp.svg" alt="PDP" loading="lazy" decoding="async"/>
+        <span class="cat-desc">POLICY DEVELOPMENT<br/>PROCESS</span>
+        <a href="policy.html" class="cat-btn">Learn about the Policy Development Process</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/rpd.svg" alt="RPD" loading="lazy" decoding="async"/>
+        <span class="cat-desc">RESOURCE POLICY<br/>DISCUSSION LIST</span>
+        <a href="https://bit.ly/afrinic-rpd" target="_blank" rel="noopener noreferrer" class="cat-btn">Join the Resource Policy Discussion Mailing List</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/pp.svg" alt="PP" loading="lazy" decoding="async"/>
+        <span class="cat-desc">CURRENT<br/>POLICY PROPOSALS</span>
+        <a href="policy-proposals.html" class="cat-btn">View Current Policy Proposals</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUILD SKILLS -->
+  <div class="category-section">
+    <div class="cat-header-wrap">
+      <h3 class="cat-header" style="text-align: center;">BUILD SKILLS</h3>
+      <p class="cat-sub" style="text-align: center;">Grow with us and earn credentials</p>
+    </div>
+    <div class="cards-grid">
+      <div class="cat-card">
+        <img src="assets/svg/ip_academy.svg" alt="IP Academy" loading="lazy" decoding="async"/>
+        <span class="cat-desc">AFRINIC ACADEMY<br/>TRAINING</span>
+        <a href="https://afrinic.academy" target="_blank" rel="noopener noreferrer" class="cat-btn">Visit AFRINIC Academy for Training</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/certi_6.svg" alt="Certi6" loading="lazy" decoding="async"/>
+        <span class="cat-desc">IPv6 TRAINING<br/>CERTIFICATION</span>
+        <a href="https://certi6.io" target="_blank" rel="noopener noreferrer" class="cat-btn">Explore Certi6 IPv6 Training Certification</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/do.svg" alt="DO" loading="lazy" decoding="async"/>
+        <span class="cat-desc">IPv6 DEPLOYMENT<br/>HELPDESK</span>
+        <a href="https://afrinic.academy/deploy-form" target="_blank" rel="noopener noreferrer" class="cat-btn">Register for IPv6 Deployment Training</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMUNITY -->
+  <div class="category-section">
+    <div class="cat-header-wrap">
+      <h3 class="cat-header" style="text-align: center;">COMMUNITY</h3>
+      <p class="cat-sub" style="text-align: center;">Participate in the decisions that lead Africa</p>
+    </div>
+    <div class="cards-grid">
+      <div class="cat-card">
+        <img src="assets/svg/webinar.svg" alt="Webinar" loading="lazy" decoding="async"/>
+        <span class="cat-desc">WEBINAR<br/>SERIES</span>
+        <a href="webinar-series.html" class="cat-btn">Explore the Webinar Series</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/ppm.svg" alt="PPM" loading="lazy" decoding="async"/>
+        <span class="cat-desc">PUBLIC POLICY<br/>MEETING</span>
+        <a href="ppm-minutes.html" class="cat-btn">View the PPM Proceedings</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/agmm.svg" alt="AGMM" loading="lazy" decoding="async"/>
+        <span class="cat-desc">ANNUAL GENERAL<br/>MEMBERS MEETING</span>
+        <a href="agmm.html" class="cat-btn">View the AGMM Proceedings</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/afgwg.svg" alt="AFGWG" loading="lazy" decoding="async"/>
+        <span class="cat-desc">GOVERNMENT WORKING GROUP</span>
+        <a href="afgwg.html" class="cat-btn">Learn about the AFGWG</a>
+      </div>
+      <div class="cat-card">
+        <img src="assets/svg/elections.svg" alt="Elections" loading="lazy" decoding="async"/>
+        <span class="cat-desc">ELECTIONS<br/>PORTAL</span>
+        <a href="https://elections.afrinic.net" target="_blank" rel="noopener noreferrer" class="cat-btn">Participate in AFRINIC Elections</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+<!-- ==========================================================================
+       FOOTER MENU & COPYRIGHT
+       ========================================================================== -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="main-footer">
+<div class="footer-bottom-bar">
+<div class="container footer-bottom-container">
+<div class="social-icons">
+<a aria-label="Facebook" class="social-icon-link" href="https://www.facebook.com/afrinic" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook"></i></a>
+<a aria-label="Twitter" class="social-icon-link" href="https://twitter.com/afrinic" rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter"></i></a>
+<a aria-label="YouTube" class="social-icon-link" href="https://www.youtube.com/c/AFRINIC" rel="noopener noreferrer" target="_blank"><i class="fa fa-youtube"></i></a>
+<a aria-label="LinkedIn" class="social-icon-link" href="https://www.linkedin.com/company/afrinic" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a aria-label="Flickr" class="social-icon-link" href="https://www.flickr.com/photos/afrinic/" rel="noopener noreferrer" target="_blank"><i class="fa fa-flickr"></i></a>
+</div>
+<div class="footer-clock-box">
+          Date and time in Mauritius: <span id="mauritius-time">YYYY/MM/DD --:--:--</span>
+</div>
+<div class="footer-legal-links">
+<a href="http://status.afrinic.net/" rel="noopener noreferrer" target="_blank">Service Status</a> | 
+          <a href="disclaimer.html">Disclaimer</a> | 
+          <a href="privacy.html">Privacy</a> |
+          <a href="https://whois-web.afrinic.net" rel="noopener noreferrer" target="_blank">WHOIS</a>
+</div>
+</div>
+</div>
+<div class="footer-copyright-section">
+<div class="container">
+        ©Copyright <span id="copyright-year">2026</span>. All Rights Reserved - African Network Information Centre (AFRINIC)
+        <img alt="ISO Certification Badge" height="40" src="assets/svg/afrinic-iso.svg" width="60" loading="lazy" decoding="async"/>
+</div>
+</div>
+</footer>
+<!-- Scrollup Trigger -->
+<a aria-label="Scroll back to top" class="scrollup" href="#" id="scrollup"><i class="fa fa-angle-up"></i></a>
+<!-- Script logic -->
+<script src="js/main.min.js?v=8"></script>
+</body>
+</html>

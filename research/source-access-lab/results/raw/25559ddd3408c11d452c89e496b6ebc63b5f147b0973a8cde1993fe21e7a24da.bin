@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>PyPI recent updates</title>
+    <link>https://pypi.org/</link>
+    <description>Recent updates to the Python Package Index</description>
+    <language>en</language>    <item>
+      <title>tencentcloud-sdk-python 3.1.154</title>
+      <link>https://pypi.org/project/tencentcloud-sdk-python/3.1.154/</link>
+      <description>Tencent Cloud SDK for Python</description>
+      <pubDate>Mon, 10 Aug 2026 20:12:25 GMT</pubDate>
+    </item>    <item>
+      <title>goal 2.1.293</title>
+      <link>https://pypi.org/project/goal/2.1.293/</link>
+      <description>Goal - Automated git push with enterprise-grade commit intelligence, smart conventional commit generation based on deep code analysis, and interactive release workflow management.</description>
+<author>tom@sapletta.com</author>      <pubDate>Mon, 10 Aug 2026 20:11:45 GMT</pubDate>
+    </item>    <item>
+      <title>avallon 0.5.0</title>
+      <link>https://pypi.org/project/avallon/0.5.0/</link>
+      <description>A personal note site backed by a git repository of Markdown</description>
+<author>kevin.walcarius@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:11:40 GMT</pubDate>
+    </item>    <item>
+      <title>qx-llms 0.6.0</title>
+      <link>https://pypi.org/project/qx-llms/0.6.0/</link>
+      <description>A simple LLM client factory utility for use across QX applications</description>
+      <pubDate>Mon, 10 Aug 2026 20:11:38 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-encodings 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-encodings/1.5.5/</link>
+      <description>Duckdb encodings extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:11:16 GMT</pubDate>
+    </item>    <item>
+      <title>runme-harbor 0.1.3</title>
+      <link>https://pypi.org/project/runme-harbor/0.1.3/</link>
+      <description>Runme Harbor environment adapter</description>
+      <pubDate>Mon, 10 Aug 2026 20:10:58 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-lance 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-lance/1.5.5/</link>
+      <description>Duckdb lance extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:54 GMT</pubDate>
+    </item>    <item>
+      <title>delta-kernel-rust-sharing-wrapper 0.3.3</title>
+      <link>https://pypi.org/project/delta-kernel-rust-sharing-wrapper/0.3.3/</link>
+      <description>None</description>
+      <pubDate>Mon, 10 Aug 2026 20:10:51 GMT</pubDate>
+    </item>    <item>
+      <title>emby-cli 0.5.4</title>
+      <link>https://pypi.org/project/emby-cli/0.5.4/</link>
+      <description>CLI to list, search, play, and download/backup original media from an Emby server via its REST API.</description>
+<author>soukron@gmbros.net</author>      <pubDate>Mon, 10 Aug 2026 20:10:44 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-delta 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-delta/1.5.5/</link>
+      <description>Duckdb delta extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:35 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-spatial 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-spatial/1.5.5/</link>
+      <description>Duckdb spatial extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:34 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-sqlite3 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-sqlite3/1.5.5/</link>
+      <description>Duckdb sqlite3 extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:31 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-httpfs 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-httpfs/1.5.5/</link>
+      <description>Duckdb httpfs extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:24 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-tpch 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-tpch/1.5.5/</link>
+      <description>Duckdb tpch extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:09 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-aws 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-aws/1.5.5/</link>
+      <description>Duckdb aws extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:10:06 GMT</pubDate>
+    </item>    <item>
+      <title>tisura-notary 0.1.5</title>
+      <link>https://pypi.org/project/tisura-notary/0.1.5/</link>
+      <description>Tisura notarization SDK — notarize documents via a recorded TLS session</description>
+      <pubDate>Mon, 10 Aug 2026 20:10:03 GMT</pubDate>
+    </item>    <item>
+      <title>tisura-legacy 0.0.22</title>
+      <link>https://pypi.org/project/tisura-legacy/0.0.22/</link>
+      <description>Tisura light SDK — TLS-verified HTTP client with offline record decryption</description>
+      <pubDate>Mon, 10 Aug 2026 20:09:49 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-postgres-scanner 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-postgres-scanner/1.5.5/</link>
+      <description>Duckdb postgres_scanner extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:48 GMT</pubDate>
+    </item>    <item>
+      <title>omniopt2 9475</title>
+      <link>https://pypi.org/project/omniopt2/9475/</link>
+      <description>Automatic highly parallelized hyperparameter optimizer based on Ax/Botorch</description>
+<author>norman.koch@tu-dresden.de</author>      <pubDate>Mon, 10 Aug 2026 20:09:41 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-parquet 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-parquet/1.5.5/</link>
+      <description>Duckdb parquet extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:39 GMT</pubDate>
+    </item>    <item>
+      <title>crispasr 0.8.28</title>
+      <link>https://pypi.org/project/crispasr/0.8.28/</link>
+      <description>Lightweight on-device speech recognition via ggml — Python bindings for CrispASR (Whisper, Qwen3-ASR, FastConformer, Canary, Parakeet, Cohere, Granite, Voxtral, wav2vec2, and more).</description>
+      <pubDate>Mon, 10 Aug 2026 20:09:26 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-mysql 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-mysql/1.5.5/</link>
+      <description>Duckdb mysql extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:23 GMT</pubDate>
+    </item>    <item>
+      <title>umadb 0.7.4</title>
+      <link>https://pypi.org/project/umadb/0.7.4/</link>
+      <description>Python client for UmaDB event store</description>
+<author>john.bywater@appropriatesoftware.net</author>      <pubDate>Mon, 10 Aug 2026 20:09:22 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-odbc-scanner 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-odbc-scanner/1.5.5/</link>
+      <description>Duckdb odbc_scanner extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:19 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-avro 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-avro/1.5.5/</link>
+      <description>Duckdb avro extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:10 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-azure 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-azure/1.5.5/</link>
+      <description>Duckdb azure extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:09:08 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-sqlite 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-sqlite/1.5.5/</link>
+      <description>Duckdb sqlite extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:56 GMT</pubDate>
+    </item>    <item>
+      <title>reactivated 0.51.0a3573</title>
+      <link>https://pypi.org/project/reactivated/0.51.0a3573/</link>
+      <description>A statically typed framework to create Django sites with a React frontend.</description>
+<author>silviogutierrez@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:08:54 GMT</pubDate>
+    </item>    <item>
+      <title>nastech-agent 0.20.0</title>
+      <link>https://pypi.org/project/nastech-agent/0.20.0/</link>
+      <description>The self-improving AI agent — creates skills from experience, improves them during use, and runs anywhere</description>
+      <pubDate>Mon, 10 Aug 2026 20:08:49 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-unity-catalog 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-unity-catalog/1.5.5/</link>
+      <description>Duckdb unity_catalog extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:43 GMT</pubDate>
+    </item>    <item>
+      <title>netcherTG 0.1.0</title>
+      <link>https://pypi.org/project/netchertg/0.1.0/</link>
+      <description>A simple, dependency-light library for building Telegram bots</description>
+      <pubDate>Mon, 10 Aug 2026 20:08:43 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-vortex 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-vortex/1.5.5/</link>
+      <description>Duckdb vortex extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:37 GMT</pubDate>
+    </item>    <item>
+      <title>nemo-switchyard 0.2.0</title>
+      <link>https://pypi.org/project/nemo-switchyard/0.2.0/</link>
+      <description>Typed, composable LLM routing with request/response translation and multi-backend orchestration</description>
+      <pubDate>Mon, 10 Aug 2026 20:08:35 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-iceberg 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-iceberg/1.5.5/</link>
+      <description>Duckdb iceberg extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:25 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-vss 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-vss/1.5.5/</link>
+      <description>Duckdb vss extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:17 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-json 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-json/1.5.5/</link>
+      <description>Duckdb json extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:13 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-ducklake 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-ducklake/1.5.5/</link>
+      <description>Duckdb ducklake extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:08:12 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-ui 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-ui/1.5.5/</link>
+      <description>Duckdb ui extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:57 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-motherduck 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-motherduck/1.5.5/</link>
+      <description>Duckdb motherduck extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:53 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-tpcds 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-tpcds/1.5.5/</link>
+      <description>Duckdb tpcds extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:44 GMT</pubDate>
+    </item>    <item>
+      <title>mindpy 0.2.8</title>
+      <link>https://pypi.org/project/mindpy/0.2.8/</link>
+      <description>A Python AI framework for controlling Minecraft bots</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:41 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-mysql-scanner 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-mysql-scanner/1.5.5/</link>
+      <description>Duckdb mysql_scanner extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:40 GMT</pubDate>
+    </item>    <item>
+      <title>musicdl 2.13.6</title>
+      <link>https://pypi.org/project/musicdl/2.13.6/</link>
+      <description>Musicdl: A lightweight music downloader written in pure python</description>
+<author>charlesblwx@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:07:36 GMT</pubDate>
+    </item>    <item>
+      <title>streamlit-chem 0.1.0</title>
+      <link>https://pypi.org/project/streamlit-chem/0.1.0/</link>
+      <description>Native, RDKit-powered chemistry for Streamlit</description>
+<author>rgurnani96@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:07:34 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-postgres 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-postgres/1.5.5/</link>
+      <description>Duckdb postgres extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:29 GMT</pubDate>
+    </item>    <item>
+      <title>ocacaptcha 0.2.55</title>
+      <link>https://pypi.org/project/ocacaptcha/0.2.55/</link>
+      <description>This library for solving TikTok captcha via OCA captcha service</description>
+<author>oneclickactionsoft@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:07:23 GMT</pubDate>
+    </item>    <item>
+      <title>spatialai 0.4.1</title>
+      <link>https://pypi.org/project/spatialai/0.4.1/</link>
+      <description>SpatialAI SDK — Python API for VisionLibra ToF depth sensors and cameras (simulator, depth-CV models, DM0301 I2C and DMOS5030 UART hardware backends)</description>
+<author>sales@visionlibra.com</author>      <pubDate>Mon, 10 Aug 2026 20:07:22 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-icu 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-icu/1.5.5/</link>
+      <description>Duckdb icu extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:19 GMT</pubDate>
+    </item>    <item>
+      <title>dbt-ci 1.5.4</title>
+      <link>https://pypi.org/project/dbt-ci/1.5.4/</link>
+      <description>CI/CD tool for dbt projects with intelligent change detection and selective execution</description>
+<author>patrick.tannoury@datablock.dev</author>      <pubDate>Mon, 10 Aug 2026 20:07:18 GMT</pubDate>
+    </item>    <item>
+      <title>trainingsample 0.3.1</title>
+      <link>https://pypi.org/project/trainingsample/0.3.1/</link>
+      <description>High-performance Rust reimplementation of GIL-blocking video/image operations</description>
+<author>bghira@users.noreply.github.com</author>      <pubDate>Mon, 10 Aug 2026 20:07:14 GMT</pubDate>
+    </item>    <item>
+      <title>fprime-fpp-format 3.3.0</title>
+      <link>https://pypi.org/project/fprime-fpp-format/3.3.0/</link>
+      <description>F Prime Prime (FPP) source formatter executable</description>
+<author>andrei.tumbar@jpl.nasa.gov</author>      <pubDate>Mon, 10 Aug 2026 20:07:13 GMT</pubDate>
+    </item>    <item>
+      <title>infra-data-client 0.2.0</title>
+      <link>https://pypi.org/project/infra-data-client/0.2.0/</link>
+      <description>Official Python SDK for InfraX data-service — unified market data &amp; factors (bars / ticker / factors / snapshots / symbols / stats)</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:12 GMT</pubDate>
+    </item>    <item>
+      <title>lightrag-client 2.0.0</title>
+      <link>https://pypi.org/project/lightrag-client/2.0.0/</link>
+      <description>Python client SDK for InfraX RAGservicer — hybrid knowledge-base (vector + graph + keyword) retrieval</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:12 GMT</pubDate>
+    </item>    <item>
+      <title>aioproxmox 0.0.3a2</title>
+      <link>https://pypi.org/project/aioproxmox/0.0.3a2/</link>
+      <description>Asynchronous Python library for Proxmox products.</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:11 GMT</pubDate>
+    </item>    <item>
+      <title>fprime-fpp-lsp 3.3.0</title>
+      <link>https://pypi.org/project/fprime-fpp-lsp/3.3.0/</link>
+      <description>F Prime Prime (FPP) language server executable</description>
+<author>andrei.tumbar@jpl.nasa.gov</author>      <pubDate>Mon, 10 Aug 2026 20:07:07 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-inet 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-inet/1.5.5/</link>
+      <description>Duckdb inet extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:07 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-quack 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-quack/1.5.5/</link>
+      <description>Duckdb quack extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:06 GMT</pubDate>
+    </item>    <item>
+      <title>mutate4py 0.1.3</title>
+      <link>https://pypi.org/project/mutate4py/0.1.3/</link>
+      <description>Mutation testing for Python with an embedded-in-source manifest</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:02 GMT</pubDate>
+    </item>    <item>
+      <title>hermes-scope-recall 1.9.2</title>
+      <link>https://pypi.org/project/hermes-scope-recall/1.9.2/</link>
+      <description>Hermes scoped memory provider with journal-first capture, SQLite truth, vector companions, and hybrid RRF retrieval.</description>
+      <pubDate>Mon, 10 Aug 2026 20:07:00 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-autocomplete 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-autocomplete/1.5.5/</link>
+      <description>Duckdb autocomplete extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:07:00 GMT</pubDate>
+    </item>    <item>
+      <title>chalkpy 2.154.30</title>
+      <link>https://pypi.org/project/chalkpy/2.154.30/</link>
+      <description>Python SDK for Chalk</description>
+      <pubDate>Mon, 10 Aug 2026 20:06:57 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-fts 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-fts/1.5.5/</link>
+      <description>Duckdb fts extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:06:52 GMT</pubDate>
+    </item>    <item>
+      <title>haka-playwright-engine 1.5.2</title>
+      <link>https://pypi.org/project/haka-playwright-engine/1.5.2/</link>
+      <description>Framework completo de pruebas funcionales con Playwright y Behave</description>
+<author>felipe.farias@hakalab.com</author>      <pubDate>Mon, 10 Aug 2026 20:06:47 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-sqlite-scanner 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-sqlite-scanner/1.5.5/</link>
+      <description>Duckdb sqlite_scanner extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:06:45 GMT</pubDate>
+    </item>    <item>
+      <title>studio-workers 1.6.1</title>
+      <link>https://pypi.org/project/studio-workers/1.6.1/</link>
+      <description>Studio workflow job workers</description>
+      <pubDate>Mon, 10 Aug 2026 20:06:43 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-excel 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-excel/1.5.5/</link>
+      <description>Duckdb excel extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:06:37 GMT</pubDate>
+    </item>    <item>
+      <title>geometric-function-atlas 0.1.1</title>
+      <link>https://pypi.org/project/geometric-function-atlas/0.1.1/</link>
+      <description>Reproducible computations for a geometric function theory atlas</description>
+      <pubDate>Mon, 10 Aug 2026 20:06:35 GMT</pubDate>
+    </item>    <item>
+      <title>agt-agent 0.14.3</title>
+      <link>https://pypi.org/project/agt-agent/0.14.3/</link>
+      <description>AI Agent 框架——多模型 ReAct 引擎 + MCP 集成 + Coze 工作流 + WebUI + 可视化编辑器</description>
+<author>vgp7758@github.com</author>      <pubDate>Mon, 10 Aug 2026 20:06:24 GMT</pubDate>
+    </item>    <item>
+      <title>discord-ferry 2.14.3</title>
+      <link>https://pypi.org/project/discord-ferry/2.14.3/</link>
+      <description>Migrate Discord servers to Stoat (formerly Revolt)</description>
+      <pubDate>Mon, 10 Aug 2026 20:06:22 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extension-odbc 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extension-odbc/1.5.5/</link>
+      <description>Duckdb odbc extension</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:06:21 GMT</pubDate>
+    </item>    <item>
+      <title>keeps-learn-nexus-proto 0.29.0</title>
+      <link>https://pypi.org/project/keeps-learn-nexus-proto/0.29.0/</link>
+      <description>Shared Protocol Buffer definitions for Nexus microservices</description>
+<author>tecnologia@keeps.com.br</author>      <pubDate>Mon, 10 Aug 2026 20:06:13 GMT</pubDate>
+    </item>    <item>
+      <title>hub-auth-client 1.0.54</title>
+      <link>https://pypi.org/project/hub-auth-client/1.0.54/</link>
+      <description>MSAL JWT validation library with Entra ID RBAC support</description>
+<author>rparrish@wedgwood.org</author>      <pubDate>Mon, 10 Aug 2026 20:06:07 GMT</pubDate>
+    </item>    <item>
+      <title>looky-cli 0.1.31</title>
+      <link>https://pypi.org/project/looky-cli/0.1.31/</link>
+      <description>CLI for publishing content to a looky instance</description>
+      <pubDate>Mon, 10 Aug 2026 20:05:47 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-service-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-service-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:46 GMT</pubDate>
+    </item>    <item>
+      <title>agent-relay-sdk 11.5.1</title>
+      <link>https://pypi.org/project/agent-relay-sdk/11.5.1/</link>
+      <description>Python SDK for Agent Relay workflows</description>
+      <pubDate>Mon, 10 Aug 2026 20:05:41 GMT</pubDate>
+    </item>    <item>
+      <title>duckdb-extensions 1.5.5</title>
+      <link>https://pypi.org/project/duckdb-extensions/1.5.5/</link>
+      <description>DuckDB extensions as python package</description>
+<author>void@some.where</author>      <pubDate>Mon, 10 Aug 2026 20:05:40 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-file-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-file-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:39 GMT</pubDate>
+    </item>    <item>
+      <title>camera-ui-sdk 1.2.15</title>
+      <link>https://pypi.org/project/camera-ui-sdk/1.2.15/</link>
+      <description>camera.ui sdk</description>
+<author>hi@seydx.dev</author>      <pubDate>Mon, 10 Aug 2026 20:05:37 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-maven-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-maven-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:33 GMT</pubDate>
+    </item>    <item>
+      <title>editorconfig-checker 3.11.1</title>
+      <link>https://pypi.org/project/editorconfig-checker/3.11.1/</link>
+      <description>Python wrapper around invoking editorconfig-checker (https://github.com/editorconfig-checker/editorconfig-checker)</description>
+<author>mmicu.github00@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:33 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-rpm-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-rpm-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:27 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-npm-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-npm-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:20 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulp-python-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulp-python-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:14 GMT</pubDate>
+    </item>    <item>
+      <title>fairway-kit 0.2.1</title>
+      <link>https://pypi.org/project/fairway-kit/0.2.1/</link>
+      <description>Dev kit backend for local agent-backed apps: durable, resumable agent chat over FastAPI + SQLite</description>
+      <pubDate>Mon, 10 Aug 2026 20:05:14 GMT</pubDate>
+    </item>    <item>
+      <title>crc-pulpcore-client 20260810.1</title>
+      <link>https://pypi.org/project/crc-pulpcore-client/20260810.1/</link>
+      <description>Pulp 3 API</description>
+<author>pulp-list@redhat.com</author>      <pubDate>Mon, 10 Aug 2026 20:05:07 GMT</pubDate>
+    </item>    <item>
+      <title>paperlessngx-mail-parser 3.0.2</title>
+      <link>https://pypi.org/project/paperlessngx-mail-parser/3.0.2/</link>
+      <description>Alternative e-mail parser for Paperless-ngx</description>
+<author>dev@toweosp.org</author>      <pubDate>Mon, 10 Aug 2026 20:05:05 GMT</pubDate>
+    </item>    <item>
+      <title>assemblyline-core 4.7.5.dev39</title>
+      <link>https://pypi.org/project/assemblyline-core/4.7.5.dev39/</link>
+      <description>Assemblyline 4 - Core components</description>
+<author>assemblyline@cyber.gc.ca</author>      <pubDate>Mon, 10 Aug 2026 20:04:20 GMT</pubDate>
+    </item>    <item>
+      <title>boto3-stubs 1.43.68</title>
+      <link>https://pypi.org/project/boto3-stubs/1.43.68/</link>
+      <description>Type annotations for boto3 1.43.68 generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:18 GMT</pubDate>
+    </item>    <item>
+      <title>boto3-stubs-lite 1.43.68</title>
+      <link>https://pypi.org/project/boto3-stubs-lite/1.43.68/</link>
+      <description>Lite type annotations for boto3 1.43.68 generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:18 GMT</pubDate>
+    </item>    <item>
+      <title>assemblyline 4.7.5.dev39</title>
+      <link>https://pypi.org/project/assemblyline/4.7.5.dev39/</link>
+      <description>Assemblyline 4 - Automated malware analysis framework</description>
+<author>assemblyline@cyber.gc.ca</author>      <pubDate>Mon, 10 Aug 2026 20:04:18 GMT</pubDate>
+    </item>    <item>
+      <title>assemblyline-v4-service 4.7.5.dev39</title>
+      <link>https://pypi.org/project/assemblyline-v4-service/4.7.5.dev39/</link>
+      <description>Assemblyline 4 - Service base</description>
+<author>assemblyline@cyber.gc.ca</author>      <pubDate>Mon, 10 Aug 2026 20:04:16 GMT</pubDate>
+    </item>    <item>
+      <title>mypy-boto3-sagemaker-runtime 1.43.68</title>
+      <link>https://pypi.org/project/mypy-boto3-sagemaker-runtime/1.43.68/</link>
+      <description>Type annotations for boto3 SageMakerRuntime 1.43.68 service generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:14 GMT</pubDate>
+    </item>    <item>
+      <title>assemblyline-ui 4.7.5.dev39</title>
+      <link>https://pypi.org/project/assemblyline-ui/4.7.5.dev39/</link>
+      <description>Assemblyline 4 - API and Socket IO server</description>
+<author>assemblyline@cyber.gc.ca</author>      <pubDate>Mon, 10 Aug 2026 20:04:13 GMT</pubDate>
+    </item>    <item>
+      <title>mypy-boto3-sagemaker 1.43.68</title>
+      <link>https://pypi.org/project/mypy-boto3-sagemaker/1.43.68/</link>
+      <description>Type annotations for boto3 SageMaker 1.43.68 service generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:11 GMT</pubDate>
+    </item>    <item>
+      <title>types-boto3-lite 1.43.68</title>
+      <link>https://pypi.org/project/types-boto3-lite/1.43.68/</link>
+      <description>Lite type annotations for boto3 1.43.68 generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:11 GMT</pubDate>
+    </item>    <item>
+      <title>types-boto3 1.43.68</title>
+      <link>https://pypi.org/project/types-boto3/1.43.68/</link>
+      <description>Type annotations for boto3 1.43.68 generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:11 GMT</pubDate>
+    </item>    <item>
+      <title>assemblyline-service-client 4.7.5.dev39</title>
+      <link>https://pypi.org/project/assemblyline-service-client/4.7.5.dev39/</link>
+      <description>Assemblyline 4 - Service client</description>
+<author>assemblyline@cyber.gc.ca</author>      <pubDate>Mon, 10 Aug 2026 20:04:11 GMT</pubDate>
+    </item>    <item>
+      <title>mypy-boto3-connect 1.43.68</title>
+      <link>https://pypi.org/project/mypy-boto3-connect/1.43.68/</link>
+      <description>Type annotations for boto3 Connect 1.43.68 service generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:09 GMT</pubDate>
+    </item>    <item>
+      <title>mypy-boto3-medialive 1.43.68</title>
+      <link>https://pypi.org/project/mypy-boto3-medialive/1.43.68/</link>
+      <description>Type annotations for boto3 MediaLive 1.43.68 service generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:09 GMT</pubDate>
+    </item>    <item>
+      <title>mypy-boto3-elementalinference 1.43.68</title>
+      <link>https://pypi.org/project/mypy-boto3-elementalinference/1.43.68/</link>
+      <description>Type annotations for boto3 ElementalInference 1.43.68 service generated with mypy-boto3-builder 8.12.0</description>
+<author>vlad.emelianov.nz@gmail.com</author>      <pubDate>Mon, 10 Aug 2026 20:04:09 GMT</pubDate>
+    </item>  </channel>
+</rss>

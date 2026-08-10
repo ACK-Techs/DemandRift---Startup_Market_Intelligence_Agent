@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>World Bank Group - International Development, Poverty and Sustainability</title>
+    <link rel="canonical" href="https://www.worldbank.org/ext/en/home">
+    <meta name="description" content="With 189 member countries, the World Bank Group is a unique global partnership fighting poverty worldwide through sustainable solutions.">
+    <meta property="og:title" content="World Bank Group - International Development, Poverty and Sustainability">
+    <meta property="og:description" content="With 189 member countries, the World Bank Group is a unique global partnership fighting poverty worldwide through sustainable solutions.">
+    <meta property="og:url" content="https://www.worldbank.org/ext/en/home">
+    <meta property="og:image" content="https://www.worldbank.org/ext/en/media_1d3c9b6f1c41de4cf0aea31fbf18f449397fcedbe.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta property="og:image:secure_url" content="https://www.worldbank.org/ext/en/media_1d3c9b6f1c41de4cf0aea31fbf18f449397fcedbe.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="World Bank Group - International Development, Poverty and Sustainability">
+    <meta name="twitter:description" content="With 189 member countries, the World Bank Group is a unique global partnership fighting poverty worldwide through sustainable solutions.">
+    <meta name="twitter:image" content="https://www.worldbank.org/ext/en/media_1d3c9b6f1c41de4cf0aea31fbf18f449397fcedbe.jpg?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta name="information_classification" content="PUB_AI">
+    <meta name="pagecategory" content="home">
+    <meta name="schema-type" content="WebSite">
+    <meta name="originating_unit" content="External and Corporate Relations - Corporate Communications, ECRCC">
+    <meta name="published-time" content="2026-08-10T16:52:17.476Z">
+    <meta name="languages" content="English, ENG">
+    <meta name="author" content="WorldBank">
+    <meta name="channel" content="EXT HOME EN EXT">
+    <meta name="page-swoosh" content="page-swoosh-no">
+    <meta name="cq-tags" content="subject:sustainable-development-goals, subject:economic growth, subject:governance in public sector, subject:poverty measurement and analysis, subject:sustainable economic growth">
+    <meta name="content_type" content="HomePage">
+    <meta name="content_date" content="2024-10-16T00:00:00.000Z">
+    <meta name="pagetitle" content="World Bank Group - International Development, Poverty and Sustainability">
+    <meta name="alternate-url" content="en|https://www.worldbank.org/ext/en/home, es|https://www.bancomundial.org/ext/es/home, fr|https://www.banquemondiale.org/ext/fr/home, ar|https://www.albankaldawli.org/ext/ar/home, ru|https://www.vsemirnyjbank.org/ext/ru/home, zh|https://www.shihang.org/ext/zh/home, View All|https://www.worldbank.org/en/language-resources">
+    <meta name="content-page-ref" content="yxdlEeBbV-Pv4477mdyCcg8L62AttbKi4B6tWF58j88EIFtSaSe660IVIjKAQDP8F3EW6rXSZdshqq17jOBSfQ">
+    <meta name="modified-time" content="2026-08-10T16:51:54.868Z">
+    <script type="application/ld+json">{
+  "@graph": [
+    {
+      "address": {
+        "addressCountry": "US",
+        "streetAddress": "1818 H St NW",
+        "@type": "PostalAddress",
+        "postalCode": "20433",
+        "addressLocality": "Washington",
+        "addressRegion": "DC"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-202-473-1000",
+          "contactType": "customer service",
+          "availableLanguage": [
+            "en"
+          ]
+        }
+      ],
+      "@type": "Organization",
+      "name": "World Bank Group",
+      "logo": {
+        "@type": "ImageObject",
+        "width": 780,
+        "@id": "https://www.worldbank.org/#logo",
+        "url": "https://www.worldbank.org/ext/en/media_1b9d836624bdfd028dfbe9f018f3f12e52326504c.svg",
+        "height": 439
+      },
+      "description": "With 189 member countries, the World Bank Group is a unique global partnership fighting poverty worldwide through sustainable solutions.",
+      "telephone": "+1-202-473-1000",
+      "@id": "https://www.worldbank.org/#organization",
+      "url": "https://www.worldbank.org/",
+      "sameAs": [
+        "https://www.worldbank.org/en/home",
+        "https://www.facebook.com/worldbank",
+        "https://x.com/worldbank",
+        "https://www.linkedin.com/company/the-world-bank",
+        "https://www.youtube.com/WorldBank",
+        "https://www.instagram.com/worldbank/",
+        "https://www.whatsapp.com/channel/0029VaeLyAgAojYvg7Wbr91k",
+        "https://www.flickr.com/photos/worldbank"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "potentialAction": {
+        "query-input": "required name=search_term_string",
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.worldbank.org/en/search?q={search_term_string}"
+        }
+      },
+      "name": "World Bank Group",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://www.worldbank.org/#organization"
+      },
+      "@id": "https://www.worldbank.org/#website",
+      "url": "https://www.worldbank.org/"
+    },
+    {
+      "datePublished": "2026-04-14T04:21:34Z",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "@id": "https://www.worldbank.org/ext/en/home#primaryimage",
+        "url": "https://www.worldbank.org/ext/en/media_1b9d836624bdfd028dfbe9f018f3f12e52326504c.svg"
+      },
+      "@type": "WebPage",
+      "name": "World Bank Group - International Development, Poverty and Sustainability",
+      "description": "With 189 member countries, the World Bank Group is a unique global partnership fighting poverty worldwide through sustainable solutions.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://www.worldbank.org/#organization"
+      },
+      "dateModified": "2026-08-04T13:32:52Z",
+      "@id": "https://www.worldbank.org/ext/en/home#webpage",
+      "isPartOf": {
+        "@id": "https://www.worldbank.org/#website"
+      },
+      "url": "https://www.worldbank.org/ext/en/home"
+    },
+    {
+      "itemListElement": [
+        {
+          "item": "https://www.worldbank.org/ext/en/home",
+          "@type": "ListItem",
+          "name": "Home",
+          "position": 1
+        }
+      ],
+      "@type": "BreadcrumbList",
+      "@id": "https://www.worldbank.org/ext/en/home#breadcrumb"
+    }
+  ],
+  "@context": "https://schema.org"
+}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/ext/scripts/aem.js" type="module"></script>
+    <script src="/ext/scripts/utils-core.js" type="module"></script>
+    <script src="/ext/scripts/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="/ext/styles/components-variable.css">
+    <link rel="stylesheet" href="/ext/styles/lcp.css">
+    <link rel="stylesheet" href="/ext/styles/grid.css">
+    <link rel="icon" type="image/png" href="/content/dam/wbr-redesign/logos/wbg-favicon.png">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="curated-cards">
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1bfbf711bdb4e86d124e1bfebc0af7529290613b5.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1bfbf711bdb4e86d124e1bfebc0af7529290613b5.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1bfbf711bdb4e86d124e1bfebc0af7529290613b5.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="eager" alt="" src="./media_1bfbf711bdb4e86d124e1bfebc0af7529290613b5.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2000" height="959" fetchpriority="high">
+              </picture>
+            </div>
+            <div>AI Offers Lifeline to Developing Economies</div>
+            <div></div>
+            <div>Artificial Intelligence Offers Lifeline to Developing Economies</div>
+            <div>The 2026 World Development Report shows how AI could boost growth—if countries act now</div>
+            <div><a href="https://www.worldbank.org/en/publication/wdr2026">https://www.worldbank.org/en/publication/wdr2026</a></div>
+            <div>See Report</div>
+            <div></div>
+            <div></div>
+            <div>Top</div>
+            <div>eager</div>
+            <div><a href="https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg">https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg</a></div>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_12f91a5cf1ce8aaf97501b8ac9b6bff9b2299121e.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_12f91a5cf1ce8aaf97501b8ac9b6bff9b2299121e.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_12f91a5cf1ce8aaf97501b8ac9b6bff9b2299121e.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_12f91a5cf1ce8aaf97501b8ac9b6bff9b2299121e.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="799" height="533">
+              </picture>
+            </div>
+            <div>Turning Creativity into Jobs and Investment</div>
+            <div>
+              <ul>
+                <li>immersive story</li>
+              </ul>
+            </div>
+            <div>Turning Creativity into Jobs and Investment</div>
+            <div></div>
+            <div><a href="https://www.ifc.org/en/stories/2026/creativity-creates-jobs">https://www.ifc.org/en/stories/2026/creativity-creates-jobs</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div><a href="https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg">https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg</a></div>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1bea1bd34ce08d222b166c9661d0558bad8b6e0e9.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1bea1bd34ce08d222b166c9661d0558bad8b6e0e9.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1bea1bd34ce08d222b166c9661d0558bad8b6e0e9.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1bea1bd34ce08d222b166c9661d0558bad8b6e0e9.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="799" height="533">
+              </picture>
+            </div>
+            <div>Digital Access is Transforming the Pacific Islands</div>
+            <div>
+              <ul>
+                <li>immersive story</li>
+              </ul>
+            </div>
+            <div>Digital Access is Transforming the Pacific Islands</div>
+            <div></div>
+            <div><a href="https://www.worldbank.org/en/news/immersive-story/2026/07/29/digital-tides-transforming-communities-in-the-pacific">https://www.worldbank.org/en/news/immersive-story/2026/07/29/digital-tides-transforming-communities-in-the-pacific</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div><a href="https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg">https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg</a></div>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1f189856d39db26747b043ab978375498171570f0.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1f189856d39db26747b043ab978375498171570f0.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1f189856d39db26747b043ab978375498171570f0.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1f189856d39db26747b043ab978375498171570f0.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="1596" height="897">
+              </picture>
+            </div>
+            <div>How Indigenous Midwives Strengthen Health Systems</div>
+            <div>
+              <ul>
+                <li>feature story</li>
+              </ul>
+            </div>
+            <div>How Indigenous Midwives Strengthen Health Systems</div>
+            <div></div>
+            <div><a href="https://www.worldbank.org/en/news/feature/2026/08/10/honoring-indigenous-midwives-in-family-and-community-care">https://www.worldbank.org/en/news/feature/2026/08/10/honoring-indigenous-midwives-in-family-and-community-care</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div><a href="https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg">https://delivery-p136806-e1377844.adobeaemcloud.com/adobe/assets/urn:aaid:aem:52d2acec-389f-4673-a40d-94ed025efbb1/as/Partnerships%20homepage.jpg</a></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-padding-between</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>bg-primary-blue</div>
+          </div>
+          <div>
+            <div>sec-inside-container</div>
+            <div>false</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="lp-heading">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <h2 id="our-priorities">OUR <strong>PRIORITIES</strong></h2>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>lp-heading-bottom-xlarge</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="overlay-cards">
+          <div>
+            <div>false</div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1268de5d78d8d9df353295aed73238f2b93e056ad.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1268de5d78d8d9df353295aed73238f2b93e056ad.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1268de5d78d8d9df353295aed73238f2b93e056ad.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1268de5d78d8d9df353295aed73238f2b93e056ad.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>Jobs</div>
+            <div>Why jobs? Because they’re the surest path out of poverty for individuals and communities.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/jobs">https://www.worldbank.org/ext/en/jobs</a></div>
+            <div></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1974bf2f4c64798c4b1e7028045b8350d19c2c50a.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1974bf2f4c64798c4b1e7028045b8350d19c2c50a.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1974bf2f4c64798c4b1e7028045b8350d19c2c50a.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1974bf2f4c64798c4b1e7028045b8350d19c2c50a.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>
+              <h3 id="mission-300">Mission 300</h3>
+            </div>
+            <div>Mission 300 is connecting homes, communities, and businesses in Africa to electricity <em><strong>,</strong></em> powering growth and expanding opportunity.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/energizingafrica">https://www.worldbank.org/ext/en/energizingafrica</a></div>
+            <div></div>
+            <div>false</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_17e7458b367a679d4fbe24c71a697083fa498fb24.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_17e7458b367a679d4fbe24c71a697083fa498fb24.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_17e7458b367a679d4fbe24c71a697083fa498fb24.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_17e7458b367a679d4fbe24c71a697083fa498fb24.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>
+              <h3 id="health-works">Health Works</h3>
+            </div>
+            <div>Health Works is reaching 1.5 billion people with quality, affordable health services by 2030 — creating jobs and driving economic growth.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/health-works">https://www.worldbank.org/ext/en/health-works</a></div>
+            <div>false</div>
+            <div>false</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>center</div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1e9974aeec8060c513a8ca2226c965b849847aa37.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1e9974aeec8060c513a8ca2226c965b849847aa37.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1e9974aeec8060c513a8ca2226c965b849847aa37.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1e9974aeec8060c513a8ca2226c965b849847aa37.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>
+              <h3 id="agriconnect">AgriConnect</h3>
+            </div>
+            <div>AgriConnect helps 300 million small-scale farmers build thriving agribusinesses — boosting incomes, feeding more people, and strengthening economies.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/agriconnect">https://www.worldbank.org/ext/en/agriconnect</a></div>
+            <div></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_19756e454f81795b800ad6bf7da9bfc233559a736.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_19756e454f81795b800ad6bf7da9bfc233559a736.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_19756e454f81795b800ad6bf7da9bfc233559a736.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_19756e454f81795b800ad6bf7da9bfc233559a736.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>
+              <h3 id="gender">Gender</h3>
+            </div>
+            <div>Unlocking economic opportunity for millions of women through digital access, finance, and jobs.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/gender">https://www.worldbank.org/ext/en/gender</a></div>
+            <div></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1afb1089ed329f9013e49cf83c8a7c5336ea067de.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1afb1089ed329f9013e49cf83c8a7c5336ea067de.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1afb1089ed329f9013e49cf83c8a7c5336ea067de.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1afb1089ed329f9013e49cf83c8a7c5336ea067de.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="2048" height="1365">
+              </picture>
+            </div>
+            <div>
+              <h3 id="water-forward">Water Forward</h3>
+            </div>
+            <div>Water forward is securing reliable water for over a billion people by 2030, protecting jobs, health and economies that depend on it.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/water">https://www.worldbank.org/ext/en/water</a></div>
+            <div></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-padding-between</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>default</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="data-cards data-card-variation">
+          <div>
+            <div><strong>Data</strong> for Development</div>
+          </div>
+          <div>
+            <div>
+              <p>Essential data to guide decisions, monitor progress, and evaluate impact.</p>
+              <p><a href="https://data.worldbank.org/">See More Data</a></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p><strong>Explore by focus area</strong></p>
+              <p><em><a href="https://data360.worldbank.org/en/people" title="People">People</a></em></p>
+              <p><em><a href="https://data360.worldbank.org/en/prosperity" title="Prosperity">Prosperity</a></em></p>
+              <p><em><a href="https://data360.worldbank.org/en/planet" title="Planet">Planet</a></em></p>
+              <p><em><a href="https://data360.worldbank.org/en/infrastructure" title="Infrastructure">Infrastructure</a></em></p>
+              <p><em><a href="https://data360.worldbank.org/en/digital" title="Digital">Digital</a></em></p>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>people</li>
+              </ul>
+            </div>
+            <div>3.4</div>
+            <div><strong>additional jobs</strong> are created in related industries for every job in the <strong>health sector</strong>.</div>
+            <div><a href="https://www.worldbank.org/ext/en/health-works">https://www.worldbank.org/ext/en/health-works</a></div>
+            <div>Source: World Bank Health Works</div>
+            <div>true</div>
+            <div></div>
+            <div>Think this information from World Bank Group is useful</div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>prosperity</li>
+              </ul>
+            </div>
+            <div>10 percent</div>
+            <div>of global gross domestic product in 2024 came from <strong>travel and tourism</strong>.</div>
+            <div><a href="https://blogs.worldbank.org/en/voices/cities-that-work-how-urban-tourism-drives-jobs">https://blogs.worldbank.org/en/voices/cities-that-work-how-urban-tourism-drives-jobs</a></div>
+            <div>Source: World Travel &#x26; Tourism Council</div>
+            <div>true</div>
+            <div></div>
+            <div>Think this information from World Bank Group is useful</div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>infrastructure</li>
+              </ul>
+            </div>
+            <div>9 in 10</div>
+            <div><strong>people without electricity</strong> today live in Sub-Saharan Africa.</div>
+            <div><a href="https://data360.worldbank.org/en/atlas/electricity-access/">https://data360.worldbank.org/en/atlas/electricity-access/</a></div>
+            <div>Source: 2026 Atlas of Global Development</div>
+            <div>true</div>
+            <div></div>
+            <div>Think this information from World Bank Group is useful</div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-padding-between</div>
+          </div>
+          <div>
+            <div>sec-swoosh</div>
+            <div>sec-swoosh-type7</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>bg-image, lp-download-btn, lp-3column-card</div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_171c44e294acc8eda1da576acb974863f598f876f.svg?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_171c44e294acc8eda1da576acb974863f598f876f.svg?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/svg+xml" srcset="./media_171c44e294acc8eda1da576acb974863f598f876f.svg?width=2000&#x26;format=svg&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_171c44e294acc8eda1da576acb974863f598f876f.svg?width=750&#x26;format=svg&#x26;optimize=medium" width="1600" height="576">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>tab-image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1a9f193396b94fd14b626efc817b7953606d285b8.svg?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1a9f193396b94fd14b626efc817b7953606d285b8.svg?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/svg+xml" srcset="./media_1a9f193396b94fd14b626efc817b7953606d285b8.svg?width=2000&#x26;format=svg&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1a9f193396b94fd14b626efc817b7953606d285b8.svg?width=750&#x26;format=svg&#x26;optimize=medium" width="594" height="576">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>mob-image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_180f557153555239ce15411a7d6567af70dbbb383.svg?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_180f557153555239ce15411a7d6567af70dbbb383.svg?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/svg+xml" srcset="./media_180f557153555239ce15411a7d6567af70dbbb383.svg?width=2000&#x26;format=svg&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_180f557153555239ce15411a7d6567af70dbbb383.svg?width=750&#x26;format=svg&#x26;optimize=medium" width="391" height="703">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>sec-inside-container</div>
+            <div>false</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="signup">
+          <div>
+            <div>STAY CURRENT WITH OUR LATEST</div>
+          </div>
+          <div>
+            <div>DATA &#x26; INSIGHTS</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>true</div>
+          </div>
+          <div>
+            <div>WBG External Corporate English Newsletter|wbg-svc-ext-corp-eng-nl</div>
+          </div>
+          <div>
+            <div>false</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-xlarge</div>
+          </div>
+          <div>
+            <div>sec-swoosh</div>
+            <div>sec-swoosh-none</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>bg-neutrals-20</div>
+          </div>
+          <div>
+            <div>sec-inside-container</div>
+            <div>true</div>
+          </div>
+          <div>
+            <div>sec-width</div>
+            <div>false</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="research-publications-cards">
+          <div>
+            <div>
+              <h2 id="research--publications"><strong>RESEARCH</strong> &#x26; PUBLICATIONS</h2>
+            </div>
+          </div>
+          <div>
+            <div>More Research &#x26; Publications</div>
+          </div>
+          <div>
+            <div><a href="https://www.worldbank.org/en/research">https://www.worldbank.org/en/research</a></div>
+          </div>
+          <div>
+            <div>default</div>
+          </div>
+          <div>
+            <div></div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1b90cc94494dee2b575d5a6d815cda5cb4b982078.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1b90cc94494dee2b575d5a6d815cda5cb4b982078.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1b90cc94494dee2b575d5a6d815cda5cb4b982078.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1b90cc94494dee2b575d5a6d815cda5cb4b982078.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="300" height="377">
+              </picture>
+            </div>
+            <div>Regional Economic Updates</div>
+            <div>Regional Economic Updates - April 2026</div>
+            <div>Key macroeconomic trends and developments across six regions.</div>
+            <div><a href="https://www.worldbank.org/ext/en/what-we-do/regional-economic-updates">https://www.worldbank.org/ext/en/what-we-do/regional-economic-updates</a></div>
+            <div>See all the Reports</div>
+            <div><a href="https://www.worldbank.org/ext/en/what-we-do/regional-economic-updates">https://www.worldbank.org/ext/en/what-we-do/regional-economic-updates</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_13c0791cd40781e785ccc88bce62d71d93fe0c434.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_13c0791cd40781e785ccc88bce62d71d93fe0c434.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_13c0791cd40781e785ccc88bce62d71d93fe0c434.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_13c0791cd40781e785ccc88bce62d71d93fe0c434.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="660" height="830">
+              </picture>
+            </div>
+            <div>Global Economic Prospects Report - June 2026</div>
+            <div>Global Economic Prospects Report - June 2026</div>
+            <div>As the Middle East conflict drives sharp energy price increases, global growth is projected to slow to 2.5 percent in 2026.</div>
+            <div><a href="https://www.worldbank.org/en/publication/global-economic-prospects">https://www.worldbank.org/en/publication/global-economic-prospects</a></div>
+            <div>Read Full Report</div>
+            <div><a href="https://openknowledge.worldbank.org/bitstreams/8e6bcf71-89a1-443b-bbe9-6c39a496d7ab/download">https://openknowledge.worldbank.org/bitstreams/8e6bcf71-89a1-443b-bbe9-6c39a496d7ab/download</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-xhuge</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-xhuge</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>default</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="custom-image">
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1646b0e218a661899291fd6b339258eced57b84c5.jpg?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1646b0e218a661899291fd6b339258eced57b84c5.jpg?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/jpeg" srcset="./media_1646b0e218a661899291fd6b339258eced57b84c5.jpg?width=2000&#x26;format=jpg&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1646b0e218a661899291fd6b339258eced57b84c5.jpg?width=750&#x26;format=jpg&#x26;optimize=medium" width="3840" height="3840">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>Default alt</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="lp-heading">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <h2 id="the-power-of-purpose"><strong>THE POWER</strong> OF PURPOSE</h2>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>The world’s challenges are bigger than one project, one country, or even one World Bank Group. That’s why we’re pairing 80 years of experience with renewed focus. To move faster. Work smarter. With more partners. And to create jobs that empower people and grow economies.</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="related-links contentlist">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>26%</div>
+            <div></div>
+            <div>Reduced project approval time</div>
+            <div>lp lp-arrow-down</div>
+          </div>
+          <div>
+            <div>10x</div>
+            <div></div>
+            <div>Each $1 from shareholders translates into $10 in development finance over 10 years</div>
+            <div>lp lp-arrow-up</div>
+          </div>
+          <div>
+            <div>$1.2 T</div>
+            <div></div>
+            <div>Capital invested since 1946</div>
+            <div>lp lp-arrow-up</div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>style</div>
+            <div>grid, related-1-cols, data-list-container, heading-vertical, image-1by1, border-radius-medium</div>
+          </div>
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-padding-between</div>
+          </div>
+          <div>
+            <div>sec-width</div>
+            <div>false</div>
+          </div>
+          <div>
+            <div>no-grid</div>
+            <div>false</div>
+          </div>
+          <div>
+            <div>col-ctrl</div>
+            <div>col-3</div>
+          </div>
+          <div>
+            <div>col1-class</div>
+            <div>col-lg-6 col-md-6 col-sm-12 col-xs-12</div>
+          </div>
+          <div>
+            <div>col1-blocks</div>
+            <div>custom-image</div>
+          </div>
+          <div>
+            <div>col2-class</div>
+            <div>col-lg-1 col-md-1 col-sm-12 col-xs-12</div>
+          </div>
+          <div>
+            <div>col3-class</div>
+            <div>col-lg-5 col-md-5 col-sm-12 col-xs-12</div>
+          </div>
+          <div>
+            <div>col3-blocks</div>
+            <div>
+              <ul>
+                <li>related-links</li>
+                <li>lp-heading</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="lp-heading">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <h2 id="transforming-knowledge-transforming-lives">TRANSFORMING KNOWLEDGE <strong>TRANSFORMING LIVES</strong></h2>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>Trusted data, insights, and education to help organizations, practitioners, and global leaders deliver impactful policies and projects at scale.</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>lp-heading-bottom-xlarge</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="custom-image">
+          <div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_12e58fe6838e10bbf3910aa872aa82f1d5b37f686.png?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_12e58fe6838e10bbf3910aa872aa82f1d5b37f686.png?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/png" srcset="./media_12e58fe6838e10bbf3910aa872aa82f1d5b37f686.png?width=2000&#x26;format=png&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_12e58fe6838e10bbf3910aa872aa82f1d5b37f686.png?width=750&#x26;format=png&#x26;optimize=medium" width="588" height="570">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>Default alt</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="custom-text">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <p><strong>World Bank Group Academy</strong></p>
+              <p>One-of-a-kind capacity development and training for next-generation leaders.</p>
+              <p><a href="https://academy.worldbank.org/en/home">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="custom-text">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <p><strong>World Bank Group Scorecard</strong></p>
+              <p>Easy-to-understand indicators and data that measure progress and impact.</p>
+              <p><a href="https://scorecard.worldbank.org/en/home">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>style</div>
+            <div>grid, bg-primary-blue-90, heading-vertical, transform-teaser-container</div>
+          </div>
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>col-ctrl</div>
+            <div>col-2</div>
+          </div>
+          <div>
+            <div>col1-class</div>
+            <div>col-lg-7 col-md-7 col-sm-8 col-xs-12 lp-two-column-card</div>
+          </div>
+          <div>
+            <div>col1-blocks</div>
+            <div>
+              <ul>
+                <li>lp-heading</li>
+                <li>custom-text</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>col2-class</div>
+            <div>col-lg-5 col-md-5 col-sm-4 col-xs-12</div>
+          </div>
+          <div>
+            <div>col2-blocks</div>
+            <div>custom-image</div>
+          </div>
+          <div>
+            <div>col3-class</div>
+            <div>col-lg-5 col-md-5 col-sm-12 col-xs-12</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="data-cards news-card-variation">
+          <div>
+            <div><strong>EMPOWERING PEOPLE &#x26; COUNTRIES</strong> TO MAKE PROGRESS</div>
+          </div>
+          <div>
+            <div><em><strong><a href="https://projects.worldbank.org/en/projects-operations/projects-home">See all Projects</a></strong></em></div>
+          </div>
+          <div>
+            <div>
+              <p><strong>Explore by region</strong></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=Africa" title="Africa">Africa</a></em></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=East%20Asia%20and%20Pacific" title="East Asia &#x26; Pacific">East Asia &#x26; Pacific</a></em></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=Europe%20and%20Central%20Asia" title="Europe &#x26; Central Asia">Europe &#x26; Central Asia</a></em></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=Latin%20America%20and%20Caribbean" title="Latin America &#x26; Caribbean">Latin America &#x26; Caribbean</a></em></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=Middle%20East%2C%20North%20Africa%2C%20Afghanistan%2C%20and%20Pakistan" title="Middle East, North Africa, Afghanistan, and Pakistan">Middle East, N. Africa, Afghanistan, and Pakistan</a></em></p>
+              <p><em><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0&#x26;regionname_exact=South%20Asia" title="South Asia">South Asia</a></em></p>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>prosperity</li>
+              </ul>
+            </div>
+            <div>Turning Destinations into Opportunity: Supporting More than a Million Jobs in Indonesia</div>
+            <div><a href="https://www.worldbank.org/en/results/2026/05/29/turning-destinations-into-opportunity-supporting-more-than-a-million-jobs-in-indonesia">https://www.worldbank.org/en/results/2026/05/29/turning-destinations-into-opportunity-supporting-more-than-a-million-jobs-in-indonesia</a></div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_128c045cf6489252ae3dd8bd2270af59e17e3a56d.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_128c045cf6489252ae3dd8bd2270af59e17e3a56d.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_128c045cf6489252ae3dd8bd2270af59e17e3a56d.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_128c045cf6489252ae3dd8bd2270af59e17e3a56d.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="780" height="439">
+              </picture>
+            </div>
+            <div>Prosperity</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>People</li>
+              </ul>
+            </div>
+            <div>Strengthening Health Systems in the Maghreb: Supporting Services and Reforms in Morocco and Tunisia</div>
+            <div><a href="https://www.worldbank.org/en/results/2026/05/26/strengthening-health-systems-in-the-maghreb-supporting-services-and-reforms-in-morocco-and-tunisia">https://www.worldbank.org/en/results/2026/05/26/strengthening-health-systems-in-the-maghreb-supporting-services-and-reforms-in-morocco-and-tunisia</a></div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1044dc3a69a2622664f0ca9fadc97c08a8390c200.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1044dc3a69a2622664f0ca9fadc97c08a8390c200.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1044dc3a69a2622664f0ca9fadc97c08a8390c200.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1044dc3a69a2622664f0ca9fadc97c08a8390c200.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="3372" height="1997">
+              </picture>
+            </div>
+            <div>People</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>infrastructure</li>
+              </ul>
+            </div>
+            <div>Lighting Up Malawi: Electricity Access for Nearly Two Million People Sparks Entrepreneurship and Opportunity</div>
+            <div><a href="https://www.worldbank.org/en/results/2026/05/19/lighting-up-malawi-electricity-access-for-nearly-two-million-people-sparks-entrepreneurship-and-opportunity">https://www.worldbank.org/en/results/2026/05/19/lighting-up-malawi-electricity-access-for-nearly-two-million-people-sparks-entrepreneurship-and-opportunity</a></div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1f08b14f14d382315e2bc3433902296bbe5b855c0.avif?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1f08b14f14d382315e2bc3433902296bbe5b855c0.avif?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/avif" srcset="./media_1f08b14f14d382315e2bc3433902296bbe5b855c0.avif?width=2000&#x26;format=avif&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1f08b14f14d382315e2bc3433902296bbe5b855c0.avif?width=750&#x26;format=avif&#x26;optimize=medium" width="780" height="439">
+              </picture>
+            </div>
+            <div>Infrastructure</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-xhuge</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>default</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="live-now normal-mode">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>style</div>
+            <div>default</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="lp-heading">
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>
+              <h2 id="partner-with-the-world-bank-group"><strong>PARTNER WITH</strong> THE WORLD BANK GROUP</h2>
+            </div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>We work with local partners and global partners. Because with more resources, we can accomplish more.</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div>lp-heading-bottom-none</div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-xlarge</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>default</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="overlay-cards">
+          <div>
+            <div>true</div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_12980790337fd73a5cd67cee21f0dbad6e31dd367.jpg?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_12980790337fd73a5cd67cee21f0dbad6e31dd367.jpg?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/jpeg" srcset="./media_12980790337fd73a5cd67cee21f0dbad6e31dd367.jpg?width=2000&#x26;format=jpg&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_12980790337fd73a5cd67cee21f0dbad6e31dd367.jpg?width=750&#x26;format=jpg&#x26;optimize=medium" width="3936" height="2000">
+              </picture>
+            </div>
+            <div>Partnerships</div>
+            <div>Combining knowledge, experience, and innovative thinking to deliver meaningful results and improve lives.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/work-with-us/partnerships">https://www.worldbank.org/ext/en/work-with-us/partnerships</a></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div>
+              <picture>
+                <source type="image/webp" srcset="./media_1e9b4ebbf3d05321c7748bdec139551fc13aa738b.png?width=2000&#x26;format=webply&#x26;optimize=medium" media="(min-width: 600px)">
+                <source type="image/webp" srcset="./media_1e9b4ebbf3d05321c7748bdec139551fc13aa738b.png?width=750&#x26;format=webply&#x26;optimize=medium">
+                <source type="image/png" srcset="./media_1e9b4ebbf3d05321c7748bdec139551fc13aa738b.png?width=2000&#x26;format=png&#x26;optimize=medium" media="(min-width: 600px)">
+                <img loading="lazy" alt="" src="./media_1e9b4ebbf3d05321c7748bdec139551fc13aa738b.png?width=750&#x26;format=png&#x26;optimize=medium" width="1205" height="678">
+              </picture>
+            </div>
+            <div>Project Procurement</div>
+            <div>Connecting borrowers and suppliers to opportunities that move communities and countries forward.</div>
+            <div>Learn More</div>
+            <div><a href="https://www.worldbank.org/ext/en/what-we-do/project-procurement">https://www.worldbank.org/ext/en/what-we-do/project-procurement</a></div>
+            <div>true</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="section-metadata">
+          <div>
+            <div>sec-spacing</div>
+            <div>section-none</div>
+          </div>
+          <div>
+            <div>sec-spacing-bottom</div>
+            <div>section-xhuge</div>
+          </div>
+          <div>
+            <div>style</div>
+            <div>overlay-carousel-card-container</div>
+          </div>
+          <div>
+            <div>sec-inside-container</div>
+            <div>false</div>
+          </div>
+          <div>
+            <div>sec-width</div>
+            <div>false</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"7dac4fb1b54e48a6bd15186e9d7c09f2"}' crossorigin="anonymous"></script>
+</body>
+</html>

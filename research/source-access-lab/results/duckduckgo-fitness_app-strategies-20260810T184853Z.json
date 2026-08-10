@@ -1,0 +1,346 @@
+{
+  "schema_version": "0.4",
+  "mode": "independent_acquisition_strategies",
+  "probed_at": "2026-08-10T18:48:53.419238+00:00",
+  "site_key": "duckduckgo",
+  "site_name": "DuckDuckGo",
+  "topic_key": "fitness_app",
+  "topic": {
+    "label": "spor / fitness uygulaması araştırması",
+    "primary": "spor uygulaması",
+    "secondary": "fitness app",
+    "subqueries": [
+      "spor uygulaması",
+      "fitness app",
+      "workout app reviews",
+      "calorie tracking app",
+      "myfitnesspal alternatif",
+      "fitness app pricing"
+    ],
+    "keywords": [
+      "spor",
+      "fitness",
+      "workout",
+      "calorie",
+      "uygulama",
+      "app",
+      "review",
+      "pricing",
+      "myfitnesspal"
+    ]
+  },
+  "acceptance_doc": "ACQUISITION-METHODS.md",
+  "home_probe": {
+    "reachable": false,
+    "status": null,
+    "stop_reason": "network_error"
+  },
+  "methods": [
+    {
+      "method_id": "search_discovery",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "surface": "html.duckduckgo.com/html",
+        "query": "spor uygulaması",
+        "status": null
+      }
+    },
+    {
+      "method_id": "static_html_surface",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "surface": "html.duckduckgo.com/html",
+        "query": "spor uygulaması",
+        "status": null
+      }
+    },
+    {
+      "method_id": "lite_or_mobile_surface",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "surface": "lite.duckduckgo.com/lite",
+        "query": "fitness app",
+        "status": null
+      }
+    },
+    {
+      "method_id": "pagination",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "search_discovery produced no docs to paginate"
+      }
+    },
+    {
+      "method_id": "query_decomposition",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "per_query": [
+          {
+            "query": "spor uygulaması",
+            "stop_reason": "network_error",
+            "urls": 0
+          }
+        ],
+        "stopped_on_query": "spor uygulaması"
+      }
+    },
+    {
+      "method_id": "result_url_resolution",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "no discovery docs"
+      }
+    },
+    {
+      "method_id": "destination_page_fetch",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "no external targets"
+      }
+    },
+    {
+      "method_id": "json_ld",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "destination_page_fetch has no docs to inspect"
+      }
+    },
+    {
+      "method_id": "embedded_json",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {}
+    },
+    {
+      "method_id": "rss_feed",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "DDG web search has no general query RSS surface for this lab"
+      }
+    },
+    {
+      "method_id": "sitemap",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {}
+    },
+    {
+      "method_id": "browser_rendering",
+      "passed": false,
+      "stop_reason": "tooling_missing",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "playwright/selenium not installed; JS main UI not probed"
+      }
+    },
+    {
+      "method_id": "indirect_site_query",
+      "passed": false,
+      "stop_reason": "network_error",
+      "requests_made": 1,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "query": "site:reddit.com fitness app"
+      }
+    },
+    {
+      "method_id": "cached_archive",
+      "passed": false,
+      "stop_reason": "unsupported",
+      "requests_made": 0,
+      "unique_result_urls": 0,
+      "documents_with_content": 0,
+      "metadata_fields_present": [],
+      "keyword_coverage": {
+        "keywords_total": 9,
+        "keywords_hit": [],
+        "coverage": 0.0
+      },
+      "sample_documents": [],
+      "details": {
+        "reason": "no resolved URLs to archive-fetch"
+      }
+    }
+  ],
+  "summary": {
+    "methods_total": 14,
+    "methods_passed": 0,
+    "methods_failed": 14,
+    "passed_method_ids": [],
+    "failed_method_ids": [
+      "search_discovery",
+      "static_html_surface",
+      "lite_or_mobile_surface",
+      "pagination",
+      "query_decomposition",
+      "result_url_resolution",
+      "destination_page_fetch",
+      "json_ld",
+      "embedded_json",
+      "rss_feed",
+      "sitemap",
+      "browser_rendering",
+      "indirect_site_query",
+      "cached_archive"
+    ],
+    "unique_urls_all_methods": 0,
+    "documents_with_content_all_methods": 0,
+    "keyword_coverage_all": {
+      "keywords_total": 9,
+      "keywords_hit": [],
+      "coverage": 0.0
+    },
+    "stop_reasons": {
+      "search_discovery": "network_error",
+      "static_html_surface": "network_error",
+      "lite_or_mobile_surface": "network_error",
+      "pagination": "unsupported",
+      "query_decomposition": "network_error",
+      "result_url_resolution": "unsupported",
+      "destination_page_fetch": "unsupported",
+      "json_ld": "unsupported",
+      "embedded_json": "unsupported",
+      "rss_feed": "unsupported",
+      "sitemap": "network_error",
+      "browser_rendering": "tooling_missing",
+      "indirect_site_query": "network_error",
+      "cached_archive": "unsupported"
+    }
+  }
+}
