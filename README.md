@@ -1,5 +1,5 @@
 # DemandRift — Startup Market Intelligence Agent
-
+ 
 DemandRift is an evidence-driven startup research and decision platform. It turns an early idea into a traceable research brief, gathers and normalizes permitted market evidence, identifies what is still unknown, and produces a defensible direction: **Build**, **Modify**, **Kill**, or **Investigate More**.
 
 > Don't just validate your idea. Leave with a build-ready MVP.
