@@ -4,7 +4,6 @@ import {
   BarChart3,
   BookOpen,
   CircleHelp,
-  ClipboardCheck,
   FileText,
   FolderKanban,
   LayoutDashboard,
@@ -15,32 +14,36 @@ import {
   UsersRound,
   X,
 } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const primaryNavigation = [
-  { label: "Dashboard", icon: LayoutDashboard, active: true },
-  { label: "New Validation", icon: Plus },
-  { label: "Projects", icon: FolderKanban },
+  { label: "Dashboard", icon: LayoutDashboard, href: "/" },
+  { label: "New Validation", icon: Plus, href: "/new-validation" },
+  { label: "Projects", icon: FolderKanban, href: "/projects" },
 ];
 
 const workspaceNavigation = [
-  { label: "Research", icon: SearchCheck },
-  { label: "Evidence", icon: BookOpen },
-  { label: "Competitors", icon: UsersRound },
-  { label: "Pain Points", icon: BarChart3 },
-  { label: "Decision Reports", icon: FileText },
+  { label: "Research", icon: SearchCheck, href: "/research" },
+  { label: "Evidence", icon: BookOpen, href: "/evidence" },
+  { label: "Competitors", icon: UsersRound, href: "/competitors" },
+  { label: "Pain Points", icon: BarChart3, href: "/pain-points" },
+  { label: "Decision Reports", icon: FileText, href: "/decision-reports" },
 ];
 
 function NavigationGroup({ items, title }: { items: typeof primaryNavigation; title?: string }) {
+  const pathname = usePathname();
   return (
     <div className="space-y-1">
       {title ? <p className="px-3 pb-1 pt-4 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#90909a]">{title}</p> : null}
-      {items.map(({ label, icon: Icon, active }) => (
-        <a className={`group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition duration-150 ${active ? "bg-[var(--brand-soft)] text-[var(--brand-deep)]" : "text-[#5f606b] hover:bg-[#f3f3f5] hover:text-[var(--ink)]"}`} href="#" key={label} onClick={(event) => event.preventDefault()}>
+      {items.map(({ label, icon: Icon, href }) => {
+        const active = pathname === href;
+        return <Link aria-current={active ? "page" : undefined} className={`group flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition duration-150 ${active ? "bg-[var(--brand-soft)] text-[var(--brand-deep)]" : "text-[#5f606b] hover:bg-[#f3f3f5] hover:text-[var(--ink)]"}`} href={href} key={label}>
           <Icon aria-hidden="true" className={`h-4 w-4 transition-transform duration-150 group-hover:translate-x-0.5 ${active ? "text-[var(--brand)]" : "text-[#858691]"}`} strokeWidth={1.9} />
           {label}
-        </a>
-      ))}
+        </Link>;
+      })}
     </div>
   );
 }
@@ -49,17 +52,17 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
   return (
     <>
       <div className="flex h-[72px] items-center justify-between border-b border-[var(--line)] px-5">
-        <a className="flex items-center gap-2.5 rounded-md" href="#" onClick={(event) => event.preventDefault()}>
+        <Link className="flex items-center gap-2.5 rounded-md" href="/">
           <span className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--brand)] text-sm font-bold text-white shadow-[0_4px_10px_rgba(91,91,214,.2)]">D</span>
           <span className="text-[15px] font-semibold tracking-[-0.04em] text-[var(--ink)]">DemandRift</span>
-        </a>
+        </Link>
         {onClose ? <button aria-label="Close navigation" className="rounded-md p-1.5 text-[#6c6d76] hover:bg-[#f2f2f4]" onClick={onClose}><X className="h-4 w-4" /></button> : null}
       </div>
       <nav aria-label="Main navigation" className="flex flex-1 flex-col overflow-y-auto px-3 py-4">
         <NavigationGroup items={primaryNavigation} />
         <NavigationGroup items={workspaceNavigation} title="Workspace" />
         <div className="mt-auto space-y-1 border-t border-[var(--line)] pt-4">
-          {[{ label: "Settings", icon: Settings }, { label: "Help", icon: CircleHelp }].map(({ label, icon: Icon }) => <a className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-[#5f606b] transition hover:bg-[#f3f3f5] hover:text-[var(--ink)]" href="#" key={label} onClick={(event) => event.preventDefault()}><Icon aria-hidden="true" className="h-4 w-4 text-[#858691]" strokeWidth={1.9} />{label}</a>)}
+          {[{ label: "Settings", icon: Settings, href: "/settings" }, { label: "Help", icon: CircleHelp, href: "/help" }].map(({ label, icon: Icon, href }) => <Link className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-[#5f606b] transition hover:bg-[#f3f3f5] hover:text-[var(--ink)]" href={href} key={label}><Icon aria-hidden="true" className="h-4 w-4 text-[#858691]" strokeWidth={1.9} />{label}</Link>)}
           <button className="mt-3 flex w-full items-center gap-3 rounded-xl border border-[var(--line)] bg-white p-2.5 text-left transition hover:border-[#d7d7df] hover:bg-[#fafafa]" type="button">
             <span className="grid h-7 w-7 place-items-center rounded-full bg-[#ecebff] text-[11px] font-semibold text-[var(--brand-deep)]">BE</span>
             <span className="min-w-0"><span className="block truncate text-xs font-medium text-[var(--ink)]">Batuhan Evleksiz</span><span className="block truncate text-[11px] text-[#767781]">Research workspace</span></span>
