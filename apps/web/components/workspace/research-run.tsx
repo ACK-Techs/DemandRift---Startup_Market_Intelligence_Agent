@@ -1,0 +1,21 @@
+"use client";
+
+import { Check, Circle, Pause, Play, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { ProgressIndicator } from "@/components/ui/progress-indicator";
+
+function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) { return <section className={`rounded-xl border border-[var(--line)] bg-white ${className}`}>{children}</section>; }
+const stages = ["Competitor mapping", "Pain point synthesis", "Pricing analysis", "Market size assessment"];
+
+export function ResearchRun() {
+  const [running, setRunning] = useState(true);
+  const [activeStage, setActiveStage] = useState(2);
+  const progress = running ? 68 : 68;
+  return <div className="grid gap-5 xl:grid-cols-[minmax(0,1.2fr)_360px]">
+    <Card className="p-5 sm:p-6"><div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"><div><span className="inline-flex items-center gap-2 text-xs font-semibold text-[var(--brand-deep)]"><span className={`h-2 w-2 rounded-full ${running ? "animate-pulse bg-[var(--positive)]" : "bg-[#9c9da6]"}`} />{running ? "ACTIVE RUN" : "PAUSED RUN"}</span><h2 className="mt-3 text-xl font-semibold tracking-[-.04em]">AI Meal Planning Platform</h2><p className="mt-2 text-xs text-[#777883]">Last updated 14 minutes ago · 318 sources scanned</p></div><button className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--line)] px-3 py-2 text-xs font-semibold transition hover:bg-[#fafafa]" onClick={() => setRunning((value) => !value)} type="button">{running ? <><Pause className="h-3.5 w-3.5" />Pause run</> : <><Play className="h-3.5 w-3.5" />Resume run</>}</button></div>
+      <div className="mt-7 rounded-lg bg-[#f8f8fa] p-4"><div className="flex items-end justify-between gap-4"><div><p className="text-xs font-medium text-[#686973]">Overall research progress</p><p className="mt-1 text-[11px] text-[#858690]">Evidence is being grouped by market question.</p></div><b className="font-mono text-2xl text-[var(--ink)]">{progress}%</b></div><ProgressIndicator className="mt-4" value={progress} /></div>
+      <ol className="mt-6 divide-y divide-[var(--line)] border-y border-[var(--line)]">{stages.map((stage, index) => <li className="flex items-center justify-between gap-4 py-4" key={stage}><button className="flex min-w-0 items-center gap-3 text-left" onClick={() => setActiveStage(index)} type="button">{index < 2 ? <Check className="h-4 w-4 shrink-0 text-[var(--positive)]" /> : index === activeStage && running ? <Sparkles className="h-4 w-4 shrink-0 text-[var(--brand)]" /> : <Circle className="h-4 w-4 shrink-0 text-[#a4a5ad]" />}<span><span className="block text-sm font-medium text-[var(--ink)]">{stage}</span><span className="mt-0.5 block text-[11px] text-[#858690]">{index < 2 ? "Complete" : index === activeStage ? (running ? "Collecting and synthesizing evidence" : "Paused") : "Queued"}</span></span></button><span className={`rounded-md px-2 py-1 text-[10px] font-semibold ${index < 2 ? "bg-[var(--positive-soft)] text-[var(--positive)]" : index === activeStage ? "bg-[var(--brand-soft)] text-[var(--brand-deep)]" : "bg-[#f2f2f4] text-[#858690]"}`}>{index < 2 ? "DONE" : index === activeStage ? "IN PROGRESS" : "NEXT"}</span></li>)}</ol>
+    </Card>
+    <div className="space-y-5"><Card className="p-5"><p className="text-[10px] font-semibold uppercase tracking-[.13em] text-[#92939c]">Run health</p><div className="mt-5 space-y-4">{[["Sources scanned", "318"], ["Evidence retained", "129"], ["Budget used", "$4.20 / $10"], ["Current stage", stages[activeStage]]].map(([label, value]) => <div className="flex items-center justify-between gap-4 border-b border-[var(--line)] pb-3 text-xs" key={label}><span className="text-[#73747e]">{label}</span><b className="text-right text-[var(--ink)]">{value}</b></div>)}</div></Card><Card className="p-5"><p className="text-[10px] font-semibold uppercase tracking-[.13em] text-[#92939c]">Latest activity</p><div className="mt-5 space-y-4 text-xs">{["12 pricing mentions grouped", "3 competitor profiles updated", "8 relevant evidence excerpts retained"].map((activity) => <div className="flex gap-3" key={activity}><span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" /><span className="text-[#686973]">{activity}</span></div>)}</div></Card></div>
+  </div>;
+}
