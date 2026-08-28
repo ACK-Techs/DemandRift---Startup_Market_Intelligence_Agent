@@ -22,6 +22,26 @@
   --info-soft: #eaf3ff;
 }
 
+html.dark {
+  --canvas: #11111a;
+  --surface: #191923;
+  --surface-muted: #22222e;
+  --line: #30303e;
+  --ink: #f4f3fb;
+  --ink-soft: #b5b4c2;
+  --brand: #8278ff;
+  --brand-deep: #aaa4ff;
+  --brand-soft: #29264d;
+  --positive: #67d2a4;
+  --positive-soft: #153b32;
+  --warning: #f2bd68;
+  --warning-soft: #493317;
+  --negative: #ff8994;
+  --negative-soft: #49242c;
+  --info: #8db9ff;
+  --info-soft: #1e3554;
+}
+
 * { box-sizing: border-box; }
 
 html { background: var(--canvas); }
@@ -33,6 +53,14 @@ body {
   font-family: var(--font-geist-sans), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+html.dark .bg-white { background-color: var(--surface) !important; }
+html.dark .bg-\[\#fcfcfd\], html.dark .bg-\[\#fafafa\], html.dark .bg-\[\#f8f8fa\], html.dark .bg-\[\#f5f5f7\], html.dark .bg-\[\#f3f3f5\], html.dark .bg-\[\#f2f2f4\], html.dark .bg-\[\#f2f2f6\], html.dark .bg-\[\#f1f1f3\] { background-color: var(--surface-muted) !important; }
+html.dark .bg-\[color-mix\(in_srgb\,var\(--canvas\)_88\%\,white\)\] { background-color: color-mix(in srgb, var(--canvas) 90%, var(--surface)) !important; }
+html.dark [class*="text-[#"] { color: var(--ink-soft) !important; }
+html.dark [class*="border-[#"] { border-color: var(--line) !important; }
+html.dark input, html.dark textarea { background: var(--surface-muted) !important; color: var(--ink) !important; }
+html.dark .shadow-sm, html.dark [class*="shadow-["] { box-shadow: 0 12px 28px rgba(0, 0, 0, .2) !important; }
 
 button, a { -webkit-tap-highlight-color: transparent; }
 
