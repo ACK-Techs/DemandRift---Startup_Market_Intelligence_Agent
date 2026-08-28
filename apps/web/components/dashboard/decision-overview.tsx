@@ -1,0 +1,8 @@
+import { DecisionBadge } from "@/components/ui/decision-badge";
+import { decisionDistribution } from "@/lib/mock-data/dashboard";
+
+export function DecisionOverview() {
+  const total = decisionDistribution.reduce((sum, item) => sum + item.count, 0);
+  const segmentColors = { BUILD: "bg-[#4fbc96]", MODIFY: "bg-[#edaf53]", KILL: "bg-[#e87580]", "INVESTIGATE MORE": "bg-[#73a5eb]" };
+  return <section className="rounded-xl border border-[var(--line)] bg-white p-5 sm:p-6"><div className="flex items-center justify-between"><p className="text-[10px] font-semibold uppercase tracking-[0.13em] text-[var(--brand-deep)]">Decision overview</p><span className="rounded-full bg-[var(--brand-soft)] px-2 py-1 font-mono text-[10px] font-medium text-[var(--brand-deep)]">Last 90 days</span></div><div className="mt-3 flex items-end justify-between"><div><h2 className="text-2xl font-semibold tracking-[-0.055em] text-[var(--ink)]">{total} decisions</h2><p className="mt-1 text-xs text-[#858690]">Across your completed validations</p></div><span className="mb-1 h-2 w-2 rounded-full bg-[var(--brand)] shadow-[0_0_0_4px_var(--brand-soft)]" /></div><div className="mt-6 flex h-2 overflow-hidden rounded-full bg-[#ededf1]">{decisionDistribution.map((item) => <span className={segmentColors[item.decision]} key={item.decision} style={{ width: `${(item.count / total) * 100}%` }} />)}</div><div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-[var(--line)] pt-4">{decisionDistribution.map((item) => <div className="flex items-center justify-between gap-2" key={item.decision}><DecisionBadge decision={item.decision} /><span className="font-mono text-xs tabular-nums text-[#686973]">{item.count}</span></div>)}</div></section>;
+}
