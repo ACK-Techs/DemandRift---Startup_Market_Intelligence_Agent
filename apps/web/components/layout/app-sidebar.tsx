@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BrandMark } from "@/components/ui/brand-mark";
 import { useState } from "react";
 
 const primaryNavigation = [
@@ -52,10 +53,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
   return (
     <>
       <div className="flex h-[72px] items-center justify-between border-b border-[var(--line)] px-5">
-        <Link className="flex items-center gap-2.5 rounded-md" href="/">
-          <span className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--brand)] text-sm font-bold text-white shadow-[0_4px_10px_rgba(91,91,214,.2)]">D</span>
-          <span className="text-[15px] font-semibold tracking-[-0.04em] text-[var(--ink)]">DemandRift</span>
-        </Link>
+        <Link aria-label="DemandRift dashboard" className="rounded-md" href="/"><BrandMark /></Link>
         {onClose ? <button aria-label="Close navigation" className="rounded-md p-1.5 text-[#6c6d76] hover:bg-[#f2f2f4]" onClick={onClose}><X className="h-4 w-4" /></button> : null}
       </div>
       <nav aria-label="Main navigation" className="flex flex-1 flex-col overflow-y-auto px-3 py-4">
