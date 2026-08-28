@@ -1,0 +1,8 @@
+import { Bot, FileCheck2, Sparkles } from "lucide-react";
+import { recentInsights } from "@/lib/mock-data/dashboard";
+
+const categoryStyle = { "Pain point": "text-[var(--negative)]", "Market gap": "text-[var(--warning)]", Opportunity: "text-[var(--positive)]" };
+
+export function InsightList() {
+  return <section className="rounded-xl border border-[var(--line)] bg-white"><div className="border-b border-[var(--line)] px-5 py-4 sm:px-6"><h2 className="text-sm font-semibold tracking-[-0.02em] text-[var(--ink)]">Recent insights</h2><p className="mt-0.5 text-[11px] text-[#858690]">Keep AI interpretations and verified evidence distinct</p></div><div className="space-y-2 p-3">{recentInsights.map((insight) => <article className="rounded-lg border border-transparent p-3 transition hover:border-[var(--line)] hover:bg-[#fcfcfd]" key={insight.statement}><div className="flex items-center gap-2"><span className={`inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.1em] ${categoryStyle[insight.category]}`}><Sparkles aria-hidden="true" className="h-3 w-3" />{insight.category}</span></div><p className="mt-2 text-xs font-medium leading-5 text-[#393a43]">{insight.statement}</p><div className={`mt-3 inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-[10px] font-medium ${insight.kind === "ai-insight" ? "bg-[var(--brand-soft)] text-[var(--brand-deep)]" : "bg-[var(--positive-soft)] text-[var(--positive)]"}`}>{insight.kind === "ai-insight" ? <Bot aria-hidden="true" className="h-3 w-3" /> : <FileCheck2 aria-hidden="true" className="h-3 w-3" />}<span>{insight.evidenceLabel}</span><span className="text-current/70">· {insight.evidenceValue}</span></div></article>)}</div></section>;
+}
