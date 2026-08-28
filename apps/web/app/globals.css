@@ -62,6 +62,10 @@ html.dark [class*="border-[#"] { border-color: var(--line) !important; }
 html.dark input, html.dark textarea { background: var(--surface-muted) !important; color: var(--ink) !important; }
 html.dark .shadow-sm, html.dark [class*="shadow-["] { box-shadow: 0 12px 28px rgba(0, 0, 0, .2) !important; }
 
+.brand-mark-dark { display: none; }
+html.dark .brand-mark-light { display: none; }
+html.dark .brand-mark-dark { display: block; }
+
 button, a { -webkit-tap-highlight-color: transparent; }
 
 button:focus-visible, a:focus-visible {
