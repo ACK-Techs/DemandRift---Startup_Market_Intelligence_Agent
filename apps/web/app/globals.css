@@ -9,9 +9,9 @@
   --line: #e7e7eb;
   --ink: #17171c;
   --ink-soft: #62636d;
-  --brand: #5b5bd6;
-  --brand-deep: #4545b5;
-  --brand-soft: #eeeeff;
+  --brand: #2874c5;
+  --brand-deep: #1e5b9d;
+  --brand-soft: #e8f2fe;
   --positive: #14775d;
   --positive-soft: #e7f6ef;
   --warning: #a65f09;
@@ -29,9 +29,9 @@ html.dark {
   --line: #30303e;
   --ink: #f4f3fb;
   --ink-soft: #b5b4c2;
-  --brand: #8278ff;
-  --brand-deep: #aaa4ff;
-  --brand-soft: #29264d;
+  --brand: #3e8ee5;
+  --brand-deep: #78b8ff;
+  --brand-soft: #182f4b;
   --positive: #67d2a4;
   --positive-soft: #153b32;
   --warning: #f2bd68;
@@ -61,9 +61,9 @@ html.dark [class*="text-[#"] { color: var(--ink-soft) !important; }
 html.dark [class*="border-[#"] { border-color: var(--line) !important; }
 html.dark input, html.dark textarea { background: var(--surface-muted) !important; color: var(--ink) !important; }
 html.dark .shadow-sm, html.dark [class*="shadow-["] { box-shadow: 0 12px 28px rgba(0, 0, 0, .2) !important; }
-/* Keep purple for navigation and analysis accents; use a calmer teal for dark-mode CTAs. */
-html.dark button[class*="bg-[var(--brand)]"] { background-color: #1f7a6b !important; }
-html.dark button[class*="bg-[var(--brand)]"]:hover { background-color: #2b9682 !important; }
+/* Blue keeps analysis accents and dark-mode actions consistent across the product. */
+html.dark button[class*="bg-[var(--brand)]"] { background-color: #246fba !important; }
+html.dark button[class*="bg-[var(--brand)]"]:hover { background-color: #3487d5 !important; }
 
 .brand-mark-dark { display: none; }
 html.dark .brand-mark-light { display: none; }

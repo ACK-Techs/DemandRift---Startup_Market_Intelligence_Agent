@@ -62,7 +62,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
         <div className="mt-auto space-y-1 border-t border-[var(--line)] pt-4">
           {[{ label: "Settings", icon: Settings, href: "/settings" }, { label: "Help", icon: CircleHelp, href: "/help" }].map(({ label, icon: Icon, href }) => <Link className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-[#5f606b] transition hover:bg-[#f3f3f5] hover:text-[var(--ink)]" href={href} key={label}><Icon aria-hidden="true" className="h-4 w-4 text-[#858691]" strokeWidth={1.9} />{label}</Link>)}
           <button className="mt-3 flex w-full items-center gap-3 rounded-xl border border-[var(--line)] bg-white p-2.5 text-left transition hover:border-[#d7d7df] hover:bg-[#fafafa]" type="button">
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-[#ecebff] text-[11px] font-semibold text-[var(--brand-deep)]">BE</span>
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--brand-soft)] text-[11px] font-semibold text-[var(--brand-deep)]">BE</span>
             <span className="min-w-0"><span className="block truncate text-xs font-medium text-[var(--ink)]">Batuhan Evleksiz</span><span className="block truncate text-[11px] text-[#767781]">Research workspace</span></span>
           </button>
         </div>
