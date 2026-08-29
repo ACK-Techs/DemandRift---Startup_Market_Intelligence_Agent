@@ -61,6 +61,9 @@ html.dark [class*="text-[#"] { color: var(--ink-soft) !important; }
 html.dark [class*="border-[#"] { border-color: var(--line) !important; }
 html.dark input, html.dark textarea { background: var(--surface-muted) !important; color: var(--ink) !important; }
 html.dark .shadow-sm, html.dark [class*="shadow-["] { box-shadow: 0 12px 28px rgba(0, 0, 0, .2) !important; }
+/* Keep purple for navigation and analysis accents; use a calmer teal for dark-mode CTAs. */
+html.dark button[class*="bg-[var(--brand)]"] { background-color: #1f7a6b !important; }
+html.dark button[class*="bg-[var(--brand)]"]:hover { background-color: #2b9682 !important; }
 
 .brand-mark-dark { display: none; }
 html.dark .brand-mark-light { display: none; }
