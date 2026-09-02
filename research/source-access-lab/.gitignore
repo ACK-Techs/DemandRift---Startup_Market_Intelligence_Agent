@@ -1,0 +1,10 @@
+# Ham artefaktlar ve kosu ciktilari depoya girmez: yeniden uretilebilirler ve
+# results/raw tek basina yuz megabaytlari buluyor. Depoda tutulan sey kod, kaynak
+# manifesti ve kaynak defteridir; ham icerik yerel diskte kalir.
+results/raw/
+results/.bulk-progress-*/
+results/*.json
+results/*.log
+
+# Defterin ve manifestin uretimi icin gereken ozet ciktilar haric tutulmaz:
+!results/.gitkeep

@@ -92,7 +92,12 @@ class ManifestAndRunnerTests(unittest.TestCase):
             source("s4", "Three", "https://three.example.com"),
             source("s5", "Unknown"),
         ])
-        report = lab.run_lab(data, live=False, workers=3, global_budget=20)
+        # Butce, kosucunun kaynak basina ayirdigi paydan turetilir: sabit bir sayi
+        # yazilirsa yuzey plani buyudugunde test sessizce yanlis seyi olcer.
+        report = lab.run_lab(
+            data, live=False, workers=3,
+            global_budget=4 * lab.SURFACE_REQUESTS_PER_SOURCE,
+        )
         self.assertEqual(report["mode"], "fixture_no_network")
         self.assertGreaterEqual(len(set(report["origin_pid_map"].values())), 2)
         self.assertEqual(len(report["origin_pid_map"]), 3)
@@ -162,7 +167,10 @@ class ManifestAndRunnerTests(unittest.TestCase):
             source("s2", "Explodes", "https://one.example.com", force_worker_exception=True),
             source("s3", "Independent", "https://two.example.com"),
         ])
-        report = lab.run_lab(data, live=False, workers=2, global_budget=15)
+        report = lab.run_lab(
+            data, live=False, workers=2,
+            global_budget=3 * lab.SURFACE_REQUESTS_PER_SOURCE,
+        )
         sites = {site["source_id"]: site for site in report["site_results"]}
         self.assertIn("root_html", {m["method_id"] for m in sites["s1"]["methods"]})
         failed = next(m for m in sites["s2"]["methods"] if m["method_id"] == "origin_worker")
@@ -297,6 +305,23 @@ class SecurityAndParsingTests(unittest.TestCase):
         self.assertTrue(secure.check_hostname)
         self.assertEqual(secure.verify_mode, lab.ssl.CERT_REQUIRED)
 
+    def test_robots_accepts_mislabelled_text_type_but_not_html_body(self):
+        body = b"User-agent: *\nDisallow: /upload/\n"
+        for mime in ("text/plain", "text/html", "application/octet-stream"):
+            with self.subTest(mime=mime):
+                self.assertTrue(lab.mime_and_sniff_valid(mime, body, "robots"))
+        self.assertFalse(lab.mime_and_sniff_valid("image/png", body, "robots"))
+        self.assertFalse(lab.mime_and_sniff_valid("text/html", b"<html>hata</html>", "robots"))
+
+    def test_egress_allows_apex_to_www_redirect_but_not_other_hosts(self):
+        guard = lab.EgressGuard("https://acme.example", PUBLIC_DNS)
+        for url in ("https://acme.example/", "https://www.acme.example/"):
+            with self.subTest(url=url):
+                self.assertEqual("acme.example", guard.validate(url).hostname.removeprefix("www."))
+        for url in ("https://evil.acme.example/", "https://acme.example.evil/", "http://www.acme.example/"):
+            with self.subTest(url=url), self.assertRaises(lab.PolicyBlocked):
+                guard.validate(url)
+
     def test_egress_rejects_bad_scheme_credentials_origin_port_and_private_dns(self):
         guard = lab.EgressGuard("https://good.example.com", PUBLIC_DNS)
         bad = [
@@ -324,6 +349,111 @@ class SecurityAndParsingTests(unittest.TestCase):
         self.assertEqual(body, b"")
         self.assertTrue(truncated)
 
+    def surface_runtime(self, responses):
+        runtime = lab.OriginRuntime("https://good.example.com", 9, live=False)
+        runtime.guard = lab.EgressGuard(runtime.origin, PUBLIC_DNS)
+        runtime.transport = SequenceTransport(responses)
+        return runtime
+
+    def test_sitemap_seed_comes_from_the_robots_policy_when_it_declares_one(self):
+        robots = (
+            b"User-agent: *\nAllow: /\n"
+            b"Sitemap: https://other.example.com/skipped.xml\n"
+            b"Sitemap: https://good.example.com/news_sitemap.xml\n"
+        )
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, robots),
+            (403, {"content-type": "text/html"}, b"<html>blocked</html>"),
+            (200, {"content-type": "application/xml"}, b"<urlset><loc>https://good.example.com/a</loc></urlset>"),
+            (404, {"content-type": "text/html"}, b"<html>no feed</html>"),
+            (404, {"content-type": "text/html"}, b"<html>no feed</html>"),
+            (404, {"content-type": "text/html"}, b"<html>no feed</html>"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        sitemap = next(item for item in methods if item["method_id"] == "sitemap_xml")
+        self.assertEqual("robots_sitemap", sitemap["details"]["seed_source"])
+        self.assertEqual("https://good.example.com/news_sitemap.xml", sitemap["details"]["seed_url"])
+        self.assertEqual(1, len(sitemap["candidates"]))
+
+    def test_a_foreign_host_sitemap_is_never_used_as_a_seed(self):
+        seeds = lab.robots_sitemap_seeds(
+            b"Sitemap: https://sitemaps.other.com/index.xml\n", "https://good.example.com",
+        )
+        self.assertEqual([], seeds)
+
+    def test_a_www_variant_is_the_same_site_and_is_rewritten_to_our_origin(self):
+        seeds = lab.robots_sitemap_seeds(
+            b"Sitemap: https://www.good.example.com/news_sitemap.xml\n", "https://good.example.com",
+        )
+        self.assertEqual(["https://good.example.com/news_sitemap.xml"], seeds)
+
+    def test_a_bare_host_sitemap_is_rewritten_when_our_origin_carries_www(self):
+        seeds = lab.robots_sitemap_seeds(
+            b"Sitemap: https://good.example.com/s.xml\n", "https://www.good.example.com",
+        )
+        self.assertEqual(["https://www.good.example.com/s.xml"], seeds)
+
+    def test_a_blocked_root_still_reaches_the_feed_through_a_known_path(self):
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, b"User-agent: *\nAllow: /\n"),
+            (403, {"content-type": "text/html"}, b"<html>blocked</html>"),
+            (404, {"content-type": "text/html"}, b"<html>no sitemap</html>"),
+            (404, {"content-type": "text/html"}, b"<html>no feed</html>"),
+            (200, {"content-type": "application/xml"}, b"<rss><channel><title>One</title></channel></rss>"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        rss = next(item for item in methods if item["method_id"] == "rss_feed")
+        self.assertEqual("succeeded", rss["site_outcome"])
+        self.assertEqual("well_known_feed_path", rss["details"]["seed_source"])
+        self.assertEqual("https://good.example.com/rss", rss["details"]["seed_url"])
+        self.assertEqual(1, rss["fetched_artifact_count"])
+
+    def test_a_failed_robots_policy_still_spends_nothing_on_feed_probes(self):
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, b"<html>captcha verify you are human</html>"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        rss = next(item for item in methods if item["method_id"] == "rss_feed")
+        self.assertEqual("not_applicable", rss["site_outcome"])
+        self.assertEqual("no_seed", rss["stop_reason"])
+        self.assertEqual(1, len(runtime.transport.calls))
+
+    def test_a_rate_limited_origin_is_not_retried_on_another_surface(self):
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, b"User-agent: *\nAllow: /\n"),
+            (429, {"content-type": "text/html"}, b"<html>slow down</html>"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        sitemap = next(item for item in methods if item["method_id"] == "sitemap_xml")
+        self.assertFalse(sitemap["details"]["alternate_surface_retry"])
+        self.assertEqual("origin_circuit_open", sitemap["stop_reason"])
+        self.assertEqual(2, len(runtime.transport.calls))
+
+    def test_a_missing_robots_policy_allows_crawling(self):
+        """RFC 9309: robots.txt 404 ise kisitlama yoktur; site atlanmaz."""
+        runtime = self.surface_runtime([
+            (404, {"content-type": "text/html"}, b"<html>not found</html>"),
+            (200, {"content-type": "text/html"}, b"<html><title>One</title></html>"),
+            (404, {"content-type": "text/html"}, b"<html>no sitemap</html>"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        root = next(item for item in methods if item["method_id"] == "root_html")
+        self.assertEqual("succeeded", root["site_outcome"])
+        self.assertEqual(1, root["fetched_artifact_count"])
+
+    def test_a_forbidden_robots_policy_still_blocks(self):
+        """401/403 yokluk degildir: RFC tam yasak sayar, pratikte bot korumasidir."""
+        runtime = self.surface_runtime([
+            (403, {"content-type": "text/html"}, b"<html>forbidden</html>"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        root = next(item for item in methods if item["method_id"] == "root_html")
+        self.assertEqual("robots_preflight_failed", root["stop_reason"])
+        self.assertEqual(1, len(runtime.transport.calls))
+
     def test_robots_fail_closed(self):
         runtime = lab.OriginRuntime("https://good.example.com", 6, live=False)
         runtime.guard = lab.EgressGuard(runtime.origin, PUBLIC_DNS)
@@ -335,9 +465,19 @@ class SecurityAndParsingTests(unittest.TestCase):
         self.assertEqual(outcome.stop_reason, "robots_unavailable")
         self.assertEqual(runtime.budget.total, 0)
 
-    def test_empty_directiveless_and_challenge_robots_block_root(self):
+    def test_a_robots_policy_without_rules_allows_crawling(self):
+        """RFC 9309: bos ya da yalnizca Sitemap tasiyan robots.txt izin demektir."""
+        for body in (b"", b"# yalnizca yorum\n", b"Sitemap: https://good.example.com/s.xml\n"):
+            with self.subTest(body=body[:24]):
+                self.assertTrue(lab.valid_robots_body(body))
+
+    def test_a_response_that_is_not_a_policy_at_all_still_blocks(self):
+        for body in (b"this is not a robots policy", b"<!doctype html><html><body>hi</body></html>"):
+            with self.subTest(body=body[:24]):
+                self.assertFalse(lab.valid_robots_body(body))
+
+    def test_directiveless_and_challenge_robots_block_root(self):
         cases = [
-            (b"", "text/plain"),
             (b"this is not a robots policy", "text/plain"),
             (b"<html>captcha verify you are human</html>", "text/plain"),
         ]

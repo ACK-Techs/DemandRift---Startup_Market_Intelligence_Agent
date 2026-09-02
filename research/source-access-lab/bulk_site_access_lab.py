@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import codecs
 import concurrent.futures
 import gzip
 import hashlib
@@ -37,7 +38,10 @@ from typing import Any, Callable, Iterable, Mapping, Protocol
 
 SCHEMA_VERSION = "1.0.0"
 RUNNER_VERSION = "bulk-source-access-lab-1.0.0"
-USER_AGENT = "DemandRiftBulkSourceAccessLab/1.0 (+controlled-public-research)"
+USER_AGENT = (
+    "DemandRiftBulkSourceAccessLab/1.0 "
+    "(+https://github.com/ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent)"
+)  # Wikimedia UA politikasi iletisim adresi sart kosar; adressiz UA bogulur.
 HERE = Path(__file__).resolve().parent
 DEFAULT_MANIFEST = HERE / "source_manifest.json"
 RESULTS_DIR = HERE / "results"
@@ -45,13 +49,17 @@ RESULTS_DIR = HERE / "results"
 MAX_WORKERS = 64
 DEFAULT_WORKERS = 8
 GLOBAL_TRANSACTION_HARD_MAX = 1500
-PER_SITE_TRANSACTION_LIMIT = 6
+# Kok HTML engellenen sitelerde tohum, bilinen feed yollarindan aranir; her deneme
+# bir istek harcadigi icin site basina pay yukseltildi.
+PER_SITE_TRANSACTION_LIMIT = 11
 ORIGIN_JOB_TIMEOUT_SECONDS = 45
 CONNECT_TIMEOUT_SECONDS = 5
 READ_TIMEOUT_SECONDS = 10
 MIN_ORIGIN_GAP_SECONDS = 1.0
-MAX_REDIRECTS = 2
-MAX_HTML_XML_BYTES = 512 * 1024
+MAX_REDIRECTS = 4
+# 2 MB tavani karsi taraf degil biz koyuyorduk: CNBC ve Google Play sitemap'leri
+# bu yuzden 'response_too_large' ile dusuyordu.
+MAX_HTML_XML_BYTES = 8 * 1024 * 1024
 MAX_JSON_BYTES = 256 * 1024
 MAX_INLINE_ARTIFACT_BYTES = 16 * 1024
 SUPPORTED_ENCODINGS = {"", "identity", "gzip", "deflate"}
@@ -91,9 +99,35 @@ class ValidatedTarget:
 
 
 class EgressGuard:
-    def __init__(self, allowed_origin: str, resolver: Callable[..., Any] = socket.getaddrinfo) -> None:
+    def __init__(
+        self, allowed_origin: str, resolver: Callable[..., Any] = socket.getaddrinfo,
+        allow_same_site_redirect: bool = True,
+    ) -> None:
         self.allowed_origin = allowed_origin
         self.resolver = resolver
+        self.allow_same_site_redirect = allow_same_site_redirect
+
+    def _origin_allowed(self, scheme: str, host: str, origin: str) -> bool:
+        """Sabitlenen origin mi, yoksa onun apex/www karsiligi mi?
+
+        Sitelerin cogu apex adresi www'ye yonlendiriyor (airbnb.com ->
+        www.airbnb.com). Yalnizca tam origin esitligi arandiginda bu yonlendirme
+        'origin_denied' ile blokleniyor ve site hic cekilemiyordu. Izin sadece
+        apex <-> www denkligini kapsar: alt alan adi joker degildir, cunku
+        kayitli alan adini son iki etiketten saymak '*.co.uk' gibi son eklerde
+        farkli sahiplere ait siteleri ayni sayardi.
+        """
+        if origin == self.allowed_origin:
+            return True
+        if not self.allow_same_site_redirect:
+            return False
+        allowed = urllib.parse.urlsplit(self.allowed_origin)
+        if allowed.scheme != scheme or allowed.port or urllib.parse.urlsplit(origin).port:
+            return False
+        allowed_host = (allowed.hostname or "").casefold()
+        if not allowed_host:
+            return False
+        return host == f"www.{allowed_host}" or allowed_host == f"www.{host}"
 
     def validate(self, url: str) -> ValidatedTarget:
         try:
@@ -118,7 +152,7 @@ class EgressGuard:
         origin = f"{parsed.scheme}://{host}"
         if port and port != (443 if parsed.scheme == "https" else 80):
             origin += f":{port}"
-        if origin != self.allowed_origin:
+        if not self._origin_allowed(parsed.scheme, host, origin):
             raise PolicyBlocked("origin_denied")
         try:
             rows = self.resolver(host, effective_port, type=socket.SOCK_STREAM)
@@ -276,17 +310,34 @@ class Circuit:
     open: bool = False
     reason: str | None = None
     consecutive_transient: int = 0
+    opened_at: float | None = None
+    cooldown_seconds: float = 30.0  # bu süre sonunda tekrar denemeye izin ver
 
     def observe(self, status: int | None, network_error: bool) -> None:
         if status in {202, 401, 403, 429}:
             self.open, self.reason = True, "rate_limited" if status == 429 else "challenge"
+            self.opened_at = time.monotonic()
             self.consecutive_transient = 0
         elif network_error or (status is not None and 500 <= status <= 599):
             self.consecutive_transient += 1
             if self.consecutive_transient >= 3:
                 self.open, self.reason = True, "source_unavailable"
+                self.opened_at = time.monotonic()
         else:
             self.consecutive_transient = 0
+
+    def is_open(self) -> bool:
+        if not self.open:
+            return False
+        if self.opened_at is not None and (time.monotonic() - self.opened_at) >= self.cooldown_seconds:
+            self.reset()
+            return False
+        return True
+
+    def reset(self) -> None:
+        """Devreyi bilerek kapat. Yalnizca sinirli bir backoff beklendikten sonra cagrilir."""
+        self.open, self.reason, self.opened_at = False, None, None
+        self.consecutive_transient = 0
 
 
 @dataclass
@@ -361,9 +412,18 @@ def mime_and_sniff_valid(mime: str, body: bytes, expected: str) -> bool:
         "xml": {"application/xml", "text/xml", "application/rss+xml", "application/atom+xml"},
         "json": {"application/json", "text/json"},
     }[expected]
-    if mime not in allowed:
+    if expected == "robots":
+        # Cok sayida sunucu gecerli robots.txt'yi text/plain disinda bir tiple
+        # servis ediyor (ornek: gog.com -> text/html). Yalnizca beyan edilen tipe
+        # bakmak, kaynagi daha sitesi incelenmeden eledi. Icerigin HTML olmadigi
+        # asagida ayrica dogrulaniyor.
+        if not (mime.startswith("text/") or mime in {"application/octet-stream", ""}):
+            return False
+    elif mime not in allowed:
         return False
-    sniff = body.lstrip()[:256].lower()
+    # UTF-8 BOM'u olan sayfalar (ornek: meb.gov.tr) gecerli HTML olduklari halde
+    # '<' ile baslamadiklari icin reddediliyordu.
+    sniff = body.lstrip(codecs.BOM_UTF8).lstrip()[:256].lower()
     if expected == "json":
         return sniff.startswith((b"{", b"["))
     if expected == "robots":
@@ -372,9 +432,17 @@ def mime_and_sniff_valid(mime: str, body: bytes, expected: str) -> bool:
 
 
 class OriginRuntime:
-    def __init__(self, origin: str, lease: int, live: bool, raw_dir: Path | None = None) -> None:
+    def __init__(
+        self, origin: str, lease: int, live: bool, raw_dir: Path | None = None,
+        read_timeout: int = READ_TIMEOUT_SECONDS,
+        min_gap: float = MIN_ORIGIN_GAP_SECONDS,
+        json_limit: int = MAX_JSON_BYTES,
+    ) -> None:
         self.origin = origin
         self.live = live
+        self.read_timeout = read_timeout
+        self.min_gap = min_gap
+        self.json_limit = json_limit
         self.transport: Transport = LiveTransport() if live else FixtureTransport()
         fixture_dns = lambda host, port, type=socket.SOCK_STREAM: [
             (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("93.184.216.34", port))
@@ -394,7 +462,7 @@ class OriginRuntime:
             return
         now = time.monotonic()
         if self.last_request_at is not None:
-            remaining = MIN_ORIGIN_GAP_SECONDS - (now - self.last_request_at)
+            remaining = self.min_gap - (now - self.last_request_at)
             if remaining > 0:
                 time.sleep(remaining)
         self.last_request_at = time.monotonic()
@@ -403,7 +471,7 @@ class OriginRuntime:
         self, source_id: str, method_id: str, url: str, expected: str,
         *, robots_decision: str,
     ) -> FetchOutcome:
-        if self.circuit.open:
+        if self.circuit.is_open():
             return FetchOutcome(False, self.circuit.reason or "source_unavailable", "origin_circuit_open")
         current = url
         chain: list[str] = []
@@ -434,14 +502,14 @@ class OriginRuntime:
             try:
                 response = self.transport.request(
                     current, connect_ip=pinned, server_hostname=target.hostname, port=target.port,
-                    connect_timeout=CONNECT_TIMEOUT_SECONDS, read_timeout=READ_TIMEOUT_SECONDS,
+                    connect_timeout=CONNECT_TIMEOUT_SECONDS, read_timeout=self.read_timeout,
                 )
                 status = response.status
                 peer = response.peer_ip
                 if peer and ipaddress.ip_address(peer) != ipaddress.ip_address(pinned):
                     raise OSError("peer_ip_mismatch")
                 headers = {k.lower(): v for k, v in response.headers.items()}
-                limit = MAX_JSON_BYTES if expected == "json" else MAX_HTML_XML_BYTES
+                limit = self.json_limit if expected == "json" else MAX_HTML_XML_BYTES
                 body, truncated = read_limited(
                     response.chunks, headers.get("content-encoding", "").strip().lower(), limit
                 )
@@ -453,7 +521,7 @@ class OriginRuntime:
                 if response:
                     response.close()
             self.circuit.observe(status, error_class == "TransientProvider")
-            if self.circuit.open:
+            if self.circuit.is_open():
                 stop_reason = self.circuit.reason
                 error_class = "RateLimited" if self.circuit.reason == "rate_limited" else "PermanentSource"
             elif status is not None and status >= 500 and stop_reason is None:
@@ -548,12 +616,28 @@ def artifact_from(outcome: FetchOutcome) -> list[dict[str, Any]]:
 
 
 def valid_robots_body(body: bytes) -> bool:
-    if not body.strip() or looks_like_challenge(body):
+    """Bu robots.txt yanitiyla taramaya devam edilebilir mi?
+
+    RFC 9309'a gore bos ya da kural icermeyen bir robots.txt 'her sey serbest'
+    demektir; onu gecersiz sayip siteyi tamamen kapatmak standardin otesinde bir
+    kisitlamaydi ve saglik.gov.tr, ourworldindata.org, orpha.net gibi 15 kaynagi
+    kendi elimizle engelliyordu. Kapali kalinan tek durum korumadir: robots.txt
+    yerine dogrulama duvari ya da HTML sayfasi donuyorsa yanit robots politikasi
+    degildir ve devam edilmez.
+    """
+    if looks_like_challenge(body):
         return False
     text = body.decode("utf-8", errors="replace")
-    has_agent = bool(re.search(r"(?im)^\s*user-agent\s*:\s*\S+", text))
-    has_rule = bool(re.search(r"(?im)^\s*(?:allow|disallow)\s*:", text))
-    return has_agent and has_rule
+    if re.search(r"(?is)<\s*(?:html|!doctype|head|body)\b", text):
+        return False
+    if not text.strip():
+        return True
+    has_directive = bool(re.search(
+        r"(?im)^\s*(?:user-agent|allow|disallow|sitemap|crawl-delay)\s*:", text,
+    ))
+    # Kural yoksa da izin vardir; yorum satirlarindan ibaret dosyalar boyledir.
+    return has_directive or not any(line.strip() and not line.strip().startswith("#")
+                                    for line in text.splitlines())
 
 
 def extract_html(body: bytes, base_url: str, transaction_id: str) -> dict[str, Any]:
@@ -599,6 +683,47 @@ def extract_html(body: bytes, base_url: str, transaction_id: str) -> dict[str, A
     }
 
 
+ROBOTS_SITEMAP = re.compile(r"(?im)^\s*sitemap:\s*(\S+)\s*$")
+# Ana sayfa HTML'i alinamadiginda RSS bagi okunamiyor; bu yollar sitelerin bilinen
+# feed adresleridir ve bot korumasi cogu zaman yalnizca HTML kokunu kesiyor.
+WELL_KNOWN_FEED_PATHS = ("/feed/", "/rss", "/rss.xml", "/atom.xml", "/index.xml")
+# Origin basina ayrilan kota, yuzey planinin atabilecegi istek sayisindan tureme
+# olmali: robots + kok + sitemap + bilinen feed yollari. Sabit bir sayi (5) tutulunca
+# feed denemeleri kotayi asiyor ve 'budget_exhausted' ile dusuyordu.
+SURFACE_REQUESTS_PER_SOURCE = 3 + len(WELL_KNOWN_FEED_PATHS)
+
+
+def _same_site_host(host: str, origin_host: str) -> bool:
+    """Yalnizca 'www' farki olan host'lar ayni sitedir."""
+    bare = lambda value: value[4:] if value.startswith("www.") else value
+    return bare(host.casefold()) == bare(origin_host.casefold())
+
+
+def robots_sitemap_seeds(robots_body: bytes, origin: str) -> list[str]:
+    """robots.txt icindeki Sitemap satirlarindan ayni siteye ait adresleri cikarir.
+
+    Engellenen sitelerin cogunda sitemap adresi robots.txt'te yazili duruyor; onu
+    okumak yeni bir istek harcamaz. Baska bir host'a isaret eden adresler atlanir:
+    kosu origin'e sabitlenmistir. Tek istisna 'www' farkidir -- Forbes'un kayitli
+    adresi forbes.com, robots.txt'teki sitemap ise www.forbes.com uzerinde; ayni
+    site oldugu icin adres kendi origin'imize yazilir, capraz istek atilmaz.
+    """
+    origin_parts = urllib.parse.urlsplit(origin)
+    origin_host = origin_parts.hostname or ""
+    seeds: list[str] = []
+    for value in ROBOTS_SITEMAP.findall(robots_body.decode("utf-8", errors="replace")):
+        url = html.unescape(value).strip()
+        parts = urllib.parse.urlsplit(url)
+        if parts.scheme not in ("http", "https") or not parts.hostname:
+            continue
+        if not _same_site_host(parts.hostname, origin_host):
+            continue
+        seed = urllib.parse.urlunsplit(("https", origin_host, parts.path, parts.query, ""))
+        if seed not in seeds:
+            seeds.append(seed)
+    return seeds
+
+
 def run_surface_task(
     runtime: OriginRuntime, source: dict[str, Any],
     on_method: Callable[[dict[str, Any]], None] | None = None,
@@ -623,21 +748,37 @@ def run_surface_task(
         source, "robots_preflight", "policy_preflight", robots.outcome, robots.stop_reason,
         runtime.budget.total - before, artifacts=artifact_from(robots),
     ))
-    if robots.ok:
+    # RFC 9309 s2.3.1.3: robots.txt 404/410 ile yoksa kisitlama da yoktur, tarama
+    # serbesttir. Bunu basarisizlik sayip siteyi tamamen atlamak 16 kaynagi
+    # (Kaggle, OECD Data, Mastodon, ICANN Lookup) kendi elimizle kapatiyordu.
+    # 401/403 ayni sey degildir: RFC bunlari tam yasak saymayi soyler ve pratikte
+    # bot korumasi sinyalidir, oyle de birakilir.
+    robots_absent = (
+        not robots.ok and robots.transaction is not None
+        and robots.transaction.status in {404, 410}
+    )
+    if robots.ok or robots_absent:
         parser = urllib.robotparser.RobotFileParser()
         parser.set_url(origin + "/robots.txt")
-        parser.parse(robots.body.decode("utf-8", errors="replace").splitlines())
+        parser.parse(robots.body.decode("utf-8", errors="replace").splitlines() if robots.ok else [])
         runtime.robots_parser = parser
     before = runtime.budget.total
     root = (
         runtime.fetch(source_id, "root_html", origin + "/", "html", robots_decision="required")
-        if robots.ok else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
+        if robots.ok or robots_absent else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
     )
     root_artifacts = artifact_from(root)
     emit(method_record(
         source, "root_html", "acquisition_surface", root.outcome, root.stop_reason,
         runtime.budget.total - before, artifacts=root_artifacts,
     ))
+    # Kok HTML'de bot korumasi cikmasi origin'in kapali oldugu anlamina gelmez:
+    # sitemap ve feed ayri kaynaklardir ve cogu site onlari korumasiz sunar
+    # (Forbes, CNBC, HackerNoon). Devre yalnizca 'challenge' sebebiyle acildiysa
+    # ve site basina bir kez sifirlanir; kota asiminda (rate_limited) dokunulmaz.
+    alternate_surface_retry = runtime.circuit.open and runtime.circuit.reason == "challenge"
+    if alternate_surface_retry:
+        runtime.circuit.reset()
     extracted: dict[str, Any] = {}
     if root.ok and root.transaction:
         extracted = extract_html(root.body, origin + "/", root.transaction.transaction_id)
@@ -647,9 +788,11 @@ def run_surface_task(
         details={k: v for k, v in extracted.items() if k not in {"rss_candidates", "pagination_candidates"}},
     ))
     before = runtime.budget.total
+    seeds = robots_sitemap_seeds(robots.body, origin) if robots.ok else []
+    sitemap_url = seeds[0] if seeds else origin + "/sitemap.xml"
     sitemap = (
-        runtime.fetch(source_id, "sitemap_xml", origin + "/sitemap.xml", "xml", robots_decision="required")
-        if robots.ok else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
+        runtime.fetch(source_id, "sitemap_xml", sitemap_url, "xml", robots_decision="required")
+        if robots.ok or robots_absent else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
     )
     sitemap_candidates = []
     if sitemap.ok and sitemap.transaction:
@@ -663,6 +806,12 @@ def run_surface_task(
         sitemap.outcome if sitemap_candidates or not sitemap.ok else "no_results",
         sitemap.stop_reason if sitemap_candidates or not sitemap.ok else "empty_sitemap",
         runtime.budget.total - before, candidates=sitemap_candidates, artifacts=artifact_from(sitemap),
+        details={
+            "seed_url": sitemap_url,
+            "seed_source": "robots_sitemap" if seeds else "well_known_path",
+            "robots_sitemap_count": len(seeds),
+            "alternate_surface_retry": alternate_surface_retry,
+        },
     ))
     rss_candidates = extracted.get("rss_candidates", [])
     emit(method_record(
@@ -675,6 +824,25 @@ def run_surface_task(
         emit(method_record(
             source, "rss_feed", "acquisition_surface", rss.outcome, rss.stop_reason,
             runtime.budget.total - before, artifacts=artifact_from(rss),
+            details={"seed_url": rss_candidates[0]["url"], "seed_source": "root_html_link"},
+        ))
+    elif robots.ok or robots_absent:
+        # Kok HTML gelmediginde bag okunamiyor ama feed adresi tahmin edilebilir:
+        # Forbes, CNBC ve HackerNoon HTML kokunu kesiyor, feed'i acik veriyor.
+        probe_url = ""
+        rss = FetchOutcome(False, "not_applicable", "no_seed")
+        for path in WELL_KNOWN_FEED_PATHS:
+            probe_url = origin + path
+            rss = runtime.fetch(source_id, "rss_feed", probe_url, "xml", robots_decision="required")
+            if rss.ok:
+                break
+        emit(method_record(
+            source, "rss_feed", "acquisition_surface", rss.outcome, rss.stop_reason,
+            runtime.budget.total - before, artifacts=artifact_from(rss),
+            details={
+                "seed_url": probe_url, "seed_source": "well_known_feed_path",
+                "alternate_surface_retry": alternate_surface_retry,
+            },
         ))
     else:
         emit(method_record(source, "rss_feed", "acquisition_surface", "not_applicable", "no_seed", 0))
@@ -845,7 +1013,9 @@ def run_lab(
             "force_worker_hang_after_method": source.get("force_worker_hang_after_method"),
             "force_worker_hang_after_seconds": source.get("force_worker_hang_after_seconds", 30),
         })
-        requested_by_origin[source["official_origin"]] = requested_by_origin.get(source["official_origin"], 0) + 5
+        requested_by_origin[source["official_origin"]] = (
+            requested_by_origin.get(source["official_origin"], 0) + SURFACE_REQUESTS_PER_SOURCE
+        )
         for endpoint in source.get("api_endpoints", []):
             if not endpoint.get("keyless"):
                 continue
