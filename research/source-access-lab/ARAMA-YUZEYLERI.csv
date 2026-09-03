@@ -1,0 +1,579 @@
+source_id,ad,adres,durum,en_iyi_yol,opensearch,api_ucu,site_arama,yerel_url,tam_metin_bayt
+source-0027,Ask Ubuntu,https://askubuntu.com,cekildi,api,,https://api.stackexchange.com/2.3/questions?site=askubuntu&pagesize=30&order=desc&sort=activity,,0,0
+source-0349,Figshare,https://figshare.com,cekildi,api,,https://api.figshare.com/v2/articles?page_size=20,,0,0
+source-0017,GitHub,https://github.com,cekildi,api,,https://api.github.com/search/repositories?q=stars:%3E50000&per_page=30,,0,0
+source-0022,Hacker News,https://news.ycombinator.com,cekildi,api,,https://hacker-news.firebaseio.com/v0/topstories.json,,0,34803
+source-0095,Lemmy,https://join-lemmy.org,cekildi,api,,https://lemmy.ml/api/v3/site,,22,60736
+source-0336,medRxiv,https://www.medrxiv.org,cekildi,api,,https://api.biorxiv.org/details/medrxiv/2026-01-01/2026-01-02,,0,0
+source-0039,npm,https://www.npmjs.com,cekildi,api,,https://registry.npmjs.org/-/v1/search?text=startup&size=20,,0,0
+source-0045,Packagist,https://packagist.org,cekildi,api,,https://packagist.org/packages/list.json?vendor=symfony,,0,0
+source-0025,Server Fault,https://serverfault.com,cekildi,api,,https://api.stackexchange.com/2.3/questions?site=serverfault&pagesize=30&order=desc&sort=activity,,0,0
+source-0024,Stack Exchange,https://stackexchange.com,cekildi,api,,https://api.stackexchange.com/2.3/sites?pagesize=100,,0,0
+source-0023,Stack Overflow,https://stackoverflow.com,cekildi,api,,https://api.stackexchange.com/2.3/questions?site=stackoverflow&pagesize=30&order=desc&sort=activity,,0,0
+source-0026,Super User,https://superuser.com,cekildi,api,,https://api.stackexchange.com/2.3/questions?site=superuser&pagesize=30&order=desc&sort=activity,,0,0
+source-0204,Wayback Machine,https://web.archive.org,cekildi,api,,https://archive.org/wayback/available?url=example.com,,0,0
+source-0273,500 Global Companies,https://500.co,cekildi,fulltext,,,,0,401267
+source-0489,Agoda,https://www.agoda.com,cekildi,fulltext,,,,0,197934
+source-0164,Alibaba,https://alibaba.com,cekildi,fulltext,,,,0,159513
+source-0163,AliExpress,https://aliexpress.ru,cekildi,fulltext,,,,0,1045
+source-0159,Amazon,https://www.amazon.com,cekildi,fulltext,,,,0,811511
+source-0271,AngelList,https://angellist.com,cekildi,fulltext,,,,0,285358
+source-0314,Angi,https://www.angi.com,cekildi,fulltext,,,,0,257625
+source-0107,APKMirror,https://apkmirror.com,cekildi,fulltext,,,,0,766236
+source-0261,Apollo,https://apollo.com,cekildi,fulltext,,,,0,330262
+source-0096,Apple App Store,https://apps.apple.com,cekildi,fulltext,,,,0,1403708
+source-0538,Artificial Analysis,https://artificialanalysis.ai,cekildi,fulltext,,,,0,1838049
+source-0615,AWS Pricing Calculator,https://calculator.aws,cekildi,fulltext,,,,0,2701
+source-0574,Axios,https://axios.com,cekildi,fulltext,,,,0,205886
+source-0542,Azure Marketplace,https://azuremarketplace.microsoft.com,cekildi,fulltext,,,,0,895214
+source-0052,BetaList,https://betalist.com,cekildi,fulltext,,,,0,228142
+source-0151,Better Business Bureau,https://www.bbb.org,cekildi,fulltext,,,,0,123210
+source-0019,Bitbucket,https://bitbucket.org,cekildi,fulltext,,,,0,1120552
+source-0078,Bluesky,https://bsky.app,cekildi,fulltext,,,,0,6948
+source-0318,Booksy,https://booksy.com,cekildi,fulltext,,,,0,667012
+source-0256,CB Insights,https://www.cbinsights.com,cekildi,fulltext,,,,0,1162394
+source-0423,CDC,https://cdc.com,cekildi,fulltext,,,,0,123572
+source-0109,Chrome Web Store,https://chromewebstore.google.com,cekildi,fulltext,,,,0,1043813
+source-0419,ClinicalTrials.gov,https://clinicaltrials.gov,cekildi,fulltext,,,,0,94295
+source-0210,Cloudflare Radar,https://radar.cloudflare.com,cekildi,fulltext,,,,0,226401
+source-0611,Cloudorado,https://www.cloudorado.com,cekildi,fulltext,,,,0,32416
+source-0021,Codeberg,https://codeberg.org,cekildi,fulltext,,,,0,34564
+source-0150,ConsumerAffairs,https://www.consumeraffairs.com,cekildi,fulltext,,,,0,387322
+source-0258,Craft.co,https://craft.co,cekildi,fulltext,,,,0,239891
+source-0177,Creative Market,https://creativemarket.com,cekildi,fulltext,,,,0,703258
+source-0428,DailyMed,https://dailymed.nlm.nih.gov,cekildi,fulltext,,,,0,74798
+source-0246,data.ai,https://data.ai,cekildi,fulltext,,,,0,34165
+source-0376,data.gov.uk,https://www.data.gov.uk,cekildi,fulltext,,,,0,22217
+source-0509,Deliveroo,https://deliveroo.co.uk,cekildi,fulltext,,,,0,215684
+source-0347,DOAJ,https://doaj.org,cekildi,fulltext,,,,0,77913
+source-0507,DoorDash,https://www.doordash.com,cekildi,fulltext,,,,0,1048580
+source-0581,Dünya,https://dunya.com,cekildi,fulltext,,,,0,202859
+source-0160,eBay,https://www.ebay.com,cekildi,fulltext,,,,0,1048580
+source-0580,Ekonomim,https://ekonomim.net,cekildi,fulltext,,,,0,103225
+source-0298,Eleman.net,https://eleman.net,cekildi,fulltext,,,,0,326416
+source-0479,Emlakjet,https://emlakjet.com,cekildi,fulltext,,,,0,1357662
+source-0631,Endeavor Türkiye,https://www.endeavor.org.tr,cekildi,fulltext,,,,0,66984
+source-0480,Endeksa,https://www.endeksa.com,cekildi,fulltext,,,,0,14229
+source-0178,Envato Market,https://themeforest.net,cekildi,fulltext,,,,0,446039
+source-0519,Epic Games Store,https://store.epicgames.com,cekildi,fulltext,,,,0,1048580
+source-0413,EUIPO,https://www.euipo.europa.eu,cekildi,fulltext,,,,0,29864
+source-0390,EUR-Lex,https://eur-lex.europa.eu,cekildi,fulltext,,,,0,12430
+source-0391,European Commission,https://commission.europa.eu,cekildi,fulltext,,,,0,16816
+source-0392,European Data Protection Board,https://edpb.europa.eu,cekildi,fulltext,,,,0,45974
+source-0267,European e-Justice Business Registers,https://e-justice.europa.eu,cekildi,fulltext,,,,0,46238
+source-0395,European Securities and Markets Authority,https://www.esma.europa.eu,cekildi,fulltext,,,,0,92086
+source-0487,Expedia,https://www.expedia.com,cekildi,fulltext,,,,0,1048580
+source-0229,Exploding Topics,https://explodingtopics.com,cekildi,fulltext,,,,0,466116
+source-0071,Failory,https://failory.com,cekildi,fulltext,,,,0,106905
+source-0568,Fast Company,https://fast.com,cekildi,fulltext,,,,0,26326
+source-0396,Federal Register,https://www.federalregister.gov,cekildi,fulltext,,,,0,54134
+source-0432,Federal Reserve,https://www.federalreserve.gov,cekildi,fulltext,,,,0,105406
+source-0363,Federal Reserve Economic Data,https://fred.stlouisfed.org,cekildi,fulltext,,,,0,58833
+source-0016,Firecrawl,https://firecrawl.dev,cekildi,fulltext,,,,0,1206442
+source-0503,FlightAware,https://flightaware.com,cekildi,fulltext,,,,0,132426
+source-0635,Founder Institute Türkiye,https://fi.co,cekildi,fulltext,,,,0,188650
+source-0433,FRED,https://fred.stlouisfed.org,cekildi,fulltext,,,,0,88203
+source-0530,Game Developer,https://gamedeveloper.com,cekildi,fulltext,,,,0,527369
+source-0520,GOG,https://gog.com,cekildi,fulltext,,,,0,873600
+source-0237,Google Ads Transparency Center,https://adstransparency.google.com,cekildi,fulltext,,,,0,2549818
+source-0214,Google Keyword Planner,https://ads.google.com,cekildi,fulltext,,,,0,396444
+source-0406,Google Patents,https://patents.google.com,cekildi,fulltext,,,,0,4149
+source-0321,Google Scholar,https://scholar.google.com,cekildi,fulltext,,,,0,133127
+source-0212,Google Transparency Report,https://transparencyreport.google.com,cekildi,fulltext,,,,0,7813
+source-0213,Google Trends,https://trends.google.com,cekildi,fulltext,,,,0,730191
+source-0094,Groups.io,https://groups.io,cekildi,fulltext,,,,0,130978
+source-0069,GrowthHackers,https://growthhackers.com,cekildi,fulltext,,,,0,133981
+source-0167,Hepsiburada,https://www.hepsiburada.com,cekildi,fulltext,,,,0,1048580
+source-0478,Hepsiemlak,https://www.hepsiemlak.com,cekildi,fulltext,,,,0,344209
+source-0307,HERE WeGo,https://wego.here.com,cekildi,fulltext,,,,0,1159
+source-0488,Hotels.com,https://www.hotels.com,cekildi,fulltext,,,,0,1048580
+source-0315,Houzz,https://houzz.com,cekildi,fulltext,,,,0,961863
+source-0098,Huawei AppGallery,https://appgallery.huawei.com,cekildi,fulltext,,,,0,2867
+source-0184,IANA,https://www.iana.org,cekildi,fulltext,,,,0,6253
+source-0183,ICANN Lookup,https://lookup.icann.org,cekildi,fulltext,,,,0,2540
+source-0473,Idealista,https://www.idealista.it,cekildi,fulltext,,,,0,99690
+source-0340,IEEE Xplore,https://ieeexplore.ieee.org,cekildi,fulltext,,,,0,48381
+source-0435,IMF,https://www.imf.org,cekildi,fulltext,,,,0,53026
+source-0356,IMF Data,https://data.imf.org,cekildi,fulltext,,,,0,319904
+source-0279,Indeed,https://ca.indeed.com,cekildi,fulltext,,,,0,676469
+source-0174,Indiegogo,https://www.indiegogo.com,cekildi,fulltext,,,,0,34660
+source-0034,InfoQ,https://infoq.com,cekildi,fulltext,,,,0,494536
+source-0614,Infracost,https://infracost.io,cekildi,fulltext,,,,0,765489
+source-0377,INSEE,https://insee.org,cekildi,fulltext,,,,0,640
+source-0626,İTÜ Çekirdek,https://itucekirdek.com,cekildi,fulltext,,,,0,532049
+source-0587,Jotform,https://www.jotform.com,cekildi,fulltext,,,,0,530115
+source-0510,Just Eat,https://www.justeattakeaway.com,cekildi,fulltext,,,,0,838864
+source-0352,Kaggle,https://www.kaggle.com,cekildi,fulltext,,,,0,5699
+source-0270,KAP,https://www.kap.org.tr,cekildi,fulltext,,,,0,63950
+source-0227,Keyword Tool,https://keywordtool.io,cekildi,fulltext,,,,0,119862
+source-0464,Khan Academy,https://khanacademy.org,cekildi,fulltext,,,,0,226045
+source-0623,KOSGEB,https://kosgeb.gov.tr,cekildi,fulltext,,,,0,111974
+source-0190,LACNIC,https://www.lacnic.net,cekildi,fulltext,,,,0,7022
+source-0176,Lemon Squeezy,https://lemonsqueezy.com,cekildi,fulltext,,,,0,143832
+source-0545,LlamaIndex Integrations,https://llamahub.ai,cekildi,fulltext,,,,0,9222
+source-0539,LMSYS Chatbot Arena,https://lmarena.ai,cekildi,fulltext,,,,0,1048580
+source-0595,Lookback,https://lookback.com,cekildi,fulltext,,,,0,58599
+source-0606,Lyssna,https://lyssna.com,cekildi,fulltext,,,,0,424950
+source-0552,Make,https://www.make.com,cekildi,fulltext,,,,0,8536
+source-0131,Make Apps Directory,https://www.make.com,cekildi,fulltext,,,,0,8536
+source-0308,MapQuest,https://www.mapquest.com,cekildi,fulltext,,,,0,204559
+source-0388,MASAK,https://masak.hmb.gov.tr,cekildi,fulltext,,,,0,5095
+source-0077,Mastodon,https://joinmastodon.org,cekildi,fulltext,,,,0,124867
+source-0043,Maven Central,https://central.sonatype.com,cekildi,fulltext,,,,0,82542
+source-0429,MedlinePlus,https://www.medlineplus.gov,cekildi,fulltext,,,,0,26483
+source-0636,Meetup,https://meetup.com,cekildi,fulltext,,,,0,519606
+source-0269,MERSİS,https://mersis.ticaret.gov.tr,cekildi,fulltext,,,,0,31027
+source-0531,Metacritic,https://metacritic.com,cekildi,fulltext,,,,0,1491605
+source-0517,Michelin Guide,https://guide.michelin.com,cekildi,fulltext,,,,0,432636
+source-0126,Microsoft AppSource,https://appsource.microsoft.com,cekildi,fulltext,,,,0,1048580
+source-0111,Microsoft Edge Add-ons,https://microsoftedge.microsoft.com,cekildi,fulltext,,,,0,82498
+source-0243,Moat,https://moat.ai,cekildi,fulltext,,,,0,4183
+source-0168,n11,https://n11.com,cekildi,fulltext,,,,0,733056
+source-0451,National Center for Education Statistics,https://nces.ed.gov,cekildi,fulltext,,,,0,84605
+source-0208,Netcraft,https://netcraft.com,cekildi,fulltext,,,,0,1275697
+source-0441,NYSE,https://nyse.com,cekildi,fulltext,,,,0,259407
+source-0627,ODTÜ Teknokent,https://odtuteknokent.com.tr,cekildi,fulltext,,,,0,235213
+source-0355,OECD Data,https://data.oecd.org,cekildi,fulltext,,,,0,257052
+source-0365,OECD Health Statistics,https://data-explorer.oecd.org,cekildi,fulltext,,,,0,173991
+source-0323,OpenAlex,https://openalex.org,cekildi,fulltext,,,,0,2820
+source-0535,OpenRouter,https://openrouter.ai,cekildi,fulltext,,,,0,205101
+source-0425,Orphanet,https://www.orpha.net,cekildi,fulltext,,,,0,5353
+source-0350,OSF,https://osf.io,cekildi,fulltext,,,,0,4207
+source-0259,Owler,https://www.owler.com,cekildi,fulltext,,,,0,58239
+source-0170,Pazarama,https://pazarama.com,cekildi,fulltext,,,,0,1084934
+source-0055,Peerlist,https://peerlist.io,cekildi,fulltext,,,,0,275719
+source-0140,PeerSpot,https://peerspot.co,cekildi,fulltext,,,,0,30438
+source-0263,People Data Labs,https://peopledatalabs.com,cekildi,fulltext,,,,0,45728
+source-0598,PickFu,https://www.pickfu.com,cekildi,fulltext,,,,0,93046
+source-0240,Pinterest Ads Repository,https://ads.pinterest.com,cekildi,fulltext,,,,0,69164
+source-0066,PitchWall,https://pitchwall.co,cekildi,fulltext,,,,0,286402
+source-0522,PlayStation Store,https://store.playstation.com,cekildi,fulltext,,,,0,66451
+source-0599,Pollfish,https://pollfish.com,cekildi,fulltext,,,,0,280591
+source-0257,PrivCo,https://privco.com,cekildi,fulltext,,,,0,166909
+source-0591,Prolific,https://prolific.com,cekildi,fulltext,,,,0,156895
+source-0154,ProvenExpert,https://provenexpert.org,cekildi,fulltext,,,,0,1015
+source-0331,PubMed,https://pubmed.ncbi.nlm.nih.gov,cekildi,fulltext,,,,0,42403
+source-0588,Qualtrics,https://qualtrics.com,cekildi,fulltext,,,,0,552034
+source-0468,Redfin,https://www.redfin.com,cekildi,fulltext,,,,0,256135
+source-0397,Regulations.gov,https://www.regulations.gov,cekildi,fulltext,,,,0,3435
+source-0381,Rekabet Kurumu,https://www.rekabet.gov.tr,cekildi,fulltext,,,,0,958203
+source-0275,Republic,https://republic.com,cekildi,fulltext,,,,0,369979
+source-0590,Respondent,https://respondent.io,cekildi,fulltext,,,,0,74005
+source-0483,RICS,https://rics.org,cekildi,fulltext,,,,0,338324
+source-0497,Rome2Rio,https://rome2rio.com,cekildi,fulltext,,,,0,355719
+source-0610,Sastrify,https://sastrify.com,cekildi,fulltext,,,,0,195871
+source-0387,Sağlık Bakanlığı,https://www.saglik.gov.tr,cekildi,fulltext,,,,0,68788
+source-0222,SE Ranking,https://seranking.com,cekildi,fulltext,,,,0,916462
+source-0195,SecurityTrails,https://securitytrails.com,cekildi,fulltext,,,,0,91056
+source-0274,Seed-DB,https://www.seed-db.com,cekildi,fulltext,,,,0,161309
+source-0276,Seedrs,https://europe.republic.com,cekildi,fulltext,,,,0,125512
+source-0475,Seloger,https://www.seloger.com,cekildi,fulltext,,,,0,342956
+source-0012,SerpAPI,https://serpapi.com,cekildi,fulltext,,,,0,141893
+source-0013,Serper,https://serper.dev,cekildi,fulltext,,,,0,1044291
+source-0060,Slant,https://fanac.org,cekildi,fulltext,,,,0,10421
+source-0035,Slashdot,https://slashdot.org,cekildi,fulltext,,,,0,281496
+source-0241,Snapchat Ads Gallery,https://ads.snapchat.com,cekildi,fulltext,,,,0,17360
+source-0137,Software Advice,https://www.softwareadvice.com,cekildi,fulltext,,,,0,529827
+source-0384,SPK,https://spk.com.tr,cekildi,fulltext,,,,0,34891
+source-0618,StackShare,https://stackshare.io,cekildi,fulltext,,,,0,123246
+source-0540,Stanford HELM,https://crfm.stanford.edu,cekildi,fulltext,,,,0,10066
+source-0070,Starter Story,https://www.starterstory.com,cekildi,fulltext,,,,0,87600
+source-0619,StartupMarket,https://startupmarket.co,cekildi,fulltext,,,,0,87036
+source-0518,Steam,https://store.steampowered.com,cekildi,fulltext,,,,0,1010845
+source-0369,T.C. Sanayi ve Teknoloji Bakanlığı,https://sanayi.gov.tr,cekildi,fulltext,,,,0,2496
+source-0371,T.C. Sağlık Bakanlığı,https://www.saglik.gov.tr,cekildi,fulltext,,,,0,68788
+source-0370,T.C. Ticaret Bakanlığı,https://www.ticaret.gov.tr,cekildi,fulltext,,,,0,81309
+source-0011,Tavily,https://tavily.com,cekildi,fulltext,,,,0,155897
+source-0385,TCMB,https://tcmb.gov.tr,cekildi,fulltext,,,,0,81676
+source-0165,Temu,https://www.temu.com,cekildi,fulltext,,,,0,2889
+source-0516,TheFork,https://www.thefork.fr,cekildi,fulltext,,,,0,869570
+source-0179,ThemeForest,https://themeforest.net,cekildi,fulltext,,,,0,450431
+source-0061,There's An AI For That,https://theresanaiforthat.com,cekildi,fulltext,,,,0,5810227
+source-0313,Thumbtack,https://www.thumbtack.com,cekildi,fulltext,,,,0,223290
+source-0082,TikTok,https://tiktok.uptodown.com,cekildi,fulltext,,,,0,187493
+source-0309,TomTom,https://tomtom.com,cekildi,fulltext,,,,0,306485
+source-0316,Treatwell,https://www.treatwell.co.uk,cekildi,fulltext,,,,0,268784
+source-0231,Trend Hunter,https://trendhunter.com,cekildi,fulltext,,,,0,166027
+source-0166,Trendyol,https://trendyol.com,cekildi,fulltext,,,,0,1140476
+source-0414,Türk Patent ve Marka Kurumu,https://www.turkpatent.gov.tr,cekildi,fulltext,,,,0,431574
+source-0268,Türkiye Ticaret Sicili Gazetesi,https://www.ticaretsicil.gov.tr,cekildi,fulltext,,,,0,43133
+source-0506,Uber Eats,https://www.ubereats.com,cekildi,fulltext,,,,0,635712
+source-0402,UK Legislation,https://www.legislation.gov.uk,cekildi,fulltext,,,,0,18341
+source-0452,UNESCO Institute for Statistics,https://databrowser.uis.unesco.org,cekildi,fulltext,,,,0,114287
+source-0108,Uptodown,https://uptodown.com,cekildi,fulltext,,,,0,720393
+source-0592,UserTesting,https://usertesting.com,cekildi,fulltext,,,,0,212252
+source-0407,USPTO Patent Center,https://patentcenter.uspto.gov,cekildi,fulltext,,,,0,15683
+source-0408,USPTO Trademark Search,https://tmsearch.uspto.gov,cekildi,fulltext,,,,0,125660
+source-0613,Vantage,https://vantage.com,cekildi,fulltext,,,,0,64940
+source-0607,Vendr,https://vendr.com,cekildi,fulltext,,,,0,119772
+source-0186,Verisign RDAP,https://rdap.verisign.com,cekildi,fulltext,,,,0,2210
+source-0104,vivo App Store,https://appstore.vivo.com.cn,cekildi,fulltext,,,,0,85
+source-0494,Vrbo,https://www.vrbo.com,cekildi,fulltext,,,,0,1048580
+source-0202,Wappalyzer,https://wappalyzer.com,cekildi,fulltext,,,,0,95347
+source-0120,Webflow Apps,https://webflow.com,cekildi,fulltext,,,,0,1321829
+source-0576,Webrazzi,https://www.webrazzi.com,cekildi,fulltext,,,,0,179917
+source-0294,Welcome to the Jungle,https://welcometothejungle.com,cekildi,fulltext,,,,0,530395
+source-0073,Wellfound,https://wellfound.com,cekildi,fulltext,,,,0,244300
+source-0420,WHO,https://www.who.int,cekildi,fulltext,,,,0,131352
+source-0199,WhoisXML API,https://whoisxmlapi.com,cekildi,fulltext,,,,0,539078
+source-0344,Wiley Online Library,https://onlinelibrary.wiley.com,cekildi,fulltext,,,,0,84045
+source-0410,WIPO Global Brand Database,https://branddb.wipo.int,cekildi,fulltext,,,,0,1701
+source-0242,X Ads Transparency Center,https://ads.x.com,cekildi,fulltext,,,,0,2655
+source-0102,Xiaomi GetApps,https://global.app.mi.com,cekildi,fulltext,,,,0,12060
+source-0443,Yahoo Finance,https://finance.yahoo.com,cekildi,fulltext,,,,0,1453502
+source-0006,Yahoo Search,https://yahoo.com,cekildi,fulltext,,,,0,2280483
+source-0511,Yemeksepeti,https://yemeksepeti.com,cekildi,fulltext,,,,0,928826
+source-0455,YÖK Atlas,https://yokatlas.yok.gov.tr,cekildi,fulltext,,,,0,22901
+source-0628,Yıldız Teknopark,https://www.yildizteknopark.com.tr,cekildi,fulltext,,,,0,95560
+source-0125,Zoom App Marketplace,https://marketplace.zoom.us,cekildi,fulltext,,,,0,73644
+source-0260,ZoomInfo,https://zoominfo.com,cekildi,fulltext,,,,0,428401
+source-0472,Zoopla,https://www.zoopla.co.uk,cekildi,fulltext,,,,0,239639
+source-0169,Çiçeksepeti,https://ciceksepeti.com,cekildi,fulltext,,,,0,190317
+source-0191,AFRINIC,https://www.afrinic.net,cekildi,local_index,,,,396,41086
+source-0217,Ahrefs,https://ahrefs.com,cekildi,local_index,,,,6,1322242
+source-0132,Airtable Marketplace,https://airtable.com,cekildi,local_index,,,,3001,102708
+source-0582,Anadolu Ajansı,https://www.aa.com.tr,cekildi,local_index,,,,38,33739
+source-0228,AnswerThePublic,https://answerthepublic.com,cekildi,local_index,,,,80,537005
+source-0189,APNIC,https://www.apnic.net,cekildi,local_index,,,,3,0
+source-0247,AppMagic,https://appmagic.rocks,cekildi,local_index,,,,2,73985
+source-0065,AppSumo,https://appsumo.com,cekildi,local_index,,,,10028,363619
+source-0105,Aptoide,https://en.aptoide.com,cekildi,local_index,,,,11,404084
+source-0187,ARIN,https://www.arin.net,cekildi,local_index,,,,2301,29722
+source-0319,Armut,https://armut.com,cekildi,local_index,,,,127,291128
+source-0564,Ars Technica,https://arstechnica.com,cekildi,local_index,,,,188,355227
+source-0634,Arya Women Investment Platform,https://www.aryawomen.com,cekildi,local_index,,,,3,250807
+source-0287,Ashby Jobs,https://www.ashbyhq.com,cekildi,local_index,,,,472,207056
+source-0556,Associated Press,https://apnews.com,cekildi,local_index,,,,229,0
+source-0541,AWS Marketplace,https://aws.amazon.com,cekildi,local_index,,,,122,447948
+source-0437,Bank for International Settlements,https://www.bis.org,cekildi,local_index,,,,1,229711
+source-0326,BASE,https://base.com,cekildi,local_index,,,,14,207417
+source-0119,BigCommerce App Marketplace,https://www.bigcommerce.com,cekildi,local_index,,,,715,203771
+source-0249,BigSpy,https://bigspy.com,cekildi,local_index,,,,298,190602
+source-0624,Bilişim Vadisi,https://bilisimvadisi.com.tr,cekildi,local_index,,,,4,411988
+source-0302,Bing Maps,https://www.bing.com,cekildi,local_index,,,,12,180190
+source-0335,bioRxiv,https://www.biorxiv.org,cekildi,local_index,,,,10,0
+source-0557,Bloomberg,https://www.bloomberg.com,cekildi,local_index,,,,429,0
+source-0579,Bloomberg HT,https://www.bloomberght.com,cekildi,local_index,,,,287,321187
+source-0500,Bolt,https://bolt.io,cekildi,local_index,,,,2,103900
+source-0485,Booking.com,https://www.booking.com,cekildi,local_index,,,,45,0
+source-0442,Borsa İstanbul,https://borsaistanbul.com,cekildi,local_index,,,,4,290005
+source-0382,BTK,https://www.btk.gov.tr,cekildi,local_index,,,,18,660646
+source-0201,BuiltWith,https://builtwith.com,cekildi,local_index,,,,44,224623
+source-0566,Business Insider,https://www.businessinsider.com,cekildi,local_index,,,,550,0
+source-0234,BuzzSumo,https://buzzsumo.com,cekildi,local_index,,,,9,172336
+source-0133,Canva Apps Marketplace,https://www.canva.com,cekildi,local_index,,,,1,0
+source-0466,Capterra Education Software,https://www.capterra.com,cekildi,local_index,,,,12,0
+source-0193,Censys,https://censys.com,cekildi,local_index,,,,38,193394
+source-0600,Centiment,https://www.centiment.co,cekildi,local_index,,,,10,0
+source-0262,Clearbit,https://clearbit.com,cekildi,local_index,,,,500,24880
+source-0612,CloudPrice,https://cloudprice.net,cekildi,local_index,,,,10,1305158
+source-0560,CNBC,https://www.cnbc.com,cekildi,local_index,,,,13,0
+source-0448,CoinGecko,https://www.coingecko.com,cekildi,local_index,,,,26,0
+source-0447,CoinMarketCap,https://coinmarketcap.com,cekildi,local_index,,,,27,0
+source-0550,Composio,https://docs.composio.dev,cekildi,local_index,,,,2103,0
+source-0325,CORE,https://core.ac.uk,cekildi,local_index,,,,13348,0
+source-0573,Crunchbase News,https://news.crunchbase.com,cekildi,local_index,,,,29,167203
+source-0359,data.europa.eu,https://data.europa.eu,cekildi,local_index,,,,346,114603
+source-0360,Data.gov,https://data.gov,cekildi,local_index,,,,292,121515
+source-0015,DataForSEO,https://dataforseo.com,cekildi,local_index,,,,20,0
+source-0255,Dealroom,https://dealroom.net,cekildi,local_index,,,,488,345988
+source-0449,DefiLlama,https://defillama.com,cekildi,local_index,,,,19,1090018
+source-0378,Destatis,https://www.destatis.de,cekildi,local_index,,,,6,99974
+source-0328,Dimensions,https://app.dimensions.ai,cekildi,local_index,,,,606,277363
+source-0093,Discourse,https://discourse.net,cekildi,local_index,,,,14,218172
+source-0196,DNSdumpster,https://dnsdumpster.com,cekildi,local_index,,,,9,0
+source-0426,DrugBank,https://www.drugbank.com,cekildi,local_index,,,,26,0
+source-0005,DuckDuckGo,https://duckduckgo.com,cekildi,local_index,,,,26,176851
+source-0033,DZone,https://dzone.com,cekildi,local_index,,,,5,561898
+source-0459,edX,https://edx.com,cekildi,local_index,,,,154,140650
+source-0577,egirişim,https://egirisim.com,cekildi,local_index,,,,73,0
+source-0572,EU-Startups,https://www.eu-startups.com,cekildi,local_index,,,,539,552117
+source-0333,Europe PMC,https://europepmc.org,cekildi,local_index,,,,980,0
+source-0436,European Central Bank,https://www.ecb.europa.eu,cekildi,local_index,,,,478,205394
+source-0393,European Medicines Agency,https://www.ema.europa.eu,cekildi,local_index,,,,163,90155
+source-0358,Eurostat,https://ec.europa.eu,cekildi,local_index,,,,4,0
+source-0067,Fazier,https://fazier.com,cekildi,local_index,,,,3,722221
+source-0153,Feefo,https://www.feefo.com,cekildi,local_index,,,,1,0
+source-0144,FinancesOnline,https://financesonline.com,cekildi,local_index,,,,38,230904
+source-0438,Financial Conduct Authority,https://www.fca.org.uk,cekildi,local_index,,,,2,176130
+source-0504,Flightradar24,https://www.flightradar24.com,cekildi,local_index,,,,28,0
+source-0567,Forbes,https://forbes.com,cekildi,local_index,,,,628,0
+source-0304,Foursquare,https://foursquare.com,cekildi,local_index,,,,19,211670
+source-0317,Fresha,https://www.fresha.com,cekildi,local_index,,,,4,0
+source-0633,Galata Business Angels,https://galatabusinessangels.com,cekildi,local_index,,,,16,0
+source-0389,Gelir İdaresi Başkanlığı,https://gib.gov.tr,cekildi,local_index,,,,9,20989
+source-0495,GetYourGuide,https://www.getyourguide.com,cekildi,local_index,,,,189,0
+source-0018,GitLab,https://gitlab.com,cekildi,local_index,,,,18850,0
+source-0547,Glama,https://glama.ai,cekildi,local_index,,,,19,132882
+source-0230,Glimpse,https://meetglimpse.com,cekildi,local_index,,,,10,195593
+source-0431,Global Health Data Exchange,https://ghdx.healthdata.org,cekildi,local_index,,,,11,45677
+source-0310,Google Business Profile,https://business.google.com,cekildi,local_index,,,,2,0
+source-0617,Google Cloud Pricing Calculator,https://cloud.google.com,cekildi,local_index,,,,180,0
+source-0046,Homebrew Formulae,https://formulae.brew.sh,cekildi,local_index,,,,16352,7067
+source-0493,Hostelworld,https://www.hostelworldgroup.com,cekildi,local_index,,,,51,43497
+source-0603,Hotjar,https://www.hotjar.com,cekildi,local_index,,,,133,0
+source-0209,HTTP Archive,https://httparchive.org,cekildi,local_index,,,,15,17928
+source-0123,HubSpot App Marketplace,https://ecosystem.hubspot.com,cekildi,local_index,,,,17,53931
+source-0534,Hugging Face,https://huggingface.co,cekildi,local_index,,,,7,0
+source-0474,Immobiliare.it,https://www.immobiliare.it,cekildi,local_index,,,,25,0
+source-0476,ImmobilienScout24,https://www.immobilienscout24.de,cekildi,local_index,,,,1894,0
+source-0374,İstanbul Büyükşehir Belediyesi Açık Veri Portalı,https://data.ibb.gov.tr,cekildi,local_index,,,,657,26036
+source-0299,İşkur,https://iskur.gov.tr,cekildi,local_index,,,,3089,414250
+source-0050,JetBrains Marketplace,https://plugins.jetbrains.com,cekildi,local_index,,,,36,78364
+source-0283,Jooble,https://jooble.org,cekildi,local_index,,,,1394,0
+source-0009,Kagi,https://kagi.com,cekildi,local_index,,,,3,58815
+source-0295,Kariyer.net,https://www.kariyer.net,cekildi,local_index,,,,3,0
+source-0491,Kayak,https://www.kayak.com,cekildi,local_index,,,,109,0
+source-0286,Lever Jobs,https://www.lever.co,cekildi,local_index,,,,417,136674
+source-0499,Lyft,https://lyft.com,cekildi,local_index,,,,32,383861
+source-0221,Mangools,https://mangools.com,cekildi,local_index,,,,2,132538
+source-0594,Maze,https://maze.co,cekildi,local_index,,,,39,122216
+source-0548,MCP.so,https://mcp.so,cekildi,local_index,,,,28,209196
+source-0456,MEB,https://meb.com.tr,cekildi,local_index,,,,9,111845
+source-0236,Meta Ad Library,https://metaadlibrary.com,cekildi,local_index,,,,2,114651
+source-0054,Microlaunch,https://microlaunch.net,cekildi,local_index,,,,8,2644560
+source-0604,Microsoft Clarity,https://clarity.microsoft.com,cekildi,local_index,,,,19,410432
+source-0101,Microsoft Store,https://apps.microsoft.com,cekildi,local_index,,,,3,205856
+source-0570,MIT Technology Review,https://www.technologyreview.com,cekildi,local_index,,,,15,863238
+source-0128,monday.com Apps Marketplace,https://monday.com,cekildi,local_index,,,,715,1225136
+source-0502,Moovit,https://moovit.com,cekildi,local_index,,,,10,105232
+source-0345,Nature,https://www.nature.com,cekildi,local_index,,,,40248,0
+source-0129,Notion Integrations,https://www.notion.com,cekildi,local_index,,,,169,947073
+source-0453,OECD Education,https://data-explorer.oecd.org,cekildi,local_index,,,,1346,0
+source-0439,Open Banking UK,https://www.openbanking.org.uk,cekildi,local_index,,,,54,229060
+source-0048,Open VSX Registry,https://open-vsx.org,cekildi,local_index,,,,17330,2182
+source-0264,OpenCorporates,https://opencorporates.com,cekildi,local_index,,,,6,194727
+source-0532,OpenCritic,https://opencritic.com,cekildi,local_index,,,,9,251848
+source-0366,Our World in Data,https://ourworldindata.org,cekildi,local_index,,,,6434,268437
+source-0353,Papers with Code,https://paperswithcode.co,cekildi,local_index,,,,83,10318
+source-0244,Pathmatics,https://pathmatics.io,cekildi,local_index,,,,37,76530
+source-0346,PLOS,https://plos.org,cekildi,local_index,,,,17,254898
+source-0332,PubMed Central,https://pmc.ncbi.nlm.nih.gov,cekildi,local_index,,,,1353,0
+source-0536,Replicate,https://replicate.com,cekildi,local_index,,,,6,353031
+source-0471,Rightmove,https://www.rightmove.co.uk,cekildi,local_index,,,,539,329825
+source-0112,Safari Extensions,https://apps.apple.com,cekildi,local_index,,,,7,311210
+source-0122,Salesforce AppExchange,https://appexchange.salesforce.com,cekildi,local_index,,,,11988,479962
+source-0099,Samsung Galaxy Store,https://galaxystore.samsung.com,cekildi,local_index,,,,5,7036
+source-0245,Sensor Tower,https://sensortower.com,cekildi,local_index,,,,1520,266743
+source-0143,Serchen,https://serchen.com,cekildi,local_index,,,,30,128977
+source-0226,Serpstat,https://serpstat.com,cekildi,local_index,,,,1263,33553
+source-0571,Sifted,https://sifted.org,cekildi,local_index,,,,14,130772
+source-0225,Sistrix,https://www.sistrix.com,cekildi,local_index,,,,10,102866
+source-0490,Skyscanner,https://www.skyscanner.com,cekildi,local_index,,,,1547,0
+source-0091,Slack,https://slack.com,cekildi,local_index,,,,13,516324
+source-0124,Slack Marketplace,https://slack.com,cekildi,local_index,,,,13,258294
+source-0289,SmartRecruiters,https://www.smartrecruiters.com,cekildi,local_index,,,,1296,214518
+source-0546,Smithery,https://smithery.com,cekildi,local_index,,,,15,159334
+source-0248,SocialPeta,https://socialpeta.com,cekildi,local_index,,,,344,564660
+source-0020,SourceForge,https://sourceforge.net,cekildi,local_index,,,,123,120753
+source-0233,SparkToro,https://sparktoro.com,cekildi,local_index,,,,87,64687
+source-0223,SpyFu,https://www.spyfu.com,cekildi,local_index,,,,51,0
+source-0118,Squarespace Extensions,https://www.squarespace.com,cekildi,local_index,,,,6352,0
+source-0057,Startup Stash,https://startupstash.com,cekildi,local_index,,,,17,0
+source-0089,Substack,https://substack.com,cekildi,local_index,,,,11,536102
+source-0585,SurveyMonkey,https://da.surveymonkey.com,cekildi,local_index,,,,42,0
+source-0586,Tally,https://tallyai.money,cekildi,local_index,,,,5,21668
+source-0481,Tapu ve Kadastro Genel Müdürlüğü,https://www.tkgm.gov.tr,cekildi,local_index,,,,107,1036237
+source-0561,TechCrunch,https://techcrunch.com,cekildi,local_index,,,,2079,451938
+source-0272,Techstars Companies,https://www.techstars.com,cekildi,local_index,,,,914,437237
+source-0147,Tekpon,https://tekpon.com,cekildi,local_index,,,,19,315499
+source-0418,The Trademark Search Company,https://thetrademarksearchcompany.com,cekildi,local_index,,,,397,369560
+source-0232,Think with Google,https://www.thinkwithgoogle.com,cekildi,local_index,,,,115,0
+source-0238,TikTok Creative Center,https://ads.tiktok.com,cekildi,local_index,,,,254,1271035
+source-0537,Together AI,https://www.together.ai,cekildi,local_index,,,,723,675640
+source-0063,Toolify,https://toolify.io,cekildi,local_index,,,,9,94104
+source-0446,TradingView,https://www.tradingview.com,cekildi,local_index,,,,65,0
+source-0470,Trulia,https://www.trulia.com,cekildi,local_index,,,,282,199189
+source-0525,Twitch,https://www.twitch.tv,cekildi,local_index,,,,8,0
+source-0583,Typeform,https://typeform.com,cekildi,local_index,,,,4361,313494
+source-0622,TÜBİTAK,https://tubitak.gov.tr,cekildi,local_index,,,,6,105282
+source-0482,TÜİK Konut İstatistikleri,https://veriportali.tuik.gov.tr,cekildi,local_index,,,,21,3692
+source-0484,U.S. Census Building Permits,https://www.census.gov,cekildi,local_index,,,,14,0
+source-0450,U.S. Department of Education,https://www.ed.gov,cekildi,local_index,,,,2,108358
+source-0498,Uber,https://www.uber.com,cekildi,local_index,,,,1583,0
+source-0220,Ubersuggest,https://ubersuggest.net,cekildi,local_index,,,,16,100533
+source-0460,Udemy,https://www.udemy.com,cekildi,local_index,,,,34,0
+source-0403,UK Financial Conduct Authority,https://www.fca.org.uk,cekildi,local_index,,,,2,177348
+source-0053,Uneed,https://www.uneed.best,cekildi,local_index,,,,6,424999
+source-0206,urlscan.io,https://urlscan.io,cekildi,local_index,,,,16,0
+source-0605,UsabilityHub,https://usabilityhub.ai,cekildi,local_index,,,,649,584816
+source-0589,User Interviews,https://www.userinterviews.com,cekildi,local_index,,,,1751,0
+source-0609,Vertice,https://www.vertice.one,cekildi,local_index,,,,765,258344
+source-0528,VG Insights,https://app.sensortower.com,cekildi,local_index,,,,9,9637
+source-0049,Visual Studio Marketplace,https://marketplace.visualstudio.com,cekildi,local_index,,,,18541,68996
+source-0330,Web of Science,https://clarivate.com,cekildi,local_index,,,,16,567260
+source-0364,WHO Global Health Observatory,https://www.who.int,cekildi,local_index,,,,6,147659
+source-0409,WIPO PATENTSCOPE,https://patentscope.wipo.int,cekildi,local_index,,,,2286,98
+source-0117,Wix App Market,https://www.wix.com,cekildi,local_index,,,,10452,1075497
+source-0288,Workable Jobs,https://jobs.workable.com,cekildi,local_index,,,,2158,0
+source-0354,World Bank Open Data,https://data.worldbank.org,cekildi,local_index,,,,21,212091
+source-0597,Wynter,https://wynter.com,cekildi,local_index,,,,389,86766
+source-0072,Y Combinator Companies,https://www.ycombinator.com,cekildi,local_index,,,,102,30953
+source-0296,Yenibiris,https://www.yenibiris.com,cekildi,local_index,,,,18,185849
+source-0551,Zapier,https://zapier.com,cekildi,local_index,,,,36,580781
+source-0130,Zapier App Directory,https://zapier.com,cekildi,local_index,,,,56,365240
+source-0486,Airbnb,https://airbnb.com,cekildi,opensearch,https://www.airbnb.com/opensearch.xml,,,0,1142845
+source-0059,AlternativeTo,https://alternativeto.net,cekildi,opensearch,https://alternativeto.net/static/opensearch.xml,,https://alternativeto.net/browse/search/?q=,0,868915
+source-0121,Atlassian Marketplace,https://marketplace.atlassian.com,cekildi,opensearch,https://marketplace.atlassian.com/amkt-frontend-static/public/opensearch.xml,,https://marketplace.atlassian.com/search?query=,2,203096
+source-0001,Brave Search,https://search.brave.com,cekildi,opensearch,https://cdn.search.brave.com/serp/v2/_app/immutable/assets/opensearch.BqerUIGT.xml,,,0,98932
+source-0462,Class Central,https://classcentral.com,cekildi,opensearch,https://www.classcentral.com/opensearch.xml,,https://www.classcentral.com/search?q=,0,605702
+source-0266,Companies House,https://www.gov.uk,cekildi,opensearch,https://www.gov.uk/search/opensearch.xml,,,35,85460
+source-0405,Competition and Markets Authority,https://gov.uk,cekildi,opensearch,https://www.gov.uk/search/opensearch.xml,,,0,85460
+source-0042,crates.io,https://crates.io,cekildi,opensearch,https://crates.io/opensearch.xml,,,0,5050
+source-0029,Dev.to,https://dev.to,cekildi,opensearch,https://dev.to/open-search.xml,,,13,276859
+source-0351,Dryad,https://datadryad.org,cekildi,opensearch,https://datadryad.org/search/description.xml,,https://datadryad.org/search?q={kelime},74,259377
+source-0181,Etsy Reviews,https://www.etsy.com,cekildi,opensearch,https://www.etsy.com/osdd.php,,,0,161320
+source-0106,F-Droid,https://f-droid.org,cekildi,opensearch,https://f-droid.org/en/osd.xml,,https://search.f-droid.org/?q={kelime},5098,13156
+source-0110,Firefox Add-ons,https://addons.mozilla.org,cekildi,opensearch,https://addons.mozilla.org/en-US/firefox/opensearch.xml,,https://addons.mozilla.org/en-US/firefox/search/?q={kelime},0,251357
+source-0097,Google Play Store,https://play.google.com,cekildi,opensearch,https://play.google.com/opensearch.xml,,,50000,2957024
+source-0508,Grubhub,https://www.grubhub.com,cekildi,opensearch,https://www.grubhub.com/opensearch.xml,,,0,16579
+source-0175,Gumroad,https://gumroad.com,cekildi,opensearch,https://gumroad.com/opensearch.xml,,,0,129044
+source-0430,HealthData.gov,https://healthdata.gov,cekildi,opensearch,https://healthdata.gov/opensearch.xml,,,0,801066
+source-0047,Libraries.io,https://libraries.io,cekildi,opensearch,https://libraries.io/opensearch.xml,,https://libraries.io/search?q=,0,51260
+source-0088,Medium,https://medium.com,cekildi,opensearch,https://medium.com/osd.xml,,,0,38226
+source-0008,Mojeek,https://mojeek.com,cekildi,opensearch,https://www.mojeek.com/opensearch.xml,,https://www.mojeek.com/search?q={kelime},0,6685
+source-0044,NuGet Gallery,https://nuget.org,cekildi,opensearch,https://www.nuget.org/opensearch.xml,,,0,30920
+source-0303,OpenStreetMap,https://www.openstreetmap.org,cekildi,opensearch,https://www.openstreetmap.org/assets/osm-42b7b3fbcee2193e455a773db6cd3d34a2f48ca94547fed54901dd9d8307b02b.xml,,,0,32441
+source-0040,PyPI,https://pypi.org,cekildi,opensearch,https://pypi.org/opensearch.xml,,https://pypi.org/search/?q={kelime},257,22977
+source-0290,Remote OK,https://remoteok.com,cekildi,opensearch,https://remoteok.com/opensearch.xml,,,83,59610
+source-0338,ResearchGate,https://www.researchgate.net,cekildi,opensearch,https://www.researchgate.net/application.DownloadOpenSearchPlugin.html,,,0,37412
+source-0041,RubyGems,https://rubygems.org,cekildi,opensearch,https://rubygems.org/opensearch.xml,,,0,38491
+source-0058,SaaSHub,https://saashub.com,cekildi,opensearch,https://www.saashub.com/opensearch.xml,,,0,433847
+source-0297,Secretcv,https://secretcv.com,cekildi,opensearch,https://www.secretcv.com/assets/xml/odesc.xml,,,0,243861
+source-0218,Semrush,https://semrush.com,cekildi,opensearch,https://www.semrush.com/__static__/semrush-opensearch.xml,,,0,196863
+source-0194,Shodan,https://www.shodan.io,cekildi,opensearch,https://www.shodan.io/static/opensearch-07a9aa48.xml,,https://www.shodan.io/search?query={kelime},0,12708
+source-0527,SteamDB,https://steamdb.info,cekildi,opensearch,https://steamdb.info/opensearch.xml,,https://steamdb.info/search/?a=all&amp;q=,0,201150
+source-0629,TÜSİAD,https://www.tusiad.org,cekildi,opensearch,https://www.tusiad.org/en/component/search/?id=7&amp;Itemid=310&amp;format=opensearch,,,0,43200
+source-0357,United Nations Data,https://data.un.org,cekildi,opensearch,https://data.un.org/OpenSearch.xml,,,0,88471
+source-0007,Yandex,https://yandex.com,cekildi,opensearch,https://yandex.com/opensearch.xml,,,0,217663
+source-0306,Yandex Maps,https://yandex.com,cekildi,opensearch,https://yandex.com/opensearch.xml,,,0,217663
+source-0083,YouTube,https://www.youtube.com,cekildi,opensearch,https://www.youtube.com/opensearch?locale=tr_TR,,,0,882393
+source-0250,Adbeat,https://www.adbeat.com,cekildi,site_search,,,https://www.adbeat.com/free/advertiser/search-show-advertiser?homepage=1&search=1&q=,0,62512
+source-0334,arXiv,https://arxiv.org,cekildi,site_search,,,https://arxiv.org/search?query={kelime},0,38051
+source-0616,Azure Pricing Calculator,https://azure.microsoft.com,cekildi,site_search,,,https://azure.microsoft.com/en-us/search/?q={kelime},22,464345
+source-0004,Bing,https://bing.com,cekildi,site_search,,,https://www.bing.com:443/news/search?q=,0,464146
+source-0554,Bing News,https://www.bing.com,cekildi,site_search,,,https://www.bing.com/news/search?q=,12,231295
+source-0216,Bing Webmaster Tools,https://www.bing.com,cekildi,site_search,,,https://www.bing.com/news/search?q=,12,224757
+source-0362,Bureau of Labor Statistics,https://www.bls.gov,cekildi,site_search,,,https://www.bls.gov/search/query?term={kelime},0,75402
+source-0135,Capterra,https://www.capterra.com,cekildi,site_search,,,https://www.capterra.com/search/?query=,0,812529
+source-0180,CodeCanyon,https://codecanyon.net,cekildi,site_search,,,https://codecanyon.net/search?term=,0,428435
+source-0036,CodeProject,https://www.codeproject.com,cekildi,site_search,,,https://www.codeproject.com/search.aspx?q=,0,27711
+source-0205,Common Crawl,https://commoncrawl.org,cekildi,site_search,,,https://commoncrawl.org/search?query={kelime},390,26864
+source-0401,Consumer Financial Protection Bureau,https://www.consumerfinance.gov,cekildi,site_search,,,https://www.consumerfinance.gov/search/?q={kelime},7487,142280
+source-0458,Coursera,https://coursera.org,cekildi,site_search,,,https://www.coursera.org/search?query=,0,815760
+source-0324,Crossref,https://www.crossref.org,cekildi,site_search,,,https://search.crossref.org/?from_ui=yes&q=,1684,35039
+source-0142,Crozdesk,https://crozdesk.com,cekildi,site_search,,,https://crozdesk.com/search?query=,0,147660
+source-0252,Crunchbase,https://crunchbase.com,cekildi,site_search,,,https://www.crunchbase.com/textsearch?q={kelime},0,128439
+source-0090,Discord,https://discord.com,cekildi,site_search,,,https://discord.com/search?q=,0,118314
+source-0197,DNSlytics,https://dnslytics.com,cekildi,site_search,,,https://search.dnslytics.com/search?q=,44,12516
+source-0038,Docker Hub,https://hub.docker.com,cekildi,site_search,,,https://hub.docker.com/search?q=,14,504970
+source-0200,DomainTools,https://www.domaintools.com,cekildi,site_search,,,https://www.domaintools.com/search?query={kelime},2393,413290
+source-0596,dscout,https://dscout.com,cekildi,site_search,,,https://dscout.com/search?query={kelime},1145,192162
+source-0424,ECDC,https://www.ecdc.europa.eu,cekildi,site_search,,,https://www.ecdc.europa.eu/en/search?s=,6,109318
+source-0394,European Banking Authority,https://www.eba.europa.eu,cekildi,site_search,,,https://www.eba.europa.eu/search?query={kelime},0,84411
+source-0558,Financial Times,https://www.ft.com,cekildi,site_search,,,https://www.ft.com/search?q={kelime},600,703720
+source-0292,FlexJobs,https://www.flexjobs.com,cekildi,site_search,,,https://www.flexjobs.com/search?q=,0,298905
+source-0463,FutureLearn,https://www.futurelearn.com,cekildi,site_search,,,https://www.futurelearn.com/search?q={kelime},0,706609
+source-0062,Futurepedia,https://futurepedia.io,cekildi,site_search,,,https://www.futurepedia.io/search?search={kelime},0,2948589
+source-0134,G2,https://www.g2.com,cekildi,site_search,,,https://www.g2.com/search?query=,0,268982
+source-0465,G2 Education Software,https://www.g2.com,cekildi,site_search,,,https://www.g2.com/search?query=,0,268982
+source-0064,G2 Track,https://www.g2.com,cekildi,site_search,,,https://www.g2.com/search?query=,0,268982
+source-0136,GetApp,https://getapp.com,cekildi,site_search,,,https://www.getapp.com/search?query=,0,118556
+source-0235,Google Dataset Search,https://datasetsearch.research.google.com,cekildi,site_search,,,https://datasetsearch.research.google.com/search?query=,0,522934
+source-0127,Google Workspace Marketplace,https://workspace.google.com,cekildi,site_search,,,https://workspace.google.com/intl/tr/search/?q={kelime},10,3014516
+source-0601,Great Question,https://greatquestion.co,cekildi,site_search,,,https://greatquestion.co/search?q=,0,258401
+source-0030,Hashnode,https://hashnode.com,cekildi,site_search,,,https://hashnode.com/search?q=,2,749653
+source-0445,Investing.com,https://cn.investing.com,cekildi,site_search,,,https://www.investing.com/search?q={kelime},0,1681621
+source-0521,itch.io,https://itch.io,cekildi,site_search,,,https://itch.io/search?q={kelime},120,112547
+source-0417,Justia Patents,https://patents.justia.com,cekildi,site_search,,,https://patents.justia.com/search?q={kelime},0,151052
+source-0544,LangChain Integrations,https://python.langchain.com,cekildi,site_search,,,https://python.langchain.com/api_reference/search.html?q={kelime},0,111935
+source-0327,Lens.org,https://lens.org,cekildi,site_search,,,https://www.lens.org/lens/search/patent/list?p=0&n=10&s=,0,566734
+source-0224,Majestic,https://majestic.com,cekildi,site_search,,,https://majestic.com/reports/search-explorer?q=,866,109472
+source-0281,Monster,https://www.monster.com,cekildi,site_search,,,https://www.monster.com/jobs/search/?q=,0,132499
+source-0219,Moz,https://moz.com,cekildi,site_search,,,https://moz.com/search?q={kelime},65,168632
+source-0440,Nasdaq,https://www.nasdaq.com,cekildi,site_search,,,https://www.nasdaq.com/search?q=,0,271370
+source-0312,Nextdoor,https://about.nextdoor.com,cekildi,site_search,,,https://about.nextdoor.com/hs-search-results?term={kelime},280,59846
+source-0422,NICE,https://nice.com,cekildi,site_search,,,https://www.nice.com/search?q=,0,373620
+source-0524,Nintendo eShop,https://www.nintendo.com,cekildi,site_search,,,https://www.nintendo.com/search?q={kelime},3932,883380
+source-0113,Opera Add-ons,https://addons.opera.com,cekildi,site_search,,,https://addons.opera.com/en/search/?query={kelime},0,58789
+source-0253,PitchBook,https://pitchbook.com,cekildi,site_search,,,https://pitchbook.com/search?q=,0,471744
+source-0575,Rest of World,https://restofworld.org,cekildi,site_search,,,https://restofworld.org/Search?search={kelime},2799,173754
+source-0152,Reviews.io,https://reviews.io,cekildi,site_search,,,https://www.reviews.io/front/search?v=2&theme=new&s=,0,447342
+source-0188,RIPE NCC,https://www.ripe.net,cekildi,site_search,,,https://www.ripe.net/search/?query={kelime},21,138487
+source-0145,SaaSworthy,https://www.saasworthy.com,cekildi,site_search,,,https://www.saasworthy.com/\/\/www.saasworthy.com\/search?s=,0,573552
+source-0010,SearXNG,https://docs.searxng.org,cekildi,site_search,,,https://docs.searxng.org/search.html?q={kelime},0,14435
+source-0265,SEC EDGAR,https://www.sec.gov,cekildi,site_search,,,https://secsearch.sec.gov/search?query={kelime},0,223895
+source-0322,Semantic Scholar,https://semanticscholar.org,cekildi,site_search,,,https://www.semanticscholar.org/search?q=,0,187646
+source-0114,Shopify App Store,https://apps.shopify.com,cekildi,site_search,,,https://apps.shopify.com/search?q={kelime},184,229692
+source-0203,Similarweb,https://similarweb.com,cekildi,site_search,,,https://www.similarweb.com/search/?q=,0,924763
+source-0149,Sitejabber,https://www.sitejabber.com,cekildi,site_search,,,https://www.sitejabber.com/search?q=,0,178695
+source-0461,Skillshare,https://help.skillshare.com,cekildi,site_search,,,https://help.skillshare.com/hc/en-us/search?query={kelime},1474,78006
+source-0146,SoftwareSuggest,https://softwaresuggest.com,cekildi,site_search,,,https://www.softwaresuggest.com/search/index?query=,0,838597
+source-0141,SourceForge Reviews,https://sourceforge.net,cekildi,site_search,,,https://sourceforge.net/proxy-api/search/filter-integrations?q=,123,355687
+source-0602,Sprig,https://sprig.com,cekildi,site_search,,,https://sprig.com/search?query=,0,83508
+source-0620,startups.watch,https://startups.watch,cekildi,site_search,,,https://startups.watch/search?q={kelime},0,27471
+source-0092,Telegram,https://telegram.com,cekildi,site_search,,,https://www.telegram.com/search/?q=,0,437881
+source-0562,The Verge,https://theverge.com,cekildi,site_search,,,https://www.theverge.com/search?q=,0,1055125
+source-0157,Tripadvisor,https://www.tripadvisor.com,cekildi,site_search,,,https://www.tripadvisor.com/Search?q={kelime},0,324836
+source-0608,Tropic,https://tropic.com,cekildi,site_search,,,https://www.tropic.com/pages/search?q={kelime},0,1064475
+source-0138,TrustRadius,https://www.trustradius.com,cekildi,site_search,,,https://www.trustradius.com/search?q={kelime},0,414393
+source-0086,Tumblr,https://tumblr.com,cekildi,site_search,,,https://www.tumblr.com/search?q={kelime},0,114970
+source-0367,TÜİK,https://www.tuik.gov.tr,cekildi,site_search,,,https://www.tuik.gov.tr/search?q=,0,431481
+source-0398,U.S. Federal Trade Commission,https://www.ftc.gov,cekildi,site_search,,,https://www.ftc.gov/legal-library/search?search={kelime},0,998676
+source-0399,U.S. Food and Drug Administration,https://fda.gov,cekildi,site_search,,,https://www.fda.gov/search?s={kelime},0,55554
+source-0400,U.S. Securities and Exchange Commission,https://www.sec.gov,cekildi,site_search,,,https://secsearch.sec.gov/search?query={kelime},0,223733
+source-0404,UK Information Commissioner's Office,https://ico.org.uk,cekildi,site_search,,,https://icosearch.ico.org.uk/s/search.html?query={kelime},31045,53141
+source-0361,US Census Bureau,https://www.census.gov,cekildi,site_search,,,https://www.census.gov/search-results.html?searchType=web&cssp=SERP&q=,14,374115
+source-0162,Walmart,https://business.walmart.com,cekildi,site_search,,,https://business.walmart.com/search?q=,0,255905
+source-0291,We Work Remotely,https://weworkremotely.com,cekildi,site_search,,,https://weworkremotely.com/jobs/search?term=,1437,425083
+source-0563,Wired,https://wired.com,cekildi,site_search,,,https://www.wired.com/search?q=,0,1528922
+source-0115,WooCommerce Marketplace,https://woocommerce.com,cekildi,site_search,,,https://woocommerce.com/products/\/\/woocommerce.com\/search\/?q=,28,497588
+source-0116,WordPress Plugin Directory,https://wordpress.org,cekildi,site_search,,,https://wordpress.org/search/do-search.php?s={kelime},3,164642
+source-0434,World Bank,https://www.worldbank.org,cekildi,site_search,,,https://www.worldbank.org/en/search?q=,13,60087
+source-0454,YÖK,https://www.yok.gov.tr,cekildi,site_search,,,https://www.yok.gov.tr/search?q={kelime},1475,224997
+source-0348,Zenodo,https://zenodo.org,cekildi,site_search,,,https://zenodo.org/search?q=,625,68480
+source-0339,Academia.edu,https://www.academia.edu,kismi,yok,,,,0,0
+source-0341,ACM Digital Library,https://dl.acm.org,kismi,yok,,,,0,0
+source-0301,Apple Maps,https://maps.apple.com,kismi,yok,,,,0,0
+source-0192,crt.sh,https://crt.sh,kismi,yok,,,,0,0
+source-0161,Etsy,https://www.etsy.com,kismi,yok,,,,0,0
+source-0074,F6S,https://www.f6s.com,kismi,yok,,,,0,0
+source-0080,Facebook,https://m.facebook.com,kismi,yok,,,,0,0
+source-0172,Facebook Marketplace,https://www.facebook.com,kismi,yok,,,,0,0
+source-0311,Facebook Pages,https://www.facebook.com,kismi,yok,,,,0,0
+source-0416,FreePatentsOnline,https://www.freepatentsonline.com,kismi,yok,,,,0,0
+source-0158,Glassdoor,https://www.glassdoor.com,kismi,yok,,,,0,0
+source-0543,Google Cloud Marketplace,https://console.cloud.google.com,kismi,yok,,,,0,0
+source-0444,Google Finance,https://www.google.com,kismi,yok,,,,0,0
+source-0284,Google Jobs,https://www.google.com,kismi,yok,,,,0,0
+source-0300,Google Maps,https://www.google.com,kismi,yok,,,,0,0
+source-0553,Google News,https://news.google.com,kismi,yok,,,,0,0
+source-0155,Google Reviews,https://www.google.com,kismi,yok,,,,0,0
+source-0003,Google Search,https://google.com,kismi,yok,,,,0,0
+source-0492,Google Travel,https://www.google.com,kismi,yok,,,,0,0
+source-0068,HackerNoon,https://hackernoon.com,kismi,yok,,,,0,0
+source-0081,Instagram,https://www.instagram.com,kismi,yok,,,,0,0
+source-0173,Kickstarter,https://www.kickstarter.com,kismi,yok,,,,0,0
+source-0056,Launching Next,https://www.launchingnext.com,kismi,yok,,,,0,0
+source-0415,Lens.org Patents,https://www.lens.org,kismi,yok,,,,0,0
+source-0084,LinkedIn,https://www.linkedin.com,kismi,yok,,,,0,0
+source-0239,LinkedIn Ad Library,https://www.linkedin.com,kismi,yok,,,,0,0
+source-0278,LinkedIn Jobs,https://www.linkedin.com,kismi,yok,,,,0,0
+source-0031,Lobsters,https://lobste.rs,kismi,yok,,,,0,0
+source-0505,OpenTable,https://www.opentable.com,kismi,yok,,,,0,0
+source-0085,Pinterest,https://www.pinterest.com,kismi,yok,,,,0,0
+source-0051,Product Hunt,https://www.producthunt.com,cekildi,yok,,,,0,0
+source-0087,Quora,https://www.quora.com,kismi,yok,,,,0,0
+source-0469,Realtor.com,https://www.realtor.com,kismi,yok,,,,0,0
+source-0075,Reddit,https://www.reddit.com,kismi,yok,,,,0,0
+source-0555,Reuters,https://www.reuters.com,kismi,yok,,,,0,0
+source-0342,SpringerLink,https://link.springer.com,kismi,yok,,,,0,0
+source-0559,The Wall Street Journal,https://cn.wsj.com,kismi,yok,,,,0,0
+source-0254,Tracxn,https://tracxn.com,kismi,yok,,,,0,0
+source-0513,Trendyol Yemek,https://tgoyemek.com,kismi,yok,,,,0,0
+source-0148,Trustpilot,https://www.trustpilot.com,kismi,yok,,,,0,0
+source-0565,VentureBeat,https://venturebeat.com,kismi,yok,,,,0,0
+source-0207,VirusTotal,https://www.virustotal.com,kismi,yok,,,,0,0
+source-0076,X,https://x.com,kismi,yok,,,,0,0
+source-0156,Yelp,https://www.yelp.com,kismi,yok,,,,0,0
+source-0280,ZipRecruiter,https://www.ziprecruiter.com,kismi,yok,,,,0,0

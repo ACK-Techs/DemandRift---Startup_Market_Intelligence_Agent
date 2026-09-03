@@ -75,7 +75,10 @@ def main() -> int:
     parser.add_argument("runs", type=Path, nargs="*", help="bulk-site-access-*.json kosulari")
     args = parser.parse_args()
 
-    runs = kosu_dosyalari(args.runs or RESULTS.glob("bulk-site-access-*.json"))
+    # Arsiv kosusu da bir edinim kosusudur; desen yalnizca canli cekime bakarsa
+    # Common Crawl'dan gelen 93 kaynak dizinde gorunmez.
+    varsayilan = [*RESULTS.glob("bulk-site-access-*.json"), *RESULTS.glob("common-crawl-*.json")]
+    runs = kosu_dosyalari(args.runs or varsayilan)
     rows = satirlar(runs)
     if not rows:
         print(json.dumps({"satir": 0, "not": "artefakt bulunamadi"}, ensure_ascii=False))

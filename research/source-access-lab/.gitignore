@@ -5,6 +5,7 @@ results/raw/
 results/.bulk-progress-*/
 results/*.json
 results/*.log
+results/*.tsv
 
 # Defterin ve manifestin uretimi icin gereken ozet ciktilar haric tutulmaz:
 !results/.gitkeep

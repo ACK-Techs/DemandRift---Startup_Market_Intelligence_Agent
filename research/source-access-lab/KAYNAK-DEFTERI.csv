@@ -1,15 +1,18 @@
 source_id,ad,adres,dogrulama,guven,durum,yuzeyler,sebep,kosu
 source-0273,500 Global Companies,https://500.co,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
+source-0250,Adbeat,https://www.adbeat.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0191,AFRINIC,https://www.afrinic.net,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0489,Agoda,https://www.agoda.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0217,Ahrefs,https://ahrefs.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0486,Airbnb,https://airbnb.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0132,Airtable Marketplace,https://airtable.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0164,Alibaba,https://alibaba.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0163,AliExpress,https://aliexpress.ru,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-smoke.json
 source-0059,AlternativeTo,https://alternativeto.net,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0159,Amazon,https://www.amazon.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-round4.json
 source-0582,Anadolu Ajansı,https://www.aa.com.tr,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0271,AngelList,https://angellist.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0314,Angi,https://www.angi.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0228,AnswerThePublic,https://answerthepublic.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0107,APKMirror,https://apkmirror.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0189,APNIC,https://www.apnic.net,curated_official_host_fixture,high,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-retry-seeded.json
@@ -31,10 +34,12 @@ source-0121,Atlassian Marketplace,https://marketplace.atlassian.com,curated_offi
 source-0541,AWS Marketplace,https://aws.amazon.com,curated_official_host_fixture,high,cekildi,"entry_url,rss_feed,sitemap_xml",,bulk-site-access-paths.json
 source-0615,AWS Pricing Calculator,https://calculator.aws,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated2.json
 source-0574,Axios,https://axios.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-retry-seeded.json
+source-0542,Azure Marketplace,https://azuremarketplace.microsoft.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0616,Azure Pricing Calculator,https://azure.microsoft.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0437,Bank for International Settlements,https://www.bis.org,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0326,BASE,https://base.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0052,BetaList,https://betalist.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-round3.json
+source-0151,Better Business Bureau,https://www.bbb.org,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0119,BigCommerce App Marketplace,https://www.bigcommerce.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0249,BigSpy,https://bigspy.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0624,Bilişim Vadisi,https://bilisimvadisi.com.tr,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
@@ -51,8 +56,10 @@ source-0500,Bolt,https://bolt.io,generated_candidate_validated,medium,cekildi,"r
 source-0485,Booking.com,https://www.booking.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0318,Booksy,https://booksy.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0442,Borsa İstanbul,https://borsaistanbul.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
+source-0001,Brave Search,https://search.brave.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-smoke.json
 source-0382,BTK,https://www.btk.gov.tr,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-tr-curated.json
 source-0201,BuiltWith,https://builtwith.com,wikidata_p856_unverified,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-robots-retry.json
+source-0362,Bureau of Labor Statistics,https://www.bls.gov,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0566,Business Insider,https://www.businessinsider.com,wikipedia_index_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-round2.json
 source-0234,BuzzSumo,https://buzzsumo.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0133,Canva Apps Marketplace,https://www.canva.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-paths.json
@@ -67,10 +74,12 @@ source-0462,Class Central,https://classcentral.com,generated_candidate_validated
 source-0262,Clearbit,https://clearbit.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0419,ClinicalTrials.gov,https://clinicaltrials.gov,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-retry-live.json
 source-0210,Cloudflare Radar,https://radar.cloudflare.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots404.json
+source-0611,Cloudorado,https://www.cloudorado.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0612,CloudPrice,https://cloudprice.net,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0560,CNBC,https://www.cnbc.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0021,Codeberg,https://codeberg.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0180,CodeCanyon,https://codecanyon.net,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0036,CodeProject,https://www.codeproject.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0448,CoinGecko,https://www.coingecko.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-live-20260810T203700Z.json
 source-0447,CoinMarketCap,https://coinmarketcap.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-live-20260810T203700Z.json
 source-0205,Common Crawl,https://commoncrawl.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
@@ -78,12 +87,17 @@ source-0266,Companies House,https://www.gov.uk,wikidata_mediawiki_exact_search_p
 source-0405,Competition and Markets Authority,https://gov.uk,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0550,Composio,https://docs.composio.dev,github_index_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-round2.json
 source-0401,Consumer Financial Protection Bureau,https://www.consumerfinance.gov,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
+source-0150,ConsumerAffairs,https://www.consumeraffairs.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0325,CORE,https://core.ac.uk,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0458,Coursera,https://coursera.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0258,Craft.co,https://craft.co,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0042,crates.io,https://crates.io,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
+source-0177,Creative Market,https://creativemarket.com,generated_candidate_validated,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0324,Crossref,https://www.crossref.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
+source-0142,Crozdesk,https://crozdesk.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0252,Crunchbase,https://crunchbase.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0573,Crunchbase News,https://news.crunchbase.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch3.json
+source-0428,DailyMed,https://dailymed.nlm.nih.gov,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0246,data.ai,https://data.ai,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0359,data.europa.eu,https://data.europa.eu,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0360,Data.gov,https://data.gov,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
@@ -95,42 +109,51 @@ source-0509,Deliveroo,https://deliveroo.co.uk,wikidata_mediawiki_exact_search_p8
 source-0378,Destatis,https://www.destatis.de,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch5.json
 source-0029,Dev.to,https://dev.to,curated_official_host_fixture,high,cekildi,"root_html,rss_feed",,bulk-site-access-live-20260810T203700Z.json
 source-0328,Dimensions,https://www.dimensions.ai,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-corrected.json
+source-0090,Discord,https://discord.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0093,Discourse,https://discourse.net,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0196,DNSdumpster,https://dnsdumpster.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
 source-0197,DNSlytics,https://dnslytics.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0347,DOAJ,https://doaj.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0038,Docker Hub,https://hub.docker.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0200,DomainTools,https://www.domaintools.com,wikidata_p856_unverified,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-robots-retry.json
+source-0507,DoorDash,https://www.doordash.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0426,DrugBank,https://www.drugbank.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-robots404.json
 source-0351,Dryad,https://datadryad.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-manual-fixes.json
 source-0596,dscout,https://dscout.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0005,DuckDuckGo,https://duckduckgo.com,wikidata_p856_unverified,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-round4.json
 source-0033,DZone,https://dzone.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0581,Dünya,https://dunya.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0160,eBay,https://www.ebay.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0424,ECDC,https://www.ecdc.europa.eu,wikipedia_index_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0459,edX,https://edx.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0577,egirişim,https://egirisim.com,curated_official_host_fixture,high,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0580,Ekonomim,https://ekonomim.net,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0298,Eleman.net,https://eleman.net,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0479,Emlakjet,https://emlakjet.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0631,Endeavor Türkiye,https://www.endeavor.org.tr,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0480,Endeksa,https://www.endeksa.com,corpus_index_validated,medium,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0178,Envato Market,https://themeforest.net,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
+source-0519,Epic Games Store,https://store.epicgames.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0181,Etsy Reviews,https://www.etsy.com,curated_official_host_fixture,high,cekildi,entry_url,,bulk-site-access-paths.json
 source-0572,EU-Startups,https://www.eu-startups.com,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-curated.json
+source-0413,EUIPO,https://www.euipo.europa.eu,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0390,EUR-Lex,https://eur-lex.europa.eu,wikipedia_index_validated,medium,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0333,Europe PMC,https://europepmc.org,wikipedia_index_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-more-doors2.json
 source-0394,European Banking Authority,https://www.eba.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0436,European Central Bank,https://www.ecb.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0391,European Commission,https://commission.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0392,European Data Protection Board,https://edpb.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
+source-0267,European e-Justice Business Registers,https://e-justice.europa.eu,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0393,European Medicines Agency,https://www.ema.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0395,European Securities and Markets Authority,https://www.esma.europa.eu,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0358,Eurostat,https://ec.europa.eu,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-live-20260810T203700Z.json
+source-0487,Expedia,https://www.expedia.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0229,Exploding Topics,https://explodingtopics.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0106,F-Droid,https://f-droid.org,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-retry-live.json
 source-0071,Failory,https://failory.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0568,Fast Company,https://fast.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0067,Fazier,https://fazier.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
+source-0396,Federal Register,https://www.federalregister.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0432,Federal Reserve,https://www.federalreserve.gov,wikipedia_index_unverified,medium,cekildi,root_html,,bulk-site-access-robots404.json
 source-0363,Federal Reserve Economic Data,https://fred.stlouisfed.org,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0153,Feefo,https://www.feefo.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
@@ -140,6 +163,7 @@ source-0438,Financial Conduct Authority,https://www.fca.org.uk,wikidata_mediawik
 source-0558,Financial Times,https://www.ft.com,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0016,Firecrawl,https://firecrawl.dev,github_index_validated,medium,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0110,Firefox Add-ons,https://addons.mozilla.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
+source-0292,FlexJobs,https://www.flexjobs.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0503,FlightAware,https://flightaware.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0504,Flightradar24,https://www.flightradar24.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0567,Forbes,https://forbes.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-more-doors2.json
@@ -147,7 +171,11 @@ source-0635,Founder Institute Türkiye,https://fi.co,curated_official_host_fixtu
 source-0304,Foursquare,https://foursquare.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
 source-0433,FRED,https://fred.stlouisfed.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots-retry.json
 source-0317,Fresha,https://www.fresha.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0463,FutureLearn,https://www.futurelearn.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0062,Futurepedia,https://futurepedia.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
+source-0134,G2,https://www.g2.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0465,G2 Education Software,https://www.g2.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0064,G2 Track,https://www.g2.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0633,Galata Business Angels,https://galatabusinessangels.com,curated_official_host_fixture,high,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0530,Game Developer,https://gamedeveloper.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0389,Gelir İdaresi Başkanlığı,https://gib.gov.tr,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-round2.json
@@ -163,6 +191,7 @@ source-0237,Google Ads Transparency Center,https://adstransparency.google.com,wi
 source-0310,Google Business Profile,https://business.google.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated2.json
 source-0617,Google Cloud Pricing Calculator,https://cloud.google.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-paths.json
 source-0235,Google Dataset Search,https://datasetsearch.research.google.com,wikidata_p856_unverified,medium,cekildi,root_html,,bulk-site-access-robots404.json
+source-0214,Google Keyword Planner,https://ads.google.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0406,Google Patents,https://patents.google.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0097,Google Play Store,https://play.google.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0321,Google Scholar,https://scholar.google.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
@@ -171,12 +200,18 @@ source-0213,Google Trends,https://trends.google.com,generated_candidate_validate
 source-0127,Google Workspace Marketplace,https://workspace.google.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0601,Great Question,https://greatquestion.co,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0094,Groups.io,https://groups.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
+source-0069,GrowthHackers,https://growthhackers.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0508,Grubhub,https://www.grubhub.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0175,Gumroad,https://gumroad.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0022,Hacker News,https://news.ycombinator.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0030,Hashnode,https://hashnode.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
+source-0430,HealthData.gov,https://healthdata.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0167,Hepsiburada,https://www.hepsiburada.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0478,Hepsiemlak,https://www.hepsiemlak.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0307,HERE WeGo,https://wego.here.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0046,Homebrew Formulae,https://formulae.brew.sh,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0493,Hostelworld,https://www.hostelworldgroup.com,wikidata_p856_unverified,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-robots404.json
+source-0488,Hotels.com,https://www.hotels.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0603,Hotjar,https://www.hotjar.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
 source-0315,Houzz,https://houzz.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0209,HTTP Archive,https://httparchive.org,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
@@ -185,10 +220,14 @@ source-0123,HubSpot App Marketplace,https://ecosystem.hubspot.com,curated_offici
 source-0534,Hugging Face,https://huggingface.co,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0184,IANA,https://www.iana.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0183,ICANN Lookup,https://lookup.icann.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots404.json
+source-0473,Idealista,https://www.idealista.it,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
+source-0340,IEEE Xplore,https://ieeexplore.ieee.org,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
+source-0435,IMF,https://www.imf.org,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0356,IMF Data,https://data.imf.org,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-curated2.json
 source-0474,Immobiliare.it,https://www.immobiliare.it,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0476,ImmobilienScout24,https://www.immobilienscout24.de,curated_official_host_fixture,medium,cekildi,sitemap_xml,,bulk-site-access-curated2.json
 source-0279,Indeed,https://ca.indeed.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-retry-seeded.json
+source-0174,Indiegogo,https://www.indiegogo.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0034,InfoQ,https://infoq.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0614,Infracost,https://infracost.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0377,INSEE,https://insee.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
@@ -199,47 +238,62 @@ source-0626,İTÜ Çekirdek,https://itucekirdek.com,generated_candidate_validate
 source-0299,İşkur,https://iskur.gov.tr,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0050,JetBrains Marketplace,https://plugins.jetbrains.com,parent_surface_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0283,Jooble,https://jooble.org,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
+source-0587,Jotform,https://www.jotform.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0510,Just Eat,https://www.justeattakeaway.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
+source-0417,Justia Patents,https://patents.justia.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0352,Kaggle,https://www.kaggle.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots404.json
 source-0009,Kagi,https://kagi.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
+source-0270,KAP,https://www.kap.org.tr,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0295,Kariyer.net,https://www.kariyer.net,corpus_index_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-round2.json
 source-0491,Kayak,https://www.kayak.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
+source-0227,Keyword Tool,https://keywordtool.io,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0464,Khan Academy,https://khanacademy.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0623,KOSGEB,https://kosgeb.gov.tr,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0190,LACNIC,https://www.lacnic.net,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
+source-0544,LangChain Integrations,https://python.langchain.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0095,Lemmy,https://join-lemmy.org,wikidata_p856_unverified,medium,cekildi,"root_html,rss_feed",,bulk-site-access-robots404.json
 source-0176,Lemon Squeezy,https://lemonsqueezy.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0327,Lens.org,https://lens.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0286,Lever Jobs,https://www.lever.co,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0047,Libraries.io,https://libraries.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0545,LlamaIndex Integrations,https://llamahub.ai,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
+source-0539,LMSYS Chatbot Arena,https://lmarena.ai,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0595,Lookback,https://lookback.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0499,Lyft,https://lyft.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0606,Lyssna,https://lyssna.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0224,Majestic,https://majestic.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
+source-0552,Make,https://www.make.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0131,Make Apps Directory,https://www.make.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0221,Mangools,https://mangools.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
+source-0308,MapQuest,https://www.mapquest.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0388,MASAK,https://masak.hmb.gov.tr,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-tr-curated.json
 source-0077,Mastodon,https://joinmastodon.org,wikidata_p856_unverified,medium,cekildi,root_html,,bulk-site-access-robots404.json
 source-0043,Maven Central,https://central.sonatype.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0594,Maze,https://maze.co,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-robots-retry.json
 source-0548,MCP.so,https://mcp.so,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0456,MEB,https://www.meb.gov.tr,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-manual-fixes.json
+source-0088,Medium,https://medium.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0429,MedlinePlus,https://www.medlineplus.gov,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0336,medRxiv,https://www.medrxiv.org,curated_official_host_fixture,high,cekildi,biorxiv_details,,bulk-site-access-api.json
 source-0636,Meetup,https://meetup.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0269,MERSİS,https://mersis.ticaret.gov.tr,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots404.json
 source-0236,Meta Ad Library,https://metaadlibrary.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed",,bulk-site-access-batch2.json
 source-0531,Metacritic,https://metacritic.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0517,Michelin Guide,https://guide.michelin.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0054,Microlaunch,https://microlaunch.net,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
+source-0126,Microsoft AppSource,https://appsource.microsoft.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0604,Microsoft Clarity,https://clarity.microsoft.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
+source-0111,Microsoft Edge Add-ons,https://microsoftedge.microsoft.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0101,Microsoft Store,https://apps.microsoft.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0570,MIT Technology Review,https://www.technologyreview.com,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0243,Moat,https://moat.ai,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-round3.json
 source-0008,Mojeek,https://mojeek.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0128,monday.com Apps Marketplace,https://monday.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
+source-0281,Monster,https://www.monster.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0502,Moovit,https://moovit.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0219,Moz,https://moz.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
 source-0168,n11,https://n11.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0440,Nasdaq,https://www.nasdaq.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0451,National Center for Education Statistics,https://nces.ed.gov,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0345,Nature,https://www.nature.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0208,Netcraft,https://netcraft.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
@@ -250,7 +304,10 @@ source-0129,Notion Integrations,https://www.notion.com,curated_official_host_fix
 source-0039,npm,https://www.npmjs.com,curated_official_host_fixture,high,cekildi,npm_registry_search,,bulk-site-access-api.json
 source-0044,NuGet Gallery,https://nuget.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0441,NYSE,https://nyse.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0627,ODTÜ Teknokent,https://odtuteknokent.com.tr,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0355,OECD Data,https://data.oecd.org,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0453,OECD Education,https://data-explorer.oecd.org,curated_official_host_fixture,medium,cekildi,sitemap_xml,,bulk-site-access-curated2.json
+source-0365,OECD Health Statistics,https://data-explorer.oecd.org,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0439,Open Banking UK,https://www.openbanking.org.uk,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0048,Open VSX Registry,https://open-vsx.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0323,OpenAlex,https://openalex.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
@@ -259,8 +316,10 @@ source-0532,OpenCritic,https://opencritic.com,generated_candidate_validated,medi
 source-0535,OpenRouter,https://openrouter.ai,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0303,OpenStreetMap,https://www.openstreetmap.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0113,Opera Add-ons,https://addons.opera.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
+source-0425,Orphanet,https://www.orpha.net,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0350,OSF,https://osf.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0366,Our World in Data,https://ourworldindata.org,wikidata_p856_unverified,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-robots-retry.json
+source-0259,Owler,https://www.owler.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0045,Packagist,https://packagist.org,wikidata_p856_unverified,medium,cekildi,packagist_package_list,,bulk-site-access-more-doors2.json
 source-0353,Papers with Code,https://paperswithcode.co,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0244,Pathmatics,https://pathmatics.io,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
@@ -268,6 +327,8 @@ source-0170,Pazarama,https://pazarama.com,generated_candidate_validated,medium,c
 source-0055,Peerlist,https://peerlist.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0140,PeerSpot,https://peerspot.co,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0263,People Data Labs,https://peopledatalabs.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0598,PickFu,https://www.pickfu.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0240,Pinterest Ads Repository,https://ads.pinterest.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0253,PitchBook,https://pitchbook.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-round3.json
 source-0066,PitchWall,https://pitchwall.co,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0522,PlayStation Store,https://store.playstation.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
@@ -281,9 +342,13 @@ source-0331,PubMed,https://pubmed.ncbi.nlm.nih.gov,curated_official_host_fixture
 source-0332,PubMed Central,https://pmc.ncbi.nlm.nih.gov,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0040,PyPI,https://pypi.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0588,Qualtrics,https://qualtrics.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0468,Redfin,https://www.redfin.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0397,Regulations.gov,https://www.regulations.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0381,Rekabet Kurumu,https://www.rekabet.gov.tr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0290,Remote OK,https://remoteok.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0536,Replicate,https://replicate.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0275,Republic,https://republic.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0338,ResearchGate,https://www.researchgate.net,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0590,Respondent,https://respondent.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0575,Rest of World,https://restofworld.org,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch3.json
 source-0152,Reviews.io,https://reviews.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
@@ -293,18 +358,25 @@ source-0188,RIPE NCC,https://www.ripe.net,curated_official_host_fixture,high,cek
 source-0497,Rome2Rio,https://rome2rio.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0041,RubyGems,https://rubygems.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0058,SaaSHub,https://saashub.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
+source-0145,SaaSworthy,https://www.saasworthy.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0112,Safari Extensions,https://apps.apple.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0122,Salesforce AppExchange,https://appexchange.salesforce.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0099,Samsung Galaxy Store,https://galaxystore.samsung.com,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch5.json
 source-0610,Sastrify,https://sastrify.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0387,Sağlık Bakanlığı,https://www.saglik.gov.tr,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0222,SE Ranking,https://seranking.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0010,SearXNG,https://docs.searxng.org,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0265,SEC EDGAR,https://www.sec.gov,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0297,Secretcv,https://secretcv.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0195,SecurityTrails,https://securitytrails.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0274,Seed-DB,https://www.seed-db.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0276,Seedrs,https://europe.republic.com,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-redirect-fixes.json
+source-0475,Seloger,https://www.seloger.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0322,Semantic Scholar,https://semanticscholar.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0218,Semrush,https://semrush.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0245,Sensor Tower,https://sensortower.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0143,Serchen,https://serchen.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
+source-0012,SerpAPI,https://serpapi.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0013,Serper,https://serper.dev,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0226,Serpstat,https://serpstat.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0025,Server Fault,https://serverfault.com,curated_official_host_fixture,high,cekildi,stackexchange_questions,,bulk-site-access-api.json
@@ -313,6 +385,7 @@ source-0114,Shopify App Store,https://apps.shopify.com,parent_surface_validated,
 source-0571,Sifted,https://sifted.org,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch3.json
 source-0203,Similarweb,https://similarweb.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0225,Sistrix,https://www.sistrix.com,wikidata_p856_unverified,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-robots-retry.json
+source-0149,Sitejabber,https://www.sitejabber.com,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0461,Skillshare,https://help.skillshare.com,wikipedia_index_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0490,Skyscanner,https://www.skyscanner.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-batch4.json
 source-0091,Slack,https://slack.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
@@ -321,6 +394,7 @@ source-0060,Slant,,rejected_wrong_entity_match,unresolved,cekildi,root_html,,bul
 source-0035,Slashdot,https://slashdot.org,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0289,SmartRecruiters,https://www.smartrecruiters.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0546,Smithery,https://smithery.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch3.json
+source-0241,Snapchat Ads Gallery,https://ads.snapchat.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0248,SocialPeta,https://socialpeta.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0137,Software Advice,https://www.softwareadvice.com,wikipedia_index_unverified,medium,cekildi,root_html,,bulk-site-access-robots404.json
 source-0146,SoftwareSuggest,https://softwaresuggest.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
@@ -333,15 +407,20 @@ source-0223,SpyFu,https://www.spyfu.com,curated_official_host_fixture,high,cekil
 source-0118,Squarespace Extensions,https://www.squarespace.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-paths.json
 source-0024,Stack Exchange,https://stackexchange.com,curated_official_host_fixture,high,cekildi,stackexchange_sites,,bulk-site-access-api.json
 source-0023,Stack Overflow,https://stackoverflow.com,curated_official_host_fixture,high,cekildi,stackexchange_questions,,bulk-site-access-api.json
+source-0618,StackShare,https://stackshare.io,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0540,Stanford HELM,https://crfm.stanford.edu,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated2.json
+source-0070,Starter Story,https://www.starterstory.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0057,Startup Stash,https://startupstash.com,corpus_index_unverified,medium,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-round2.json
 source-0619,StartupMarket,https://startupmarket.co,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0620,startups.watch,https://startups.watch,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0518,Steam,https://store.steampowered.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-retry-live.json
+source-0527,SteamDB,https://steamdb.info,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0089,Substack,https://substack.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0026,Super User,https://superuser.com,curated_official_host_fixture,high,cekildi,stackexchange_questions,,bulk-site-access-api.json
 source-0585,SurveyMonkey,https://www.surveymonkey.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0369,T.C. Sanayi ve Teknoloji Bakanlığı,https://sanayi.gov.tr,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0371,T.C. Sağlık Bakanlığı,https://www.saglik.gov.tr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0370,T.C. Ticaret Bakanlığı,https://www.ticaret.gov.tr,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0586,Tally,https://tallyai.money,github_index_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-retry-seeded.json
 source-0481,Tapu ve Kadastro Genel Müdürlüğü,https://www.tkgm.gov.tr,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch5.json
 source-0011,Tavily,https://tavily.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
@@ -353,28 +432,40 @@ source-0092,Telegram,https://telegram.com,generated_candidate_validated,medium,c
 source-0165,Temu,https://www.temu.com,wikipedia_index_validated,medium,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0418,The Trademark Search Company,https://thetrademarksearchcompany.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
 source-0562,The Verge,https://theverge.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0516,TheFork,https://www.thefork.fr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0179,ThemeForest,https://themeforest.net,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0061,There's An AI For That,https://theresanaiforthat.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-round3.json
 source-0232,Think with Google,https://www.thinkwithgoogle.com,curated_official_host_fixture,high,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-curated.json
+source-0313,Thumbtack,https://www.thumbtack.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0082,TikTok,https://www.tiktok.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0238,TikTok Creative Center,https://ads.tiktok.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated2.json
 source-0537,Together AI,https://www.together.ai,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch4.json
 source-0309,TomTom,https://tomtom.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0063,Toolify,https://toolify.io,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
 source-0446,TradingView,https://www.tradingview.com,wikidata_p856_unverified,medium,cekildi,"rss_feed,sitemap_xml",,bulk-site-access-retry-seeded.json
+source-0316,Treatwell,https://www.treatwell.co.uk,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0231,Trend Hunter,https://trendhunter.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0166,Trendyol,https://trendyol.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0157,Tripadvisor,https://www.tripadvisor.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0608,Tropic,https://tropic.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0470,Trulia,https://www.trulia.com,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-round2.json
+source-0138,TrustRadius,https://www.trustradius.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0086,Tumblr,https://tumblr.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0525,Twitch,https://www.twitch.tv,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0583,Typeform,https://typeform.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0622,TÜBİTAK,https://tubitak.gov.tr,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0367,TÜİK,https://www.tuik.gov.tr,wikidata_p856_unverified,medium,cekildi,root_html,,bulk-site-access-robots404.json
 source-0482,TÜİK Konut İstatistikleri,https://veriportali.tuik.gov.tr,curated_official_host_fixture,medium,cekildi,"entry_url,sitemap_xml",,bulk-site-access-tuik.json
+source-0414,Türk Patent ve Marka Kurumu,https://www.turkpatent.gov.tr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0268,Türkiye Ticaret Sicili Gazetesi,https://www.ticaretsicil.gov.tr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0629,TÜSİAD,https://www.tusiad.org,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0484,U.S. Census Building Permits,https://www.census.gov,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-paths.json
 source-0450,U.S. Department of Education,https://www.ed.gov,wikidata_p856_unverified,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-robots404.json
+source-0398,U.S. Federal Trade Commission,https://www.ftc.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0399,U.S. Food and Drug Administration,https://fda.gov,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0400,U.S. Securities and Exchange Commission,https://www.sec.gov,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0498,Uber,https://www.uber.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
+source-0506,Uber Eats,https://www.ubereats.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0220,Ubersuggest,https://ubersuggest.net,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0460,Udemy,https://www.udemy.com,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-robots404.json
 source-0403,UK Financial Conduct Authority,https://www.fca.org.uk,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
@@ -389,24 +480,30 @@ source-0361,US Census Bureau,https://www.census.gov,wikidata_mediawiki_exact_sea
 source-0605,UsabilityHub,https://www.lyssna.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-round3.json
 source-0589,User Interviews,https://www.userinterviews.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
 source-0592,UserTesting,https://usertesting.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0407,USPTO Patent Center,https://patentcenter.uspto.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0408,USPTO Trademark Search,https://tmsearch.uspto.gov,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0613,Vantage,https://vantage.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0607,Vendr,https://vendr.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
+source-0186,Verisign RDAP,https://rdap.verisign.com,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0609,Vertice,https://www.vertice.one,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0528,VG Insights,https://app.sensortower.com,curated_official_host_fixture,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-redirect-fixes.json
 source-0049,Visual Studio Marketplace,https://marketplace.visualstudio.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0104,vivo App Store,https://appstore.vivo.com.cn,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated2.json
+source-0494,Vrbo,https://www.vrbo.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0162,Walmart,https://business.walmart.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
 source-0202,Wappalyzer,https://wappalyzer.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0204,Wayback Machine,https://web.archive.org,curated_official_host_fixture,high,cekildi,wayback_availability,,bulk-site-access-api.json
 source-0291,We Work Remotely,https://weworkremotely.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
 source-0330,Web of Science,https://clarivate.com,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0120,Webflow Apps,https://webflow.com,curated_official_host_fixture,high,cekildi,entry_url,,bulk-site-access-paths.json
+source-0576,Webrazzi,https://www.webrazzi.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0294,Welcome to the Jungle,https://welcometothejungle.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0073,Wellfound,https://wellfound.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0420,WHO,https://www.who.int,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0364,WHO Global Health Observatory,https://www.who.int,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0199,WhoisXML API,https://whoisxmlapi.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0344,Wiley Online Library,https://onlinelibrary.wiley.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0410,WIPO Global Brand Database,https://branddb.wipo.int,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0409,WIPO PATENTSCOPE,https://patentscope.wipo.int,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0563,Wired,https://wired.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0117,Wix App Market,https://www.wix.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
@@ -416,57 +513,46 @@ source-0288,Workable Jobs,https://jobs.workable.com,curated_official_host_fixtur
 source-0434,World Bank,https://www.worldbank.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0354,World Bank Open Data,https://data.worldbank.org,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0597,Wynter,https://wynter.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-redirect-fixes.json
+source-0242,X Ads Transparency Center,https://ads.x.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0102,Xiaomi GetApps,https://global.app.mi.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0072,Y Combinator Companies,https://www.ycombinator.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0443,Yahoo Finance,https://finance.yahoo.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0006,Yahoo Search,https://yahoo.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
+source-0007,Yandex,https://yandex.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0306,Yandex Maps,https://yandex.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0511,Yemeksepeti,https://yemeksepeti.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0296,Yenibiris,https://www.yenibiris.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0083,YouTube,https://www.youtube.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-retry-live.json
 source-0454,YÖK,https://www.yok.gov.tr,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-tr-curated.json
+source-0455,YÖK Atlas,https://yokatlas.yok.gov.tr,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
+source-0628,Yıldız Teknopark,https://www.yildizteknopark.com.tr,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0551,Zapier,https://zapier.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch3.json
 source-0130,Zapier App Directory,https://zapier.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0348,Zenodo,https://zenodo.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
+source-0125,Zoom App Marketplace,https://marketplace.zoom.us,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0260,ZoomInfo,https://zoominfo.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
+source-0472,Zoopla,https://www.zoopla.co.uk,wikipedia_index_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0169,Çiçeksepeti,https://ciceksepeti.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0339,Academia.edu,https://www.academia.edu,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0341,ACM Digital Library,https://dl.acm.org,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0250,Adbeat,https://www.adbeat.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0163,AliExpress,https://aliexpress.ru,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0301,Apple Maps,https://maps.apple.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0001,Brave Search,https://search.brave.com,wikidata_p856_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-round4.json
-source-0258,Craft.co,https://craft.co,curated_official_host_fixture,medium,kismi,robots_preflight,origin_denied,bulk-site-access-round4.json
-source-0177,Creative Market,https://creativemarket.com,generated_candidate_validated,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0142,Crozdesk,https://crozdesk.com,wikipedia_index_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0192,crt.sh,https://crt.sh,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0507,DoorDash,https://www.doordash.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0161,Etsy,https://www.etsy.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0487,Expedia,https://www.expedia.com,wikipedia_index_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-round4.json
 source-0074,F6S,https://www.f6s.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0080,Facebook,https://www.facebook.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0172,Facebook Marketplace,https://www.facebook.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
 source-0311,Facebook Pages,https://www.facebook.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
-source-0396,Federal Register,https://www.federalregister.gov,curated_official_host_fixture,high,kismi,robots_preflight,origin_denied,bulk-site-access-round4.json
 source-0416,FreePatentsOnline,https://www.freepatentsonline.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0134,G2,https://www.g2.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0465,G2 Education Software,https://www.g2.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-paths.json
 source-0158,Glassdoor,https://www.glassdoor.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0543,Google Cloud Marketplace,https://console.cloud.google.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-curated2.json
 source-0444,Google Finance,https://www.google.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0284,Google Jobs,https://www.google.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
-source-0214,Google Keyword Planner,https://ads.google.com,curated_official_host_fixture,high,kismi,robots_preflight,origin_denied,bulk-site-access-curated2.json
 source-0300,Google Maps,https://www.google.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0553,Google News,https://news.google.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0155,Google Reviews,https://www.google.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
 source-0003,Google Search,https://google.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0492,Google Travel,https://www.google.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0068,HackerNoon,https://hackernoon.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0430,HealthData.gov,https://healthdata.gov,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0478,Hepsiemlak,https://www.hepsiemlak.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0488,Hotels.com,https://www.hotels.com,wikidata_p856_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-transient-retry.json
-source-0473,Idealista,https://www.idealista.it,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0340,IEEE Xplore,https://ieeexplore.ieee.org,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0435,IMF,https://www.imf.org,curated_official_host_fixture,high,kismi,robots_preflight,network_error:TimeoutError,bulk-site-access-transient-retry.json
 source-0081,Instagram,https://www.instagram.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0173,Kickstarter,https://www.kickstarter.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-robots404.json
 source-0056,Launching Next,https://www.launchingnext.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
@@ -475,162 +561,76 @@ source-0084,LinkedIn,https://www.linkedin.com,curated_official_host_fixture,high
 source-0239,LinkedIn Ad Library,https://www.linkedin.com,curated_official_host_fixture,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
 source-0278,LinkedIn Jobs,https://www.linkedin.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-paths.json
 source-0031,Lobsters,https://lobste.rs,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0552,Make,https://www.make.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0131,Make Apps Directory,https://www.make.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-paths.json
-source-0088,Medium,https://medium.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0281,Monster,https://www.monster.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0505,OpenTable,https://www.opentable.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0598,PickFu,https://www.pickfu.com,curated_official_host_fixture,high,kismi,robots_preflight,mime_or_sniff_mismatch,bulk-site-access-round4.json
 source-0085,Pinterest,https://www.pinterest.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0240,Pinterest Ads Repository,https://ads.pinterest.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-curated2.json
 source-0087,Quora,https://www.quora.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
 source-0469,Realtor.com,https://www.realtor.com,wikidata_p856_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-transient-retry.json
 source-0075,Reddit,https://www.reddit.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0468,Redfin,https://www.redfin.com,wikidata_p856_unverified,medium,kismi,robots_preflight,source_unavailable,bulk-site-access-transient-retry.json
-source-0338,ResearchGate,https://www.researchgate.net,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0555,Reuters,https://www.reuters.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0195,SecurityTrails,https://securitytrails.com,curated_official_host_fixture,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0475,Seloger,https://www.seloger.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0012,SerpAPI,https://serpapi.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0342,SpringerLink,https://link.springer.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0070,Starter Story,https://www.starterstory.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0527,SteamDB,https://steamdb.info,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0559,The Wall Street Journal,https://wsj.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0516,TheFork,https://www.thefork.fr,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0254,Tracxn,https://tracxn.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0316,Treatwell,https://www.treatwell.co.uk,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0513,Trendyol Yemek,https://tgoyemek.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-curated2.json
 source-0148,Trustpilot,https://www.trustpilot.com,curated_official_host_fixture,high,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0629,TÜSİAD,https://www.tusiad.org,wikipedia_index_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0506,Uber Eats,https://www.ubereats.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0565,VentureBeat,https://venturebeat.com,wikidata_p856_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-transient-retry.json
 source-0207,VirusTotal,https://www.virustotal.com,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0494,Vrbo,https://www.vrbo.com,wikidata_p856_unverified,medium,kismi,robots_preflight,rate_limited,bulk-site-access-transient-retry.json
-source-0576,Webrazzi,https://www.webrazzi.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
-source-0344,Wiley Online Library,https://onlinelibrary.wiley.com,wikidata_p856_unverified,medium,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0076,X,https://x.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0242,X Ads Transparency Center,https://ads.x.com,curated_official_host_fixture,high,kismi,robots_preflight,origin_denied,bulk-site-access-curated2.json
 source-0156,Yelp,https://www.yelp.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0628,Yıldız Teknopark,https://www.yildizteknopark.com.tr,curated_official_host_fixture,high,kismi,robots_preflight,challenge,bulk-site-access-round4.json
 source-0280,ZipRecruiter,https://www.ziprecruiter.com,wikidata_p856_unverified,medium,kismi,robots_preflight,robots_disallowed,bulk-site-access-round4.json
-source-0100,Amazon Appstore,https://www.amazonappstoredev.com,wikipedia_index_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0314,Angi,https://www.angi.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0542,Azure Marketplace,https://azuremarketplace.microsoft.com,curated_official_host_fixture,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0383,BDDK,https://www.bddk.org.tr,wikidata_p856_unverified,medium,erisim_yok,,network_error:SSLCertVerificationError,bulk-site-access-round4.json
-source-0151,Better Business Bureau,https://www.bbb.org,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0501,BlaBlaCar,https://www.blablacar.fr,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0533,BoardGameGeek,https://boardgamegeek.com,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0362,Bureau of Labor Statistics,https://www.bls.gov,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0611,Cloudorado,https://www.cloudorado.com,curated_official_host_fixture,medium,erisim_yok,,source_unavailable,bulk-site-access-round4.json
-source-0421,Cochrane Library,https://www.cochranelibrary.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0036,CodeProject,https://www.codeproject.com,wikipedia_index_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
-source-0150,ConsumerAffairs,https://www.consumeraffairs.com,wikipedia_index_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0277,Crowdcube,https://www.crowdcube.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0428,DailyMed,https://dailymed.nlm.nih.gov,wikipedia_index_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0090,Discord,https://discord.com,wikidata_p856_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-transient-retry.json
-source-0160,eBay,https://www.ebay.com,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0631,Endeavor Türkiye,https://www.endeavor.org.tr,curated_official_host_fixture,medium,erisim_yok,,dns_unavailable,bulk-site-access-round4.json
-source-0519,Epic Games Store,https://store.epicgames.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0411,Espacenet,https://worldwide.espacenet.com,wikipedia_index_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0413,EUIPO,https://www.euipo.europa.eu,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0267,European e-Justice Business Registers,https://e-justice.europa.eu,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0412,European Patent Office,https://www.european-patent-office.org,wikipedia_index_unverified,medium,erisim_yok,,network_error:ConnectionRefusedError,bulk-site-access-round4.json
-source-0002,Exa,https://the.exa.website,wikidata_p856_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-transient-retry.json
-source-0292,FlexJobs,https://www.flexjobs.com,curated_official_host_fixture,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
-source-0463,FutureLearn,https://www.futurelearn.com,wikidata_p856_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0064,G2 Track,https://www.g2.com,curated_official_host_fixture,high,erisim_yok,,origin_circuit_open,bulk-site-access-paths.json
-source-0139,Gartner Peer Insights,https://www.gartner.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-paths.json
-source-0512,Getir,https://www.getir.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0584,Google Forms,https://forms.google.com,wikidata_p856_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0215,Google Search Console,https://search.google.com,curated_official_host_fixture,medium,erisim_yok,,source_unavailable,bulk-site-access-curated2.json
-source-0285,Greenhouse Job Boards,https://www.greenhouse.io,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0069,GrowthHackers,https://growthhackers.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0508,Grubhub,https://www.grubhub.com,wikidata_p856_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-transient-retry.json
-source-0569,Harvard Business Review,https://hbr.org,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0167,Hepsiburada,https://www.hepsiburada.com,wikipedia_index_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0032,Indie Hackers,https://www.indiehackers.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0174,Indiegogo,https://www.indiegogo.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0587,Jotform,https://www.jotform.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0417,Justia Patents,https://patents.justia.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0270,KAP,https://www.kap.org.tr,curated_official_host_fixture,medium,erisim_yok,,source_unavailable,bulk-site-access-tr-curated.json
-source-0632,Keiretsu Forum Türkiye,https://www.keiretsuforum.com,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-curated2.json
-source-0227,Keyword Tool,https://keywordtool.io,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0380,KVKK,https://www.kvkk.gov.tr,curated_official_host_fixture,high,erisim_yok,,mime_or_sniff_mismatch,bulk-site-access-tr-curated.json
-source-0544,LangChain Integrations,https://python.langchain.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-curated2.json
-source-0539,LMSYS Chatbot Arena,https://lmarena.ai,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0308,MapQuest,https://www.mapquest.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0379,Mevzuat Bilgi Sistemi,https://www.mevzuat.gov.tr,curated_official_host_fixture,medium,erisim_yok,,network_error:SSLCertVerificationError,bulk-site-access-round4.json
-source-0517,Michelin Guide,https://guide.michelin.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0126,Microsoft AppSource,https://appsource.microsoft.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0111,Microsoft Edge Add-ons,https://microsoftedge.microsoft.com,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0514,Migros Yemek,https://www.migrosyemek.com,curated_official_host_fixture,high,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
-source-0211,Mozilla Observatory,https://observatory.mozilla.org,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0440,Nasdaq,https://www.nasdaq.com,wikidata_p856_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-transient-retry.json
-source-0529,Newzoo,https://newzoo.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0627,ODTÜ Teknokent,https://odtuteknokent.com.tr,curated_official_host_fixture,high,erisim_yok,,https_downgrade_redirect,bulk-site-access-round4.json
-source-0355,OECD Data,https://data.oecd.org,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0365,OECD Health Statistics,https://data-explorer.oecd.org,curated_official_host_fixture,medium,erisim_yok,,origin_circuit_open,bulk-site-access-curated2.json
-source-0427,OpenFDA,https://open.fda.gov,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0425,Orphanet,https://www.orpha.net,wikipedia_index_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0293,Otta,https://otta.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0259,Owler,https://www.owler.com,wikipedia_index_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
-source-0549,PulseMCP,https://www.pulsemcp.com,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0185,RDAP.org,https://rdap.org,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0397,Regulations.gov,https://www.regulations.gov,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0381,Rekabet Kurumu,https://www.rekabet.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0037,Replit Community,https://ask.replit.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-curated2.json
-source-0145,SaaSworthy,https://www.saasworthy.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0171,Sahibinden,https://www.sahibinden.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0477,Sahibinden Emlak,https://www.sahibinden.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-paths.json
-source-0320,Sahibinden Hizmetler,https://www.sahibinden.com,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-paths.json
-source-0387,Sağlık Bakanlığı,https://www.saglik.gov.tr,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-tr-curated.json
-source-0014,Scale SERP,https://www.scaleserp.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0343,ScienceDirect,https://sciencedirect.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0329,Scopus,https://www.scopus.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0010,SearXNG,https://docs.searxng.org,wikidata_p856_unverified,medium,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0274,Seed-DB,https://www.seed-db.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0282,SimplyHired,https://www.simplyhired.com,wikipedia_index_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0149,Sitejabber,https://www.sitejabber.com,wikipedia_index_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0241,Snapchat Ads Gallery,https://ads.snapchat.com,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-curated2.json
-source-0028,Software Engineering Stack Exchange,https://softwareengineering.stackexchange.com,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-round4.json
-source-0337,SSRN,https://ssrn.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0618,StackShare,https://stackshare.io,curated_official_host_fixture,high,erisim_yok,,rate_limited,bulk-site-access-transient-retry.json
-source-0578,StartupCentrum,https://startupcentrum.com,curated_official_host_fixture,high,erisim_yok,,source_unavailable,bulk-site-access-round4.json
-source-0372,T.C. Resmî Gazete,https://www.resmigazete.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,network_error:SSLCertVerificationError,bulk-site-access-round4.json
-source-0371,T.C. Sağlık Bakanlığı,https://www.saglik.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0370,T.C. Ticaret Bakanlığı,https://www.ticaret.gov.tr,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-tr-curated.json
-source-0368,TCMB EVDS,https://evds3.tcmb.gov.tr,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-tr-curated.json
-source-0625,Teknopark İstanbul,https://www.teknoparkistanbul.com.tr,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0079,Threads,https://www.threads.com,wikidata_p856_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-transient-retry.json
-source-0313,Thumbtack,https://www.thumbtack.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0386,TİTCK,https://www.titck.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,source_unavailable,bulk-site-access-round4.json
-source-0630,TOBB,https://tobb.org.tr,wikidata_p856_unverified,medium,erisim_yok,,network_error:SSLCertVerificationError,bulk-site-access-transient-retry.json
-source-0157,Tripadvisor,https://www.tripadvisor.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0138,TrustRadius,https://www.trustradius.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0414,Türk Patent ve Marka Kurumu,https://www.turkpatent.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0373,Türkiye Açık Veri Portalı,https://veri.gov.tr,curated_official_host_fixture,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
-source-0621,Türkiye Girişimcilik Vakfı,https://girvak.org,curated_official_host_fixture,medium,erisim_yok,,dns_unavailable,bulk-site-access-round4.json
-source-0268,Türkiye Ticaret Sicili Gazetesi,https://www.ticaretsicil.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0398,U.S. Federal Trade Commission,https://www.ftc.gov,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0399,U.S. Food and Drug Administration,https://fda.gov,wikidata_p856_unverified,medium,erisim_yok,,source_unavailable,bulk-site-access-transient-retry.json
-source-0400,U.S. Securities and Exchange Commission,https://www.sec.gov,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0593,UserZoom,https://www.userzoom.com,curated_official_host_fixture,high,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0407,USPTO Patent Center,https://patentcenter.uspto.gov,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0186,Verisign RDAP,https://rdap.verisign.com,curated_official_host_fixture,medium,erisim_yok,,source_unavailable,bulk-site-access-round4.json
-source-0496,Viator,https://www.viator.com,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0198,ViewDNS.info,https://viewdns.info,curated_official_host_fixture,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0410,WIPO Global Brand Database,https://branddb.wipo.int,curated_official_host_fixture,high,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0523,Xbox Store,https://marketplace.xbox.com,wikidata_p856_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0007,Yandex,https://yandex.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0306,Yandex Maps,https://yandex.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0305,Yellow Pages,https://www.yellowpages.ca,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0526,YouTube Gaming,https://gaming.youtube.com,wikidata_p856_unverified,medium,erisim_yok,,origin_denied,bulk-site-access-round4.json
-source-0455,YÖK Atlas,https://yokatlas.yok.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,robots_invalid_or_empty,bulk-site-access-transient-retry.json
-source-0467,Zillow,https://www.zillow.com,wikidata_p856_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0515,Zomato,https://www.zomato.com,wikidata_p856_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-transient-retry.json
-source-0125,Zoom App Marketplace,https://marketplace.zoom.us,curated_official_host_fixture,high,erisim_yok,,robots_invalid_or_empty,bulk-site-access-round4.json
-source-0472,Zoopla,https://www.zoopla.co.uk,wikipedia_index_unverified,medium,erisim_yok,,challenge,bulk-site-access-round4.json
-source-0457,ÖSYM,https://www.osym.gov.tr,wikipedia_index_unverified,medium,erisim_yok,,network_error:TimeoutError,bulk-site-access-round4.json
+source-0100,Amazon Appstore,https://www.amazonappstoredev.com,wikipedia_index_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0383,BDDK,https://www.bddk.org.tr,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0501,BlaBlaCar,https://www.blablacar.fr,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0533,BoardGameGeek,https://boardgamegeek.com,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0421,Cochrane Library,https://www.cochranelibrary.com,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0277,Crowdcube,https://www.crowdcube.com,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0411,Espacenet,https://worldwide.espacenet.com,wikipedia_index_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0412,European Patent Office,https://www.european-patent-office.org,wikipedia_index_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0002,Exa,https://the.exa.website,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:404,common-crawl-multi.json
+source-0139,Gartner Peer Insights,https://www.gartner.com,curated_official_host_fixture,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0512,Getir,https://www.getir.com,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0584,Google Forms,https://forms.google.com,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0215,Google Search Console,https://search.google.com,curated_official_host_fixture,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0285,Greenhouse Job Boards,https://www.greenhouse.io,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0569,Harvard Business Review,https://hbr.org,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0032,Indie Hackers,https://www.indiehackers.com,wikidata_p856_unverified,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0632,Keiretsu Forum Türkiye,https://www.keiretsuforum.com,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0380,KVKK,https://www.kvkk.gov.tr,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0379,Mevzuat Bilgi Sistemi,https://www.mevzuat.gov.tr,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:404,common-crawl-multi.json
+source-0514,Migros Yemek,https://www.migrosyemek.com,curated_official_host_fixture,high,erisim_yok,,arsiv_kaydi_cok_kucuk,common-crawl-multi.json
+source-0211,Mozilla Observatory,https://observatory.mozilla.org,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0529,Newzoo,https://newzoo.com,curated_official_host_fixture,medium,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0427,OpenFDA,https://open.fda.gov,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0293,Otta,https://otta.com,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0549,PulseMCP,https://www.pulsemcp.com,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0185,RDAP.org,https://rdap.org,curated_official_host_fixture,high,erisim_yok,,cdx_bos:404,common-crawl-multi.json
+source-0037,Replit Community,https://ask.replit.com,curated_official_host_fixture,high,erisim_yok,,arsivde_icerik_yok,common-crawl-multi.json
+source-0171,Sahibinden,https://www.sahibinden.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0477,Sahibinden Emlak,https://www.sahibinden.com,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0320,Sahibinden Hizmetler,https://www.sahibinden.com,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0014,Scale SERP,https://www.scaleserp.com,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0343,ScienceDirect,https://sciencedirect.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0329,Scopus,https://www.scopus.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0282,SimplyHired,https://www.simplyhired.com,wikipedia_index_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0028,Software Engineering Stack Exchange,https://softwareengineering.stackexchange.com,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0337,SSRN,https://ssrn.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0578,StartupCentrum,https://startupcentrum.com,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0372,T.C. Resmî Gazete,https://www.resmigazete.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0368,TCMB EVDS,https://evds3.tcmb.gov.tr,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0625,Teknopark İstanbul,https://www.teknoparkistanbul.com.tr,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0079,Threads,https://www.threads.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0386,TİTCK,https://www.titck.gov.tr,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0630,TOBB,https://tobb.org.tr,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0373,Türkiye Açık Veri Portalı,https://veri.gov.tr,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0621,Türkiye Girişimcilik Vakfı,https://girvak.org,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0593,UserZoom,https://www.userzoom.com,curated_official_host_fixture,high,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0496,Viator,https://www.viator.com,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0198,ViewDNS.info,https://viewdns.info,curated_official_host_fixture,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0523,Xbox Store,https://marketplace.xbox.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0305,Yellow Pages,https://www.yellowpages.ca,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0526,YouTube Gaming,https://gaming.youtube.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0467,Zillow,https://www.zillow.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0515,Zomato,https://www.zomato.com,wikidata_p856_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
+source-0457,ÖSYM,https://www.osym.gov.tr,wikipedia_index_unverified,medium,erisim_yok,,cdx_bos:None,common-crawl-multi.json
 source-0182,Amazon Reviews,,no_high_confidence_mapping,unresolved,adres_yok,,unresolved_official_origin,bulk-site-access-live-20260810T203700Z.json
 source-0375,Ankara Büyükşehir Belediyesi Açık Veri Portalı,,no_high_confidence_mapping,unresolved,adres_yok,,unresolved_official_origin,bulk-site-access-live-20260810T203700Z.json
 source-0103,OPPO App Market,,no_high_confidence_mapping,unresolved,adres_yok,,unresolved_official_origin,bulk-site-access-live-20260810T203700Z.json
