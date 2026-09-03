@@ -298,6 +298,199 @@ verilmelidir.
 
 ---
 
-# Görev 2
+# Görev 2 — Soruları ve kanıtlarını tanımlamak
 
-*(Görev tamamlandığında bu bölüm doldurulacak.)*
+**İstenen:** Her ürün kategorisinde hangi soruların cevaplanacağını ve hangi
+kanıtın bu soruyu gerçekten desteklediğini tanımlamak.
+
+## 2.1 Problem
+
+Görev 1 **nereye bakılacağını** söylüyordu. Ama kaynağa ulaşmak tek başına
+analiz üretmiyor: gelen veriyi hangi soruyu cevaplamak için kullandığın ve o
+verinin o soruyu gerçekten cevaplayıp cevaplamadığı belirsiz kalıyordu.
+
+Görev cümlesindeki kritik kelime **"gerçekten"**. Konuyla ilgili görünen her
+veri kanıt değildir:
+
+**Soru: "Bu pazarda talep var mı?"**
+
+| Aday kanıt | Gerçekten destekliyor mu |
+|---|---|
+| TechCrunch'ta "bu pazar büyüyor" diyen haber | ❌ Yazarın kanaati, ölçüm değil |
+| Google Trends'te aramanın 2 yılda 3 katına çıkması | ✅ Ölçülebilir, tarihli, tekrar üretilebilir |
+| App Store'da 50 rakibin 10.000'den fazla yorum alması | ✅ İnsanlar indirip yorum yazmış — davranış |
+| Yatırımcı blogunda "büyük fırsat" denmesi | ❌ Kanaat |
+
+İkisi de aynı soruyla ilgili ama biri **ölçüm**, diğeri **kanaat**. Görev tam
+olarak bu ayrımı yapmayı istiyor.
+
+## 2.2 İzlenen yol
+
+**Adım 1 — Soru seti: ortak çekirdek + kategoriye özel.**
+Görev cümlesi "her ürün kategorisinde hangi sorular" diyor. Bunu tamamen ayrı
+soru listeleri olarak değil, görev 1'deki yapının aynısıyla kurduk: ortak
+çekirdek + kategoriye özel ek. Sebebi, pazar doğrulamasının bazı sorularının
+evrensel olması — "talep var mı", "rakipler kim", "para ödeyecekler mi" mobil
+uygulamada da geçerli, geliştirici aracında da. Bunları kategoriye göre farklı
+yazmak yapay olurdu.
+
+**8 ortak soru:** talep var mı, rakip kim, doygun mu, ödeme isteği, talep yönü,
+şikâyet ne, giriş engeli, ulaşılabilir mi.
+
+**6 kategoriye özel soru** — başka kategoride sorulsa anlamsız kalır:
+
+| Soru | Hangi kategoride | Neden başka yerde yok |
+|---|---|---|
+| Platform politikası izin veriyor mu? | mobil, eklenti, oyun | Mağaza onayı; web SaaS'ta böyle bir kapı yok |
+| Lisans modeli benimsenmeyi engelliyor mu? | geliştirici aracı, YZ | Açık kaynak beklentisi sadece burada belirleyici |
+| Platform bu işlevi kendi ekler mi? | eklenti | Shopify eklentiyi kopyalayabilir |
+| Çalıştırma maliyeti sürdürülebilir mi? | YZ, e-ticaret | Çıkarım/komisyon maliyeti birim ekonomiyi belirler |
+| Coğrafi yoğunluk yeterli mi? | yerel hizmet | Bir şehirde çalışan model diğerinde çalışmayabilir |
+| Ürün keşfedilebilir mi? | mobil, oyun | Katalog büyüklüğü görünürlüğü engeller |
+
+**Adım 2 — Kanıtı soruya değil, soru × kaynak grubu ikilisine bağladık.**
+Bu, işin can alıcı kararıydı. "Pazar doygun mu" sorusunun tek bir cevabı yok;
+kategoriye göre tamamen farklı ölçümle cevaplanıyor. Kanıtı kaynak grubunun
+özelliği olarak tanımlayınca kategori kendi gruplarından kanıtı devralıyor ve
+kategori×soru kombinasyonları elle yazılmıyor, türetiliyor.
+
+**Adım 3 — Her kanıt satırına "zayıf alternatif" alanı koyduk.**
+"Gerçekten destekleyen" demek, **desteklemeyeni de işaretlemek** demek. Bu alan
+olmadan ayrım kâğıt üzerinde kalırdı.
+
+## 2.3 Ölçüm bir eksik ortaya çıkardı
+
+İlk üretimde 111 satır çıktı ve iş bitmiş göründü. Ama şu soru soruldu: **bu
+kategori ve soru sayısıyla 636 kaynağın hepsi işe koşuluyor mu?**
+
+Ölçüm bunu gösterdi:
+
+| | İlk hâli |
+|---|---:|
+| Bir soruya kanıt olan kaynak | 345 (%54) |
+| Hiçbir soruya bağlanmayan | 291 (%46) |
+| Bunlardan verisi çekilmiş olan | 243 |
+
+Yani envanterin yarısı boştaydı — üstelik verisi elimizdeyken. Kategori ve soru
+sayısı yeterliydi, **bağlantılar eksik kurulmuştu**. İki sebep vardı:
+
+**Sebep 1 — Ek paketler hiç soru üretmiyordu (167 kaynak).** Script yalnızca 8
+kategoriyi dolaşıyordu. Oysa "diyabet uygulaması" araştırılırken sağlık
+kaynaklarına da sorulmalı. Her ek pakete cevapladığı sorular bağlandı: sağlık
+`giriş engeli` ve `talep var mı`, fintech `giriş engeli` ve `rakip kim`, Türkiye
+paketi `rakip kim` ve `talep yönü`.
+
+**Sebep 2 — Ortak havuzun dört grubuna kanıt tanımlanmamıştı (124 kaynak).**
+
+| Grup | Hangi soruya | Kanıt |
+|---|---|---|
+| Haber ve sektör yayınları | `rakip kim` | Yatırım ve satın alma haberleri — tarihli, doğrulanabilir olay |
+| Akademik yayınlar | `giriş engeli` | Yayın yoğunluğu — çok yayın az ürün varsa teknik engel var |
+| Ürün lansmanı toplulukları | `rakip kim` | Son 12 aydaki lansmanlar — yeni girenleri erken gösterir |
+| Domain, DNS ve web izleri | `rakip kim` | Alan adı kayıt tarihi — rakibin ne zaman başladığı |
+
+Düzeltme sonrası:
+
+| | Sonuç |
+|---|---:|
+| Satır sayısı | 111 → **182** |
+| Bir soruya kanıt olan kaynak | 345 → **596 (%94)** |
+| Boşta kalan | 291 → **40** |
+
+Kalan 40 kaynak **kasıtlı olarak** dışarıda:
+
+| Grup | Kaynak | Neden kanıt değil |
+|---|---:|---|
+| Genel web arama | 16 | Arama motoru kanıt üretmez, kanıta ulaştırır — araçtır |
+| Anket platformları | 24 | Birincil araştırma altyapısı; fikir doğrulandıktan sonra kendi verini toplamak için |
+
+Bu oran testle korunuyor: envanterin %90'ından azı bir soruya bağlıysa test
+düşer.
+
+## 2.4 Sonuç
+
+### Kategori başına soru ve kanıt
+
+| Kategori | Soru | Kanıt satırı |
+|---|---:|---:|
+| `mobil-uygulama` | 10 | 23 |
+| `b2b-web-yazilimi` | 8 | 26 |
+| `gelistirici-araci` | 9 | 21 |
+| `eklenti-entegrasyon` | 10 | 20 |
+| `yapay-zeka-urunu` | 10 | 20 |
+| `eticaret-fiziksel-urun` | 9 | 19 |
+| `oyun` | 10 | 19 |
+| `yerel-hizmet` | 9 | 19 |
+
+Ek paketler ayrıca 15 satır üretiyor (paket başına 1-2 soru).
+
+### Aynı soru, farklı kanıt
+
+Bu tablo görev 1'deki kategori ayrımının neden gerekli olduğunu gösteriyor.
+**"Pazar doygun mu?"** her kategoride sorulur ama:
+
+| Kategori | Kanıt |
+|---|---|
+| `mobil-uygulama` | İlk 20'nin yorum sayısı dağılımı ve son güncelleme tarihleri |
+| `gelistirici-araci` | İndirmenin ilk 3 pakette toplanma oranı |
+| `b2b-web-yazilimi` | Ürün sayısı ile yorum sayısının dağılımı; ilk 5'in payı |
+| `oyun` | Türdeki oyun sayısı, eşzamanlı oyuncu dağılımı |
+| `eklenti-entegrasyon` | Kurulumun ilk 5 eklentide toplanma oranı |
+| `eticaret-fiziksel-urun` | Satışın ilk 10 satıcıda toplanma oranı |
+| `yerel-hizmet` | Bölgedeki sağlayıcı sayısı, yorumun ilk 10'da toplanması |
+| `yapay-zeka-urunu` | Entegrasyon dizinlerindeki araç sayısı ve güncellik |
+
+Kategori olmasaydı bu sorunun tek ve belirsiz bir cevabı olurdu.
+
+## 2.5 Üretilen dosya
+
+### `KATEGORI-SORU.csv` — 182 satır
+
+Tek satırın tamamı:
+
+```
+kategori            mobil-uygulama
+soru_id             talep-var-mi
+soru                Bu ürüne gerçekten talep var mı?
+soru_turu           ortak
+neden_onemli        Talep yoksa diğer soruların cevabı önemsizdir; ilk elenme noktası
+kanit_turu          Kategorideki uygulama sayısı ve ilk 20'nin toplam yorum hacmi
+kanit_kaynak_grubu  Mobil uygulama mağazaları
+kanit_kaynak_rolu   kategori
+ornek_kaynaklar     APKMirror, Apple App Store, Aptoide, F-Droid
+kaynak_sayisi       13
+calisan_kaynak      11
+neden_gecerli       Yorum ancak indirip kullandıktan sonra yazılır; iddia değil davranıştır
+zayif_alternatif    Uygulama sayısı tek başına — 50 uygulamanın 45'i terk edilmiş olabilir
+```
+
+Okunuşu: *mobil uygulama araştırırken "talep var mı" sorusu, mağazalardaki
+uygulama sayısı ve ilk 20'nin yorum hacmiyle cevaplanır. Bu geçerli bir kanıttır
+çünkü yorum ancak kullandıktan sonra yazılır. Uygulama sayısına tek başına
+bakmak yanıltır.*
+
+Son iki alan görev cümlesindeki "gerçekten destekleyen" şartının karşılığıdır.
+Kanıt gibi görünüp olmayanlar her satırda açıkça işaretli: blog yazıları, anket
+"öderim" cevapları, ortalama puanlar, satıcının kendi iddiaları, liste fiyatları.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `build_category_questions.py` | Soruları, kanıtları ve eşleşmeyi üretir |
+| `test_build_category_questions.py` | 12 test |
+
+Script kanıtı olmayan soruyu bildirip listeler — kanıtsız soru cevaplanamayan
+sorudur, sessizce geçilmez. İlk koşuda 13 soru kanıtsız çıktı ve hepsi
+dolduruldu.
+
+## 2.6 Yeniden üretim
+
+```bash
+python3 build_category_questions.py
+python3 -m unittest test_build_category_questions
+```
+
+Testler üç şeyi korur: aynı sorunun kategoriye göre farklı kanıt aldığını,
+her satırın zayıf alternatif taşıdığını ve envanterin %90'ından fazlasının bir
+soruya bağlı kaldığını.
