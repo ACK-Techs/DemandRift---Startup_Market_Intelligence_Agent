@@ -148,3 +148,27 @@ sonuç geldi. Canlı sorgular mevcut çekim motoru üzerinden atılıyor, böyle
 robots kontrolü ve kayıt tutma tek yerde kalıyor.
 
 **Çıktı:** `ARAMA-YUZEYLERI.csv` — 578 kaynak için hangi yolla sorulacağı.
+
+---
+
+## Dosyalar ve veri
+
+Depoya konanlar (~7 MB):
+
+| Dosya | İçerik |
+|---|---|
+| `KAYNAK-DEFTERI.md` / `.csv` | 636 kaynağın durumu, adresi, engeli |
+| `ARTEFAKT-DIZINI.csv` | İndirilen her dosyanın hangi kaynağın hangi adresinden alındığı |
+| `ARAMA-YUZEYLERI.csv` | Her kaynağa anahtar kelimenin hangi yolla sorulacağı |
+| `veriler-ornek/` | 252 kaynağın gerçek içeriği, örnek olarak |
+| `*.py` + testler | Bütün adımların kodu, 204 test |
+
+Çekilen içeriğin tamamı (534 kaynak, ~225 MB) ve koşu çıktıları (~790 MB) depoya
+konmadı. Sebebi ikisi de yeniden üretilebilir olması ve ortak depoyu bu boyutta
+şişirmenin klonlamayı ağırlaştırması. Neyin çekildiği `ARTEFAKT-DIZINI.csv`
+üzerinden zaten görülüyor: hangi kaynak, hangi adres, hangi tarih, kaç bayt.
+İçeriğin neye benzediğini görmek için `veriler-ornek/` klasörü depoda duruyor.
+
+Tam arşive ihtiyaç olursa iki yol var: `export_by_source.py` ile aynı klasör
+yapısı yeniden üretilebilir, ya da arşiv sıkıştırılıp ayrıca paylaşılabilir.
+Nasıl ilerlememi istediğinizi belirtirseniz ona göre düzenlerim.
