@@ -7,19 +7,26 @@ verisi nasıl çekildi**, ve **bir anahtar kelime bu kaynaklara nasıl sorulur**
 Bütün sayılar artefaktlardan üretilir, elle sayım yoktur; her çıktı dosyası
 kendi script'iyle yeniden üretilebilir.
 
+> Çalışmanın özeti, sayıların gerekçeleri ve izlenen yol için:
+> **[CALISMA-OZETI.md](CALISMA-OZETI.md)**. Bu dosya klasörün nasıl kullanılacağını
+> anlatır.
+
 ## Güncel durum
 
-| Durum | Kaynak | Oran |
-|---|---:|---:|
-| ✅ Veri çekildi | 534 | %84.0 |
-| ⚠️ Kısmi (yalnız robots.txt) | 44 | %6.9 |
-| ❌ Adres var, erişilemedi | 54 | %8.5 |
-| ❌ Adres yok | 4 | %0.6 |
-| **Adresi bulunan** | **631** | **%99.2** |
-| **Toplam** | **636** | |
+| | Kaynak |
+|---|---:|
+| ✅ Verisi çekildi | **534** |
+| ❌ Adresi var ama veri alınamadı | 98 |
+| ❌ Adresi bulunamadı | 4 |
+| **Toplam** | **636** |
 
-Çekilemeyen 98 kaynağın 35'i `robots_disallowed` — site taranmasını istemiyor ve
-buna uyuluyor. Bunlar kapsam dışı sayılırsa gerçek oran 534/601 = **%88.9**.
+Veri alınamayan 98 kaynağın 35'i `robots_disallowed` — site taranmasını istemiyor
+ve buna uyuluyor. Bunlar kapsam dışı sayılırsa oran **534/601 = %88.9**.
+
+Defter bu üç durumun yanında bir ayrım daha tutar: veri alınamayanların bir
+kısmında sunucuya ulaşılıp yalnızca `robots.txt` indirilebilmiş (`kismi`), bir
+kısmında hiçbir dosya alınamamış (`erisim_yok`). Kullanılabilir veri ikisinde de
+yok; ayrım engelin nerede olduğunu gösterir.
 
 ## Görev 1 — hangi kaynaklar tamamlandı
 
