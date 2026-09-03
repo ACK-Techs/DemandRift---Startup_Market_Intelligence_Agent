@@ -50,10 +50,33 @@ python3 build_coverage_ledger.py results/bulk-site-access-*.json results/common-
 | `ARTEFAKT-DIZINI.csv` | **Hangi dosya, hangi kaynağın hangi adresinden, ne zaman alındı** |
 | `build_artifact_index.py` / `export_by_source.py` | Dizin ve okunabilir klasör üretimi |
 
+### Ham içerik nasıl saklanıyor
+
 Ham içerik `results/raw/<sha256>.bin` olarak saklanır: ad içeriğin özetidir, bu
-sayede aynı içerik iki kez inmez ve bozulma tespit edilir. Ad siteyi göstermediği
-için `ARTEFAKT-DIZINI.csv` bağı kurar. `export_by_source.py` aynı veriyi site
-adıyla düzenlenmiş `veriler/<Kaynak>/` klasörlerine çıkarır.
+sayede aynı içerik iki kez inmez ve bozulma tespit edilir. 16 KB altındaki
+dosyalar ayrı dosya açılmadan koşu JSON'unun içinde base64 durur.
+
+Ad siteyi göstermediği için tek başına okunamaz; **`ARTEFAKT-DIZINI.csv` o bağı
+kurar.** Her satır bir indirilen dosyanın künyesidir:
+
+| Sütun | Örnek |
+|---|---|
+| `ad`, `adres` | Forbes, `https://forbes.com` |
+| `yontem` | `sitemap_xml` |
+| `cekilen_url` | `https://www.forbes.com/news_sitemap.xml` |
+| `mime`, `bayt` | `application/xml`, 476.781 |
+| `sha256`, `dosya` | `abb98e90...`, `results/raw/abb98e90....bin` |
+| `sonuc` | `ok` — başarılı içerik |
+| `kosu`, `tarih` | Hangi koşuda, ne zaman |
+
+`sonuc` sütunu önemli: arşivde yalnızca başarılı içerik yok. Başarısız isteklerin
+gövdesi de diske yazılmış olabilir (kısmen inen `response_too_large` yanıtı, bot
+koruma sayfası). Bunlar da dizine alınır ama `sonuc` alanı onları `ok` olanlardan
+ayırır — aksi hâlde arşivde kime ait olduğu okunamayan dosyalar kalırdı.
+
+`export_by_source.py` aynı veriyi site adıyla düzenlenmiş `veriler/<Kaynak>/`
+klasörlerine çıkarır; her klasörde `_kaynak.json` kaynağın adını, adresini,
+durumunu ve her dosyanın hangi URL'den ne zaman alındığını taşır.
 
 > Ham içerik (225 MB) ve koşu çıktıları `.gitignore` ile depoya alınmaz: yeniden
 > üretilebilirler ve neyin çekildiği `ARTEFAKT-DIZINI.csv` üzerinden görülür.
