@@ -453,7 +453,7 @@ kategori            mobil-uygulama
 soru_id             talep-var-mi
 soru                Bu ürüne gerçekten talep var mı?
 soru_turu           ortak
-neden_onemli        Talep yoksa diğer soruların cevabı önemsizdir; ilk elenme noktası
+neden_onemli        Talep yoksa diğer soruların cevabı önemsizdir; ilk elenme noktası budur
 kanit_turu          Kategorideki uygulama sayısı ve ilk 20'nin toplam yorum hacmi
 kanit_kaynak_grubu  Mobil uygulama mağazaları
 kanit_kaynak_rolu   kategori
@@ -468,6 +468,22 @@ Okunuşu: *mobil uygulama araştırırken "talep var mı" sorusu, mağazalardaki
 uygulama sayısı ve ilk 20'nin yorum hacmiyle cevaplanır. Bu geçerli bir kanıttır
 çünkü yorum ancak kullandıktan sonra yazılır. Uygulama sayısına tek başına
 bakmak yanıltır.*
+
+**Dosya neden 14 değil 182 satır:** bir soru tek kanıtla kapanmıyor. Yukarıdaki
+soru aynı kategoride üç ayrı satır üretiyor — biri kategoriye özel kaynaktan,
+ikisi ortak havuzdan:
+
+```
+kategori  soru_id       kanit_kaynak_grubu              kanit_kaynak_rolu  calisan_kaynak
+────────  ────────────  ──────────────────────────────  ─────────────────  ──────────────
+mobil-…   talep-var-mi  Mobil uygulama mağazaları       kategori           11
+mobil-…   talep-var-mi  Trafik, SEO, anahtar kelime     ortak              23
+mobil-…   talep-var-mi  Kamu verisi ve istatistik       ortak              21
+```
+
+Üçü farklı yerden bakıyor: mağaza yorumu davranışı ölçer, arama hacmi niyeti
+ölçer, resmî istatistik kitle büyüklüğünü ölçer. Biri boş çıkarsa diğer ikisi
+soruyu yine cevaplayabilir — kanıt tek kaynağa bağlı kalmıyor.
 
 Son iki alan görev cümlesindeki "gerçekten destekleyen" şartının karşılığıdır.
 Kanıt gibi görünüp olmayanlar her satırda açıkça işaretli: blog yazıları, anket
