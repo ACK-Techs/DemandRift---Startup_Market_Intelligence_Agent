@@ -63,6 +63,36 @@ kategoride birden geçiyor (Tripadvisor ve Yelp hem B2B hem yerel hizmette,
 GitHub hem geliştirici aracı hem yapay zekâ ürününde). Bu örtüşmeler meşru —
 o kaynaklar gerçekten iki araştırmayı da besliyor.
 
+## Kategori seçim kuralı
+
+Bir ürün birden fazla kategoriye uyabilir. On gerçek ürün fikriyle sınandığında
+sekizi tek kategoriye düştü, ikisi kararsız kaldı:
+
+| Ürün | Kararsızlık |
+|---|---|
+| Mobil bulmaca oyunu | `oyun` mu `mobil-uygulama` mı? |
+| Yerel esnaf için randevu uygulaması | `yerel-hizmet` mi `mobil-uygulama` mı? |
+
+Bu bir çelişki değil, **katman** durumu: mobil oyun için hem tür doygunluğunu
+gösteren oyun kaynakları (SteamDB, Metacritic) hem dağıtımı gösteren mağaza
+kaynakları gerekli. Kural şu:
+
+> **Ana kategori, araştırmanın ayırt edici sorusunu cevaplayandır.** İkinci
+> kategorinin çekirdek paketi *katman* olarak eklenir.
+
+| Ürün | Ana kategori | Katman | Toplam çekirdek |
+|---|---|---|---:|
+| Mobil bulmaca oyunu | `oyun` (tür doygun mu, oyuncu ne ödüyor) | `mobil-uygulama` | 30 |
+| Yerel esnaf randevu uygulaması | `yerel-hizmet` (işletme yoğunluğu, fiyatlar) | `mobil-uygulama` | 36 |
+
+Katman olabilecek kategoriler `URUN-KATEGORILERI.csv` içindeki
+`katman_olabilir` sütununda işaretli: `mobil-uygulama`, `eklenti-entegrasyon` ve
+`yapay-zeka-urunu`. Bunlar dağıtım/teknoloji katmanı olduğu için başka bir
+kategorinin üstüne binebiliyor — bir ürün hem "B2B web yazılımı" hem "yapay zekâ
+ürünü" olabilir. Diğer beş kategori (b2b-web-yazilimi, gelistirici-araci,
+eticaret-fiziksel-urun, oyun, yerel-hizmet) birbirinin üstüne binmez; ürün
+bunlardan yalnız birine girer.
+
 ## Ek paketler
 
 Kategori değil; ana kategorinin üstüne eklenir.

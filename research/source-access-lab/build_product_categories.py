@@ -171,6 +171,14 @@ BASLIK_BILGISI: dict[str, tuple[str, str]] = {
         "{urun}"),
 }
 
+# Bir urun birden fazla kategoriye uyabilir: mobil bulmaca oyunu hem 'oyun' hem
+# 'mobil-uygulama'. Bunlar celiski degil, katmandir -- oyun kaynaklari turun
+# doygunlugunu, magaza kaynaklari dagitimi anlatir. Ana kategori arastirmanin
+# ayirt edici sorusunu cevaplayandir; ikinci kategorinin cekirdegi ek olarak
+# alinir. Asagidaki alan hangi kategorilerin bu sekilde katman olabilecegini
+# soyler, boylece kural belgede kalan bir temenni olmaz.
+KATMAN_OLABILIR = {"mobil-uygulama", "eklenti-entegrasyon", "yapay-zeka-urunu"}
+
 KATEGORI_BILGISI: dict[str, tuple[str, str, str]] = {
     # kategori -> (ad, tanim, arastirma niyeti)
     "mobil-uygulama": (
@@ -306,6 +314,7 @@ def main() -> int:
         kategoriler.append({
             "kategori": anahtar, "tur": "kategori", "ad": ad, "tanim": tanim,
             "arastirma_niyeti": niyet, "ne_zaman": "Ürün bu dağıtım/alıcı tipindeyse",
+            "katman_olabilir": "evet" if anahtar in KATMAN_OLABILIR else "hayir",
             "cekirdek_kaynak": len(ozel), "cekirdek_cekilen": cekilen(ozel),
             "ortak_kaynak": len(ortak), "ortak_cekilen": cekilen(ortak),
         })
@@ -315,7 +324,7 @@ def main() -> int:
             "kategori": anahtar, "tur": "ek", "ad": anahtar.replace("-", " ").title(),
             "tanim": "Ana kategoriye eklenen dikey/bölge paketi",
             "arastirma_niyeti": "Ana kategorinin sorularına alan-özel kanıt ekler",
-            "ne_zaman": ne_zaman,
+            "ne_zaman": ne_zaman, "katman_olabilir": "evet",
             "cekirdek_kaynak": len(ozel), "cekirdek_cekilen": cekilen(ozel),
             "ortak_kaynak": 0, "ortak_cekilen": 0,
         })

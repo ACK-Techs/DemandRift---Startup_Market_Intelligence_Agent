@@ -86,6 +86,20 @@ class CiktiTests(unittest.TestCase):
                 kucuk = min(len(cekirdek[a]), len(cekirdek[b]))
                 self.assertLess(len(ortak), kucuk * 0.25, f"{a} ile {b} fazla ortak")
 
+    def test_katman_olabilir_alani_dogru_isaretli(self):
+        """Katman kategorileri baska bir kategorinin ustune binebilir; digerleri binmez."""
+        isaret = {r["kategori"]: r["katman_olabilir"] for r in self.kategoriler
+                  if r["tur"] == "kategori"}
+        for anahtar in kat.KATMAN_OLABILIR:
+            self.assertEqual("evet", isaret[anahtar], anahtar)
+        for anahtar in set(kat.KATEGORI_BILGISI) - kat.KATMAN_OLABILIR:
+            self.assertEqual("hayir", isaret[anahtar], anahtar)
+
+    def test_ek_paketler_her_zaman_katman(self):
+        for r in self.kategoriler:
+            if r["tur"] == "ek":
+                self.assertEqual("evet", r["katman_olabilir"], r["kategori"])
+
     def test_her_kategori_kaynaginin_durumu_yazili(self):
         """Kategori 'etiket' olmamali: satirda kaynagin gercek durumu bulunmali."""
         for r in self.kaynaklar:
