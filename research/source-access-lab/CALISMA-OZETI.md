@@ -9,22 +9,33 @@ Görev kartındaki üç madde tamamlandı.
 
 ## 1. Hangi siteler tamamlandı, hangileri eksik
 
-636 kaynağın tamamı için erişim durumu tek bir deftere bağlandı. Sayılar elle
-sayılmadı; koşu artefaktlarından türetiliyor ve `build_coverage_ledger.py` ile
-aynı dosyalardan yeniden üretildiğinde aynı sonucu veriyor.
+Bir kaynağın "tamamlandı" sayılması iki aşamadan geçiyor ve her ikisi de ayrı
+başarısız olabiliyor:
 
-Dört durum ayrı tutuldu, çünkü "adresini biliyoruz" ile "verisi elimizde" aynı
-şey değil:
+1. **Adres bulma** — kaynağın resmî web adresi tespit ediliyor mu?
+2. **Veri çekme** — o adresten gerçekten içerik indirilebiliyor mu?
 
-| Durum | Anlamı |
-|---|---|
-| ✅ Çekildi | Ana sayfa, sitemap, RSS veya API'den içerik indi |
-| ⚠️ Kısmi | Sunucuya ulaşıldı ama yalnızca robots.txt alındı |
-| ❌ Adres var, erişilemedi | Hiçbir dosya alınamadı |
-| ❌ Adres yok | Resmî adres tespit edilemedi |
+Bu ayrım önemli, çünkü bir sitenin adresini bilmek verisinin elimizde olduğu
+anlamına gelmiyor. Örneğin GitHub'ın adresi baştan beri biliniyordu ama bot
+koruması yüzünden sayfası alınamıyordu.
 
-Her kaynak için adresi, adresin nasıl doğrulandığı, güven seviyesi, çekilen
-yüzeyler ve çekilemediyse teknik sebebi kayıtlı.
+Buna göre 636 kaynağın durumu:
+
+| | Kaynak |
+|---|---:|
+| ✅ Verisi çekildi | **534** |
+| ❌ Adresi var ama veri alınamadı | 98 |
+| ❌ Adresi bile bulunamadı | 4 |
+
+Defterde bu üç durumun yanında bir ayrım daha tutuluyor: veri alınamayan
+kaynakların bir kısmında sunucuya ulaşılıp yalnızca `robots.txt` indirilebilmiş,
+bir kısmında hiçbir dosya alınamamış. Analiz için kullanılabilir veri her iki
+durumda da yok, ama engelin nerede olduğunu gösterdiği için ayrı kaydediliyor.
+
+Sayılar elle sayılmadı; koşu artefaktlarından türetiliyor ve
+`build_coverage_ledger.py` ile aynı dosyalardan yeniden üretildiğinde aynı
+sonucu veriyor. Her kaynak için adresi, adresin nasıl doğrulandığı, güven
+seviyesi, çekilen yüzeyler ve çekilemediyse teknik sebebi kayıtlı.
 
 **Çıktı:** `KAYNAK-DEFTERI.md` (okunabilir tablo), `KAYNAK-DEFTERI.csv`
 (filtrelenebilir).
