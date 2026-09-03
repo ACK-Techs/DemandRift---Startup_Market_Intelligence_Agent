@@ -494,3 +494,205 @@ python3 -m unittest test_build_category_questions
 Testler üç şeyi korur: aynı sorunun kategoriye göre farklı kanıt aldığını,
 her satırın zayıf alternatif taşıdığını ve envanterin %90'ından fazlasının bir
 soruya bağlı kaldığını.
+
+---
+
+# Görev 3 — Defteri aday kataloğa dönüştürmek
+
+**İstenen:** Mevcut kaynak defterini ürün araştırması için anlamlı bir aday
+kataloğa dönüştürmek; aynı host/farklı marka, discovery yüzeyi ve gerçek veri
+yüzeyi ayrımını görünür kılmak.
+
+## 3.1 Problem: defter erişim kaydıdır, katalog değildir
+
+`KAYNAK-DEFTERI.csv` şu soruyu cevaplıyor: **"Bu adrese ulaşabildik mi, ne
+indi?"** Sütunları teknik — durum, çekilen yüzeyler, engel sebebi. Bu, çekim
+işini yönetmek için doğru dosya.
+
+Ama ürün araştırması yapan biri başka bir şey soruyor: **"Bu kaynak benim
+araştırmama ne katıyor?"** Bunun cevabı defterde yok. Kaynağın hangi kategoride
+olduğu, kaç soruya kanıt verdiği, elindeki verinin gerçekten kullanılabilir olup
+olmadığı — hiçbiri görünmüyor.
+
+Defter silinmedi, üstüne bir katman kondu. `ADAY-KATALOG.csv` defterin 636
+satırını alır ve her satıra araştırma açısından anlamlı alanlar ekler.
+
+## 3.2 Aynı host / farklı marka
+
+Defterde bunlar dört ayrı kaynak olarak duruyordu:
+
+```
+Bing                  → https://www.bing.com
+Bing News             → https://www.bing.com
+Bing Maps             → https://www.bing.com
+Bing Webmaster Tools  → https://www.bing.com
+```
+
+Marka olarak gerçekten ayrılar — Bing News haber sorgular, Bing Maps yer
+sorgular, farklı sorulara cevap verirler. Ama **teknik olarak tek bir site.**
+
+Bu ayrım görünmezse üç şey ters gider:
+
+1. Sistem aynı siteye dört kez istek atar
+2. Sitenin kotasını dört kat hızlı tüketir
+3. Aynı veriyi dört ayrı kaynaktan gelmiş gibi sayar — **sahte doğrulama**
+
+Üçüncüsü en tehlikelisi: "dört kaynak da aynı şeyi söylüyor" demek, aslında tek
+bir siteyi dört kez okumaksa, kanıt gücü olduğundan yüksek görünür.
+
+**Ölçüm:** 631 adresli kaynak var ama yalnızca **596 benzersiz host**. Yani **60
+marka, 25 host'u paylaşıyor.**
+
+| Host | Marka | Kimler |
+|---|---:|---|
+| google.com | 6 | Finance, Jobs, Maps, Reviews, Search Console, Transparency Report |
+| bing.com | 4 | Bing, Maps, News, Webmaster Tools |
+| g2.com | 3 | G2, G2 Track, G2 Education Software |
+| linkedin.com | 3 | LinkedIn, Jobs, Ad Library |
+| facebook.com | 3 | Facebook, Marketplace, Pages |
+| sahibinden.com | 3 | Sahibinden, Emlak, Hizmetler |
+
+**Çözüm:** Markalar birleştirilmedi — ayrı kalmaları doğru, çünkü farklı
+soruları cevaplıyorlar. Sadece paylaşım görünür kılındı. Her satırda üç alan
+var:
+
+```
+host                bing.com
+host_marka_sayisi   4
+host_kardesleri     Bing, Bing Maps, Bing Webmaster Tools
+```
+
+Artık sistem "Bing News'a soracağım" dediğinde üç kardeşi olduğunu ve
+isteklerin tek kotadan gittiğini görüyor.
+
+## 3.3 Discovery yüzeyi / gerçek veri yüzeyi
+
+Defterde bütün yüzeyler aynı sütunda yan yana duruyordu:
+
+```
+Bloomberg | sitemap_xml
+Coursera  | root_html
+GitHub    | robots_preflight
+```
+
+Üçü de "bir şeyler indi" demek ama araştırma değerleri tamamen farklı:
+
+| Yüzey | Ne taşır | Rolü |
+|---|---|---|
+| `root_html`, `entry_url`, `common_crawl_warc`, API yanıtları | Sayfanın kendisi | **veri** |
+| `sitemap_xml` | Sayfa adresleri listesi | **keşif** — nereye bakılacağını söyler |
+| `rss_feed` | Başlık ve özet | **karma** — kısmi veri |
+| `robots_preflight` | Erişim kuralları | **politika** — araştırma malzemesi değil |
+
+Her kaynak, elindeki en güçlü yüzeye göre sınıflandırıldı:
+
+| Araştırma değeri | Kaynak | Anlamı |
+|---|---:|---|
+| `veri-var` | **483** | Gerçek içerik elimizde |
+| `kismi-veri` | 9 | RSS — başlık ve özet var |
+| `yalniz-kesif` | **42** | Sadece sitemap — nereye bakılacağı belli, veri yok |
+| `yalniz-politika` | 44 | Sadece robots.txt |
+| `bos` | 58 | Hiçbir şey |
+
+## 3.4 Ayrımın ortaya çıkardığı düzeltme
+
+Bu, görevin en önemli sonucu. **Defter "534 kaynak çekildi" diyor.** Katalog
+aynı 534'ü ayrıştırınca:
+
+```
+534 "çekildi"
+  ├── 483  veri-var       ← gerçekten veri
+  ├──   9  kismi-veri     ← RSS özeti
+  └──  42  yalniz-kesif   ← SADECE SİTEMAP
+```
+
+O 42 kaynağın arasında **Bloomberg, CNBC, Booking.com, Business Insider,
+Associated Press, bioRxiv, Nature, GitLab** var.
+
+Ne olmuş: bot koruması ana sayfayı vermemiş, ama sitemap'i almışız. Yani
+*"Bloomberg'de şu sayfalar var"* biliyoruz — sitemap'lerde toplam 97.487 adres
+duruyor — ama **o sayfaların içeriği elimizde değil.**
+
+Defterin "çekildi" demesi teknik olarak yanlış değildi: bir içerik yüzeyi indi.
+Ama araştırma açısından yanıltıyordu. Bloomberg'den veri toplandığını sanırsın,
+oysa elimizde yalnızca içindekiler listesi var.
+
+Görevin *"discovery yüzeyi ve gerçek veri yüzeyi ayrımını görünür kılmak"*
+demesinin sebebi tam olarak bu.
+
+## 3.5 Üretilen dosya
+
+### `ADAY-KATALOG.csv` — 636 satır
+
+Her kaynak için bir satır. İki örnek:
+
+**Host paylaşan bir marka:**
+
+```
+ad                   Bing News
+adres                https://www.bing.com
+host                 bing.com
+host_marka_sayisi    4
+host_kardesleri      Bing, Bing Maps, Bing Webmaster Tools
+arastirma_degeri     veri-var
+veri_yuzeyi          root_html
+kesif_yuzeyi         sitemap_xml
+kategoriler          ortak
+kaynak_rolu          destekleyici
+cevapladigi_soru     2
+durum                cekildi
+arama_yolu           site_search
+```
+
+**Yalnız keşif yüzeyi olan bir kaynak:**
+
+```
+ad                   Bloomberg
+host                 bloomberg.com
+host_marka_sayisi    1
+arastirma_degeri     yalniz-kesif      ← uyarı burada
+veri_yuzeyi          (boş)
+kesif_yuzeyi         sitemap_xml
+kategoriler          ortak
+cevapladigi_soru     2
+durum                cekildi           ← defter böyle diyor
+```
+
+Son iki satır dikkat çekici: `durum` ile `arastirma_degeri` yan yana duruyor.
+Biri teknik gerçeği söylüyor (bir yüzey indi), diğeri araştırma gerçeğini
+(içerik yok). Çelişki değil, iki farklı soru.
+
+Katalog ayrıca görev 1 ve 2'yi bağlıyor: `kategoriler`, `kaynak_rolu` ve
+`cevapladigi_soru` sütunları her kaynağın araştırma zincirindeki yerini
+gösteriyor.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `build_candidate_catalog.py` | Kataloğu defter, dizin ve kategori dosyalarından üretir |
+| `test_build_candidate_catalog.py` | 14 test |
+
+Testler üç şeyi korur: sitemap'in keşif sayıldığını (veri değil), host
+paylaşımının karşılıklı olduğunu (A B'yi kardeş görüyorsa B de A'yı görmeli) ve
+defterin "çekildi" sayısının katalogda üçe ayrıldığını — yani katalog defteri
+bozmuyor, ayrıştırıyor.
+
+## 3.6 Yeniden üretim
+
+```bash
+python3 build_candidate_catalog.py
+python3 -m unittest test_build_candidate_catalog
+```
+
+Dört dosya zincirleme bağlı olduğu için yeni veri çekildiğinde sıra şudur:
+
+```bash
+python3 build_coverage_ledger.py results/bulk-site-access-*.json results/common-crawl-*.json
+python3 build_artifact_index.py
+python3 build_product_categories.py
+python3 build_category_questions.py
+python3 build_candidate_catalog.py
+```
+
+Üçü de aynı defteri okuduğu için bütün sayılar tutarlı şekilde güncellenir.

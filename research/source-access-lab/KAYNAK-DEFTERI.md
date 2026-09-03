@@ -226,7 +226,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Homebrew Formulae | https://formulae.brew.sh | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Hostelworld | https://www.hostelworldgroup.com | root_html,rss_feed,sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Hotels.com | https://www.hotels.com | common_crawl_warc | wikidata_p856_unverified | — |
-| ✅ Çekildi | Hotjar | https://www.hotjar.com | sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | Hotjar | https://www.hotjar.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Houzz | https://houzz.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | HTTP Archive | https://httparchive.org | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Huawei AppGallery | https://appgallery.huawei.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
@@ -239,7 +239,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | IMF | https://www.imf.org | common_crawl_warc | curated_official_host_fixture | — |
 | ✅ Çekildi | IMF Data | https://data.imf.org | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Immobiliare.it | https://www.immobiliare.it | sitemap_xml | wikidata_p856_unverified | — |
-| ✅ Çekildi | ImmobilienScout24 | https://www.immobilienscout24.de | sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | ImmobilienScout24 | https://www.immobilienscout24.de | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Indeed | https://ca.indeed.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Indiegogo | https://www.indiegogo.com | common_crawl_warc | wikidata_p856_unverified | — |
 | ✅ Çekildi | InfoQ | https://infoq.com | root_html | generated_candidate_validated | — |
