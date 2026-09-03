@@ -53,8 +53,10 @@ GLOBAL_TRANSACTION_HARD_MAX = 1500
 # bir istek harcadigi icin site basina pay yukseltildi.
 PER_SITE_TRANSACTION_LIMIT = 11
 ORIGIN_JOB_TIMEOUT_SECONDS = 45
-CONNECT_TIMEOUT_SECONDS = 5
-READ_TIMEOUT_SECONDS = 10
+CONNECT_TIMEOUT_SECONDS = 8
+# Kamu kurumlarinin siteleri 10 saniyede yanit vermiyor; zaman asimi tek basina
+# 11 kaynagi dusuruyordu. Sinir bize ait oldugu icin genisletildi.
+READ_TIMEOUT_SECONDS = 30
 MIN_ORIGIN_GAP_SECONDS = 1.0
 MAX_REDIRECTS = 4
 # 2 MB tavani karsi taraf degil biz koyuyorduk: CNBC ve Google Play sitemap'leri
@@ -374,6 +376,9 @@ class FetchOutcome:
     body: bytes = b""
     transaction: Transaction | None = None
     headers: Mapping[str, str] = field(default_factory=dict)
+    # Yonlendirme origin disina ciktiginda hedef burada tasinir: istek atilmadi
+    # ama sitenin nereye tasindigi bilgisi kaybolmamali.
+    redirect_target: str | None = None
 
 
 def read_limited(chunks: Iterable[bytes], encoding: str, limit: int) -> tuple[bytes, bool]:
@@ -479,7 +484,14 @@ class OriginRuntime:
             try:
                 target = self.guard.validate(current)
             except PolicyBlocked as exc:
-                return FetchOutcome(False, "blocked_by_policy", str(exc))
+                # Yonlendirme origin'in disina cikti: istek atilmaz ama HEDEF
+                # kaydedilir. Site tasinmis olabilir (seedrs.com -> republic.com);
+                # adres duzeltmesi ancak hedef bilinirse yapilabilir, yoksa her
+                # seferinde elle bulmak gerekiyordu.
+                return FetchOutcome(
+                    False, "blocked_by_policy", str(exc),
+                    redirect_target=current if chain else None,
+                )
             if robots_decision == "required":
                 if self.robots_parser is None:
                     return FetchOutcome(False, "blocked_by_policy", "robots_unavailable")
@@ -615,6 +627,32 @@ def artifact_from(outcome: FetchOutcome) -> list[dict[str, Any]]:
     }]
 
 
+ROBOTS_POLICY = "policy"        # ayrıştırılabilir kurallar var
+ROBOTS_ABSENT = "absent"        # site politika yayinlamiyor -> RFC 9309: serbest
+ROBOTS_BLOCKED = "blocked"      # koruma duvari ya da erisim reddi -> devam edilmez
+
+
+def robots_state(outcome: "FetchOutcome") -> str:
+    """robots.txt yanitini uc duruma indirger.
+
+    Ayrimi yapan sey icerigin gecerli olup olmamasi degil, POLITIKA olup olmamasi:
+
+    * 404/410 ya da politika olmayan bir govde (SPA sayfasi, JS kaynagi) ->
+      site kural yayinlamiyor demektir; RFC 9309 bunu serbest sayar. 12 kaynak
+      (Zoom App Marketplace, USPTO Patent Center, Sağlık Bakanlığı) tam boyle:
+      sunucu her yola HTML donduruyor, robots.txt diye bir dosyasi yok.
+    * Dogrulama duvari, 401/403 ya da tasima hatasi -> devam edilmez. Burada
+      'kural yok' demek yanlis olur: yanit bize ait degil, korumaya ait.
+    """
+    if outcome.transaction is not None and outcome.transaction.status in {404, 410}:
+        return ROBOTS_ABSENT
+    if not outcome.ok:
+        return ROBOTS_BLOCKED
+    if looks_like_challenge(outcome.body):
+        return ROBOTS_BLOCKED
+    return ROBOTS_POLICY if valid_robots_body(outcome.body) else ROBOTS_ABSENT
+
+
 def valid_robots_body(body: bytes) -> bool:
     """Bu robots.txt yanitiyla taramaya devam edilebilir mi?
 
@@ -747,30 +785,40 @@ def run_surface_task(
     emit(method_record(
         source, "robots_preflight", "policy_preflight", robots.outcome, robots.stop_reason,
         runtime.budget.total - before, artifacts=artifact_from(robots),
+        details={"redirect_target": robots.redirect_target} if robots.redirect_target else None,
     ))
     # RFC 9309 s2.3.1.3: robots.txt 404/410 ile yoksa kisitlama da yoktur, tarama
     # serbesttir. Bunu basarisizlik sayip siteyi tamamen atlamak 16 kaynagi
     # (Kaggle, OECD Data, Mastodon, ICANN Lookup) kendi elimizle kapatiyordu.
     # 401/403 ayni sey degildir: RFC bunlari tam yasak saymayi soyler ve pratikte
     # bot korumasi sinyalidir, oyle de birakilir.
-    robots_absent = (
-        not robots.ok and robots.transaction is not None
-        and robots.transaction.status in {404, 410}
-    )
-    if robots.ok or robots_absent:
+    durum = robots_state(robots)
+    robots_absent = durum == ROBOTS_ABSENT
+    if durum != ROBOTS_BLOCKED:
         parser = urllib.robotparser.RobotFileParser()
         parser.set_url(origin + "/robots.txt")
-        parser.parse(robots.body.decode("utf-8", errors="replace").splitlines() if robots.ok else [])
+        parser.parse(
+            robots.body.decode("utf-8", errors="replace").splitlines()
+            if durum == ROBOTS_POLICY else []
+        )
         runtime.robots_parser = parser
     before = runtime.budget.total
+    # Alt yuzey kaynaginin icerigi ebeveynin ana sayfasi degil kendi sayfasidir:
+    # 'LinkedIn Jobs' icin linkedin.com/jobs. Manifest yalnizca origin sakladigi
+    # icin bu kaynaklar adressiz gorunuyordu; entry_path o yolu tasir ve kok yerine
+    # o cekilir, boylece istek sayisi artmaz ve ebeveynin sayfasi tekrar inmez.
+    entry_path = str(source.get("entry_path") or "")
+    entry_url = origin + entry_path if entry_path else origin + "/"
+    entry_method = "entry_url" if entry_path else "root_html"
     root = (
-        runtime.fetch(source_id, "root_html", origin + "/", "html", robots_decision="required")
-        if robots.ok or robots_absent else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
+        runtime.fetch(source_id, entry_method, entry_url, "html", robots_decision="required")
+        if durum != ROBOTS_BLOCKED else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
     )
     root_artifacts = artifact_from(root)
     emit(method_record(
-        source, "root_html", "acquisition_surface", root.outcome, root.stop_reason,
+        source, entry_method, "acquisition_surface", root.outcome, root.stop_reason,
         runtime.budget.total - before, artifacts=root_artifacts,
+        details={"entry_url": entry_url} if entry_path else None,
     ))
     # Kok HTML'de bot korumasi cikmasi origin'in kapali oldugu anlamina gelmez:
     # sitemap ve feed ayri kaynaklardir ve cogu site onlari korumasiz sunar
@@ -781,18 +829,18 @@ def run_surface_task(
         runtime.circuit.reset()
     extracted: dict[str, Any] = {}
     if root.ok and root.transaction:
-        extracted = extract_html(root.body, origin + "/", root.transaction.transaction_id)
+        extracted = extract_html(root.body, entry_url, root.transaction.transaction_id)
     emit(method_record(
         source, "html_extractors", "extractor", "succeeded" if extracted else "not_applicable",
         "ok" if extracted else "no_html_artifact", 0,
         details={k: v for k, v in extracted.items() if k not in {"rss_candidates", "pagination_candidates"}},
     ))
     before = runtime.budget.total
-    seeds = robots_sitemap_seeds(robots.body, origin) if robots.ok else []
+    seeds = robots_sitemap_seeds(robots.body, origin) if durum == ROBOTS_POLICY else []
     sitemap_url = seeds[0] if seeds else origin + "/sitemap.xml"
     sitemap = (
         runtime.fetch(source_id, "sitemap_xml", sitemap_url, "xml", robots_decision="required")
-        if robots.ok or robots_absent else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
+        if durum != ROBOTS_BLOCKED else FetchOutcome(False, "blocked_by_policy", "robots_preflight_failed")
     )
     sitemap_candidates = []
     if sitemap.ok and sitemap.transaction:
@@ -826,7 +874,7 @@ def run_surface_task(
             runtime.budget.total - before, artifacts=artifact_from(rss),
             details={"seed_url": rss_candidates[0]["url"], "seed_source": "root_html_link"},
         ))
-    elif robots.ok or robots_absent:
+    elif durum != ROBOTS_BLOCKED:
         # Kok HTML gelmediginde bag okunamiyor ama feed adresi tahmin edilebilir:
         # Forbes, CNBC ve HackerNoon HTML kokunu kesiyor, feed'i acik veriyor.
         probe_url = ""

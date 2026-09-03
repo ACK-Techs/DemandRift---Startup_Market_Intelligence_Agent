@@ -4,10 +4,10 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 
 | Durum | Kaynak | Oran |
 |---|---:|---:|
-| ✅ Çekildi | 392 | %61.6 |
-| ⚠️ Kısmi | 71 | %11.2 |
-| ❌ Adres var, erişilemedi | 109 | %17.1 |
-| ❌ Adres yok | 64 | %10.1 |
+| ✅ Çekildi | 430 | %67.6 |
+| ⚠️ Kısmi | 84 | %13.2 |
+| ❌ Adres var, erişilemedi | 118 | %18.6 |
+| ❌ Adres yok | 4 | %0.6 |
 
 ---
 
@@ -18,8 +18,10 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Agoda | https://www.agoda.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Ahrefs | https://ahrefs.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Airbnb | https://airbnb.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Airtable Marketplace | https://airtable.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Alibaba | https://alibaba.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | AlternativeTo | https://alternativeto.net | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Amazon | https://www.amazon.com | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Anadolu Ajansı | https://www.aa.com.tr | root_html,rss_feed,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | AngelList | https://angellist.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | AnswerThePublic | https://answerthepublic.com | root_html,sitemap_xml | generated_candidate_validated | — |
@@ -40,13 +42,18 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Ask Ubuntu | https://askubuntu.com | stackexchange_questions | curated_official_host_fixture | — |
 | ✅ Çekildi | Associated Press | https://apnews.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Atlassian Marketplace | https://marketplace.atlassian.com | root_html,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | AWS Marketplace | https://aws.amazon.com | entry_url,rss_feed,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | AWS Pricing Calculator | https://calculator.aws | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Axios | https://axios.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Azure Pricing Calculator | https://azure.microsoft.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Bank for International Settlements | https://www.bis.org | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | BASE | https://base.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | BetaList | https://betalist.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | BigCommerce App Marketplace | https://www.bigcommerce.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | BigSpy | https://bigspy.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Bilişim Vadisi | https://bilisimvadisi.com.tr | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Bing | https://bing.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Bing Maps | https://www.bing.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Bing News | https://www.bing.com | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Bing Webmaster Tools | https://www.bing.com | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | bioRxiv | https://www.biorxiv.org | sitemap_xml | curated_official_host_fixture | — |
@@ -62,7 +69,9 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | BuiltWith | https://builtwith.com | root_html,sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Business Insider | https://www.businessinsider.com | sitemap_xml | wikipedia_index_unverified | — |
 | ✅ Çekildi | BuzzSumo | https://buzzsumo.com | root_html,sitemap_xml | generated_candidate_validated | — |
+| ✅ Çekildi | Canva Apps Marketplace | https://www.canva.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Capterra | https://www.capterra.com | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | Capterra Education Software | https://www.capterra.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | CB Insights | https://www.cbinsights.com | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | CDC | https://cdc.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Censys | https://censys.com | root_html,rss_feed,sitemap_xml | generated_candidate_validated | — |
@@ -109,6 +118,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | DrugBank | https://www.drugbank.com | sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Dryad | https://datadryad.org | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | dscout | https://dscout.com | root_html,sitemap_xml | generated_candidate_validated | — |
+| ✅ Çekildi | DuckDuckGo | https://duckduckgo.com | root_html,sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | DZone | https://dzone.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Dünya | https://dunya.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | ECDC | https://www.ecdc.europa.eu | root_html,sitemap_xml | wikipedia_index_validated | — |
@@ -119,6 +129,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Emlakjet | https://emlakjet.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Endeksa | https://www.endeksa.com | root_html | corpus_index_validated | — |
 | ✅ Çekildi | Envato Market | https://themeforest.net | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | Etsy Reviews | https://www.etsy.com | entry_url | curated_official_host_fixture | — |
 | ✅ Çekildi | EU-Startups | https://www.eu-startups.com | root_html,rss_feed,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | EUR-Lex | https://eur-lex.europa.eu | root_html | wikipedia_index_validated | — |
 | ✅ Çekildi | Europe PMC | https://europepmc.org | sitemap_xml | wikipedia_index_unverified | — |
@@ -146,6 +157,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | FlightAware | https://flightaware.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Flightradar24 | https://www.flightradar24.com | sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Forbes | https://forbes.com | sitemap_xml | wikidata_p856_unverified | — |
+| ✅ Çekildi | Founder Institute Türkiye | https://fi.co | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Foursquare | https://foursquare.com | root_html,rss_feed,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | FRED | https://fred.stlouisfed.org | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Fresha | https://www.fresha.com | sitemap_xml | curated_official_host_fixture | — |
@@ -162,10 +174,13 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Global Health Data Exchange | https://ghdx.healthdata.org | root_html,rss_feed | curated_official_host_fixture | — |
 | ✅ Çekildi | GOG | https://gog.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Google Ads Transparency Center | https://adstransparency.google.com | root_html | wikidata_p856_unverified | — |
+| ✅ Çekildi | Google Business Profile | https://business.google.com | sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | Google Cloud Pricing Calculator | https://cloud.google.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Google Dataset Search | https://datasetsearch.research.google.com | root_html | wikidata_p856_unverified | — |
 | ✅ Çekildi | Google Patents | https://patents.google.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Google Play Store | https://play.google.com | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Google Scholar | https://scholar.google.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
+| ✅ Çekildi | Google Transparency Report | https://transparencyreport.google.com | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Google Trends | https://trends.google.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Google Workspace Marketplace | https://workspace.google.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Great Question | https://greatquestion.co | root_html | curated_official_host_fixture | — |
@@ -180,16 +195,20 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Houzz | https://houzz.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | HTTP Archive | https://httparchive.org | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Huawei AppGallery | https://appgallery.huawei.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
+| ✅ Çekildi | HubSpot App Marketplace | https://ecosystem.hubspot.com | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Hugging Face | https://huggingface.co | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | IANA | https://www.iana.org | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | ICANN Lookup | https://lookup.icann.org | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | IMF Data | https://data.imf.org | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Immobiliare.it | https://www.immobiliare.it | sitemap_xml | wikidata_p856_unverified | — |
+| ✅ Çekildi | ImmobilienScout24 | https://www.immobilienscout24.de | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Indeed | https://ca.indeed.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | InfoQ | https://infoq.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Infracost | https://infracost.io | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | INSEE | https://insee.org | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Investing.com | https://www.investing.com | root_html | wikidata_p856_unverified | — |
 | ✅ Çekildi | itch.io | https://itch.io | root_html,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | İstanbul Büyükşehir Belediyesi Açık Veri Portalı | https://data.ibb.gov.tr | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | İTÜ Çekirdek | https://itucekirdek.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | İşkur | https://iskur.gov.tr | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | JetBrains Marketplace | https://plugins.jetbrains.com | root_html,rss_feed,sitemap_xml | parent_surface_validated | — |
@@ -240,9 +259,12 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Netcraft | https://netcraft.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Nextdoor | https://about.nextdoor.com | root_html,sitemap_xml | wikipedia_index_validated | — |
 | ✅ Çekildi | NICE | https://nice.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Nintendo eShop | https://www.nintendo.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | Notion Integrations | https://www.notion.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | npm | https://www.npmjs.com | npm_registry_search | curated_official_host_fixture | — |
 | ✅ Çekildi | NuGet Gallery | https://nuget.org | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | NYSE | https://nyse.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | OECD Education | https://data-explorer.oecd.org | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Open Banking UK | https://www.openbanking.org.uk | root_html,rss_feed,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Open VSX Registry | https://open-vsx.org | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | OpenAlex | https://openalex.org | root_html | curated_official_host_fixture | — |
@@ -285,6 +307,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Rome2Rio | https://rome2rio.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | RubyGems | https://rubygems.org | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | SaaSHub | https://saashub.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Safari Extensions | https://apps.apple.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Salesforce AppExchange | https://appexchange.salesforce.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Samsung Galaxy Store | https://galaxystore.samsung.com | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Sastrify | https://sastrify.com | root_html | generated_candidate_validated | — |
@@ -307,6 +330,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Skillshare | https://help.skillshare.com | root_html,sitemap_xml | wikipedia_index_validated | — |
 | ✅ Çekildi | Skyscanner | https://www.skyscanner.com | sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Slack | https://slack.com | root_html,sitemap_xml | generated_candidate_validated | — |
+| ✅ Çekildi | Slack Marketplace | https://slack.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Slant | — | root_html | rejected_wrong_entity_match | — |
 | ✅ Çekildi | Slashdot | https://slashdot.org | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | SmartRecruiters | https://www.smartrecruiters.com | root_html,sitemap_xml | curated_official_host_fixture | — |
@@ -315,12 +339,15 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Software Advice | https://www.softwareadvice.com | root_html | wikipedia_index_unverified | — |
 | ✅ Çekildi | SoftwareSuggest | https://softwaresuggest.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | SourceForge | https://sourceforge.net | root_html,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | SourceForge Reviews | https://sourceforge.net | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | SparkToro | https://sparktoro.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | SPK | https://spk.gov.tr | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Sprig | https://sprig.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | SpyFu | https://www.spyfu.com | sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | Squarespace Extensions | https://www.squarespace.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Stack Exchange | https://stackexchange.com | stackexchange_sites | curated_official_host_fixture | — |
 | ✅ Çekildi | Stack Overflow | https://stackoverflow.com | stackexchange_questions | curated_official_host_fixture | — |
+| ✅ Çekildi | Stanford HELM | https://crfm.stanford.edu | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Startup Stash | https://startupstash.com | rss_feed,sitemap_xml | corpus_index_unverified | — |
 | ✅ Çekildi | StartupMarket | https://startupmarket.co | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | startups.watch | https://startups.watch | root_html | generated_candidate_validated | — |
@@ -344,6 +371,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | There's An AI For That | https://theresanaiforthat.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Think with Google | https://www.thinkwithgoogle.com | rss_feed,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | TikTok | https://www.tiktok.com | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | TikTok Creative Center | https://ads.tiktok.com | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Together AI | https://www.together.ai | root_html,rss_feed,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | TomTom | https://tomtom.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Toolify | https://toolify.io | root_html,sitemap_xml | generated_candidate_validated | — |
@@ -357,11 +385,14 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Typeform | https://typeform.com | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | TÜBİTAK | https://tubitak.gov.tr | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | TÜİK | https://www.tuik.gov.tr | root_html | wikidata_p856_unverified | — |
+| ✅ Çekildi | TÜİK Konut İstatistikleri | https://veriportali.tuik.gov.tr | entry_url,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | U.S. Census Building Permits | https://www.census.gov | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | U.S. Department of Education | https://www.ed.gov | root_html,sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Uber | https://www.uber.com | sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | Ubersuggest | https://ubersuggest.net | root_html,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Udemy | https://www.udemy.com | sitemap_xml | wikidata_p856_unverified | — |
 | ✅ Çekildi | UK Financial Conduct Authority | https://www.fca.org.uk | root_html,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | UK Information Commissioner's Office | https://ico.org.uk | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | UK Legislation | https://www.legislation.gov.uk | root_html | wikipedia_index_validated | — |
 | ✅ Çekildi | Uneed | https://www.uneed.best | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | UNESCO Institute for Statistics | https://databrowser.uis.unesco.org | root_html | curated_official_host_fixture | — |
@@ -378,23 +409,29 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | Vertice | https://www.vertice.one | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | VG Insights | https://app.sensortower.com | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Visual Studio Marketplace | https://marketplace.visualstudio.com | root_html,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | vivo App Store | https://appstore.vivo.com.cn | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | Walmart | https://business.walmart.com | root_html | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Wappalyzer | https://wappalyzer.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Wayback Machine | https://web.archive.org | wayback_availability | curated_official_host_fixture | — |
 | ✅ Çekildi | We Work Remotely | https://weworkremotely.com | root_html,rss_feed,sitemap_xml | generated_candidate_validated | — |
 | ✅ Çekildi | Web of Science | https://clarivate.com | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
+| ✅ Çekildi | Webflow Apps | https://webflow.com | entry_url | curated_official_host_fixture | — |
 | ✅ Çekildi | Welcome to the Jungle | https://welcometothejungle.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Wellfound | https://wellfound.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | WHO | https://www.who.int | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | WHO Global Health Observatory | https://www.who.int | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | WhoisXML API | https://whoisxmlapi.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | WIPO PATENTSCOPE | https://patentscope.wipo.int | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Wired | https://wired.com | root_html | generated_candidate_validated | — |
+| ✅ Çekildi | Wix App Market | https://www.wix.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
+| ✅ Çekildi | WooCommerce Marketplace | https://woocommerce.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | WordPress Plugin Directory | https://wordpress.org | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Workable Jobs | https://jobs.workable.com | sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | World Bank | https://www.worldbank.org | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | World Bank Open Data | https://data.worldbank.org | root_html,sitemap_xml | wikidata_mediawiki_exact_search_p856 | — |
 | ✅ Çekildi | Wynter | https://wynter.com | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Xiaomi GetApps | https://global.app.mi.com | root_html | curated_official_host_fixture | — |
+| ✅ Çekildi | Y Combinator Companies | https://www.ycombinator.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Yahoo Finance | https://finance.yahoo.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Yahoo Search | https://yahoo.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Yemeksepeti | https://yemeksepeti.com | root_html | generated_candidate_validated | — |
@@ -402,6 +439,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ✅ Çekildi | YouTube | https://www.youtube.com | root_html | curated_official_host_fixture | — |
 | ✅ Çekildi | YÖK | https://www.yok.gov.tr | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Zapier | https://zapier.com | root_html,sitemap_xml | generated_candidate_validated | — |
+| ✅ Çekildi | Zapier App Directory | https://zapier.com | entry_url,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | Zenodo | https://zenodo.org | root_html,sitemap_xml | curated_official_host_fixture | — |
 | ✅ Çekildi | ZoomInfo | https://zoominfo.com | root_html | generated_candidate_validated | — |
 | ✅ Çekildi | Çiçeksepeti | https://ciceksepeti.com | root_html | generated_candidate_validated | — |
@@ -409,7 +447,6 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ⚠️ Kısmi | ACM Digital Library | https://dl.acm.org | robots_preflight | wikidata_p856_unverified | challenge |
 | ⚠️ Kısmi | Adbeat | https://www.adbeat.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | AliExpress | https://aliexpress.ru | robots_preflight | wikidata_p856_unverified | challenge |
-| ⚠️ Kısmi | Amazon | https://www.amazon.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Apple Maps | https://maps.apple.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Brave Search | https://search.brave.com | robots_preflight | wikidata_p856_unverified | rate_limited |
 | ⚠️ Kısmi | Craft.co | https://craft.co | robots_preflight | curated_official_host_fixture | origin_denied |
@@ -421,13 +458,20 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ⚠️ Kısmi | Expedia | https://www.expedia.com | robots_preflight | wikipedia_index_unverified | rate_limited |
 | ⚠️ Kısmi | F6S | https://www.f6s.com | robots_preflight | wikidata_p856_unverified | challenge |
 | ⚠️ Kısmi | Facebook | https://www.facebook.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
+| ⚠️ Kısmi | Facebook Marketplace | https://www.facebook.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
+| ⚠️ Kısmi | Facebook Pages | https://www.facebook.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Federal Register | https://www.federalregister.gov | robots_preflight | curated_official_host_fixture | origin_denied |
 | ⚠️ Kısmi | FreePatentsOnline | https://www.freepatentsonline.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | G2 | https://www.g2.com | robots_preflight | curated_official_host_fixture | challenge |
+| ⚠️ Kısmi | G2 Education Software | https://www.g2.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Glassdoor | https://www.glassdoor.com | robots_preflight | wikidata_p856_unverified | challenge |
+| ⚠️ Kısmi | Google Cloud Marketplace | https://console.cloud.google.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Google Finance | https://www.google.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
+| ⚠️ Kısmi | Google Jobs | https://www.google.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
+| ⚠️ Kısmi | Google Keyword Planner | https://ads.google.com | robots_preflight | curated_official_host_fixture | origin_denied |
 | ⚠️ Kısmi | Google Maps | https://www.google.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | Google News | https://news.google.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
+| ⚠️ Kısmi | Google Reviews | https://www.google.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Google Search | https://google.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | Google Travel | https://www.google.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | HackerNoon | https://hackernoon.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
@@ -440,14 +484,19 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ⚠️ Kısmi | Instagram | https://www.instagram.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | Kickstarter | https://www.kickstarter.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Launching Next | https://www.launchingnext.com | robots_preflight | curated_official_host_fixture | challenge |
+| ⚠️ Kısmi | Lens.org Patents | https://www.lens.org | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | LinkedIn | https://www.linkedin.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
+| ⚠️ Kısmi | LinkedIn Ad Library | https://www.linkedin.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
+| ⚠️ Kısmi | LinkedIn Jobs | https://www.linkedin.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Lobsters | https://lobste.rs | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Make | https://www.make.com | robots_preflight | curated_official_host_fixture | challenge |
+| ⚠️ Kısmi | Make Apps Directory | https://www.make.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Medium | https://medium.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Monster | https://www.monster.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | OpenTable | https://www.opentable.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | PickFu | https://www.pickfu.com | robots_preflight | curated_official_host_fixture | mime_or_sniff_mismatch |
 | ⚠️ Kısmi | Pinterest | https://www.pinterest.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
+| ⚠️ Kısmi | Pinterest Ads Repository | https://ads.pinterest.com | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | Quora | https://www.quora.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | Realtor.com | https://www.realtor.com | robots_preflight | wikidata_p856_unverified | rate_limited |
 | ⚠️ Kısmi | Reddit | https://www.reddit.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
@@ -464,6 +513,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ⚠️ Kısmi | TheFork | https://www.thefork.fr | robots_preflight | wikidata_p856_unverified | challenge |
 | ⚠️ Kısmi | Tracxn | https://tracxn.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Treatwell | https://www.treatwell.co.uk | robots_preflight | wikidata_p856_unverified | challenge |
+| ⚠️ Kısmi | Trendyol Yemek | https://tgoyemek.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | Trustpilot | https://www.trustpilot.com | robots_preflight | curated_official_host_fixture | robots_disallowed |
 | ⚠️ Kısmi | TÜSİAD | https://www.tusiad.org | robots_preflight | wikipedia_index_unverified | challenge |
 | ⚠️ Kısmi | Uber Eats | https://www.ubereats.com | robots_preflight | wikidata_p856_unverified | challenge |
@@ -473,6 +523,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ⚠️ Kısmi | Webrazzi | https://www.webrazzi.com | robots_preflight | wikidata_p856_unverified | challenge |
 | ⚠️ Kısmi | Wiley Online Library | https://onlinelibrary.wiley.com | robots_preflight | wikidata_p856_unverified | challenge |
 | ⚠️ Kısmi | X | https://x.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
+| ⚠️ Kısmi | X Ads Transparency Center | https://ads.x.com | robots_preflight | curated_official_host_fixture | origin_denied |
 | ⚠️ Kısmi | Yelp | https://www.yelp.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
 | ⚠️ Kısmi | Yıldız Teknopark | https://www.yildizteknopark.com.tr | robots_preflight | curated_official_host_fixture | challenge |
 | ⚠️ Kısmi | ZipRecruiter | https://www.ziprecruiter.com | robots_preflight | wikidata_p856_unverified | robots_disallowed |
@@ -491,7 +542,6 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Crowdcube | https://www.crowdcube.com | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | DailyMed | https://dailymed.nlm.nih.gov | — | wikipedia_index_unverified | robots_invalid_or_empty |
 | ❌ Adres var, erişilemedi | Discord | https://discord.com | — | wikidata_p856_unverified | network_error:TimeoutError |
-| ❌ Adres var, erişilemedi | DuckDuckGo | https://duckduckgo.com | — | wikidata_p856_unverified | network_error:ConnectionResetError |
 | ❌ Adres var, erişilemedi | eBay | https://www.ebay.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Endeavor Türkiye | https://www.endeavor.org.tr | — | curated_official_host_fixture | dns_unavailable |
 | ❌ Adres var, erişilemedi | Epic Games Store | https://store.epicgames.com | — | wikidata_p856_unverified | challenge |
@@ -502,8 +552,11 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Exa | https://the.exa.website | — | wikidata_p856_unverified | network_error:TimeoutError |
 | ❌ Adres var, erişilemedi | FlexJobs | https://www.flexjobs.com | — | curated_official_host_fixture | network_error:TimeoutError |
 | ❌ Adres var, erişilemedi | FutureLearn | https://www.futurelearn.com | — | wikidata_p856_unverified | origin_denied |
+| ❌ Adres var, erişilemedi | G2 Track | https://www.g2.com | — | curated_official_host_fixture | origin_circuit_open |
+| ❌ Adres var, erişilemedi | Gartner Peer Insights | https://www.gartner.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Getir | https://www.getir.com | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | Google Forms | https://forms.google.com | — | wikidata_p856_unverified | origin_denied |
+| ❌ Adres var, erişilemedi | Google Search Console | https://search.google.com | — | curated_official_host_fixture | source_unavailable |
 | ❌ Adres var, erişilemedi | Greenhouse Job Boards | https://www.greenhouse.io | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | GrowthHackers | https://growthhackers.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Grubhub | https://www.grubhub.com | — | wikidata_p856_unverified | robots_invalid_or_empty |
@@ -514,8 +567,10 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Jotform | https://www.jotform.com | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | Justia Patents | https://patents.justia.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | KAP | https://www.kap.org.tr | — | curated_official_host_fixture | source_unavailable |
+| ❌ Adres var, erişilemedi | Keiretsu Forum Türkiye | https://www.keiretsuforum.com | — | curated_official_host_fixture | source_unavailable |
 | ❌ Adres var, erişilemedi | Keyword Tool | https://keywordtool.io | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | KVKK | https://www.kvkk.gov.tr | — | curated_official_host_fixture | mime_or_sniff_mismatch |
+| ❌ Adres var, erişilemedi | LangChain Integrations | https://python.langchain.com | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | LMSYS Chatbot Arena | https://lmarena.ai | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | MapQuest | https://www.mapquest.com | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | Mevzuat Bilgi Sistemi | https://www.mevzuat.gov.tr | — | curated_official_host_fixture | network_error:SSLCertVerificationError |
@@ -528,6 +583,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Newzoo | https://newzoo.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | ODTÜ Teknokent | https://odtuteknokent.com.tr | — | curated_official_host_fixture | https_downgrade_redirect |
 | ❌ Adres var, erişilemedi | OECD Data | https://data.oecd.org | — | curated_official_host_fixture | source_unavailable |
+| ❌ Adres var, erişilemedi | OECD Health Statistics | https://data-explorer.oecd.org | — | curated_official_host_fixture | origin_circuit_open |
 | ❌ Adres var, erişilemedi | OpenFDA | https://open.fda.gov | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Orphanet | https://www.orpha.net | — | wikipedia_index_unverified | robots_invalid_or_empty |
 | ❌ Adres var, erişilemedi | Otta | https://otta.com | — | curated_official_host_fixture | origin_denied |
@@ -536,8 +592,11 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | RDAP.org | https://rdap.org | — | curated_official_host_fixture | source_unavailable |
 | ❌ Adres var, erişilemedi | Regulations.gov | https://www.regulations.gov | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Rekabet Kurumu | https://www.rekabet.gov.tr | — | wikidata_p856_unverified | robots_invalid_or_empty |
+| ❌ Adres var, erişilemedi | Replit Community | https://ask.replit.com | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | SaaSworthy | https://www.saasworthy.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Sahibinden | https://www.sahibinden.com | — | wikidata_p856_unverified | challenge |
+| ❌ Adres var, erişilemedi | Sahibinden Emlak | https://www.sahibinden.com | — | curated_official_host_fixture | challenge |
+| ❌ Adres var, erişilemedi | Sahibinden Hizmetler | https://www.sahibinden.com | — | curated_official_host_fixture | challenge |
 | ❌ Adres var, erişilemedi | Sağlık Bakanlığı | https://www.saglik.gov.tr | — | curated_official_host_fixture | robots_invalid_or_empty |
 | ❌ Adres var, erişilemedi | Scale SERP | https://www.scaleserp.com | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | ScienceDirect | https://sciencedirect.com | — | wikidata_p856_unverified | challenge |
@@ -546,6 +605,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Seed-DB | https://www.seed-db.com | — | curated_official_host_fixture | origin_denied |
 | ❌ Adres var, erişilemedi | SimplyHired | https://www.simplyhired.com | — | wikipedia_index_unverified | challenge |
 | ❌ Adres var, erişilemedi | Sitejabber | https://www.sitejabber.com | — | wikipedia_index_unverified | origin_denied |
+| ❌ Adres var, erişilemedi | Snapchat Ads Gallery | https://ads.snapchat.com | — | curated_official_host_fixture | robots_invalid_or_empty |
 | ❌ Adres var, erişilemedi | Software Engineering Stack Exchange | https://softwareengineering.stackexchange.com | — | curated_official_host_fixture | source_unavailable |
 | ❌ Adres var, erişilemedi | SSRN | https://ssrn.com | — | wikidata_p856_unverified | challenge |
 | ❌ Adres var, erişilemedi | StackShare | https://stackshare.io | — | curated_official_host_fixture | rate_limited |
@@ -585,67 +645,7 @@ Toplam **636** kaynak. Sayılar artefaktlardan üretilmiştir; bu dosya `build_c
 | ❌ Adres var, erişilemedi | Zoom App Marketplace | https://marketplace.zoom.us | — | curated_official_host_fixture | robots_invalid_or_empty |
 | ❌ Adres var, erişilemedi | Zoopla | https://www.zoopla.co.uk | — | wikipedia_index_unverified | challenge |
 | ❌ Adres var, erişilemedi | ÖSYM | https://www.osym.gov.tr | — | wikipedia_index_unverified | network_error:TimeoutError |
-| ❌ Adres yok | Airtable Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
 | ❌ Adres yok | Amazon Reviews | — | — | no_high_confidence_mapping | unresolved_official_origin |
 | ❌ Adres yok | Ankara Büyükşehir Belediyesi Açık Veri Portalı | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | AWS Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | AWS Pricing Calculator | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Azure Pricing Calculator | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | BigCommerce App Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Bing Maps | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Canva Apps Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Capterra Education Software | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Etsy Reviews | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Facebook Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Facebook Pages | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Founder Institute Türkiye | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | G2 Education Software | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | G2 Track | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Gartner Peer Insights | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Business Profile | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Cloud Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Cloud Pricing Calculator | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Jobs | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Keyword Planner | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Reviews | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Search Console | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Google Transparency Report | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | HubSpot App Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | IMF Data | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | ImmobilienScout24 | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | İstanbul Büyükşehir Belediyesi Açık Veri Portalı | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Keiretsu Forum Türkiye | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | LangChain Integrations | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Lens.org Patents | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | LinkedIn Ad Library | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | LinkedIn Jobs | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Make Apps Directory | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Nintendo eShop | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Notion Integrations | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | OECD Education | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | OECD Health Statistics | — | — | no_high_confidence_mapping | unresolved_official_origin |
 | ❌ Adres yok | OPPO App Market | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Pinterest Ads Repository | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Replit Community | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Safari Extensions | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Sahibinden Emlak | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Sahibinden Hizmetler | — | — | no_high_confidence_mapping | unresolved_official_origin |
 | ❌ Adres yok | Similarweb Digital Marketing Intelligence | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Slack Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Snapchat Ads Gallery | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | SourceForge Reviews | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Squarespace Extensions | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Stanford HELM | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | TikTok Creative Center | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Trendyol Yemek | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | TÜİK Konut İstatistikleri | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | U.S. Census Building Permits | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | UK Information Commissioner's Office | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | vivo App Store | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Webflow Apps | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | WHO Global Health Observatory | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Wix App Market | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | WooCommerce Marketplace | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | X Ads Transparency Center | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Y Combinator Companies | — | — | no_high_confidence_mapping | unresolved_official_origin |
-| ❌ Adres yok | Zapier App Directory | — | — | no_high_confidence_mapping | unresolved_official_origin |

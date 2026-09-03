@@ -7,7 +7,7 @@
     "official_hosts_only": true,
     "unresolved_network_access": false
   },
-  "resolved_count": 571,
+  "resolved_count": 631,
   "schema_version": "1.0.0",
   "source_list": "SITE-LISTESI.md",
   "sources": [
@@ -419,13 +419,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Replit Community",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ask.replit.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0037",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -701,13 +701,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "G2 Track",
+      "entry_path": "/track",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.g2.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0064",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -781,13 +782,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Y Combinator Companies",
+      "entry_path": "/companies",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.ycombinator.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0072",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1107,13 +1109,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "vivo App Store",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://appstore.vivo.com.cn",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0104",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1187,13 +1189,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Safari Extensions",
+      "entry_path": "/us/story/id1377753262",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://apps.apple.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0112",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1217,13 +1220,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "WooCommerce Marketplace",
+      "entry_path": "/products/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://woocommerce.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0115",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1237,43 +1241,47 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Wix App Market",
+      "entry_path": "/app-market",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.wix.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0117",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Squarespace Extensions",
+      "entry_path": "/extensions/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.squarespace.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0118",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "BigCommerce App Marketplace",
+      "entry_path": "/apps/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.bigcommerce.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0119",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Webflow Apps",
+      "entry_path": "/apps",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://webflow.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0120",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1297,23 +1305,24 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "HubSpot App Marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ecosystem.hubspot.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0123",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Slack Marketplace",
+      "entry_path": "/marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://slack.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0124",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1357,53 +1366,58 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Notion Integrations",
+      "entry_path": "/integrations",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.notion.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0129",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Zapier App Directory",
+      "entry_path": "/apps",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://zapier.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0130",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Make Apps Directory",
+      "entry_path": "/en/integrations",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.make.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0131",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Airtable Marketplace",
+      "entry_path": "/marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://airtable.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0132",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Canva Apps Marketplace",
+      "entry_path": "/apps/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.canva.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0133",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1457,13 +1471,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Gartner Peer Insights",
+      "entry_path": "/reviews",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.gartner.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0139",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1477,13 +1492,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "SourceForge Reviews",
+      "entry_path": "/software/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://sourceforge.net",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0141",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1617,13 +1633,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Reviews",
+      "entry_path": "/maps",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0155",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1787,13 +1804,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Facebook Marketplace",
+      "entry_path": "/marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.facebook.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0172",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -1877,13 +1895,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Etsy Reviews",
+      "entry_path": "/reviews",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.etsy.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0181",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -2193,13 +2212,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Transparency Report",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://transparencyreport.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0212",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -2213,23 +2232,23 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Keyword Planner",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ads.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0214",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Google Search Console",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://search.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0215",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -2453,53 +2472,54 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "TikTok Creative Center",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ads.tiktok.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0238",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "LinkedIn Ad Library",
+      "entry_path": "/ad-library/home",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.linkedin.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0239",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Pinterest Ads Repository",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ads.pinterest.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0240",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Snapchat Ads Gallery",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ads.snapchat.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0241",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "X Ads Transparency Center",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ads.x.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0242",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -2853,13 +2873,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "LinkedIn Jobs",
+      "entry_path": "/jobs",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.linkedin.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0278",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -2913,13 +2934,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Jobs",
+      "entry_path": "/search?q=jobs&ibp=htl;jobs",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0284",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3093,13 +3115,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Bing Maps",
+      "entry_path": "/maps",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.bing.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0302",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3173,23 +3196,24 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Business Profile",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://business.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0310",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Facebook Pages",
+      "entry_path": "/pages",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.facebook.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0311",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3273,13 +3297,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Sahibinden Hizmetler",
+      "entry_path": "/hizmetler",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.sahibinden.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0320",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3645,13 +3670,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "IMF Data",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://data.imf.org",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0356",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3725,23 +3750,24 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "WHO Global Health Observatory",
+      "entry_path": "/data/gho",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.who.int",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0364",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "OECD Health Statistics",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://data-explorer.oecd.org",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0365",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -3825,13 +3851,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "İstanbul Büyükşehir Belediyesi Açık Veri Portalı",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://data.ibb.gov.tr",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0374",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4125,13 +4151,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "UK Information Commissioner's Office",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://ico.org.uk",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0404",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4235,13 +4261,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Lens.org Patents",
+      "entry_path": "/lens/search/patent/structured",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.lens.org",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0415",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4621,13 +4648,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "OECD Education",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://data-explorer.oecd.org",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0453",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4741,23 +4768,25 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "G2 Education Software",
+      "entry_path": "/categories/education",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.g2.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0465",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Capterra Education Software",
+      "entry_path": "/education-software/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.capterra.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0466",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4851,23 +4880,24 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "ImmobilienScout24",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.immobilienscout24.de",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0476",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Sahibinden Emlak",
+      "entry_path": "/emlak",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.sahibinden.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0477",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4911,13 +4941,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "TÜİK Konut İstatistikleri",
+      "entry_path": "/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://veriportali.tuik.gov.tr",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0482",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -4931,13 +4962,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "U.S. Census Building Permits",
+      "entry_path": "/construction/bps/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.census.gov",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0484",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -5221,13 +5253,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Trendyol Yemek",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://tgoyemek.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0513",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -5331,13 +5363,14 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Nintendo eShop",
+      "entry_path": "/store/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.nintendo.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0524",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -5491,23 +5524,24 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Stanford HELM",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://crfm.stanford.edu",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0540",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "AWS Marketplace",
+      "entry_path": "/marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://aws.amazon.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0541",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -5521,23 +5555,23 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Cloud Marketplace",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://console.cloud.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0543",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "LangChain Integrations",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://python.langchain.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0544",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -6241,33 +6275,35 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "AWS Pricing Calculator",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://calculator.aws",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0615",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Azure Pricing Calculator",
+      "entry_path": "/en-us/pricing/calculator/",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://azure.microsoft.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0616",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Google Cloud Pricing Calculator",
+      "entry_path": "/products/calculator",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://cloud.google.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0617",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -6411,13 +6447,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "high",
       "display_name": "Keiretsu Forum Türkiye",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://www.keiretsuforum.com",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0632",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -6441,13 +6477,13 @@
     },
     {
       "api_endpoints": [],
-      "confidence": "unresolved",
+      "confidence": "medium",
       "display_name": "Founder Institute Türkiye",
       "global_catalog_disposition": "retained",
-      "official_origin": null,
-      "resolution_status": "unresolved_official_origin",
+      "official_origin": "https://fi.co",
+      "resolution_status": "resolved_official_origin",
       "source_id": "source-0635",
-      "verification_basis": "no_high_confidence_mapping"
+      "verification_basis": "curated_official_host_fixture"
     },
     {
       "api_endpoints": [],
@@ -6460,5 +6496,5 @@
       "verification_basis": "generated_candidate_validated"
     }
   ],
-  "unresolved_count": 65
+  "unresolved_count": 5
 }

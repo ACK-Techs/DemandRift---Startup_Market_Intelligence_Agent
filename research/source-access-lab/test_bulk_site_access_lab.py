@@ -2,6 +2,7 @@ import copy
 import json
 import socket
 import tempfile
+from types import SimpleNamespace
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -428,6 +429,65 @@ class SecurityAndParsingTests(unittest.TestCase):
         self.assertFalse(sitemap["details"]["alternate_surface_retry"])
         self.assertEqual("origin_circuit_open", sitemap["stop_reason"])
         self.assertEqual(2, len(runtime.transport.calls))
+
+    def test_a_page_served_instead_of_a_policy_counts_as_no_policy(self):
+        """Sunucu her yola HTML donduruyorsa o sitenin robots.txt'i yok demektir."""
+        govde = b"<!DOCTYPE html><html><head><title>Zoom</title></head><body>app</body></html>"
+        outcome = lab.FetchOutcome(True, "succeeded", None, govde, SimpleNamespace(status=200))
+        self.assertEqual(lab.ROBOTS_ABSENT, lab.robots_state(outcome))
+
+    def test_a_cross_origin_redirect_records_where_the_site_moved(self):
+        """Istek atilmaz ama hedef kaybolmamali: site tasinmis olabilir."""
+        runtime = self.surface_runtime([
+            (301, {"content-type": "text/plain", "location": "https://elsewhere.example.com/robots.txt"}, b""),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        robots = next(item for item in methods if item["method_id"] == "robots_preflight")
+        self.assertEqual("origin_denied", robots["stop_reason"])
+        self.assertEqual(
+            "https://elsewhere.example.com/robots.txt", robots["details"]["redirect_target"],
+        )
+
+    def test_a_sub_surface_source_fetches_its_own_path_not_the_parent_root(self):
+        """'LinkedIn Jobs' icerigi linkedin.com degil linkedin.com/jobs'tur."""
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, b"User-agent: *\nAllow: /\n"),
+            (200, {"content-type": "text/html"}, b"<html><title>Jobs</title></html>"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+        ])
+        kaynak = source("s1", "One Jobs", "https://good.example.com")
+        kaynak["entry_path"] = "/jobs"
+        methods = lab.run_surface_task(runtime, kaynak)
+        giris = next(item for item in methods if item["method_id"] == "entry_url")
+        self.assertEqual("succeeded", giris["site_outcome"])
+        self.assertEqual("https://good.example.com/jobs", giris["details"]["entry_url"])
+        self.assertEqual([], [m for m in methods if m["method_id"] == "root_html"])
+        self.assertIn("https://good.example.com/jobs", [c[0] for c in runtime.transport.calls])
+
+    def test_a_source_without_an_entry_path_still_fetches_the_root(self):
+        runtime = self.surface_runtime([
+            (200, {"content-type": "text/plain"}, b"User-agent: *\nAllow: /\n"),
+            (200, {"content-type": "text/html"}, b"<html><title>One</title></html>"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+            (404, {"content-type": "text/html"}, b"x"), (404, {"content-type": "text/html"}, b"x"),
+        ])
+        methods = lab.run_surface_task(runtime, source("s1", "One", "https://good.example.com"))
+        self.assertTrue([m for m in methods if m["method_id"] == "root_html"])
+        self.assertEqual([], [m for m in methods if m["method_id"] == "entry_url"])
+
+    def test_a_challenge_page_is_blocked_not_absent(self):
+        govde = b"<html>captcha verify you are human</html>"
+        outcome = lab.FetchOutcome(True, "succeeded", None, govde, None)
+        self.assertEqual(lab.ROBOTS_BLOCKED, lab.robots_state(outcome))
+
+    def test_a_real_policy_is_reported_as_policy(self):
+        outcome = lab.FetchOutcome(
+            True, "succeeded", None, b"User-agent: *\nDisallow: /admin\n", None,
+        )
+        self.assertEqual(lab.ROBOTS_POLICY, lab.robots_state(outcome))
 
     def test_a_missing_robots_policy_allows_crawling(self):
         """RFC 9309: robots.txt 404 ise kisitlama yoktur; site atlanmaz."""

@@ -33,6 +33,9 @@ from bulk_site_access_lab import (
     artifact_from,
     extract_html,
     method_record,
+    ROBOTS_BLOCKED,
+    ROBOTS_POLICY,
+    robots_state,
     valid_robots_body,
 )
 
@@ -389,18 +392,18 @@ def fetch_and_validate_target(label: str, website_url: str) -> dict[str, Any]:
     # Cekim tarafiyla ayni kural (RFC 9309): robots.txt 404/410 ile yoksa kisitlama
     # da yoktur. Burada eski kural kaldigi surece robots.txt'i olmayan dogru bir
     # aday domain 'dogrulanamadi' diye reddediliyordu.
-    robots_absent = (
-        not robots.ok and robots.transaction is not None
-        and robots.transaction.status in {404, 410}
-    )
-    if not robots_absent and (not robots.ok or not valid_robots_body(robots.body)):
+    durum = robots_state(robots)
+    if durum == ROBOTS_BLOCKED:
         return {
             "accepted": False, "stop_reason": robots.stop_reason if not robots.ok else "robots_invalid_or_empty",
             "transactions": [vars(tx) for tx in runtime.transactions],
         }
     parser = urllib.robotparser.RobotFileParser()
     parser.set_url(origin + "/robots.txt")
-    parser.parse([] if robots_absent else robots.body.decode("utf-8", errors="replace").splitlines())
+    parser.parse(
+        robots.body.decode("utf-8", errors="replace").splitlines()
+        if durum == ROBOTS_POLICY else []
+    )
     runtime.robots_parser = parser
     root = runtime.fetch("domain-validation", "target_root_validation", website_url, "html", robots_decision="required")
     title = ""
@@ -1593,7 +1596,8 @@ def _run_adaptive_job(
         source["source_id"], "robots_preflight", origin + "/robots.txt", "robots",
         robots_decision="not_required",
     )
-    if robots.ok and not valid_robots_body(robots.body):
+    # Politikasi olmayan site yasakli site degildir; yalnizca koruma duvari durdurur.
+    if robots_state(robots) == ROBOTS_BLOCKED and robots.ok:
         robots = FetchOutcome(False, "invalid_output", "robots_invalid_or_empty", robots.body, robots.transaction)
     emit(method_record(
         source, "robots_preflight", "policy_preflight", robots.outcome, robots.stop_reason,
