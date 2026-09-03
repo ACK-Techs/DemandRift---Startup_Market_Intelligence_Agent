@@ -17,7 +17,7 @@ Bu rapordaki her sayı aşağıdaki tek koşunun artefaktından türetilmiştir;
 | İstek bütçesi | 214 / 1500 (site başına en fazla 6) |
 | Sonuç dosyası | `results/bulk-site-access-live-20260810T203700Z.json` |
 | Domain durumu | `source_manifest.json` |
-| Çapraz kontrol | `SITE-ACCESS-SUMMARY.md`, `results/adaptive-domain-pass-*.json` |
+| Çapraz kontrol | `site-access-summary.md`, `../../results/adaptive-domain-pass-*.json` |
 
 > `AGENTS.md`: *"Conversation memory is not completion evidence; run/result artifacts are."* Rapor bu kurala uyacak şekilde koşuya sabitlenmiştir; aynı artefaktlardan yeniden üretildiğinde aynı sayıları vermelidir.
 
@@ -57,7 +57,7 @@ Bu ayrımı yapmak önemli, çünkü bir kaynağın domaininin bilinmesi onun ve
 | 3 | Gerçek veri çekimi | `bulk-site-access-live-*.json` → `fetched_artifact_count` | Domaini bilinen 90 kaynaktan kaçından *gerçekten* içerik indirilebilmiş? Sadece robots.txt mi, yoksa asıl içerik mi? |
 | 4 | Güncellik kontrolü | `adaptive-domain-pass-*.json` → `resolution` | Eksik 546 kaynağı çözmek için sonradan deneme yapılmış mı? (İki koşuda da 0 yeni kaynak — sebebi bölüm 7) |
 | 5 | **Fetch tekrarı kontrolü** | `adaptive-domain-pass-*.json` → `access_run` | Adaptive koşular fetch'i de yeniden çalıştırmış; sonuçlar değişmiş mi? (Bölüm 6.2) |
-| 6 | **Bağımsız üretimle karşılaştırma** | `SITE-ACCESS-SUMMARY.md` → "Yöntem oranları" | Aynı koşudan deterministik üretilmiş ikinci doküman aynı sayıları veriyor mu? (Bölüm 6.1) |
+| 6 | **Bağımsız üretimle karşılaştırma** | `site-access-summary.md` → "Yöntem oranları" | Aynı koşudan deterministik üretilmiş ikinci doküman aynı sayıları veriyor mu? (Bölüm 6.1) |
 | 7 | **Artefact mutabakatı** | `results/raw/` + `immutable_raw_ref` | Rapordaki artefact sayısı diskteki dosyalarla birebir eşleşiyor mu? (Bölüm 6.3) |
 | 8 | Depo kontrolü | `git fetch` + `git branch -r --merged` | GitHub'da push edilmemiş, gizli bir ilerleme var mı? (Yok — `main` origin ile aynı, `batuhan/frontend-ui` zaten merge edilmiş) |
 
@@ -149,7 +149,7 @@ Eksik kaynakların büyük çoğunluğu (546 / 636 ≈ %86) daha ilk aşamada, y
 
 Rapordaki sınıflandırma tek bir dosyadan türetildiği için üç ayrı yoldan çapraz kontrol edilmiştir.
 
-### 6.1 `SITE-ACCESS-SUMMARY.md` ile karşılaştırma
+### 6.1 `site-access-summary.md` ile karşılaştırma
 
 Bu doküman aynı koşudan (`bulk-live-1786393178`) deterministik olarak üretilmiş, bağımsız bir render'dır. "Yöntem oranları" tablosu şunları veriyor:
 
@@ -1069,4 +1069,4 @@ Her satırda kaynağın durumu ve koşunun ürettiği teknik sebep yer alır.
 | 4 | `challenge` kaynakları için resmî API/alternatif yol | 22 | Gerçek bot koruması, ayrı strateji gerekir |
 | 5 | `robots_disallowed` kaynaklarını kapsam dışına almak | 5 | Politika gereği çekilmemeli, "eksik" sayılmamalı |
 
-**Görev maddesi 3 (anahtar kelime ile arama)** bu raporun kapsamı dışındadır; `ACQUISITION-METHODS.md` ve `results/duckduckgo-*.json` pilotları o maddenin başlangıç noktasıdır.
+**Görev maddesi 3 (anahtar kelime ile arama)** bu raporun kapsamı dışındadır; `../pilots/duckduckgo-acquisition.md` ve `../../results/duckduckgo-*.json` pilotları o maddenin başlangıç noktasıdır.

@@ -4,12 +4,10 @@ DemandRift'in araştırma motoru 636 web kaynağından veri toplamayı planlıyo
 klasör üç soruyu cevaplıyor: **hangi kaynaklar tamamlandı**, **eksik olanların
 verisi nasıl çekildi**, ve **bir anahtar kelime bu kaynaklara nasıl sorulur**.
 
-Bütün sayılar artefaktlardan üretilir, elle sayım yoktur; her çıktı dosyası
-kendi script'iyle yeniden üretilebilir.
-
-> Çalışmanın özeti, sayıların gerekçeleri ve izlenen yol için:
-> **[CALISMA-OZETI.md](CALISMA-OZETI.md)**. Bu dosya klasörün nasıl kullanılacağını
-> anlatır.
+Bütün sayılar artefaktlardan üretilir, elle sayım yoktur. `çekildi` etiketi,
+en az bir içerik yüzeyinin başarıyla alındığını gösteren bir **erişim
+snapshot**'ıdır; tek başına araştırma sorusuna uygun, güncel veya alıntılanabilir
+karar kanıtı anlamına gelmez.
 
 ## Güncel durum
 
@@ -27,6 +25,21 @@ Defter bu üç durumun yanında bir ayrım daha tutar: veri alınamayanların bi
 kısmında sunucuya ulaşılıp yalnızca `robots.txt` indirilebilmiş (`kismi`), bir
 kısmında hiçbir dosya alınamamış (`erisim_yok`). Kullanılabilir veri ikisinde de
 yok; ayrım engelin nerede olduğunu gösterir.
+
+## Dizin haritası
+
+| Konum | Amaç |
+|---|---|
+| `source_manifest.json`, `SITE-LISTESI.md` | Aday kaynak kataloğu ve resmî origin çözümlemesi |
+| `KAYNAK-DEFTERI.*`, `ARTEFAKT-DIZINI.csv`, `ARAMA-YUZEYLERI.csv` | Kanonik erişim, artefact provenance ve arama-yüzeyi indeksleri |
+| `results/` | Koşu sonuçları ve içerik-adresli ham artefact'lar; [açıklama](results/README.md) |
+| `veriler-ornek/` | İncelenebilir, hash'li örnek içerik alt kümesi |
+| `docs/reports/` | Tarihli erişim raporları ve yeniden üretilebilir rapor çıktıları |
+| `docs/pilots/` | Dar kapsamlı DuckDuckGo ve Hacker News pilot sözleşmeleri |
+| `*.py`, `test_*.py` | Acquisition araçları ve offline testler |
+
+Tarihli raporlar yalnız o koşunun gözlemidir. Güncel durum için önce kanonik
+indeksleri ve ilgili koşu artefact'ını kullanın.
 
 ## Görev 1 — hangi kaynaklar tamamlandı
 
@@ -87,10 +100,11 @@ durumunu ve her dosyanın hangi URL'den ne zaman alındığını taşır.
 
 ### İçeriği görmek isteyenler için
 
-Ham içeriğin tamamı (225 MB) ve koşu çıktıları `.gitignore` ile depoya alınmaz:
-yeniden üretilebilirler ve neyin çekildiği `ARTEFAKT-DIZINI.csv` üzerinden
-görülür. Ancak verinin neye benzediğini görmek için **`veriler-ornek/`** klasörü
-depoda tutulur: 252 kaynağın gerçek içeriği, 5 MB.
+Koşu JSON'ları ve bu checkout'a dahil edilmiş ham artefact'lar `results/` altında
+tutulur. Bir yayındaki tam corpus'un mevcut olduğu varsayılmaz: kullanılabilir
+artefact, hash ve koşu bağını daima `ARTEFAKT-DIZINI.csv` ile doğrulayın. Verinin
+okunabilir örneklerini görmek için **`veriler-ornek/`** klasörü tutulur: 252
+kaynaktan seçilmiş gerçek içerik alt kümesi.
 
 Seçim rastgele değil kurallıdır — yalnızca içerik yüzeyleri (robots.txt hariç),
 başarılı istekler, dosya başına 90 KB ve toplam 5 MB sınırıyla:
@@ -101,7 +115,9 @@ python3 export_by_source.py --only-fetched --out veriler-ornek \
   --max-file-bytes 90000 --max-total-bytes 5000000
 ```
 
-Tam arşiv için aynı komut sınırsız çalıştırılır (`veriler/`, 534 kaynak, 225 MB).
+Tam arşiv dışarıdan geri yüklenecek veya yeniden üretilecekse aynı komut sınır
+olmadan çalıştırılır; sonuç her zaman yeni bir koşu, tarih ve hash manifestiyle
+kaydedilmelidir.
 
 ## Görev 3 — anahtar kelime ile arama
 

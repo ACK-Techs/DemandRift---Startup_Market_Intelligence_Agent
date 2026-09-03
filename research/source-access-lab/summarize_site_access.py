@@ -14,7 +14,7 @@ from typing import Any, Iterable
 HERE = Path(__file__).resolve().parent
 DEFAULT_MANIFEST = HERE / "source_manifest.json"
 DEFAULT_REPORT = HERE / "results" / "bulk-site-access-live-20260810T203700Z.json"
-DEFAULT_OUTPUT = HERE / "SITE-ACCESS-SUMMARY.md"
+DEFAULT_OUTPUT = HERE / "docs" / "reports" / "site-access-summary.md"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -156,6 +156,7 @@ def render_markdown(manifest: dict[str, Any], report: dict[str, Any]) -> str:
 
 
 def atomic_write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.parent.mkdir(parents=True, exist_ok=True)
     handle, temporary = tempfile.mkstemp(prefix=path.name + ".", dir=path.parent)
     try:
