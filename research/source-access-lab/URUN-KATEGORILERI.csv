@@ -1,0 +1,17 @@
+kategori,tur,ad,tanim,arastirma_niyeti,ne_zaman,cekirdek_kaynak,cekirdek_cekilen,ortak_kaynak,ortak_cekilen
+mobil-uygulama,kategori,Mobil tüketici uygulaması,Son kullanıcıya uygulama mağazaları üzerinden dağıtılan uygulama,"İndirme hacmi, kullanıcı şikâyetleri, rakip fiyatlandırma ve mağaza sıralaması",Ürün bu dağıtım/alıcı tipindeyse,13,11,283,236
+b2b-web-yazilimi,kategori,B2B web yazılımı,İşletmelerin abonelikle kullandığı web tabanlı yazılım,"Kurumsal talep, rakip yorumları, fiyatlandırma ve işe alım sinyali",Ürün bu dağıtım/alıcı tipindeyse,64,53,283,236
+gelistirici-araci,kategori,Geliştirici aracı / kütüphane,"Yazılım geliştiricilerin kullandığı paket, SDK, CLI ya da altyapı aracı","Kullanım hacmi, benimsenme eğrisi, çözülmemiş ihtiyaçlar",Ürün bu dağıtım/alıcı tipindeyse,34,30,283,236
+eklenti-entegrasyon,kategori,Eklenti / entegrasyon,Var olan bir platformun üzerine kurulan eklenti ya da entegrasyon,"Platform ekosisteminin doygunluğu, kurulum sayıları, boşluklar",Ürün bu dağıtım/alıcı tipindeyse,25,25,283,236
+yapay-zeka-urunu,kategori,Yapay zekâ ürünü / agent,"Model, veri seti, agent ya da yapay zekâ altyapı ürünü","Ekosistem doygunluğu, kıyaslama sonuçları, entegrasyon talebi",Ürün bu dağıtım/alıcı tipindeyse,24,22,283,236
+eticaret-fiziksel-urun,kategori,E-ticaret / fiziksel ürün,Pazar yerleri üzerinden satılan fiziksel ürün ya da onu destekleyen yazılım,"Fiyat aralıkları, satıcı yoğunluğu, alıcı şikâyetleri",Ürün bu dağıtım/alıcı tipindeyse,24,19,283,236
+oyun,kategori,Oyun,Dijital dağıtım platformları üzerinden yayınlanan oyun,"Tür doygunluğu, oyuncu ilgisi, fiyatlandırma ve inceleme puanları",Ürün bu dağıtım/alıcı tipindeyse,17,12,283,236
+yerel-hizmet,kategori,Yerel hizmet ürünü,Belirli bir coğrafyada işletme ya da tüketiciye hizmet veren ürün,"İşletme yoğunluğu, hizmet fiyatları, yerel talep",Ürün bu dağıtım/alıcı tipindeyse,23,17,283,236
+saglik,ek,Saglik,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün sağlık, tıp ya da biyoteknoloji alanındaysa",17,14,0,0
+fintech,ek,Fintech,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün finans, ödeme ya da bankacılık alanındaysa",26,23,0,0
+egitim,ek,Egitim,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün eğitim ya da öğrenme alanındaysa,17,16,0,0
+gayrimenkul,ek,Gayrimenkul,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün gayrimenkul ya da inşaat alanındaysa,18,15,0,0
+seyahat,ek,Seyahat,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün seyahat, konaklama ya da mobilite alanındaysa",22,19,0,0
+yeme-icme,ek,Yeme Icme,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün yeme-içme ya da teslimat alanındaysa,17,10,0,0
+regule-sektor,ek,Regule Sektor,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün yasal düzenlemeye tabi bir alandaysa,28,23,0,0
+turkiye-pazari,ek,Turkiye Pazari,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Türkiye pazarı hedefleniyorsa,22,16,0,0
