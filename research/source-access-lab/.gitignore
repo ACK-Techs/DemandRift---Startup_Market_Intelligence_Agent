@@ -8,3 +8,7 @@ results/*.log
 
 # Defterin ve manifestin uretimi icin gereken ozet ciktilar haric tutulmaz:
 !results/.gitkeep
+
+# Okunabilir disari aktarim: ayni verinin ikinci gorunumu, arsivden uretilir.
+# 191 MB oldugu icin depoya girmez; neyin cekildigi ARTEFAKT-DIZINI.csv'de durur.
+veriler/
