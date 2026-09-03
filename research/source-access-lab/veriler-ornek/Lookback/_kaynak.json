@@ -1,0 +1,17 @@
+{
+ "ad": "Lookback",
+ "source_id": "source-0595",
+ "adres": "https://lookback.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.lookback.com/",
+   "dosya": "www.lookback.html",
+   "bayt": 58599,
+   "sha256": "0445cfb2f303af93f72d856cc72b5c00fb6c50bd583348940298561d7fca9d02",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "CoinGecko",
+ "source_id": "source-0448",
+ "adres": "https://www.coingecko.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.coingecko.com/sitemap.xml",
+   "dosya": "sitemap-3.xml",
+   "bayt": 0,
+   "sha256": "23e61d75fb66292d4546ebf6fd3bf89d894a226d7de140d3d2aecf5eabece677",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

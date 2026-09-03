@@ -1,0 +1,17 @@
+{
+ "ad": "BASE",
+ "source_id": "source-0326",
+ "adres": "https://base.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://base.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "e791ed107d1b6451cb9d50af854075bc3f2561181ce2a4225a1aadebe7dbedb1",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

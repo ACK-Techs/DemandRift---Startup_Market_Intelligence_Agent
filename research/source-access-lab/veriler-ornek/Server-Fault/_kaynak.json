@@ -1,0 +1,17 @@
+{
+ "ad": "Server Fault",
+ "source_id": "source-0025",
+ "adres": "https://serverfault.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "stackexchange_questions",
+   "url": "https://api.stackexchange.com/2.3/questions?site=serverfault&pagesize=30&order=desc&sort=activity",
+   "dosya": "stackexchange_questions.json",
+   "bayt": 22894,
+   "sha256": "befa7bf625cd66b290f5c0e0eec1806405b5f4594e4460872e29b12b3282cdbc",
+   "tarih": "2026-09-02T19:50:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "PeerSpot",
+ "source_id": "source-0140",
+ "adres": "https://peerspot.co",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://peerspot.co/",
+   "dosya": "peerspot.html",
+   "bayt": 30438,
+   "sha256": "1a2b5d53847c3fed350e1d30e129b9877bb1149046ae8879b2ed72cab28f7015",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

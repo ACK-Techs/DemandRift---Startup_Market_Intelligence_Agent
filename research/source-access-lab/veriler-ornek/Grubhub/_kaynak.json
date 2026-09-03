@@ -1,0 +1,17 @@
+{
+ "ad": "Grubhub",
+ "source_id": "source-0508",
+ "adres": "https://www.grubhub.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.grubhub.com/?_branch_match_id=868500756040646912&utm_source=qr-code&utm_campaign=campus_appinstall_qr_code&utm_medium=qr-code&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTy8qTcooTdJLLCjQy8nMy9Z3TvdwLwspdPX0S7KvK0pNSy0qysxLj08qyi8vTi2ydU1JTwUAFNoQ%2BDwAAAA%3D",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 16579,
+   "sha256": "9c4464ef54c58275ac678418795944ab863718790c3b8b1651001951d9857ba3",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

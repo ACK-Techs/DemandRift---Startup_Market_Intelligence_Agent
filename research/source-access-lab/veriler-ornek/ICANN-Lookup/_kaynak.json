@@ -1,0 +1,17 @@
+{
+ "ad": "ICANN Lookup",
+ "source_id": "source-0183",
+ "adres": "https://lookup.icann.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://lookup.icann.org/",
+   "dosya": "lookup.icann.html",
+   "bayt": 0,
+   "sha256": "87d8bcdc8e607745c08019086ffceeac9e97a89a85ff79ea46ab7b78e034599f",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Rest of World",
+ "source_id": "source-0575",
+ "adres": "https://restofworld.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://restofworld.org/feed/latest",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "1da1f8de4f32847e0931215b446b2f2b9742e83c0c0cb25c8a0e7ce372cf2f60",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		
+    <sitemap>
+        <loc>https://defillama.com/sitemap/static.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/chains.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/protocols.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/protocols-by-category.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/stablecoins.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/exchanges.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/cexs.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/bridges.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/rwa.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/dat.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/pre-ipo.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/oracles.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/liquidations.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/unlocks.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/governance.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/forks.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/raises.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/narratives.xml</loc>
+    </sitemap>
+    
+    <sitemap>
+        <loc>https://defillama.com/sitemap/pro-dashboards.xml</loc>
+    </sitemap>
+    
+   </sitemapindex>
+ 

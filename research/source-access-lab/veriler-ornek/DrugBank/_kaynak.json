@@ -1,0 +1,17 @@
+{
+ "ad": "DrugBank",
+ "source_id": "source-0426",
+ "adres": "https://www.drugbank.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.drugbank.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "ff967d317dfa0ffe19e29fac058553f9bebc7ef9e248e35c57938942cd357830",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

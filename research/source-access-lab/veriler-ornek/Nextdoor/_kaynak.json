@@ -1,0 +1,17 @@
+{
+ "ad": "Nextdoor",
+ "source_id": "source-0312",
+ "adres": "https://about.nextdoor.com",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://about.nextdoor.com/",
+   "dosya": "about.nextdoor.html",
+   "bayt": 59846,
+   "sha256": "0f4e7f4f098300ca5cd0bebf72b31b3b1e8921358a8d5f2efce17f0baf36ee7b",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

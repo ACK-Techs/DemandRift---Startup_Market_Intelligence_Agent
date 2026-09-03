@@ -1,0 +1,25 @@
+{
+ "ad": "FRED",
+ "source_id": "source-0433",
+ "adres": "https://fred.stlouisfed.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://fred.stlouisfed.org/",
+   "dosya": "fred.stlouisfed.html",
+   "bayt": 58841,
+   "sha256": "8d2375fa2bbabc792cc77e777286c1c95af51697d8e832d48e0a58cfef11a17a",
+   "tarih": "2026-09-02T21:04:59"
+  },
+  {
+   "yontem": "root_html",
+   "url": "https://www.fred8.com.br/",
+   "dosya": "www.fred8.com.html",
+   "bayt": 29362,
+   "sha256": "f7bb6b0f3828b449e52dff459c4953654e973bdf28d944dd934f2319cc54e4e8",
+   "tarih": "2026-09-02T21:03:53"
+  }
+ ]
+}

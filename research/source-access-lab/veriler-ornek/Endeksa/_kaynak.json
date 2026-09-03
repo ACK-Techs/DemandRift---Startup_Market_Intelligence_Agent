@@ -1,0 +1,17 @@
+{
+ "ad": "Endeksa",
+ "source_id": "source-0480",
+ "adres": "https://www.endeksa.com",
+ "durum": "cekildi",
+ "dogrulama": "corpus_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.endeksa.com/tr/",
+   "dosya": "root_html.html",
+   "bayt": 0,
+   "sha256": "bfc3dafe549d5b522b20096c565d32d9cc5a153f898042757a1be528c4e78a92",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Bing Webmaster Tools",
+ "source_id": "source-0216",
+ "adres": "https://www.bing.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.bing.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "b01f48436b21eb3993fa19ff9244e963061c9be6b2fa159d18de0d8995334c13",
+   "tarih": "2026-09-02T19:26:21"
+  }
+ ]
+}

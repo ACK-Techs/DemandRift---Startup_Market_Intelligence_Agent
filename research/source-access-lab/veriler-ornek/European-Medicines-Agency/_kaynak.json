@@ -1,0 +1,17 @@
+{
+ "ad": "European Medicines Agency",
+ "source_id": "source-0393",
+ "adres": "https://www.ema.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ema.europa.eu/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 21386,
+   "sha256": "f465f46adab60c28e65a024325e78617da1291a5093566318a2e7feeb384faff",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

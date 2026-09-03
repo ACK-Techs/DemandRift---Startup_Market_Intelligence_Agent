@@ -1,0 +1,17 @@
+{
+ "ad": "LACNIC",
+ "source_id": "source-0190",
+ "adres": "https://www.lacnic.net",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.lacnic.net/",
+   "dosya": "www.lacnic-2.html",
+   "bayt": 0,
+   "sha256": "29ff34d9c456c5ab3b25dcb80449bb0f6d397e3a9c491970a00d8fb69d8f8ac3",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

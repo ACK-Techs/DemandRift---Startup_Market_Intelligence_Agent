@@ -1,0 +1,17 @@
+{
+ "ad": "Moat",
+ "source_id": "source-0243",
+ "adres": "https://moat.ai",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://moat.ai/",
+   "dosya": "moat.html",
+   "bayt": 0,
+   "sha256": "d9c177a89ee608c21fe726a238ef76271c9b5aed0f3694169324525191b206cd",
+   "tarih": "2026-09-02T23:00:41"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "U.S. Census Building Permits",
+ "source_id": "source-0484",
+ "adres": "https://www.census.gov",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.census.gov/sitemapindex/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "8bef82f85dc02b0c996eeba9bcdf2c184e87298f8ca13a31c4b5f5e49cbe4bf4",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

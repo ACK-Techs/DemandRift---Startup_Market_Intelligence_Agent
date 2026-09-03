@@ -1,0 +1,17 @@
+{
+ "ad": "Smithery",
+ "source_id": "source-0546",
+ "adres": "https://smithery.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://smithery.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "be3dc61a0c421ff6db6ecf4d63b6fcb002780ecabbee7b11978b75d92e2b920f",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

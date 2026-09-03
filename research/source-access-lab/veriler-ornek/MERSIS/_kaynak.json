@@ -1,0 +1,17 @@
+{
+ "ad": "MERSİS",
+ "source_id": "source-0269",
+ "adres": "https://mersis.ticaret.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://mersis.ticaret.gov.tr/",
+   "dosya": "mersis.ticaret.gov.html",
+   "bayt": 31027,
+   "sha256": "217510c7f8182781c6ba808a2319f36a66e2db3acc905ed95a4dc184740557f2",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

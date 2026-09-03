@@ -1,0 +1,17 @@
+{
+ "ad": "TradingView",
+ "source_id": "source-0446",
+ "adres": "https://www.tradingview.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.tradingview.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "c3dcd1ceb823d9446f2320c9ebcae86f7367e8251e222f503854022f5aaeb5d4",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

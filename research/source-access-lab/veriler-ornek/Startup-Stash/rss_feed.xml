@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Startup Stash</title>
+	<atom:link href="https://startupstash.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://startupstash.com/</link>
+	<description>Startup Stash is one of the world&#039;s largest online directory of tools and resources for startups</description>
+	<lastBuildDate>Wed, 02 Sep 2026 15:01:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://startupstash.com/wp-content/uploads/2018/06/startupstash-icon-90x90-100x100.png</url>
+	<title>Startup Stash</title>
+	<link>https://startupstash.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+</channel>
+</rss>
+
+<!-- plugin=object-cache-pro client=phpredis metric#hits=1404 metric#misses=8 metric#hit-ratio=99.4 metric#bytes=1818910 metric#prefetches=0 metric#store-reads=70 metric#store-writes=20 metric#store-hits=70 metric#store-misses=0 metric#sql-queries=32 metric#ms-total=216.38 metric#ms-cache=9.54 metric#ms-cache-avg=0.1072 metric#ms-cache-ratio=4.4 -->

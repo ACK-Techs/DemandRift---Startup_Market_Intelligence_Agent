@@ -1,0 +1,17 @@
+{
+ "ad": "DataForSEO",
+ "source_id": "source-0015",
+ "adres": "https://dataforseo.com",
+ "durum": "cekildi",
+ "dogrulama": "github_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://dataforseo.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "9b13c46ead898e008a908ff4705507032b80c08f300e30d62e88d584bc374690",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

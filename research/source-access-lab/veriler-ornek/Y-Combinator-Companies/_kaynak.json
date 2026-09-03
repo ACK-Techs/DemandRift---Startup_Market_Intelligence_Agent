@@ -1,0 +1,17 @@
+{
+ "ad": "Y Combinator Companies",
+ "source_id": "source-0072",
+ "adres": "https://www.ycombinator.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ycombinator.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "8981e5928117a25ff6f61c30753debdd9b2a67097232f14742f4d63debe0d6f4",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

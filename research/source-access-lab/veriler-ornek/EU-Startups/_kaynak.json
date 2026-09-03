@@ -1,0 +1,25 @@
+{
+ "ad": "EU-Startups",
+ "source_id": "source-0572",
+ "adres": "https://www.eu-startups.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.eu-startups.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 82204,
+   "sha256": "e2f5475cae2dd08638669c9548fa9275171190cc2730be721f8bef4429eefad0",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.eu-startups.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 72154,
+   "sha256": "80f036b182ca9ac392b1108a98d842ba9602c42b4835c9eb6401a948d1980a73",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

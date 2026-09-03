@@ -1,0 +1,17 @@
+{
+ "ad": "Regulations.gov",
+ "source_id": "source-0397",
+ "adres": "https://www.regulations.gov",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.regulations.gov/?_escaped_fragment_=documentDetail;D%3DNIH-2011-0003-0003",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 0,
+   "sha256": "6239b39613cad7ea6747e162586d149a420c961361cacff46c48010797025383",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

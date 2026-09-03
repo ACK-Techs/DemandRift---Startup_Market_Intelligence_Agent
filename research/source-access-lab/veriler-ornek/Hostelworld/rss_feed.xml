@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/~/media/Files/H/Hostelworld-v2/XSL/rss_xsl.xsl"?> 
+<rss version="2.0" xmlns:dt="http://xsltsl.org/date-time">
+ <channel>
+  <title>RSS – Financial Calendar – Hostelworld Group plc</title>
+  <link>https://www.hostelworldgroup.com/rss/financial-calendar</link>
+  <language>en</language>
+<webMaster>Hostelworld Group plc</webMaster>
+<image>
+<url>https://www.hostelworldgroup.com/~/media/Images/H/Hostelworld-v2/logo/logo.png</url>
+</image>
+<item>
+<title><![CDATA[Trading Update]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Thu, 08 Oct 2026 01:00:00 GMT</pubDate>
+<publishDate>Thu, 30 Jul 2026 16:15:32 GMT</publishDate>
+<guid>{315F6138-9E0B-4F92-8D77-616112E3A038}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[2026 Interim Dividend Payment]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Fri, 18 Sep 2026 01:00:00 GMT</pubDate>
+<publishDate>Thu, 30 Jul 2026 15:12:02 GMT</publishDate>
+<guid>{DECAA2C1-1C8A-4B49-9551-240B1FB31A3A}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[2026 Interim Results]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Wed, 29 Jul 2026 01:00:00 GMT</pubDate>
+<publishDate>Wed, 10 Jun 2026 09:49:36 GMT</publishDate>
+<guid>{F93460B8-70AC-4EF1-9FE0-B8337C476603}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[Trading Update]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Thu, 09 Jul 2026 09:00:00 GMT</pubDate>
+<publishDate>Thu, 14 May 2026 11:43:14 GMT</publishDate>
+<guid>{B1C7F256-AABD-4A33-A80E-1FA2169D4679}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[2025 Final Dividend Payment]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Tue, 12 May 2026 01:00:00 GMT</pubDate>
+<publishDate>Thu, 26 Mar 2026 07:24:29 GMT</publishDate>
+<guid>{2890BC7E-1E83-4DF4-9458-5F8396AC384F}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[AGM]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Wed, 06 May 2026 01:00:00 GMT</pubDate>
+<publishDate>Thu, 26 Feb 2026 14:48:31 GMT</publishDate>
+<guid>{7BBD90E2-59AB-4C10-9719-4C647D8B581A}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[2025 Preliminary Results]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Thu, 26 Mar 2026 07:00:00 GMT</pubDate>
+<publishDate>Thu, 26 Feb 2026 14:48:17 GMT</publishDate>
+<guid>{DE04255A-CD04-4278-B32A-05D02897C36F}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[Trading Update]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Thu, 15 Jan 2026 09:00:00 GMT</pubDate>
+<publishDate>Mon, 15 Dec 2025 15:20:14 GMT</publishDate>
+<guid>{8E6ACEC9-A8C4-4CF0-A825-FDBE9E4021D4}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[Trading Update]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Thu, 09 Oct 2025 09:00:00 GMT</pubDate>
+<publishDate>Thu, 25 Sep 2025 10:25:03 GMT</publishDate>
+<guid>{949CC008-CB48-4D9C-9B6F-9868EA0749BB}</guid>
+<isalertable>False</isalertable>
+</item>
+<item>
+<title><![CDATA[2025 Interim Dividend Payment Date]]></title>
+<link>https://www.hostelworldgroup.com/investors/financial-calendar</link>
+<pubDate>Mon, 29 Sep 2025 04:00:00 GMT</pubDate>
+<publishDate>Thu, 26 Feb 2026 14:49:08 GMT</publishDate>
+<guid>{46CD66E3-CD5C-4E15-9785-D1CEEE6BD417}</guid>
+<isalertable>False</isalertable>
+</item>
+
+  
+ </channel>
+</rss>

@@ -1,0 +1,17 @@
+{
+ "ad": "Glimpse",
+ "source_id": "source-0230",
+ "adres": "https://meetglimpse.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://meetglimpse.com/sitemap-main.xml",
+   "dosya": "sitemap-main.xml",
+   "bayt": 0,
+   "sha256": "0213389b2c459fbdbdba0def2b10bf6357dbd0ba868a4c7eed7c038b01b08018",
+   "tarih": "2026-09-02T21:33:44"
+  }
+ ]
+}

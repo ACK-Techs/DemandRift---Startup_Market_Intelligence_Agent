@@ -1,0 +1,17 @@
+{
+ "ad": "RubyGems",
+ "source_id": "source-0041",
+ "adres": "https://rubygems.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://rubygems.org/",
+   "dosya": "rubygems-3.html",
+   "bayt": 38491,
+   "sha256": "105dcb66ac453c3acd1394c7765db59e286127bc766aaf2689867efbd8b76565",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

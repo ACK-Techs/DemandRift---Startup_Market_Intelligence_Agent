@@ -1,0 +1,17 @@
+{
+ "ad": "World Bank Open Data",
+ "source_id": "source-0354",
+ "adres": "https://data.worldbank.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://data.worldbank.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "e6083910205498c8486eeee1047f4fd5530ae59fc85c66b2ffaaf647fa82e994",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

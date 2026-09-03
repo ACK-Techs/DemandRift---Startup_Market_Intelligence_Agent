@@ -1,0 +1,17 @@
+{
+ "ad": "Make Apps Directory",
+ "source_id": "source-0131",
+ "adres": "https://www.make.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.make.com/cs/login?go=%2Fcs%2Fintegration%2F555-vytvoreni-kontaktu-ve-fakturoidu-z-noveho-zakaznika-v-magentu%3Futm_source%3Dfakturoid%26utm_medium%3Dpartner%26utm_campaign%3Dfakturoid-partner-program",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 0,
+   "sha256": "de8b9edb3671ae47f9eea8d3ee5af5c763648ba6405aaf83e359e15ba6ef3cba",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

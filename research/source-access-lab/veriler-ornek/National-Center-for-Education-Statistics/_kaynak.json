@@ -1,0 +1,17 @@
+{
+ "ad": "National Center for Education Statistics",
+ "source_id": "source-0451",
+ "adres": "https://nces.ed.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://nces.ed.gov/",
+   "dosya": "nces.ed.html",
+   "bayt": 84605,
+   "sha256": "19281ae27bbed026e8fdab9c481a9240aafb4a0039a226cb6603e83725632e69",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

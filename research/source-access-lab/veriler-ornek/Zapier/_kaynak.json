@@ -1,0 +1,17 @@
+{
+ "ad": "Zapier",
+ "source_id": "source-0551",
+ "adres": "https://zapier.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://zapier.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2bc70e5ff250ef45e69e8e18fac15dd51bf932725d036be011ebd775bf72f9f6",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

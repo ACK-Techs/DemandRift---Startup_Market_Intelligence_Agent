@@ -1,0 +1,25 @@
+{
+ "ad": "Global Health Data Exchange",
+ "source_id": "source-0431",
+ "adres": "https://ghdx.healthdata.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://ghdx.healthdata.org/",
+   "dosya": "ghdx.healthdata.html",
+   "bayt": 45677,
+   "sha256": "1e40a558ba75fd4b5eb2b620a1f92c978422705464994af082aa55d7eb62345a",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "rss_feed",
+   "url": "https://ghdx.healthdata.org/recent/feed",
+   "dosya": "rss_feed.xml",
+   "bayt": 29407,
+   "sha256": "8d83748b7bb550688ba57d09e0c551a3601f664b05e0e61fa2b20cab71ae222f",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

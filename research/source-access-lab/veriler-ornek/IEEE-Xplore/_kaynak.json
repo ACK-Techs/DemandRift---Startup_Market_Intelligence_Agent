@@ -1,0 +1,17 @@
+{
+ "ad": "IEEE Xplore",
+ "source_id": "source-0340",
+ "adres": "https://ieeexplore.ieee.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://ieeexplore.ieee.org/abstract/document/11163991",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 48381,
+   "sha256": "c0247781b9baf42e572331b050fba515020804155cff68a201a68a3d55097c1a",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

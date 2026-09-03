@@ -1,0 +1,17 @@
+{
+ "ad": "Ashby Jobs",
+ "source_id": "source-0287",
+ "adres": "https://www.ashbyhq.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ashbyhq.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 87135,
+   "sha256": "3f8a177827f5540b46c3fa8732eeca6fee09c3cfbc66121e7b07081d55f0f4e0",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

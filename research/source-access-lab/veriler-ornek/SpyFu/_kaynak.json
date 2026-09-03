@@ -1,0 +1,17 @@
+{
+ "ad": "SpyFu",
+ "source_id": "source-0223",
+ "adres": "https://www.spyfu.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.spyfu.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "cde62a412e2362e6afd1b7fd4632df01cc720784decfd8335ab0725d29d6cc66",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

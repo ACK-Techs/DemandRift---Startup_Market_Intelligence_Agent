@@ -1,0 +1,17 @@
+{
+ "ad": "OpenStreetMap",
+ "source_id": "source-0303",
+ "adres": "https://www.openstreetmap.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.openstreetmap.org/",
+   "dosya": "www.openstreetmap-3.html",
+   "bayt": 32441,
+   "sha256": "5499beb71905d216a537d1f0b7a8a607a6bd0d5832c4f26e15525868ac5ac5d3",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

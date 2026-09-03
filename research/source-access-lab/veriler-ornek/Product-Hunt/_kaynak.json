@@ -1,0 +1,17 @@
+{
+ "ad": "Product Hunt",
+ "source_id": "source-0051",
+ "adres": "https://www.producthunt.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.producthunt.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 44121,
+   "sha256": "b4dd36bfd7d3230c2b74ad7573c9cbad7d49ce7fb8d8044f1b0b6d161c891e18",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

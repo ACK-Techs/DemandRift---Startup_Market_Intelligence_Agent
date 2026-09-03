@@ -1,0 +1,25 @@
+{
+ "ad": "Kayak",
+ "source_id": "source-0491",
+ "adres": "https://www.kayak.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.kayak.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 16681,
+   "sha256": "7c0bb14641be4d397b2515c220d5fd0cd9d279e1211d1fa75a7ea64d867fdece",
+   "tarih": "2026-09-02T20:27:26"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.kayakonline.info/sitemap.xml",
+   "dosya": "sitemap-2.xml",
+   "bayt": 0,
+   "sha256": "3016dd233bde526c65ece33c2fcd61d0579c8ce3a2272821b459c6e4b810cab5",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

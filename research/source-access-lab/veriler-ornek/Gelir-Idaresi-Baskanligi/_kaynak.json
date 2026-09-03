@@ -1,0 +1,25 @@
+{
+ "ad": "Gelir İdaresi Başkanlığı",
+ "source_id": "source-0389",
+ "adres": "https://gib.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://gib.gov.tr/",
+   "dosya": "gib.gov.html",
+   "bayt": 20989,
+   "sha256": "7da986c131e0a7c40cc1f18014e85da8a0867a05fe043058d756b607c1be51c5",
+   "tarih": "2026-09-02T20:55:13"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://gib.gov.tr/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "bf2824e98094436e2c0386bd16b8a2eaaf21f4ac17f7f29a2ed66a7b31d2b2c6",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

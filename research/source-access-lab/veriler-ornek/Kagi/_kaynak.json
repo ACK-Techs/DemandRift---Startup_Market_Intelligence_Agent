@@ -1,0 +1,25 @@
+{
+ "ad": "Kagi",
+ "source_id": "source-0009",
+ "adres": "https://kagi.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://kagi.com/",
+   "dosya": "kagi.html",
+   "bayt": 58815,
+   "sha256": "4db44a664e1fa99923af91d23c85b303f28f3e8f5e3e21974e67fef146973f09",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://kagi.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "3b38b7d6f2359e32661c0773267c7312ab2b8901b5b74b5c953e89a43848926d",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

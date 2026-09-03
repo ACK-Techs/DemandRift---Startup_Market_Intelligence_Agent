@@ -1,0 +1,17 @@
+{
+ "ad": "Maven Central",
+ "source_id": "source-0043",
+ "adres": "https://central.sonatype.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://central.sonatype.com/",
+   "dosya": "central.sonatype.html",
+   "bayt": 82542,
+   "sha256": "57ba0ea76ca941e31f6374be723ae5fe8633a066b76ee56fa2ff6d12d8547f45",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

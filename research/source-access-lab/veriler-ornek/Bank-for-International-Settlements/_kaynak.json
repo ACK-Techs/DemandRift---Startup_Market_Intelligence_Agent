@@ -1,0 +1,17 @@
+{
+ "ad": "Bank for International Settlements",
+ "source_id": "source-0437",
+ "adres": "https://www.bis.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.bis.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "53a69837798d64d6f5137db9f93847124ead3d75d4e37e71c96c3e7d78ff82b8",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

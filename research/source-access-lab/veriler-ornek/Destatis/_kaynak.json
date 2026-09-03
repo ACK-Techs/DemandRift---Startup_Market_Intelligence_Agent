@@ -1,0 +1,17 @@
+{
+ "ad": "Destatis",
+ "source_id": "source-0378",
+ "adres": "https://www.destatis.de",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.destatis.de/Sitemap_Index.xml",
+   "dosya": "Sitemap_Index.xml",
+   "bayt": 0,
+   "sha256": "162cab44c383476ca92670874a69b6869556e5b70eca12240e3ccaf7491c9aa2",
+   "tarih": "2026-09-02T19:26:21"
+  }
+ ]
+}

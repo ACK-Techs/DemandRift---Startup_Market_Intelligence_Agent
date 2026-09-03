@@ -1,0 +1,17 @@
+{
+ "ad": "Verisign RDAP",
+ "source_id": "source-0186",
+ "adres": "https://rdap.verisign.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://rdap.verisign.com/net/v1/domain/claycarson.net",
+   "dosya": "claycarson.net",
+   "bayt": 0,
+   "sha256": "75eb3bb235d11283f1abdfb8b6660bf31c293aeeb32b58b33154c3d7089e9fc7",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

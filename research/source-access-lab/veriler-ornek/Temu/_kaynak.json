@@ -1,0 +1,17 @@
+{
+ "ad": "Temu",
+ "source_id": "source-0165",
+ "adres": "https://www.temu.com",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.temu.com/",
+   "dosya": "www.temu.html",
+   "bayt": 0,
+   "sha256": "3527cef51dcd5e1c217bf2a5f64e97ac112626e427ecd3942ff4ab8913879153",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

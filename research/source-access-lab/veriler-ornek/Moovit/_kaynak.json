@@ -1,0 +1,17 @@
+{
+ "ad": "Moovit",
+ "source_id": "source-0502",
+ "adres": "https://moovit.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://moovit.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "92aaeb5653f36831ce5a8b1b8469f42a321b4a9da07f25382a71e983ecff3c0a",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

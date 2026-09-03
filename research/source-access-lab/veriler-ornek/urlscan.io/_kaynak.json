@@ -1,0 +1,17 @@
+{
+ "ad": "urlscan.io",
+ "source_id": "source-0206",
+ "adres": "https://urlscan.io",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://urlscan.io/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "30fccea2c639d7cbd3bc93ff571fef354f642015beb36c9eae0995c21f0091e1",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

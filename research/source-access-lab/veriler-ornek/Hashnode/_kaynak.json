@@ -1,0 +1,17 @@
+{
+ "ad": "Hashnode",
+ "source_id": "source-0030",
+ "adres": "https://hashnode.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://hashnode.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "33d86e274eda9cbf8fa74fd34cc75845eff9f351e5d028df1cea36eed0e49af0",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

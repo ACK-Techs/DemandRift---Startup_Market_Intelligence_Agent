@@ -1,0 +1,17 @@
+{
+ "ad": "Glama",
+ "source_id": "source-0547",
+ "adres": "https://glama.ai",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://glama.ai/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "a0efacf28152e6479277b606d5afb82f61bfc1364f550b0b6f94a53225959653",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Dimensions",
+ "source_id": "source-0328",
+ "adres": "https://app.dimensions.ai",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.dimensions.ai/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 17123,
+   "sha256": "7ecda5943a9dc3d4012a25ecda42bc0bc5778149f0904fab13c5537b0b6e3aa2",
+   "tarih": "2026-09-02T20:23:16"
+  }
+ ]
+}

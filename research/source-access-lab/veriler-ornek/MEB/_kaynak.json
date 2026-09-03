@@ -1,0 +1,25 @@
+{
+ "ad": "MEB",
+ "source_id": "source-0456",
+ "adres": "https://meb.com.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://meb.com.tr/",
+   "dosya": "meb.com.html",
+   "bayt": 0,
+   "sha256": "d546fa5a908e56ec1cd2956a71f6dc27fe901212471563373ae20183c6ec8974",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://meb.com.tr/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "1dc4dc185b773e6837ee57f07e8b0de34f6225ec3cfee9f6ac5fb268d44753bf",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

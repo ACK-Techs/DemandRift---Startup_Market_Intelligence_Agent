@@ -1,0 +1,33 @@
+{
+ "ad": "AppMagic",
+ "source_id": "source-0247",
+ "adres": "https://appmagic.rocks",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://appmagic.com/",
+   "dosya": "appmagic.html",
+   "bayt": 0,
+   "sha256": "b7872b8db1369c18902383d481dd4d20b61645777cd01d49098728da401f2c26",
+   "tarih": "2026-09-02T23:00:41"
+  },
+  {
+   "yontem": "root_html",
+   "url": "https://appmagic.rocks/",
+   "dosya": "appmagic-2.html",
+   "bayt": 70414,
+   "sha256": "42b9c54ef60d497c0d96d2acc2ea9b0d30c8923cea5f2b383657462ebb247e49",
+   "tarih": "2026-09-02T23:03:04"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://appmagic.rocks/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "880ee416f4475476e8374dc27eafc90116c1980a3564c366272f78426ba99a65",
+   "tarih": "2026-09-02T23:03:04"
+  }
+ ]
+}

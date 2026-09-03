@@ -1,0 +1,17 @@
+{
+ "ad": "UsabilityHub",
+ "source_id": "source-0605",
+ "adres": "https://usabilityhub.ai",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://usabilityhub.ai/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "7a0d17de0a2587031e9d3da2960424beb12da28877d6f1747c8f90221f9620ba",
+   "tarih": "2026-09-02T23:00:41"
+  }
+ ]
+}

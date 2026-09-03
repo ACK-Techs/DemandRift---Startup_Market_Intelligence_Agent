@@ -1,0 +1,17 @@
+{
+ "ad": "Atlassian Marketplace",
+ "source_id": "source-0121",
+ "adres": "https://marketplace.atlassian.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://marketplace.atlassian.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "5ac6bbfd6a21cc124f0767ecbe98858a205d5fa07572805ca11da3e4d9027a66",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

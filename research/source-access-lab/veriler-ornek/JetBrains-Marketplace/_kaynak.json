@@ -1,0 +1,25 @@
+{
+ "ad": "JetBrains Marketplace",
+ "source_id": "source-0050",
+ "adres": "https://plugins.jetbrains.com",
+ "durum": "cekildi",
+ "dogrulama": "parent_surface_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://plugins.jetbrains.com/",
+   "dosya": "plugins.jetbrains.html",
+   "bayt": 78364,
+   "sha256": "d7e4958019fbe74393899a82ca0187dccdfdc20cce7ea8a9c5a129bf0deb5b78",
+   "tarih": "2026-09-02T19:44:02"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://plugins.jetbrains.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "4b6295b9372ab888c455b3eae16ccba00b22c9e160799864560878746a2c0db4",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

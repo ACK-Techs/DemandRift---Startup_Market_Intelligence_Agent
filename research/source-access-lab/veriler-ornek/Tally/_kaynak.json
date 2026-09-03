@@ -1,0 +1,17 @@
+{
+ "ad": "Tally",
+ "source_id": "source-0586",
+ "adres": "https://tallyai.money",
+ "durum": "cekildi",
+ "dogrulama": "github_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://tallyai.money/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "de14a0d5dbe4241a714d5fc087a4cc99f38bc103d854f98bd7020aa87c67bd71",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

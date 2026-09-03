@@ -1,0 +1,25 @@
+{
+ "ad": "Dryad",
+ "source_id": "source-0351",
+ "adres": "https://datadryad.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://datadryad.org/",
+   "dosya": "datadryad.html",
+   "bayt": 0,
+   "sha256": "0f9374a854f6ef7ff5f97a866a2a5a27e25f2dcf7bd2228759fc99d418a687bf",
+   "tarih": "2026-09-02T20:27:26"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://datadryad.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2eb0899f52a53ee1b5605d7085446e7bf3d77cd58c7b4861dfd3294b61a55e0a",
+   "tarih": "2026-09-02T20:27:26"
+  }
+ ]
+}

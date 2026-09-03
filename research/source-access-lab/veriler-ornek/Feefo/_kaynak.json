@@ -1,0 +1,17 @@
+{
+ "ad": "Feefo",
+ "source_id": "source-0153",
+ "adres": "https://www.feefo.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.feefo.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "224f0f7b23409a306a3cd0521645ba297e53b4b4da4e9ebd14225c043565f9f5",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

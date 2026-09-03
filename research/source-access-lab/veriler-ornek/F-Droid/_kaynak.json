@@ -1,0 +1,17 @@
+{
+ "ad": "F-Droid",
+ "source_id": "source-0106",
+ "adres": "https://f-droid.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://f-droid.org/",
+   "dosya": "f-droid.html",
+   "bayt": 0,
+   "sha256": "9ea8e0d8f7052bd66ee8e9f61b66d884f16a8aeef85e2670251d70d488240c31",
+   "tarih": "2026-09-02T13:24:14"
+  }
+ ]
+}

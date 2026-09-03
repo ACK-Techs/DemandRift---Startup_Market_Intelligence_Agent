@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--generator='jetpack-16.1.3'-->
+<!--Jetpack_Sitemap_Buffer_Master_XMLWriter-->
+<?xml-stylesheet type="text/xsl" href="//www.technologyreview.com/sitemap-index.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>https://www.technologyreview.com/sitemap-index-1.xml</loc>
+  <lastmod>2026-09-01T15:00:27Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.technologyreview.com/image-sitemap-index-2.xml</loc>
+  <lastmod>2026-09-01T18:52:27Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.technologyreview.com/video-sitemap-1.xml</loc>
+  <lastmod>2026-08-17T15:29:20Z</lastmod>
+ </sitemap>
+</sitemapindex>

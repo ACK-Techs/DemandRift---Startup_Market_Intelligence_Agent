@@ -1,0 +1,17 @@
+{
+ "ad": "Canva Apps Marketplace",
+ "source_id": "source-0133",
+ "adres": "https://www.canva.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.canva.com/landing_page_sitemap_index.xml",
+   "dosya": "landing_page_sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "b024bd5b223c2603923b3ace8d8772f8a68179eecc76328966756f7689969b38",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

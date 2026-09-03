@@ -1,0 +1,17 @@
+{
+ "ad": "PubMed",
+ "source_id": "source-0331",
+ "adres": "https://pubmed.ncbi.nlm.nih.gov",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/",
+   "dosya": "pubmed.ncbi.nlm.nih.html",
+   "bayt": 42403,
+   "sha256": "e8c76fece52b5e1632dd45098c9eeeb5225ca22f695e35468e8789a160f511d0",
+   "tarih": "2026-09-02T13:24:14"
+  }
+ ]
+}

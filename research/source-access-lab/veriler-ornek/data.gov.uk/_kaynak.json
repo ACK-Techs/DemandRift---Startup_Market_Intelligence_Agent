@@ -1,0 +1,17 @@
+{
+ "ad": "data.gov.uk",
+ "source_id": "source-0376",
+ "adres": "https://www.data.gov.uk",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.data.gov.uk/",
+   "dosya": "www.data.gov-2.html",
+   "bayt": 22217,
+   "sha256": "8cf3bb046210fde2a1cad1a954d08baafbbea32e65dc6497d21b4a78b004c2f6",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

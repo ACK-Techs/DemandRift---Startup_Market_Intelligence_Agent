@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/wp-content/themes/orbis//feeds/rss-display.xsl" type="text/xsl"?>
+<rss version="2.0" 
+	xmlns:media="http://search.yahoo.com/mrss/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+	<title>Rest of World - </title>
+	<atom:link href="https://restofworld.org/feed/latest" rel="self" type="application/rss+xml" />
+	<link>https://restofworld.org</link>
+	<description>Reporting Global Tech Stories</description>
+	<lastBuildDate>Tue, 01 Sep 2026 10:01:09 +0000</lastBuildDate>
+	<copyright>Copyright 2026 Rest of World</copyright>
+	<sy:updatePeriod>daily</sy:updatePeriod>
+	<sy:updateFrequency>2</sy:updateFrequency>
+	<item>
+		<title>AI safety is designed in the West, and failing users everywhere</title>
+		<link>https://restofworld.org/2026/ai-safety-bias/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Tue, 01 Sep 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Rina Chandran</dc:creator>
+		<guid>https://restofworld.org/2026/ai-safety-bias/</guid>
+		<description><![CDATA[OpenAI’s pause shows the risks of rapid AI development, as safety frameworks fail to account for non-Western languages and contexts where harms are felt most. ]]></description>
+		<content:encoded><![CDATA[Last month, OpenAI became the first major artificial intelligence company to voluntarily pause training on a model because of safety concerns. The unprecedented move came weeks after its models broke...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_AI_safety_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_AI_safety_final-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>Meta accepts U.S. safety rules while pitching softer tools abroad</title>
+		<link>https://restofworld.org/2026/meta-influencer-campaign-teen-accounts-under-16-social-media-ban/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 31 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Ananya Bhattacharya</dc:creator>
+		<guid>https://restofworld.org/2026/meta-influencer-campaign-teen-accounts-under-16-social-media-ban/</guid>
+		<description><![CDATA[As governments consider banning social media for under-16s, Meta is turning to influencers to argue that parental controls are a better solution.]]></description>
+		<content:encoded><![CDATA[In June, Indian actor Hiten Tejwani told his 732,000 followers that “Instagram is okay” in a reel promoting Meta’s Teen Accounts. Ironically, Tejwani had barred his 17-year-old twin son and...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/glitch-image-1787685756-2-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/glitch-image-1787685756-2-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>I went to China to see a different AI future. It looked familiar</title>
+		<link>https://restofworld.org/2026/china-us-ai-future/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Fri, 28 Aug 2026 13:00:00 +0000</pubDate>
+		<dc:creator>Gordon Saft</dc:creator>
+		<guid>https://restofworld.org/2026/china-us-ai-future/</guid>
+		<description><![CDATA[My trip to China revealed an AI race that looks less like a clash of competing visions, and more like two countries racing toward a similar future.]]></description>
+		<content:encoded><![CDATA[Gordon Saft is the Publisher of Rest of World. Last week, he returned to New York from a trip to China with a delegation of leaders from across media, technology,...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/gordon_newsletter_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/gordon_newsletter_final-320x320.jpg" />
+	<media:credit>Gordon Saft/Rest of World</media:credit>
+		</item>
+	<item>
+		<title>India’s data center boom is leaving the people it displaces with nothing</title>
+		<link>https://restofworld.org/2026/india-data-center-boom-local-community-impact-osama-manzar/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 27 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Ananya Bhattacharya</dc:creator>
+		<guid>https://restofworld.org/2026/india-data-center-boom-local-community-impact-osama-manzar/</guid>
+		<description><![CDATA[Communities are being left behind as AI companies secure tax breaks, cheap land from willing governments.]]></description>
+		<content:encoded><![CDATA[When Osama Manzar started the nonprofit Digital Empowerment Foundation in 2002, just 1.2% of India’s population was online. Now, more than 70% is. But Manzar’s mission statement — helping poor...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/QA-Osama-Ananya-4-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/QA-Osama-Ananya-4-320x320.jpg" />
+	<media:credit>Rest of World</media:credit>
+		</item>
+	<item>
+		<title>Why the global push to break free from Big Tech keeps falling short</title>
+		<link>https://restofworld.org/2026/google-amazon-cloud-china-india/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Wed, 26 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Cecilia Rikap</dc:creator>
+		<guid>https://restofworld.org/2026/google-amazon-cloud-china-india/</guid>
+		<description><![CDATA[In this excerpt from the book “The Rulers: Corporate Power in the Age of AI and the Cloud,” writer Cecilia Rikap examines how Europe, India, Brazil, and China are taking on big tech companies.   ]]></description>
+		<content:encoded><![CDATA[In mid-2024, a cybersecurity partner’s mistake led to a global Microsoft Windows outage. It affected 8.5 million Windows devices. Although this represents less than 1% of all Windows machines, it...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_cloud_break_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_cloud_break_final-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>America’s immigration policy is driving away future AI leaders</title>
+		<link>https://restofworld.org/2026/us-immigration-rules-ai-talent-china/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Tue, 25 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Lex Zhao</dc:creator>
+		<guid>https://restofworld.org/2026/us-immigration-rules-ai-talent-china/</guid>
+		<description><![CDATA[Visa restrictions are deterring international AI talent from building companies in the U.S., giving other nations including China an opportunity to catch up.]]></description>
+		<content:encoded><![CDATA[The Trump administration has proposed a new fee for H-1B visas, while weighing a $100,000 fee on Optional Practical Training, the program that allows international graduates to work in the...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_immigration_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_immigration_final-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>The UAE is fighting AI hackers with AI of its own</title>
+		<link>https://restofworld.org/2026/uae-ai-cyberattacks-cyber-factory-defenses/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 24 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Divsha Bhat</dc:creator>
+		<guid>https://restofworld.org/2026/uae-ai-cyberattacks-cyber-factory-defenses/</guid>
+		<description><![CDATA[Attacks on the country’s banks, aviation, and energy systems have climbed since the war with Iran began. Its answer is a homegrown AI security industry.
+]]></description>
+		<content:encoded><![CDATA[Missiles crossed the Gulf in February, and hackers armed with artificial intelligence followed. The United Arab Emirates has detected and contained coordinated cyberattacks on the aviation, energy, and education sectors...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/AIvsAI-Final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/AIvsAI-Final-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>A dumpling shop becomes a poster child of AI adoption in China</title>
+		<link>https://restofworld.org/2026/china-ai-adoption-jinguyuan/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Fri, 21 Aug 2026 13:00:00 +0000</pubDate>
+		<dc:creator>Viola Zhou</dc:creator>
+		<guid>https://restofworld.org/2026/china-ai-adoption-jinguyuan/</guid>
+		<description><![CDATA[Business owner quotes Deng Xiaoping as motivator: “Science and technology are a primary productive force.”]]></description>
+		<content:encoded><![CDATA[If you have an AI agent, you can tell it to build a website, make a slideshow, or get you a table at a popular dumpling shop in Beijing.&#160; The...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_dumpling_shop_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_dumpling_shop_final-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>“It’s laughable”: Global AI experts challenge Zuckerberg’s “AI for everyone”</title>
+		<link>https://restofworld.org/2026/mark-zuckerberg-meta-ai-for-everyone-manifesto-global-critique/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Thu, 20 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Ananya Bhattacharya</dc:creator>
+		<guid>https://restofworld.org/2026/mark-zuckerberg-meta-ai-for-everyone-manifesto-global-critique/</guid>
+		<description><![CDATA[Observers scrutinize Meta founder’s argument about AI’s potential as an equalizer and enabler.]]></description>
+		<content:encoded><![CDATA[On August 10, Mark Zuckerberg published a letter titled “The Future for Everyone,” a manifesto laying out his vision for how superintelligence could improve people’s lives, expand human capability, and...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/Zuckerberg-AI-Everyone-10-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/Zuckerberg-AI-Everyone-10-320x320.jpg" />
+	<media:credit>Rest of World</media:credit>
+		</item>
+	<item>
+		<title>Chinese carmakers now sell one EV abroad for every two at home</title>
+		<link>https://restofworld.org/2026/china-ev-exports-overcapacity-global-markets/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Tue, 18 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Indranil Ghosh</dc:creator>
+		<guid>https://restofworld.org/2026/china-ev-exports-overcapacity-global-markets/</guid>
+		<description><![CDATA[Dwindling sales at home are pushing the cars toward Brazil, Thailand, and the Gulf.]]></description>
+		<content:encoded><![CDATA[Chinese electric-vehicle makers have lost buyers at home and found new ones in Brazil, Thailand, and the Gulf. Some 540,000 EVs left China in July, a monthly record, while about...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/iStock-1156040237-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/iStock-1156040237-320x320.jpg" />
+	<media:credit>Rest of World/iStock</media:credit>
+		</item>
+	<item>
+		<title>Ban on Chinese robots leaves U.S. startups stranded</title>
+		<link>https://restofworld.org/2026/china-robot-ban-silicon-valley/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Mon, 17 Aug 2026 10:00:00 +0000</pubDate>
+		<dc:creator>Viola Zhou</dc:creator>
+		<guid>https://restofworld.org/2026/china-robot-ban-silicon-valley/</guid>
+		<description><![CDATA[Washington’s limits on foreign parts promises a supply chain revolution — but Silicon Valley founders say domestic alternatives don’t exist yet.]]></description>
+		<content:encoded><![CDATA[The U.S. government is forcing a rapid onshoring of robotics through a sweeping ban on foreign-made robots, even before an American supply chain exists, putting at risk the very robotics...]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_ai_robot_ban-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_ai_robot_ban-320x320.jpg" />
+	<media:credit>Getty Images/Rest of World</media:credit>
+	<media:description> Three Unitree G1 humanoid robots are pictured at robotics company Unitree's first retail store in Beijing. </media:description>
+		</item>
+	<item>
+		<title>The online shopping trend where you buy nothing</title>
+		<link>https://restofworld.org/2026/south-korea-shopping-trend/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=feeds</link>
+		<pubDate>Fri, 14 Aug 2026 13:00:00 +0000</pubDate>
+		<dc:creator>Itika Sharma Punit</dc:creator>
+		<guid>https://restofworld.org/2026/south-korea-shopping-trend/</guid>
+		<description><![CDATA[On South Korea’s “dopamine sites,” the pleasure comes from aspirational shopping rituals like browsing, curating, and tracking — not from a delivery.]]></description>
+		<content:encoded><![CDATA[This week, I placed orders for a $44,860 Patek Philippe hand-engraved watch, a $12,500 Hermès handbag, a $9,800 Tiffany diamond ring, and a $7,350 Cartier Love bracelet in yellow gold....]]></content:encoded>
+		<media:content medium="image" url="https://restofworld.org/wp-content/uploads/2026/08/illo_dopamine_shop_final-768x432.jpg" width="768" height="432" />
+	<media:thumbnail url="https://restofworld.org/wp-content/uploads/2026/08/illo_dopamine_shop_final-320x320.jpg" />
+	<media:credit>iStock/Rest of World</media:credit>
+		</item>
+	</channel>
+</rss>

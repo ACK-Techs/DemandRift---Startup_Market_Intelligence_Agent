@@ -1,0 +1,17 @@
+{
+ "ad": "Fresha",
+ "source_id": "source-0317",
+ "adres": "https://www.fresha.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.fresha.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "56a7b72b78d15589d71d77f3fca1591cb78aa5e9809ccf1e40c15fb674698104",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

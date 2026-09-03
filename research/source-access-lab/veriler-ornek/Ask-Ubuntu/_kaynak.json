@@ -1,0 +1,17 @@
+{
+ "ad": "Ask Ubuntu",
+ "source_id": "source-0027",
+ "adres": "https://askubuntu.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "stackexchange_questions",
+   "url": "https://api.stackexchange.com/2.3/questions?site=askubuntu&pagesize=30&order=desc&sort=activity",
+   "dosya": "stackexchange_questions.json",
+   "bayt": 21022,
+   "sha256": "1bffa60bd4fd8ddb8795aa02bea3ccfe7a0eaba9787f5039fab28ed340419d7b",
+   "tarih": "2026-09-02T19:50:29"
+  }
+ ]
+}

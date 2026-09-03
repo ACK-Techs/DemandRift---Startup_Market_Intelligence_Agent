@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pathmatics.io</title>
+    <link>https://pathmatics.io/blog</link>
+    <description>Notes on vector generation, path quality and the API, from the team building Pathmatics.</description>
+    <language>en-GB</language>
+    <copyright>Pathmatics.io</copyright>
+    <atom:link href="https://pathmatics.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A PDF that is really vectors</title>
+      <link>https://pathmatics.io/blog/svg-to-pdf</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/svg-to-pdf</guid>
+      <description>The PDF export writes path data, not pixels.</description>
+      <category>Engineering</category>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Drafts before the final path</title>
+      <link>https://pathmatics.io/blog/streaming-svg</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/streaming-svg</guid>
+      <description>A generation on arrow-1.1 returns nothing at all for roughly fourteen seconds, and no amount of engineering on our side makes that shorter.</description>
+      <category>Engineering</category>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What we strip from generated SVG, and why</title>
+      <link>https://pathmatics.io/blog/sanitising-generated-svg</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/sanitising-generated-svg</guid>
+      <description>The prompt is chosen by somebody else and SVG is a document format with a scripting model attached, so model output gets treated as untrusted input.</description>
+      <category>Engineering</category>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Node count is the number that matters</title>
+      <link>https://pathmatics.io/blog/node-count</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/node-count</guid>
+      <description>A vector file can render perfectly and still be useless to the person who has to edit it.</description>
+      <category>Research</category>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What the model actually reads in a sketch</title>
+      <link>https://pathmatics.io/blog/sketch-fidelity</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/sketch-fidelity</guid>
+      <description>The vectorize endpoint identifies an upload from its bytes rather than from what the caller claimed, and that decides which sketches survive to reach a model.</description>
+      <category>Design</category>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>A field guide to prompting for logos</title>
+      <link>https://pathmatics.io/blog/prompting-for-logos</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/prompting-for-logos</guid>
+      <description>Adjectives are the least useful part of a logo prompt.</description>
+      <category>Design</category>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Reserve, then settle</title>
+      <link>https://pathmatics.io/blog/reserve-then-settle</link>
+      <guid isPermaLink="true">https://pathmatics.io/blog/reserve-then-settle</guid>
+      <description>Credits leave the balance before the model is called and are settled against what the work actually cost, so a failure returns them instead of charging for nothing.</description>
+      <category>Company</category>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+{
+ "ad": "European Commission",
+ "source_id": "source-0391",
+ "adres": "https://commission.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://commission.europa.eu/select-language?destination=/node/1",
+   "dosya": "root_html.html",
+   "bayt": 16816,
+   "sha256": "418f8ff672178f5f3a5d34f7a9eec63f8431657264dba02a645d2ead811c6613",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

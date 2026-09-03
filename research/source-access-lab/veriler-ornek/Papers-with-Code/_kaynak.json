@@ -1,0 +1,25 @@
+{
+ "ad": "Papers with Code",
+ "source_id": "source-0353",
+ "adres": "https://paperswithcode.co",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://paperswithcode.co/",
+   "dosya": "paperswithcode.html",
+   "bayt": 0,
+   "sha256": "2d5a2f655e6e40dc21f4fb5523a36020fda1908c491966f6ce0955eb06aceafc",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://paperswithcode.co/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "0a8546059f20f0e384d4114d6c31fb08d3365dea1b0699a90338ac7b33b78c43",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

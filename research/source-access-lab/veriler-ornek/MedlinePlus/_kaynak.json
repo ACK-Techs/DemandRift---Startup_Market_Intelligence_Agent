@@ -1,0 +1,17 @@
+{
+ "ad": "MedlinePlus",
+ "source_id": "source-0429",
+ "adres": "https://www.medlineplus.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.medlineplus.gov/",
+   "dosya": "www.medlineplus.html",
+   "bayt": 26483,
+   "sha256": "1786f032b55de67f59bd8cffb66671b91388ee226329175ac9810aa5f7daf03b",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

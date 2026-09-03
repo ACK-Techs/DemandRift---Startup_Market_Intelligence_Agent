@@ -1,0 +1,17 @@
+{
+ "ad": "Crunchbase News",
+ "source_id": "source-0573",
+ "adres": "https://news.crunchbase.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://news.crunchbase.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "31b760c4385d2b6869f303947a8362a57bd4c1c914d3a4a79ed856265edb1ea4",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

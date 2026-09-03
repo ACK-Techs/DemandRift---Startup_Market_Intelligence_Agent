@@ -1,0 +1,17 @@
+{
+ "ad": "Ubersuggest",
+ "source_id": "source-0220",
+ "adres": "https://ubersuggest.net",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://ubersuggest.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "e3445a7c7cd79e1cba0b90e3cc83e0040f639dd02fc7a18d9fd0c28d5fd2aca9",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Federal Reserve Economic Data",
+ "source_id": "source-0363",
+ "adres": "https://fred.stlouisfed.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://fred.stlouisfed.org/",
+   "dosya": "fred.stlouisfed.html",
+   "bayt": 58833,
+   "sha256": "e5e0d672a79e54eaf993bef3352307e4d22e1f19a7df0dd206bd1c8a8e70e618",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

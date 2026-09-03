@@ -1,0 +1,17 @@
+{
+ "ad": "Pinterest Ads Repository",
+ "source_id": "source-0240",
+ "adres": "https://ads.pinterest.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://ads.pinterest.com/",
+   "dosya": "ads.pinterest.html",
+   "bayt": 69164,
+   "sha256": "78c5cb3355a5a61db8f4ecb12704695cf9874505839115881c15daa5e5155193",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "ad": "egirişim",
+ "source_id": "source-0577",
+ "adres": "https://egirisim.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://egirisim.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "39e1d9ef5b33bb156c71eea3d3238d7272e428e0074bd59f857a2c9258da0048",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://egirisim.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "9bcd7f13b0549e7e20e020444cdcc3b0f6f323d3789b6971c6da9f24a6e0e1f3",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

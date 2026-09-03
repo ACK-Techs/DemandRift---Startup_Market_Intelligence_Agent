@@ -1,0 +1,25 @@
+{
+ "ad": "VG Insights",
+ "source_id": "source-0528",
+ "adres": "https://app.sensortower.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://app.sensortower.com/",
+   "dosya": "app.sensortower.html",
+   "bayt": 0,
+   "sha256": "dd6b13a2c67375284d4db660d90a755c675c8d5d0c6230db9d7bf9f9919c7478",
+   "tarih": "2026-09-02T21:33:44"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://app.sensortower.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "5f070aa2724457d56285e002067913fbca1bd8503b544f88b9d4cafb26d119be",
+   "tarih": "2026-09-02T21:33:44"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "medRxiv",
+ "source_id": "source-0336",
+ "adres": "https://www.medrxiv.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "biorxiv_details",
+   "url": "https://api.biorxiv.org/details/medrxiv/2026-01-01/2026-01-02",
+   "dosya": "biorxiv_details.json",
+   "bayt": 75645,
+   "sha256": "ec5604fef0167ab3a14df373814c866507200e63d2b58094eac26b2ce55f0690",
+   "tarih": "2026-09-02T19:50:29"
+  }
+ ]
+}

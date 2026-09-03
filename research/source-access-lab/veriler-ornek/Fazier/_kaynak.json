@@ -1,0 +1,17 @@
+{
+ "ad": "Fazier",
+ "source_id": "source-0067",
+ "adres": "https://fazier.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://fazier.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "c0ebbabce98bb8acc1e245a360c6f252859382d576cdc3d7724f7b449a72a32f",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

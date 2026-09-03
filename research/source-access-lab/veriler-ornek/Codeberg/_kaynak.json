@@ -1,0 +1,17 @@
+{
+ "ad": "Codeberg",
+ "source_id": "source-0021",
+ "adres": "https://codeberg.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://codeberg.org/",
+   "dosya": "codeberg-3.html",
+   "bayt": 34564,
+   "sha256": "a4e06c0e152a5e96832f27449adddf0449c3a7486b4019e9188f62128a443834",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Snapchat Ads Gallery",
+ "source_id": "source-0241",
+ "adres": "https://ads.snapchat.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://ads.snapchat.com/?r=audiences%2Fsaved-audience&_sid=PAID&utm_campaign=universal_navigation&utm_content=footer_item_link&utm_medium=referral&utm_source=forbusiness_snapchat_com&utm_term=US&gclid=Cj0KCQjwr82iBhCuARIsAO0EAZweNvd7yzoESDyjmaVyJXgXS1gzX1ulT2b0QFOe1UVCxfb2_vd6wtoaAsj9EALw_wcB&lang=en-US",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 17360,
+   "sha256": "6f35676d8147add3b6886125244feca2075530306946f7cab8f49dab8d3a7944",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

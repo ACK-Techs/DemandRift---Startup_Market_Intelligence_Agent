@@ -1,0 +1,17 @@
+{
+ "ad": "Centiment",
+ "source_id": "source-0600",
+ "adres": "https://www.centiment.co",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.centiment.co/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "0186989e8fc1bc2304ff5ce305c42493f5ccbda9b4f05cb9cb571068f43bc23f",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

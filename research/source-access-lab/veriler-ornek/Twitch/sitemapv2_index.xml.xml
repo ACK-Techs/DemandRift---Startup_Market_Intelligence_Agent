@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_other_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_verticals_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_referred-p_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_referred-gp_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_referred-f_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_referred-v_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_vods_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://www.twitch.tv/sitemapv2_prod_v7_2026-09-02-18-03-03_3f501db7-4ed3-48fa-b6f8-290ef31df3b1_clips_0.xml.gz</loc>
+  <lastmod>2026-09-02T18:03:03Z</lastmod>
+ </sitemap>
+</sitemapindex>

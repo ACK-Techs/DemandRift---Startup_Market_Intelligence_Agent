@@ -1,0 +1,17 @@
+{
+ "ad": "Capterra Education Software",
+ "source_id": "source-0466",
+ "adres": "https://www.capterra.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.capterra.com/sitemaps/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "b06b8dc545759a845d53a319e36e07336bf1816b96fda8a5bf743dbd69cef45d",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

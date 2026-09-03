@@ -1,0 +1,17 @@
+{
+ "ad": "HERE WeGo",
+ "source_id": "source-0307",
+ "adres": "https://wego.here.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://wego.here.com/",
+   "dosya": "wego.here.html",
+   "bayt": 0,
+   "sha256": "716724c74b735db05dca5ffaf576f62d6a2218dae8deb6d12bbfd0f003ffb4f6",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

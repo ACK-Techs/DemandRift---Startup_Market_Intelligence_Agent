@@ -1,0 +1,17 @@
+{
+ "ad": "Endeavor Türkiye",
+ "source_id": "source-0631",
+ "adres": "https://www.endeavor.org.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://endeavor.org.tr/insider-gibi-bir-unicorn-nasil-dogar/",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 66984,
+   "sha256": "e67ced80be90b1ddfeee8027ba67a6c09f49f32d6f5e0757e98182084c89e803",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

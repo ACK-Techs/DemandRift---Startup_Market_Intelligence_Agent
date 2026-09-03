@@ -1,0 +1,25 @@
+{
+ "ad": "SparkToro",
+ "source_id": "source-0233",
+ "adres": "https://sparktoro.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://sparktoro.com/",
+   "dosya": "sparktoro.html",
+   "bayt": 64687,
+   "sha256": "a313ed2c57b4081636a6b526e46c24adc807af89859fd68b3c306bed48e3ff2f",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://sparktoro.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "9d3b59aca72fbaeb121307ee9acff15b24c9d4ee8b1c5138496366abb17222ff",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

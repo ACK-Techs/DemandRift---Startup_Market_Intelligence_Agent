@@ -1,0 +1,17 @@
+{
+ "ad": "Ahrefs",
+ "source_id": "source-0217",
+ "adres": "https://ahrefs.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://ahrefs.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "311eae576be0e0949a1019f15c9934f6c7caf2c4395f65d99c9a520839d756a8",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

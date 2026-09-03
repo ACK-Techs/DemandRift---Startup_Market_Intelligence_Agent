@@ -1,0 +1,25 @@
+{
+ "ad": "Companies House",
+ "source_id": "source-0266",
+ "adres": "https://www.gov.uk",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.gov.uk/",
+   "dosya": "www.gov.html",
+   "bayt": 85460,
+   "sha256": "c004e66fd5bf86c8879462595a1071f6e85a4db18fec95db8852da8bdd476580",
+   "tarih": "2026-09-02T18:40:34"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.gov.uk/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "a846282baf81bbf5bb2c7da0abf0c9b540e2355921bd8f6ecfa59ac6d34538c2",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

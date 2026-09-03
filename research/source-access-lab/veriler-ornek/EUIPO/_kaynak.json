@@ -1,0 +1,17 @@
+{
+ "ad": "EUIPO",
+ "source_id": "source-0413",
+ "adres": "https://www.euipo.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://euipo.europa.eu/ec2/classheadings/?niceClassLang=en",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 29864,
+   "sha256": "28ccd4c2ebe1d777eff5b64ff7c356a7fbf2b06cabee75edd2953a824a5cff35",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

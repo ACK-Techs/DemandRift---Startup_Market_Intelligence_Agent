@@ -1,0 +1,17 @@
+{
+ "ad": "U.S. Department of Education",
+ "source_id": "source-0450",
+ "adres": "https://www.ed.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ed.gov/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "9801100e5efccb2a4e8a7853f9331f53d1ace921cca9800624ce7d1d81c21d43",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

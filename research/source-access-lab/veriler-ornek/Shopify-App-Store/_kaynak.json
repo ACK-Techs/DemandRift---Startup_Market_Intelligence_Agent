@@ -1,0 +1,17 @@
+{
+ "ad": "Shopify App Store",
+ "source_id": "source-0114",
+ "adres": "https://apps.shopify.com",
+ "durum": "cekildi",
+ "dogrulama": "parent_surface_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://apps.shopify.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 23310,
+   "sha256": "ad429bc93a1cbe9b546b8a775190bd12576c9e8acb1ecacd8221e950e65f9c9b",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

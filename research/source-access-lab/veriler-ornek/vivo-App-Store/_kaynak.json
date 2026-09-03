@@ -1,0 +1,17 @@
+{
+ "ad": "vivo App Store",
+ "source_id": "source-0104",
+ "adres": "https://appstore.vivo.com.cn",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://appstore.vivo.com.cn/",
+   "dosya": "appstore.vivo.com.html",
+   "bayt": 0,
+   "sha256": "adc511c576cbed196f194861e8f07854dd88acc8ff9a15e0ce8e5301b6e54072",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

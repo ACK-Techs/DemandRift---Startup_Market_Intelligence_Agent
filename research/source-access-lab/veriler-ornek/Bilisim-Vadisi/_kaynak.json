@@ -1,0 +1,17 @@
+{
+ "ad": "Bilişim Vadisi",
+ "source_id": "source-0624",
+ "adres": "https://bilisimvadisi.com.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://bilisimvadisi.com.tr/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "776148fca5e322277f0ed73945d871284d3b3a246eb50444be3ac7df4e0034dc",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

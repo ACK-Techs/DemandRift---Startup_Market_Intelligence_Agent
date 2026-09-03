@@ -1,0 +1,17 @@
+{
+ "ad": "WIPO Global Brand Database",
+ "source_id": "source-0410",
+ "adres": "https://branddb.wipo.int",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://branddb.wipo.int/",
+   "dosya": "branddb.wipo.int",
+   "bayt": 0,
+   "sha256": "69aa1955dbd0142670a22e140abf5d0088db7458eca9e965d6207c59e32ee53d",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

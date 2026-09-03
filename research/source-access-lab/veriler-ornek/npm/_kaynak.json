@@ -1,0 +1,17 @@
+{
+ "ad": "npm",
+ "source_id": "source-0039",
+ "adres": "https://www.npmjs.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "npm_registry_search",
+   "url": "https://registry.npmjs.org/-/v1/search?text=startup&size=20",
+   "dosya": "npm_registry_search.json",
+   "bayt": 19564,
+   "sha256": "6d386e178b08f455d25f0f1b7f56b332c2c65dd7cd809872a967ae73b63c30a4",
+   "tarih": "2026-09-02T19:50:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Web of Science",
+ "source_id": "source-0330",
+ "adres": "https://clarivate.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://clarivate.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "3abe42fe70732c6cc59e2abdf152d91d643e7a63d87f87ee08080c1188e17a44",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

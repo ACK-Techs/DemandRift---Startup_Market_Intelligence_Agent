@@ -1,0 +1,17 @@
+{
+ "ad": "SPK",
+ "source_id": "source-0384",
+ "adres": "https://spk.com.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.spk.com.tr/",
+   "dosya": "www.spk.com.html",
+   "bayt": 34891,
+   "sha256": "1f2e5ccb279f8ca6b17705abf6907d73f1bd95246664fbd9483c5a8bb022dbac",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

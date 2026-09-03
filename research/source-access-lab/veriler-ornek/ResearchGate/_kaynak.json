@@ -1,0 +1,17 @@
+{
+ "ad": "ResearchGate",
+ "source_id": "source-0338",
+ "adres": "https://www.researchgate.net",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.researchgate.net/",
+   "dosya": "www.researchgate.html",
+   "bayt": 37412,
+   "sha256": "e7cd92de257eaf98b237599aed50ad2a415147e5b68061d7d0a96d8b97716dad",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

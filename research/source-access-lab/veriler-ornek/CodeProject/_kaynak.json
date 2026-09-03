@@ -1,0 +1,17 @@
+{
+ "ad": "CodeProject",
+ "source_id": "source-0036",
+ "adres": "https://www.codeproject.com",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.codeproject.com/",
+   "dosya": "www.codeproject.html",
+   "bayt": 27711,
+   "sha256": "22ccbf7ab7ac749dd61e0c04bc9e886e7f7fcfe43ff1e2f486e2be06cd69daf5",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

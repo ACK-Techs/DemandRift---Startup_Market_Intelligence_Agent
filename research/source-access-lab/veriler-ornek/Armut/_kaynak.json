@@ -1,0 +1,17 @@
+{
+ "ad": "Armut",
+ "source_id": "source-0319",
+ "adres": "https://armut.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://armut.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "70183ab200861132f7bff258b28f8b035d6f8b6254ba0b056a7ce6129793e26f",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

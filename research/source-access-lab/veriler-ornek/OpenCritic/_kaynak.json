@@ -1,0 +1,17 @@
+{
+ "ad": "OpenCritic",
+ "source_id": "source-0532",
+ "adres": "https://opencritic.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://opencritic.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "1fcddc83fbd2276832f10c62c0b089eafeea8f603cbad27c7d640c6a73b95213",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

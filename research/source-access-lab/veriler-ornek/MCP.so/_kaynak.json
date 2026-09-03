@@ -1,0 +1,17 @@
+{
+ "ad": "MCP.so",
+ "source_id": "source-0548",
+ "adres": "https://mcp.so",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://mcp.so/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "76816d7488a2be17263dc4378b2b081ce001573585234bbd40feba300280f3f6",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

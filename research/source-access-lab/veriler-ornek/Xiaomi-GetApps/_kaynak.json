@@ -1,0 +1,17 @@
+{
+ "ad": "Xiaomi GetApps",
+ "source_id": "source-0102",
+ "adres": "https://global.app.mi.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://global.app.mi.com/?lo=ID&la=en",
+   "dosya": "root_html.html",
+   "bayt": 0,
+   "sha256": "fa171ca8b65a9698a5ce996b203f572087cac8c6a20cda7f2070eaa3d6206f59",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

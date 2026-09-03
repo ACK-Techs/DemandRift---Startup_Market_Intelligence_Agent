@@ -1,0 +1,17 @@
+{
+ "ad": "AliExpress",
+ "source_id": "source-0163",
+ "adres": "https://aliexpress.ru",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://aliexpress.ru/",
+   "dosya": "aliexpress.html",
+   "bayt": 0,
+   "sha256": "64a1d9ccb911e17db6283f62efc86da2f7f8be3d1b8f9b22619daa1b2fd079b9",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

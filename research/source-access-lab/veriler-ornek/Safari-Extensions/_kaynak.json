@@ -1,0 +1,17 @@
+{
+ "ad": "Safari Extensions",
+ "source_id": "source-0112",
+ "adres": "https://apps.apple.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://apps.apple.com/sitemaps_apps_index_chart_1.xml",
+   "dosya": "sitemaps_apps_index_chart_1.xml",
+   "bayt": 0,
+   "sha256": "ac105b24b9476da959b7cead6c844476ce9dad0e7f792610629203ea402b8599",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

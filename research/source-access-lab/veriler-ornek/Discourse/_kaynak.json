@@ -1,0 +1,25 @@
+{
+ "ad": "Discourse",
+ "source_id": "source-0093",
+ "adres": "https://discourse.net",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.discourse.net/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 60462,
+   "sha256": "c56af66a80d89282ea0c027ad38205419671daa836dc101f941c1fb4bf6866ae",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://discourse.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2bac7f2654aa0e17f56f854e78715d35f0411262a12f7ec6ecc11bc0bb5479ed",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

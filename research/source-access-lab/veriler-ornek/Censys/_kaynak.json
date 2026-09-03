@@ -1,0 +1,17 @@
+{
+ "ad": "Censys",
+ "source_id": "source-0193",
+ "adres": "https://censys.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://censys.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "646709a7571ab549dafdb1f05b48ed77bb6d3ed9f77d4ab353ad7e148058ec49",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

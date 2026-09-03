@@ -1,0 +1,17 @@
+{
+ "ad": "SearXNG",
+ "source_id": "source-0010",
+ "adres": "https://docs.searxng.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://docs.searxng.org/",
+   "dosya": "docs.searxng.html",
+   "bayt": 0,
+   "sha256": "81e537ea139abf289fc575e1f6748e9342ad339abd7f32d0193387ef27711f76",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

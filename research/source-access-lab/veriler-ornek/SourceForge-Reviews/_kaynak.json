@@ -1,0 +1,17 @@
+{
+ "ad": "SourceForge Reviews",
+ "source_id": "source-0141",
+ "adres": "https://sourceforge.net",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://sourceforge.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "05af654cdab0e3a4a2a6a444f8a059371410622220ea7290750290e05b34d25f",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

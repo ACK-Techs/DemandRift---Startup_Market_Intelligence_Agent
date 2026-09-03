@@ -1,0 +1,17 @@
+{
+ "ad": "Owler",
+ "source_id": "source-0259",
+ "adres": "https://www.owler.com",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.owler.com/ceo-ratings.htm?industryName=Tech&page=1",
+   "dosya": "ceo-ratings.html",
+   "bayt": 58239,
+   "sha256": "f6db61e3835b78a70efae544e25568ff9bc2e9ae5a167d0150fa1b79f79d9c1b",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

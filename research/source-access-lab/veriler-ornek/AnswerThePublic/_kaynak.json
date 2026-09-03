@@ -1,0 +1,17 @@
+{
+ "ad": "AnswerThePublic",
+ "source_id": "source-0228",
+ "adres": "https://answerthepublic.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://answerthepublic.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 76473,
+   "sha256": "bcab64691b4cd37742a66a12551ae002c8baef711a5e5e1794952c3a5889a362",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

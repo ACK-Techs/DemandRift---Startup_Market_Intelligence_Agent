@@ -1,0 +1,17 @@
+{
+ "ad": "US Census Bureau",
+ "source_id": "source-0361",
+ "adres": "https://www.census.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.census.gov/sitemapindex/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "8bef82f85dc02b0c996eeba9bcdf2c184e87298f8ca13a31c4b5f5e49cbe4bf4",
+   "tarih": "2026-09-02T19:26:21"
+  }
+ ]
+}

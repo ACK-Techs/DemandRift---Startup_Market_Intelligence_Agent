@@ -78,8 +78,23 @@ ayırır — aksi hâlde arşivde kime ait olduğu okunamayan dosyalar kalırdı
 klasörlerine çıkarır; her klasörde `_kaynak.json` kaynağın adını, adresini,
 durumunu ve her dosyanın hangi URL'den ne zaman alındığını taşır.
 
-> Ham içerik (225 MB) ve koşu çıktıları `.gitignore` ile depoya alınmaz: yeniden
-> üretilebilirler ve neyin çekildiği `ARTEFAKT-DIZINI.csv` üzerinden görülür.
+### İçeriği görmek isteyenler için
+
+Ham içeriğin tamamı (225 MB) ve koşu çıktıları `.gitignore` ile depoya alınmaz:
+yeniden üretilebilirler ve neyin çekildiği `ARTEFAKT-DIZINI.csv` üzerinden
+görülür. Ancak verinin neye benzediğini görmek için **`veriler-ornek/`** klasörü
+depoda tutulur: 252 kaynağın gerçek içeriği, 5 MB.
+
+Seçim rastgele değil kurallıdır — yalnızca içerik yüzeyleri (robots.txt hariç),
+başarılı istekler, dosya başına 90 KB ve toplam 5 MB sınırıyla:
+
+```bash
+python3 export_by_source.py --only-fetched --out veriler-ornek \
+  --methods "root_html,entry_url,sitemap_xml,rss_feed,common_crawl_warc" \
+  --max-file-bytes 90000 --max-total-bytes 5000000
+```
+
+Tam arşiv için aynı komut sınırsız çalıştırılır (`veriler/`, 534 kaynak, 225 MB).
 
 ## Görev 3 — anahtar kelime ile arama
 

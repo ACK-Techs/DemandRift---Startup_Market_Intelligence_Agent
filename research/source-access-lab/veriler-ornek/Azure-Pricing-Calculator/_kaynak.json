@@ -1,0 +1,17 @@
+{
+ "ad": "Azure Pricing Calculator",
+ "source_id": "source-0616",
+ "adres": "https://azure.microsoft.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://azure.microsoft.com/robotsitemap-en-us/",
+   "dosya": "sitemap_xml.xml",
+   "bayt": 0,
+   "sha256": "a4e6a666a5d3597b72d42e1b512aa6e3eda5fae733be7ddb6356e0ff63d2dd63",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

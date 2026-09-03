@@ -1,0 +1,17 @@
+{
+ "ad": "Indiegogo",
+ "source_id": "source-0174",
+ "adres": "https://www.indiegogo.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.indiegogo.com:443/",
+   "dosya": "www.indiegogo.html",
+   "bayt": 34660,
+   "sha256": "4981ca90dc6daf5b560625c3fd788b6db259373c4f29ce3941168ba8662563b0",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

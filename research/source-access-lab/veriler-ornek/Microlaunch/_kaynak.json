@@ -1,0 +1,17 @@
+{
+ "ad": "Microlaunch",
+ "source_id": "source-0054",
+ "adres": "https://microlaunch.net",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://microlaunch.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "73d3eb03ee01bd0d3c1384a509207f432ac1410feccb217614675bb79c37eee4",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

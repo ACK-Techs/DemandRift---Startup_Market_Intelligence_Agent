@@ -1,0 +1,17 @@
+{
+ "ad": "DNSdumpster",
+ "source_id": "source-0196",
+ "adres": "https://dnsdumpster.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://dnsdumpster.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "9b9e3d8fc8620c1720d2f11f297a1eea4543995bf386f4e60f16eccde64789bf",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

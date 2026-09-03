@@ -1,0 +1,17 @@
+{
+ "ad": "Foursquare",
+ "source_id": "source-0304",
+ "adres": "https://foursquare.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://foursquare.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "d4bc8e74b625d98b27b1919881add4f888f03c85fedeefe677b4aa31dec35d6b",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

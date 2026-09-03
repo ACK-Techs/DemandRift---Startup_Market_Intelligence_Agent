@@ -1,0 +1,17 @@
+{
+ "ad": "Notion Integrations",
+ "source_id": "source-0129",
+ "adres": "https://www.notion.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.notion.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "b62a3fece8ae3fd481fb4b2e54b78896a2439d24736341abfb4d982e723b6a5a",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

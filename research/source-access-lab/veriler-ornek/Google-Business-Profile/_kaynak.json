@@ -1,0 +1,17 @@
+{
+ "ad": "Google Business Profile",
+ "source_id": "source-0310",
+ "adres": "https://business.google.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://business.google.com/sitemaps/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "8aeca05636adf6c6f3c9d4845efdb6c7f4488ad9236747dd895bc8a5dc674126",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Lyft",
+ "source_id": "source-0499",
+ "adres": "https://lyft.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://lyft.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "39ad826cd0670f51a20bb5ac196b6d87a52d8e8b0ca4280faf7f672ce916bf4a",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

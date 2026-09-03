@@ -1,0 +1,25 @@
+{
+ "ad": "TÜİK Konut İstatistikleri",
+ "source_id": "source-0482",
+ "adres": "https://veriportali.tuik.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "entry_url",
+   "url": "https://veriportali.tuik.gov.tr/",
+   "dosya": "veriportali.tuik.gov.html",
+   "bayt": 0,
+   "sha256": "e74199387441ed91ea3329bc85d4df1681a859815a448ad73b8d1291102dadbe",
+   "tarih": "2026-09-03T03:03:32"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://veriportali.tuik.gov.tr/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "622ef226e83374d0b8ffc4d5892ac27ca3a4d42ef70f92f6c4a0d4bdf2606c8e",
+   "tarih": "2026-09-03T03:03:32"
+  }
+ ]
+}

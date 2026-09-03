@@ -1,0 +1,17 @@
+{
+ "ad": "Respondent",
+ "source_id": "source-0590",
+ "adres": "https://respondent.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.respondent.io/",
+   "dosya": "www.respondent.html",
+   "bayt": 74005,
+   "sha256": "888ca20410ef20f11542c828645c576bc5fbef27ffa7e52b644eedea99d8fe67",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

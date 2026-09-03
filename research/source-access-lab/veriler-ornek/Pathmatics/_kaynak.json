@@ -1,0 +1,33 @@
+{
+ "ad": "Pathmatics",
+ "source_id": "source-0244",
+ "adres": "https://pathmatics.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://pathmatics.io/",
+   "dosya": "pathmatics.html",
+   "bayt": 76530,
+   "sha256": "249cf8284581bb5aae261fb77d0342c70691112fba6b506d4f3e680e137c99bd",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "rss_feed",
+   "url": "https://pathmatics.io/blog/feed.xml",
+   "dosya": "feed.xml",
+   "bayt": 0,
+   "sha256": "ef0c8e479e2c3908d6eb6b0521470b00e0541484ec90f338cfadcb31905eccdb",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://pathmatics.io/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2208c883cd7a8137092ddc3819a08a883c7e6251e5ce3fb62651dc30f9c55448",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

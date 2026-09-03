@@ -1,0 +1,17 @@
+{
+ "ad": "OpenCorporates",
+ "source_id": "source-0264",
+ "adres": "https://opencorporates.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://opencorporates.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "46134b6feb310978adb36faa7dcd3b8b6bb6ff8d1df14e5d2a253e49a27317c4",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

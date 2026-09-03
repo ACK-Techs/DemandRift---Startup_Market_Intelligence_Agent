@@ -1,0 +1,17 @@
+{
+ "ad": "Federal Register",
+ "source_id": "source-0396",
+ "adres": "https://www.federalregister.gov",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.federalregister.gov/",
+   "dosya": "www.federalregister.html",
+   "bayt": 54134,
+   "sha256": "bebe54dc9d888afcafb4ca0758cf87baaced83472b64c91eb4bc0373a890fcaa",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "WooCommerce Marketplace",
+ "source_id": "source-0115",
+ "adres": "https://woocommerce.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://woocommerce.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "09cf8b57cb4f0897a32d28fc827914a5c0307aee0e95d05e04171064d48c6d21",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

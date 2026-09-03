@@ -1,0 +1,17 @@
+{
+ "ad": "BigSpy",
+ "source_id": "source-0249",
+ "adres": "https://bigspy.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://bigspy.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 55923,
+   "sha256": "6e395325767e7204101434aa4b96d271f3c1d9283b7a34c9143bfb1e0e984310",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

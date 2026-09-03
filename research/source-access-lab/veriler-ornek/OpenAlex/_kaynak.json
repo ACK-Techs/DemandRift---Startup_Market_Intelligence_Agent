@@ -1,0 +1,17 @@
+{
+ "ad": "OpenAlex",
+ "source_id": "source-0323",
+ "adres": "https://openalex.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://openalex.org/",
+   "dosya": "openalex-2.html",
+   "bayt": 0,
+   "sha256": "8c0ad004aba8821f102cb27f3c6580e79d7f235bde59b136ff38e79a6ad4eaff",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

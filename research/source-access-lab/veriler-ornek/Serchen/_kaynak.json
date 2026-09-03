@@ -1,0 +1,17 @@
+{
+ "ad": "Serchen",
+ "source_id": "source-0143",
+ "adres": "https://serchen.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.serchen.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "6a26bfd5fd72043cbf4188bacd2a6c8fd91057b210014d463d7f058ea1fd13e3",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

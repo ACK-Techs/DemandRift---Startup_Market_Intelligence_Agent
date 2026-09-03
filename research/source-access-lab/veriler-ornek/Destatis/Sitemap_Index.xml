@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_Nodes.xml</loc>     
+  <lastmod>2026-06-09</lastmod> 
+</sitemap>
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_PressReleases.xml</loc>     
+  <lastmod>2019-07-23</lastmod> 
+</sitemap>
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_SpecialSites.xml</loc>     
+  <lastmod>2019-07-23</lastmod> 
+</sitemap>
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_Basepages.xml</loc>     
+  <lastmod>2019-07-23</lastmod> 
+</sitemap>
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_Glossar.xml</loc>     
+  <lastmod>2019-07-23</lastmod> 
+</sitemap>
+<sitemap>
+  <loc>https://www.destatis.de/Sitemap_Downloads.xml</loc>     
+  <lastmod>2019-07-23</lastmod> 
+</sitemap>
+</sitemapindex>

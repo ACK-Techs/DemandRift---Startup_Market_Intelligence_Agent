@@ -1,0 +1,25 @@
+{
+ "ad": "HubSpot App Marketplace",
+ "source_id": "source-0123",
+ "adres": "https://ecosystem.hubspot.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://ecosystem.hubspot.com/marketplace",
+   "dosya": "root_html.html",
+   "bayt": 53931,
+   "sha256": "465bb862fcf1f0c482076c692168eb4fca50f7e49ef6c6682fffc7f52fd1cce5",
+   "tarih": "2026-09-03T02:53:21"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://ecosystem.hubspot.com/marketplace-index.xml",
+   "dosya": "marketplace-index.xml",
+   "bayt": 0,
+   "sha256": "f170004ba24e6b5f7c51e53d647fb145dfb0a0245e83efee4f268799adaca3e5",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "DailyMed",
+ "source_id": "source-0428",
+ "adres": "https://dailymed.nlm.nih.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 74798,
+   "sha256": "0be049572acb8836a1fc1023be5d6ce4750b95b3f987947efe29a46714d5cdaa",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

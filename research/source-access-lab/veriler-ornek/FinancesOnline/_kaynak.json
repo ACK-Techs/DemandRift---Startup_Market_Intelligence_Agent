@@ -1,0 +1,17 @@
+{
+ "ad": "FinancesOnline",
+ "source_id": "source-0144",
+ "adres": "https://financesonline.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://financesonline.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "b847127895d362a4fea78684147e30c15cc5d87dcc4ff5a55157956f3519a39f",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

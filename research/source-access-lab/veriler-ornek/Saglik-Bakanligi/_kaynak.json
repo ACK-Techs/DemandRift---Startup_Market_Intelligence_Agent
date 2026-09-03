@@ -1,0 +1,17 @@
+{
+ "ad": "Sağlık Bakanlığı",
+ "source_id": "source-0387",
+ "adres": "https://www.saglik.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://saglik.gov.tr/?_Dil=1",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 68788,
+   "sha256": "2eb75abd4bb9224db38484a55c32edff5626390e22c589698b1afbe9ae44b153",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

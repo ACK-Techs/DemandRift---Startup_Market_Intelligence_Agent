@@ -1,0 +1,17 @@
+{
+ "ad": "Dealroom",
+ "source_id": "source-0255",
+ "adres": "https://dealroom.net",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://dealroom.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 45965,
+   "sha256": "1d72c0f13b39691ae6fb059d8b8098aa7e549540c355f8499ee8c787092da6c4",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "European e-Justice Business Registers",
+ "source_id": "source-0267",
+ "adres": "https://e-justice.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://e-justice.europa.eu/3-my-rights-after-trial/el-0_en",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 46238,
+   "sha256": "fb7beb0b2309e7c0982ff7fbf165ae410113e8f28abf920f26af352fdc11d7bf",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

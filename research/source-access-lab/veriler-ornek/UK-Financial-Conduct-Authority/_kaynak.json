@@ -1,0 +1,17 @@
+{
+ "ad": "UK Financial Conduct Authority",
+ "source_id": "source-0403",
+ "adres": "https://www.fca.org.uk",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.fca.org.uk/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "d86d648c29904825d5ad81f69b835323a3c41b67b19329ce4469bab332030a24",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

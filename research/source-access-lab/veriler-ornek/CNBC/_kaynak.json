@@ -1,0 +1,17 @@
+{
+ "ad": "CNBC",
+ "source_id": "source-0560",
+ "adres": "https://www.cnbc.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.cnbc.com/sitemapAll.xml",
+   "dosya": "sitemapAll.xml",
+   "bayt": 0,
+   "sha256": "3879cf5e4cd244c708b64f6b86643366677af6b8db06fe091624ffa42e0f119c",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

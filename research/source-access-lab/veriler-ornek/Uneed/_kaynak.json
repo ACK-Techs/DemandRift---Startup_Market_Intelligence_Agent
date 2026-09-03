@@ -1,0 +1,17 @@
+{
+ "ad": "Uneed",
+ "source_id": "source-0053",
+ "adres": "https://www.uneed.best",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.uneed.best/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "939ecf7b1e37aa13b37c3685658bb8912822db10d7673589009f4ec541bc3d90",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

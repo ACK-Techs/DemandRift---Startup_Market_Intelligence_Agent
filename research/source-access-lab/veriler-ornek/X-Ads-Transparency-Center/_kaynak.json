@@ -1,0 +1,17 @@
+{
+ "ad": "X Ads Transparency Center",
+ "source_id": "source-0242",
+ "adres": "https://ads.x.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://ads.x.com/en/help?ref=BTC",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 0,
+   "sha256": "5153c21cd6a9b180cbb89babc35bf8c138bdecccf642bdaf145c60760faacea5",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

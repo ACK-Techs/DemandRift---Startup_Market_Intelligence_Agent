@@ -1,0 +1,17 @@
+{
+ "ad": "INSEE",
+ "source_id": "source-0377",
+ "adres": "https://insee.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://insee.org/",
+   "dosya": "insee.html",
+   "bayt": 0,
+   "sha256": "5ae4df75b9bf6a20fac7f4c608cdbd6864e879fc13e66a78d7b3fde47cd3cc15",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

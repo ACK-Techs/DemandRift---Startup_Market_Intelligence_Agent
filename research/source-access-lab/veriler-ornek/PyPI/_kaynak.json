@@ -1,0 +1,17 @@
+{
+ "ad": "PyPI",
+ "source_id": "source-0040",
+ "adres": "https://pypi.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://pypi.org/",
+   "dosya": "pypi-3.html",
+   "bayt": 22977,
+   "sha256": "6b284b5cad3653582a7200e67dd2cc19c13c503896bb9a65704d104ca7567c57",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

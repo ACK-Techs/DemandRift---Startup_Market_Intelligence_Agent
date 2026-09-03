@@ -1,0 +1,25 @@
+{
+ "ad": "Startup Stash",
+ "source_id": "source-0057",
+ "adres": "https://startupstash.com",
+ "durum": "cekildi",
+ "dogrulama": "corpus_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://startupstash.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "ff7073865138644fcc3706b84c0e3476dfd44d7b5dbca477d5d4d334a0151939",
+   "tarih": "2026-09-02T20:55:13"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://startupstash.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "9ed891e32ba05f1dda815043fccb6f1d5b75c83d58899541c1e48dbfce823c71",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

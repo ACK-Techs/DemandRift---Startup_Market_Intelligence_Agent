@@ -1,0 +1,25 @@
+{
+ "ad": "Maze",
+ "source_id": "source-0594",
+ "adres": "https://maze.co",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://maze.co/sitemap-index.xml",
+   "dosya": "sitemap-index.xml",
+   "bayt": 0,
+   "sha256": "b41c9acee8f90ae9e868295780f70908d53832d1451907b3fca7041a5235281a",
+   "tarih": "2026-09-02T21:04:59"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.maize-maze.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "75ca71e6bbca233d42ef64e393b0054963e7331bda004bddb2ced3d0f4bdf95c",
+   "tarih": "2026-09-02T21:03:53"
+  }
+ ]
+}

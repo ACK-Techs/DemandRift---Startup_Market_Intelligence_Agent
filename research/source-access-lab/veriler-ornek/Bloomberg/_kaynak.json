@@ -1,0 +1,17 @@
+{
+ "ad": "Bloomberg",
+ "source_id": "source-0557",
+ "adres": "https://www.bloomberg.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.bloomberg.com/sitemaps/news/index.xml",
+   "dosya": "index.xml",
+   "bayt": 53868,
+   "sha256": "8dbc6c6937fc3c305cc08fd9c0d0607b868a55428f92efe50250400b5956236c",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Opera Add-ons",
+ "source_id": "source-0113",
+ "adres": "https://addons.opera.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://addons.opera.com/en/",
+   "dosya": "root_html.html",
+   "bayt": 58789,
+   "sha256": "45f464960fcaa978845ae7903e98db007c76e510cdbeadacc046030463cb3c4f",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

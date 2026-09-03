@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-doc.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-blog.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-models.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-datasets.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-spaces.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://huggingface.co/sitemap-papers.xml</loc>
+  </sitemap>
+</sitemapindex>

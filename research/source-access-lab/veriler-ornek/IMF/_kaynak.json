@@ -1,0 +1,17 @@
+{
+ "ad": "IMF",
+ "source_id": "source-0435",
+ "adres": "https://www.imf.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.imf.org/-/media/Files/ICD/FF.ashx",
+   "dosya": "FF.ashx",
+   "bayt": 53026,
+   "sha256": "3c5500496cc5da3612b3c2e070d3082dd4f42e93f94f8494e4cc866dc53776ac",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

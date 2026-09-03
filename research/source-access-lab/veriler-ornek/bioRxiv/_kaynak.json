@@ -1,0 +1,17 @@
+{
+ "ad": "bioRxiv",
+ "source_id": "source-0335",
+ "adres": "https://www.biorxiv.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.biorxiv.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "f6f649b6228dbb685d419b6aadc234b095beaa2ca96a1772b450fa57e4211d88",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

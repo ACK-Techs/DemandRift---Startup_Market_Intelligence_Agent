@@ -1,0 +1,17 @@
+{
+ "ad": "Serpstat",
+ "source_id": "source-0226",
+ "adres": "https://serpstat.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://serpstat.com/",
+   "dosya": "serpstat.html",
+   "bayt": 33553,
+   "sha256": "8f6c24faabfdba0ff0b8070f12b5c34272a9939ebd6befec46ff43be61456c9c",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

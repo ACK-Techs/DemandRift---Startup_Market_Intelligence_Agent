@@ -1,0 +1,25 @@
+{
+ "ad": "NuGet Gallery",
+ "source_id": "source-0044",
+ "adres": "https://nuget.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.nuget.org/",
+   "dosya": "www.nuget.html",
+   "bayt": 0,
+   "sha256": "f655db7e643b36c4a80ac883f9085495697c12f702836ef588e61e18812c45ca",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "root_html",
+   "url": "https://www.nuget.org/",
+   "dosya": "www.nuget-2.html",
+   "bayt": 0,
+   "sha256": "6e91e7101fd0cebddd17bc22173364ccb5345932cebb45d1969d699d96f917d9",
+   "tarih": "2026-09-02T15:53:31"
+  }
+ ]
+}

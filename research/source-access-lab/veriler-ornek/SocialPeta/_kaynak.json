@@ -1,0 +1,17 @@
+{
+ "ad": "SocialPeta",
+ "source_id": "source-0248",
+ "adres": "https://socialpeta.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://socialpeta.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 69320,
+   "sha256": "70a8b4e80ca8ba132617ac6ef865a2771e6e8c6748629f61d24c5e57d1bb634b",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

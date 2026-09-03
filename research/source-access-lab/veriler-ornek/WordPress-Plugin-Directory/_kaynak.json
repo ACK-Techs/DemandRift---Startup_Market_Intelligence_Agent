@@ -1,0 +1,17 @@
+{
+ "ad": "WordPress Plugin Directory",
+ "source_id": "source-0116",
+ "adres": "https://wordpress.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://wordpress.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "f1dc92a994147a8d9ac3d9263b517c914404ceb7aa8ad8a977baab225ffa9977",
+   "tarih": "2026-09-02T13:24:14"
+  }
+ ]
+}

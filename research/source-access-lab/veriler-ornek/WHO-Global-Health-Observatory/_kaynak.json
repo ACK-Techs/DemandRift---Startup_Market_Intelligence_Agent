@@ -1,0 +1,17 @@
+{
+ "ad": "WHO Global Health Observatory",
+ "source_id": "source-0364",
+ "adres": "https://www.who.int",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.who.int/sitemaps/sitemapindex.xml",
+   "dosya": "sitemapindex.xml",
+   "bayt": 0,
+   "sha256": "fed94013f0dd40b48cadc1b9315cedb7fa62f23ec09334849fd1f69a41ee6366",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

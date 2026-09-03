@@ -1,0 +1,17 @@
+{
+ "ad": "BTK",
+ "source_id": "source-0382",
+ "adres": "https://www.btk.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.btk.gov.tr/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "cb489d53b9d3373a802e466c1c5dfa28882aae02bdae001e70c1dd72f1602757",
+   "tarih": "2026-09-02T20:56:56"
+  }
+ ]
+}

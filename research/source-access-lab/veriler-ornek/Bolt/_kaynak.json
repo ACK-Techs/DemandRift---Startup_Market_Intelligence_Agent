@@ -1,0 +1,17 @@
+{
+ "ad": "Bolt",
+ "source_id": "source-0500",
+ "adres": "https://bolt.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://bolt.io/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2c786e83dd4b69260df3a7accad8ad8adeaf5d9235db35a0352f939b1c351f9b",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

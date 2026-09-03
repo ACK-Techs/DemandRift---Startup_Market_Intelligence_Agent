@@ -1,0 +1,17 @@
+{
+ "ad": "DOAJ",
+ "source_id": "source-0347",
+ "adres": "https://doaj.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://doaj.org/",
+   "dosya": "doaj-3.html",
+   "bayt": 77913,
+   "sha256": "840b3795d8d18f29c3df311895a328bf9d7777be8b35263755b55daf42728b60",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

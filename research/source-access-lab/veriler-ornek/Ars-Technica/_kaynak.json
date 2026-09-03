@@ -1,0 +1,17 @@
+{
+ "ad": "Ars Technica",
+ "source_id": "source-0564",
+ "adres": "https://arstechnica.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://arstechnica.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 24673,
+   "sha256": "0d7c13283371aecac8c6ad3c34ad67f65ff1774bcb52958db9c4bab25c36e183",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

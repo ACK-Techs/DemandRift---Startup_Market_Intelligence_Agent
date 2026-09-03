@@ -1,0 +1,17 @@
+{
+ "ad": "Cloudorado",
+ "source_id": "source-0611",
+ "adres": "https://www.cloudorado.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.cloudorado.com/",
+   "dosya": "www.cloudorado.html",
+   "bayt": 32416,
+   "sha256": "2de5be4e9f33eea8f403829cfd40129288d4e09a26a38c781948c7a09d46ea53",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

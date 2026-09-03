@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://builtwith.com</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/screencast</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/screencast" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/screencast" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/screencast" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/screencast" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/screencast" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/screencast" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/screencast" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/screencast" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/screencast" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/plans</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/plans" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/plans" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/plans" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/plans" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/plans" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/plans" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/plans" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/plans" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/plans" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/customers</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/customers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/customers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/customers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/customers" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/customers" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/customers" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/customers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/customers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/customers" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/faq" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/faq" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/faq" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/faq" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/faq" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/faq" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/faq" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/acquired-funded</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/acquired-funded" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/acquired-funded" />
+    <changefreq>daily</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/mcp-registry</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/mcp-registry" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/mcp-registry" />
+    <changefreq>daily</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/about" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/about" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/contact" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/contact" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/contact" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/contact" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/contact" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/toolbar</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/toolbar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/toolbar" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/toolbar" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/toolbar" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/toolbar" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/toolbar" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/toolbar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/toolbar" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/toolbar" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/crm-integrations</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/crm-integrations" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/crm-integrations" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/login</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/login" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/login" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/login" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/login" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/login" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/login" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/login" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/login" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/login" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/signup</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/signup" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/signup" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/signup" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/signup" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/signup" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/signup" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/signup" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/signup" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/signup" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/website-lists</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/website-lists" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/website-lists" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/website-lists" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/website-lists" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/website-lists" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/website-lists" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/website-lists" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/website-lists" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/website-lists" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/ecommerce</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/ecommerce" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/ecommerce" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/lead-generation</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/lead-generation" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/lead-generation" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/market-analysis</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/market-analysis" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/market-analysis" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/sales-intelligence</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/sales-intelligence" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/sales-intelligence" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/use-cases</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/use-cases" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/use-cases" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/use-cases" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/use-cases" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/use-cases" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/use-cases" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/use-cases" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/use-cases" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/use-cases" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/use-cases</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/future-customers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/future-customers" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/future-customers" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/future-customers" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/future-customers" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/future-customers" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/future-customers" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/future-customers" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/future-customers" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/data-coverage</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/data-coverage" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/data-coverage" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/alternative-data</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/alternative-data" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/alternative-data" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/report-filtering</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/report-filtering" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/report-filtering" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/all-features</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/all-features" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/all-features" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/all-features" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/all-features" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/all-features" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/all-features" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/all-features" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/all-features" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/all-features" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/exportable-fields</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/exportable-fields" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/exportable-fields" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/cyber-risk</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/cyber-risk" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/cyber-risk" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/privacy</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/terms</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/suggest</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/suggest" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/suggest" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/suggest" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/suggest" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/suggest" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/suggest" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/suggest" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/suggest" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/suggest" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets/countries</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets/countries" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets/countries" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets/tlds</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets/tlds" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets/tlds" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets/technology-categories</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets/technology-categories" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets/technology-categories" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets/technologies</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets/technologies" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets/technologies" />
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/datasets/schema</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/datasets/schema" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/datasets/schema" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/eCommerce</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/eCommerce" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/United-States</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/United-States" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/United-States" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/United-States/eCommerce</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/United-States/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/United-States/eCommerce" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/United-Kingdom</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/United-Kingdom" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/United-Kingdom" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/United-Kingdom/eCommerce</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/United-Kingdom/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/United-Kingdom/eCommerce" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/Australia</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/Australia" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/Australia" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-sites/Australia/eCommerce</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-sites/Australia/eCommerce" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-sites/Australia/eCommerce" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://builtwith.com/top-1m</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://builtwith.com/de/top-1m" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://builtwith.com/fr/top-1m" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://builtwith.com/es/top-1m" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://builtwith.com/ru/top-1m" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://builtwith.com/ko/top-1m" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://builtwith.com/ja/top-1m" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://builtwith.com/zh/top-1m" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://builtwith.com/it/top-1m" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://builtwith.com/ar/top-1m" />
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-31</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>

@@ -1,0 +1,17 @@
+{
+ "ad": "MIT Technology Review",
+ "source_id": "source-0570",
+ "adres": "https://www.technologyreview.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.technologyreview.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "032671eb8772485068e29262edeb68a2139392939c73d6aaa879d8073c289636",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

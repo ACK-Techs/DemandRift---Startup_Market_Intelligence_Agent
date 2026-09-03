@@ -1,0 +1,17 @@
+{
+ "ad": "Udemy",
+ "source_id": "source-0460",
+ "adres": "https://www.udemy.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.udemy.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "34184ac2c1957c2217ad0c85b922a0a3438bac033a1eaf6a15331ca98e6f1f3c",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

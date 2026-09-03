@@ -1,0 +1,17 @@
+{
+ "ad": "Slack",
+ "source_id": "source-0091",
+ "adres": "https://slack.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://slack.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "18f9e71f771407a458f5c258246ec51e40222e6411876626a60d360d7f2e0d39",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

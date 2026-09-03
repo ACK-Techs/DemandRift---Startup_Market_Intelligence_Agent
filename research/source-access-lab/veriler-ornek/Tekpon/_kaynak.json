@@ -1,0 +1,17 @@
+{
+ "ad": "Tekpon",
+ "source_id": "source-0147",
+ "adres": "https://tekpon.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://tekpon.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "96240cadabc4f6ba16399939344a31aa0ed6b5cdf02aae2f0119b098fb7ab717",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

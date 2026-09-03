@@ -1,0 +1,17 @@
+{
+ "ad": "Toolify",
+ "source_id": "source-0063",
+ "adres": "https://toolify.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://toolify.io/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2a8213da3ee8e365c0f88483595e3e9533a0de871203d561f035533ac9dbe7d1",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

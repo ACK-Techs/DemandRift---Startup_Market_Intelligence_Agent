@@ -1,0 +1,17 @@
+{
+ "ad": "Bing Maps",
+ "source_id": "source-0302",
+ "adres": "https://www.bing.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.bing.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "b01f48436b21eb3993fa19ff9244e963061c9be6b2fa159d18de0d8995334c13",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

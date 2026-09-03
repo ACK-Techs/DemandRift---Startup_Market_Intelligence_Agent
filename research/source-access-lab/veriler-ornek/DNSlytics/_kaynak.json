@@ -1,0 +1,25 @@
+{
+ "ad": "DNSlytics",
+ "source_id": "source-0197",
+ "adres": "https://dnslytics.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://dnslytics.com/",
+   "dosya": "dnslytics.html",
+   "bayt": 0,
+   "sha256": "3df3cc77f89d9f3ebdb341f0474d72cd343fcbf59a69f86c94a75a61798b8bc9",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://dnslytics.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "e20fd5a5bf69abd8877f52a4db0b2d708568c295d6c3ff5024a2c89d1e693e3b",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

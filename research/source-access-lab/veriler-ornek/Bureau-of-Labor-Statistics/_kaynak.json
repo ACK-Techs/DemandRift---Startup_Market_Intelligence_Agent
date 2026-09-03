@@ -1,0 +1,17 @@
+{
+ "ad": "Bureau of Labor Statistics",
+ "source_id": "source-0362",
+ "adres": "https://www.bls.gov",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.bls.gov/?utm_medium=email&utm_source=et&utm_content=http%3A%2F%2Fwww.bls.gov%2F&utm_campaign=1619765_209300_RNC%20Research",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 75402,
+   "sha256": "61bf69df0db83aab47986bdc35b8d406842b73849f17a0c9588982bb6b2d54c1",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

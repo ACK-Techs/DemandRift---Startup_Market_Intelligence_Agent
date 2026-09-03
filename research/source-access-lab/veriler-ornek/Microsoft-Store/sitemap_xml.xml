@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://apps.microsoft.com/sitemap/segmented?segment=sitemap-part-1</loc>
+    <lastmod>2026-09-02</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://apps.microsoft.com/sitemap/segmented?segment=sitemap-part-2</loc>
+    <lastmod>2026-09-02</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://apps.microsoft.com/sitemap/segmented?segment=sitemap-part-3</loc>
+    <lastmod>2026-09-02</lastmod>
+  </sitemap>
+</sitemapindex>

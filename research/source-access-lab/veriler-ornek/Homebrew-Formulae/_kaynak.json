@@ -1,0 +1,17 @@
+{
+ "ad": "Homebrew Formulae",
+ "source_id": "source-0046",
+ "adres": "https://formulae.brew.sh",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://formulae.brew.sh/",
+   "dosya": "formulae.brew.html",
+   "bayt": 0,
+   "sha256": "9ae9d1ab275bf0a9942e98e0ece942e961fabacfc602de662d9dfba3a9ac52f0",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

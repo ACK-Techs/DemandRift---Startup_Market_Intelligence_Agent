@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Our World in Data</title>
+<subtitle>Research and data to make progress against the world’s largest problems</subtitle>
+<id>https://ourworldindata.org/</id>
+<link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
+<link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
+<updated>2026-08-31T00:00:00.000Z</updated>
+<entry>
+            <title><![CDATA[Beef production in Brazil has been the largest driver of global deforestation in recent decades]]></title>
+            <id>https://ourworldindata.org/beef-production-in-brazil-has-been-the-largest-driver-of-global-deforestation-in-recent-decades</id>
+            <link rel="alternate" href="https://ourworldindata.org/beef-production-in-brazil-has-been-the-largest-driver-of-global-deforestation-in-recent-decades"/>
+            <published>2026-08-31T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Most beef production in Brazil is to meet domestic rather than international demand.<br><br><a href="https://ourworldindata.org/beef-production-in-brazil-has-been-the-largest-driver-of-global-deforestation-in-recent-decades"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/31b278f8-6814-47ba-54ac-73914f6aff00/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[The rise of electoral democracy]]></title>
+            <id>https://ourworldindata.org/the-rise-of-electoral-democracy</id>
+            <link rel="alternate" href="https://ourworldindata.org/the-rise-of-electoral-democracy"/>
+            <published>2026-08-24T00:00:00.000Z</published>
+            <author><name>Bastian Herre</name></author><author><name>Esteban Ortiz-Ospina</name></author><author><name>Lucas Rodés-Guirao</name></author>
+            <summary><![CDATA[How elections spread, voting rights expanded, and political competition developed around the world over the last two centuries.<br><br><a href="https://ourworldindata.org/the-rise-of-electoral-democracy"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/8bb8ce32-4bbc-487c-e8bf-4ca148339a00/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[Which countries have already passed peak population, and when will the rest do so?]]></title>
+            <id>https://ourworldindata.org/which-countries-have-already-passed-peak-population-and-when-will-the-rest-do-so</id>
+            <link rel="alternate" href="https://ourworldindata.org/which-countries-have-already-passed-peak-population-and-when-will-the-rest-do-so"/>
+            <published>2026-08-17T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author><author><name>Edouard Mathieu</name></author><author><name>Lucas Rodés-Guirao</name></author>
+            <summary><![CDATA[Falling fertility rates have created a unique scenario in human history: many countries are experiencing structural population decline.<br><br><a href="https://ourworldindata.org/which-countries-have-already-passed-peak-population-and-when-will-the-rest-do-so"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/0da09f22-48af-466e-88fa-22780080b500/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[138 million children are in child labor. What does this actually mean?]]></title>
+            <id>https://ourworldindata.org/138-million-children-are-in-child-labor-what-does-this-actually-mean</id>
+            <link rel="alternate" href="https://ourworldindata.org/138-million-children-are-in-child-labor-what-does-this-actually-mean"/>
+            <published>2026-08-10T00:00:00.000Z</published>
+            <author><name>Esteban Ortiz-Ospina</name></author>
+            <summary><![CDATA[According to a UN report published last year, there are 138 million children in child labor. In this article, we look at what this estimate exactly captures.<br><br><a href="https://ourworldindata.org/138-million-children-are-in-child-labor-what-does-this-actually-mean"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/564b02f9-4455-4334-12ce-94a4583fde00/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[How primary energy is measured has changed across our charts]]></title>
+            <id>https://ourworldindata.org/primary-energy-measurement-change</id>
+            <link rel="alternate" href="https://ourworldindata.org/primary-energy-measurement-change"/>
+            <published>2026-08-07T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author><author><name>Pablo Rosado</name></author>
+            <summary><![CDATA[The Energy Institute no longer uses the substitution method to estimate primary energy. Here’s why that matters for our charts on energy.<br><br><a href="https://ourworldindata.org/primary-energy-measurement-change"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/9a8b8dbc-314b-4366-f601-386556664700/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[What has driven deforestation in the 21st century?]]></title>
+            <id>https://ourworldindata.org/what-has-driven-deforestation-in-the-21st-century</id>
+            <link rel="alternate" href="https://ourworldindata.org/what-has-driven-deforestation-in-the-21st-century"/>
+            <published>2026-08-03T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Agriculture has been the main driver of deforestation, but this has been concentrated in only a few commodities: mostly beef, palm oil, soy, and forestry products.<br><br><a href="https://ourworldindata.org/what-has-driven-deforestation-in-the-21st-century"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/b63c446f-e9a8-4eca-b979-4e1eafb5a500/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[We published a new topic page on economic inequality]]></title>
+            <id>https://ourworldindata.org/we-published-a-new-topic-page-on-economic-inequality</id>
+            <link rel="alternate" href="https://ourworldindata.org/we-published-a-new-topic-page-on-economic-inequality"/>
+            <published>2026-07-27T00:00:00.000Z</published>
+            <author><name>Joe Hasell</name></author><author><name>Bertha Rohenkohl</name></author><author><name>Pablo Arriagada</name></author><author><name>Esteban Ortiz-Ospina</name></author><author><name>Max Roser</name></author>
+            <summary><![CDATA[Learn how inequality is measured, who produces key databases, and what the data tells us.<br><br><a href="https://ourworldindata.org/we-published-a-new-topic-page-on-economic-inequality"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/8572fbf8-1c9c-4176-a865-12735e86a000/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[How much energy do data centers and artificial intelligence use?]]></title>
+            <id>https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use</id>
+            <link rel="alternate" href="https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use"/>
+            <published>2026-07-20T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author>
+            <summary><![CDATA[Data centers consume around 1.5% of global electricity, but demand is very geographically concentrated.<br><br><a href="https://ourworldindata.org/how-much-energy-do-data-centers-and-artificial-intelligence-use"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/1bda728d-dc32-4ca7-32f8-dcb5be9a4b00/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[We have a new Urbanization topic page]]></title>
+            <id>https://ourworldindata.org/we-have-a-new-urbanization-topic-page</id>
+            <link rel="alternate" href="https://ourworldindata.org/we-have-a-new-urbanization-topic-page"/>
+            <published>2026-07-13T00:00:00.000Z</published>
+            <author><name>Esteban Ortiz-Ospina</name></author>
+            <summary><![CDATA[Explore how populations are distributed across settlement types, which cities are growing fastest, what living conditions in urban areas look like, and much more.<br><br><a href="https://ourworldindata.org/we-have-a-new-urbanization-topic-page"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/a57ed482-5955-4a15-01c2-fc5092c4ac00/w=1024"/></a>]]></summary>
+            </entry>
+<entry>
+            <title><![CDATA[How does food get traded around the world?]]></title>
+            <id>https://ourworldindata.org/how-does-food-get-traded-around-the-world</id>
+            <link rel="alternate" href="https://ourworldindata.org/how-does-food-get-traded-around-the-world"/>
+            <published>2026-06-29T00:00:00.000Z</published>
+            <author><name>Hannah Ritchie</name></author><author><name>Sophia Mersmann</name></author><author><name>Pablo Rosado</name></author><author><name>Marwa Boukarim</name></author>
+            <summary><![CDATA[Our interactive tool helps you see where food is exported from and where it goes.<br><br><a href="https://ourworldindata.org/how-does-food-get-traded-around-the-world"><img src="https://ourworldindata.org/cdn-cgi/imagedelivery/qLq-8BTgXU8yG0N6HnOy8g/65dfb98e-8a6d-4318-59cd-d71a642a1000/w=1024"/></a>]]></summary>
+            </entry>
+</feed>

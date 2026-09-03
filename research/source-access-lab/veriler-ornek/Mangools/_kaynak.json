@@ -1,0 +1,17 @@
+{
+ "ad": "Mangools",
+ "source_id": "source-0221",
+ "adres": "https://mangools.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://mangools.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "765796d27c557cd62da49da1de58758760d16179f420fe87ad09fcce45083dfb",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

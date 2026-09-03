@@ -1,0 +1,17 @@
+{
+ "ad": "ProvenExpert",
+ "source_id": "source-0154",
+ "adres": "https://provenexpert.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://provenexpert.org/",
+   "dosya": "provenexpert.html",
+   "bayt": 0,
+   "sha256": "a80c3eb585a1bea12b6ce15d559ded89522c2faf08ec031fe609f7ec7b80dc41",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "People Data Labs",
+ "source_id": "source-0263",
+ "adres": "https://peopledatalabs.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.peopledatalabs.com/",
+   "dosya": "www.peopledatalabs.html",
+   "bayt": 45728,
+   "sha256": "d1383f833831a7dd2df9e0ea3f1cc179e6cd4384573716c6063941cf31273e3f",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

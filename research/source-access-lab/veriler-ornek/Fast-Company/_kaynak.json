@@ -1,0 +1,17 @@
+{
+ "ad": "Fast Company",
+ "source_id": "source-0568",
+ "adres": "https://fast.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://fast.com/",
+   "dosya": "fast.html",
+   "bayt": 26326,
+   "sha256": "ce2fc39ed1fd9c2f5fd43a1fa355a9b1ddfd090ce1ecb0e03ae7ea032f237081",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

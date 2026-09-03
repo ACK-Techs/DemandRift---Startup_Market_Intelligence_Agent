@@ -1,0 +1,17 @@
+{
+ "ad": "PlayStation Store",
+ "source_id": "source-0522",
+ "adres": "https://store.playstation.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://store.playstation.com/en-us/pages/latest",
+   "dosya": "root_html.html",
+   "bayt": 66451,
+   "sha256": "91d515e39a78c5373eccc93c803b68e066ce4bd79329eaea13ae03895f513f6b",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

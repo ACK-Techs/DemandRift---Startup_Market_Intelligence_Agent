@@ -1,0 +1,25 @@
+{
+ "ad": "APNIC",
+ "source_id": "source-0189",
+ "adres": "https://www.apnic.net",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.apnic.net/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "e6d32a897ee328fdf5e4fcc93f909e341b04e4a0e7023837dbeb0012d163de58",
+   "tarih": "2026-09-02T19:44:02"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.apnic.net/wp-sitemap.xml",
+   "dosya": "wp-sitemap.xml",
+   "bayt": 0,
+   "sha256": "88dfcccba1814445bb65818d806afe4c61ee12fbdd96d502524d0b11f71d1731",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

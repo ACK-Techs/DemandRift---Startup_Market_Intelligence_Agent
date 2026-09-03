@@ -1,0 +1,17 @@
+{
+ "ad": "Borsa İstanbul",
+ "source_id": "source-0442",
+ "adres": "https://borsaistanbul.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://borsaistanbul.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "4db4bfc4f7b396cca98573785f45fd816f8b956d42bf74df9b85d48f8e04bee3",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Think with Google",
+ "source_id": "source-0232",
+ "adres": "https://www.thinkwithgoogle.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.thinkwithgoogle.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "c0788941d62a7cdd61e7e3b64ec2aa09a39d4ed3af6dad58dbeee676942919c3",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

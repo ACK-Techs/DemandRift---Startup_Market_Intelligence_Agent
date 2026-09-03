@@ -1,0 +1,17 @@
+{
+ "ad": "TÜBİTAK",
+ "source_id": "source-0622",
+ "adres": "https://tubitak.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://tubitak.gov.tr/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "a6a513108da0fe909200743915b03229b90696b35650561c9492f7949f252869",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

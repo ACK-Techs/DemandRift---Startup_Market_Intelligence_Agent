@@ -1,0 +1,17 @@
+{
+ "ad": "Lemmy",
+ "source_id": "source-0095",
+ "adres": "https://join-lemmy.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://join-lemmy.org/",
+   "dosya": "join-lemmy.html",
+   "bayt": 60736,
+   "sha256": "2510912e122d406ff2bbeb40af029115b1434d9799882eefcbcacbfeb5a4aaf8",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

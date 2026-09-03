@@ -1,0 +1,25 @@
+{
+ "ad": "Groups.io",
+ "source_id": "source-0094",
+ "adres": "https://groups.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://groups.io/",
+   "dosya": "groups.html",
+   "bayt": 65489,
+   "sha256": "e0b1857befd25d0668a0738ba414d303226f5b9de86cf1512432ccc42ed0278d",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "root_html",
+   "url": "https://groups.io/",
+   "dosya": "groups-2.html",
+   "bayt": 65489,
+   "sha256": "0293d918e06cb17b81bf73fa0f7e7ef833c5ffaa4e471670abfb08ebc57b3efe",
+   "tarih": "2026-09-02T15:53:31"
+  }
+ ]
+}

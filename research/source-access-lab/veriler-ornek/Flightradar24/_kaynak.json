@@ -1,0 +1,17 @@
+{
+ "ad": "Flightradar24",
+ "source_id": "source-0504",
+ "adres": "https://www.flightradar24.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.flightradar24.com/sitemap/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "534b3ac6ea0416ad938e2f305a27c63dc67e200f4bda54a6dbba683c678a6c39",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Orphanet",
+ "source_id": "source-0425",
+ "adres": "https://www.orpha.net",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.orpha.net/",
+   "dosya": "www.orpha.html",
+   "bayt": 0,
+   "sha256": "4a3caf715f384e24dfe712a39dda7d8d734d0f8b23b650b0df64006d1b8bab6a",
+   "tarih": "2026-09-03T07:26:41"
+  }
+ ]
+}

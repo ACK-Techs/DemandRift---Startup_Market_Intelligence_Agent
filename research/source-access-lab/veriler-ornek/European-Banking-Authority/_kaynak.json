@@ -1,0 +1,17 @@
+{
+ "ad": "European Banking Authority",
+ "source_id": "source-0394",
+ "adres": "https://www.eba.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.eba.europa.eu/homepage",
+   "dosya": "root_html.html",
+   "bayt": 84411,
+   "sha256": "6af22b2854245c2653e1860f90abf417841277097a8ab4d23b51b71cefc88c1a",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

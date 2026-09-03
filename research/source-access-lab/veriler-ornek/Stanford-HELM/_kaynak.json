@@ -1,0 +1,17 @@
+{
+ "ad": "Stanford HELM",
+ "source_id": "source-0540",
+ "adres": "https://crfm.stanford.edu",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://crfm.stanford.edu/",
+   "dosya": "crfm.stanford.html",
+   "bayt": 0,
+   "sha256": "d5abc6db304fc1459e7d4b021124510bb10398e3bb03a1c23c52a3b13dc8e644",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

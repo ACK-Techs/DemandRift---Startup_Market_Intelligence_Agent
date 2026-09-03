@@ -1,0 +1,17 @@
+{
+ "ad": "Open VSX Registry",
+ "source_id": "source-0048",
+ "adres": "https://open-vsx.org",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://open-vsx.org/",
+   "dosya": "open-vsx.html",
+   "bayt": 0,
+   "sha256": "9d77ecaa67cf4d0198f800d3543a48a800cd9979fec8662e3fd1415e85e6b4a6",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

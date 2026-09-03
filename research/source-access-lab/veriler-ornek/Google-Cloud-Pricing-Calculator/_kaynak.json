@@ -1,0 +1,17 @@
+{
+ "ad": "Google Cloud Pricing Calculator",
+ "source_id": "source-0617",
+ "adres": "https://cloud.google.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://cloud.google.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 24852,
+   "sha256": "c7f67bcd948e7ed913b9afbd77abc6dde4bf569bbc0cc26e94c9b6854068e298",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

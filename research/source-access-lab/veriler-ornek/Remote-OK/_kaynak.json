@@ -1,0 +1,25 @@
+{
+ "ad": "Remote OK",
+ "source_id": "source-0290",
+ "adres": "https://remoteok.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://remoteok.com/",
+   "dosya": "remoteok.html",
+   "bayt": 59610,
+   "sha256": "a7f09ffc9078a98faa9b288502af0c1361e76967ecac134afd61aac8dd0b470f",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://remoteok.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "e4c4fd038380e3fbd2362386a4ec0c6ca444f5154d9087fafa6fe2020bbd3b02",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

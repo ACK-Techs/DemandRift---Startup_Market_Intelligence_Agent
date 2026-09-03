@@ -1,0 +1,17 @@
+{
+ "ad": "AWS Pricing Calculator",
+ "source_id": "source-0615",
+ "adres": "https://calculator.aws",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://calculator.aws/",
+   "dosya": "calculator.html",
+   "bayt": 0,
+   "sha256": "801ae516e1bf58a1b1137826a988813ad46e8f5202feae8a20e5593291929a5b",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

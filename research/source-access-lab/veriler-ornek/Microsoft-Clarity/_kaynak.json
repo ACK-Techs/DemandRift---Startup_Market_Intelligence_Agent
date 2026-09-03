@@ -1,0 +1,17 @@
+{
+ "ad": "Microsoft Clarity",
+ "source_id": "source-0604",
+ "adres": "https://clarity.microsoft.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://clarity.microsoft.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "8dbf925a94a0b231aafa131eb836fa848acb141a62109e40dfa6d1c2cb2df27d",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

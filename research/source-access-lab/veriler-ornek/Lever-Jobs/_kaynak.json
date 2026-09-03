@@ -1,0 +1,17 @@
+{
+ "ad": "Lever Jobs",
+ "source_id": "source-0286",
+ "adres": "https://www.lever.co",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.lever.co/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 79292,
+   "sha256": "a17d71907ee6bb41ed8b86879dd42613b87a8e30ae27f86b05c20265dc3439d9",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

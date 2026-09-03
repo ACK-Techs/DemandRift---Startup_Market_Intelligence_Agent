@@ -1,0 +1,17 @@
+{
+ "ad": "USPTO Patent Center",
+ "source_id": "source-0407",
+ "adres": "https://patentcenter.uspto.gov",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://patentcenter.uspto.gov/?ref=investo.global",
+   "dosya": "common_crawl_warc.html",
+   "bayt": 0,
+   "sha256": "025945c7e41f7703046dcacac51521140d313681a98bdf5a8bd35b3f2529478d",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

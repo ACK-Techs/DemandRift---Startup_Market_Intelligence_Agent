@@ -1,0 +1,33 @@
+{
+ "ad": "Anadolu Ajansı",
+ "source_id": "source-0582",
+ "adres": "https://www.aa.com.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.aa.com.tr/",
+   "dosya": "www.aa.com.html",
+   "bayt": 33739,
+   "sha256": "6e02d194964fe3bb9648d5e59d91a3a9c8c9a94e0a73d7315a7dd5f8f47cc506",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel",
+   "dosya": "rss_feed.xml",
+   "bayt": 21819,
+   "sha256": "30abb14d971a6e353c4af34075ad02998eae9358c29dbdaf078582ce2e4bb760",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.aa.com.tr/tr/Sitemap/index",
+   "dosya": "sitemap_xml.xml",
+   "bayt": 0,
+   "sha256": "dce6e31136ab5f634f6543acb2a02682af12c0b53b5f3cef358ad97aa110151b",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

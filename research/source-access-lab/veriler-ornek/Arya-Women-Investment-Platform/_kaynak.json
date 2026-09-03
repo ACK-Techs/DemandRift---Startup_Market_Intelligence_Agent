@@ -1,0 +1,17 @@
+{
+ "ad": "Arya Women Investment Platform",
+ "source_id": "source-0634",
+ "adres": "https://www.aryawomen.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.aryawomen.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "9e162e2b6c1dbc37a8b60adcc3fadf1099d179b0de5d207711c291d0811b5cfa",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

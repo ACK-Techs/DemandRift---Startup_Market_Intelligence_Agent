@@ -1,0 +1,17 @@
+{
+ "ad": "CloudPrice",
+ "source_id": "source-0612",
+ "adres": "https://cloudprice.net",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://cloudprice.net/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "5cd9debb2201c29219efb91b3bbe99a485695d298ef797fd44d3aee30f18ae81",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Twitch",
+ "source_id": "source-0525",
+ "adres": "https://www.twitch.tv",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.twitch.tv/sitemapv2_index.xml.gz",
+   "dosya": "sitemapv2_index.xml.xml",
+   "bayt": 0,
+   "sha256": "99a60b04ca0dd9fb88fe1e18acd55c8ac47e83d7ca343daf8382fc62cb7a640f",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "MASAK",
+ "source_id": "source-0388",
+ "adres": "https://masak.hmb.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://masak.hmb.gov.tr/",
+   "dosya": "masak.hmb.gov.html",
+   "bayt": 0,
+   "sha256": "bf584f20b1b43d19457a10f98b42472a7379b75ba6d55abe2216b766086bf90c",
+   "tarih": "2026-09-02T20:56:56"
+  }
+ ]
+}

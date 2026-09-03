@@ -1,0 +1,33 @@
+{
+ "ad": "Hostelworld",
+ "source_id": "source-0493",
+ "adres": "https://www.hostelworldgroup.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.hostelworldgroup.com/",
+   "dosya": "www.hostelworldgroup.html",
+   "bayt": 43497,
+   "sha256": "49150713e668736367901aae18d351e74b15ab3e37fb4c159c675ba0263323d8",
+   "tarih": "2026-09-02T21:31:30"
+  },
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.hostelworldgroup.com/rss/financial-calendar",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "7e73fe1b7c4c085267bc09bc799eadb24935819ff20b8246d38e2822535dae7e",
+   "tarih": "2026-09-02T21:31:30"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.hostelworldgroup.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "90d018dad32be46145e66010bfa114e4391d24e847482fc34f409131f1759f09",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

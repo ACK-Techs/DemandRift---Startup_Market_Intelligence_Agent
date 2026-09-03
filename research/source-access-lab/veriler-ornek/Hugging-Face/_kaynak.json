@@ -1,0 +1,17 @@
+{
+ "ad": "Hugging Face",
+ "source_id": "source-0534",
+ "adres": "https://huggingface.co",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://huggingface.co/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "97848a713bd2b36072b90058b239a25b09e028fb26d13e50c9cd064b65839593",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

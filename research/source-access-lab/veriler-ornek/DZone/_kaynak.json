@@ -1,0 +1,17 @@
+{
+ "ad": "DZone",
+ "source_id": "source-0033",
+ "adres": "https://dzone.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://dzone.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "054cced0be757d788bab788fcf21aed52d5ef2548533fcdbdcdead0e1b9e0889",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

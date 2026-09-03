@@ -1,0 +1,17 @@
+{
+ "ad": "T.C. Sanayi ve Teknoloji Bakanlığı",
+ "source_id": "source-0369",
+ "adres": "https://sanayi.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://sanayi.gov.tr/",
+   "dosya": "sanayi.gov.html",
+   "bayt": 0,
+   "sha256": "b587711574e61fa0229624d2f4c9e958420cc771314287b2a1c8098e8fe81887",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

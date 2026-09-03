@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AppMagic.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/favicon.ico">
+  <!-- Internal CSS belongs in <head>; you can also move this to an external CSS file linked from <head>. -->
+  <style>
+    /* Page layout */
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 1rem;
+      background: #f2f2f2;
+      box-sizing: border-box;
+    }
+
+    /* Logo container */
+    .logo-container {
+      width: 90vw;
+      max-width: 90vw;
+      max-height: 90vh;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+
+    /* Responsive <object> holding the SVG animation */
+    /* Aspect ratio matches the SVG viewBox: 166.66667 / 128 */
+    #logo-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 166.66667 / 128;
+      max-height: 60vh;
+    }
+
+    /* Animated text under the logo */
+    .logo-text {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 3rem;
+      max-width: 100%;
+      max-height: 5vh;
+      object-fit: contain;
+    }
+
+    @media (min-width: 600px) {
+      .logo-container { max-width: 600px; }
+    }
+    @media (min-width: 800px) {
+      .logo-container { max-width: 800px; }
+    }
+
+    /* Floating Contact Button */
+    .contact-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #F2B14C;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .contact-button:hover {
+      background: #E6A042;
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+    .contact-button:active {
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <!-- Use <object> so the SVG’s internal script (e.g., SVGator player) executes -->
+    <!-- Optional: append ?v=build-hash during development; prefer filename hashing for production -->
+    <object
+      id="logo-svg"
+      type="image/svg+xml"
+      data="LogoSVG_JS.svg?v=123"
+      aria-label="Logo Graphic">
+      <!-- Fallback for older browsers -->
+      <img src="LogoSVG_JS.svg" alt="Logo Graphic">
+    </object>
+
+    <!-- If this file is a simple animated SVG without JS, <img> is fine; otherwise consider another <object> or inline -->
+    <img src="LogoText-animated.svg" alt="Logo Text Animation" class="logo-text">
+  </div>
+
+  <!-- Floating Contact Button -->
+  <button class="contact-button" onclick="openContactEmail()" title="Contact Support">
+    Contact
+  </button>
+
+  <script>
+    function openContactEmail() {
+      const mailtoLink = 'mailto:support@appmagic.com';
+      window.location.href = mailtoLink;
+    }
+
+    window.addEventListener('load', function () {
+      const animatedSvg = document.querySelector('.logo-text');
+      if (animatedSvg) {
+        animatedSvg.src = `LogoText-animated.svg?t=${Date.now()}`;
+      }
+    });
+  </script>
+</body>
+</html>

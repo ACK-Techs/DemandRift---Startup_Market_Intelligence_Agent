@@ -1,0 +1,17 @@
+{
+ "ad": "WIPO PATENTSCOPE",
+ "source_id": "source-0409",
+ "adres": "https://patentscope.wipo.int",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://patentscope.wipo.int/",
+   "dosya": "patentscope.wipo.html",
+   "bayt": 0,
+   "sha256": "c7eb170c869f594d614de7bcc12addbfece6cf6bafa9a72b6bff068806685c5b",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

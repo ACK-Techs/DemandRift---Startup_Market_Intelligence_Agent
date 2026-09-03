@@ -1,0 +1,17 @@
+{
+ "ad": "Meta Ad Library",
+ "source_id": "source-0236",
+ "adres": "https://metaadlibrary.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://metaadlibrary.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "ca7731fabe1fc2954a33ddcec8f9a9605b49c67ce381553f8e8bfa97f70ffb4c",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

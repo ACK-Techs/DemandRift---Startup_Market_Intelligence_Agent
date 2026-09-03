@@ -1,0 +1,17 @@
+{
+ "ad": "Google Transparency Report",
+ "source_id": "source-0212",
+ "adres": "https://transparencyreport.google.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://transparencyreport.google.com/",
+   "dosya": "transparencyreport.google.html",
+   "bayt": 0,
+   "sha256": "3db29ad72dc7deea918d75df4b10693a921834344a7e3d4042bd03a3587e50fb",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

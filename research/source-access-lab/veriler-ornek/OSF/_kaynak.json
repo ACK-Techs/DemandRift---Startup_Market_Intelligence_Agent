@@ -1,0 +1,17 @@
+{
+ "ad": "OSF",
+ "source_id": "source-0350",
+ "adres": "https://osf.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://osf.io/",
+   "dosya": "osf.html",
+   "bayt": 0,
+   "sha256": "b3b0023ca2d6e6503197b1d3b11485d4c2c9cec17d96903fcb818f7272b4cae6",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "BuzzSumo",
+ "source_id": "source-0234",
+ "adres": "https://buzzsumo.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://buzzsumo.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "f75a94793b254c6f11fb31fb8fb274c2d507efefa73101f503558d9ad037c6ce",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

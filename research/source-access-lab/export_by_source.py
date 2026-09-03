@@ -109,7 +109,14 @@ def main() -> int:
     parser.add_argument("--out", type=Path, default=HERE / "veriler")
     parser.add_argument("--only-fetched", action="store_true",
                         help="Yalnizca icerigi olan kaynaklari cikarir (robots.txt tek basina yeterli sayilmaz)")
+    parser.add_argument("--max-file-bytes", type=int, default=0,
+                        help="Bu boyutu asan dosyalar atlanir (0 = sinir yok)")
+    parser.add_argument("--max-total-bytes", type=int, default=0,
+                        help="Toplam bu boyuta ulasinca durur (0 = sinir yok)")
+    parser.add_argument("--methods", default="",
+                        help="Yalnizca bu yontemler cikarilir (virgulle)")
     args = parser.parse_args()
+    izinli_yontem = {m.strip() for m in args.methods.split(",") if m.strip()}
 
     defter = {r["source_id"]: r for r in csv.DictReader(args.ledger.open(encoding="utf-8"))}
     kayitlar: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -117,6 +124,7 @@ def main() -> int:
         kayitlar[satir["source_id"]].append(satir)
 
     yazilan_kaynak = kopyalanan = atlanan = 0
+    toplam_bayt = 0
     for source_id, satirlar in sorted(kayitlar.items(), key=lambda kv: kv[1][0]["ad"].casefold()):
         durum = defter.get(source_id, {}).get("durum", "")
         if args.only_fetched and durum != "cekildi":
@@ -127,6 +135,17 @@ def main() -> int:
         kullanilan: set[str] = set()
         yuzeyler = []
         for satir in sorted(satirlar, key=lambda s: s["yontem"]):
+            # Ornek cikarimda sinirlar: tek dosya ve toplam boyut. Boylece depoya
+            # konabilecek kucuk bir kume uretilir, secim rastgele degil kurallidir.
+            if izinli_yontem and satir["yontem"] not in izinli_yontem:
+                continue
+            if satir.get("sonuc", "ok") != "ok":
+                continue
+            bayt = int(satir["bayt"] or 0)
+            if args.max_file_bytes and bayt > args.max_file_bytes:
+                continue
+            if args.max_total_bytes and toplam_bayt + bayt > args.max_total_bytes:
+                continue
             hedef_ad = dosya_adi(satir["yontem"], satir["cekilen_url"], satir.get("mime", ""), kullanilan)
             if satir["saklama"] == "dosya":
                 kaynak_yolu = satir["dosya"]
@@ -145,11 +164,18 @@ def main() -> int:
                     continue
                 (hedef / hedef_ad).write_bytes(govde)
             kopyalanan += 1
+            toplam_bayt += bayt
             yuzeyler.append({
                 "yontem": satir["yontem"], "url": satir["cekilen_url"],
                 "dosya": hedef_ad, "bayt": int(satir["bayt"] or 0),
                 "sha256": satir["sha256"], "tarih": satir["tarih"],
             })
+        if not yuzeyler:
+            # Sinirlar yuzunden hicbir dosya kopyalanmadiysa bos klasor birakilmaz.
+            for artik in hedef.iterdir():
+                artik.unlink()
+            hedef.rmdir()
+            continue
         (hedef / "_kaynak.json").write_text(json.dumps({
             "ad": ad, "source_id": source_id,
             "adres": satirlar[0]["adres"],
@@ -162,6 +188,7 @@ def main() -> int:
     print(json.dumps({
         "klasor": str(args.out), "kaynak": yazilan_kaynak,
         "kopyalanan_dosya": kopyalanan, "atlanan": atlanan,
+        "toplam_bayt": toplam_bayt,
     }, ensure_ascii=False))
     return 0
 

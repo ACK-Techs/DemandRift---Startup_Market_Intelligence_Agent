@@ -1,0 +1,17 @@
+{
+ "ad": "Kaggle",
+ "source_id": "source-0352",
+ "adres": "https://www.kaggle.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.kaggle.com/",
+   "dosya": "www.kaggle.html",
+   "bayt": 0,
+   "sha256": "6ec6009c21d4114d7550eae47068858b2001167507ebdbb0a8c968b03fb22c66",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Immobiliare.it",
+ "source_id": "source-0474",
+ "adres": "https://www.immobiliare.it",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.immobiliare.it/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "7bad1bae58d326db955fb3e329b19f98bf68899d9c58fae851bd676237bb3d41",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

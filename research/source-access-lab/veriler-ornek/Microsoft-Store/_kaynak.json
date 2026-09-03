@@ -1,0 +1,17 @@
+{
+ "ad": "Microsoft Store",
+ "source_id": "source-0101",
+ "adres": "https://apps.microsoft.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://apps.microsoft.com/sitemap",
+   "dosya": "sitemap_xml.xml",
+   "bayt": 0,
+   "sha256": "6bc14658cc24efaf71df4f6a643f886ddd2da8529a87ad558a56958eef4a37e9",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

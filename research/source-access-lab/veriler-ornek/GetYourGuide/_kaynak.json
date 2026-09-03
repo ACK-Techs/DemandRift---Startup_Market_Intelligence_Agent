@@ -1,0 +1,17 @@
+{
+ "ad": "GetYourGuide",
+ "source_id": "source-0495",
+ "adres": "https://www.getyourguide.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.getyourguide.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 19708,
+   "sha256": "f0b7b5da845602eb8d29ffeffc2792cfc55b3054eb53c42c567c08697401049e",
+   "tarih": "2026-09-02T21:31:30"
+  }
+ ]
+}

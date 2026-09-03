@@ -1,0 +1,17 @@
+{
+ "ad": "Booking.com",
+ "source_id": "source-0485",
+ "adres": "https://www.booking.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.booking.com/sitembk-airport-index.xml",
+   "dosya": "sitembk-airport-index.xml",
+   "bayt": 0,
+   "sha256": "f16258327a9637d726daaf3aaff38465d63555b6027f94a0bf4fa8d83f67531c",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

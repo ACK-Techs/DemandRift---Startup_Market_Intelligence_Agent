@@ -1,0 +1,17 @@
+{
+ "ad": "BuiltWith",
+ "source_id": "source-0201",
+ "adres": "https://builtwith.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://builtwith.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 44531,
+   "sha256": "d5de25b85a721efece23230b20f22a481a5830c473163c7adb3607263494ca7a",
+   "tarih": "2026-09-02T21:03:53"
+  }
+ ]
+}

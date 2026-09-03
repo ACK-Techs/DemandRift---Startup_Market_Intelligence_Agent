@@ -1,0 +1,17 @@
+{
+ "ad": "Google Patents",
+ "source_id": "source-0406",
+ "adres": "https://patents.google.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://patents.google.com/",
+   "dosya": "patents.google.html",
+   "bayt": 0,
+   "sha256": "0b9a616ad32aa67e0961d0f8cace183b33cc15f0b3a010ecde17de66c34e4b81",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

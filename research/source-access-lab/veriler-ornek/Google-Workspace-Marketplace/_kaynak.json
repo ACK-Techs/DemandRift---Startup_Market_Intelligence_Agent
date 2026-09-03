@@ -1,0 +1,17 @@
+{
+ "ad": "Google Workspace Marketplace",
+ "source_id": "source-0127",
+ "adres": "https://workspace.google.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://workspace.google.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "37dbf9f4f82eae1d984cb06e8e4f11edbca65b898e20aaa1c7d1f94268124ffd",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

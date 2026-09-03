@@ -1,0 +1,17 @@
+{
+ "ad": "Zapier App Directory",
+ "source_id": "source-0130",
+ "adres": "https://zapier.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://zapier.com/uag6x9zaeydnbfy75xsggcsb37h8cgzf-two-service-sitemap.xml",
+   "dosya": "uag6x9zaeydnbfy75xsggcsb37h8cgzf-two-service-sitemap.xml",
+   "bayt": 0,
+   "sha256": "8b34d9582ecbb1f5a8af0688383ba654cf4900d7d312871d530a71b08a01587d",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

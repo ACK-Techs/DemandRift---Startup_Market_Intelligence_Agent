@@ -1,0 +1,17 @@
+{
+ "ad": "DefiLlama",
+ "source_id": "source-0449",
+ "adres": "https://defillama.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://defillama.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "736daa43ce237d261cab7a81bd9ab4dbd7f45c7615482f3620e071c74f59f2cc",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

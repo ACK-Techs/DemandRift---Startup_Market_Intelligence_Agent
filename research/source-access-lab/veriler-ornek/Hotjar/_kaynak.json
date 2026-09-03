@@ -1,0 +1,17 @@
+{
+ "ad": "Hotjar",
+ "source_id": "source-0603",
+ "adres": "https://www.hotjar.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.hotjar.com/sitemap-deprecated.xml",
+   "dosya": "sitemap-deprecated.xml",
+   "bayt": 0,
+   "sha256": "09e97f4a2e3bddabb2d9c99ed1a962237ef078a83555943af8488532a4287dc8",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

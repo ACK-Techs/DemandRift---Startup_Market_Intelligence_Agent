@@ -1,0 +1,17 @@
+{
+ "ad": "Medium",
+ "source_id": "source-0088",
+ "adres": "https://medium.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://medium.com/",
+   "dosya": "medium.html",
+   "bayt": 38226,
+   "sha256": "e501cfbe0cd02faced1bcb31ee0a30c3b7b6b12041dbd02025f87f90f9c50f3b",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-apps-ios.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-apps-android.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-publishers-ios.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-publishers-android.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-brands.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-vgi-static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-vgi-games-1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://app.sensortower.com/sitemap-vgi-games-2.xml</loc>
+  </sitemap>
+</sitemapindex>

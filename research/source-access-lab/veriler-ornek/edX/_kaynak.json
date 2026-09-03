@@ -1,0 +1,17 @@
+{
+ "ad": "edX",
+ "source_id": "source-0459",
+ "adres": "https://edx.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://edx.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 28874,
+   "sha256": "5840e3290a694f588c3eb413aa706471dadf1664686ec0f16d9d41d89c949cd2",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

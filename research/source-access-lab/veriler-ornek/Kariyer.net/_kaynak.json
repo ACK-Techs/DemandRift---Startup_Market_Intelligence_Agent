@@ -1,0 +1,17 @@
+{
+ "ad": "Kariyer.net",
+ "source_id": "source-0295",
+ "adres": "https://www.kariyer.net",
+ "durum": "cekildi",
+ "dogrulama": "corpus_index_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.kariyer.net/sitemapxml",
+   "dosya": "sitemap_xml.xml",
+   "bayt": 0,
+   "sha256": "121e69aed0e611293f61794cd483019a1fddc188ef8a81f7e0638ef03e7a1070",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

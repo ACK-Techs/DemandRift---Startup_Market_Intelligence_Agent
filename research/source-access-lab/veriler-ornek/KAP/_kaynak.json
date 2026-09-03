@@ -1,0 +1,17 @@
+{
+ "ad": "KAP",
+ "source_id": "source-0270",
+ "adres": "https://www.kap.org.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://www.kap.org.tr/",
+   "dosya": "www.kap.org.html",
+   "bayt": 63950,
+   "sha256": "c0261d70a18e29b5be504f3bbfdb04d3b7eb2055489dc469bc64c34ffca7d035",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Slant",
+ "source_id": "source-0060",
+ "adres": "https://fanac.org",
+ "durum": "cekildi",
+ "dogrulama": "rejected_wrong_entity_match",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://fanac.org/",
+   "dosya": "fanac.html",
+   "bayt": 0,
+   "sha256": "21e22d05d6a67ff3a330740f56ba63ab9563d2e98dd68a76a0d9dac72bdb63b7",
+   "tarih": "2026-09-02T20:55:13"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "AWS Marketplace",
+ "source_id": "source-0541",
+ "adres": "https://aws.amazon.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://aws.amazon.com/sitemaps/index/",
+   "dosya": "sitemap_xml.xml",
+   "bayt": 0,
+   "sha256": "89b84c24a128513be68962a4af3dbc45466dca5c1e73c7236a053ba7d00d7c4e",
+   "tarih": "2026-09-03T03:02:08"
+  }
+ ]
+}

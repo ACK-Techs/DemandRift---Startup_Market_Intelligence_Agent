@@ -1,0 +1,17 @@
+{
+ "ad": "Aptoide",
+ "source_id": "source-0105",
+ "adres": "https://en.aptoide.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://en.aptoide.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "234276405183c93ce40643044166ab4fe7ea5bb5d7f39d3261c9a165260402cc",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

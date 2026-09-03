@@ -1,0 +1,17 @@
+{
+ "ad": "Substack",
+ "source_id": "source-0089",
+ "adres": "https://substack.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://substack.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "6dc7bf925bacb0e2bbab02bba15c5efb2915e06f98064002b5604c61ab9c561e",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

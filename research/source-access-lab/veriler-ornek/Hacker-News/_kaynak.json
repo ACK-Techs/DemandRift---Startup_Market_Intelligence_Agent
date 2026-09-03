@@ -1,0 +1,17 @@
+{
+ "ad": "Hacker News",
+ "source_id": "source-0022",
+ "adres": "https://hacker-news.firebaseio.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://news.ycombinator.com/",
+   "dosya": "news.ycombinator-3.html",
+   "bayt": 34803,
+   "sha256": "95626f374ebc70a02a1ec427f74197d032b062ae742171a4a1652cd9f94b921f",
+   "tarih": "2026-08-10T20:19:38"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Galata Business Angels",
+ "source_id": "source-0633",
+ "adres": "https://galatabusinessangels.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://galatabusinessangels.com/tr/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "1d1fc80010c9e93c26418f0e5f64eefbae569b6d45ba6316d9d98e5e35433ad0",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

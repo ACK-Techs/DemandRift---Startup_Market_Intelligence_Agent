@@ -1,0 +1,17 @@
+{
+ "ad": "Skillshare",
+ "source_id": "source-0461",
+ "adres": "https://help.skillshare.com",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://help.skillshare.com/hc/en-us",
+   "dosya": "root_html.html",
+   "bayt": 78006,
+   "sha256": "20fe2d39a604336689767693c3977e10c8b4446601244362933d1d20ef74fc36",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

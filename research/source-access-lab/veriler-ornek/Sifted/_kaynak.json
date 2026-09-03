@@ -1,0 +1,25 @@
+{
+ "ad": "Sifted",
+ "source_id": "source-0571",
+ "adres": "https://sifted.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://sifted.org/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "ed0f84077572b684bc0ca697dd9a47c034c30fe61a11dd54f7f6b0275d0a9f25",
+   "tarih": "2026-09-02T18:04:31"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://sifted.org/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "27a1c025fa5b520005d813efd582929a96b3ab78f3218a2d2b725ee66c21fa86",
+   "tarih": "2026-09-02T18:04:31"
+  }
+ ]
+}

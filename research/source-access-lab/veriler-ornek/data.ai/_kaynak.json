@@ -1,0 +1,17 @@
+{
+ "ad": "data.ai",
+ "source_id": "source-0246",
+ "adres": "https://data.ai",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.data.ai/account/login/",
+   "dosya": "root_html.html",
+   "bayt": 34165,
+   "sha256": "d3b9d236b05d5fb52a6001efb123cf30d47bd180b23278f0fec87b931b5fa2b4",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

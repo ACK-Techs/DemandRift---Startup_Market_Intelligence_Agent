@@ -1,0 +1,41 @@
+{
+ "ad": "Financial Times",
+ "source_id": "source-0558",
+ "adres": "https://www.ft.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.ft.com/rss/home/international",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "b93ef54ee6f74bb10f5af35a4b48f72a33aba35c407106a48ff2d1da18aea592",
+   "tarih": "2026-09-02T20:23:16"
+  },
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.ft.com/rss/home/international",
+   "dosya": "rss_feed-2.xml",
+   "bayt": 0,
+   "sha256": "0775d30de0acd418d4508cc0836678e5e3f8ad2b84221750c8ac3fd1f1cbb37c",
+   "tarih": "2026-09-02T19:44:02"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ft.com/sitemaps/index.xml",
+   "dosya": "index.xml",
+   "bayt": 34980,
+   "sha256": "b96702b023866f74d649f16f9f0a4ac320141d7f1d0a027b029292deb7c91898",
+   "tarih": "2026-09-02T20:23:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ft.com/sitemaps/index.xml",
+   "dosya": "index-2.xml",
+   "bayt": 34980,
+   "sha256": "057989e69760a45a86cd1e6356fc8f512037bf92228e5b6d2538d02dbe44fc23",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

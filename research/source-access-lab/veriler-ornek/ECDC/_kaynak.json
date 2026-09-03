@@ -1,0 +1,17 @@
+{
+ "ad": "ECDC",
+ "source_id": "source-0424",
+ "adres": "https://www.ecdc.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.ecdc.europa.eu/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "2593dafbc69786fa5103025539f2c2524f0a13e6bf2e274b36e9e0002ac1ace9",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

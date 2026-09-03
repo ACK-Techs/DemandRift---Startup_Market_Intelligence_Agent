@@ -1,0 +1,17 @@
+{
+ "ad": "LlamaIndex Integrations",
+ "source_id": "source-0545",
+ "adres": "https://llamahub.ai",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://llamahub.ai/",
+   "dosya": "llamahub.html",
+   "bayt": 0,
+   "sha256": "c2363fa1b33dd65bd0b0a3bb37d3365e8cb5f51bbd67496a37f87a41bbc1c20e",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}

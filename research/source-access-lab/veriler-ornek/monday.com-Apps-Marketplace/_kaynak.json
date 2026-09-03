@@ -1,0 +1,17 @@
+{
+ "ad": "monday.com Apps Marketplace",
+ "source_id": "source-0128",
+ "adres": "https://monday.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://monday.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 65322,
+   "sha256": "5888dad1c4a6b4e3d2103b0e8fd2a85fb2ad5b6ddc6887124d956a9e2d904936",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

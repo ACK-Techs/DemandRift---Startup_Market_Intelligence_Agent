@@ -1,0 +1,25 @@
+{
+ "ad": "Samsung Galaxy Store",
+ "source_id": "source-0099",
+ "adres": "https://galaxystore.samsung.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://galaxystore.samsung.com/",
+   "dosya": "galaxystore.samsung.html",
+   "bayt": 0,
+   "sha256": "e612c1964b21d4d3ace27b9cae1d70617da924f84df7f7f00639370509115731",
+   "tarih": "2026-09-02T19:26:21"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://galaxystore.samsung.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "3d761d74381622daec4fbb6c80f31f1fa9884f967e2f6926177f6e94d68768c2",
+   "tarih": "2026-09-02T19:26:21"
+  }
+ ]
+}

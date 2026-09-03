@@ -1,0 +1,25 @@
+{
+ "ad": "Clearbit",
+ "source_id": "source-0262",
+ "adres": "https://clearbit.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://clearbit.com/",
+   "dosya": "clearbit.html",
+   "bayt": 24880,
+   "sha256": "a973c3353febd64fc14c332717d4a67397ba7f41d521d900fe5099e6c9bc3a7d",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://clearbit.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 41583,
+   "sha256": "2514c46d9b79413c48c971396ad7d252648169cd4f1be62193d6982db6893760",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

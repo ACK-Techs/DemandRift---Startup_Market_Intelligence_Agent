@@ -1,0 +1,17 @@
+{
+ "ad": "Microsoft Edge Add-ons",
+ "source_id": "source-0111",
+ "adres": "https://microsoftedge.microsoft.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "common_crawl_warc",
+   "url": "https://microsoftedge.microsoft.com/",
+   "dosya": "microsoftedge.microsoft.html",
+   "bayt": 82498,
+   "sha256": "11365e19a00a9d57d11242576e7a740e88b38b77b962f63c14487fe05a1852cd",
+   "tarih": "2026-09-03T06:39:15"
+  }
+ ]
+}

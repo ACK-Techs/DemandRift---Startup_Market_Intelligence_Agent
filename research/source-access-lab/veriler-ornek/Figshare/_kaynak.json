@@ -1,0 +1,17 @@
+{
+ "ad": "Figshare",
+ "source_id": "source-0349",
+ "adres": "https://figshare.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "figshare_articles",
+   "url": "https://api.figshare.com/v2/articles?page_size=20",
+   "dosya": "figshare_articles.json",
+   "bayt": 20277,
+   "sha256": "2f268560a418df0d7c5c7d2b5be2f55a0f24d91bb4c8da55a3c1a2378d31693a",
+   "tarih": "2026-09-02T19:50:29"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "ad": "Rightmove",
+ "source_id": "source-0471",
+ "adres": "https://www.rightmove.co.uk",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.rightmove.co.uk/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 61239,
+   "sha256": "295e0b23a0903ae101f1216edf2ee318e09b8e65c7a1a3e0de9cd961b3ff0d05",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

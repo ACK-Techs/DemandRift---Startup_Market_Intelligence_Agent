@@ -1,0 +1,17 @@
+{
+ "ad": "EUR-Lex",
+ "source_id": "source-0390",
+ "adres": "https://eur-lex.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikipedia_index_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://eur-lex.europa.eu/",
+   "dosya": "eur-lex.europa.html",
+   "bayt": 0,
+   "sha256": "7754823c16419f70900dd6bc39716024ce0f00b8d373984cd3283d64d1102a19",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

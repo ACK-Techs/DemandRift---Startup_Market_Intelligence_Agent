@@ -1,0 +1,17 @@
+{
+ "ad": "Sistrix",
+ "source_id": "source-0225",
+ "adres": "https://www.sistrix.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.sistrix.com/sitemap_index.xml",
+   "dosya": "sitemap_index.xml",
+   "bayt": 0,
+   "sha256": "802788ff835bb50f4fa2c90fe538c2be3d13c46824efd4b3f04e8b73f476c615",
+   "tarih": "2026-09-02T21:03:53"
+  }
+ ]
+}

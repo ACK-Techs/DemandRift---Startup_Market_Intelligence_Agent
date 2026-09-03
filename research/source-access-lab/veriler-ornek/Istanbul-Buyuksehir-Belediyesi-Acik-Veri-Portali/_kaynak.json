@@ -1,0 +1,17 @@
+{
+ "ad": "İstanbul Büyükşehir Belediyesi Açık Veri Portalı",
+ "source_id": "source-0374",
+ "adres": "https://data.ibb.gov.tr",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://data.ibb.gov.tr/",
+   "dosya": "data.ibb.gov.html",
+   "bayt": 26036,
+   "sha256": "eb0ab30a4a1177d7090f23c8926d6db5a47ea5b0972dea097ffdb865a26cfe84",
+   "tarih": "2026-09-03T02:53:21"
+  }
+ ]
+}

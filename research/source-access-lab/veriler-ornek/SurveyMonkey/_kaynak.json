@@ -1,0 +1,33 @@
+{
+ "ad": "SurveyMonkey",
+ "source_id": "source-0585",
+ "adres": "https://da.surveymonkey.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.surveymonkey.com/feed/",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "d21df8929f8d59808c3bf10c9f6b15ea25f48ffea5b80912eb1bc85993b885aa",
+   "tarih": "2026-09-02T20:23:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://da.surveymonkey.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "4f3412ef1697a51290ea11cf649e3552dca3750c2669407920d3f448a131b3e1",
+   "tarih": "2026-09-02T19:44:02"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.surveymonkey.com/sitemap.xml",
+   "dosya": "sitemap-2.xml",
+   "bayt": 0,
+   "sha256": "c51b89e3797d5bebc8f0c0f4bc8430e9864449d4f130ed7d0166e79e0c484dd2",
+   "tarih": "2026-09-02T20:23:16"
+  }
+ ]
+}

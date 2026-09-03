@@ -1,0 +1,17 @@
+{
+ "ad": "Mojeek",
+ "source_id": "source-0008",
+ "adres": "https://mojeek.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.mojeek.com/",
+   "dosya": "www.mojeek.html",
+   "bayt": 0,
+   "sha256": "13ab4750761e38cbb31dd324c48245880c4413a20228e7595262c61468c2121f",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

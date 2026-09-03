@@ -1,0 +1,17 @@
+{
+ "ad": "CORE",
+ "source_id": "source-0325",
+ "adres": "https://core.ac.uk",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.coregames.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "a9b3753918d88c53862e83aaaa8e25755020692d9e225d0b55145946bda35484",
+   "tarih": "2026-09-02T19:44:02"
+  }
+ ]
+}

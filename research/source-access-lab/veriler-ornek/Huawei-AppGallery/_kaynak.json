@@ -1,0 +1,17 @@
+{
+ "ad": "Huawei AppGallery",
+ "source_id": "source-0098",
+ "adres": "https://appgallery.huawei.com",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://appgallery.huawei.com/",
+   "dosya": "appgallery.huawei.html",
+   "bayt": 0,
+   "sha256": "8e8f20e3d245f4d3d04201db2e2b05b9cfd8c4b715e005bf5409bdc5e62d36ac",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

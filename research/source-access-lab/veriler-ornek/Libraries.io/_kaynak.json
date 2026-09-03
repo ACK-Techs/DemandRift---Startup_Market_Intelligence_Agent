@@ -1,0 +1,25 @@
+{
+ "ad": "Libraries.io",
+ "source_id": "source-0047",
+ "adres": "https://libraries.io",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://libraries.io/",
+   "dosya": "libraries.html",
+   "bayt": 25629,
+   "sha256": "db1a00808175af082677649658f9d296bfa1ef6ec5da6ebffbefd721f898ff19",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "root_html",
+   "url": "https://libraries.io/",
+   "dosya": "libraries-2.html",
+   "bayt": 25631,
+   "sha256": "09e3653f619c7c5e9375e12257eb3faafe32e3e31edb4b150eb573b30543f50c",
+   "tarih": "2026-09-02T15:53:31"
+  }
+ ]
+}

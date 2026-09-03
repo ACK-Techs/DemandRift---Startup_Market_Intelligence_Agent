@@ -1,0 +1,25 @@
+{
+ "ad": "Moz",
+ "source_id": "source-0219",
+ "adres": "https://moz.com",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://moz.com/feeds/blog.rss",
+   "dosya": "blog.xml",
+   "bayt": 0,
+   "sha256": "734dd914baae573f44fbff0317a2e4d2d74de3de8c7700c49016937a3856b455",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://moz.com/sitemaps-1-sitemap.xml",
+   "dosya": "sitemaps-1-sitemap.xml",
+   "bayt": 0,
+   "sha256": "3314bb9c4f8c402e573ef1dafa2d9f91daad1a923baa3cc1dad9bc9c74046e11",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

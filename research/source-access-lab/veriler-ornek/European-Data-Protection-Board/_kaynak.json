@@ -1,0 +1,17 @@
+{
+ "ad": "European Data Protection Board",
+ "source_id": "source-0392",
+ "adres": "https://edpb.europa.eu",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_mediawiki_exact_search_p856",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://www.edpb.europa.eu/home_en",
+   "dosya": "root_html.html",
+   "bayt": 45974,
+   "sha256": "87d2178fcb4dd1709b70e4c99a7da4088543ed611735d506331cdb6ef9a15deb",
+   "tarih": "2026-09-02T18:40:34"
+  }
+ ]
+}

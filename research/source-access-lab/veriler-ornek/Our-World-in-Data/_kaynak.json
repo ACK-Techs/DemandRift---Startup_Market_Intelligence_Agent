@@ -1,0 +1,17 @@
+{
+ "ad": "Our World in Data",
+ "source_id": "source-0366",
+ "adres": "https://ourworldindata.org",
+ "durum": "cekildi",
+ "dogrulama": "wikidata_p856_unverified",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://ourworldindata.org/atom.xml",
+   "dosya": "atom.xml",
+   "bayt": 0,
+   "sha256": "0f94be563b441b9d0a4124fb92ad733ba96044b828a1cae45eb4ebaa998b901e",
+   "tarih": "2026-09-02T21:03:53"
+  }
+ ]
+}

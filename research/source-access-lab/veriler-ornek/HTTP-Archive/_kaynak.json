@@ -1,0 +1,25 @@
+{
+ "ad": "HTTP Archive",
+ "source_id": "source-0209",
+ "adres": "https://httparchive.org",
+ "durum": "cekildi",
+ "dogrulama": "generated_candidate_validated",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "root_html",
+   "url": "https://httparchive.org/",
+   "dosya": "httparchive.html",
+   "bayt": 17928,
+   "sha256": "4e1f212735d0021cb04195e5e03ec6dff23c0b9a16827789c792340da2e66db1",
+   "tarih": "2026-09-02T17:21:29"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://httparchive.org/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 0,
+   "sha256": "c6726a85e527278db6728a4852e273e61ea44db522f7f8f0664f45511af0cb4a",
+   "tarih": "2026-09-02T17:21:29"
+  }
+ ]
+}

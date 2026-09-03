@@ -1,0 +1,25 @@
+{
+ "ad": "Bloomberg HT",
+ "source_id": "source-0579",
+ "adres": "https://www.bloomberght.com",
+ "durum": "cekildi",
+ "dogrulama": "curated_official_host_fixture",
+ "cekilen_yuzeyler": [
+  {
+   "yontem": "rss_feed",
+   "url": "https://www.bloomberght.com/rss",
+   "dosya": "rss_feed.xml",
+   "bayt": 0,
+   "sha256": "afd6fccb3888ee69c2b1c22405ad2df20e0f09d67792bfdab93a519882c3afbb",
+   "tarih": "2026-09-02T23:02:16"
+  },
+  {
+   "yontem": "sitemap_xml",
+   "url": "https://www.bloomberght.com/sitemap.xml",
+   "dosya": "sitemap.xml",
+   "bayt": 26953,
+   "sha256": "f1db6bec0dc0efc6a0c0e73650a0799f4b20ef3202b816ec5747ab1988020f0f",
+   "tarih": "2026-09-02T23:02:16"
+  }
+ ]
+}
