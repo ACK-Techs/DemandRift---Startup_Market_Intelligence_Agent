@@ -82,6 +82,20 @@ ORTAK_SORULAR = (
     "talep-yonu", "sikayet-ne", "giris-engeli", "ulasilabilir-mi",
 )
 
+# Ek paketler de soru cevaplar: 'diyabet uygulamasi' arastirilirken saglik
+# kaynaklarina da sorulmali. Ek paketin cevapladigi sorular ana kategoriden
+# bagimsizdir; asagida hangi ekin hangi soruyu destekledigi yazili.
+EK_SORULARI: dict[str, tuple[str, ...]] = {
+    "saglik": ("giris-engeli", "talep-var-mi"),
+    "fintech": ("giris-engeli", "rakip-kim"),
+    "egitim": ("talep-var-mi", "ulasilabilir-mi"),
+    "gayrimenkul": ("talep-var-mi", "odeme-istegi"),
+    "seyahat": ("rakip-kim", "odeme-istegi"),
+    "yeme-icme": ("rakip-kim", "odeme-istegi"),
+    "regule-sektor": ("giris-engeli",),
+    "turkiye-pazari": ("rakip-kim", "talep-yonu"),
+}
+
 KATEGORI_OZEL: dict[str, tuple[str, ...]] = {
     "mobil-uygulama": ("platform-politikasi", "kesfedilebilirlik"),
     "eklenti-entegrasyon": ("platform-politikasi", "platform-kendi-ekler-mi"),
@@ -345,6 +359,96 @@ KANIT: dict[tuple[str, str], tuple[str, str, str]] = {
         "Satışın az sayıda satıcıda toplanması pazarın kapandığını gösterir",
         "Listeleme sayısı — aynı satıcının çok sayıda varyantı olabilir"),
 
+    ("rakip-kim", "Haber, basın ve sektör yayınları"): (
+        "Alanda yatırım ve satın alma haberleri, yeni oyuncu duyuruları",
+        "Yatırım haberi tarihli ve doğrulanabilir bir olaydır; kimin sahaya girdiğini gösterir",
+        "Köşe yazılarındaki pazar yorumları — olay değil kanaat"),
+    ("talep-yonu", "Haber, basın ve sektör yayınları"): (
+        "Alandaki yatırım turlarının yıllara göre sayısı ve büyüklüğü",
+        "Yatırım hacmi zaman serisi olarak sermayenin yönünü gösterir",
+        "'Bu alan yükselişte' başlıklı haberler"),
+    ("rakip-kim", "Ürün lansmanı ve startup toplulukları"): (
+        "Son 12 ayda aynı problemi hedefleyen lansmanlar ve aldıkları tepki",
+        "Lansman kaydı tarihlidir; yeni girenleri erken gösterir",
+        "Lansman gününde alınan oy sayısı — kalıcılığı ölçmez"),
+    ("sikayet-ne", "Ürün lansmanı ve startup toplulukları"): (
+        "Lansman yorumlarında tekrar eden eksik/istek başlıkları",
+        "Erken benimseyenler eksikleri açıkça yazar",
+        "Lansman sayfasındaki övgü yorumları — nezaket içerir"),
+    ("giris-engeli", "Akademik araştırma ve bilimsel yayınlar"): (
+        "Alandaki yayın yoğunluğu ve çözülmemiş problem başlıkları",
+        "Yayın sayısı problemin teknik olgunluğunu gösterir; çok yayın az ürün, teknik engel demektir",
+        "Tek bir çığır açıcı makale — uygulamaya geçtiği anlamına gelmez"),
+    ("talep-yonu", "Akademik araştırma ve bilimsel yayınlar"): (
+        "Konudaki yıllık yayın sayısının eğrisi",
+        "Araştırma ilgisi ticari ilgiyi genelde önceler",
+        "Atıf sayısı — geçmişi ölçer, yönü değil"),
+    ("rakip-kim", "Domain, DNS, sertifika ve web footprint"): (
+        "Rakip sitelerin teknoloji izleri ve alan adı kayıt tarihleri",
+        "Kayıt tarihi ve teknik iz doğrulanabilir; şirketin ne zaman başladığını gösterir",
+        "Sitenin 'hakkımızda' sayfasındaki kuruluş yılı"),
+
+    ("giris-engeli", "Sağlık ve biyoteknoloji dikeyi"): (
+        "Ruhsat/onay gereksinimleri ve benzer ürünlerin onay süreleri",
+        "Onay kaydı kamuya açık ve tarihlidir; süre ve maliyeti öngörülebilir kılar",
+        "'Sağlık alanı zor' genellemesi"),
+    ("talep-var-mi", "Sağlık ve biyoteknoloji dikeyi"): (
+        "Hastalık/durum yaygınlık istatistikleri ve klinik çalışma sayısı",
+        "Epidemiyolojik veri yöntemi açıklanmış resmî ölçümdür",
+        "Hasta derneklerinin üye sayısı — kendini seçen örneklem"),
+    ("giris-engeli", "Finans ve fintech dikeyi"): (
+        "Lisans türleri, sermaye yeterliliği ve denetim yükümlülükleri",
+        "Düzenleyici metin bağlayıcıdır; giriş maliyetini doğrudan verir",
+        "Benzer ürünlerin faaliyet gösteriyor olması — istisna kapsamında olabilir"),
+    ("rakip-kim", "Finans ve fintech dikeyi"): (
+        "Lisanslı kuruluş listeleri ve faaliyet izinleri",
+        "Düzenleyicinin yayınladığı liste eksiksiz ve günceldir",
+        "Sektör haberlerinde adı geçen şirketler"),
+    ("talep-var-mi", "Eğitim dikeyi"): (
+        "Öğrenci/kurum sayıları ve kurs kayıt istatistikleri",
+        "Resmî eğitim istatistikleri sayım temellidir",
+        "Kurs platformlarındaki 'kayıtlı öğrenci' sayıları — ücretsiz kayıt olabilir"),
+    ("ulasilabilir-mi", "Eğitim dikeyi"): (
+        "Kurum sayısı, satın alma karar mercileri ve bütçe dönemleri",
+        "Kurumsal eğitim satın alması takvimlidir; kanal buna göre kurulur",
+        "Öğrenci sayısı — satın alma kararını öğrenci vermez"),
+    ("talep-var-mi", "Gayrimenkul ve inşaat dikeyi"): (
+        "İlan hacmi, işlem sayısı ve ruhsat istatistikleri",
+        "Ruhsat ve tapu işlemi gerçekleşmiş eylemdir",
+        "İlan sayısı tek başına — aynı taşınmaz birden fazla ilanda olabilir"),
+    ("odeme-istegi", "Gayrimenkul ve inşaat dikeyi"): (
+        "Fiyat endeksleri ve bölgesel metrekare fiyatları",
+        "Endeks yöntemi açıklanmış zaman serisidir",
+        "İlan fiyatları — pazarlık öncesi istektir"),
+    ("rakip-kim", "Seyahat, konaklama ve mobilite dikeyi"): (
+        "Bölgedeki platform ve tedarikçi listeleri, komisyon modelleri",
+        "Platform listelemesi kimin sahada olduğunu doğrudan gösterir",
+        "Sektör raporlarındaki pazar payı tahminleri"),
+    ("odeme-istegi", "Seyahat, konaklama ve mobilite dikeyi"): (
+        "Aynı hizmet için platformlar arası fiyat dağılımı",
+        "Rezervasyon fiyatı gerçekleşen işlem bedeline yakındır",
+        "Liste fiyatı"),
+    ("rakip-kim", "Yeme-içme ve teslimat dikeyi"): (
+        "Bölgedeki restoran/teslimat platformu yoğunluğu",
+        "Platformda listelenen işletme sayısı gerçek arzı gösterir",
+        "Sektör dernek verileri — dijital kanaldaki payı ayırmaz"),
+    ("odeme-istegi", "Yeme-içme ve teslimat dikeyi"): (
+        "Sipariş tutarı aralıkları ve teslimat ücretleri",
+        "Platformda görünen fiyat müşterinin ödediği bedeldir",
+        "Restoran menü fiyatları — platform komisyonu yansımaz"),
+    ("giris-engeli", "Türkiye startup ve teknoloji ekosistemi"): (
+        "Yerel destek programları, teşvik koşulları ve başvuru şartları",
+        "Program şartları yayınlanmış ve bağlayıcıdır",
+        "'Devlet destekliyor' genellemesi"),
+    ("rakip-kim", "Türkiye startup ve teknoloji ekosistemi"): (
+        "Yerel ekosistemde aynı alanda faaliyet gösteren girişimler",
+        "Ekosistem dizinleri yerel oyuncuları global kaynaklardan daha iyi kapsar",
+        "Global rakip listeleri — yerel oyuncuyu göstermez"),
+    ("talep-yonu", "Türkiye startup ve teknoloji ekosistemi"): (
+        "Yerel yatırım haberlerinin yıllara göre dağılımı",
+        "Yerel yatırım hacmi bölgesel ilginin ölçüsüdür",
+        "Global trend verisi — Türkiye'ye yansıması gecikebilir"),
+
     ("talep-var-mi", "Kamu verisi ve istatistik"): (
         "Hedef kitlenin büyüklüğü ve ilgili sektör istatistikleri",
         "Resmî istatistik yöntemi açıklanmış ve tekrarlanabilir ölçümdür",
@@ -376,6 +480,32 @@ def main() -> int:
 
     satirlar: list[dict[str, Any]] = []
     kanitsiz: list[tuple[str, str]] = []
+    for ek, ek_sorulari in EK_SORULARI.items():
+        # Ek paket kendi kaynak gruplarindan kanit uretir; ortak havuz ana
+        # kategoriden geldigi icin burada tekrar taranmaz.
+        for soru_id in ek_sorulari:
+            soru_metni, neden_onemli = SORULAR[soru_id]
+            bulundu = False
+            for grup, kaynaklar in gruplar.get(ek, {}).items():
+                kanit = KANIT.get((soru_id, grup))
+                if kanit is None:
+                    continue
+                tur, gecerli, zayif = kanit
+                calisan = [a for a in kaynaklar
+                           if defter.get(a, {}).get("durum") == "cekildi"]
+                satirlar.append({
+                    "kategori": ek, "soru_id": soru_id, "soru": soru_metni,
+                    "soru_turu": "ek-pakete-ozel", "neden_onemli": neden_onemli,
+                    "kanit_turu": tur, "kanit_kaynak_grubu": grup,
+                    "kanit_kaynak_rolu": "ek",
+                    "ornek_kaynaklar": ", ".join(sorted(calisan)[:4]),
+                    "kaynak_sayisi": len(kaynaklar), "calisan_kaynak": len(calisan),
+                    "neden_gecerli": gecerli, "zayif_alternatif": zayif,
+                })
+                bulundu = True
+            if not bulundu:
+                kanitsiz.append((ek, soru_id))
+
     for kategori in KATEGORI_OZEL:
         # Kategorinin kendi gruplari + ortak havuzun gruplari birlikte taranir:
         # ortak havuz her kategoride kullanildigi icin kaniti da her kategoride

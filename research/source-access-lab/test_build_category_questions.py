@@ -81,6 +81,30 @@ class CiktiTests(unittest.TestCase):
             self.assertGreater(len(kategoriler), 1, soru_id)
             self.assertEqual(len(turler), len(kanit[soru_id]), soru_id)
 
+    def test_her_ek_paketin_sorusu_kanitli(self):
+        """Ek paket soru cevaplamiyorsa o paketin kaynaklari bosta kalir."""
+        var = {(r["kategori"], r["soru_id"]) for r in self.satirlar}
+        for ek, sorular in soru.EK_SORULARI.items():
+            for soru_id in sorular:
+                self.assertIn((ek, soru_id), var, f"{ek}/{soru_id}")
+
+    def test_envanterin_buyuk_kismi_bir_soruya_bagli(self):
+        """Soru seti envanteri gercekten kullanmali; bagsiz kaynak olu yatirimdir."""
+        with (HERE / "KATEGORI-KAYNAK.csv").open(encoding="utf-8") as handle:
+            kaynaklar = list(csv.DictReader(handle))
+        kullanilan = {r["kanit_kaynak_grubu"] for r in self.satirlar}
+        grup_kaynak = collections.defaultdict(set)
+        for r in kaynaklar:
+            for grup in r["kaynak_grubu"].split(" | "):
+                grup_kaynak[grup.strip()].add(r["kaynak"])
+        dokunulan = set()
+        for grup in kullanilan:
+            dokunulan |= grup_kaynak[grup]
+        tum = {r["kaynak"] for r in kaynaklar}
+        # Arama motorlari ve anket platformlari kasitla disarida: ilki kanita
+        # ulastiran arac, ikincisi birincil arastirma altyapisi.
+        self.assertGreater(len(dokunulan) / len(tum), 0.9)
+
     def test_ornek_kaynaklar_calisan_kaynaklardan_secilir(self):
         for r in self.satirlar:
             if r["ornek_kaynaklar"]:
