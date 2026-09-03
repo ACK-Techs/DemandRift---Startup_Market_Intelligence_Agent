@@ -79,7 +79,7 @@ Eksik kaynakların büyük çoğunluğu (546 / 636 ≈ %86) daha ilk aşamada, y
 
 ### 4.1 Faz 3 kabul kriterine göre durum ayrıştırması
 
-[Faz3-Plan.md](../../Faz3-Plan.md) kabul kriteri şunu şart koşuyor: *"`partial`, `rate_limited`, `blocked_by_policy` ve `failed` durumları birbirinden ayrılmalıdır."* Tek bir "Eksik" kovası bu kriteri karşılamadığı için, başarısızlıklar koşunun kendi `stop_reason` alanına göre ayrıştırılmıştır.
+[Faz3-Plan.md](../../../../Faz3-Plan.md) kabul kriteri şunu şart koşuyor: *"`partial`, `rate_limited`, `blocked_by_policy` ve `failed` durumları birbirinden ayrılmalıdır."* Tek bir "Eksik" kovası bu kriteri karşılamadığı için, başarısızlıklar koşunun kendi `stop_reason` alanına göre ayrıştırılmıştır.
 
 **❌ Eksik — fetch başarısız (29 kaynak).** Tamamı `robots_preflight` aşamasında düşmüş; hiçbirinde asıl içerik denemesine sıra gelmemiş.
 
@@ -201,7 +201,7 @@ Eksik kaynakların %86'sı domain aşamasında takılı. `adaptive_domain_pass.p
 
 **1. koşu** rate limit değil, Wikidata SPARQL batch çağrısındaki bir `RuntimeError` yüzünden 546 kaynağın hepsinde düşmüş.
 
-**2. koşu**'da asıl mekanizma şu: [adaptive_domain_pass.py:462](adaptive_domain_pass.py#L462) ve [:508](adaptive_domain_pass.py#L508) satırlarındaki `fallback_stopped` mandalı, ilk `rate_limited` cevabında `True` oluyor ve koşu boyunca **hiç sıfırlanmıyor**:
+**2. koşu**'da asıl mekanizma şu: [adaptive_domain_pass.py:462](../../adaptive_domain_pass.py#L462) ve [:508](../../adaptive_domain_pass.py#L508) satırlarındaki `fallback_stopped` mandalı, ilk `rate_limited` cevabında `True` oluyor ve koşu boyunca **hiç sıfırlanmıyor**:
 
 ```python
 if reason in {"rate_limited", "challenge", "origin_circuit_open"} or (...):

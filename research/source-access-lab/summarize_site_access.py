@@ -157,7 +157,6 @@ def render_markdown(manifest: dict[str, Any], report: dict[str, Any]) -> str:
 
 def atomic_write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.parent.mkdir(parents=True, exist_ok=True)
     handle, temporary = tempfile.mkstemp(prefix=path.name + ".", dir=path.parent)
     try:
         with os.fdopen(handle, "w", encoding="utf-8") as stream:

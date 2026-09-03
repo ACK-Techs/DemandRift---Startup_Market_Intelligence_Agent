@@ -11,3 +11,10 @@ artefact'larını taşır.
 Bu dosyalar kanıttır; silinmez veya elle yeniden adlandırılmaz. Bir kayıt
 `source_unavailable`, `blocked_by_policy` veya `no_results` ise bunlar ayrı
 durumlardır ve başarıya dönüştürülmemelidir.
+
+## Tarihsel belge adı uyumluluğu
+
+Bazı immutable koşu artefact'larında geçen `acceptance_doc:
+"ACQUISITION-METHODS.md"` değeri, taşınmadan önceki belge adıdır. Bu değer
+kanıt kaydının parçası olduğu için değiştirilmez; güncel kanonik belge
+[`docs/pilots/duckduckgo-acquisition.md`](../docs/pilots/duckduckgo-acquisition.md)'dir.
