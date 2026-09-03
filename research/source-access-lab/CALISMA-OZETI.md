@@ -33,42 +33,68 @@ yüzeyler ve çekilemediyse teknik sebebi kayıtlı.
 
 ## 2. Eksik siteler için veri çekme
 
-| | Başlangıç | Şimdi |
-|---|---:|---:|
-| Toplam kaynak | 636 | 636 |
-| **Adresi bulunan** | 258 (%40.6) | **631 (%99.2)** |
-| **Verisi çekilen** | 212 (%33.3) | **534 (%84.0)** |
-| Kısmi (yalnız robots.txt) | 25 | 44 |
-| Adres var, erişilemedi | 21 | 54 |
-| Adres yok | 378 | 4 |
+### Adres bulma
 
-Çekilemeyen 98 kaynağın **35'i** `robots_disallowed` — site taranmasını istemiyor
-ve buna uyuluyor (Reddit, X, LinkedIn, Instagram, Google Search). Bunlar kapsam
-dışı sayılırsa oran **534/601 = %88.9**.
+| | Kaynak |
+|---|---:|
+| Toplam | 636 |
+| **Adresi bulunan** | **631** |
+| Adresi bulunamayan | 5 |
 
-**Adres bulma.** Sırayla altı yöntem denendi: Wikidata resmî site kaydı, isimden
-aday domain üretme, ebeveyn markadan türetme, Wikipedia dış bağlantıları, daha
-önce indirdiğimiz sayfaların bağlantıları ve GitHub proje ana sayfaları.
-Otomatik yöntemlerin bulamadığı 59 adres elle önerilip **çağrılarak doğrulandı**
-— dönen sayfanın başlığı kaynağın adını taşımıyorsa kabul edilmedi. Bu sırada 20
-yanlış adres yakalanıp düzeltildi (CORE için DC Comics'in sitesi, FRED için
-Brezilya'daki alakasız bir site gibi).
+Bulunamayan 5 kaynağın gerekçesi:
 
-**Veri çekme.** Kazancın büyük kısmı yeni adres bulmaktan değil, çekim
-kurallarındaki hataları düzeltmekten geldi: robots.txt'i olmayan siteler
-atlanıyordu (oysa dosyanın yokluğu kısıtlama olmadığı anlamına gelir), bot
-koruması görülünce tüm site kapatılıp sitemap ve RSS hiç denenmiyordu, boyut ve
-zaman aşımı sınırları düşüktü.
+| Kaynak | Neden |
+|---|---|
+| Amazon Reviews, Similarweb Digital Marketing Intelligence, OPPO App Market | Bağımsız site değil, bir markanın alt sayfası; denenen yollar 404 döndü |
+| Ankara Büyükşehir Açık Veri Portalı | Adres bağlantı vermiyor |
+| Slant | Otomatik çözümleme alakasız bir siteyi verdi, kayıt geri alındı |
+
+Ebeveyn markanın kökü (`amazon.com` gibi) adres olarak yazılabilirdi ama
+yazılmadı — o bir adres değil yer tutucu olurdu.
+
+**Yöntem:** Sırayla Wikidata resmî site kaydı, isimden aday domain üretme,
+ebeveyn markadan türetme, Wikipedia dış bağlantıları, daha önce indirdiğimiz
+sayfaların bağlantıları ve GitHub proje ana sayfaları denendi. Otomatik
+yöntemlerin bulamadığı 59 adres elle önerilip çağrılarak doğrulandı; dönen
+sayfanın başlığı kaynağın adını taşımıyorsa kabul edilmedi. Bu sırada 20 yanlış
+adres yakalanıp düzeltildi (CORE için DC Comics'in sitesi, FRED için Brezilya'da
+alakasız bir site gibi).
+
+### Veri çekme
+
+| | Kaynak |
+|---|---:|
+| Adresi olan | 631 |
+| **Verisi çekilen** | **534** |
+| Çekilemeyen | 98 |
+
+Çekilemeyen 98 kaynağın gerekçesi:
+
+| Neden | Kaynak | Açıklama |
+|---|---:|---|
+| Site taranmasını yasaklıyor | 35 | robots.txt izin vermiyor, uyuluyor (Reddit, X, LinkedIn, Instagram, Google Search) |
+| Bot koruması | 31 | Doğrulama duvarı; sunucu isteğimizi reddediyor |
+| Sunucu erişimi reddetti | 12 | Origin doğrudan kapatıyor |
+| Ağ hatası | 13 | Zaman aşımı, SSL sertifika hatası, bağlantı kurulamıyor |
+| Kota aşımı, bozuk yanıt, diğer | 7 | Geçici ya da tekil sebepler |
+
+Bunların 35'i kalıcı olarak kapsam dışı: site taranmasını istemiyor. O 35 hariç
+tutulursa oran **534/601 = %88.9**.
+
+**Yöntem:** Kazancın büyük kısmı yeni adres bulmaktan değil, çekim
+kurallarındaki hataları düzeltmekten geldi — robots.txt'i olmayan siteler
+atlanıyordu (dosyanın yokluğu kısıtlama olmadığı anlamına gelir), bot koruması
+görülünce tüm site kapatılıp sitemap ve RSS hiç denenmiyordu, boyut ve zaman
+aşımı sınırları düşüktü.
 
 Bize kapalı siteler için **Common Crawl arşivi** kullanıldı: bot koruması olan
 siteler bize sayfa vermiyor ama arşivde içerikleri var. Bu yol politika ihlali
 içermiyor — Common Crawl da robots.txt'e uyduğu için taranması yasak kaynaklar
-arşivde de yok. Arşivden gelen içerik ayrı işaretlendi, canlı veriyle
-karıştırılmıyor.
+arşivde de yok. Arşivden gelen içerik ayrı işaretlendi.
 
 **Çıktı:** `ARTEFAKT-DIZINI.csv` — indirilen her dosyanın hangi kaynağın hangi
-adresinden, ne zaman ve kaç bayt alındığı. `veriler-ornek/` klasöründe 252
-kaynağın gerçek içeriği örnek olarak duruyor.
+adresinden ne zaman alındığı. `veriler-ornek/` klasöründe 252 kaynağın gerçek
+içeriği örnek olarak duruyor.
 
 ---
 
