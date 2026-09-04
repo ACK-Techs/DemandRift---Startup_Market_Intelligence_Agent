@@ -735,3 +735,238 @@ python3 build_candidate_catalog.py
 ```
 
 Üçü de aynı defteri okuduğu için bütün sayılar tutarlı şekilde güncellenir.
+
+---
+
+# Görev 4 — Hangi alan, hangi izinli yol
+
+**İstenen:** "Bu siteden veri çekilir" yerine, her kaynağın hangi anlamlı alanı
+hangi izinli yolla sağlayabileceğini belirlemek.
+
+## 4.1 Problem: "veri-var" ne söylemiyor
+
+Görev 3'ün çıktısı `ADAY-KATALOG.csv`, 483 kaynak için `arastirma_degeri =
+veri-var` diyor. Cümle kendi sorusuna doğru cevap veriyor ama araştırma için
+üç şeyi cevapsız bırakıyor:
+
+**Hangi alan?** "Veri" bir şey söylemez. Araştırma fiyat, yorum sayısı, puan,
+indirme adedi gibi **adı olan, tabloya konabilen** birimlerle yapılır. Görev
+2'de kanıtı tanımlarken bu alanları zaten ima etmiştik — *"ilk 20'nin toplam
+yorum hacmi"* cümlesi `yorum_sayisi` alanını işaret eder. Ama hiçbir yerde o
+alanın o kaynaktan gerçekten alınabildiğini yazmamıştık.
+
+**Hangi yol?** Aynı kaynak API'den, arama ucundan, HTML'den ya da arşiv
+kopyasından gelebilir. Alan aynı olsa bile yol değişince tazelik ve maliyet
+değişir.
+
+**İzinli mi?** Kritik kelime budur. Bir yolun **çalışması** ile o yolu
+**kullanma hakkımızın olması** aynı şey değildir.
+
+## 4.2 Anlamlı alan: kontrollü sözlük
+
+27 alanlık kapalı bir sözlük tanımlandı. Her alan bir tür ve bir gerekçe taşır:
+
+```
+urun_sayisi      sayi    Kategoride kaç ürün listeleniyor — arz yoğunluğu
+yorum_sayisi     sayi    Kullanıcı yorumu adedi — kullanım davranışının izi
+puan             sayi    Ortalama değerlendirme puanı
+fiyat            para    Tekil ürün fiyatı
+indirme_sayisi   sayi    İndirme ya da kurulum adedi
+son_guncelleme   tarih   İçeriğin en son değiştiği tarih — canlılık göstergesi
+...
+```
+
+**Sözlüğün kapalı olması "anlamlı" olmanın ikinci şartıdır.** Bir kaynak
+`yorum_sayisi`, diğeri `review_count` derse iki kaynak birleştirilemez ve
+karşılaştırma yapılamaz. Alan adı bu listenin dışına çıkamaz; test bunu korur.
+
+Alanlar kaynak başına elle yazılmadı, **31 kaynak grubundan türetildi** —
+görev 2'deki kanıt da gruba bağlıydı, böylece iki dosya aynı eksende kalıyor ve
+envanter büyüdüğünde tek yerde güncelleniyor.
+
+**Grup adı her zaman içeriğini doğru anlatmaz.** "Yazılım geliştirici ve teknik
+topluluklar" başlığı üç ayrı türü birlikte tutuyor: paket kayıtları (npm, PyPI),
+soru-cevap siteleri (Stack Overflow) ve kod barındırma (GitHub). Grup alanlarını
+olduğu gibi uygulamak *"Stack Overflow paket bağımlılığı sayısı veriyor"*
+demek olurdu — bu doğrulanmamış değil, **yanlış**. Bu kaynaklar grup listesi
+yerine kendi listesini kullanıyor.
+
+## 4.3 İzinli yol: çalışmak ile hakkımız olmak
+
+İzin evet/hayır değil, beş sınıf:
+
+| Sınıf | Ne demek | Satır |
+|---|---|---:|
+| `api-acik` | Belgelenmiş API ucu; programatik erişim için tasarlanmış yol | 78 |
+| `robots-izinli` | robots.txt ön kontrolünden geçti, içerik canlı indirildi | 2008 |
+| `arsiv-kopyasi` | Yalnız Common Crawl kopyası; arşiv robots'a uyar, veri güncel değil | 483 |
+| `yol-yok` | Sorgulanabilir bir yol bulunamadı | 317 |
+| `yasak` | robots.txt bu kaynağı kapatıyor — denenmedi | 175 |
+
+Sıralama önemli: `yasak` her şeyi geçer. Bir kaynağın API'si olsa bile robots
+kapatıyorsa sınıf `yasak` kalır, çünkü sayfanın inebiliyor olması izin vermez.
+
+## 4.4 Doğrulama: dosyaların içine bakmak
+
+Alanın o kaynaktan geldiği iddia edilmedi, **indirilmiş 2298 artefaktın içine
+bakıldı**. Dört yerden kanıt toplandı:
+
+| Kanıt kaynağı | Örnek |
+|---|---|
+| API yanıtındaki anahtarlar | `api:downloads`, `api:last_activity_date` |
+| HTML içindeki schema.org JSON-LD | `json-ld:aggregateRating`, `json-ld:offers` |
+| RSS etiketleri | `rss:pubDate`, `rss:category` |
+| Sitemap | `sitemap:lastmod` |
+
+Güven iki değerli ve ikisi asla karıştırılmıyor:
+
+- **`dogrulandi`** — alan artefaktın içinde görüldü. Satır her zaman
+  `dogrulama_izi` taşır; iddia izi sürülebilir.
+- **`beyan`** — alan kaynak grubunun doğası gereği bekleniyor ama gösterilemedi.
+  Satır her zaman `neden_dogrulanmadi` taşır.
+
+İkinci sınıf bir eksiklik itirafıdır, gizlenmez. `beyan` **"bu alan orada yok"
+demek değildir** — "bakılamadı" demektir. Doğrulama tek yönlüdür: bulmak
+kanıtlar, bulamamak kanıtlamaz.
+
+## 4.5 Doğrulamanın kendi tuzağı
+
+Doğrulama sonuçları yazılmadan önce, doğrulamanın gerçekten ne kanıtladığı
+kontrol edildi. Booksy'nin ana sayfasında şu duruyordu:
+
+```
+"@type": "MobileApplication"
+"name":  "Booksy - hair stylists, barbers, beauticians..."
+"aggregateRating": {"ratingValue": "4.9", "ratingCount": "840000"}
+```
+
+Bu **Booksy uygulamasının kendi mağaza puanı** — Booksy'de listelenen bir
+kuaförün puanı değil. Araştırmaya lazım olan ikincisi. "Booksy `puan` veriyor"
+demek bu hâliyle yanlış bir doğrulamaydı.
+
+Ayrım koda işlendi: sitenin **kendini tarif ettiği** nesnelerden (`Organization`,
+`WebSite`, `MobileApplication`…) yalnızca kimlik alanları doğrulanıyor, ölçüm
+alanı doğrulanmıyor. İç içe değer nesneleri (`AggregateRating`, `Offer`) üst
+bağlamı ezmiyor — bir uygulamanın içindeki puan hâlâ o uygulamanın puanıdır.
+
+Düzeltme doğrulanan satırı **262'den 251'e** indirdi; 11 tanesi sahte
+doğrulamaymış. İki test bunu kilitliyor.
+
+## 4.6 Ölçüm ne gösterdi
+
+Alanlar iki gruba ayrılıp doğrulama oranına bakıldı:
+
+| | Doğrulanan | Oran |
+|---|---|---:|
+| Etiket/kimlik alanı (url, başlık, tarih) | 242/1830 | **%13** |
+| Ölçüm alanı (puan, yorum, fiyat, indirme) | 9/1231 | **%0.7** |
+
+Sade hâli: sitelere ulaşabildiğimizi ve adlarını, bağlantılarını, tarihlerini
+alabildiğimizi gösterebiliyoruz; **görev 2'nin kanıt dediği sayıları
+alabildiğimizi henüz gösteremiyoruz.**
+
+Sebebi ölçülebilir durumda: indirilen sayfaların **453'ü ana sayfa, 81'i iç
+sayfa.** App Store'un ana sayfasında yorum sayısı yoktur; o alanı taşıyan
+kategori sayfası hiç çekilmemiştir. Bu bir çekim hatası değil, sıranın
+sonucudur — hangi iç sayfanın çekileceği ancak hangi alanın gerektiği
+tanımlandıktan sonra bilinebilirdi.
+
+**Oranın doğru okunuşu bir kapasite tablosudur:**
+
+| | Kaynak |
+|---|---:|
+| Envanter | 636 |
+| Kategori haritasında | 620 |
+| Ölçüm alanı beklenen | 487 |
+| **Ölçüm alanı + izinli yol** | **336** |
+| Alanı hâlihazırda kanıtlanmış | 8 |
+
+O 336 kaynağın **335'inin sorgulanabilir bir yolu**, **175'inin sitemap'i** var
+— yani nasıl sorulacağı biliniyor, çoğunda nereye gidileceği de biliniyor.
+Eksik olan yetenek değil, ikinci bir çekim.
+
+Böylece belirsiz bir "veri-var" cümlesi, **adresli bir çekim listesine**
+dönüştü: `beyan` satırlarının her biri "şu sayfa çekilirse şu alan doğrulanır"
+bilgisini taşıyor.
+
+## 4.7 Üretilen dosya
+
+### `KAYNAK-ALAN.csv` — 3061 satır
+
+Satır birimi artık kaynak değil, **(kaynak, alan)** ikilisi. 620 kaynak, 27 alan.
+
+**API'den doğrulanmış — en güçlü hâli:**
+
+```
+ad                 npm
+alan               indirme_sayisi
+alan_turu          sayi
+kaynak_grubu       Yazılım geliştirici ve teknik topluluklar
+yol                api
+izin_durumu        api-acik
+izin_aciklama      Belgelenmiş API ucu var; programatik erişim için tasarlanmış yol
+guven              dogrulandi
+dogrulama_izi      api:downloads
+hizmet_ettigi_soru doygun-mu, lisans-modeli, odeme-istegi, rakip-kim, talep-var-mi
+```
+
+Okunuşu: *npm'den indirme sayısı alınır; yol açık API'dir, izin programatik
+erişime uygundur, ve bu iddia indirilmiş yanıttaki `downloads` anahtarıyla
+kanıtlanmıştır. Alan beş soruya hizmet eder.*
+
+**Beyan ve gerekçesi — dosyanın çoğunluğu, aynı zamanda iş listesi:**
+
+```
+ad                 Apple App Store
+alan               yorum_sayisi
+yol                fulltext
+izin_durumu        robots-izinli
+guven              beyan
+neden_dogrulanmadi Elimizde anasayfa artefaktı var; alanı taşıyan iç sayfa çekilmedi
+```
+
+**İzin ayrımının görünür hâli:**
+
+```
+ad                 Apple Maps
+alan               yorum_sayisi
+izin_durumu        yasak
+izin_aciklama      robots.txt bu kaynağı kapatıyor — denenmedi
+neden_dogrulanmadi Kaynak robots.txt ile kapalı; hiçbir artefakt alınmadı
+```
+
+Apple Maps yerel hizmet araştırmasında değerli bir kaynak. Silinmedi,
+işaretlendi — sistem bunu görüp izinli bir alternatife yönelebilir.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `build_source_fields.py` | Sözlüğü, izin sınıflarını ve doğrulamayı üretir |
+| `test_build_source_fields.py` | 20 test |
+
+Testler dört şeyi korur: alan adının sözlük dışına çıkamayacağını,
+`dogrulandi` satırının iz taşıdığını, `beyan` satırının gerekçesiz
+kalamayacağını ve sitenin kendi puanının ölçüm kanıtı sayılamayacağını.
+
+## 4.8 Yeniden üretim
+
+```bash
+python3 build_source_fields.py
+python3 -m unittest test_build_source_fields
+```
+
+Zincirdeki yeri: dosya defteri, artefakt dizinini, arama yüzeylerini ve görev
+1–2'nin çıktılarını okur. Yeni veri çekildiğinde sıra şudur:
+
+```bash
+python3 build_coverage_ledger.py results/bulk-site-access-*.json results/common-crawl-*.json
+python3 build_artifact_index.py
+python3 build_product_categories.py
+python3 build_category_questions.py
+python3 build_candidate_catalog.py
+python3 build_source_fields.py
+```
+
+Yeni sayfalar çekildikçe doğrulanan satır sayısı kendiliğinden artar; alan
+sözlüğü ya da izin sınıfları değişmez.
