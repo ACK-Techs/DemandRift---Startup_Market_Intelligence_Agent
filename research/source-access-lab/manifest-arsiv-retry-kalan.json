@@ -1,0 +1,247 @@
+{
+  "expected_unique_sources": 23,
+  "manifest_id": "bulk-source-access-lab-v1-arsiv-canli-retry-kalan",
+  "policy": {
+    "api_rule": "only_explicit_keyless_official_endpoints",
+    "global_catalog_disposition": "retained",
+    "official_hosts_only": true,
+    "unresolved_network_access": false
+  },
+  "resolved_count": 23,
+  "schema_version": "1.0.0",
+  "source_list": "SITE-LISTESI.md",
+  "sources": [
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Make Apps Directory",
+      "entry_path": "/en/integrations",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.make.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0131",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "TrustRadius",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.trustradius.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0138",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "SaaSworthy",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.saasworthy.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0145",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Sitejabber",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.sitejabber.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0149",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Owler",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.owler.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0259",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "KAP",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.kap.org.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0270",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Seed-DB",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.seed-db.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0274",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Monster",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.monster.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0281",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "MapQuest",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.mapquest.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0308",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Thumbtack",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.thumbtack.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0313",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "T.C. Ticaret Bakanlığı",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.ticaret.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0370",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "T.C. Sağlık Bakanlığı",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.saglik.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0371",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Orphanet",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.orpha.net",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0425",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Nasdaq",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.nasdaq.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0440",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "YÖK Atlas",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://yokatlas.yok.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0455",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Redfin",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.redfin.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0468",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Zoopla",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.zoopla.co.uk",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0472",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Seloger",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.seloger.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0475",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Vrbo",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.vrbo.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0494",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "TheFork",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.thefork.fr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0516",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Make",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.make.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0552",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Jotform",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.jotform.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0587",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "PickFu",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.pickfu.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0598",
+      "verification_basis": "curated_official_host_fixture"
+    }
+  ],
+  "unresolved_count": 0
+}

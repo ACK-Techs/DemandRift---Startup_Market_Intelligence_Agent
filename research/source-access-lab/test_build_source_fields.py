@@ -33,6 +33,28 @@ class SozlukTests(unittest.TestCase):
             envanter = {r["ad"] for r in csv.DictReader(handle)}
         self.assertEqual(set(), set(alan.KAYNAK_ALAN_ISTISNASI) - envanter)
 
+    def test_gorev2nin_sayisal_kanit_dedigi_grupta_olcum_alani_var(self):
+        """Gorev 2 bu gruplar icin sayilabilir kanit tanimlamis; alan eslemesi
+        onu tasimazsa iki dosya birbiriyle celisir.
+
+        Gorev 2'nin kendi ifadeleri: akademik -> 'yillik yayin sayisinin egrisi',
+        sosyal aglar -> 'topluluklar ve uye sayilari', haber -> 'yatirim
+        turlarinin yillara gore sayisi', Turkiye -> 'yillara gore dagilimi'.
+        """
+        for grup in ("Akademik araştırma ve bilimsel yayınlar",
+                     "Sosyal ağlar ve açık topluluklar",
+                     "Haber, basın ve sektör yayınları",
+                     "Türkiye startup ve teknoloji ekosistemi"):
+            self.assertTrue(
+                set(alan.GRUP_ALANLARI[grup]) & alan.OLCUM_ALANLARI, grup)
+
+    def test_mevzuat_grubu_sayisal_alan_tasimaz(self):
+        """Regulasyon kaynaklarinin kaniti baglayici metindir, sayi degil --
+        oraya sayisal alan eklemek kanit tanimini bozar."""
+        self.assertFalse(
+            set(alan.GRUP_ALANLARI["Regülasyon ve hukuk kaynakları"])
+            & alan.OLCUM_ALANLARI)
+
     def test_esleme_hedefleri_sozlukte(self):
         """Artefakttan kanonik alana esleme, sozluk disina cikamaz."""
         for esleme in (alan.JSONLD_ALAN, alan.API_ALAN, alan.RSS_ALAN):

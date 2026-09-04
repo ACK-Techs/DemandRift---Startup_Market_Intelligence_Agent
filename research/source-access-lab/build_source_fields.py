@@ -126,21 +126,32 @@ GRUP_ALANLARI: dict[str, tuple[str, ...]] = {
         "kayit_sayisi", "puan", "yorum_sayisi", "fiyat", "konum"),
     "Regülasyon ve hukuk kaynakları": (
         "mevzuat_metni", "yayin_tarihi", "baslik", "url"),
+    # Gorev 2: "yerel yatirim haberlerinin yillara gore dagilimi".
     "Türkiye startup ve teknoloji ekosistemi": (
-        "yatirim_olayi", "saglayici_adi", "yayin_tarihi", "baslik"),
+        "yatirim_olayi", "kayit_sayisi", "trend_serisi", "saglayici_adi",
+        "yayin_tarihi", "baslik"),
 
     # Ortak havuz
     "Genel web arama ve keşif": ("url", "baslik", "aciklama_metni"),
+    # Gorev 2: "yatirim turlarinin yillara gore sayisi ve buyuklugu". Olayin
+    # kendisi metin, yillara dagilimi seridir. Arama sonucu adedi her haber
+    # sitesinde yayinlanmadigi icin kayit_sayisi eklenmedi.
     "Haber, basın ve sektör yayınları": (
-        "yatirim_olayi", "yayin_tarihi", "baslik", "aciklama_metni", "url"),
+        "yatirim_olayi", "trend_serisi", "yayin_tarihi", "baslik",
+        "aciklama_metni", "url"),
     "Şirket, yatırım ve startup verisi": (
         "yatirim_olayi", "saglayici_adi", "yayin_tarihi", "kayit_sayisi"),
     "Trafik, SEO, anahtar kelime ve trend": (
         "arama_hacmi", "trend_serisi", "url", "etiket"),
+    # Gorev 2 bu grup icin "hedef kitlenin toplandigi topluluklar ve uye
+    # sayilari" diyor -- uye sayisi sayisal bir kanittir.
     "Sosyal ağlar ve açık topluluklar": (
-        "kullanici_sikayeti", "baslik", "yayin_tarihi", "etiket"),
+        "kullanici_sikayeti", "kayit_sayisi", "baslik", "yayin_tarihi", "etiket"),
+    # Gorev 2: "konudaki yillik yayin sayisinin egrisi" ve "alandaki yayin
+    # yogunlugu". Ikisi de sayidir; arama sonucu adedi standart olarak yayinlanir.
     "Akademik araştırma ve bilimsel yayınlar": (
-        "baslik", "yayin_tarihi", "aciklama_metni", "url"),
+        "kayit_sayisi", "trend_serisi", "baslik", "yayin_tarihi",
+        "aciklama_metni", "url"),
     "Patent ve marka": ("kayit_sayisi", "baslik", "yayin_tarihi", "saglayici_adi"),
     "Kamu verisi ve istatistik": ("istatistik_serisi", "trend_serisi", "yayin_tarihi"),
     "Anket, birincil doğrulama ve kullanıcı araştırması platformları": (
