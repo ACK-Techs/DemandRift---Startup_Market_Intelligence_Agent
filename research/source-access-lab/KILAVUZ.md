@@ -973,3 +973,214 @@ python3 build_source_fields.py
 
 Yeni sayfalar çekildikçe doğrulanan satır sayısı kendiliğinden artar; alan
 sözlüğü ve izin sınıfları değişmez.
+
+---
+
+# Görev 5 — Fikirden kaynak paketine
+
+**İstenen:** Bir ürün fikri geldiğinde tüm 636 kaynağı çalıştırmak yerine, en
+değerli ve bağımsız kaynak paketini deterministik seçebilmek.
+
+## 5.1 Problem
+
+İlk dört görev bir katalog üretti: hangi kaynak hangi ürün tipine hizmet eder,
+hangi soruyu cevaplar, hangi alanı hangi izinli yoldan verir. Katalog kimseye
+tek başına araştırma yaptırmaz.
+
+Bir fikir geldiğinde — *"diyabet hastaları için mobil takip uygulaması"* — 636
+kaynağın hepsini çalıştırmak üç şeyi israf eder: süre, site kotası ve dikkat.
+Kaynakların çoğu o fikirle ilgisizdir; diyabet uygulaması araştırırken oyun
+platformlarına ya da mevzuat sitelerine bakmanın karşılığı yoktur.
+
+Bu adım kataloğu **kullanan** ilk parçadır.
+
+## 5.2 Neden düz bir liste olmaz
+
+İlk akla gelen çözüm "en yüksek puanlı 12 kaynağı seç"tir. Bu yaklaşım
+denendiğinde çıkan paketin dokuzu uygulama mağazasıydı: APKMirror, App Store,
+Aptoide, Google Play, Huawei AppGallery, Microsoft Store, Samsung, Uptodown,
+Xiaomi.
+
+Dokuzuna da bakıp *"dokuz kaynak da doğruladı"* demek yanıltıcıdır — dokuzu da
+aynı şeyi aynı yöntemle ölçer: mağazadaki uygulama sayısı. Aynı bilgi dokuz kez
+okunmuş olur. Görev 3'te aynı host'u paylaşan markalar için işaretlediğimiz
+**sahte doğrulama** riski, burada aynı yöntemi paylaşan kaynaklarda tekrar
+eder. Farklı host bağımsızlık için yeterli değildir.
+
+Bu yüzden çıktı bir kaynak listesi değil, **soru başına kanıt yuvasıdır:**
+
+```
+soru: doygun-mu
+  yuva 1 — Mobil uygulama mağazaları    Google Play Store → App Store → APKMirror
+  yuva 2 — Dijital ürün pazar yerleri   ThemeForest → Envato Market → CodeCanyon
+```
+
+Her yuva **ayrı bir ölçme yöntemidir**. Yuva içindeki kaynaklar birbirinin
+rakibi değil **yedeğidir**: Google Play bot koruması verirse App Store denenir.
+Testler bir sorunun yuvalarının farklı gruplardan ve farklı host'lardan
+geldiğini, yedeklerin ise birincil ile aynı gruptan olduğunu korur.
+
+## 5.3 Fikirden kategoriye
+
+Kategori tespiti sabit bir anahtar kelime tablosuyla yapılır. Modele
+sorulmaz — görev *deterministik* şart koşuyor, aynı fikir her zaman aynı
+kategoriye düşmelidir.
+
+Hiçbir anahtar eşleşmezse script hata verir ve durur. Sessizce bir varsayılana
+düşmek yanlış olur: yanlış kategori bütün seçimi yanlış yapar.
+
+**Katman kuralı görev 1'den devralınır, yeniden icat edilmez.** *"Mobil bulmaca
+oyunu"* hem `oyun` hem `mobil-uygulama` anahtarı taşır. Görev 1 bu durumu zaten
+karara bağlamıştı: `katman_olabilir` işaretli kategoriler dağıtım ya da teknoloji
+katmanıdır, başkasının üstüne biner. Ana kategori araştırmanın ayırt edici
+sorusunu cevaplayandır, yani katman **olmayan** kategoridir. Script bu işareti
+`URUN-KATEGORILERI.csv`'den okur.
+
+```
+"mobil bulmaca oyunu"        → kategori: oyun,          katman: mobil-uygulama
+"yerel esnaf randevu uygulaması" → kategori: yerel-hizmet, katman: mobil-uygulama
+"diyabet takip uygulaması"   → kategori: mobil-uygulama, katman: yok
+```
+
+## 5.4 Havuzun daralması
+
+| Adım | Kalan kaynak |
+|---|---:|
+| Envanter | 636 |
+| Kategori + katman + ek paket + ortak havuz (görev 1) | 320 |
+| Ölçüm alanı ve izinli yolu olanlar (görev 4 süzgeci) | 214 |
+| Soru başına bağımsız yuva (görev 5) | **11** |
+
+Görev 4'ün süzgeci burada bir kapı görevi görür: ölçüm alanı vermeyen ya da
+izinli yolu olmayan kaynak havuza **girmez**. Böylece robots.txt yasağı seçim
+aşamasında yeniden kontrol edilmek zorunda kalmaz; zaten elenmiştir.
+
+## 5.5 Yuva içindeki sıra
+
+Yuva içinde hangi kaynağın birincil olacağı ölçülmüş değerlere dayanır:
+
+1. Artefaktta doğrulanmış alan sayısı
+2. İzin sınıfı — açık API, robots-izinliden önce gelir
+3. **`tam_metin_bayt`** — o kaynaktan fiilen alınan metin miktarı
+4. Ölçüm alanı sayısı
+5. Eşitlikte kaynak adı
+
+Üçüncü kriter belirleyicidir ve ölçülmüş bir değerdir:
+
+| Kaynak | Alınan metin |
+|---|---:|
+| Google Play Store | 2.957.024 |
+| Apple App Store | 1.403.708 |
+| APKMirror | 766.236 |
+| Aptoide | 404.084 |
+| F-Droid | 13.156 |
+
+Büyük kataloğu olan kaynak daha çok metin döndürür; bu, içerik zenginliğinin
+dolaylı ama **ölçülmüş** göstergesidir. Hiç içerik döndürmemiş kaynak (0 bayt)
+birincil seçilmez — API'si olsa bile elimizde ondan gelmiş tek satır yoktur.
+
+**Bilinçli bir sınır:** elimizde pazar büyüklüğü verisi yoktur. Google Play'in
+F-Droid'den büyük olduğunu söyleyen bir sütun yoktur. Seçim kapsama ve
+bağımsızlık garantisi verir, pazar ağırlığı garantisi vermez; sıralama
+ölçülebilir kriterlere dayanır, tahmini popülerliğe değil.
+
+## 5.6 Sınır görünür kalır
+
+Soru başına en fazla üç yuva açılır. Bu bir tercihtir, veriden türetilmiş bir
+eşik değil — üç bağımsız ölçüm bir soruyu desteklemeye yeter, dördüncüsü
+maliyeti getirisi olmadan artırır.
+
+Tercih olduğu için **gizlenmez**. Görev 4'te konulan kural burada da geçerlidir:
+yapılmayan şey için nedeni yazılır. Her satır kaç yuva olduğunu, kaçının
+kullanıldığını ve hangi grupların elendiğini taşır:
+
+```
+soru_id            rakip-kim
+mevcut_yuva        6
+yuva_sayisi        3
+kullanilmayan_yuva Mobil uygulama mağazaları, Haber basın ve sektör yayınları,
+                   Dijital ürün ve şablon pazar yerleri
+```
+
+`--yuva` parametresi sınırı yükseltir; derinlik istendiğinde altı yuvanın
+tamamı açılır. Sınırın az olduğu durumlar da işaretlenir: yalnız bir yuvası olan
+soru çıktıda `tek_yuvali_soru` altında listelenir.
+
+## 5.7 Üretilen dosya
+
+### `SECIM-ORNEKLERI.csv` — 72 satır
+
+Üç örnek fikir için üretilen paketler. Satır birimi **(fikir, soru, yuva)**.
+
+```
+fikir              diyabet hastaları için mobil takip uygulaması
+kategori           mobil-uygulama
+ekler              saglik
+soru_id            doygun-mu
+soru               Pazar doygun mu, boşluk var mı?
+yuva               1
+kaynak_grubu       Mobil uygulama mağazaları
+kanit_turu         İlk 20'nin yorum sayısı dağılımı ve son güncelleme tarihleri
+birincil_kaynak    Google Play Store
+yedekler           Apple App Store, APKMirror
+host               play.google.com
+izin_durumu        robots-izinli
+olcum_alani        fiyat, indirme_sayisi, puan, siralama, urun_sayisi, yorum_sayisi
+kaynak_rolu        cekirdek
+neden_secildi      1. kanıt yuvası (Mobil uygulama mağazaları); kategorinin çekirdek kaynağı
+mevcut_yuva        2
+yuva_sayisi        2
+```
+
+Okunuşu: *diyabet uygulaması araştırılırken "pazar doygun mu" sorusunun birinci
+kanıt yuvası uygulama mağazalarıdır; oradan ilk 20'nin yorum dağılımına
+bakılır. Google Play birincil kaynaktır çünkü kategorinin çekirdeğidir; o
+çalışmazsa App Store ve APKMirror denenir. Bu soru için iki yuva mevcuttu,
+ikisi de kullanıldı.*
+
+### Üç örnek fikrin paketleri
+
+| Fikir | Kategori | Katman | Ek | Soru | Yuva | Kaynak |
+|---|---|---|---|---:|---:|---:|
+| Diyabet takip uygulaması | `mobil-uygulama` | — | `saglik` | 10 | 23 | 11 |
+| Muhasebeci fatura yazılımı | `b2b-web-yazilimi` | — | `fintech` | 8 | 24 | 13 |
+| Esnaf randevu uygulaması | `yerel-hizmet` | `mobil-uygulama` | — | 11 | 25 | 11 |
+
+Kategoriye özel yuvalardan gelen kaynaklar tamamen farklı çıkıyor:
+
+| Fikir | Kategoriye özel kaynaklar |
+|---|---|
+| Diyabet uygulaması | Google Play Store, NICE |
+| Fatura yazılımı | CloudPrice, Indeed, Investing.com, SoftwareSuggest |
+| Esnaf randevu uygulaması | Google Play Store, Houzz |
+
+Diyabet ile fatura paketleri arasında **hiç ortak kategori kaynağı yok**.
+Diyabet ile randevu arasındaki tek ortak Google Play — ikisi de mobil uygulama
+olduğu için doğru. Görev 1'in *"kategori yalnız etiket olmamalı"* şartının
+çalışma anındaki karşılığı budur.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `select_sources.py` | Seçim fonksiyonu |
+| `test_select_sources.py` | 20 test |
+
+Testler dört şeyi korur: aynı fikrin her zaman aynı paketi vermesini, bir
+sorunun yuvalarının farklı grup ve host'lardan gelmesini, seçilen her kaynağın
+görev 4 süzgecinden geçmiş olmasını ve elenen yuvanın sessizce kaybolmamasını.
+
+## 5.8 Yeniden üretim
+
+```bash
+python3 select_sources.py --fikir "diyabet hastaları için mobil takip uygulaması"
+python3 select_sources.py --fikir "..." --yuva 6      # daha derin
+python3 select_sources.py --fikir "..." --kategori oyun --ek saglik
+python3 -m unittest test_select_sources
+```
+
+Script beş dosyayı birden okur: `KATEGORI-KAYNAK.csv` ve `URUN-KATEGORILERI.csv`
+(görev 1), `KATEGORI-SORU.csv` (görev 2), `ADAY-KATALOG.csv` (görev 3),
+`KAYNAK-ALAN.csv` ve `ARAMA-YUZEYLERI.csv` (görev 4). Önceki görevlerden
+herhangi biri yeniden üretildiğinde seçim kendiliğinden güncellenir; seçim
+mantığında değişiklik gerekmez.
