@@ -42,6 +42,8 @@ HERE = Path(__file__).resolve().parent
 
 # Her soru icin en fazla kac ayri kanit yuvasi acilir. Uc farkli olcme yontemi
 # bir soruyu desteklemeye yeter; dordunculer getiriyi artirmadan maliyet ekler.
+# Bu bir tercihtir, veriden turetilmis bir esik degil -- ``--yuva`` ile
+# degistirilebilir, ve kesilen yuva sayisi ciktida gorunur kalir.
 SORU_BASINA_YUVA = 3
 # Yuva icinde kac yedek tutulur. Ilki calismazsa sirayla denenir.
 YUVA_BASINA_YEDEK = 3
@@ -140,8 +142,8 @@ def oku(yol: Path) -> list[dict[str, str]]:
 
 
 def paket_sec(fikir: str, kategori: str, ekler: list[str],
-              veri: dict[str, Any], katmanlar: list[str] | None = None
-              ) -> list[dict[str, Any]]:
+              veri: dict[str, Any], katmanlar: list[str] | None = None,
+              soru_basina_yuva: int = SORU_BASINA_YUVA) -> list[dict[str, Any]]:
     """Soru basina kanit yuvalari uretir; her yuva ayri bir olcme yontemidir."""
     kategori_kaynak = veri["kategori_kaynak"]
     kategori_soru = veri["kategori_soru"]
@@ -216,7 +218,11 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
             return (-dog, -bayt, -len(grup_kaynaklari.get(y[0], set())), y[0])
 
         yuvalar.sort(key=yuva_sirasi)
-        for sira, (grup, kanit, kaynaklar) in enumerate(yuvalar[:SORU_BASINA_YUVA], 1):
+        # Sinirin kestigi yuva sessizce kaybolmaz: kac yuva vardi, kaci
+        # kullanildi ve elenenin hangi gruplar oldugu her satirda yazili kalir.
+        kullanilan = yuvalar[:soru_basina_yuva]
+        elenen = [g for g, _k, _s in yuvalar[soru_basina_yuva:]]
+        for sira, (grup, kanit, kaynaklar) in enumerate(kullanilan, 1):
             birincil = kaynaklar[0]
             satirlar.append({
                 "fikir": fikir, "kategori": kategori,
@@ -232,7 +238,9 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
                 "dogrulanmis_alan": ", ".join(sorted(dogrulanan.get(birincil, set()))),
                 "kaynak_rolu": rol.get(birincil, ""),
                 "neden_secildi": _gerekce(birincil, grup, sira, izin, dogrulanan, rol),
-                "yuva_sayisi": len(yuvalar[:SORU_BASINA_YUVA]),
+                "yuva_sayisi": len(kullanilan),
+                "mevcut_yuva": len(yuvalar),
+                "kullanilmayan_yuva": ", ".join(elenen),
             })
     return satirlar
 
@@ -257,6 +265,8 @@ def main() -> int:
     parser.add_argument("--kategoriler", type=Path,
                         default=HERE / "URUN-KATEGORILERI.csv")
     parser.add_argument("--ek", action="append", default=None)
+    parser.add_argument("--yuva", type=int, default=SORU_BASINA_YUVA,
+                        help=f"Soru başına en fazla kanıt yuvası (varsayılan {SORU_BASINA_YUVA})")
     parser.add_argument("--kategori-kaynak", type=Path,
                         default=HERE / "KATEGORI-KAYNAK.csv")
     parser.add_argument("--kategori-soru", type=Path, default=HERE / "KATEGORI-SORU.csv")
@@ -309,7 +319,7 @@ def main() -> int:
             katmanlar = sorted(args.katman)
         ekler = sorted(args.ek) if args.ek else otomatik_ek
 
-    satirlar = paket_sec(args.fikir, kategori, ekler, veri, katmanlar)
+    satirlar = paket_sec(args.fikir, kategori, ekler, veri, katmanlar, args.yuva)
     if args.out:
         with args.out.open("w", newline="", encoding="utf-8") as handle:
             yazici = csv.DictWriter(handle, fieldnames=list(satirlar[0]))
@@ -328,6 +338,10 @@ def main() -> int:
             y.strip() for r in satirlar for y in r["yedekler"].split(",") if y.strip()}),
         "farkli_host": len({r["host"] for r in satirlar}),
         "tek_yuvali_soru": zayif,
+        "yuva_siniri": args.yuva,
+        "sinirin_eledigi_yuva": sum(
+            int(r["mevcut_yuva"]) - int(r["yuva_sayisi"])
+            for r in satirlar if r["yuva"] == "1" or r["yuva"] == 1),
         "cikti": str(args.out) if args.out else None,
     }, ensure_ascii=False))
     return 0

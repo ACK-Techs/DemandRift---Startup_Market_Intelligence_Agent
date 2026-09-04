@@ -165,6 +165,28 @@ class SecimKalitesiTests(unittest.TestCase):
             self.assertTrue(VERI["metin_bayt"].get(ad, 0) or VERI["dogrulanan"].get(ad),
                             f"{r['soru_id']}/{ad}")
 
+    def test_kesilen_yuva_sessizce_kaybolmaz(self):
+        """Gorev 4'un ilkesi: yapilmayan sey icin neden yazilir. Yuva siniri
+        bir yuvayi elerse hangi gruplarin elendigi satirda gorunur kalmali."""
+        for r in self.satirlar:
+            self.assertGreaterEqual(int(r["mevcut_yuva"]), int(r["yuva_sayisi"]))
+            if int(r["mevcut_yuva"]) > int(r["yuva_sayisi"]):
+                self.assertTrue(r["kullanilmayan_yuva"].strip(), r["soru_id"])
+            else:
+                self.assertEqual("", r["kullanilmayan_yuva"], r["soru_id"])
+
+    def test_sinir_yukselince_daha_cok_yuva_acilir(self):
+        dar = sec.paket_sec(FIKIR, "mobil-uygulama", ["saglik"], VERI,
+                            soru_basina_yuva=2)
+        genis = sec.paket_sec(FIKIR, "mobil-uygulama", ["saglik"], VERI,
+                              soru_basina_yuva=6)
+        self.assertLess(len(dar), len(genis))
+
+    def test_elenen_yuva_kullanilanla_ayni_grup_degil(self):
+        for r in self.satirlar:
+            elenen = {g.strip() for g in r["kullanilmayan_yuva"].split(",") if g.strip()}
+            self.assertNotIn(r["kaynak_grubu"], elenen, r["soru_id"])
+
     def test_her_satir_gerekce_tasir(self):
         for r in self.satirlar:
             self.assertTrue(r["neden_secildi"].strip(), r["soru_id"])
