@@ -31,9 +31,10 @@ gruba ayrıldı:
 
 | Grup | Başlık | Kaynak | Neden |
 |---|---:|---:|---|
-| **Ortak** | 12 | 283 | Her üründe kullanılır (haber, arama motorları, trend, patent, şirket verisi). Ayırt etmediği için kategori olamaz |
-| **Kategori** | 10 | 224 | Ürünün nerede yaşadığını ya da kimin satın aldığını belirler |
-| **Ek** | 8 | 165 | Dikey ve bölge. Tek başına yetmez: "sağlık ürünü" demek mobil mi web mi olduğunu söylemez |
+| **Ortak** | 12 | 291 | Her üründe kullanılır (haber, arama motorları, trend, patent, şirket verisi). Ayırt etmediği için kategori olamaz |
+| **Kategori** | 9 | 197 | Ürünün nerede yaşadığını ya da kimin satın aldığını belirler |
+| **Ek** | 8 | 159 | Dikey ve bölge. Tek başına yetmez: "sağlık ürünü" demek mobil mi web mi olduğunu söylemez |
+| **Kapsam dışı** | 1 | 16 | Fiziksel ürün pazar yerleri — aşağıda gerekçesi var |
 
 Üç başlık tek kategoride birleşti — SaaS inceleme siteleri, fiyat karşılaştırma
 ve iş ilanları hep birlikte **B2B web yazılımı** araştırmasını besliyor. Ayrı
@@ -52,16 +53,30 @@ kategori yapılsalardı üçü de aynı ürün tipini işaret ederdi, yani kural
 | **Geliştirici aracı / kütüphane** | Paket, SDK, CLI ya da altyapı aracı | 34 | 30 |
 | **Eklenti / entegrasyon** | Var olan bir platformun üzerine kurulan eklenti | 25 | 25 |
 | **Yapay zekâ ürünü / agent** | Model, veri seti, agent ya da YZ altyapısı | 24 | 22 |
-| **E-ticaret / fiziksel ürün** | Pazar yerlerinde satılan ürün ve onu destekleyen yazılım | 24 | 19 |
 | **Oyun** | Dijital dağıtım platformlarında yayınlanan oyun | 17 | 12 |
 | **Yerel hizmet ürünü** | Belirli bir coğrafyada işletme/tüketiciye hizmet veren ürün | 23 | 17 |
 
-Her kategoriye ayrıca **283 kaynaklık ortak havuz** eklenir.
+Her kategoriye ayrıca **291 kaynaklık ortak havuz** eklenir.
 
-Kategoriler birbirinden ayrık: 224 çekirdek kaynaktan yalnızca 3'ü iki
+Kategoriler birbirinden ayrık: 197 çekirdek kaynaktan yalnızca 3'ü iki
 kategoride birden geçiyor (Tripadvisor ve Yelp hem B2B hem yerel hizmette,
 GitHub hem geliştirici aracı hem yapay zekâ ürününde). Bu örtüşmeler meşru —
 o kaynaklar gerçekten iki araştırmayı da besliyor.
+
+### Çıkarılan kategori
+
+Mentör değerlendirmesi sonrası (2026-09-04) sekizinci kategori —
+**E-ticaret / fiziksel ürün** — listeden çıkarıldı. Gerekçe: e-ticarette fiziksel
+ürün için yapılan iş pazar analizi değil, fiyat arbitrajıdır; aynı ürün farklı
+sitede farklı fiyata satılmaya çalışılır. Ayrı bir araştırma niyeti doğurmadığı
+için yukarıdaki kuralı geçemiyor.
+
+Kategoriye bağlı 16 fiziksel pazar yeri (Trendyol, Amazon, eBay, Temu…) kategori
+haritasından çıktı; envanterde ve `ADAY-KATALOG.csv`'de duruyorlar. Aynı başlıktaki
+8 kaynak ise fiziksel ürün satmadıkları için ortak havuza taşındı: Gumroad ve
+Lemon Squeezy (bağımsız yazılımcının satış kanalı), CodeCanyon, ThemeForest,
+Envato Market, Creative Market (kod, tema, eklenti) ile Kickstarter ve Indiegogo
+(destekçi sayısı, "talep var mı" sorusunun doğrudan kanıtı).
 
 ## Kategori seçim kuralı
 
@@ -89,9 +104,8 @@ Katman olabilecek kategoriler `URUN-KATEGORILERI.csv` içindeki
 `katman_olabilir` sütununda işaretli: `mobil-uygulama`, `eklenti-entegrasyon` ve
 `yapay-zeka-urunu`. Bunlar dağıtım/teknoloji katmanı olduğu için başka bir
 kategorinin üstüne binebiliyor — bir ürün hem "B2B web yazılımı" hem "yapay zekâ
-ürünü" olabilir. Diğer beş kategori (b2b-web-yazilimi, gelistirici-araci,
-eticaret-fiziksel-urun, oyun, yerel-hizmet) birbirinin üstüne binmez; ürün
-bunlardan yalnız birine girer.
+ürünü" olabilir. Diğer dört kategori (b2b-web-yazilimi, gelistirici-araci, oyun,
+yerel-hizmet) birbirinin üstüne binmez; ürün bunlardan yalnız birine girer.
 
 ## Ek paketler
 
@@ -116,7 +130,7 @@ Kategori değil; ana kategorinin üstüne eklenir.
 |---|---:|
 | Kategori: mobil uygulama | 13 |
 | Ek: sağlık | 17 |
-| Ortak havuz | 283 |
+| Ortak havuz | 291 |
 
 Önce bakılacak: **30 kaynak** (App Store, Play Store, Sensor Tower,
 ClinicalTrials.gov, FDA…). Geri kalanı destekleyici.
@@ -127,7 +141,7 @@ ClinicalTrials.gov, FDA…). Geri kalanı destekleyici.
 |---|---:|
 | Kategori: B2B web yazılımı | 64 |
 | Ek: fintech + regüle sektör | 54 |
-| Ortak havuz | 283 |
+| Ortak havuz | 291 |
 
 Önce bakılacak: **118 kaynak** (G2, Capterra, LinkedIn Jobs, SPK, BDDK…).
 App Store'a hiç bakılmıyor.
@@ -140,7 +154,7 @@ bunu ifade ediyor.
 | Dosya | İçerik |
 |---|---|
 | `URUN-KATEGORILERI.csv` | Kategori başına bir satır: tanım, araştırma niyeti, kaynak sayıları |
-| `KATEGORI-KAYNAK.csv` | 674 satır — hangi kategori, hangi kaynak, rolü, ne sağladığı, hangi aramanın yapılacağı, o kaynağın gerçek durumu |
+| `KATEGORI-KAYNAK.csv` | 658 satır — hangi kategori, hangi kaynak, rolü, ne sağladığı, hangi aramanın yapılacağı, o kaynağın gerçek durumu |
 | `build_product_categories.py` | İkisini `SITE-LISTESI.md` + kaynak defteri + arama kataloğundan üretir |
 
 `KATEGORI-KAYNAK.csv` bir satırı şöyle okunur:

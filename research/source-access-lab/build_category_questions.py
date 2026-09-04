@@ -104,7 +104,6 @@ KATEGORI_OZEL: dict[str, tuple[str, ...]] = {
     "oyun": ("kesfedilebilirlik", "platform-politikasi"),
     "yerel-hizmet": ("cografi-yogunluk",),
     "b2b-web-yazilimi": (),
-    "eticaret-fiziksel-urun": ("birim-maliyet",),
 }
 
 # --------------------------------------------------------------------------
@@ -268,19 +267,29 @@ KANIT: dict[tuple[str, str], tuple[str, str, str]] = {
         "Katalog büyümesi görünürlük maliyetini belirler",
         "Başarılı tek bir bağımsız oyun hikâyesi — hayatta kalma yanılgısı"),
 
-    # ---- E-ticaret pazar yerleri
-    ("talep-var-mi", "E-ticaret ve fiziksel ürün pazar yerleri"): (
-        "Aynı ürün kategorisindeki listeleme sayısı ve satıcı yoğunluğu",
-        "Satıcı sayısı, kâr edilebildiğinin dolaylı ama güçlü göstergesidir",
-        "Arama sonucu sayısı — alakasız ürünler dahil olabilir"),
-    ("odeme-istegi", "E-ticaret ve fiziksel ürün pazar yerleri"): (
-        "Fiyat dağılımı ve en çok satan ürünlerin fiyat bandı",
-        "Gerçekleşmiş satışların fiyat bandı pazarın kabul ettiği aralıktır",
-        "En pahalı ürünün fiyatı"),
-    ("birim-maliyet", "E-ticaret ve fiziksel ürün pazar yerleri"): (
-        "Platform komisyon oranları ve kargo maliyetleri",
-        "Komisyon yayınlanmış ve bağlayıcıdır, marjı doğrudan belirler",
-        "Tedarikçi tekliflerindeki tahmini maliyetler"),
+    # ---- Dijital urun pazar yerleri (bagimsiz yazilimcinin sattigi yer)
+    ("odeme-istegi", "Dijital ürün ve şablon pazar yerleri"): (
+        "Benzer ürünlerin fiyat dağılımı ve satış adedi gösterilen listelemeler",
+        "Gerçekleşmiş satış adediyle birlikte görünen fiyat, pazarın kabul ettiği banttır",
+        "Satıcının ilan ettiği liste fiyatı — indirimle hiç satılmamış olabilir"),
+    ("rakip-kim", "Dijital ürün ve şablon pazar yerleri"): (
+        "Aynı işi yapan ürünlerin listelemeleri ve satıcı profilleri",
+        "Platformda satılan ürün, fiilen pazara girmiş bir rakiptir",
+        "Ürün adı geçen blog listeleri — çoğu ortaklık geliri içerir"),
+    ("doygun-mu", "Dijital ürün ve şablon pazar yerleri"): (
+        "Kategorideki ürün sayısı ve satışın ilk 10 satıcıda toplanma oranı",
+        "Satışın az sayıda satıcıda toplanması pazarın kapandığını gösterir",
+        "Listeleme sayısı — aynı satıcının çok sayıda varyantı olabilir"),
+
+    # ---- Kitle fonlamasi
+    ("talep-var-mi", "Kitle fonlaması platformları"): (
+        "Benzer projelerin destekçi sayısı ve hedefe ulaşma oranı",
+        "Destekçi ürün ortada yokken parasını veriyor; niyet değil taahhüttür",
+        "Kampanya sayfasının görüntülenme sayısı"),
+    ("odeme-istegi", "Kitle fonlaması platformları"): (
+        "Destek kademelerinin fiyatları ve hangi kademede kaç kişi toplandığı",
+        "Ödenmiş tutar, ödeme isteğinin doğrudan ölçümüdür",
+        "Kampanyanın toplam hedefi — kaç kişiye bölündüğü bilinmeden anlamsız"),
 
     # ---- Yerel isletme dizinleri
     ("cografi-yogunluk", "Yerel işletme, harita ve hizmet dizinleri"): (
@@ -353,11 +362,6 @@ KANIT: dict[tuple[str, str], tuple[str, str, str]] = {
         "Bölgedeki hizmet sağlayıcı sayısı ve yorumun ilk 10'da toplanma oranı",
         "Yorum yoğunlaşması yerleşik oyuncuların varlığını gösterir",
         "İşletme sayısı tek başına — çoğu dijital kanalda aktif olmayabilir"),
-
-    ("doygun-mu", "E-ticaret ve fiziksel ürün pazar yerleri"): (
-        "Kategorideki satıcı sayısı ve satışın ilk 10 satıcıda toplanma oranı",
-        "Satışın az sayıda satıcıda toplanması pazarın kapandığını gösterir",
-        "Listeleme sayısı — aynı satıcının çok sayıda varyantı olabilir"),
 
     ("rakip-kim", "Haber, basın ve sektör yayınları"): (
         "Alanda yatırım ve satın alma haberleri, yeni oyuncu duyuruları",

@@ -255,30 +255,6 @@ eklenti-entegrasyon,kategori,"Tarayıcı, e-ticaret ve CMS eklenti mağazaları"
 eklenti-entegrasyon,kategori,"Tarayıcı, e-ticaret ve CMS eklenti mağazaları",WordPress Plugin Directory,cekirdek,"Eklenti listeleri, kurulum sayıları, kullanıcı yorumları",{urun}; {urun} extension; {urun} plugin,cekildi,https://wordpress.org,site_search
 eklenti-entegrasyon,kategori,"Tarayıcı, e-ticaret ve CMS eklenti mağazaları",Zapier App Directory,cekirdek,"Eklenti listeleri, kurulum sayıları, kullanıcı yorumları",{urun}; {urun} extension; {urun} plugin,cekildi,https://zapier.com,local_index
 eklenti-entegrasyon,kategori,"Tarayıcı, e-ticaret ve CMS eklenti mağazaları",Zoom App Marketplace,cekirdek,"Eklenti listeleri, kurulum sayıları, kullanıcı yorumları",{urun}; {urun} extension; {urun} plugin,cekildi,https://marketplace.zoom.us,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Alibaba,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://alibaba.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,AliExpress,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://aliexpress.ru,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Amazon,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.amazon.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Amazon Reviews,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,adres_yok,,
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,CodeCanyon,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://codecanyon.net,site_search
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Creative Market,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://creativemarket.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,eBay,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.ebay.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Envato Market,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://themeforest.net,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Etsy,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,kismi,https://www.etsy.com,yok
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Etsy Reviews,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.etsy.com,opensearch
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Facebook Marketplace,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,kismi,https://www.facebook.com,yok
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Gumroad,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://gumroad.com,opensearch
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Hepsiburada,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.hepsiburada.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Indiegogo,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.indiegogo.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Kickstarter,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,kismi,https://www.kickstarter.com,yok
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Lemon Squeezy,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://lemonsqueezy.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,n11,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://n11.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Pazarama,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://pazarama.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Sahibinden,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,erisim_yok,https://www.sahibinden.com,
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Temu,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://www.temu.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,ThemeForest,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://themeforest.net,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Trendyol,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://trendyol.com,fulltext
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Walmart,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://business.walmart.com,site_search
-eticaret-fiziksel-urun,kategori,E-ticaret ve fiziksel ürün pazar yerleri,Çiçeksepeti,cekirdek,"Ürün listeleri, fiyat aralıkları, satıcı yoğunluğu, alıcı yorumları",{urun}; {urun} satın al,cekildi,https://ciceksepeti.com,fulltext
 gelistirici-araci,kategori,Yazılım geliştirici ve teknik topluluklar,Ask Ubuntu,cekirdek,"Paket indirme sayıları, depo ilgisi, çözülmemiş sorunlar, soru hacmi",{urun}; {urun} library; {urun} sdk,cekildi,https://askubuntu.com,api
 gelistirici-araci,kategori,Yazılım geliştirici ve teknik topluluklar,Bitbucket,cekirdek,"Paket indirme sayıları, depo ilgisi, çözülmemiş sorunlar, soru hacmi",{urun}; {urun} library; {urun} sdk,cekildi,https://bitbucket.org,fulltext
 gelistirici-araci,kategori,Yazılım geliştirici ve teknik topluluklar,Codeberg,cekirdek,"Paket indirme sayıları, depo ilgisi, çözülmemiş sorunlar, soru hacmi",{urun}; {urun} library; {urun} sdk,cekildi,https://codeberg.org,fulltext
@@ -431,10 +407,12 @@ ortak,ortak,"Anket, birincil doğrulama ve kullanıcı araştırması platformla
 ortak,ortak,"Şirket, yatırım ve startup verisi",Clearbit,destekleyici,"Rakip şirketler, yatırım turları, kuruluş tarihleri",{urun} startup; {urun} company,cekildi,https://clearbit.com,local_index
 ortak,ortak,"Domain, DNS, sertifika ve web footprint",Cloudflare Radar,destekleyici,"Rakip sitelerin teknik izleri, alan adı hareketleri",{urun},cekildi,https://radar.cloudflare.com,fulltext
 ortak,ortak,"Haber, basın ve sektör yayınları",CNBC,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://www.cnbc.com,local_index
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,CodeCanyon,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://codecanyon.net,site_search
 ortak,ortak,"Domain, DNS, sertifika ve web footprint",Common Crawl,destekleyici,"Rakip sitelerin teknik izleri, alan adı hareketleri",{urun},cekildi,https://commoncrawl.org,site_search
 ortak,ortak,"Şirket, yatırım ve startup verisi",Companies House,destekleyici,"Rakip şirketler, yatırım turları, kuruluş tarihleri",{urun} startup; {urun} company,cekildi,https://www.gov.uk,opensearch
 ortak,ortak,Akademik araştırma ve bilimsel yayınlar,CORE,destekleyici,"Alandaki bilimsel çalışma yoğunluğu, yeni yöntemler",{urun},cekildi,https://core.ac.uk,local_index
 ortak,ortak,"Şirket, yatırım ve startup verisi",Craft.co,destekleyici,"Rakip şirketler, yatırım turları, kuruluş tarihleri",{urun} startup; {urun} company,cekildi,https://craft.co,fulltext
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,Creative Market,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://creativemarket.com,fulltext
 ortak,ortak,Akademik araştırma ve bilimsel yayınlar,Crossref,destekleyici,"Alandaki bilimsel çalışma yoğunluğu, yeni yöntemler",{urun},cekildi,https://www.crossref.org,site_search
 ortak,ortak,"Şirket, yatırım ve startup verisi",Crowdcube,destekleyici,"Rakip şirketler, yatırım turları, kuruluş tarihleri",{urun} startup; {urun} company,erisim_yok,https://www.crowdcube.com,
 ortak,ortak,"Domain, DNS, sertifika ve web footprint",crt.sh,destekleyici,"Rakip sitelerin teknik izleri, alan adı hareketleri",{urun},kismi,https://crt.sh,yok
@@ -460,6 +438,7 @@ ortak,ortak,Genel web arama ve keşif,DuckDuckGo,destekleyici,Genel kapsam: kayn
 ortak,ortak,"Haber, basın ve sektör yayınları",Dünya,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://dunya.com,fulltext
 ortak,ortak,"Haber, basın ve sektör yayınları",egirişim,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://egirisim.com,local_index
 ortak,ortak,"Haber, basın ve sektör yayınları",Ekonomim,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://ekonomim.net,fulltext
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,Envato Market,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://themeforest.net,fulltext
 ortak,ortak,Patent ve marka,Espacenet,destekleyici,"Patent başvuru yoğunluğu, marka tescilleri",{urun},erisim_yok,https://worldwide.espacenet.com,
 ortak,ortak,"Haber, basın ve sektör yayınları",EU-Startups,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://www.eu-startups.com,local_index
 ortak,ortak,Patent ve marka,EUIPO,destekleyici,"Patent başvuru yoğunluğu, marka tescilleri",{urun},cekildi,https://www.euipo.europa.eu,fulltext
@@ -497,6 +476,7 @@ ortak,ortak,"Trafik, SEO, anahtar kelime ve trend",Google Trends,destekleyici,"A
 ortak,ortak,"Anket, birincil doğrulama ve kullanıcı araştırması platformları",Great Question,destekleyici,Birincil doğrulama için anket ve kullanıcı testi altyapısı,{urun},cekildi,https://greatquestion.co,site_search
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Groups.io,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,cekildi,https://groups.io,fulltext
 ortak,ortak,Ürün lansmanı ve startup toplulukları,GrowthHackers,destekleyici,"Yeni lansmanlar, erken benimseyen tepkisi",{urun},cekildi,https://growthhackers.com,fulltext
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,Gumroad,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://gumroad.com,opensearch
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Hacker News,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,cekildi,https://news.ycombinator.com,api
 ortak,ortak,Ürün lansmanı ve startup toplulukları,HackerNoon,destekleyici,"Yeni lansmanlar, erken benimseyen tepkisi",{urun},kismi,https://hackernoon.com,yok
 ortak,ortak,"Haber, basın ve sektör yayınları",Harvard Business Review,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,erisim_yok,https://hbr.org,
@@ -507,6 +487,7 @@ ortak,ortak,"Domain, DNS, sertifika ve web footprint",ICANN Lookup,destekleyici,
 ortak,ortak,Akademik araştırma ve bilimsel yayınlar,IEEE Xplore,destekleyici,"Alandaki bilimsel çalışma yoğunluğu, yeni yöntemler",{urun},cekildi,https://ieeexplore.ieee.org,fulltext
 ortak,ortak,Kamu verisi ve istatistik,IMF Data,destekleyici,"Pazar büyüklüğü, nüfus ve sektör istatistikleri",{urun},cekildi,https://data.imf.org,fulltext
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Indie Hackers,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,erisim_yok,https://www.indiehackers.com,
+ortak,ortak,Kitle fonlaması platformları,Indiegogo,destekleyici,"Kampanya sayısı, destekçi adedi, toplanan tutar ve hedefe ulaşma oranı",{urun}; {urun} kickstarter,cekildi,https://www.indiegogo.com,fulltext
 ortak,ortak,Kamu verisi ve istatistik,INSEE,destekleyici,"Pazar büyüklüğü, nüfus ve sektör istatistikleri",{urun},cekildi,https://insee.org,fulltext
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Instagram,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,kismi,https://www.instagram.com,yok
 ortak,ortak,Kamu verisi ve istatistik,İstanbul Büyükşehir Belediyesi Açık Veri Portalı,destekleyici,"Pazar büyüklüğü, nüfus ve sektör istatistikleri",{urun},cekildi,https://data.ibb.gov.tr,local_index
@@ -516,9 +497,11 @@ ortak,ortak,Akademik araştırma ve bilimsel yayınlar,Kaggle,destekleyici,"Alan
 ortak,ortak,Genel web arama ve keşif,Kagi,destekleyici,Genel kapsam: kaynak keşfi ve doğrulama,{urun}; {urun} market,cekildi,https://kagi.com,local_index
 ortak,ortak,"Şirket, yatırım ve startup verisi",KAP,destekleyici,"Rakip şirketler, yatırım turları, kuruluş tarihleri",{urun} startup; {urun} company,cekildi,https://www.kap.org.tr,fulltext
 ortak,ortak,"Trafik, SEO, anahtar kelime ve trend",Keyword Tool,destekleyici,"Arama hacmi, trend eğrisi, anahtar kelime rekabeti",{urun}; {urun} trend,cekildi,https://keywordtool.io,fulltext
+ortak,ortak,Kitle fonlaması platformları,Kickstarter,destekleyici,"Kampanya sayısı, destekçi adedi, toplanan tutar ve hedefe ulaşma oranı",{urun}; {urun} kickstarter,kismi,https://www.kickstarter.com,yok
 ortak,ortak,"Domain, DNS, sertifika ve web footprint",LACNIC,destekleyici,"Rakip sitelerin teknik izleri, alan adı hareketleri",{urun},cekildi,https://www.lacnic.net,fulltext
 ortak,ortak,Ürün lansmanı ve startup toplulukları,Launching Next,destekleyici,"Yeni lansmanlar, erken benimseyen tepkisi",{urun},kismi,https://www.launchingnext.com,yok
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Lemmy,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,cekildi,https://join-lemmy.org,api
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,Lemon Squeezy,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://lemonsqueezy.com,fulltext
 ortak,ortak,Akademik araştırma ve bilimsel yayınlar,Lens.org,destekleyici,"Alandaki bilimsel çalışma yoğunluğu, yeni yöntemler",{urun},cekildi,https://lens.org,site_search
 ortak,ortak,Patent ve marka,Lens.org Patents,destekleyici,"Patent başvuru yoğunluğu, marka tescilleri",{urun},kismi,https://www.lens.org,yok
 ortak,ortak,Sosyal ağlar ve açık topluluklar,LinkedIn,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,kismi,https://www.linkedin.com,yok
@@ -623,6 +606,7 @@ ortak,ortak,Sosyal ağlar ve açık topluluklar,Telegram,destekleyici,"Kullanıc
 ortak,ortak,Patent ve marka,The Trademark Search Company,destekleyici,"Patent başvuru yoğunluğu, marka tescilleri",{urun},cekildi,https://thetrademarksearchcompany.com,local_index
 ortak,ortak,"Haber, basın ve sektör yayınları",The Verge,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,cekildi,https://theverge.com,site_search
 ortak,ortak,"Haber, basın ve sektör yayınları",The Wall Street Journal,destekleyici,"Sektör haberleri, yatırım duyuruları, pazar yorumları",{urun} funding; {urun} market,kismi,https://wsj.com,yok
+ortak,ortak,Dijital ürün ve şablon pazar yerleri,ThemeForest,destekleyici,"Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",{urun}; {urun} template; {urun} plugin,cekildi,https://themeforest.net,fulltext
 ortak,ortak,Ürün lansmanı ve startup toplulukları,There's An AI For That,destekleyici,"Yeni lansmanlar, erken benimseyen tepkisi",{urun},cekildi,https://theresanaiforthat.com,fulltext
 ortak,ortak,"Trafik, SEO, anahtar kelime ve trend",Think with Google,destekleyici,"Arama hacmi, trend eğrisi, anahtar kelime rekabeti",{urun}; {urun} trend,cekildi,https://www.thinkwithgoogle.com,local_index
 ortak,ortak,Sosyal ağlar ve açık topluluklar,Threads,destekleyici,"Kullanıcı şikâyetleri, talep ifadeleri, topluluk tartışmaları",{urun} alternative; {urun} problem,erisim_yok,https://www.threads.com,

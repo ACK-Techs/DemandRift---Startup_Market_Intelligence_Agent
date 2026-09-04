@@ -45,7 +45,7 @@ BASLIK_ROLU: dict[str, tuple[str, str]] = {
     "Tarayıcı, e-ticaret ve CMS eklenti mağazaları": ("kategori", "eklenti-entegrasyon"),
     "Yapay zekâ modeli, veri seti ve agent ekosistemi": ("kategori", "yapay-zeka-urunu"),
     "Oyun dikeyi": ("kategori", "oyun"),
-    "E-ticaret ve fiziksel ürün pazar yerleri": ("kategori", "eticaret-fiziksel-urun"),
+    "E-ticaret ve fiziksel ürün pazar yerleri": ("kapsam-disi", ""),
     "SaaS, yazılım ve hizmet inceleme siteleri": ("kategori", "b2b-web-yazilimi"),
     "Fiyat, teknoloji ve pazar sinyali karşılaştırma kaynakları": ("kategori", "b2b-web-yazilimi"),
     "İş ilanları ve yetenek talebi": ("kategori", "b2b-web-yazilimi"),
@@ -72,6 +72,33 @@ BASLIK_ROLU: dict[str, tuple[str, str]] = {
     "Domain, DNS, sertifika ve web footprint": ("ortak", ORTAK),
     "Reklam kütüphaneleri ve pazarlama sinyalleri": ("ortak", ORTAK),
     "Ürün lansmanı ve startup toplulukları": ("ortak", ORTAK),
+}
+
+# Kapsam disi basliklar: envanterde duruyorlar ama hicbir kategoriye kaynak
+# vermiyorlar. Silmek yerine gerekceyle isaretlenirler ki karar gorunur kalsin.
+KAPSAM_DISI_GEREKCE: dict[str, str] = {
+    "E-ticaret ve fiziksel ürün pazar yerleri":
+        "Fiziksel urun icin yapilan is pazar analizi degil fiyat arbitraji: ayni "
+        "urun farkli sitede farkli fiyata satiliyor. 1.2'deki kurali gecemiyor, "
+        "ayri bir arastirma niyeti dogurmuyor (mentor degerlendirmesi, 2026-09-04).",
+}
+
+# Baslik geneli disinda kalan kaynaklar. Baslik adi her zaman icerigini dogru
+# anlatmaz: 'E-ticaret ve fiziksel urun pazar yerleri' basligi fiziksel pazar
+# yerlerinin yaninda dijital urun satan ve kitle fonlamasi yapan siteleri de
+# tutuyordu. Baslik kapsam disi kalinca bunlarin da dusmesi yanlis olurdu --
+# fiziksel urun satmiyorlar, yazilim urununun kendisiyle ilgililer.
+KAYNAK_ISTISNASI: dict[str, tuple[str, str, str, str, str]] = {
+    # kaynak -> (rol, hedef, kaynak_grubu, ne saglar, hangi arama)
+    **{ad: ("ortak", ORTAK, "Dijital ürün ve şablon pazar yerleri",
+            "Bağımsız yazılımcının sattığı ürünler, fiyat noktaları, satıcı yoğunluğu",
+            "{urun}; {urun} template; {urun} plugin")
+       for ad in ("Gumroad", "Lemon Squeezy", "CodeCanyon", "ThemeForest",
+                  "Envato Market", "Creative Market")},
+    **{ad: ("ortak", ORTAK, "Kitle fonlaması platformları",
+            "Kampanya sayısı, destekçi adedi, toplanan tutar ve hedefe ulaşma oranı",
+            "{urun}; {urun} kickstarter")
+       for ad in ("Kickstarter", "Indiegogo")},
 }
 
 # Her baslik ne saglar ve o baslikta hangi arama yapilir. {urun} kullanicinin
@@ -201,10 +228,6 @@ KATEGORI_BILGISI: dict[str, tuple[str, str, str]] = {
         "Yapay zekâ ürünü / agent",
         "Model, veri seti, agent ya da yapay zekâ altyapı ürünü",
         "Ekosistem doygunluğu, kıyaslama sonuçları, entegrasyon talebi"),
-    "eticaret-fiziksel-urun": (
-        "E-ticaret / fiziksel ürün",
-        "Pazar yerleri üzerinden satılan fiziksel ürün ya da onu destekleyen yazılım",
-        "Fiyat aralıkları, satıcı yoğunluğu, alıcı şikâyetleri"),
     "oyun": (
         "Oyun",
         "Dijital dağıtım platformları üzerinden yayınlanan oyun",
@@ -267,9 +290,17 @@ def main() -> int:
     ortak: set[str] = set()
 
     for baslik, kaynaklar in esleme.items():
-        rol, hedef = BASLIK_ROLU[baslik]
-        saglar, arama = BASLIK_BILGISI[baslik]
+        baslik_rol, baslik_hedef = BASLIK_ROLU[baslik]
         for ad in kaynaklar:
+            istisna = KAYNAK_ISTISNASI.get(ad)
+            if istisna:
+                rol, hedef, grup, saglar, arama = istisna
+            elif baslik_rol == "kapsam-disi":
+                # Kaynak envanterde kalir, kategori haritasina girmez.
+                continue
+            else:
+                rol, hedef, grup = baslik_rol, baslik_hedef, baslik
+                saglar, arama = BASLIK_BILGISI[baslik]
             d, y = defter.get(ad, {}), yuzey.get(ad, {})
             if rol == "kategori":
                 kategori_kaynak[hedef].add(ad)
@@ -278,7 +309,7 @@ def main() -> int:
             else:
                 ortak.add(ad)
             kaynak_satirlari.append({
-                "hedef": hedef, "hedef_turu": rol, "kaynak_grubu": baslik, "kaynak": ad,
+                "hedef": hedef, "hedef_turu": rol, "kaynak_grubu": grup, "kaynak": ad,
                 "rol": "cekirdek" if rol == "kategori" else ("ek" if rol == "ek" else "destekleyici"),
                 "ne_saglar": saglar, "hangi_arama": arama,
                 "durum": d.get("durum", ""), "adres": d.get("adres", ""),

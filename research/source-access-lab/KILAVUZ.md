@@ -58,18 +58,19 @@ Cevaplar üç gruba ayrıldı:
 
 | Grup | Başlık | Kaynak | Neden bu grupta |
 |---|---:|---:|---|
-| **Ortak** | 12 | 283 | Her üründe kullanılır (haber, arama motorları, trend, patent, şirket verisi). Hiçbir ürünü diğerinden ayırmadığı için kategori olamaz |
-| **Kategori** | 10 | 224 | Ürünün nerede yaşadığını ya da kimin satın aldığını belirler |
-| **Ek** | 8 | 167 | Dikey ve bölge. Tek başına yetmez: "sağlık ürünü" demek mobil mi web mi olduğunu söylemez |
+| **Ortak** | 12 | 291 | Her üründe kullanılır (haber, arama motorları, trend, patent, şirket verisi). Hiçbir ürünü diğerinden ayırmadığı için kategori olamaz |
+| **Kategori** | 9 | 197 | Ürünün nerede yaşadığını ya da kimin satın aldığını belirler |
+| **Ek** | 8 | 159 | Dikey ve bölge. Tek başına yetmez: "sağlık ürünü" demek mobil mi web mi olduğunu söylemez |
+| **Kapsam dışı** | 1 | 16 | Fiziksel ürün pazar yerleri. Gerekçesi 1.4'ün sonunda |
 
 **Neden 30 kategori yapmadık:** Üç sebeple. Birincisi, 12 başlık hiçbir ürünü
-ayırt etmiyor (283 kaynak) — ortak havuzdurlar. İkincisi, bazı başlıklar aynı
+ayırt etmiyor (291 kaynak) — ortak havuzdurlar. İkincisi, bazı başlıklar aynı
 ürün tipine hizmet ediyor: SaaS inceleme siteleri, fiyat karşılaştırma ve iş
 ilanları üçü birden **B2B web yazılımı** araştırmasını besliyor; ayrı kategori
 yapılsalardı aynı ürünü işaret ederlerdi ve kuralı çiğnerlerdi. Üçüncüsü, dikey
 başlıklar tek başına yetmiyor.
 
-## 1.4 Sonuç: 8 ana kategori
+## 1.4 Sonuç: 7 ana kategori
 
 Ürün bunlardan birine girer. Sayılar: kategoriye özel kaynak / verisi çekilmiş
 olan.
@@ -81,12 +82,36 @@ olan.
 | `gelistirici-araci` | Paket, SDK, CLI ya da altyapı aracı | 34 | 30 |
 | `eklenti-entegrasyon` | Var olan bir platformun üzerine kurulan eklenti | 25 | 25 |
 | `yapay-zeka-urunu` | Model, veri seti, agent ya da YZ altyapısı | 24 | 22 |
-| `eticaret-fiziksel-urun` | Pazar yerlerinde satılan ürün ve destekleyen yazılım | 24 | 19 |
 | `oyun` | Dijital dağıtım platformlarında yayınlanan oyun | 17 | 12 |
 | `yerel-hizmet` | Belirli bir coğrafyada hizmet veren ürün | 23 | 17 |
 
-Her kategoriye ayrıca **283 kaynaklık ortak havuz** eklenir (236'sının verisi
+Her kategoriye ayrıca **291 kaynaklık ortak havuz** eklenir (243'ünün verisi
 çekilmiş).
+
+### Çıkarılan kategori
+
+Liste mentör değerlendirmesinden geçti (2026-09-04). Başlangıçta sekizinci bir
+kategori vardı — `eticaret-fiziksel-urun`, pazar yerlerinde satılan fiziksel
+ürün — ve **1.2'deki kuralı geçemediği için çıkarıldı.** Gerekçe: e-ticarette
+fiziksel ürün için yapılan iş pazar analizi değil, fiyat arbitrajıdır; aynı ürün
+farklı sitede farklı fiyata satılmaya çalışılır. Ortada araştırılacak ayrı bir
+pazar yoktur, dolayısıyla ayrı bir araştırma niyeti de doğurmaz.
+
+Kategoriye bağlı 16 fiziksel pazar yeri (Trendyol, Amazon, eBay, Temu…) kategori
+haritasından çıktı. Envanterde ve `ADAY-KATALOG.csv`'de duruyorlar; yalnızca
+"şu ürün tipini araştırırken buraya bak" etiketleri kalktı.
+
+Aynı başlık altında duran 8 kaynak ise **ortak havuza taşındı**, çünkü fiziksel
+ürün satmıyorlar:
+
+| Kaynak | Neden kaldı |
+|---|---|
+| Gumroad, Lemon Squeezy | Bağımsız yazılımcının kendi ürününü sattığı yer — fiyat kanıtı |
+| CodeCanyon, ThemeForest, Envato Market, Creative Market | Kod, tema ve eklenti satışı — doğrudan yazılım ürünü |
+| Kickstarter, Indiegogo | Destekçi sayısı ve toplanan tutar, "talep var mı"nın en doğrudan kanıtı |
+
+Başlık silinmedi, `kapsam-disi` olarak gerekçesiyle işaretlendi — karar dosyada
+görünür kalsın diye.
 
 ## 1.5 Sonuç: 8 ek paket
 
@@ -106,7 +131,7 @@ Bunlar kategori değil; ana kategorinin üstüne eklenir.
 ## 1.6 Kategoriler gerçekten ayrık mı — ölçüm
 
 İddia etmek yerine ölçtük. Her kategorinin çekirdek kaynak kümesini alıp ikili
-kesişimlere baktık. **224 çekirdek kaynakta yalnızca 3 örtüşme** çıktı:
+kesişimlere baktık. **197 çekirdek kaynakta yalnızca 3 örtüşme** çıktı:
 
 | Örtüşen kaynak | Hangi iki kategori | Meşru mu |
 |---|---|---|
@@ -143,8 +168,8 @@ Kural modele işlendi: `katman_olabilir` sütunu hangi kategorilerin başkasın�
 
 - **Katman olabilenler (3):** `mobil-uygulama`, `eklenti-entegrasyon`,
   `yapay-zeka-urunu` — üçü de dağıtım ya da teknoloji katmanı
-- **Binmeyenler (5):** `b2b-web-yazilimi`, `gelistirici-araci`,
-  `eticaret-fiziksel-urun`, `oyun`, `yerel-hizmet`
+- **Binmeyenler (4):** `b2b-web-yazilimi`, `gelistirici-araci`, `oyun`,
+  `yerel-hizmet`
 
 ## 1.8 Üretilen dosyalar
 
@@ -162,8 +187,8 @@ ne_zaman          Ürün bu dağıtım/alıcı tipindeyse
 katman_olabilir   evet
 cekirdek_kaynak   13
 cekirdek_cekilen  11
-ortak_kaynak      283
-ortak_cekilen     236
+ortak_kaynak      291
+ortak_cekilen     243
 ```
 
 Ek satırında `tur` alanı farklıdır ve `ortak_kaynak` sıfırdır — ek paket ana
@@ -177,7 +202,7 @@ cekirdek_kaynak   17
 ortak_kaynak      0
 ```
 
-### `KATEGORI-KAYNAK.csv` — 674 satır
+### `KATEGORI-KAYNAK.csv` — 658 satır
 
 Asıl iş burada. Her satır bir kategori↔kaynak eşleşmesidir ve soldan sağa cümle
 kurar.
@@ -263,7 +288,7 @@ değil; test ileride kategori eklendiğinde de çalışır.
 |---|---:|
 | Kategori: `mobil-uygulama` | 13 |
 | Ek: `saglik` | 17 |
-| Ortak havuz | 283 |
+| Ortak havuz | 291 |
 
 Önce bakılacak **30 kaynak**: App Store, Play Store, Sensor Tower,
 ClinicalTrials.gov, FDA. Aramalar: `diyabet app`, `diyabet tracker`,
@@ -275,7 +300,7 @@ ClinicalTrials.gov, FDA. Aramalar: `diyabet app`, `diyabet tracker`,
 |---|---:|
 | Kategori: `b2b-web-yazilimi` | 64 |
 | Ek: `fintech` + `regule-sektor` | 54 |
-| Ortak havuz | 283 |
+| Ortak havuz | 291 |
 
 Önce bakılacak **118 kaynak**: G2, Capterra, LinkedIn Jobs, SPK, BDDK.
 App Store'a hiç bakılmıyor. Aramalar: `fatura software`,
@@ -393,8 +418,8 @@ Düzeltme sonrası:
 
 | | Sonuç |
 |---|---:|
-| Satır sayısı | 111 → **182** |
-| Bir soruya kanıt olan kaynak | 345 → **596 (%94)** |
+| Satır sayısı | 111 → **198** |
+| Bir soruya kanıt olan kaynak | 345 → **580 (%94)** |
 | Boşta kalan | 291 → **40** |
 
 Kalan 40 kaynak **kasıtlı olarak** dışarıda:
@@ -413,14 +438,13 @@ düşer.
 
 | Kategori | Soru | Kanıt satırı |
 |---|---:|---:|
-| `mobil-uygulama` | 10 | 23 |
-| `b2b-web-yazilimi` | 8 | 26 |
-| `gelistirici-araci` | 9 | 21 |
-| `eklenti-entegrasyon` | 10 | 20 |
-| `yapay-zeka-urunu` | 10 | 20 |
-| `eticaret-fiziksel-urun` | 9 | 19 |
-| `oyun` | 10 | 19 |
-| `yerel-hizmet` | 9 | 19 |
+| `mobil-uygulama` | 10 | 28 |
+| `b2b-web-yazilimi` | 8 | 31 |
+| `gelistirici-araci` | 9 | 26 |
+| `eklenti-entegrasyon` | 10 | 25 |
+| `yapay-zeka-urunu` | 10 | 25 |
+| `oyun` | 10 | 24 |
+| `yerel-hizmet` | 9 | 24 |
 
 Ek paketler ayrıca 15 satır üretiyor (paket başına 1-2 soru).
 
@@ -436,15 +460,14 @@ Bu tablo görev 1'deki kategori ayrımının neden gerekli olduğunu gösteriyor
 | `b2b-web-yazilimi` | Ürün sayısı ile yorum sayısının dağılımı; ilk 5'in payı |
 | `oyun` | Türdeki oyun sayısı, eşzamanlı oyuncu dağılımı |
 | `eklenti-entegrasyon` | Kurulumun ilk 5 eklentide toplanma oranı |
-| `eticaret-fiziksel-urun` | Satışın ilk 10 satıcıda toplanma oranı |
 | `yerel-hizmet` | Bölgedeki sağlayıcı sayısı, yorumun ilk 10'da toplanması |
-| `yapay-zeka-urunu` | Entegrasyon dizinlerindeki araç sayısı ve güncellik |
+| `yapay-zeka-urunu` | Entegrasyon dizinlerindeki benzer araç sayısı ve güncellik |
 
 Kategori olmasaydı bu sorunun tek ve belirsiz bir cevabı olurdu.
 
 ## 2.5 Üretilen dosya
 
-### `KATEGORI-SORU.csv` — 182 satır
+### `KATEGORI-SORU.csv` — 198 satır
 
 Tek satırın tamamı:
 
@@ -469,7 +492,7 @@ uygulama sayısı ve ilk 20'nin yorum hacmiyle cevaplanır. Bu geçerli bir kan�
 çünkü yorum ancak kullandıktan sonra yazılır. Uygulama sayısına tek başına
 bakmak yanıltır.*
 
-**Dosya neden 14 değil 182 satır:** bir soru tek kanıtla kapanmıyor. Yukarıdaki
+**Dosya neden 14 değil 198 satır:** bir soru tek kanıtla kapanmıyor. Yukarıdaki
 soru aynı kategoride üç ayrı satır üretiyor — biri kategoriye özel kaynaktan,
 ikisi ortak havuzdan:
 

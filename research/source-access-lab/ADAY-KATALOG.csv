@@ -1,5 +1,5 @@
 source_id,ad,adres,host,host_marka_sayisi,host_kardesleri,arastirma_degeri,veri_yuzeyi,kesif_yuzeyi,karma_yuzey,kategoriler,kaynak_rolu,cevapladigi_soru,durum,guven,dogrulama,arama_yolu,engel
-source-0171,Sahibinden,https://www.sahibinden.com,sahibinden.com,3,"Sahibinden Emlak, Sahibinden Hizmetler",bos,,,,eticaret-fiziksel-urun,cekirdek,4,erisim_yok,medium,wikidata_p856_unverified,,cdx_bos:None
+source-0171,Sahibinden,https://www.sahibinden.com,sahibinden.com,3,"Sahibinden Emlak, Sahibinden Hizmetler",bos,,,,,,0,erisim_yok,medium,wikidata_p856_unverified,,cdx_bos:None
 source-0477,Sahibinden Emlak,https://www.sahibinden.com,sahibinden.com,3,"Sahibinden, Sahibinden Hizmetler",bos,,,,gayrimenkul,ek,2,erisim_yok,medium,curated_official_host_fixture,,cdx_bos:None
 source-0320,Sahibinden Hizmetler,https://www.sahibinden.com,sahibinden.com,3,"Sahibinden, Sahibinden Emlak",bos,,,,yerel-hizmet,cekirdek,4,erisim_yok,high,curated_official_host_fixture,,cdx_bos:None
 source-0100,Amazon Appstore,https://www.amazonappstoredev.com,amazonappstoredev.com,1,,bos,,,,mobil-uygulama,cekirdek,8,erisim_yok,medium,wikipedia_index_unverified,,arsivde_icerik_yok
@@ -53,7 +53,7 @@ source-0526,YouTube Gaming,https://gaming.youtube.com,gaming.youtube.com,1,,bos,
 source-0467,Zillow,https://www.zillow.com,zillow.com,1,,bos,,,,gayrimenkul,ek,2,erisim_yok,medium,wikidata_p856_unverified,,cdx_bos:None
 source-0515,Zomato,https://www.zomato.com,zomato.com,1,,bos,,,,yeme-icme,ek,2,erisim_yok,medium,wikidata_p856_unverified,,cdx_bos:None
 source-0457,ÖSYM,https://www.osym.gov.tr,osym.gov.tr,1,,bos,,,,egitim,ek,2,erisim_yok,medium,wikipedia_index_unverified,,cdx_bos:None
-source-0182,Amazon Reviews,,,0,,bos,,,,eticaret-fiziksel-urun,cekirdek,4,adres_yok,unresolved,no_high_confidence_mapping,,unresolved_official_origin
+source-0182,Amazon Reviews,,,0,,bos,,,,,,0,adres_yok,unresolved,no_high_confidence_mapping,,unresolved_official_origin
 source-0375,Ankara Büyükşehir Belediyesi Açık Veri Portalı,,,0,,bos,,,,ortak,destekleyici,1,adres_yok,unresolved,no_high_confidence_mapping,,unresolved_official_origin
 source-0103,OPPO App Market,,,0,,bos,,,,mobil-uygulama,cekirdek,8,adres_yok,unresolved,no_high_confidence_mapping,,unresolved_official_origin
 source-0251,Similarweb Digital Marketing Intelligence,,,0,,bos,,,,ortak,destekleyici,1,adres_yok,unresolved,no_high_confidence_mapping,,unresolved_official_origin
@@ -77,8 +77,8 @@ source-0096,Apple App Store,https://apps.apple.com,apps.apple.com,2,Safari Exten
 source-0135,Capterra,https://www.capterra.com,capterra.com,2,Capterra Education Software,veri-var,root_html,,,b2b-web-yazilimi,cekirdek,6,cekildi,high,curated_official_host_fixture,site_search,
 source-0266,Companies House,https://www.gov.uk,gov.uk,2,Competition and Markets Authority,veri-var,root_html,sitemap_xml,,"fintech, ortak","destekleyici, ek",2,cekildi,high,wikidata_mediawiki_exact_search_p856,opensearch,
 source-0405,Competition and Markets Authority,https://gov.uk,gov.uk,2,Companies House,veri-var,root_html,,,regule-sektor,ek,1,cekildi,high,wikidata_mediawiki_exact_search_p856,opensearch,
-source-0178,Envato Market,https://themeforest.net,themeforest.net,2,ThemeForest,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,high,curated_official_host_fixture,fulltext,
-source-0181,Etsy Reviews,https://www.etsy.com,etsy.com,2,Etsy,veri-var,entry_url,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,high,curated_official_host_fixture,opensearch,
+source-0178,Envato Market,https://themeforest.net,themeforest.net,2,ThemeForest,veri-var,root_html,,,ortak,destekleyici,3,cekildi,high,curated_official_host_fixture,fulltext,
+source-0181,Etsy Reviews,https://www.etsy.com,etsy.com,2,Etsy,veri-var,entry_url,,,,,0,cekildi,high,curated_official_host_fixture,opensearch,
 source-0363,Federal Reserve Economic Data,https://fred.stlouisfed.org,fred.stlouisfed.org,2,FRED,veri-var,root_html,,,ortak,destekleyici,1,cekildi,high,wikidata_mediawiki_exact_search_p856,fulltext,
 source-0438,Financial Conduct Authority,https://www.fca.org.uk,fca.org.uk,2,UK Financial Conduct Authority,veri-var,root_html,sitemap_xml,,fintech,ek,2,cekildi,high,wikidata_mediawiki_exact_search_p856,local_index,
 source-0433,FRED,https://fred.stlouisfed.org,fred.stlouisfed.org,2,Federal Reserve Economic Data,veri-var,root_html,,,fintech,ek,2,cekildi,high,curated_official_host_fixture,fulltext,
@@ -95,7 +95,7 @@ source-0124,Slack Marketplace,https://slack.com,slack.com,2,Slack,veri-var,entry
 source-0020,SourceForge,https://sourceforge.net,sourceforge.net,2,SourceForge Reviews,veri-var,root_html,sitemap_xml,,gelistirici-araci,cekirdek,6,cekildi,high,curated_official_host_fixture,local_index,
 source-0141,SourceForge Reviews,https://sourceforge.net,sourceforge.net,2,SourceForge,veri-var,entry_url,sitemap_xml,,b2b-web-yazilimi,cekirdek,6,cekildi,high,curated_official_host_fixture,site_search,
 source-0371,T.C. Sağlık Bakanlığı,https://www.saglik.gov.tr,saglik.gov.tr,2,Sağlık Bakanlığı,veri-var,common_crawl_warc,,,ortak,destekleyici,1,cekildi,medium,wikidata_p856_unverified,fulltext,
-source-0179,ThemeForest,https://themeforest.net,themeforest.net,2,Envato Market,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0179,ThemeForest,https://themeforest.net,themeforest.net,2,Envato Market,veri-var,root_html,,,ortak,destekleyici,3,cekildi,medium,generated_candidate_validated,fulltext,
 source-0400,U.S. Securities and Exchange Commission,https://www.sec.gov,sec.gov,2,SEC EDGAR,veri-var,common_crawl_warc,,,regule-sektor,ek,1,cekildi,medium,wikidata_p856_unverified,site_search,
 source-0403,UK Financial Conduct Authority,https://www.fca.org.uk,fca.org.uk,2,Financial Conduct Authority,veri-var,root_html,sitemap_xml,,regule-sektor,ek,1,cekildi,high,curated_official_host_fixture,local_index,
 source-0361,US Census Bureau,https://www.census.gov,census.gov,2,U.S. Census Building Permits,veri-var,root_html,sitemap_xml,,ortak,destekleyici,1,cekildi,high,wikidata_mediawiki_exact_search_p856,site_search,
@@ -113,10 +113,10 @@ source-0489,Agoda,https://www.agoda.com,agoda.com,1,,veri-var,root_html,,,seyaha
 source-0217,Ahrefs,https://ahrefs.com,ahrefs.com,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,local_index,
 source-0486,Airbnb,https://airbnb.com,airbnb.com,1,,veri-var,root_html,,,seyahat,ek,2,cekildi,medium,generated_candidate_validated,opensearch,
 source-0132,Airtable Marketplace,https://airtable.com,airtable.com,1,,veri-var,entry_url,sitemap_xml,,eklenti-entegrasyon,cekirdek,5,cekildi,high,curated_official_host_fixture,local_index,
-source-0164,Alibaba,https://alibaba.com,alibaba.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
-source-0163,AliExpress,https://aliexpress.ru,aliexpress.ru,1,,veri-var,common_crawl_warc,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,wikidata_p856_unverified,fulltext,
+source-0164,Alibaba,https://alibaba.com,alibaba.com,1,,veri-var,root_html,,,,,0,cekildi,medium,generated_candidate_validated,fulltext,
+source-0163,AliExpress,https://aliexpress.ru,aliexpress.ru,1,,veri-var,common_crawl_warc,,,,,0,cekildi,medium,wikidata_p856_unverified,fulltext,
 source-0059,AlternativeTo,https://alternativeto.net,alternativeto.net,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,opensearch,
-source-0159,Amazon,https://www.amazon.com,amazon.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,high,curated_official_host_fixture,fulltext,
+source-0159,Amazon,https://www.amazon.com,amazon.com,1,,veri-var,root_html,,,,,0,cekildi,high,curated_official_host_fixture,fulltext,
 source-0582,Anadolu Ajansı,https://www.aa.com.tr,aa.com.tr,1,,veri-var,root_html,sitemap_xml,rss_feed,ortak,destekleyici,2,cekildi,high,curated_official_host_fixture,local_index,
 source-0271,AngelList,https://angellist.com,angellist.com,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,fulltext,
 source-0314,Angi,https://www.angi.com,angi.com,1,,veri-var,common_crawl_warc,,,yerel-hizmet,cekirdek,4,cekildi,medium,curated_official_host_fixture,fulltext,
@@ -169,7 +169,7 @@ source-0210,Cloudflare Radar,https://radar.cloudflare.com,radar.cloudflare.com,1
 source-0611,Cloudorado,https://www.cloudorado.com,cloudorado.com,1,,veri-var,common_crawl_warc,,,b2b-web-yazilimi,cekirdek,2,cekildi,medium,curated_official_host_fixture,fulltext,
 source-0612,CloudPrice,https://cloudprice.net,cloudprice.net,1,,veri-var,root_html,sitemap_xml,,b2b-web-yazilimi,cekirdek,2,cekildi,medium,generated_candidate_validated,local_index,
 source-0021,Codeberg,https://codeberg.org,codeberg.org,1,,veri-var,root_html,,,gelistirici-araci,cekirdek,6,cekildi,high,curated_official_host_fixture,fulltext,
-source-0180,CodeCanyon,https://codecanyon.net,codecanyon.net,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,site_search,
+source-0180,CodeCanyon,https://codecanyon.net,codecanyon.net,1,,veri-var,root_html,,,ortak,destekleyici,3,cekildi,medium,generated_candidate_validated,site_search,
 source-0036,CodeProject,https://www.codeproject.com,codeproject.com,1,,veri-var,common_crawl_warc,,,gelistirici-araci,cekirdek,6,cekildi,medium,wikipedia_index_unverified,site_search,
 source-0205,Common Crawl,https://commoncrawl.org,commoncrawl.org,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,1,cekildi,high,curated_official_host_fixture,site_search,
 source-0401,Consumer Financial Protection Bureau,https://www.consumerfinance.gov,consumerfinance.gov,1,,veri-var,root_html,sitemap_xml,,regule-sektor,ek,1,cekildi,high,wikidata_mediawiki_exact_search_p856,site_search,
@@ -177,7 +177,7 @@ source-0150,ConsumerAffairs,https://www.consumeraffairs.com,consumeraffairs.com,
 source-0458,Coursera,https://coursera.org,coursera.org,1,,veri-var,root_html,,,egitim,ek,2,cekildi,medium,generated_candidate_validated,site_search,
 source-0258,Craft.co,https://craft.co,craft.co,1,,veri-var,common_crawl_warc,,,ortak,destekleyici,1,cekildi,medium,curated_official_host_fixture,fulltext,
 source-0042,crates.io,https://crates.io,crates.io,1,,veri-var,root_html,,,gelistirici-araci,cekirdek,6,cekildi,high,curated_official_host_fixture,opensearch,
-source-0177,Creative Market,https://creativemarket.com,creativemarket.com,1,,veri-var,common_crawl_warc,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0177,Creative Market,https://creativemarket.com,creativemarket.com,1,,veri-var,common_crawl_warc,,,ortak,destekleyici,3,cekildi,medium,generated_candidate_validated,fulltext,
 source-0324,Crossref,https://www.crossref.org,crossref.org,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,2,cekildi,high,curated_official_host_fixture,site_search,
 source-0142,Crozdesk,https://crozdesk.com,crozdesk.com,1,,veri-var,common_crawl_warc,,,b2b-web-yazilimi,cekirdek,6,cekildi,medium,wikipedia_index_unverified,site_search,
 source-0252,Crunchbase,https://crunchbase.com,crunchbase.com,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,site_search,
@@ -205,7 +205,7 @@ source-0596,dscout,https://dscout.com,dscout.com,1,,veri-var,root_html,sitemap_x
 source-0005,DuckDuckGo,https://duckduckgo.com,duckduckgo.com,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,0,cekildi,medium,wikidata_p856_unverified,local_index,
 source-0033,DZone,https://dzone.com,dzone.com,1,,veri-var,root_html,sitemap_xml,,gelistirici-araci,cekirdek,6,cekildi,medium,generated_candidate_validated,local_index,
 source-0581,Dünya,https://dunya.com,dunya.com,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,fulltext,
-source-0160,eBay,https://www.ebay.com,ebay.com,1,,veri-var,common_crawl_warc,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,high,curated_official_host_fixture,fulltext,
+source-0160,eBay,https://www.ebay.com,ebay.com,1,,veri-var,common_crawl_warc,,,,,0,cekildi,high,curated_official_host_fixture,fulltext,
 source-0424,ECDC,https://www.ecdc.europa.eu,ecdc.europa.eu,1,,veri-var,root_html,sitemap_xml,,saglik,ek,2,cekildi,medium,wikipedia_index_validated,site_search,
 source-0459,edX,https://edx.com,edx.com,1,,veri-var,root_html,sitemap_xml,,egitim,ek,2,cekildi,medium,generated_candidate_validated,local_index,
 source-0580,Ekonomim,https://ekonomim.net,ekonomim.net,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,fulltext,
@@ -264,11 +264,11 @@ source-0601,Great Question,https://greatquestion.co,greatquestion.co,1,,veri-var
 source-0094,Groups.io,https://groups.io,groups.io,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,fulltext,
 source-0069,GrowthHackers,https://growthhackers.com,growthhackers.com,1,,veri-var,common_crawl_warc,,,ortak,destekleyici,2,cekildi,medium,curated_official_host_fixture,fulltext,
 source-0508,Grubhub,https://www.grubhub.com,grubhub.com,1,,veri-var,common_crawl_warc,,,yeme-icme,ek,2,cekildi,medium,wikidata_p856_unverified,opensearch,
-source-0175,Gumroad,https://gumroad.com,gumroad.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,opensearch,
+source-0175,Gumroad,https://gumroad.com,gumroad.com,1,,veri-var,root_html,,,ortak,destekleyici,3,cekildi,medium,generated_candidate_validated,opensearch,
 source-0022,Hacker News,https://news.ycombinator.com,news.ycombinator.com,1,,veri-var,root_html,,,"gelistirici-araci, ortak","cekirdek, destekleyici",7,cekildi,high,curated_official_host_fixture,api,
 source-0030,Hashnode,https://hashnode.com,hashnode.com,1,,veri-var,root_html,sitemap_xml,,gelistirici-araci,cekirdek,6,cekildi,medium,generated_candidate_validated,site_search,
 source-0430,HealthData.gov,https://healthdata.gov,healthdata.gov,1,,veri-var,common_crawl_warc,,,saglik,ek,2,cekildi,high,curated_official_host_fixture,opensearch,
-source-0167,Hepsiburada,https://www.hepsiburada.com,hepsiburada.com,1,,veri-var,common_crawl_warc,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,wikipedia_index_unverified,fulltext,
+source-0167,Hepsiburada,https://www.hepsiburada.com,hepsiburada.com,1,,veri-var,common_crawl_warc,,,,,0,cekildi,medium,wikipedia_index_unverified,fulltext,
 source-0478,Hepsiemlak,https://www.hepsiemlak.com,hepsiemlak.com,1,,veri-var,common_crawl_warc,,,gayrimenkul,ek,2,cekildi,medium,curated_official_host_fixture,fulltext,
 source-0307,HERE WeGo,https://wego.here.com,wego.here.com,1,,veri-var,root_html,,,yerel-hizmet,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
 source-0046,Homebrew Formulae,https://formulae.brew.sh,formulae.brew.sh,1,,veri-var,root_html,sitemap_xml,,gelistirici-araci,cekirdek,6,cekildi,high,curated_official_host_fixture,local_index,
@@ -287,7 +287,7 @@ source-0435,IMF,https://www.imf.org,imf.org,1,,veri-var,common_crawl_warc,,,fint
 source-0356,IMF Data,https://data.imf.org,data.imf.org,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,curated_official_host_fixture,fulltext,
 source-0476,ImmobilienScout24,https://www.immobilienscout24.de,immobilienscout24.de,1,,veri-var,entry_url,sitemap_xml,,gayrimenkul,ek,2,cekildi,medium,curated_official_host_fixture,local_index,
 source-0279,Indeed,https://ca.indeed.com,ca.indeed.com,1,,veri-var,root_html,,,b2b-web-yazilimi,cekirdek,3,cekildi,high,wikidata_mediawiki_exact_search_p856,fulltext,
-source-0174,Indiegogo,https://www.indiegogo.com,indiegogo.com,1,,veri-var,common_crawl_warc,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,wikidata_p856_unverified,fulltext,
+source-0174,Indiegogo,https://www.indiegogo.com,indiegogo.com,1,,veri-var,common_crawl_warc,,,ortak,destekleyici,2,cekildi,medium,wikidata_p856_unverified,fulltext,
 source-0034,InfoQ,https://infoq.com,infoq.com,1,,veri-var,root_html,,,gelistirici-araci,cekirdek,6,cekildi,medium,generated_candidate_validated,fulltext,
 source-0614,Infracost,https://infracost.io,infracost.io,1,,veri-var,root_html,,,b2b-web-yazilimi,cekirdek,2,cekildi,medium,generated_candidate_validated,fulltext,
 source-0377,INSEE,https://insee.org,insee.org,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,fulltext,
@@ -309,7 +309,7 @@ source-0623,KOSGEB,https://kosgeb.gov.tr,kosgeb.gov.tr,1,,veri-var,root_html,,,t
 source-0190,LACNIC,https://www.lacnic.net,lacnic.net,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,high,curated_official_host_fixture,fulltext,
 source-0544,LangChain Integrations,https://python.langchain.com,python.langchain.com,1,,veri-var,common_crawl_warc,,,yapay-zeka-urunu,cekirdek,5,cekildi,high,curated_official_host_fixture,site_search,
 source-0095,Lemmy,https://join-lemmy.org,join-lemmy.org,1,,veri-var,root_html,,rss_feed,ortak,destekleyici,2,cekildi,medium,wikidata_p856_unverified,api,
-source-0176,Lemon Squeezy,https://lemonsqueezy.com,lemonsqueezy.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0176,Lemon Squeezy,https://lemonsqueezy.com,lemonsqueezy.com,1,,veri-var,root_html,,,ortak,destekleyici,3,cekildi,medium,generated_candidate_validated,fulltext,
 source-0286,Lever Jobs,https://www.lever.co,lever.co,1,,veri-var,root_html,sitemap_xml,,b2b-web-yazilimi,cekirdek,3,cekildi,high,curated_official_host_fixture,local_index,
 source-0047,Libraries.io,https://libraries.io,libraries.io,1,,veri-var,root_html,,,gelistirici-araci,cekirdek,6,cekildi,medium,generated_candidate_validated,opensearch,
 source-0545,LlamaIndex Integrations,https://llamahub.ai,llamahub.ai,1,,veri-var,root_html,,,yapay-zeka-urunu,cekirdek,5,cekildi,high,curated_official_host_fixture,fulltext,
@@ -345,7 +345,7 @@ source-0128,monday.com Apps Marketplace,https://monday.com,monday.com,1,,veri-va
 source-0281,Monster,https://www.monster.com,monster.com,1,,veri-var,common_crawl_warc,,,b2b-web-yazilimi,cekirdek,3,cekildi,medium,curated_official_host_fixture,site_search,
 source-0502,Moovit,https://moovit.com,moovit.com,1,,veri-var,root_html,sitemap_xml,,seyahat,ek,2,cekildi,medium,generated_candidate_validated,local_index,
 source-0219,Moz,https://moz.com,moz.com,1,,veri-var,root_html,sitemap_xml,rss_feed,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,site_search,
-source-0168,n11,https://n11.com,n11.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0168,n11,https://n11.com,n11.com,1,,veri-var,root_html,,,,,0,cekildi,medium,generated_candidate_validated,fulltext,
 source-0440,Nasdaq,https://www.nasdaq.com,nasdaq.com,1,,veri-var,common_crawl_warc,,,fintech,ek,2,cekildi,medium,wikidata_p856_unverified,site_search,
 source-0451,National Center for Education Statistics,https://nces.ed.gov,nces.ed.gov,1,,veri-var,root_html,,,egitim,ek,2,cekildi,high,wikidata_mediawiki_exact_search_p856,fulltext,
 source-0208,Netcraft,https://netcraft.com,netcraft.com,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,fulltext,
@@ -373,7 +373,7 @@ source-0259,Owler,https://www.owler.com,owler.com,1,,veri-var,common_crawl_warc,
 source-0045,Packagist,https://packagist.org,packagist.org,1,,veri-var,packagist_package_list,,,gelistirici-araci,cekirdek,6,cekildi,medium,wikidata_p856_unverified,api,
 source-0353,Papers with Code,https://paperswithcode.co,paperswithcode.co,1,,veri-var,root_html,sitemap_xml,,"ortak, yapay-zeka-urunu","cekirdek, destekleyici",7,cekildi,medium,generated_candidate_validated,local_index,
 source-0244,Pathmatics,https://pathmatics.io,pathmatics.io,1,,veri-var,root_html,sitemap_xml,rss_feed,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,local_index,
-source-0170,Pazarama,https://pazarama.com,pazarama.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0170,Pazarama,https://pazarama.com,pazarama.com,1,,veri-var,root_html,,,,,0,cekildi,medium,generated_candidate_validated,fulltext,
 source-0055,Peerlist,https://peerlist.io,peerlist.io,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,fulltext,
 source-0140,PeerSpot,https://peerspot.co,peerspot.co,1,,veri-var,root_html,,,b2b-web-yazilimi,cekirdek,6,cekildi,medium,generated_candidate_validated,fulltext,
 source-0263,People Data Labs,https://peopledatalabs.com,peopledatalabs.com,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,fulltext,
@@ -463,7 +463,7 @@ source-0561,TechCrunch,https://techcrunch.com,techcrunch.com,1,,veri-var,root_ht
 source-0272,Techstars Companies,https://www.techstars.com,techstars.com,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,1,cekildi,high,curated_official_host_fixture,local_index,
 source-0147,Tekpon,https://tekpon.com,tekpon.com,1,,veri-var,root_html,sitemap_xml,,b2b-web-yazilimi,cekirdek,6,cekildi,medium,generated_candidate_validated,local_index,
 source-0092,Telegram,https://telegram.com,telegram.com,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,site_search,
-source-0165,Temu,https://www.temu.com,temu.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,wikipedia_index_validated,fulltext,
+source-0165,Temu,https://www.temu.com,temu.com,1,,veri-var,root_html,,,,,0,cekildi,medium,wikipedia_index_validated,fulltext,
 source-0418,The Trademark Search Company,https://thetrademarksearchcompany.com,thetrademarksearchcompany.com,1,,veri-var,root_html,sitemap_xml,rss_feed,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,local_index,
 source-0562,The Verge,https://theverge.com,theverge.com,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,site_search,
 source-0516,TheFork,https://www.thefork.fr,thefork.fr,1,,veri-var,common_crawl_warc,,,yeme-icme,ek,2,cekildi,medium,wikidata_p856_unverified,fulltext,
@@ -476,7 +476,7 @@ source-0309,TomTom,https://tomtom.com,tomtom.com,1,,veri-var,root_html,,,yerel-h
 source-0063,Toolify,https://toolify.io,toolify.io,1,,veri-var,root_html,sitemap_xml,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,local_index,
 source-0316,Treatwell,https://www.treatwell.co.uk,treatwell.co.uk,1,,veri-var,common_crawl_warc,,,yerel-hizmet,cekirdek,4,cekildi,medium,wikidata_p856_unverified,fulltext,
 source-0231,Trend Hunter,https://trendhunter.com,trendhunter.com,1,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,medium,generated_candidate_validated,fulltext,
-source-0166,Trendyol,https://trendyol.com,trendyol.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0166,Trendyol,https://trendyol.com,trendyol.com,1,,veri-var,root_html,,,,,0,cekildi,medium,generated_candidate_validated,fulltext,
 source-0157,Tripadvisor,https://www.tripadvisor.com,tripadvisor.com,1,,veri-var,common_crawl_warc,,,"b2b-web-yazilimi, seyahat, yeme-icme, yerel-hizmet","cekirdek, ek",7,cekildi,medium,wikidata_p856_unverified,site_search,
 source-0608,Tropic,https://tropic.com,tropic.com,1,,veri-var,root_html,,,b2b-web-yazilimi,cekirdek,2,cekildi,medium,generated_candidate_validated,site_search,
 source-0470,Trulia,https://www.trulia.com,trulia.com,1,,veri-var,root_html,sitemap_xml,,gayrimenkul,ek,2,cekildi,high,wikidata_mediawiki_exact_search_p856,local_index,
@@ -512,7 +512,7 @@ source-0528,VG Insights,https://app.sensortower.com,app.sensortower.com,1,,veri-
 source-0049,Visual Studio Marketplace,https://marketplace.visualstudio.com,marketplace.visualstudio.com,1,,veri-var,root_html,sitemap_xml,,gelistirici-araci,cekirdek,6,cekildi,high,curated_official_host_fixture,local_index,
 source-0104,vivo App Store,https://appstore.vivo.com.cn,appstore.vivo.com.cn,1,,veri-var,root_html,,,mobil-uygulama,cekirdek,8,cekildi,high,curated_official_host_fixture,fulltext,
 source-0494,Vrbo,https://www.vrbo.com,vrbo.com,1,,veri-var,common_crawl_warc,,,seyahat,ek,2,cekildi,medium,wikidata_p856_unverified,fulltext,
-source-0162,Walmart,https://business.walmart.com,business.walmart.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,high,wikidata_mediawiki_exact_search_p856,site_search,
+source-0162,Walmart,https://business.walmart.com,business.walmart.com,1,,veri-var,root_html,,,,,0,cekildi,high,wikidata_mediawiki_exact_search_p856,site_search,
 source-0202,Wappalyzer,https://wappalyzer.com,wappalyzer.com,1,,veri-var,root_html,,,"b2b-web-yazilimi, ortak","cekirdek, destekleyici",3,cekildi,medium,generated_candidate_validated,fulltext,
 source-0204,Wayback Machine,https://web.archive.org,web.archive.org,1,,veri-var,wayback_availability,,,ortak,destekleyici,1,cekildi,high,curated_official_host_fixture,api,
 source-0291,We Work Remotely,https://weworkremotely.com,weworkremotely.com,1,,veri-var,root_html,sitemap_xml,rss_feed,b2b-web-yazilimi,cekirdek,3,cekildi,medium,generated_candidate_validated,site_search,
@@ -547,7 +547,7 @@ source-0348,Zenodo,https://zenodo.org,zenodo.org,1,,veri-var,root_html,sitemap_x
 source-0125,Zoom App Marketplace,https://marketplace.zoom.us,marketplace.zoom.us,1,,veri-var,common_crawl_warc,,,eklenti-entegrasyon,cekirdek,5,cekildi,high,curated_official_host_fixture,fulltext,
 source-0260,ZoomInfo,https://zoominfo.com,zoominfo.com,1,,veri-var,root_html,,,ortak,destekleyici,1,cekildi,medium,generated_candidate_validated,fulltext,
 source-0472,Zoopla,https://www.zoopla.co.uk,zoopla.co.uk,1,,veri-var,common_crawl_warc,,,gayrimenkul,ek,2,cekildi,medium,wikipedia_index_unverified,fulltext,
-source-0169,Çiçeksepeti,https://ciceksepeti.com,ciceksepeti.com,1,,veri-var,root_html,,,eticaret-fiziksel-urun,cekirdek,4,cekildi,medium,generated_candidate_validated,fulltext,
+source-0169,Çiçeksepeti,https://ciceksepeti.com,ciceksepeti.com,1,,veri-var,root_html,,,,,0,cekildi,medium,generated_candidate_validated,fulltext,
 source-0060,Slant,,,0,,veri-var,root_html,,,ortak,destekleyici,2,cekildi,unresolved,rejected_wrong_entity_match,fulltext,
 source-0466,Capterra Education Software,https://www.capterra.com,capterra.com,2,Capterra,yalniz-kesif,,sitemap_xml,,egitim,ek,2,cekildi,medium,curated_official_host_fixture,local_index,
 source-0453,OECD Education,https://data-explorer.oecd.org,data-explorer.oecd.org,2,OECD Health Statistics,yalniz-kesif,,sitemap_xml,,egitim,ek,2,cekildi,medium,curated_official_host_fixture,local_index,
@@ -598,12 +598,12 @@ source-0155,Google Reviews,https://www.google.com,google.com,6,"Google Finance, 
 source-0003,Google Search,https://google.com,google.com,6,"Google Finance, Google Jobs, Google Maps, Google Reviews, Google Travel",yalniz-politika,,,,ortak,destekleyici,0,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
 source-0492,Google Travel,https://www.google.com,google.com,6,"Google Finance, Google Jobs, Google Maps, Google Reviews, Google Search",yalniz-politika,,,,seyahat,ek,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
 source-0080,Facebook,https://www.facebook.com,facebook.com,3,"Facebook Marketplace, Facebook Pages",yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
-source-0172,Facebook Marketplace,https://www.facebook.com,facebook.com,3,"Facebook, Facebook Pages",yalniz-politika,,,,eticaret-fiziksel-urun,cekirdek,4,kismi,high,curated_official_host_fixture,yok,robots_disallowed
+source-0172,Facebook Marketplace,https://www.facebook.com,facebook.com,3,"Facebook, Facebook Pages",yalniz-politika,,,,,,0,kismi,high,curated_official_host_fixture,yok,robots_disallowed
 source-0311,Facebook Pages,https://www.facebook.com,facebook.com,3,"Facebook, Facebook Marketplace",yalniz-politika,,,,yerel-hizmet,cekirdek,4,kismi,high,curated_official_host_fixture,yok,robots_disallowed
 source-0084,LinkedIn,https://www.linkedin.com,linkedin.com,3,"LinkedIn Ad Library, LinkedIn Jobs",yalniz-politika,,,,"ortak, turkiye-pazari","destekleyici, ek",4,kismi,high,curated_official_host_fixture,yok,robots_disallowed
 source-0239,LinkedIn Ad Library,https://www.linkedin.com,linkedin.com,3,"LinkedIn, LinkedIn Jobs",yalniz-politika,,,,ortak,destekleyici,1,kismi,medium,curated_official_host_fixture,yok,robots_disallowed
 source-0278,LinkedIn Jobs,https://www.linkedin.com,linkedin.com,3,"LinkedIn, LinkedIn Ad Library",yalniz-politika,,,,b2b-web-yazilimi,cekirdek,3,kismi,high,curated_official_host_fixture,yok,robots_disallowed
-source-0161,Etsy,https://www.etsy.com,etsy.com,2,Etsy Reviews,yalniz-politika,,,,eticaret-fiziksel-urun,cekirdek,4,kismi,high,curated_official_host_fixture,yok,challenge
+source-0161,Etsy,https://www.etsy.com,etsy.com,2,Etsy Reviews,yalniz-politika,,,,,,0,kismi,high,curated_official_host_fixture,yok,challenge
 source-0415,Lens.org Patents,https://www.lens.org,lens.org,2,Lens.org,yalniz-politika,,,,ortak,destekleyici,1,kismi,high,curated_official_host_fixture,yok,robots_disallowed
 source-0339,Academia.edu,https://www.academia.edu,academia.edu,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
 source-0341,ACM Digital Library,https://dl.acm.org,dl.acm.org,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,challenge
@@ -616,7 +616,7 @@ source-0543,Google Cloud Marketplace,https://console.cloud.google.com,console.cl
 source-0553,Google News,https://news.google.com,news.google.com,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
 source-0068,HackerNoon,https://hackernoon.com,hackernoon.com,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
 source-0081,Instagram,https://www.instagram.com,instagram.com,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
-source-0173,Kickstarter,https://www.kickstarter.com,kickstarter.com,1,,yalniz-politika,,,,eticaret-fiziksel-urun,cekirdek,4,kismi,high,curated_official_host_fixture,yok,challenge
+source-0173,Kickstarter,https://www.kickstarter.com,kickstarter.com,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,high,curated_official_host_fixture,yok,challenge
 source-0056,Launching Next,https://www.launchingnext.com,launchingnext.com,1,,yalniz-politika,,,,ortak,destekleyici,2,kismi,high,curated_official_host_fixture,yok,challenge
 source-0031,Lobsters,https://lobste.rs,lobste.rs,1,,yalniz-politika,,,,gelistirici-araci,cekirdek,6,kismi,high,curated_official_host_fixture,yok,robots_disallowed
 source-0505,OpenTable,https://www.opentable.com,opentable.com,1,,yalniz-politika,,,,yeme-icme,ek,2,kismi,medium,wikidata_p856_unverified,yok,robots_disallowed
