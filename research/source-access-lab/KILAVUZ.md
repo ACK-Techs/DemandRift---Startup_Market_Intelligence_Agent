@@ -1413,7 +1413,7 @@ ceviri_uyarisi     1 kelime çevrilemedi
 | `fetch_opensearch_templates.py` | Tanım dosyalarını bir kez çeker |
 | `OPENSEARCH-SABLONLARI.csv` | 36 kaynak, 28 şablon |
 | `TERIM-ONBELLEGI.json` | Çeviri kararları ve izleri |
-| `test_query_templates.py` | 27 test |
+| `test_query_templates.py` | 29 test |
 | `test_terim_sozlugu.py` | 20 test |
 
 Testler dört şeyi korur: sorgunun kaynağa ve niyete göre gerçekten değiştiğini,
