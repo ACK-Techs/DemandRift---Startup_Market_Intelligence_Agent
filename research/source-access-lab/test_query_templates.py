@@ -142,6 +142,21 @@ class DerlemeTests(unittest.TestCase):
         self.assertNotIn("{", sorgu)
         self.assertNotIn("language", sorgu)
 
+    def test_arama_ucu_olmayan_api_isaretlenir(self):
+        """Kesfedilen uc her zaman arama ucu degildir: Lemmy'nin /api/v3/site
+        ucu ornek bilgisi doner, sonuna q= eklemek arama yapmaz."""
+        tur, sorgu, notu = derleyici.derle(
+            "diyabet", "api", {"api_ucu": "https://lemmy.ml/api/v3/site"}, "TR")
+        self.assertEqual("", tur)
+        self.assertEqual("", sorgu)
+        self.assertIn("serbest metin", notu)
+
+    def test_farkli_alana_giden_sorgu_isaretlenir(self):
+        self.assertIn("farklı alanda", derleyici._farkli_alan(
+            "https://join-lemmy.org", "https://lemmy.ml/api/v3/search?q=x"))
+        self.assertEqual("", derleyici._farkli_alan(
+            "https://play.google.com", "https://play.google.com/store/search?q=x"))
+
     def test_yerel_yollar_url_uretmez(self):
         """400 kaynagin sayfasi zaten indirilmis; onlara URL uretmek yaniltir."""
         for yol in ("fulltext", "local_index"):

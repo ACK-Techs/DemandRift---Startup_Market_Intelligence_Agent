@@ -46,8 +46,23 @@ API_SORGU_PARAMETRESI: dict[str, str] = {
     "api.biorxiv.org": "",           # tarih/DOI ile calisir, serbest metin almaz
     "archive.org": "url",
     "hacker-news.firebaseio.com": "",  # serbest metin aramasi yok
-    "lemmy.ml": "q",
+    "lemmy.ml": "",                  # kesfedilen uc /api/v3/site: ornek
+                                     # bilgisi doner, arama ucu degildir
 }
+
+# Bir kaynagin sorgu ucu baska bir alan adinda olabilir; Lemmy'nin defterdeki
+# adresi join-lemmy.org (proje sitesi) iken API'si lemmy.ml (ornek sunucu)
+# uzerindedir. Bu mesru bir durumdur ama gorunur kalmali: bir kaynagin
+# sayfasindan baskasinin arama ucunu devralmak sessizce olmamali.
+def _farkli_alan(kaynak_adresi: str, sorgu: str) -> str:
+    def kok(adres: str) -> str:
+        parcalar = [p for p in
+                    (urllib.parse.urlsplit(adres).hostname or "").split(".") if p]
+        return ".".join(parcalar[-2:]) if len(parcalar) >= 2 else ""
+    hedef, kaynak = kok(sorgu), kok(kaynak_adresi)
+    if hedef and kaynak and hedef != kaynak:
+        return f"sorgu ucu farklı alanda: {hedef} (kaynak {kaynak})"
+    return ""
 
 # Pazar parametresi eklenebilen kaynak ucu kaliplari. Her uc dil/bolge
 # parametresi kabul etmez; kabul etmeyene eklemek sorguyu bozar.
@@ -189,6 +204,8 @@ def main() -> int:
             "sorgu_turu": tur,
             "derlenmis_sorgu": sorgu,
             "derlenemedi_nedeni": notu,
+            "alan_notu": _farkli_alan(
+                yuzeyler.get(kaynak, {}).get("adres", ""), sorgu) if sorgu else "",
             "yedekler": yuva["yedekler"],
         })
 

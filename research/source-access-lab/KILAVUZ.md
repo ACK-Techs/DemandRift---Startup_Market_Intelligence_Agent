@@ -1326,8 +1326,18 @@ ağa çıkılmaz.
 
 ## 6.5 Sonuç
 
-Üç örnek fikrin 72 kanıt yuvasının **tamamı derlendi**: 38 uzak URL, 34 yerel
-arama, derlenemeyen yok. Tek kalıp yerine **69 farklı sorgu metni** üretildi.
+Üç örnek fikrin 72 kanıt yuvası için **33 uzak URL** ve **34 yerel arama**
+üretildi; tek kalıp yerine **69 farklı sorgu metni** çıktı.
+
+Kalan 5 satır derlenmedi ve nedeni yazılı: Lemmy için keşfedilen uç
+`/api/v3/site`, örnek bilgisi döndüren bir uçtur — sonuna arama terimi eklemek
+arama yapmaz. Keşfedilmiş her uç arama ucu değildir; olmayanı zorlamak yerine
+işaretlenir ve o yuvanın yedekleri (Hacker News, YouTube) devreye girer.
+
+Bir kaynağın sorgu ucu başka bir alan adında olabilir — Lemmy'nin defterdeki
+adresi `join-lemmy.org` (proje sitesi) iken API'si `lemmy.ml` (örnek sunucu)
+üzerindedir. Bu meşrudur ama `alan_notu` sütununda görünür kalır: bir kaynağın
+sayfasından başkasının arama ucunu devralmak sessizce olmamalı.
 
 **Aynı kaynak, farklı soru:**
 
