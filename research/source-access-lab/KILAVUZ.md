@@ -1184,3 +1184,249 @@ Script beş dosyayı birden okur: `KATEGORI-KAYNAK.csv` ve `URUN-KATEGORILERI.cs
 `KAYNAK-ALAN.csv` ve `ARAMA-YUZEYLERI.csv` (görev 4). Önceki görevlerden
 herhangi biri yeniden üretildiğinde seçim kendiliğinden güncellenir; seçim
 mantığında değişiklik gerekmez.
+
+---
+
+# Görev 6 — Sorguları derlenebilir şablonlara çevirmek
+
+**İstenen:** Sorguları genel kelime listesi olmaktan çıkarıp kaynak, niyet,
+ürün dili ve pazar bağlamına göre derlenebilir şablonlara dönüştürmek.
+
+## 6.1 Problem: tek kelime listesi dört şeyi göz ardı ediyor
+
+Görev 1 her kaynak grubuna bir arama kalıbı yazmıştı:
+
+```
+kaynak_grubu   Sağlık ve biyoteknoloji dikeyi
+hangi_arama    {urun}; {urun} clinical
+```
+
+620 kaynak için toplam **30 kalıp**. Kalıp dört şeyi görmüyor:
+
+**Kaynak.** PubMed ile Google Play aynı sorgu sözdizimini kullanmaz. Birine
+alan öneki, diğerine mağaza parametresi gider.
+
+**Niyet.** *"Talep var mı"* ile *"şikâyet ne"* aynı kelimelerle aranamaz;
+ikincisi sorunu anlatan kelimeleri gerektirir.
+
+**Ürün dili.** Kurucunun cümlesi (*"diyabet hastaları için mobil takip
+uygulaması"*) ile mağaza kullanıcısının yazdığı (*"kan şekeri takip"*) aynı
+değildir.
+
+**Pazar.** Türkiye ve ABD pazarı için dil, bölge parametresi ve terim farklıdır.
+
+## 6.2 Şablon dört parçadan derlenir
+
+```
+[çekirdek terim] + [kaynak grubunun dili] + [niyet eki] + [pazar profili]
+  fikirden otomatik    31 grup, sabit        14 soru       TR / US
+```
+
+Fikirden fikre değişen tek şey çekirdek terimdir ve o otomatik çıkarılır. Geri
+kalan üç tablo **bir kez** yazılır; yeni bir ürün fikri geldiğinde elle terim
+eklemek gerekmez.
+
+**Çekirdek terim** iki temizlikle çıkarılır. Birincisi dolgu kelimeler
+(*için, hastaları, bir*). İkincisi **dağıtım biçimi** (*mobil, bulut, web*) ve
+**ürün tipi** (*uygulaması, yazılımı, kütüphanesi*): mağazaya soruyorsak ürün
+zaten mobildir, sorguya `mobil` koymak sonucu daraltır — kaynak grubunun dili
+kendi karşılığını (`app`) zaten ekler.
+
+```
+"diyabet hastaları için mobil takip uygulaması"  →  diyabet takip
+"veteriner için randevu sistemi"                 →  veteriner randevu
+"react için bir grafik kütüphanesi"              →  react grafik
+```
+
+**Kaynak grubunun dili** aynı konunun kaynağa göre hangi kelimeyle arandığını
+tutar: mağazada `app`, geliştirici topluluğunda `library`, akademik yayında
+`study`, yerel dizinde `appointment`.
+
+**Niyet ekleri** görev 2'nin kanıt tanımından türetildi — kanıt ne arıyorsa
+sorgu da onu aramalı:
+
+| Soru | Ek |
+|---|---|
+| `talep-var-mi` | (sade terim) |
+| `sikayet-ne` | `problem`, `issue`, `sorun` |
+| `odeme-istegi` | `pricing`, `premium`, `subscription` |
+| `rakip-kim` | `alternative`, `vs`, `competitors` |
+
+## 6.3 Derleme yola göre değişir: uzak sorgu / yerel arama
+
+Kaynakların yolu iki türlüdür ve çıktı buna göre değişir:
+
+| Yol | Kaynak | Çıktı |
+|---|---:|---|
+| `fulltext` | 217 | **Yerel arama** — sayfa zaten indirilmiş |
+| `local_index` | 183 | **Yerel arama** |
+| `site_search` | 84 | Uzak URL |
+| `opensearch` | 36 | Uzak URL |
+| `api` | 13 | Uzak URL |
+
+**400 kaynak yerel aramadır**: sayfaları görev 1–4 boyunca zaten indirildi.
+Onlara URL üretmek yanıltıcı olurdu — çıktı, indirilmiş metinde aranacak terim
+listesidir.
+
+API uçları sorgu terimini farklı parametrede bekler (`q`, `search_for`, `text`);
+parametre adları API dokümanından yazıldı, tahmin edilmedi. Serbest metin
+araması kabul etmeyen uçlar (tarih/DOI ile çalışanlar) işaretlenir, zorlanmaz.
+
+**OpenSearch şablonları uydurulmadı.** `ARAMA-YUZEYLERI.csv` bu kaynaklar için
+yalnızca tanım dosyasının adresini tutuyordu. 36 kaynağın kendi tanım dosyası
+bir kez çekildi, `{searchTerms}` şablonu ayıklandı ve
+`OPENSEARCH-SABLONLARI.csv`'ye yazıldı: **28 şablon alındı**, alınamayan 8'i
+(403, 404, bozuk XML) gerekçesiyle işaretli. Dosya repoda olduğu için derleyici
+ağa çıkmaz.
+
+Pazar parametresi yalnızca kabul eden uçlara eklenir; kabul etmeyene eklemek
+sorguyu bozar.
+
+## 6.4 Ürün dili: çeviri katmanı
+
+Türkiye pazarı için hiçbir sözlüğe gidilmez — fikir Türkçe, sorgu Türkçe. Çeviri
+yalnızca İngilizce pazar için sorgu üretilirken devreye girer ve dört katmanlıdır:
+
+| Katman | Ne çözer |
+|---|---|
+| 1. `--terim` | Kullanıcı verdiyse hiçbir yere gidilmez |
+| 2. Wikipedia, ifadenin tamamı | Çok kelimeli alan terimleri |
+| 3. Wiktionary adayları + kategori dili | Tek kelimeler |
+| 4. Wikipedia hakemliği | Kategori dilinin seçemediği kelimeler |
+
+**Wiktionary bir sözlüktür**, kelimenin olabilecek karşılıklarını verir:
+`randevu` için `date`, `rendezvous`, `appointment`. Üçü de doğru çeviridir;
+hangisini kastettiğimizi sözlük bilemez.
+
+**Kategori dili belirsizliği çözer.** Yerel hizmet araştırmasında `appointment`
+geçerlidir, `date` değil — kategori dili bizim kendi tablomuzdur ve 6.2'deki
+kaynak grubu dillerinden türetilir.
+
+**Wikipedia hakemlik yapar.** Kategori dili karar veremediğinde aynı kelime
+Wikipedia'ya sorulur; dönen İngilizce başlık Wiktionary adaylarından biriyse
+**iki bağımsız kaynak aynı şeyi söylüyor** demektir ve seçim güvenlidir.
+`fatura` böyle çözülür: Wiktionary `bill, invoice, note` verir, Wikipedia
+`Invoice` der, ikisinin kesişimi seçilir.
+
+**Wikipedia sonucu koruma altındadır.** Wikipedia araması ilgisiz makaleye
+düşebilir (`randevu sistemi` → *Sağlık.NET*). Bu yüzden bulunan başlığın aranan
+ifadenin kelimelerinin **tamamını** içermesi aranır. Yarım eşleşme kabul edilse
+ifadenin bir parçası sessizce düşerdi: `diyabet takip` → *Diyabet* → `diabetes`
+olur, `takip` kaybolurdu. Kısmi eşleşmeler bunun yerine bitişik ikili gruplara
+bırakılır — `kan şekeri takip` ifadesinde `kan şekeri` Wikipedia'da tam
+karşılığı olan bir terimdir, `takip` ayrıca çevrilir.
+
+**Hiçbir katman çözemezse çeviri yapılmaz.** Orijinal kelime kalır, satırda
+gerekçesi yazılır. Yanlış çeviri yapmak çevirmemekten kötüdür: `randevu` yerine
+`dating` aramak bütün sonucu bozar.
+
+Bütün kararlar `TERIM-ONBELLEGI.json`'da izleriyle saklanır ve dosya repoya
+işlenir. Böylece görev 5'in determinizm şartı korunur ve aynı terim için iki kez
+ağa çıkılmaz.
+
+## 6.5 Sonuç
+
+Üç örnek fikrin 72 kanıt yuvasının **tamamı derlendi**: 38 uzak URL, 34 yerel
+arama, derlenemeyen yok. Tek kalıp yerine **69 farklı sorgu metni** üretildi.
+
+**Aynı kaynak, farklı soru:**
+
+```
+Google Play / doygun-mu      q=diyabet+takip+app
+Google Play / sikayet-ne     q=diyabet+takip+app+problem
+Google Play / odeme-istegi   q=diyabet+takip+app+pricing
+```
+
+**Aynı soru, farklı kaynak:**
+
+```
+Stack Exchange / rakip-kim   api.stackexchange.com/2.3/questions?site=...&q=diyabet+takip+library+alternative
+Dimensions / giris-engeli    (yerel arama) 'diyabet takip study regulation'
+```
+
+**Aynı sorgu, farklı pazar:**
+
+| Pazar | Sorgu |
+|---|---|
+| TR | `q=diyabet+takip+app+problem&hl=tr&gl=TR` |
+| US | `q=diabetes+takip+app+problem&hl=en&gl=US` |
+
+Çeviri sonuçları: `fatura` → `invoice` (Wikipedia hakemliği), `randevu` →
+`appointment` (kategori dili), `diyabet` → `diabetes` (Wiktionary tek aday).
+`takip`, `esnaf`, `muhasebeciler` çevrilemedi ve satırlarında gerekçesi yazılı —
+`takip` için Wiktionary'de karşılık yok, `esnaf` Türkçeye özgü bir kavram.
+
+## 6.6 Üretilen dosyalar
+
+### `DERLENMIS-SORGULAR.csv` — 72 satır
+
+```
+fikir              diyabet hastaları için mobil takip uygulaması
+kategori           mobil-uygulama
+soru_id            sikayet-ne
+kaynak             Google Play Store
+kaynak_grubu       Mobil uygulama mağazaları
+pazar              TR
+yol                opensearch
+cekirdek_terim     diyabet takip
+grup_dili          app
+niyet_eki          problem
+sorgu_metni        diyabet takip app problem
+sorgu_turu         uzak-url
+derlenmis_sorgu    https://play.google.com/store/search?q=diyabet+takip+app+problem&hl=tr&gl=TR
+yedekler           Apple App Store, APKMirror
+```
+
+Okunuşu: *diyabet uygulaması için "şikâyet ne" sorusu Google Play'e sorulacak;
+çekirdek terim `diyabet takip`, mağaza dili `app` ekliyor, niyet `problem`
+ekliyor. Yol OpenSearch olduğu için çıktı bir URL. Google Play yanıt vermezse
+App Store denenecek.*
+
+Aynı satırın ABD pazarı karşılığı `DERLENMIS-SORGULAR-US.csv`'de, çeviri
+sütunlarıyla:
+
+```
+orijinal_terim     diyabet takip
+cekirdek_terim     diabetes takip
+ceviri_guveni      orta
+ceviri_katmani     wiktionary+kategori (kismi)
+ceviri_uyarisi     1 kelime çevrilemedi
+```
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `query_templates.py` | Dört parçalı şablon: grup dili, niyet ekleri, pazar, çekirdek terim |
+| `compile_queries.py` | Yol farkındalıklı derleyici |
+| `terim_sozlugu.py` | Dört katmanlı çeviri ve önbellek |
+| `fetch_opensearch_templates.py` | Tanım dosyalarını bir kez çeker |
+| `OPENSEARCH-SABLONLARI.csv` | 36 kaynak, 28 şablon |
+| `TERIM-ONBELLEGI.json` | Çeviri kararları ve izleri |
+| `test_query_templates.py` | 27 test |
+| `test_terim_sozlugu.py` | 20 test |
+
+Testler dört şeyi korur: sorgunun kaynağa ve niyete göre gerçekten değiştiğini,
+yerel yolların URL üretmediğini, alınamamış OpenSearch şablonu yerine URL
+uydurulmadığını ve çeviri kararlarının izlenebilir olduğunu. Çeviri testleri ağa
+çıkmaz; hepsi önbellek ve saf fonksiyonlar üzerinden kurulur.
+
+## 6.7 Yeniden üretim
+
+```bash
+python3 compile_queries.py --pazar TR
+python3 compile_queries.py --pazar US --out DERLENMIS-SORGULAR-US.csv
+python3 compile_queries.py --fikir "..." --terim "veterinary appointment"
+python3 -m unittest test_query_templates test_terim_sozlugu
+```
+
+Derleyici görev 5'in çıktısını, arama yüzeylerini, OpenSearch şablonlarını ve
+terim önbelleğini okur. Dördü de repoda olduğu için çalıştırma ağa çıkmaz.
+Önbellekte olmayan bir terim için ağa çıkmak `--cevrimici` ile açıkça istenir;
+istenmezse terim çevrilmeden bırakılır ve satırda gerekçesi kalır.
+
+Yeni tanım dosyası gerektiğinde:
+
+```bash
+python3 fetch_opensearch_templates.py --canli
+```
