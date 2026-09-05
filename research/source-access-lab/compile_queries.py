@@ -31,6 +31,7 @@ from pathlib import Path
 from typing import Any
 
 import query_templates as sablon
+import terim_sozlugu as sozluk
 
 HERE = Path(__file__).resolve().parent
 
@@ -130,6 +131,8 @@ def main() -> int:
                         default=HERE / "OPENSEARCH-SABLONLARI.csv")
     parser.add_argument("--pazar", default="TR", choices=sorted(sablon.PAZAR))
     parser.add_argument("--terim", help="Çekirdek terimi elle verir")
+    parser.add_argument("--cevrimici", action="store_true",
+                        help="Önbellekte olmayan terim için ağa çıkar")
     parser.add_argument("--out", type=Path, default=HERE / "DERLENMIS-SORGULAR.csv")
     args = parser.parse_args()
 
@@ -143,13 +146,29 @@ def main() -> int:
         opensearch_sablonlari = {r["ad"]: r["sablon"]
                                  for r in oku(args.opensearch) if r["sablon"]}
     yuvalar = oku(args.secim)
+    kategori_kaynak = oku(HERE / "KATEGORI-KAYNAK.csv")
+    onbellek = sozluk.onbellek_yukle()
+    onbellek_degisti = False
 
     satirlar: list[dict[str, Any]] = []
     for yuva in yuvalar:
         kaynak = yuva["birincil_kaynak"]
         y = yuzeyler.get(kaynak, {})
         yol = y.get("en_iyi_yol", "")
-        cekirdek = args.terim or sablon.cekirdek_terim(yuva["fikir"])
+        ham_cekirdek = args.terim or sablon.cekirdek_terim(yuva["fikir"])
+        cekirdek, ceviri = ham_cekirdek, {}
+        # Ceviri yalniz Ingilizce pazar icin ve kullanici terim vermediyse.
+        if sablon.PAZAR[args.pazar]["ceviri_gerekir"] == "evet" and not args.terim:
+            dil = sozluk.kategori_dili(kategori_kaynak, yuva["kategori"],
+                                       sablon.GRUP_DILI)
+            ceviri = sozluk.terim_cevir(ham_cekirdek, yuva["kategori"], dil,
+                                        onbellek, cevrimdisi=not args.cevrimici)
+            if not ceviri.get("onbellekten"):
+                anahtar = f'{sozluk.sadelestir(ham_cekirdek)}|{yuva["kategori"]}'
+                onbellek[anahtar] = {k: v for k, v in ceviri.items()
+                                     if k != "onbellekten"}
+                onbellek_degisti = True
+            cekirdek = ceviri["kullanilan"]
         metin = sablon.sorgu_metni(cekirdek, yuva["kaynak_grubu"], yuva["soru_id"])
         tur, sorgu, notu = derle(metin, yol, y, args.pazar,
                                  opensearch_sablonlari, kaynak)
@@ -159,6 +178,11 @@ def main() -> int:
             "kaynak": kaynak, "kaynak_grubu": yuva["kaynak_grubu"],
             "pazar": args.pazar, "yol": yol or "yok",
             "cekirdek_terim": cekirdek,
+            "orijinal_terim": ham_cekirdek,
+            "ceviri_guveni": ceviri.get("guven", ""),
+            "ceviri_katmani": ceviri.get("cozen_katman", ""),
+            "ceviri_izi": ceviri.get("iz", ""),
+            "ceviri_uyarisi": ceviri.get("uyari", ""),
             "grup_dili": " ".join(sablon.GRUP_DILI.get(yuva["kaynak_grubu"], ("",))[:1]),
             "niyet_eki": sablon.NIYET_EKI.get(yuva["soru_id"], ("",))[0],
             "sorgu_metni": metin,
@@ -167,6 +191,9 @@ def main() -> int:
             "derlenemedi_nedeni": notu,
             "yedekler": yuva["yedekler"],
         })
+
+    if onbellek_degisti:
+        sozluk.onbellek_yaz(onbellek)
 
     with args.out.open("w", newline="", encoding="utf-8") as handle:
         yazici = csv.DictWriter(handle, fieldnames=list(satirlar[0]))
@@ -182,6 +209,8 @@ def main() -> int:
             r["derlenemedi_nedeni"].split(";")[0]
             for r in satirlar if r["derlenemedi_nedeni"]).most_common(),
         "farkli_sorgu_metni": len({r["sorgu_metni"] for r in satirlar}),
+        "ceviri_guveni": collections.Counter(
+            r["ceviri_guveni"] for r in satirlar if r["ceviri_guveni"]).most_common(),
     }, ensure_ascii=False))
     return 0
 
