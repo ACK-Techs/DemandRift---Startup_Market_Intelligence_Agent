@@ -1440,3 +1440,175 @@ Yeni tanım dosyası gerektiğinde:
 ```bash
 python3 fetch_opensearch_templates.py --canli
 ```
+
+---
+
+# Görev 7 — Aynı tasarımı iki bütçe seviyesinde çalıştırmak
+
+**İstenen:** Aynı tasarımı iki bütçe seviyesinde çalıştırmak; premium modu
+kontrolsüz daha çok site çalıştırma şeklinde tasarlamamak.
+
+## 7.1 Problem: "premium = daha çok site" neden yanlış
+
+Akla ilk gelen tasarım şudur:
+
+```
+Ücretsiz:  10 kaynak çalıştır
+Premium:   50 kaynak çalıştır
+```
+
+Bunun neden yanlış olduğunu **kendi ölçümümüz** gösterdi. Görev 5'te düz bir
+"en yüksek puanlı 12 kaynağı seç" denendiğinde çıkan paketin dokuzu uygulama
+mağazasıydı; dokuzu da aynı şeyi aynı yöntemle ölçüyordu. **Kaynak sayısını
+artırmak kanıt artırmaz**, aynı bilgiyi daha çok kez okur.
+
+Böyle bir premium, para ödeyen kullanıcıya gürültü satar: 50 kaynak görür ama
+elindeki bilgi 10 kaynaklıyla aynıdır.
+
+## 7.2 Ücretsiz profil, mevcut tasarımın kendisidir
+
+Görev kartı *"aynı tasarımı"* diyor. Görev 5 ve 6'nın kurduğu tasarım değişmedi;
+**ücretsiz profil odur.** Premium onun üstüne derinlik ekler.
+
+Bu, iki profilin aynı düğme kümesini taşıması demektir — bir test bunu korur.
+Premium yeni bir sistem değil, aynı sistemin farklı ayarı.
+
+## 7.3 Altı derinlik ekseni
+
+| Eksen | ücretsiz | premium | Gerekçe |
+|---|---|---|---|
+| Soru başına yuva | 3 | 5 | Görev 5'te `rakip-kim` sorusunun 6 açısı vardı, 3'ü kullanılıyordu |
+| Yedek zinciri | 2 | 4 | Birincil bot koruması verirse zincir daha derin yürür |
+| Niyet eki | 1 | 3 | Görev 6'nın ekleri çoktur: `problem`, `issue`, `not working` |
+| Arşiv birincil olabilir | evet | hayır | Tazelik bir kalite boyutudur |
+| Alan doğrulama | beyan | çekip doğrula | Görev 4'te ölçüm alanlarının 10'u doğrulanmış, 1378'i beyandı |
+| Pazar | TR | TR + US | Karşılaştırmalı derleme |
+| İstek bütçesi | 120 | 600 | Daha büyük, **sınırsız değil** |
+
+Hepsi zaten koddaki ayarlardı; görev 7 yeni bir katman kurmuyor, hangi düğmenin
+premium'a ait olduğunu tanımlıyor.
+
+## 7.4 Tazelik havuzu daraltmaz, sıralamayı değiştirir
+
+Yalnız Common Crawl kopyası olan kaynak premiumda birincil seçilmez. Ama
+**havuzdan çıkarılmaz** — yedeğe düşer.
+
+Ayrım önemlidir: havuzu daraltmak cazip görünür, çünkü "premium sadece taze
+veri kullanır" demek kolaydır. Ama o zaman premium, ücretsizde bulunan bir
+kanıt açısını **kaybeder** — o kaynağın tek başına taşıdığı açı düşer. Para
+ödeyen kullanıcı bir şey kaybetmemeli; premium ücretsizin üstüne eklemeli.
+
+Bu yüzden havuz iki profilde aynıdır, fark sıralamadadır. Bir test ücretsizdeki
+her `(soru, kaynak grubu)` çiftinin premiumda da bulunmasını şart koşar.
+
+## 7.5 Politika bir bütçe düğmesi değildir
+
+`DEGISMEYEN` sözlüğünde altı kural var ve testlerle korunuyor:
+
+| Kural | Anlamı |
+|---|---|
+| `robots_yasagi` | robots.txt kapatan kaynak hiçbir profilde çalıştırılmaz |
+| `bot_korumasi` | tarayıcı taklidi, UA rotasyonu, engel aşma hiçbir profilde yok |
+| `determinizm` | aynı fikir aynı profilde her zaman aynı sonucu verir |
+| `kaynak_suzgeci` | ölçüm alanı ve izinli yolu olmayan kaynak hiçbir profilde girmez |
+| `bagimsizlik` | bir sorunun yuvaları her profilde farklı grup ve host'tan gelir |
+| `gerekce` | kullanılmayan yuva ve çevrilemeyen terim her profilde gerekçesiyle yazılır |
+
+**Premium derinlik satar, izin satmaz.** Kartın *"kontrolsüz"* uyarısının
+karşılığı budur: premium daha derindir ama sınırsız değildir — bütçesi vardır,
+deterministiktir ve politikayı gevşetmez.
+
+## 7.6 Ölçüm: tasarım sayıya kaydı mı
+
+Şartın sağlandığı iddia edilmedi, ölçüldü. Üç örnek fikir iki profilde
+çalıştırıldı:
+
+| Fikir | Profil | Yuva | Kaynak | Yedekli | Açı başına kaynak |
+|---|---|---:|---:|---:|---:|
+| Diyabet takip | ücretsiz | 24 | 12 | 36 | 0.500 |
+| | **premium** | **29** | **13** | **65** | **0.448** |
+| Fatura yazılımı | ücretsiz | 24 | 13 | 40 | 0.542 |
+| | **premium** | **31** | **15** | **74** | **0.484** |
+| Esnaf randevu | ücretsiz | 25 | 11 | 35 | 0.440 |
+| | **premium** | **30** | **13** | **65** | **0.433** |
+
+Toplamda premium **17 kanıt açısı** ekliyor, karşılığında **5 kaynak**. Açı
+başına kaynak oranı hiçbir fikirde artmıyor.
+
+Bu oran ölçütün kendisidir: premium kaynak sayısını artırıp bağımsız açı
+sayısını artırmıyorsa, tasarım "daha çok site çalıştırma"ya kaymış demektir.
+Bir test oranı kilitler, böylece tasarım zamanla o yöne kayamaz.
+
+**Premium her soruya körü körüne yuva eklemez.** Diyabet örneğinde `doygun-mu`
+sorusunun zaten yalnız 2 kullanılabilir açısı vardı; premium orada da 2 alıyor.
+Derinleşme yalnızca gerçekten daha fazla bağımsız açı bulunan sorularda oluyor:
+
+```
+rakip-kim      3 → 5   (+ Haber yayınları, + Uygulama mağazaları)
+talep-var-mi   3 → 5   (+ Kitle fonlaması, + Sağlık dikeyi)
+talep-yonu     3 → 4   (+ Haber yayınları)
+doygun-mu      2 → 2   (başka açı yok)
+```
+
+Yedek zinciri aynı yuvada derinleşiyor:
+
+```
+doygun-mu / uygulama mağazaları
+  ücretsiz:  Google Play → Apple App Store → APKMirror
+  premium:   Google Play → Apple App Store → APKMirror → Uptodown → Aptoide
+```
+
+Sorgu genişliği aynı kaynaklardan daha çok sorgu üretiyor: aynı 26 yuvadan
+ücretsiz **26 sorgu**, premium **62 sorgu**. Yeni site yok, daha geniş tarama var.
+
+## 7.7 Üretilen dosyalar
+
+### `BUTCE-KARSILASTIRMA.csv` — 6 satır
+
+Fikir başına iki satır: her profilin ölçümü ve premium'un eklediği fark.
+
+```
+fikir                diyabet hastaları için mobil takip uygulaması
+profil               premium
+yuva                 29
+kaynak               13
+grup                 14
+yedekli_kaynak       65
+elenen_yuva          0
+yuva_siniri          5
+yedek_siniri         4
+arsiv_kabul          hayir
+niyet_eki_sayisi     3
+istek_butcesi        600
+aci_basina_kaynak    0.448
+premium_ek_yuva      5
+premium_ek_kaynak    1
+sayiya_kaymadi       evet
+```
+
+Son satır ölçütün kendisidir: `sayiya_kaymadi = evet`, yani premium açı başına
+kaynak oranını artırmamış.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `butce_profilleri.py` | İki profil, altı eksen, değişmeyen kurallar, karşılaştırma |
+| `test_butce_profilleri.py` | 19 test |
+
+Testler dört şeyi korur: premium'un artan düğmelerde geride kalmamasını,
+hiçbir profilin robots yasaklı kaynak seçmemesini, premium'un ücretsizdeki bir
+kanıt açısını kaybetmemesini ve açı başına kaynak oranının artmamasını.
+
+## 7.8 Yeniden üretim
+
+```bash
+python3 select_sources.py --profil premium --fikir "..."
+python3 compile_queries.py --profil premium --pazar US
+python3 butce_profilleri.py            # iki profili karşılaştırır
+python3 -m unittest test_butce_profilleri
+```
+
+Profil, seçim ve derleme adımlarının ikisine birden verilir; zincirin geri
+kalanı değişmez. Yeni bir eksen eklendiğinde iki profile de eklenmesi gerekir —
+test düğme kümelerinin aynı kalmasını şart koşar.
