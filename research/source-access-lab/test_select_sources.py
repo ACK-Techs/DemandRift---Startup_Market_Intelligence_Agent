@@ -131,11 +131,22 @@ class SecimKalitesiTests(unittest.TestCase):
         self.satirlar = sec.paket_sec(FIKIR, "mobil-uygulama", ["saglik"], VERI)
 
     def test_secilen_her_kaynak_gorev4_suzgecinden_gecer(self):
-        """Izinli yolu ya da olcum alani olmayan kaynak pakete giremez."""
-        for r in self.satirlar:
-            ad = r["birincil_kaynak"]
-            self.assertTrue(VERI["olcum_alani"].get(ad), ad)
-            self.assertTrue(VERI["izin"][ad] & {"api-acik", "robots-izinli"}, ad)
+        """Olcum alani olmayan kaynak hicbir profilde pakete giremez ve
+        hicbir profil 'yasak' ya da 'yol-yok' kaynagi kabul etmez.
+
+        Profil yalniz tazeligi degistirir: ucretsiz arsiv kopyasini kabul
+        eder, premium etmez. Izin sinirlari butce dugmesi degildir.
+        """
+        import butce_profilleri as butce
+        for profil_adi in butce.PROFILLER:
+            kabul = set(butce.kabul_edilen_izin(profil_adi))
+            self.assertEqual(set(), kabul & {"yasak", "yol-yok"}, profil_adi)
+            satirlar = sec.paket_sec(FIKIR, "mobil-uygulama", ["saglik"], VERI,
+                                     profil_adi=profil_adi)
+            for r in satirlar:
+                ad = r["birincil_kaynak"]
+                self.assertTrue(VERI["olcum_alani"].get(ad), ad)
+                self.assertTrue(VERI["izin"][ad] & kabul, f"{profil_adi}/{ad}")
 
     def test_paket_envanterden_cok_kucuk(self):
         """Gorevin amaci: 636 kaynagi calistirmamak."""

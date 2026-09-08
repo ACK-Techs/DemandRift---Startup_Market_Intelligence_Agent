@@ -30,6 +30,7 @@ import urllib.parse
 from pathlib import Path
 from typing import Any
 
+import butce_profilleri as butce
 import query_templates as sablon
 import terim_sozlugu as sozluk
 
@@ -146,6 +147,9 @@ def main() -> int:
                         default=HERE / "OPENSEARCH-SABLONLARI.csv")
     parser.add_argument("--pazar", default="TR", choices=sorted(sablon.PAZAR))
     parser.add_argument("--terim", help="Çekirdek terimi elle verir")
+    parser.add_argument("--profil", default="ucretsiz",
+                        choices=sorted(butce.PROFILLER),
+                        help="Bütçe profili: kaç niyet ekiyle sorgu üretilir")
     parser.add_argument("--cevrimici", action="store_true",
                         help="Önbellekte olmayan terim için ağa çıkar")
     parser.add_argument("--out", type=Path, default=HERE / "DERLENMIS-SORGULAR.csv")
@@ -184,30 +188,41 @@ def main() -> int:
                                      if k != "onbellekten"}
                 onbellek_degisti = True
             cekirdek = ceviri["kullanilan"]
-        metin = sablon.sorgu_metni(cekirdek, yuva["kaynak_grubu"], yuva["soru_id"])
-        tur, sorgu, notu = derle(metin, yol, y, args.pazar,
-                                 opensearch_sablonlari, kaynak)
-        satirlar.append({
-            "fikir": yuva["fikir"], "kategori": yuva["kategori"],
-            "soru_id": yuva["soru_id"], "yuva": yuva["yuva"],
-            "kaynak": kaynak, "kaynak_grubu": yuva["kaynak_grubu"],
-            "pazar": args.pazar, "yol": yol or "yok",
-            "cekirdek_terim": cekirdek,
-            "orijinal_terim": ham_cekirdek,
-            "ceviri_guveni": ceviri.get("guven", ""),
-            "ceviri_katmani": ceviri.get("cozen_katman", ""),
-            "ceviri_izi": ceviri.get("iz", ""),
-            "ceviri_uyarisi": ceviri.get("uyari", ""),
-            "grup_dili": " ".join(sablon.GRUP_DILI.get(yuva["kaynak_grubu"], ("",))[:1]),
-            "niyet_eki": sablon.NIYET_EKI.get(yuva["soru_id"], ("",))[0],
-            "sorgu_metni": metin,
-            "sorgu_turu": tur,
-            "derlenmis_sorgu": sorgu,
-            "derlenemedi_nedeni": notu,
-            "alan_notu": _farkli_alan(
-                yuzeyler.get(kaynak, {}).get("adres", ""), sorgu) if sorgu else "",
-            "yedekler": yuva["yedekler"],
-        })
+        # Sorgu genisligi profile bagli: ucretsiz niyet ekinin ilkini,
+        # premium birkacini kullanir. Ayni kaynaga daha genis tarama --
+        # daha cok kaynak degil.
+        ekler_sayisi = min(int(butce.profil(args.profil)["niyet_eki_sayisi"]),
+                           len(sablon.NIYET_EKI.get(yuva["soru_id"], ("",))))
+        for niyet_sirasi in range(max(1, ekler_sayisi)):
+            metin = sablon.sorgu_metni(cekirdek, yuva["kaynak_grubu"],
+                                       yuva["soru_id"], niyet_sirasi)
+            tur, sorgu, notu = derle(metin, yol, y, args.pazar,
+                                     opensearch_sablonlari, kaynak)
+            satirlar.append({
+                "profil": args.profil, "niyet_sirasi": niyet_sirasi + 1,
+                "fikir": yuva["fikir"], "kategori": yuva["kategori"],
+                "soru_id": yuva["soru_id"], "yuva": yuva["yuva"],
+                "kaynak": kaynak, "kaynak_grubu": yuva["kaynak_grubu"],
+                "pazar": args.pazar, "yol": yol or "yok",
+                "cekirdek_terim": cekirdek,
+                "orijinal_terim": ham_cekirdek,
+                "ceviri_guveni": ceviri.get("guven", ""),
+                "ceviri_katmani": ceviri.get("cozen_katman", ""),
+                "ceviri_izi": ceviri.get("iz", ""),
+                "ceviri_uyarisi": ceviri.get("uyari", ""),
+                "grup_dili": " ".join(
+                    sablon.GRUP_DILI.get(yuva["kaynak_grubu"], ("",))[:1]),
+                "niyet_eki": sablon.NIYET_EKI.get(
+                    yuva["soru_id"], ("",))[min(niyet_sirasi,
+                    len(sablon.NIYET_EKI.get(yuva["soru_id"], ("",))) - 1)],
+                "sorgu_metni": metin,
+                "sorgu_turu": tur,
+                "derlenmis_sorgu": sorgu,
+                "derlenemedi_nedeni": notu,
+                "alan_notu": _farkli_alan(
+                    yuzeyler.get(kaynak, {}).get("adres", ""), sorgu) if sorgu else "",
+                "yedekler": yuva["yedekler"],
+            })
 
     if onbellek_degisti:
         sozluk.onbellek_yaz(onbellek)
@@ -220,6 +235,7 @@ def main() -> int:
     tur = collections.Counter(r["sorgu_turu"] or "derlenemedi" for r in satirlar)
     print(json.dumps({
         "cikti": str(args.out), "satir": len(satirlar), "pazar": args.pazar,
+        "profil": args.profil,
         "fikir": len({r["fikir"] for r in satirlar}),
         "sorgu_turu": tur.most_common(),
         "derlenemedi_nedeni": collections.Counter(

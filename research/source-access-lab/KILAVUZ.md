@@ -1108,7 +1108,7 @@ soru çıktıda `tek_yuvali_soru` altında listelenir.
 
 ## 5.7 Üretilen dosya
 
-### `SECIM-ORNEKLERI.csv` — 72 satır
+### `SECIM-ORNEKLERI.csv` — 73 satır
 
 Üç örnek fikir için üretilen paketler. Satır birimi **(fikir, soru, yuva)**.
 
@@ -1142,7 +1142,7 @@ ikisi de kullanıldı.*
 
 | Fikir | Kategori | Katman | Ek | Soru | Yuva | Kaynak |
 |---|---|---|---|---:|---:|---:|
-| Diyabet takip uygulaması | `mobil-uygulama` | — | `saglik` | 10 | 23 | 11 |
+| Diyabet takip uygulaması | `mobil-uygulama` | — | `saglik` | 10 | 24 | 12 |
 | Muhasebeci fatura yazılımı | `b2b-web-yazilimi` | — | `fintech` | 8 | 24 | 13 |
 | Esnaf randevu uygulaması | `yerel-hizmet` | `mobil-uygulama` | — | 11 | 25 | 11 |
 
@@ -1152,7 +1152,7 @@ Kategoriye özel yuvalardan gelen kaynaklar tamamen farklı çıkıyor:
 |---|---|
 | Diyabet uygulaması | Google Play Store, NICE |
 | Fatura yazılımı | CloudPrice, Indeed, Investing.com, SoftwareSuggest |
-| Esnaf randevu uygulaması | Google Play Store, Houzz |
+| Esnaf randevu uygulaması | Google Play Store, Angi |
 
 Diyabet ile fatura paketleri arasında **hiç ortak kategori kaynağı yok**.
 Diyabet ile randevu arasındaki tek ortak Google Play — ikisi de mobil uygulama
@@ -1326,8 +1326,8 @@ ağa çıkılmaz.
 
 ## 6.5 Sonuç
 
-Üç örnek fikrin 72 kanıt yuvası için **33 uzak URL** ve **34 yerel arama**
-üretildi; tek kalıp yerine **69 farklı sorgu metni** çıktı.
+Üç örnek fikrin 73 kanıt yuvası için **33 uzak URL** ve **35 yerel arama**
+üretildi; tek kalıp yerine **70 farklı sorgu metni** çıktı.
 
 Kalan 5 satır derlenmedi ve nedeni yazılı: Lemmy için keşfedilen uç
 `/api/v3/site`, örnek bilgisi döndüren bir uçtur — sonuna arama terimi eklemek
@@ -1368,7 +1368,7 @@ Dimensions / giris-engeli    (yerel arama) 'diyabet takip study regulation'
 
 ## 6.6 Üretilen dosyalar
 
-### `DERLENMIS-SORGULAR.csv` — 72 satır
+### `DERLENMIS-SORGULAR.csv` — 73 satır
 
 ```
 fikir              diyabet hastaları için mobil takip uygulaması

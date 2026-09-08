@@ -1,0 +1,7 @@
+fikir,kategori,profil,yuva,kaynak,grup,host,yedekli_kaynak,elenen_yuva,yuva_siniri,yedek_siniri,arsiv_kabul,niyet_eki_sayisi,istek_butcesi,aci_basina_kaynak,premium_ek_yuva,premium_ek_kaynak,sayiya_kaymadi
+diyabet hastaları için mobil takip uygulaması,mobil-uygulama,ucretsiz,24,12,13,12,36,6,3,2,evet,1,120,0.5,,,
+diyabet hastaları için mobil takip uygulaması,mobil-uygulama,premium,29,13,14,13,65,1,5,4,hayir,3,600,0.448,5,1,evet
+muhasebeciler için fatura yazılımı,b2b-web-yazilimi,ucretsiz,24,13,14,13,40,9,3,2,evet,1,120,0.542,,,
+muhasebeciler için fatura yazılımı,b2b-web-yazilimi,premium,31,15,16,15,74,2,5,4,hayir,3,600,0.484,7,2,evet
+yerel esnaf için randevu uygulaması,yerel-hizmet,ucretsiz,25,11,12,11,35,7,3,2,evet,1,120,0.44,,,
+yerel esnaf için randevu uygulaması,yerel-hizmet,premium,30,13,14,13,65,2,5,4,hayir,3,600,0.433,5,2,evet

@@ -38,6 +38,8 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
+import butce_profilleri as butce
+
 HERE = Path(__file__).resolve().parent
 
 # Her soru icin en fazla kac ayri kanit yuvasi acilir. Uc farkli olcme yontemi
@@ -143,7 +145,8 @@ def oku(yol: Path) -> list[dict[str, str]]:
 
 def paket_sec(fikir: str, kategori: str, ekler: list[str],
               veri: dict[str, Any], katmanlar: list[str] | None = None,
-              soru_basina_yuva: int = SORU_BASINA_YUVA) -> list[dict[str, Any]]:
+              soru_basina_yuva: int = SORU_BASINA_YUVA,
+              profil_adi: str = "ucretsiz") -> list[dict[str, Any]]:
     """Soru basina kanit yuvalari uretir; her yuva ayri bir olcme yontemidir."""
     kategori_kaynak = veri["kategori_kaynak"]
     kategori_soru = veri["kategori_soru"]
@@ -158,10 +161,14 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
     hedefler = {kategori, *katmanlar, *ekler, "ortak"}
     havuz = {r["kaynak"] for r in kategori_kaynak if r["hedef"] in hedefler}
     # Gorev 4 suzgeci: izinli yolu ve olcum alani olmayan kaynak havuza girmez.
+    # Profil yalniz TAZELIGI degistirir: ucretsiz arsiv kopyasini kabul eder,
+    # premium etmez. Yasak ve yolsuz kaynak iki profilde de disaridadir.
+    kabul = set(butce.kabul_edilen_izin(profil_adi))
+    yedek_sayisi = int(butce.profil(profil_adi)["yuva_basina_yedek"])
     aday = {a for a in havuz
-            if olcum_alani.get(a) and (izin.get(a, set()) & set(IZIN_AGIRLIGI))}
+            if olcum_alani.get(a) and (izin.get(a, set()) & kabul)}
 
-    def kaynak_sirasi(ad: str) -> tuple[int, int, int, int, int, str]:
+    def kaynak_sirasi(ad: str) -> tuple[int, int, int, int, int, int, str]:
         """Yuva icindeki sira. Kriterlerin hepsi olculmus degerlerdir;
         'hangisi daha populer' gibi elimizde verisi olmayan bir yargi girmez.
 
@@ -174,7 +181,13 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
         bayt = metin_bayt.get(ad, 0)
         en_iyi_izin = max((IZIN_AGIRLIGI.get(i, 0) for i in izin.get(ad, set())),
                           default=0)
-        return (0 if (bayt or dogrulanan.get(ad)) else 1,
+        # Profil tazelik istiyorsa, yalniz arsiv kopyasi olan kaynak birincil
+        # olmaz ama havuzdan da cikmaz: yedege duser, boylece kanit acisi
+        # kaybolmaz.
+        yalniz_arsiv = izin.get(ad, set()) <= {"arsiv-kopyasi"}
+        arsiv_cezasi = 0 if (butce.arsiv_birincil_olabilir(profil_adi)
+                             or not yalniz_arsiv) else 1
+        return (arsiv_cezasi, 0 if (bayt or dogrulanan.get(ad)) else 1,
                 -len(dogrulanan.get(ad, set())), -en_iyi_izin, -bayt,
                 -len(olcum_alani.get(ad, set())), ad.casefold())
 
@@ -207,7 +220,7 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
                          if host.get(k, k) not in kullanilan_host]
             if not kaynaklar:
                 continue
-            yuvalar.append((grup, gruplar[grup], kaynaklar[:YUVA_BASINA_YEDEK]))
+            yuvalar.append((grup, gruplar[grup], kaynaklar[:yedek_sayisi + 1]))
             kullanilan_host.add(host.get(kaynaklar[0], kaynaklar[0]))
 
         # Yuva sirasi: once dogrulanmis kaynagi olan grup, sonra kaynak bollugu.
@@ -225,7 +238,7 @@ def paket_sec(fikir: str, kategori: str, ekler: list[str],
         for sira, (grup, kanit, kaynaklar) in enumerate(kullanilan, 1):
             birincil = kaynaklar[0]
             satirlar.append({
-                "fikir": fikir, "kategori": kategori,
+                "fikir": fikir, "profil": profil_adi, "kategori": kategori,
                 "katmanlar": ", ".join(katmanlar),
                 "ekler": ", ".join(ekler), "soru_id": soru_id,
                 "soru": kanit["soru"], "yuva": sira,
@@ -265,7 +278,10 @@ def main() -> int:
     parser.add_argument("--kategoriler", type=Path,
                         default=HERE / "URUN-KATEGORILERI.csv")
     parser.add_argument("--ek", action="append", default=None)
-    parser.add_argument("--yuva", type=int, default=SORU_BASINA_YUVA,
+    parser.add_argument("--profil", default="ucretsiz",
+                        choices=sorted(butce.PROFILLER),
+                        help="Bütçe profili: yuva, yedek ve tazelik ayarları")
+    parser.add_argument("--yuva", type=int, default=None,
                         help=f"Soru başına en fazla kanıt yuvası (varsayılan {SORU_BASINA_YUVA})")
     parser.add_argument("--kategori-kaynak", type=Path,
                         default=HERE / "KATEGORI-KAYNAK.csv")
@@ -319,7 +335,10 @@ def main() -> int:
             katmanlar = sorted(args.katman)
         ekler = sorted(args.ek) if args.ek else otomatik_ek
 
-    satirlar = paket_sec(args.fikir, kategori, ekler, veri, katmanlar, args.yuva)
+    yuva_siniri = (args.yuva if args.yuva is not None
+                   else int(butce.profil(args.profil)["soru_basina_yuva"]))
+    satirlar = paket_sec(args.fikir, kategori, ekler, veri, katmanlar,
+                         yuva_siniri, args.profil)
     if args.out:
         with args.out.open("w", newline="", encoding="utf-8") as handle:
             yazici = csv.DictWriter(handle, fieldnames=list(satirlar[0]))
@@ -329,7 +348,7 @@ def main() -> int:
     kaynaklar = {r["birincil_kaynak"] for r in satirlar}
     zayif = sorted({r["soru_id"] for r in satirlar if r["yuva_sayisi"] < ASGARI_YUVA})
     print(json.dumps({
-        "fikir": args.fikir, "kategori": kategori,
+        "fikir": args.fikir, "profil": args.profil, "kategori": kategori,
         "katmanlar": katmanlar, "ekler": ekler,
         "soru": len({r["soru_id"] for r in satirlar}),
         "kanit_yuvasi": len(satirlar),
@@ -338,7 +357,7 @@ def main() -> int:
             y.strip() for r in satirlar for y in r["yedekler"].split(",") if y.strip()}),
         "farkli_host": len({r["host"] for r in satirlar}),
         "tek_yuvali_soru": zayif,
-        "yuva_siniri": args.yuva,
+        "yuva_siniri": yuva_siniri,
         "sinirin_eledigi_yuva": sum(
             int(r["mevcut_yuva"]) - int(r["yuva_sayisi"])
             for r in satirlar if r["yuva"] == "1" or r["yuva"] == 1),
