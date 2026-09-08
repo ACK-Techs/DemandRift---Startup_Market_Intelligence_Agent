@@ -1612,3 +1612,179 @@ python3 -m unittest test_butce_profilleri
 Profil, seçim ve derleme adımlarının ikisine birden verilir; zincirin geri
 kalanı değişmez. Yeni bir eksen eklendiğinde iki profile de eklenmesi gerekir —
 test düğme kümelerinin aynı kalmasını şart koşar.
+
+---
+
+# Görev 8 — Tasarımı küçük ve kontrollü bir deneyle sınamak
+
+**İstenen:** Tasarımın yalnız masa başında mantıklı değil, farklı ürün
+türlerinde doğru kaynak ve doğru veri ürettiğini küçük, kontrollü örnekle
+kanıtlamak.
+
+## 8.1 Problem: tutarlılık doğruluk değildir
+
+Yedi görev boyunca iç tutarlılık defalarca kontrol edildi ve her seferinde temiz
+çıktı: dosyalar birbiriyle çelişmiyor, hiçbir görev başkasının kuralını
+delmiyor. Ama bir sistem kendi içinde kusursuz olup gerçek dünyada yanlış
+olabilir.
+
+Sınanmamış olan şuydu:
+
+```
+derlenmiş sorgu             73
+  fiilen çalıştırılan        0
+  sonucu doğrulanan          0
+
+ölçüm alanı satırı        1388
+  artefaktta görülmüş       10
+  yalnızca beyan          1378
+```
+
+## 8.2 Kontrollü olmak ne demek
+
+Kontrollü bir deney **başarısız olabilmelidir**; yanlışlanamayan bir kanıt kanıt
+değildir. Bunun üç karşılığı var:
+
+**Ölçütler çalıştırmadan önce yazılır.** `deney.py`'deki ölçüt ve beklentiler
+koşudan önce sabitlendi. Sonuca göre değiştirilirse deney anlamını yitirir.
+
+**Negatif kontrol vardır.** Sistemin seçmemesi gerekeni seçmediği de ölçülür:
+anlamsız bir fikir reddediliyor mu, robots yasaklı kaynak sızıyor mu.
+
+**Başarısızlıklar raporlanır.** Bot koruması, boş sonuç ve eksik alan sayılır.
+
+Deney **küçüktür**: yedi fikir, kaynak başına bir-iki sorgu. Amaç kapsam değil,
+kanıt.
+
+## 8.3 Deney tasarımı
+
+Yedi ürün türü, yedi fikir — Görev 1'in *"kategori farklı kaynak paketi
+doğurur"* iddiası tek kategoride sınanırsa sınanmış olmaz:
+
+| Fikir | Beklenen kategori |
+|---|---|
+| diyabet hastaları için mobil takip uygulaması | `mobil-uygulama` |
+| react için grafik kütüphanesi | `gelistirici-araci` |
+| mobil bulmaca oyunu | `oyun` |
+| muhasebeciler için fatura yazılımı | `b2b-web-yazilimi` |
+| yerel esnaf için randevu uygulaması | `yerel-hizmet` |
+| türkçe metin özetleyen yapay zeka modeli | `yapay-zeka-urunu` |
+| wordpress için sepet eklentisi | `eklenti-entegrasyon` |
+
+İki iddia ayrı ayrı sınanır: **doğru kaynak** seçiliyor mu, ve seçilen kaynaktan
+**doğru veri** geliyor mu.
+
+## 8.4 Doğru kaynak: 40/43
+
+| Ölçüt | Ne sınıyor | Sonuç |
+|---|---|---|
+| K1 | Fikir beklenen kategoriye düşüyor mu | 7/7 |
+| K2 | Kategoriye özel kaynaklar farklı mı (<%25 örtüşme) | **18/21** |
+| K3 | Her fikrin kendine özel kaynağı var mı | 7/7 |
+| K4 | Robots yasaklı kaynak seçiliyor mu | 7/7 (sıfır) |
+| K5 | Anlamsız fikir reddediliyor mu | geçti |
+
+**K2'de kalan üç çift incelendi.** Üçünde de tek ortak kaynak Google Play
+Store'du ve üç fikrin üçü de mobil uygulamaydı — biri doğrudan, ikisi
+`mobil-uygulama` katmanıyla. Yani örtüşme Görev 1'in katman kuralının doğru
+sonucudur; mobil oyun ile mobil randevu uygulaması gerçekten aynı mağazaya
+bakmalıdır.
+
+**Eşik değiştirilmedi.** Önceden yazılan ölçüt ve sonucu olduğu gibi raporlanır.
+Yanına, sonradan eklendiği kodda ve çıktıda açıkça yazılı ikinci bir ölçüm
+kondu: paylaşılan katman hariç tutulunca çapraz örtüşme **21/21** geçiyor.
+
+Bu ayrım deneyin kendi kuralıdır — eşik sonuca göre değiştirilseydi ölçüm
+anlamını yitirirdi.
+
+## 8.5 Doğru veri: sorguları çalıştırmak iki kusur ortaya çıkardı
+
+**Yer tutucu doldurulmuyordu — 44 kaynağı etkiliyor.**
+
+Keşfedilen arama öneki iki biçimde olabiliyor: terimin sonuna eklendiği bir önek
+(`?q=`), ya da terimin **yerleştirileceği** bir yer tutucu (`?q={kelime}`).
+İkincisinde sona eklemek yer tutucuyu sorgunun içinde bırakıyordu:
+
+```
+üretilen:  workspace.google.com/intl/tr/search/?q={kelime}wordpress+sepet+plugin
+düzeltilen: workspace.google.com/intl/tr/search/?q=wordpress+sepet+plugin
+```
+
+**Yinelenen arama parametresi — npm ve GitHub.**
+
+Keşfedilen uç zaten bir arama parametresi taşıyorsa, ikinci kopya eklemek uçu
+bozuyordu:
+
+```
+üretilen:   registry.npmjs.org/-/v1/search?text=startup&size=20&text=react+grafik  → HTTP 400
+düzeltilen: registry.npmjs.org/-/v1/search?text=react+grafik&size=20               → HTTP 200
+```
+
+Düzeltmeden sonra npm gerçek API alanları döndürüyor (`api:downloads`,
+`api:description`).
+
+**Bu iki kusurun hiçbirini iç tutarlılık kontrolü bulamazdı**: dosyalar
+birbiriyle tutarlıydı, yalnızca gerçek dünyayla değildi.
+
+## 8.6 Kalan başarısızlığın tamamı tek sebepte
+
+| Ölçüt | Önceden beyan edilen beklenti | İlk koşu | Düzeltme sonrası |
+|---|---:|---:|---:|
+| V1 içerik döndü | %50 | 6/7 | **13/14** |
+| V2 konu ilgili | %70 | 1/6 | **4/13** |
+| V3 alan izi | %30 | 1/6 | **4/13** |
+
+V2 ve V3 beklentinin altında kaldı. Sebebi belirsiz değil: dönen 13 yanıt
+sınıflandırıldığında başarısızlıkların tamamı tek bir grupta toplandı.
+
+| Yanıt sınıfı | Adet | Konu ilgisi |
+|---|---:|---|
+| Sunucu HTML / API — npm, NICE, SoftwareSuggest | 4 | **4/4** |
+| İstemci JS kabuğu — Google Play, Workspace, Similarweb | 9 | **0/9** |
+| İçerik dönmedi (HTTP 403) | 1 | — |
+
+Google Play `HTTP 200` ve 400 KB döndürüyor ama arama sonuçları tarayıcıda
+JavaScript ile üretildiği için gelen HTML boş bir kabuk. **URL doğru, sorgu
+doğru, kaynak doğru — veri düz HTTP çekimiyle alınamıyor.**
+
+Bu bir kod kusuru değil, **kaynağın özelliğidir** ve katalogda kayıtlı olmayan
+bir boyuttur. Sınıflandırma sonradan eklendi ve kodda post-hoc olduğu yazılı.
+
+## 8.7 Deneyin söylediği
+
+**Doğru kaynak seçiliyor.** Yedi ürün türünün yedisi de beklenen kategoriye
+düştü, her birinin kendine özel kaynağı var, hiçbir koşuda robots yasaklı kaynak
+seçilmedi, anlamsız fikir reddedildi.
+
+**Doğru veri, sunucu tarafında üretilen kaynaklarda geliyor.** npm, NICE ve
+SoftwareSuggest için sorgular konuyla ilgili sonuç döndürdü; npm ölçüm alanlarını
+API'den verdi.
+
+**İstemci tarafında üretilen kaynaklarda gelmiyor** ve bunun sebebi ölçülmüş
+durumda. Bu, sonraki bir çalışmanın konusudur: katalogun kaynağı `sunucu-html` /
+`istemci-js` olarak da sınıflandırması gerekiyor.
+
+## 8.8 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `deney.py` | Önceden yazılan ölçütler, negatif kontroller, canlı koşu |
+| `DENEY-KAYNAK.csv` | 64 satır — ölçüt başına beklenen, gerçekleşen, geçti/kaldı |
+| `DENEY-VERI.csv` | 14 satır — sorgu başına HTTP kodu, boyut, konu ilgisi, alan izi |
+| `test_deney.py` | 16 test |
+
+Testler dört şeyi korur: her kategorinin bir fikirle temsil edilmesini,
+post-hoc ölçümlerin işaretli kalmasını, üretilen sorgularda doldurulmamış yer
+tutucu bulunmamasını ve yinelenen arama parametresi olmamasını. Son ikisi bu
+deneyin bulduğu kusurların geri gelmesini engelliyor.
+
+## 8.9 Yeniden üretim
+
+```bash
+python3 deney.py                        # yalnız kaynak doğruluğu, ağa çıkmaz
+python3 deney.py --canli --kaynak-basina 2
+python3 -m unittest test_deney
+```
+
+Ağsız koşu ölçütlerin tamamını değerlendirir; `--canli` yalnızca veri
+doğruluğu aşamasında ve robots ön kontrolünden geçmiş izinli yollarla ağa çıkar.
