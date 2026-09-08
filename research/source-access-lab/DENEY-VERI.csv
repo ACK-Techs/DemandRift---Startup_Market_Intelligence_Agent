@@ -1,0 +1,15 @@
+fikir,kategori,soru_id,kaynak,yol,sorgu,http,bayt,hata,V1_icerik_dondu,V2_konu_ilgili,V3_alan_izi
+diyabet hastaları için mobil takip uygulaması,mobil-uygulama,doygun-mu,Google Play Store,opensearch,https://play.google.com/store/search?q=diyabet+takip+app&utm_source=opensearch&hl=tr&gl=TR,200,400000,,evet,hayir,
+diyabet hastaları için mobil takip uygulaması,mobil-uygulama,giris-engeli,NICE,site_search,https://www.nice.com/search?q=diyabet+takip+clinical+regulation,200,211729,,evet,evet,
+react için grafik kütüphanesi,gelistirici-araci,doygun-mu,npm,api,https://registry.npmjs.org/-/v1/search?text=react+grafik+library&size=20,200,25143,,evet,evet,"api:description, api:downloads, api:license, api:score"
+react için grafik kütüphanesi,gelistirici-araci,lisans-modeli,npm,api,https://registry.npmjs.org/-/v1/search?text=react+grafik+library+license&size=20,200,25552,,evet,evet,"api:description, api:downloads, api:license, api:score"
+mobil bulmaca oyunu,oyun,doygun-mu,Google Play Store,opensearch,https://play.google.com/store/search?q=bulmaca+oyunu+app&utm_source=opensearch&hl=tr&gl=TR,200,400000,,evet,hayir,
+mobil bulmaca oyunu,oyun,kesfedilebilirlik,Google Play Store,opensearch,https://play.google.com/store/search?q=bulmaca+oyunu+app+ranking&utm_source=opensearch&hl=tr&gl=TR,200,400000,,evet,hayir,
+muhasebeciler için fatura yazılımı,b2b-web-yazilimi,doygun-mu,SoftwareSuggest,site_search,https://www.softwaresuggest.com/search/index?query=muhasebeciler+fatura+software,200,39690,,evet,evet,
+muhasebeciler için fatura yazılımı,b2b-web-yazilimi,giris-engeli,Investing.com,site_search,https://www.investing.com/search?q=muhasebeciler+fatura+finance+regulation,403,0,http_403,hayir,hayir,
+yerel esnaf için randevu uygulaması,yerel-hizmet,doygun-mu,Google Play Store,opensearch,https://play.google.com/store/search?q=yerel+esnaf+randevu+app&utm_source=opensearch&hl=tr&gl=TR,200,400000,,evet,hayir,
+yerel esnaf için randevu uygulaması,yerel-hizmet,kesfedilebilirlik,Google Play Store,opensearch,https://play.google.com/store/search?q=yerel+esnaf+randevu+app+ranking&utm_source=opensearch&hl=tr&gl=TR,200,400000,,evet,hayir,
+türkçe metin özetleyen yapay zeka modeli,yapay-zeka-urunu,rakip-kim,Similarweb,site_search,https://www.similarweb.com/search/?q=t%C3%BCrk%C3%A7e+metin+%C3%B6zetleyen+yapay+zeka+modeli+domain+alternative,200,400000,,evet,hayir,"json-ld:description, json-ld:name, json-ld:url"
+türkçe metin özetleyen yapay zeka modeli,yapay-zeka-urunu,talep-var-mi,Similarweb,site_search,https://www.similarweb.com/search/?q=t%C3%BCrk%C3%A7e+metin+%C3%B6zetleyen+yapay+zeka+modeli+keyword,200,400000,,evet,hayir,"json-ld:description, json-ld:name, json-ld:url"
+wordpress için sepet eklentisi,eklenti-entegrasyon,doygun-mu,Google Workspace Marketplace,site_search,https://workspace.google.com/intl/tr/search/?q=wordpress+sepet+plugin,200,359007,,evet,hayir,
+wordpress için sepet eklentisi,eklenti-entegrasyon,odeme-istegi,Google Workspace Marketplace,site_search,https://workspace.google.com/intl/tr/search/?q=wordpress+sepet+plugin+pricing,200,359007,,evet,hayir,

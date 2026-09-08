@@ -105,7 +105,16 @@ def derle(metin: str, yol: str, yuzey: dict[str, str], pazar: str,
     kodlu = urllib.parse.quote_plus(metin)
 
     if yol == "site_search" and yuzey.get("site_arama"):
-        return "uzak-url", _pazar_ekle(yuzey["site_arama"] + kodlu, pazar), ""
+        uc = yuzey["site_arama"]
+        # Kesfedilen arama oneki iki bicimde olabilir: '?q=' gibi terimin
+        # sonuna eklendigi bir onek, ya da '?q={kelime}' gibi terimin
+        # yerlestirilecegi bir yer tutucu. Ikincisinde sonuna eklemek
+        # yer tutucuyu sorgunun icinde birakir.
+        if re.search(r"\{[^}]+\}", uc):
+            url = re.sub(r"\{[^}]+\}", kodlu, uc)
+        else:
+            url = uc + kodlu
+        return "uzak-url", _pazar_ekle(url, pazar), ""
 
     if yol == "api" and yuzey.get("api_ucu"):
         uc = yuzey["api_ucu"]
@@ -115,8 +124,16 @@ def derle(metin: str, yol: str, yuzey: dict[str, str], pazar: str,
             return "", "", f"API parametresi tanımsız: {host}"
         if parametre == "":
             return "", "", f"API serbest metin araması kabul etmiyor: {host}"
-        ayirici = "&" if "?" in uc else "?"
-        return "uzak-url", f"{uc}{ayirici}{parametre}={kodlu}", ""
+        # Kesfedilen uc arama parametresini zaten tasiyor olabilir (npm'de
+        # text=startup, GitHub'da q=stars:>50000). Sonuna ikinci bir kopya
+        # eklemek yinelenen parametre uretir ve uc 400 dondurur; parametre
+        # varsa degeri degistirilir.
+        ayrik = urllib.parse.urlsplit(uc)
+        sorgu_alanlari = dict(urllib.parse.parse_qsl(ayrik.query))
+        sorgu_alanlari[parametre] = metin
+        url = urllib.parse.urlunsplit(
+            ayrik._replace(query=urllib.parse.urlencode(sorgu_alanlari)))
+        return "uzak-url", url, ""
 
     if yol == "opensearch" and yuzey.get("opensearch"):
         # Sablon kaynagin kendi tanim dosyasindan alinmistir; uydurulmaz.

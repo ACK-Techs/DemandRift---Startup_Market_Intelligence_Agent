@@ -157,6 +157,26 @@ class DerlemeTests(unittest.TestCase):
         self.assertEqual("", derleyici._farkli_alan(
             "https://play.google.com", "https://play.google.com/store/search?q=x"))
 
+    def test_yer_tutuculu_arama_oneki_doldurulur(self):
+        """Kesfedilen onek '?q={kelime}' bicimindeyse sonuna eklemek yer
+        tutucuyu sorgunun icinde birakir; 44 kaynak bu bicimde."""
+        _t, sorgu, _n = derleyici.derle(
+            "diyabet takip", "site_search",
+            {"site_arama": "https://ornek.com/search/?q={kelime}"}, "TR")
+        self.assertNotIn("{", sorgu)
+        self.assertIn("q=diyabet+takip", sorgu)
+
+    def test_api_ucundaki_mevcut_arama_parametresi_degistirilir(self):
+        """npm'in ucu zaten text=startup tasiyor; ikinci bir text= eklemek
+        yinelenen parametre uretir ve uc 400 doner."""
+        _t, sorgu, _n = derleyici.derle(
+            "react grafik", "api",
+            {"api_ucu": "https://registry.npmjs.org/-/v1/search?text=startup&size=20"},
+            "TR")
+        self.assertEqual(1, sorgu.count("text="), sorgu)
+        self.assertIn("size=20", sorgu)
+        self.assertNotIn("startup", sorgu)
+
     def test_yerel_yollar_url_uretmez(self):
         """400 kaynagin sayfasi zaten indirilmis; onlara URL uretmek yaniltir."""
         for yol in ("fulltext", "local_index"):
