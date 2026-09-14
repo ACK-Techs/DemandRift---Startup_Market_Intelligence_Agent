@@ -78,6 +78,13 @@ button:focus-visible, a:focus-visible {
 
 ::selection { background: var(--brand-soft); color: var(--brand-deep); }
 
+.overflow-x-auto { -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+
+@media (max-width: 639px) {
+  html, body { overflow-x: hidden; }
+  input, textarea, select { font-size: 16px; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .motion-enter { animation: enter 340ms cubic-bezier(.2,.8,.2,1) both; }
   .motion-delay-1 { animation-delay: 55ms; }

@@ -71,13 +71,20 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
   );
 }
 
+function MobileNavigation({ onOpen }: { onOpen: () => void }) {
+  const pathname = usePathname();
+  const items = [primaryNavigation[0], primaryNavigation[2], workspaceNavigation[0], workspaceNavigation[1]];
+  return <nav aria-label="Quick navigation" className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-[var(--line)] bg-[color-mix(in_srgb,var(--surface)_92%,transparent)] px-2 pb-[max(.5rem,env(safe-area-inset-bottom))] pt-2 backdrop-blur-xl lg:hidden">{items.map(({ label, icon: Icon, href }) => { const active = pathname === href; return <Link aria-current={active ? "page" : undefined} className={`flex min-w-0 flex-col items-center gap-1 rounded-lg py-1.5 text-[10px] font-medium ${active ? "text-[var(--brand-deep)]" : "text-[#74757f]"}`} href={href} key={label}><span className={`grid h-8 w-10 place-items-center rounded-lg ${active ? "bg-[var(--brand-soft)] text-[var(--brand)]" : ""}`}><Icon aria-hidden="true" className="h-4 w-4" strokeWidth={2} /></span><span className="truncate">{label}</span></Link>; })}<button aria-label="Open more navigation" className="flex min-w-0 flex-col items-center gap-1 rounded-lg py-1.5 text-[10px] font-medium text-[#74757f]" onClick={onOpen} type="button"><span className="grid h-8 w-10 place-items-center rounded-lg"><Menu aria-hidden="true" className="h-4 w-4" strokeWidth={2} /></span><span>More</span></button></nav>;
+}
+
 export function AppSidebar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <aside className="sticky top-0 hidden h-dvh w-[248px] shrink-0 flex-col border-r border-[var(--line)] bg-white lg:flex"><SidebarContent /></aside>
-      <button aria-label="Open navigation" className="fixed left-4 top-4 z-30 grid h-10 w-10 place-items-center rounded-lg border border-[var(--line)] bg-white text-[#595a65] shadow-sm lg:hidden" onClick={() => setIsOpen(true)} type="button"><Menu className="h-4 w-4" /></button>
+      <button aria-label="Open navigation" className="fixed left-4 top-3 z-30 grid h-10 w-10 place-items-center rounded-lg border border-[var(--line)] bg-white text-[#595a65] shadow-sm lg:hidden" onClick={() => setIsOpen(true)} type="button"><Menu className="h-4 w-4" /></button>
       {isOpen ? <div className="fixed inset-0 z-40 lg:hidden"><button aria-label="Close navigation" className="absolute inset-0 bg-[#17171c]/20" onClick={() => setIsOpen(false)} type="button" /><aside className="relative flex h-full w-[280px] flex-col bg-white shadow-2xl"><SidebarContent onClose={() => setIsOpen(false)} /></aside></div> : null}
+      <MobileNavigation onOpen={() => setIsOpen(true)} />
     </>
   );
 }
