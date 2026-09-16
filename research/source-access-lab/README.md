@@ -2,7 +2,7 @@
 
 **Sahip:** Ayselin Aydoğdu · **Görev:** [`tasks/ayselin-task/`](../../tasks/ayselin-task/)
 
-Bu klasör iki ayrı çalışmayı barındırıyor. İkisi de aynı 636 kaynaklı envanteri
+Bu klasör üç ayrı çalışmayı barındırıyor. Üçü de aynı 636 kaynaklı envanteri
 kullanıyor ama farklı soruları cevaplıyorlar.
 
 | | Soru | Anlatı |
@@ -14,7 +14,7 @@ kullanıyor ama farklı soruları cevaplıyorlar.
 **Başlangıç noktası [`KILAVUZ.md`](KILAVUZ.md)** — dokuz görevi sırayla anlatır,
 her bölümde problem, izlenen yol, sonuç ve gerçek CSV satır örnekleri vardır.
 
-> **Uyarı:** Aşağıdaki "Faz A" bölümlerinde geçen *Görev 1/2/3* ile kılavuzdaki
+> **Uyarı:** Aşağıdaki "A" bölümünde geçen *Görev 1/2/3* ile kılavuzdaki
 > *Görev 1–9* **aynı şeyler değildir.** İlki erişim çalışmasının adımları,
 > ikincisi araştırma tasarımının görevleridir.
 
