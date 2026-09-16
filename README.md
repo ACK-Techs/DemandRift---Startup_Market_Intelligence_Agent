@@ -66,6 +66,19 @@ Read the project documents in this order:
 3. [`Faz1-Plan.md`](Faz1-Plan.md) through [`Faz7-Plan.md`](Faz7-Plan.md) — phase-specific plans
 4. [`.orchestrator/SYSTEM.md`](.orchestrator/SYSTEM.md) — delivery control plane and evidence-based work-item lifecycle
 
+## Repository map
+
+- [`research/source-access-lab/`](research/source-access-lab/) — source-access
+  evidence, provenance indexes, reproducible tools, tests, and constrained
+  pilots.
+- [`research/source-access-lab/docs/`](research/source-access-lab/docs/) —
+  dated access reports and pilot contracts, separate from canonical evidence.
+- [`research/`](research/) — research workspaces and internal market records.
+- [`tasks/`](tasks/) — durable owner-specific project tasks. The current
+  research-design brief is [`tasks/ayselin-task/`](tasks/ayselin-task/).
+- [`internal/pazar/`](internal/pazar/) — private market-positioning record;
+  it is not product-runtime data.
+
 ## Local configuration
 
 Only safe templates are committed. Copy the appropriate template and replace blank or `replace-with-*` values locally:
