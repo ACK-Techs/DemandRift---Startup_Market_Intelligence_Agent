@@ -97,19 +97,19 @@ Kaynak: kanonik görev metni (`tasks/ayselin-task/README.md`, T01).
 
 ### Görev 1 kategorileriyle eşleme
 
-| Görev 1 kategorisi | Ürün tipi | Not |
-|---|---|---|
-| `b2b-web-yazilimi` | `b2b-saas` | — |
-| `eklenti-entegrasyon` | `marketplace` | Eklenti ürünü ile eklenti mağazası farklı şeyler; ürün tipi olarak marketplace'e eşlendi, doğrulanmalı |
-| `gelistirici-araci` | `developer-tool` | — |
-| `mobil-uygulama` | `consumer-mobile-web` | — |
-| `oyun` | `consumer-mobile-web` | Kanonik listede ayrı oyun tipi yok; consumer'a eşlendi ama kaynak paketi belirgin şekilde farklı |
-| `yapay-zeka-urunu` | `developer-tool` | — |
-| `yerel-hizmet` | `local-service` | — |
+Kanonik liste ürün tipi eksenini tanımlar. Görev 1'in kategorileri aynı
+ekseni farklı kesen eski bir denemedir; uyuşmayan yerde **kanonik liste
+geçerlidir.**
 
-Kanonik listede `oyun` ve `eklenti-entegrasyon` için ayrı tip yok;
-ikisi de eşlendi ama kaynak paketleri belirgin biçimde farklı.
-**Mentöre sorulacak nokta budur.**
+| Görev 1 kategorisi | Ürün tipi | Karar kuralı |
+|---|---|---|
+| `b2b-web-yazilimi` | `b2b-saas` | Tek eşleme |
+| `eklenti-entegrasyon` | `b2b-saas`, `ecommerce-enablement`, `consumer-mobile-web` | Barındıran platformun alıcısına bakılır: işletme yazılımına eklenti (Atlassian, Slack) → b2b-saas; e-ticaret platformuna eklenti (Shopify, WooCommerce) → ecommerce-enablement; tarayıcı eklentisi → consumer-mobile-web. Platform belirsizse ürün tipi 'belirlenemedi' yazılır, tahmin edilmez. |
+| `gelistirici-araci` | `developer-tool` | Tek eşleme |
+| `mobil-uygulama` | `consumer-mobile-web` | Tek eşleme |
+| `oyun` | `consumer-mobile-web` | Tek eşleme; oyunun ayırt ediciliği ürün tipinde değil kaynak ailesinde taşınır (oyun dikeyi ailesi). |
+| `yapay-zeka-urunu` | `developer-tool` | Tek eşleme |
+| `yerel-hizmet` | `local-service` | Tek eşleme |
 
 ---
 

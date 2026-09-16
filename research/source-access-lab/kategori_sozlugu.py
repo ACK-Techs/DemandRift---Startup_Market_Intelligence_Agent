@@ -110,23 +110,44 @@ URUN_TIPI: dict[str, dict[str, Any]] = {
     },
 }
 
-# Gorev 1'de uretilen kategorilerin bu eksene eslenmesi. Esleme tam degildir;
-# uyusmayan yerler acikca isaretlidir ve mentore sorulacak notlardir.
-URUN_TIPI_ESLEME: dict[str, str] = {
-    "b2b-web-yazilimi": "b2b-saas",
-    "gelistirici-araci": "developer-tool",
-    "yapay-zeka-urunu": "developer-tool",
-    "mobil-uygulama": "consumer-mobile-web",
-    "yerel-hizmet": "local-service",
-    "eklenti-entegrasyon": "marketplace",      # eklenti magazasi iki tarafli
-    "oyun": "consumer-mobile-web",
+# Gorev 1'de uretilen kategorilerin bu eksene eslenmesi.
+#
+# Kanonik liste urun tipi eksenini tanimlar; gorev 1'in kategorileri ayni
+# ekseni farkli kesen eski bir denemedir. Esleme bir gecis tablosudur, iki
+# taksonomiyi uzlastirma cabasi degil: uyusmayan yerde **kanonik liste
+# gecerlidir** ve eski kategorinin nasil boluneceği asagida yazilidir.
+URUN_TIPI_ESLEME: dict[str, tuple[str, ...]] = {
+    "b2b-web-yazilimi": ("b2b-saas",),
+    "gelistirici-araci": ("developer-tool",),
+    "yapay-zeka-urunu": ("developer-tool",),
+    "mobil-uygulama": ("consumer-mobile-web",),
+    "yerel-hizmet": ("local-service",),
+    # Bir oyun tuketici urunudur. Kanonik listede ayri bir oyun tipi
+    # olmamasi bir eksik degil, bilincli bir kesimdir: oyunun arastirma
+    # niyeti tuketici uruntununkiyle aynidir (talep, doygunluk, odeme
+    # istegi). Kaynak paketinin farkli olmasi urun tipini degil KAYNAK
+    # AILESI eksenini ilgilendirir -- oyun dikeyi zaten ayri bir ailedir.
+    "oyun": ("consumer-mobile-web",),
+    # Eklenti URUNU ile eklenti MAGAZASI farkli seylerdir. Bir WordPress
+    # eklentisi gelistirmek pazar yeri kurmak degildir; o pazar yerinde
+    # satilan urundur. Tipi, hangi platformda kime satildigina gore
+    # belirlenir ve bu bir coklu etiket durumudur.
+    "eklenti-entegrasyon": ("b2b-saas", "ecommerce-enablement",
+                            "consumer-mobile-web"),
 }
-# Kanonik listede karsiligi tam oturmayanlar: sorulacak.
-ESLEME_NOTU: dict[str, str] = {
-    "eklenti-entegrasyon": ("Eklenti ürünü ile eklenti mağazası farklı şeyler; "
-                            "ürün tipi olarak marketplace'e eşlendi, doğrulanmalı"),
-    "oyun": ("Kanonik listede ayrı oyun tipi yok; consumer'a eşlendi ama "
-             "kaynak paketi belirgin şekilde farklı"),
+
+# Coklu esleme durumunda hangisinin secilecegini soyleyen kural. Karar
+# mentore birakilmaz; olcute baglanir.
+ESLEME_KURALI: dict[str, str] = {
+    "eklenti-entegrasyon": (
+        "Barındıran platformun alıcısına bakılır: işletme yazılımına eklenti "
+        "(Atlassian, Slack) → b2b-saas; e-ticaret platformuna eklenti "
+        "(Shopify, WooCommerce) → ecommerce-enablement; tarayıcı eklentisi "
+        "→ consumer-mobile-web. Platform belirsizse ürün tipi 'belirlenemedi' "
+        "yazılır, tahmin edilmez."),
+    "oyun": (
+        "Tek eşleme; oyunun ayırt ediciliği ürün tipinde değil kaynak "
+        "ailesinde taşınır (oyun dikeyi ailesi)."),
 }
 
 # --------------------------------------------------------------------------
@@ -431,15 +452,16 @@ def sozluk_belgesi(pilot: list[dict[str, Any]], eksikler: list[dict[str, Any]]) 
         f"**Çoklu etiket:** {COKLU_ETIKET['urun_tipi']}", "",
         f"**Belirsiz durumu:** {BELIRSIZ_DURUMU['urun_tipi']}", "",
         "### Görev 1 kategorileriyle eşleme", "",
-        "| Görev 1 kategorisi | Ürün tipi | Not |", "|---|---|---|",
-    ]
-    for eski, yeni in sorted(URUN_TIPI_ESLEME.items()):
-        satir.append(f"| `{eski}` | `{yeni}` | {ESLEME_NOTU.get(eski, '—')} |")
-    satir += [
+        "Kanonik liste ürün tipi eksenini tanımlar. Görev 1'in kategorileri aynı",
+        "ekseni farklı kesen eski bir denemedir; uyuşmayan yerde **kanonik liste",
+        "geçerlidir.**",
         "",
-        "Kanonik listede `oyun` ve `eklenti-entegrasyon` için ayrı tip yok;",
-        "ikisi de eşlendi ama kaynak paketleri belirgin biçimde farklı.",
-        "**Mentöre sorulacak nokta budur.**",
+        "| Görev 1 kategorisi | Ürün tipi | Karar kuralı |", "|---|---|---|",
+    ]
+    for eski_ad, yeni_tipler in sorted(URUN_TIPI_ESLEME.items()):
+        tipler = ", ".join(f"`{x}`" for x in yeni_tipler)
+        satir.append(f"| `{eski_ad}` | {tipler} | {ESLEME_KURALI.get(eski_ad, 'Tek eşleme')} |")
+    satir += [
         "",
         "---", "",
         "## Eksen 2 — Kaynak ailesi", "",
@@ -567,8 +589,7 @@ def main() -> int:
         for g in r["kaynak_grubu"].split(" | "):
             aile_kaynaklari[g.strip()].add(r["kaynak"])
             kaynak_ailesi[r["kaynak"]].add(g.strip())
-        tip = URUN_TIPI_ESLEME.get(r["hedef"])
-        if tip:
+        for tip in URUN_TIPI_ESLEME.get(r["hedef"], ()):
             kaynak_urun_tipi[r["kaynak"]].add(tip)
 
     # Kaynak basina acilabilir artefaktlar

@@ -40,8 +40,21 @@ class EksenAyrimiTests(unittest.TestCase):
         self.assertEqual(set(), kategoriler - set(sozluk.URUN_TIPI_ESLEME))
 
     def test_esleme_hedefleri_gercek_urun_tipi(self):
-        self.assertEqual(set(), set(sozluk.URUN_TIPI_ESLEME.values())
-                         - set(sozluk.URUN_TIPI))
+        hedefler = {t for tipler in sozluk.URUN_TIPI_ESLEME.values() for t in tipler}
+        self.assertEqual(set(), hedefler - set(sozluk.URUN_TIPI))
+
+    def test_coklu_esleme_karar_kurali_tasir(self):
+        """Birden fazla tipe eslenen kategori nasil secilecegini soylemeli;
+        karar mentore birakilmaz, olcute baglanir."""
+        for eski, tipler in sozluk.URUN_TIPI_ESLEME.items():
+            if len(tipler) > 1:
+                self.assertIn(eski, sozluk.ESLEME_KURALI, eski)
+                self.assertTrue(sozluk.ESLEME_KURALI[eski].strip())
+
+    def test_eklenti_urunu_marketplace_degildir(self):
+        """Eklenti urunu, pazar yerinde SATILAN urundur; pazar yeri degil."""
+        self.assertNotIn("marketplace",
+                         sozluk.URUN_TIPI_ESLEME["eklenti-entegrasyon"])
 
 
 class KokYoluTests(unittest.TestCase):
