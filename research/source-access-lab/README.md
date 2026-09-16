@@ -1,175 +1,102 @@
 # Kaynak Erişim Laboratuvarı
 
-DemandRift'in araştırma motoru 636 web kaynağından veri toplamayı planlıyor. Bu
-klasör üç soruyu cevaplıyor: **hangi kaynaklar tamamlandı**, **eksik olanların
-verisi nasıl çekildi**, ve **bir anahtar kelime bu kaynaklara nasıl sorulur**.
+**Sahip:** Ayselin Aydoğdu · **Görev:** [`tasks/ayselin-task/`](../../tasks/ayselin-task/)
 
-Bütün sayılar artefaktlardan üretilir, elle sayım yoktur. `çekildi` etiketi,
-en az bir içerik yüzeyinin başarıyla alındığını gösteren bir **erişim
-snapshot**'ıdır; tek başına araştırma sorusuna uygun, güncel veya alıntılanabilir
-karar kanıtı anlamına gelmez.
+Bu klasör iki ayrı çalışmayı barındırıyor. İkisi de aynı 636 kaynaklı envanteri
+kullanıyor ama farklı soruları cevaplıyorlar.
 
-## Güncel durum
+| | Soru | Anlatı |
+|---|---|---|
+| **A. Erişim laboratuvarı** | Bu kaynaklara ulaşabiliyor muyuz, ne indi? | Bu dosyanın alt bölümleri |
+| **B. Araştırma tasarımı** | Bir ürün fikri geldiğinde hangi kaynağa ne sorulur? | [`KILAVUZ.md`](KILAVUZ.md) |
+
+**Başlangıç noktası [`KILAVUZ.md`](KILAVUZ.md)** — dokuz görevi sırayla anlatır,
+her bölümde problem, izlenen yol, sonuç ve gerçek CSV satır örnekleri vardır.
+
+> **Uyarı:** Aşağıdaki "Faz A" bölümlerinde geçen *Görev 1/2/3* ile kılavuzdaki
+> *Görev 1–9* **aynı şeyler değildir.** İlki erişim çalışmasının adımları,
+> ikincisi araştırma tasarımının görevleridir.
+
+---
+
+## B. Araştırma tasarımı — dokuz görev ve çıktıları
+
+| # | Görev | Çıktı |
+|---|---|---|
+| 1 | Ürün kategorileri | [`URUN-KATEGORILERI.csv`](URUN-KATEGORILERI.csv) (15) · [`KATEGORI-KAYNAK.csv`](KATEGORI-KAYNAK.csv) (658) |
+| 2 | Sorular ve kanıt gereksinimleri | [`KATEGORI-SORU.csv`](KATEGORI-SORU.csv) (198) |
+| 3 | Aday katalog | [`ADAY-KATALOG.csv`](ADAY-KATALOG.csv) (636) |
+| 4 | Kaynak yeteneği ve veri alanları | [`KAYNAK-ALAN.csv`](KAYNAK-ALAN.csv) (3218) |
+| 5 | Fikirden kaynak paketine | [`SECIM-ORNEKLERI.csv`](SECIM-ORNEKLERI.csv) (73) |
+| 6 | Sorgu şablonları | [`DERLENMIS-SORGULAR.csv`](DERLENMIS-SORGULAR.csv) (73) · [`-US`](DERLENMIS-SORGULAR-US.csv) · [`OPENSEARCH-SABLONLARI.csv`](OPENSEARCH-SABLONLARI.csv) |
+| 7 | İki bütçe seviyesi | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) (6) |
+| 8 | Kontrollü pilot deney | [`DENEY-KAYNAK.csv`](DENEY-KAYNAK.csv) (64) · [`DENEY-VERI.csv`](DENEY-VERI.csv) (14) |
+| 9 | Kategori sözlüğü | [`KATEGORI-SOZLUGU.md`](KATEGORI-SOZLUGU.md) · [`INCELEME-GUNLUGU.md`](INCELEME-GUNLUGU.md) · [`PILOT-KAYITLAR.csv`](PILOT-KAYITLAR.csv) (97) · [`PILOT-EKSIKLER.csv`](PILOT-EKSIKLER.csv) (3) |
+
+Her çıktı bir script tarafından üretilir; elle yazılmış sayı yoktur. Üretici
+dosyalar `build_*.py`, `select_sources.py`, `compile_queries.py`,
+`butce_profilleri.py`, `deney.py` ve `kategori_sozlugu.py`.
+
+### Zincir
+
+```text
+ürün fikri → kategori → araştırma sorusu → gerekli kanıt → kaynak ailesi
+          → kaynak yeteneği → veri alanı → sorgu şablonu → bütçe/fallback
+```
+
+---
+
+## A. Erişim laboratuvarı — 636 kaynağa erişim
+
+`çekildi` etiketi, en az bir içerik yüzeyinin başarıyla alındığını gösteren bir
+**erişim snapshot**'ıdır; tek başına araştırma sorusuna uygun, güncel veya
+alıntılanabilir karar kanıtı anlamına gelmez.
 
 | | Kaynak |
 |---|---:|
-| ✅ Verisi çekildi | **534** |
-| ❌ Adresi var ama veri alınamadı | 98 |
-| ❌ Adresi bulunamadı | 4 |
+| Verisi çekildi | **534** |
+| Kısmi | 44 |
+| Adresi var, veri alınamadı | 54 |
+| Adresi bulunamadı | 4 |
 | **Toplam** | **636** |
 
-Veri alınamayan 98 kaynağın 35'i `robots_disallowed` — site taranmasını istemiyor
-ve buna uyuluyor. Bunlar kapsam dışı sayılırsa oran **534/601 = %88.9**.
+Defter: [`KAYNAK-DEFTERI.csv`](KAYNAK-DEFTERI.csv) ·
+Artefakt dizini: [`ARTEFAKT-DIZINI.csv`](ARTEFAKT-DIZINI.csv) ·
+Arama yüzeyleri: [`ARAMA-YUZEYLERI.csv`](ARAMA-YUZEYLERI.csv)
 
-Defter bu üç durumun yanında bir ayrım daha tutar: veri alınamayanların bir
-kısmında sunucuya ulaşılıp yalnızca `robots.txt` indirilebilmiş (`kismi`), bir
-kısmında hiçbir dosya alınamamış (`erisim_yok`). Kullanılabilir veri ikisinde de
-yok; ayrım engelin nerede olduğunu gösterir.
+Raporlar [`docs/reports/`](docs/reports/), pilot çalışmalar
+[`docs/pilots/`](docs/pilots/) altında.
 
-## Dizin haritası
+### İndirilen içerik
 
-| Konum | Amaç |
-|---|---|
-| `source_manifest.json`, `SITE-LISTESI.md` | Aday kaynak kataloğu ve resmî origin çözümlemesi |
-| `KAYNAK-DEFTERI.*`, `ARTEFAKT-DIZINI.csv`, `ARAMA-YUZEYLERI.csv` | Kanonik erişim, artefact provenance ve arama-yüzeyi indeksleri |
-| `results/` | Koşu sonuçları ve içerik-adresli ham artefact'lar; [açıklama](results/README.md) |
-| `veriler-ornek/` | İncelenebilir, hash'li örnek içerik alt kümesi |
-| `docs/reports/` | Tarihli erişim raporları ve yeniden üretilebilir rapor çıktıları |
-| `docs/pilots/` | Dar kapsamlı DuckDuckGo ve Hacker News pilot sözleşmeleri |
-| `*.py`, `test_*.py` | Acquisition araçları ve offline testler |
+`results/raw/` altında 2323 artefakt (721 MB) var ve `.gitignore` ile depo
+dışında tutulur. Her artefakt sha256 ile adlandırılmıştır;
+`ARTEFAKT-DIZINI.csv` hangi kaynağın hangi dosyaya karşılık geldiğini gösterir,
+böylece her sayı izlenebilir kalır. Ayrıntı: [`results/README.md`](results/README.md).
 
-Tarihli raporlar yalnız o koşunun gözlemidir. Güncel durum için önce kanonik
-indeksleri ve ilgili koşu artefact'ını kullanın.
-
-## Görev 1 — hangi kaynaklar tamamlandı
-
-| Dosya | İçerik |
-|---|---|
-| `KAYNAK-DEFTERI.md` | Özet tablo + 636 satırlık liste |
-| `KAYNAK-DEFTERI.csv` | Aynı veri, filtrelenebilir |
-| `build_coverage_ledger.py` | Defteri koşu artefaktlarından üretir |
-
-Her satırda: kaynağın adresi, adresin nasıl doğrulandığı, güven seviyesi, çekilen
-yüzeyler (`root_html`, `sitemap_xml`, `rss_feed`, `entry_url`, API) ve
-çekilemediyse teknik sebebi.
-
-```bash
-python3 build_coverage_ledger.py results/bulk-site-access-*.json results/common-crawl-*.json
-```
-
-## Görev 2 — eksik kaynakların verisini çekme
-
-| Dosya | Rolü |
-|---|---|
-| `source_manifest.json` | 631 adres, `entry_path`'ler, anahtarsız API uçları |
-| `bulk_site_access_lab.py` | Çekim motoru: robots kontrolü, çıkış güvenliği, istek bütçesi |
-| `adaptive_domain_pass.py` | Wikidata P856 ile adres çözümleme |
-| `resolve_missing_domains.py` / `merge_resolved_domains.py` | Çözümleme turu ve manifeste işleme |
-| `secondary_index_pass.py` | Wikipedia dış bağlantıları, kendi arşivimiz, GitHub homepage |
-| `common_crawl_pass.py` / `survey_common_crawl.py` | Bize kapalı sitelerin içeriğini Common Crawl arşivinden alma |
-| `ARTEFAKT-DIZINI.csv` | **Hangi dosya, hangi kaynağın hangi adresinden, ne zaman alındı** |
-| `build_artifact_index.py` / `export_by_source.py` | Dizin ve okunabilir klasör üretimi |
-
-### Ham içerik nasıl saklanıyor
-
-Ham içerik `results/raw/<sha256>.bin` olarak saklanır: ad içeriğin özetidir, bu
-sayede aynı içerik iki kez inmez ve bozulma tespit edilir. 16 KB altındaki
-dosyalar ayrı dosya açılmadan koşu JSON'unun içinde base64 durur.
-
-Ad siteyi göstermediği için tek başına okunamaz; **`ARTEFAKT-DIZINI.csv` o bağı
-kurar.** Her satır bir indirilen dosyanın künyesidir:
-
-| Sütun | Örnek |
-|---|---|
-| `ad`, `adres` | Forbes, `https://forbes.com` |
-| `yontem` | `sitemap_xml` |
-| `cekilen_url` | `https://www.forbes.com/news_sitemap.xml` |
-| `mime`, `bayt` | `application/xml`, 476.781 |
-| `sha256`, `dosya` | `abb98e90...`, `results/raw/abb98e90....bin` |
-| `sonuc` | `ok` — başarılı içerik |
-| `kosu`, `tarih` | Hangi koşuda, ne zaman |
-
-`sonuc` sütunu önemli: arşivde yalnızca başarılı içerik yok. Başarısız isteklerin
-gövdesi de diske yazılmış olabilir (kısmen inen `response_too_large` yanıtı, bot
-koruma sayfası). Bunlar da dizine alınır ama `sonuc` alanı onları `ok` olanlardan
-ayırır — aksi hâlde arşivde kime ait olduğu okunamayan dosyalar kalırdı.
-
-`export_by_source.py` aynı veriyi site adıyla düzenlenmiş `veriler/<Kaynak>/`
-klasörlerine çıkarır; her klasörde `_kaynak.json` kaynağın adını, adresini,
-durumunu ve her dosyanın hangi URL'den ne zaman alındığını taşır.
-
-### İçeriği görmek isteyenler için
-
-Koşu JSON'ları ve bu checkout'a dahil edilmiş ham artefact'lar `results/` altında
-tutulur. Bir yayındaki tam corpus'un mevcut olduğu varsayılmaz: kullanılabilir
-artefact, hash ve koşu bağını daima `ARTEFAKT-DIZINI.csv` ile doğrulayın. Verinin
-okunabilir örneklerini görmek için **`veriler-ornek/`** klasörü tutulur: 252
-kaynaktan seçilmiş gerçek içerik alt kümesi.
-
-Seçim rastgele değil kurallıdır — yalnızca içerik yüzeyleri (robots.txt hariç),
-başarılı istekler, dosya başına 90 KB ve toplam 5 MB sınırıyla:
-
-```bash
-python3 export_by_source.py --only-fetched --out veriler-ornek \
-  --methods "root_html,entry_url,sitemap_xml,rss_feed,common_crawl_warc" \
-  --max-file-bytes 90000 --max-total-bytes 5000000
-```
-
-Tam arşiv dışarıdan geri yüklenecek veya yeniden üretilecekse aynı komut sınır
-olmadan çalıştırılır; sonuç her zaman yeni bir koşu, tarih ve hash manifestiyle
-kaydedilmelidir.
-
-## Görev 3 — anahtar kelime ile arama
-
-Genel web araması ölçüldü ve kapalı çıktı: DuckDuckGo 12 sorgudan sonra kesiyor
-(546 sorguda 534 `origin_circuit_open`), Mojeek ve Marginalia robots.txt'te
-`/search` yolunu yasaklıyor, Brave API Şubat 2026'da ücretliye geçti.
-
-Bunun yerine **her kaynağın kendi arama yüzeyi** kataloglandı.
-
-| Dosya | İçerik |
-|---|---|
-| `ARAMA-YUZEYLERI.csv` | 578 kaynak için hangi yolla sorulacağı |
-| `build_search_surfaces.py` | Kataloğu artefaktlardan üretir (ağ isteği yok) |
-| `keyword_search_pass.py` | Kelimeyi alır, doğru yolu seçer, sorar, sonucu arşive yazar |
-
-| Yol | Kaynak | Ne yapılır |
-|---|---:|---|
-| `opensearch` | 36 | Site arama şablonunu kendisi ilan ediyor |
-| `site_search` | 84 | Sayfadan çıkarılan `?q=` kalıbı |
-| `api` | 13 | Anahtarsız resmî API |
-| `local_index` | 183 | Sitemap'ten toplanan 339.488 URL'de arama |
-| `fulltext` | 217 | İndirilmiş sayfa metninde arama |
-| `yok` | 45 | Hiçbir yüzey bulunamadı |
-
-**636 kaynağın 533'üne** anahtar kelimeyle sorulabiliyor: 133'üne canlı sorgu,
-400'üne kendi verimizde arama.
-
-```bash
-python3 build_search_surfaces.py                      # katalog + URL dizini
-python3 keyword_search_pass.py "market intelligence"  # yalnızca yerel arama
-python3 keyword_search_pass.py "market intelligence" --live --limit 40
-```
-
-Örnek: arXiv'in ana sayfasındaki `<form action="https://arxiv.org/search">`
-formundan `arxiv.org/search?query={kelime}` kalıbı çıkarıldı. Katalog yolu
-gösterir; çekim aşaması politikayı ayrıca kontrol eder — arXiv `/search` yolunu
-robots.txt ile kapattığı için sorgu `robots_disallowed` ile durur. İkisi ayrı
-bilgidir ve ayrı kaydedilir.
+---
 
 ## Testler
 
 ```bash
-python3 -m unittest discover -s . -p "test_*.py"
+cd research/source-access-lab
+python3 -m unittest discover -s . -p 'test_*.py'
 ```
+
+404 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı kaynağın
+hiçbir profilde seçilmemesi, aday keşfin ölçüm kanıtı sayılmaması, zayıf bir
+işaretin içerik etiketi üretmemesi ve üretilen sorguda doldurulmamış yer tutucu
+kalmaması gibi.
 
 ## Politika
 
-- Her origin için `robots.txt` preflight yapılır; `robots.txt` yoksa (404/410)
-  RFC 9309 gereği kısıtlama yok sayılır, 401/403 ise yasak sayılır.
-- Bot koruması aşılmaz: User-Agent rotasyonu, CAPTCHA çözme ve tarayıcı taklidi
-  yoktur. `robots_disallowed` kaynaklar hiç denenmez.
-- Common Crawl da robots.txt'e uyduğu için arşiv yolu bu ayrımı korur; robots ile
-  yasaklı kaynaklar arşivde de yoktur.
-- Arşivden gelen içerik `common_crawl_warc` yöntemiyle işaretlenir, canlı veriyle
-  karıştırılmaz.
+Bu çalışma boyunca değişmeyen kurallar:
+
+- **Bot koruması aşılmaz.** Tarayıcı taklidi, User-Agent rotasyonu ve CAPTCHA
+  çözme yoktur. Site bizi bot olarak tanıyıp reddediyorsa bu bir karardır.
+- **robots.txt bağlayıcıdır.** Her origin için ön kontrol yapılır; RFC 9309
+  uyarınca 404/410 kısıt yok, 401/403 tam yasak sayılır.
+- **Arşiv canlı veriyle karıştırılmaz.** Common Crawl'dan gelen içerik
+  `common_crawl_warc` olarak işaretlenir.
+- **Erişim, kanıt demek değildir.** Sitemap ve arama sonucu aday keşiftir;
+  içerik bulunmayan yerde yorum ya da fiyat verisi varsayılmaz.
