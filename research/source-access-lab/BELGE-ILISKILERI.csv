@@ -1,0 +1,99 @@
+document_id,relation_type,hedef_document_id,confidence,created_by,gerekce
+doc-39af50a4d9a2,duplicate_of,doc-e9f87e3f9a0d,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-f7dafa7ca7f1,duplicate_of,doc-9291066bee9f,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-a90aff2349ad,duplicate_of,doc-d7ddc0ac4d73,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-2e738043de4b,duplicate_of,doc-3967b66ad8fb,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-bd9a6e09bb4e,duplicate_of,doc-acd7c02cefaf,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-f4f82efbd239,duplicate_of,doc-a664732ec757,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-7e40151264e4,duplicate_of,doc-a664732ec757,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-1400d65aa7cb,duplicate_of,doc-a03395244a9d,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-e06a47dee657,duplicate_of,doc-a03395244a9d,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-8faa047e2214,duplicate_of,doc-7b274f331b84,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-cdd9fe6ea7b8,duplicate_of,doc-cb59a5bc895a,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-1af2d9ed044a,duplicate_of,doc-7e3df8af4b3c,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-dda114ed86d2,duplicate_of,doc-3050631e1c92,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-a5b070a37335,duplicate_of,doc-4d51f4a2992b,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-ea914f336038,duplicate_of,doc-53b804b8152a,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-c4681e3945d7,duplicate_of,doc-55e743ba6f5f,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-ecacc055358b,duplicate_of,doc-a994e11e0375,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-dc7fb5fc93d4,duplicate_of,doc-d435f4218281,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-30ccef1dd4e2,duplicate_of,doc-589b9da42cc5,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-78c4b499f76f,duplicate_of,doc-ae16a060ace2,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-92b563e9a5d7,duplicate_of,doc-b29148d8bdf9,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-6f5d3dd56462,duplicate_of,doc-e7daaffe189a,1.00,deterministic_rule,aynı normalize metin SHA-256 hash'i
+doc-1e29b756ea67,duplicate_of,doc-c7a276cf2965,0.90,deterministic_rule,aynı canonical URL: https://apkmirror.com/
+doc-1842436b8403,duplicate_of,doc-d1ed39bc00b3,0.90,deterministic_rule,aynı canonical URL: https://appsumo.com/
+doc-1431510152cd,duplicate_of,doc-2a9e6fea6988,0.90,deterministic_rule,aynı canonical URL: https://appsumo.com/sitemap.xml
+doc-2d0fd4369365,duplicate_of,doc-39af50a4d9a2,0.90,deterministic_rule,aynı canonical URL: https://bing.com/
+doc-db440814b8d3,duplicate_of,doc-3fddd0274ea7,0.90,deterministic_rule,aynı canonical URL: https://businessinsider.com/sitemap/latest.xml
+doc-f7dafa7ca7f1,duplicate_of,doc-9291066bee9f,0.90,deterministic_rule,aynı canonical URL: https://gov.uk/
+doc-cf97c20f1f8e,duplicate_of,doc-b29712910513,0.90,deterministic_rule,aynı canonical URL: https://docs.composio.dev/sitemap.xml
+doc-a90aff2349ad,duplicate_of,doc-d7ddc0ac4d73,0.90,deterministic_rule,aynı canonical URL: https://discourse.net/
+doc-2e738043de4b,duplicate_of,doc-3967b66ad8fb,0.90,deterministic_rule,aynı canonical URL: https://dzone.com/
+doc-144ee3fbd835,duplicate_of,doc-7a7c4ee875bd,0.90,deterministic_rule,aynı canonical URL: https://themeforest.net/
+doc-881bffa409ee,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-55b3a7e11c6b,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-acd7c02cefaf,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-0d0d8b9763cb,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-aaaa3d7d8c56,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-4e376f250de5,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-bd9a6e09bb4e,duplicate_of,doc-faeb98f3a400,0.90,deterministic_rule,aynı canonical URL: https://etsy.com/robots.txt
+doc-f4f82efbd239,duplicate_of,doc-a664732ec757,0.90,deterministic_rule,aynı canonical URL: https://facebook.com/robots.txt
+doc-7e40151264e4,duplicate_of,doc-a664732ec757,0.90,deterministic_rule,aynı canonical URL: https://facebook.com/robots.txt
+doc-9cf6e6b9a0cd,duplicate_of,doc-1f9cae06f748,0.90,deterministic_rule,aynı canonical URL: https://fazier.com/
+doc-556aa2629598,duplicate_of,doc-bcff7ad791c6,0.90,deterministic_rule,aynı canonical URL: https://fred.stlouisfed.org/
+doc-30ccef1dd4e2,duplicate_of,doc-589b9da42cc5,0.90,deterministic_rule,aynı canonical URL: https://fca.org.uk/
+doc-f371497d2180,duplicate_of,doc-12c616435f12,0.90,deterministic_rule,aynı canonical URL: https://ft.com/
+doc-b902d725aeb7,duplicate_of,doc-2d80b4b6aea4,0.90,deterministic_rule,aynı canonical URL: https://ft.com/sitemaps/index.xml
+doc-870fa9b537ec,duplicate_of,doc-b2d3a92447c9,0.90,deterministic_rule,aynı canonical URL: https://forbes.com/news_sitemap.xml
+doc-92daeaa1ca03,duplicate_of,doc-d48eb8012719,0.90,deterministic_rule,aynı canonical URL: https://futurepedia.io/
+doc-1400d65aa7cb,duplicate_of,doc-a03395244a9d,0.90,deterministic_rule,aynı canonical URL: https://g2.com/?extole_labels=refer-a-friend&extole_zone_nam
+doc-e06a47dee657,duplicate_of,doc-a03395244a9d,0.90,deterministic_rule,aynı canonical URL: https://g2.com/?extole_labels=refer-a-friend&extole_zone_nam
+doc-847f9a78b986,duplicate_of,doc-e41ca4220bfe,0.90,deterministic_rule,aynı canonical URL: https://gitlab.com/sitemap.xml
+doc-458acacaf836,duplicate_of,doc-7f1986c9cef2,0.90,deterministic_rule,aynı canonical URL: https://workspace.google.com/
+doc-8faa047e2214,duplicate_of,doc-7b274f331b84,0.90,deterministic_rule,aynı canonical URL: https://groups.io/
+doc-e558610bdb59,duplicate_of,doc-3b218f3d1d54,0.90,deterministic_rule,aynı canonical URL: https://hashnode.com/
+doc-eb6047f39b7e,duplicate_of,doc-f42610c5caf3,0.90,deterministic_rule,aynı canonical URL: https://immobilienscout24.de/wissen/sitemap.xml
+doc-cdd9fe6ea7b8,duplicate_of,doc-cb59a5bc895a,0.90,deterministic_rule,aynı canonical URL: https://infoq.com/
+doc-55954a1c911f,duplicate_of,doc-847bd4201af7,0.90,deterministic_rule,aynı canonical URL: https://libraries.io/
+doc-1af2d9ed044a,duplicate_of,doc-7e3df8af4b3c,0.90,deterministic_rule,aynı canonical URL: https://linkedin.com/robots.txt
+doc-78c4b499f76f,duplicate_of,doc-ae16a060ace2,0.90,deterministic_rule,aynı canonical URL: https://lyssna.com/
+doc-dda114ed86d2,duplicate_of,doc-3050631e1c92,0.90,deterministic_rule,aynı canonical URL: https://monday.com/
+doc-a5b070a37335,duplicate_of,doc-4d51f4a2992b,0.90,deterministic_rule,aynı canonical URL: https://data-explorer.oecd.org/assets/oecd/data-explorer/sit
+doc-ea914f336038,duplicate_of,doc-53b804b8152a,0.90,deterministic_rule,aynı canonical URL: https://peerlist.io/
+doc-c889179792d6,duplicate_of,doc-b5d4e670ab24,0.90,deterministic_rule,aynı canonical URL: https://pitchwall.co/
+doc-09e268517c00,duplicate_of,doc-d3509cb9d126,0.90,deterministic_rule,aynı canonical URL: https://saashub.com/
+doc-c4681e3945d7,duplicate_of,doc-55e743ba6f5f,0.90,deterministic_rule,aynı canonical URL: https://appexchange.salesforce.com/
+doc-dc7fb5fc93d4,duplicate_of,doc-d435f4218281,0.90,deterministic_rule,aynı canonical URL: https://saglik.gov.tr/?_Dil=1
+doc-301a1cfc708a,duplicate_of,doc-d87b67b63071,0.90,deterministic_rule,aynı canonical URL: https://sec.gov/
+doc-ecacc055358b,duplicate_of,doc-a994e11e0375,0.90,deterministic_rule,aynı canonical URL: https://slack.com/
+doc-421a4faf8222,duplicate_of,doc-6bfdf24750e4,0.90,deterministic_rule,aynı canonical URL: https://slashdot.org/
+doc-bedf995bf86a,duplicate_of,doc-380e2a787cdd,0.90,deterministic_rule,aynı canonical URL: https://substack.com/
+doc-4d4b39a86a48,duplicate_of,doc-8802865ba03e,0.90,deterministic_rule,aynı canonical URL: https://telegram.com/
+doc-1927293d4418,duplicate_of,doc-dbded79a5a82,0.90,deterministic_rule,aynı canonical URL: https://uptodown.com/
+doc-92b563e9a5d7,duplicate_of,doc-b29148d8bdf9,0.90,deterministic_rule,aynı canonical URL: https://wellfound.com/
+doc-03c94ab64976,duplicate_of,doc-c44f63cdc3bf,0.90,deterministic_rule,aynı canonical URL: https://yahoo.com/
+doc-6f5d3dd56462,duplicate_of,doc-e7daaffe189a,0.90,deterministic_rule,aynı canonical URL: https://yandex.com/
+doc-1431510152cd,possible_duplicate,doc-2a9e6fea6988,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-cf97c20f1f8e,possible_duplicate,doc-b29712910513,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-144ee3fbd835,possible_duplicate,doc-7a7c4ee875bd,0.95,deterministic_rule,"SimHash Hamming mesafesi 3 — ADAY, otomatik silme değil"
+doc-881bffa409ee,possible_duplicate,doc-faeb98f3a400,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-55b3a7e11c6b,possible_duplicate,doc-faeb98f3a400,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-acd7c02cefaf,possible_duplicate,doc-faeb98f3a400,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-0d0d8b9763cb,possible_duplicate,doc-faeb98f3a400,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-aaaa3d7d8c56,possible_duplicate,doc-faeb98f3a400,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-4e376f250de5,possible_duplicate,doc-faeb98f3a400,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-acd7c02cefaf,possible_duplicate,doc-881bffa409ee,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-0d0d8b9763cb,possible_duplicate,doc-881bffa409ee,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-aaaa3d7d8c56,possible_duplicate,doc-881bffa409ee,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-acd7c02cefaf,possible_duplicate,doc-55b3a7e11c6b,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-0d0d8b9763cb,possible_duplicate,doc-55b3a7e11c6b,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-aaaa3d7d8c56,possible_duplicate,doc-55b3a7e11c6b,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-aaaa3d7d8c56,possible_duplicate,doc-acd7c02cefaf,0.95,deterministic_rule,"SimHash Hamming mesafesi 3 — ADAY, otomatik silme değil"
+doc-4e376f250de5,possible_duplicate,doc-acd7c02cefaf,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-aaaa3d7d8c56,possible_duplicate,doc-0d0d8b9763cb,0.95,deterministic_rule,"SimHash Hamming mesafesi 3 — ADAY, otomatik silme değil"
+doc-4e376f250de5,possible_duplicate,doc-0d0d8b9763cb,0.97,deterministic_rule,"SimHash Hamming mesafesi 2 — ADAY, otomatik silme değil"
+doc-4e376f250de5,possible_duplicate,doc-aaaa3d7d8c56,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-a664732ec757,possible_duplicate,doc-e8ab4763dbbe,0.95,deterministic_rule,"SimHash Hamming mesafesi 3 — ADAY, otomatik silme değil"
+doc-b902d725aeb7,possible_duplicate,doc-2d80b4b6aea4,0.98,deterministic_rule,"SimHash Hamming mesafesi 1 — ADAY, otomatik silme değil"
+doc-eb6047f39b7e,possible_duplicate,doc-f42610c5caf3,0.95,deterministic_rule,"SimHash Hamming mesafesi 3 — ADAY, otomatik silme değil"

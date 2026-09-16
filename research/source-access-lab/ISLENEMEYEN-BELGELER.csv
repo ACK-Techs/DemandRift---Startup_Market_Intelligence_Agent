@@ -1,0 +1,755 @@
+source_id,ad,artefakt_hash,source_url,yontem,neden
+source-0273,500 Global Companies,836e71df9a27caa9,https://500.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0341,ACM Digital Library,e6a90b696e70cd3c,https://dl.acm.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0250,Adbeat,f3617c2bc5dd82fd,https://www.adbeat.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0191,AFRINIC,69075f04171407cb,https://www.afrinic.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0191,AFRINIC,3ad5fd95645b6c3a,https://www.afrinic.net/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/3ad5fd95645b6c3a8de6c7ca3e3f12820ec6788c6171199ca307451093cecdc4.bin
+source-0191,AFRINIC,49ede74e02fcc4de,https://www.afrinic.net/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/49ede74e02fcc4de5cbeaf8f1d555cf48a90a07deabf106ce27d08d87d02d4e0.bin
+source-0489,Agoda,c47b9fe96c3eb0eb,https://www.agoda.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0217,Ahrefs,01fc1026b5da28c1,https://ahrefs.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0217,Ahrefs,311eae576be0e094,https://ahrefs.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0132,Airtable Marketplace,5fba1f6452a8bc57,https://airtable.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0164,Alibaba,a4a98eee7f6330d3,https://www.alibaba.com/atlassitemapsitenet/static/www_alibaba_com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0163,AliExpress,64a1d9ccb911e17d,https://aliexpress.ru/,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0163,AliExpress,51b41403a3b5a943,https://aliexpress.ru/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0059,AlternativeTo,48ce0aac802374d6,https://alternativeto.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0159,Amazon,f62cfb6484ed7cc2,https://www.amazon.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0582,Anadolu Ajansı,f6ced7f25107430d,https://www.aa.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0582,Anadolu Ajansı,dce6e31136ab5f63,https://www.aa.com.tr/tr/Sitemap/index,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0271,AngelList,53a2f6af33d88b9e,https://www.angellist.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0228,AnswerThePublic,e5588f2ae918f2a1,https://answerthepublic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0107,APKMirror,956dbe37800b73f8,https://www.apkmirror.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0189,APNIC,b17d7f497cb74ce2,https://www.apnic.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0189,APNIC,e6d32a897ee328fd,https://www.apnic.net/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0189,APNIC,88dfcccba1814445,https://www.apnic.net/wp-sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0261,Apollo,b1e17840e9ceba4a,https://www.apollo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0096,Apple App Store,c21b0e8b8f4defba,https://apps.apple.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0301,Apple Maps,ac05babd65abf155,https://maps.apple.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0247,AppMagic,58760ac213807759,https://appmagic.rocks/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0247,AppMagic,b7872b8db1369c18,https://appmagic.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0247,AppMagic,880ee416f4475476,https://appmagic.rocks/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0065,AppSumo,ce7ddd272d65934e,https://appsumo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0105,Aptoide,3e3c7bd1fb6a2945,https://en.aptoide.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0105,Aptoide,234276405183c93c,https://en.aptoide.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0187,ARIN,337bea10934f3afb,https://www.arin.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0187,ARIN,4b8783bb061627ac,https://www.arin.net/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/4b8783bb061627ac1560da5ec76dce8c6a252cc69df57c6541672b2075246457.bin
+source-0187,ARIN,c835c4e54e06b1de,https://www.arin.net/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/c835c4e54e06b1de2f717b18bc87d107ec882f569d8d16120f55ff4aac25478f.bin
+source-0319,Armut,37618f99a6d9fc14,https://armut.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0319,Armut,70183ab200861132,https://armut.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0564,Ars Technica,0abd612f8a892958,https://arstechnica.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0538,Artificial Analysis,b44d67c4be249869,https://artificialanalysis.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0334,arXiv,eda2bc852443f3f2,https://arxiv.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0334,arXiv,d7ed6c1e9723edcc,https://arxiv.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d7ed6c1e9723edcceae8a3d3f258a7ca991bd64f841fad43632caa13a7fad746.bin
+source-0634,Arya Women Investment Platform,d55d712a843b469a,https://www.aryawomen.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0634,Arya Women Investment Platform,9e162e2b6c1dbc37,https://www.aryawomen.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0287,Ashby Jobs,65e37d67d9ae9a0d,https://www.ashbyhq.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0556,Associated Press,b5e768463fa30256,https://apnews.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0556,Associated Press,408aa74ebf405302,https://apnews.com/ap-sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/408aa74ebf4053024aa772ae5d98546adfb582ad2768bde21e5b6b97ab73fadf.bin
+source-0121,Atlassian Marketplace,1acf7d2143a76cbf,https://marketplace.atlassian.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0121,Atlassian Marketplace,5ac6bbfd6a21cc12,https://marketplace.atlassian.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0541,AWS Marketplace,c1f42540a70f0dcd,https://aws.amazon.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0541,AWS Marketplace,89b84c24a128513b,https://aws.amazon.com/sitemaps/index/,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0615,AWS Pricing Calculator,3eadf13afc7ff451,https://calculator.aws/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0615,AWS Pricing Calculator,801ae516e1bf58a1,https://calculator.aws/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0574,Axios,9dbf5ea2259b2cb8,https://www.axios.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0616,Azure Pricing Calculator,a47c168a428547e6,https://azure.microsoft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0616,Azure Pricing Calculator,a4e6a666a5d3597b,https://azure.microsoft.com/robotsitemap-en-us/,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0437,Bank for International Settlements,1b8d27c888985118,https://www.bis.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0437,Bank for International Settlements,53a69837798d64d6,https://www.bis.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0326,BASE,914f7f24bb14b66c,https://base.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0326,BASE,e791ed107d1b6451,https://base.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0052,BetaList,2f15987e46065012,https://betalist.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0119,BigCommerce App Marketplace,b9fac6a7ed56df77,https://www.bigcommerce.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0249,BigSpy,fc206e3923533645,https://bigspy.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0624,Bilişim Vadisi,8da06d0209538d09,https://bilisimvadisi.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0624,Bilişim Vadisi,776148fca5e32227,https://bilisimvadisi.com.tr/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0004,Bing,40d2da70c3b44322,https://www.bing.com:443/robots.txt?toWww=1&redig=083A18B2B08F4C089A148EF729AA302E,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0004,Bing,40d2da70c3b44322,https://www.bing.com:443/robots.txt?toWww=1&redig=8153F50C8E264E12BF426DC611A18C06,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0302,Bing Maps,40d2da70c3b44322,https://www.bing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0302,Bing Maps,b01f48436b21eb39,https://www.bing.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0554,Bing News,40d2da70c3b44322,https://www.bing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0554,Bing News,b01f48436b21eb39,https://www.bing.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0216,Bing Webmaster Tools,40d2da70c3b44322,https://www.bing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0216,Bing Webmaster Tools,b01f48436b21eb39,https://www.bing.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0335,bioRxiv,65b12f268c4cb2e9,https://www.biorxiv.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0335,bioRxiv,f6f649b6228dbb68,https://www.biorxiv.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0019,Bitbucket,55b309f9612780e0,https://bitbucket.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0557,Bloomberg,9e9fde22f5fb63a5,https://www.bloomberg.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0579,Bloomberg HT,15cb679073b33e75,https://www.bloomberght.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0579,Bloomberg HT,afd6fccb3888ee69,https://www.bloomberght.com/rss,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0078,Bluesky,5c6c950ccfb17d9b,https://bsky.app/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0078,Bluesky,d2e39f133746f815,https://bsky.app/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0500,Bolt,0830022361d0d8a5,https://bolt.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0500,Bolt,2c786e83dd4b6926,https://bolt.io/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0485,Booking.com,f16258327a9637d7,https://www.booking.com/sitembk-airport-index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0318,Booksy,2012be189f38726b,https://booksy.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0442,Borsa İstanbul,44f3f8eafdf064cf,https://borsaistanbul.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0442,Borsa İstanbul,4db4bfc4f7b396cc,https://borsaistanbul.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0001,Brave Search,6b1bf5e8e58f1cc2,https://search.brave.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0382,BTK,e8d3ce13be6d2eb4,https://www.btk.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0382,BTK,cb489d53b9d3373a,https://www.btk.gov.tr/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0201,BuiltWith,31329dd6f061967a,https://builtwith.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0566,Business Insider,89f51cf7e3b532fe,https://www.businessinsider.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0234,BuzzSumo,0c2340ccd67da26c,https://buzzsumo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0234,BuzzSumo,f75a94793b254c6f,https://buzzsumo.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0133,Canva Apps Marketplace,bd2e71a4ceb59dd1,https://www.canva.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0133,Canva Apps Marketplace,b024bd5b223c2603,https://www.canva.com/landing_page_sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0135,Capterra,8ab6d3d726b1fbe9,https://www.capterra.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0466,Capterra Education Software,8ab6d3d726b1fbe9,https://www.capterra.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0466,Capterra Education Software,b06b8dc545759a84,https://www.capterra.com/sitemaps/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0256,CB Insights,62e091e407c5a0a9,https://www.cbinsights.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0423,CDC,cccbb959bd7f27a6,https://cdc.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0193,Censys,dab4e9aa6220afad,https://censys.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0193,Censys,646709a7571ab549,https://censys.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0600,Centiment,fc403f515dd5a633,https://www.centiment.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0600,Centiment,0186989e8fc1bc23,https://www.centiment.co/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0109,Chrome Web Store,ae47b582fe60139e,https://chromewebstore.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0462,Class Central,86e983a98c4a40cf,https://www.classcentral.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0262,Clearbit,b9ebfb8b82229a50,https://clearbit.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0419,ClinicalTrials.gov,0361f4d17924fea5,https://clinicaltrials.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0210,Cloudflare Radar,08b68bda0482d334,https://radar.cloudflare.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0611,Cloudorado,690588963f0ef81d,https://www.cloudorado.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0612,CloudPrice,b38efea617450b52,https://cloudprice.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0612,CloudPrice,5cd9debb2201c292,https://cloudprice.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0560,CNBC,010d7b0c49939bec,https://www.cnbc.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0560,CNBC,3879cf5e4cd244c7,https://www.cnbc.com/sitemapAll.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0021,Codeberg,7a9daf796e5f5f8b,https://codeberg.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0021,Codeberg,29349d1a3145a15b,https://codeberg.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/29349d1a3145a15b461d5bc6d99a3a8d0dd2a35df4ece39d5f1647fe332120f9.bin
+source-0021,Codeberg,8c021b73956344ea,https://codeberg.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/8c021b73956344ea8f2d975dcbc4e811f598b7393221bba59618b38e76c1c3e5.bin
+source-0180,CodeCanyon,6dd17e4de740a001,https://codecanyon.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0448,CoinGecko,478e5890e3be7566,https://www.coingecko.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0448,CoinGecko,04921a8c33ca77f7,https://www.coingecko.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0448,CoinGecko,3a9a63ed20b2a83b,https://www.coingecko.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0448,CoinGecko,23e61d75fb66292d,https://www.coingecko.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0447,CoinMarketCap,e3fcccd57bb86dab,https://coinmarketcap.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0447,CoinMarketCap,e9ee71b27819dc40,https://coinmarketcap.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0205,Common Crawl,87e17d4f9c85b62e,https://commoncrawl.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0205,Common Crawl,3964b8e5f79cf1b0,https://commoncrawl.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/3964b8e5f79cf1b05506f833ce0c793dea2f146d4eb3c7379a879030aad2e489.bin
+source-0205,Common Crawl,bc4abb0bcc77a67e,https://commoncrawl.org/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/bc4abb0bcc77a67e82234e2d1dc86aaa60edfccd3ad0968a05e9c649629c4490.bin
+source-0266,Companies House,459835d29527b9c0,https://www.gov.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0266,Companies House,a846282baf81bbf5,https://www.gov.uk/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0405,Competition and Markets Authority,459835d29527b9c0,https://www.gov.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0550,Composio,19f06d7538a16369,https://docs.composio.dev/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0401,Consumer Financial Protection Bureau,8286073708939262,https://www.consumerfinance.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0325,CORE,c8f7b72490152fa7,https://core.ac.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0325,CORE,b527402453b0808f,https://www.coregames.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0325,CORE,a9b3753918d88c53,https://www.coregames.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0458,Coursera,8efbf915a81aaee3,https://www.coursera.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0258,Craft.co,cd102802a4140381,https://craft.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0042,crates.io,b033243267bcbdab,https://crates.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0042,crates.io,70d47e7edd9ae142,https://crates.io/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0177,Creative Market,842b34303164ead4,https://creativemarket.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0324,Crossref,bcbfdd71c3857aed,https://www.crossref.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0324,Crossref,fe5b01c297ffa417,https://www.crossref.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/fe5b01c297ffa417236f90bcca51e5e516a524e919793f410f01795ffe3305e4.bin
+source-0324,Crossref,6f8b145d4cf476d5,https://www.crossref.org/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/6f8b145d4cf476d50cc1aa415586c37f172aac937ad01187feae31af5490d570.bin
+source-0142,Crozdesk,e4512c47dd2afe19,https://crozdesk.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0192,crt.sh,331ea9090db0c9f6,https://crt.sh/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0252,Crunchbase,ae72d536c1acd0fd,https://www.crunchbase.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0573,Crunchbase News,9f56c55cbec390d7,https://news.crunchbase.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0573,Crunchbase News,31b760c4385d2b68,https://news.crunchbase.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0246,data.ai,68cb2cb18ee95cf3,https://www.data.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0359,data.europa.eu,f970d70ad33c9fc5,https://data.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0359,data.europa.eu,0efbac9102b77631,https://data.europa.eu/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/0efbac9102b7763149b06abec1f1d2119703d399b247c1f7edb388c8e428e235.bin
+source-0359,data.europa.eu,0e1a06585737d559,https://data.europa.eu/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/0e1a06585737d559f6758372ad73793046200920074804464e8d75084cec8e4d.bin
+source-0360,Data.gov,378eb3f2f929180e,https://data.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0360,Data.gov,e9c5dc4205ed4f1d,https://data.gov/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/e9c5dc4205ed4f1d783a9e2573eaa9112be2c609d3058ebc56d422f17b38630c.bin
+source-0360,Data.gov,101ebd4755cf8763,https://data.gov/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/101ebd4755cf8763ee73fb3eb0e0ce010462fae879aefa7f30e67fba1a1c064d.bin
+source-0376,data.gov.uk,1e72aed4e7ce49bc,https://www.data.gov.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0376,data.gov.uk,0a0532191faca091,https://www.data.gov.uk/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/0a0532191faca091221858fff229e9bc80190805e7a11f17f9da59fc044ac12b.bin
+source-0015,DataForSEO,188d17e9038829e3,https://dataforseo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0015,DataForSEO,9b13c46ead898e00,https://dataforseo.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0255,Dealroom,3a6e27ac9c73d4fd,https://dealroom.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0449,DefiLlama,1d7188c396a799e9,https://defillama.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0449,DefiLlama,736daa43ce237d26,https://defillama.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0509,Deliveroo,8d91ea4ddb02904e,https://deliveroo.co.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0378,Destatis,f8f1b52e281d213a,https://www.destatis.de/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0378,Destatis,162cab44c383476c,https://www.destatis.de/Sitemap_Index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0029,Dev.to,983a578c850154f6,https://dev.to/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0029,Dev.to,98b59bf6ba28cccc,https://dev.to/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/98b59bf6ba28cccc5ca0cc035539eb7117bb8efa5446cc0480aacd42762e1b4d.bin
+source-0029,Dev.to,4bf1fc74db08b3ca,https://dev.to/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/4bf1fc74db08b3caf07c9af722932882ca974372f35332e5f2eef0b524f88a67.bin
+source-0029,Dev.to,7cb8f2ec8318792e,https://dev.to/feed,rss_feed,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/7cb8f2ec8318792e9e0d4aeafa15bd0e757550cedfe4a45f916caa4386477c49.bin
+source-0029,Dev.to,6c7e777c463ed9f2,https://dev.to/feed,rss_feed,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/6c7e777c463ed9f2ebefca607fd434df1e4790a6854eb489889c8a7e20261df6.bin
+source-0328,Dimensions,5331505afc2ab2a1,https://app.dimensions.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0328,Dimensions,7e00502427eb030e,https://www.dimensions.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0093,Discourse,40c42f4c8e477785,https://discourse.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0093,Discourse,2bac7f2654aa0e17,https://discourse.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0196,DNSdumpster,fa392810eebdae2e,https://dnsdumpster.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0196,DNSdumpster,9b9e3d8fc8620c17,https://dnsdumpster.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0197,DNSlytics,16ceb5ee3e0dc13a,https://dnslytics.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0197,DNSlytics,3df3cc77f89d9f3e,https://dnslytics.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0197,DNSlytics,e20fd5a5bf69abd8,https://dnslytics.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0347,DOAJ,37e33001dd592f95,https://doaj.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0347,DOAJ,f2bf8927e6abe0a5,https://doaj.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/f2bf8927e6abe0a547ed7661a2fb7fc1d467634a14b257598ef3e0df1dea7085.bin
+source-0347,DOAJ,d26952af3a993583,https://doaj.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d26952af3a993583c192ddb779d988b443a8ec60fac57a3f6500900d675e2ecd.bin
+source-0038,Docker Hub,ded384f2baa26f0d,https://hub.docker.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0038,Docker Hub,d613d154adf46ef8,https://hub.docker.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d613d154adf46ef8a87527a39d84ebdec4614935f0a1fe9a70e8c5ea1a726634.bin
+source-0038,Docker Hub,185309c2019405f2,https://hub.docker.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/185309c2019405f2307e7e1ea2b0e6796122b3d52fa3fce90834840e5160b110.bin
+source-0038,Docker Hub,55693b03469e33c5,https://hub.docker.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0200,DomainTools,e87fcb3b8835e45d,https://www.domaintools.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0507,DoorDash,26c4dc0f625019b6,https://www.doordash.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0426,DrugBank,842b34303164ead4,https://www.drugbank.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0426,DrugBank,ff967d317dfa0ffe,https://www.drugbank.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0351,Dryad,19dfc4efd6540e0a,https://datadryad.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0351,Dryad,b075735c23f273c3,https://www.dc.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0351,Dryad,0f9374a854f6ef7f,https://datadryad.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0351,Dryad,2eb0899f52a53ee1,https://datadryad.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0596,dscout,5e5c1dcafbea0ccb,https://dscout.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0005,DuckDuckGo,02fc159e8e3fefe1,https://duckduckgo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0005,DuckDuckGo,1fcaeff6efa8326b,https://duckduckgo.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0033,DZone,ef0bca2a7faecdcd,https://dzone.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0033,DZone,054cced0be757d78,https://dzone.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0581,Dünya,2fb118f09fefa1a1,https://www.dunya.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0424,ECDC,8e8cb58d810473a5,https://www.ecdc.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0424,ECDC,2593dafbc69786fa,https://www.ecdc.europa.eu/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0459,edX,adcbf21de90d7094,https://edx.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0577,egirişim,5717cff7553fc563,https://egirisim.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0577,egirişim,39e1d9ef5b33bb15,https://egirisim.com/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0577,egirişim,9bcd7f13b0549e7e,https://egirisim.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0580,Ekonomim,e5c4b84484ee4216,https://www.ekonomim.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0298,Eleman.net,bf391e41f03cb7ca,https://www.eleman.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0479,Emlakjet,04fa7b46ff08ae9e,https://www.emlakjet.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0480,Endeksa,f9b5aff82df22f82,https://www.endeksa.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0480,Endeksa,bfc3dafe549d5b52,https://www.endeksa.com/tr/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0178,Envato Market,a231146da6f1fc4a,https://themeforest.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0161,Etsy,2fb54ee26ddd5a68,https://www.etsy.com/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/2fb54ee26ddd5a68d6df1cd1888cc440cd8bc3d880cc50c3edddbaed835c2b25.bin
+source-0161,Etsy,103fbf15eb6a7af6,https://www.etsy.com/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/103fbf15eb6a7af63be68d639968a26e555b159bca2075e4cd69b6290577ae0f.bin
+source-0572,EU-Startups,a94396b7a22ebbca,https://www.eu-startups.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0390,EUR-Lex,a5987a744e454da2,https://eur-lex.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0390,EUR-Lex,7754823c16419f70,https://eur-lex.europa.eu/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0333,Europe PMC,6a34da8a75a841d5,https://europepmc.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0394,European Banking Authority,784a4e5af7fd975c,https://www.eba.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0436,European Central Bank,8e55738f64103300,https://www.ecb.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0391,European Commission,8dda4f6576cfdf41,https://commission.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0392,European Data Protection Board,8e8cb58d810473a5,https://www.edpb.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0393,European Medicines Agency,10019eac449a8109,https://www.ema.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0395,European Securities and Markets Authority,773fb8d35bb9a39d,https://www.esma.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0358,Eurostat,c85ef7fce6dde5af,https://ec.europa.eu/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0358,Eurostat,4d1dc5941e9634da,https://ec.europa.eu/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0487,Expedia,d536d28cbb4c81dd,https://www.expedia.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0229,Exploding Topics,d13715a9ff7c5d0f,https://explodingtopics.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0106,F-Droid,8b8ee8cda896fd9b,https://f-droid.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0106,F-Droid,9ea8e0d8f7052bd6,https://f-droid.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0071,Failory,85375113268242ac,https://www.failory.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0568,Fast Company,0d2cc73bb9311486,https://fast.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0067,Fazier,6c8e66ab3e5da26d,https://fazier.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0067,Fazier,c0ebbabce98bb8ac,https://fazier.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0396,Federal Register,6c180c52aac5e205,https://www.federalregister.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0363,Federal Reserve Economic Data,95860629969d02d1,https://fred.stlouisfed.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0153,Feefo,1ea0b7be4a90b8e1,https://www.feefo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0153,Feefo,224f0f7b23409a30,https://www.feefo.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0144,FinancesOnline,16ceb5ee3e0dc13a,https://financesonline.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0144,FinancesOnline,b847127895d362a4,https://financesonline.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0438,Financial Conduct Authority,3df0c294b0301dfd,https://www.fca.org.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0438,Financial Conduct Authority,d86d648c29904825,https://www.fca.org.uk/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0558,Financial Times,57ce1e58ae57b176,https://www.ft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0558,Financial Times,b93ef54ee6f74bb1,https://www.ft.com/rss/home/international,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0558,Financial Times,0775d30de0acd418,https://www.ft.com/rss/home/international,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0016,Firecrawl,73af8d8a8e0f1ff1,https://www.firecrawl.dev/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0110,Firefox Add-ons,b4370b48779377bd,https://addons.mozilla.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0110,Firefox Add-ons,6df763a996068a1e,https://addons.mozilla.org/en-US/firefox/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/6df763a996068a1e0e2fcd6d61538fcd3a88c7232f7e7b07144a9230056672a4.bin
+source-0110,Firefox Add-ons,bc9c8e37d945ddca,https://addons.mozilla.org/en-US/firefox/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/bc9c8e37d945ddca51cc79db13515c33cc90f23ec144857f4626789dd80ab15e.bin
+source-0503,FlightAware,6a0e28efd6b1b2e0,https://www.flightaware.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0504,Flightradar24,80e9e13a21b0d248,https://www.flightradar24.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0504,Flightradar24,534b3ac6ea0416ad,https://www.flightradar24.com/sitemap/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0635,Founder Institute Türkiye,64a3ba5810934c4d,https://fi.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0304,Foursquare,bb5a00ee5639027d,https://foursquare.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0304,Foursquare,d4bc8e74b625d98b,https://foursquare.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0433,FRED,95860629969d02d1,https://fred.stlouisfed.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0433,FRED,8fa3036c68bfcbd3,https://www.fred8.com.br/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0416,FreePatentsOnline,9b4d3e8f9726f177,https://www.freepatentsonline.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0317,Fresha,4df39d2911fea58a,https://www.fresha.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0317,Fresha,56a7b72b78d15589,https://www.fresha.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0317,Fresha,727e0a4caefe52b4,https://www.fresha.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0062,Futurepedia,5c00a201bbb22c30,https://www.futurepedia.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0134,G2,a4e02dbac980303e,https://www.g2.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0465,G2 Education Software,a4e02dbac980303e,https://www.g2.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0064,G2 Track,a4e02dbac980303e,https://www.g2.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0633,Galata Business Angels,5cbef44cbae3c3ee,https://galatabusinessangels.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0633,Galata Business Angels,1d1fc80010c9e93c,https://galatabusinessangels.com/tr/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0530,Game Developer,14c1bc74d40fac55,https://www.gamedeveloper.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0389,Gelir İdaresi Başkanlığı,4a51090c2fce3a76,https://gib.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0389,Gelir İdaresi Başkanlığı,bf2824e98094436e,https://gib.gov.tr/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0136,GetApp,b470ebf58554ca27,https://www.getapp.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0495,GetYourGuide,c89355b5fa6b0b40,https://www.getyourguide.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0017,GitHub,05a5baaac2db2fe1,https://github.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0018,GitLab,9e1e837e03b726ee,https://gitlab.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0547,Glama,25424086d51860d3,https://glama.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0547,Glama,a0efacf28152e647,https://glama.ai/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0158,Glassdoor,8d6ed7ce02f754da,https://www.glassdoor.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0230,Glimpse,9f09e2347b681d51,https://meetglimpse.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0230,Glimpse,0213389b2c459fbd,https://meetglimpse.com/sitemap-main.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0431,Global Health Data Exchange,278e83bcf567badf,https://ghdx.healthdata.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0520,GOG,a8b4c0b73196dde0,https://www.gog.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0310,Google Business Profile,857334ab54f35606,https://business.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0310,Google Business Profile,8aeca05636adf6c6,https://business.google.com/sitemaps/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0543,Google Cloud Marketplace,95a0ddd6573a5a51,https://console.cloud.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0617,Google Cloud Pricing Calculator,37365b84bd6175ae,https://cloud.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0444,Google Finance,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0284,Google Jobs,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0214,Google Keyword Planner,9f5d92eea147eb3f,https://ads.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0300,Google Maps,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0553,Google News,4502e8995fdd07a2,https://news.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0406,Google Patents,e813352b5c62e3e9,https://patents.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0406,Google Patents,0b9a616ad32aa67e,https://patents.google.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0097,Google Play Store,cad8995e4d351743,https://play.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0155,Google Reviews,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0321,Google Scholar,15a55fbdcbb3aaa7,https://scholar.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0003,Google Search,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0212,Google Transparency Report,2bb3e150cdf4d201,https://transparencyreport.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0212,Google Transparency Report,3db29ad72dc7deea,https://transparencyreport.google.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0492,Google Travel,1aba570a1b32deb6,https://www.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0213,Google Trends,5bcda447457e239a,https://trends.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0127,Google Workspace Marketplace,6eee245e995d49b2,https://workspace.google.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0127,Google Workspace Marketplace,37dbf9f4f82eae1d,https://workspace.google.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0601,Great Question,88ae566cdec12ca3,https://greatquestion.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0094,Groups.io,e0cfb7b3dc80ac8b,https://groups.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0022,Hacker News,2391981cd9331481,https://news.ycombinator.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0022,Hacker News,e96d5657c9b51c8b,https://news.ycombinator.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/e96d5657c9b51c8bc539a7be7a4861b2a62a68e880309b477b2468e35cd0b614.bin
+source-0022,Hacker News,7b59866dc35715ec,https://news.ycombinator.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/7b59866dc35715ec07524a9ed5d03bd782058cbbee967bd12f0f277f8f9131e8.bin
+source-0068,HackerNoon,f996cba0dd49f51b,https://hackernoon.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0030,Hashnode,8930c498055bf943,https://hashnode.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0030,Hashnode,33d86e274eda9cbf,https://hashnode.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0430,HealthData.gov,89abbe87b9ce8754,https://healthdata.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0478,Hepsiemlak,4368826ffdeac27f,https://www.hepsiemlak.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0478,Hepsiemlak,9c2020192f1734ed,https://www.hepsiemlak.com/sitemap/index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0307,HERE WeGo,90d24bc3bf698ac1,https://wego.here.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0307,HERE WeGo,716724c74b735db0,https://wego.here.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0046,Homebrew Formulae,476d99950f2159d8,https://formulae.brew.sh/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0046,Homebrew Formulae,9ae9d1ab275bf0a9,https://formulae.brew.sh/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0493,Hostelworld,7e73fe1b7c4c0852,https://www.hostelworldgroup.com/rss/financial-calendar,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0493,Hostelworld,90d018dad32be461,https://www.hostelworldgroup.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0488,Hotels.com,98144f27918421b3,https://www.hotels.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0603,Hotjar,95f1088bd49ac64b,https://www.hotjar.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0603,Hotjar,09e97f4a2e3bddab,https://www.hotjar.com/sitemap-deprecated.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0315,Houzz,91cb6e0787ff512e,https://www.houzz.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0209,HTTP Archive,42616a7d9b39cc8e,https://httparchive.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0209,HTTP Archive,c6726a85e527278d,https://httparchive.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0098,Huawei AppGallery,423b8f421c72ab30,https://appgallery.huawei.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0098,Huawei AppGallery,8e8f20e3d245f4d3,https://appgallery.huawei.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0123,HubSpot App Marketplace,c68e5ccfed172f49,https://ecosystem.hubspot.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0123,HubSpot App Marketplace,f170004ba24e6b5f,https://ecosystem.hubspot.com/marketplace-index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0534,Hugging Face,045c12bc2b5f1820,https://huggingface.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0534,Hugging Face,97848a713bd2b360,https://huggingface.co/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0184,IANA,e5c4b84484ee4216,https://www.iana.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0184,IANA,3bafa1612b7778ce,https://www.iana.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0183,ICANN Lookup,87d8bcdc8e607745,https://lookup.icann.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0473,Idealista,dd115f473f6ecbd8,https://www.idealista.it/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0340,IEEE Xplore,c49ac169fccb5efe,https://ieeexplore.ieee.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0435,IMF,c58f6dd5fdc0471b,https://www.imf.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0474,Immobiliare.it,eef4747694f0dace,https://www.immobiliare.it/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0474,Immobiliare.it,7bad1bae58d326db,https://www.immobiliare.it/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0476,ImmobilienScout24,a44d1aaad530bcc7,https://www.immobilienscout24.de/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0476,ImmobilienScout24,0349b66311d547e7,https://www.immobilienscout24.de/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0279,Indeed,3e2273726b02db5e,https://ca.indeed.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0174,Indiegogo,e2c8cd87233cc0fe,https://www.indiegogo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0034,InfoQ,eeed5c05a0a30e1b,https://www.infoq.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0614,Infracost,8af6c58733ffbe98,https://www.infracost.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0377,INSEE,e5b0ced34aa0387b,https://insee.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0377,INSEE,5ae4df75b9bf6a20,https://insee.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0081,Instagram,da3a05f8ae504bd8,https://www.instagram.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0445,Investing.com,9d941400cca53268,https://cn.investing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0445,Investing.com,278e0c57410a2944,https://www.investing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0521,itch.io,82fad5f79355e907,https://itch.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0521,itch.io,bf5b8ca0e1c44c1b,https://itch.io/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/bf5b8ca0e1c44c1b914d00602399de0ac3d5fa96af45a6b08ed19c2c631d09ec.bin
+source-0521,itch.io,bb2cde43de29d292,https://itch.io/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/bb2cde43de29d29254ff9dfb6ea65eaee0ef6f1ae1a87648e0db18aba1c0f443.bin
+source-0521,itch.io,4752f1f028db8147,https://itch.io/feed/featured.xml,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0521,itch.io,f370ea4bddc04cb0,https://itch.io/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0374,İstanbul Büyükşehir Belediyesi Açık Veri Portalı,6d6055b3c1aec1be,https://data.ibb.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0626,İTÜ Çekirdek,b136bee4ca1927fc,https://itucekirdek.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0299,İşkur,679c9d44a34724c0,https://iskur.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0050,JetBrains Marketplace,c8cc223b762e2390,https://plugins.jetbrains.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0050,JetBrains Marketplace,4b6295b9372ab888,https://plugins.jetbrains.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0283,Jooble,52bd9e0d7b760085,https://jooble.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0510,Just Eat,de73d32142f114b8,https://www.justeattakeaway.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0352,Kaggle,6ec6009c21d4114d,https://www.kaggle.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0009,Kagi,e5c4b84484ee4216,https://kagi.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0009,Kagi,3b38b7d6f2359e32,https://kagi.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0295,Kariyer.net,5d55349b1b8e202f,https://www.kariyer.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0295,Kariyer.net,9bc1ea80a5f6247e,https://www.kariyer.net/sitemapxml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0295,Kariyer.net,121e69aed0e61129,https://www.kariyer.net/sitemapxml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0491,Kayak,d192e7e6ef8d7404,https://www.kayakonline.info/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0491,Kayak,3016dd233bde526c,https://www.kayakonline.info/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0464,Khan Academy,de8d690cc29d476a,https://www.khanacademy.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0173,Kickstarter,9bcd0860dfcc0410,https://www.kickstarter.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0623,KOSGEB,d522fb7369cc92f7,https://kosgeb.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0190,LACNIC,b94e89773d2b36ac,https://www.lacnic.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0190,LACNIC,8d7e762cdaf668f4,https://www.lacnic.net/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0190,LACNIC,29ff34d9c456c5ab,https://www.lacnic.net/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0056,Launching Next,291fb312fac8d465,https://www.launchingnext.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0176,Lemon Squeezy,16ab931f311d77d2,https://www.lemonsqueezy.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0327,Lens.org,44b663f0c222c5ab,https://www.lens.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0415,Lens.org Patents,44b663f0c222c5ab,https://www.lens.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0286,Lever Jobs,79136fe32908cc58,https://www.lever.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0047,Libraries.io,24974a9a35092480,https://libraries.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0084,LinkedIn,1eaa886c2898f40d,https://www.linkedin.com/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/1eaa886c2898f40d5515d38552dddab29b48333c6a3adb5097572ad6309d709c.bin
+source-0545,LlamaIndex Integrations,c2363fa1b33dd65b,https://llamahub.ai/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0031,Lobsters,cbb7313590347ae1,https://lobste.rs/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0595,Lookback,62e1ad4f43759569,https://www.lookback.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0499,Lyft,1a5884d20a0737c5,https://lyft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0499,Lyft,39ad826cd0670f51,https://lyft.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0606,Lyssna,3c11e377623a274f,https://www.lyssna.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0224,Majestic,25473ba42a9c458a,https://majestic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0552,Make,de8b9edb3671ae47,https://www.make.com/cs/login?go=%2Fcs%2Fintegration%2F555-vytvoreni-kontaktu-ve-fakturoidu-z-noveho-zakaznika-v-magentu%3Futm_source%3Dfakturoid%26utm_medium%3Dpartner%26utm_campaign%3Dfakturoid-partner-program,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0552,Make,6338ca12a2908f46,https://www.make.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0131,Make Apps Directory,de8b9edb3671ae47,https://www.make.com/cs/login?go=%2Fcs%2Fintegration%2F555-vytvoreni-kontaktu-ve-fakturoidu-z-noveho-zakaznika-v-magentu%3Futm_source%3Dfakturoid%26utm_medium%3Dpartner%26utm_campaign%3Dfakturoid-partner-program,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0131,Make Apps Directory,6338ca12a2908f46,https://www.make.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0131,Make Apps Directory,aaa35a74f4ea3da8,https://www.make.com/en/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0221,Mangools,ef150c795fa3b94f,https://mangools.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0221,Mangools,765796d27c557cd6,https://mangools.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0388,MASAK,90d24bc3bf698ac1,https://masak.hmb.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0388,MASAK,bf584f20b1b43d19,https://masak.hmb.gov.tr/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0594,Maze,298577a58bd95f00,https://maze.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0594,Maze,8fa3036c68bfcbd3,https://www.maize-maze.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0594,Maze,b41c9acee8f90ae9,https://maze.co/sitemap-index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0594,Maze,75ca71e6bbca233d,https://www.maize-maze.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0548,MCP.so,da4b1b02346c4ced,https://mcp.so/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0548,MCP.so,76816d7488a2be17,https://mcp.so/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0456,MEB,e5edca45edfcbfcb,https://meb.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0456,MEB,b8659a4d6e1317ed,https://www.meb.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0456,MEB,d546fa5a908e56ec,https://meb.com.tr/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0456,MEB,1dc4dc185b773e68,https://meb.com.tr/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0088,Medium,fe87c9fc79edeba1,https://medium.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0429,MedlinePlus,56de24df38fc4cc8,https://www.medlineplus.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0636,Meetup,4bde94056acee326,https://www.meetup.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0236,Meta Ad Library,033dd95093752959,https://metaadlibrary.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0236,Meta Ad Library,ca7731fabe1fc295,https://metaadlibrary.com/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0531,Metacritic,dc0cb3ec87899d43,https://www.metacritic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0054,Microlaunch,ab925b4d55aaa832,https://microlaunch.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0054,Microlaunch,73d3eb03ee01bd0d,https://microlaunch.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0604,Microsoft Clarity,478b8849760b520a,https://clarity.microsoft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0604,Microsoft Clarity,8dbf925a94a0b231,https://clarity.microsoft.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0101,Microsoft Store,00f7f9519b4821f1,https://apps.microsoft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0101,Microsoft Store,6bc14658cc24efaf,https://apps.microsoft.com/sitemap,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0570,MIT Technology Review,9988bddd36eaf3d4,https://www.technologyreview.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0570,MIT Technology Review,032671eb87724850,https://www.technologyreview.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0243,Moat,8fa3036c68bfcbd3,https://moat.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0243,Moat,d9c177a89ee608c2,https://moat.ai/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0008,Mojeek,9249562d0d3731c2,https://www.mojeek.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0008,Mojeek,13ab4750761e38cb,https://www.mojeek.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0128,monday.com Apps Marketplace,2dfc4fa504381ce2,https://monday.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0281,Monster,42c3df17274d867a,https://www.monster.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0502,Moovit,8e6f307434336374,https://moovit.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0502,Moovit,92aaeb5653f36831,https://moovit.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0219,Moz,07b090a959e9e282,https://moz.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0219,Moz,734dd914baae573f,https://moz.com/feeds/blog.rss,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0219,Moz,3314bb9c4f8c402e,https://moz.com/sitemaps-1-sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0168,n11,870b4cb130286a63,https://www.n11.com:443/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0451,National Center for Education Statistics,cc0d8c47574b9799,https://nces.ed.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0345,Nature,747a13c2ef654bad,https://www.nature.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0208,Netcraft,0c97260102a436a0,https://www.netcraft.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0312,Nextdoor,f910974403996033,https://about.nextdoor.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0422,NICE,e7c1128f346127b8,https://www.nice.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0524,Nintendo eShop,5935ae757a597635,https://www.nintendo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0129,Notion Integrations,f15328fade9b3842,https://www.notion.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0129,Notion Integrations,b62a3fece8ae3fd4,https://www.notion.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0039,npm,b4e399abc4a6b556,https://www.npmjs.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0044,NuGet Gallery,d718073a6ff41223,https://www.nuget.org/public/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0044,NuGet Gallery,f655db7e643b36c4,https://www.nuget.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0044,NuGet Gallery,6e91e7101fd0cebd,https://www.nuget.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0441,NYSE,65814eed8bbb5d2e,https://www.nyse.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0453,OECD Education,1df658298bb126fe,https://data-explorer.oecd.org/assets/oecd/data-explorer/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0365,OECD Health Statistics,1df658298bb126fe,https://data-explorer.oecd.org/assets/oecd/data-explorer/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0439,Open Banking UK,ab6d009fca3fb477,https://www.openbanking.org.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0439,Open Banking UK,4d5877aa8abdd1f1,https://www.openbanking.org.uk/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0048,Open VSX Registry,6622e40e553c0a47,https://open-vsx.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0048,Open VSX Registry,9d77ecaa67cf4d01,https://open-vsx.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0323,OpenAlex,16ceb5ee3e0dc13a,https://openalex.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0323,OpenAlex,826041ce04196f68,https://openalex.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0323,OpenAlex,8c0ad004aba8821f,https://openalex.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0264,OpenCorporates,ad18359ba750d55a,https://opencorporates.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0264,OpenCorporates,46134b6feb310978,https://opencorporates.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0532,OpenCritic,a253d9c30b758163,https://opencritic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0532,OpenCritic,1fcddc83fbd22768,https://opencritic.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0535,OpenRouter,9fe73a299f992ac6,https://openrouter.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0535,OpenRouter,860b82328920966e,https://openrouter.ai/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/860b82328920966ed87bd3878e71ef86b43676ceb36bd23b4aae2a1387d7965b.bin
+source-0535,OpenRouter,d6a4812fbcc3b575,https://openrouter.ai/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d6a4812fbcc3b575fa4919820ba948208bc8bd2a3efb85b1eac32200c72f8aa2.bin
+source-0303,OpenStreetMap,8e312e9b5108ed49,https://www.openstreetmap.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0303,OpenStreetMap,d6e9878cea4dc554,https://www.openstreetmap.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d6e9878cea4dc5548227b8a973324cd5055c9e29c878f68defa09941787e1047.bin
+source-0303,OpenStreetMap,c71f5d9660f9b307,https://www.openstreetmap.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/c71f5d9660f9b307fc19a86b7c633a7889615704bca64cf0c0f01470934e9311.bin
+source-0425,Orphanet,4a3caf715f384e24,https://www.orpha.net/,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0350,OSF,c1e632d6bbdadc00,https://osf.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0350,OSF,b3b0023ca2d6e650,https://osf.io/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0366,Our World in Data,dd66a7b7888edfaf,https://ourworldindata.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0366,Our World in Data,0f94be563b441b9d,https://ourworldindata.org/atom.xml,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0045,Packagist,7d6b5d1eac7367ff,https://packagist.org/packages/list.json?vendor=symfony,packagist_package_list,gövde saklanmamış; normalize edilecek içerik yok
+source-0045,Packagist,6925090891639083,https://packagist.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0353,Papers with Code,96782e2377a6a780,https://paperswithcode.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0353,Papers with Code,2d5a2f655e6e40dc,https://paperswithcode.co/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0353,Papers with Code,0a8546059f20f0e3,https://paperswithcode.co/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0244,Pathmatics,8d25add0b49d6b66,https://pathmatics.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0244,Pathmatics,ef0c8e479e2c3908,https://pathmatics.io/blog/feed.xml,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0244,Pathmatics,2208c883cd7a8137,https://pathmatics.io/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0170,Pazarama,7d1af3e52d756eb6,https://www.pazarama.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0055,Peerlist,603587120bf7a39a,https://peerlist.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0140,PeerSpot,800c2f7ae610421d,https://peerspot.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0263,People Data Labs,a4d02da7c57f3aaf,https://www.peopledatalabs.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0598,PickFu,3d6c2ca1a4d3fd9a,https://www.pickfu.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0085,Pinterest,1d0b3ddd2f65b117,https://www.pinterest.com/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/1d0b3ddd2f65b1171fead27e2845894cbf93790bf50fc148926f4a07302033fa.bin
+source-0240,Pinterest Ads Repository,145dac1f01238209,https://ads.pinterest.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0253,PitchBook,f57e87d869d3aca5,https://pitchbook.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0066,PitchWall,cd175148021a5eec,https://pitchwall.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0522,PlayStation Store,a1e975d3e5641496,https://store.playstation.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0346,PLOS,22bea5a80f3c1e5a,https://plos.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0346,PLOS,e45917ab58e325bd,https://plos.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/e45917ab58e325bd27bda7ab3e87fdee19b179d589fc3cff5e2472468dd0e0a8.bin
+source-0346,PLOS,ecfef7bcfee41502,https://plos.org/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0599,Pollfish,6fd17aeb1ebe0674,https://www.pollfish.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0257,PrivCo,3b085780391160da,https://www.privco.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0051,Product Hunt,0d39dd5b65502df0,https://www.producthunt.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0591,Prolific,e54e0f333cf45477,https://www.prolific.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0154,ProvenExpert,5286d9afb82f2037,https://provenexpert.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0154,ProvenExpert,a80c3eb585a1bea1,https://provenexpert.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0331,PubMed,39e9504f6a6dc1cf,https://pubmed.ncbi.nlm.nih.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0332,PubMed Central,784d2efd57c81bd3,https://pmc.ncbi.nlm.nih.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0040,PyPI,fd0059b266de42bd,https://pypi.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0040,PyPI,f3007e28bb5d55e3,https://pypi.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/f3007e28bb5d55e3bf963118a1a2b3b8138963ee423df39c9ebaa799a5fe73d3.bin
+source-0040,PyPI,a74939cfe319b529,https://pypi.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/a74939cfe319b529329ab5d3460f1b08597f098fa926b72839551824b6dd9b36.bin
+source-0040,PyPI,e32684fc9c38c39c,https://pypi.org/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/e32684fc9c38c39cc6b550f03bd86f18f4f3814055a5d1b01287f465b450f128.bin
+source-0040,PyPI,d2cb38791a2ff405,https://pypi.org/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d2cb38791a2ff405e0b791adbfa1e466ac90b8e27df69613b773aca5b63c9157.bin
+source-0075,Reddit,41aea42110242175,https://www.reddit.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0468,Redfin,eb803f94a6269338,https://www.redfin.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0397,Regulations.gov,6239b39613cad7ea,https://www.regulations.gov/?_escaped_fragment_=documentDetail;D%3DNIH-2011-0003-0003,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0290,Remote OK,7c816e3d9aff3771,https://remoteok.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0290,Remote OK,e4c4fd038380e3fb,https://remoteok.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0536,Replicate,fb728bd6c9304b5b,https://replicate.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0536,Replicate,d5915f426338dc29,https://replicate.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d5915f426338dc29b14aedbe736365e7ac7f62436d29f035653444e1f24c4d1f.bin
+source-0536,Replicate,2ad8b22812974081,https://replicate.com/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/2ad8b228129740813d3ae3472db68826b5cc2c4818da93551e8c217e308df83e.bin
+source-0536,Replicate,9ab14b64ef74b5a6,https://replicate.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0275,Republic,f58829938a646b49,https://republic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0338,ResearchGate,4b9963df3f3529b6,https://www.researchgate.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0590,Respondent,fe61526dae5beb38,https://www.respondent.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0575,Rest of World,b98295090773daad,https://restofworld.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0575,Rest of World,1da1f8de4f32847e,https://restofworld.org/feed/latest,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0555,Reuters,609b6f008e2bf64b,https://www.reuters.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0555,Reuters,fbc6791b95c23845,https://www.reuters.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0152,Reviews.io,4fb07b7062b32fb7,https://www.reviews.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0483,RICS,f283fc52e4332cb9,https://www.rics.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0471,Rightmove,47e29789a825f854,https://www.rightmove.co.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0188,RIPE NCC,1624293adb248504,https://www.ripe.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0188,RIPE NCC,808dc2186e36911d,https://www.ripe.net/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/808dc2186e36911dd62ec4d4ad55ab84027fad07f253f60835141870fef8e917.bin
+source-0188,RIPE NCC,5f7f96ec8ec544a6,https://www.ripe.net/news.xml,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0497,Rome2Rio,6d84b5b15afb66f5,https://www.rome2rio.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0041,RubyGems,4f37f8e65190662e,https://rubygems.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0041,RubyGems,dea30af66d29530e,https://rubygems.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/dea30af66d29530ead04e62d0eb2670327f644ddf8b88bfd43a9d49b24cab67d.bin
+source-0041,RubyGems,8abb367b82e42aa0,https://rubygems.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/8abb367b82e42aa0aa02a491e8b7b675d3f8f3a43ccde34177457dbe1243aadc.bin
+source-0058,SaaSHub,8853ba4eab710d82,https://www.saashub.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0112,Safari Extensions,c21b0e8b8f4defba,https://apps.apple.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0112,Safari Extensions,ac105b24b9476da9,https://apps.apple.com/sitemaps_apps_index_chart_1.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0122,Salesforce AppExchange,68e66b5cd681f594,https://appexchange.salesforce.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0099,Samsung Galaxy Store,1f312fee550be2f7,https://galaxystore.samsung.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0099,Samsung Galaxy Store,e612c1964b21d4d3,https://galaxystore.samsung.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0099,Samsung Galaxy Store,3d761d74381622da,https://galaxystore.samsung.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0610,Sastrify,5f4212c40cf4d438,https://www.sastrify.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0222,SE Ranking,6a836ad82057fcba,https://seranking.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0010,SearXNG,81e537ea139abf28,https://docs.searxng.org/,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0265,SEC EDGAR,72d6196b3f207373,https://www.sec.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0265,SEC EDGAR,7bbad71cfc42fae6,https://www.sec.gov/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/7bbad71cfc42fae6595d075e00cc50f5753a27d4a345af27d044af2720f74958.bin
+source-0297,Secretcv,20b991056db69e3c,https://www.secretcv.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0195,SecurityTrails,ac5a1492a72bf3d8,https://securitytrails.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0276,Seedrs,a0ead4bdd542056e,https://europe.republic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0475,Seloger,3dd6606cd6539339,https://www.seloger.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0322,Semantic Scholar,c91d2f860bd8e576,https://www.semanticscholar.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0218,Semrush,09df5a37281fc62f,https://www.semrush.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0245,Sensor Tower,9e61badeda8e9143,https://sensortower.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0143,Serchen,842b34303164ead4,https://serchen.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0143,Serchen,6a26bfd5fd72043c,https://www.serchen.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0012,SerpAPI,668ce07b2b148504,https://serpapi.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0013,Serper,8fa3036c68bfcbd3,https://serper.dev/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0226,Serpstat,0c11e87b797272a6,https://serpstat.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0194,Shodan,419573a2f0e3f3da,https://www.shodan.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0194,Shodan,ad724102dfbf9778,https://www.shodan.io/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0114,Shopify App Store,3f1f2496889712aa,https://apps.shopify.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0571,Sifted,0bcbd82929697058,https://sifted.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0571,Sifted,ed0f84077572b684,https://sifted.org/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0571,Sifted,27a1c025fa5b5200,https://sifted.org/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0203,Similarweb,f8b547fa4a960bcc,https://www.similarweb.com:443/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0225,Sistrix,c84b501ed329f785,https://www.sistrix.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0225,Sistrix,802788ff835bb50f,https://www.sistrix.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0461,Skillshare,61717f71d2b51240,https://help.skillshare.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0490,Skyscanner,cb4e029ec6c8ef6a,https://www.skyscanner.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0091,Slack,5cf267512c33523c,https://slack.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0091,Slack,18f9e71f771407a4,https://slack.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0124,Slack Marketplace,5cf267512c33523c,https://slack.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0124,Slack Marketplace,18f9e71f771407a4,https://slack.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0060,Slant,5893915df520b4dc,https://fanac.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0060,Slant,21e22d05d6a67ff3,https://fanac.org/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0035,Slashdot,ece56f588167e26b,https://slashdot.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0289,SmartRecruiters,2ab5b2680adc3744,https://www.smartrecruiters.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0546,Smithery,629bcd87e552470e,https://smithery.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0546,Smithery,be3dc61a0c421ff6,https://smithery.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0248,SocialPeta,09d59ae7f6910f76,https://socialpeta.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0137,Software Advice,d9e16c3bf9396921,https://www.softwareadvice.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0146,SoftwareSuggest,8987d6ce5670ce68,https://www.softwaresuggest.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0020,SourceForge,09c4d5c44ceab0a2,https://sourceforge.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0020,SourceForge,9ca2d5b6880d1b12,https://sourceforge.net/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/9ca2d5b6880d1b128b303b20bef5f5a92a85aa659c93621b907cd8fd21832166.bin
+source-0020,SourceForge,9de4779df97b84ef,https://sourceforge.net/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/9de4779df97b84efd8b412d71be985ef16956e285c2104a0cb18c5b5e6a56da3.bin
+source-0020,SourceForge,b6407edeb024b52f,https://sourceforge.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0141,SourceForge Reviews,09c4d5c44ceab0a2,https://sourceforge.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0141,SourceForge Reviews,05af654cdab0e3a4,https://sourceforge.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0233,SparkToro,05ce1519221bd507,https://sparktoro.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0233,SparkToro,9d3b59aca72fbaeb,https://sparktoro.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0384,SPK,1022d7920f3e5a64,https://www.spk.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0602,Sprig,7901bed7d397f104,https://sprig.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0342,SpringerLink,1b1eda0c3d7c2dac,https://link.springer.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0223,SpyFu,cde62a412e2362e6,https://www.spyfu.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0118,Squarespace Extensions,2280dba517d01584,https://www.squarespace.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0540,Stanford HELM,d5abc6db304fc145,https://crfm.stanford.edu/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0070,Starter Story,3397475a8545b0ba,https://www.starterstory.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0057,Startup Stash,26e0eb3260e45810,https://startupstash.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0057,Startup Stash,ff7073865138644f,https://startupstash.com/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0057,Startup Stash,9ed891e32ba05f1d,https://startupstash.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0619,StartupMarket,842b34303164ead4,https://startupmarket.co/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0620,startups.watch,c4983a6154be6f53,https://startups.watch/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0518,Steam,d7943b2b8e930d73,https://store.steampowered.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0527,SteamDB,a58dfdc73522396e,https://steamdb.info/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0089,Substack,e468186aecca9269,https://substack.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0089,Substack,6dc7bf925bacb0e2,https://substack.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0585,SurveyMonkey,5135bd08784048c1,https://da.surveymonkey.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0585,SurveyMonkey,cdb4a5de29db1e98,https://www.surveymonkey.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0585,SurveyMonkey,d21df8929f8d5980,https://www.surveymonkey.com/feed/,rss_feed,gövde saklanmamış; normalize edilecek içerik yok
+source-0585,SurveyMonkey,4f3412ef1697a512,https://da.surveymonkey.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0585,SurveyMonkey,c51b89e3797d5beb,https://www.surveymonkey.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0369,T.C. Sanayi ve Teknoloji Bakanlığı,99fe2a8d052a3a49,https://sanayi.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0369,T.C. Sanayi ve Teknoloji Bakanlığı,b587711574e61fa0,https://sanayi.gov.tr/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0586,Tally,7ec82d2ca60e9d93,https://tallyai.money/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0586,Tally,de14a0d5dbe4241a,https://tallyai.money/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0481,Tapu ve Kadastro Genel Müdürlüğü,67f26538f1ce6aa0,https://www.tkgm.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0011,Tavily,56389683ed076272,https://www.tavily.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0385,TCMB,788ae04bb8e1dc25,https://tcmb.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0561,TechCrunch,5fbefc8fdb1ded6f,https://techcrunch.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0272,Techstars Companies,774d4607d0b5bbe1,https://www.techstars.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0147,Tekpon,ad14f6b310e7e463,https://tekpon.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0147,Tekpon,96240cadabc4f6ba,https://tekpon.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0092,Telegram,125777d7854abfdb,https://www.telegram.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0165,Temu,e679139950640573,https://www.temu.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0165,Temu,3527cef51dcd5e1c,https://www.temu.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0418,The Trademark Search Company,808422773cee7561,https://thetrademarksearchcompany.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0562,The Verge,0bda26683aee2327,https://theverge.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0559,The Wall Street Journal,b4a6a204ff6ca20e,https://cn.wsj.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0559,The Wall Street Journal,abe32e7314bc0c12,https://www.wsj.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0516,TheFork,b76d20d0fc984802,https://www.thefork.fr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0179,ThemeForest,a231146da6f1fc4a,https://themeforest.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0061,There's An AI For That,2765028d4ca22767,https://theresanaiforthat.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0232,Think with Google,db15bac123343ad9,https://www.thinkwithgoogle.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0232,Think with Google,c0788941d62a7cdd,https://www.thinkwithgoogle.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0082,TikTok,6ddad0a18e8adb9f,https://tiktok.uptodown.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0082,TikTok,835705a2ecb862f4,https://www.tiktok.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0238,TikTok Creative Center,d17f64319ab9cc71,https://ads.tiktok.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0537,Together AI,f677ebbce49ce67f,https://www.together.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0309,TomTom,2944db84eb5b644b,https://www.tomtom.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0063,Toolify,20669643c912bd7d,https://toolify.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0063,Toolify,2a8213da3ee8e365,https://toolify.io/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0254,Tracxn,cb09ad8c89ce0698,https://tracxn.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0446,TradingView,417f07c0a1a6e805,https://www.tradingview.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0446,TradingView,c3dcd1ceb823d944,https://www.tradingview.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0316,Treatwell,9d58315b163f4477,https://www.treatwell.co.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0231,Trend Hunter,a63743ab454fbad3,https://www.trendhunter.com:443/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0166,Trendyol,c18f10733f2fc14c,https://www.trendyol.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0513,Trendyol Yemek,9e15e8df1dbbcddb,https://tgoyemek.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0608,Tropic,c823fdfa6d0ee1f3,https://www.tropic.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0470,Trulia,460db17ae5d98f23,https://www.trulia.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0148,Trustpilot,a9e0d78c5b3befcb,https://www.trustpilot.com/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/a9e0d78c5b3befcb5fafd88d7be3f394430b06882f665c2faaf0b52a4c0e456a.bin
+source-0086,Tumblr,2892c51fb7e06e76,https://www.tumblr.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0525,Twitch,3bf83d9ad4057c9f,https://www.twitch.tv/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0525,Twitch,99a60b04ca0dd9fb,https://www.twitch.tv/sitemapv2_index.xml.gz,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0583,Typeform,677569d7d677b76c,https://www.typeform.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0622,TÜBİTAK,773fb8d35bb9a39d,https://tubitak.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0622,TÜBİTAK,a6a513108da0fe90,https://tubitak.gov.tr/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0482,TÜİK Konut İstatistikleri,e74199387441ed91,https://veriportali.tuik.gov.tr/,entry_url,gövde saklanmamış; normalize edilecek içerik yok
+source-0482,TÜİK Konut İstatistikleri,5a20ffcfe3dd260a,https://veriportali.tuik.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0482,TÜİK Konut İstatistikleri,622ef226e83374d0,https://veriportali.tuik.gov.tr/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0629,TÜSİAD,22aa0adeed7730e6,https://www.tusiad.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0484,U.S. Census Building Permits,4840965279b91771,https://www.census.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0484,U.S. Census Building Permits,89e98561c832fc47,https://www.census.gov/sitemapindex/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0484,U.S. Census Building Permits,8bef82f85dc02b0c,https://www.census.gov/sitemapindex/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0450,U.S. Department of Education,9801100e5efccb2a,https://www.ed.gov/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0498,Uber,40a0335cf0146087,https://www.uber.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0220,Ubersuggest,684d5c50b4e3683a,https://ubersuggest.net/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0220,Ubersuggest,e3445a7c7cd79e1c,https://ubersuggest.net/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0460,Udemy,7234d638dc4cb3eb,https://www.udemy.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0460,Udemy,34184ac2c1957c22,https://www.udemy.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0403,UK Financial Conduct Authority,3df0c294b0301dfd,https://www.fca.org.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0403,UK Financial Conduct Authority,d86d648c29904825,https://www.fca.org.uk/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0404,UK Information Commissioner's Office,1160d85ad1007092,https://ico.org.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0402,UK Legislation,0d0304e7d54065f3,https://www.legislation.gov.uk/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0053,Uneed,e885167311910817,https://www.uneed.best/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0053,Uneed,939ecf7b1e37aa13,https://www.uneed.best/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0357,United Nations Data,70d4d6bf220518f0,https://data.un.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0108,Uptodown,6ddad0a18e8adb9f,https://uptodown.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0206,urlscan.io,bdf634fb0b4c6a71,https://urlscan.io/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0206,urlscan.io,30fccea2c639d7cb,https://urlscan.io/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0361,US Census Bureau,4840965279b91771,https://www.census.gov/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0361,US Census Bureau,8bef82f85dc02b0c,https://www.census.gov/sitemapindex/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0605,UsabilityHub,5989edf251fb750e,https://usabilityhub.ai/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0605,UsabilityHub,3c11e377623a274f,https://www.lyssna.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0605,UsabilityHub,7a0d17de0a258703,https://usabilityhub.ai/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0589,User Interviews,f674f27e3ce5be44,https://www.userinterviews.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0592,UserTesting,17f7b0b22f4a02e7,https://www.usertesting.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0407,USPTO Patent Center,025945c7e41f7703,https://patentcenter.uspto.gov/?ref=investo.global,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0613,Vantage,0e6a2c71f87e8e64,https://www.vantage.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0607,Vendr,74927382d15b76a7,https://www.vendr.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0565,VentureBeat,e39c5337a2a070db,https://venturebeat.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0186,Verisign RDAP,75eb3bb235d11283,https://rdap.verisign.com/net/v1/domain/claycarson.net,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0609,Vertice,57e1af376276e366,https://www.vertice.one/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0528,VG Insights,37c303d1efaa17e4,https://app.sensortower.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0528,VG Insights,dd6b13a2c6737528,https://app.sensortower.com/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0528,VG Insights,5f070aa2724457d5,https://app.sensortower.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0207,VirusTotal,93a8e3479ae49597,https://www.virustotal.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0049,Visual Studio Marketplace,69b77fdf4ed2cc11,https://marketplace.visualstudio.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0104,vivo App Store,adc511c576cbed19,https://appstore.vivo.com.cn/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0494,Vrbo,e1b81859b9181b92,https://www.vrbo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0162,Walmart,72f3ce92a4bac666,https://business.walmart.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0202,Wappalyzer,247d1b19110ef2e6,https://www.wappalyzer.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0204,Wayback Machine,9136bff3182180fc,https://archive.org/wayback/available?url=example.com,wayback_availability,gövde saklanmamış; normalize edilecek içerik yok
+source-0291,We Work Remotely,427e7395078046b4,https://weworkremotely.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0330,Web of Science,52d0ab265a4804fd,https://clarivate.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0330,Web of Science,3abe42fe70732c6c,https://clarivate.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0120,Webflow Apps,b04ed9b180086889,https://webflow.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0576,Webrazzi,7ebda8b58dd12bdc,https://webrazzi.com//robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0294,Welcome to the Jungle,d837e33d3f8f5f0d,https://www.welcometothejungle.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0073,Wellfound,3d72bacb98b7ecf6,https://wellfound.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0420,WHO,c6957df319872ec3,https://www.who.int/robots.txt,robots_preflight,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/c6957df319872ec37b752ec18e78f276e8957a8116af8f0e0a7cd3eb6ade78e1.bin
+source-0420,WHO,21f2f22a36104d3f,https://www.who.int/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/21f2f22a36104d3f507635a7dcf02fca95c1f6445cf9ecdff9ff5964c445a451.bin
+source-0364,WHO Global Health Observatory,fed94013f0dd40b4,https://www.who.int/sitemaps/sitemapindex.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0199,WhoisXML API,b5177c856d31f69a,https://www.whoisxmlapi.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0344,Wiley Online Library,7576b19afe6c8e82,https://onlinelibrary.wiley.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0410,WIPO Global Brand Database,69aa1955dbd01426,https://branddb.wipo.int/,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0409,WIPO PATENTSCOPE,90b854d1243cadc8,https://patentscope.wipo.int/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0409,WIPO PATENTSCOPE,c7eb170c869f594d,https://patentscope.wipo.int/,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0563,Wired,7e12f9d93a8a761a,https://www.wired.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0117,Wix App Market,fef1f6ed42a555f0,https://www.wix.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0115,WooCommerce Marketplace,e2efcf82f8c89e26,https://woocommerce.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0115,WooCommerce Marketplace,09cf8b57cb4f0897,https://woocommerce.com/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0116,WordPress Plugin Directory,65185a701db3ab19,https://wordpress.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0116,WordPress Plugin Directory,f1dc92a994147a8d,https://wordpress.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0288,Workable Jobs,66273243696f6dfd,https://jobs.workable.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0434,World Bank,b7185a57525380f0,https://www.worldbank.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0434,World Bank,0249409b86f7e250,https://www.worldbank.org/ext/en/home,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/0249409b86f7e250343c97d600e33ae5afd5da50b4eafd955c35bbcc9157b881.bin
+source-0434,World Bank,dce613d309c69220,https://www.worldbank.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0354,World Bank Open Data,16ceb5ee3e0dc13a,https://data.worldbank.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0354,World Bank Open Data,e6083910205498c8,https://data.worldbank.org/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0597,Wynter,1cc68bf910f10092,https://wynter.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0076,X,14a72e33b3e9af07,https://x.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0242,X Ads Transparency Center,5153c21cd6a9b180,https://ads.x.com/en/help?ref=BTC,common_crawl_warc,gövde saklanmamış; normalize edilecek içerik yok
+source-0242,X Ads Transparency Center,2c4d363ea385604f,https://ads.x.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0102,Xiaomi GetApps,fa171ca8b65a9698,https://global.app.mi.com/?lo=ID&la=en,root_html,gövde saklanmamış; normalize edilecek içerik yok
+source-0072,Y Combinator Companies,b777f8c93cf7de77,https://www.ycombinator.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0072,Y Combinator Companies,8981e5928117a25f,https://www.ycombinator.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0443,Yahoo Finance,a01715ceceb6faea,https://finance.yahoo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0006,Yahoo Search,021adb45d8aa004e,https://www.yahoo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0156,Yelp,e4764c53eae103d7,https://www.yelp.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0511,Yemeksepeti,50e997fb3ee5230f,https://www.yemeksepeti.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0296,Yenibiris,3445df22652b1ff4,https://www.yenibiris.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0296,Yenibiris,fd965905ea8010de,https://www.yenibiris.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0083,YouTube,96f8640ca357626e,https://www.youtube.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0454,YÖK,e5c4b84484ee4216,https://www.yok.gov.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0628,Yıldız Teknopark,d9066d29c1dfed62,https://www.yildizteknopark.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0551,Zapier,8b12e80d61c4949b,https://zapier.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0551,Zapier,2bc70e5ff250ef45,https://zapier.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0130,Zapier App Directory,8b12e80d61c4949b,https://zapier.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0130,Zapier App Directory,8b34d9582ecbb1f5,https://zapier.com/uag6x9zaeydnbfy75xsggcsb37h8cgzf-two-service-sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
+source-0348,Zenodo,56e9fc51dcc0170c,https://zenodo.org/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0348,Zenodo,91a63f33827fa9c3,https://zenodo.org/,root_html,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/91a63f33827fa9c31c4101de42d272d9b8c152b85b6335fd5046a095e7a76594.bin
+source-0348,Zenodo,e61724c7d219d4fd,https://zenodo.org/sitemap.xml,sitemap_xml,dizinde kayıtlı dosya bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/e61724c7d219d4fdb9e2d8f7dd35f4ac939f8367647c8f7397b559210d086f9a.bin
+source-0280,ZipRecruiter,9b16265e9cc730b2,https://www.ziprecruiter.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0260,ZoomInfo,bfcb020b04f67534,https://www.zoominfo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0169,Çiçeksepeti,974de60424d97f8c,https://www.ciceksepeti.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
