@@ -1788,3 +1788,159 @@ python3 -m unittest test_deney
 
 Ağsız koşu ölçütlerin tamamını değerlendirir; `--canli` yalnızca veri
 doğruluğu aşamasında ve robots ön kontrolünden geçmiş izinli yollarla ağa çıkar.
+
+---
+
+# Görev 9 — Kategori sözlüğü: etiketleri açılmış örneklere bağlamak
+
+**İstenen:** Envanterden her mevcut kaynak ailesi ve veri yüzeyini temsil eden
+örnekleri açmak; ürün tipi, kaynak ailesi, belge türü ve araştırma niyetini ayrı
+eksenlerde tutmak; yalnız site adına bakarak etiketleme yapmamak.
+
+## 9.1 Problem: etiketler çıkarımla verilmişti
+
+İlk sekiz görevde kategoriler **çıkarımla** kuruldu: `SITE-LISTESI.md`'nin
+başlıklarından türetildi, kaynağın adına ve grubuna bakıldı. Bu, tutarlı bir
+sistem üretti ama etiketlerin hiçbiri açılmış bir dosyaya bağlı değildi.
+
+Görev 8 bunu ölçmüştü: ölçüm alanı satırlarının 1378'i `beyan`, 10'u
+`dogrulandi` durumundaydı. Bu adım o beyanları **açılmış artefaktlara** bağlar.
+
+`results/raw/` altında 591 açılabilir artefakt var; malzeme yerinde.
+
+## 9.2 Dört eksen ayrı tutulur
+
+Karıştırılmaları sistematik hataya yol açar:
+
+| Eksen | Sorduğu soru |
+|---|---|
+| **Ürün tipi** | Araştırılan ürün ne |
+| **Kaynak ailesi** | Kaynak ne tür bir yayın |
+| **Belge türü** | Elimizdeki **dosya** ne |
+| **Araştırma niyeti** | O belgeden hangi soruya cevap aranıyor |
+
+Ayrımın karşılığı tek cümlede görünür: *G2 (kaynak ailesi = inceleme sitesi) hem
+B2B SaaS hem data/analytics ürünü (ürün tipi) araştırmasında kullanılır;
+elimizdeki G2 dosyası bir ana sayfaysa (belge türü) hiçbir soru (araştırma
+niyeti) için kanıt üretmez.* Üç eksen ayrı olmadan bu cümle kurulamaz.
+
+Ürün tipi ekseni kanonik görev metninden (`tasks/ayselin-task/README.md`, T01)
+alınır. Görev 1'in kategorileri aynı ekseni farklı kesen eski bir denemedir;
+uyuşmayan yerde kanonik liste geçerlidir ve eski kategorinin nasıl bölüneceği
+karar kuralıyla yazılıdır — karar ertelenmez.
+
+**Bir eşleme yanlıştı ve düzeltildi.** `eklenti-entegrasyon` önce `marketplace`
+sayılmıştı. Ama `marketplace`, *iki taraflı bir pazar yeri kurmak* demektir; bir
+WordPress eklentisi geliştirmek pazar yeri kurmak değil, **o pazar yerinde
+satılan ürün olmaktır.** Doğru kural barındıran platformun alıcısına bakar:
+işletme yazılımına eklenti → `b2b-saas`, e-ticaret platformuna eklenti →
+`ecommerce-enablement`, tarayıcı eklentisi → `consumer-mobile-web`. Platform
+belirsizse `belirlenemedi` yazılır.
+
+`oyun` için ayrı bir tip açılmadı: oyunun araştırma niyeti tüketici ürününkiyle
+aynıdır. Oyunu ayıran şey **kaynak ailesi** ekseninde taşınır — `oyun dikeyi`
+zaten ayrı bir ailedir. Dört eksenin ayrı olmasının işe yaradığı somut örnek
+budur.
+
+## 9.3 Belge türü ancak dosya açılarak bilinir
+
+Eldeki `yontem` sütunu **nasıl aldık** sorusunu cevaplıyordu (`root_html`,
+`sitemap_xml`). Belge türü **ne aldık** sorusunun cevabıdır ve kaynağın adından
+çıkarılamaz.
+
+Dosyalar açılınca ilk kural seti yanlış çıktı ve üç yerde sıkılaştırıldı:
+
+| Zayıf işaret | Ne olmuştu | Yeni kural |
+|---|---|---|
+| Tek bir `ItemList` | Discord, Foursquare, Angi *"liste sayfası"* etiketlendi | En az **5** `itemListElement` |
+| Tek bir `Review` | BigSpy *"inceleme sayfası"* etiketlendi | En az **3** `Review` nesnesi |
+| Tek bir `Offer` | BASE, Great Question *"fiyatlandırma sayfası"* etiketlendi | Fiyat **değeri** taşıyan en az **2** `Offer` |
+
+Sebebi tek: pazarlama ana sayfaları kendilerini tarif eden yapısal veri gömer —
+gezinme menüsü `ItemList`, müşteri görüşü `Review`, kendi ürünü `Product`.
+Bunları kayıt ya da inceleme sayfası saymak, kabul kriterinin yasakladığı şeydir.
+
+**Kök yolu kuralı.** Kök yoldaki sayfa varsayılan olarak ana sayfadır; ancak
+listelenmiş kayıtlara dair güçlü kanıt bunu ezer. Ana sayfa her zaman `/`
+değildir: `base.com/en-US/home/` ve `bigspy.com/en` de kök sayılır — dil/bölge
+öneki ve `home`/`index` segmentleri atıldıktan sonra yol boşsa kök kabul edilir.
+
+**Kök olmayan ama işaret taşımayan dosya `belirsiz` etiketlenir.** URL'ye bakıp
+*"bu bir liste sayfasıdır"* demek, görevin yasakladığı şeyin ta kendisidir.
+
+## 9.4 İki ayrı örnekleme geçişi
+
+İlk geçiş kaynak ailesi başına üç örnek açar. Ama kaynak başına *en
+bilgilendirici* dosyayı seçtiği için `root_html`'e eğilimlidir ve az sayıda ama
+değerli yüzeyler dışarıda kalır. İkinci geçiş **veri yüzeyi** başına örnekler:
+
+```
+aile geçişi   : 91 kayıt
+yüzey geçişi  :  6 kayıt   (hepsi API yanıtı — en güvenilir alan kaynağı)
+```
+
+Her kayıt hangi geçişten geldiğini taşır; iki örnekleme karıştırılmaz.
+
+## 9.5 Sonuç
+
+```
+97 pilot kayıt · 31 kaynak ailesi · 95 ayrı kaynak · 13 veri yüzeyi
+```
+
+Açılabilir yüzeylerin **tamamı** temsil ediliyor. 31 ailenin 30'unda üç örnek
+var; kalan biri eksik kaydıyla yazılı.
+
+| Belge türü | Kayıt |
+|---|---:|
+| `ana-sayfa` | 72 |
+| `belirsiz` | 13 |
+| `api-yaniti` | 6 |
+| `politika-dosyasi` | 2 |
+| `besleme` | 2 |
+| `sitemap` | 1 |
+| `fiyatlandirma-sayfasi` | 1 |
+
+**97 kayıttan yalnız 9'u ölçüm kanıtı üretiyor.**
+
+Bu, kabul kriterinin doğrudan karşılığıdır: kaynaklara erişildi ama elimizdeki
+dosya çoğunlukla ana sayfadır; alanı taşıyan iç sayfa çekilmemiştir. İçerik
+bulunmayan yerde yorum ya da fiyat verisi varsayılmaz.
+
+### Üç eksik kaydı
+
+| Ne | Neden |
+|---|---|
+| `Kitle fonlaması platformları` ailesi | Ailedeki kaynakların açılabilir artefaktı yok |
+| `packagist_package_list` yüzeyi | Gövde saklanmamış (`saklama=kosu_json_icinde`, `bayt=0`) |
+| `wayback_availability` yüzeyi | Aynı sebep — elde yalnız sha256 ve URL var |
+
+Son ikisi dikkat çekici: bu iki yüzey **çekildi**, hash'i duruyor, ama gövdesi
+saklanmadığı için açılamıyor. Tahmin edilmedi, eksik olarak yazıldı.
+
+## 9.6 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `KATEGORI-SOZLUGU.md` | Dört eksen; her kategoride tanım, dahil/hariç, çoklu etiket kuralı, belirsiz durumu |
+| `INCELEME-GUNLUGU.md` | 97 açılmış artefaktın tek tek kaydı |
+| `PILOT-KAYITLAR.csv` | Etiketlenmiş kayıtlar |
+| `PILOT-EKSIKLER.csv` | Açık eksik-veri kayıtları |
+| `kategori_sozlugu.py` | Sözlüğü ve pilotu üretir; belgeler elle yazılmaz |
+| `test_kategori_sozlugu.py` | 30 test |
+
+Her pilot kayıt teslim şartının beş alanını taşır: `source_id`, URL, artefakt
+kimliği (sha256), içerik alanı ve sınıflandırma gerekçesi.
+
+Testler dört şeyi korur: ürün tipi ile kaynak ailesi kümelerinin ayrık
+kalmasını, zayıf işaretin içerik etiketi üretmemesini, aday keşfin ölçüm kanıtı
+sayılmamasını ve açılamayan her yüzeyin eksik kaydı taşımasını.
+
+## 9.7 Yeniden üretim
+
+```bash
+python3 kategori_sozlugu.py
+python3 -m unittest test_kategori_sozlugu
+```
+
+Script `ARTEFAKT-DIZINI.csv`'yi okur, `results/raw/` altındaki dosyaları açar ve
+dört çıktıyı birden üretir. Ağa çıkmaz.

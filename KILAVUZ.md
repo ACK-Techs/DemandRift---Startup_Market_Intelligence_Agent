@@ -1108,7 +1108,7 @@ soru çıktıda `tek_yuvali_soru` altında listelenir.
 
 ## 5.7 Üretilen dosya
 
-### `SECIM-ORNEKLERI.csv` — 72 satır
+### `SECIM-ORNEKLERI.csv` — 73 satır
 
 Üç örnek fikir için üretilen paketler. Satır birimi **(fikir, soru, yuva)**.
 
@@ -1142,7 +1142,7 @@ ikisi de kullanıldı.*
 
 | Fikir | Kategori | Katman | Ek | Soru | Yuva | Kaynak |
 |---|---|---|---|---:|---:|---:|
-| Diyabet takip uygulaması | `mobil-uygulama` | — | `saglik` | 10 | 23 | 11 |
+| Diyabet takip uygulaması | `mobil-uygulama` | — | `saglik` | 10 | 24 | 12 |
 | Muhasebeci fatura yazılımı | `b2b-web-yazilimi` | — | `fintech` | 8 | 24 | 13 |
 | Esnaf randevu uygulaması | `yerel-hizmet` | `mobil-uygulama` | — | 11 | 25 | 11 |
 
@@ -1152,7 +1152,7 @@ Kategoriye özel yuvalardan gelen kaynaklar tamamen farklı çıkıyor:
 |---|---|
 | Diyabet uygulaması | Google Play Store, NICE |
 | Fatura yazılımı | CloudPrice, Indeed, Investing.com, SoftwareSuggest |
-| Esnaf randevu uygulaması | Google Play Store, Houzz |
+| Esnaf randevu uygulaması | Google Play Store, Angi |
 
 Diyabet ile fatura paketleri arasında **hiç ortak kategori kaynağı yok**.
 Diyabet ile randevu arasındaki tek ortak Google Play — ikisi de mobil uygulama
@@ -1326,8 +1326,8 @@ ağa çıkılmaz.
 
 ## 6.5 Sonuç
 
-Üç örnek fikrin 72 kanıt yuvası için **33 uzak URL** ve **34 yerel arama**
-üretildi; tek kalıp yerine **69 farklı sorgu metni** çıktı.
+Üç örnek fikrin 73 kanıt yuvası için **33 uzak URL** ve **35 yerel arama**
+üretildi; tek kalıp yerine **70 farklı sorgu metni** çıktı.
 
 Kalan 5 satır derlenmedi ve nedeni yazılı: Lemmy için keşfedilen uç
 `/api/v3/site`, örnek bilgisi döndüren bir uçtur — sonuna arama terimi eklemek
@@ -1368,7 +1368,7 @@ Dimensions / giris-engeli    (yerel arama) 'diyabet takip study regulation'
 
 ## 6.6 Üretilen dosyalar
 
-### `DERLENMIS-SORGULAR.csv` — 72 satır
+### `DERLENMIS-SORGULAR.csv` — 73 satır
 
 ```
 fikir              diyabet hastaları için mobil takip uygulaması
@@ -1440,3 +1440,507 @@ Yeni tanım dosyası gerektiğinde:
 ```bash
 python3 fetch_opensearch_templates.py --canli
 ```
+
+---
+
+# Görev 7 — Aynı tasarımı iki bütçe seviyesinde çalıştırmak
+
+**İstenen:** Aynı tasarımı iki bütçe seviyesinde çalıştırmak; premium modu
+kontrolsüz daha çok site çalıştırma şeklinde tasarlamamak.
+
+## 7.1 Problem: "premium = daha çok site" neden yanlış
+
+Akla ilk gelen tasarım şudur:
+
+```
+Ücretsiz:  10 kaynak çalıştır
+Premium:   50 kaynak çalıştır
+```
+
+Bunun neden yanlış olduğunu **kendi ölçümümüz** gösterdi. Görev 5'te düz bir
+"en yüksek puanlı 12 kaynağı seç" denendiğinde çıkan paketin dokuzu uygulama
+mağazasıydı; dokuzu da aynı şeyi aynı yöntemle ölçüyordu. **Kaynak sayısını
+artırmak kanıt artırmaz**, aynı bilgiyi daha çok kez okur.
+
+Böyle bir premium, para ödeyen kullanıcıya gürültü satar: 50 kaynak görür ama
+elindeki bilgi 10 kaynaklıyla aynıdır.
+
+## 7.2 Ücretsiz profil, mevcut tasarımın kendisidir
+
+Görev kartı *"aynı tasarımı"* diyor. Görev 5 ve 6'nın kurduğu tasarım değişmedi;
+**ücretsiz profil odur.** Premium onun üstüne derinlik ekler.
+
+Bu, iki profilin aynı düğme kümesini taşıması demektir — bir test bunu korur.
+Premium yeni bir sistem değil, aynı sistemin farklı ayarı.
+
+## 7.3 Altı derinlik ekseni
+
+| Eksen | ücretsiz | premium | Gerekçe |
+|---|---|---|---|
+| Soru başına yuva | 3 | 5 | Görev 5'te `rakip-kim` sorusunun 6 açısı vardı, 3'ü kullanılıyordu |
+| Yedek zinciri | 2 | 4 | Birincil bot koruması verirse zincir daha derin yürür |
+| Niyet eki | 1 | 3 | Görev 6'nın ekleri çoktur: `problem`, `issue`, `not working` |
+| Arşiv birincil olabilir | evet | hayır | Tazelik bir kalite boyutudur |
+| Alan doğrulama | beyan | çekip doğrula | Görev 4'te ölçüm alanlarının 10'u doğrulanmış, 1378'i beyandı |
+| Pazar | TR | TR + US | Karşılaştırmalı derleme |
+| İstek bütçesi | 120 | 600 | Daha büyük, **sınırsız değil** |
+
+Hepsi zaten koddaki ayarlardı; görev 7 yeni bir katman kurmuyor, hangi düğmenin
+premium'a ait olduğunu tanımlıyor.
+
+## 7.4 Tazelik havuzu daraltmaz, sıralamayı değiştirir
+
+Yalnız Common Crawl kopyası olan kaynak premiumda birincil seçilmez. Ama
+**havuzdan çıkarılmaz** — yedeğe düşer.
+
+Ayrım önemlidir: havuzu daraltmak cazip görünür, çünkü "premium sadece taze
+veri kullanır" demek kolaydır. Ama o zaman premium, ücretsizde bulunan bir
+kanıt açısını **kaybeder** — o kaynağın tek başına taşıdığı açı düşer. Para
+ödeyen kullanıcı bir şey kaybetmemeli; premium ücretsizin üstüne eklemeli.
+
+Bu yüzden havuz iki profilde aynıdır, fark sıralamadadır. Bir test ücretsizdeki
+her `(soru, kaynak grubu)` çiftinin premiumda da bulunmasını şart koşar.
+
+## 7.5 Politika bir bütçe düğmesi değildir
+
+`DEGISMEYEN` sözlüğünde altı kural var ve testlerle korunuyor:
+
+| Kural | Anlamı |
+|---|---|
+| `robots_yasagi` | robots.txt kapatan kaynak hiçbir profilde çalıştırılmaz |
+| `bot_korumasi` | tarayıcı taklidi, UA rotasyonu, engel aşma hiçbir profilde yok |
+| `determinizm` | aynı fikir aynı profilde her zaman aynı sonucu verir |
+| `kaynak_suzgeci` | ölçüm alanı ve izinli yolu olmayan kaynak hiçbir profilde girmez |
+| `bagimsizlik` | bir sorunun yuvaları her profilde farklı grup ve host'tan gelir |
+| `gerekce` | kullanılmayan yuva ve çevrilemeyen terim her profilde gerekçesiyle yazılır |
+
+**Premium derinlik satar, izin satmaz.** Kartın *"kontrolsüz"* uyarısının
+karşılığı budur: premium daha derindir ama sınırsız değildir — bütçesi vardır,
+deterministiktir ve politikayı gevşetmez.
+
+## 7.6 Ölçüm: tasarım sayıya kaydı mı
+
+Şartın sağlandığı iddia edilmedi, ölçüldü. Üç örnek fikir iki profilde
+çalıştırıldı:
+
+| Fikir | Profil | Yuva | Kaynak | Yedekli | Açı başına kaynak |
+|---|---|---:|---:|---:|---:|
+| Diyabet takip | ücretsiz | 24 | 12 | 36 | 0.500 |
+| | **premium** | **29** | **13** | **65** | **0.448** |
+| Fatura yazılımı | ücretsiz | 24 | 13 | 40 | 0.542 |
+| | **premium** | **31** | **15** | **74** | **0.484** |
+| Esnaf randevu | ücretsiz | 25 | 11 | 35 | 0.440 |
+| | **premium** | **30** | **13** | **65** | **0.433** |
+
+Toplamda premium **17 kanıt açısı** ekliyor, karşılığında **5 kaynak**. Açı
+başına kaynak oranı hiçbir fikirde artmıyor.
+
+Bu oran ölçütün kendisidir: premium kaynak sayısını artırıp bağımsız açı
+sayısını artırmıyorsa, tasarım "daha çok site çalıştırma"ya kaymış demektir.
+Bir test oranı kilitler, böylece tasarım zamanla o yöne kayamaz.
+
+**Premium her soruya körü körüne yuva eklemez.** Diyabet örneğinde `doygun-mu`
+sorusunun zaten yalnız 2 kullanılabilir açısı vardı; premium orada da 2 alıyor.
+Derinleşme yalnızca gerçekten daha fazla bağımsız açı bulunan sorularda oluyor:
+
+```
+rakip-kim      3 → 5   (+ Haber yayınları, + Uygulama mağazaları)
+talep-var-mi   3 → 5   (+ Kitle fonlaması, + Sağlık dikeyi)
+talep-yonu     3 → 4   (+ Haber yayınları)
+doygun-mu      2 → 2   (başka açı yok)
+```
+
+Yedek zinciri aynı yuvada derinleşiyor:
+
+```
+doygun-mu / uygulama mağazaları
+  ücretsiz:  Google Play → Apple App Store → APKMirror
+  premium:   Google Play → Apple App Store → APKMirror → Uptodown → Aptoide
+```
+
+Sorgu genişliği aynı kaynaklardan daha çok sorgu üretiyor: aynı 26 yuvadan
+ücretsiz **26 sorgu**, premium **62 sorgu**. Yeni site yok, daha geniş tarama var.
+
+## 7.7 Üretilen dosyalar
+
+### `BUTCE-KARSILASTIRMA.csv` — 6 satır
+
+Fikir başına iki satır: her profilin ölçümü ve premium'un eklediği fark.
+
+```
+fikir                diyabet hastaları için mobil takip uygulaması
+profil               premium
+yuva                 29
+kaynak               13
+grup                 14
+yedekli_kaynak       65
+elenen_yuva          0
+yuva_siniri          5
+yedek_siniri         4
+arsiv_kabul          hayir
+niyet_eki_sayisi     3
+istek_butcesi        600
+aci_basina_kaynak    0.448
+premium_ek_yuva      5
+premium_ek_kaynak    1
+sayiya_kaymadi       evet
+```
+
+Son satır ölçütün kendisidir: `sayiya_kaymadi = evet`, yani premium açı başına
+kaynak oranını artırmamış.
+
+### Diğer dosyalar
+
+| Dosya | Rolü |
+|---|---|
+| `butce_profilleri.py` | İki profil, altı eksen, değişmeyen kurallar, karşılaştırma |
+| `test_butce_profilleri.py` | 19 test |
+
+Testler dört şeyi korur: premium'un artan düğmelerde geride kalmamasını,
+hiçbir profilin robots yasaklı kaynak seçmemesini, premium'un ücretsizdeki bir
+kanıt açısını kaybetmemesini ve açı başına kaynak oranının artmamasını.
+
+## 7.8 Yeniden üretim
+
+```bash
+python3 select_sources.py --profil premium --fikir "..."
+python3 compile_queries.py --profil premium --pazar US
+python3 butce_profilleri.py            # iki profili karşılaştırır
+python3 -m unittest test_butce_profilleri
+```
+
+Profil, seçim ve derleme adımlarının ikisine birden verilir; zincirin geri
+kalanı değişmez. Yeni bir eksen eklendiğinde iki profile de eklenmesi gerekir —
+test düğme kümelerinin aynı kalmasını şart koşar.
+
+---
+
+# Görev 8 — Tasarımı küçük ve kontrollü bir deneyle sınamak
+
+**İstenen:** Tasarımın yalnız masa başında mantıklı değil, farklı ürün
+türlerinde doğru kaynak ve doğru veri ürettiğini küçük, kontrollü örnekle
+kanıtlamak.
+
+## 8.1 Problem: tutarlılık doğruluk değildir
+
+Yedi görev boyunca iç tutarlılık defalarca kontrol edildi ve her seferinde temiz
+çıktı: dosyalar birbiriyle çelişmiyor, hiçbir görev başkasının kuralını
+delmiyor. Ama bir sistem kendi içinde kusursuz olup gerçek dünyada yanlış
+olabilir.
+
+Sınanmamış olan şuydu:
+
+```
+derlenmiş sorgu             73
+  fiilen çalıştırılan        0
+  sonucu doğrulanan          0
+
+ölçüm alanı satırı        1388
+  artefaktta görülmüş       10
+  yalnızca beyan          1378
+```
+
+## 8.2 Kontrollü olmak ne demek
+
+Kontrollü bir deney **başarısız olabilmelidir**; yanlışlanamayan bir kanıt kanıt
+değildir. Bunun üç karşılığı var:
+
+**Ölçütler çalıştırmadan önce yazılır.** `deney.py`'deki ölçüt ve beklentiler
+koşudan önce sabitlendi. Sonuca göre değiştirilirse deney anlamını yitirir.
+
+**Negatif kontrol vardır.** Sistemin seçmemesi gerekeni seçmediği de ölçülür:
+anlamsız bir fikir reddediliyor mu, robots yasaklı kaynak sızıyor mu.
+
+**Başarısızlıklar raporlanır.** Bot koruması, boş sonuç ve eksik alan sayılır.
+
+Deney **küçüktür**: yedi fikir, kaynak başına bir-iki sorgu. Amaç kapsam değil,
+kanıt.
+
+## 8.3 Deney tasarımı
+
+Yedi ürün türü, yedi fikir — Görev 1'in *"kategori farklı kaynak paketi
+doğurur"* iddiası tek kategoride sınanırsa sınanmış olmaz:
+
+| Fikir | Beklenen kategori |
+|---|---|
+| diyabet hastaları için mobil takip uygulaması | `mobil-uygulama` |
+| react için grafik kütüphanesi | `gelistirici-araci` |
+| mobil bulmaca oyunu | `oyun` |
+| muhasebeciler için fatura yazılımı | `b2b-web-yazilimi` |
+| yerel esnaf için randevu uygulaması | `yerel-hizmet` |
+| türkçe metin özetleyen yapay zeka modeli | `yapay-zeka-urunu` |
+| wordpress için sepet eklentisi | `eklenti-entegrasyon` |
+
+İki iddia ayrı ayrı sınanır: **doğru kaynak** seçiliyor mu, ve seçilen kaynaktan
+**doğru veri** geliyor mu.
+
+## 8.4 Doğru kaynak: 40/43
+
+| Ölçüt | Ne sınıyor | Sonuç |
+|---|---|---|
+| K1 | Fikir beklenen kategoriye düşüyor mu | 7/7 |
+| K2 | Kategoriye özel kaynaklar farklı mı (<%25 örtüşme) | **18/21** |
+| K3 | Her fikrin kendine özel kaynağı var mı | 7/7 |
+| K4 | Robots yasaklı kaynak seçiliyor mu | 7/7 (sıfır) |
+| K5 | Anlamsız fikir reddediliyor mu | geçti |
+
+**K2'de kalan üç çift incelendi.** Üçünde de tek ortak kaynak Google Play
+Store'du ve üç fikrin üçü de mobil uygulamaydı — biri doğrudan, ikisi
+`mobil-uygulama` katmanıyla. Yani örtüşme Görev 1'in katman kuralının doğru
+sonucudur; mobil oyun ile mobil randevu uygulaması gerçekten aynı mağazaya
+bakmalıdır.
+
+**Eşik değiştirilmedi.** Önceden yazılan ölçüt ve sonucu olduğu gibi raporlanır.
+Yanına, sonradan eklendiği kodda ve çıktıda açıkça yazılı ikinci bir ölçüm
+kondu: paylaşılan katman hariç tutulunca çapraz örtüşme **21/21** geçiyor.
+
+Bu ayrım deneyin kendi kuralıdır — eşik sonuca göre değiştirilseydi ölçüm
+anlamını yitirirdi.
+
+## 8.5 Doğru veri: sorguları çalıştırmak iki kusur ortaya çıkardı
+
+**Yer tutucu doldurulmuyordu — 44 kaynağı etkiliyor.**
+
+Keşfedilen arama öneki iki biçimde olabiliyor: terimin sonuna eklendiği bir önek
+(`?q=`), ya da terimin **yerleştirileceği** bir yer tutucu (`?q={kelime}`).
+İkincisinde sona eklemek yer tutucuyu sorgunun içinde bırakıyordu:
+
+```
+üretilen:  workspace.google.com/intl/tr/search/?q={kelime}wordpress+sepet+plugin
+düzeltilen: workspace.google.com/intl/tr/search/?q=wordpress+sepet+plugin
+```
+
+**Yinelenen arama parametresi — npm ve GitHub.**
+
+Keşfedilen uç zaten bir arama parametresi taşıyorsa, ikinci kopya eklemek uçu
+bozuyordu:
+
+```
+üretilen:   registry.npmjs.org/-/v1/search?text=startup&size=20&text=react+grafik  → HTTP 400
+düzeltilen: registry.npmjs.org/-/v1/search?text=react+grafik&size=20               → HTTP 200
+```
+
+Düzeltmeden sonra npm gerçek API alanları döndürüyor (`api:downloads`,
+`api:description`).
+
+**Bu iki kusurun hiçbirini iç tutarlılık kontrolü bulamazdı**: dosyalar
+birbiriyle tutarlıydı, yalnızca gerçek dünyayla değildi.
+
+## 8.6 Kalan başarısızlığın tamamı tek sebepte
+
+| Ölçüt | Önceden beyan edilen beklenti | İlk koşu | Düzeltme sonrası |
+|---|---:|---:|---:|
+| V1 içerik döndü | %50 | 6/7 | **13/14** |
+| V2 konu ilgili | %70 | 1/6 | **4/13** |
+| V3 alan izi | %30 | 1/6 | **4/13** |
+
+V2 ve V3 beklentinin altında kaldı. Sebebi belirsiz değil: dönen 13 yanıt
+sınıflandırıldığında başarısızlıkların tamamı tek bir grupta toplandı.
+
+| Yanıt sınıfı | Adet | Konu ilgisi |
+|---|---:|---|
+| Sunucu HTML / API — npm, NICE, SoftwareSuggest | 4 | **4/4** |
+| İstemci JS kabuğu — Google Play, Workspace, Similarweb | 9 | **0/9** |
+| İçerik dönmedi (HTTP 403) | 1 | — |
+
+Google Play `HTTP 200` ve 400 KB döndürüyor ama arama sonuçları tarayıcıda
+JavaScript ile üretildiği için gelen HTML boş bir kabuk. **URL doğru, sorgu
+doğru, kaynak doğru — veri düz HTTP çekimiyle alınamıyor.**
+
+Bu bir kod kusuru değil, **kaynağın özelliğidir** ve katalogda kayıtlı olmayan
+bir boyuttur. Sınıflandırma sonradan eklendi ve kodda post-hoc olduğu yazılı.
+
+## 8.7 Deneyin söylediği
+
+**Doğru kaynak seçiliyor.** Yedi ürün türünün yedisi de beklenen kategoriye
+düştü, her birinin kendine özel kaynağı var, hiçbir koşuda robots yasaklı kaynak
+seçilmedi, anlamsız fikir reddedildi.
+
+**Doğru veri, sunucu tarafında üretilen kaynaklarda geliyor.** npm, NICE ve
+SoftwareSuggest için sorgular konuyla ilgili sonuç döndürdü; npm ölçüm alanlarını
+API'den verdi.
+
+**İstemci tarafında üretilen kaynaklarda gelmiyor** ve bunun sebebi ölçülmüş
+durumda. Bu, sonraki bir çalışmanın konusudur: katalogun kaynağı `sunucu-html` /
+`istemci-js` olarak da sınıflandırması gerekiyor.
+
+## 8.8 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `deney.py` | Önceden yazılan ölçütler, negatif kontroller, canlı koşu |
+| `DENEY-KAYNAK.csv` | 64 satır — ölçüt başına beklenen, gerçekleşen, geçti/kaldı |
+| `DENEY-VERI.csv` | 14 satır — sorgu başına HTTP kodu, boyut, konu ilgisi, alan izi |
+| `test_deney.py` | 16 test |
+
+Testler dört şeyi korur: her kategorinin bir fikirle temsil edilmesini,
+post-hoc ölçümlerin işaretli kalmasını, üretilen sorgularda doldurulmamış yer
+tutucu bulunmamasını ve yinelenen arama parametresi olmamasını. Son ikisi bu
+deneyin bulduğu kusurların geri gelmesini engelliyor.
+
+## 8.9 Yeniden üretim
+
+```bash
+python3 deney.py                        # yalnız kaynak doğruluğu, ağa çıkmaz
+python3 deney.py --canli --kaynak-basina 2
+python3 -m unittest test_deney
+```
+
+Ağsız koşu ölçütlerin tamamını değerlendirir; `--canli` yalnızca veri
+doğruluğu aşamasında ve robots ön kontrolünden geçmiş izinli yollarla ağa çıkar.
+
+---
+
+# Görev 9 — Kategori sözlüğü: etiketleri açılmış örneklere bağlamak
+
+**İstenen:** Envanterden her mevcut kaynak ailesi ve veri yüzeyini temsil eden
+örnekleri açmak; ürün tipi, kaynak ailesi, belge türü ve araştırma niyetini ayrı
+eksenlerde tutmak; yalnız site adına bakarak etiketleme yapmamak.
+
+## 9.1 Problem: etiketler çıkarımla verilmişti
+
+İlk sekiz görevde kategoriler **çıkarımla** kuruldu: `SITE-LISTESI.md`'nin
+başlıklarından türetildi, kaynağın adına ve grubuna bakıldı. Bu, tutarlı bir
+sistem üretti ama etiketlerin hiçbiri açılmış bir dosyaya bağlı değildi.
+
+Görev 8 bunu ölçmüştü: ölçüm alanı satırlarının 1378'i `beyan`, 10'u
+`dogrulandi` durumundaydı. Bu adım o beyanları **açılmış artefaktlara** bağlar.
+
+`results/raw/` altında 591 açılabilir artefakt var; malzeme yerinde.
+
+## 9.2 Dört eksen ayrı tutulur
+
+Karıştırılmaları sistematik hataya yol açar:
+
+| Eksen | Sorduğu soru |
+|---|---|
+| **Ürün tipi** | Araştırılan ürün ne |
+| **Kaynak ailesi** | Kaynak ne tür bir yayın |
+| **Belge türü** | Elimizdeki **dosya** ne |
+| **Araştırma niyeti** | O belgeden hangi soruya cevap aranıyor |
+
+Ayrımın karşılığı tek cümlede görünür: *G2 (kaynak ailesi = inceleme sitesi) hem
+B2B SaaS hem data/analytics ürünü (ürün tipi) araştırmasında kullanılır;
+elimizdeki G2 dosyası bir ana sayfaysa (belge türü) hiçbir soru (araştırma
+niyeti) için kanıt üretmez.* Üç eksen ayrı olmadan bu cümle kurulamaz.
+
+Ürün tipi ekseni kanonik görev metninden (`tasks/ayselin-task/README.md`, T01)
+alınır. Görev 1'in kategorileri aynı ekseni farklı kesen eski bir denemedir;
+uyuşmayan yerde kanonik liste geçerlidir ve eski kategorinin nasıl bölüneceği
+karar kuralıyla yazılıdır — karar ertelenmez.
+
+**Bir eşleme yanlıştı ve düzeltildi.** `eklenti-entegrasyon` önce `marketplace`
+sayılmıştı. Ama `marketplace`, *iki taraflı bir pazar yeri kurmak* demektir; bir
+WordPress eklentisi geliştirmek pazar yeri kurmak değil, **o pazar yerinde
+satılan ürün olmaktır.** Doğru kural barındıran platformun alıcısına bakar:
+işletme yazılımına eklenti → `b2b-saas`, e-ticaret platformuna eklenti →
+`ecommerce-enablement`, tarayıcı eklentisi → `consumer-mobile-web`. Platform
+belirsizse `belirlenemedi` yazılır.
+
+`oyun` için ayrı bir tip açılmadı: oyunun araştırma niyeti tüketici ürününkiyle
+aynıdır. Oyunu ayıran şey **kaynak ailesi** ekseninde taşınır — `oyun dikeyi`
+zaten ayrı bir ailedir. Dört eksenin ayrı olmasının işe yaradığı somut örnek
+budur.
+
+## 9.3 Belge türü ancak dosya açılarak bilinir
+
+Eldeki `yontem` sütunu **nasıl aldık** sorusunu cevaplıyordu (`root_html`,
+`sitemap_xml`). Belge türü **ne aldık** sorusunun cevabıdır ve kaynağın adından
+çıkarılamaz.
+
+Dosyalar açılınca ilk kural seti yanlış çıktı ve üç yerde sıkılaştırıldı:
+
+| Zayıf işaret | Ne olmuştu | Yeni kural |
+|---|---|---|
+| Tek bir `ItemList` | Discord, Foursquare, Angi *"liste sayfası"* etiketlendi | En az **5** `itemListElement` |
+| Tek bir `Review` | BigSpy *"inceleme sayfası"* etiketlendi | En az **3** `Review` nesnesi |
+| Tek bir `Offer` | BASE, Great Question *"fiyatlandırma sayfası"* etiketlendi | Fiyat **değeri** taşıyan en az **2** `Offer` |
+
+Sebebi tek: pazarlama ana sayfaları kendilerini tarif eden yapısal veri gömer —
+gezinme menüsü `ItemList`, müşteri görüşü `Review`, kendi ürünü `Product`.
+Bunları kayıt ya da inceleme sayfası saymak, kabul kriterinin yasakladığı şeydir.
+
+**Kök yolu kuralı.** Kök yoldaki sayfa varsayılan olarak ana sayfadır; ancak
+listelenmiş kayıtlara dair güçlü kanıt bunu ezer. Ana sayfa her zaman `/`
+değildir: `base.com/en-US/home/` ve `bigspy.com/en` de kök sayılır — dil/bölge
+öneki ve `home`/`index` segmentleri atıldıktan sonra yol boşsa kök kabul edilir.
+
+**Kök olmayan ama işaret taşımayan dosya `belirsiz` etiketlenir.** URL'ye bakıp
+*"bu bir liste sayfasıdır"* demek, görevin yasakladığı şeyin ta kendisidir.
+
+## 9.4 İki ayrı örnekleme geçişi
+
+İlk geçiş kaynak ailesi başına üç örnek açar. Ama kaynak başına *en
+bilgilendirici* dosyayı seçtiği için `root_html`'e eğilimlidir ve az sayıda ama
+değerli yüzeyler dışarıda kalır. İkinci geçiş **veri yüzeyi** başına örnekler:
+
+```
+aile geçişi   : 91 kayıt
+yüzey geçişi  :  6 kayıt   (hepsi API yanıtı — en güvenilir alan kaynağı)
+```
+
+Her kayıt hangi geçişten geldiğini taşır; iki örnekleme karıştırılmaz.
+
+## 9.5 Sonuç
+
+```
+97 pilot kayıt · 31 kaynak ailesi · 95 ayrı kaynak · 13 veri yüzeyi
+```
+
+Açılabilir yüzeylerin **tamamı** temsil ediliyor. 31 ailenin 30'unda üç örnek
+var; kalan biri eksik kaydıyla yazılı.
+
+| Belge türü | Kayıt |
+|---|---:|
+| `ana-sayfa` | 72 |
+| `belirsiz` | 13 |
+| `api-yaniti` | 6 |
+| `politika-dosyasi` | 2 |
+| `besleme` | 2 |
+| `sitemap` | 1 |
+| `fiyatlandirma-sayfasi` | 1 |
+
+**97 kayıttan yalnız 9'u ölçüm kanıtı üretiyor.**
+
+Bu, kabul kriterinin doğrudan karşılığıdır: kaynaklara erişildi ama elimizdeki
+dosya çoğunlukla ana sayfadır; alanı taşıyan iç sayfa çekilmemiştir. İçerik
+bulunmayan yerde yorum ya da fiyat verisi varsayılmaz.
+
+### Üç eksik kaydı
+
+| Ne | Neden |
+|---|---|
+| `Kitle fonlaması platformları` ailesi | Ailedeki kaynakların açılabilir artefaktı yok |
+| `packagist_package_list` yüzeyi | Gövde saklanmamış (`saklama=kosu_json_icinde`, `bayt=0`) |
+| `wayback_availability` yüzeyi | Aynı sebep — elde yalnız sha256 ve URL var |
+
+Son ikisi dikkat çekici: bu iki yüzey **çekildi**, hash'i duruyor, ama gövdesi
+saklanmadığı için açılamıyor. Tahmin edilmedi, eksik olarak yazıldı.
+
+## 9.6 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `KATEGORI-SOZLUGU.md` | Dört eksen; her kategoride tanım, dahil/hariç, çoklu etiket kuralı, belirsiz durumu |
+| `INCELEME-GUNLUGU.md` | 97 açılmış artefaktın tek tek kaydı |
+| `PILOT-KAYITLAR.csv` | Etiketlenmiş kayıtlar |
+| `PILOT-EKSIKLER.csv` | Açık eksik-veri kayıtları |
+| `kategori_sozlugu.py` | Sözlüğü ve pilotu üretir; belgeler elle yazılmaz |
+| `test_kategori_sozlugu.py` | 30 test |
+
+Her pilot kayıt teslim şartının beş alanını taşır: `source_id`, URL, artefakt
+kimliği (sha256), içerik alanı ve sınıflandırma gerekçesi.
+
+Testler dört şeyi korur: ürün tipi ile kaynak ailesi kümelerinin ayrık
+kalmasını, zayıf işaretin içerik etiketi üretmemesini, aday keşfin ölçüm kanıtı
+sayılmamasını ve açılamayan her yüzeyin eksik kaydı taşımasını.
+
+## 9.7 Yeniden üretim
+
+```bash
+python3 kategori_sozlugu.py
+python3 -m unittest test_kategori_sozlugu
+```
+
+Script `ARTEFAKT-DIZINI.csv`'yi okur, `results/raw/` altındaki dosyaları açar ve
+dört çıktıyı birden üretir. Ağa çıkmaz.
