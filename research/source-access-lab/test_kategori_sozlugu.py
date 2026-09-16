@@ -160,17 +160,58 @@ class PilotKayitTests(unittest.TestCase):
     def test_her_aile_uc_ornek_ya_da_eksik_kaydi(self):
         """Yeterli ornek yoksa eksik acikca yazilmali."""
         import collections
-        say = collections.Counter(r["kaynak_ailesi"] for r in self.satirlar)
+        # Yalniz aile gecisi sayilir; yuzey temsili kayitlari ayri bir
+        # ornekleme gecisidir ve aile kapsamini temsil etmez.
+        say = collections.Counter(r["kaynak_ailesi"] for r in self.satirlar
+                                  if r["ornekleme_gecisi"] == "kaynak-ailesi")
         with (HERE / "PILOT-EKSIKLER.csv").open(encoding="utf-8") as handle:
             eksik = {r["kaynak_ailesi"] for r in csv.DictReader(handle)}
         for aile, adet in say.items():
             if adet < 3:
                 self.assertIn(aile, eksik, f"{aile} eksik kaydı yok")
 
+    def test_her_kayit_ornekleme_gecisini_tasir(self):
+        """Iki ayri ornekleme var: aile temsili ve veri yuzeyi temsili."""
+        for r in self.satirlar:
+            self.assertIn(r["ornekleme_gecisi"], ("kaynak-ailesi", "veri-yuzeyi"))
+
     def test_ayni_kaynak_birden_cok_aileye_ait_olabilir(self):
         """Kaynak ailesi coklu etiket kurali: aileler kaydedilir, biri secilmez."""
         coklu = [r for r in self.satirlar if r["kaynagin_diger_aileleri"]]
         self.assertTrue(coklu, "hiç çoklu aile örneği yok")
+
+
+class VeriYuzeyiKapsamiTests(unittest.TestCase):
+    """Gorev: 'her kaynak ailesi VE veri yuzeyini temsil eden ornekleri ac'."""
+
+    def setUp(self):
+        with (HERE / "ARTEFAKT-DIZINI.csv").open(encoding="utf-8") as handle:
+            self.dizin = [r for r in csv.DictReader(handle) if r["sonuc"] == "ok"]
+        with (HERE / "PILOT-KAYITLAR.csv").open(encoding="utf-8") as handle:
+            self.pilot = list(csv.DictReader(handle))
+        with (HERE / "PILOT-EKSIKLER.csv").open(encoding="utf-8") as handle:
+            self.eksik = list(csv.DictReader(handle))
+
+    def test_acilabilir_her_yuzey_temsil_ediliyor(self):
+        acilabilir = {r["yontem"] for r in self.dizin
+                      if r["ad"] and r["dosya"].startswith("results/raw/")}
+        temsil = {r["yontem"] for r in self.pilot}
+        self.assertEqual(set(), acilabilir - temsil)
+
+    def test_acilamayan_yuzey_icin_eksik_kaydi_var(self):
+        """Govdesi saklanmamis yuzey sessizce atlanmaz."""
+        acilamayan = ({r["yontem"] for r in self.dizin if r["ad"]}
+                      - {r["yontem"] for r in self.dizin
+                         if r["ad"] and r["dosya"].startswith("results/raw/")})
+        eksik_metni = " ".join(r["kaynak_ailesi"] + r["eksik_nedeni"] for r in self.eksik)
+        for yuzey in acilamayan:
+            self.assertIn(yuzey, eksik_metni, yuzey)
+
+    def test_api_yanitlari_olcum_kaniti_sayilir(self):
+        api = [r for r in self.pilot if r["belge_turu"] == "api-yaniti"]
+        self.assertTrue(api)
+        for r in api:
+            self.assertEqual("evet", r["olcum_kaniti_uretir_mi"], r["kaynak"])
 
 
 class BelgeCiktisiTests(unittest.TestCase):

@@ -3,7 +3,7 @@
 Her satır açılmış bir artefakttır. `artefakt_kimligi` içerik adresli
 sha256'nın ilk 16 hanesidir; `dosya` diskteki yoldur.
 
-**Açılan artefakt:** 91 · **Kaynak:** 89 · **Aile:** 31
+**Açılan artefakt:** 97 · **Kaynak:** 95 · **Aile:** 32
 
 ## Akademik araştırma ve bilimsel yayınlar
 
@@ -30,6 +30,22 @@ Artefakt: `82a23fbba47998e8` (results/raw/82a23fbba47998e8ea1c6223f8e620d2d2fb83
 JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
 **Belge türü:** `sitemap` — yöntem sitemap_xml  
 Ölçüm kanıtı üretir mi: **hayir** · ADAY KEŞİF
+
+**medRxiv** — `source-0336`  
+URL: https://api.biorxiv.org/details/medrxiv/2026-01-01/2026-01-02  
+Artefakt: `ec5604fef0167ab3` (results/raw/ec5604fef0167ab3a14df373814c866507200e63d2b58094eac26b2ce55f0690.bin, 75645 bayt, yöntem `biorxiv_details`)  
+İçerik alanı: (başlık yok)  
+JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
+**Belge türü:** `api-yaniti` — MIME application/json [yüzey temsili örneği]  
+Ölçüm kanıtı üretir mi: **evet**
+
+**Figshare** — `source-0349`  
+URL: https://api.figshare.com/v2/articles?page_size=20  
+Artefakt: `2f268560a418df0d` (results/raw/2f268560a418df0d7c5c7d2b5be2f55a0f24d91bb4c8da55a3c1a2378d31693a.bin, 20277 bayt, yöntem `figshare_articles`)  
+İçerik alanı: (başlık yok)  
+JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
+**Belge türü:** `api-yaniti` — MIME application/json [yüzey temsili örneği]  
+Ölçüm kanıtı üretir mi: **evet**
 
 ## Anket, birincil doğrulama ve kullanıcı araştırması platformları
 
@@ -263,6 +279,14 @@ Artefakt: `3166164e463936bc` (results/raw/3166164e463936bc64af8dd06c318162c981e9
 İçerik alanı: Axios - Breaking news, U.S. news and politics, and local news  
 JSON-LD: EntryPoint, ImageObject, ItemList, ListItem, NewsArticle, NewsMediaOrganization · Kanıt sayıları: liste=2 yorum=0 fiyatli_offer=0  
 **Belge türü:** `ana-sayfa` — kök yolda ana sayfa; sayfanın kendini tarif eden işaretleri (yazi işareti var ama eşiğin altında)  
+Ölçüm kanıtı üretir mi: **hayir**
+
+**EU-Startups** — `source-0572`  
+URL: https://www.eu-startups.com/page/2/  
+Artefakt: `2cf9ab5695b7d54e` (results/raw/2cf9ab5695b7d54e867dc5db7e01a24fff12341eb5c28014fa25c32f5e62e2f9.bin, 400000 bayt, yöntem `rel_next_pagination`)  
+İçerik alanı: EU-Startups | Spotlight on European startups - Page 2  
+JSON-LD: BreadcrumbList, EntryPoint, ImageObject, ListItem, Organization, ReadAction · Kanıt sayıları: liste=1 yorum=0 fiyatli_offer=0  
+**Belge türü:** `belirsiz` — URL yolu '/page/2/' kök değil ama kayıt, liste, yorum ya da fiyat işareti taşımıyor [yüzey temsili örneği]  
 Ölçüm kanıtı üretir mi: **hayir**
 
 ## Kamu verisi ve istatistik
@@ -639,6 +663,16 @@ JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0
 **Belge türü:** `ana-sayfa` — URL yolu kök ve kayıt/liste/fiyat işareti yok  
 Ölçüm kanıtı üretir mi: **hayir**
 
+## Yapay zekâ modeli, veri seti ve agent ekosistemi, Yazılım geliştirici ve teknik topluluklar
+
+**GitHub** — `source-0017`  
+URL: https://api.github.com/search/repositories?q=stars:%3E50000&per_page=30  
+Artefakt: `be785ce628d803e0` (results/raw/be785ce628d803e0a167338c2f853ed567936c0a92b7d6ccdd970fae54d696eb.bin, 168012 bayt, yöntem `github_repository_search`)  
+İçerik alanı: (başlık yok)  
+JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
+**Belge türü:** `api-yaniti` (ikincil: arama-sonucu) — MIME application/json [yüzey temsili örneği]  
+Ölçüm kanıtı üretir mi: **evet**
+
 ## Yazılım geliştirici ve teknik topluluklar
 
 **Ask Ubuntu** — `source-0027`  
@@ -664,6 +698,22 @@ Artefakt: `22ccbf7ab7ac749d` (results/raw/22ccbf7ab7ac749dd61e0c04bc9e886e7f7fcf
 JSON-LD: SearchAction, WebSite · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
 **Belge türü:** `ana-sayfa` — URL yolu kök ve kayıt/liste/fiyat işareti yok  
 Ölçüm kanıtı üretir mi: **hayir**
+
+**npm** — `source-0039`  
+URL: https://registry.npmjs.org/-/v1/search?text=startup&size=20  
+Artefakt: `6d386e178b08f455` (results/raw/6d386e178b08f455d25f0f1b7f56b332c2c65dd7cd809872a967ae73b63c30a4.bin, 19564 bayt, yöntem `npm_registry_search`)  
+İçerik alanı: (başlık yok)  
+JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
+**Belge türü:** `api-yaniti` (ikincil: arama-sonucu) — MIME application/json [yüzey temsili örneği]  
+Ölçüm kanıtı üretir mi: **evet**
+
+**Stack Exchange** — `source-0024`  
+URL: https://api.stackexchange.com/2.3/sites?pagesize=100  
+Artefakt: `a612222145f0ee20` (results/raw/a612222145f0ee20e6318e98947a523c5e71c41ed59c847e14e53e585aa06ee2.bin, 112858 bayt, yöntem `stackexchange_sites`)  
+İçerik alanı: (başlık yok)  
+JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
+**Belge türü:** `api-yaniti` — MIME application/json [yüzey temsili örneği]  
+Ölçüm kanıtı üretir mi: **evet**
 
 ## Yeme-içme ve teslimat dikeyi
 

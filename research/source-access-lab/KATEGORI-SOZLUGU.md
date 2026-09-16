@@ -2,7 +2,7 @@
 
 **Hazırlayan:** Ayselin Aydoğdu  
 **Üretim:** `kategori_sozlugu.py` — elle yazılmaz, koddan üretilir  
-**Pilot kayıt:** 91 · **Kaynak ailesi:** 31 · **Eksik kaydı:** 1
+**Pilot kayıt:** 97 · **Kaynak ailesi:** 32 · **Eksik kaydı:** 3
 
 Bu sözlük dört ekseni **ayrı** tutar. Karıştırılmaları sistematik hataya
 yol açar: bir inceleme sitesi (kaynak ailesi) hem B2B SaaS hem
@@ -118,7 +118,7 @@ ikisi de eşlendi ama kaynak paketleri belirgin biçimde farklı.
 Kaynağın ne tür bir yayın olduğu. Ürün tipiyle **karıştırılmaz**: bir
 aile birden çok ürün tipine hizmet eder ve bu bir hata değildir.
 
-Envanterde 31 aile var;
+Envanterde 32 aile var;
 tanımları `KATEGORI-KAYNAK.csv`'nin `kaynak_grubu` sütununda.
 
 **Çoklu etiket:** Bir kaynak birden fazla aileye ait olabilir ve bu bir hata değildir: G2 hem inceleme sitesi hem fiyat karşılaştırma kaynağıdır. Tüm aileler kaydedilir, biri seçilmez.
@@ -182,15 +182,15 @@ için birincil kanıt, `giris-engeli` için değersizdir.
 | Belge türü | Kayıt |
 |---|---:|
 | `ana-sayfa` | 72 |
-| `belirsiz` | 12 |
+| `belirsiz` | 13 |
+| `api-yaniti` | 6 |
 | `politika-dosyasi` | 2 |
 | `besleme` | 2 |
 | `sitemap` | 1 |
 | `fiyatlandirma-sayfasi` | 1 |
-| `api-yaniti` | 1 |
 
-**91 kayıttan 72'i ana sayfa.** Yalnızca
-**4 kayıt** ölçüm kanıtı üretiyor.
+**97 kayıttan 72'i ana sayfa.** Yalnızca
+**9 kayıt** ölçüm kanıtı üretiyor.
 
 Bu, kabul kriterinin doğrudan karşılığıdır: içerik bulunmayan yerde
 yorum ya da fiyat verisi varsayılmaz. Envanterdeki kaynakların çoğuna
@@ -202,4 +202,6 @@ sayfa çekilmemiştir.
 | Kaynak ailesi | İstenen | Bulunan | Neden |
 |---|---:|---:|---|
 | Kitle fonlaması platformları | 3 | 1 | ailedeki kaynakların açılabilir artefaktı yok; erişilemedi ya da yalnız politika dosyası indi |
+| (yüzey temsili: packagist_package_list) | 1 | 0 | gövde saklanmamış (saklama=kosu_json_icinde, bayt=0); elde yalnız sha256 7d6b5d1eac7367ff ve URL https://packagist.org/packages/list.json?vendor=symfony var — açılacak içerik yok |
+| (yüzey temsili: wayback_availability) | 1 | 0 | gövde saklanmamış (saklama=kosu_json_icinde, bayt=0); elde yalnız sha256 9136bff3182180fc ve URL https://archive.org/wayback/available?url=example.com var — açılacak içerik yok |
 

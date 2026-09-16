@@ -612,6 +612,7 @@ def main() -> int:
             tur, ikincil, kanit = belge_turu_belirle(
                 kayit["yontem"], kayit["mime"], sinyal)
             satirlar.append({
+                "ornekleme_gecisi": "kaynak-ailesi",
                 "kanit_sayilari": (f"liste={sinyal['itemlist_sayisi']} "
                                    f"yorum={sinyal['yorum_sayisi']} "
                                    f"fiyatli_offer={sinyal['fiyatli_offer_sayisi']}"),
@@ -637,6 +638,75 @@ def main() -> int:
                 "yontem": kayit["yontem"],
             })
 
+    # --- Ikinci gecis: VERI YUZEYI temsili ---
+    # Gorev "her kaynak ailesi VE veri yuzeyini temsil eden ornekleri ac"
+    # diyor. Aile bazli ornekleme kaynak basina en bilgilendirici dosyayi
+    # sectigi icin root_html'e egilimlidir ve API yanitlari gibi az sayida
+    # ama degerli yuzeyler disarida kalir. Bu gecis her yuzey turunden en
+    # az bir ornegin acilmasini garanti eder.
+    temsil_edilen = {r["yontem"] for r in satirlar}
+    yuzey_artefakti: dict[str, list[dict[str, str]]] = collections.defaultdict(list)
+    govdesiz_yuzey: dict[str, dict[str, str]] = {}
+    for r in dizin:
+        if not r["ad"]:
+            continue
+        if r["dosya"].startswith("results/raw/"):
+            yuzey_artefakti[r["yontem"]].append(r)
+        elif r["yontem"] not in govdesiz_yuzey:
+            # Govde saklanmamis: kosu JSON'u yalniz hash ve URL tutuyor.
+            # Acilamaz; tahmin edilmez, eksik kaydi yazilir.
+            govdesiz_yuzey[r["yontem"]] = r
+
+    for yuzey, kayit in sorted(govdesiz_yuzey.items()):
+        if yuzey in temsil_edilen or yuzey in yuzey_artefakti:
+            continue
+        eksikler.append({
+            "kaynak_ailesi": f"(yüzey temsili: {yuzey})",
+            "istenen_ornek": 1, "bulunan_ornek": 0,
+            "aileedeki_kaynak": kayit["ad"],
+            "eksik_nedeni": (
+                f"gövde saklanmamış (saklama={kayit['saklama']}, bayt=0); "
+                f"elde yalnız sha256 {kayit['sha256'][:16]} ve URL "
+                f"{kayit['cekilen_url'][:60]} var — açılacak içerik yok"),
+        })
+
+    for yuzey in sorted(set(yuzey_artefakti) - temsil_edilen):
+        kayit = sorted(yuzey_artefakti[yuzey], key=lambda r: -int(r["bayt"] or 0))[0]
+        yol_dosya = HERE / kayit["dosya"]
+        if not yol_dosya.exists():
+            eksikler.append({
+                "kaynak_ailesi": f"(yüzey temsili: {yuzey})",
+                "istenen_ornek": 1, "bulunan_ornek": 0,
+                "aileedeki_kaynak": kayit["ad"],
+                "eksik_nedeni": f"dizinde kayıtlı dosya diskte yok: {kayit['dosya']}",
+            })
+            continue
+        ham = yol_dosya.read_bytes()[:400_000]
+        sinyal = _metin_sinyalleri(ham, kayit["cekilen_url"])
+        tur, ikincil, kanit = belge_turu_belirle(yuzey, kayit["mime"], sinyal)
+        kaynak = kayit["ad"]
+        satirlar.append({
+            "ornekleme_gecisi": "veri-yuzeyi",
+            "kanit_sayilari": (f"liste={sinyal['itemlist_sayisi']} "
+                               f"yorum={sinyal['yorum_sayisi']} "
+                               f"fiyatli_offer={sinyal['fiyatli_offer_sayisi']}"),
+            "source_id": kayit["source_id"] or defter.get(kaynak, {}).get("source_id", ""),
+            "kaynak": kaynak, "url": kayit["cekilen_url"],
+            "artefakt_kimligi": kayit["sha256"][:16], "dosya": kayit["dosya"],
+            "kaynak_ailesi": ", ".join(sorted(kaynak_ailesi.get(kaynak, {"(aile atanmamış)"}))),
+            "kaynagin_diger_aileleri": "",
+            "urun_tipi": ", ".join(sorted(kaynak_urun_tipi.get(kaynak, set()))) or "ortak-havuz",
+            "belge_turu": tur, "ikincil_belge_turu": ", ".join(ikincil),
+            "icerik_alani": sinyal["baslik"] or "(başlık yok)",
+            "jsonld_turleri": ", ".join(sinyal["jsonld_turleri"][:6]),
+            "siniflandirma_gerekcesi": kanit + " [yüzey temsili örneği]",
+            "aday_kesif_mi": "evet" if tur in ("sitemap", "arama-sonucu") else "hayir",
+            "olcum_kaniti_uretir_mi":
+                "hayir" if tur in ("ana-sayfa", "sitemap", "arama-sonucu",
+                                   "politika-dosyasi", "belirsiz") else "evet",
+            "bayt": sinyal["bayt"], "yontem": yuzey,
+        })
+
     for yol, veri in ((args.out_pilot, satirlar), (args.out_eksik, eksikler)):
         if not veri:
             continue
@@ -660,6 +730,17 @@ def main() -> int:
                                    if r["olcum_kaniti_uretir_mi"] == "evet"),
         "aday_kesif": sum(1 for r in satirlar if r["aday_kesif_mi"] == "evet"),
         "eksik_kaydi": len(eksikler),
+        "temsil_edilen_veri_yuzeyi": sorted({r["yontem"] for r in satirlar}),
+        "acilabilir_yuzeyin_tamami_temsil_edildi": not (
+            {r["yontem"] for r in dizin if r["dosya"].startswith("results/raw/")}
+            - {r["yontem"] for r in satirlar}),
+        # Yalniz HIC acilabilir kopyasi olmayan yuzeyler. Bir yuzeyin bazi
+        # satirlari kosu JSON'unda, bazilari results/raw'da olabilir; ancak
+        # ikincisi hic yoksa yuzey acilamaz sayilir.
+        "hic_acilamayan_yuzey": sorted(
+            {r["yontem"] for r in dizin if r["ad"]}
+            - {r["yontem"] for r in dizin
+               if r["ad"] and r["dosya"].startswith("results/raw/")}),
         "cikti": [str(args.out_pilot), str(args.out_eksik),
                   "KATEGORI-SOZLUGU.md", "INCELEME-GUNLUGU.md"],
     }, ensure_ascii=False))
