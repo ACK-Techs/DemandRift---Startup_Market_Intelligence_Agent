@@ -9,18 +9,20 @@ kullanıyor ama farklı soruları cevaplıyorlar.
 |---|---|---|
 | **A. Erişim laboratuvarı** | Bu kaynaklara ulaşabiliyor muyuz, ne indi? | Bu dosyanın alt bölümleri |
 | **B. Araştırma tasarımı** | Bir ürün fikri geldiğinde hangi kaynağa ne sorulur? | [`KILAVUZ.md`](KILAVUZ.md) |
-| **C. Veri çalışması** | Bu checkout'ta gerçekten ne var, ne incelendi? | [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) |
+| **C. Veri çalışması** | Bu checkout'ta gerçekten ne var, nasıl normalize edildi? | [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) · [`VERI-SOZLUGU.md`](VERI-SOZLUGU.md) |
 
-**Başlangıç noktası [`KILAVUZ.md`](KILAVUZ.md)** — dokuz görevi sırayla anlatır,
+**Başlangıç noktası [`KILAVUZ.md`](KILAVUZ.md)** — on bir görevi sırayla anlatır,
 her bölümde problem, izlenen yol, sonuç ve gerçek CSV satır örnekleri vardır.
 
 > **Uyarı:** Aşağıdaki "A" bölümünde geçen *Görev 1/2/3* ile kılavuzdaki
-> *Görev 1–9* **aynı şeyler değildir.** İlki erişim çalışmasının adımları,
+> *Görev 1–11* **aynı şeyler değildir.** İlki erişim çalışmasının adımları,
 > ikincisi araştırma tasarımının görevleridir.
 
 ---
 
 ## B. Araştırma tasarımı — dokuz görev ve çıktıları
+
+*(Veri çalışmasının Gün 1 ve Gün 3'ü kılavuzda Görev 10 ve 11'dir; C bölümüne bakın.)*
 
 | # | Görev | Çıktı |
 |---|---|---|
@@ -62,12 +64,37 @@ diyor; dosyalar açılınca tablo şöyle:
 | `politika` | 14 | robots.txt |
 | `besleme` / `api-yaniti` | 9 + 9 | RSS ve yapılandırılmış yanıt |
 
+### Gün 1 — envanter (`veri_envanteri.py`)
+
 | Çıktı | İçerik |
 |---|---|
 | [`VERI-ENVANTERI.csv`](VERI-ENVANTERI.csv) | 636 kanonik kaynak: erişim durumu, içerik durumu, yüzey türleri, incelendi durumu, eksik |
 | [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) | Erişim × içerik çapraz tablosu, aile bazında kapsama |
 | [`ENVANTER-ISLENEMEYEN.csv`](ENVANTER-ISLENEMEYEN.csv) | Gövdesi saklanmamış ya da diskte bulunamayan artefakt kayıtları |
 | [`GUN2-ORNEKLEM-PLANI.md`](GUN2-ORNEKLEM-PLANI.md) | Gün 2'de hangi kaynakların açılacağı ve hangilerinin neden açılmayacağı |
+
+### Gün 2 — kategori sözlüğü (`kategori_sozlugu.py`)
+
+97 açılmış örnek üzerinde kurulan dört eksenli sözlük; kılavuzun Görev 9'u.
+
+### Gün 3 — normalize veri kümesi (`normalize_belgeler.py`)
+
+Sözlük elde olan **591 artefaktın tamamına** uygulandı. Teknik normalizasyon ve
+yorumlayıcı sınıflandırma **ayrı dosyalarda** tutulur.
+
+| Çıktı | İçerik |
+|---|---|
+| [`NORMALIZE-BELGELER.csv`](NORMALIZE-BELGELER.csv) | 591 belge — Faz 4 Normalized Document şeması |
+| [`SINIFLANDIRMA.csv`](SINIFLANDIRMA.csv) | 591 satır — belge türü, ürün kategorisi, niyet, gerekçe |
+| [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | 98 tekrar ilişkisi (`duplicate_of` / `possible_duplicate`) |
+| [`KATEGORI-ALANLARI.csv`](KATEGORI-ALANLARI.csv) | 139 çıkarılan alan; `olcum` / `etiket` ayrımıyla |
+| [`ISLENEMEYEN-BELGELER.csv`](ISLENEMEYEN-BELGELER.csv) | 754 işlenemeyen kayıt ve sebebi |
+| [`VERI-SOZLUGU.md`](VERI-SOZLUGU.md) | Her sütunun anlamı + bu verinin **cevaplayamadığı** sorular |
+| [`DONUSUM-KURALLARI.md`](DONUSUM-KURALLARI.md) | Dönüşümün on adımı, ölçülmüş sayılarıyla |
+
+591 belgenin **42'si** ölçüm kanıtı üretiyor. Kalanın 386'sı ana sayfa, 86'sı
+sitemap. Bu, çalışmanın asıl bulgusu: eksik olan daha çok site değil, aynı
+sitelerin iç sayfaları.
 
 Kural: **elde olmayan dosya incelenmiş gösterilmez.** Bir test, pilotta açılmış
 her kaynağın envanterde gerçekten dosyası olduğunu doğruluyor.
@@ -111,7 +138,7 @@ cd research/source-access-lab
 python3 -m unittest discover -s . -p 'test_*.py'
 ```
 
-432 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı kaynağın
+478 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı kaynağın
 hiçbir profilde seçilmemesi, aday keşfin ölçüm kanıtı sayılmaması, zayıf bir
 işaretin içerik etiketi üretmemesi ve üretilen sorguda doldurulmamış yer tutucu
 kalmaması gibi.

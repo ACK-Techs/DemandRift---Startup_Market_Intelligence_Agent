@@ -1944,3 +1944,323 @@ python3 -m unittest test_kategori_sozlugu
 
 Script `ARTEFAKT-DIZINI.csv`'yi okur, `results/raw/` altındaki dosyaları açar ve
 dört çıktıyı birden üretir. Ağa çıkmaz.
+
+---
+
+# Görev 10 — Veri envanteri: elimizde gerçekten ne var
+
+*(Veri çalışması Gün 1)*
+
+**İstenen:** Mevcut toplanan verinin kaynak bazında tam envanterini çıkarmak;
+her kaynağın erişim durumunu, veri yüzeylerini ve eksiklerini kayıt altına
+almak; elde olmayan bir dosyayı incelenmiş göstermemek.
+
+## 10.1 Problem: "çekildi" bir erişim etiketi, içerik garantisi değil
+
+Defter 636 kaynaktan 534'ü için `cekildi` diyor. Bu etiket doğru — en az bir
+içerik yüzeyi başarıyla alınmış demek. Ama sorulan soru bu değildi: *elimizde
+açıp okuyabileceğimiz ne var?*
+
+İkisi aynı şey olsaydı bu görev gereksiz olurdu. Dosyalar açılınca değiller.
+
+## 10.2 İki ayrı sütun
+
+Envanterin her satırı iki bağımsız durumu ayrı taşır:
+
+| Sütun | Neyi söyler |
+|---|---|
+| `erisim_durumu` | Siteye ulaşıldı mı (`cekildi`, `kismi`, `erisim_yok`, `adres_yok`) |
+| `icerik_durumu` | Dosya açılınca ne çıktı (`gercek-icerik`, `js-kabugu`, `aday-kesif`, `arsiv`, `politika`, `besleme`, `api-yaniti`, `dosya-yok`) |
+
+Bir kaynak `cekildi` **ve** `dosya-yok` olabilir. Bunun 81 örneği var.
+
+## 10.3 Yüzeyler karıştırılmaz
+
+Aynı kaynaktan gelen farklı yüzeyler farklı şeylerdir:
+
+| Yöntem | Yüzey türü | Ne işe yarar |
+|---|---|---|
+| `robots_preflight` | politika | İzin kararı — kanıt değil |
+| `sitemap_xml` | aday-keşif | Hangi sayfalar var — içerik değil |
+| `rss_feed` | besleme | Başlık listesi |
+| `common_crawl_warc` | arşiv | Kopya, canlı değil |
+| `root_html` | sayfa | Asıl içerik adayı |
+
+Bir sitemap'in indirilmiş olması o siteden "veri çekildiğini" göstermez;
+yalnız orada hangi adreslerin bulunduğunu gösterir.
+
+## 10.4 JS kabuğu: 400 KB HTML, sıfır metin
+
+44 kaynakta dosya var, boyutu büyük, ama görünür metni yok. Sayfa tarayıcıda
+JavaScript çalışınca doluyor; bizim indirdiğimiz iskelet.
+
+Bunları `gercek-icerik` saymak ölçümü bozardı: dosya boyutuna bakan bir sayım
+"284 değil 328 kaynakta içerik var" derdi ve 44'ü boş olurdu.
+
+Eşik iki şart birden arar — ham dosya 20 KB'den büyük **ve** görünür metin
+200 karakterden kısa.
+
+## 10.5 Engel sayfası tespitinde ilk yaklaşım yanlıştı
+
+İlk denemede gövdede "captcha", "access denied" gibi ifadeler arandı: 34 aday
+çıktı ve neredeyse hepsi yanlıştı. Sebep basit — bir arama motorunun kendi
+sayfası kendi scriptlerinde "captcha" kelimesini taşıyor.
+
+Tespit yalnız `<title>` etiketine daraltıldı. Sonuç: saklanmış artefaktların
+**hiçbiri** engel sayfası değil. Asıl sorun bot koruması değil, JS kabuğu.
+
+## 10.6 Sonuç
+
+| İçerik durumu | Kaynak |
+|---|---:|
+| `gercek-icerik` | 284 |
+| `dosya-yok` | 171 |
+| `arsiv` | 83 |
+| `js-kabugu` | 44 |
+| `aday-kesif` | 22 |
+| `politika` | 14 |
+| `besleme` | 9 |
+| `api-yaniti` | 9 |
+
+534 `cekildi` etiketinin karşılığı 284 gerçekten okunabilir kaynak. Bu kötü bir
+sonuç değil, **ölçülmüş** bir sonuç: aradaki farkın nerede olduğu satır satır
+yazılı.
+
+`ENVANTER-ISLENEMEYEN.csv` 754 artefakt kaydını iki sebebe ayırır: gövdesi hiç
+saklanmamış olanlar ve dizinde yazıp bu checkout'ta bulunmayanlar.
+
+### `VERI-ENVANTERI.csv` — 636 satır
+
+```
+source_id,ad,erisim_durumu,artefakt_basarili,dosyasi_diskte,icerik_durumu,icerik_gerekcesi,incelendi
+source-0273,500 Global Companies,cekildi,2,2,gercek-icerik,görünür metin 8839 karakter,evet
+```
+
+## 10.7 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `VERI-ENVANTERI.csv` | 636 kaynak: erişim, içerik, yüzey, incelendi, eksik |
+| `ENVANTER-ISLENEMEYEN.csv` | 754 işlenemeyen artefakt kaydı ve sebebi |
+| `KAPSAMA-RAPORU.md` | Erişim × içerik çapraz tablosu, aile bazında kapsama |
+| `GUN2-ORNEKLEM-PLANI.md` | Gün 2'de ne açılacak, ne neden açılmayacak |
+
+## 10.8 Yeniden üretim
+
+```bash
+python3 veri_envanteri.py
+python3 -m unittest test_veri_envanteri
+```
+
+Ağa çıkmaz; yalnız defteri, dizini ve diskteki dosyaları okur.
+
+---
+
+# Görev 11 — Sözlüğü tüm veriye uygulamak: normalize veri kümesi
+
+*(Veri çalışması Gün 3)*
+
+**İstenen:** Görev 9'un sözlüğünü elde olan tüm içeriğe uygulamak; ham
+artefaktları ortak bir şemaya çevirmek; teknik normalizasyonu yorumlayıcı
+sınıflandırmadan ayrı çıktı olarak tutmak. Üç yasak: tarih tahmin edilmeyecek,
+aynı içerik yeni bağımsız kanıt sayılmayacak, indirme/etkileşim sayısı talep
+kanıtına çevrilmeyecek.
+
+## 11.1 Problem: sözlük 97 kayıt üzerinde denenmişti
+
+Görev 9 kategori sözlüğünü kurdu ve 97 açılmış örnek üzerinde çalıştığını
+gösterdi. Görev 10 elde 465 kaynağa ait 591 açılabilir artefakt olduğunu saydı.
+
+Aradaki fark denenmemiş alan. Bu görev sözlüğü o 591 dosyanın tamamına uygular
+ve sonucu makinenin okuyabileceği bir veri kümesine çevirir.
+
+## 11.2 Neden iki ayrı çıktı
+
+Görev kartının açık şartı: yorumlayıcı sınıflandırma teknik normalizasyondan
+ayrı tutulacak. Sebebi somut:
+
+| Dosya | Ne taşır | Değişirse |
+|---|---|---|
+| `NORMALIZE-BELGELER.csv` | Başlık, metin, URL, tarih, dil, hash | Metin çıkarım kuralı değişirse 591 satır yeniden üretilir |
+| `SINIFLANDIRMA.csv` | Belge türü, ürün kategorisi, niyet, gerekçe | Sınıflandırma kuralı değişirse **metin yeniden çıkarılmaz** |
+
+İkisi `document_id` ile bağlanır. Ayrı tutulmasalardı yanlış bir sınıflandırma
+kararı doğru çıkarılmış metni de kirletirdi.
+
+## 11.3 Tarih tahmin edilmez
+
+Sıra sabit: JSON-LD `datePublished` → `article:published_time` →
+`<time datetime>`. Hiçbiri yoksa `published_at` **boş kalır** ve
+`missing_published_date` + `unknown_date` bayrakları konur.
+
+`collected_at` ayrı bir sütundur. Bizim çekme anımızdır ve yayın tarihi yerine
+geçmez — geçseydi 2026'da indirilen 2019 tarihli bir sayfa "bugün yayımlanmış"
+görünürdü.
+
+Ölçülen: 591 belgenin **530'u** hiçbir tarih beyan etmiyor. Tarih okunabilen
+61 belgenin her biri `tarih_kaynagi` sütununda nereden okunduğunu yazar.
+
+## 11.4 Dil: adres listesi dil kanıtı değil
+
+İlk koşuda 75 belge "Portekizce" çıktı. Airtable, AppSumo, Bloomberg…
+Hepsi sitemap'ti.
+
+Sebep: sitemap on binlerce `https://…​.com/…` satırı taşıyor ve `com`
+Portekizce'de geçerli bir durdurma kelimesi (*"ile"*). Sayım `com`'u saydıkça
+Portekizce payı yükseliyordu.
+
+İki katman eklendi:
+
+1. Dil yalnız **düz yazıdan** okunur — adresler, alan adları ve dosya yolları
+   metinden çıkarılır.
+2. Tek kelimenin tekrarı dil sayılmaz — o dilden en az **4 farklı** durdurma
+   kelimesi görülmelidir.
+
+Sonuç: `pt` 75 → 1, `unknown` 57 → 163. İkinci sayının büyümesi kayıp değil;
+emin olunmayan yere artık dil yazılmıyor.
+
+## 11.5 Tekrar: silinmez, ilişkilendirilir
+
+Aynı içerik yeni bağımsız kanıt değildir. Ama satır **silinmez** — silinirse
+o kaynağın erişilmiş olduğu bilgisi de kaybolur. Üç deterministik kural:
+
+| Yöntem | İlişki | Güven |
+|---|---|---|
+| Normalize metin hash'i aynı | `duplicate_of` | 1.00 |
+| Kanonik URL aynı | `duplicate_of` | 0.90 |
+| SimHash Hamming mesafesi ≤ 3 | `possible_duplicate` | 1 − mesafe/64 |
+
+75 kesin, 23 aday ilişki bulundu. Üçünün de `created_by` değeri
+`deterministic_rule`'dur — hiçbiri modele sorularak üretilmedi.
+
+`possible_duplicate` bir **adaydır**, karar değil: otomatik eleme yapılmaz.
+
+### Kimlik neden `source_id` + artefakt hash'i
+
+Kimlik önce normalize metnin hash'inden türetildi. Bir test bunu yakaladı:
+belge kendisiyle `duplicate_of` ilişkisi kuruyordu — çünkü aynı içerikli iki
+belge aynı kimliği alıyordu.
+
+Sebep gerçek bir durum: Facebook, Facebook Marketplace ve Facebook Pages
+katalogda üç ayrı kaynak ama aynı `facebook.com/robots.txt` dosyasını
+paylaşıyorlar. Aynı içerik, farklı kaynak kaydı.
+
+Kimlik `source_id` ile artefakt hash'inin birleşiminden türetildi. Üçü ayrı
+belge oldu, aralarındaki bağ `duplicate_of` ile kuruldu — kaybolmadı, doğru
+yere yazıldı.
+
+## 11.6 Etkileşim sayıları talep kanıtı değildir
+
+Bulunan indirme, yorum ve yıldız sayıları kaydedilir ama adları ve notları ne
+olmadıklarını açıkça söyler:
+
+```
+alan                      = engagement_indirme_sayisi
+deger                     = 5M
+not                       = gözlemlenmiş etkileşim sayısı; ödeme davranışı
+                            ya da talep kanıtı DEĞİLDİR
+```
+
+Bir test hiçbir alan adında "talep" ya da "demand" geçmediğini doğruluyor.
+
+## 11.7 Çalıştırınca çıkan üç kusur
+
+Alan çıkarımı ilk koşuda 282 bulgu üretti. Gerçek satırlara bakınca üçü yanlıştı.
+
+**Sitemap önceliği sürüm sanıldı.** Airtable Marketplace için `surum = 0.7`
+yazılmıştı. 0.7 bir sürüm numarası değil, sitemap'in `<priority>` değeri.
+Sürüm deseni artık bağlam kelimesi istiyor (`v`, `version`, `sürüm`, `release`).
+
+**Boş yorum sayısı.** `engagement_yorum_sayisi = ","` — desen rakamsız da
+eşleşiyordu. Artık rakamla başlamak zorunda.
+
+**Puan indirme sayısı sanıldı.** Aptoide için `engagement_indirme_sayisi = 4.33`
+yazılmıştı. Ham metne bakınca sebep göründü:
+
+```
+Omniheroes 4.33 Download    Vegas Slots 4.25 Download
+```
+
+`4.33` oyunun **puanı**, `Download` ise butonun yazısı. HTML etiketleri
+sökülünce yan yana geldiler. İki kural eklendi: etiket çoğul olmalı
+(`downloads`, buton yazısı `Download` değil) ve 10'un altındaki ondalıklı bir
+sayı indirme sayısı sayılmaz.
+
+Ayrıca sitemap, robots ve JS kabuğu olan belgelerde alan çıkarımı hiç
+çalışmıyor — bir sitemap'ten "fiyat" çıkarmak uydurmadır.
+
+282 → **139 bulgu**. Düşüşün tamamı gürültüydü.
+
+## 11.8 Bulunmak ile ölçülebilmek ayrı şeyler
+
+Görev 4'ün ayrımı burada da geçerli. `mevzuat_atfi = "Kanun"` bir etikettir:
+sayfada o kelime geçiyor. `fiyat = "$1,890"` bir ölçümdür: karşılaştırılabilir
+bir değer.
+
+`alan_turu` sütunu bunu yazar — 79 `olcum`, 60 `etiket`. Etiket satırlarının
+her biri "sayfada geçen ifade; doğrulanmış bir ölçüm değildir" notunu taşır.
+
+## 11.9 Sonuç: 591 belgenin 42'si ölçüm kanıtı üretiyor
+
+| | Belge |
+|---|---:|
+| Toplam normalize belge | 591 |
+| Ölçüm kanıtı üretir | **42** |
+| Üretmez | 549 |
+
+Üretmeyenlerin dökümü: 386 ana sayfa, 86 sitemap, 47 belirsiz, 29 robots.txt.
+
+Bu oran bir başarısızlık değil, çalışmanın asıl bulgusu: **kaynakların
+çoğundan ana sayfa çekilmiş, ana sayfa da fiyat, yorum ya da talep kanıtı
+taşımaz.** Bir sonraki adımın nereye bakması gerektiğini bu sayı söylüyor —
+daha çok site değil, aynı sitelerin iç sayfaları.
+
+### `NORMALIZE-BELGELER.csv` — 591 satır
+
+```
+document_id,source_id,source_url,canonical_url,title,language,published_at,collected_at,source_integrity_flags
+doc-331b26cd14d4,source-0273,https://500.co/,https://500.co/,500 Global | 500 Global,en,,2026-09-02T23:02:16,"missing_published_date, unknown_date"
+```
+
+### `SINIFLANDIRMA.csv` — 591 satır
+
+```
+document_id,kaynak_ailesi,belge_turu,arastirma_niyeti,icerik_durumu,siniflandirma_gerekcesi,olcum_kaniti_uretir_mi
+doc-331b26cd14d4,"Şirket, yatırım ve startup verisi",ana-sayfa,rakip-kim,gercek-icerik,URL yolu kök ve kayıt/liste/fiyat işareti yok,hayir
+```
+
+### `BELGE-ILISKILERI.csv` — 98 satır
+
+```
+document_id,relation_type,hedef_document_id,confidence,created_by,gerekce
+doc-1e29b756ea67,duplicate_of,doc-c7a276cf2965,0.90,deterministic_rule,aynı canonical URL: https://apkmirror.com/
+```
+
+### `KATEGORI-ALANLARI.csv` — 139 satır
+
+```
+document_id,source_id,source_adi,alan,deger,alan_sinifi,alan_turu,not
+doc-b0124bcad21d,source-0314,Angi,fiyat,"$1,890",urun,olcum,
+```
+
+## 11.10 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `NORMALIZE-BELGELER.csv` | 591 belge — teknik normalizasyon (Faz 4 şeması) |
+| `SINIFLANDIRMA.csv` | 591 satır — yorumlayıcı sınıflandırma, ayrı tutulur |
+| `BELGE-ILISKILERI.csv` | 98 tekrar ilişkisi, güven ve gerekçesiyle |
+| `KATEGORI-ALANLARI.csv` | 139 çıkarılan alan, ölçüm/etiket ayrımıyla |
+| `ISLENEMEYEN-BELGELER.csv` | 754 işlenemeyen kayıt ve sebebi |
+| `VERI-SOZLUGU.md` | Her sütunun ne anlama geldiği + veri kümesinin cevaplayamadığı sorular |
+| `DONUSUM-KURALLARI.md` | Dönüşümün on adımı, ölçülmüş sayılarıyla |
+
+## 11.11 Yeniden üretim
+
+```bash
+python3 normalize_belgeler.py --yaz
+python3 -m unittest test_normalize_belgeler
+```
+
+Ham dosyalar salt okunur açılır; `results/raw/` altındaki hiçbir bayt
+değişmez. Ağa çıkmaz. Aynı girdi aynı çıktıyı verir.
