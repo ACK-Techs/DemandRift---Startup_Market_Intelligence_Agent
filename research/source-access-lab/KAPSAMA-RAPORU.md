@@ -61,6 +61,24 @@ açılabilir tek dosya yok — etiket erişimi anlatıyor, elde olanı değil.
 İncelenmiş sayılan her kaynak `PILOT-KAYITLAR.csv`'de artefakt hash'iyle
 kayıtlıdır. **Elde olmayan dosya incelenmiş gösterilmez.**
 
+## 3b. DR-L02 sözlüğüyle ilişki
+
+Bu envanter mevcut sınıflandırmayı **yeniden yazmaz, doğrular.** İki
+çıktı farklı eksenlerde durur ve karıştırılmamalıdır:
+
+| | Sorduğu soru |
+|---|---|
+| `PILOT-KAYITLAR.csv` · `belge_turu` | Bu dosya **ne tür bir belge**? |
+| `VERI-ENVANTERI.csv` · `icerik_durumu` | Bu dosyadan **metin çıkarılabiliyor mu**? |
+
+Bir ana sayfa hem `ana-sayfa` (belge türü) hem `js-kabugu` (içerik
+durumu) olabilir: türü ana sayfadır, ama tarayıcıda üretildiği için
+metni alınamaz. Çelişki değil, iki ayrı ölçüdür.
+
+Doğrulama: pilotta açılan 95 kaynağın tamamı bu envanterde var ve
+**envanterin 'dosyası yok' dediği hiçbir kaynak pilotta açılmış
+görünmüyor.**
+
 ## 4. Kaynak ailesi bazında kapsama
 
 | Kaynak ailesi | Toplam | Açılabilir | İncelendi | Bekleyen |

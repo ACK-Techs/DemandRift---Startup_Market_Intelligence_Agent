@@ -158,6 +158,32 @@ class IslenemeyenKayitTests(unittest.TestCase):
         self.assertEqual(beklenen, len(self.satirlar))
 
 
+class DRL02IleTutarlilikTests(unittest.TestCase):
+    """DR-L02 pilotu ile bu envanter arasinda celiski olmamali."""
+
+    def setUp(self):
+        def oku(ad):
+            with (HERE / ad).open(encoding="utf-8") as h:
+                return list(csv.DictReader(h))
+        self.envanter = {r["source_id"]: r for r in oku("VERI-ENVANTERI.csv")}
+        self.pilot = oku("PILOT-KAYITLAR.csv")
+
+    def test_pilottaki_her_kaynak_envanterde(self):
+        for r in self.pilot:
+            self.assertIn(r["source_id"], self.envanter, r["kaynak"])
+
+    def test_dosyasi_yok_denen_kaynak_pilotta_acilmis_olamaz(self):
+        """En kritik kontrol: elde olmayan dosya incelenmis gosterilemez."""
+        for r in self.pilot:
+            envanter = self.envanter[r["source_id"]]
+            self.assertGreater(int(envanter["dosyasi_diskte"]), 0, r["kaynak"])
+
+    def test_pilotta_acilan_kaynak_envanterde_incelendi_isaretli(self):
+        for r in self.pilot:
+            self.assertEqual("evet", self.envanter[r["source_id"]]["incelendi"],
+                             r["kaynak"])
+
+
 class RaporTests(unittest.TestCase):
     def test_kapsama_raporu_capraz_tabloyu_iceriyor(self):
         metin = (HERE / "KAPSAMA-RAPORU.md").read_text(encoding="utf-8")
@@ -169,6 +195,11 @@ class RaporTests(unittest.TestCase):
         metin = (HERE / "GUN2-ORNEKLEM-PLANI.md").read_text(encoding="utf-8")
         self.assertIn("Örneklem kuralı", metin)
         self.assertIn("eksik kaydı", metin)
+
+    def test_rapor_iki_ekseni_ayirt_ediyor(self):
+        metin = (HERE / "KAPSAMA-RAPORU.md").read_text(encoding="utf-8")
+        self.assertIn("DR-L02 sözlüğüyle ilişki", metin)
+        self.assertIn("yeniden yazmaz", metin)
 
     def test_kapsama_raporu_aile_bazinda_rapor_veriyor(self):
         """Kabul kriteri: işlenen ve bekleyen miktar kategori bazında raporlanır."""

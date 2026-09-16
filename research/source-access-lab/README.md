@@ -9,6 +9,7 @@ kullanıyor ama farklı soruları cevaplıyorlar.
 |---|---|---|
 | **A. Erişim laboratuvarı** | Bu kaynaklara ulaşabiliyor muyuz, ne indi? | Bu dosyanın alt bölümleri |
 | **B. Araştırma tasarımı** | Bir ürün fikri geldiğinde hangi kaynağa ne sorulur? | [`KILAVUZ.md`](KILAVUZ.md) |
+| **C. Veri çalışması** | Bu checkout'ta gerçekten ne var, ne incelendi? | [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) |
 
 **Başlangıç noktası [`KILAVUZ.md`](KILAVUZ.md)** — dokuz görevi sırayla anlatır,
 her bölümde problem, izlenen yol, sonuç ve gerçek CSV satır örnekleri vardır.
@@ -43,6 +44,33 @@ dosyalar `build_*.py`, `select_sources.py`, `compile_queries.py`,
 ürün fikri → kategori → araştırma sorusu → gerekli kanıt → kaynak ailesi
           → kaynak yeteneği → veri alanı → sorgu şablonu → bütçe/fallback
 ```
+
+---
+
+## C. Veri çalışması — bu checkout'ta gerçekten ne var
+
+**Erişim etiketi ile elde olan aynı şey değildir.** Defter 534 kaynağı `cekildi`
+diyor; dosyalar açılınca tablo şöyle:
+
+| İçerik durumu | Kaynak | |
+|---|---:|---|
+| `gercek-icerik` | 284 | Görünür metin taşıyan sayfa |
+| `dosya-yok` | 171 | Bu checkout'ta açılabilir dosya yok |
+| `arsiv` | 83 | Common Crawl kopyası, canlı değil |
+| `js-kabugu` | 44 | 400 KB HTML ama görünür metin yok |
+| `aday-kesif` | 22 | Sitemap — kanıt değil |
+| `politika` | 14 | robots.txt |
+| `besleme` / `api-yaniti` | 9 + 9 | RSS ve yapılandırılmış yanıt |
+
+| Çıktı | İçerik |
+|---|---|
+| [`VERI-ENVANTERI.csv`](VERI-ENVANTERI.csv) | 636 kanonik kaynak: erişim durumu, içerik durumu, yüzey türleri, incelendi durumu, eksik |
+| [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) | Erişim × içerik çapraz tablosu, aile bazında kapsama |
+| [`ENVANTER-ISLENEMEYEN.csv`](ENVANTER-ISLENEMEYEN.csv) | Gövdesi saklanmamış ya da diskte bulunamayan artefakt kayıtları |
+| [`GUN2-ORNEKLEM-PLANI.md`](GUN2-ORNEKLEM-PLANI.md) | Gün 2'de hangi kaynakların açılacağı ve hangilerinin neden açılmayacağı |
+
+Kural: **elde olmayan dosya incelenmiş gösterilmez.** Bir test, pilotta açılmış
+her kaynağın envanterde gerçekten dosyası olduğunu doğruluyor.
 
 ---
 
@@ -83,7 +111,7 @@ cd research/source-access-lab
 python3 -m unittest discover -s . -p 'test_*.py'
 ```
 
-404 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı kaynağın
+432 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı kaynağın
 hiçbir profilde seçilmemesi, aday keşfin ölçüm kanıtı sayılmaması, zayıf bir
 işaretin içerik etiketi üretmemesi ve üretilen sorguda doldurulmamış yer tutucu
 kalmaması gibi.
