@@ -30,6 +30,8 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G9": ("Görev 9", "Kategori sözlüğü (veri çalışması Gün 2)"),
     "G10": ("Görev 10", "Veri envanteri (veri çalışması Gün 1)"),
     "G11": ("Görev 11", "Normalize veri kümesi (veri çalışması Gün 3)"),
+    "G12": ("Görev 12", "İç sayfa toplama"),
+    "G13": ("Görev 13", "SourceFitMatrix v1"),
 }
 
 # dosya -> (gorev, rol, bir cumlelik aciklama)
@@ -37,7 +39,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
 HARITA: dict[str, tuple[str, str, str]] = {
     # --- Ortak ---
     "README.md": ("ORTAK", "belge", "Bu dosya — klasörün haritası"),
-    "KILAVUZ.md": ("ORTAK", "belge", "**Başlangıç noktası.** On bir görevin tamamını sırayla anlatır"),
+    "KILAVUZ.md": ("ORTAK", "belge", "**Başlangıç noktası.** On üç görevin tamamını sırayla anlatır"),
     ".gitignore": ("ORTAK", "girdi", "İndirilen 721 MB ham artefaktı depo dışında tutar"),
     "source_manifest.json": ("ORTAK", "girdi", "636 kaynağın kanonik kimlik ve adres listesi"),
     "dosya_haritasi.py": ("ORTAK", "kod", "README'deki bu haritayı üretir"),
@@ -130,6 +132,20 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "VERI-SOZLUGU.md": ("G11", "belge", "Her sütunun anlamı + bu verinin **cevaplayamadığı** sorular"),
     "DONUSUM-KURALLARI.md": ("G11", "belge", "Dönüşümün on adımı, ölçülmüş sayılarıyla"),
     "normalize_belgeler.py": ("G11", "kod", "Ham artefaktları normalize veri kümesine çevirir"),
+
+    # --- Görev 12 ---
+    "ic_sayfa_gecisi.py": ("G12", "kod", "Sitemap ve ana sayfa bağlantılarından iç sayfa çeker; her aday bir arama niyetine bağlanır"),
+    "EK-ARTEFAKT-DIZINI.csv": ("G12", "cikti", "İç sayfa geçişinin artefakt dizini; ana dizin ayrı bir scriptin çıktısı olduğu için genişletilmez"),
+    "IC-SAYFA-ADAYLARI.csv": ("G12", "cikti", "Kaynak × niyet bazında aday iç sayfa sayıları"),
+    "IC-SAYFA-HEDEFLERI.csv": ("G12", "cikti", "Çekim için seçilen hedefler (ağsız koşunun çıktısı)"),
+    "IC-SAYFA-SONUCLARI.csv": ("G12", "cikti", "Pilot koşunun sonuçları"),
+
+    # --- Görev 13 ---
+    "SOURCEFIT-SEMA.md": ("G13", "belge", "**Alan sözleşmesi.** Matrisin her sütununun anlamı, yedi niyet ve üç sayım kuralı"),
+    "SOURCE-FIT-MATRIX.csv": ("G13", "cikti", "Kategori × niyet × kaynak eşleşmeleri; her satır açılmış bir belgeye dayanır"),
+    "KATEGORI-YETERLILIK.csv": ("G13", "cikti", "112 hücrenin yeterlilik durumu ve boş olanların **sebep kodu**"),
+    "PAKET-ONERILERI.csv": ("G13", "cikti", "Kategori başına Standard/Deep aday paketi ve gerekçesi"),
+    "source_fit_matrix.py": ("G13", "kod", "Matrisi, yeterlilik tablosunu, paketleri ve şemayı üretir"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

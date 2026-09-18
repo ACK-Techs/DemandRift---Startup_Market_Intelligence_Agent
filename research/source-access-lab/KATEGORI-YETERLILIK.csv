@@ -1,0 +1,113 @@
+kategori,arama_niyeti,durum,kanit_veren_kaynak,bagimsiz_grup,incelenen_belge,gap_kodu,gap_aciklamasi,ornek_kaynaklar
+b2b-web-yazilimi,problem_demand,yeterli,3,3,3,,,"PeerSpot, Ashby Jobs, Vertice"
+b2b-web-yazilimi,existing_alternatives,yeterli,3,3,3,,,"Lever Jobs, Ashby Jobs, Vertice"
+b2b-web-yazilimi,dissatisfaction,yeterli,11,11,16,,,"AppSumo, TrustRadius, SourceForge Reviews"
+b2b-web-yazilimi,use_case,yeterli,7,7,7,,,"AppSumo, SourceForge Reviews, Lever Jobs"
+b2b-web-yazilimi,competitor_discovery,yeterli,17,17,17,,,"AppSumo, Wellfound, GetApp"
+b2b-web-yazilimi,observed_market_pricing,yeterli,18,18,31,,,"AppSumo, SourceForge Reviews, Crozdesk"
+b2b-web-yazilimi,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+egitim,problem_demand,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+egitim,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+egitim,dissatisfaction,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Class Central
+egitim,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,edX
+egitim,competitor_discovery,yeterli,2,2,2,,,"edX, Skillshare"
+egitim,observed_market_pricing,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+egitim,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+eklenti-entegrasyon,problem_demand,yeterli,3,3,3,,,"WooCommerce Marketplace, Slack Marketplace, Canva Apps Marketplace"
+eklenti-entegrasyon,existing_alternatives,yeterli,3,3,3,,,"Slack Marketplace, monday.com Apps Marketplace, Airtable Marketplace"
+eklenti-entegrasyon,dissatisfaction,yeterli,4,4,7,,,"Shopify App Store, WooCommerce Marketplace, monday.com Apps Marketplace"
+eklenti-entegrasyon,use_case,yeterli,6,6,6,,,"Slack Marketplace, monday.com Apps Marketplace, Notion Integrations"
+eklenti-entegrasyon,competitor_discovery,yeterli,13,13,14,,,"Firefox Add-ons, Safari Extensions, Opera Add-ons"
+eklenti-entegrasyon,observed_market_pricing,yeterli,8,8,10,,,"WooCommerce Marketplace, Salesforce AppExchange, Slack Marketplace"
+eklenti-entegrasyon,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+fintech,problem_demand,yeterli,7,7,10,,,"SPK, FRED, World Bank"
+fintech,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Bank for International Settlements
+fintech,dissatisfaction,yeterli,2,2,2,,,"World Bank, Investing.com"
+fintech,use_case,yeterli,3,3,3,,,"Companies House, Bank for International Settlements, Open Banking UK"
+fintech,competitor_discovery,yeterli,6,6,6,,,"Companies House, SPK, FRED"
+fintech,observed_market_pricing,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+fintech,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+gayrimenkul,problem_demand,yeterli,2,2,2,,,"Emlakjet, U.S. Census Building Permits"
+gayrimenkul,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Emlakjet
+gayrimenkul,dissatisfaction,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Rightmove
+gayrimenkul,use_case,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+gayrimenkul,competitor_discovery,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+gayrimenkul,observed_market_pricing,yeterli,2,2,2,,,"Trulia, Emlakjet"
+gayrimenkul,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+gelistirici-araci,problem_demand,yeterli,4,4,4,,,"Codeberg, Hacker News, Dev.to"
+gelistirici-araci,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Hashnode
+gelistirici-araci,dissatisfaction,yeterli,4,4,6,,,"SourceForge, Codeberg, Dev.to"
+gelistirici-araci,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,SourceForge
+gelistirici-araci,competitor_discovery,yeterli,5,5,7,,,"SourceForge, DZone, Slashdot"
+gelistirici-araci,observed_market_pricing,yeterli,2,2,2,,,"SourceForge, Homebrew Formulae"
+gelistirici-araci,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+mobil-uygulama,problem_demand,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+mobil-uygulama,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+mobil-uygulama,dissatisfaction,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+mobil-uygulama,use_case,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+mobil-uygulama,competitor_discovery,yeterli,4,4,6,,,"Apple App Store, F-Droid, APKMirror"
+mobil-uygulama,observed_market_pricing,zayif,1,1,2,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,APKMirror
+mobil-uygulama,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+ortak,problem_demand,yeterli,17,17,17,,,"Tavily, Hacker News, SaaSHub"
+ortak,existing_alternatives,yeterli,16,16,16,,,"Startup Stash, SaaSHub, Slack"
+ortak,dissatisfaction,yeterli,19,19,22,,,"DataForSEO, Uneed, AlternativeTo"
+ortak,use_case,yeterli,28,27,28,,,"Tavily, AppSumo, Slack"
+ortak,competitor_discovery,yeterli,50,47,50,,,"DuckDuckGo, Tavily, BetaList"
+ortak,observed_market_pricing,yeterli,40,38,47,,,"Kagi, Tavily, Firecrawl"
+ortak,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+oyun,problem_demand,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,itch.io
+oyun,existing_alternatives,yeterli,2,2,2,,,"itch.io, Nintendo eShop"
+oyun,dissatisfaction,yeterli,4,4,5,,,"Steam, itch.io, Metacritic"
+oyun,use_case,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+oyun,competitor_discovery,yeterli,6,6,7,,,"Steam, itch.io, PlayStation Store"
+oyun,observed_market_pricing,yeterli,4,4,6,,,"Steam, itch.io, Nintendo eShop"
+oyun,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+regule-sektor,problem_demand,yeterli,5,4,5,,,"BTK, SPK, European Medicines Agency"
+regule-sektor,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Consumer Financial Protection Bureau
+regule-sektor,dissatisfaction,yeterli,2,2,2,,,"Consumer Financial Protection Bureau, UK Information Commissioner's Office"
+regule-sektor,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,UK Information Commissioner's Office
+regule-sektor,competitor_discovery,yeterli,2,2,2,,,"SPK, Competition and Markets Authority"
+regule-sektor,observed_market_pricing,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+regule-sektor,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+saglik,problem_demand,yeterli,3,3,4,,,"European Medicines Agency, CDC, Global Health Data Exchange"
+saglik,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+saglik,dissatisfaction,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+saglik,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,NICE
+saglik,competitor_discovery,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,NICE
+saglik,observed_market_pricing,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,NICE
+saglik,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+seyahat,problem_demand,zayif,1,1,2,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Skyscanner
+seyahat,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+seyahat,dissatisfaction,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+seyahat,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Moovit
+seyahat,competitor_discovery,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,FlightAware
+seyahat,observed_market_pricing,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Tripadvisor
+seyahat,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+turkiye-pazari,problem_demand,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Meetup
+turkiye-pazari,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Bilişim Vadisi
+turkiye-pazari,dissatisfaction,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Founder Institute Türkiye
+turkiye-pazari,use_case,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+turkiye-pazari,competitor_discovery,yeterli,3,3,3,,,"Galata Business Angels, Arya Women Investment Platform, Meetup"
+turkiye-pazari,observed_market_pricing,yeterli,2,2,2,,,"startups.watch, TÜBİTAK"
+turkiye-pazari,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+yapay-zeka-urunu,problem_demand,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,AWS Marketplace
+yapay-zeka-urunu,existing_alternatives,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,AWS Marketplace
+yapay-zeka-urunu,dissatisfaction,zayif,1,1,2,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,OpenRouter
+yapay-zeka-urunu,use_case,yeterli,2,2,2,,,"Together AI, AWS Marketplace"
+yapay-zeka-urunu,competitor_discovery,yeterli,6,6,6,,,"OpenRouter, Together AI, AWS Marketplace"
+yapay-zeka-urunu,observed_market_pricing,yeterli,5,5,5,,,"OpenRouter, Replicate, Together AI"
+yapay-zeka-urunu,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+yeme-icme,problem_demand,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Foursquare
+yeme-icme,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+yeme-icme,dissatisfaction,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+yeme-icme,use_case,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+yeme-icme,competitor_discovery,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Foursquare
+yeme-icme,observed_market_pricing,yeterli,2,2,3,,,"Tripadvisor, Foursquare"
+yeme-icme,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,
+yerel-hizmet,problem_demand,yeterli,2,2,2,,,"Foursquare, Houzz"
+yerel-hizmet,existing_alternatives,bos,0,0,0,yuzey-bulunamadi,"Kaynaklara erişiliyor ve içerik var, ama bu niyete karşılık gelen yüzey (ör. /pricing, /reviews) bulunamadı. Toplama yöntemi yetersiz — pazar sinyali hakkında bir şey söylemez.",
+yerel-hizmet,dissatisfaction,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,Thumbtack
+yerel-hizmet,use_case,zayif,1,1,1,tek-grup,Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz.,TomTom
+yerel-hizmet,competitor_discovery,yeterli,2,2,2,,,"Foursquare, TomTom"
+yerel-hizmet,observed_market_pricing,yeterli,6,6,7,,,"Tripadvisor, Foursquare, Thumbtack"
+yerel-hizmet,stated_wtp_weak_signal,bos,0,0,0,yontem-disi,Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ.,

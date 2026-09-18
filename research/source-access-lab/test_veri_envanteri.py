@@ -85,12 +85,13 @@ class ElindeOlmayanIncelenmisSayilmazTests(unittest.TestCase):
         """Başarılı artefakt = diskte + gövdesiz + kayıp."""
         for r in self.satirlar:
             toplam = (int(r["dosyasi_diskte"]) + int(r["govdesi_saklanmamis"])
-                      + int(r["dizinde_var_diskte_yok"]))
+                      + int(r["govdesi_bos"]) + int(r["dizinde_var_diskte_yok"]))
             self.assertEqual(int(r["artefakt_basarili"]), toplam, r["ad"])
 
     def test_eksik_olan_kaynak_gerekce_tasir(self):
         for r in self.satirlar:
-            if int(r["dizinde_var_diskte_yok"]) or int(r["govdesi_saklanmamis"]):
+            if (int(r["dizinde_var_diskte_yok"]) or int(r["govdesi_saklanmamis"])
+                    or int(r["govdesi_bos"])):
                 self.assertTrue(r["eksik"].strip(), r["ad"])
 
 
@@ -144,17 +145,19 @@ class IslenemeyenKayitTests(unittest.TestCase):
         for r in self.satirlar:
             self.assertTrue(r["neden"].strip(), r["ad"])
 
-    def test_nedenler_iki_turden(self):
+    def test_nedenler_tanimli_turden(self):
+        """Uc sebep vardir ve hicbiri "islenmis" sayilmaz."""
         for r in self.satirlar:
             self.assertTrue(
                 r["neden"].startswith("gövde saklanmamış")
+                or r["neden"].startswith("yanıt gövdesi boş")
                 or r["neden"].startswith("dizinde 'dosya' yazıyor"), r["neden"])
 
     def test_kayitlar_envanterdeki_sayimla_uyusur(self):
         with (HERE / "VERI-ENVANTERI.csv").open(encoding="utf-8") as handle:
             envanter = list(csv.DictReader(handle))
-        beklenen = sum(int(r["govdesi_saklanmamis"]) + int(r["dizinde_var_diskte_yok"])
-                       for r in envanter)
+        beklenen = sum(int(r["govdesi_saklanmamis"]) + int(r["govdesi_bos"])
+                       + int(r["dizinde_var_diskte_yok"]) for r in envanter)
         self.assertEqual(beklenen, len(self.satirlar))
 
 

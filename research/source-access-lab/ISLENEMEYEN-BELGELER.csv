@@ -64,7 +64,6 @@ source-0249,BigSpy,fc206e3923533645,https://bigspy.com/robots.txt,robots_preflig
 source-0624,Bilişim Vadisi,8da06d0209538d09,https://bilisimvadisi.com.tr/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
 source-0624,Bilişim Vadisi,776148fca5e32227,https://bilisimvadisi.com.tr/sitemap_index.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
 source-0004,Bing,40d2da70c3b44322,https://www.bing.com:443/robots.txt?toWww=1&redig=083A18B2B08F4C089A148EF729AA302E,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
-source-0004,Bing,40d2da70c3b44322,https://www.bing.com:443/robots.txt?toWww=1&redig=8153F50C8E264E12BF426DC611A18C06,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
 source-0302,Bing Maps,40d2da70c3b44322,https://www.bing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
 source-0302,Bing Maps,b01f48436b21eb39,https://www.bing.com/sitemap.xml,sitemap_xml,gövde saklanmamış; normalize edilecek içerik yok
 source-0554,Bing News,40d2da70c3b44322,https://www.bing.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
@@ -753,3 +752,4 @@ source-0348,Zenodo,e61724c7d219d4fd,https://zenodo.org/sitemap.xml,sitemap_xml,d
 source-0280,ZipRecruiter,9b16265e9cc730b2,https://www.ziprecruiter.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
 source-0260,ZoomInfo,bfcb020b04f67534,https://www.zoominfo.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
 source-0169,Çiçeksepeti,974de60424d97f8c,https://www.ciceksepeti.com/robots.txt,robots_preflight,gövde saklanmamış; normalize edilecek içerik yok
+source-0536,Replicate,,https://replicate.com/sitemap-content.xml,sitemap_xml,yanıt gövdesi boş; saklanacak içerik yok

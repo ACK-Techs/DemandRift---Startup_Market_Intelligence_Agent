@@ -265,9 +265,15 @@ class IslenemeyenKayitTests(unittest.TestCase):
             self.assertTrue(r["neden"].strip(), r["ad"])
 
     def test_her_basarili_kayit_ya_islendi_ya_islenemedi(self):
-        """Ucuncu bir yer yok: kayip bir kayit sessizce dusmus olamaz."""
-        dizin = [r for r in oku("ARTEFAKT-DIZINI.csv") if r["sonuc"] == "ok"]
-        self.assertEqual(len(dizin),
+        """Ucuncu bir yer yok: kayip bir kayit sessizce dusmus olamaz.
+
+        Ayni (kaynak, artefakt) cifti iki kosuda gorulmus olabilir; tekrarlar
+        bir kez islenir, bu yuzden sayim tekil cift uzerinden yapilir.
+        """
+        satirlar = [r for r in oku("ARTEFAKT-DIZINI.csv") + oku("EK-ARTEFAKT-DIZINI.csv")
+                    if r["sonuc"] == "ok"]
+        tekil = {(r.get("source_id", ""), r["sha256"]) for r in satirlar}
+        self.assertEqual(len(tekil),
                          len(oku("NORMALIZE-BELGELER.csv"))
                          + len(oku("ISLENEMEYEN-BELGELER.csv")))
 

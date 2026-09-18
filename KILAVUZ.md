@@ -2264,3 +2264,223 @@ python3 -m unittest test_normalize_belgeler
 
 Ham dosyalar salt okunur açılır; `results/raw/` altındaki hiçbir bayt
 değişmez. Ağa çıkmaz. Aynı girdi aynı çıktıyı verir.
+
+---
+
+# Görev 12 — Ön kapıdan içeri girmek
+
+**İstenen:** (Görev 13'ün önkoşulu olarak ortaya çıktı.) Kanıt üretmeyen
+belgelerin sebebini kapatmak.
+
+## 12.1 Problem: elimizde ön kapı fotoğrafları vardı
+
+Görev 11 ölçtü: 591 belgenin 42'si ölçüm kanıtı üretiyordu ve üretmeyen
+549'un **350'si ana sayfaydı.**
+
+Sebep engellenme değildi. Erişim laboratuvarı kaynak başına birkaç istek
+atacak şekilde kurulmuştu:
+
+```python
+SURFACE_REQUESTS_PER_SOURCE = 3 + len(WELL_KNOWN_FEED_PATHS)
+```
+
+Cevapladığı soru "ulaşabiliyor muyuz" idi ve o soruyu doğru cevapladı. Ama
+ana sayfada fiyat da yorum da yoktur.
+
+## 12.2 Yeni keşif isteği atılmadı
+
+Aday adresler zaten diskte duran dosyalardan okundu:
+
+- indirilmiş sitemap'lerin `<loc>` girdileri
+- indirilmiş ana sayfaların aynı-origin `href` bağlantıları
+
+Her aday bir **arama niyetine** bağlandı (Faz2-Plan.md): `/pricing` →
+`observed_market_pricing`, `/reviews` → `dissatisfaction`. Niyeti olmayan
+adres alınmadı — hedef daha çok sayfa değil, cevabı olan sayfa.
+
+`stated_wtp_weak_signal` için URL deseni **yazılmadı.** O sinyal sayfanın
+adresinden değil metninden okunur; uydurma desen yerine yokluğu kaydedildi.
+
+## 12.3 Dört koşu, 1270 istek
+
+| Koşu | İstek | Başarılı | |
+|---|---:|---:|---|
+| Kayıp sitemap'ler | 144 | 134 | %93 |
+| Alt sitemap'ler | 290 | 248 | %86 |
+| İç sayfalar | 452 | **336** | **%74** |
+| Bilinen yol yoklaması | 384 | 43 | %11 |
+
+Çekim yeni ağ koduyla değil `OriginRuntime` ile yapıldı; robots kontrolü,
+çıkış güvenliği, istek aralığı ve sha256 saklama tek yerde kaldı.
+
+## 12.4 İki tahmin tutmadı
+
+**Sitemap tamiri 3 kaynak getirdi, 77 değil.** Çekilen 134 sitemap'in 108'i
+**sitemap indeksiydi** — sayfa adresi değil, başka sitemap'lere işaret
+ediyorlardı. Bir hop daha gerekti.
+
+**Yol yoklaması %11 verdi, %20-40 değil.** Sebeplerin yarısı
+`source_unavailable`: tahmin edilen `/pricing` yolu o sitede yok. Ders:
+bağlantısı görülen sayfayı çekmek (%74), var olduğu tahmin edilen sayfayı
+yoklamaktan yedi kat verimli.
+
+## 12.5 Bir ölçüm hatası düzeltildi
+
+Görev 10'da "gövdesi saklanmamış" denen 137 sitemap bir erişim sorunu
+değilmiş. `MAX_INLINE_ARTIFACT_BYTES` (16 KB) altındaki yanıtlar diske
+yazılmıyor, koşu JSON'una base64 gömülüyor — sitemap'ler küçük olduğu için
+dosyaya hiç düşmemişler. Artık gövde ayrıca diske yazılıyor.
+
+## 12.6 Sonuç
+
+| | Önce | Sonra |
+|---|---:|---:|
+| Normalize belge | 591 | **1249** |
+| Ölçüm kanıtı üreten | 42 | **145** |
+| Çıkarılan fiyat | 27 | **56** |
+
+İç sayfaların **327/336'sı gerçek içerik** taşıyor (%97). Ana sayfa havuzunda
+bu oran 591'de 284'tü. İç sayfa boş inmiyor; ana sayfa JavaScript'le dolan
+bir vitrin.
+
+Kapanmayan: uygulama mağazaları. Samsung Galaxy Store ve Microsoft Store'un
+kayıt sayfaları test edildi — biri boş gövde, diğeri 38 karakter. Sayfa
+tamamen tarayıcıda üretiliyor ve bot koruması aşılmadığı için alınamıyor.
+
+## 12.7 Yeniden üretim
+
+```bash
+python3 ic_sayfa_gecisi.py                 # ağsız: yalnız aday havuzu
+python3 ic_sayfa_gecisi.py --canli         # robots'a tabi çekim
+```
+
+---
+
+# Görev 13 — SourceFitMatrix: hangi soruyu hangi kaynak cevaplıyor
+
+**İstenen:** İncelenmiş verilerden hangi ürün kategorisinin hangi sorusuna
+hangi kaynağın cevap verebildiğini çıkarmak; yedi arama niyetini ayırmak; her
+eşlemede kaynak, örnek kayıt, benzersiz katkı, alan, bağımsızlık grubu,
+dil/pazar, tazelik, erişim kısıtı ve fallback yazmak.
+
+## 13.1 Problem: iddia ile kanıt arasındaki fark
+
+Görev 4 "bu kaynaktan şu alan alınabilir" diyordu, ama satırların çoğu
+`beyan` durumundaydı: ölçüm alanlarının 1378'i beyan, 10'u doğrulanmıştı.
+
+Bu görev o iddiaları **açılmış belgeye** bağlar. Bir satırın var olabilmesi
+için o kaynaktan okunmuş bir belge ve ondan çıkarılmış bir şey gerekir.
+Dayanağı olmayan eşleşme satır olmaz — **gap** olur.
+
+## 13.2 Yedi niyet ve iki fiyatın ayrılması
+
+Faz2-Plan.md yedi arama niyeti tanımlar. En kritik ayrım fiyat tarafında:
+
+| Niyet | Ne | Neden ayrı |
+|---|---|---|
+| `observed_market_pricing` | Satıcı sayfasında **yazan** fiyat | Gözlemlenebilir ticari veri |
+| `stated_wtp_weak_signal` | Kullanıcının "şu kadar öderim" demesi | **Zayıf beyan sinyali**; gerçek ödeme davranışı sayılmaz |
+
+İkisi tek sütunda birleşseydi bir forum yorumu bir fiyat listesiyle aynı
+ağırlığa gelirdi. Bir test `fiyat` alanının beyan niyetine bağlanmadığını
+doğruluyor.
+
+Bu veri kümesinde `stated_wtp_weak_signal` için **hiç kanıt yok** ve 16
+kategorinin hepsinde açık gap taşıyor. Uydurma satır üretilmedi.
+
+## 13.3 Bağımsızlık: kopyalar bağımsız sayılmaz
+
+İki kaynak aynı gruba düşer:
+
+1. **Kayıtlı alan adları aynıysa** — `app.ornek.com` ile `www.ornek.com` aynı
+   şirkettir, iki bağımsız kanıt değildir.
+2. **Belgeleri `duplicate_of` ile bağlıysa** — Görev 11'in ilişki dosyasından.
+
+489 kaynak **421 gruba** düştü. Yeterlilik sayımı kaynak değil **grup** sayar;
+eşik iki bağımsız gruptur.
+
+`fallback` de aynı kuralla seçilir: farklı bir gruptan. Aynı gruptaki kaynak
+yedek değil, kopyadır.
+
+## 13.4 Erişim anlığı izin garantisi değildir
+
+Her satır `erisim_kisiti` alanında bunu taşır:
+
+```
+erişim anlığı 2026-09-18 — GÜNCEL İZİN GARANTİSİ DEĞİL,
+kullanımdan önce robots yeniden kontrol edilmeli
+```
+
+Bir test bu uyarının 395 satırın hepsinde bulunduğunu doğruluyor.
+
+## 13.5 Boş hücre pazar sonucu değildir
+
+37 hücre boş. Hiçbiri "bu pazarda talep yok" demez; her biri bir sebep kodu
+taşır:
+
+| Kod | Hücre | Ne demek |
+|---|---:|---|
+| `yuzey-bulunamadi` | 21 | Kaynağa erişiliyor, içerik var, ama bu niyete karşılık gelen yüzey yok — **toplama yöntemi yetersiz** |
+| `yontem-disi` | 16 | `stated_wtp_weak_signal`; adresten okunamaz |
+
+Bir test, gap açıklamalarında "talep yok", "pazar kötü" gibi ifadelerin
+geçmediğini doğruluyor.
+
+## 13.6 Sonuç
+
+16 kategori × 7 niyet = 112 hücre:
+
+| Durum | Hücre |
+|---|---:|
+| Yeterli (2+ bağımsız grup) | **47** |
+| Zayıf (tek grup) | 28 |
+| Boş | 37 |
+
+395 eşleşme satırı, hepsi açılmış bir belgeye bağlı.
+
+### `SOURCE-FIT-MATRIX.csv` — 395 satır
+
+```
+kategori,arama_niyeti,source_id,kaynak_adi,ornek_kayit,alinabilen_alan,bagimsizlik_grubu,dil_pazar,fallback
+b2b-web-yazilimi,competitor_discovery,source-0065,AppSumo,doc-dfc3493d66fa · https://appsumo.com/browse/,"engagement_yorum_sayisi, fiyat",grup-source-0065,en · pazar global,Wellfound
+```
+
+### `KATEGORI-YETERLILIK.csv` — 112 satır
+
+```
+kategori,arama_niyeti,durum,kanit_veren_kaynak,bagimsiz_grup,gap_kodu,gap_aciklamasi
+b2b-web-yazilimi,stated_wtp_weak_signal,bos,0,0,yontem-disi,"Bu niyet sayfanın adresinden okunamaz; forum ve yorum METNİNDE geçer. Bu veri kümesinde taranmadı — pazarda sinyal olmadığı anlamına GELMEZ."
+egitim,dissatisfaction,zayif,1,1,tek-grup,"Tüm kanıt tek bağımsızlık grubundan geliyor; aynı kaynağın kopyaları bağımsız sayılmaz."
+```
+
+### `PAKET-ONERILERI.csv` — 32 satır
+
+```
+kategori,paket,kaynak_sayisi,bagimsiz_grup,kapsanan_niyet,kapsanmayan_niyet
+b2b-web-yazilimi,standard,6,3,6,stated_wtp_weak_signal
+b2b-web-yazilimi,deep,12,6,6,stated_wtp_weak_signal
+```
+
+Görev 7'nin kuralı burada da geçerli: **Deep "kontrolsuz daha çok site"
+değildir.** Standard her niyetten bir bağımsız grup hedefler; Deep aynı
+niyetlere ikinci bir bağımsız grup ekler. Fark kaynak sayısı değil **çapraz
+doğrulama**: aynı bulguyu iki farklı sahiplikten görmek. Bir test, Deep daha
+çok kaynak alıyorsa bağımsız grup sayısının da artmasını şart koşuyor.
+
+## 13.7 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `SOURCE-FIT-MATRIX.csv` | 395 eşleşme; her satır açılmış bir belgeye dayanır |
+| `KATEGORI-YETERLILIK.csv` | 112 hücre; yeterlilik durumu ve gap sebep kodu |
+| `PAKET-ONERILERI.csv` | 32 satır; kategori başına Standard/Deep ve gerekçesi |
+| `SOURCEFIT-SEMA.md` | Alan sözleşmesi — paylaşılmak üzere |
+
+## 13.8 Yeniden üretim
+
+```bash
+python3 source_fit_matrix.py --yaz
+python3 -m unittest test_source_fit_matrix
+```
+
+Ağa çıkmaz. 29 test görev kartının dört kabul kriterini korur.
