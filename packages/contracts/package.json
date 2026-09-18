@@ -1,0 +1,12 @@
+{
+    "name": "@demandrift/contracts",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "zod": "latest"
+    },
+    "devDependencies": {
+        "typescript": "latest"
+    }
+}
