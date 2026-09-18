@@ -32,6 +32,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G11": ("Görev 11", "Normalize veri kümesi (veri çalışması Gün 3)"),
     "G12": ("Görev 12", "İç sayfa toplama"),
     "G13": ("Görev 13", "SourceFitMatrix v1"),
+    "G14": ("Görev 14", "Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)"),
 }
 
 # dosya -> (gorev, rol, bir cumlelik aciklama)
@@ -39,7 +40,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
 HARITA: dict[str, tuple[str, str, str]] = {
     # --- Ortak ---
     "README.md": ("ORTAK", "belge", "Bu dosya — klasörün haritası"),
-    "KILAVUZ.md": ("ORTAK", "belge", "**Başlangıç noktası.** On üç görevin tamamını sırayla anlatır"),
+    "KILAVUZ.md": ("ORTAK", "belge", "**Başlangıç noktası.** On dört görevin tamamını sırayla anlatır"),
     ".gitignore": ("ORTAK", "girdi", "İndirilen 721 MB ham artefaktı depo dışında tutar"),
     "source_manifest.json": ("ORTAK", "girdi", "636 kaynağın kanonik kimlik ve adres listesi"),
     "dosya_haritasi.py": ("ORTAK", "kod", "README'deki bu haritayı üretir"),
@@ -146,6 +147,16 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "KATEGORI-YETERLILIK.csv": ("G13", "cikti", "112 hücrenin yeterlilik durumu ve boş olanların **sebep kodu**"),
     "PAKET-ONERILERI.csv": ("G13", "cikti", "Kategori başına Standard/Deep aday paketi ve gerekçesi"),
     "source_fit_matrix.py": ("G13", "kod", "Matrisi, yeterlilik tablosunu, paketleri ve şemayı üretir"),
+
+    # --- Görev 14 ---
+    "DEVIR-NOTU.md": ("G14", "belge", "**Devir notu.** Paket içeriği, bağlantı anahtarları, neye güvenilmemeli"),
+    "KALITE-RAPORU.md": ("G14", "belge", "Denetim sonucu, kategori metrikleri, geçersiz proxy çıkarımları, kalan iş"),
+    "DENETIM-BULGULARI.csv": ("G14", "cikti", "Açık bulgular: yanlış etiket, eksik provenance, konu dışı, mükerrer"),
+    "DENETIM-ORNEKLERI.csv": ("G14", "cikti", "Her kategoriden incelenen örnek kayıtlar (deterministik seçim)"),
+    "KALITE-METRIKLERI.csv": ("G14", "cikti", "Kategori bazında kaynak/kayıt, alan doluluğu, tekrar oranı, işlenemeyen"),
+    "VERI-PAKETI-ORNEKLERI.csv": ("G14", "cikti", "Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor"),
+    "KALAN-IS.csv": ("G14", "cikti", "Önceliklendirilmiş kalan iş; çözülebilir ve çözülemez ayrı işaretli"),
+    "denetim.py": ("G14", "kod", "Sözlük, veri seti ve eşleme tablosunu birlikte denetler; raporları üretir"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

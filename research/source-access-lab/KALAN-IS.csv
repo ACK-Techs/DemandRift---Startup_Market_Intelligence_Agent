@@ -1,0 +1,9 @@
+oncelik,is,adet,neden_kaldi,cozulebilir_mi,tahmini_maliyet
+1,Gövdesi saklanmamış artefaktları yeniden çek,695,"16 KB altı yanıtlar diske yazılmıyor, koşu JSON'una gömülüyordu (MAX_INLINE_ARTIFACT_BYTES).",evet,"695 istek, sitemap tamirinde %93 başarı ölçüldü"
+2,stated_wtp_weak_signal için metin taraması,16,"Bu niyet sayfanın adresinden okunamaz; forum ve yorum metninde geçer, metin taraması yapılmadı.",evet,ağ isteği yok; elde olan 1249 belgenin metninde fiyat beyanı deseni aranır
+3,Tek gruba dayanan hücrelere ikinci bağımsız kaynak,28,Kanıt var ama tek sahiplikten geliyor; çapraz doğrulama yok.,evet,138 bin aday adresten niyet başına 2. sayfa çekimi
+4,Dizinde yazıp diskte olmayan dosyalar,58,Artefakt başka bir checkout'ta üretilmiş.,evet,yeniden çekim
+5,Bot koruması dönen kaynaklar,353,Site bizi bot olarak tanıyıp reddediyor.,HAYIR — politika gereği aşılmıyor,—
+6,robots.txt yasaklı kaynaklar,91,RFC 9309 uyarınca tam yasak.,HAYIR — bağlayıcı,—
+7,Uygulama mağazası kayıt sayfaları,14948,"Sayfa tamamen tarayıcıda üretiliyor; 6 istekle test edildi, biri boş gövde diğeri 38 karakter döndü.",HAYIR — bu yöntemle değil,—
+8,Erişilemeyen kaynaklar,537,Adres yanıt vermiyor ya da sayfa yok (404).,kısmen — adres düzeltmesi gerekir,elle adres doğrulama

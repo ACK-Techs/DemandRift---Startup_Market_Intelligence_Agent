@@ -2484,3 +2484,171 @@ python3 -m unittest test_source_fit_matrix
 ```
 
 Ağa çıkmaz. 29 test görev kartının dört kabul kriterini korur.
+
+---
+
+# Görev 14 — Denetim ve sürümlü teslim paketi
+
+*(Veri çalışması Gün 5)*
+
+**İstenen:** Kategori sözlüğü, kayıt bazlı veri seti ve kaynak eşleme tablosunu
+**birlikte** gözden geçirmek; her kategoriden örnekle yanlış etiket, eksik
+provenance, konu dışı kayıt ve mükerrerleri kontrol etmek; düzeltmeleri
+nedenleriyle kaydetmek. Kategori bazında metrikleri raporlamak, gerçek
+örneklerle hangi sorunun cevaplanabildiğini göstermek, kalan işi açık
+sayılarla teslim etmek.
+
+## 14.1 Bu görev yeni veri üretmez
+
+Önceki dört gün üretti; bu gün **sınar.** Denetim `results/raw/` altındaki
+hiçbir bayta dokunmaz — bir test, denetim koştuktan sonra dosya değişiklik
+zamanlarının aynı kaldığını doğruluyor.
+
+## 14.2 Dört hata sınıfı, her kategoriden örnekle
+
+Kategori başına 12 kayıt incelendi, toplam **192 kayıt**. Örnekler rastgele
+değil **deterministik** seçildi: `document_id` sırasından eşit aralıklarla,
+böylece denetim tekrar koşturulduğunda aynı kayıtlar incelenir ve bulgular
+karşılaştırılabilir.
+
+| Aranan | Nasıl tespit edilir |
+|---|---|
+| `yanlis-etiket` | Etiket, belgenin gözlemlenebilir kanıtıyla çelişiyor |
+| `eksik-provenance` | Satır diskteki dosyaya kadar izlenemiyor |
+| `konu-disi` | Kayıt araştırma kanıtı taşımayan bir sayfa (giriş, sepet, kariyer) |
+| `mukerrer` | Aynı içerik ilişkilendirilmemiş |
+
+İlk koşu **25 bulgu** verdi.
+
+## 14.3 Düzeltmeler ve nedenleri
+
+**21 bulgu: tanınmayan iç sayfa türleri.** Sözlük JSON-LD sinyaline
+dayanıyordu; JSON-LD yayımlamayan iç sayfalar `belirsiz` kalıyordu. 297
+belirsiz belgenin **264'ünde gerçek içerik** vardı.
+
+Çözüm `kategori_sozlugu.py`'ye kondu, CSV'ye elle yazılmadı — yoksa
+"etiketleme tekrar uygulanabilir" kriteri çiğnenirdi. Üç yeni tür eklendi:
+`karsilastirma-sayfasi`, `kullanim-senaryosu`, `forum-sayfasi`.
+
+Kurallar **yol ve gövde birlikte** doğrular. Yalnız yola bakmak DR-L02'nin
+kuralını çiğnerdi ("site adına bakarak etiketleme yapılmaz"):
+
+```python
+sinyal["govde"]  # script ve stil atılmış görünür metin
+```
+
+Gövde temizliği şart: sayfanın kendi JavaScript'i `var reviews=[]` taşıdığı
+için, temizlenmeseydi her sayfa yorum sayfası olurdu. Bir test bunu koruyor.
+
+**3 bulgu: denetimin kendi hatası.** Üç belge mükerrer işaretlenmişti. Ham
+kayıtlara bakınca sebep göründü: üçünün de gövdesi **sıfır uzunluktaydı** ve
+`e3b0c442…` boş dizenin SHA-256'sı. İki boş sayfa "aynı içerik" değildir,
+ikisi de içerik yokluğudur. Kontrole `uzunluk > 0` şartı kondu.
+
+Bu bulgu veride değil **denetimde**ydi ve rapora öyle yazıldı.
+
+## 14.4 Etkisi
+
+| | Önce | Sonra |
+|---|---:|---:|
+| `belirsiz` etiketli belge | 297 | **122** |
+| Ölçüm kanıtı üreten belge | 145 | **316** |
+| Açık bulgu | 25 | **3** |
+
+Kalan üç bulgu düzeltilmedi, **açık bırakıldı** ve nedenleriyle kaydedildi:
+
+```
+kategori,bulgu_turu,source_adi,url_yolu,onerilen_duzeltme,gerekce
+egitim,yanlis-etiket,Skillshare,/hc/en-us,belge_turu yeniden değerlendirilmeli,"Ana sayfa etiketi kök yol içindir; iki seviye derindeki sayfa ana sayfa olamaz."
+```
+
+## 14.5 Kategori bazında metrikler
+
+`KALITE-METRIKLERI.csv` her kategori için kaynak/kayıt sayısı, alan doluluğu,
+bilinmeyen etiket, tekrar oranı ve işlenemeyen içeriği taşır.
+
+```
+kategori=b2b-web-yazilimi,katalog_kaynagi=64,kayit_veren_kaynak=52,kayit=140,
+olcum_kaniti_ureten=45,alan_dolulugu_yuzde=23.6,olcum_alani=39,bilinmeyen_belge_turu=4
+```
+
+Üç değer dikkat çekti:
+
+- **`gayrimenkul` ve `turkiye-pazari`: %0 alan doluluğu.** Kayıt var, içerik
+  var, ölçülebilir alan çıkmıyor. Alan desenleri bu kaynakların yapısına
+  uymuyor — kaynakların değersiz olduğu anlamına gelmez.
+- **`regule-sektor`: %29 tekrar oranı.** En yüksek; kamu kaynakları aynı
+  içeriği birden çok adreste yayımlıyor.
+- **`ortak`: 549 kayıt, 43 belirsiz.** En büyük havuz.
+
+## 14.6 Hangi soru gerçekten cevaplanıyor
+
+`VERI-PAKETI-ORNEKLERI.csv` her örnekte gerçek bir kayıt gösterir ve
+`artifact_hash` ile diskteki dosyaya bağlanır:
+
+```
+kategori,arama_niyeti,cevaplanan_soru,kaynak_adi,document_id,artifact_hash,bulunan_veri,sinir
+ortak,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,AppSumo,doc-dfc3493d66fa,b527ea7f0fb84956,fiyat=$29,3 belge
+```
+
+Örnek seçiminde bir tuzak vardı: ilk sürümde AppSumo'nun `fiyat=$29` verisi
+hem `observed_market_pricing` hem `dissatisfaction` örneği olarak çıktı. Fiyat
+memnuniyetsizlik kanıtı değildir. Artık her örnek **yalnız kendi niyetine
+karşılık gelen alanı** gösteriyor ve bir test bunu koruyor.
+
+## 14.7 Geçersiz proxy çıkarımları
+
+Kart *"geçersiz proxy çıkarımları açıkça gösterilir"* diyor — yapmamak
+yetmiyor, hangilerinin geçersiz olduğu yazılı olmalı:
+
+| Alan | YAPILAMAZ çıkarım | Neden |
+|---|---|---|
+| `engagement_indirme_sayisi` | talep var | İndirme ilgi gösterir, ödeme davranışı göstermez |
+| `engagement_yorum_sayisi` | memnuniyetsizlik düzeyi | Yorum **sayısı** kullanım hacmidir; şikâyet kanıtı yorum **metnindedir** |
+| `engagement_yildiz` | ürün kalitesi | Kaynağın kendi ölçüm yöntemine bağlı, kaynaklar arası karşılaştırılamaz |
+| `fiyat` | ödeme isteği | Satıcının ilan ettiği fiyat, kullanıcının ödediğini göstermez |
+| `belge_sayisi` | pazar büyüklüğü | Çok belge, kaynakların bize açık olduğunu gösterir |
+| `icerik_yoklugu` | talep yokluğu | Toplama yönteminin sınırıdır |
+
+## 14.8 Biten kapsam ve kalan iş
+
+| | Adet |
+|---|---:|
+| Dizin satırı (iki dizin) | 3351 |
+| Başarılı çekim | 2108 |
+| İşlenmiş belge | **1249** |
+| İşlenemeyen kayıt | 754 |
+
+```
+oncelik,is,adet,cozulebilir_mi,tahmini_maliyet
+1,Gövdesi saklanmamış artefaktları yeniden çek,695,evet,"695 istek, sitemap tamirinde %93 başarı ölçüldü"
+```
+
+İlk dört kalem çözülebilir, toplamı **797 kayıt**. En büyüğü gövdesi
+saklanmamış 695 artefakt — tek istekle geri gelirler.
+
+Beşinci kalemden sonrası bu yöntemle **çözülemez** ve bu bir tercih: bot
+koruması aşılmıyor, robots.txt bağlayıcı sayılıyor, uygulama mağazası
+sayfaları tamamen istemci tarafında üretiliyor.
+
+## 14.9 Üretilen dosyalar
+
+| Dosya | İçerik |
+|---|---|
+| `KALITE-RAPORU.md` | Denetim sonucu, metrikler, proxy uyarıları, kalan iş |
+| `DEVIR-NOTU.md` | Paket içeriği, bağlantı anahtarları, neye güvenilmemeli |
+| `DENETIM-BULGULARI.csv` | 3 açık bulgu, gerekçesiyle |
+| `DENETIM-ORNEKLERI.csv` | 192 incelenen kayıt |
+| `KALITE-METRIKLERI.csv` | 16 kategori × 13 metrik |
+| `VERI-PAKETI-ORNEKLERI.csv` | 20 örnek: hangi soru, hangi kayıt, hangi cevap |
+| `KALAN-IS.csv` | 8 kalem, önceliklendirilmiş |
+
+## 14.10 Yeniden üretim
+
+```bash
+python3 denetim.py --yaz
+python3 -m unittest test_denetim
+```
+
+Ağa çıkmaz. 27 test kartın üç kabul kriterini korur: kimlikle bağlanma,
+etiketlemenin tekrar uygulanabilirliği ve ham kaynağın değişmemesi.

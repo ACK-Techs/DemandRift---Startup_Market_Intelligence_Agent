@@ -113,15 +113,19 @@ sınıfın alan desenleri aranır. **Bulunmayan alan uydurulmaz**; satır yazıl
 | Belge türü | Belge |
 |---|---:|
 | `sitemap` | 392 |
-| `ana-sayfa` | 388 |
-| `belirsiz` | 297 |
+| `ana-sayfa` | 387 |
+| `belirsiz` | 122 |
+| `liste-sayfasi` | 80 |
 | `fiyatlandirma-sayfasi` | 74 |
+| `kullanim-senaryosu` | 43 |
 | `politika-dosyasi` | 29 |
 | `besleme` | 25 |
+| `karsilastirma-sayfasi` | 24 |
 | `kayit-sayfasi` | 21 |
+| `forum-sayfasi` | 19 |
+| `inceleme-sayfasi` | 15 |
 | `api-yaniti` | 10 |
 | `yazi` | 6 |
-| `liste-sayfasi` | 5 |
 | `arama-sonucu` | 1 |
 | `dokumantasyon` | 1 |
 
@@ -131,8 +135,8 @@ sitemap, arama sonucu, politika dosyası, `belirsiz` ve JS kabuğu olan belgeler
 
 | Ölçüm kanıtı üretir mi | Belge |
 |---|---:|
-| `hayir` | 1109 |
-| `evet` | 140 |
+| `hayir` | 933 |
+| `evet` | 316 |
 
 Bu oran kötü bir sonuç değil, **ölçülmüş** bir sonuçtur: kaynakların çoğundan
 ana sayfa çekilmiştir, ana sayfa da fiyat/yorum/talep kanıtı taşımaz.

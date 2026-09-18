@@ -13,7 +13,7 @@ kullanıyor ama farklı soruları cevaplıyorlar.
 
 ### Nereden başlamalı
 
-1. **[`KILAVUZ.md`](KILAVUZ.md)** — on üç görevin tamamı sırayla. Her bölümde
+1. **[`KILAVUZ.md`](KILAVUZ.md)** — on dört görevin tamamı sırayla. Her bölümde
    problem, izlenen yol, sonuç ve gerçek CSV satır örnekleri var.
 2. **Aşağıdaki harita** — hangi dosyanın hangi görevin çıktısı olduğu.
 3. Tek bir görevi incelemek için haritadan o görevin bloğuna bakın; çıktı
@@ -22,7 +22,7 @@ kullanıyor ama farklı soruları cevaplıyorlar.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 101 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 110 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -31,7 +31,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 | Dosya | Rol | Ne olduğu |
 |---|---|---|
-| [`KILAVUZ.md`](KILAVUZ.md) | belge | **Başlangıç noktası.** On üç görevin tamamını sırayla anlatır |
+| [`KILAVUZ.md`](KILAVUZ.md) | belge | **Başlangıç noktası.** On dört görevin tamamını sırayla anlatır |
 | [`README.md`](README.md) | belge | Bu dosya — klasörün haritası |
 | [`dosya_haritasi.py`](dosya_haritasi.py) | kod | README'deki bu haritayı üretir |
 | [`.gitignore`](.gitignore) | girdi | İndirilen 721 MB ham artefaktı depo dışında tutar |
@@ -182,6 +182,19 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`SOURCE-FIT-MATRIX.csv`](SOURCE-FIT-MATRIX.csv) | çıktı | Kategori × niyet × kaynak eşleşmeleri; her satır açılmış bir belgeye dayanır |
 | [`source_fit_matrix.py`](source_fit_matrix.py) | kod | Matrisi, yeterlilik tablosunu, paketleri ve şemayı üretir |
 
+### Görev 14 — Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`DEVIR-NOTU.md`](DEVIR-NOTU.md) | belge | **Devir notu.** Paket içeriği, bağlantı anahtarları, neye güvenilmemeli |
+| [`KALITE-RAPORU.md`](KALITE-RAPORU.md) | belge | Denetim sonucu, kategori metrikleri, geçersiz proxy çıkarımları, kalan iş |
+| [`DENETIM-BULGULARI.csv`](DENETIM-BULGULARI.csv) | çıktı | Açık bulgular: yanlış etiket, eksik provenance, konu dışı, mükerrer |
+| [`DENETIM-ORNEKLERI.csv`](DENETIM-ORNEKLERI.csv) | çıktı | Her kategoriden incelenen örnek kayıtlar (deterministik seçim) |
+| [`KALAN-IS.csv`](KALAN-IS.csv) | çıktı | Önceliklendirilmiş kalan iş; çözülebilir ve çözülemez ayrı işaretli |
+| [`KALITE-METRIKLERI.csv`](KALITE-METRIKLERI.csv) | çıktı | Kategori bazında kaynak/kayıt, alan doluluğu, tekrar oranı, işlenemeyen |
+| [`VERI-PAKETI-ORNEKLERI.csv`](VERI-PAKETI-ORNEKLERI.csv) | çıktı | Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor |
+| [`denetim.py`](denetim.py) | kod | Sözlük, veri seti ve eşleme tablosunu birlikte denetler; raporları üretir |
+
 <details>
 <summary><b>Alfabetik dizin</b> — GitHub'ın gösterdiği sırayla, dosyadan göreve</summary>
 
@@ -193,10 +206,13 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`ARTEFAKT-DIZINI.csv`](ARTEFAKT-DIZINI.csv) | Erişim laboratuvarı | Hangi kaynak hangi dosyaya karşılık geliyor — izlenebilirliğin temeli |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
+| [`DENETIM-BULGULARI.csv`](DENETIM-BULGULARI.csv) | Görev 14 | Açık bulgular: yanlış etiket, eksik provenance, konu dışı, mükerrer |
+| [`DENETIM-ORNEKLERI.csv`](DENETIM-ORNEKLERI.csv) | Görev 14 | Her kategoriden incelenen örnek kayıtlar (deterministik seçim) |
 | [`DENEY-KAYNAK.csv`](DENEY-KAYNAK.csv) | Görev 8 | Deneyde seçilen 64 kaynak |
 | [`DENEY-VERI.csv`](DENEY-VERI.csv) | Görev 8 | Deneyde gerçekten çekilen 14 veri satırı |
 | [`DERLENMIS-SORGULAR-US.csv`](DERLENMIS-SORGULAR-US.csv) | Görev 6 | Aynı tasarımın US pazarı karşılığı |
 | [`DERLENMIS-SORGULAR.csv`](DERLENMIS-SORGULAR.csv) | Görev 6 | 73 derlenmiş sorgu (TR pazarı) |
+| [`DEVIR-NOTU.md`](DEVIR-NOTU.md) | Görev 14 | **Devir notu.** Paket içeriği, bağlantı anahtarları, neye güvenilmemeli |
 | [`DONUSUM-KURALLARI.md`](DONUSUM-KURALLARI.md) | Görev 11 | Dönüşümün on adımı, ölçülmüş sayılarıyla |
 | [`EK-ARTEFAKT-DIZINI.csv`](EK-ARTEFAKT-DIZINI.csv) | Görev 12 | İç sayfa geçişinin artefakt dizini; ana dizin ayrı bir scriptin çıktısı olduğu için genişletilmez |
 | [`ENVANTER-ISLENEMEYEN.csv`](ENVANTER-ISLENEMEYEN.csv) | Görev 10 | 754 işlenemeyen artefakt kaydı ve sebebi |
@@ -206,6 +222,9 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`IC-SAYFA-SONUCLARI.csv`](IC-SAYFA-SONUCLARI.csv) | Görev 12 | Pilot koşunun sonuçları |
 | [`INCELEME-GUNLUGU.md`](INCELEME-GUNLUGU.md) | Görev 9 | Hangi dosya açıldı, ne görüldü |
 | [`ISLENEMEYEN-BELGELER.csv`](ISLENEMEYEN-BELGELER.csv) | Görev 11 | 754 işlenemeyen kayıt ve sebebi |
+| [`KALAN-IS.csv`](KALAN-IS.csv) | Görev 14 | Önceliklendirilmiş kalan iş; çözülebilir ve çözülemez ayrı işaretli |
+| [`KALITE-METRIKLERI.csv`](KALITE-METRIKLERI.csv) | Görev 14 | Kategori bazında kaynak/kayıt, alan doluluğu, tekrar oranı, işlenemeyen |
+| [`KALITE-RAPORU.md`](KALITE-RAPORU.md) | Görev 14 | Denetim sonucu, kategori metrikleri, geçersiz proxy çıkarımları, kalan iş |
 | [`KAPSAMA-RAPORU.md`](KAPSAMA-RAPORU.md) | Görev 10 | Erişim × içerik çapraz tablosu |
 | [`KATEGORI-ALANLARI.csv`](KATEGORI-ALANLARI.csv) | Görev 11 | 139 çıkarılan alan; `olcum` / `etiket` ayrımıyla |
 | [`KATEGORI-KAYNAK.csv`](KATEGORI-KAYNAK.csv) | Görev 1 | 658 satır: hangi kategori hangi kaynak ailesine bağlı |
@@ -215,7 +234,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`KAYNAK-ALAN.csv`](KAYNAK-ALAN.csv) | Görev 4 | 3218 satır: hangi kaynaktan hangi alan, hangi izinli yolla alınır |
 | [`KAYNAK-DEFTERI.csv`](KAYNAK-DEFTERI.csv) | Erişim laboratuvarı | 636 kaynağın erişim defteri (çekildi / kısmi / erişim yok) |
 | [`KAYNAK-DEFTERI.md`](KAYNAK-DEFTERI.md) | Erişim laboratuvarı | Defterin okunabilir özeti |
-| [`KILAVUZ.md`](KILAVUZ.md) | Ortak | **Başlangıç noktası.** On üç görevin tamamını sırayla anlatır |
+| [`KILAVUZ.md`](KILAVUZ.md) | Ortak | **Başlangıç noktası.** On dört görevin tamamını sırayla anlatır |
 | [`NORMALIZE-BELGELER.csv`](NORMALIZE-BELGELER.csv) | Görev 11 | 591 belge — teknik normalizasyon (Faz 4 şeması) |
 | [`OPENSEARCH-SABLONLARI.csv`](OPENSEARCH-SABLONLARI.csv) | Erişim laboratuvarı | Sitelerin kendi ilan ettiği arama şablonları |
 | [`PAKET-ONERILERI.csv`](PAKET-ONERILERI.csv) | Görev 13 | Kategori başına Standard/Deep aday paketi ve gerekçesi |
@@ -231,6 +250,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`URUN-KATEGORILERI.csv`](URUN-KATEGORILERI.csv) | Görev 1 | 15 ürün kategorisi ve katmanlanma kuralları |
 | [`URUN-KATEGORILERI.md`](URUN-KATEGORILERI.md) | Görev 1 | Kategorilerin neden böyle ayrıldığı |
 | [`VERI-ENVANTERI.csv`](VERI-ENVANTERI.csv) | Görev 10 | 636 kaynak: erişim durumu **ve** içerik durumu ayrı sütunlarda |
+| [`VERI-PAKETI-ORNEKLERI.csv`](VERI-PAKETI-ORNEKLERI.csv) | Görev 14 | Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor |
 | [`VERI-SOZLUGU.md`](VERI-SOZLUGU.md) | Görev 11 | Her sütunun anlamı + bu verinin **cevaplayamadığı** sorular |
 | [`adaptive_domain_pass.py`](adaptive_domain_pass.py) | Erişim laboratuvarı | Alan adı çözümleme geçişi |
 | [`build_artifact_index.py`](build_artifact_index.py) | Erişim laboratuvarı | Artefakt dizinini üretir |
@@ -244,6 +264,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`butce_profilleri.py`](butce_profilleri.py) | Görev 7 | İki bütçe profilini tanımlar ve karşılaştırır |
 | [`common_crawl_pass.py`](common_crawl_pass.py) | Erişim laboratuvarı | Common Crawl arşiv geçişi |
 | [`compile_queries.py`](compile_queries.py) | Görev 6 | Şablonları çalıştırılabilir sorgulara derler |
+| [`denetim.py`](denetim.py) | Görev 14 | Sözlük, veri seti ve eşleme tablosunu birlikte denetler; raporları üretir |
 | [`deney.py`](deney.py) | Görev 8 | Ön kayıtlı ölçütlerle kontrollü deney |
 | [`dosya_haritasi.py`](dosya_haritasi.py) | Ortak | README'deki bu haritayı üretir |
 | [`export_by_source.py`](export_by_source.py) | Erişim laboratuvarı | Kaynak bazında dışa aktarım |
@@ -367,7 +388,7 @@ cd research/source-access-lab
 python3 -m unittest discover -s . -p 'test_*.py'
 ```
 
-514 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı
+541 test. Testler yalnız kodu değil, **kuralları** korur: robots yasaklı
 kaynağın hiçbir profilde seçilmemesi, aday keşfin ölçüm kanıtı sayılmaması,
 tarihi olmayan belgeye tarih yazılmaması, etkileşim sayısının talep kanıtı
 diye etiketlenmemesi ve yukarıdaki haritada sahipsiz dosya kalmaması gibi.

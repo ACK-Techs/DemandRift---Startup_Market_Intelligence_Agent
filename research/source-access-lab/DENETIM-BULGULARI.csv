@@ -1,0 +1,4 @@
+kategori,bulgu_turu,document_id,source_id,source_adi,url_yolu,mevcut_etiket,kanit,onerilen_duzeltme,gerekce
+egitim,yanlis-etiket,doc-bc048ab17757,source-0461,Skillshare,/hc/en-us,ana-sayfa,yol kök değil: /hc/en-us,belge_turu yeniden değerlendirilmeli,Ana sayfa etiketi kök yol içindir; iki seviye derindeki sayfa ana sayfa olamaz.
+saglik,konu-disi,doc-499aeaedd1cd,source-0423,CDC,/about-us/community/,belirsiz,yol '/about-us/community/',araştırma kanıtı havuzundan çıkar,"Giriş, sepet, gizlilik ve kariyer sayfaları erişilebilir olabilir ama fiyat, yorum ya da talep sinyali taşımaz."
+yeme-icme,yanlis-etiket,doc-239a208466c6,source-0304,Foursquare,/products/,belirsiz,"gövde 8275 karakter, yol '/products/'",belge_turu → liste-sayfasi,URL yolu '/products/' bu türü gösteriyor VE gövde metni doğruluyor

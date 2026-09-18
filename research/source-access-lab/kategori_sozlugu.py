@@ -184,6 +184,21 @@ BELGE_TURU: dict[str, dict[str, str]] = {
                   "2 Offer. Pazarlama sayfaları tek bir boş Offer gömer"),
         "niyet_degeri": "Ödeme isteği ve fiyat bandı",
     },
+    "karsilastirma-sayfasi": {
+        "tanim": "İki ya da daha çok ürünü yan yana koyan sayfa",
+        "kanit": "URL yolunda compare/alternatives/vs VE gövdede karşılaştırma dili",
+        "niyet_degeri": "Mevcut alternatifler ve rakip keşfi kanıtı",
+    },
+    "kullanim-senaryosu": {
+        "tanim": "Ürünün hangi işte nasıl kullanıldığını anlatan sayfa",
+        "kanit": "URL yolunda use-cases/solutions/customers VE gövdede kullanım dili",
+        "niyet_degeri": "Kullanım bağlamı ve iş akışı kanıtı",
+    },
+    "forum-sayfasi": {
+        "tanim": "Kullanıcıların soru sorup cevapladığı topluluk sayfası",
+        "kanit": "URL yolunda community/forum/questions VE gövdede gönderi dili",
+        "niyet_degeri": "Problem ifadesi ve şikâyet kanıtı",
+    },
     "dokumantasyon": {
         "tanim": "Teknik kullanım belgesi, API referansı",
         "kanit": "URL yolunda docs/documentation/reference/api",
@@ -232,8 +247,33 @@ BELGE_TURU: dict[str, dict[str, str]] = {
 BELGE_TURU_SIRASI = (
     "politika-dosyasi", "sitemap", "besleme", "api-yaniti", "arama-sonucu",
     "inceleme-sayfasi", "fiyatlandirma-sayfasi", "kayit-sayfasi",
-    "liste-sayfasi", "dokumantasyon", "yazi", "ana-sayfa", "belirsiz",
+    "liste-sayfasi", "karsilastirma-sayfasi", "kullanim-senaryosu",
+    "forum-sayfasi", "dokumantasyon", "yazi", "ana-sayfa", "belirsiz",
 )
+
+# DR-L05 denetimi: JSON-LD yayimlamayan ic sayfalar 'belirsiz' kaliyordu
+# (297 belgenin 264'unde gercek icerik vardi). Yol TEK BASINA yeterli degil -
+# DR-L02'nin kurali site adina bakarak etiketlemeyi yasakliyor - bu yuzden her
+# kural gövdede de dogrulama arar.
+YOL_ICERIK_KURALLARI: tuple[tuple[str, str, str], ...] = (
+    ("inceleme-sayfasi",
+     r"(?i)(^|/)(reviews?|yorum(lar)?|ratings?)(/|$)",
+     r"(?i)\b(reviews?|yorum(lar)?|ratings?|puan|stars?|yıldız)\b"),
+    ("karsilastirma-sayfasi",
+     r"(?i)(^|/)(compare|comparison|alternatives?|versus|vs|alternatif)(/|$)",
+     r"(?i)\b(vs\.?|versus|compares?|comparison|alternatives?|karşılaştır\w*|alternatif\w*)\b"),
+    ("kullanim-senaryosu",
+     r"(?i)(^|/)(use-?cases?|solutions?|customers?|case-stud(y|ies))(/|$)",
+     r"(?i)\b(use ?cases?|solutions?|customers?|case ?stud\w+|kullanım\w*|müşteri\w*|çözüm\w*)\b"),
+    ("forum-sayfasi",
+     r"(?i)(^|/)(community|forum(lar)?|discussions?|questions?|topics?)(/|$)",
+     r"(?i)\b(posts?|repl(y|ies)|threads?|topics?|questions?|answers?|konu\w*|cevap\w*|yanıt\w*|soru\w*)\b"),
+    ("liste-sayfasi",
+     r"(?i)(^|/)(marketplace|categor(y|ies)|browse|directory|catalog(ue)?|apps?|extensions?|integrations?|listings?|ilan(lar)?)(/|$)",
+     r"(?i)\b(all|tüm|browse|categor\w*|kategori\w*|listel\w*|sonuç\w*|results?|ilan\w*)\b"),
+)
+_YOL_ICERIK = tuple((t, re.compile(y), re.compile(i))
+                    for t, y, i in YOL_ICERIK_KURALLARI)
 
 KENDINI_TARIF = {"Organization", "WebSite", "WebPage", "BreadcrumbList",
                  "SiteNavigationElement", "FAQPage", "CollectionPage"}
@@ -289,6 +329,12 @@ def _metin_sinyalleri(ham: bytes, url: str) -> dict[str, Any]:
                                        "MobileApplication", "LocalBusiness"}),
         "makale_nesnesi": bool(turler & {"Article", "NewsArticle", "BlogPosting"}),
         "bayt": len(ham),
+        # Yol kurallarinin dogrulama yaptigi gorunur metin. Etiketler ve
+        # script gövdeleri atilir; yoksa sayfanin kendi JavaScript'i
+        # "reviews" kelimesini tasidigi icin her sayfa yorum sayfasi olurdu.
+        "govde": re.sub(r"\s+", " ", re.sub(
+            r"(?is)<(script|style|noscript|template)[^>]*>.*?</\1>|<[^>]+>",
+            " ", metin))[:20000],
     }
 
 
@@ -329,6 +375,14 @@ def belge_turu_belirle(yontem: str, mime: str, sinyal: dict[str, Any]
         uyan.append(("dokumantasyon", "URL yolunda docs/reference"))
     if sinyal["makale_nesnesi"]:
         uyan.append(("yazi", "JSON-LD Article/NewsArticle"))
+    if not uyan:
+        # JSON-LD yok: yol VE govde birlikte bir tur gosteriyor mu.
+        govde = sinyal.get("govde", "")
+        for etiket, yol_deseni, icerik_deseni in _YOL_ICERIK:
+            if yol_deseni.search(yol) and icerik_deseni.search(govde):
+                uyan.append((etiket, f"URL yolu bu türü gösteriyor ve gövde metni "
+                                     f"doğruluyor (JSON-LD yok)"))
+                break
     if not uyan:
         # Hicbir kural eslesmedi. Kok yoldaysa ana sayfadir; degilse turu
         # bilinmiyordur ve TAHMIN EDILMEZ. 'belirsiz' gecerli bir etikettir.

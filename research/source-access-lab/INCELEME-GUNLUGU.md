@@ -644,8 +644,8 @@ URL: https://aws.amazon.com/marketplace
 Artefakt: `b5b3941964296bbd` (results/raw/b5b3941964296bbd6c46641d1b499284505688a279e964040aa1934a152c6a6d.bin, 400000 bayt, yöntem `entry_url`)  
 İçerik alanı: AWS Marketplace: Homepage  
 JSON-LD: — · Kanıt sayıları: liste=0 yorum=0 fiyatli_offer=0  
-**Belge türü:** `belirsiz` — URL yolu '/marketplace' kök değil ama kayıt, liste, yorum ya da fiyat işareti taşımıyor  
-Ölçüm kanıtı üretir mi: **hayir**
+**Belge türü:** `liste-sayfasi` — URL yolu bu türü gösteriyor ve gövde metni doğruluyor (JSON-LD yok)  
+Ölçüm kanıtı üretir mi: **evet**
 
 **Artificial Analysis** — `source-0538`  
 URL: https://artificialanalysis.ai/  
