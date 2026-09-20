@@ -9,7 +9,7 @@ aynı girdiden aynı çıktı üretilir; hiçbir adımda rastgelelik yoktur.
 `SINIFLANDIRMA.csv` **yorumlayıcı**dır: belge türü, ürün kategorisi, niyet.
 
 Ayrı tutulmalarının karşılığı somut: yarın sınıflandırma kuralı değişirse
-591 belgenin metni yeniden çıkarılmaz, ve yanlış bir sınıflandırma kararı
+1249 belgenin metni yeniden çıkarılmaz, ve yanlış bir sınıflandırma kararı
 doğru çıkarılmış metni kirletmez. İkisi `document_id` ile bağlanır.
 
 ## 1. Okuma
@@ -41,8 +41,8 @@ Hiçbiri yoksa `published_at` **boş** kalır ve `missing_published_date` +
 `unknown_date` bayrakları konur. `collected_at` ayrı bir alandır ve yayın tarihi
 yerine geçmez.
 
-Ölçülen: 591 belgenin 533 tanesi hiçbir tarih beyan etmiyor.
-Tarih okunabilen 58 belgenin kaynağı `tarih_kaynagi` sütununda yazar.
+Ölçülen: 1249 belgenin 1150 tanesi hiçbir tarih beyan etmiyor.
+Tarih okunabilen 99 belgenin kaynağı `tarih_kaynagi` sütununda yazar.
 
 ## 5. Dil
 
@@ -56,13 +56,14 @@ ilk koşuda tam olarak bu oldu. Emin olunamayan her belge `unknown` kalır.
 
 | Dil | Belge |
 |---|---:|
-| `en` | 372 |
-| `unknown` | 163 |
-| `tr` | 49 |
+| `en` | 663 |
+| `unknown` | 505 |
+| `tr` | 68 |
+| `de` | 7 |
 | `fr` | 3 |
-| `de` | 2 |
 | `pt` | 1 |
 | `it` | 1 |
+| `es` | 1 |
 
 ## 6. Tekrar — silme değil, ilişkilendirme
 
@@ -77,8 +78,8 @@ Aynı içerik yeni bağımsız kanıt sayılmaz. Ama **hiçbir satır silinmez**
 
 | İlişki | Satır |
 |---|---:|
-| `duplicate_of` | 75 |
-| `possible_duplicate` | 23 |
+| `duplicate_of` | 146 |
+| `possible_duplicate` | 26 |
 
 `possible_duplicate` bir **adaydır**, karar değil: otomatik eleme yapılmaz.
 Üçünün de `created_by` değeri `deterministic_rule`'dur.
@@ -90,18 +91,18 @@ sınıfın alan desenleri aranır. **Bulunmayan alan uydurulmaz**; satır yazıl
 
 | Alan | Bulgu |
 |---|---:|
-| `fiyat` | 27 |
-| `gosterge` | 23 |
-| `engagement_yorum_sayisi` | 22 |
-| `mevzuat_atfi` | 19 |
-| `yil_araligi` | 14 |
-| `engagement_yildiz` | 7 |
-| `paket_adi` | 7 |
-| `repo_yolu` | 5 |
+| `fiyat` | 56 |
+| `engagement_yorum_sayisi` | 33 |
+| `gosterge` | 31 |
+| `mevzuat_atfi` | 25 |
+| `yil_araligi` | 19 |
+| `engagement_yildiz` | 13 |
+| `paket_adi` | 8 |
+| `surum` | 6 |
+| `repo_yolu` | 6 |
+| `ozellik_basligi` | 5 |
 | `lisans` | 5 |
-| `surum` | 4 |
 | `engagement_indirme_sayisi` | 4 |
-| `ozellik_basligi` | 1 |
 | `issue_sayisi` | 1 |
 
 `engagement_*` alanlarının her biri şu uyarıyı taşır:
@@ -111,17 +112,22 @@ sınıfın alan desenleri aranır. **Bulunmayan alan uydurulmaz**; satır yazıl
 
 | Belge türü | Belge |
 |---|---:|
-| `ana-sayfa` | 386 |
-| `sitemap` | 86 |
-| `belirsiz` | 47 |
+| `sitemap` | 392 |
+| `ana-sayfa` | 387 |
+| `belirsiz` | 122 |
+| `liste-sayfasi` | 80 |
+| `fiyatlandirma-sayfasi` | 74 |
+| `kullanim-senaryosu` | 43 |
 | `politika-dosyasi` | 29 |
 | `besleme` | 25 |
-| `api-yaniti` | 9 |
-| `fiyatlandirma-sayfasi` | 2 |
-| `yazi` | 2 |
-| `liste-sayfasi` | 2 |
-| `kayit-sayfasi` | 2 |
+| `karsilastirma-sayfasi` | 24 |
+| `kayit-sayfasi` | 21 |
+| `forum-sayfasi` | 19 |
+| `inceleme-sayfasi` | 15 |
+| `api-yaniti` | 10 |
+| `yazi` | 6 |
 | `arama-sonucu` | 1 |
+| `dokumantasyon` | 1 |
 
 Bir belgenin **ölçülebilir kanıt üretip üretmediği** ayrı sorudur. Ana sayfa,
 sitemap, arama sonucu, politika dosyası, `belirsiz` ve JS kabuğu olan belgeler
@@ -129,8 +135,8 @@ sitemap, arama sonucu, politika dosyası, `belirsiz` ve JS kabuğu olan belgeler
 
 | Ölçüm kanıtı üretir mi | Belge |
 |---|---:|
-| `hayir` | 549 |
-| `evet` | 42 |
+| `hayir` | 933 |
+| `evet` | 316 |
 
 Bu oran kötü bir sonuç değil, **ölçülmüş** bir sonuçtur: kaynakların çoğundan
 ana sayfa çekilmiştir, ana sayfa da fiyat/yorum/talep kanıtı taşımaz.
@@ -139,13 +145,13 @@ ana sayfa çekilmiştir, ana sayfa da fiyat/yorum/talep kanıtı taşımaz.
 
 | Bayrak | Belge |
 |---|---:|
-| `missing_published_date` | 533 |
-| `unknown_date` | 533 |
-| `quote_only` | 86 |
-| `source_policy_limited` | 48 |
-| `short_content` | 42 |
-| `duplicate_exact` | 22 |
-| `missing_body` | 10 |
+| `missing_published_date` | 1150 |
+| `unknown_date` | 1150 |
+| `quote_only` | 392 |
+| `short_content` | 101 |
+| `duplicate_exact` | 58 |
+| `source_policy_limited` | 57 |
+| `missing_body` | 12 |
 
 Bunlar kanıt skoru değildir. Bir belge `short_content` olabilir ve yine de
 doğru bir fiyat taşıyabilir; bayrak yalnızca ne ölçüldüğünü söyler.

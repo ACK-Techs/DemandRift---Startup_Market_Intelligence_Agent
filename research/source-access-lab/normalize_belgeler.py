@@ -438,7 +438,26 @@ def calistir() -> dict[str, Any]:
     import kategori_sozlugu as sozluk
     import veri_envanteri as envanter
 
-    dizin = [r for r in _oku("ARTEFAKT-DIZINI.csv") if r["sonuc"] == "ok"]
+    # Ic sayfa gecisinin artefaktlari ayri bir dizine yazilir: ana dizin
+    # build_artifact_index.py'nin ciktisidir ve elle genisletilmez.
+    ek = []
+    ek_yol = HERE / "EK-ARTEFAKT-DIZINI.csv"
+    if ek_yol.exists():
+        with ek_yol.open(encoding="utf-8") as tutamak:
+            ek = [r for r in csv.DictReader(tutamak) if r["sonuc"] == "ok"]
+    # Ayni adres iki kosuda cekilmis olabilir (sitemap tamiri + alt sitemap).
+    # Icerik ayniysa artefakt da aynidir; belge bir kez islenir, kimlik
+    # (kaynak, artefakt) ciftinden turedigi icin tekrar cakismasi olurdu.
+    gorulen: set[tuple[str, str]] = set()
+    dizin = []
+    for kayit in _oku("ARTEFAKT-DIZINI.csv") + ek:
+        if kayit["sonuc"] != "ok":
+            continue
+        anahtar = (kayit.get("source_id", ""), kayit["sha256"])
+        if anahtar in gorulen:
+            continue
+        gorulen.add(anahtar)
+        dizin.append(kayit)
     env = {r["source_id"]: r for r in _oku("VERI-ENVANTERI.csv")}
     kategori_kaynak = _oku("KATEGORI-KAYNAK.csv")
     kategori_soru = _oku("KATEGORI-SORU.csv")
@@ -467,6 +486,12 @@ def calistir() -> dict[str, Any]:
                 "source_id": sid, "ad": ad, "artefakt_hash": kayit["sha256"][:16],
                 "source_url": kayit["cekilen_url"], "yontem": kayit["yontem"],
                 "neden": "gövde saklanmamış; normalize edilecek içerik yok"})
+            continue
+        if not kayit["dosya"].strip():
+            islenemeyen.append({
+                "source_id": sid, "ad": ad, "artefakt_hash": kayit["sha256"][:16],
+                "source_url": kayit["cekilen_url"], "yontem": kayit["yontem"],
+                "neden": "yanıt gövdesi boş; saklanacak içerik yok"})
             continue
         yol = HERE / kayit["dosya"]
         if not yol.exists():
@@ -545,6 +570,7 @@ def calistir() -> dict[str, Any]:
             "icerik_durumu": icerik_durum,
             "siniflandirma_gerekcesi": gerekce,
             "icerik_gerekcesi": icerik_gerekce,
+            "cekim_niyeti": kayit.get("niyet", ""),
             "belirsizlik": ("belge türü belirlenemedi" if belge_turu == "belirsiz"
                             else ("dil belirlenemedi" if dil == "unknown" else "")),
             "olcum_kaniti_uretir_mi":

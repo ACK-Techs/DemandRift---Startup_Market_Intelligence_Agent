@@ -138,6 +138,9 @@ Elimizdeki **dosyanın** ne olduğu. Ancak açarak bilinir.
 | `kayit-sayfasi` | Tek bir ürün, uygulama ya da işletmenin sayfası | JSON-LD Product/SoftwareApplication/LocalBusiness tekil nesne | Puan, fiyat ve sağlayıcı alanları buradan gelir |
 | `inceleme-sayfasi` | Kullanıcı yorumlarının gövdesini taşıyan sayfa | En az 3 Review nesnesi. Tek bir Review pazarlama sayfasındaki müşteri görüşü olabilir; yorum gövdesi sayılmaz | Şikâyet ve memnuniyet kanıtı |
 | `fiyatlandirma-sayfasi` | Katman ve fiyatların yayımlandığı sayfa | URL yolunda pricing/plans, ya da fiyat DEĞERİ taşıyan en az 2 Offer. Pazarlama sayfaları tek bir boş Offer gömer | Ödeme isteği ve fiyat bandı |
+| `karsilastirma-sayfasi` | İki ya da daha çok ürünü yan yana koyan sayfa | URL yolunda compare/alternatives/vs VE gövdede karşılaştırma dili | Mevcut alternatifler ve rakip keşfi kanıtı |
+| `kullanim-senaryosu` | Ürünün hangi işte nasıl kullanıldığını anlatan sayfa | URL yolunda use-cases/solutions/customers VE gövdede kullanım dili | Kullanım bağlamı ve iş akışı kanıtı |
+| `forum-sayfasi` | Kullanıcıların soru sorup cevapladığı topluluk sayfası | URL yolunda community/forum/questions VE gövdede gönderi dili | Problem ifadesi ve şikâyet kanıtı |
 | `dokumantasyon` | Teknik kullanım belgesi, API referansı | URL yolunda docs/documentation/reference/api | Yetenek ve entegrasyon maliyeti |
 | `yazi` | Haber, blog ya da makale | JSON-LD Article/NewsArticle/BlogPosting | Olay ve duyuru kanıtı; ölçüm değil |
 | `besleme` | RSS/Atom akışı; başlık ve özet taşır, tam içerik taşımaz | Yöntem rss_feed; item/entry etiketleri | Tarih ve başlık; içerik için bağlantıya gidilir |
@@ -182,15 +185,16 @@ için birincil kanıt, `giris-engeli` için değersizdir.
 | Belge türü | Kayıt |
 |---|---:|
 | `ana-sayfa` | 72 |
-| `belirsiz` | 13 |
+| `belirsiz` | 12 |
 | `api-yaniti` | 6 |
 | `politika-dosyasi` | 2 |
 | `besleme` | 2 |
 | `sitemap` | 1 |
 | `fiyatlandirma-sayfasi` | 1 |
+| `liste-sayfasi` | 1 |
 
 **97 kayıttan 72'i ana sayfa.** Yalnızca
-**9 kayıt** ölçüm kanıtı üretiyor.
+**10 kayıt** ölçüm kanıtı üretiyor.
 
 Bu, kabul kriterinin doğrudan karşılığıdır: içerik bulunmayan yerde
 yorum ya da fiyat verisi varsayılmaz. Envanterdeki kaynakların çoğuna

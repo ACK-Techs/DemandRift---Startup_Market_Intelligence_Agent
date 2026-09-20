@@ -629,6 +629,7 @@ source-0536,Replicate,fb728bd6c9304b5b,robots_preflight,https://replicate.com/ro
 source-0536,Replicate,d5915f426338dc29,root_html,https://replicate.com/,dizinde 'dosya' yazıyor ama bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/d5915f426338dc29b14aedbe736365e7ac7f62436d29f035653444e1f24c4d1f.bin
 source-0536,Replicate,2ad8b22812974081,root_html,https://replicate.com/,dizinde 'dosya' yazıyor ama bu checkout'ta yok: /home/caglarkc/Desktop/Github/DemandRift---Startup_Market_Intelligence_Agent/research/source-access-lab/results/raw/2ad8b228129740813d3ae3472db68826b5cc2c4818da93551e8c217e308df83e.bin
 source-0536,Replicate,9ab14b64ef74b5a6,sitemap_xml,https://replicate.com/sitemap.xml,gövde saklanmamış (saklama=kosu_json_icinde)
+source-0536,Replicate,,sitemap_xml,https://replicate.com/sitemap-content.xml,yanıt gövdesi boş; saklanacak içerik yok
 source-0537,Together AI,f677ebbce49ce67f,robots_preflight,https://www.together.ai/robots.txt,gövde saklanmamış (saklama=kosu_json_icinde)
 source-0538,Artificial Analysis,b44d67c4be249869,robots_preflight,https://artificialanalysis.ai/robots.txt,gövde saklanmamış (saklama=kosu_json_icinde)
 source-0540,Stanford HELM,d5abc6db304fc145,root_html,https://crfm.stanford.edu/,gövde saklanmamış (saklama=kosu_json_icinde)

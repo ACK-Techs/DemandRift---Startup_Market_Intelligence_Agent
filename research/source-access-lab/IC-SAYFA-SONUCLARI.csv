@@ -1,0 +1,85 @@
+source_id,ad,niyet,url,origin,entry_path,sonuc,sebep,sha256,mime,bayt
+source-0217,Ahrefs,competitor_discovery,https://ahrefs.com/blog/category/product-blog/,https://ahrefs.com,/blog/category/product-blog/,ok,ok,151093bd1afd7c03be1deb3acab45cdf79bf82504fcdc9a00749984089fb2c85,text/html,630411
+source-0217,Ahrefs,dissatisfaction,https://ahrefs.com/reviews,https://ahrefs.com,/reviews,ok,ok,8f3da54866b6a941e66aeb2bcc89c85a7a3ad6f0e8552e32443a458ddd653df6,text/html,1186144
+source-0217,Ahrefs,observed_market_pricing,https://ahrefs.com/pricing,https://ahrefs.com,/pricing,ok,ok,7d006eb2f366672792e62da67dbac5dfd41a15daeb789905dcd7540d49ef0d1e,text/html,1900905
+source-0217,Ahrefs,use_case,https://ahrefs.com/use-cases,https://ahrefs.com,/use-cases,ok,ok,54cbdfcee19ae2c79a6d522399e7289d946a01780c1aa3ad9b2f6da11d421f81,text/html,650842
+source-0132,Airtable Marketplace,competitor_discovery,https://airtable.com/marketplace,https://airtable.com,/marketplace,ok,ok,0be1174cdf320abb527bd4fa908b861e949f1dc63eb396807c989fa2a0eabd59,text/html,103297
+source-0132,Airtable Marketplace,observed_market_pricing,https://airtable.com/pricing,https://airtable.com,/pricing,ok,ok,8b5618c4d66cba3011a2111359d7a065863d70f6a48f54d8c58902ff5b1ebd0b,text/html,331492
+source-0255,Dealroom,competitor_discovery,https://dealroom.net/categories/diligence,https://dealroom.net,/categories/diligence,ok,ok,61da460d7ca542aca175af30f3cfad1be6375dd0c589c09f4c432bdefbce275f,text/html,105888
+source-0255,Dealroom,existing_alternatives,https://dealroom.net/compare/dealroom-vs-datasite,https://dealroom.net,/compare/dealroom-vs-datasite,ok,ok,fc074b7b51e1e09c800ef3ebfed893b8f46642da120471dcb93efe026465be97,text/html,168436
+source-0255,Dealroom,observed_market_pricing,https://dealroom.net/products/pricing,https://dealroom.net,/products/pricing,ok,ok,30800d718734d53a4b292d88935339a92a3d301160fd6e61a5e1c9c2813ba0f7,text/html,128668
+source-0255,Dealroom,use_case,https://dealroom.net/case-studies,https://dealroom.net,/case-studies,ok,ok,0c789d516aebb5c0590800aee8717e1877f6a4392bd91d90cdcc6b278dfcfc7d,text/html,127411
+source-0596,dscout,dissatisfaction,https://dscout.com/lp/reviews,https://dscout.com,/lp/reviews,ok,ok,bd207ab2533162c418b6ed95269c3c5cae6cbf6f3e0bf1caaad325fd19bb64c0,text/html,203825
+source-0596,dscout,observed_market_pricing,https://dscout.com/pricing,https://dscout.com,/pricing,ok,ok,8d4fd6e4b6d9fb6f56d1eb2eda7c29740be6536af2eac2d80c2a22812dd74720,text/html,165297
+source-0596,dscout,problem_demand,https://dscout.com/topics/agency,https://dscout.com,/topics/agency,ok,ok,a8eacd02badf6b22cf53655ae9946740f480b7cc34b77687ae17aa84a7999ef9,text/html,168193
+source-0596,dscout,use_case,https://dscout.com/customers,https://dscout.com,/customers,ok,ok,3418c9719db7f5cb142a6c576d6bdd964f2f8fd66aa60bab8fa0d9e47043555d,text/html,206287
+source-0128,monday.com Apps Marketplace,competitor_discovery,https://monday.com/crm/marketplace,https://monday.com,/crm/marketplace,ok,ok,57abe6a75cd93299fffc12d9f4ea6d40be628f1e9e66669adeb66714940de442,text/html,176116
+source-0128,monday.com Apps Marketplace,dissatisfaction,https://monday.com/reviews,https://monday.com,/reviews,ok,ok,3b9b15aa82f0421e62655cf871cb4fc74a6aca6cc051e74e118849a5964f693b,text/html,704791
+source-0128,monday.com Apps Marketplace,existing_alternatives,https://monday.com/alternative,https://monday.com,/alternative,ok,ok,97313297c7f11997bdcf79f0a98420bdf6230ff731d3fbf9e0a2a3c519b10fd7,text/html,705778
+source-0128,monday.com Apps Marketplace,observed_market_pricing,https://monday.com/pricing,https://monday.com,/pricing,ok,ok,f6f05fb48029b581ff2f878fe53c407bf539a60b8c9efcd88b0347f6ca457556,text/html,1409458
+source-0128,monday.com Apps Marketplace,use_case,https://monday.com/customers/alachua-county,https://monday.com,/customers/alachua-county,ok,ok,68d3418024236fbbb4e8fea72f5c2571a16d1037e52ea821384bb850adce46d3,text/html,650136
+source-0219,Moz,competitor_discovery,https://moz.com/blog/category/content-marketing,https://moz.com,/blog/category/content-marketing,ok,ok,d1e2ddf78b9f73452805507ed483970394e377f8c442dac331ab985efcf24abc,text/html,115602
+source-0219,Moz,observed_market_pricing,https://moz.com/products/api/pricing,https://moz.com,/products/api/pricing,ok,ok,6a308d65a3a491a51d7ee8c9f2729372249a66b785e3ef539195abe1b3b948c3,text/html,166726
+source-0219,Moz,problem_demand,https://moz.com/community/q/my-questions,https://moz.com,/community/q/my-questions,challenge,challenge,4229bf389a0340f226d4e788b70b10a11a53f9c4a763ea24f47fc411ed478473,text/html,60
+source-0219,Moz,use_case,https://moz.com/case-studies/chesapeake-regional-health,https://moz.com,/case-studies/chesapeake-regional-health,challenge,origin_circuit_open,,,0
+source-0226,Serpstat,competitor_discovery,https://serpstat.com/blog/category/analytics/,https://serpstat.com,/blog/category/analytics/,challenge,challenge,068f0dd927614ee4437b51d68c2b6fca2abf4cd01340eb7929c43fa4cb98cc69,text/html,153537
+source-0226,Serpstat,dissatisfaction,https://serpstat.com/reviews/,https://serpstat.com,/reviews/,challenge,origin_circuit_open,,,0
+source-0226,Serpstat,observed_market_pricing,https://serpstat.com/page/plans/,https://serpstat.com,/page/plans/,challenge,origin_circuit_open,,,0
+source-0226,Serpstat,use_case,https://serpstat.com/use-cases/,https://serpstat.com,/use-cases/,challenge,origin_circuit_open,,,0
+source-0091,Slack,competitor_discovery,https://slack.com/marketplace,https://slack.com,/marketplace,ok,ok,c054e28807a5afb3fadc66d63d077df5166473cef0b06fd561938c8d2e5b9b3a,text/html,249326
+source-0091,Slack,existing_alternatives,https://slack.com/compare/slack-vs-email,https://slack.com,/compare/slack-vs-email,ok,ok,68ec9541320621eb3440d8638c1225ba169ff481b632b5350b5f4e1775c42a85,text/html,163373
+source-0091,Slack,observed_market_pricing,https://slack.com/pricing,https://slack.com,/pricing,ok,ok,0fa673ab4655d616fdf92e94af71e1d15d4317cd3bc5b56930a8a5b307b167c2,text/html,694164
+source-0091,Slack,problem_demand,https://slack.com/community,https://slack.com,/community,ok,ok,952b676017471fd21ebd1bd95e51d0a8af6447867972ff526ac47d6ab7055ba3,text/html,140492
+source-0091,Slack,use_case,https://slack.com/solutions,https://slack.com,/solutions,ok,ok,ffeba9a7ef55b0ec09e56d5a4886e0516910a1bd5a5342273a842ed8377de07a,text/html,202772
+source-0141,SourceForge Reviews,competitor_discovery,https://sourceforge.net/directory/,https://sourceforge.net,/directory/,ok,ok,bc48e49a94b317607f4a38556b06b0abf04355172f287519ced13a60e99d9c6a,text/html,352800
+source-0141,SourceForge Reviews,dissatisfaction,https://sourceforge.net/reviews,https://sourceforge.net,/reviews,ok,ok,6ea956a72b08a1a4e8c47f5da66aa9f98786978f356f0fb59c809fc46b5950f7,text/html,61700
+source-0141,SourceForge Reviews,observed_market_pricing,https://sourceforge.net/software/vendors/pricing/,https://sourceforge.net,/software/vendors/pricing/,ok,ok,281ea9eb78417e56bf2a8057a71f0514c464a1e31b0053d54d473820cfff4656,text/html,229544
+source-0141,SourceForge Reviews,use_case,https://sourceforge.net/software/case-studies/,https://sourceforge.net,/software/case-studies/,ok,ok,875a5ae62385043ac7af04ba0f60309816f04575254d779d97d0ae5496543224,text/html,158518
+source-0132,Airtable Marketplace,existing_alternatives,https://www.airtable.com/lp/compare/airtable-for-marketing-operations-vs-others,https://www.airtable.com,/lp/compare/airtable-for-marketing-operations-vs-others,ok,ok,2f8b4f3a80259c14edd4ea53cba9245a880fcfbc91016d70ccc56d3c1df38679,text/html,445705
+source-0132,Airtable Marketplace,use_case,https://www.airtable.com/solutions,https://www.airtable.com,/solutions,ok,ok,88ea2be1d305b767ed802745fc0cd246c71c445e10efb1004f4b87384c482e99,text/html,411487
+source-0287,Ashby Jobs,existing_alternatives,https://www.ashbyhq.com/compare/ashby-vs-greenhouse,https://www.ashbyhq.com,/compare/ashby-vs-greenhouse,ok,ok,babcce276ddb4d80aaa9d1794f596087a56aee965d963db487542d42cf02c2f3,text/html,378851
+source-0287,Ashby Jobs,observed_market_pricing,https://www.ashbyhq.com/pricing,https://www.ashbyhq.com,/pricing,ok,ok,96c78778015238615d9eb2ebfdbaf844c4089eaee7984f2f0ad970f9112f4a56,text/html,536878
+source-0287,Ashby Jobs,problem_demand,https://www.ashbyhq.com/resources/community,https://www.ashbyhq.com,/resources/community,ok,ok,918e04abbd9b73fcbbdf8b41977ab84013efa366a102fea9ac68eb48440f01a3,text/html,124429
+source-0287,Ashby Jobs,use_case,https://www.ashbyhq.com/customers,https://www.ashbyhq.com,/customers,ok,ok,c98e5558ef6d044900849295f9eeeb5c8f7723a7e419472ac2aadb0dfb319680,text/html,2634857
+source-0286,Lever Jobs,competitor_discovery,https://www.lever.co/marketplace,https://www.lever.co,/marketplace,ok,ok,3b1f65b4753558176ef9d71b2e1dfb1d993a80379e6f9326aa7c88e98d9bcab2,text/html,378200
+source-0286,Lever Jobs,existing_alternatives,https://www.lever.co/alternative/ashby-alternatives,https://www.lever.co,/alternative/ashby-alternatives,ok,ok,8c74f03363e804cbfd5d041b4bb35e321ea34f9f34b9a5f65b7efc3bd60ffc57,text/html,91528
+source-0286,Lever Jobs,observed_market_pricing,https://www.lever.co/pricing,https://www.lever.co,/pricing,ok,ok,7fc78e72b55c0a3c2fd9a5051a465cf7d8f58b715dd4fc8eede3bab62eed2af2,text/html,75896
+source-0286,Lever Jobs,use_case,https://www.lever.co/case-studies,https://www.lever.co,/case-studies,ok,ok,51682307825f4cdaf439a0d57724dd74c932a96a5a328e69bea4bd0725f1d696,text/html,214464
+source-0289,SmartRecruiters,competitor_discovery,https://www.smartrecruiters.com/recruiting-software/marketplace/,https://www.smartrecruiters.com,/recruiting-software/marketplace/,challenge,challenge,de238325ead463254ac2f672965643f44ebe8db28fe684664acb4bdd2a8f6785,text/html,2081
+source-0289,SmartRecruiters,observed_market_pricing,https://www.smartrecruiters.com/pricing/,https://www.smartrecruiters.com,/pricing/,challenge,origin_circuit_open,,,0
+source-0289,SmartRecruiters,problem_demand,https://www.smartrecruiters.com/topics/ai/,https://www.smartrecruiters.com,/topics/ai/,challenge,origin_circuit_open,,,0
+source-0289,SmartRecruiters,use_case,https://www.smartrecruiters.com/about-us/customers/,https://www.smartrecruiters.com,/about-us/customers/,challenge,origin_circuit_open,,,0
+source-0118,Squarespace Extensions,competitor_discovery,https://www.squarespace.com/designer/browse,https://www.squarespace.com,/designer/browse,challenge,challenge,c6c917fe1d7dba875d2363e326dbe298eee696ea839a859fa89b3970668fb707,text/html,57894
+source-0118,Squarespace Extensions,existing_alternatives,https://www.squarespace.com/compare,https://www.squarespace.com,/compare,challenge,origin_circuit_open,,,0
+source-0118,Squarespace Extensions,observed_market_pricing,https://www.squarespace.com/pricing,https://www.squarespace.com,/pricing,challenge,origin_circuit_open,,,0
+source-0118,Squarespace Extensions,use_case,https://www.squarespace.com/solutions/beauty,https://www.squarespace.com,/solutions/beauty,challenge,origin_circuit_open,,,0
+source-0583,Typeform,dissatisfaction,https://www.typeform.com/templates-sub-category/feedback,https://www.typeform.com,/templates-sub-category/feedback,ok,ok,15714cdd49d3565b43bdb757e97054c6d0a4cb69ff50e395cf2128c67c3fba9d,text/html,232728
+source-0583,Typeform,existing_alternatives,https://www.typeform.com/try/alternative/lf/best-software-ftf,https://www.typeform.com,/try/alternative/lf/best-software-ftf,ok,ok,1b1064670dd5d5d739da7087207cf6aa73a1e3e4a480dd9061bc79d697079ea5,text/html,246522
+source-0583,Typeform,observed_market_pricing,https://www.typeform.com/pricing,https://www.typeform.com,/pricing,ok,ok,9678d1e31460fad52295cea76d736ce1ae411b2c159ad2e8bb957edef863e494,text/html,744162
+source-0583,Typeform,use_case,https://www.typeform.com/blog-category/customer,https://www.typeform.com,/blog-category/customer,ok,ok,313c3e9a68dd6f1ab88d7a4a51874e5ef95f8b9195bd7cedfb8f02172b86890f,text/html,246756
+source-0053,Uneed,competitor_discovery,https://www.uneed.best/categories/business,https://www.uneed.best,/categories/business,ok,ok,acdf372c6b9843b32b04208d7802a4fa0f70bb90dac376ccf285c77567791611,text/html,307975
+source-0053,Uneed,existing_alternatives,https://www.uneed.best/alternatives,https://www.uneed.best,/alternatives,ok,ok,938d201c30243ad35e9a302d272d5c99af080b9142f4d85ca46a2d1f7827de56,text/html,6076653
+source-0053,Uneed,observed_market_pricing,https://www.uneed.best/pricing,https://www.uneed.best,/pricing,ok,ok,c1fa20284b1366d1a2b588c01d3c87f16fda243998371008d11bae8ec6b5dbe3,text/html,160498
+source-0053,Uneed,problem_demand,https://www.uneed.best/community,https://www.uneed.best,/community,ok,ok,283337ad3d6aa8962cc343dffbe95fe6d99a0c078b1b760a3564e480eee9cc5a,text/html,257669
+source-0589,User Interviews,competitor_discovery,https://www.userinterviews.com/browse,https://www.userinterviews.com,/browse,challenge,challenge,,text/html,0
+source-0589,User Interviews,existing_alternatives,https://www.userinterviews.com/compare,https://www.userinterviews.com,/compare,challenge,origin_circuit_open,,,0
+source-0589,User Interviews,observed_market_pricing,https://www.userinterviews.com/pricing,https://www.userinterviews.com,/pricing,challenge,origin_circuit_open,,,0
+source-0589,User Interviews,use_case,https://www.userinterviews.com/customers,https://www.userinterviews.com,/customers,challenge,origin_circuit_open,,,0
+source-0609,Vertice,existing_alternatives,https://www.vertice.one/comparison/vertice-vs-omnea,https://www.vertice.one,/comparison/vertice-vs-omnea,ok,ok,a0a009d527c1ddab4851728c055191d9504b9ec6313740815dcf48cd4efebbc2,text/html,172292
+source-0609,Vertice,observed_market_pricing,https://www.vertice.one/pricing,https://www.vertice.one,/pricing,ok,ok,a389a5127d2e9c96a50e0c8bdc4600663d963268d7d53c8a747223c19d9c1c3f,text/html,172371
+source-0609,Vertice,problem_demand,https://www.vertice.one/community,https://www.vertice.one,/community,ok,ok,83a2970cbf07c5a900c0351414bc66432191ec988d626be953124ee236f772a8,text/html,260515
+source-0609,Vertice,use_case,https://www.vertice.one/solutions/cloud-cost-management-software,https://www.vertice.one,/solutions/cloud-cost-management-software,ok,ok,8b6170307997c203daa738c5443a21be596d1689e204f08b79199a1ac6c5cf6b,text/html,189467
+source-0117,Wix App Market,competitor_discovery,https://www.wix.com/marketplace,https://www.wix.com,/marketplace,challenge,challenge,66e06cd4b43034b178dc66d4fcba6847a84eae36f684cb7d1e3c2ed443e47018,text/html,803324
+source-0117,Wix App Market,dissatisfaction,https://www.wix.com/app-market/reviews,https://www.wix.com,/app-market/reviews,challenge,origin_circuit_open,,,0
+source-0117,Wix App Market,existing_alternatives,https://www.wix.com/compare/hub/bigcommerce,https://www.wix.com,/compare/hub/bigcommerce,challenge,origin_circuit_open,,,0
+source-0117,Wix App Market,observed_market_pricing,https://www.wix.com/plans,https://www.wix.com,/plans,challenge,origin_circuit_open,,,0
+source-0117,Wix App Market,problem_demand,https://www.wix.com/app-market/forum,https://www.wix.com,/app-market/forum,challenge,origin_circuit_open,,,0
+source-0117,Wix App Market,use_case,https://www.wix.com/business/solutions/bio-website,https://www.wix.com,/business/solutions/bio-website,challenge,origin_circuit_open,,,0
+source-0597,Wynter,dissatisfaction,https://wynter.com/solutions/reviews,https://wynter.com,/solutions/reviews,ok,ok,c755980725f7aa2afc2235c91203ae47287dc5015c6cd7c69aa219ba2e62e1dd,text/html,56958
+source-0597,Wynter,existing_alternatives,https://wynter.com/compare,https://wynter.com,/compare,ok,ok,92593e8b568ba60d3251c3308467c707779f5e7bed068d77f2b43364002c72c8,text/html,20937
+source-0597,Wynter,observed_market_pricing,https://wynter.com/pricing,https://wynter.com,/pricing,ok,ok,96e68f5692ed10fa26171d3322b00241dea20a9fec426eb7124e5bf7760c16a6,text/html,52824
+source-0597,Wynter,use_case,https://wynter.com/case-studies,https://wynter.com,/case-studies,ok,ok,68835a46634398d3bbb61bc5c95c2d2aabe015deee28b7443b3d36ab6b500b62,text/html,34578
+source-0130,Zapier App Directory,competitor_discovery,https://zapier.com/apps/categories/accounting,https://zapier.com,/apps/categories/accounting,ok,ok,d38dece3f02461fc2d9ce4ae66d7f2f36796d6a49728c474d70bb2e02761e16d,text/html,372970
+source-0130,Zapier App Directory,dissatisfaction,https://zapier.com/apps/categories/reviews,https://zapier.com,/apps/categories/reviews,ok,ok,4d5753fbf13a2a30e2c2d525e971395b473bb8c2aa88eb4d5f2e6e0a083ef6bb,text/html,364630
+source-0130,Zapier App Directory,observed_market_pricing,https://zapier.com/pricing,https://zapier.com,/pricing,ok,ok,c4563faeb3b0be84339b0ace9164158c26d9d1756706838e833fb03fef36d0ec,text/html,2285609
+source-0130,Zapier App Directory,use_case,https://zapier.com/solutions/customer-support,https://zapier.com,/solutions/customer-support,ok,ok,9880719ea0435f24b1a1eeb2b5db8cb54c03b3f3af3c711cdd0215494af814a6,text/html,414888

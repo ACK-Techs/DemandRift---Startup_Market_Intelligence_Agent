@@ -122,7 +122,11 @@ def envanter_kur() -> dict[str, Any]:
     kaynaklar = {s["source_id"]: s for s in manifest["sources"]}
     defter = {r["source_id"]: r for r in _oku("KAYNAK-DEFTERI.csv")}
     yuzeyler = {r["source_id"]: r for r in _oku("ARAMA-YUZEYLERI.csv")}
-    dizin = _oku("ARTEFAKT-DIZINI.csv")
+    # Ic sayfa gecisinin artefaktlari ayri dizine yazilir; envanter ikisini de
+    # gormeli, yoksa yeni cekilen bir kaynak "dosyasi yok" gorunur.
+    ek_yol = HERE / "EK-ARTEFAKT-DIZINI.csv"
+    ek = _oku("EK-ARTEFAKT-DIZINI.csv") if ek_yol.exists() else []
+    dizin = _oku("ARTEFAKT-DIZINI.csv") + ek
     kategori_kaynak = _oku("KATEGORI-KAYNAK.csv")
 
     # DR-L02'de fiilen acilan artefaktlar
@@ -156,6 +160,7 @@ def envanter_kur() -> dict[str, Any]:
         diskte: list[tuple[dict[str, str], str, str]] = []
         govdesiz = 0
         kayip = 0
+        bos = 0
         for r in basarili:
             if r["saklama"] == "kosu_json_icinde":
                 govdesiz += 1
@@ -163,6 +168,15 @@ def envanter_kur() -> dict[str, Any]:
                     "source_id": sid, "ad": ad, "artefakt": r["sha256"][:16],
                     "yontem": r["yontem"], "url": r["cekilen_url"],
                     "neden": "gövde saklanmamış (saklama=kosu_json_icinde)",
+                })
+                continue
+            if not r["dosya"].strip():
+                # 200 dondu ama govde sifir bayt: saklanacak icerik yok.
+                bos += 1
+                islenemeyen.append({
+                    "source_id": sid, "ad": ad, "artefakt": r["sha256"][:16],
+                    "yontem": r["yontem"], "url": r["cekilen_url"],
+                    "neden": "yanıt gövdesi boş; saklanacak içerik yok",
                 })
                 continue
             yol = HERE / r["dosya"]
@@ -212,6 +226,7 @@ def envanter_kur() -> dict[str, Any]:
             "artefakt_basarili": len(basarili),
             "dosyasi_diskte": len(diskte),
             "govdesi_saklanmamis": govdesiz,
+            "govdesi_bos": bos,
             "dizinde_var_diskte_yok": kayip,
             "icerik_durumu": en_iyi,
             "icerik_gerekcesi": gerekce,
