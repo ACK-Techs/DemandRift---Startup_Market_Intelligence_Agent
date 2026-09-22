@@ -1,0 +1,4 @@
+kaynak_ailesi,istenen_ornek,bulunan_ornek,aileedeki_kaynak,eksik_nedeni
+Kitle fonlaması platformları,3,1,2,ailedeki kaynakların açılabilir artefaktı yok; erişilemedi ya da yalnız politika dosyası indi
+(yüzey temsili: packagist_package_list),1,0,Packagist,"gövde saklanmamış (saklama=kosu_json_icinde, bayt=0); elde yalnız sha256 7d6b5d1eac7367ff ve URL https://packagist.org/packages/list.json?vendor=symfony var — açılacak içerik yok"
+(yüzey temsili: wayback_availability),1,0,Wayback Machine,"gövde saklanmamış (saklama=kosu_json_icinde, bayt=0); elde yalnız sha256 9136bff3182180fc ve URL https://archive.org/wayback/available?url=example.com var — açılacak içerik yok"

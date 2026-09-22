@@ -1,0 +1,16 @@
+kategori,tur,ad,tanim,arastirma_niyeti,ne_zaman,katman_olabilir,cekirdek_kaynak,cekirdek_cekilen,ortak_kaynak,ortak_cekilen
+mobil-uygulama,kategori,Mobil tüketici uygulaması,Son kullanıcıya uygulama mağazaları üzerinden dağıtılan uygulama,"İndirme hacmi, kullanıcı şikâyetleri, rakip fiyatlandırma ve mağaza sıralaması",Ürün bu dağıtım/alıcı tipindeyse,evet,13,11,291,243
+b2b-web-yazilimi,kategori,B2B web yazılımı,İşletmelerin abonelikle kullandığı web tabanlı yazılım,"Kurumsal talep, rakip yorumları, fiyatlandırma ve işe alım sinyali",Ürün bu dağıtım/alıcı tipindeyse,hayir,64,53,291,243
+gelistirici-araci,kategori,Geliştirici aracı / kütüphane,"Yazılım geliştiricilerin kullandığı paket, SDK, CLI ya da altyapı aracı","Kullanım hacmi, benimsenme eğrisi, çözülmemiş ihtiyaçlar",Ürün bu dağıtım/alıcı tipindeyse,hayir,34,30,291,243
+eklenti-entegrasyon,kategori,Eklenti / entegrasyon,Var olan bir platformun üzerine kurulan eklenti ya da entegrasyon,"Platform ekosisteminin doygunluğu, kurulum sayıları, boşluklar",Ürün bu dağıtım/alıcı tipindeyse,evet,25,25,291,243
+yapay-zeka-urunu,kategori,Yapay zekâ ürünü / agent,"Model, veri seti, agent ya da yapay zekâ altyapı ürünü","Ekosistem doygunluğu, kıyaslama sonuçları, entegrasyon talebi",Ürün bu dağıtım/alıcı tipindeyse,evet,24,22,291,243
+oyun,kategori,Oyun,Dijital dağıtım platformları üzerinden yayınlanan oyun,"Tür doygunluğu, oyuncu ilgisi, fiyatlandırma ve inceleme puanları",Ürün bu dağıtım/alıcı tipindeyse,hayir,17,12,291,243
+yerel-hizmet,kategori,Yerel hizmet ürünü,Belirli bir coğrafyada işletme ya da tüketiciye hizmet veren ürün,"İşletme yoğunluğu, hizmet fiyatları, yerel talep",Ürün bu dağıtım/alıcı tipindeyse,hayir,23,17,291,243
+saglik,ek,Saglik,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün sağlık, tıp ya da biyoteknoloji alanındaysa",evet,17,14,0,0
+fintech,ek,Fintech,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün finans, ödeme ya da bankacılık alanındaysa",evet,26,23,0,0
+egitim,ek,Egitim,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün eğitim ya da öğrenme alanındaysa,evet,17,16,0,0
+gayrimenkul,ek,Gayrimenkul,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün gayrimenkul ya da inşaat alanındaysa,evet,18,15,0,0
+seyahat,ek,Seyahat,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,"Ürün seyahat, konaklama ya da mobilite alanındaysa",evet,22,19,0,0
+yeme-icme,ek,Yeme Icme,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün yeme-içme ya da teslimat alanındaysa,evet,17,10,0,0
+regule-sektor,ek,Regule Sektor,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Ürün yasal düzenlemeye tabi bir alandaysa,evet,28,23,0,0
+turkiye-pazari,ek,Turkiye Pazari,Ana kategoriye eklenen dikey/bölge paketi,Ana kategorinin sorularına alan-özel kanıt ekler,Türkiye pazarı hedefleniyorsa,evet,22,16,0,0

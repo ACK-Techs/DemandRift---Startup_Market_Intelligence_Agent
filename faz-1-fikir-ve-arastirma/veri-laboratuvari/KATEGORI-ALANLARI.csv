@@ -1,0 +1,213 @@
+document_id,artifact_hash,source_id,source_adi,alan,deger,alan_sinifi,alan_turu,not
+doc-9509549100e9,2fd9f404f6f3e209ef7542db3d7f56bffee9e347cfb926fb3e3df3c304fc31f1,source-0059,AlternativeTo,engagement_yorum_sayisi,6,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-b0124bcad21d,37386d2bfad10c50db5a408e5494f738f0d64afc2dd63104d918116fa62eab04,source-0314,Angi,fiyat,"$1,890",urun,olcum,
+doc-c7a276cf2965,1997d3b3ffbe5c91fc00e83ef2d376d868b2b26bd46061933231d0ad2af1bac7,source-0107,APKMirror,fiyat,$10,urun,olcum,
+doc-c7a276cf2965,1997d3b3ffbe5c91fc00e83ef2d376d868b2b26bd46061933231d0ad2af1bac7,source-0107,APKMirror,surum,7.14.1,urun,olcum,
+doc-1e29b756ea67,cc0292c894eb54f3549413fa9b9ac86e406401f6dea434bea9b0de6a5c53d371,source-0107,APKMirror,fiyat,$10,urun,olcum,
+doc-d1ed39bc00b3,f282509518e7c386e9c33e164e6aeec022db88115ba19bd0137bab493b4ea5b9,source-0065,AppSumo,fiyat,$39,urun,olcum,
+doc-d1ed39bc00b3,f282509518e7c386e9c33e164e6aeec022db88115ba19bd0137bab493b4ea5b9,source-0065,AppSumo,engagement_yorum_sayisi,3,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-1842436b8403,40256c914d83b612f15e4f390d5814c08a1bb68874b5eaaeb2acf779f414205c,source-0065,AppSumo,fiyat,$79,urun,olcum,
+doc-1842436b8403,40256c914d83b612f15e4f390d5814c08a1bb68874b5eaaeb2acf779f414205c,source-0065,AppSumo,engagement_yorum_sayisi,119,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-2d703b201b2c,ea95ba770479e5acd9b10f3702b46833785d5986cacda96406ab8ae53108e735,source-0541,AWS Marketplace,repo_yolu,aws/CICD-for-SageMakerUnifiedStudio,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-3cef2cb31eff,b0cee491fdfdd27dbdd9c2d68826ac60c704d6f167643039601952af60af87d1,source-0437,Bank for International Settlements,gosterge,indicators at end-March 2026,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-5c8e678dc72c,35330438cd12234c7fdcc27e5fa52a199e9930305699c3f6020befedde6cd550,source-0442,Borsa İstanbul,gosterge,Endeksleri 1,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-5c8e678dc72c,35330438cd12234c7fdcc27e5fa52a199e9930305699c3f6020befedde6cd550,source-0442,Borsa İstanbul,yil_araligi,2025-2026,kamu,olcum,
+doc-52494270bdd5,b0480a331811f829128d95d65b0a8bda2ef583958d86c54482e7284a9ce5e12e,source-0382,BTK,mevzuat_atfi,Kanun,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-52494270bdd5,b0480a331811f829128d95d65b0a8bda2ef583958d86c54482e7284a9ce5e12e,source-0382,BTK,yil_araligi,2026-2027,kamu,olcum,
+doc-07c2dee9042b,a0776da0a34df960d60f7c4397cc8c6e075898df09e35f7559437db6bac03870,source-0201,BuiltWith,fiyat,"$60,000",urun,olcum,
+doc-07c2dee9042b,a0776da0a34df960d60f7c4397cc8c6e075898df09e35f7559437db6bac03870,source-0201,BuiltWith,ozellik_basligi,Features,urun,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-6accd6a4efe5,61bf69df0db83aab47986bdc35b8d406842b73849f17a0c9588982bb6b2d54c1,source-0362,Bureau of Labor Statistics,gosterge,rates) Productivity increased 1.2,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-6accd6a4efe5,61bf69df0db83aab47986bdc35b8d406842b73849f17a0c9588982bb6b2d54c1,source-0362,Bureau of Labor Statistics,yil_araligi,2019–2023,kamu,olcum,
+doc-9fe44b0bf7a0,1d383558a4a7ec83f64c9a8cf06c186e77a0049c597d6dfda35650dc0c0edb38,source-0462,Class Central,engagement_yorum_sayisi,"250,000",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-b0740422a168,9ff2ceaba203b53265c9d74937f132bc615ac915d9de468716eab4bcc72eec3b,source-0180,CodeCanyon,fiyat,$79,urun,olcum,
+doc-9291066bee9f,c004e66fd5bf86c8879462595a1071f6e85a4db18fec95db8852da8bdd476580,source-0266,Companies House,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-f7dafa7ca7f1,c004e66fd5bf86c8879462595a1071f6e85a4db18fec95db8852da8bdd476580,source-0405,Competition and Markets Authority,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d86cbfe3b9fc,3e388f1d2ea945e5f5be9d15803ecb46d4449798a954294002604fef680d1ed3,source-0401,Consumer Financial Protection Bureau,yil_araligi,2026-2030,kamu,olcum,
+doc-1b07b96e922f,6bce75bc81693e17cae65231dfaf9f46e51e74c2633b2c0aa52793906bf9ffff,source-0150,ConsumerAffairs,fiyat,"$1,400",urun,olcum,
+doc-1b07b96e922f,6bce75bc81693e17cae65231dfaf9f46e51e74c2633b2c0aa52793906bf9ffff,source-0150,ConsumerAffairs,engagement_yorum_sayisi,3M+,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-e4681ee45a1a,33e4cf1144c83fca82dd4b4c58a4b28ff27a51011452f2c86bd79f555b34c2a9,source-0177,Creative Market,fiyat,$0.00,urun,olcum,
+doc-cba093356aaa,7dabf939812a0f48a01feeed08a78aecc1b98b2764a0c265529b372d3a42490d,source-0142,Crozdesk,fiyat,$5.00,urun,olcum,
+doc-e36ba3ae5ce2,c2cce22a289b05c32f93d4ed6c59199cc3f997c117578d8f0be9cd565b5b4d40,source-0015,DataForSEO,engagement_yorum_sayisi,10,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-e36ba3ae5ce2,c2cce22a289b05c32f93d4ed6c59199cc3f997c117578d8f0be9cd565b5b4d40,source-0015,DataForSEO,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-c6a94d95a7a7,61447da354bd334916832cf528bf492ea1ee5e2c7d26f64f5fb35d53b0a8c2d3,source-0029,Dev.to,repo_yolu,loncadev/baron,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-c6a94d95a7a7,61447da354bd334916832cf528bf492ea1ee5e2c7d26f64f5fb35d53b0a8c2d3,source-0029,Dev.to,lisans,MIT,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-3967b66ad8fb,a6ffc3576a715943370641411cc03286164a4492918310afe79c793b3891fdc6,source-0033,DZone,paket_adi,postgres-inventory-connector,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-2e738043de4b,13bf435135c6b36a02f5f8c61673df718588fe0e0c2378ab271dc847daeb7fc5,source-0033,DZone,paket_adi,postgres-inventory-connector,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-7a7c4ee875bd,9876ae88a2034663f450360f16f58b961aedb887d93158f00dad838292d2ff24,source-0178,Envato Market,fiyat,$69,urun,olcum,
+doc-87f7efcaebe4,6af22b2854245c2653e1860f90abf417841277097a8ab4d23b51b71cefc88c1a,source-0394,European Banking Authority,gosterge,indicators across the EU/EEA in second half of 2025.,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-87f7efcaebe4,6af22b2854245c2653e1860f90abf417841277097a8ab4d23b51b71cefc88c1a,source-0394,European Banking Authority,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-84cb20820bb9,4498a2fb35484b83ff934a6d3205c26069dd5a41dbb121ef5a53b5c4857712b4,source-0436,European Central Bank,gosterge,rate statistics: July 2026,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-84cb20820bb9,4498a2fb35484b83ff934a6d3205c26069dd5a41dbb121ef5a53b5c4857712b4,source-0436,European Central Bank,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-84cb20820bb9,4498a2fb35484b83ff934a6d3205c26069dd5a41dbb121ef5a53b5c4857712b4,source-0436,European Central Bank,yil_araligi,2000–2020,kamu,olcum,
+doc-b863db524518,e0163cf09805fcc948f974345c031bffa93607b50efa411229b3d9b6075a84ef,source-0393,European Medicines Agency,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-b863db524518,e0163cf09805fcc948f974345c031bffa93607b50efa411229b3d9b6075a84ef,source-0393,European Medicines Agency,yil_araligi,1995 - 2026,kamu,olcum,
+doc-8b26e285e6ae,8ee867f85e2ef050b3d2bc0a306509cf589efeed4507355eb9c73180adde560d,source-0395,European Securities and Markets Authority,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-8b26e285e6ae,8ee867f85e2ef050b3d2bc0a306509cf589efeed4507355eb9c73180adde560d,source-0395,European Securities and Markets Authority,yil_araligi,2023-2028,kamu,olcum,
+doc-f333a0f1d1e0,456e5611b9abd43c7d172538647ab09e8c430ff5e33b8ebd8a2f6f768ce96dd4,source-0106,F-Droid,surum,0.5,urun,olcum,
+doc-8f61465706d8,bebe54dc9d888afcafb4ca0758cf87baaced83472b64c91eb4bc0373a890fcaa,source-0396,Federal Register,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d399df9a7b5c,4cfea4298e00fa6dde8d9204f02409a1c0422d456d12b96fa5bbb69661c35ce8,source-0432,Federal Reserve,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-bcff7ad791c6,e5e0d672a79e54eaf993bef3352307e4d22e1f19a7df0dd206bd1c8a8e70e618,source-0363,Federal Reserve Economic Data,gosterge,Index updated 5,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-589b9da42cc5,715b44ade57b651bf15669813988393a40bd192f34bc656c139b48ab28e9c707,source-0438,Financial Conduct Authority,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-0dbe6bf144b3,cfae0ed958ae4829c7af99817d833fe368ba60d05a9d085a44bd90931e26bf7e,source-0110,Firefox Add-ons,surum,3.0,urun,olcum,
+doc-3763bf9685fd,ce99619205a139c2865bcccca5bf02b33645ec5c5c67bc9c033e70d6fc6cb174,source-0304,Foursquare,fiyat,$100,urun,olcum,
+doc-556aa2629598,8d2375fa2bbabc792cc77e777286c1c95af51697d8e832d48e0a58cfef11a17a,source-0433,FRED,gosterge,rate unemployment inflation sofr pce m2,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-9703069da0a5,be785ce628d803e0a167338c2f853ed567936c0a92b7d6ccdd970fae54d696eb,source-0017,GitHub,paket_adi,build-your-own-x,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-9703069da0a5,be785ce628d803e0a167338c2f853ed567936c0a92b7d6ccdd970fae54d696eb,source-0017,GitHub,repo_yolu,users/codecrafters-io,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-9703069da0a5,be785ce628d803e0a167338c2f853ed567936c0a92b7d6ccdd970fae54d696eb,source-0017,GitHub,lisans,mit,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-796b0b20504a,1e40a558ba75fd4b5eb2b620a1f92c978422705464994af082aa55d7eb62345a,source-0431,Global Health Data Exchange,yil_araligi,1990-2023,kamu,olcum,
+doc-ce17a0e9d2d5,8d83748b7bb550688ba57d09e0c551a3601f664b05e0e61fa2b20cab71ae222f,source-0431,Global Health Data Exchange,gosterge,"Index (SDI) quintiles; for the years 1990,",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-ce17a0e9d2d5,8d83748b7bb550688ba57d09e0c551a3601f664b05e0e61fa2b20cab71ae222f,source-0431,Global Health Data Exchange,yil_araligi,1990-2023,kamu,olcum,
+doc-e27cc098d7d8,9a85ad1c62df05400d6c941712655a25406d8b8e2ed005557dc9ed62ec83cb92,source-0175,Gumroad,fiyat,$1,urun,olcum,
+doc-e7269b34c092,3c5500496cc5da3612b3c2e070d3082dd4f42e93f94f8494e4cc866dc53776ac,source-0435,IMF,gosterge,Index[819,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-8f38b74e4e04,a2eb1d05bb1482e3422979abcbb1227c2840c417f7f16e9a561709dbd7cfc574,source-0614,Infracost,fiyat,$51,urun,olcum,
+doc-4d7d45daba61,859b21e42453a2c9c15247eef1837316b80aec2fe6ce5083e7125b825be8c163,source-0445,Investing.com,gosterge,Rate (Jul) Act : 2.30%,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-4d7d45daba61,859b21e42453a2c9c15247eef1837316b80aec2fe6ce5083e7125b825be8c163,source-0445,Investing.com,engagement_yorum_sayisi,1.3M,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-806359170d2b,ec5b3702ffff9fd34d17b8a0fefe552b7831e7d69165253d38144ee2da1fc1b1,source-0521,itch.io,fiyat,$5,urun,olcum,
+doc-806359170d2b,ec5b3702ffff9fd34d17b8a0fefe552b7831e7d69165253d38144ee2da1fc1b1,source-0521,itch.io,surum,26.18.0,urun,olcum,
+doc-a6c1ee1facac,eac69fe08356fefb14177cc51920bac74abd1ad3fc39f4420cdd363c5cd686e9,source-0050,JetBrains Marketplace,repo_yolu,olsh/resharper-structured-logging,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-a6c1ee1facac,eac69fe08356fefb14177cc51920bac74abd1ad3fc39f4420cdd363c5cd686e9,source-0050,JetBrains Marketplace,lisans,MIT,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-5d229973497b,7e689f5a33e21a1d9e2517a2ff5e053b5c13f9ba06dc8b97d20239645b186785,source-0417,Justia Patents,gosterge,indicators (Class 116,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-5d229973497b,7e689f5a33e21a1d9e2517a2ff5e053b5c13f9ba06dc8b97d20239645b186785,source-0417,Justia Patents,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-a0974365ee29,c0261d70a18e29b5be504f3bbfdb04d3b7eb2055489dc469bc64c34ffca7d035,source-0270,KAP,gosterge,index]}} Sermaye Artırımı Azaltımı 0,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-eab705470770,fd7ba1e64ab5f204290c66e2a051b3e25157bc0fcb63c457097a765ceba3e427,source-0176,Lemon Squeezy,fiyat,$99,urun,olcum,
+doc-81dd91be53af,28ec2c4c2bef214560314771e02a23ab759c550e054e4e2cee87a3e3548a6552,source-0221,Mangools,engagement_yorum_sayisi,130+,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-cbf301388450,ad92c42a6140f720bf74f96e0c0498491d4e7dea682c3fb65a0536ba4a7f247c,source-0531,Metacritic,engagement_yildiz,31,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-9369d61eda66,22d092e8541f27c33d2798bbad73adaa93242e64828f1e6f4b613a44cccf8abd,source-0440,Nasdaq,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-4dd13d636800,406a5736f0edf66c378fc17e746b3528244f44366282647960b0f791c75295a4,source-0524,Nintendo eShop,fiyat,$34.99,urun,olcum,
+doc-416d804f012d,6d386e178b08f455d25f0f1b7f56b332c2c65dd7cd809872a967ae73b63c30a4,source-0039,npm,paket_adi,startup,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-416d804f012d,6d386e178b08f455d25f0f1b7f56b332c2c65dd7cd809872a967ae73b63c30a4,source-0039,npm,repo_yolu,camshaft/startup,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-416d804f012d,6d386e178b08f455d25f0f1b7f56b332c2c65dd7cd809872a967ae73b63c30a4,source-0039,npm,lisans,MIT,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-c4a0e64218a6,61ba0e9cb12dd1fedab2faa652bd5f5690c00d6f0cd58097a1c7998867e9fc6d,source-0441,NYSE,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-cdbf0e296de8,9ed08a782b0061356d2ec93f3196a1b796b9a421991851428f895b6e78158d3c,source-0439,Open Banking UK,gosterge,Indicators 17,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-cdbf0e296de8,9ed08a782b0061356d2ec93f3196a1b796b9a421991851428f895b6e78158d3c,source-0439,Open Banking UK,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-46a691effc9c,eb0bd7c774707876a112fe4650f676c6d410c023c559e5151323dac55a610e81,source-0439,Open Banking UK,gosterge,"indicators/ Patrick Cannon Mon, 17",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-46a691effc9c,eb0bd7c774707876a112fe4650f676c6d410c023c559e5151323dac55a610e81,source-0439,Open Banking UK,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-eff8e262d0eb,997de4cf427b041990d85c7c4497e99038890552eba99f71349b8a9bbbf4767e,source-0532,OpenCritic,engagement_yildiz,88,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-9816f9fe0c0b,c1171ab821d873c2e7f8c7478d9533fecb691eb768db6ab6e4feb2e6fceee50f,source-0366,Our World in Data,gosterge,"Indicators, July 2026",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-96a98ee308d5,0a70af9022b1d3ae6956117c7c37273c9d45743dbc0d605ac53f127e7689852e,source-0381,Rekabet Kurumu,mevzuat_atfi,Kanun,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d4416978817a,a7f09ffc9078a98faa9b288502af0c1361e76967ecac134afd61aac8dd0b470f,source-0290,Remote OK,engagement_yorum_sayisi,"10,000+",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-3c17ae13a8f0,888ca20410ef20f11542c828645c576bc5fbef27ffa7e52b644eedea99d8fe67,source-0590,Respondent,engagement_yorum_sayisi,900+,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-fef0c56163b6,7d0e8be1e77eb06516e7215a1c34786cf598bca3c2a8ef150abc57d9f56435f3,source-0152,Reviews.io,engagement_yorum_sayisi,"7,000",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-553db2de4c91,105dcb66ac453c3acd1394c7765db59e286127bc766aaf2689867efbd8b76565,source-0041,RubyGems,engagement_indirme_sayisi,"261,686,774,469",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-1055b5afe2f1,0229d73aff2beeb8b6401de572d831d5fc1a1ed8ce60ca8007b8209c8c17d867,source-0145,SaaSworthy,engagement_yorum_sayisi,3895,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-324b294b3622,e087ab39fa83c967c234286066ec98753e11c2f7340cb589effa4fb0d6191aaf,source-0610,Sastrify,fiyat,$6,urun,olcum,
+doc-d435f4218281,2eb75abd4bb9224db38484a55c32edff5626390e22c589698b1afbe9ae44b153,source-0387,Sağlık Bakanlığı,gosterge,İstatistikleri Yıllığı 2023,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d87b67b63071,2e4f711fef1115a22ef0b10cc28d57def60ac4d19ecc2432e503b8cf4a611701,source-0265,SEC EDGAR,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-0d11a262d847,00a9b4c5cee0bfcc3788dd480d61a5b602d4d496a566124f01bd69f5376fee66,source-0143,Serchen,engagement_yorum_sayisi,60,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-2f69c0b4d121,8f6c24faabfdba0ff0b8070f12b5c34272a9939ebd6befec46ff43be61456c9c,source-0226,Serpstat,engagement_yorum_sayisi,600+,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-ef841e69fd11,befa7bf625cd66b290f5c0e0eec1806405b5f4594e4460872e29b12b3282cdbc,source-0025,Server Fault,paket_adi,Information Security Meta Stack Exchange,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-bf953280336e,e0cb44ef9bf7958142b04a0e8d6fedb27262b4c2a9215f826b064dad5c383ad9,source-0114,Shopify App Store,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-dc9fc1b80472,029d423a358dd7440bcec1360a9a2011e810b419548f4bd53f1b6a8be37ad8e9,source-0149,Sitejabber,engagement_yorum_sayisi,648,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-6bfdf24750e4,ea73a8f1431f602c8addd6ed0f3abfdd8496beb69a69b8474f868eee75a4cc10,source-0035,Slashdot,engagement_indirme_sayisi,2.2B,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-421a4faf8222,d94b75cf0d60ed1a0e30d68673b087926b69008d75d9f52b905d07855ba32f4c,source-0035,Slashdot,engagement_indirme_sayisi,2.2B,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-4dc9009304b6,583ec3dea64f08410604f9ed3344d9bf1fdf3c7a3fb5b812c6447c1a022ef697,source-0146,SoftwareSuggest,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-71cc3d88346e,240c50479df1b86927bb63358c8605e88b5205173fae3531e3175752cde051ec,source-0020,SourceForge,issue_sayisi,1,teknik,olcum,
+doc-71cc3d88346e,240c50479df1b86927bb63358c8605e88b5205173fae3531e3175752cde051ec,source-0020,SourceForge,engagement_indirme_sayisi,"19,884,515",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-71cc3d88346e,240c50479df1b86927bb63358c8605e88b5205173fae3531e3175752cde051ec,source-0020,SourceForge,engagement_yorum_sayisi,999,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-49c778af34e8,45a0758601629321b335d0fc4be8d1e377738a8834fdc6b40ea3edc416921167,source-0141,SourceForge Reviews,fiyat,$19,urun,olcum,
+doc-49c778af34e8,45a0758601629321b335d0fc4be8d1e377738a8834fdc6b40ea3edc416921167,source-0141,SourceForge Reviews,engagement_yorum_sayisi,2026,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-bb4e35b2da9d,1f2e5ccb279f8ca6b17705abf6907d73f1bd95246664fbd9483c5a8bb022dbac,source-0384,SPK,yil_araligi,1976-2026,kamu,olcum,
+doc-a14f468c745f,a612222145f0ee20e6318e98947a523c5e71c41ed59c847e14e53e585aa06ee2,source-0024,Stack Exchange,paket_adi,Meta Stack Overflow,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-6e0e658a0d8c,cbc29ad8135f2c168be77c163881a37cea1b6d143deb99680e7734abed70fdc9,source-0518,Steam,fiyat,$10.49,urun,olcum,
+doc-6e0e658a0d8c,cbc29ad8135f2c168be77c163881a37cea1b6d143deb99680e7734abed70fdc9,source-0518,Steam,engagement_yildiz,34.99,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-c9d091b3b2e8,63617de51e9fb588ef2dc98c51f98e12796093fcb0f138e0ffb5a0ddbab25587,source-0527,SteamDB,fiyat,$69.99,urun,olcum,
+doc-8677b8437b13,37e608890a0eeacccf123d2c4a49113c180bb5b869090a45cce2b4f8e02af032,source-0026,Super User,paket_adi,Android Enthusiasts Meta Stack Exchange,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-dc7fb5fc93d4,2eb75abd4bb9224db38484a55c32edff5626390e22c589698b1afbe9ae44b153,source-0371,T.C. Sağlık Bakanlığı,gosterge,İstatistikleri Yıllığı 2023,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-be05f504edd2,42684de9c11e0a17d9b883eac46a2bc016938ffbaeb5e204f0cfc7587aa1bbaa,source-0370,T.C. Ticaret Bakanlığı,gosterge,Endeksi Ocak 2025,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-dfb9b9014a34,a7b8be352fd92ec37cdc61ed965625d0d4658711d499615947721f96cf7ce3be,source-0385,TCMB,gosterge,İstatistikleri 02,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-23b80fe18bc0,1d2d0d7092d67020f6f0b0d2d02d97ecc22172a00e33b57cd76473a7f7715010,source-0418,The Trademark Search Company,yil_araligi,2008-2026,kamu,olcum,
+doc-144ee3fbd835,5db0758a5738e86d80c1721b4b11da03ff67d169e0e70d56e8694972ee8ccbe9,source-0179,ThemeForest,fiyat,$69,urun,olcum,
+doc-c466768ba78c,b8a71a74e82deec6083ce61e58f317cc1a38da671a1f73019a9931ec18a3d353,source-0313,Thumbtack,fiyat,$ 110,urun,olcum,
+doc-c466768ba78c,b8a71a74e82deec6083ce61e58f317cc1a38da671a1f73019a9931ec18a3d353,source-0313,Thumbtack,engagement_yorum_sayisi,300k,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-246a804ebae7,94227c440a0c6e92e3dce57f20201864855f5cbff7774a3a1d606dea1904c251,source-0537,Together AI,lisans,MIT,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-986917f20cd2,233e53a834e8e5e1ff127572aa631e44ddad379403b6e1dbad9a2d1b6a535fb3,source-0446,TradingView,gosterge,"indicator, with +80%",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-986917f20cd2,233e53a834e8e5e1ff127572aa631e44ddad379403b6e1dbad9a2d1b6a535fb3,source-0446,TradingView,yil_araligi,2021–2025,kamu,olcum,
+doc-81d1c6f37665,ab45b487f76062e4773c5afde0300c7b92df288d9a04e6c653bddb8d9416795d,source-0157,Tripadvisor,fiyat,$1,urun,olcum,
+doc-87da683edecb,1bfd000ef72e8ea14431a6a377d2725b1778f6b263ddef6d9083889870eb4752,source-0138,TrustRadius,engagement_yorum_sayisi,48,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-9c007d60d414,267e849d06d6647aff6e96d5af90ce9345c85f3d695139e5d69802b49fafd371,source-0367,TÜİK,gosterge,İstatistikleri Temmuz 2026,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-9c007d60d414,267e849d06d6647aff6e96d5af90ce9345c85f3d695139e5d69802b49fafd371,source-0367,TÜİK,mevzuat_atfi,Kanun,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-c3a538144c9c,70e7dcf618c0a9526b54cccbf255dd5b0ebe81f9243e7c4a64b16e347704bfd3,source-0414,Türk Patent ve Marka Kurumu,yil_araligi,2022 - 2025,kamu,olcum,
+doc-30ccef1dd4e2,419dff7f20736cb6106c5d6863c6a6a807d88dd3f66cf7b3992d98804d1f4563,source-0403,UK Financial Conduct Authority,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-2556abda108b,4d61398f21e17c87b68edc023ef31bd07217fcd5d12424e29c4cb67c9e6c9ce9,source-0053,Uneed,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-2556abda108b,4d61398f21e17c87b68edc023ef31bd07217fcd5d12424e29c4cb67c9e6c9ce9,source-0053,Uneed,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-3ba40d1b28f2,07067dd3fa1ff0514291ff8d3314322f4f9c8242f67d6d2604b97f1aa23a0266,source-0357,United Nations Data,gosterge,rates PDF | CSV Updated: 22,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-8bc168bdbfee,8e82fa5aeb05b28ccbad02b5021d18771982b4803f896c93cea14806f42a175a,source-0607,Vendr,fiyat,"$1,446,521,418",urun,olcum,
+doc-78cc4784df82,070912e2a86f6a33fd3154accb1960afc064898387718873600f48d878bdf1ba,source-0609,Vertice,fiyat,$1,urun,olcum,
+doc-f15b198df4bb,79d1e8f871ff9b78171f0bfde2722db56cfb1538140740e166a31a8191c03ef1,source-0364,WHO Global Health Observatory,yil_araligi,2016-2030,kamu,olcum,
+doc-85595425b82f,97adfede2f5b2a6fb926e321e3bb33ae429d0dcce5d9fb7bc12f1ae89f41ed36,source-0115,WooCommerce Marketplace,fiyat,$79,urun,olcum,
+doc-85595425b82f,97adfede2f5b2a6fb926e321e3bb33ae429d0dcce5d9fb7bc12f1ae89f41ed36,source-0115,WooCommerce Marketplace,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-32bcb88b13b0,25e5c2c089c399867a5de7842f0e787aba28f7b97bb2805f11db26d0d718595c,source-0354,World Bank Open Data,gosterge,Indicators by Economy or Indicator Data 360,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-0efc56ad508f,0237ff7b84724f93685c6b7e38ae168541102a287a2f32b1a91d76bb0655c22a,source-0260,ZoomInfo,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-935bd7a42d03,3a735582fc48def7711681f82224830aff9c0caf4bf8bec55fe8815058b8eb6f,source-0110,Firefox Add-ons,surum,3.0,urun,olcum,
+doc-6d4693038cba,f42c66b616717f3bbcfb0aeab0248be828d3876ecd8b68b7fe38ce3e2e326558,source-0132,Airtable Marketplace,fiyat,$20,urun,olcum,
+doc-7810ae1f522d,4462688550ee16e1b3c7efc579e3ac39e7a95278f477eda4de4fce9520e8fe49,source-0122,Salesforce AppExchange,fiyat,$30,urun,olcum,
+doc-e901167e68df,57a45cb15579aa0f69512cef9620a6a8063af71b1f03848881829a9d13ba9879,source-0114,Shopify App Store,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-dfc3493d66fa,b527ea7f0fb84956cbd32b61dcb792aaf84b81ca62d0832354f58ee6fab72980,source-0065,AppSumo,fiyat,$29,urun,olcum,
+doc-dfc3493d66fa,b527ea7f0fb84956cbd32b61dcb792aaf84b81ca62d0832354f58ee6fab72980,source-0065,AppSumo,engagement_yorum_sayisi,926,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-455907975a76,8acbc165a422f696770328b8172f18dbfcd3596f23d78ace4b3d09c699f30ab0,source-0442,Borsa İstanbul,gosterge,Endeksleri 1,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-455907975a76,8acbc165a422f696770328b8172f18dbfcd3596f23d78ace4b3d09c699f30ab0,source-0442,Borsa İstanbul,yil_araligi,2013-2025,kamu,olcum,
+doc-66d9cf28f8ad,f09fe3f13b6fd7188b7fff043949714e1bf9f22624da61e98677890dd85993e3,source-0442,Borsa İstanbul,gosterge,Endeksleri 1,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-66d9cf28f8ad,f09fe3f13b6fd7188b7fff043949714e1bf9f22624da61e98677890dd85993e3,source-0442,Borsa İstanbul,yil_araligi,2013-2025,kamu,olcum,
+doc-dab87113fd9d,798c33f32f1b95171da8ff4dc49dde83c7868e3f8ec78b7ad5d78b9bc31bee23,source-0201,BuiltWith,fiyat,$ 295,urun,olcum,
+doc-e8ab51093bc5,e36528a8ed151820a5f25ba444309b3abef9793b48d4f370fb28ff5ab4305c1c,source-0162,Walmart,engagement_yorum_sayisi,84,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-e8ab51093bc5,e36528a8ed151820a5f25ba444309b3abef9793b48d4f370fb28ff5ab4305c1c,source-0162,Walmart,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-113f83ef0d49,3343969a6a917e769f482b878707bf94c84ec0989f563a30d6e120a7df8c941c,source-0021,Codeberg,engagement_yildiz,63,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-64d748f29979,ab3d127dd252108b976a5159df7d194049d91d22741b9c59ecc882574509ddd4,source-0354,World Bank Open Data,gosterge,indicators going back more than 50,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-681dcd544185,3e1657fe835a73bfeafbbab7619cefc25f9008a38086928ab947a7d1a08875b0,source-0033,DZone,paket_adi,Password Reset,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-a9f970a9e9eb,4b3fc5df34f924b23332052a937a146c3faa9daeabfb6ef180a6ca377946ce09,source-0144,FinancesOnline,fiyat,$20,urun,olcum,
+doc-499a05176bac,e82804d9ef710160bfd2bea85355eb793ddd624137d6fea030b7ebdeedb3a17f,source-0304,Foursquare,fiyat,$0,urun,olcum,
+doc-019d0ec23ee0,1913591c3822f42101f2fa94a5b78ae2883644da97365d824f2b4df5d90dd5c0,source-0363,Federal Reserve Economic Data,gosterge,Rates (910,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-019d0ec23ee0,1913591c3822f42101f2fa94a5b78ae2883644da97365d824f2b4df5d90dd5c0,source-0363,Federal Reserve Economic Data,yil_araligi,1914-1941,kamu,olcum,
+doc-94624c6b44a2,1913591c3822f42101f2fa94a5b78ae2883644da97365d824f2b4df5d90dd5c0,source-0433,FRED,gosterge,Rates (910,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-94624c6b44a2,1913591c3822f42101f2fa94a5b78ae2883644da97365d824f2b4df5d90dd5c0,source-0433,FRED,yil_araligi,1914-1941,kamu,olcum,
+doc-ebbe4754b7b6,84801fd9129ea41a5c648d3eab060a4b0a88caecb0c5507a818493a1819e109d,source-0175,Gumroad,fiyat,$0.50,urun,olcum,
+doc-54b396ca9e05,c8da45ab57165f83f067c91795dc7f47f9b63d0bd53d0506e2f32cc13b6cd358,source-0404,UK Information Commissioner's Office,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-e29fb3582f28,1da5d1c60fb3bd760ee9095f0b00715020c63ce4f33af6751c68c05b015ce5d3,source-0521,itch.io,engagement_yorum_sayisi,25,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-90083462f3a5,7b47edbf0fc9d5e29d8a40c6b687baeac7516f0c2ae588a52cd46cf36a0a3d5e,source-0230,Glimpse,engagement_yildiz,4.9,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-4fc831b4f4af,c4dbd449a53a6d36156ecfb6cd4e413a62310b41a26b6db65594f854bb146c74,source-0128,monday.com Apps Marketplace,engagement_yorum_sayisi,"10,000+",etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-e59b965e8d8b,59fbd8a3fe6a1963d618e0cf73c3dde63ab8d6089dfe0942ad386e70651b9105,source-0128,monday.com Apps Marketplace,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-d2ca5716b0e6,590401014c4c23b051f11bf053cd4856eaac4e650bf7bee7c81bf4332d1b9ba4,source-0128,monday.com Apps Marketplace,fiyat,€ 0,urun,olcum,
+doc-e27c5a693187,3d7c00c1add76ac97ccf8e515f379a7098dbd28e604dd4e69f6e08ce86a91c92,source-0253,PitchBook,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-adb49b47bd9a,456b1170149ea3f1ccc4a1e76a856130dcd6c168142e1d65df97d7f3965a4ef2,source-0124,Slack Marketplace,fiyat,0 USD,urun,olcum,
+doc-65997616edf3,9b90594dea59666caf9783a4f37e30d0d82c2b2bf73d70a338678c44814085f2,source-0020,SourceForge,repo_yolu,bruderstein/npppluginmanager,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-65997616edf3,9b90594dea59666caf9783a4f37e30d0d82c2b2bf73d70a338678c44814085f2,source-0020,SourceForge,engagement_yorum_sayisi,225,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-40b43fe59315,e543b8c3abb861e028d53de9a9a068e3fb36d82aaddf151e7f8211eb846b7d3e,source-0141,SourceForge Reviews,surum,1.0.0,urun,olcum,
+doc-40b43fe59315,e543b8c3abb861e028d53de9a9a068e3fb36d82aaddf151e7f8211eb846b7d3e,source-0141,SourceForge Reviews,engagement_yorum_sayisi,225,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-a47cfd47d217,ff1787f710ff993d38b7595c6d3dd9dcf52104316e55a6e2f52b75c01ae2be04,source-0518,Steam,fiyat,$10.49,urun,olcum,
+doc-d92bd058db92,b3e9fd1af99a56579e6510dca16af38900fc1730769352e6f7f7285b81e0daac,source-0147,Tekpon,fiyat,$ 7,urun,olcum,
+doc-44ab0f2f1e8f,7a9dd54dba85fcdd443a9c3ec59d6b1fe70fc26caa133192d3b8c7ccd69010ec,source-0147,Tekpon,fiyat,$249,urun,olcum,
+doc-d39a0c35423e,bf9eb4a0db53d7283173638f36b820b14fd583eeb8415825145b121c3c75c61e,source-0178,Envato Market,fiyat,"$1,254,342,673",urun,olcum,
+doc-9f46b484554e,81585bb7dfe2ea492f0960d43f00d67e19deabd90dc4f1b631fcd8b1dacf21c5,source-0179,ThemeForest,fiyat,"$1,254,342,673",urun,olcum,
+doc-72d46efc6184,6368ba5c7579fe06bf6d9df3e5802decdbd05211e0eadc20e4fad271af73f9d5,source-0115,WooCommerce Marketplace,fiyat,$79,urun,olcum,
+doc-72d46efc6184,6368ba5c7579fe06bf6d9df3e5802decdbd05211e0eadc20e4fad271af73f9d5,source-0115,WooCommerce Marketplace,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-ba1ef8ade27a,ba99ae381f851f4e1197c005e1d099fb37f2495f6c829a5f5d2e16e10fbc7fdc,source-0115,WooCommerce Marketplace,fiyat,$25,urun,olcum,
+doc-4b4e8843b1dd,3dce82230c320dcd3d6f148ef6ff2472a626c67da922ca8588ce505be17ff1b2,source-0133,Canva Apps Marketplace,ozellik_basligi,Features,urun,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-4c83ca306de4,17febdd19607e095295fe3cd4659c0844379e9c0a5d458fbc73353bb7b5253b9,source-0133,Canva Apps Marketplace,ozellik_basligi,Features,urun,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-43c45e205db6,f7a6c9d38b59d835b99be4b8a1409d9f4f8196f375a76c927d88945dffcfbaea,source-0133,Canva Apps Marketplace,fiyat,"$2,000",urun,olcum,
+doc-43c45e205db6,f7a6c9d38b59d835b99be4b8a1409d9f4f8196f375a76c927d88945dffcfbaea,source-0133,Canva Apps Marketplace,ozellik_basligi,Features,urun,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-a83398989efe,c8e14d3de1e7b2d6011afd2f51c44fd96c13569e1b9eea59ab3df2ebd680142b,source-0378,Destatis,gosterge,rate Inflation rate 2,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-2904ec61cc76,8536c299bd7e461a79a2dfb50c6e162ff3fdaf851f3f4640a54d619e590d908b,source-0266,Companies House,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-74e670d1bf2f,93ec3ff77948e831fb30c924d9361cc843b297c2e922c7e90832439bed16a0fe,source-0266,Companies House,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-091116dfa9fa,8536c299bd7e461a79a2dfb50c6e162ff3fdaf851f3f4640a54d619e590d908b,source-0405,Competition and Markets Authority,mevzuat_atfi,regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d1543d4ddf34,8d3af7330f28fb155fe82e742e249a27349a8f2fc5c9b62d5719b08ad601aeb0,source-0315,Houzz,fiyat,$99,urun,olcum,
+doc-43baf08c5f73,9e550e11d43066ac8c251f12476654810414c710284dd6facf655a9472c6ca3e,source-0614,Infracost,fiyat,$250,urun,olcum,
+doc-2358b8573fe0,5faabead248d29d1a4be015e0e3e2d1830b865029119a95d4754a9f51c8b9c08,source-0176,Lemon Squeezy,fiyat,$0,urun,olcum,
+doc-2358b8573fe0,5faabead248d29d1a4be015e0e3e2d1830b865029119a95d4754a9f51c8b9c08,source-0176,Lemon Squeezy,ozellik_basligi,Features,urun,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-03404e7fc8c6,db622d132f625a9729c7bc97dda4b907f3b6e60769af9a0a2bdbfee15c6062c0,source-0129,Notion Integrations,fiyat,$0,urun,olcum,
+doc-f7bb7655ef63,a5d6c031a75eaf246fc56a71b59d785d67c519bc210a4d2b246bda6b40d987b1,source-0441,NYSE,gosterge,"index provider globally, with over $2",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-f7bb7655ef63,a5d6c031a75eaf246fc56a71b59d785d67c519bc210a4d2b246bda6b40d987b1,source-0441,NYSE,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-3d048c9877e6,a5ee70c498ddb65e3efc7aa5fc8c16afdcfc38932131c84b7ffb37215b819980,source-0441,NYSE,mevzuat_atfi,Regulation,kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d7c7597d0db9,2e545c4386a9e73d55ea6c002981cbce0e56f61dff9f3a35a91816d321f9e2fd,source-0610,Sastrify,fiyat,$6,urun,olcum,
+doc-7d6cd27f0d5c,ceeec733a4b0acaa8ad6e55aadd2528561c37c040bbe2031cf26a85c46d4f2fa,source-0610,Sastrify,fiyat,$6,urun,olcum,
+doc-a1f4eb592091,f254d54985ecd608df16f2ad406866097be707d07179d615a301ff93f0ed5174,source-0143,Serchen,engagement_yorum_sayisi,155,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-19ee1e8ff15e,e235ebe2a00853e16228857ce2c5b5fdaf8bb15d5df770a28e8b893e3c132219,source-0225,Sistrix,engagement_yildiz,4.0,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-24c70a10c077,1d3cb53aaab99be26a91f4109ab4a8d6b5c844c9eeebaaf8fbe4e9938194a9d3,source-0607,Vendr,fiyat,$1.2,urun,olcum,
+doc-5fc19743b15d,a0a009d527c1ddab4851728c055191d9504b9ec6313740815dcf48cd4efebbc2,source-0609,Vertice,fiyat,$500,urun,olcum,
+doc-4ed6a5fb25e1,83a2970cbf07c5a900c0351414bc66432191ec988d626be953124ee236f772a8,source-0609,Vertice,fiyat,$3.4,urun,olcum,
+doc-f58c9684ab2e,8b6170307997c203daa738c5443a21be596d1689e204f08b79199a1ac6c5cf6b,source-0609,Vertice,fiyat,$140,urun,olcum,
+doc-16ab26aeaa1a,3e2a70c632b7d6c5faefc416499e85a0d12bdc8d03a6a54ec4a7e9414dd05ea5,source-0202,Wappalyzer,fiyat,$250,urun,olcum,
+doc-af5b04124cef,80115248bdc4ef2efd8535424f55ca2e9b54f9f2b8da974708c2140fb8e4e0ae,source-0434,World Bank,gosterge,"Index (HCI) scores at 0.32,",kamu,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-af5b04124cef,80115248bdc4ef2efd8535424f55ca2e9b54f9f2b8da974708c2140fb8e4e0ae,source-0434,World Bank,yil_araligi,2017-2022,kamu,olcum,
+doc-a4e66a2d71d8,45f8934d3732d41b7224a00a566ba3eda1eb170e8d621e954f18ad3cd7299d07,source-0260,ZoomInfo,engagement_yorum_sayisi,2,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-98395aef3c45,83e87e8e8c543693f7339497c67d878111d2afc86e4dee22fc5e98eada929655,source-0130,Zapier App Directory,engagement_yorum_sayisi,73,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-dc1d4e5011bd,52a67b6f83fcdff7cef512df88d6c9f6760898f8655c82cb4eaac5a89bdfac55,source-0130,Zapier App Directory,fiyat,$0,urun,olcum,

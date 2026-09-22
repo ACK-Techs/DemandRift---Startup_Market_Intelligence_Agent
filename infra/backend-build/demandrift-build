@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+# Installed by an administrator, never executed from the fetched checkout.
+set -Eeuo pipefail
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+export HOME=/root
+export GIT_TERMINAL_PROMPT=0
+umask 077
+request=${SSH_ORIGINAL_COMMAND:-}
+if [[ ! "$request" =~ ^build\ ([0-9a-f]{40})$ ]]; then
+  echo 'Rejected: expected build <40-character commit SHA>' >&2
+  exit 64
+fi
+sha=${BASH_REMATCH[1]}
+base=/opt/demandrift-build
+exec 9>"$base/build.lock"
+flock -w 600 9 || exit 75
+log="$base/logs/$(date -u +%Y%m%dT%H%M%SZ)-$sha.log"
+exec > >(tee "$log") 2>&1
+printf 'Requested commit: %s\n' "$sha"
+timeout 180s git -C "$base/repository" fetch --depth=1 origin main
+head=$(git -C "$base/repository" rev-parse FETCH_HEAD)
+if [[ "$sha" != "$head" ]]; then
+  echo 'Rejected: commit is not the current GitHub main head'
+  exit 65
+fi
+context=$(mktemp -d "$base/context.XXXXXXXX")
+container="demandrift-check-${sha:0:12}"
+cleanup() {
+  docker rm -f "$container" >/dev/null 2>&1 || true
+  rm -rf -- "$context"
+}
+trap cleanup EXIT
+mkdir "$context/lab"
+# Only ordinary top-level source/fixture blobs; no checkout hooks or symlinks.
+python3 - "$base/repository" "$sha" "$context/lab" <<'PY'
+import pathlib, subprocess, sys
+repo, sha, target = sys.argv[1:]
+raw = subprocess.check_output(['git','-C',repo,'ls-tree','-rz',sha])
+entries = [entry.split(b'\t',1) for entry in raw.split(b'\0') if entry]
+roots = ['faz-1-fikir-ve-arastirma/veri-laboratuvari/', 'research/source-access-lab/']
+root = next((r for r in roots if any(path.decode().startswith(r) for _,path in entries)), None)
+if root is None: raise SystemExit('No supported data laboratory found')
+count = 0
+total = 0
+for meta, rawpath in entries:
+    path = rawpath.decode()
+    if not path.startswith(root): continue
+    name = path[len(root):]
+    if '/' in name or pathlib.Path(name).suffix not in {'.py','.csv','.json'}: continue
+    mode, kind, blob = meta.split()
+    if mode not in {b'100644',b'100755'} or kind != b'blob':
+        raise SystemExit('Non-regular source rejected: ' + path)
+    size = int(subprocess.check_output(['git','-C',repo,'cat-file','-s',blob.decode()]))
+    total += size
+    if size > 32 * 1024**2 or total > 128 * 1024**2 or count >= 1000:
+        raise SystemExit('Source context exceeds build limits')
+    data = subprocess.check_output(['git','-C',repo,'cat-file','blob',blob.decode()])
+    pathlib.Path(target, name).write_bytes(data)
+    count += 1
+if not pathlib.Path(target,'test_query_templates.py').is_file():
+    raise SystemExit('Required offline test missing')
+print(f'Packaged {count} files from {root}; frontend excluded')
+PY
+cp "$base/Dockerfile" "$context/Dockerfile"
+image="demandrift-lab:$sha"
+timeout --signal=TERM --kill-after=15s 600s docker build --network=none --label "org.opencontainers.image.revision=$sha" -t "$image" "$context"
+timeout --signal=TERM --kill-after=15s 300s docker run --name "$container" --rm \
+  --network=none --read-only --cap-drop=ALL --security-opt=no-new-privileges \
+  --pids-limit=128 --memory=512m --cpus=1 \
+  --tmpfs /tmp:rw,noexec,nosuid,size=64m "$image"
+# Never move the accepted pointer on a failed build/test.
+printf '%s\n' "$sha" > "$base/last-successful-sha.tmp"
+mv "$base/last-successful-sha.tmp" "$base/last-successful-sha"
+printf 'SUCCESS commit=%s image=%s\n' "$sha" "$image"

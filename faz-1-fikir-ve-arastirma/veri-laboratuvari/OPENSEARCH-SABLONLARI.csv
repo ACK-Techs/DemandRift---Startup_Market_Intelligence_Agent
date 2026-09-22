@@ -1,0 +1,37 @@
+source_id,ad,tanim_adresi,sablon,not,alindi
+source-0486,Airbnb,https://www.airbnb.com/opensearch.xml,https://www.airbnb.com/s?location={searchTerms},,2026-09-05
+source-0059,AlternativeTo,https://alternativeto.net/static/opensearch.xml,,http_403,2026-09-05
+source-0121,Atlassian Marketplace,https://marketplace.atlassian.com/amkt-frontend-static/public/opensearch.xml,https://marketplace.atlassian.com/search?query={searchTerms},,2026-09-05
+source-0001,Brave Search,https://cdn.search.brave.com/serp/v2/_app/immutable/assets/opensearch.BqerUIGT.xml,https://search.brave.com/search?q={searchTerms},,2026-09-05
+source-0462,Class Central,https://www.classcentral.com/opensearch.xml,https://www.classcentral.com/search?q={searchTerms},,2026-09-05
+source-0266,Companies House,https://www.gov.uk/search/opensearch.xml,,http_404,2026-09-05
+source-0405,Competition and Markets Authority,https://www.gov.uk/search/opensearch.xml,,http_404,2026-09-05
+source-0042,crates.io,https://crates.io/opensearch.xml,https://crates.io/search?q={searchTerms},,2026-09-05
+source-0029,Dev.to,https://dev.to/open-search.xml,https://dev.to/search?q={searchTerms},,2026-09-05
+source-0351,Dryad,https://datadryad.org/search/description.xml,,http_403,2026-09-05
+source-0181,Etsy Reviews,https://www.etsy.com/osdd.php,https://www.etsy.com/search?ref=tab_search&q={searchTerms},,2026-09-05
+source-0106,F-Droid,https://f-droid.org/en/osd.xml,https://search.f-droid.org/?q={searchTerms}&opensearch=1,,2026-09-05
+source-0110,Firefox Add-ons,https://addons.mozilla.org/en-US/firefox/opensearch.xml,https://addons.mozilla.org/en-US/firefox/search/?q={searchTerms},,2026-09-05
+source-0097,Google Play Store,https://play.google.com/opensearch.xml,https://play.google.com/store/search?q={searchTerms}&utm_source=opensearch,,2026-09-05
+source-0508,Grubhub,https://www.grubhub.com/opensearch.xml,,"xml_ayristirilamadi: not well-formed (invalid token): line 2, column 1865",2026-09-05
+source-0175,Gumroad,https://gumroad.com/opensearch.xml,https://gumroad.com/discover?query={searchTerms},,2026-09-05
+source-0430,HealthData.gov,https://healthdata.gov/opensearch.xml,//healthdata.gov/browse?q={searchTerms},,2026-09-05
+source-0047,Libraries.io,https://libraries.io/opensearch.xml,https://libraries.io/search?q={searchTerms},,2026-09-05
+source-0088,Medium,https://medium.com/osd.xml,https://medium.com/search?q={searchTerms}&ref=opensearch,,2026-09-05
+source-0008,Mojeek,https://www.mojeek.com/opensearch.xml,https://www.mojeek.com/search?q={searchTerms},,2026-09-05
+source-0044,NuGet Gallery,https://www.nuget.org/opensearch.xml,,http_406,2026-09-05
+source-0303,OpenStreetMap,https://www.openstreetmap.org/assets/osm-42b7b3fbcee2193e455a773db6cd3d34a2f48ca94547fed54901dd9d8307b02b.xml,,searchTerms_iceren_url_yok,2026-09-05
+source-0040,PyPI,https://pypi.org/opensearch.xml,https://pypi.org/search/?q={searchTerms},,2026-09-05
+source-0290,Remote OK,https://remoteok.com/opensearch.xml,https://remoteok.com/remote-{searchTerms}-jobs,,2026-09-05
+source-0338,ResearchGate,https://www.researchgate.net/application.DownloadOpenSearchPlugin.html,https://www.researchgate.net/search.Search.html?query={searchTerms},,2026-09-05
+source-0041,RubyGems,https://rubygems.org/opensearch.xml,https://rubygems.org/search?query={searchTerms},,2026-09-05
+source-0058,SaaSHub,https://www.saashub.com/opensearch.xml,https://www.saashub.com/search?q={searchTerms}&ref=opensearch,,2026-09-05
+source-0297,Secretcv,https://www.secretcv.com/assets/xml/odesc.xml,https://www.secretcv.com/is-ilanlari/?k={searchTerms},,2026-09-05
+source-0218,Semrush,https://www.semrush.com/__static__/semrush-opensearch.xml,https://www.semrush.com/search/?q={searchTerms},,2026-09-05
+source-0194,Shodan,https://www.shodan.io/static/opensearch-07a9aa48.xml,https://www.shodan.io/search?query={searchTerms}&ref=os,,2026-09-05
+source-0527,SteamDB,https://steamdb.info/opensearch.xml,https://steamdb.info/search/?q={searchTerms}&ref=opensearch,,2026-09-05
+source-0629,TÜSİAD,https://www.tusiad.org/en/component/search/?id=7&amp;Itemid=310&amp;format=opensearch,https://www.tusiad.org/index.php?option=com_search&searchword={searchTerms}&Itemid=381,,2026-09-05
+source-0357,United Nations Data,https://data.un.org/OpenSearch.xml,,http_500,2026-09-05
+source-0007,Yandex,https://yandex.com/opensearch.xml,https://yandex.com/search/?text={searchTerms}&from=os,,2026-09-05
+source-0306,Yandex Maps,https://yandex.com/opensearch.xml,https://yandex.com/search/?text={searchTerms}&from=os,,2026-09-05
+source-0083,YouTube,https://www.youtube.com/opensearch?locale=tr_TR,https://www.youtube.com/results?search_query={searchTerms}&page={startPage?}&utm_source=opensearch,,2026-09-05

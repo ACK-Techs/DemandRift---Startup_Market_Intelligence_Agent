@@ -1,0 +1,390 @@
+source_id,ad,niyet,url,origin,entry_path
+source-0117,Wix App Market,competitor_discovery,https://www.wix.com/marketplace,https://www.wix.com,/marketplace
+source-0117,Wix App Market,dissatisfaction,https://www.wix.com/app-market/reviews,https://www.wix.com,/app-market/reviews
+source-0117,Wix App Market,existing_alternatives,https://www.wix.com/compare/hub/bigcommerce,https://www.wix.com,/compare/hub/bigcommerce
+source-0117,Wix App Market,observed_market_pricing,https://www.wix.com/plans,https://www.wix.com,/plans
+source-0117,Wix App Market,problem_demand,https://www.wix.com/app-market/forum,https://www.wix.com,/app-market/forum
+source-0117,Wix App Market,use_case,https://www.wix.com/business/solutions/bio-website,https://www.wix.com,/business/solutions/bio-website
+source-0091,Slack,competitor_discovery,https://slack.com/integrations,https://slack.com,/integrations
+source-0091,Slack,existing_alternatives,https://slack.com/compare/slack-vs-email,https://slack.com,/compare/slack-vs-email
+source-0091,Slack,observed_market_pricing,https://slack.com/pricing,https://slack.com,/pricing
+source-0091,Slack,problem_demand,https://slack.com/community,https://slack.com,/community
+source-0091,Slack,use_case,https://slack.com/solutions,https://slack.com,/solutions
+source-0128,monday.com Apps Marketplace,competitor_discovery,https://monday.com/integrations,https://monday.com,/integrations
+source-0128,monday.com Apps Marketplace,dissatisfaction,https://monday.com/reviews,https://monday.com,/reviews
+source-0128,monday.com Apps Marketplace,existing_alternatives,https://monday.com/alternative,https://monday.com,/alternative
+source-0128,monday.com Apps Marketplace,observed_market_pricing,https://monday.com/pricing,https://monday.com,/pricing
+source-0128,monday.com Apps Marketplace,use_case,https://monday.com/customers/alachua-county,https://monday.com,/customers/alachua-county
+source-0287,Ashby Jobs,competitor_discovery,https://www.ashbyhq.com/integrations,https://www.ashbyhq.com,/integrations
+source-0287,Ashby Jobs,existing_alternatives,https://www.ashbyhq.com/compare/ashby-vs-greenhouse,https://www.ashbyhq.com,/compare/ashby-vs-greenhouse
+source-0287,Ashby Jobs,observed_market_pricing,https://www.ashbyhq.com/pricing,https://www.ashbyhq.com,/pricing
+source-0287,Ashby Jobs,problem_demand,https://www.ashbyhq.com/resources/community,https://www.ashbyhq.com,/resources/community
+source-0287,Ashby Jobs,use_case,https://www.ashbyhq.com/customers,https://www.ashbyhq.com,/customers
+source-0583,Typeform,competitor_discovery,https://www.typeform.com/blog-category/product,https://www.typeform.com,/blog-category/product
+source-0583,Typeform,dissatisfaction,https://www.typeform.com/templates-sub-category/feedback,https://www.typeform.com,/templates-sub-category/feedback
+source-0583,Typeform,existing_alternatives,https://www.typeform.com/try/alternative/lf/best-software-ftf,https://www.typeform.com,/try/alternative/lf/best-software-ftf
+source-0583,Typeform,observed_market_pricing,https://www.typeform.com/pricing,https://www.typeform.com,/pricing
+source-0583,Typeform,use_case,https://www.typeform.com/blog-category/customer,https://www.typeform.com,/blog-category/customer
+source-0596,dscout,competitor_discovery,https://dscout.com/platform/integrations,https://dscout.com,/platform/integrations
+source-0596,dscout,dissatisfaction,https://dscout.com/lp/reviews,https://dscout.com,/lp/reviews
+source-0596,dscout,observed_market_pricing,https://dscout.com/pricing,https://dscout.com,/pricing
+source-0596,dscout,problem_demand,https://dscout.com/topics/agency,https://dscout.com,/topics/agency
+source-0596,dscout,use_case,https://dscout.com/customers,https://dscout.com,/customers
+source-0597,Wynter,competitor_discovery,https://wynter.com/products/b2b-user-testing,https://wynter.com,/products/b2b-user-testing
+source-0597,Wynter,dissatisfaction,https://wynter.com/solutions/reviews,https://wynter.com,/solutions/reviews
+source-0597,Wynter,existing_alternatives,https://wynter.com/compare,https://wynter.com,/compare
+source-0597,Wynter,observed_market_pricing,https://wynter.com/pricing,https://wynter.com,/pricing
+source-0597,Wynter,use_case,https://wynter.com/case-studies,https://wynter.com,/case-studies
+source-0609,Vertice,competitor_discovery,https://www.vertice.one/platform/integrations,https://www.vertice.one,/platform/integrations
+source-0609,Vertice,existing_alternatives,https://www.vertice.one/comparison/vertice-vs-omnea,https://www.vertice.one,/comparison/vertice-vs-omnea
+source-0609,Vertice,observed_market_pricing,https://www.vertice.one/pricing,https://www.vertice.one,/pricing
+source-0609,Vertice,problem_demand,https://www.vertice.one/community,https://www.vertice.one,/community
+source-0609,Vertice,use_case,https://www.vertice.one/solutions/cloud-cost-management-software,https://www.vertice.one,/solutions/cloud-cost-management-software
+source-0011,Tavily,competitor_discovery,https://www.tavily.com/product,https://www.tavily.com,/product
+source-0011,Tavily,observed_market_pricing,https://www.tavily.com/pricing,https://www.tavily.com,/pricing
+source-0011,Tavily,problem_demand,https://www.tavily.com/community,https://www.tavily.com,/community
+source-0011,Tavily,use_case,https://www.tavily.com/use-cases,https://www.tavily.com,/use-cases
+source-0053,Uneed,competitor_discovery,https://www.uneed.best/categories/business,https://www.uneed.best,/categories/business
+source-0053,Uneed,existing_alternatives,https://www.uneed.best/alternatives,https://www.uneed.best,/alternatives
+source-0053,Uneed,observed_market_pricing,https://www.uneed.best/for-sale,https://www.uneed.best,/for-sale
+source-0053,Uneed,problem_demand,https://www.uneed.best/community,https://www.uneed.best,/community
+source-0118,Squarespace Extensions,competitor_discovery,https://www.squarespace.com/designer/browse,https://www.squarespace.com,/designer/browse
+source-0118,Squarespace Extensions,existing_alternatives,https://www.squarespace.com/compare,https://www.squarespace.com,/compare
+source-0118,Squarespace Extensions,observed_market_pricing,https://www.squarespace.com/pricing,https://www.squarespace.com,/pricing
+source-0118,Squarespace Extensions,use_case,https://www.squarespace.com/solutions/beauty,https://www.squarespace.com,/solutions/beauty
+source-0129,Notion Integrations,competitor_discovery,https://www.notion.com/product,https://www.notion.com,/product
+source-0129,Notion Integrations,observed_market_pricing,https://www.notion.com/pricing,https://www.notion.com,/pricing
+source-0129,Notion Integrations,problem_demand,https://www.notion.com/community,https://www.notion.com,/community
+source-0129,Notion Integrations,use_case,https://www.notion.com/customers,https://www.notion.com,/customers
+source-0130,Zapier App Directory,competitor_discovery,https://zapier.com/apps,https://zapier.com,/apps
+source-0130,Zapier App Directory,dissatisfaction,https://zapier.com/apps/categories/reviews,https://zapier.com,/apps/categories/reviews
+source-0130,Zapier App Directory,observed_market_pricing,https://zapier.com/pricing,https://zapier.com,/pricing
+source-0130,Zapier App Directory,use_case,https://zapier.com/solutions/customer-support,https://zapier.com,/solutions/customer-support
+source-0132,Airtable Marketplace,competitor_discovery,https://airtable.com/marketplace,https://airtable.com,/marketplace
+source-0132,Airtable Marketplace,existing_alternatives,https://www.airtable.com/lp/compare/airtable-for-marketing-operations-vs-others,https://www.airtable.com,/lp/compare/airtable-for-marketing-operations-vs-others
+source-0132,Airtable Marketplace,observed_market_pricing,https://airtable.com/pricing,https://airtable.com,/pricing
+source-0132,Airtable Marketplace,use_case,https://www.airtable.com/solutions,https://www.airtable.com,/solutions
+source-0141,SourceForge Reviews,competitor_discovery,https://sourceforge.net/directory/,https://sourceforge.net,/directory/
+source-0141,SourceForge Reviews,dissatisfaction,https://sourceforge.net/reviews,https://sourceforge.net,/reviews
+source-0141,SourceForge Reviews,observed_market_pricing,https://sourceforge.net/software/vendors/pricing/,https://sourceforge.net,/software/vendors/pricing/
+source-0141,SourceForge Reviews,use_case,https://sourceforge.net/software/case-studies/,https://sourceforge.net,/software/case-studies/
+source-0217,Ahrefs,competitor_discovery,https://ahrefs.com/blog/category/product-blog/,https://ahrefs.com,/blog/category/product-blog/
+source-0217,Ahrefs,dissatisfaction,https://ahrefs.com/reviews,https://ahrefs.com,/reviews
+source-0217,Ahrefs,observed_market_pricing,https://ahrefs.com/pricing,https://ahrefs.com,/pricing
+source-0217,Ahrefs,use_case,https://ahrefs.com/use-cases,https://ahrefs.com,/use-cases
+source-0218,Semrush,competitor_discovery,https://www.semrush.com/apps/,https://www.semrush.com,/apps/
+source-0218,Semrush,existing_alternatives,https://www.semrush.com/vs/,https://www.semrush.com,/vs/
+source-0218,Semrush,observed_market_pricing,https://www.semrush.com/pricing/,https://www.semrush.com,/pricing/
+source-0218,Semrush,use_case,https://www.semrush.com/solutions/,https://www.semrush.com,/solutions/
+source-0219,Moz,competitor_discovery,https://moz.com/products,https://moz.com,/products
+source-0219,Moz,observed_market_pricing,https://moz.com/products/api/pricing,https://moz.com,/products/api/pricing
+source-0219,Moz,problem_demand,https://moz.com/community/q/my-questions,https://moz.com,/community/q/my-questions
+source-0219,Moz,use_case,https://moz.com/case-studies/chesapeake-regional-health,https://moz.com,/case-studies/chesapeake-regional-health
+source-0226,Serpstat,competitor_discovery,https://serpstat.com/blog/category/analytics/,https://serpstat.com,/blog/category/analytics/
+source-0226,Serpstat,dissatisfaction,https://serpstat.com/reviews/,https://serpstat.com,/reviews/
+source-0226,Serpstat,observed_market_pricing,https://serpstat.com/page/plans/,https://serpstat.com,/page/plans/
+source-0226,Serpstat,use_case,https://serpstat.com/use-cases/,https://serpstat.com,/use-cases/
+source-0229,Exploding Topics,competitor_discovery,https://explodingtopics.com/feature/integrations,https://explodingtopics.com,/feature/integrations
+source-0229,Exploding Topics,observed_market_pricing,https://explodingtopics.com/pricing,https://explodingtopics.com,/pricing
+source-0229,Exploding Topics,problem_demand,https://explodingtopics.com/topic,https://explodingtopics.com,/topic
+source-0229,Exploding Topics,use_case,https://explodingtopics.com/case-studies,https://explodingtopics.com,/case-studies
+source-0253,PitchBook,competitor_discovery,https://pitchbook.com/products,https://pitchbook.com,/products
+source-0253,PitchBook,existing_alternatives,https://pitchbook.com/compare/pitchbook-vs-preqin,https://pitchbook.com,/compare/pitchbook-vs-preqin
+source-0253,PitchBook,observed_market_pricing,https://pitchbook.com/pricing,https://pitchbook.com,/pricing
+source-0253,PitchBook,use_case,https://pitchbook.com/case-studies,https://pitchbook.com,/case-studies
+source-0255,Dealroom,competitor_discovery,https://dealroom.net/product,https://dealroom.net,/product
+source-0255,Dealroom,existing_alternatives,https://dealroom.net/compare/dealroom-vs-datasite,https://dealroom.net,/compare/dealroom-vs-datasite
+source-0255,Dealroom,observed_market_pricing,https://dealroom.net/products/pricing,https://dealroom.net,/products/pricing
+source-0255,Dealroom,use_case,https://dealroom.net/case-studies,https://dealroom.net,/case-studies
+source-0262,Clearbit,competitor_discovery,https://clearbit.com/integrations,https://clearbit.com,/integrations
+source-0262,Clearbit,existing_alternatives,https://clearbit.com/alternatives/data-com-vs-clearbit,https://clearbit.com,/alternatives/data-com-vs-clearbit
+source-0262,Clearbit,observed_market_pricing,https://clearbit.com/pricing,https://clearbit.com,/pricing
+source-0262,Clearbit,use_case,https://clearbit.com/customers,https://clearbit.com,/customers
+source-0286,Lever Jobs,competitor_discovery,https://www.lever.co/marketplace,https://www.lever.co,/marketplace
+source-0286,Lever Jobs,existing_alternatives,https://www.lever.co/alternative/ashby-alternatives,https://www.lever.co,/alternative/ashby-alternatives
+source-0286,Lever Jobs,observed_market_pricing,https://www.lever.co/pricing,https://www.lever.co,/pricing
+source-0286,Lever Jobs,use_case,https://www.lever.co/case-studies,https://www.lever.co,/case-studies
+source-0289,SmartRecruiters,competitor_discovery,https://www.smartrecruiters.com/recruiting-software/integrations/,https://www.smartrecruiters.com,/recruiting-software/integrations/
+source-0289,SmartRecruiters,observed_market_pricing,https://www.smartrecruiters.com/pricing/,https://www.smartrecruiters.com,/pricing/
+source-0289,SmartRecruiters,problem_demand,https://www.smartrecruiters.com/topics/ai/,https://www.smartrecruiters.com,/topics/ai/
+source-0289,SmartRecruiters,use_case,https://www.smartrecruiters.com/about-us/customers/,https://www.smartrecruiters.com,/about-us/customers/
+source-0304,Foursquare,competitor_discovery,https://foursquare.com/products/,https://foursquare.com,/products/
+source-0304,Foursquare,observed_market_pricing,https://foursquare.com/pricing/,https://foursquare.com,/pricing/
+source-0304,Foursquare,problem_demand,https://foursquare.com/developer/community/,https://foursquare.com,/developer/community/
+source-0304,Foursquare,use_case,https://foursquare.com/resources/case-studies/,https://foursquare.com,/resources/case-studies/
+source-0589,User Interviews,competitor_discovery,https://www.userinterviews.com/browse,https://www.userinterviews.com,/browse
+source-0589,User Interviews,existing_alternatives,https://www.userinterviews.com/compare,https://www.userinterviews.com,/compare
+source-0589,User Interviews,observed_market_pricing,https://www.userinterviews.com/pricing,https://www.userinterviews.com,/pricing
+source-0589,User Interviews,use_case,https://www.userinterviews.com/customers,https://www.userinterviews.com,/customers
+source-0601,Great Question,competitor_discovery,https://greatquestion.co/integrations,https://greatquestion.co,/integrations
+source-0601,Great Question,existing_alternatives,https://greatquestion.co/compare/great-question-vs-usertesting,https://greatquestion.co,/compare/great-question-vs-usertesting
+source-0601,Great Question,observed_market_pricing,https://greatquestion.co/pricing,https://greatquestion.co,/pricing
+source-0601,Great Question,use_case,https://greatquestion.co/customers,https://greatquestion.co,/customers
+source-0602,Sprig,competitor_discovery,https://sprig.com/integrations,https://sprig.com,/integrations
+source-0602,Sprig,existing_alternatives,https://sprig.com/compare,https://sprig.com,/compare
+source-0602,Sprig,observed_market_pricing,https://sprig.com/pricing,https://sprig.com,/pricing
+source-0602,Sprig,use_case,https://sprig.com/customers,https://sprig.com,/customers
+source-0605,UsabilityHub,competitor_discovery,https://www.lyssna.com/integrations/,https://www.lyssna.com,/integrations/
+source-0605,UsabilityHub,existing_alternatives,https://www.lyssna.com/compare/lyssna-vs-dscout/,https://www.lyssna.com,/compare/lyssna-vs-dscout/
+source-0605,UsabilityHub,observed_market_pricing,https://www.lyssna.com/pricing/,https://www.lyssna.com,/pricing/
+source-0605,UsabilityHub,use_case,https://www.lyssna.com/customers/,https://www.lyssna.com,/customers/
+source-0020,SourceForge,competitor_discovery,https://sourceforge.net/directory/,https://sourceforge.net,/directory/
+source-0020,SourceForge,dissatisfaction,https://sourceforge.net/reviews,https://sourceforge.net,/reviews
+source-0020,SourceForge,use_case,https://sourceforge.net/software/case-studies/,https://sourceforge.net,/software/case-studies/
+source-0058,SaaSHub,competitor_discovery,https://www.saashub.com/categories,https://www.saashub.com,/categories
+source-0058,SaaSHub,existing_alternatives,https://www.saashub.com/alternatives,https://www.saashub.com,/alternatives
+source-0058,SaaSHub,problem_demand,https://www.saashub.com/community,https://www.saashub.com,/community
+source-0073,Wellfound,competitor_discovery,https://wellfound.com/browse/remote-tech-jobs,https://wellfound.com,/browse/remote-tech-jobs
+source-0073,Wellfound,observed_market_pricing,https://wellfound.com/recruit/pricing,https://wellfound.com,/recruit/pricing
+source-0073,Wellfound,use_case,https://wellfound.com/recruit/customers,https://wellfound.com,/recruit/customers
+source-0135,Capterra,competitor_discovery,https://www.capterra.com/categories/,https://www.capterra.com,/categories/
+source-0135,Capterra,dissatisfaction,https://www.capterra.com/p/110228/MailChimp/reviews/,https://www.capterra.com,/p/110228/MailChimp/reviews/
+source-0135,Capterra,existing_alternatives,https://www.capterra.com/compare/,https://www.capterra.com,/compare/
+source-0146,SoftwareSuggest,competitor_discovery,https://www.softwaresuggest.com/services/categories,https://www.softwaresuggest.com,/services/categories
+source-0146,SoftwareSuggest,existing_alternatives,https://www.softwaresuggest.com/compare/asana-vs-monday,https://www.softwaresuggest.com,/compare/asana-vs-monday
+source-0146,SoftwareSuggest,observed_market_pricing,https://www.softwaresuggest.com/pricing,https://www.softwaresuggest.com,/pricing
+source-0147,Tekpon,competitor_discovery,https://tekpon.com/categories/,https://tekpon.com,/categories/
+source-0147,Tekpon,dissatisfaction,https://tekpon.com/software/actitime/reviews/,https://tekpon.com,/software/actitime/reviews/
+source-0147,Tekpon,observed_market_pricing,https://tekpon.com/pricing/,https://tekpon.com,/pricing/
+source-0193,Censys,competitor_discovery,https://censys.com/product/adversary-investigation/,https://censys.com,/product/adversary-investigation/
+source-0193,Censys,observed_market_pricing,https://censys.com/resources/pricing/,https://censys.com,/resources/pricing/
+source-0193,Censys,use_case,https://censys.com/customers/,https://censys.com,/customers/
+source-0201,BuiltWith,observed_market_pricing,https://builtwith.com/plans,https://builtwith.com,/plans
+source-0201,BuiltWith,problem_demand,https://builtwith.com/ask,https://builtwith.com,/ask
+source-0201,BuiltWith,use_case,https://builtwith.com/customers,https://builtwith.com,/customers
+source-0260,ZoomInfo,competitor_discovery,https://www.zoominfo.com/products/chat,https://www.zoominfo.com,/products/chat
+source-0260,ZoomInfo,observed_market_pricing,https://www.zoominfo.com/pricing,https://www.zoominfo.com,/pricing
+source-0260,ZoomInfo,use_case,https://www.zoominfo.com/about/case-studies,https://www.zoominfo.com,/about/case-studies
+source-0315,Houzz,existing_alternatives,https://www.houzz.com/for-pros/3d-floor-planner-reviews,https://www.houzz.com,/for-pros/3d-floor-planner-reviews
+source-0315,Houzz,observed_market_pricing,https://www.houzz.com/houzz-pro/pricing,https://www.houzz.com,/houzz-pro/pricing
+source-0315,Houzz,problem_demand,https://www.houzz.com/discussions,https://www.houzz.com,/discussions
+source-0326,BASE,competitor_discovery,https://base.com/en-US/integrations/,https://base.com,/en-US/integrations/
+source-0326,BASE,dissatisfaction,https://base.com/en-US/reviews/,https://base.com,/en-US/reviews/
+source-0326,BASE,observed_market_pricing,https://base.com/en-US/pricing/,https://base.com,/en-US/pricing/
+source-0422,NICE,competitor_discovery,https://www.nice.com/products,https://www.nice.com,/products
+source-0422,NICE,observed_market_pricing,https://www.nice.com/pricing,https://www.nice.com,/pricing
+source-0422,NICE,use_case,https://www.nice.com/solutions/boost-customer-loyalty,https://www.nice.com,/solutions/boost-customer-loyalty
+source-0432,Federal Reserve,competitor_discovery,https://www.federalreserve.gov/apps/fof/,https://www.federalreserve.gov,/apps/fof/
+source-0432,Federal Reserve,dissatisfaction,https://www.federalreserve.gov/apps/reportingforms/home/review,https://www.federalreserve.gov,/apps/reportingforms/home/review
+source-0432,Federal Reserve,problem_demand,https://www.federalreserve.gov/supervisionreg/topics/topics.htm,https://www.federalreserve.gov,/supervisionreg/topics/topics.htm
+source-0479,Emlakjet,existing_alternatives,https://www.emlakjet.com/danismanlar,https://www.emlakjet.com,/danismanlar
+source-0479,Emlakjet,observed_market_pricing,https://www.emlakjet.com/kiralik-arsa,https://www.emlakjet.com,/kiralik-arsa
+source-0479,Emlakjet,problem_demand,https://www.emlakjet.com/emlak-piyasasi/demografi,https://www.emlakjet.com,/emlak-piyasasi/demografi
+source-0537,Together AI,competitor_discovery,https://www.together.ai/products,https://www.together.ai,/products
+source-0537,Together AI,observed_market_pricing,https://www.together.ai/pricing,https://www.together.ai,/pricing
+source-0537,Together AI,use_case,https://www.together.ai/customers,https://www.together.ai,/customers
+source-0551,Zapier,competitor_discovery,https://zapier.com/apps,https://zapier.com,/apps
+source-0551,Zapier,observed_market_pricing,https://zapier.com/pricing,https://zapier.com,/pricing
+source-0551,Zapier,use_case,https://zapier.com/solutions/customer-support,https://zapier.com,/solutions/customer-support
+source-0552,Make,competitor_discovery,https://www.make.com/en/integrations,https://www.make.com,/en/integrations
+source-0552,Make,observed_market_pricing,https://www.make.com/en/pricing,https://www.make.com,/en/pricing
+source-0552,Make,use_case,https://www.make.com/en/solutions/automate-customer-experience,https://www.make.com,/en/solutions/automate-customer-experience
+source-0580,Ekonomim,competitor_discovery,https://www.ekonomim.net/seri-ilanlar/kategoriler/emlak-1,https://www.ekonomim.net,/seri-ilanlar/kategoriler/emlak-1
+source-0580,Ekonomim,observed_market_pricing,https://www.ekonomim.net/seri-ilanlar/satilik-uygun-fiyata-kelepir-daire-1,https://www.ekonomim.net,/seri-ilanlar/satilik-uygun-fiyata-kelepir-daire-1
+source-0580,Ekonomim,problem_demand,https://www.ekonomim.net/piyasa,https://www.ekonomim.net,/piyasa
+source-0592,UserTesting,competitor_discovery,https://www.usertesting.com/solutions/integrations,https://www.usertesting.com,/solutions/integrations
+source-0592,UserTesting,observed_market_pricing,https://www.usertesting.com/plans,https://www.usertesting.com,/plans
+source-0592,UserTesting,use_case,https://www.usertesting.com/resources/customers,https://www.usertesting.com,/resources/customers
+source-0604,Microsoft Clarity,competitor_discovery,https://clarity.microsoft.com/integrations,https://clarity.microsoft.com,/integrations
+source-0604,Microsoft Clarity,observed_market_pricing,https://clarity.microsoft.com/pricing,https://clarity.microsoft.com,/pricing
+source-0604,Microsoft Clarity,use_case,https://clarity.microsoft.com/case-studies,https://clarity.microsoft.com,/case-studies
+source-0606,Lyssna,competitor_discovery,https://www.lyssna.com/integrations/,https://www.lyssna.com,/integrations/
+source-0606,Lyssna,observed_market_pricing,https://www.lyssna.com/pricing/,https://www.lyssna.com,/pricing/
+source-0606,Lyssna,use_case,https://www.lyssna.com/customers/,https://www.lyssna.com,/customers/
+source-0610,Sastrify,competitor_discovery,https://www.sastrify.com/marketplace,https://www.sastrify.com,/marketplace
+source-0610,Sastrify,observed_market_pricing,https://www.sastrify.com/pricing,https://www.sastrify.com,/pricing
+source-0610,Sastrify,use_case,https://www.sastrify.com/solutions/finance,https://www.sastrify.com,/solutions/finance
+source-0616,Azure Pricing Calculator,competitor_discovery,https://azure.microsoft.com/en-us/marketplace/,https://azure.microsoft.com,/en-us/marketplace/
+source-0616,Azure Pricing Calculator,observed_market_pricing,https://azure.microsoft.com/en-us/pricing/,https://azure.microsoft.com,/en-us/pricing/
+source-0616,Azure Pricing Calculator,use_case,https://azure.microsoft.com/en-us/case-studies/,https://azure.microsoft.com,/en-us/case-studies/
+source-0016,Firecrawl,existing_alternatives,https://www.firecrawl.dev/compare,https://www.firecrawl.dev,/compare
+source-0016,Firecrawl,observed_market_pricing,https://www.firecrawl.dev/pricing,https://www.firecrawl.dev,/pricing
+source-0021,Codeberg,existing_alternatives,https://codeberg.org/Codeberg/org/compare/17bdb39b0c1ecd0e423f3ba592650ce57fcdfbf5..71149c7fc95ccfeae36109b5cddca339e4aa1473?files=TermsOfUse.md,https://codeberg.org,/Codeberg/org/compare/17bdb39b0c1ecd0e423f3ba592650ce57fcdfbf5..71149c7fc95ccfeae36109b5cddca339e4aa1473?files=TermsOfUse.md
+source-0021,Codeberg,problem_demand,https://codeberg.org/Codeberg/Community/issues,https://codeberg.org,/Codeberg/Community/issues
+source-0029,Dev.to,dissatisfaction,https://dev.to/t/reviews,https://dev.to,/t/reviews
+source-0029,Dev.to,problem_demand,https://dev.to/t/community,https://dev.to,/t/community
+source-0048,Open VSX Registry,competitor_discovery,https://open-vsx.org/extension/00index/json-notebook,https://open-vsx.org,/extension/00index/json-notebook
+source-0048,Open VSX Registry,dissatisfaction,https://open-vsx.org/extension/mlgarchery/reviews,https://open-vsx.org,/extension/mlgarchery/reviews
+source-0065,AppSumo,competitor_discovery,https://appsumo.com/browse/,https://appsumo.com,/browse/
+source-0065,AppSumo,use_case,https://appsumo.com/case-studies,https://appsumo.com,/case-studies
+source-0115,WooCommerce Marketplace,competitor_discovery,https://woocommerce.com/products/,https://woocommerce.com,/products/
+source-0115,WooCommerce Marketplace,observed_market_pricing,https://woocommerce.com/pricing/,https://woocommerce.com,/pricing/
+source-0120,Webflow Apps,competitor_discovery,https://webflow.com/apps,https://webflow.com,/apps
+source-0120,Webflow Apps,problem_demand,https://webflow.com/community/?utm_source=marketplace,https://webflow.com,/community/?utm_source=marketplace
+source-0136,GetApp,competitor_discovery,https://www.getapp.com/browse/,https://www.getapp.com,/browse/
+source-0136,GetApp,problem_demand,https://www.getapp.com/resources/topic/business-intelligence/,https://www.getapp.com,/resources/topic/business-intelligence/
+source-0143,Serchen,competitor_discovery,https://www.serchen.com/browse,https://www.serchen.com,/browse
+source-0143,Serchen,existing_alternatives,https://www.serchen.com/compare,https://www.serchen.com,/compare
+source-0176,Lemon Squeezy,observed_market_pricing,https://www.lemonsqueezy.com/pricing,https://www.lemonsqueezy.com,/pricing
+source-0176,Lemon Squeezy,use_case,https://www.lemonsqueezy.com/case-studies,https://www.lemonsqueezy.com,/case-studies
+source-0200,DomainTools,competitor_discovery,https://www.domaintools.com/integrations,https://www.domaintools.com,/integrations
+source-0200,DomainTools,use_case,https://www.domaintools.com/case-studies/anthem-breach-investigation,https://www.domaintools.com,/case-studies/anthem-breach-investigation
+source-0202,Wappalyzer,competitor_discovery,https://www.wappalyzer.com/apps/,https://www.wappalyzer.com,/apps/
+source-0202,Wappalyzer,observed_market_pricing,https://www.wappalyzer.com/pricing/,https://www.wappalyzer.com,/pricing/
+source-0210,Cloudflare Radar,competitor_discovery,https://radar.cloudflare.com/bots/directory,https://radar.cloudflare.com,/bots/directory
+source-0210,Cloudflare Radar,dissatisfaction,https://radar.cloudflare.com/domains/feedback,https://radar.cloudflare.com,/domains/feedback
+source-0224,Majestic,existing_alternatives,https://majestic.com/help/tools/compare,https://majestic.com,/help/tools/compare
+source-0224,Majestic,problem_demand,https://majestic.com/reports/site-explorer/topics,https://majestic.com,/reports/site-explorer/topics
+source-0230,Glimpse,competitor_discovery,https://meetglimpse.com/google-trends/products/,https://meetglimpse.com,/google-trends/products/
+source-0230,Glimpse,existing_alternatives,https://meetglimpse.com/google-trends/alternatives/,https://meetglimpse.com,/google-trends/alternatives/
+source-0234,BuzzSumo,observed_market_pricing,https://buzzsumo.com/pricing/,https://buzzsumo.com,/pricing/
+source-0234,BuzzSumo,use_case,https://buzzsumo.com/case-studies/,https://buzzsumo.com,/case-studies/
+source-0244,Pathmatics,observed_market_pricing,https://pathmatics.io/pricing,https://pathmatics.io,/pricing
+source-0244,Pathmatics,use_case,https://pathmatics.io/solutions,https://pathmatics.io,/solutions
+source-0245,Sensor Tower,competitor_discovery,https://sensortower.com/product/audiences/audience-insights,https://sensortower.com,/product/audiences/audience-insights
+source-0245,Sensor Tower,use_case,https://sensortower.com/solutions/gaming,https://sensortower.com,/solutions/gaming
+source-0248,SocialPeta,competitor_discovery,https://socialpeta.com/en/product/ad-intelligence,https://socialpeta.com,/en/product/ad-intelligence
+source-0248,SocialPeta,use_case,https://socialpeta.com/en/solutions/ecommerce-ad-intelligence,https://socialpeta.com,/en/solutions/ecommerce-ad-intelligence
+source-0256,CB Insights,competitor_discovery,https://www.cbinsights.com/what-we-offer/integrations/chrome-and-edge-extension/,https://www.cbinsights.com,/what-we-offer/integrations/chrome-and-edge-extension/
+source-0256,CB Insights,observed_market_pricing,https://www.cbinsights.com/what-we-offer/pricing/,https://www.cbinsights.com,/what-we-offer/pricing/
+source-0257,PrivCo,observed_market_pricing,https://www.privco.com/pricing,https://www.privco.com,/pricing
+source-0257,PrivCo,use_case,https://www.privco.com/use-cases,https://www.privco.com,/use-cases
+source-0264,OpenCorporates,observed_market_pricing,https://opencorporates.com/pricing/,https://opencorporates.com,/pricing/
+source-0264,OpenCorporates,use_case,https://opencorporates.com/case-studies,https://opencorporates.com,/case-studies
+source-0279,Indeed,competitor_discovery,https://ca.indeed.com/employers/app,https://ca.indeed.com,/employers/app
+source-0279,Indeed,observed_market_pricing,https://ca.indeed.com/hire/pricing,https://ca.indeed.com,/hire/pricing
+source-0309,TomTom,competitor_discovery,https://www.tomtom.com/products/,https://www.tomtom.com,/products/
+source-0309,TomTom,use_case,https://www.tomtom.com/customers/,https://www.tomtom.com,/customers/
+source-0328,Dimensions,competitor_discovery,https://www.dimensions.ai/products/,https://www.dimensions.ai,/products/
+source-0328,Dimensions,use_case,https://www.dimensions.ai/resources/type/case-studies/,https://www.dimensions.ai,/resources/type/case-studies/
+source-0401,Consumer Financial Protection Bureau,dissatisfaction,https://www.consumerfinance.gov/complaint/,https://www.consumerfinance.gov,/complaint/
+source-0401,Consumer Financial Protection Bureau,existing_alternatives,https://www.consumerfinance.gov/owning-a-home/compare/,https://www.consumerfinance.gov,/owning-a-home/compare/
+source-0404,UK Information Commissioner's Office,dissatisfaction,https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/complaints/,https://ico.org.uk,/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/complaints/
+source-0404,UK Information Commissioner's Office,use_case,https://ico.org.uk/for-organisations/foi/case-studies/,https://ico.org.uk,/for-organisations/foi/case-studies/
+source-0437,Bank for International Settlements,existing_alternatives,https://www.bis.org/committees/mc/compendium/comparison,https://www.bis.org,/committees/mc/compendium/comparison
+source-0437,Bank for International Settlements,use_case,https://www.bis.org/acout/banking/customers,https://www.bis.org,/acout/banking/customers
+source-0439,Open Banking UK,competitor_discovery,https://www.openbanking.org.uk/directory/,https://www.openbanking.org.uk,/directory/
+source-0439,Open Banking UK,use_case,https://www.openbanking.org.uk/case-studies/,https://www.openbanking.org.uk,/case-studies/
+source-0441,NYSE,competitor_discovery,https://www.nyse.com/listings,https://www.nyse.com,/listings
+source-0441,NYSE,problem_demand,https://www.nyse.com/community,https://www.nyse.com,/community
+source-0442,Borsa İstanbul,competitor_discovery,https://borsaistanbul.com/piyasalar/borclanma-araclari-piyasasi/urunler,https://borsaistanbul.com,/piyasalar/borclanma-araclari-piyasasi/urunler
+source-0442,Borsa İstanbul,problem_demand,https://borsaistanbul.com/piyasalar,https://borsaistanbul.com,/piyasalar
+source-0443,Yahoo Finance,existing_alternatives,https://finance.yahoo.com/compare/,https://finance.yahoo.com,/compare/
+source-0443,Yahoo Finance,problem_demand,https://finance.yahoo.com/community/,https://finance.yahoo.com,/community/
+source-0449,DefiLlama,competitor_discovery,https://defillama.com/app,https://defillama.com,/app
+source-0449,DefiLlama,observed_market_pricing,https://defillama.com/subscription,https://defillama.com,/subscription
+source-0459,edX,competitor_discovery,https://edx.com/products/map-data,https://edx.com,/products/map-data
+source-0459,edX,use_case,https://edx.com/solutions/fixed-wireless-access,https://edx.com,/solutions/fixed-wireless-access
+source-0499,Lyft,competitor_discovery,https://www.lyft.com/app?type=driver,https://www.lyft.com,/app?type=driver
+source-0499,Lyft,use_case,https://www.lyft.com/business/solutions,https://www.lyft.com,/business/solutions
+source-0520,GOG,dissatisfaction,https://www.gog.com/u/@me/reviews,https://www.gog.com,/u/@me/reviews
+source-0520,GOG,problem_demand,https://www.gog.com/forum,https://www.gog.com,/forum
+source-0521,itch.io,competitor_discovery,https://itch.io/app,https://itch.io,/app
+source-0521,itch.io,problem_demand,https://itch.io/community,https://itch.io,/community
+source-0524,Nintendo eShop,competitor_discovery,https://www.nintendo.com/au/apps/,https://www.nintendo.com,/au/apps/
+source-0524,Nintendo eShop,existing_alternatives,https://www.nintendo.com/au/nintendo-switch-family/compare/,https://www.nintendo.com,/au/nintendo-switch-family/compare/
+source-0535,OpenRouter,competitor_discovery,https://openrouter.ai/apps,https://openrouter.ai,/apps
+source-0535,OpenRouter,observed_market_pricing,https://openrouter.ai/pricing,https://openrouter.ai,/pricing
+source-0541,AWS Marketplace,competitor_discovery,https://aws.amazon.com/marketplace,https://aws.amazon.com,/marketplace
+source-0541,AWS Marketplace,use_case,https://aws.amazon.com/solutions/case-studies?ref_=footer_nav_partner_success_stories,https://aws.amazon.com,/solutions/case-studies?ref_=footer_nav_partner_success_stories
+source-0564,Ars Technica,competitor_discovery,https://arstechnica.com/store/product/subscriptions/,https://arstechnica.com,/store/product/subscriptions/
+source-0564,Ars Technica,dissatisfaction,https://arstechnica.com/reviews/,https://arstechnica.com,/reviews/
+source-0579,Bloomberg HT,existing_alternatives,https://www.bloomberght.com/alternatif,https://www.bloomberght.com,/alternatif
+source-0579,Bloomberg HT,problem_demand,https://www.bloomberght.com/piyasalar,https://www.bloomberght.com,/piyasalar
+source-0595,Lookback,observed_market_pricing,https://www.lookback.com/pricing?hsLang=en,https://www.lookback.com,/pricing?hsLang=en
+source-0595,Lookback,use_case,https://www.lookback.com/customers?hsLang=en,https://www.lookback.com,/customers?hsLang=en
+source-0599,Pollfish,observed_market_pricing,https://www.pollfish.com/pricing/,https://www.pollfish.com,/pricing/
+source-0599,Pollfish,use_case,https://www.pollfish.com/solutions/,https://www.pollfish.com,/solutions/
+source-0607,Vendr,competitor_discovery,https://www.vendr.com/categories,https://www.vendr.com,/categories
+source-0607,Vendr,use_case,https://www.vendr.com/customers,https://www.vendr.com,/customers
+source-0614,Infracost,competitor_discovery,https://www.infracost.io/product,https://www.infracost.io,/product
+source-0614,Infracost,observed_market_pricing,https://www.infracost.io/pricing,https://www.infracost.io,/pricing
+source-0635,Founder Institute Türkiye,dissatisfaction,https://fi.co/reviews,https://fi.co,/reviews
+source-0635,Founder Institute Türkiye,use_case,https://fi.co/case-studies,https://fi.co,/case-studies
+source-0636,Meetup,competitor_discovery,https://www.meetup.com/apps/,https://www.meetup.com,/apps/
+source-0636,Meetup,problem_demand,https://www.meetup.com/topics/,https://www.meetup.com,/topics/
+source-0009,Kagi,observed_market_pricing,https://kagi.com/pricing,https://kagi.com,/pricing
+source-0018,GitLab,problem_demand,https://gitlab.com/gitlab-org/ai-powered/discussions,https://gitlab.com,/gitlab-org/ai-powered/discussions
+source-0022,Hacker News,problem_demand,https://news.ycombinator.com/ask,https://news.ycombinator.com,/ask
+source-0030,Hashnode,existing_alternatives,https://hashnode.com/alternatives,https://hashnode.com,/alternatives
+source-0033,DZone,competitor_discovery,https://dzone.com/integration,https://dzone.com,/integration
+source-0038,Docker Hub,competitor_discovery,https://hub.docker.com/categories/api-management,https://hub.docker.com,/categories/api-management
+source-0046,Homebrew Formulae,observed_market_pricing,https://formulae.brew.sh/cask/plan,https://formulae.brew.sh,/cask/plan
+source-0049,Visual Studio Marketplace,existing_alternatives,https://marketplace.visualstudio.com/vs,https://marketplace.visualstudio.com,/vs
+source-0052,BetaList,competitor_discovery,https://betalist.com/browse,https://betalist.com,/browse
+source-0054,Microlaunch,competitor_discovery,https://microlaunch.net/browse,https://microlaunch.net,/browse
+source-0059,AlternativeTo,competitor_discovery,https://alternativeto.net/browse/,https://alternativeto.net,/browse/
+source-0066,PitchWall,competitor_discovery,https://pitchwall.co/product/buzzwire,https://pitchwall.co,/product/buzzwire
+source-0067,Fazier,dissatisfaction,https://fazier.com/reviews,https://fazier.com,/reviews
+source-0071,Failory,competitor_discovery,https://www.failory.com/products,https://www.failory.com,/products
+source-0077,Mastodon,competitor_discovery,https://joinmastodon.org/apps,https://joinmastodon.org,/apps
+source-0086,Tumblr,competitor_discovery,https://www.tumblr.com/apps,https://www.tumblr.com,/apps
+source-0093,Discourse,competitor_discovery,https://www.discourse.net/category/discourse-net/,https://www.discourse.net,/category/discourse-net/
+source-0095,Lemmy,competitor_discovery,https://join-lemmy.org/apps,https://join-lemmy.org,/apps
+source-0096,Apple App Store,competitor_discovery,https://apps.apple.com/us/iphone/apps,https://apps.apple.com,/us/iphone/apps
+source-0105,Aptoide,competitor_discovery,https://en.aptoide.com/apps/discover,https://en.aptoide.com,/apps/discover
+source-0106,F-Droid,competitor_discovery,https://f-droid.org/categories/action-game/,https://f-droid.org,/categories/action-game/
+source-0107,APKMirror,competitor_discovery,https://www.apkmirror.com/categories/,https://www.apkmirror.com,/categories/
+source-0108,Uptodown,competitor_discovery,https://www.uptodown.com/marketplace,https://www.uptodown.com,/marketplace
+source-0110,Firefox Add-ons,competitor_discovery,https://addons.mozilla.org/en-US/firefox/extensions/,https://addons.mozilla.org,/en-US/firefox/extensions/
+source-0112,Safari Extensions,competitor_discovery,https://apps.apple.com/us/iphone/apps,https://apps.apple.com,/us/iphone/apps
+source-0113,Opera Add-ons,competitor_discovery,https://addons.opera.com/en/extensions/,https://addons.opera.com,/en/extensions/
+source-0114,Shopify App Store,competitor_discovery,https://apps.shopify.com/categories/finding-products,https://apps.shopify.com,/categories/finding-products
+source-0116,WordPress Plugin Directory,competitor_discovery,https://wordpress.org/news/category/community/,https://wordpress.org,/news/category/community/
+source-0119,BigCommerce App Marketplace,competitor_discovery,https://www.bigcommerce.com/apps/,https://www.bigcommerce.com,/apps/
+source-0121,Atlassian Marketplace,competitor_discovery,https://marketplace.atlassian.com/categories/admin-tools,https://marketplace.atlassian.com,/categories/admin-tools
+source-0122,Salesforce AppExchange,competitor_discovery,https://appexchange.salesforce.com/categories/data-management,https://appexchange.salesforce.com,/categories/data-management
+source-0124,Slack Marketplace,competitor_discovery,https://slack.com/marketplace,https://slack.com,/marketplace
+source-0137,Software Advice,competitor_discovery,https://www.softwareadvice.com/categories/,https://www.softwareadvice.com,/categories/
+source-0140,PeerSpot,problem_demand,https://peerspot.co/topics,https://peerspot.co,/topics
+source-0144,FinancesOnline,competitor_discovery,https://financesonline.com/category/financial-news/,https://financesonline.com,/category/financial-news/
+source-0159,Amazon,use_case,https://www.amazon.com/gp/help/customer/accessibility,https://www.amazon.com,/gp/help/customer/accessibility
+source-0162,Walmart,competitor_discovery,https://business.walmart.com/browse/automotive/all-vehicles/3227097_1420856_7206735,https://business.walmart.com,/browse/automotive/all-vehicles/3227097_1420856_7206735
+source-0175,Gumroad,observed_market_pricing,https://gumroad.com/pricing,https://gumroad.com,/pricing
+source-0178,Envato Market,competitor_discovery,https://themeforest.net/category,https://themeforest.net,/category
+source-0179,ThemeForest,competitor_discovery,https://themeforest.net/category,https://themeforest.net,/category
+source-0180,CodeCanyon,competitor_discovery,https://codecanyon.net/category,https://codecanyon.net,/category
+source-0181,Etsy Reviews,competitor_discovery,https://www.etsy.com/categories,https://www.etsy.com,/categories
+source-0206,urlscan.io,observed_market_pricing,https://urlscan.io/pricing/,https://urlscan.io,/pricing/
+source-0220,Ubersuggest,competitor_discovery,https://ubersuggest.net/app/,https://ubersuggest.net,/app/
+source-0221,Mangools,existing_alternatives,https://mangools.com/compare?ref=footer-mngls,https://mangools.com,/compare?ref=footer-mngls
+source-0225,Sistrix,observed_market_pricing,https://www.sistrix.com/pricing/,https://www.sistrix.com,/pricing/
+source-0228,AnswerThePublic,observed_market_pricing,https://answerthepublic.com/de/pricing,https://answerthepublic.com,/de/pricing
+source-0233,SparkToro,observed_market_pricing,https://sparktoro.com/pricing,https://sparktoro.com,/pricing
+source-0249,BigSpy,observed_market_pricing,https://bigspy.com/pricing,https://bigspy.com,/pricing
+source-0266,Companies House,competitor_discovery,https://www.gov.uk/browse,https://www.gov.uk,/browse
+source-0271,AngelList,observed_market_pricing,https://www.angellist.com/pricing/venture-funds,https://www.angellist.com,/pricing/venture-funds
+source-0273,500 Global Companies,competitor_discovery,https://500.co/directory,https://500.co,/directory
+source-0275,Republic,competitor_discovery,https://republic.com/help/category/fundraising,https://republic.com,/help/category/fundraising
+source-0276,Seedrs,competitor_discovery,https://europe.republic.com/invest/marketplace,https://europe.republic.com,/invest/marketplace
+source-0291,We Work Remotely,competitor_discovery,https://weworkremotely.com/categories/all-other-remote-jobs,https://weworkremotely.com,/categories/all-other-remote-jobs
+source-0298,Eleman.net,competitor_discovery,https://www.eleman.net/meslekler/kategori/beyaz-yaka,https://www.eleman.net,/meslekler/kategori/beyaz-yaka
+source-0299,İşkur,observed_market_pricing,https://iskur.gov.tr/ilanlar/,https://iskur.gov.tr,/ilanlar/
+source-0322,Semantic Scholar,competitor_discovery,https://www.semanticscholar.org/product,https://www.semanticscholar.org,/product
+source-0354,World Bank Open Data,competitor_discovery,https://data.worldbank.org/products/data-books,https://data.worldbank.org,/products/data-books
+source-0361,US Census Bureau,problem_demand,https://www.census.gov/topics/business-economy.html,https://www.census.gov,/topics/business-economy.html
+source-0363,Federal Reserve Economic Data,competitor_discovery,https://fred.stlouisfed.org/categories,https://fred.stlouisfed.org,/categories
+source-0366,Our World in Data,dissatisfaction,https://ourworldindata.org/feedback,https://ourworldindata.org,/feedback
+source-0384,SPK,competitor_discovery,https://www.spk.com.tr/Urunler,https://www.spk.com.tr,/Urunler
+source-0405,Competition and Markets Authority,competitor_discovery,https://www.gov.uk/browse,https://www.gov.uk,/browse
+source-0418,The Trademark Search Company,competitor_discovery,https://thetrademarksearchcompany.com/product/advanced-ai-full-search-aus-nz-tm-searching/,https://thetrademarksearchcompany.com,/product/advanced-ai-full-search-aus-nz-tm-searching/
+source-0423,CDC,problem_demand,https://cdc.com/about-us/community/,https://cdc.com,/about-us/community/
+source-0433,FRED,competitor_discovery,https://fred.stlouisfed.org/categories,https://fred.stlouisfed.org,/categories
+source-0445,Investing.com,observed_market_pricing,https://www.investing.com/pro/pricing,https://www.investing.com,/pro/pricing
+source-0451,National Center for Education Statistics,competitor_discovery,https://nces.ed.gov/national-center-education-statistics-nces/products,https://nces.ed.gov,/national-center-education-statistics-nces/products
+source-0461,Skillshare,competitor_discovery,https://help.skillshare.com/hc/de/categories/200230948-Skillshare-f%C3%BCr-Teams,https://help.skillshare.com,/hc/de/categories/200230948-Skillshare-f%C3%BCr-Teams
+source-0470,Trulia,observed_market_pricing,"https://www.trulia.com/for_rent/Atlanta,GA/",https://www.trulia.com,"/for_rent/Atlanta,GA/"
+source-0476,ImmobilienScout24,competitor_discovery,https://www.immobilienscout24.de/baufimanager/app/baufimanager/,https://www.immobilienscout24.de,/baufimanager/app/baufimanager/
+source-0502,Moovit,use_case,https://moovit.com/resources/case-studies/,https://moovit.com,/resources/case-studies/
+source-0503,FlightAware,competitor_discovery,https://www.flightaware.com/apps,https://www.flightaware.com,/apps
+source-0509,Deliveroo,competitor_discovery,https://deliveroo.co.uk/app/?platform=android&amp;home_page=true&amp;home_page_variant=homepage_variant_d&amp;mobile_banner=false&amp;af_dp=deliveroo%3A%2F%2Frestaurants&amp;deep_link_value=deliveroo%3A%2F%2Frestaurants,https://deliveroo.co.uk,/app/?platform=android&amp;home_page=true&amp;home_page_variant=homepage_variant_d&amp;mobile_banner=false&amp;af_dp=deliveroo%3A%2F%2Frestaurants&amp;deep_link_value=deliveroo%3A%2F%2Frestaurants
+source-0518,Steam,competitor_discovery,https://store.steampowered.com/app/1395520?snr=1_4_4__40_1,https://store.steampowered.com,/app/1395520?snr=1_4_4__40_1
+source-0522,PlayStation Store,competitor_discovery,https://store.playstation.com/en-us/pages/browse,https://store.playstation.com,/en-us/pages/browse
+source-0531,Metacritic,competitor_discovery,https://www.metacritic.com/browse/game/,https://www.metacritic.com,/browse/game/
+source-0532,OpenCritic,competitor_discovery,https://opencritic.com/browse,https://opencritic.com,/browse
+source-0536,Replicate,observed_market_pricing,https://replicate.com/pricing,https://replicate.com,/pricing
+source-0547,Glama,competitor_discovery,https://glama.ai/mcp/categories,https://glama.ai,/mcp/categories
+source-0548,MCP.so,competitor_discovery,https://mcp.so/categories,https://mcp.so,/categories
+source-0550,Composio,problem_demand,https://docs.composio.dev/kb/topic/account-billing-and-security,https://docs.composio.dev,/kb/topic/account-billing-and-security
+source-0558,Financial Times,competitor_discovery,https://www.ft.com/products,https://www.ft.com,/products
+source-0561,TechCrunch,competitor_discovery,https://techcrunch.com/category/apps/,https://techcrunch.com,/category/apps/
+source-0562,The Verge,dissatisfaction,https://www.theverge.com/reviews,https://www.theverge.com,/reviews
+source-0571,Sifted,competitor_discovery,https://sifted.org/category/bible-stories/,https://sifted.org,/category/bible-stories/
+source-0572,EU-Startups,competitor_discovery,https://www.eu-startups.com/directory/,https://www.eu-startups.com,/directory/
+source-0588,Qualtrics,use_case,https://www.qualtrics.com/customers/,https://www.qualtrics.com,/customers/
+source-0591,Prolific,observed_market_pricing,https://www.prolific.com/pricing,https://www.prolific.com,/pricing
+source-0603,Hotjar,competitor_discovery,https://www.hotjar.com/product/funnels,https://www.hotjar.com,/product/funnels
+source-0612,CloudPrice,observed_market_pricing,https://cloudprice.net/pricing,https://cloudprice.net,/pricing
+source-0620,startups.watch,observed_market_pricing,https://startups.watch/plans,https://startups.watch,/plans
+source-0622,TÜBİTAK,observed_market_pricing,https://tubitak.gov.tr/tr/kurumsal/teknoloji-transfer-ofisi/ilanlar,https://tubitak.gov.tr,/tr/kurumsal/teknoloji-transfer-ofisi/ilanlar
+source-0624,Bilişim Vadisi,existing_alternatives,https://bilisimvadisi.com.tr/hakkimizda/firmalar/,https://bilisimvadisi.com.tr,/hakkimizda/firmalar/

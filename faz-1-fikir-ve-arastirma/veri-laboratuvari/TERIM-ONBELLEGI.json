@@ -1,0 +1,59 @@
+{
+  "diyabet takip|mobil-uygulama": {
+    "adaylar": [
+      "diabetes",
+      "follow-up",
+      "chase",
+      "pursuit",
+      "pursuit of",
+      "following",
+      "watching closely",
+      "keeping abreast of",
+      "busying oneself with",
+      "taking  as ones example",
+      "legal proceedings",
+      "prosecution"
+    ],
+    "cozen_katman": "wiktionary+kategori (kismi)",
+    "guven": "orta",
+    "iz": "wikipedia(tam ifade):'Diyabet' reddedildi (ortusme 0.50) | wiktionary:diyabet=tek aday 'diabetes' | wiktionary:takip=11 aday, kategori dili secemedi, wikipedia 'karsilik yok' ortusmedi",
+    "kategori": "mobil-uygulama",
+    "kullanilan": "diabetes takip",
+    "orijinal": "diyabet takip",
+    "uyari": "1 kelime çevrilemedi"
+  },
+  "muhasebeciler fatura|b2b-web-yazilimi": {
+    "adaylar": [
+      "bill",
+      "invoice",
+      "note",
+      "fabric sample"
+    ],
+    "cozen_katman": "wiktionary+kategori (kismi)",
+    "guven": "orta",
+    "iz": "wikipedia(tam ifade):'Denetim' reddedildi (ortusme 0.00) | wiktionary:muhasebeciler=karsilik-yok | wiktionary:fatura=4 aday, wikipedia 'Invoice' ile ortusen secildi",
+    "kategori": "b2b-web-yazilimi",
+    "kullanilan": "muhasebeciler invoice",
+    "orijinal": "muhasebeciler fatura",
+    "uyari": "1 kelime çevrilemedi"
+  },
+  "yerel esnaf randevu|yerel-hizmet": {
+    "adaylar": [
+      "local",
+      "regional",
+      "territorial",
+      "craftsman",
+      "corporation",
+      "date",
+      "rendezvous",
+      "appointment"
+    ],
+    "cozen_katman": "wiktionary+kategori (kismi)",
+    "guven": "orta",
+    "iz": "wikipedia(tam ifade):'Anahtar Parti' reddedildi (ortusme 0.00) | wikipedia(ikili 'yerel esnaf') reddedildi (ortusme 0.00) | wikipedia(ikili 'esnaf randevu') reddedildi (ortusme 0.00) | wiktionary:yerel=3 aday, kategori dili secemedi, wikipedia 'karsilik yok' ortusmedi | wiktionary:esnaf=2 aday, kategori dili secemedi, wikipedia 'Esnaf' ortusmedi | wiktionary:randevu=3 aday, kategori dili 'appointment' sectti",
+    "kategori": "yerel-hizmet",
+    "kullanilan": "yerel esnaf appointment",
+    "orijinal": "yerel esnaf randevu",
+    "uyari": "2 kelime çevrilemedi"
+  }
+}

@@ -1,0 +1,65 @@
+olcut,fikir,beklenen,gerceklesen,gecti
+K1 kategori dogru,diyabet hastaları için mobil takip uygulaması,mobil-uygulama,mobil-uygulama,True
+K4 yasakli kaynak yok,diyabet hastaları için mobil takip uygulaması,0,0,True
+K1 kategori dogru,react için grafik kütüphanesi,gelistirici-araci,gelistirici-araci,True
+K4 yasakli kaynak yok,react için grafik kütüphanesi,0,0,True
+K1 kategori dogru,mobil bulmaca oyunu,oyun,oyun,True
+K4 yasakli kaynak yok,mobil bulmaca oyunu,0,0,True
+K1 kategori dogru,muhasebeciler için fatura yazılımı,b2b-web-yazilimi,b2b-web-yazilimi,True
+K4 yasakli kaynak yok,muhasebeciler için fatura yazılımı,0,0,True
+K1 kategori dogru,yerel esnaf için randevu uygulaması,yerel-hizmet,yerel-hizmet,True
+K4 yasakli kaynak yok,yerel esnaf için randevu uygulaması,0,0,True
+K1 kategori dogru,türkçe metin özetleyen yapay zeka modeli,yapay-zeka-urunu,yapay-zeka-urunu,True
+K4 yasakli kaynak yok,türkçe metin özetleyen yapay zeka modeli,0,0,True
+K1 kategori dogru,wordpress için sepet eklentisi,eklenti-entegrasyon,eklenti-entegrasyon,True
+K4 yasakli kaynak yok,wordpress için sepet eklentisi,0,0,True
+K2 capraz ortusme,diyabet hastaları için ↔ react için grafik kütü,<0.25,0.00,True
+K2 capraz ortusme,diyabet hastaları için ↔ mobil bulmaca oyunu,<0.25,0.33,False
+K2 capraz ortusme,diyabet hastaları için ↔ muhasebeciler için fat,<0.25,0.00,True
+K2 capraz ortusme,diyabet hastaları için ↔ yerel esnaf için rande,<0.25,0.33,False
+K2 capraz ortusme,diyabet hastaları için ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2 capraz ortusme,diyabet hastaları için ↔ wordpress için sepet e,<0.25,0.00,True
+K2 capraz ortusme,react için grafik kütü ↔ mobil bulmaca oyunu,<0.25,0.00,True
+K2 capraz ortusme,react için grafik kütü ↔ muhasebeciler için fat,<0.25,0.00,True
+K2 capraz ortusme,react için grafik kütü ↔ yerel esnaf için rande,<0.25,0.00,True
+K2 capraz ortusme,react için grafik kütü ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2 capraz ortusme,react için grafik kütü ↔ wordpress için sepet e,<0.25,0.00,True
+K2 capraz ortusme,mobil bulmaca oyunu ↔ muhasebeciler için fat,<0.25,0.00,True
+K2 capraz ortusme,mobil bulmaca oyunu ↔ yerel esnaf için rande,<0.25,0.33,False
+K2 capraz ortusme,mobil bulmaca oyunu ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2 capraz ortusme,mobil bulmaca oyunu ↔ wordpress için sepet e,<0.25,0.00,True
+K2 capraz ortusme,muhasebeciler için fat ↔ yerel esnaf için rande,<0.25,0.00,True
+K2 capraz ortusme,muhasebeciler için fat ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2 capraz ortusme,muhasebeciler için fat ↔ wordpress için sepet e,<0.25,0.00,True
+K2 capraz ortusme,yerel esnaf için rande ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2 capraz ortusme,yerel esnaf için rande ↔ wordpress için sepet e,<0.25,0.00,True
+K2 capraz ortusme,türkçe metin özetleyen ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ react için grafik kütü,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ mobil bulmaca oyunu,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ muhasebeciler için fat,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ yerel esnaf için rande,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),diyabet hastaları için ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),react için grafik kütü ↔ mobil bulmaca oyunu,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),react için grafik kütü ↔ muhasebeciler için fat,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),react için grafik kütü ↔ yerel esnaf için rande,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),react için grafik kütü ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),react için grafik kütü ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),mobil bulmaca oyunu ↔ muhasebeciler için fat,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),mobil bulmaca oyunu ↔ yerel esnaf için rande,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),mobil bulmaca oyunu ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),mobil bulmaca oyunu ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),muhasebeciler için fat ↔ yerel esnaf için rande,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),muhasebeciler için fat ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),muhasebeciler için fat ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),yerel esnaf için rande ↔ türkçe metin özetleyen,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),yerel esnaf için rande ↔ wordpress için sepet e,<0.25,0.00,True
+K2b katman haric ortusme (post-hoc),türkçe metin özetleyen ↔ wordpress için sepet e,<0.25,0.00,True
+K3 kategoriye ozel kaynak,diyabet hastaları için mobil takip uygulaması,>0,1,True
+K3 kategoriye ozel kaynak,react için grafik kütüphanesi,>0,1,True
+K3 kategoriye ozel kaynak,mobil bulmaca oyunu,>0,1,True
+K3 kategoriye ozel kaynak,muhasebeciler için fatura yazılımı,>0,4,True
+K3 kategoriye ozel kaynak,yerel esnaf için randevu uygulaması,>0,1,True
+K3 kategoriye ozel kaynak,türkçe metin özetleyen yapay zeka modeli,>0,1,True
+K3 kategoriye ozel kaynak,wordpress için sepet eklentisi,>0,1,True
+K5 anlamsiz fikir reddi,zzzz qqqq wwww,reddedilir,reddedildi,True

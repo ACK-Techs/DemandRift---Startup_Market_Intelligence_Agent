@@ -68,7 +68,7 @@ source-0466,Capterra Education Software,https://www.capterra.com,curated_officia
 source-0256,CB Insights,https://www.cbinsights.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
 source-0423,CDC,https://cdc.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0193,Censys,https://censys.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
-source-0600,Centiment,https://www.centiment.co,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0600,Centiment,https://www.centiment.co,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0109,Chrome Web Store,https://chromewebstore.google.com,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-retry-live.json
 source-0462,Class Central,https://classcentral.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0262,Clearbit,https://clearbit.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
@@ -111,7 +111,7 @@ source-0029,Dev.to,https://dev.to,curated_official_host_fixture,high,cekildi,"ro
 source-0328,Dimensions,https://www.dimensions.ai,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-corrected.json
 source-0090,Discord,https://discord.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0093,Discourse,https://discourse.net,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-newly-resolved-proof.json
-source-0196,DNSdumpster,https://dnsdumpster.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0196,DNSdumpster,https://dnsdumpster.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0197,DNSlytics,https://dnslytics.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0347,DOAJ,https://doaj.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-live-20260810T203700Z.json
 source-0038,Docker Hub,https://hub.docker.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
@@ -170,7 +170,7 @@ source-0567,Forbes,https://forbes.com,wikidata_p856_unverified,medium,cekildi,si
 source-0635,Founder Institute Türkiye,https://fi.co,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-curated2.json
 source-0304,Foursquare,https://foursquare.com,generated_candidate_validated,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-batch2.json
 source-0433,FRED,https://fred.stlouisfed.org,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-robots-retry.json
-source-0317,Fresha,https://www.fresha.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0317,Fresha,https://www.fresha.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0463,FutureLearn,https://www.futurelearn.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0062,Futurepedia,https://futurepedia.io,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
 source-0134,G2,https://www.g2.com,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
@@ -212,7 +212,7 @@ source-0307,HERE WeGo,https://wego.here.com,generated_candidate_validated,medium
 source-0046,Homebrew Formulae,https://formulae.brew.sh,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
 source-0493,Hostelworld,https://www.hostelworldgroup.com,wikidata_p856_unverified,medium,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-robots404.json
 source-0488,Hotels.com,https://www.hotels.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
-source-0603,Hotjar,https://www.hotjar.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0603,Hotjar,https://www.hotjar.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-kesif.json
 source-0315,Houzz,https://houzz.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0209,HTTP Archive,https://httparchive.org,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0098,Huawei AppGallery,https://appgallery.huawei.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-batch4.json
@@ -225,7 +225,7 @@ source-0340,IEEE Xplore,https://ieeexplore.ieee.org,wikidata_p856_unverified,med
 source-0435,IMF,https://www.imf.org,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0356,IMF Data,https://data.imf.org,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-curated2.json
 source-0474,Immobiliare.it,https://www.immobiliare.it,wikidata_p856_unverified,medium,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
-source-0476,ImmobilienScout24,https://www.immobilienscout24.de,curated_official_host_fixture,medium,cekildi,sitemap_xml,,bulk-site-access-curated2.json
+source-0476,ImmobilienScout24,https://www.immobilienscout24.de,curated_official_host_fixture,medium,cekildi,"entry_url,sitemap_xml",,bulk-site-access-kesif.json
 source-0279,Indeed,https://ca.indeed.com,wikidata_mediawiki_exact_search_p856,high,cekildi,root_html,,bulk-site-access-retry-seeded.json
 source-0174,Indiegogo,https://www.indiegogo.com,wikidata_p856_unverified,medium,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0034,InfoQ,https://infoq.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-newly-resolved-proof.json
@@ -306,7 +306,7 @@ source-0044,NuGet Gallery,https://nuget.org,generated_candidate_validated,medium
 source-0441,NYSE,https://nyse.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0627,ODTÜ Teknokent,https://odtuteknokent.com.tr,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0355,OECD Data,https://data.oecd.org,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
-source-0453,OECD Education,https://data-explorer.oecd.org,curated_official_host_fixture,medium,cekildi,sitemap_xml,,bulk-site-access-curated2.json
+source-0453,OECD Education,https://data-explorer.oecd.org,curated_official_host_fixture,medium,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0365,OECD Health Statistics,https://data-explorer.oecd.org,curated_official_host_fixture,medium,cekildi,common_crawl_warc,,common-crawl-multi.json
 source-0439,Open Banking UK,https://www.openbanking.org.uk,curated_official_host_fixture,high,cekildi,"root_html,rss_feed,sitemap_xml",,bulk-site-access-curated.json
 source-0048,Open VSX Registry,https://open-vsx.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-curated.json
@@ -403,7 +403,7 @@ source-0141,SourceForge Reviews,https://sourceforge.net,curated_official_host_fi
 source-0233,SparkToro,https://sparktoro.com,generated_candidate_validated,medium,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch2.json
 source-0384,SPK,https://spk.gov.tr,curated_official_host_fixture,medium,cekildi,root_html,,bulk-site-access-batch2.json
 source-0602,Sprig,https://sprig.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
-source-0223,SpyFu,https://www.spyfu.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0223,SpyFu,https://www.spyfu.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0118,Squarespace Extensions,https://www.squarespace.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-paths.json
 source-0024,Stack Exchange,https://stackexchange.com,curated_official_host_fixture,high,cekildi,stackexchange_sites,,bulk-site-access-api.json
 source-0023,Stack Overflow,https://stackoverflow.com,curated_official_host_fixture,high,cekildi,stackexchange_questions,,bulk-site-access-api.json
@@ -478,7 +478,7 @@ source-0108,Uptodown,https://uptodown.com,generated_candidate_validated,medium,c
 source-0206,urlscan.io,https://urlscan.io,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-retry-seeded.json
 source-0361,US Census Bureau,https://www.census.gov,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch5.json
 source-0605,UsabilityHub,https://www.lyssna.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-round3.json
-source-0589,User Interviews,https://www.userinterviews.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0589,User Interviews,https://www.userinterviews.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0592,UserTesting,https://usertesting.com,generated_candidate_validated,medium,cekildi,root_html,,bulk-site-access-batch3.json
 source-0407,USPTO Patent Center,https://patentcenter.uspto.gov,curated_official_host_fixture,high,cekildi,common_crawl_warc,,common-crawl-fetch.json
 source-0408,USPTO Trademark Search,https://tmsearch.uspto.gov,curated_official_host_fixture,high,cekildi,root_html,,bulk-site-access-curated.json
@@ -509,7 +509,7 @@ source-0563,Wired,https://wired.com,generated_candidate_validated,medium,cekildi
 source-0117,Wix App Market,https://www.wix.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0115,WooCommerce Marketplace,https://woocommerce.com,curated_official_host_fixture,high,cekildi,"entry_url,sitemap_xml",,bulk-site-access-paths.json
 source-0116,WordPress Plugin Directory,https://wordpress.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-retry-live.json
-source-0288,Workable Jobs,https://jobs.workable.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-curated.json
+source-0288,Workable Jobs,https://jobs.workable.com,curated_official_host_fixture,high,cekildi,sitemap_xml,,bulk-site-access-kesif.json
 source-0434,World Bank,https://www.worldbank.org,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-live-20260810T203700Z.json
 source-0354,World Bank Open Data,https://data.worldbank.org,wikidata_mediawiki_exact_search_p856,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-batch4.json
 source-0597,Wynter,https://wynter.com,curated_official_host_fixture,high,cekildi,"root_html,sitemap_xml",,bulk-site-access-redirect-fixes.json

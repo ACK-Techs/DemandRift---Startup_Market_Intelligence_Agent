@@ -1,0 +1,193 @@
+kategori,document_id,source_id,source_adi,belge_turu,icerik_durumu,url_yolu
+b2b-web-yazilimi,doc-0024e3147add,source-0298,Eleman.net,ana-sayfa,gercek-icerik,/
+b2b-web-yazilimi,doc-1431510152cd,source-0065,AppSumo,sitemap,aday-kesif,/sitemap.xml
+b2b-web-yazilimi,doc-212afa6ee991,source-0617,Google Cloud Pricing Calculator,sitemap,aday-kesif,/sitemap.xml
+b2b-web-yazilimi,doc-34aae470587f,source-0147,Tekpon,liste-sayfasi,gercek-icerik,/categories/
+b2b-web-yazilimi,doc-4dc9009304b6,source-0146,SoftwareSuggest,ana-sayfa,gercek-icerik,/
+b2b-web-yazilimi,doc-6daa37b0992f,source-0051,Product Hunt,besleme,besleme,/feed/
+b2b-web-yazilimi,doc-8990b48bd701,source-0141,SourceForge Reviews,inceleme-sayfasi,gercek-icerik,/reviews
+b2b-web-yazilimi,doc-991e326786ba,source-0143,Serchen,sitemap,aday-kesif,/sitemap/companies-a.xml
+b2b-web-yazilimi,doc-b13b36930fdf,source-0296,Yenibiris,sitemap,aday-kesif,/ilceler.xml
+b2b-web-yazilimi,doc-bf4ca5a094ed,source-0147,Tekpon,sitemap,aday-kesif,/page-sitemap.xml
+b2b-web-yazilimi,doc-d1ed39bc00b3,source-0065,AppSumo,ana-sayfa,gercek-icerik,/
+b2b-web-yazilimi,doc-dab87113fd9d,source-0201,BuiltWith,fiyatlandirma-sayfasi,gercek-icerik,/plans
+egitim,doc-0db0f9c96d1d,source-0459,edX,sitemap,aday-kesif,/sitemap.xml
+egitim,doc-18c7e20d0bc3,source-0455,YÖK Atlas,ana-sayfa,arsiv,/
+egitim,doc-2c109f612eba,source-0459,edX,belirsiz,gercek-icerik,/products/map-data
+egitim,doc-4d51f4a2992b,source-0453,OECD Education,sitemap,aday-kesif,/assets/oecd/data-explorer/sitemap.xml
+egitim,doc-5efd318e3350,source-0466,Capterra Education Software,sitemap,aday-kesif,/sitemaps/shortlist/sitemap.xml
+egitim,doc-6ea9fcfe7e02,source-0455,YÖK Atlas,belirsiz,gercek-icerik,/reviews
+egitim,doc-78c2d22d3d53,source-0451,National Center for Education Statistics,belirsiz,gercek-icerik,/national-center-education-statistics-nces/products
+egitim,doc-9376cfd642c5,source-0450,U.S. Department of Education,sitemap,aday-kesif,/sitemap.xml
+egitim,doc-9fe44b0bf7a0,source-0462,Class Central,ana-sayfa,gercek-icerik,/
+egitim,doc-acacf02f3225,source-0461,Skillshare,belirsiz,gercek-icerik,/hc/de/categories/200230948-Skillshare-f%C3%BCr-Teams
+egitim,doc-bc048ab17757,source-0461,Skillshare,ana-sayfa,gercek-icerik,/hc/en-us
+egitim,doc-c8f96ed88147,source-0454,YÖK,sitemap,aday-kesif,/sitemap.xml
+eklenti-entegrasyon,doc-014858730b5c,source-0132,Airtable Marketplace,sitemap,aday-kesif,/sitemap.xml
+eklenti-entegrasyon,doc-20210566918c,source-0119,BigCommerce App Marketplace,belirsiz,js-kabugu,/apps/
+eklenti-entegrasyon,doc-43c45e205db6,source-0133,Canva Apps Marketplace,kullanim-senaryosu,gercek-icerik,/case-studies/
+eklenti-entegrasyon,doc-55e743ba6f5f,source-0122,Salesforce AppExchange,ana-sayfa,js-kabugu,/
+eklenti-entegrasyon,doc-69c0d9161a8b,source-0117,Wix App Market,belirsiz,gercek-icerik,/app-market
+eklenti-entegrasyon,doc-7810ae1f522d,source-0122,Salesforce AppExchange,liste-sayfasi,gercek-icerik,/categories/data-management
+eklenti-entegrasyon,doc-84a096edc2ef,source-0115,WooCommerce Marketplace,forum-sayfasi,gercek-icerik,/community/
+eklenti-entegrasyon,doc-98395aef3c45,source-0130,Zapier App Directory,inceleme-sayfasi,gercek-icerik,/apps/categories/reviews
+eklenti-entegrasyon,doc-a9383cee1b29,source-0129,Notion Integrations,sitemap,aday-kesif,/ar/md/sitemap.xml
+eklenti-entegrasyon,doc-bc1a6fb8988c,source-0132,Airtable Marketplace,belirsiz,js-kabugu,/marketplace
+eklenti-entegrasyon,doc-c4681e3945d7,source-0122,Salesforce AppExchange,ana-sayfa,js-kabugu,/
+eklenti-entegrasyon,doc-dc1d4e5011bd,source-0130,Zapier App Directory,fiyatlandirma-sayfasi,gercek-icerik,/pricing
+fintech,doc-0a5c214ab0ea,source-0439,Open Banking UK,sitemap,aday-kesif,/sitemap_index.xml
+fintech,doc-16d4dfad8790,source-0384,SPK,belirsiz,gercek-icerik,/Urunler
+fintech,doc-3cef2cb31eff,source-0437,Bank for International Settlements,ana-sayfa,gercek-icerik,/
+fintech,doc-50007bd794de,source-0443,Yahoo Finance,ana-sayfa,gercek-icerik,/
+fintech,doc-5a5a9f6b0c3c,source-0266,Companies House,sitemap,aday-kesif,/sitemaps/sitemap_2.xml
+fintech,doc-74e670d1bf2f,source-0266,Companies House,yazi,gercek-icerik,/government/case-studies/20-million-investment-for-sports-and-leisure-
+fintech,doc-8a55c1fd9618,source-0384,SPK,fiyatlandirma-sayfasi,gercek-icerik,/pricing
+fintech,doc-94624c6b44a2,source-0433,FRED,liste-sayfasi,gercek-icerik,/categories
+fintech,doc-a348927ec1a5,source-0449,DefiLlama,sitemap,aday-kesif,/sitemap.xml
+fintech,doc-c4a0e64218a6,source-0441,NYSE,ana-sayfa,gercek-icerik,/index
+fintech,doc-d399df9a7b5c,source-0432,Federal Reserve,ana-sayfa,gercek-icerik,/
+fintech,doc-ee403382ae98,source-0437,Bank for International Settlements,kullanim-senaryosu,gercek-icerik,/acout/banking/customers
+gayrimenkul,doc-09093ae72eda,source-0469,Realtor.com,politika-dosyasi,politika,/robots.txt
+gayrimenkul,doc-0f682f034b2f,source-0476,ImmobilienScout24,yazi,gercek-icerik,/wissen/vermieten/vermieterpfandrecht.html
+gayrimenkul,doc-15c35e370b75,source-0483,RICS,ana-sayfa,gercek-icerik,/
+gayrimenkul,doc-1b188e4eba0f,source-0470,Trulia,sitemap,aday-kesif,/sitemaps/xml/recent_updates/index.xml
+gayrimenkul,doc-2b5850388e35,source-0484,U.S. Census Building Permits,sitemap,aday-kesif,/sitemapindex/census.xml
+gayrimenkul,doc-39c7680afecf,source-0468,Redfin,ana-sayfa,arsiv,/
+gayrimenkul,doc-6508a63563a2,source-0471,Rightmove,sitemap,aday-kesif,/sitemap.xml
+gayrimenkul,doc-6ee72419332a,source-0479,Emlakjet,belirsiz,gercek-icerik,/danismanlar
+gayrimenkul,doc-8427299251d7,source-0484,U.S. Census Building Permits,sitemap,aday-kesif,/sitemapindex/video.xml
+gayrimenkul,doc-8a2c1ce90577,source-0470,Trulia,belirsiz,gercek-icerik,"/for_rent/Atlanta,GA/"
+gayrimenkul,doc-a2835e58f417,source-0472,Zoopla,ana-sayfa,arsiv,/
+gayrimenkul,doc-aa414cf42a76,source-0484,U.S. Census Building Permits,sitemap,aday-kesif,/sitemapindex/sitemap.xml
+gelistirici-araci,doc-1027662cad28,source-0029,Dev.to,ana-sayfa,gercek-icerik,/
+gelistirici-araci,doc-2a84db52aee6,source-0030,Hashnode,fiyatlandirma-sayfasi,gercek-icerik,/alternatives
+gelistirici-araci,doc-3b218f3d1d54,source-0030,Hashnode,ana-sayfa,gercek-icerik,/
+gelistirici-araci,doc-4b2a48b8d3d2,source-0033,DZone,sitemap,aday-kesif,/refcard-1.xml
+gelistirici-araci,doc-60e80b2ea5c6,source-0020,SourceForge,sitemap,aday-kesif,/sitemap.xml
+gelistirici-araci,doc-6bfdf24750e4,source-0035,Slashdot,ana-sayfa,gercek-icerik,/
+gelistirici-araci,doc-7f90c691fab2,source-0021,Codeberg,belirsiz,gercek-icerik,/Codeberg/org/compare/17bdb39b0c1ecd0e423f3ba592650ce57fcdfbf5..71149c
+gelistirici-araci,doc-87fa637d100d,source-0023,Stack Overflow,api-yaniti,api-yaniti,/2.3/questions
+gelistirici-araci,doc-a14f468c745f,source-0024,Stack Exchange,api-yaniti,api-yaniti,/2.3/sites
+gelistirici-araci,doc-a9cf0aeea1d2,source-0050,JetBrains Marketplace,belirsiz,js-kabugu,/plugin/1-colourchooser/reviews
+gelistirici-araci,doc-c6a94d95a7a7,source-0029,Dev.to,besleme,besleme,/feed
+gelistirici-araci,doc-d4710c307dbe,source-0020,SourceForge,fiyatlandirma-sayfasi,gercek-icerik,/software/vendors/pricing/
+mobil-uygulama,doc-18548d4df59a,source-0099,Samsung Galaxy Store,sitemap,aday-kesif,/sitemap.xml
+mobil-uygulama,doc-1927293d4418,source-0108,Uptodown,ana-sayfa,gercek-icerik,/
+mobil-uygulama,doc-1e29b756ea67,source-0107,APKMirror,ana-sayfa,gercek-icerik,/
+mobil-uygulama,doc-2a56addd0f19,source-0099,Samsung Galaxy Store,sitemap,aday-kesif,/sitemap_Apps_2.xml
+mobil-uygulama,doc-34a931d5be96,source-0097,Google Play Store,belirsiz,js-kabugu,/store/games
+mobil-uygulama,doc-472e7ca8abfe,source-0105,Aptoide,sitemap,aday-kesif,/sitemap-app-1.xml
+mobil-uygulama,doc-4c2595ad7094,source-0108,Uptodown,liste-sayfasi,gercek-icerik,/marketplace
+mobil-uygulama,doc-854d42ea70cb,source-0105,Aptoide,sitemap,aday-kesif,/sitemap-app-3.xml
+mobil-uygulama,doc-a8ddf44b3ca7,source-0096,Apple App Store,belirsiz,gercek-icerik,/us/iphone/today
+mobil-uygulama,doc-c1bd45216866,source-0105,Aptoide,sitemap,aday-kesif,/sitemap-app-2.xml
+mobil-uygulama,doc-dbded79a5a82,source-0108,Uptodown,ana-sayfa,gercek-icerik,/
+mobil-uygulama,doc-e80fd2f268b7,source-0101,Microsoft Store,sitemap,aday-kesif,/sitemap
+ortak,doc-00322532292c,source-0597,Wynter,karsilastirma-sayfasi,gercek-icerik,/compare
+ortak,doc-1698fdbf0e1d,source-0219,Moz,sitemap,aday-kesif,/sitemaps-1-sitemap.xml
+ortak,doc-2b9904d1ec38,source-0228,AnswerThePublic,ana-sayfa,js-kabugu,/en
+ortak,doc-3bbe500c08a6,source-0228,AnswerThePublic,sitemap,aday-kesif,/sitemap.xml
+ortak,doc-51d8ac863e32,source-0012,SerpAPI,ana-sayfa,arsiv,/
+ortak,doc-720774ce889d,source-0247,AppMagic,sitemap,aday-kesif,/sitemap-blog.xml
+ortak,doc-89a9c86aefd0,source-0602,Sprig,karsilastirma-sayfasi,gercek-icerik,/compare
+ortak,doc-9dc7a2b23f0c,source-0249,BigSpy,ana-sayfa,gercek-icerik,/en
+ortak,doc-b060473a39cd,source-0223,SpyFu,politika-dosyasi,politika,/robots.txt
+ortak,doc-c6b39317cae3,source-0602,Sprig,fiyatlandirma-sayfasi,gercek-icerik,/pricing
+ortak,doc-d5ac68cc8270,source-0335,bioRxiv,sitemap,aday-kesif,/sitemap.xml
+ortak,doc-e7a5bb700910,source-0208,Netcraft,ana-sayfa,js-kabugu,/
+oyun,doc-008646c22fbb,source-0532,OpenCritic,sitemap,aday-kesif,/sitemap_games_1.xml
+oyun,doc-1614a303387c,source-0521,itch.io,liste-sayfasi,gercek-icerik,/app
+oyun,doc-38f4f0215565,source-0524,Nintendo eShop,sitemap,aday-kesif,/au/sitemap/0.xml
+oyun,doc-4dd13d636800,source-0524,Nintendo eShop,belirsiz,gercek-icerik,/us/store/
+oyun,doc-622d7f12da7d,source-0521,itch.io,sitemap,aday-kesif,/sitemaps/games.xml
+oyun,doc-7186d067415e,source-0532,OpenCritic,liste-sayfasi,gercek-icerik,/browse
+oyun,doc-861699a34e4f,source-0520,GOG,belirsiz,gercek-icerik,/u/@me/reviews
+oyun,doc-a47cfd47d217,source-0518,Steam,liste-sayfasi,gercek-icerik,/app/1395520
+oyun,doc-c207cfcbd6c2,source-0532,OpenCritic,sitemap,aday-kesif,/sitemap.xml
+oyun,doc-d95e9b299d69,source-0521,itch.io,sitemap,aday-kesif,/sitemaps/jams.xml
+oyun,doc-ea089cb77bf8,source-0520,GOG,ana-sayfa,gercek-icerik,/en/
+oyun,doc-efeb6675d1c8,source-0521,itch.io,kayit-sayfasi,gercek-icerik,/question
+regule-sektor,doc-00e3f2b08cd7,source-0392,European Data Protection Board,belirsiz,gercek-icerik,/home_en
+regule-sektor,doc-091116dfa9fa,source-0405,Competition and Markets Authority,liste-sayfasi,gercek-icerik,/browse
+regule-sektor,doc-301a1cfc708a,source-0400,U.S. Securities and Exchange Commission,ana-sayfa,arsiv,/
+regule-sektor,doc-4a3241c0ded0,source-0399,U.S. Food and Drug Administration,ana-sayfa,arsiv,/
+regule-sektor,doc-54b396ca9e05,source-0404,UK Information Commissioner's Office,belirsiz,gercek-icerik,/for-organisations/direct-marketing-and-privacy-and-electronic-communi
+regule-sektor,doc-6d4c24748e6b,source-0384,SPK,fiyatlandirma-sayfasi,gercek-icerik,/plans
+regule-sektor,doc-872650cb049d,source-0402,UK Legislation,ana-sayfa,gercek-icerik,/
+regule-sektor,doc-8a55c1fd9618,source-0384,SPK,fiyatlandirma-sayfasi,gercek-icerik,/pricing
+regule-sektor,doc-8f61465706d8,source-0396,Federal Register,ana-sayfa,arsiv,/
+regule-sektor,doc-b75bedf93717,source-0403,UK Financial Conduct Authority,sitemap,aday-kesif,/consumers/fca-firm-checker/sitemap.xml
+regule-sektor,doc-bb4e35b2da9d,source-0384,SPK,ana-sayfa,gercek-icerik,/
+regule-sektor,doc-d435f4218281,source-0387,Sağlık Bakanlığı,ana-sayfa,arsiv,/
+saglik,doc-0d4795bea024,source-0424,ECDC,sitemap,aday-kesif,/sitemap.xml
+saglik,doc-1e9f05ae5085,source-0424,ECDC,sitemap,aday-kesif,/sitemap.xml
+saglik,doc-1edfea6d3e07,source-0429,MedlinePlus,ana-sayfa,gercek-icerik,/
+saglik,doc-2250e832273b,source-0430,HealthData.gov,ana-sayfa,js-kabugu,/
+saglik,doc-2682d44f32a5,source-0423,CDC,ana-sayfa,gercek-icerik,/
+saglik,doc-3d3445e66963,source-0331,PubMed,ana-sayfa,gercek-icerik,/
+saglik,doc-4138986c453f,source-0422,NICE,ana-sayfa,gercek-icerik,/
+saglik,doc-499aeaedd1cd,source-0423,CDC,belirsiz,gercek-icerik,/about-us/community/
+saglik,doc-4a3241c0ded0,source-0399,U.S. Food and Drug Administration,ana-sayfa,arsiv,/
+saglik,doc-62c6e45b11bc,source-0424,ECDC,sitemap,aday-kesif,/sitemap.xml
+saglik,doc-796b0b20504a,source-0431,Global Health Data Exchange,ana-sayfa,gercek-icerik,/
+saglik,doc-859bfdbac6d6,source-0422,NICE,kayit-sayfasi,gercek-icerik,/solutions/boost-customer-loyalty
+seyahat,doc-01be99bc1364,source-0493,Hostelworld,ana-sayfa,gercek-icerik,/
+seyahat,doc-0868c88fbca4,source-0502,Moovit,sitemap,aday-kesif,/sitemap_index.xml
+seyahat,doc-1a387019ea00,source-0498,Uber,sitemap,aday-kesif,/sitemap.xml
+seyahat,doc-2dce68bf08f3,source-0489,Agoda,ana-sayfa,js-kabugu,/
+seyahat,doc-429b476ff3da,source-0490,Skyscanner,belirsiz,gercek-icerik,/community
+seyahat,doc-5f277e4c37a3,source-0486,Airbnb,politika-dosyasi,politika,/robots.txt
+seyahat,doc-68227c2f9a74,source-0485,Booking.com,sitemap,aday-kesif,/sitembk-airport-index.xml
+seyahat,doc-77107610324b,source-0303,OpenStreetMap,ana-sayfa,gercek-icerik,/
+seyahat,doc-7adf225cf12b,source-0491,Kayak,sitemap,aday-kesif,/store-categories-sitemap.xml
+seyahat,doc-8aab0ef7630e,source-0494,Vrbo,ana-sayfa,js-kabugu,/
+seyahat,doc-8bddbe2e9f89,source-0502,Moovit,sitemap,aday-kesif,/events-sitemap.xml
+seyahat,doc-9e79c2088f41,source-0491,Kayak,sitemap,aday-kesif,/sitemap.xml
+turkiye-pazari,doc-1be11b382c67,source-0619,StartupMarket,ana-sayfa,gercek-icerik,/
+turkiye-pazari,doc-34e231c8ffc1,source-0620,startups.watch,ana-sayfa,gercek-icerik,/
+turkiye-pazari,doc-3bc1dd539e43,source-0622,TÜBİTAK,liste-sayfasi,gercek-icerik,/tr/kurumsal/teknoloji-transfer-ofisi/ilanlar
+turkiye-pazari,doc-446719e917fc,source-0624,Bilişim Vadisi,sitemap,aday-kesif,/page-sitemap.xml
+turkiye-pazari,doc-4d3f64897b51,source-0635,Founder Institute Türkiye,ana-sayfa,gercek-icerik,/
+turkiye-pazari,doc-587eca55ecee,source-0634,Arya Women Investment Platform,ana-sayfa,gercek-icerik,/
+turkiye-pazari,doc-7404409322b2,source-0627,ODTÜ Teknokent,ana-sayfa,arsiv,/tr/
+turkiye-pazari,doc-820ae4db92b3,source-0633,Galata Business Angels,belirsiz,gercek-icerik,/tr/kategori/roportaj/
+turkiye-pazari,doc-9b3ed03dc86d,source-0622,TÜBİTAK,ana-sayfa,gercek-icerik,/tr
+turkiye-pazari,doc-b210523fdaaa,source-0628,Yıldız Teknopark,ana-sayfa,arsiv,/
+turkiye-pazari,doc-bde527f118e5,source-0624,Bilişim Vadisi,sitemap,aday-kesif,/tribe_events-sitemap.xml
+turkiye-pazari,doc-e35ef2491b6b,source-0633,Galata Business Angels,sitemap,aday-kesif,/tr/portfolio-item-sitemap.xml
+yapay-zeka-urunu,doc-070d3f26fd5f,source-0547,Glama,sitemap,aday-kesif,/sitemap.xml
+yapay-zeka-urunu,doc-1736c864f8c5,source-0535,OpenRouter,liste-sayfasi,gercek-icerik,/apps
+yapay-zeka-urunu,doc-2a0f4e5bf9df,source-0538,Artificial Analysis,ana-sayfa,gercek-icerik,/
+yapay-zeka-urunu,doc-379d4a5170ec,source-0548,MCP.so,sitemap,aday-kesif,/sitemap.xml
+yapay-zeka-urunu,doc-40bb74ab8969,source-0541,AWS Marketplace,fiyatlandirma-sayfasi,gercek-icerik,/cn/pricing/
+yapay-zeka-urunu,doc-6f895813e9e7,source-0353,Papers with Code,sitemap,aday-kesif,/sitemaps/tasks.xml
+yapay-zeka-urunu,doc-82763723e54e,source-0537,Together AI,sitemap,aday-kesif,/sitemap.xml
+yapay-zeka-urunu,doc-92d57ae304e4,source-0536,Replicate,sitemap,aday-kesif,/sitemap.xml
+yapay-zeka-urunu,doc-a7a46f5c0ae2,source-0547,Glama,liste-sayfasi,gercek-icerik,/mcp/categories
+yapay-zeka-urunu,doc-b29712910513,source-0550,Composio,sitemap,aday-kesif,/sitemap.xml
+yapay-zeka-urunu,doc-c9d15370fd94,source-0541,AWS Marketplace,sitemap,aday-kesif,/sitemaps/sitemap_japan/
+yapay-zeka-urunu,doc-dc5755167021,source-0546,Smithery,sitemap,aday-kesif,/video-sitemap-1.xml
+yeme-icme,doc-04a1f2fa54fa,source-0505,OpenTable,politika-dosyasi,politika,/robots.txt
+yeme-icme,doc-14d14ed3b0cc,source-0506,Uber Eats,ana-sayfa,arsiv,/
+yeme-icme,doc-17b292cac473,source-0510,Just Eat,belirsiz,gercek-icerik,/home/default.aspx
+yeme-icme,doc-239a208466c6,source-0304,Foursquare,belirsiz,gercek-icerik,/products/
+yeme-icme,doc-29d0f054895c,source-0511,Yemeksepeti,ana-sayfa,js-kabugu,/
+yeme-icme,doc-2bda57a260ab,source-0304,Foursquare,sitemap,aday-kesif,/fs_products-sitemap.xml
+yeme-icme,doc-33b048e68b30,source-0508,Grubhub,ana-sayfa,arsiv,/
+yeme-icme,doc-3763bf9685fd,source-0304,Foursquare,besleme,besleme,/feed/
+yeme-icme,doc-499a05176bac,source-0304,Foursquare,fiyatlandirma-sayfasi,gercek-icerik,/pricing/
+yeme-icme,doc-54ef2e6a9f73,source-0304,Foursquare,sitemap,aday-kesif,/fs_video-sitemap.xml
+yeme-icme,doc-5a1de88054d5,source-0506,Uber Eats,politika-dosyasi,politika,/robots.txt
+yeme-icme,doc-81d1c6f37665,source-0157,Tripadvisor,ana-sayfa,arsiv,/
+yerel-hizmet,doc-0158766c4fc1,source-0312,Nextdoor,ana-sayfa,gercek-icerik,/
+yerel-hizmet,doc-177f67ba77af,source-0315,Houzz,ana-sayfa,gercek-icerik,/
+yerel-hizmet,doc-36e66a60a31e,source-0309,TomTom,kullanim-senaryosu,gercek-icerik,/customers/
+yerel-hizmet,doc-4870107df926,source-0317,Fresha,sitemap,aday-kesif,/sitemap.xml
+yerel-hizmet,doc-54ef2e6a9f73,source-0304,Foursquare,sitemap,aday-kesif,/fs_video-sitemap.xml
+yerel-hizmet,doc-6f5d3dd56462,source-0306,Yandex Maps,ana-sayfa,arsiv,/
+yerel-hizmet,doc-77c04b310125,source-0319,Armut,liste-sayfasi,gercek-icerik,/hizmetveren/kiralik-vinc-kiralama-sepet-vinc-kiralama-kiralik-vinc-is
+yerel-hizmet,doc-86b5783e2ae5,source-0304,Foursquare,forum-sayfasi,gercek-icerik,/developer/community/
+yerel-hizmet,doc-9db7a0b10621,source-0318,Booksy,ana-sayfa,gercek-icerik,/en-us/
+yerel-hizmet,doc-b0124bcad21d,source-0314,Angi,ana-sayfa,arsiv,/
+yerel-hizmet,doc-d1543d4ddf34,source-0315,Houzz,fiyatlandirma-sayfasi,gercek-icerik,/houzz-pro/pricing
+yerel-hizmet,doc-d9045db8406c,source-0308,MapQuest,ana-sayfa,arsiv,/

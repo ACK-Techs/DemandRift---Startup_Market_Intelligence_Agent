@@ -1,0 +1,749 @@
+{
+  "expected_unique_sources": 73,
+  "manifest_id": "bulk-source-access-lab-v1-arsiv-canli-retry",
+  "policy": {
+    "api_rule": "only_explicit_keyless_official_endpoints",
+    "global_catalog_disposition": "retained",
+    "official_hosts_only": true,
+    "unresolved_network_access": false
+  },
+  "resolved_count": 73,
+  "schema_version": "1.0.0",
+  "source_list": "SITE-LISTESI.md",
+  "sources": [
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "CodeProject",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.codeproject.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0036",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "G2 Track",
+      "entry_path": "/track",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.g2.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0064",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "GrowthHackers",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://growthhackers.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0069",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Discord",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://discord.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0090",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Microsoft Edge Add-ons",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://microsoftedge.microsoft.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0111",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Zoom App Marketplace",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://marketplace.zoom.us",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0125",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Microsoft AppSource",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://appsource.microsoft.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0126",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Make Apps Directory",
+      "entry_path": "/en/integrations",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.make.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0131",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "G2",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.g2.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0134",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "TrustRadius",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.trustradius.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0138",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "SaaSworthy",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.saasworthy.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0145",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Sitejabber",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.sitejabber.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0149",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "ConsumerAffairs",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.consumeraffairs.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0150",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Better Business Bureau",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.bbb.org",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0151",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Indiegogo",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.indiegogo.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0174",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Creative Market",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://creativemarket.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0177",
+      "verification_basis": "generated_candidate_validated"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Verisign RDAP",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://rdap.verisign.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0186",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "SecurityTrails",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://securitytrails.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0195",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Google Keyword Planner",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://ads.google.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0214",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Keyword Tool",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://keywordtool.io",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0227",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Snapchat Ads Gallery",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://ads.snapchat.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0241",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "X Ads Transparency Center",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://ads.x.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0242",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Craft.co",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://craft.co",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0258",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Owler",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.owler.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0259",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "European e-Justice Business Registers",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://e-justice.europa.eu",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0267",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "KAP",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.kap.org.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0270",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "Seed-DB",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.seed-db.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0274",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Monster",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.monster.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0281",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "FlexJobs",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.flexjobs.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0292",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "MapQuest",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.mapquest.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0308",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Thumbtack",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.thumbtack.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0313",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Angi",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.angi.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0314",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Wiley Online Library",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://onlinelibrary.wiley.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0344",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "OECD Data",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://data.oecd.org",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0355",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Bureau of Labor Statistics",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.bls.gov",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0362",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "OECD Health Statistics",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://data-explorer.oecd.org",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0365",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "T.C. Ticaret Bakanlığı",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.ticaret.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0370",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "T.C. Sağlık Bakanlığı",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.saglik.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0371",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "U.S. Food and Drug Administration",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://fda.gov",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0399",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "USPTO Patent Center",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://patentcenter.uspto.gov",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0407",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "WIPO Global Brand Database",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://branddb.wipo.int",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0410",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "EUIPO",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.euipo.europa.eu",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0413",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Justia Patents",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://patents.justia.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0417",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Orphanet",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.orpha.net",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0425",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "DailyMed",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://dailymed.nlm.nih.gov",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0428",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "IMF",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.imf.org",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0435",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Nasdaq",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.nasdaq.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0440",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "YÖK Atlas",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://yokatlas.yok.gov.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0455",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "FutureLearn",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.futurelearn.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0463",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "G2 Education Software",
+      "entry_path": "/categories/education",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.g2.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0465",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Redfin",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.redfin.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0468",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Zoopla",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.zoopla.co.uk",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0472",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Idealista",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.idealista.it",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0473",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Seloger",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.seloger.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0475",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Hepsiemlak",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.hepsiemlak.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0478",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Expedia",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.expedia.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0487",
+      "verification_basis": "wikipedia_index_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Hotels.com",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.hotels.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0488",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Vrbo",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.vrbo.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0494",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "DoorDash",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.doordash.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0507",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Grubhub",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.grubhub.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0508",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "TheFork",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.thefork.fr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0516",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Michelin Guide",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://guide.michelin.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0517",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "SteamDB",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://steamdb.info",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0527",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "LMSYS Chatbot Arena",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://lmarena.ai",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0539",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Azure Marketplace",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://azuremarketplace.microsoft.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0542",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "LangChain Integrations",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://python.langchain.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0544",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Make",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.make.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0552",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Jotform",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.jotform.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0587",
+      "verification_basis": "wikidata_p856_unverified"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "PickFu",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.pickfu.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0598",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Cloudorado",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.cloudorado.com",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0611",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "StackShare",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://stackshare.io",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0618",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "high",
+      "display_name": "ODTÜ Teknokent",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://odtuteknokent.com.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0627",
+      "verification_basis": "curated_official_host_fixture"
+    },
+    {
+      "api_endpoints": [],
+      "confidence": "medium",
+      "display_name": "Endeavor Türkiye",
+      "global_catalog_disposition": "retained",
+      "official_origin": "https://www.endeavor.org.tr",
+      "resolution_status": "resolved_official_origin",
+      "source_id": "source-0631",
+      "verification_basis": "curated_official_host_fixture"
+    }
+  ],
+  "unresolved_count": 0
+}
