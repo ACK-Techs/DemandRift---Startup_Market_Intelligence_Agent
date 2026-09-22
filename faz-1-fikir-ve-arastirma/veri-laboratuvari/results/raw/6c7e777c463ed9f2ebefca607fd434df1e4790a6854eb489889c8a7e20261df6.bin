@@ -1,0 +1,1728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DEV Community</title>
+    <description>The most recent home feed on DEV Community.</description>
+    <link>https://dev.to</link>
+    <atom:link rel="self" type="application/rss+xml" href="https://dev.to/feed"/>
+    <language>en</language>
+    <item>
+      <title>Writing to Get Cited by AI Is a Different Skill Than Writing to Rank in Google</title>
+      <dc:creator>Steven Snell</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:32:35 +0000</pubDate>
+      <link>https://dev.to/stevensnell/writing-to-get-cited-by-ai-is-a-different-skill-than-writing-to-rank-in-google-44go</link>
+      <guid>https://dev.to/stevensnell/writing-to-get-cited-by-ai-is-a-different-skill-than-writing-to-rank-in-google-44go</guid>
+      <description>&lt;p&gt;Type a question into Google right now and there's a decent chance you never leave the search page. The answer sits right there, generated on the spot, with maybe two or three source links tucked into the bottom of it. Ten blue links used to compete for a click. Now one paragraph competes for a citation.&lt;/p&gt;
+
+&lt;p&gt;That shift matters more than most content advice has caught up with. Ranking on page one used to be the finish line. Increasingly, the finish line is getting pulled into an answer that someone reads and never clicks through from at all. And getting pulled into that answer takes a different kind of writing than getting ranked ever did.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Google Actually Rewarded
+&lt;/h2&gt;
+
+&lt;p&gt;For twenty years, ranking well meant reverse-engineering an algorithm that was trying to guess what a human typed and wanted. That produced a specific kind of writing, one built around keyword placement and phrasing that matched whatever a person typed into the box. Length mattered too, since word count signaled thoroughness to an algorithm even when the extra words were just padding.&lt;/p&gt;
+
+&lt;p&gt;None of that was really about the words themselves. It was about satisfying a system that stood between the writer and the reader, on the assumption that satisfying the system was the only way to reach the reader at all.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What AI Systems Do Instead
+&lt;/h2&gt;
+
+&lt;p&gt;An AI answer engine isn't ranking pages. It's extracting claims. It reads through a pile of sources, pulls out the sentences that most directly answer the question, and stitches them into a response. Nobody scrolls past that response to see where it came from unless they specifically want to check.&lt;/p&gt;
+
+&lt;p&gt;That changes what counts as good writing in a fairly specific way. A sentence that gets pulled out of a paragraph and dropped into someone else's answer either holds up on its own or it doesn't. If a claim only makes sense next to the three sentences before it, it never gets picked. If it depends on a "however" two paragraphs earlier to be accurate, it gets misquoted or skipped entirely.&lt;/p&gt;
+
+&lt;p&gt;Writing for extraction means writing sentences that survive being ripped out of context. That's a real skill, and it isn't the one a decade of on-page SEO trained people to build.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The Habits This Actually Changes
+&lt;/h2&gt;
+
+&lt;p&gt;A few things shift once extraction, not ranking, becomes the target.&lt;/p&gt;
+
+&lt;p&gt;Answer the question first. Content built for search engines often built up to the point slowly, partly because length signaled depth to the algorithm and partly because writers were taught to hook readers before delivering value. An AI system isn't hooked by anything. It wants the clearest possible statement of the answer, and it wants it early.&lt;/p&gt;
+
+&lt;p&gt;Make claims that are true in isolation. A lot of content hedges by design: "it depends," "in some cases," "generally speaking." That hedging protects the writer, but it also makes a sentence useless to something trying to extract a clean answer. Compare "email marketing can be effective depending on your list and industry" with "a small, engaged list will outperform a large, cold one." The second version might be wrong in some situation somewhere. That's fine. It's specific enough to be useful, and specific enough to get pulled into an answer. Vague ones get passed over simply because there's nothing to grab onto.&lt;/p&gt;
+
+&lt;p&gt;Let one section stand on its own. A page written for a human reader can build an argument across ten paragraphs, each one leaning on the last. A page written to be extracted needs sections that work as standalone units, so any one of them could be the piece an AI system pulls without losing its meaning. That's a structural change as much as a sentence-level one, and it's probably the hardest habit to build, since most writers were trained to make paragraphs depend on each other.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Where This Overlaps With What Already Worked
+&lt;/h2&gt;
+
+&lt;p&gt;SEO and AI-answer writing overlap more than they conflict. Clarity was always the goal, even when the tactics for getting there were clumsy. Specificity has always outperformed vagueness in both worlds. Expertise still shows, whether a machine is extracting a sentence or a person is scanning a page for the part that answers their question.&lt;/p&gt;
+
+&lt;p&gt;The overlap is bigger than the split, and what changed was emphasis more than values. Writing that was already clear and direct probably works fine in both systems. Writing that leaned on length and keyword density to get by is the writing that's now exposed.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What to Actually Do With This
+&lt;/h2&gt;
+
+&lt;p&gt;The practical move is to write the clearest possible answer first and think about structure after that, rather than chasing a new checklist for AI citation or throwing out SEO altogether. Say the thing plainly, make the claim specific enough that it could be wrong, and don't make a reader, or a machine, dig through three paragraphs of throat-clearing to find out what you actually think.&lt;/p&gt;
+
+&lt;p&gt;That was probably good advice before any of this started. It just wasn't the advice that got rewarded. Now it is.&lt;/p&gt;
+
+&lt;p&gt;Have you noticed which of your own pages show up in AI answers, and whether they're the ones you expected?&lt;/p&gt;
+
+</description>
+      <category>seo</category>
+      <category>marketing</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>so close to 4k followers on here, currently sitting at 3,973 🥹</title>
+      <dc:creator>Sean Boult</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:26:21 +0000</pubDate>
+      <link>https://dev.to/hacksore/so-close-to-4k-followers-on-here-currently-sitting-at-3973-44oo</link>
+      <guid>https://dev.to/hacksore/so-close-to-4k-followers-on-here-currently-sitting-at-3973-44oo</guid>
+      <description></description>
+      <category>community</category>
+      <category>socialmedia</category>
+    </item>
+    <item>
+      <title>Why I Chose NestJS and Never Looked Back</title>
+      <dc:creator>Peace Melodi</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:19:04 +0000</pubDate>
+      <link>https://dev.to/peacemelodi/why-i-chose-nestjs-and-never-looked-back-1mon</link>
+      <guid>https://dev.to/peacemelodi/why-i-chose-nestjs-and-never-looked-back-1mon</guid>
+      <description>&lt;p&gt;A few years ago, I was just another developer trying to figure out how to build things that actually work, not just things that run once and fall apart the moment real users touch them. I tried a few paths. I read a lot. I broke a lot of things. And somewhere along that road, I found NestJS.&lt;/p&gt;
+
+&lt;p&gt;At first, it looked like just another tool. Another framework to learn, another thing to add to my resume. But the more I used it, the more I realized something. NestJS wasn't just teaching me how to build backend systems. It was teaching me how to think like someone who builds things meant to last.&lt;/p&gt;
+
+&lt;p&gt;I did not choose NestJS because it was trendy. I chose it because it made me feel organized in a way nothing else had. It gave structure to ideas that used to feel messy in my head. It made me feel like a professional, not just someone typing code and hoping it works.&lt;/p&gt;
+
+&lt;p&gt;Here is the lesson I want you to take from this, even if you never write a single line of NestJS code. Anything you build, whether it is software, a business, or even your own life, lasts longer when it has structure. Not rules for the sake of rules, but structure that makes room for growth without everything falling apart. That is what NestJS taught me first, before it taught me anything technical. Organize your thinking, and the work becomes easier to carry.&lt;/p&gt;
+
+&lt;p&gt;Today, when people ask me why I still use NestJS after all this time, my answer is simple. It is not just a tool I use. It is the reason I became confident in what I do. And once you experience that kind of confidence in your work, it is very hard to walk away from it.&lt;/p&gt;
+
+&lt;p&gt;I write these thoughts as Peace Melodi, a backend software engineer who cares deeply about building things that hold up under real pressure, real users, and real growth. If any of this resonated with you, I would love to connect.&lt;/p&gt;
+
+&lt;p&gt;LinkedIn: &lt;a href="https://www.linkedin.com/in/melodi-peace-406494368" rel="noopener noreferrer"&gt;https://www.linkedin.com/in/melodi-peace-406494368&lt;/a&gt;&lt;br&gt;
+GitHub: &lt;a href="https://github.com/PeaceMelodi" rel="noopener noreferrer"&gt;https://github.com/PeaceMelodi&lt;/a&gt;&lt;/p&gt;
+
+</description>
+      <category>nestjs</category>
+      <category>node</category>
+      <category>typescript</category>
+      <category>javascript</category>
+    </item>
+    <item>
+      <title>Your terragrunt (or terraform) plan is 4,000 lines. Only two of them matter.</title>
+      <dc:creator>Ilya Rubinchik</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:18:23 +0000</pubDate>
+      <link>https://dev.to/im_citius/your-terragrunt-or-terraform-plan-is-4000-lines-only-two-of-them-matter-4p8</link>
+      <guid>https://dev.to/im_citius/your-terragrunt-or-terraform-plan-is-4000-lines-only-two-of-them-matter-4p8</guid>
+      <description>&lt;p&gt;You know the ritual.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;terragrunt run &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--&lt;/span&gt; plan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then you scroll. Past forty units of &lt;code&gt;Refreshing state…&lt;/code&gt;. Past the ninth&lt;br&gt;
+identical &lt;code&gt;count&lt;/code&gt; instance. Past a &lt;code&gt;tags_all.LastModified&lt;/code&gt; that changes on every&lt;br&gt;
+single run because your CI stamps a timestamp into it. Somewhere in there are&lt;br&gt;
+the two lines you actually needed to see — probably the &lt;code&gt;# forces replacement&lt;/code&gt;&lt;br&gt;
+on a database.&lt;/p&gt;
+
+&lt;p&gt;You scroll back up. You lose it. You pipe it to a file and grep for &lt;code&gt;must be&lt;br&gt;
+replaced&lt;/code&gt;. You approve anyway, because it's 6pm.&lt;/p&gt;
+
+&lt;p&gt;I got tired of that, so I wrote &lt;a href="https://github.com/imcitius/tgsieve" rel="noopener noreferrer"&gt;&lt;strong&gt;tgsieve&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  What it does
+&lt;/h2&gt;
+
+&lt;p&gt;It runs the plan for you, reads the &lt;strong&gt;structured&lt;/strong&gt; output instead of the prose,&lt;br&gt;
+throws away the noise you declared as noise, collapses everything that repeats,&lt;br&gt;
+and prints what's left.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;DESTROY / REPLACE (1)
+  envs/prod/a
+    ± aws_db_instance.main
+        engine_version  "14.7" → "15.3"   forces replacement
+
+UPDATE (5)
+  5 units  envs/dev/a, envs/dev/b, envs/prod/a, +2 more
+    ~ null_resource.pin
+        triggers.region  "eu-central-1" → "us-west-2"
+
+SUMMARY  ±1 replace  ~5 update
+  severity: 1 high, 5 medium
+  hid 214 attributes across 3 rules (--explain to see them)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's five units of a real terragrunt plan — the same run terraform prints as&lt;br&gt;
+several hundred lines.&lt;/p&gt;
+
+&lt;p&gt;The report nests three deep — &lt;strong&gt;where&lt;/strong&gt;, then &lt;strong&gt;what&lt;/strong&gt;, then &lt;strong&gt;which fields&lt;/strong&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;UPDATE (5)
+  envs/prod/c                            ← the unit, said once
+    ~ aws_s3_bucket.this                 ← the resource
+        tags_all.entity  "tgb" → "tgc"   ← the attributes that changed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A change that's identical across units replaces the directory with the set it&lt;br&gt;
+covers, so the first column always answers the same question: &lt;em&gt;where&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  It doesn't scrape text
+&lt;/h2&gt;
+
+&lt;p&gt;This matters, because the obvious implementation is fragile garbage.&lt;/p&gt;
+
+&lt;p&gt;You might reach for &lt;code&gt;terragrunt run --all -- plan -json&lt;/code&gt;. It doesn't work:&lt;br&gt;
+terragrunt forwards terraform's own NDJSON straight through, so lines from units&lt;br&gt;
+running in parallel interleave with no way to tell them apart.&lt;/p&gt;
+
+&lt;p&gt;So tgsieve asks terragrunt for machine-readable artifacts and reads those:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Flag it passes&lt;/th&gt;
+&lt;th&gt;What it gets&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;per-unit plans&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--json-out-dir&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;one &lt;code&gt;tfplan.json&lt;/code&gt; per unit — the full &lt;code&gt;terraform show -json&lt;/code&gt; document&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;live progress&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--log-format json&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NDJSON events tagged with &lt;code&gt;working-dir&lt;/code&gt;, so failures surface the moment they happen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;run report&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--report-file/--report-format json&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;per-unit result and duration, including units that failed before producing a plan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;From each plan it computes a real attribute-level diff — flattening&lt;br&gt;
+&lt;code&gt;before&lt;/code&gt;/&lt;code&gt;after&lt;/code&gt;/&lt;code&gt;after_unknown&lt;/code&gt; into dotted paths, honouring &lt;code&gt;replace_paths&lt;/code&gt;,&lt;br&gt;
+sensitivity, and unknown subtrees. No regexes over &lt;code&gt;~ resource "aws_..."&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;OpenTofu works too — terragrunt defaults to &lt;code&gt;tofu&lt;/code&gt;, and &lt;code&gt;--tf-path&lt;/code&gt; /&lt;br&gt;
+&lt;code&gt;TG_TF_PATH&lt;/code&gt; picks explicitly.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  Nothing is hidden until you say so
+&lt;/h2&gt;
+
+&lt;p&gt;The whole tool is one &lt;code&gt;.tgsieve.yaml&lt;/code&gt;, looked up from the working directory&lt;br&gt;
+upwards and merged, nearer files winning. &lt;code&gt;tgsieve init&lt;/code&gt; writes a starter one.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;version&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
+
+&lt;span class="na"&gt;extends&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;builtin/aws-tags&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;   &lt;span class="c1"&gt;# curated rule sets, opt-in&lt;/span&gt;
+
+&lt;span class="na"&gt;hide&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;unchanged_units&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;   &lt;span class="c1"&gt;# units with nothing left to say become a count&lt;/span&gt;
+  &lt;span class="na"&gt;reads&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;             &lt;span class="c1"&gt;# data sources resolved during apply: they create nothing&lt;/span&gt;
+
+&lt;span class="na"&gt;ignore&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tag churn&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags.LastModified"&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags.git_commit"&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags_all.*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;waiting on the provider fix&lt;/span&gt;
+    &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;aws_ecs_service&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;capacity_provider_strategy.*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+    &lt;span class="na"&gt;expires&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;2026-12-01&lt;/span&gt;     &lt;span class="c1"&gt;# after this date the rule stops hiding, loudly&lt;/span&gt;
+
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;dev is not interesting&lt;/span&gt;
+    &lt;span class="na"&gt;unit&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;envs/dev/**"&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+&lt;span class="na"&gt;never_hide&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;actions&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;delete&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;replace&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Three things I'd want to know before trusting a tool that hides my&lt;br&gt;
+infrastructure changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;A resource only disappears when &lt;em&gt;every one&lt;/em&gt; of its attributes was hidden.&lt;/strong&gt;
+One survivor keeps the whole resource on screen.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;An attribute that forces replacement is never hidden&lt;/strong&gt;, whatever the rules
+say. Destroys and replacements can't be silenced by default either.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;code&gt;--explain&lt;/code&gt; shows every hidden attribute and the rule that hid it&lt;/strong&gt;, and the
+footer always states how much was hidden. The counts count real resources,
+not rendered blocks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+  
+  
+  Suppressions that expire
+&lt;/h3&gt;
+
+&lt;p&gt;That &lt;code&gt;expires: 2026-12-01&lt;/code&gt; is my favourite line in the config. Past that date&lt;br&gt;
+the rule stops hiding anything and the report names it:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;1 rule expired and no longer hides anything: waiting on the provider fix
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;It fails &lt;strong&gt;open&lt;/strong&gt;, on purpose. A suppression that quietly outlives its reason is&lt;br&gt;
+exactly the failure this tool exists to prevent. So the lapse restores the&lt;br&gt;
+changes rather than silently continuing to swallow them.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  The small readability things
+&lt;/h2&gt;
+
+&lt;p&gt;These are the ones that made me realise how much terraform's renderer was&lt;br&gt;
+costing me.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sets are compared by members, not positions.&lt;/strong&gt; Terraform renders sets as&lt;br&gt;
+arrays, so a set that comes back in a different order looks like every index&lt;br&gt;
+changed at once. tgsieve says what actually happened:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight diff"&gt;&lt;code&gt;&lt;span class="p"&gt;input.cidrs  reordered (4 items, same members)
+&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;input.cidrs  - "10.0.2.0/24"
+input.cidrs  + "10.0.9.0/24"
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Objects inside a collection get matched by an identity field (&lt;code&gt;id&lt;/code&gt;, &lt;code&gt;name&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;key&lt;/code&gt;, &lt;code&gt;cidr_block&lt;/code&gt;, a few others) when every member carries one and it's&lt;br&gt;
+unique. So an edited security group rule reads as an edit:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;ingress["web"].to_port  80 → 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;rather than one object leaving and a nearly identical one arriving.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Long values are trimmed around the difference, not from the start.&lt;/strong&gt; Two&lt;br&gt;
+values sharing a 200-character prefix would otherwise print that prefix twice&lt;br&gt;
+and hide the part that changed. A string that's itself a JSON document — an IAM&lt;br&gt;
+policy, say — is shown as that document rather than as an escaped string.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Repeated failures get counted, not repeated.&lt;/strong&gt; A removed provider&lt;br&gt;
+configuration produces one diagnostic per orphaned resource, which terraform&lt;br&gt;
+prints as forty paragraphs. The count is the news:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;FAILED (1)
+  ✗ infra/networking  ×38
+      Error: Provider configuration not present: To work with module.peering-… (orphan)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Same at stack level. One expired credential hits every unit; you get it once,&lt;br&gt;
+with the list:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;FAILED (5)
+  ✗ 5 units, same error
+      envs/dev/a, envs/dev/b, envs/prod/a, +2 more
+      Error: no valid credential sources found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Folding never drops &lt;em&gt;where&lt;/em&gt; the problem is — diagnostics sharing a message but&lt;br&gt;
+naming different lines list those lines.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  Drift is a finding, not work
+&lt;/h2&gt;
+
+&lt;p&gt;Nothing in drift changes when you apply. So it's counted rather than listed, and&lt;br&gt;
+a plan whose only findings are drift reports what terraform reports — no&lt;br&gt;
+changes:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;SUMMARY  no changes
+  3 resources drifted outside terraform, none of them addressed by this plan (--drift to list)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--drift&lt;/code&gt; lists them, split by what the plan intends to do:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;DRIFT — this plan puts it back (2)
+DRIFT — this plan leaves it (1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The second is the one that bites — an attribute under &lt;code&gt;ignore_changes&lt;/code&gt;, or a&lt;br&gt;
+resource the config no longer governs, stays drifted after the apply. Drift&lt;br&gt;
+never trips &lt;code&gt;--fail-on&lt;/code&gt; or &lt;code&gt;--detailed-exitcode&lt;/code&gt;, because those describe what an&lt;br&gt;
+apply will &lt;em&gt;do&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  &lt;code&gt;tgsieve apply&lt;/code&gt; applies the plan you reviewed
+&lt;/h2&gt;
+
+&lt;p&gt;Not a fresh plan made after you answered.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve apply &lt;span class="nt"&gt;--all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;apply 9 changes across 5 units? [yes/no] yes
+4 resources will be destroyed or replaced — type 'destroy' to confirm: destroy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The second question only appears when something will be destroyed or replaced,&lt;br&gt;
+and it wants &lt;em&gt;that word&lt;/em&gt; rather than another "yes" — those are the changes that&lt;br&gt;
+running the tool again won't undo. Outside a terminal it refuses rather than&lt;br&gt;
+assuming; &lt;code&gt;--auto-approve&lt;/code&gt; is how you say you meant it in CI.&lt;/p&gt;
+
+&lt;p&gt;Review now, apply later:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan  &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans &lt;span class="nt"&gt;--out-dir&lt;/span&gt; ./plans
+tgsieve apply &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--plans&lt;/span&gt; ./plans
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And when the apply finishes — or stops — the report says what terraform&lt;br&gt;
+&lt;em&gt;actually did&lt;/em&gt;, which after a failure is the one question the plan can't answer:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;APPLY FAILED
+  stopped after 15m45s — the report above is what was planned, not what landed
+  ✗ Error: updating EKS Node Group (…) config: operation error EKS
+  terraform changed 4 resources · 1 did not finish · slowest first
+    ✗ terraform/live/ctrl/tests/eks module.eks…aws_eks_node_group.this — modifying, did not finish after 15m2s
+    ✓ terraform/live/ctrl/tests/eks aws_security_group_rule.node created in 3s
+  run tgsieve plan to see where things actually stand
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Living with a heavy stack
+&lt;/h2&gt;
+
+&lt;p&gt;If your stack takes twenty minutes, you need more than a pretty report.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can see what's happening.&lt;/strong&gt; A window that updates in place instead of&lt;br&gt;
+scrolling:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight console"&gt;&lt;code&gt;&lt;span class="go"&gt;  envs/prod/a  aws_db_instance.main     modifying… 1m12s
+  envs/prod/b  aws_instance.web[3]      creating… 22s
+  envs/dev/a   null_resource.deploy     done 4s
+⠴ applying · 7/12 applied · 1m30s
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The denominator comes from &lt;code&gt;terragrunt find&lt;/code&gt;, so it's known before the first&lt;br&gt;
+unit starts. Outside a terminal it collapses to a heartbeat line every 30&lt;br&gt;
+seconds, so CI logs still show liveness.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ctrl-C behaves.&lt;/strong&gt; It forwards the interrupt so terraform can release its state&lt;br&gt;
+locks, prints the report for whatever finished, lists the rest under &lt;code&gt;NOT RUN&lt;/code&gt;,&lt;br&gt;
+and exits 130.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;--resume&lt;/code&gt; picks up where an interrupted run stopped:&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans          &lt;span class="c"&gt;# 40 units, Ctrl-C at 31&lt;/span&gt;
+tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans &lt;span class="nt"&gt;--resume&lt;/span&gt; &lt;span class="c"&gt;# runs the missing 9&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Reusing a plan is only sound if the code hasn't moved under it, so a run records&lt;br&gt;
+the commit plus a fingerprint of uncommitted changes, and &lt;code&gt;--resume&lt;/code&gt; refuses to&lt;br&gt;
+mix generations:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;the plans in ./plans were made at 1cb275fd, the working tree is now at 4a91e0c2
+  re-run without --resume to plan the stack fresh, or pass --force to mix generations
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That check also covers &lt;strong&gt;where each unit's code comes from&lt;/strong&gt;. A remote module&lt;br&gt;
+pinned to a branch — or to a tag someone can move — reads identically before and&lt;br&gt;
+after the code it names changes, so each remote ref gets resolved to a commit&lt;br&gt;
+with &lt;code&gt;git ls-remote&lt;/code&gt; (one call per distinct repo+ref, not per unit;&lt;br&gt;
+&lt;code&gt;--no-resolve-refs&lt;/code&gt; for air-gapped runs).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;--fast&lt;/code&gt; skips the refresh&lt;/strong&gt;, which on a heavy stack is the single biggest&lt;br&gt;
+speed-up available. The summary says so every time, because a plan that never&lt;br&gt;
+looked at reality can report "no changes" for a stack that has drifted:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;state was not refreshed: anything changed outside terraform is invisible here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Plus: plan directories are locked while a run writes to them (&lt;code&gt;--lock-wait 2m&lt;/code&gt;&lt;br&gt;
+for CI pipelines racing each other), and unit durations are remembered per&lt;br&gt;
+directory with a two-week TTL, so &lt;code&gt;--timings&lt;/code&gt; stays meaningful across resumes.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  In CI
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;--format&lt;/code&gt; decides the shape: &lt;code&gt;tty&lt;/code&gt; (default), &lt;code&gt;md&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt; or &lt;code&gt;github&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; for pull request comments — destructive changes stay open,&lt;br&gt;
+everything else folds into &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt;, output is capped so GitHub doesn't&lt;br&gt;
+reject it, and every report starts with &lt;code&gt;&amp;lt;!-- tgsieve --&amp;gt;&lt;/code&gt; so a bot can update&lt;br&gt;
+its own comment instead of adding a new one each run.&lt;/p&gt;
+
+&lt;p&gt;With Atlantis, a custom workflow:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;workflows&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;tgsieve&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;plan&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;init&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tgsieve plan --all --format md --fail-on high&lt;/span&gt;
+    &lt;span class="na"&gt;apply&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tgsieve apply --all --auto-approve --format md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--fail-on high&lt;/code&gt; turns the plan step red only when something is destroyed or&lt;br&gt;
+replaced — a pipeline can stop for a replacement without stopping for a new log&lt;br&gt;
+group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JSON&lt;/strong&gt; is a versioned document with its own types, not the internals of the&lt;br&gt;
+sieve:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--format&lt;/span&gt; json | jq &lt;span class="nt"&gt;-r&lt;/span&gt; &lt;span class="s1"&gt;'.changes[] | select(.action=="replace") | .address'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Sensitive values never appear in it — an attribute terraform marked sensitive is&lt;br&gt;
+reported as &lt;code&gt;"sensitive": true&lt;/code&gt; with no &lt;code&gt;before&lt;/code&gt; or &lt;code&gt;after&lt;/code&gt;. A machine-readable&lt;br&gt;
+report is the easiest place for a secret to end up somewhere it shouldn't.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub Actions&lt;/strong&gt; annotations, so failures land on the diff rather than only in&lt;br&gt;
+the job log:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;::error file=modules-vpcs.tf,line=72,title=infra/networking::Error: Unsupported attribute…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And the exit codes distinguish the three ways a run can be unhappy:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;code&lt;/th&gt;
+&lt;th&gt;meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ran fine&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;tgsieve itself failed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;changes survived the sieve (&lt;code&gt;--detailed-exitcode&lt;/code&gt;, or &lt;code&gt;--fail-on&lt;/code&gt; was met)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;one or more units failed to plan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;130&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;interrupted with Ctrl-C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+  
+  
+  No terragrunt? Still works
+&lt;/h2&gt;
+
+&lt;p&gt;A root module big enough to be unreadable has the same problem as a stack, minus&lt;br&gt;
+the queue:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan  &lt;span class="nt"&gt;--engine&lt;/span&gt; terraform
+tgsieve apply &lt;span class="nt"&gt;--engine&lt;/span&gt; terraform
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Same rules, same collapsing, same formats. The flags that only mean something&lt;br&gt;
+with a queue behind them say so rather than being quietly ignored:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;--all needs terragrunt: the terraform engine plans one root module
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Try it
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;brew &lt;span class="nb"&gt;install &lt;/span&gt;imcitius/tap/tgsieve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;go &lt;span class="nb"&gt;install &lt;/span&gt;github.com/imcitius/tgsieve@latest
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then, in a stack you already have:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;No config needed to start — with an empty &lt;code&gt;.tgsieve.yaml&lt;/code&gt;, nothing is hidden and&lt;br&gt;
+you still get the nesting, the collapsing, the folded failures and the honest&lt;br&gt;
+summary. Add rules once you've seen which noise is &lt;em&gt;your&lt;/em&gt; noise:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve init            &lt;span class="c"&gt;# starter config at the project root&lt;/span&gt;
+tgsieve rules           &lt;span class="c"&gt;# what config is in effect, and from where&lt;/span&gt;
+tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--explain&lt;/span&gt;   &lt;span class="c"&gt;# every hidden attribute and the rule that hid it&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;It's MIT, written in Go, single binary, no daemon, no account.&lt;/p&gt;
+
+&lt;p&gt;👉 &lt;strong&gt;&lt;a href="https://github.com/imcitius/tgsieve" rel="noopener noreferrer"&gt;github.com/imcitius/tgsieve&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I'd genuinely like to know what noise it &lt;em&gt;doesn't&lt;/em&gt; catch on your stack — that's&lt;br&gt;
+the feedback that turns into the next preset. Issues, or just reply here.&lt;/p&gt;
+
+</description>
+      <category>terraform</category>
+      <category>devops</category>
+      <category>opensource</category>
+      <category>aws</category>
+    </item>
+    <item>
+      <title>Command Code vs Claude Code: The Read Tool That Saves Billions of Tokens</title>
+      <dc:creator>jamilxt</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:11:26 +0000</pubDate>
+      <link>https://dev.to/jamilxt/command-code-vs-claude-code-the-read-tool-that-saves-billions-of-tokens-451o</link>
+      <guid>https://dev.to/jamilxt/command-code-vs-claude-code-the-read-tool-that-saves-billions-of-tokens-451o</guid>
+      <description>&lt;p&gt;On August 9, 2026, Ahmad Awais shared a deep dive on X about the read tool in Command Code, his coding agent. The claim is big: the read tool saves billions of tokens a month compared to Claude Code. The full post now lives in the &lt;a href="https://commandcode.ai/docs/harness-engineering/read-tool" rel="noopener noreferrer"&gt;Command Code docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This article is my summary of that post, written in simple English. If you build agents, or just use them, the lessons are useful.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why a read tool matters
+&lt;/h2&gt;
+
+&lt;p&gt;Coding agents read files all the time. Every edit starts with a read. Every search result becomes a read. A plan step opens three files. Command Code sees about 50 million reads a month.&lt;/p&gt;
+
+&lt;p&gt;Each read costs tokens. If one read brings in 500 useless tokens, that is 25 billion useless tokens a month. Worse, those tokens stay in the conversation, and they cost tokens again on every later turn.&lt;/p&gt;
+
+&lt;p&gt;That is why coding agents feel expensive. The bill is mostly reads, not clever reasoning.&lt;/p&gt;
+
+&lt;p&gt;Think of the read tool as a compiler. It turns your files into the model's context. Every small choice inside it is a token decision, repeated millions of times.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The difference: spend more vs spend less
+&lt;/h2&gt;
+
+&lt;p&gt;Claude Code's read tool is simple. Ask it to read a 3,000-line file, and it returns all 3,000 lines. Ask for a file with a 3,900-character minified line, and it returns the whole line. No limits at all.&lt;/p&gt;
+
+&lt;p&gt;That works for Claude Code because its models are strong enough to ignore the noise. It spends more tokens to succeed.&lt;/p&gt;
+
+&lt;p&gt;Command Code runs on open models. Those models cannot handle a messy read. Users also pay for every token. So Command Code had to spend less. That one constraint forced every design decision below.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Command Code's read tool does differently
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Three limits, not one.&lt;/strong&gt; 2,000 lines per file, 128 KB per read, 2,000 characters per line. Each limit stops one kind of bad file: big files, wide files, and minified one-line files.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Clear messages instead of silence.&lt;/strong&gt; If a file is empty, it says "file is empty". If the read goes past the end, it says "try a smaller offset". The model knows what happened and what to do next, so it stops guessing and retrying.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Auto-retry for tricky filenames.&lt;/strong&gt; macOS names screenshots with special characters that look normal but are not. The tool retries 7 versions of the name before giving up.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;"Did you mean?" for typos.&lt;/strong&gt; If a file is not found, it suggests close matches. This catches mistakes like AGENT.md vs AGENTS.md.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Refuses dangerous files.&lt;/strong&gt; It will not read /dev/zero or /dev/urandom. These files never end, so reading them would hang the agent forever.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Caches that expire on use.&lt;/strong&gt; If the same file is read twice, the second read returns a short note. But the note removes itself after one use, so the model never points at old context forever.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Images are compressed, not dropped.&lt;/strong&gt; A 4K screenshot is compressed step by step until it fits. The tool also tells the model the new size, so clicks on the image still point to the right place.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Notebooks become clean documents.&lt;/strong&gt; Raw .ipynb files are messy JSON. The tool returns labeled cells and attaches plots as images, so one big table cannot eat the whole read budget.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  The benchmark
+&lt;/h2&gt;
+
+&lt;p&gt;Command Code compared its read tool with nine other harnesses: Claude Code, OpenCode, Cline, Kilo, Codex, Grok, Hermes, pi, and OpenClaw. Most have the basic limits. Very few have the extras: retrying filenames, clear recovery messages, or blocking dangerous files.&lt;/p&gt;
+
+&lt;p&gt;Those extras do not show up in a demo. They matter in hour nine of a long session, when a read fails and the model needs a way back.&lt;/p&gt;
+
+&lt;p&gt;One honest note: the page says the benchmark itself was produced by AI with little human review, and the authors expect some errors. The read tool itself was reviewed by a dozen engineers over a full release cycle.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What you can learn
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Give your tools recovery messages.&lt;/strong&gt; A tool that fails should say what happened and what to send next. Silence makes the model guess.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Fix the invisible failures.&lt;/strong&gt; If a problem is invisible to the model, fix it in the tool, not in the prompt.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Check the cheap things first.&lt;/strong&gt; Limits, input checks, and a blocklist of dangerous paths stop expensive loops.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Constraint is a feature.&lt;/strong&gt; Being forced to save tokens made Command Code build a better tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My take: the read tool looks boring, but it is the most important part of an agent harness. This post is the best explanation I have seen of why.&lt;/p&gt;
+
+&lt;p&gt;Which tool in your agent's harness would you check first? I would start with the one that returns empty results.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>agents</category>
+      <category>llm</category>
+      <category>tools</category>
+    </item>
+    <item>
+      <title>The Bug Wasn't in My Code --- It Was in My Assumptions 🤯</title>
+      <dc:creator>Ashitosh Lavhate</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:10:10 +0000</pubDate>
+      <link>https://dev.to/ashitoshh01/the-bug-wasnt-in-my-code-it-was-in-my-assumptions-5bbb</link>
+      <guid>https://dev.to/ashitoshh01/the-bug-wasnt-in-my-code-it-was-in-my-assumptions-5bbb</guid>
+      <description>&lt;p&gt;We've all been there.&lt;/p&gt;
+
+&lt;p&gt;The code &lt;em&gt;looks&lt;/em&gt; correct.&lt;/p&gt;
+
+&lt;p&gt;No obvious syntax errors.&lt;br&gt;
+The logic seems fine.&lt;br&gt;
+You read the same function 10 times.&lt;/p&gt;
+
+&lt;p&gt;And somehow...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It still doesn't work.&lt;/strong&gt; 😭&lt;/p&gt;
+
+&lt;p&gt;After wasting way too much time debugging situations like this, I&lt;br&gt;
+realized something:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Sometimes the bug isn't in your code. It's in what you &lt;em&gt;assumed&lt;/em&gt; about&lt;br&gt;
+your code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;
+  
+  
+  The classic debugging trap
+&lt;/h2&gt;
+
+&lt;p&gt;Imagine you're calling an API and expecting this:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nl"&gt;"user"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nl"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Ash"&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;So naturally, you write:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="kd"&gt;const&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;user&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Everything looks perfectly reasonable.&lt;/p&gt;
+
+&lt;p&gt;But the actual response is:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nl"&gt;"data"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nl"&gt;"user"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="nl"&gt;"name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Ash"&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Now you're staring at your JavaScript wondering:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;"Why is &lt;code&gt;user&lt;/code&gt; undefined?!"&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The JavaScript isn't necessarily the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Your assumption about the API response was.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  This happens everywhere
+&lt;/h2&gt;
+
+&lt;p&gt;It's not just API responses.&lt;/p&gt;
+
+&lt;p&gt;You can make incorrect assumptions about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  What data a function receives&lt;/li&gt;
+&lt;li&gt;  Whether a value can be &lt;code&gt;null&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;  What an API actually returns&lt;/li&gt;
+&lt;li&gt;  Environment variables being available&lt;/li&gt;
+&lt;li&gt;  File paths&lt;/li&gt;
+&lt;li&gt;  Database records&lt;/li&gt;
+&lt;li&gt;  Authentication state&lt;/li&gt;
+&lt;li&gt;  Time zones&lt;/li&gt;
+&lt;li&gt;  User input&lt;/li&gt;
+&lt;li&gt;  Production vs development environments&lt;/li&gt;
+&lt;li&gt;  What a third-party library actually does&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And these assumptions can create some seriously confusing bugs.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  My new debugging approach
+&lt;/h2&gt;
+
+&lt;p&gt;Instead of immediately changing the code, I try to verify my assumptions&lt;br&gt;
+first.&lt;/p&gt;
+&lt;h3&gt;
+  
+  
+  1. What do I &lt;em&gt;think&lt;/em&gt; is happening?
+&lt;/h3&gt;
+
+&lt;p&gt;Write down your assumption.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;"The API is returning the user object."&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;
+  
+  
+  2. What is &lt;em&gt;actually&lt;/em&gt; happening?
+&lt;/h3&gt;
+
+&lt;p&gt;Inspect the data.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight javascript"&gt;&lt;code&gt;&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Don't guess.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Look at it.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  3. Where does reality differ from my assumption?
+&lt;/h3&gt;
+
+&lt;p&gt;Maybe the API response changed.&lt;/p&gt;
+
+&lt;p&gt;Maybe the value is &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Maybe the environment variable isn't loaded.&lt;/p&gt;
+
+&lt;p&gt;Maybe the backend is returning an error that the frontend isn't&lt;br&gt;
+handling.&lt;/p&gt;
+&lt;h3&gt;
+  
+  
+  4. Fix the actual problem
+&lt;/h3&gt;
+
+&lt;p&gt;Only after understanding the mismatch should you change the code.&lt;/p&gt;
+
+&lt;p&gt;This saves a surprising amount of time.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  The debugging rule I now follow
+&lt;/h2&gt;
+
+&lt;p&gt;When something doesn't make sense, I ask:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;"What am I assuming right now that I haven't verified?"&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That question is surprisingly powerful.&lt;/p&gt;
+
+&lt;p&gt;Because debugging isn't always about finding the broken line.&lt;/p&gt;
+
+&lt;p&gt;Sometimes it's about finding the &lt;strong&gt;wrong mental model&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  A simple debugging checklist
+&lt;/h2&gt;
+
+&lt;p&gt;Next time you're stuck, check:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;☐ What input am I actually receiving?
+☐ What output am I actually getting?
+☐ Did I verify the API response?
+☐ Could this value be undefined/null?
+☐ Are my environment variables loaded?
+☐ Am I testing the same environment as production?
+☐ Did the data structure change?
+☐ Am I assuming something instead of checking it?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Final takeaway
+&lt;/h2&gt;
+
+&lt;p&gt;Good debugging isn't just:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;"Find the broken code."&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It's:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;"Find the difference between what I expected and what is actually&lt;br&gt;
+happening."&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you start debugging your &lt;strong&gt;assumptions&lt;/strong&gt;, some of those&lt;br&gt;
+"impossible" bugs become surprisingly easy to solve.&lt;/p&gt;
+
+&lt;p&gt;And honestly...&lt;/p&gt;
+
+&lt;p&gt;Sometimes the most useful debugging tool isn't another &lt;code&gt;console.log&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It's asking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;"Wait... how do I know that's actually true?"&lt;/strong&gt; 👀&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+&lt;h3&gt;
+  
+  
+  What about you?
+&lt;/h3&gt;
+
+&lt;p&gt;What's a bug that took you way too long to fix because you were making&lt;br&gt;
+the wrong assumption?&lt;/p&gt;
+
+&lt;p&gt;Drop it in the comments 👇&lt;/p&gt;
+
+</description>
+      <category>webdev</category>
+      <category>programming</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>Silent Retries and Agent Latency: What Sentry's Span Hierarchy Taught Us About Multi-Agent Observability</title>
+      <dc:creator>Sine AI</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:08:55 +0000</pubDate>
+      <link>https://dev.to/sineai-hq/silent-retries-and-agent-latency-what-sentrys-span-hierarchy-taught-us-about-multi-agent-2504</link>
+      <guid>https://dev.to/sineai-hq/silent-retries-and-agent-latency-what-sentrys-span-hierarchy-taught-us-about-multi-agent-2504</guid>
+      <description>&lt;p&gt;Sarvar's post about discovering a hidden retry in a 5-agent pipeline (one agent taking 22.6s while others took 5s) is a perfect case study in why observability infrastructure matters for agentic systems.&lt;/p&gt;
+
+&lt;p&gt;Here's what jumped out:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Agent-as-black-box is dangerous. When you string together multiple agents, you lose visibility into retry logic, backoff strategies, and cascade failures unless you instrument at the span level. The latency wasn't in the agent logic itself; it was in the retry envelope.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Span hierarchy exposes the invisible. Sentry's approach of grouping spans hierarchically made the problem visible at a glance. Without it, you'd see "agent took 22.6s" and assume it was compute-bound. With hierarchy, the retry pattern was obvious.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This scales badly across agents. In a 5-agent system, one bad retry strategy can block or cascade. Add error handling, timeout logic, and fallback chains, and you're building a retry forest no one fully understands. The observability debt compounds.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The fix is cheap, the insight is priceless. Once Sarvar knew what was happening, tuning retry counts or backoff curves took minutes. The time cost was finding it.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Takeaway: If you're building multi-agent systems, instrument early. Span-level observability isn't optional; it's the difference between "it's slow" and "here's why, and here's the fix."&lt;/p&gt;
+
+</description>
+      <category>agents</category>
+      <category>debugging</category>
+      <category>monitoring</category>
+      <category>performance</category>
+    </item>
+    <item>
+      <title>Scoping AI Agents for Real Work: Where Research Hits Deployment Reality</title>
+      <dc:creator>Sine AI</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:08:21 +0000</pubDate>
+      <link>https://dev.to/sineai-hq/scoping-ai-agents-for-real-work-where-research-hits-deployment-reality-2j2g</link>
+      <guid>https://dev.to/sineai-hq/scoping-ai-agents-for-real-work-where-research-hits-deployment-reality-2j2g</guid>
+      <description>&lt;p&gt;The gap between 'agent research' and 'agent in production' is where most projects actually break. Here's what we've learned about scoping them right.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Agents need bounded scope to stay reliable&lt;/strong&gt;&lt;br&gt;
+An agent that can do "anything" will eventually do something wrong. Start by defining what success looks like for one narrow task: "classify these support tickets" or "validate this API response schema". Unbounded autonomy is a research question, not a deployment pattern. The arxiv work on "Agents in the Wild" captures this tension well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Routing and fallback logic are where the real work lives&lt;/strong&gt;&lt;br&gt;
+The agent itself is maybe 20% of the system. The rest is monitoring what it decides, catching when it's outside its competence zone, and routing to a human or a different tool. Papers like CodeRescue show this explicitly: budget-aware routing isn't a feature, it's the foundation. If you're not budgeting for mistakes and modeling recovery paths, your scope is too loose.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Start with tooling clarity, not prompt creativity&lt;/strong&gt;&lt;br&gt;
+An agent is only as good as its tools. Before writing the prompt, map out exactly what actions it can take, what data it has access to, and what happens when a tool fails. This forces you to be honest about scope. A vague tool ("search the web") explodes scope. A precise one ("query column X from table Y where Z matches regex") keeps it tight.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Measure cost and failure modes early&lt;/strong&gt;&lt;br&gt;
+Deploy a narrow agent first. Measure: how often does it complete the task, how much does it cost per run, what percentage of failures are fixable vs. hard-stop errors. Use real data, not happy-path tests. This tells you whether to expand scope or double down on the tools you have.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Accept that stateful, long-running workflows need different thinking&lt;/strong&gt;&lt;br&gt;
+If your agent is supposed to maintain context across hours or days, you're not building an agent anymore, you're building a state machine that &lt;em&gt;uses&lt;/em&gt; agent logic as one step. Graph-based workflows (like LangGraph patterns) handle this better than agent loops. Name the pattern correctly or you'll scope it wrong from day one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Takeaway:&lt;/strong&gt; Scope wins happen when you stop asking "what problem could an agent solve" and start asking "what specific action, with known inputs and clear success criteria, can this agent own". Everything else (routing, monitoring, recovery, state) follows from that clarity.&lt;/p&gt;
+
+</description>
+      <category>agents</category>
+      <category>ai</category>
+      <category>architecture</category>
+      <category>llm</category>
+    </item>
+    <item>
+      <title>Scoping Multi-Agent Systems: When Agent Swarms Actually Reduce Cost (And When They Don't)</title>
+      <dc:creator>Sine AI</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:07:38 +0000</pubDate>
+      <link>https://dev.to/sineai-hq/scoping-multi-agent-systems-when-agent-swarms-actually-reduce-cost-and-when-they-dont-2b6a</link>
+      <guid>https://dev.to/sineai-hq/scoping-multi-agent-systems-when-agent-swarms-actually-reduce-cost-and-when-they-dont-2b6a</guid>
+      <description>&lt;p&gt;The economics of agent swarms aren't obvious. More agents doesn't automatically mean better outcomes or lower spend. It depends on how tightly you've defined the problem.&lt;/p&gt;
+
+&lt;p&gt;I've seen teams spin up swarms for tasks that a single well-scoped agent handles faster and cheaper. Here's what actually matters:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Problem decomposition has to be real. If your subtasks genuinely run in parallel and don't require constant synchronization, swarms win. If they're just sequential steps disguised as agents, you're paying for coordination overhead instead of saving it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;State handoff is expensive. Every time one agent passes work to another, you're serializing context, adding latency, and risking information loss. The fewer handoffs, the better. A swarm makes sense when each agent can operate independently on a clearly isolated piece of the problem.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Failure modes compound. One agent failing is one failure. Five agents with interdependencies means debugging cascades. If you need audit trails and trustworthiness (compliance, client review, recovery), swarms add complexity that has to be accounted for in your delivery timeline.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Measurement is the hard part. Before you architect for swarms, measure what's actually slow in your current process. Is it computation, or is it context switching and decision-making? Agent count doesn't fix decision-making problems.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Start small and scoped. A single well-defined agent on a tight problem will teach you more than a swarm that's trying to solve everything. Once you know exactly where parallelism saves time, build for it.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The temptation with new tools is to maximize their use. Resist it. The best agent architecture is usually the one that does one job so clearly that adding more agents actually makes things worse.&lt;/p&gt;
+
+</description>
+      <category>agents</category>
+      <category>ai</category>
+      <category>architecture</category>
+    </item>
+    <item>
+      <title>Who Owns AI-Generated Code? A Framework for Teams</title>
+      <dc:creator>Sine AI</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:07:21 +0000</pubDate>
+      <link>https://dev.to/sineai-hq/who-owns-ai-generated-code-a-framework-for-teams-2ehf</link>
+      <guid>https://dev.to/sineai-hq/who-owns-ai-generated-code-a-framework-for-teams-2ehf</guid>
+      <description>&lt;p&gt;The question 'who is responsible for generated code' is becoming urgent as more teams ship AI-assisted work. But framing it as pure ownership misses the real problem: accountability without clarity kills velocity and quality.&lt;/p&gt;
+
+&lt;p&gt;Here's what actually matters:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The human who ships it owns the outcome. That's non-negotiable. Whether the code came from an AI or a teammate, if it's in production with your name on it, you're responsible for correctness, security, and maintainability. The tool doesn't change that.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;But responsibility isn't one-way. The person who wrote the original prompt or spec carries accountability for clarity. Vague or incomplete briefs produce vague or incomplete code, AI or not. If you're handing off to an AI system without being specific about constraints, edge cases, and non-functional requirements, you've already lost. This is the same discipline that applies to code review of human-written work.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Teams need a clear handoff protocol. Does the AI-generated code get a full review cycle? Does it skip certain checks? Are there domains (auth, crypto, compliance) where you never let AI be primary? Writing this down prevents the 'well, I thought it was obvious' blame game later.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The real friction isn't legal or ethical; it's practical. Generated code often works but needs polish. Who fixes the edge case the AI missed? Who documents it? Who maintains it six months later when requirements shift? Assign that upfront, or you're just deferring the problem.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Measure what actually goes wrong. Track which AI-generated changes cause bugs, regressions, or security issues. Not to shame the AI or the person who used it, but to learn what kinds of tasks your team can safely delegate and what needs human oversight. That data compounds into better judgment.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The teams winning with AI aren't the ones wrestling with philosophical ownership. They're the ones who treat AI-generated code like any other artifact: review it, own the outcome, learn from failures, and iterate.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>programming</category>
+      <category>software</category>
+      <category>softwareengineering</category>
+    </item>
+    <item>
+      <title>I Built a GitHub Action That Writes Your PR Descriptions</title>
+      <dc:creator>XenoCyber0</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:06:48 +0000</pubDate>
+      <link>https://dev.to/xenocyber0/i-built-a-github-action-that-writes-your-pr-descriptions-2obp</link>
+      <guid>https://dev.to/xenocyber0/i-built-a-github-action-that-writes-your-pr-descriptions-2obp</guid>
+      <description>&lt;h1&gt;
+  
+  
+  I Built a GitHub Action That Writes PR Descriptions From Real Diffs (Works With Ollama)
+&lt;/h1&gt;
+
+&lt;p&gt;Yep, this does what the title says. StandupBot reads the actual PR diff and commit messages, runs them through any OpenAI-compatible LLM endpoint, and writes a structured Summary / Changes / Testing description — so you never have to write "fixed stuff" again.&lt;/p&gt;
+
+&lt;p&gt;I built this for my own team because I was tired of staring at empty PR boxes after every fix. Then I put it on GitHub Marketplace so anyone can use it. MIT licensed, no strings.&lt;/p&gt;
+
+
+&lt;div class="ltag-github-readme-tag"&gt;
+  &lt;div class="readme-overview"&gt;
+    &lt;h2&gt;
+      &lt;img src="https://assets.dev.to/assets/github-logo-5a155e1f9a670af7944dd5e12375bc76ed542ea80224905ecaf878b9157cdefc.svg" alt="GitHub logo"&gt;
+      &lt;a href="https://github.com/XenoCyber0" rel="noopener noreferrer"&gt;
+        XenoCyber0
+      &lt;/a&gt; / &lt;a href="https://github.com/XenoCyber0/StandUpBot" rel="noopener noreferrer"&gt;
+        StandUpBot
+      &lt;/a&gt;
+    &lt;/h2&gt;
+    &lt;h3&gt;
+      
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="ltag-github-body"&gt;
+    
+&lt;div id="readme" class="md"&gt;&lt;div class="markdown-heading"&gt;
+&lt;h1 class="heading-element"&gt;StandupBot&lt;/h1&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://github.com/XenoCyber0/StandUpBot/./LICENSE" rel="noopener noreferrer"&gt;&lt;img src="https://camo.githubusercontent.com/fdf2982b9f5d7489dcf44570e714e3a15fce6253e0cc6b5aa61a075aac2ff71b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e737667" alt="License: MIT"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/marketplace/actions/standupbot" rel="noopener noreferrer"&gt;&lt;img src="https://camo.githubusercontent.com/bf6e5e2386a8322562cd681eb199153b0afc0914b20d3906f7dcdc3b0e34c6e0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d61726b6574706c6163652d5374616e647570426f742d707572706c653f6c6f676f3d676974687562" alt="GitHub Marketplace"&gt;&lt;/a&gt;
+&lt;a href="https://github.com/XenoCyber0/StandUpBot" rel="noopener noreferrer"&gt;&lt;img src="https://camo.githubusercontent.com/1ccf81b69e1f4e483d2a7a74dd96157e812b2830b7e513b3ef673a5ef511b797/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e253230536f757263652d2545322539442541342d726564" alt="Open Source Love"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A GitHub Action that writes your PR descriptions for you. It runs the real diff and commits through an LLM you choose, and fills in a structured &lt;strong&gt;Summary / Changes / Testing&lt;/strong&gt; description plus up to three labels — so you stop hand-writing PR bodies and standup updates.&lt;/p&gt;
+&lt;p&gt;Bring your own model: it talks to &lt;strong&gt;any OpenAI-compatible endpoint&lt;/strong&gt; (OpenAI, OpenRouter, Ollama, LM Studio, …). No provider, URL, or model is hardcoded.&lt;/p&gt;
+
+&lt;div class="markdown-heading"&gt;
+&lt;h2 class="heading-element"&gt;Sample output&lt;/h2&gt;
+&lt;/div&gt;
+&lt;p&gt;Generated end-to-end by StandupBot for a real PR (&lt;a href="https://github.com/nodejs/node/pull/64573" rel="noopener noreferrer"&gt;nodejs/node#64573&lt;/a&gt;) from its actual diff, using a real LLM endpoint. This is the description it produced verbatim:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div class="markdown-heading"&gt;
+&lt;h2 class="heading-element"&gt;Summary&lt;/h2&gt;
+&lt;/div&gt;
+&lt;p&gt;Add &lt;code&gt;lchownSync&lt;/code&gt; to the VFS implementation so that symbolic link ownership can be changed without following the link, matching the behavior of &lt;code&gt;fs.lchownSync&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="markdown-heading"&gt;
+&lt;h2 class="heading-element"&gt;Changes&lt;/h2&gt;
+
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;doc/api/vfs.md: added &lt;code&gt;lchownSync(path, uid, gid)&lt;/code&gt; to the list of VFS API signatures.&lt;/li&gt;
+&lt;li&gt;lib/internal/vfs/file_system.js: added synchronous &lt;code&gt;lchownSync&lt;/code&gt; method to &lt;code&gt;VirtualFileSystem&lt;/code&gt; and updated the async…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="gh-btn-container"&gt;&lt;a class="gh-btn" href="https://github.com/XenoCyber0/StandUpBot" rel="noopener noreferrer"&gt;View on GitHub&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+&lt;h2&gt;
+  
+  
+  The Problem
+&lt;/h2&gt;
+
+&lt;p&gt;You open a PR. Forty files changed. Two hours of focused work. The description field is empty.&lt;/p&gt;
+
+&lt;p&gt;So you write: &lt;code&gt;fixed stuff&lt;/code&gt;. Or &lt;code&gt;updated code&lt;/code&gt;. Or &lt;code&gt;changes requested by reviewer&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Three months later, someone (you) is running &lt;code&gt;git log -p&lt;/code&gt; trying to figure out why the config format changed in April. The PR description was supposed to save that investigation. Nobody wrote it.&lt;/p&gt;
+
+&lt;p&gt;We tried before:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Approach&lt;/th&gt;
+&lt;th&gt;Why it failed&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;PR templates&lt;/td&gt;
+&lt;td&gt;Everyone types "see title" into the template&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Checklist bots&lt;/td&gt;
+&lt;td&gt;Nagging doesn't scale; people ignore them&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reviewer enforcement&lt;/td&gt;
+&lt;td&gt;Becomes the team's most hated job&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The gap isn't discipline. It's that writing PR descriptions is &lt;strong&gt;unrewarded work&lt;/strong&gt;. You get the same merge button whether you write a detailed description or "fixed stuff."&lt;/p&gt;
+
+&lt;p&gt;So I built &lt;a href="https://github.com/marketplace/actions/standupbot-pr-describer" rel="noopener noreferrer"&gt;StandupBot&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  What It Produces (Real Example, No Cherry-Picking)
+&lt;/h2&gt;
+
+&lt;p&gt;This is verbatim output from &lt;a href="https://github.com/nodejs/node/pull/64573" rel="noopener noreferrer"&gt;nodejs/node#64573&lt;/a&gt;, generated from the actual diff:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h2&gt;
+  
+  
+  Summary
+&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;lchownSync&lt;/code&gt; to the VFS implementation so that symbolic link ownership can be changed without following the link, matching the behavior of &lt;code&gt;fs.lchownSync&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  Changes
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;doc/api/vfs.md: added &lt;code&gt;lchownSync(path, uid, gid)&lt;/code&gt; to VFS API signatures.&lt;/li&gt;
+&lt;li&gt;lib/internal/vfs/file_system.js: added synchronous &lt;code&gt;lchownSync&lt;/code&gt; method and updated the async wrapper.&lt;/li&gt;
+&lt;li&gt;lib/internal/vfs/provider.js: added default &lt;code&gt;lchownSync&lt;/code&gt; method with JSDoc comment.&lt;/li&gt;
+&lt;li&gt;lib/internal/vfs/providers/memory.js: implemented &lt;code&gt;lchownSync&lt;/code&gt; that updates uid/gid of the link entry.&lt;/li&gt;
+&lt;li&gt;lib/internal/vfs/setup.js: changed handler to invoke &lt;code&gt;vfs.lchownSync&lt;/code&gt; instead of &lt;code&gt;vfs.chownSync&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;test/parallel/test-vfs-lchown-symlink.js: new test verifying sync, callback, and promise variants.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;
+  
+  
+  Testing
+&lt;/h2&gt;
+
+&lt;p&gt;The new test exercises &lt;code&gt;fs.lchownSync&lt;/code&gt;, &lt;code&gt;fs.lchown&lt;/code&gt; (callback), and &lt;code&gt;fsp.lchown&lt;/code&gt; (promise) on symlinks inside a VFS mount, asserting correct uid/gid changes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nobody edited that. It went straight from the model into the PR body. The action also returns a normalized &lt;code&gt;title&lt;/code&gt; and &lt;code&gt;labels&lt;/code&gt; clamped to &lt;code&gt;bug | feature | chore | docs | refactor&lt;/code&gt; — so your label taxonomy stays clean.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  30-Second Setup
+&lt;/h2&gt;
+
+&lt;p&gt;Add &lt;code&gt;.github/workflows/standupbot.yml&lt;/code&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;StandupBot&lt;/span&gt;
+&lt;span class="na"&gt;on&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;pull_request&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;types&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;opened&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;synchronize&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+&lt;span class="na"&gt;permissions&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;pull-requests&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;write&lt;/span&gt;
+  &lt;span class="na"&gt;contents&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;read&lt;/span&gt;
+
+&lt;span class="na"&gt;jobs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;describe&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;runs-on&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;ubuntu-latest&lt;/span&gt;
+    &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;uses&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;XenoCyber0/StandUpBot@v1&lt;/span&gt;
+        &lt;span class="na"&gt;with&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+          &lt;span class="na"&gt;llm-base-url&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;${{ secrets.LLM_BASE_URL }}&lt;/span&gt;
+          &lt;span class="na"&gt;llm-api-key&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;${{ secrets.LLM_API_KEY }}&lt;/span&gt;
+          &lt;span class="na"&gt;model&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;${{ vars.LLM_MODEL }}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Set &lt;code&gt;LLM_API_KEY&lt;/code&gt; as a &lt;strong&gt;secret&lt;/strong&gt;, &lt;code&gt;LLM_MODEL&lt;/code&gt; as a &lt;strong&gt;variable&lt;/strong&gt;. That's the whole thing.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  BYO Endpoint: No Vendor Lock-In
+&lt;/h2&gt;
+
+&lt;p&gt;The action talks to &lt;strong&gt;any&lt;/strong&gt; OpenAI-compatible chat API. Nothing is hardcoded. All of these work:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;OpenAI        → https://api.openai.com/v1
+OpenRouter    → https://openrouter.ai/api/v1
+Ollama        → http://localhost:11434/v1
+LM Studio     → http://localhost:1234/v1
+LocalAI       → http://localai:8080/v1
+You decide.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;You pick the model. You control the data path. Switching providers later is one secret update.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  The Self-Hosted Setup (My Favorite Part)
+&lt;/h2&gt;
+
+&lt;p&gt;If you want your code to never leave your network:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;GitHub repo ──webhook──▶ self-hosted Actions runner ──HTTP──▶ Ollama
+                             (on your LAN)              (your LLM box)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;ol&gt;
+&lt;li&gt;Run a self-hosted Actions runner on the same LAN as your LLM box&lt;/li&gt;
+&lt;li&gt;Point &lt;code&gt;llm-base-url&lt;/code&gt; at your Ollama/LM Studio instance&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;llm-api-key&lt;/code&gt; can be any non-empty string — Ollama ignores it&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Your diff never crosses the internet. The only outbound call is writing the PR body back to GitHub, which... GitHub already owns.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Model notes:&lt;/strong&gt; In my testing, &lt;strong&gt;Qwen2.5-Coder 7B&lt;/strong&gt; and similar 7–9B instruction-tuned models work well. Below ~3B params, file-name hallucinations start appearing.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  It Never Overwrites You
+&lt;/h2&gt;
+
+&lt;p&gt;The rule is simple:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;PR body empty&lt;/strong&gt; → StandupBot writes it&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;PR body has StandupBot's marker&lt;/strong&gt; → updates its own output&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;PR body has anything else&lt;/strong&gt; → does absolutely nothing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Your hand-written descriptions are safe. If you ever overwrite what it generated, it takes the hint and stays out.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  How It Works Internally
+&lt;/h2&gt;
+
+&lt;p&gt;Three parts worth stealing:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Diff budget.&lt;/strong&gt; Fetches the PR diff, applies gitignore-style exclusions from &lt;code&gt;.standupbot.yml&lt;/code&gt; before anything hits a prompt:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;exclude&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;package-lock.json&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="s"&gt;**/*.lock'&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="s"&gt;**/dist/**'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The diff is hard-capped at ~24KB — a monster PR can't blow up your LLM context window.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Map-reduce for big diffs.&lt;/strong&gt; Under the budget, one call. Over it? Each file gets summarized individually (max 8 LLM calls), then merged into the final description.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Structured output enforcement.&lt;/strong&gt; The prompt requires a rigid schema — &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;changes[]&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, &lt;code&gt;labels[]&lt;/code&gt; — and the parser clamps labels to the allowed set. If the model invents &lt;code&gt;urgent-pls&lt;/code&gt;, it gets dropped, not shipped.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Honest Limitations
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Testing section can be inferred, not evidenced.&lt;/strong&gt; Sometimes the model writes "built and renders correctly" for a docs-only change because the pattern is tempting. Treat it as a draft. Known issue, prompt tightening planned.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Huge PRs lose their tail.&lt;/strong&gt; Beyond the character cap, the map-reduce path works on summaries — a detail in file #47 may not survive.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;GitHub reads are rate-limited&lt;/strong&gt; (~60/hr) without a token, but the default workflow token covers this.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  What's Next
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prompt tightening for the testing-overclaim problem&lt;/li&gt;
+&lt;li&gt;More testing on genuinely enormous PRs&lt;/li&gt;
+&lt;li&gt;Whatever GitHub issues say — the roadmap is user-adaptive because there are currently about four users&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Try It
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Marketplace:&lt;/strong&gt; &lt;a href="https://github.com/marketplace/actions/standupbot-pr-describer" rel="noopener noreferrer"&gt;github.com/marketplace/actions/standupbot-pr-describer&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href="https://github.com/XenoCyber0/StandUpBot" rel="noopener noreferrer"&gt;github.com/XenoCyber0/StandUpBot&lt;/a&gt; (MIT)&lt;br&gt;
+&lt;strong&gt;Issues/feedback:&lt;/strong&gt; &lt;a href="https://github.com/XenoCyber0/StandUpBot/issues" rel="noopener noreferrer"&gt;github.com/XenoCyber0/StandUpBot/issues&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Written by the person who finally read "fixed stuff" one too many times and decided to do something about it.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>githubactions</category>
+      <category>opensource</category>
+      <category>typescript</category>
+    </item>
+    <item>
+      <title>AI Search Budgets Are Rising, but SEO Revenue Still Demands a Measured Strategy</title>
+      <dc:creator>Ali Farhat</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:00:30 +0000</pubDate>
+      <link>https://dev.to/alifar/ai-search-budgets-are-rising-but-seo-revenue-still-demands-a-measured-strategy-48gi</link>
+      <guid>https://dev.to/alifar/ai-search-budgets-are-rising-but-seo-revenue-still-demands-a-measured-strategy-48gi</guid>
+      <description>&lt;p&gt;AI-driven search is becoming a material marketing budget consideration in 2026, even for organizations where conventional SEO continues to generate substantial revenue. The shift is being driven by the rapid expansion of &lt;a href="https://scalevise.com/resources/geo/" rel="noopener noreferrer"&gt;AI-driven search&lt;/a&gt;, rising inference costs, and platform features that bring AI into campaign management and budgeting. For marketing leaders, the immediate challenge is not replacing SEO. It is determining how to fund, measure, and govern AI-enabled search without losing sight of the channels already delivering returns.&lt;/p&gt;
+
+&lt;p&gt;Search Engine Land's &lt;a href="https://searchengineland.com/ai-halftime-report-h1-2026-483912" rel="noopener noreferrer"&gt;AI halftime report for H1 2026&lt;/a&gt; describes money and attention moving across search ecosystems as &lt;a href="https://scalevise.com/resources/google-ai-mode-passage-centric-citations/" rel="noopener noreferrer"&gt;AI Mode&lt;/a&gt;, AI Overviews, and related AI-driven experiences expand. Its central observation is that "token budgets exploded," while advertisers are spending billions on inference. That does not settle the return-on-investment question. It does, however, show that AI search costs and capabilities are moving from experimentation toward operational planning.&lt;/p&gt;
+
+&lt;p&gt;The strongest takeaway is that AI search should be managed as an &lt;strong&gt;accelerating budget line item&lt;/strong&gt;, not treated as a side project or assumed to be a direct substitute for SEO. Different businesses and industries will adopt these capabilities at different speeds, and attribution remains unsettled. A disciplined approach should therefore protect proven search revenue while testing where AI-mediated discovery changes customer behavior, campaign economics, and reporting requirements.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why AI search is changing search economics
+&lt;/h2&gt;
+
+&lt;p&gt;The budget change is about more than allocating funds to a new marketing label. AI-enhanced search introduces cost structures and decision systems that differ from traditional organic search planning. The H1 report points to token budgets and inference spending, while AI-driven search surfaces create new routes through which users may encounter brands and information.&lt;/p&gt;
+
+&lt;p&gt;Google's AI-focused updates provide a practical platform-level example. AI Max for Search and related bidding and budgeting enhancements indicate that AI capabilities are being incorporated into campaign operations, rather than remaining an abstract future concept. As platforms operationalize AI-driven targeting, bidding, and budget decisions, marketers need to understand which parts of spend are producing useful outcomes and which are simply adding complexity.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Planning area&lt;/th&gt;
+      &lt;th&gt;Established SEO approach&lt;/th&gt;
+      &lt;th&gt;AI-enabled search consideration&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Revenue role&lt;/td&gt;
+      &lt;td&gt;SEO still drives revenue for many firms.&lt;/td&gt;
+      &lt;td&gt;AI search becomes an additional discovery and budget consideration.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cost structure&lt;/td&gt;
+      &lt;td&gt;Traditional search investment and campaign costs.&lt;/td&gt;
+      &lt;td&gt;Token costs, inference spending, and AI-driven bidding are increasingly relevant.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Measurement&lt;/td&gt;
+      &lt;td&gt;Established search reporting provides a familiar baseline.&lt;/td&gt;
+      &lt;td&gt;Attribution is more complex across AI-enhanced environments.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Budget management&lt;/td&gt;
+      &lt;td&gt;Teams allocate against known organic and paid search priorities.&lt;/td&gt;
+      &lt;td&gt;Platform updates are introducing AI-focused bidding and budgeting capabilities.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The comparison is not a verdict on which channel is superior. It shows why a single search budget can no longer be evaluated solely through legacy SEO or paid-search assumptions. AI search adds variables that may affect visibility, media decisions, and the way results are attributed.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Measurement is now the central constraint
+&lt;/h3&gt;
+
+&lt;p&gt;The report identifies &lt;a href="https://scalevise.com/resources/ai-search-measurement-gap-brand-visibility/" rel="noopener noreferrer"&gt;ROI, attribution, and measurement&lt;/a&gt; as unresolved issues in AI-enhanced search. That matters because budget growth can outpace an organization's ability to explain what is working. A business may see more AI-related activity without having a standardized way to connect that activity to discovery, qualified traffic, conversion, or revenue.&lt;/p&gt;
+
+&lt;p&gt;This is especially important where SEO remains a major revenue contributor. Removing investment from a proven channel solely because AI search is attracting attention would be a weak decision. The more defensible approach is to establish a baseline for existing search performance, define the outcomes expected from AI-enabled initiatives, and run experiments that can be evaluated against that baseline.&lt;/p&gt;
+
+&lt;p&gt;Cross-functional ownership is essential. SEO specialists may understand organic demand and content visibility, paid media teams may manage platform-led bidding changes, analysts must address attribution, and finance leaders need a consistent view of new costs. Without shared definitions, token and AI campaign spending can become difficult to compare with established search investments.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Governance should arrive before large-scale spend
+&lt;/h3&gt;
+
+&lt;p&gt;AI search creates a &lt;a href="https://scalevise.com/resources/ai-governance/" rel="noopener noreferrer"&gt;governance issue&lt;/a&gt; as well as a marketing one. The research supports a clear need for updated coordination across SEO, paid media, analytics, and finance. In practice, that means agreeing on how the organization categorizes AI-related search spend, who approves experiments, what success criteria apply, and when funding should expand or stop.&lt;/p&gt;
+
+&lt;p&gt;A useful governance framework can focus on three questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;What is being funded?&lt;/strong&gt; Separate AI-related platform features, inference or token costs, and search experiments where possible.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What outcome is expected?&lt;/strong&gt; Define the business and measurement objective before allocating additional budget.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What evidence is sufficient?&lt;/strong&gt; Set a review process for attribution quality, performance signals, and continued investment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This structure does not assume that every AI search initiative will produce the same result. It recognizes the present uncertainty while ensuring that new spending is visible, accountable, and comparable with existing search priorities.&lt;/p&gt;
+
+&lt;p&gt;AI search budget decisions now affect how brands are discovered, measured, and funded. Scalevise helps teams assess their visibility across AI answer environments, identify where search demand is changing, and build an evidence-led measurement baseline before spend scales. Its &lt;a href="https://scalevise.com/ai-visibility-geo-checker" rel="noopener noreferrer"&gt;AI Visibility GEO Checker&lt;/a&gt; gives marketing and analytics leaders a practical starting point for prioritizing experiments and governance. Start an AI Visibility scan today.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Frequently Asked Questions
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Why are AI search budgets rising?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;AI search surfaces are expanding, major platforms are accelerating AI-enabled search features, and advertisers are spending on inference. Search Engine Land's H1 2026 report describes exploding token budgets and growing AI-driven search activity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Does rising AI search spend mean SEO no longer matters?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No. The research states that SEO still drives revenue for many firms. AI search is better understood as a growing budget and visibility consideration that should be evaluated alongside established SEO performance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What makes AI search ROI difficult to measure?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Attribution and measurement are more complex in AI-enhanced environments, and standardized metrics across AI surfaces remain an open need. Organizations should use defined experiments and clear baselines rather than assume returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How should enterprises govern AI search investment?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enterprises should coordinate SEO, paid media, analytics, and finance. They should define AI-related cost categories, establish success criteria for experiments, and review whether measurement evidence supports further investment.&lt;/p&gt;
+
+
+
+
+&lt;h3&gt;
+  
+  
+  Conclusion
+&lt;/h3&gt;
+
+&lt;p&gt;AI search is reshaping how search budgets are planned, particularly through AI-driven surfaces, inference costs, and platform-level campaign tools. Yet the evidence does not support abandoning SEO where it continues to produce revenue. The stronger strategy is to govern AI search as a distinct, measurable investment, test it against clear objectives, and scale spending only when the organization can assess its value with confidence.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>automation</category>
+      <category>tools</category>
+      <category>geo</category>
+    </item>
+  </channel>
+</rss>

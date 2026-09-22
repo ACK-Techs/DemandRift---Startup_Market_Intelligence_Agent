@@ -1,15 +1,6 @@
-# Ham artefaktlar ve kosu ciktilari depoya girmez: yeniden uretilebilirler ve
-# results/raw tek basina yuz megabaytlari buluyor. Depoda tutulan sey kod, kaynak
-# manifesti ve kaynak defteridir; ham icerik yerel diskte kalir.
-results/raw/
-results/.bulk-progress-*/
-results/*.json
-results/*.log
-results/*.tsv
+# Araştırma ham çıktıları ve koşu kayıtları ekip erişimi için sürümlenir.
+# Paylaşılan kopyalardaki kaynak-site anahtarları temizlenir; özgünleri yerelde kalır.
+results/local-originals/
 
-# Defterin ve manifestin uretimi icin gereken ozet ciktilar haric tutulmaz:
-!results/.gitkeep
-
-# Okunabilir disari aktarim: ayni verinin ikinci gorunumu, arsivden uretilir.
-# 191 MB oldugu icin depoya girmez; neyin cekildigi ARTEFAKT-DIZINI.csv'de durur.
+# Yeniden üretilebilir tam okunabilir dışa aktarım (örnekler ayrıca sürümlenir).
 veriler/

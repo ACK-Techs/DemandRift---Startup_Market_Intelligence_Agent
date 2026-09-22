@@ -1,0 +1,227 @@
+{
+  "capabilities": {
+    "browser_rendering": {
+      "outcome": "not_applicable",
+      "stop_reason": "tooling_missing_isolated_worker"
+    },
+    "cached_archive": {
+      "outcome": "not_applicable",
+      "stop_reason": "current_path_requires_api"
+    }
+  },
+  "completed_at": "2026-08-10T19:07:34.659688+00:00",
+  "fetched_artifacts": [],
+  "methods": [
+    {
+      "category": "acquisition_surface",
+      "id": "ddg_html_baseline",
+      "keyword_coverage": 0.0,
+      "outcome": "blocked_by_policy",
+      "query_budget": 2,
+      "requests_observed": 1,
+      "stop_reason": "blocked_by_policy",
+      "surface": "ddg_html",
+      "unique_urls": 0
+    },
+    {
+      "baseline_keyword_coverage": 0.0,
+      "baseline_query_budget": 2,
+      "baseline_unique_urls": 0,
+      "category": "tactic",
+      "decomposed_keyword_coverage": 0.0,
+      "decomposed_query_budget": 2,
+      "decomposed_unique_urls": 0,
+      "id": "equal_budget_query_comparison",
+      "outcome": "blocked_by_policy",
+      "stop_reason": "blocked_by_policy",
+      "strict_improvement": false,
+      "surface": "ddg_html"
+    },
+    {
+      "category": "tactic",
+      "id": "pagination",
+      "new_unique_urls": 0,
+      "outcome": "source_unavailable",
+      "requests_observed": 0,
+      "stop_reason": "source_unavailable",
+      "surface": "ddg_html"
+    },
+    {
+      "category": "acquisition_surface",
+      "id": "ddg_lite_surface",
+      "keyword_coverage": 0.0,
+      "outcome": "blocked_by_policy",
+      "query_budget": 1,
+      "requests_observed": 1,
+      "stop_reason": "blocked_by_policy",
+      "surface": "ddg_lite",
+      "unique_urls": 0
+    },
+    {
+      "category": "pipeline_stage",
+      "id": "local_uddg_resolution",
+      "network_requests": 0,
+      "outcome": "succeeded",
+      "resolved_candidates": 0,
+      "stop_reason": "ok"
+    },
+    {
+      "category": "pipeline_stage",
+      "fetched_artifacts": 0,
+      "id": "destination_fetch",
+      "origins_attempted": 0,
+      "outcome": "source_unavailable",
+      "search_snippets_counted_as_evidence": false,
+      "stop_reason": "source_unavailable"
+    },
+    {
+      "category": "extractor",
+      "extractors": [
+        "html_meta",
+        "json_ld",
+        "embedded_json"
+      ],
+      "id": "same_response_extractors",
+      "network_requests": 0,
+      "outcome": "no_results",
+      "pages_inspected": 0,
+      "stop_reason": "no_fetched_artifact"
+    }
+  ],
+  "policy_events": [
+    {
+      "bytes": 0,
+      "canonical_url": null,
+      "completed_at": "2026-08-10T19:07:14.488066+00:00",
+      "error_class": "PolicyBlocked",
+      "final_url": null,
+      "mime": null,
+      "origin": null,
+      "redirect_chain": [],
+      "requested_url": "https://html.duckduckgo.com/html/?q=fitness+app",
+      "result_kind": "search_response",
+      "robots_decision": "blocked_by_policy:robots_unavailable",
+      "sha256": null,
+      "started_at": "2026-08-10T19:07:14.488060+00:00",
+      "status": null,
+      "stop_reason": "blocked_by_policy",
+      "transaction_id": "7bc7f9d6-2995-4d17-b9f5-b54352ecb8d5",
+      "truncated": false
+    },
+    {
+      "bytes": 0,
+      "canonical_url": null,
+      "completed_at": "2026-08-10T19:07:14.530248+00:00",
+      "error_class": "PolicyBlocked",
+      "final_url": null,
+      "mime": null,
+      "origin": null,
+      "redirect_chain": [],
+      "requested_url": "https://html.duckduckgo.com/html/?q=fitness+app+pricing+reviews",
+      "result_kind": "search_response",
+      "robots_decision": "blocked_by_policy:robots_unavailable",
+      "sha256": null,
+      "started_at": "2026-08-10T19:07:14.530235+00:00",
+      "status": null,
+      "stop_reason": "blocked_by_policy",
+      "transaction_id": "72e3e983-bd97-406e-9c0b-152ec432590c",
+      "truncated": false
+    },
+    {
+      "bytes": 0,
+      "canonical_url": null,
+      "completed_at": "2026-08-10T19:07:34.641088+00:00",
+      "error_class": "PolicyBlocked",
+      "final_url": null,
+      "mime": null,
+      "origin": null,
+      "redirect_chain": [],
+      "requested_url": "https://lite.duckduckgo.com/lite/?q=fitness+app",
+      "result_kind": "search_response",
+      "robots_decision": "blocked_by_policy:robots_unavailable",
+      "sha256": null,
+      "started_at": "2026-08-10T19:07:34.641082+00:00",
+      "status": null,
+      "stop_reason": "blocked_by_policy",
+      "transaction_id": "b6aedd5f-012f-4e62-901d-8820fedea244",
+      "truncated": false
+    }
+  ],
+  "request_accounting": {
+    "by_origin": {
+      "https://html.duckduckgo.com": 1,
+      "https://lite.duckduckgo.com": 1
+    },
+    "ddg": 2,
+    "ddg_limit": 10,
+    "destination": 0,
+    "destination_limit": 6,
+    "per_origin_limit": 2,
+    "total": 2,
+    "total_limit": 24
+  },
+  "schema_version": "1.0.0",
+  "search_candidates": [],
+  "site": "duckduckgo",
+  "started_at": "2026-08-10T19:06:54.392152+00:00",
+  "taxonomy": {
+    "acquisition_surfaces": [
+      "ddg_html",
+      "ddg_lite"
+    ],
+    "extractors": [
+      "html_meta",
+      "json_ld",
+      "embedded_json"
+    ],
+    "pipeline_stages": [
+      "local_uddg_resolution",
+      "destination_fetch"
+    ],
+    "tactics": [
+      "equal_budget_query_comparison",
+      "pagination"
+    ]
+  },
+  "topic": "fitness_app",
+  "transactions": [
+    {
+      "bytes": 0,
+      "canonical_url": "https://html.duckduckgo.com/robots.txt",
+      "completed_at": "2026-08-10T19:07:14.487959+00:00",
+      "error_class": "TransientProvider",
+      "final_url": "https://html.duckduckgo.com/robots.txt",
+      "mime": null,
+      "origin": "https://html.duckduckgo.com",
+      "redirect_chain": [],
+      "requested_url": "https://html.duckduckgo.com/robots.txt",
+      "result_kind": "robots_preflight",
+      "robots_decision": "preflight",
+      "sha256": null,
+      "started_at": "2026-08-10T19:06:54.448994+00:00",
+      "status": null,
+      "stop_reason": "network_error:URLError",
+      "transaction_id": "40a40ef3-52ec-4080-b2e5-fabb4ba82eb1",
+      "truncated": false
+    },
+    {
+      "bytes": 0,
+      "canonical_url": "https://lite.duckduckgo.com/robots.txt",
+      "completed_at": "2026-08-10T19:07:34.640981+00:00",
+      "error_class": "TransientProvider",
+      "final_url": "https://lite.duckduckgo.com/robots.txt",
+      "mime": null,
+      "origin": "https://lite.duckduckgo.com",
+      "redirect_chain": [],
+      "requested_url": "https://lite.duckduckgo.com/robots.txt",
+      "result_kind": "robots_preflight",
+      "robots_decision": "preflight",
+      "sha256": null,
+      "started_at": "2026-08-10T19:07:14.603902+00:00",
+      "status": null,
+      "stop_reason": "network_error:URLError",
+      "transaction_id": "3a5fb050-7b18-431f-bd44-636869c26518",
+      "truncated": false
+    }
+  ]
+}

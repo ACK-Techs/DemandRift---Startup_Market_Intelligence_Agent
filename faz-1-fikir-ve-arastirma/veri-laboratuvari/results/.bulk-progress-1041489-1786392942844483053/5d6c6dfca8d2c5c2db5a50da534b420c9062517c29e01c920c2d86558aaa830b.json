@@ -1,0 +1,322 @@
+{
+  "budget_used": 5,
+  "completed_epoch": 1786392942.9059384,
+  "completed_fragments": [
+    {
+      "methods": [
+        {
+          "candidate_count": 0,
+          "candidates": [],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 1,
+          "fetched_artifacts": [
+            {
+              "canonical_url": "https://two.example.com/robots.txt",
+              "content_sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+              "immutable_raw_ref": "inline:16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+              "result_kind": "fetched_artifact",
+              "source_transaction_id": "1041514-1",
+              "url": "https://two.example.com/robots.txt"
+            }
+          ],
+          "global_catalog_disposition": "retained",
+          "method_category": "policy_preflight",
+          "method_id": "robots_preflight",
+          "network_transaction_count": 1,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 0,
+          "candidates": [],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 1,
+          "fetched_artifacts": [
+            {
+              "canonical_url": "https://two.example.com/",
+              "content_sha256": "2c8ab8ffc6476dbfdb202283ec28fa3d1c07cb327d441d84f0f2c6645330c28d",
+              "immutable_raw_ref": "inline:2c8ab8ffc6476dbfdb202283ec28fa3d1c07cb327d441d84f0f2c6645330c28d",
+              "result_kind": "fetched_artifact",
+              "source_transaction_id": "1041514-2",
+              "url": "https://two.example.com/"
+            }
+          ],
+          "global_catalog_disposition": "retained",
+          "method_category": "acquisition_surface",
+          "method_id": "root_html",
+          "network_transaction_count": 1,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 0,
+          "candidates": [],
+          "details": {
+            "description": "fixture description",
+            "embedded_json": [
+              {
+                "description": "embedded"
+              }
+            ],
+            "json_ld": [
+              {
+                "@type": "WebSite",
+                "name": "Fixture"
+              }
+            ],
+            "title": "Fixture two.example.com"
+          },
+          "display_name": "Two",
+          "fetched_artifact_count": 0,
+          "fetched_artifacts": [],
+          "global_catalog_disposition": "retained",
+          "method_category": "extractor",
+          "method_id": "html_extractors",
+          "network_transaction_count": 0,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "candidate_type": "sitemap_url",
+              "result_kind": "discovery_candidate",
+              "source_transaction_id": "1041514-3",
+              "url": "https://two.example.com/about"
+            }
+          ],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 1,
+          "fetched_artifacts": [
+            {
+              "canonical_url": "https://two.example.com/sitemap.xml",
+              "content_sha256": "739298da251dbbaf4f1215b91c350a0e4a6a5986162f866ddc7dc0bcae270b7b",
+              "immutable_raw_ref": "inline:739298da251dbbaf4f1215b91c350a0e4a6a5986162f866ddc7dc0bcae270b7b",
+              "result_kind": "fetched_artifact",
+              "source_transaction_id": "1041514-3",
+              "url": "https://two.example.com/sitemap.xml"
+            }
+          ],
+          "global_catalog_disposition": "retained",
+          "method_category": "acquisition_surface",
+          "method_id": "sitemap_xml",
+          "network_transaction_count": 1,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "candidate_type": "rss",
+              "result_kind": "discovery_candidate",
+              "source_transaction_id": "1041514-2",
+              "url": "https://two.example.com/feed.xml"
+            }
+          ],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 0,
+          "fetched_artifacts": [],
+          "global_catalog_disposition": "retained",
+          "method_category": "tactic",
+          "method_id": "rss_link_discovery",
+          "network_transaction_count": 0,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 0,
+          "candidates": [],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 1,
+          "fetched_artifacts": [
+            {
+              "canonical_url": "https://two.example.com/feed.xml",
+              "content_sha256": "b297235dd97dd4d58cf4e364236709ffdce1aafb1f390bb69c1928fc500206c8",
+              "immutable_raw_ref": "inline:b297235dd97dd4d58cf4e364236709ffdce1aafb1f390bb69c1928fc500206c8",
+              "result_kind": "fetched_artifact",
+              "source_transaction_id": "1041514-4",
+              "url": "https://two.example.com/feed.xml"
+            }
+          ],
+          "global_catalog_disposition": "retained",
+          "method_category": "acquisition_surface",
+          "method_id": "rss_feed",
+          "network_transaction_count": 1,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        },
+        {
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "candidate_type": "rel_next",
+              "result_kind": "discovery_candidate",
+              "source_transaction_id": "1041514-2",
+              "url": "https://two.example.com/page/2"
+            }
+          ],
+          "details": {},
+          "display_name": "Two",
+          "fetched_artifact_count": 1,
+          "fetched_artifacts": [
+            {
+              "canonical_url": "https://two.example.com/page/2",
+              "content_sha256": "a0021c81e3ede3ecffdd5a7819e482600deea7f7e6b659a2fd298331c766972e",
+              "immutable_raw_ref": "inline:a0021c81e3ede3ecffdd5a7819e482600deea7f7e6b659a2fd298331c766972e",
+              "result_kind": "fetched_artifact",
+              "source_transaction_id": "1041514-5",
+              "url": "https://two.example.com/page/2"
+            }
+          ],
+          "global_catalog_disposition": "retained",
+          "method_category": "tactic",
+          "method_id": "rel_next_pagination",
+          "network_transaction_count": 1,
+          "site_outcome": "succeeded",
+          "source_id": "s3",
+          "stop_reason": "ok"
+        }
+      ],
+      "source_id": "s3"
+    }
+  ],
+  "origin": "https://two.example.com",
+  "started_epoch": 1786392942.8936992,
+  "transactions": [
+    {
+      "canonical_url": "https://two.example.com/robots.txt",
+      "completed_at": "2026-08-10T20:15:42.895912+00:00",
+      "content_encoding": null,
+      "decoded_bytes": 23,
+      "error_class": null,
+      "final_url": "https://two.example.com/robots.txt",
+      "immutable_raw_ref": "inline:16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+      "inline_body_base64": "VXNlci1hZ2VudDogKgpBbGxvdzogLwo=",
+      "method_id": "robots_preflight",
+      "mime": "text/plain",
+      "peer_ip": "93.184.216.34",
+      "redirect_chain": [],
+      "requested_url": "https://two.example.com/robots.txt",
+      "resolved_ip": "93.184.216.34",
+      "robots_decision": "not_required",
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+      "source_id": "s3",
+      "started_at": "2026-08-10T20:15:42.893766+00:00",
+      "status": 200,
+      "stop_reason": null,
+      "transaction_id": "1041514-1",
+      "truncated": false
+    },
+    {
+      "canonical_url": "https://two.example.com/",
+      "completed_at": "2026-08-10T20:15:42.898743+00:00",
+      "content_encoding": null,
+      "decoded_bytes": 435,
+      "error_class": null,
+      "final_url": "https://two.example.com/",
+      "immutable_raw_ref": "inline:2c8ab8ffc6476dbfdb202283ec28fa3d1c07cb327d441d84f0f2c6645330c28d",
+      "inline_body_base64": "PGh0bWw+PGhlYWQ+PHRpdGxlPkZpeHR1cmUgdHdvLmV4YW1wbGUuY29tPC90aXRsZT48bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iZml4dHVyZSBkZXNjcmlwdGlvbiI+PGxpbmsgcmVsPSJhbHRlcm5hdGUiIHR5cGU9ImFwcGxpY2F0aW9uL3Jzcyt4bWwiIGhyZWY9Imh0dHBzOi8vdHdvLmV4YW1wbGUuY29tL2ZlZWQueG1sIj48bGluayByZWw9Im5leHQiIGhyZWY9Imh0dHBzOi8vdHdvLmV4YW1wbGUuY29tL3BhZ2UvMiI+PHNjcmlwdCB0eXBlPSJhcHBsaWNhdGlvbi9sZCtqc29uIj57IkB0eXBlIjoiV2ViU2l0ZSIsIm5hbWUiOiJGaXh0dXJlIn08L3NjcmlwdD48c2NyaXB0IHR5cGU9ImFwcGxpY2F0aW9uL2pzb24iPnsiZGVzY3JpcHRpb24iOiJlbWJlZGRlZCJ9PC9zY3JpcHQ+PC9oZWFkPjxib2R5PmZpeHR1cmUgYm9keTwvYm9keT48L2h0bWw+",
+      "method_id": "root_html",
+      "mime": "text/html",
+      "peer_ip": "93.184.216.34",
+      "redirect_chain": [],
+      "requested_url": "https://two.example.com/",
+      "resolved_ip": "93.184.216.34",
+      "robots_decision": "allowed",
+      "sha256": "2c8ab8ffc6476dbfdb202283ec28fa3d1c07cb327d441d84f0f2c6645330c28d",
+      "source_id": "s3",
+      "started_at": "2026-08-10T20:15:42.896545+00:00",
+      "status": 200,
+      "stop_reason": null,
+      "transaction_id": "1041514-2",
+      "truncated": false
+    },
+    {
+      "canonical_url": "https://two.example.com/sitemap.xml",
+      "completed_at": "2026-08-10T20:15:42.901386+00:00",
+      "content_encoding": null,
+      "decoded_bytes": 89,
+      "error_class": null,
+      "final_url": "https://two.example.com/sitemap.xml",
+      "immutable_raw_ref": "inline:739298da251dbbaf4f1215b91c350a0e4a6a5986162f866ddc7dc0bcae270b7b",
+      "inline_body_base64": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHVybHNldD48dXJsPjxsb2M+aHR0cHM6Ly90d28uZXhhbXBsZS5jb20vYWJvdXQ8L2xvYz48L3VybD48L3VybHNldD4=",
+      "method_id": "sitemap_xml",
+      "mime": "application/xml",
+      "peer_ip": "93.184.216.34",
+      "redirect_chain": [],
+      "requested_url": "https://two.example.com/sitemap.xml",
+      "resolved_ip": "93.184.216.34",
+      "robots_decision": "allowed",
+      "sha256": "739298da251dbbaf4f1215b91c350a0e4a6a5986162f866ddc7dc0bcae270b7b",
+      "source_id": "s3",
+      "started_at": "2026-08-10T20:15:42.899236+00:00",
+      "status": 200,
+      "stop_reason": null,
+      "transaction_id": "1041514-3",
+      "truncated": false
+    },
+    {
+      "canonical_url": "https://two.example.com/feed.xml",
+      "completed_at": "2026-08-10T20:15:42.903703+00:00",
+      "content_encoding": null,
+      "decoded_bytes": 127,
+      "error_class": null,
+      "final_url": "https://two.example.com/feed.xml",
+      "immutable_raw_ref": "inline:b297235dd97dd4d58cf4e364236709ffdce1aafb1f390bb69c1928fc500206c8",
+      "inline_body_base64": "PD94bWwgdmVyc2lvbj0iMS4wIj8+PHJzcz48Y2hhbm5lbD48aXRlbT48dGl0bGU+Rml4dHVyZTwvdGl0bGU+PGxpbms+aHR0cHM6Ly9leGFtcGxlLmludmFsaWQvaXRlbTwvbGluaz48L2l0ZW0+PC9jaGFubmVsPjwvcnNzPg==",
+      "method_id": "rss_feed",
+      "mime": "application/rss+xml",
+      "peer_ip": "93.184.216.34",
+      "redirect_chain": [],
+      "requested_url": "https://two.example.com/feed.xml",
+      "resolved_ip": "93.184.216.34",
+      "robots_decision": "allowed",
+      "sha256": "b297235dd97dd4d58cf4e364236709ffdce1aafb1f390bb69c1928fc500206c8",
+      "source_id": "s3",
+      "started_at": "2026-08-10T20:15:42.901518+00:00",
+      "status": 200,
+      "stop_reason": null,
+      "transaction_id": "1041514-4",
+      "truncated": false
+    },
+    {
+      "canonical_url": "https://two.example.com/page/2",
+      "completed_at": "2026-08-10T20:15:42.905893+00:00",
+      "content_encoding": null,
+      "decoded_bytes": 72,
+      "error_class": null,
+      "final_url": "https://two.example.com/page/2",
+      "immutable_raw_ref": "inline:a0021c81e3ede3ecffdd5a7819e482600deea7f7e6b659a2fd298331c766972e",
+      "inline_body_base64": "PGh0bWw+PGhlYWQ+PHRpdGxlPlBhZ2UgMjwvdGl0bGU+PC9oZWFkPjxib2R5Pm5leHQgY29udGVudDwvYm9keT48L2h0bWw+",
+      "method_id": "rel_next_pagination",
+      "mime": "text/html",
+      "peer_ip": "93.184.216.34",
+      "redirect_chain": [],
+      "requested_url": "https://two.example.com/page/2",
+      "resolved_ip": "93.184.216.34",
+      "robots_decision": "allowed",
+      "sha256": "a0021c81e3ede3ecffdd5a7819e482600deea7f7e6b659a2fd298331c766972e",
+      "source_id": "s3",
+      "started_at": "2026-08-10T20:15:42.903794+00:00",
+      "status": 200,
+      "stop_reason": null,
+      "transaction_id": "1041514-5",
+      "truncated": false
+    }
+  ],
+  "type": "done",
+  "worker_pid": 1041514
+}

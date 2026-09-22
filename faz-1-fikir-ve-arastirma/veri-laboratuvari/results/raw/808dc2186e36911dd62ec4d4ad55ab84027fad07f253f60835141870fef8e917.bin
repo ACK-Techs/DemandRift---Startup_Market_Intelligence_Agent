@@ -1,0 +1,3077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      
+        Welcome to RIPE and the RIPE NCC &mdash; RIPE Network Coordination Centre
+      
+    </title>
+    <meta name="viewport" content="width=device-width">
+    
+      <meta name="description" content="The RIPE NCC is one of five Regional Internet Registries (RIRs) providing Internet resource allocation and registration, and coordination activities.">
+      <meta property="og:description" content="The RIPE NCC is one of five Regional Internet Registries (RIRs) providing Internet resource allocation and registration, and coordination activities.">
+    
+    <meta property="og:title" content="Welcome to RIPE and the RIPE NCC">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/static/images/logo.png">
+    <meta property="og:site_name" content="RIPE Network Coordination Center">
+    <meta property="og:url" content="https://www.ripe.net/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ripencc">
+    <link rel="canonical" href="https://www.ripe.net/">
+    
+<link rel="shortcut icon" href="/static/favicons/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+<link rel="manifest" href="/static/favicons/site.webmanifest">
+<link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color='#131f48'>
+<link rel="shortcut icon" href="/static/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="alternate" type="application/rss+xml" title="RIPE NCC News Feed" href="/news.xml">
+    <link rel="alternate" type="application/rss+xml" title="RIPE NCC Events Feed" href="/events.xml">
+    <link rel="alternate" type="application/rss+xml" title="RIPE NCC Member Updates Feed" href="/member_updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="Hackathons Feed" href="/hackathons.xml">
+    <link rel="alternate" type="application/rss+xml" title="NOG Events Feed" href="/nog_events.xml">
+    
+    <link rel="me" href="https://mastodon.social/@ripencc">
+    <link rel="preload" href="/static/fonts/public-sans-latin-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta name="theme-color" content="#FFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#303030" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="/static/CACHE/css/style.7935eec35449.css" type="text/css">
+    <script data-default-providers="brevo, carto, google, googlemaps, typeform, youtube" src="https://www-static.ripe.net/static/webcomponents/embed-consent-v1.1.6.min.js"></script>
+    
+    
+
+    
+    
+      <script>
+        var _paq = window._paq || [];
+        _paq.push(['requireCookieConsent']);
+        _paq.push(['trackPageView']);
+        (function() {
+          var u="https://www-analytics.ripe.net/";
+          _paq.push(['setTrackerUrl', u+'matomo.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+    
+  </head>
+  <body>
+    
+
+    
+<header class="bg-white">
+  <a id="skip-nav" href="#content-core">Skip to main content</a>
+  <div class="flex justify-between h-16 text-small container">
+    <div class="flex items-center self-stretch justify-between w-full h-full" aria-label="Main navigation" role="navigation">
+
+      <nav class="flex gap-8 lg:gap-12 items-center self-stretch" aria-label="Main navigation">
+        <div class="header-logo">
+          
+            <a href="/" title="Go to homepage" class="block py-[1px]"><img class="h-7 my-1" src="/static/images/ripe-ncc-logo-2025.svg" alt="RIPE NCC logo"></a>
+          
+        </div>
+        <div id="desktop-megamenu" data-nosnippet class="hidden md:flex md:gap-1 lg:gap-3 md:self-stretch">
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/manage-ips-and-asns/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="4">IPs &amp; ASNs</a>
+              </div>
+            
+            <div id="megamenu-section-4" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">IPs &amp; ASNs</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            We distribute Internet number resources to our members and provide tools to help them manage their allocations and assignments.
+          </p>
+          <span class="flex">
+            <a href="/manage-ips-and-asns/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/ipv4/">IPv4</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv4/how-to-get-ipv4-addresses/">Request /24 Allocation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv4/ipv4-run-out/">IPv4 Run-out</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv4/how-waiting-list-works/">How Does The IPv4 Waiting List Work?</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv4/ipv4-transfer-request/">IPv4 Transfer Request</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv4/ipv4-waiting-list/">IPv4 Waiting List</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/ipv6/">IPv6</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv6/request-ipv6/">Request IPv6</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/ipv6/ipv6-info-centre/">IPv6 Info Centre</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/as-numbers/">AS Numbers</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/as-numbers/reassigning-as-numbers/">Reassigning Referenced AS Numbers</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/db/">RIPE Database</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/db/whois/">Whois Search</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/db/webupdates/">Webupdates</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/db/support/">Database Support</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/lir-portal/">LIR Portal</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/dns/">DNS</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/dns/reverse-dns/">Reverse DNS</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/dns/dnssec/">DNSSEC</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/resource-transfers-and-mergers/">Resource Transfers and Mergers</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/resource-transfers-and-mergers/inter-rir-transfers/">Inter-RIR Transfers</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/resource-transfers-and-mergers/mergers-and-acquisitions/">Mergers and Acquisitions</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/legacy-resources/">Legacy Internet Resources</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/legacy-resources/legacy-internet-resources-documentation/">Documentation</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/manage-ips-and-asns/resource-management/">Documentation for Resource Management</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/resource-management/rpki/">Resource Public Key Infrastructure (RPKI)</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/resource-management/policy-implementation-status/">Policy Implementation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/manage-ips-and-asns/resource-management/assisted-registry-check/">Assisted Registry Check</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/analyse/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="250">Analyse</a>
+              </div>
+            
+            <div id="megamenu-section-250" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Analyse</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            We collect a wide range of Internet data and provide statistics and tools you can use for your own operations and analyses.
+          </p>
+          <span class="flex">
+            <a href="/analyse/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/statistics/">Statistics</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/internet-measurements/">Internet Measurements</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/ripe-atlas/">RIPE Atlas</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/ripestat/">RIPEstat</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/routing-information-service-ris/">RIS</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/ripe-ipmap/">RIPE IPMap</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/internet-traffic-maps/">Internet Traffic Maps</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/about-ripe-atlas/">Analyses and Use Cases</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/internet-measurements/ixp-country-jedi/">IXP Country Jedi (Alpha)</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/dns/">DNS</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/analyse/dns/k-root/">K-root</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/dns/authdns/">AuthDNS</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/dns/reverse-delegation-dns-zonecheck/">Reverse DNS Zonecheck</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/dns/dnsmon/">DNS Monitoring Service (DNSMON)</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/raw-data-sets/">Raw Datasets</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/analyse/raw-data-sets/ripe-atlas-raw-data-format/">RIPE Atlas Raw Data Format</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/raw-data-sets/ripe-atlas-raw-data/">RIPE Atlas Raw Data</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/raw-data-sets/ris-raw-dataset/">RIS Raw Data</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/raw-data-sets/terms-conditions/">Terms and Conditions</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/archived-projects/">Archived Projects</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/ris-tools-web-interfaces/">RIS Tools and Web Interfaces</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/ttm/">TTM</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/rrcc/">RRCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/disi/">DISI</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/irrtoolset/">IRRToolset</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/rpsl/">Re-implementation Project</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/analyse/archived-projects/dbconstat/">DBConstat</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/analyse/data-and-measurements-sponsorship/">Sponsorship</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/community/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="588">Community</a>
+              </div>
+            
+            <div id="megamenu-section-588" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Community</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            More information about RIPE
+          </p>
+          <span class="flex">
+            <a href="/community/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/wg/">Working Groups</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/wg/wg-chairs/">Working Group Chairs</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/wg/active-wg/">Active Working Groups</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/tf/">Task Forces</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/policies/">Policy Development</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/policies/policy-implementation-status/">Policy Implementation Status</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/policies/current-proposals/">Current Policy Proposals</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/internet-governance/">Internet Governance</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/internet-governance/internet-technical-community/">Internet Technical Community</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/internet-governance/multi-stakeholder-engagement/">Multi-stakeholder Engagement</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/internet-governance/internet-governance-news/">Internet Governance News</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/ripe-labs/">RIPE Labs</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/nro-nc/">NRO NC</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/nro-nc/nro-nc/">About the NRO NC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/nro-nc/nro-nc-nominations-october-2025/">NRO NC Nominations - October 2025</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/nro-nc/icp-2-review/">ICP-2 Review</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/community-initiatives/">Initiatives</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/community-initiatives/raci/">Academic Cooperation (RACI)</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/community-initiatives/ripe-fellowship/">RIPE Fellowship</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/community-initiatives/diversity/">Diversity</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/community-initiatives/cpf/">Community Projects Fund</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/community-initiatives/rob-blokzijl-foundation/">Rob Blokzijl Foundation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/community-initiatives/support-community-initiatives/">Community Sponsorship</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/ripe-governance/">RIPE Governance</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/ripe-governance/chair/">The RIPE Chair Team</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/ripe-governance/code-of-conduct/">RIPE Code of Conduct</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/ripe-governance/ripe-community-plenary/">RIPE Community Plenary</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/ripe-governance/history/">The History of RIPE</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/ripe-document-store/">RIPE Document Store</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/community/participate/">Participate</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/community/participate/how-to-participate/">How to Participate</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/community/participate/ripe-mailing-lists/">RIPE Mailing Lists</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/membership/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="442">Membership</a>
+              </div>
+            
+            <div id="megamenu-section-442" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Membership</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            Get information about your membership, the benefits you get and how you can participate and shape RIPE NCC&#x27;s activities.
+          </p>
+          <span class="flex">
+            <a href="/membership/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/member-support/">RIPE NCC Membership</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/membership/member-support/become-a-member/">Become a Member</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/member-support/lir-basics/">LIR Basics for Members</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/member-support/ripe-ncc-access/">RIPE NCC Access</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/member-support/surveys/">RIPE NCC Surveys</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/gm/">General Meetings</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/membership/gm/general-meeting-oct-2026/">General Meeting October 2026</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/gm/meetings/">Meetings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/payment/">Billing, Payment and Fees</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/membership/payment/charging-schemes/">Charging Schemes</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/payment/ripe-ncc-billing-procedure-2026/">Billing Procedure 2026</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/payment/ripe-ncc-billing-procedure-2025/">Billing Procedure 2025</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/payment/tax/">Tax Information</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/payment/financial-information/">Financial Information</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/ripe-ncc-organisational-documents/">RIPE NCC Organisational Documents</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/budgets/">Activity Plan and Budget</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/reports/">Annual Reports</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/financial-reports/">Financial Reports</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/charging-schemes/">Charging Schemes</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/transparency-report/">Quarterly Sanctions Transparency Reports</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/ripe-ncc-organisational-documents/strategy/">RIPE NCC Strategy</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/mail/">Join a Discussion</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/membership/mail/ripe-ncc-mailing-lists/">Membership Mailing Lists</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/mail/ripe-mailing-lists/">RIPE Mailing Lists</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/membership/mail/member-and-community-consultations/">Consultations</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/membership/ripe-ncc-forum/">RIPE NCC Forum</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/meetings/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="1588">Events</a>
+              </div>
+            
+            <div id="megamenu-section-1588" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Events</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            The RIPE community carries out much of its work through mailing lists, but face-to-face meetings are equally important.
+          </p>
+          <span class="flex">
+            <a href="/meetings/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/ripe-meetings/">RIPE Meetings</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/meetings/ripe-meetings/presenting-at-a-ripe-meeting/">Presenting at a RIPE Meeting</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/ripe-meetings/pc/">Programme Committee</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/ripe-meetings/upcoming-ripe-meetings/">Upcoming RIPE Meetings</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/ripe-meetings/archive/">Previous RIPE Meetings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/regional-meetings/">Regional Meetings</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/meetings/regional-meetings/capif/">CAPIF</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/regional-meetings/menog/">MENOG</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/regional-meetings/see/">SEE</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/regional-meetings/ripe-ncc-days/">RIPE NCC Days</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/regional-meetings/next-regional-meetings/">Next Regional Meetings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/roundtable/">Roundtable Meetings</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/meetings/roundtable/previous-meetings/">Previous Meetings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/general-meetings/">General Meetings</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/open-house/">Open House</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/meetings/open-house/previous-events/">Previous Events</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/internet-measurement-day/">Internet Measurement Days</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/meetings/internet-measurement-day/internet-measurement-day-sofia/">Sofia</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/meetings/internet-measurement-day/internet-measurement-day-bucharest/">Bucharest</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/hackathons/">Hackathons</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/calendar/">Events Calendar</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/meetings/event-sponsorship/">Event Sponsorship</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/training/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="5589">Training</a>
+              </div>
+            
+            <div id="megamenu-section-5589" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Training</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            Follow our courses, build skills, and earn certifications. Browse topics and skill levels for the learning path that best matches your goals and learning style.
+          </p>
+          <span class="flex">
+            <a href="/training/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/in-person-training-courses/">In-Person Training Courses</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/training/in-person-training-courses/upcoming-training-courses/">Upcoming Training Courses</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/in-person-training-courses/host-a-training-course/">Host a Training Course</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/in-person-training-courses/material/">Training Material</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/webinars/">Webinars</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/training/webinars/webinar-recordings/">Webinar Recordings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/ripe-ncc-academy/">RIPE NCC Academy</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/ripe-ncc-certified-professionals/">Certified Professionals</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/schedule-exam/">Schedule an Exam</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/bgp-security-associate/">BGP Security Associate</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/ipv6-fundamentals-analyst/">IPv6 Fundamentals - Analyst</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/ipv6-security-expert/">IPv6 Security Expert</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/local-internet-registry-lir-fundamentals/">Local Internet Registry (LIR) Fundamentals</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/ripe-database-associate/">RIPE Database Associate</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/practical-information/">Practical Information</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/training/ripe-ncc-certified-professionals/exam-vouchers/">Exam Vouchers</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/videos/">Videos</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/training/summer-school-2026/">Summer School 2026</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/publications/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="5786">Docs</a>
+              </div>
+            
+            <div id="megamenu-section-5786" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Docs</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            Find the documents that you need from the RIPE Document Store, the RIPE NCC&#x27;s technical documentation and IPv6 resources.
+          </p>
+          <span class="flex">
+            <a href="/publications/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/publications/docs/">RIPE Document Store</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/publications/docs/all-ripe-documents-by-number/">RIPE Documents by Number</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/docs/ripe-documents/">RIPE Documents by Category</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/docs/ripe-policies/">RIPE Policies</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/publications/documentation/">Documentation</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/publications/documentation/developer-documentation/">Developer Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/quarterly-planning/">Quarterly Plans</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/ripe-atlas/">RIPE Atlas Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/ripe-database-documentation/">RIPE Database Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/ris-documentation/">RIS Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/ripe-ipmap-documentation/">RIPE IPmap Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/ripestat-documentation/">RIPEstat Documentation</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/documentation/disclosures-and-reports/">Disclosures and Reports</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/publications/ipv6-information-centre/">IPv6 Information Centre</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/about-ipv6/">About IPv6</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/deployment-planning/">Deploy IPv6 Now</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/statistics-and-tools/">Statistics and Tools</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/training-and-materials/">Training and Materials</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/ipv6-documents/">Documents</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/publications/ipv6-information-centre/ipv6-community/">Community</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+              <div class="main-nav-item">
+                <a href="/about-us/" class="md:px-1 lg:px-3.5 top-menu-item" data-item-id="7606">About</a>
+              </div>
+            
+            <div id="megamenu-section-7606" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">About</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            We&#x27;re a not-for-profit membership association, a Regional Internet Registry and the secretariat for the RIPE community supporting the Internet.
+          </p>
+          <span class="flex">
+            <a href="/about-us/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/what-we-do/">What We Do</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/regional-internet-registry/">Regional Internet Registry</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/ripe-ncc-service-region/">RIPE NCC Service Region</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/coordination-function/">Coordination Function</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/statistics/">Statistics</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/transition-to-ipv6/">Transition to IPv6</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/list-of-ripe-ncc-services/">List of RIPE NCC Services</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/what-we-do/user-research/">User Research</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/staff/">Staff</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/staff/structure/">RIPE NCC Staff</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/staff/careers-at-the-ripe-ncc/">Careers at the RIPE NCC</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/executive-board/">Executive Board</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/executive-board/ripe-ncc-executive-board-functions-and-expectations/">Functions and Expectations </a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/executive-board/minutes/">Minutes from Executive Board Meetings</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/financial-information/">Financial Information</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/financial-information/current-charging-scheme/">Current Charging Scheme</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/financial-information/current-billing-procedure/">Current Billing Procedure</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/press-centre/">Press Centre</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/press-centre/ripe-ncc-in-the-news/">RIPE NCC in the News</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/press-centre/publications/">Publications and Presentations</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/press-centre/press-releases/">Press Releases</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/press-centre/press-photos/">Press Quality Photos</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/legal/">Legal</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/legal/arbitration/">Arbitration</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/legal/corporate-governance/">Corporate Governance</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/legal/internet-number-resources/">Internet Number Resources</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/legal/other-ripe-ncc-services-documents/">Other RIPE NCC Services</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/legal/information-for-law-enforcement-agencies/">Information for LEA</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/news/">News</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/news/feeds/">RSS News Feeds</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/news/member-updates/">RIPE NCC Member Updates</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/support/">Support</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/about-us/support/contact/">Contact Us</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/support/abuse/">Spam, Hacking and Phishing</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/about-us/support/service-and-security-announcements/">Service and Security Announcements</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/ripe-ncc-trust-portal/">RIPE NCC Trust Portal</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/about-us/ripe-ncc-middle-east-fz-llc/">RIPE NCC Middle East</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+            
+            
+            <div id="megamenu-section-9287" class="top-16 left-0 z-30 fixed w-full h-full megamenu-section backdrop-blur-lg overflow-auto">
+  <div class="bg-ncc-xlight absolute w-full mb-16 js-modal-container">
+    <div class="container py-14">
+      <div class="grid md:grid-cols-1 lg:grid-cols-4 gap-9">
+        <div>
+          <div class="text-h2-d text-ncc font-bold pb-4">Languages</div>
+          <p class="text-neutral-soft p-small md:max-w-[74%]">
+            Find information about the RIPE NCC translated into eight languages. Use the menu to read text in Arabic, Spanish, Farsi, French, Italian, Turkish, Ukrainian and Russian.
+          </p>
+          <span class="flex">
+            <a href="/languages/" class="btn btn-secondary group bg-transparent flex">Visit page <i class="icon icon-tiny icon-arrow-right ml-1 bg-ncc-medium group-hover:bg-white"></i></a>
+          </span>
+        </div>
+        <div class="col-span-3">
+          <div class="gap-9 columns-3">
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/en/">English</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/en/membership/">How to Become a Member</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/billing/">Billing, Fees and Payments</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/resources/">How to Get IP Addresses</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/transfers/">How to Transfer IP Addresses and ASNs</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/participation/">How to get involved at the RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/governance/">How the RIPE NCC is Run</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/abuse/">How to Find Abuse Contact Information</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/en/training/">Training and Certification</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/tr/">Türkçe</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/tr/membership/">RIPE NCC’ye Nasıl Üye Olabilirsiniz?</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/billing/">Faturalandırma, Ücretler ve Ödemeler</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/resources/">IP Adresleri Nasıl Alınır</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/transfers/">IP Adreslerinin ve ASN&#x27;lerin Aktarılması</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/participation/">RIPE NCC’nin faaliyetlerinde nasıl yer alınır</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/governance/">RIPE NCC Nasıl Çalışır</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/abuse/">Kötüye Kullanımdan Sorumlu İrtibat Kişisinin Bilgileri Nasıl Bulunur?</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/tr/training/">Eğitim ve Sertifikalar</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/es/">Español</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/es/membership/">Cómo hacerse miembro</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/billing/">Facturación, Tarifas y Pagos</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/resources/">Cómo obtener direcciones IP</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/transfers/">Cómo transferir direcciones IP y ASN</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/participation/">Cómo involucrarse en RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/governance/">Cómo funciona el RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/abuse/">Cómo encontrar información de contacto de abuso</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/es/training/">Formación y certificación</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/it/">Italiano</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/it/membership/">Come associarsi</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/billing/">Costi, fatturazione e pagamenti</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/resources/">Come ottenere indirizzi IP</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/transfers/">Come trasferire indirizzi IP e ASN</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/participation/">Come partecipare al RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/governance/">Come viene gestito il RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/abuse/">Come trovare informazioni di contatto sugli abusi</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/it/training/">Formazione e certificazione</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/ru/">Pусский</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/ru/membership/">Как стать членом RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/billing/">Оформление счетов, взносы и платежи</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/resources/">Как получить IP-адреса</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/transfers/">Как передавать IP-адреса и ASN</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/participation/">Как принять участие в работе RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/governance/">Кто руководит RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/abuse/">Как найти контактную информацию для обращений касательно злоупотреблений</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ru/training/">Обучение и сертификация</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/ar/">عربي</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/ar/membership/">كيف تصبح عضوًا</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/billing/">رسوم العضوية</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/resources/">كيفية الحصول على عناوين IP</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/transfers/">كيفية نقل عناوين IP وأرقام ASN</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/participation/">كيف تشارك في RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/governance/">كيف تُدار RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/abuse/">كيف تصل إلى معلومات الاتصال الخاصة بإساءة الاستخدام</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/ar/training/">التدريب والشهادات</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/fa/">فارسی</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/fa/membership/">نحوۀ عضویت</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/billing/">صدور صورتحساب، هزینه‌ها و پرداخت‌ها</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/resources/">چگونه میتوان آدرس های IPرا گرفت</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/transfers/">نحوۀ انتقال آدرس های IP و شماره های سیستم خودمختار</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/participation/">نحوۀ همکاری با مرکز هماهنگی شبکه RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/governance/">RIPE NCC نحوۀ ادارۀ</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/abuse/">نحوۀ یافتن اطلاعات تماس سوءاستفاده‌گر</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fa/training/">آموزش و اعطای گواهی</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/uk/">Українська</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/uk/yak-stati-chlenom-ripe-ncc/">Як стати членом RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/vistavlennya-rahunkiv-zbori-ta-platezhi/">Виставлення рахунків, збори та платежі</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/yak-otrimati-ip-adresi/">Як отримати IP-адреси</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/yak-peredavati-ip-adresi-ta-asn/">Як передавати IP-адреси та ASN</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/navchannya-ta-sertifikaciya/">Навчання та сертифікація</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/yak-funkcionuye-ripe-ncc/">Як функціонує RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/uk/yak-znajti-kontaktnu-informaciyu-dlya-povidomlennya-pro-zlovzhivannya/">Як знайти контактну інформацію для повідомлення про зловживання</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div class="flex flex-col gap-2 items-start self-stretch break-inside-avoid pb-9">
+                <a class="megamenu-second-level-link" href="/languages/fr/">Français</a>
+                <ul class="text-ncc-medium text-small flex flex-col gap-2 items-start self-stretch">
+                  
+                    <li>
+                      <a href="/languages/fr/comment-devenir-membre/">Comment devenir membre ?</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/facturation-frais-et-paiements/">Facturation, frais et paiements</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/comment-obtenir-des-adresses-ip/">Comment obtenir des adresses IP</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/comment-transferer-des-adresses-ip-et-des-numeros-de-systeme-autonome-asn/">Comment transférer des adresses IP et des numéros de système autonome (ASN)</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/comment-simpliquer-au-sein-du-ripe-ncc/">Comment s&#x27;impliquer au sein du RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/comment-fonctionne-le-ripe-ncc/">Comment fonctionne le RIPE NCC</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/comment-trouver-les-informations-de-contact-dabus/">Comment trouver les Informations de Contact d&#x27;Abus</a>
+                    </li>
+                  
+                    <li>
+                      <a href="/languages/fr/formation-et-certification/">Formation et certification</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <span class="flex flex-col items-end">
+        <button class="megamenu-close btn btn-secondary group bg-transparent flex">Close <i class="icon icon-cross ml-1 bg-ncc-medium group-hover:bg-white"></i></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+      </nav>
+
+      <div class="flex gap-6 items-center justify-end h-2">
+        <ul id="header-icons" class="flex gap-2 items-center">
+          <li id="header-search" class="icon-wrapper" title="Search ripe.net (shortcut: /)">
+            
+              <input id="search-bar-check" type="checkbox">
+              <label id="search-bar-button" tabindex="0" role="button" aria-label="Search" for="search-bar-check" class="flex flex-row justify-center items-center w-10 h-10">
+                <i class="icon icon-search"></i>
+              </label>
+              <div id="search-bar" class="top-16 search-bar fixed left-0 z-40 w-full h-full backdrop-blur-lg">
+                
+<div class="bg-ncc-xlight w-full py-8 border-b js-modal-container">
+  <div class="container layout">
+    <div class="flex flex-col gap-3 md:col-span-8 md:col-start-3">
+      <form id="search-form" action="/search/" method="get" role="search">
+        <label for="search-query" class="text-2xl pb-0 text-neutral font-normal">Search</label>
+        <div class="flex flex-row">
+          <input id="search-query" class="w-full rounded-r-none" type="search" name="query" placeholder="Search terms" value="" aria-label="Search query">
+          <button type="submit" aria-label="Submit search">
+            <span class="hidden sm:flex pr-1">Search</span>
+            <i class="icon icon-search w-5 h-5"></i>
+          </button>
+        </div>
+        
+      </form>
+      <div class="flex flex-wrap overflow-x-auto justify-between text-neutral-soft text-small">
+        <p>Your IP Address is: <a class="text-ncc font-semibold break-all" href="https://apps.db.ripe.net/db-web-ui/query?searchtext=45.94.7.232" data-matomo-mask>45.94.7.232</a></p>
+        <p class="text-right">Tip: try using "quotes around your search phrase"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            
+          </li>
+          <li class="flex icon-wrapper" title="See important information in other languages">
+            <a class="w-10 h-10 flex items-center justify-center" href="/languages/" aria-label="Languages"><i class="icon icon-languages"></i></a>
+          </li>
+          <li id="header-app-switcher" class="icon-wrapper hidden sm:flex" title="See other RIPE applications">
+            <div tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-haspopup="menu" aria-label="Applications" class="apps-menu relative flex flex-row z-50 group">
+  <div class="flex p-1 icon-wrapper">
+    <i class="icon-xlarge icon-apps bg-ncc"></i>
+  </div>
+  <div class="flex items-center sm:hidden ml-1.5 group-hover:text-ncc-bright group-hover:underline">Apps</div>
+  <nav aria-label="Application list" class="hidden bg-ncc w-max p-6 pb-0 rounded-[0.5rem]">
+    <ul role="menu" class="sm:columns-2 leading-6 font-medium text-white">
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://www.ripe.net" class="border-b-2 border-b-secondary-deep" > RIPE.NET</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://my.ripe.net" > LIR Portal</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://apps.db.ripe.net" > RIPE Database</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://labs.ripe.net" > RIPE Labs</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://stat.ripe.net" > RIPEstat</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://atlas.ripe.net" > RIPE Atlas</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://academy.ripe.net" > RIPE NCC Academy</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://dashboard.rpki.ripe.net" > RPKI</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://atlas.ripe.net/dnsmon/" > DNSMON</a>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+
+          </li>
+          <li id="header-login" class="icon-wrapper hidden sm:flex" title="Sign in to RIPE NCC Access">
+            
+  <a class="flex flex-row items-center justify-center" href="https://access.ripe.net?originalUrl=https://www.ripe.net/" title="Go to Login">
+    <span class="flex icon-wrapper w-10 h-10 mr-1.5 sm:mr-0 justify-center items-center">
+      <i class="icon icon-medium icon-person !h-9"></i>
+    </span>
+    <span class="sm:hidden">Log in</span>
+  </a>
+
+
+          </li>
+          <li class="md:hidden">
+            <div id="mobile-menu-wrapper" data-nosnippet class="flex gap-2">
+              <input id="mobile-menu-check" type="checkbox" aria-label="Toggle mobile menu" name="mobile-menu-check" class="hidden">
+              <div id="mobile-menu-button" tabindex="0" aria-controls="mobile-menu" class="px-3 py-2 hover:cursor-pointer border-solid border rounded-md text-ncc-medium font-medium text-small sm:min-w-[92px]">
+                <div class="menu-open gap-2">
+                  <div class="hidden sm:flex">Menu</div>
+                  <i class="icon icon-bars h-5 w-5"></i>
+                </div>
+                <div class="menu-close gap-2">
+                  <div class="hidden sm:flex">Close</div>
+                  <i class="icon icon-cross h-5 w-5"></i>
+                </div>
+              </div>
+              <nav id="mobile-menu" class="top-16 bg-ncc-xlight fixed bottom-0 left-0 z-30 flex flex-col container w-full pt-9" aria-label="Main navigation">
+                
+                <span id="js-mobile-nav" data-item-id="3"></span>
+                <div class="flex justify-end items-center sm:hidden bg-ncc-xlight/[75] fixed bottom-0 left-0 w-full p-3 border-t border-ncc-light h-16 gap-4 shadow-[0_-4px_8px_0px_rgba(56, 56, 56, 0.04)]">
+                  <div tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-haspopup="menu" aria-label="Applications" class="apps-menu relative flex flex-row z-50 group">
+  <div class="flex p-1 icon-wrapper">
+    <i class="icon-xlarge icon-apps bg-ncc"></i>
+  </div>
+  <div class="flex items-center sm:hidden ml-1.5 group-hover:text-ncc-bright group-hover:underline">Apps</div>
+  <nav aria-label="Application list" class="hidden bg-ncc w-max p-6 pb-0 rounded-[0.5rem]">
+    <ul role="menu" class="sm:columns-2 leading-6 font-medium text-white">
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://www.ripe.net" class="border-b-2 border-b-secondary-deep" > RIPE.NET</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://my.ripe.net" > LIR Portal</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://apps.db.ripe.net" > RIPE Database</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://labs.ripe.net" > RIPE Labs</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://stat.ripe.net" > RIPEstat</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://atlas.ripe.net" > RIPE Atlas</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://academy.ripe.net" > RIPE NCC Academy</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://dashboard.rpki.ripe.net" > RPKI</a>
+        </li>
+      
+        <li role="menuitem" class="pb-5">
+          <a href="https://atlas.ripe.net/dnsmon/" > DNSMON</a>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+
+                  
+  <a class="flex flex-row items-center justify-center" href="https://access.ripe.net?originalUrl=https://www.ripe.net/" title="Go to Login">
+    <span class="flex icon-wrapper w-10 h-10 mr-1.5 sm:mr-0 justify-center items-center">
+      <i class="icon icon-medium icon-person !h-9"></i>
+    </span>
+    <span class="sm:hidden">Log in</span>
+  </a>
+
+
+                </div>
+              </nav>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+    
+
+
+  
+
+  
+
+
+    
+    <main class="container">
+      <div class="flex flex-col items-start pt-12">
+        
+  <div class="w-full h-full right-0 top-16 bg-no-repeat bg-blob-ncc bg-right-top absolute -z-10 origin-top-right scale-y-50 opacity-50 md:scale-y-75 md:opacity-75 lg:scale-100 lg:opacity-100 min-h-[732px]"></div>
+  <div class="w-full">
+    
+
+    <div id="content-core" class="landing-page">
+      
+        
+<div class="bg-transparent sm:w-4/5 md:w-3/5 my-12 md:mb-24">
+  <h1>Welcome to the RIPE NCC</h1>
+  <p class="text-base pb-0">As the Regional Internet Registry for Europe, Middle East and Central Asia, we serve over 20,000 members in 76 countries. We register IP addresses and ASNs, and act as the secretariat to the RIPE community.</p>
+  
+    
+<div class="flex flex-wrap gap-4 mt-6">
+  
+    
+      <a class="btn btn-primary" href="/about-us/" >About the RIPE NCC<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+    
+  
+    
+      <a class="btn btn-secondary" href="https://my.ripe.net" target='_blank'>LIR Portal<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+    
+  
+</div>
+
+  
+</div>
+
+      
+      
+        
+      
+        
+          <div class="block-news">
+<div id="news-block">
+  <h2>Latest news <a href="/publications/news/feeds/" title="News RSS Feed"><img src="/static/images/rss.svg" alt="News RSS Feed" class="inline align-text-middle" width="24"></a></h2>
+  <div class="three-column-grid mb-6">
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/nro-nc-nominations-2026-call-to-fill-one-seat/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>NRO NC Nominations 2026: Call to Fill One Seat</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">NRO call for nomination to fill one seat for October 2026.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-30">30 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">news</dd>
+            
+              <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">+1</dd>
+            
+          
+        </dl>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/ripe-ncc-member-update-july-2026/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>RIPE NCC Member Update: July 2026</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">Read the monthly RIPE NCC Member Update for July 2026.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-29">29 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">member update</dd>
+            
+          
+        </dl>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/aso-ac-delivers-recommended-draft-rir-governance-document-to-nro-ec-1/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>ASO AC delivers Recommended Draft RIR Governance Document to NRO EC</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">The Address Supporting Organization Address Council (ASO AC) has delivered Recommended Draft RIR Governance Document to NRO EC.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-28">28 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">news</dd>
+            
+              <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">+2</dd>
+            
+          
+        </dl>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/ripe-ncc-quarterly-sanctions-transparency-report-q3-2026-published/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>RIPE NCC Quarterly Sanctions Transparency Report (Q3 2026) Published</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">We have published our third sanctions transparency report of the year.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-24">24 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">news</dd>
+            
+          
+        </dl>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/ripe-ncc-strategy-2027-31-published/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>RIPE NCC Strategy 2027-31 Published</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">The RIPE NCC Strategy 2027-31 is now available. This strategy builds upon our existing vision, mission and values and sets the long-term direction for the organisation. The document explains RIPE NCC’s role in the Internet ecosystem, sets out six strategic focus areas for the coming five-year period and the external factors that influence our operating environment.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-13">13 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">news</dd>
+            
+              <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">+2</dd>
+            
+          
+        </dl>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="/about-us/news/ripe-95-call-for-host/" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] absolute"></i>RIPE 95: Call for Host</a>
+        <p class="text-neutral-soft pb-0 line-clamp-3">The RIPE NCC is looking for a host for RIPE 95 that will take place in Madrid at the Meliá Castilla Hotel from 15-19 November 2027.</p>
+        <dl class="pt-2 flex gap-x-[10px]">
+          <dt class="sr-only">Publish Date:</dt>
+          <dd class="text-ncc-soft inline"><time datetime="2026-07-09">09 Jul 2026</time></dd>
+          
+            <dt class="sr-only">This news item has been tagged with:</dt>
+            <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">news</dd>
+            
+              <dd class="inline bg-ncc-xlight text-neutral-medium text-sm px-[6px] py-[2px] rounded">+1</dd>
+            
+          
+        </dl>
+      </div>
+    
+  </div>
+  <a class="btn btn-primary" href="/publications/news/" >View all news<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+</div>
+</div>
+        
+      
+        
+          <div class="block-service_announcements">
+<div id="service-announcements">
+  <h2>Service Announcements <a href="https://status.ripe.net/history.rss" title="Service Announcements RSS Feed"><img src="/static/images/rss.svg" alt="Service Announcements RSS Feed" class="inline align-text-middle" width="24"></a></h2>
+  <div class="three-column-grid mb-6">
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/k8vvs3tkhfmx" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>Planned Maintenance: RIPE NCC Access Account (SSO), LIR Portal, RIPE Database and RPKI Dashboard</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-08-05 16:14:03">Aug 05, 16:14</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Completed
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/d5dnty4zz1mx" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>NRTM and Split files : Not working</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-08-04 15:46:57">Aug 04, 15:46</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Resolved
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/spr0wbvz8v4l" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>Maintenance of RRC11, NYIIX, New York City</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-07-30 10:00:07">Jul 30, 10:00</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Completed
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/rqvzyxmp011d" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>Maintenance of RRC01 at LINX/LONAP, London</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-07-28 15:00:07">Jul 28, 15:00</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Completed
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/p4ff6rc9xr63" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>Maintenance of RRC07 at Netnod, Stockholm</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-07-23 15:00:09">Jul 23, 15:00</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Completed
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="ml-6 sm:ml-0 flex flex-col gap-2">
+        <a href="https://stspg.io/xmxddv3gvdkc" class="block-item-title flex"><i class="icon-tiny icon-arrow-right -ml-6 mr-1 mt-[0.375rem] bg-ncc absolute"></i>Planned Maintenance: RIPE NCC Access Account (SSO), LIR Portal, RIPE Database and RPKI Dashboard</a>
+        <dl class="flex flex-row gap-1 text-small text-ncc-soft">
+          <dt>
+            
+              Latest update:
+            
+          </dt>
+          <dd><time datetime="2026-07-21 16:30:09">Jul 21, 16:30</time> UTC</dd>
+        </dl>
+        <div class="flex items-start">
+          
+            <div class="flex items-center gap-1 text-small bg-system-success py-1 px-2 rounded">
+              <i class="icon icon-small icon-success"></i> Completed
+            </div>
+          
+        </div>
+      </div>
+    
+  </div>
+  <a class="btn btn-primary" href="https://status.ripe.net/" target='_blank'>Visit status page<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+</div>
+</div>
+        
+      
+        
+          <div class="block-text_media">
+<div class="flex-col sm:flex-row sm:gap-x-4 lg:gap-x-10 bg-transparent flex gap-y-4">
+  <div class="w-full sm:w-1/2">
+    <h2>The RIPE Community</h2>
+    <div class="richtext">
+  <p data-block-key="gvtz3">RIPE is a forum open to everyone interested in the operation of the Internet. Since 1989, it has brought together people and communities to share information and ideas, discuss best common practices, and carry out technical coordination work.</p>
+</div>
+
+    
+      
+<div class="flex flex-wrap gap-4 mt-6">
+  
+    
+      <a class="btn btn-primary" href="/community/" >About RIPE<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+    
+  
+    
+      <a class="btn btn-secondary" href="/community/wg/" >RIPE Working Groups<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+    
+  
+</div>
+
+    
+  </div>
+  
+  
+<figure class="sm:w-1/2">
+  
+  
+    
+      <picture><source srcset="/media/images/RIPE-Community-.2e16d0ba.format-webp.fill-1024x576-c100.webp" type="image/webp"><img alt="The RIPE Community" class="aspect-video w-full rounded-lg" height="500" src="/media/images/RIPE-Community-P.2e16d0ba.format-jpeg.fill-1024x576-c100.jpg" width="890"></picture>
+    
+  
+  
+</figure>
+
+
+
+</div>
+</div>
+        
+      
+        
+          <div class="block-ripe_labs">
+
+<div id="ripe-labs-d527e9ed-08a2-4278-ae6a-7a14a4a3f85b" class="bg-transparent">
+  <div class="w-full sm:w-4/5 md:w-3/5 mb-6">
+    <h2>RIPE Labs</h2>
+    <div class="richtext">
+  <p data-block-key="kfccx">Insights, ideas and analysis from across the RIPE community.</p>
+</div>
+
+    <a class="btn btn-primary mt-6" href="https://labs.ripe.net/" target='_blank'>RIPE Labs<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+      <div class="flex flex-col shadow-lg rounded-lg bg-white card-outline">
+        
+          <img src="https://labs.ripe.net/media/images/iStock-92883867.2e16d0ba.fill-868x384.jpg"
+               alt="Two Providers, a Stubborn Plateau and a Very Long Tail: Email in the Tranco Top-1M"
+               loading="lazy"
+               class="w-full object-cover rounded-t-lg" />
+        
+        <div class="flex flex-col flex-1 px-5">
+          <a class="btn btn-textual block-item-title mb-2 font-bold text-lg" href="https://labs.ripe.net/author/artem-berezin/two-providers-a-stubborn-plateau-and-a-very-long-tail-email-in-the-tranco-top-1m/" target='_blank'>Two Providers, a Stubborn Plateau and a Very Long Tail: Email in the Tranco Top-1M<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+          <p class="text-sm text-neutral-soft leading-relaxed">
+            Ten years of DNS measurements reveal three trends across the Internet&#x27;s most popular domains: email continues to consolidate around two providers, DMARC enforcement has hit a plateau, and a surprisingly large long tail of infrastructure defies easy classification.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 p-5 border-t">
+          <img src="https://labs.ripe.net/media/images/IMG_7330.jpg.2e16d0ba.fill-96x96.png"
+               alt="Artem Berezin"
+               loading="lazy"
+               class="w-10 h-10 rounded-full object-cover border-2 border-ncc-medium" />
+          <div class="flex flex-col min-w-0">
+            <a class="btn btn-textual text-sm font-semibold py-0" href="https://labs.ripe.net/author/artem-berezin/" target='_blank'>Artem Berezin<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="flex flex-col shadow-lg rounded-lg bg-white card-outline">
+        
+          <img src="https://labs.ripe.net/media/images/Gemini_Generated_Image_6op8xc6op8x.2e16d0ba.fill-868x384.jpg"
+               alt="What&#x27;s ARP Got to Do with It?"
+               loading="lazy"
+               class="w-full object-cover rounded-t-lg" />
+        
+        <div class="flex flex-col flex-1 px-5">
+          <a class="btn btn-textual block-item-title mb-2 font-bold text-lg" href="https://labs.ripe.net/author/remco-van-mook/whats-arp-got-to-do-with-it/" target='_blank'>What&#x27;s ARP Got to Do with It?<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+          <p class="text-sm text-neutral-soft leading-relaxed">
+            It&#x27;s only ARP. It works. So how much can it really matter? The answer lies beyond ARP itself, in the IPv4 layer cake that grew around it over four decades. The IPv4 internet is not going away in bounded time, and nobody should pretend otherwise.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 p-5 border-t">
+          <img src="https://labs.ripe.net/media/images/remco.2e16d0ba.fill-96x96.jpg"
+               alt="Remco van Mook"
+               loading="lazy"
+               class="w-10 h-10 rounded-full object-cover border-2 border-ncc-medium" />
+          <div class="flex flex-col min-w-0">
+            <a class="btn btn-textual text-sm font-semibold py-0" href="https://labs.ripe.net/author/remco-van-mook/" target='_blank'>Remco van Mook<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+            
+              <span class="text-xs text-neutral-soft">community contributor</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="flex flex-col shadow-lg rounded-lg bg-white card-outline">
+        
+          <img src="https://labs.ripe.net/media/images/iStock-2086178405.2e16d0ba.fill-868x384.jpg"
+               alt="Inside a Shutdown: BGP Evidence from an Operator Who Was There"
+               loading="lazy"
+               class="w-full object-cover rounded-t-lg" />
+        
+        <div class="flex flex-col flex-1 px-5">
+          <a class="btn btn-textual block-item-title mb-2 font-bold text-lg" href="https://labs.ripe.net/author/mdkamruzzaman-khan-2/inside-a-shutdown-bgp-evidence-from-an-operator-who-was-there/" target='_blank'>Inside a Shutdown: BGP Evidence from an Operator Who Was There<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+          <p class="text-sm text-neutral-soft leading-relaxed">
+            When Bangladesh vanished from the global routing table in July 2024, public routing data captured the event as it unfolded. Drawing on first-hand observations from inside one affected network, this article explores what that data can and cannot tell us.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 p-5 border-t">
+          <img src="None"
+               alt="Md.Kamruzzaman Khan"
+               loading="lazy"
+               class="w-10 h-10 rounded-full object-cover border-2 border-ncc-medium" />
+          <div class="flex flex-col min-w-0">
+            <a class="btn btn-textual text-sm font-semibold py-0" href="https://labs.ripe.net/author/mdkamruzzaman-khan-2/" target='_blank'>Md.Kamruzzaman Khan<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+
+            
+              <span class="text-xs text-neutral-soft">community contributor</span>
+            
+          </div>
+        </div>
+      </div>
+    
+
+    
+  </div>
+</div>
+</div>
+        
+      
+        
+          <div class="block-card_grid">
+<div id="card-grid-0d5233c1-42e5-415b-a388-54338b46f59a" class="bg-transparent">
+  
+  <div class="four-column-grid">
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Policy Proposals</h3>
+        <p class="break-words ">View the current policy proposals under discussion</p>
+        <a class="btn btn-textual mt-auto p-0" href="/community/policies/proposals/" >Policy Proposals<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">RIPE Documents</h3>
+        <p class="break-words ">Policies, reports, recommendations and organisational documents</p>
+        <a class="btn btn-textual mt-auto p-0" href="/publications/docs/" >RIPE Documents<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Task Forces</h3>
+        <p class="break-words ">View the task forces that are currently active in RIPE</p>
+        <a class="btn btn-textual mt-auto p-0" href="/community/tf/" >Task Forces<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Mailing Lists</h3>
+        <p class="break-words ">Browse archives and subscribe to  mailing lists to keep track of discussions</p>
+        <a class="btn btn-textual mt-auto p-0" href="/membership/mail/" >Mailing Lists<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+  </div>
+</div>
+</div>
+        
+      
+        
+          <div class="block-cta">
+<div id="cta-3598cd1b-01af-440e-80d7-da9dfcf73217" class="rounded-lg flex flex-col-reverse bg-ncc md:flex-row-reverse">
+  <div class="text-ncc-light px-8 py-8 md:w-3/5">
+    <span class="text-white font-bold inline-block text-h2-d pb-4">RIPE NCC Academy Summer School</span>
+    
+      <div class="richtext">
+  <p data-block-key="ce1w1">Throughout July and August, learners who complete a RIPE NCC Academy e-learning course will receive a free certification exam voucher. To earn a digital badge, learners must claim and use the voucher to pass their exam of choice until 31 August 2026.</p>
+</div>
+
+    
+    
+      
+<div class="flex flex-wrap gap-4 mt-6">
+  
+    
+      <a class="btn btn-primary" href="https://academy.ripe.net/summer-school-2026" target='_blank'>More information<span><i class="icon icon-tiny icon-external"></i></span></a>
+
+    
+  
+</div>
+
+    
+  </div>
+  
+    
+      <picture class="md:w-2/5">
+        
+          <img alt="NCC Academy Academy Summer School 2026" class="rounded-t-lg md:rounded-l-lg md:rounded-r-none object-cover object-center w-full h-full" height="405" src="/media/images/NCC_Academy_Acade_HP05WVJ.2e16d0ba.fill-720x405-c25.format-webp.webp" width="720">
+        
+      </picture>
+    
+  
+</div>
+</div>
+        
+      
+        
+          <div class="block-event_list">
+<div id="event-list-b23b74cb-d320-4a9c-8671-1efc95406551" class="flex flex-col">
+  <h2>Meetings and Events</h2>
+  <div class="flex flex-col">
+    
+      <div class="w-full event-description">
+        <p>View the list of our upcoming events.</p>
+      </div>
+    
+    
+<div class="w-full">
+  <div class="flex flex-col">
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/capif-5/" >CAPIF 5<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2026-09-24">24 Sep 2026</time>—<time datetime="2026-09-25">25 Sep 2026</time></span>
+        <span class="text-start text-neutral-soft md:text-end">Dushanbe, Tajikistan</span>
+      </div>
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/ripe-93/" >RIPE 93<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2026-10-26">26 Oct 2026</time>—<time datetime="2026-10-30">30 Oct 2026</time></span>
+        <span class="text-start text-neutral-soft md:text-end">Sofia, Bulgaria</span>
+      </div>
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/see-15/" >SEE 15<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2027-04-13">13 Apr 2027</time>—<time datetime="2027-04-14">14 Apr 2027</time></span>
+        <span class="text-start text-neutral-soft md:text-end">Tirana, AL</span>
+      </div>
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/ripe-94/" >RIPE 94<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2027-05-24">24 May 2027</time>—<time datetime="2027-05-28">28 May 2027</time></span>
+        <span class="text-start text-neutral-soft md:text-end">Vilnius, Lithuania</span>
+      </div>
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/ripe-95/" >RIPE 95<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2027-11-15">15 Nov 2027</time>—<time datetime="2027-11-19">19 Nov 2027</time></span>
+        <span class="text-start text-neutral-soft md:text-end">Madrid, Spain</span>
+      </div>
+    
+      <div class="grid grid-flow-row md:grid-cols-3 md:gap-16 text-base py-4 border-b">
+        <span>
+          <a class="btn btn-textual py-0" href="/meetings/calendar/ripe-96/" >RIPE 96<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+        </span>
+        <span class="flex flex-wrap md:justify-evenly text-neutral-soft"><time datetime="2028-05-15">15 May 2028</time>—<time datetime="2028-05-19">19 May 2028</time></span>
+        <span class="text-start text-neutral-soft md:text-end"></span>
+      </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  </div>
+  <div class="flex pt-6">
+    <a class="btn btn-primary sm:ml-auto" href="/meetings/ripe-ncc-events/" >View all events<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+  </div>
+</div>
+</div>
+        
+      
+        
+          <div class="block-text_media">
+<div class="flex-col sm:flex-row sm:gap-x-4 lg:gap-x-10 bg-transparent flex gap-y-4">
+  <div class="w-full sm:w-1/2">
+    <h2>About the RIPE NCC</h2>
+    <div class="richtext">
+  <p data-block-key="gvtz3">We're an independent, not-for-profit membership organisation that supports the infrastructure of the Internet through technical coordination in our service region. Our most prominent activity is to act as the Regional Internet Registry (RIR) providing global Internet resources and related services (IPv4, IPv6 and AS Number resources) to members in our service region.</p><p data-block-key="a9885">Our membership consists mainly of Internet service providers (ISPs), telecommunication organisations and large corporations located in Europe, the Middle East and parts of Central Asia.</p><p data-block-key="2june">We also provide services for the benefit of the Internet community at large.</p>
+</div>
+
+    
+      
+<div class="flex flex-wrap gap-4 mt-6">
+  
+    
+      <a class="btn btn-primary" href="/about-us/what-we-do/list-of-ripe-ncc-services/" >View our services<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+    
+  
+    
+      <a class="btn btn-secondary" href="/about-us/" >Read more about us<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+    
+  
+</div>
+
+    
+  </div>
+  
+  
+<figure class="sm:w-1/2">
+  
+  
+    
+      <picture><source srcset="/media/images/RIPE_84_NCC_BER.2e16d0ba.format-webp.fill-1024x576-c100.webp" type="image/webp"><img alt="About the RIPE NCC" class="aspect-video w-full rounded-lg" height="576" src="/media/images/RIPE_84_NCC_BERL.2e16d0ba.format-jpeg.fill-1024x576-c100.jpg" width="1024"></picture>
+    
+  
+  
+</figure>
+
+
+
+</div>
+</div>
+        
+      
+        
+          <div class="block-card_grid">
+<div id="card-grid-ecffc214-9dfd-46c1-8c06-6114a7affe48" class="bg-transparent">
+  
+  <div class="four-column-grid">
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Become a RIPE NCC Member</h3>
+        <p class="break-words ">Find out how you can become a member and obtain Internet number resources.</p>
+        <a class="btn btn-textual mt-auto p-0" href="/membership/member-support/become-a-member/" >Become a RIPE NCC Member<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Analysis</h3>
+        <p class="break-words ">Get authoritative data on the state of the Internet through RIPE Atlas, RIPEstat, RIS and other tools.</p>
+        <a class="btn btn-textual mt-auto p-0" href="/analyse/" >Analysis<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+      <div class="flex flex-col shadow-lg px-6 py-5 rounded-lg bg-white card-outline">
+        
+        <h3 class="">Training and Certification</h3>
+        <p class="break-words ">Benefit from our training courses and webinars on IPv6, the RIPE Database, BGP, routing security and more.</p>
+        <a class="btn btn-textual mt-auto p-0" href="/training/" >Training and Certification<span><i class="icon icon-tiny icon-arrow-right"></i></span></a>
+
+      </div>
+    
+  </div>
+</div>
+</div>
+        
+      
+    </div>
+  </div>
+  
+    <live-chat chatkey="205b0168-b709-44f2-9bd0-9740c74da2c1"></live-chat>
+  
+
+      </div>
+      
+    </main>
+    <app-cookie-consent></app-cookie-consent>
+    
+<footer class="bg-ncc-xlight mt-12 sm:mt-24 border-t pb-8">
+  <div class="container text-ncc-medium flex flex-col gap-3 md:gap-11 sm:items-center items-start pt-12 sm:pt-24 sm:pb-6">
+    <div class="grid sm:grid-cols-3 md:grid-cols-4 gap-9 items-start self-stretch">
+      <div class="flex flex-col gap-3 items-start self-stretch">
+        <a class="flex pb-4" href="/community/"><img class="h-9" src="/static/images/ripe-community-logo.svg" alt="RIPE Community logo"></a>
+        <nav aria-label="Footer community navigation">
+          <ul class="text-ripe-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/community/wg/">Working Groups</a>
+              </li>
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/community/tf/">Task Forces</a>
+              </li>
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/community/ripe-governance/">RIPE Governance</a>
+              </li>
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/community/community-initiatives/">Initiatives</a>
+              </li>
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/meetings/calendar/ripe-93/">RIPE 93</a>
+              </li>
+            
+              <li>
+                <a class="hover:underline hover:text-ripe-bright" href="/community/participate/how-to-participate/">How to Participate</a>
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+      <div class="sm:col-span-2 md:col-span-3">
+        <a class="flex pb-7" href="/"><img class="h-7 my-1" src="/static/images/ripe-ncc-logo-2025.svg" alt="RIPE NCC Homepage"></a>
+        <nav class="block gap-y-9 sm:columns-2 md:columns-3" aria-label="Footer menu navigation">
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/manage-ips-and-asns/">IPs &amp; ASNs</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/ipv4/">IPv4</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/ipv6/">IPv6</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/as-numbers/">AS Numbers</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/db/">RIPE Database</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/lir-portal/">LIR Portal</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/dns/">DNS</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/resource-transfers-and-mergers/">Resource Transfers and Mergers</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/legacy-resources/">Legacy Internet Resources</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/manage-ips-and-asns/resource-management/">Documentation for Resource Management</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/analyse/">Analyse</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/statistics/">Statistics</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/internet-measurements/">Internet Measurements</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/dns/">DNS</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/raw-data-sets/">Raw Datasets</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/archived-projects/">Archived Projects</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/analyse/data-and-measurements-sponsorship/">Sponsorship</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/community/">Community</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/wg/">Working Groups</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/tf/">Task Forces</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/policies/">Policy Development</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/internet-governance/">Internet Governance</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/ripe-labs/">RIPE Labs</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/nro-nc/">NRO NC</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/community-initiatives/">Initiatives</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/ripe-governance/">RIPE Governance</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/ripe-document-store/">RIPE Document Store</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/community/participate/">Participate</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/membership/">Membership</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/member-support/">RIPE NCC Membership</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/gm/">General Meetings</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/payment/">Billing, Payment and Fees</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/ripe-ncc-organisational-documents/">RIPE NCC Organisational Documents</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/mail/">Join a Discussion</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/membership/ripe-ncc-forum/">RIPE NCC Forum</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/meetings/">Events</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/ripe-meetings/">RIPE Meetings</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/regional-meetings/">Regional Meetings</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/roundtable/">Roundtable Meetings</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/general-meetings/">General Meetings</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/open-house/">Open House</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/internet-measurement-day/">Internet Measurement Days</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/hackathons/">Hackathons</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/calendar/">Events Calendar</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/meetings/event-sponsorship/">Event Sponsorship</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/training/">Training</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/in-person-training-courses/">In-Person Training Courses</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/webinars/">Webinars</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/ripe-ncc-academy/">RIPE NCC Academy</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/ripe-ncc-certified-professionals/">Certified Professionals</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/videos/">Videos</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/training/summer-school-2026/">Summer School 2026</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/publications/">Docs</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/publications/docs/">RIPE Document Store</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/publications/documentation/">Documentation</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/publications/ipv6-information-centre/">IPv6 Information Centre</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/about-us/">About</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/what-we-do/">What We Do</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/staff/">Staff</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/executive-board/">Executive Board</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/financial-information/">Financial Information</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/press-centre/">Press Centre</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/legal/">Legal</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/news/">News</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/support/">Support</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/ripe-ncc-trust-portal/">RIPE NCC Trust Portal</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/about-us/ripe-ncc-middle-east-fz-llc/">RIPE NCC Middle East</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="flex flex-col gap-3 items-start self-stretch break-inside-avoid pb-9">
+      <a class="text-lg text-ncc font-semibold leading-5" href="/languages/">Languages</a>
+      <ul class="text-ncc-medium text-small font-medium flex flex-col gap-2 items-start self-stretch">
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/en/">English</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/tr/">Türkçe</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/es/">Español</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/it/">Italiano</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/ru/">Pусский</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/ar/">عربي</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/fa/">فارسی</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/uk/">Українська</a>
+          </li>
+        
+          <li>
+            <a class="hover:underline hover:text-ncc-bright" href="/languages/fr/">Français</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-y-6 sm:gap-x-10">
+      <span class="text-small leading-5.5 font-bold order-4 col-span-2 sm:order-1 sm:col-span-1">
+        © 1992&ndash;2026 RIPE NCC
+      </span>
+      <p class="pb-0 text-small col-span-2 md:col-span-3 order-2">Your IP Address is: <a class="text-ncc font-semibold break-all" href="https://apps.db.ripe.net/db-web-ui/query?searchtext=45.94.7.232" data-matomo-mask>45.94.7.232</a></p>
+      <div class="flex items-center order-3 sm:order-2">
+        <a href="/support/contact/social-networking" class="flex gap-2.5" aria-label="Social Media">
+          <i class="icon icon-mastodon"></i>
+          <i class="icon icon-facebook"></i>
+          <i class="icon icon-instagram"></i>
+          <i class="icon icon-x"></i>
+          <i class="icon icon-linkedin"></i>
+          <i class="icon icon-youtube"></i>
+          <i class="icon icon-github"></i>
+        </a>
+      </div>
+      <nav class="text-small flex flex-end flex-wrap gap-y-1 gap-x-5 items-start content-start self-stretch col-span-2 md:col-span-3 order-2 sm:order-3" aria-label="Footer links">
+        <a href="/">Home</a>
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/support/contact/">Contact Us</a>
+        <a href="/careers/">Careers</a>
+        <a href="https://status.ripe.net">Service Announcements</a>
+        <a href="/about-us/legal/ripe-ncc-privacy-statement/">Privacy Statement</a>
+        <a href="/about-us/legal/">Legal</a>
+        <a href="/about-us/legal/cookies/">Cookies</a>
+        <a href="/about-us/legal/copyright-statement/">Copyright Statement</a>
+        <a href="/about-us/legal/terms-of-service/">Terms of Service</a>
+        <a href="/publications/news/feeds/" class="inline-flex">RSS Feeds <img class="ml-1" src="/static/images/rss.svg" alt="RSS Feeds icon"></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+    <script src="/static/CACHE/js/js.a91a1190a5da.js" defer></script>
+    
+  </body>
+</html>

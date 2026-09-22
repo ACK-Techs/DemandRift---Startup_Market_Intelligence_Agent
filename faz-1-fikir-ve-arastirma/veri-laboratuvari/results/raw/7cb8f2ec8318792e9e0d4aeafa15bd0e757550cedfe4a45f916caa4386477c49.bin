@@ -1,0 +1,2628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DEV Community</title>
+    <description>The most recent home feed on DEV Community.</description>
+    <link>https://dev.to</link>
+    <atom:link rel="self" type="application/rss+xml" href="https://dev.to/feed"/>
+    <language>en</language>
+    <item>
+      <title>Your terragrunt (or terraform) plan is 4,000 lines. Only two of them matter.</title>
+      <dc:creator>Ilya Rubinchik</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:18:23 +0000</pubDate>
+      <link>https://dev.to/im_citius/your-terragrunt-or-terraform-plan-is-4000-lines-only-two-of-them-matter-4p8</link>
+      <guid>https://dev.to/im_citius/your-terragrunt-or-terraform-plan-is-4000-lines-only-two-of-them-matter-4p8</guid>
+      <description>&lt;p&gt;You know the ritual.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;terragrunt run &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--&lt;/span&gt; plan
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then you scroll. Past forty units of &lt;code&gt;Refreshing state…&lt;/code&gt;. Past the ninth&lt;br&gt;
+identical &lt;code&gt;count&lt;/code&gt; instance. Past a &lt;code&gt;tags_all.LastModified&lt;/code&gt; that changes on every&lt;br&gt;
+single run because your CI stamps a timestamp into it. Somewhere in there are&lt;br&gt;
+the two lines you actually needed to see — probably the &lt;code&gt;# forces replacement&lt;/code&gt;&lt;br&gt;
+on a database.&lt;/p&gt;
+
+&lt;p&gt;You scroll back up. You lose it. You pipe it to a file and grep for &lt;code&gt;must be&lt;br&gt;
+replaced&lt;/code&gt;. You approve anyway, because it's 6pm.&lt;/p&gt;
+
+&lt;p&gt;I got tired of that, so I wrote &lt;a href="https://github.com/imcitius/tgsieve" rel="noopener noreferrer"&gt;&lt;strong&gt;tgsieve&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  What it does
+&lt;/h2&gt;
+
+&lt;p&gt;It runs the plan for you, reads the &lt;strong&gt;structured&lt;/strong&gt; output instead of the prose,&lt;br&gt;
+throws away the noise you declared as noise, collapses everything that repeats,&lt;br&gt;
+and prints what's left.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;DESTROY / REPLACE (1)
+  envs/prod/a
+    ± aws_db_instance.main
+        engine_version  "14.7" → "15.3"   forces replacement
+
+UPDATE (5)
+  5 units  envs/dev/a, envs/dev/b, envs/prod/a, +2 more
+    ~ null_resource.pin
+        triggers.region  "eu-central-1" → "us-west-2"
+
+SUMMARY  ±1 replace  ~5 update
+  severity: 1 high, 5 medium
+  hid 214 attributes across 3 rules (--explain to see them)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's five units of a real terragrunt plan — the same run terraform prints as&lt;br&gt;
+several hundred lines.&lt;/p&gt;
+
+&lt;p&gt;The report nests three deep — &lt;strong&gt;where&lt;/strong&gt;, then &lt;strong&gt;what&lt;/strong&gt;, then &lt;strong&gt;which fields&lt;/strong&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;UPDATE (5)
+  envs/prod/c                            ← the unit, said once
+    ~ aws_s3_bucket.this                 ← the resource
+        tags_all.entity  "tgb" → "tgc"   ← the attributes that changed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A change that's identical across units replaces the directory with the set it&lt;br&gt;
+covers, so the first column always answers the same question: &lt;em&gt;where&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  It doesn't scrape text
+&lt;/h2&gt;
+
+&lt;p&gt;This matters, because the obvious implementation is fragile garbage.&lt;/p&gt;
+
+&lt;p&gt;You might reach for &lt;code&gt;terragrunt run --all -- plan -json&lt;/code&gt;. It doesn't work:&lt;br&gt;
+terragrunt forwards terraform's own NDJSON straight through, so lines from units&lt;br&gt;
+running in parallel interleave with no way to tell them apart.&lt;/p&gt;
+
+&lt;p&gt;So tgsieve asks terragrunt for machine-readable artifacts and reads those:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;What&lt;/th&gt;
+&lt;th&gt;Flag it passes&lt;/th&gt;
+&lt;th&gt;What it gets&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;per-unit plans&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--json-out-dir&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;one &lt;code&gt;tfplan.json&lt;/code&gt; per unit — the full &lt;code&gt;terraform show -json&lt;/code&gt; document&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;live progress&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--log-format json&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NDJSON events tagged with &lt;code&gt;working-dir&lt;/code&gt;, so failures surface the moment they happen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;run report&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;--report-file/--report-format json&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;per-unit result and duration, including units that failed before producing a plan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;From each plan it computes a real attribute-level diff — flattening&lt;br&gt;
+&lt;code&gt;before&lt;/code&gt;/&lt;code&gt;after&lt;/code&gt;/&lt;code&gt;after_unknown&lt;/code&gt; into dotted paths, honouring &lt;code&gt;replace_paths&lt;/code&gt;,&lt;br&gt;
+sensitivity, and unknown subtrees. No regexes over &lt;code&gt;~ resource "aws_..."&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;OpenTofu works too — terragrunt defaults to &lt;code&gt;tofu&lt;/code&gt;, and &lt;code&gt;--tf-path&lt;/code&gt; /&lt;br&gt;
+&lt;code&gt;TG_TF_PATH&lt;/code&gt; picks explicitly.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  Nothing is hidden until you say so
+&lt;/h2&gt;
+
+&lt;p&gt;The whole tool is one &lt;code&gt;.tgsieve.yaml&lt;/code&gt;, looked up from the working directory&lt;br&gt;
+upwards and merged, nearer files winning. &lt;code&gt;tgsieve init&lt;/code&gt; writes a starter one.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;version&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
+
+&lt;span class="na"&gt;extends&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;builtin/aws-tags&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;   &lt;span class="c1"&gt;# curated rule sets, opt-in&lt;/span&gt;
+
+&lt;span class="na"&gt;hide&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;unchanged_units&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;   &lt;span class="c1"&gt;# units with nothing left to say become a count&lt;/span&gt;
+  &lt;span class="na"&gt;reads&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;             &lt;span class="c1"&gt;# data sources resolved during apply: they create nothing&lt;/span&gt;
+
+&lt;span class="na"&gt;ignore&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tag churn&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags.LastModified"&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags.git_commit"&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;tags_all.*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;waiting on the provider fix&lt;/span&gt;
+    &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;aws_ecs_service&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;capacity_provider_strategy.*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+    &lt;span class="na"&gt;expires&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;2026-12-01&lt;/span&gt;     &lt;span class="c1"&gt;# after this date the rule stops hiding, loudly&lt;/span&gt;
+
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;dev is not interesting&lt;/span&gt;
+    &lt;span class="na"&gt;unit&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;envs/dev/**"&lt;/span&gt;
+    &lt;span class="na"&gt;attrs&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="s"&gt;*"&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+
+&lt;span class="na"&gt;never_hide&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;actions&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="pi"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;delete&lt;/span&gt;&lt;span class="pi"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;replace&lt;/span&gt;&lt;span class="pi"&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Three things I'd want to know before trusting a tool that hides my&lt;br&gt;
+infrastructure changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;A resource only disappears when &lt;em&gt;every one&lt;/em&gt; of its attributes was hidden.&lt;/strong&gt;
+One survivor keeps the whole resource on screen.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;An attribute that forces replacement is never hidden&lt;/strong&gt;, whatever the rules
+say. Destroys and replacements can't be silenced by default either.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;code&gt;--explain&lt;/code&gt; shows every hidden attribute and the rule that hid it&lt;/strong&gt;, and the
+footer always states how much was hidden. The counts count real resources,
+not rendered blocks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;
+  
+  
+  Suppressions that expire
+&lt;/h3&gt;
+
+&lt;p&gt;That &lt;code&gt;expires: 2026-12-01&lt;/code&gt; is my favourite line in the config. Past that date&lt;br&gt;
+the rule stops hiding anything and the report names it:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;1 rule expired and no longer hides anything: waiting on the provider fix
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;It fails &lt;strong&gt;open&lt;/strong&gt;, on purpose. A suppression that quietly outlives its reason is&lt;br&gt;
+exactly the failure this tool exists to prevent. So the lapse restores the&lt;br&gt;
+changes rather than silently continuing to swallow them.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  The small readability things
+&lt;/h2&gt;
+
+&lt;p&gt;These are the ones that made me realise how much terraform's renderer was&lt;br&gt;
+costing me.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sets are compared by members, not positions.&lt;/strong&gt; Terraform renders sets as&lt;br&gt;
+arrays, so a set that comes back in a different order looks like every index&lt;br&gt;
+changed at once. tgsieve says what actually happened:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight diff"&gt;&lt;code&gt;&lt;span class="p"&gt;input.cidrs  reordered (4 items, same members)
+&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;input.cidrs  - "10.0.2.0/24"
+input.cidrs  + "10.0.9.0/24"
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Objects inside a collection get matched by an identity field (&lt;code&gt;id&lt;/code&gt;, &lt;code&gt;name&lt;/code&gt;,&lt;br&gt;
+&lt;code&gt;key&lt;/code&gt;, &lt;code&gt;cidr_block&lt;/code&gt;, a few others) when every member carries one and it's&lt;br&gt;
+unique. So an edited security group rule reads as an edit:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;ingress["web"].to_port  80 → 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;rather than one object leaving and a nearly identical one arriving.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Long values are trimmed around the difference, not from the start.&lt;/strong&gt; Two&lt;br&gt;
+values sharing a 200-character prefix would otherwise print that prefix twice&lt;br&gt;
+and hide the part that changed. A string that's itself a JSON document — an IAM&lt;br&gt;
+policy, say — is shown as that document rather than as an escaped string.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Repeated failures get counted, not repeated.&lt;/strong&gt; A removed provider&lt;br&gt;
+configuration produces one diagnostic per orphaned resource, which terraform&lt;br&gt;
+prints as forty paragraphs. The count is the news:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;FAILED (1)
+  ✗ infra/networking  ×38
+      Error: Provider configuration not present: To work with module.peering-… (orphan)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Same at stack level. One expired credential hits every unit; you get it once,&lt;br&gt;
+with the list:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;FAILED (5)
+  ✗ 5 units, same error
+      envs/dev/a, envs/dev/b, envs/prod/a, +2 more
+      Error: no valid credential sources found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Folding never drops &lt;em&gt;where&lt;/em&gt; the problem is — diagnostics sharing a message but&lt;br&gt;
+naming different lines list those lines.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  Drift is a finding, not work
+&lt;/h2&gt;
+
+&lt;p&gt;Nothing in drift changes when you apply. So it's counted rather than listed, and&lt;br&gt;
+a plan whose only findings are drift reports what terraform reports — no&lt;br&gt;
+changes:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;SUMMARY  no changes
+  3 resources drifted outside terraform, none of them addressed by this plan (--drift to list)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--drift&lt;/code&gt; lists them, split by what the plan intends to do:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;DRIFT — this plan puts it back (2)
+DRIFT — this plan leaves it (1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The second is the one that bites — an attribute under &lt;code&gt;ignore_changes&lt;/code&gt;, or a&lt;br&gt;
+resource the config no longer governs, stays drifted after the apply. Drift&lt;br&gt;
+never trips &lt;code&gt;--fail-on&lt;/code&gt; or &lt;code&gt;--detailed-exitcode&lt;/code&gt;, because those describe what an&lt;br&gt;
+apply will &lt;em&gt;do&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  &lt;code&gt;tgsieve apply&lt;/code&gt; applies the plan you reviewed
+&lt;/h2&gt;
+
+&lt;p&gt;Not a fresh plan made after you answered.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve apply &lt;span class="nt"&gt;--all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;apply 9 changes across 5 units? [yes/no] yes
+4 resources will be destroyed or replaced — type 'destroy' to confirm: destroy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The second question only appears when something will be destroyed or replaced,&lt;br&gt;
+and it wants &lt;em&gt;that word&lt;/em&gt; rather than another "yes" — those are the changes that&lt;br&gt;
+running the tool again won't undo. Outside a terminal it refuses rather than&lt;br&gt;
+assuming; &lt;code&gt;--auto-approve&lt;/code&gt; is how you say you meant it in CI.&lt;/p&gt;
+
+&lt;p&gt;Review now, apply later:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan  &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans &lt;span class="nt"&gt;--out-dir&lt;/span&gt; ./plans
+tgsieve apply &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--plans&lt;/span&gt; ./plans
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And when the apply finishes — or stops — the report says what terraform&lt;br&gt;
+&lt;em&gt;actually did&lt;/em&gt;, which after a failure is the one question the plan can't answer:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;APPLY FAILED
+  stopped after 15m45s — the report above is what was planned, not what landed
+  ✗ Error: updating EKS Node Group (…) config: operation error EKS
+  terraform changed 4 resources · 1 did not finish · slowest first
+    ✗ terraform/live/ctrl/tests/eks module.eks…aws_eks_node_group.this — modifying, did not finish after 15m2s
+    ✓ terraform/live/ctrl/tests/eks aws_security_group_rule.node created in 3s
+  run tgsieve plan to see where things actually stand
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Living with a heavy stack
+&lt;/h2&gt;
+
+&lt;p&gt;If your stack takes twenty minutes, you need more than a pretty report.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;You can see what's happening.&lt;/strong&gt; A window that updates in place instead of&lt;br&gt;
+scrolling:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight console"&gt;&lt;code&gt;&lt;span class="go"&gt;  envs/prod/a  aws_db_instance.main     modifying… 1m12s
+  envs/prod/b  aws_instance.web[3]      creating… 22s
+  envs/dev/a   null_resource.deploy     done 4s
+⠴ applying · 7/12 applied · 1m30s
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;The denominator comes from &lt;code&gt;terragrunt find&lt;/code&gt;, so it's known before the first&lt;br&gt;
+unit starts. Outside a terminal it collapses to a heartbeat line every 30&lt;br&gt;
+seconds, so CI logs still show liveness.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ctrl-C behaves.&lt;/strong&gt; It forwards the interrupt so terraform can release its state&lt;br&gt;
+locks, prints the report for whatever finished, lists the rest under &lt;code&gt;NOT RUN&lt;/code&gt;,&lt;br&gt;
+and exits 130.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;--resume&lt;/code&gt; picks up where an interrupted run stopped:&lt;/strong&gt;&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans          &lt;span class="c"&gt;# 40 units, Ctrl-C at 31&lt;/span&gt;
+tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--keep-plans&lt;/span&gt; ./plans &lt;span class="nt"&gt;--resume&lt;/span&gt; &lt;span class="c"&gt;# runs the missing 9&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Reusing a plan is only sound if the code hasn't moved under it, so a run records&lt;br&gt;
+the commit plus a fingerprint of uncommitted changes, and &lt;code&gt;--resume&lt;/code&gt; refuses to&lt;br&gt;
+mix generations:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;the plans in ./plans were made at 1cb275fd, the working tree is now at 4a91e0c2
+  re-run without --resume to plan the stack fresh, or pass --force to mix generations
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That check also covers &lt;strong&gt;where each unit's code comes from&lt;/strong&gt;. A remote module&lt;br&gt;
+pinned to a branch — or to a tag someone can move — reads identically before and&lt;br&gt;
+after the code it names changes, so each remote ref gets resolved to a commit&lt;br&gt;
+with &lt;code&gt;git ls-remote&lt;/code&gt; (one call per distinct repo+ref, not per unit;&lt;br&gt;
+&lt;code&gt;--no-resolve-refs&lt;/code&gt; for air-gapped runs).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;--fast&lt;/code&gt; skips the refresh&lt;/strong&gt;, which on a heavy stack is the single biggest&lt;br&gt;
+speed-up available. The summary says so every time, because a plan that never&lt;br&gt;
+looked at reality can report "no changes" for a stack that has drifted:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;state was not refreshed: anything changed outside terraform is invisible here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Plus: plan directories are locked while a run writes to them (&lt;code&gt;--lock-wait 2m&lt;/code&gt;&lt;br&gt;
+for CI pipelines racing each other), and unit durations are remembered per&lt;br&gt;
+directory with a two-week TTL, so &lt;code&gt;--timings&lt;/code&gt; stays meaningful across resumes.&lt;/p&gt;
+&lt;h2&gt;
+  
+  
+  In CI
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;--format&lt;/code&gt; decides the shape: &lt;code&gt;tty&lt;/code&gt; (default), &lt;code&gt;md&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt; or &lt;code&gt;github&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; for pull request comments — destructive changes stay open,&lt;br&gt;
+everything else folds into &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt;, output is capped so GitHub doesn't&lt;br&gt;
+reject it, and every report starts with &lt;code&gt;&amp;lt;!-- tgsieve --&amp;gt;&lt;/code&gt; so a bot can update&lt;br&gt;
+its own comment instead of adding a new one each run.&lt;/p&gt;
+
+&lt;p&gt;With Atlantis, a custom workflow:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;workflows&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="na"&gt;tgsieve&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;plan&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="s"&gt;init&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tgsieve plan --all --format md --fail-on high&lt;/span&gt;
+    &lt;span class="na"&gt;apply&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="na"&gt;steps&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+        &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;run&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;tgsieve apply --all --auto-approve --format md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--fail-on high&lt;/code&gt; turns the plan step red only when something is destroyed or&lt;br&gt;
+replaced — a pipeline can stop for a replacement without stopping for a new log&lt;br&gt;
+group.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JSON&lt;/strong&gt; is a versioned document with its own types, not the internals of the&lt;br&gt;
+sieve:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--format&lt;/span&gt; json | jq &lt;span class="nt"&gt;-r&lt;/span&gt; &lt;span class="s1"&gt;'.changes[] | select(.action=="replace") | .address'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Sensitive values never appear in it — an attribute terraform marked sensitive is&lt;br&gt;
+reported as &lt;code&gt;"sensitive": true&lt;/code&gt; with no &lt;code&gt;before&lt;/code&gt; or &lt;code&gt;after&lt;/code&gt;. A machine-readable&lt;br&gt;
+report is the easiest place for a secret to end up somewhere it shouldn't.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub Actions&lt;/strong&gt; annotations, so failures land on the diff rather than only in&lt;br&gt;
+the job log:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;::error file=modules-vpcs.tf,line=72,title=infra/networking::Error: Unsupported attribute…
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;And the exit codes distinguish the three ways a run can be unhappy:&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;code&lt;/th&gt;
+&lt;th&gt;meaning&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ran fine&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;tgsieve itself failed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;2&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;changes survived the sieve (&lt;code&gt;--detailed-exitcode&lt;/code&gt;, or &lt;code&gt;--fail-on&lt;/code&gt; was met)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;one or more units failed to plan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;130&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;interrupted with Ctrl-C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+  
+  
+  No terragrunt? Still works
+&lt;/h2&gt;
+
+&lt;p&gt;A root module big enough to be unreadable has the same problem as a stack, minus&lt;br&gt;
+the queue:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan  &lt;span class="nt"&gt;--engine&lt;/span&gt; terraform
+tgsieve apply &lt;span class="nt"&gt;--engine&lt;/span&gt; terraform
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Same rules, same collapsing, same formats. The flags that only mean something&lt;br&gt;
+with a queue behind them say so rather than being quietly ignored:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;--all needs terragrunt: the terraform engine plans one root module
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Try it
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;brew &lt;span class="nb"&gt;install &lt;/span&gt;imcitius/tap/tgsieve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;go &lt;span class="nb"&gt;install &lt;/span&gt;github.com/imcitius/tgsieve@latest
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then, in a stack you already have:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;No config needed to start — with an empty &lt;code&gt;.tgsieve.yaml&lt;/code&gt;, nothing is hidden and&lt;br&gt;
+you still get the nesting, the collapsing, the folded failures and the honest&lt;br&gt;
+summary. Add rules once you've seen which noise is &lt;em&gt;your&lt;/em&gt; noise:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;tgsieve init            &lt;span class="c"&gt;# starter config at the project root&lt;/span&gt;
+tgsieve rules           &lt;span class="c"&gt;# what config is in effect, and from where&lt;/span&gt;
+tgsieve plan &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--explain&lt;/span&gt;   &lt;span class="c"&gt;# every hidden attribute and the rule that hid it&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;It's MIT, written in Go, single binary, no daemon, no account.&lt;/p&gt;
+
+&lt;p&gt;👉 &lt;strong&gt;&lt;a href="https://github.com/imcitius/tgsieve" rel="noopener noreferrer"&gt;github.com/imcitius/tgsieve&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I'd genuinely like to know what noise it &lt;em&gt;doesn't&lt;/em&gt; catch on your stack — that's&lt;br&gt;
+the feedback that turns into the next preset. Issues, or just reply here.&lt;/p&gt;
+
+</description>
+      <category>terraform</category>
+      <category>devops</category>
+      <category>opensource</category>
+      <category>aws</category>
+    </item>
+    <item>
+      <title>AI Search Budgets Are Rising, but SEO Revenue Still Demands a Measured Strategy</title>
+      <dc:creator>Ali Farhat</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:00:30 +0000</pubDate>
+      <link>https://dev.to/alifar/ai-search-budgets-are-rising-but-seo-revenue-still-demands-a-measured-strategy-48gi</link>
+      <guid>https://dev.to/alifar/ai-search-budgets-are-rising-but-seo-revenue-still-demands-a-measured-strategy-48gi</guid>
+      <description>&lt;p&gt;AI-driven search is becoming a material marketing budget consideration in 2026, even for organizations where conventional SEO continues to generate substantial revenue. The shift is being driven by the rapid expansion of &lt;a href="https://scalevise.com/resources/geo/" rel="noopener noreferrer"&gt;AI-driven search&lt;/a&gt;, rising inference costs, and platform features that bring AI into campaign management and budgeting. For marketing leaders, the immediate challenge is not replacing SEO. It is determining how to fund, measure, and govern AI-enabled search without losing sight of the channels already delivering returns.&lt;/p&gt;
+
+&lt;p&gt;Search Engine Land's &lt;a href="https://searchengineland.com/ai-halftime-report-h1-2026-483912" rel="noopener noreferrer"&gt;AI halftime report for H1 2026&lt;/a&gt; describes money and attention moving across search ecosystems as &lt;a href="https://scalevise.com/resources/google-ai-mode-passage-centric-citations/" rel="noopener noreferrer"&gt;AI Mode&lt;/a&gt;, AI Overviews, and related AI-driven experiences expand. Its central observation is that "token budgets exploded," while advertisers are spending billions on inference. That does not settle the return-on-investment question. It does, however, show that AI search costs and capabilities are moving from experimentation toward operational planning.&lt;/p&gt;
+
+&lt;p&gt;The strongest takeaway is that AI search should be managed as an &lt;strong&gt;accelerating budget line item&lt;/strong&gt;, not treated as a side project or assumed to be a direct substitute for SEO. Different businesses and industries will adopt these capabilities at different speeds, and attribution remains unsettled. A disciplined approach should therefore protect proven search revenue while testing where AI-mediated discovery changes customer behavior, campaign economics, and reporting requirements.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why AI search is changing search economics
+&lt;/h2&gt;
+
+&lt;p&gt;The budget change is about more than allocating funds to a new marketing label. AI-enhanced search introduces cost structures and decision systems that differ from traditional organic search planning. The H1 report points to token budgets and inference spending, while AI-driven search surfaces create new routes through which users may encounter brands and information.&lt;/p&gt;
+
+&lt;p&gt;Google's AI-focused updates provide a practical platform-level example. AI Max for Search and related bidding and budgeting enhancements indicate that AI capabilities are being incorporated into campaign operations, rather than remaining an abstract future concept. As platforms operationalize AI-driven targeting, bidding, and budget decisions, marketers need to understand which parts of spend are producing useful outcomes and which are simply adding complexity.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Planning area&lt;/th&gt;
+      &lt;th&gt;Established SEO approach&lt;/th&gt;
+      &lt;th&gt;AI-enabled search consideration&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Revenue role&lt;/td&gt;
+      &lt;td&gt;SEO still drives revenue for many firms.&lt;/td&gt;
+      &lt;td&gt;AI search becomes an additional discovery and budget consideration.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Cost structure&lt;/td&gt;
+      &lt;td&gt;Traditional search investment and campaign costs.&lt;/td&gt;
+      &lt;td&gt;Token costs, inference spending, and AI-driven bidding are increasingly relevant.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Measurement&lt;/td&gt;
+      &lt;td&gt;Established search reporting provides a familiar baseline.&lt;/td&gt;
+      &lt;td&gt;Attribution is more complex across AI-enhanced environments.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Budget management&lt;/td&gt;
+      &lt;td&gt;Teams allocate against known organic and paid search priorities.&lt;/td&gt;
+      &lt;td&gt;Platform updates are introducing AI-focused bidding and budgeting capabilities.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The comparison is not a verdict on which channel is superior. It shows why a single search budget can no longer be evaluated solely through legacy SEO or paid-search assumptions. AI search adds variables that may affect visibility, media decisions, and the way results are attributed.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Measurement is now the central constraint
+&lt;/h3&gt;
+
+&lt;p&gt;The report identifies &lt;a href="https://scalevise.com/resources/ai-search-measurement-gap-brand-visibility/" rel="noopener noreferrer"&gt;ROI, attribution, and measurement&lt;/a&gt; as unresolved issues in AI-enhanced search. That matters because budget growth can outpace an organization's ability to explain what is working. A business may see more AI-related activity without having a standardized way to connect that activity to discovery, qualified traffic, conversion, or revenue.&lt;/p&gt;
+
+&lt;p&gt;This is especially important where SEO remains a major revenue contributor. Removing investment from a proven channel solely because AI search is attracting attention would be a weak decision. The more defensible approach is to establish a baseline for existing search performance, define the outcomes expected from AI-enabled initiatives, and run experiments that can be evaluated against that baseline.&lt;/p&gt;
+
+&lt;p&gt;Cross-functional ownership is essential. SEO specialists may understand organic demand and content visibility, paid media teams may manage platform-led bidding changes, analysts must address attribution, and finance leaders need a consistent view of new costs. Without shared definitions, token and AI campaign spending can become difficult to compare with established search investments.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Governance should arrive before large-scale spend
+&lt;/h3&gt;
+
+&lt;p&gt;AI search creates a &lt;a href="https://scalevise.com/resources/ai-governance/" rel="noopener noreferrer"&gt;governance issue&lt;/a&gt; as well as a marketing one. The research supports a clear need for updated coordination across SEO, paid media, analytics, and finance. In practice, that means agreeing on how the organization categorizes AI-related search spend, who approves experiments, what success criteria apply, and when funding should expand or stop.&lt;/p&gt;
+
+&lt;p&gt;A useful governance framework can focus on three questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;What is being funded?&lt;/strong&gt; Separate AI-related platform features, inference or token costs, and search experiments where possible.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What outcome is expected?&lt;/strong&gt; Define the business and measurement objective before allocating additional budget.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What evidence is sufficient?&lt;/strong&gt; Set a review process for attribution quality, performance signals, and continued investment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This structure does not assume that every AI search initiative will produce the same result. It recognizes the present uncertainty while ensuring that new spending is visible, accountable, and comparable with existing search priorities.&lt;/p&gt;
+
+&lt;p&gt;AI search budget decisions now affect how brands are discovered, measured, and funded. Scalevise helps teams assess their visibility across AI answer environments, identify where search demand is changing, and build an evidence-led measurement baseline before spend scales. Its &lt;a href="https://scalevise.com/ai-visibility-geo-checker" rel="noopener noreferrer"&gt;AI Visibility GEO Checker&lt;/a&gt; gives marketing and analytics leaders a practical starting point for prioritizing experiments and governance. Start an AI Visibility scan today.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Frequently Asked Questions
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Why are AI search budgets rising?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;AI search surfaces are expanding, major platforms are accelerating AI-enabled search features, and advertisers are spending on inference. Search Engine Land's H1 2026 report describes exploding token budgets and growing AI-driven search activity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Does rising AI search spend mean SEO no longer matters?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No. The research states that SEO still drives revenue for many firms. AI search is better understood as a growing budget and visibility consideration that should be evaluated alongside established SEO performance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What makes AI search ROI difficult to measure?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Attribution and measurement are more complex in AI-enhanced environments, and standardized metrics across AI surfaces remain an open need. Organizations should use defined experiments and clear baselines rather than assume returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How should enterprises govern AI search investment?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enterprises should coordinate SEO, paid media, analytics, and finance. They should define AI-related cost categories, establish success criteria for experiments, and review whether measurement evidence supports further investment.&lt;/p&gt;
+
+
+
+
+&lt;h3&gt;
+  
+  
+  Conclusion
+&lt;/h3&gt;
+
+&lt;p&gt;AI search is reshaping how search budgets are planned, particularly through AI-driven surfaces, inference costs, and platform-level campaign tools. Yet the evidence does not support abandoning SEO where it continues to produce revenue. The stronger strategy is to govern AI search as a distinct, measurable investment, test it against clear objectives, and scale spending only when the organization can assess its value with confidence.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>automation</category>
+      <category>tools</category>
+      <category>geo</category>
+    </item>
+    <item>
+      <title>Everyone is racing to generate a website in 30 seconds. The work is in the next three months.</title>
+      <dc:creator>Mihai Morar</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 21:00:00 +0000</pubDate>
+      <link>https://dev.to/webkio/everyone-is-racing-to-generate-a-website-in-30-seconds-the-work-is-in-the-next-three-months-35e2</link>
+      <guid>https://dev.to/webkio/everyone-is-racing-to-generate-a-website-in-30-seconds-the-work-is-in-the-next-three-months-35e2</guid>
+      <description>&lt;p&gt;Watch any website builder demo from the last two years and it is the same thirty seconds. Someone types "yoga studio in Lisbon", a progress bar does something reassuring, and a site appears. Hero image, three services, testimonials, a contact form. It looks good. It genuinely is good.&lt;/p&gt;
+
+&lt;p&gt;Then the demo ends, because the next part does not demo.&lt;/p&gt;
+
+&lt;p&gt;I work on a &lt;a href="https://webkio.com" rel="noopener noreferrer"&gt;website builder&lt;/a&gt;, so this is a criticism of my own industry and partly of my own product. Generation was the hard problem for about eighteen months. It is not the hard problem now, and I think a lot of us are still competing on it because it is the part that fits in a GIF.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Generation is table stakes and everyone knows it
+&lt;/h2&gt;
+
+&lt;p&gt;Any team that wants prompt-to-website can have it. The models are good, the tooling is mature, the ideas are public. If your differentiator is that a site appears from a sentence, your differentiator has a shelf life measured in whatever your nearest competitor's next sprint is.&lt;/p&gt;
+
+&lt;p&gt;That is not a complaint about AI. Blank-page paralysis is real, and watching something appear from nothing is genuinely the moment people decide to try a product. It removes a barrier that used to stop people cold.&lt;/p&gt;
+
+&lt;p&gt;It just is not where the difficulty went. It is where the difficulty &lt;em&gt;left&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The part that does not fit in the demo
+&lt;/h2&gt;
+
+&lt;p&gt;Take a business that hires things out. Vans, bikes, boats, equipment, holiday lets. The generated site is fine: photos, a fleet grid, a booking button.&lt;/p&gt;
+
+&lt;p&gt;Now try to actually hire something out.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Does the site know you have &lt;strong&gt;four vans&lt;/strong&gt;, or does it know about &lt;strong&gt;van 1, van 2, van 3 and van 4&lt;/strong&gt; as separate things? If it is the first, it will take a fifth booking. Cheerfully. Nothing will look broken.&lt;/li&gt;
+&lt;li&gt;Is there a gap between hires? A van returned at 4pm is not ready for a 4pm collection. It needs cleaning, fuelling, checking.&lt;/li&gt;
+&lt;li&gt;Does anything commit at the moment of booking, or is a reservation free? A free reservation is a free option, and options get abandoned.&lt;/li&gt;
+&lt;li&gt;Does the price change by date? A fleet priced for February gives away August.&lt;/li&gt;
+&lt;li&gt;Can it say no? Minimum age, licence required, minimum hire length, one-way surcharge, deposit held.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;None of that is content. None of it can be inferred from "van hire company in Porto". It is &lt;strong&gt;policy&lt;/strong&gt; - a set of decisions only the owner can make, which encode how their business actually runs and where they lose money if it is wrong.&lt;/p&gt;
+
+&lt;p&gt;And the site with none of it configured looks exactly like the site with all of it configured. That is the whole problem.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Generation errors are visible. Configuration errors are silent.
+&lt;/h2&gt;
+
+&lt;p&gt;This is the bit I would want a developer audience to take away, because it generalises well past websites.&lt;/p&gt;
+
+&lt;p&gt;If the model writes a bad headline, you see it in a second. If it picks a hideous colour, you see it immediately. Generation output is judged by plausibility, and humans are extremely fast at judging plausibility. The feedback loop is instant and the error is cheap.&lt;/p&gt;
+
+&lt;p&gt;Configuration output has no such signal. A missing turnaround buffer looks like nothing. A per-count availability check looks like nothing right up until the Saturday you hand someone the keys to a van that is already out, in front of them, having taken their money. The error surfaces weeks later, to a customer, as a broken promise rather than a bug report.&lt;/p&gt;
+
+&lt;p&gt;LLMs are very good at producing artifacts judged by plausibility. They are much weaker at producing artifacts judged by correctness against rules that are not visible in the output. Pricing, scheduling, permissions, tax, availability - the whole category shares that shape, which is why "AI generates your site in 30 seconds" and "AI runs your business logic" are not the same claim wearing different clothes.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The metric everyone is optimising is the wrong one
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Time to site&lt;/strong&gt; is a sales metric. It measures how quickly someone can evaluate you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time to first transaction&lt;/strong&gt; is a product metric. It measures whether they got what they came for. Nobody signs up for a website builder because they want a website. They want a booking, an order, a customer, an enquiry that turns into work.&lt;/p&gt;
+
+&lt;p&gt;The gap between those two numbers is where the industry actually competes, and it is measured in weeks, not seconds. That is where the three months go: not designing, but working out what a deposit should be, which dates are peak, whether you can afford free cancellation, how long you need between hires, and then finding all of those settings in a product that hid them because they do not demo well.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  So what should the AI be doing?
+&lt;/h2&gt;
+
+&lt;p&gt;Not writing the hero copy. That is the easiest part of the page and the part the owner will rewrite anyway because they know their business and the model does not.&lt;/p&gt;
+
+&lt;p&gt;The higher-value use is &lt;strong&gt;generating the setup, not the site&lt;/strong&gt;. Arriving with a working configuration for that trade rather than an empty one: a fleet already priced, deposits set, seasonal rates in place, a turnaround gap that reflects how long a handover actually takes, extras attached to the booking flow.&lt;/p&gt;
+
+&lt;p&gt;The owner then edits a working business instead of assembling one from parts. Deleting and adjusting is enormously easier than building, and far more people finish. It is also a much better use of a model that is good at plausible defaults for a domain and bad at knowing your specific rules.&lt;/p&gt;
+
+&lt;p&gt;We got this wrong for a long time, for what it is worth. Our own templates looked right and arrived empty, and the feedback was consistent: nobody struggled to change the colours. They struggled with everything underneath the colours.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What I would ask of any AI builder, including ours
+&lt;/h2&gt;
+
+&lt;p&gt;If you are evaluating one, or building one, these are the questions that separate a demo from a product:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;strong&gt;Can I complete a real transaction in the generated site without configuring anything?&lt;/strong&gt; If not, what is the list of things I must set first?&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Does it track items or counts?&lt;/strong&gt; Ask directly. Do not accept a number in a settings field as an answer.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What happens to the generated content when I replace it with mine?&lt;/strong&gt; If the layout only works with three services and I have eleven, the generation solved a problem I do not have.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Where are the unglamorous settings?&lt;/strong&gt; Buffers, deposits, minimums, tax, cancellation windows. If you cannot find them, they are probably not there.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What does it refuse to do?&lt;/strong&gt; A system that will happily take an impossible booking is not being helpful.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The thirty seconds is genuinely impressive and it is genuinely solved. I would just rather we started competing on the three months, because that is the part the customer is actually living in.&lt;/p&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Vector Search Fundamentals for RAG Design: ANN (HNSW), Distance Metrics, Metadata Filtering, and BM25</title>
+      <dc:creator>Hiroki Kameyama</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:53:53 +0000</pubDate>
+      <link>https://dev.to/hiroki-kameyama/vector-search-fundamentals-for-rag-design-ann-hnsw-distance-metrics-metadata-filtering-and-34p5</link>
+      <guid>https://dev.to/hiroki-kameyama/vector-search-fundamentals-for-rag-design-ann-hnsw-distance-metrics-metadata-filtering-and-34p5</guid>
+      <description>&lt;h2&gt;
+  
+  
+  Introduction
+&lt;/h2&gt;
+
+&lt;p&gt;When designing a RAG (Retrieval-Augmented Generation) system, understanding what's happening inside vector search lets you tune the trade-offs between accuracy, speed, and cost yourself.&lt;/p&gt;
+
+&lt;p&gt;This article covers the fundamentals of vector search:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ANN search (Approximate Nearest Neighbor) and HNSW (Hierarchical Navigable Small World)&lt;/li&gt;
+&lt;li&gt;Similarity and distance metrics (cosine similarity, dot product, L2 distance)&lt;/li&gt;
+&lt;li&gt;Metadata filtering&lt;/li&gt;
+&lt;li&gt;BM25 (keyword search)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and then summarizes practical rules of thumb for choosing between them when designing a RAG system.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Is ANN Search?
+&lt;/h2&gt;
+
+&lt;p&gt;In vector search, you look for the vectors in a corpus that are closest to a query embedding. Exact nearest neighbor search (kNN), which computes distances against every vector via brute force, gets linearly slower as the dataset grows.&lt;/p&gt;
+
+&lt;p&gt;ANN (Approximate Nearest Neighbor) search trades a small amount of accuracy (recall) for the ability to return "close enough" vectors quickly, even at large scale.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  How HNSW Works
+&lt;/h3&gt;
+
+&lt;p&gt;HNSW (Hierarchical Navigable Small World) is one of the most widely used ANN algorithms. It treats vectors as nodes in a graph, connecting nearby vectors with edges. Its defining feature is a hierarchical structure: upper layers are sparse and used for long jumps, while lower layers are dense and used for fine-grained search.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fg18tsqm8medg82ge0ptb.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fg18tsqm8medg82ge0ptb.png" alt=" " width="800" height="622"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Search starts at the top layer and descends one layer at a time as it gets closer to the query vector. Think of it like flying between continents by plane, taking a train into a city, then walking the last stretch on foot. This reaches the neighborhood of the target vector using far fewer distance calculations than brute force.&lt;/p&gt;
+
+&lt;p&gt;Accuracy and speed are tuned mainly through two parameters.&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Role&lt;/th&gt;
+&lt;th&gt;Increasing it&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;M&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of edges per node&lt;/td&gt;
+&lt;td&gt;Improves recall, but increases memory usage and build time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;ef_search&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Number of candidates kept during search&lt;/td&gt;
+&lt;td&gt;Improves recall, but slows down queries&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+  
+  
+  Similarity and Distance Metrics
+&lt;/h2&gt;
+
+&lt;p&gt;Three common metrics measure how "close" two vectors are.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fsspfhr6o1t3zk5xd457y.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fsspfhr6o1t3zk5xd457y.png" alt=" " width="800" height="343"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Metric&lt;/th&gt;
+&lt;th&gt;Calculation&lt;/th&gt;
+&lt;th&gt;Meaning&lt;/th&gt;
+&lt;th&gt;Characteristics&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Cosine similarity&lt;/td&gt;
+&lt;td&gt;Cosine of the angle between two vectors&lt;/td&gt;
+&lt;td&gt;-1 to 1, closer to 1 = more similar&lt;/td&gt;
+&lt;td&gt;Ignores vector magnitude, compares direction only&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dot product&lt;/td&gt;
+&lt;td&gt;Sum of the products of each component&lt;/td&gt;
+&lt;td&gt;Higher value = more similar&lt;/td&gt;
+&lt;td&gt;Magnitude also affects the result; equals cosine similarity for normalized vectors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L2 distance (Euclidean)&lt;/td&gt;
+&lt;td&gt;Straight-line distance between two points&lt;/td&gt;
+&lt;td&gt;Smaller value = more similar&lt;/td&gt;
+&lt;td&gt;Reflects the actual positional difference, not just direction&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Text embeddings usually encode meaning in the vector's direction, with magnitude carrying little meaning, so cosine similarity — or dot product on normalized vectors — is the common choice. L2 distance shows up more often for embeddings such as image features, where magnitude itself is meaningful.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Metadata Filtering
+&lt;/h2&gt;
+
+&lt;p&gt;Vectors can carry metadata beyond the raw content itself — category, date, tags, access permissions, and so on. Metadata filtering means narrowing candidates by these conditions, either before or while running the vector search.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiwfozpsjsiiw7eqbr1z4.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fiwfozpsjsiiw7eqbr1z4.png" alt=" " width="800" height="462"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pre-filtering&lt;/strong&gt; narrows candidates to those matching the conditions first, then runs vector search within that subset. It's more accurate, but the narrowing step itself has a cost.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Post-filtering&lt;/strong&gt; runs ANN search first to over-fetch neighbor candidates, then excludes ones that don't match the metadata conditions. It reuses the ANN graph structure as-is, so it's fast, but if the filter rejects a large fraction of candidates, you can end up with too few results.&lt;/p&gt;
+
+&lt;p&gt;Newer vector databases such as Pinecone, Weaviate, and Qdrant often implement "filter-aware ANN," which factors filter conditions into the graph traversal itself — getting the best of both approaches in many cases.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  BM25
+&lt;/h2&gt;
+
+&lt;p&gt;The "keyword search" side of hybrid search in RAG is, in most implementations, an algorithm called BM25 (Best Matching 25). It's a refinement of TF-IDF and is the default scoring function in many full-text search engines, including Elasticsearch. Its score is driven mainly by three factors.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8m7ozgh32tg6xhqwcitf.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2F8m7ozgh32tg6xhqwcitf.png" alt=" " width="799" height="424"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Term frequency (TF)&lt;/strong&gt;: The more often a query term appears in a document, the higher the score — but each additional occurrence contributes less (it saturates).&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Inverse document frequency (IDF)&lt;/strong&gt;: Common words that appear across most documents count for less; rare, specific terms and proper nouns count for more.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Document length normalization&lt;/strong&gt;: Scores are adjusted relative to the average document length, so longer documents don't win purely by having more words.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Where vector search captures semantic closeness, BM25 captures lexical, word-level matches. BM25 tends to win on queries where exact matches matter — model numbers, proper nouns — while vector search tends to win on paraphrased or ambiguous queries. Combining the two in hybrid search lets each compensate for the other's weaknesses.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Best Practices for RAG Design
+&lt;/h2&gt;
+
+&lt;p&gt;Here's how to combine everything above when actually designing a RAG system.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Distance Metric: Follow Your Embedding Model
+&lt;/h3&gt;
+
+&lt;p&gt;Rather than choosing a metric yourself, match whatever metric your embedding model assumes at training time. Major text embedding models from OpenAI, Cohere, and others are trained assuming cosine similarity (or dot product on normalized vectors), so the practical default is cosine similarity — or dot product on normalized embeddings if you want to shave off compute. L2 distance rarely shows up in text RAG.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  ANN/HNSW Parameters: Prioritize Recall
+&lt;/h3&gt;
+
+&lt;p&gt;In RAG, missing even one relevant neighbor means the LLM never sees information it needed. So prioritize recall over query speed: set &lt;code&gt;ef_search&lt;/code&gt; relatively high, and over-fetch more candidates than your final top-k (e.g., fetch 20-50 candidates if you'll ultimately use 5) before narrowing down.&lt;/p&gt;
+
+&lt;p&gt;For corpora up to roughly tens of thousands of vectors, sticking with exact kNN instead of ANN is a perfectly reasonable choice. It eliminates any recall loss from approximation, and brute-force search is often fast enough at that scale. ANN becomes genuinely necessary somewhere in the hundreds of thousands to millions of vectors.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Metadata Filtering: Pre-filtering Is Mandatory for Security
+&lt;/h3&gt;
+
+&lt;p&gt;Requirements like access control and tenant isolation — where a document must never leak into results it shouldn't — always call for pre-filtering (or filter-aware ANN). With post-filtering, if only a few permitted documents happen to land in the ANN candidate set, you can end up with empty results, or worse, a bug that leaks unauthorized documents.&lt;/p&gt;
+
+&lt;p&gt;Filters meant purely to improve precision — date ranges, document type, and so on — are often fine with post-filtering (over-fetch candidates, then narrow), which has the advantage of a simpler implementation.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Best Practices for the Overall Retrieval Pipeline
+&lt;/h3&gt;
+
+&lt;p&gt;RAG retrieval layers tend to combine more than plain vector search alone.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ft26ubcos22h46uu66w78.png" class="article-body-image-wrapper"&gt;&lt;img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Ft26ubcos22h46uu66w78.png" alt=" " width="799" height="181"&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Hybrid search&lt;/strong&gt;: Combine vector search (semantic similarity) with keyword search such as BM25, then merge both scores. This shores up exact-match cases — model numbers, proper nouns — that embeddings tend to struggle with.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Reranking&lt;/strong&gt;: Over-fetch candidates via ANN, then use a higher-precision reranker (e.g., a cross-encoder) to narrow down to the final top-k. This corrects for ANN's own approximation error downstream.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Metadata filtering&lt;/strong&gt; typically narrows scope and permissions before search, and is combined with reranking after search.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  Summary
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Element&lt;/th&gt;
+&lt;th&gt;Rule of thumb&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Distance metric&lt;/td&gt;
+&lt;td&gt;Follow your embedding model's assumption (cosine similarity, or dot product on normalized vectors, by default)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ANN parameters&lt;/td&gt;
+&lt;td&gt;Prioritize recall; consider exact kNN for small corpora&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Metadata filtering&lt;/td&gt;
+&lt;td&gt;Pre-filtering is mandatory for access control; post-filtering is fine otherwise&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Retrieval pipeline&lt;/td&gt;
+&lt;td&gt;Vector search + BM25 hybrid + reranking is the standard setup&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Vector search isn't just about fetching neighbors quickly with ANN. Designing the metric choice, filter strategy, and downstream reranking together is what meaningfully moves the needle on a RAG system's answer quality.&lt;/p&gt;
+
+</description>
+      <category>rag</category>
+      <category>vectorsearch</category>
+      <category>hnsw</category>
+      <category>llm</category>
+    </item>
+    <item>
+      <title>6 Best Stock Market MCP Servers in 2026: Real-Time &amp; SEC Data</title>
+      <dc:creator>Daniel Oliveira</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:46:27 +0000</pubDate>
+      <link>https://dev.to/daniel_oliveira_4bd55d35d/6-best-stock-market-mcp-servers-in-2026-real-time-sec-data-je9</link>
+      <guid>https://dev.to/daniel_oliveira_4bd55d35d/6-best-stock-market-mcp-servers-in-2026-real-time-sec-data-je9</guid>
+      <description>&lt;p&gt;Most lists of stock market MCP servers quietly compare price feeds. That is useful if an agent only needs a quote. It is not enough when the question starts in an 8-K, continues into management guidance, and ends with institutional ownership or an option chain.&lt;/p&gt;
+
+&lt;p&gt;For that wider research job, my pick is &lt;strong&gt;Equibles&lt;/strong&gt;. It is the best overall fit here because one connection joins hybrid keyword and semantic search across SEC filings and earnings-call transcripts, XBRL fundamentals, management guidance, company-specific KPIs, 13F holdings, insider transactions, daily stock prices, intraday quotes, and options data.&lt;/p&gt;
+
+&lt;p&gt;The boundary matters: &lt;strong&gt;Massive is better for real-time tick, quote, and options feeds&lt;/strong&gt;. &lt;strong&gt;EODHD is better for global exchange breadth&lt;/strong&gt;. &lt;strong&gt;EdgarTools is better for a local, Python-first EDGAR workflow&lt;/strong&gt;. “Best” changes with the assignment.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  My ranking at a glance
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Rank&lt;/th&gt;
+&lt;th&gt;Stock market MCP server&lt;/th&gt;
+&lt;th&gt;Best for&lt;/th&gt;
+&lt;th&gt;Main trade-off&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://equibles.com/docs/mcp" rel="noopener noreferrer"&gt;Equibles&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Joined U.S. equity research across filings, fundamentals, guidance, ownership, prices, and options&lt;/td&gt;
+&lt;td&gt;U.S.-listed focus; not a consolidated tick or order-book feed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://docs.financialdatasets.ai/mcp-server" rel="noopener noreferrer"&gt;Financial Datasets&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Structured financials, segments, company KPIs, guidance, 13F, and insider data&lt;/td&gt;
+&lt;td&gt;No options, transcript, or semantic document-search tool is listed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://www.massive.com/docs/ai-tools/quickstart" rel="noopener noreferrer"&gt;Massive&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Real-time U.S. stock and options market data&lt;/td&gt;
+&lt;td&gt;No filing or earnings-call research corpus is documented&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://edgartools.readthedocs.io/en/stable/ai/mcp-tools/" rel="noopener noreferrer"&gt;EdgarTools&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;SEC filings, XBRL, ownership forms, and Python-first analysis&lt;/td&gt;
+&lt;td&gt;No earnings-call transcript, stock-price, or options tool is listed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://eodhd.com/financial-apis/mcp-server-for-financial-data-by-eodhd" rel="noopener noreferrer"&gt;EODHD&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;International instruments, exchanges, fundamentals, and market data&lt;/td&gt;
+&lt;td&gt;No filing-search or transcript tool is listed; freshness varies by dataset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;&lt;a href="https://github.com/alphavantage/alpha_vantage_mcp" rel="noopener noreferrer"&gt;Alpha Vantage&lt;/a&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Multi-asset prices, options, macro data, news, and technical indicators&lt;/td&gt;
+&lt;td&gt;Has transcripts, but no semantic filing-and-transcript search is documented&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;
+  
+  
+  What I compared
+&lt;/h2&gt;
+
+&lt;p&gt;I reviewed each provider's first-party documentation on 10 August 2026. I did not run the same production benchmark against all six servers, so this is a documentation-based product-fit review. It does not score latency, uptime, support, or answer accuracy.&lt;/p&gt;
+
+&lt;p&gt;I used a research task that forces several datasets to work together:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Find what management changed in its guidance, verify the supporting financial facts and company-specific KPIs, check the current stock and option data, then show whether insiders or large institutions changed their positions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That task tests eight things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Semantic and exact-keyword search across both SEC filings and earnings-call transcripts.&lt;/li&gt;
+&lt;li&gt;Source passages and exact lines that can be checked.&lt;/li&gt;
+&lt;li&gt;Fundamentals with fiscal period, unit, and filing provenance.&lt;/li&gt;
+&lt;li&gt;Management guidance with ranges, periods, and GAAP or non-GAAP basis.&lt;/li&gt;
+&lt;li&gt;Company-specific KPIs such as ARR, backlog, subscribers, units delivered, DAU/MAU, same-store sales, or adjusted EBITDA.&lt;/li&gt;
+&lt;li&gt;13F and insider records that preserve the meaning of the original forms.&lt;/li&gt;
+&lt;li&gt;Daily and current stock prices with their feed timestamp or delay stated.&lt;/li&gt;
+&lt;li&gt;Option expirations, chains, prices, implied volatility, open interest, and greeks.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;“Company-specific KPIs” does not mean a metric invented by the model. It means a measure the company itself reports, even when standardized XBRL does not carry it.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Feature comparison
+&lt;/h2&gt;
+
+&lt;div class="table-wrapper-paragraph"&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Server&lt;/th&gt;
+&lt;th&gt;Filings, transcripts, and search&lt;/th&gt;
+&lt;th&gt;Guidance and company KPIs&lt;/th&gt;
+&lt;th&gt;13F and insiders&lt;/th&gt;
+&lt;th&gt;Stock and options data&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Equibles&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Hybrid keyword and semantic search across filings and calls; source excerpts and exact-line retrieval&lt;/td&gt;
+&lt;td&gt;Extracted guidance, source wording, KPI histories, non-GAAP bridges&lt;/td&gt;
+&lt;td&gt;13F portfolios and changes; Forms 3, 4, and 144&lt;/td&gt;
+&lt;td&gt;Daily OHLCV, intraday quotes, technicals, option chains, IV, OI, and greeks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Financial Datasets&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Filing items and structured financials; no transcript or semantic document-search tool listed&lt;/td&gt;
+&lt;td&gt;KPI guidance, operating KPIs, and non-GAAP measures&lt;/td&gt;
+&lt;td&gt;13F, 13D/G, insider ownership, and insider trades&lt;/td&gt;
+&lt;td&gt;Current and historical stock prices; no options tool listed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Massive&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;No filing or earnings-call corpus documented; natural-language search discovers API endpoints&lt;/td&gt;
+&lt;td&gt;Not a documented MCP specialty&lt;/td&gt;
+&lt;td&gt;Not a documented MCP specialty&lt;/td&gt;
+&lt;td&gt;Real-time and historical stocks and options through entitled REST and WebSocket products&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;EdgarTools&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;SEC EFTS full-text search, parsed filings, sections, and notes; no earnings-call transcripts listed&lt;/td&gt;
+&lt;td&gt;Filing content can be read, but no dedicated guidance/KPI extraction tool is listed&lt;/td&gt;
+&lt;td&gt;Insider transactions and institutional portfolios&lt;/td&gt;
+&lt;td&gt;No market-price or options tools listed&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;EODHD&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Fundamentals, but no filing-search or transcript tool listed&lt;/td&gt;
+&lt;td&gt;Earnings trends and estimates rather than filing-grounded KPI extraction&lt;/td&gt;
+&lt;td&gt;Depends on the selected dataset&lt;/td&gt;
+&lt;td&gt;Live and historical prices, U.S. streams, technicals, and U.S. options data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Alpha Vantage&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Earnings-call transcript endpoint, but no filing-passage or semantic corpus search listed&lt;/td&gt;
+&lt;td&gt;Earnings and transcripts, but no dedicated company-KPI guidance tool listed&lt;/td&gt;
+&lt;td&gt;Institutional holdings and insider transactions&lt;/td&gt;
+&lt;td&gt;Intraday, real-time bulk quotes, real-time and historical options, plus technical indicators&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;The table describes documented capabilities, not equivalent test results. Among these six MCP catalogs as reviewed on 10 August 2026, Equibles is the only one that documents semantic search across a shared corpus of SEC filings and earnings-call transcripts, with an exact-keyword and line-reading path for verification. Alpha Vantage provides transcripts without that cross-corpus search. EdgarTools provides SEC EFTS full-text search without earnings-call transcripts. The other three do not list an equivalent transcript-search workflow.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  1. Equibles: best overall for joined U.S. equity research
+&lt;/h2&gt;
+
+&lt;p&gt;Equibles ranks first because the useful unit is not one API response. It is the path from source document to reported fact to market and ownership context.&lt;/p&gt;
+
+&lt;p&gt;Its &lt;a href="https://equibles.com/docs/mcp/tools/filings" rel="noopener noreferrer"&gt;filings tools&lt;/a&gt; use hybrid keyword-plus-semantic matching across 10-K, 10-Q, 8-K, 20-F, 6-K, and earnings-call transcripts. The agent can search every company, one company, or one document by meaning, then switch to exact-keyword search and retrieve precise lines around the hit. That makes the source passage part of the answer instead of a link added after the fact.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://equibles.com/docs/mcp/tools/fundamentals" rel="noopener noreferrer"&gt;fundamentals tools&lt;/a&gt; cover more than standardized statements. They include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;XBRL facts and full income, balance-sheet, and cash-flow statements.&lt;/li&gt;
+&lt;li&gt;Revenue breakdowns by business, product, service, and geography.&lt;/li&gt;
+&lt;li&gt;Company-reported KPIs with their original wording, period shape, source quote, and comparable year-over-year change.&lt;/li&gt;
+&lt;li&gt;Management guidance with the range, unit, fiscal period, GAAP or non-GAAP basis, and source filing or call.&lt;/li&gt;
+&lt;li&gt;Actual-versus-guidance checks after the reported period lands.&lt;/li&gt;
+&lt;li&gt;GAAP-to-non-GAAP bridges, valuation history, customer concentration, and going-concern flags where available.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That KPI layer is important. A SaaS company may care about ARR and retention. An automaker may report deliveries. A retailer may report same-store sales. Those measures often live in earnings releases or MD&amp;amp;A rather than a clean standardized statement.&lt;/p&gt;
+
+&lt;p&gt;The same connection adds &lt;a href="https://equibles.com/docs/mcp/tools/holdings" rel="noopener noreferrer"&gt;13F institutional holdings&lt;/a&gt; and &lt;a href="https://equibles.com/docs/mcp/tools/insider" rel="noopener noreferrer"&gt;insider transactions&lt;/a&gt;. An agent can move from a management claim to the financial evidence, then inspect fund positions or distinguish an open-market insider purchase from an award, exercise, gift, tax payment, or proposed Form 144 sale.&lt;/p&gt;
+
+&lt;p&gt;It also has &lt;a href="https://equibles.com/docs/mcp/tools/prices" rel="noopener noreferrer"&gt;daily prices and intraday quotes&lt;/a&gt;. The quote response identifies its timestamp and feed: WebSocket rows are real-time, while REST fallback rows are 15-minute delayed. This is enough for “what is it trading at now?” research, but it is not the same thing as a consolidated real-time tape.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://equibles.com/docs/mcp/tools/options" rel="noopener noreferrer"&gt;options tools&lt;/a&gt; return listed expirations and one-expiry chains with strike, type, latest daily price, implied volatility, open interest, volume, and greeks. Bid and ask appear only on entitled plans and are 15-minute delayed. I would use this to add options context to a research workflow, not to power an execution system.&lt;/p&gt;
+
+&lt;p&gt;The limits are clear: Equibles is centered on U.S.-listed equities, is read-only, and is not tick or order-book infrastructure. The public &lt;a href="https://github.com/daniel3303/Equibles" rel="noopener noreferrer"&gt;self-hosted repository&lt;/a&gt; is AGPL-3.0 and smaller than the hosted catalog. If the application needs global instruments, sub-second market events, or trade execution, another server should lead the stack.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  2. Financial Datasets: strongest structured-data alternative
+&lt;/h2&gt;
+
+&lt;p&gt;Financial Datasets is much closer to Equibles than older comparison posts suggest. Its current &lt;a href="https://docs.financialdatasets.ai/mcp-server" rel="noopener noreferrer"&gt;official MCP catalog&lt;/a&gt; lists more than 30 tools covering filing sections, standardized and as-reported statements, segmented financials, operating KPIs, non-GAAP measures, management guidance, 13F holdings, 13D/G ownership, insider ownership, insider trades, stock prices, news, and screening.&lt;/p&gt;
+
+&lt;p&gt;I would choose it when the application is built around clean structured objects and API-shaped results. It is particularly strong for company metrics and screens. Its current catalog does not list an earnings-call transcript tool or semantic search across filing text. Equibles stays ahead for this review's broader workflow because it combines its KPI and ownership layers with deeper document search, earnings-call retrieval, current quote attribution, and option-chain context in the same research connection.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  3. Massive: best for real-time stock and options data
+&lt;/h2&gt;
+
+&lt;p&gt;If “real-time” is the main requirement, Massive is the winner. Its &lt;a href="https://www.massive.com/docs/ai-tools/quickstart" rel="noopener noreferrer"&gt;official MCP server&lt;/a&gt; can discover and execute entitled REST endpoints, while the wider product exposes real-time WebSocket streams and historical files. Its &lt;a href="https://massive.com/docs/rest/stocks/overview" rel="noopener noreferrer"&gt;stock documentation&lt;/a&gt; describes consolidated U.S. market data, and its &lt;a href="https://massive.com/docs/rest/options/overview" rel="noopener noreferrer"&gt;options documentation&lt;/a&gt; covers trades, quotes, contracts, aggregates, greeks, and open interest across U.S. options exchanges.&lt;/p&gt;
+
+&lt;p&gt;That is a different product center. Massive's natural-language search discovers API endpoints and their documentation; its MCP guide does not describe search over company filings or earnings calls. I would use Massive for live dashboards, market-event analysis, intraday bars, or options microstructure. I would not pick it ahead of Equibles for a question that begins with an exact 10-K passage and needs management guidance, 13F amendment context, and insider-form semantics.&lt;/p&gt;
+
+&lt;p&gt;The practical architecture may use both: Equibles for filings and research context, Massive for the full real-time market feed.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  4. EdgarTools: best Python-first SEC and XBRL server
+&lt;/h2&gt;
+
+&lt;p&gt;EdgarTools is the focused EDGAR choice. Its &lt;a href="https://edgartools.readthedocs.io/en/stable/ai/mcp-tools/" rel="noopener noreferrer"&gt;13 MCP tools&lt;/a&gt; cover full-text SEC search, current filing monitoring, parsed filings, section reading, footnotes, financial trends, company comparison, insider transactions, institutional portfolios, funds, and proxy compensation. Its search tool uses the SEC's EFTS full-text system; the MCP catalog does not list earnings-call transcripts or a semantic search spanning filings and calls.&lt;/p&gt;
+
+&lt;p&gt;It is also a local Python library, so the operating model is attractive when a team wants filing objects inside its own code and does not need a hosted stock-price or options feed. For pure SEC work, I would choose it ahead of a broad market-data vendor. For the full filing-to-guidance-to-price-to-options path, extra providers are still required.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  5. EODHD: best for global market breadth
+&lt;/h2&gt;
+
+&lt;p&gt;EODHD documents &lt;a href="https://eodhd.com/financial-apis/mcp-server-for-financial-data-by-eodhd" rel="noopener noreferrer"&gt;72 read-only MCP tools&lt;/a&gt; across more than 70 exchanges. The catalog includes end-of-day history, live quotes, intraday data, U.S. tick data, fundamentals, news, macro data, technical indicators, and options datasets.&lt;/p&gt;
+
+&lt;p&gt;That breadth makes it a sensible base for an agent that cannot stay inside U.S.-listed equities. Its current MCP tool list does not include SEC filing search or earnings-call transcript retrieval. I would verify the exact exchange, delay, and subscription for every dataset before calling a value real-time; EODHD's own documentation notes that not all data is necessarily real-time.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  6. Alpha Vantage: broad multi-asset tools and indicators
+&lt;/h2&gt;
+
+&lt;p&gt;Alpha Vantage's &lt;a href="https://github.com/alphavantage/alpha_vantage_mcp#tools-reference" rel="noopener noreferrer"&gt;official MCP tool list&lt;/a&gt; exposes intraday and historical stock series, real-time bulk quotes and bid/ask, real-time and historical options, fundamentals, earnings-call transcripts, news sentiment, insider transactions, institutional holdings, forex, crypto, commodities, macro series, and a large technical-indicator catalog.&lt;/p&gt;
+
+&lt;p&gt;I would use it for an agent that moves between asset classes or needs indicators without calculating them locally. It does expose an earnings-call transcript endpoint, but its catalog does not list SEC filing-passage retrieval or semantic search across filings and calls. Its strength is breadth of callable market-data functions. It is not the first server I would choose when every claim must lead back to an exact filing passage.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Which MCP server is best for real-time stock data?
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Massive is the best fit here for full real-time U.S. stock and options market data.&lt;/strong&gt; Its market-data products are built around trades, quotes, aggregates, REST, WebSockets, and historical files. Alpha Vantage and EODHD are broader alternatives. Equibles provides attributed current stock quotes, but its advantage is joining that snapshot to filing, fundamental, guidance, and ownership research.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Which MCP server has SEC filings, guidance, and custom KPIs?
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Equibles and Financial Datasets are the two strongest documented choices.&lt;/strong&gt; Both expose filing-derived financials, management guidance, and company-reported operating KPIs. Equibles is my first pick when the agent also needs filing passages, transcripts, ownership records, live stock context, and options in one U.S.-equity workflow.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Three financial-data mistakes to test
+&lt;/h2&gt;
+
+&lt;p&gt;A polished answer can still be wrong. These are the first traps I check.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fiscal duration:&lt;/strong&gt; quarterly revenue and year-to-date revenue can share a concept but represent different spans. The SEC's &lt;a href="https://www.sec.gov/files/edgar/filer-information/specifications/xbrl-guide.pdf" rel="noopener noreferrer"&gt;EDGAR XBRL Guide&lt;/a&gt; explains the period context attached to facts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13F amendments:&lt;/strong&gt; an amendment may restate a filing or add omitted holdings. The &lt;a href="https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f" rel="noopener noreferrer"&gt;SEC Form 13F FAQ&lt;/a&gt; explains why those cases cannot be merged blindly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Insider transaction codes:&lt;/strong&gt; an acquisition may be a grant, option exercise, gift, or open-market purchase. The &lt;a href="https://www.sec.gov/about/forms/form4.pdf" rel="noopener noreferrer"&gt;Form 4 instructions&lt;/a&gt; define the codes. A model should preserve them rather than flatten every acquisition into “buy.”&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Prompts to compare the servers yourself
+&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Find the exact passage in the latest 10-K discussing export restrictions and return enough source context to verify it.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Show the last eight reported quarters of revenue and gross margin with fiscal period, duration, unit, and source filing.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;List the company's reported operating KPIs, including ARR, backlog, subscribers, or units delivered, without inventing missing metrics.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Compare current management guidance with the previous outlook and label the period and GAAP or non-GAAP basis.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Which institutions changed their positions last quarter after accounting for 13F amendments?&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Separate open-market insider purchases and sales from awards, exercises, gifts, tax withholding, and proposed Form 144 sales.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Return the current stock quote with timestamp and feed delay, then show the nearest option expiration with price, IV, open interest, and greeks.&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Inspect the source passage, filing accession, fiscal dates, unit, amendment type, transaction code, quote timestamp, delay, and options session. If any of those disappear, the answer may sound cleaner while becoming less trustworthy.&lt;/p&gt;
+
+&lt;p&gt;For the combined workflow, my order is Equibles, Financial Datasets, Massive, EdgarTools, EODHD, then Alpha Vantage. For pure real-time market data, put Massive first. For global coverage, put EODHD first. For local EDGAR work, put EdgarTools first.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Disclosure: I build Equibles, and AI helped research and draft this review; I verified the linked claims.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+      <category>mcp</category>
+      <category>ai</category>
+      <category>finance</category>
+      <category>stocks</category>
+    </item>
+    <item>
+      <title>Five files that go in before the agent writes a line</title>
+      <dc:creator>Miko Builds</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:46:20 +0000</pubDate>
+      <link>https://dev.to/mikobuilds/five-files-that-go-in-before-the-agent-writes-a-line-580e</link>
+      <guid>https://dev.to/mikobuilds/five-files-that-go-in-before-the-agent-writes-a-line-580e</guid>
+      <description>&lt;p&gt;You open an empty folder, type "build me an app", and for about two days it's magic.&lt;/p&gt;
+
+&lt;p&gt;Then week two arrives. The agent drops a database call straight into a component, because nothing ever told it not to. A folder you needed gets renamed. Somewhere in there it explains, with total confidence, a decision you never made. You start every session re-explaining the same things, and each explanation lives exactly as long as that one conversation.&lt;/p&gt;
+
+&lt;p&gt;Here's the part that took me too long to internalize: &lt;strong&gt;the agent doesn't remember yesterday&lt;/strong&gt;. Not "sort of remembers". Doesn't. Every session starts from nothing, and whatever isn't written into a file simply didn't happen.&lt;/p&gt;
+
+&lt;p&gt;So before a line of code exists, five files go in. It's about fifteen minutes, and it's the difference between a project that accumulates and one that resets every morning.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  1. &lt;code&gt;CLAUDE.md&lt;/code&gt; - the thing it reads first
+&lt;/h2&gt;
+
+&lt;p&gt;This is the file the agent opens at the start of every session. Treat it as working memory - the agent has none of its own, so this file is all there is. Documentation for a future teammate is a different job, and it can wait.&lt;/p&gt;
+
+&lt;p&gt;What actually earns its place in there:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Who you are and how to talk to you.&lt;/strong&gt; Sounds soft, matters a lot. "Explain in plain language, I'm new to web development" changes every answer you get for the rest of the project.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;A map.&lt;/strong&gt; Where things live and what goes where. Without it the agent invents a structure, and it invents a different one next week.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Decisions, with the reason.&lt;/strong&gt; Not "we use Postgres" but "we use Postgres because the data is relational and I don't want to hand-roll joins later". The reason is what stops the agent from cheerfully undoing the decision three weeks in.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What not to touch.&lt;/strong&gt; Every project has a part that works and shouldn't be improved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Keep it short enough that you'd actually re-read it. Mine drifts toward a hundred lines and I trim it back.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  2. &lt;code&gt;.claude/settings.json&lt;/code&gt; - the things that aren't up for discussion
+&lt;/h2&gt;
+
+&lt;p&gt;Rules in prose get weighed against everything else in the context window. A deny rule doesn't get weighed. It just fails.&lt;/p&gt;
+
+&lt;p&gt;Use prose for judgement - naming, style, when to stop and ask. Use the deny list for the handful of things that are irreversible:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="nl"&gt;"permissions"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="nl"&gt;"deny"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Bash(rm -rf*)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Bash(rm -fr*)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Bash(git push --force*)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Bash(git reset --hard*)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Read(**/.env)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;
+      &lt;/span&gt;&lt;span class="s2"&gt;"Read(**/.env.*)"&lt;/span&gt;&lt;span class="w"&gt;
+    &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Two things I got wrong here and would rather you didn't.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spell the same command every way it can be spelled.&lt;/strong&gt; These are prefix matches, not intent detection. &lt;code&gt;rm -rf&lt;/code&gt; and &lt;code&gt;rm -fr&lt;/code&gt; are the same command to you and two different strings to the matcher. Same with &lt;code&gt;git push --force&lt;/code&gt; versus &lt;code&gt;git push origin +main&lt;/code&gt; - the &lt;code&gt;+&lt;/code&gt; is a force push wearing a different hat, and a rule written for &lt;code&gt;--force&lt;/code&gt; never sees it coming.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use `Read(&lt;/strong&gt;/.env)&lt;code&gt;, not &lt;/code&gt;Read(./.env)&lt;code&gt;.** The &lt;/code&gt;./&lt;code&gt; version anchors to one directory. The &lt;/code&gt;**/&lt;code&gt; version follows gitignore semantics and catches the file at any depth. If your project ever grows a &lt;/code&gt;services/api/.env`, the first version protects nothing and looks like it does.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  3. &lt;code&gt;.env.example&lt;/code&gt; - so it doesn't need the real one
+&lt;/h2&gt;
+
+&lt;p&gt;The agent needs to know which variables exist. It doesn't need their values. An example file with the names and empty values answers the question completely, and the real file stays denied.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight properties"&gt;&lt;code&gt;&lt;span class="py"&gt;DATABASE_URL&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;
+&lt;span class="py"&gt;STRIPE_SECRET_KEY&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Worth knowing before you ship anything to a browser: anything prefixed &lt;code&gt;NEXT_PUBLIC_&lt;/code&gt; or &lt;code&gt;VITE_&lt;/code&gt; gets compiled into the page and is visible to every visitor. That happens at build time, so there's no fixing it afterwards.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  4. &lt;code&gt;.gitignore&lt;/code&gt; - before the first commit, not after
+&lt;/h2&gt;
+
+&lt;p&gt;Obvious file, easy to postpone, expensive to postpone.&lt;/p&gt;
+
+&lt;p&gt;A key that reaches git history doesn't leave when you delete the line. It stays in the history, and public repos get scanned by bots continuously. Rotating a key you know leaked is annoying. The other kind is worse.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  5. &lt;code&gt;.pre-commit-config.yaml&lt;/code&gt; - a scanner that runs whether you remember or not
+&lt;/h2&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="na"&gt;repos&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+  &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;repo&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;https://github.com/gitleaks/gitleaks&lt;/span&gt;
+    &lt;span class="na"&gt;rev&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;v8.30.0&lt;/span&gt;
+    &lt;span class="na"&gt;hooks&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+      &lt;span class="pi"&gt;-&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;gitleaks&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Then once, after &lt;code&gt;git init&lt;/code&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;pip &lt;span class="nb"&gt;install &lt;/span&gt;pre-commit
+pre-commit &lt;span class="nb"&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That second command is the whole thing. Without it the YAML sits there looking responsible and scanning nothing. I'd bet a lot of repos have exactly that.&lt;/p&gt;
+
+&lt;p&gt;And when you test it - don't use &lt;code&gt;AKIAIOSFODNN7EXAMPLE&lt;/code&gt;. It's the fake AWS key from the docs, gitleaks allowlists it deliberately, your commit sails through, and you conclude the hook is broken or, worse, that it's working. Use any invented key in a realistic shape.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The trap that cost me two live projects
+&lt;/h2&gt;
+
+&lt;p&gt;Here's the one I'd most want to know as a beginner, because nothing warns you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;CLAUDE.md&lt;/code&gt; is inherited up the tree. &lt;code&gt;settings.json&lt;/code&gt; is not.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Your rules file gets picked up from parent folders. The deny list doesn't travel at all - it's read only from the folder you actually started the session in, and there's no falling back to the parent.&lt;/p&gt;
+
+&lt;p&gt;I found this the boring way, reading docs for something else. I keep one project across three folders: notes and plans in one, a website in another, an app in a third. Guess which folder had the strongest deny list, a sandbox config and a working hook on top. The one with the text files. Meanwhile both folders holding real code - live database, deploy, signing key - had nothing at all. Not weak protection. None.&lt;/p&gt;
+
+&lt;p&gt;It had been that way for weeks and I'd have told you the project was locked down, because I'd seen the config with my own eyes. In the wrong folder.&lt;/p&gt;
+
+&lt;p&gt;So: the protection goes in every folder you actually open a session in. If you work in a monorepo and start sessions in subfolders, that's every subfolder, not the root.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What this doesn't do
+&lt;/h2&gt;
+
+&lt;p&gt;None of it reviews your code, saves a machine that's already compromised, or makes the agent's judgement trustworthy. It removes the failure modes that are common and permanent, and it does that before there's anything to lose.&lt;/p&gt;
+
+&lt;p&gt;The rest is ordinary engineering discipline, same as it ever was.&lt;/p&gt;
+
+&lt;p&gt;I keep these files in a repo so I don't retype them: &lt;a href="https://github.com/mikobuilds/claude-code-security-checklist" rel="noopener noreferrer"&gt;github.com/mikobuilds/claude-code-security-checklist&lt;/a&gt;. MIT, take what's useful.&lt;/p&gt;
+
+&lt;p&gt;If you do this differently - especially if you've got a deny rule that turned out to be theatre - I want to hear it.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>beginners</category>
+      <category>devops</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>Making Skeleton Loaders Less Painful 💀</title>
+      <dc:creator>Ajith Kumar P M</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:43:58 +0000</pubDate>
+      <link>https://dev.to/ajth-in/making-skeleton-loaders-less-painful-22fh</link>
+      <guid>https://dev.to/ajth-in/making-skeleton-loaders-less-painful-22fh</guid>
+      <description>&lt;p&gt;Making skeleton loaders, while not particularly difficult, is definitely not the most fun part of building a UI.&lt;/p&gt;
+
+&lt;p&gt;A good skeleton should reasonably represent the actual UI that is about to render. The problem is that you also need to maintain those skeletons whenever the source UI changes. In practice, this often means maintaining two versions of the same UI: the actual component and its skeleton.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SkullMaster&lt;/strong&gt;, the library I'm about to discuss, is an experimental attempt to solve this problem.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Design Principles
+&lt;/h2&gt;
+
+&lt;p&gt;SkullMaster is built around a few simple ideas:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The source should be the only thing you need to maintain.&lt;/strong&gt;&lt;br&gt;
+Skeletons should be generated from the source code rather than maintained separately.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Generated skeletons should still be customizable.&lt;/strong&gt;&lt;br&gt;
+You should be able to make adjustments when the automatically generated result isn't exactly what you want, without having to maintain an entirely separate skeleton.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The generated skeleton should represent the rendered UI.&lt;/strong&gt;&lt;br&gt;
+What matters is not just the source markup, but what the component actually looks like when rendered.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;The generated result should actually be a skeleton.&lt;/strong&gt;&lt;br&gt;
+Meaningful content from the source should not leak into the generated skeleton.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With that in mind, the following video shows SkullMaster in action.&lt;/p&gt;
+
+&lt;p&gt;  &lt;iframe src="https://www.youtube.com/embed/cSXlIWdZYxI"&gt;
+  &lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As you can see, the idea is fairly simple. You mark a component as &lt;strong&gt;skeleton-generatable&lt;/strong&gt; by assigning it a skeleton name using the &lt;code&gt;markAsSkull&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;This allows the SkullMaster client to detect the marked component. Assuming you have added the SkullMaster control component to your root component, you can then click on the marked component to generate and save its skeleton.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How Does This Work?
+&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; SkullMaster is currently in beta. When installing it, make sure to use the beta versions: &lt;code&gt;skullmaster@beta&lt;/code&gt; and &lt;code&gt;@skullmaster/react@beta&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following example uses React. For other frameworks, install the corresponding SkullMaster package and refer to the framework-specific documentation.&lt;/p&gt;
+
+&lt;p&gt;First, install &lt;code&gt;skullmaster&lt;/code&gt; and &lt;code&gt;@skullmaster/react&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then, alongside your development server, run the SkullMaster server:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;skullmaster serve
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Next, add the  component from &lt;code&gt;@skullmaster/react&lt;/code&gt; to your root component.&lt;/p&gt;
+
+&lt;p&gt;When you click on a marked component, the SkullMaster client collects the runtime information required to generate a skeleton and sends it to the SkullMaster server.&lt;/p&gt;
+
+&lt;p&gt;The server then processes this information and generates the skeleton as a React component in your configured skeleton directory.&lt;/p&gt;
+
+&lt;p&gt;The important part here is that SkullMaster generates the skeleton from the &lt;strong&gt;rendered result&lt;/strong&gt;, rather than simply trying to transform the source code directly.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What Does SkullMaster Do to the Rendered UI?
+&lt;/h2&gt;
+
+&lt;p&gt;One important thing to mention is that SkullMaster attempts to preserve the semantics of the original rendered UI in the generated skeleton.&lt;/p&gt;
+
+&lt;p&gt;This can be a deal breaker for some use cases, which is understandable. However, SkullMaster also injects the necessary ARIA attributes and strips meaningful information from the source so that the generated result behaves and communicates like a skeleton rather than the original UI.&lt;/p&gt;
+
+&lt;p&gt;Some of the transformations include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Replacing text content with skeleton placeholders&lt;/li&gt;
+&lt;li&gt;Removing image sources and replacing them with generated placeholders&lt;/li&gt;
+&lt;li&gt;Suppressing the interactivity of elements&lt;/li&gt;
+&lt;li&gt;Adding style overrides to visually transform elements into skeletons&lt;/li&gt;
+&lt;li&gt;Removing or hiding visually insignificant elements, such as &lt;code&gt;div&lt;/code&gt; wrappers used primarily for layout&lt;/li&gt;
+&lt;li&gt;Adding the appropriate accessibility attributes for a loading state&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And there is more to it than that.&lt;/p&gt;
+
+&lt;p&gt;The goal is not simply to take your existing DOM and make everything gray. The generated skeleton should retain enough of the original structure to resemble the UI that will eventually appear.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What If I Don't Like the Generated Result?
+&lt;/h2&gt;
+
+&lt;p&gt;This is an important problem to solve.&lt;/p&gt;
+
+&lt;p&gt;Modern UIs often contain a lot of wrapper elements. Some of them are visually meaningful, while others exist purely for layout, positioning, or semantics.&lt;/p&gt;
+
+&lt;p&gt;If we simply copied the entire rendered markup and applied skeleton styles to every element, there is a good chance that these visually insignificant elements would also become visible in the skeleton.&lt;/p&gt;
+
+&lt;p&gt;SkullMaster attempts to solve this by measuring the &lt;strong&gt;visual significance&lt;/strong&gt; of elements and keeping visually insignificant elements transparent.&lt;/p&gt;
+
+&lt;p&gt;Of course, this isn't perfect.&lt;/p&gt;
+
+&lt;p&gt;Sometimes you may know that a particular element should be transparent. In other cases, you may want to remove an entire subtree from the generated skeleton.&lt;/p&gt;
+
+&lt;p&gt;You could always edit the generated skeleton manually, but that brings us back to the problem we were trying to solve in the first place: having to maintain generated code.&lt;/p&gt;
+
+&lt;p&gt;Instead, SkullMaster provides a couple of ways to customize the generated result.&lt;/p&gt;
+
+&lt;p&gt;At the top level, you can provide tweaks alongside the skeleton name:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight tsx"&gt;&lt;code&gt;&lt;span class="nf"&gt;markAsSkull&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="dl"&gt;"&lt;/span&gt;&lt;span class="s2"&gt;ProductCard&lt;/span&gt;&lt;span class="dl"&gt;"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="na"&gt;isTransparent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="na"&gt;hideSubTree&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;For child elements, you can use &lt;code&gt;tweakForSkull&lt;/code&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight tsx"&gt;&lt;code&gt;&lt;span class="nf"&gt;tweakForSkull&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+  &lt;span class="na"&gt;isTransparent&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="na"&gt;hideSubTree&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This allows you to describe how the generated skeleton should behave without directly modifying the generated skeleton itself.&lt;/p&gt;
+
+&lt;p&gt;The generated code can therefore be regenerated whenever the source changes while still retaining your customizations.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  What If I Try to Load a Skeleton That Doesn't Exist?
+&lt;/h2&gt;
+
+&lt;p&gt;SkullMaster also has a fallback for this case.&lt;/p&gt;
+
+&lt;p&gt;If you try to load a skeleton that doesn't exist, SkullMaster will fall back to &lt;code&gt;DefaultBone.tsx&lt;/code&gt; from your skeleton directory.&lt;/p&gt;
+
+&lt;p&gt;Initially, this is just a simple fallback such as:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight tsx"&gt;&lt;code&gt;&lt;span class="dl"&gt;"&lt;/span&gt;&lt;span class="s2"&gt;Loading...&lt;/span&gt;&lt;span class="dl"&gt;"&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;But you can customize &lt;code&gt;DefaultBone.tsx&lt;/code&gt; however you want.&lt;/p&gt;
+
+&lt;p&gt;This is particularly useful during development because a missing skeleton doesn't have to break your application.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  SkullMaster is still in beta.
+&lt;/h2&gt;
+
+&lt;p&gt;I don't expect to make major changes to the existing APIs, but there are still quite a few assumptions behind the implementation that I'm not completely confident about yet.&lt;/p&gt;
+
+&lt;p&gt;The biggest question is whether some of those assumptions hold across a sufficiently wide range of real-world applications.&lt;/p&gt;
+
+&lt;p&gt;The project is therefore still experimental, and there are probably cases where the generated skeleton won't be exactly what you expect.&lt;/p&gt;
+
+&lt;p&gt;That is also why feedback is particularly useful at this stage.&lt;/p&gt;
+
+&lt;p&gt;If you want to try it out, install the beta versions:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;pnpm add &lt;span class="nt"&gt;-D&lt;/span&gt; skullmaster@beta
+pnpm add @skullmaster/react@beta
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;You can replace &lt;code&gt;pnpm&lt;/code&gt; with the package manager of your choice.&lt;/p&gt;
+
+&lt;p&gt;For more information, examples, and documentation, check out the &lt;a href="https://github.com/ajth-in/skullmaster" rel="noopener noreferrer"&gt;SkullMaster repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+      <category>react</category>
+      <category>svelte</category>
+      <category>vue</category>
+      <category>skullmaster</category>
+    </item>
+    <item>
+      <title>Spec Driven Development: What It Fixes (and Breaks)</title>
+      <dc:creator>Mudassir Khan</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:40:38 +0000</pubDate>
+      <link>https://dev.to/mudassirworks/spec-driven-development-what-it-fixes-and-breaks-1co3</link>
+      <guid>https://dev.to/mudassirworks/spec-driven-development-what-it-fixes-and-breaks-1co3</guid>
+      <description>&lt;h1&gt;
+  
+  
+  Spec Driven Development: What It Fixes (and Breaks)
+&lt;/h1&gt;
+
+&lt;p&gt;AI coding agents are great, but they have a knack for drifting. Left alone, they reinterpret vague prompts, quietly expand scope, and ship code that technically works but nobody actually asked for. Spec driven development is the attempt to fix that by making the specification, not the prompt, the source of truth the agent has to work from. It works. Here's the catch: a lot of teams adopting it are just rebuilding waterfall with a chatbot bolted on. This post breaks down which parts of the seven phase workflow earn their keep and which parts are pure ceremony.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  What spec driven development actually changes
+&lt;/h2&gt;
+
+&lt;p&gt;Spec driven development shifts the source of truth from the prompt to the specification. The spec, not the agent's interpretation of your Slack message, becomes the authoritative document the agent has to work from. In practice that means a seven phase pipeline: constitution, specify, clarify, plan, tasks, implement, analyze. Each phase has a human review gate between it and the next one, and that gate is the whole mechanism. It's what stops an agent from confidently running off with a bad interpretation for three hours before anyone notices.&lt;/p&gt;
+
+&lt;p&gt;Here's roughly what each phase is doing:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Constitution&lt;/strong&gt;: the standing rules for the project (conventions, constraints, things that are always true).&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Specify&lt;/strong&gt;: the actual requirement, written in enough detail that two people would build the same thing from it.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Clarify&lt;/strong&gt;: turning anything vague into a testable, unambiguous acceptance criterion. This is where EARS notation earns its keep. You want to write something an agent literally cannot misread. I built the &lt;a href="https://mudassirkhan.me/tools/agent-system-prompt-builder" rel="noopener noreferrer"&gt;agent system prompt builder&lt;/a&gt; partly because watching agents misread plain English requirements over and over got old fast.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Plan&lt;/strong&gt;: breaking the specify plus clarify output into an actual sequence of work.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Tasks&lt;/strong&gt;: the individual units the agent (or you) will execute.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Implement&lt;/strong&gt;: the agent writes the code.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Analyze&lt;/strong&gt;: someone checks the output against the spec before it ships, not after. This is the phase most teams skip or rubber stamp, and it's exactly where &lt;a href="https://mudassirkhan.me/blog/agentic-ai-testing-strategies" rel="noopener noreferrer"&gt;good testing strategy&lt;/a&gt; actually pays for itself, because analyze is worthless if nobody is verifying against real behavior instead of eyeballing a diff.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A vague requirement like "users shouldn't be able to log in too often" becomes something like this once you clarify it into an EARS style acceptance criterion:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;Given a user has attempted to log in 5 times within 1 minute
+When the user attempts to log in again
+Then the system shall block the login attempt and return a rate limit error
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That's the whole trick. An agent can't argue with that sentence the way it can argue with "add some rate limiting."&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Diagram:&lt;/strong&gt; A horizontal flowchart showing the seven-phase Spec-Driven Development pipeline: constitution → specify → clarify → plan → tasks → implement → analyze, with a checkmark review gate between each phase.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;
+  
+  
+  The tooling landscape: Spec Kit vs Kiro vs nothing at all
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/github/spec-kit" rel="noopener noreferrer"&gt;GitHub Spec Kit&lt;/a&gt; is open source and MIT licensed, a CLI first toolkit that treats specifications as the actual executable source of truth for an agent. It's a good fit if your team wants to own the workflow and is already comfortable stitching CLI tools into whatever setup you're running.&lt;/p&gt;
+
+&lt;p&gt;AWS Kiro takes the opposite approach: it's a full agentic IDE built around spec driven development from the ground up, not a CLI you bolt on. Kiro reached international general availability on May 7, 2026, shipping with team plans, a CLI, and property based spec testing. It had already pulled in over 250,000 developers during its preview and more than 100,000 waitlist signups in roughly 90 days before that GA date, which tells you the demand for this workflow was real before the tooling caught up. Kiro is the better fit if you want the discipline enforced by the IDE itself rather than assembled from parts you have to maintain.&lt;/p&gt;
+
+&lt;p&gt;And then there's option three: no dedicated tooling at all, just a well written AGENTS.md or equivalent context file plus manual review discipline. This genuinely works for smaller projects. It just doesn't scale the enforcement Kiro or Spec Kit give you for free once more than two or three people are touching the same agent workflows.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Where this actually breaks down
+&lt;/h2&gt;
+
+&lt;p&gt;Here's the part most writeups skip: Thoughtworks places spec driven development in the Assess ring of its Technology Radar, not Adopt. That's a "proceed with caution," not an endorsement. The real criticism behind that placement is concrete: this practice can double documentation overhead on a project when every phase gets treated as mandatory ceremony instead of a tool you reach for when the task actually warrants it.&lt;/p&gt;
+
+&lt;p&gt;Here's the tell. If your team is writing exhaustive specs for a two hour task, running every phase gate on a one line CSS fix, and treating the human review step as a rubber stamp instead of an actual check, you're not doing spec driven development anymore. You're doing waterfall with an AI coding agent attached, and you've made your process slower without making it safer.&lt;/p&gt;
+
+&lt;p&gt;The phases are supposed to scale down for small tasks and scale up for genuinely risky or ambiguous ones. Teams that apply identical ceremony to everything are the ones who end up hating this workflow within a month, and honestly, they're right to hate it. That's a process problem, not a spec driven development problem.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How to run this without turning it into paperwork
+&lt;/h2&gt;
+
+&lt;p&gt;Scale the phases to the actual risk of the task. A trivial change gets a one line spec and goes straight to implement. A genuinely ambiguous or high risk change gets the full seven phases, gates and all. Don't run the same checklist for both.&lt;/p&gt;
+
+&lt;p&gt;Keep the constitution file short and opinionated. It should be the rules you actually enforce day to day, not an aspirational wishlist nobody reads past the first week.&lt;/p&gt;
+
+&lt;p&gt;Never skip the human review gates. Everything else in this workflow is process around that one mechanism, and it's the actual safety net. This is also where &lt;a href="https://mudassirkhan.me/blog/ai-agent-workflow-automation" rel="noopener noreferrer"&gt;wiring your agent workflow correctly&lt;/a&gt; matters more than people expect: if the gate is a Slack notification nobody reads until the next morning, you've built the workflow but skipped the safety mechanism it exists to provide.&lt;/p&gt;
+
+&lt;p&gt;Write acceptance criteria in EARS style specifically at the clarify and plan phases. That's where it earns the most, because it forces ambiguity to surface before the agent starts generating code instead of after you're already reviewing a pull request you don't fully understand.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Where this leaves you
+&lt;/h2&gt;
+
+&lt;p&gt;Spec driven development is a real fix for a real problem: agents drifting on vague prompts and shipping scope nobody asked for. It's not a fad, and it's not going away. But it's also not a substitute for judgment about when process is worth the cost. The teams getting the most out of this treat the seven phases as a dial they turn up or down based on risk, not a checklist they run unconditionally on every ticket.&lt;/p&gt;
+
+&lt;p&gt;If you're setting this up for a team and want a second pair of eyes on the constitution file or the gate design before it calcifies into ceremony, that's &lt;a href="https://mudassirkhan.me/services/agentic-ai-consulting" rel="noopener noreferrer"&gt;exactly the kind of work I take on&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;em&gt;Drop a comment if your team's setup looks different, curious what variations people are actually running in production.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>webdev</category>
+      <category>productivity</category>
+      <category>tutorial</category>
+    </item>
+    <item>
+      <title>I'm building Kumo, a terminal multiplexer for the AI agent era</title>
+      <dc:creator>Marc Rodriguez</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:38:06 +0000</pubDate>
+      <link>https://dev.to/marcrdgz/im-building-kumo-a-terminal-multiplexer-for-the-ai-agent-era-383e</link>
+      <guid>https://dev.to/marcrdgz/im-building-kumo-a-terminal-multiplexer-for-the-ai-agent-era-383e</guid>
+      <description>&lt;p&gt;Hey! I've been building something in Rust these past few weeks and I wanted to share it. It's called &lt;strong&gt;Kumo&lt;/strong&gt; — that's 蜘蛛, &lt;em&gt;spider&lt;/em&gt; in Japanese — and it's a terminal multiplexer built around AI agents.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The problem I kept running into
+&lt;/h2&gt;
+
+&lt;p&gt;I work with AI agents a lot. &lt;code&gt;opencode&lt;/code&gt;, &lt;code&gt;claude&lt;/code&gt;, tried &lt;code&gt;qwen&lt;/code&gt;. I'd have a couple of them working on different parts of a problem, and there was no easy way to keep an eye on them all. Are they still running? Blocked waiting for my approval? Finished?&lt;/p&gt;
+
+&lt;p&gt;I was switching between windows, squinting at terminals, losing track of who was doing what.&lt;/p&gt;
+
+&lt;p&gt;So I built one.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why not just use what's out there?
+&lt;/h2&gt;
+
+&lt;p&gt;To be fair, the multiplexer space is in great shape right now. There's &lt;strong&gt;herdr&lt;/strong&gt;, &lt;strong&gt;cmux&lt;/strong&gt;, &lt;strong&gt;amux&lt;/strong&gt;, and friends, plus classics like tmux and zellij that people swear by. And then there's &lt;a href="https://www.superlogical.com/" rel="noopener noreferrer"&gt;superlogical&lt;/a&gt;, Mitchell Hashimoto's new company — the same Mitchell who made Ghostty. I'm a fan of their work.&lt;/p&gt;
+
+&lt;p&gt;I've tried a bunch of these and they're all good at what they do. It's just that I never felt 100% at home with them — none of them gave me that &lt;em&gt;feeling&lt;/em&gt; I get from my own setup of &lt;strong&gt;Ghostty + tmux + LazyVim&lt;/strong&gt;. That combo just feels like &lt;em&gt;my&lt;/em&gt; terminal, you know? Warm, familiar, exactly where I want things to be.&lt;/p&gt;
+
+&lt;p&gt;So Kumo wasn't born as a "better tmux." It started as an attempt to get that same familiar feeling, plus a couple of things I wished existed. A few design choices I ended up caring a lot about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Usable like tmux, with an actual UI.&lt;/strong&gt; I wanted it usable as-is, right out of the box — but with a UI my dad could use without a man page. tmux is great; it's the learning curve that keeps people out. Good defaults that just work.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Not another app.&lt;/strong&gt; I didn't want a separate application — that's how you end up with a new window, a new thing to keep open. Kumo lives inside your terminal, which keeps it lightweight, makes it work anywhere (my dad, for example, programs on Windows), and means I can keep everything in my one simple terminal: Ghostty.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Completely configurable.&lt;/strong&gt; Kumo is open source, and just like that, I want it to belong to you — mold it however you like. It must be yours, not mine.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;
+  
+  
+  What Kumo does
+&lt;/h2&gt;
+
+&lt;p&gt;Quick primer: by "agents" I mean AI coding agents — the CLIs you run in a terminal, like &lt;code&gt;opencode&lt;/code&gt; or &lt;code&gt;claude&lt;/code&gt;, that edit files, run commands, and every so often &lt;em&gt;stop&lt;/em&gt; to ask permission before doing something. That's what "blocked" means here.&lt;/p&gt;
+
+&lt;p&gt;The basics are all there: split panes, sessions, tabs, real text selection. But the heart of it is the &lt;strong&gt;sidebar&lt;/strong&gt;, which lists every running agent with its workspace and a status dot:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;🟢 &lt;strong&gt;working&lt;/strong&gt; — off doing its thing&lt;/li&gt;
+&lt;li&gt;🟠 &lt;strong&gt;blocked&lt;/strong&gt; — waiting for your say-so&lt;/li&gt;
+&lt;li&gt;⚪ &lt;strong&gt;idle&lt;/strong&gt; — done, or just sitting there&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When an agent blocks or finishes, Kumo pings you with a sound — a distinct chime for each. Blocked agents float to the top and their pane glows orange, so you only get pulled in when you're actually needed.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The fun part: a real terminal emulator
+&lt;/h2&gt;
+
+&lt;p&gt;I didn't want to fake the terminal. Each pane is a genuine VT/xterm emulator powered by &lt;strong&gt;libghostty-vt&lt;/strong&gt; — Ghostty's headless terminal core, vendored and compiled at build time. Shells, TUIs, full-screen apps behave exactly like in a native terminal. With &lt;strong&gt;portable-pty&lt;/strong&gt; on the PTY side, drag-to-select works even inside apps that own the mouse, like opencode's own TUI or vim.&lt;/p&gt;
+
+&lt;p&gt;It's one Rust binary, one TUI on &lt;strong&gt;ratatui&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The mouse problem — a.k.a. my pain in the ass
+&lt;/h2&gt;
+
+&lt;p&gt;Here's the weirdest rabbit hole of the whole project — and honestly, the biggest pain in my ass. Real terminals have a quiet war going on over your mouse. Apps can enable something called &lt;strong&gt;mouse reporting&lt;/strong&gt; — when they do, they own the mouse. Drags are meant for &lt;em&gt;their&lt;/em&gt; text selection, not yours. It's why selecting text in &lt;code&gt;vim&lt;/code&gt; or &lt;code&gt;less&lt;/code&gt; feels different from selecting it in a plain shell.&lt;/p&gt;
+
+&lt;p&gt;I wanted native selection everywhere: drag, select, copy on release, like a real terminal. So Kumo does both:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When an app &lt;em&gt;doesn't&lt;/em&gt; report the mouse, drag-select is handled by Kumo itself using libghostty-vt's native selection.&lt;/li&gt;
+&lt;li&gt;When an app &lt;em&gt;does&lt;/em&gt; take the mouse (opencode's TUI, vim, less), Kumo forwards the whole gesture — press, drags, release — so the app can do its own selection, exactly like it would in a real terminal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And the sneaky trick that makes it all work: panes present themselves as plain &lt;code&gt;xterm-256color&lt;/code&gt;, advertising &lt;strong&gt;no mouse capabilities&lt;/strong&gt; at all (a tiny custom responder). So apps don't hijack your mouse unless they really need it, and native selection just works.&lt;/p&gt;
+
+&lt;p&gt;The bugs were fun too. Forwarded mouse events kept arriving with a trailing reset escape that apps would choke on — one character to fix, one afternoon to find. And selection was being read from a stale cached view instead of a fresh viewport snapshot, so the highlight wouldn't hug the text like a real terminal. Little things like that, but each one taught me something about how terminals actually think.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  How this got built
+&lt;/h2&gt;
+
+&lt;p&gt;Honestly? A big chunk of this was vibe-coded — me describing what I wanted to DeepSeek V4 Flash and reading every line it produced as it went. But the real goal was never the product. It was learning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Rust, properly.&lt;/strong&gt; Not a tutorial. A real binary with real lifetime and ownership problems, the kind you only hit when something has to actually work. I won't lie — I still don't fully understand Rust, and plenty of other things along the way. We're getting there, me and my buddy DeepSeek.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;What's inside a terminal.&lt;/strong&gt; I've lived in one every single day for years and never really knew how it worked. PTYs, ANSI escapes, scrollback, mouse modes, &lt;code&gt;SIGWINCH&lt;/code&gt; — building Kumo meant touching all of it.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Feeling free with AI.&lt;/strong&gt; Before Kumo, I'd never gone beyond a simple CLI with Claude at work. This was the first time I really pushed it — actually building something real and complex, not just poking at it from the command line. That shift felt genuinely liberating.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That's the middle ground I've settled into: not trusting it blindly, not writing every byte by hand. Enough understanding to review, enough trust to let it write the first draft.&lt;/p&gt;
+
+&lt;p&gt;But the main idea is done: a product I feel comfortable using every day, and a way to keep learning while I develop it. That's the whole point for me.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Where it's at
+&lt;/h2&gt;
+
+&lt;p&gt;It's early days and very opinionated. Right now opencode and claude have full lifecycle detection; other agents are auto-detected but shown as idle. Keybindings are hard-coded (remapping is on the roadmap), and a detach/re-attach server is coming.&lt;/p&gt;
+
+&lt;p&gt;If that sounds interesting, check out the repo at &lt;a href="https://github.com/marcrdgz/kumo" rel="noopener noreferrer"&gt;github.com/marcrdgz/kumo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I'm sharing this because building it has been genuinely fun, and I'd love for you to try it too.&lt;/p&gt;
+
+</description>
+      <category>ai</category>
+      <category>opensource</category>
+      <category>terminal</category>
+      <category>rust</category>
+    </item>
+    <item>
+      <title>Stop Reaching for the Arrow Keys: An Intro to the Kenkyo Keyboard Layout</title>
+      <dc:creator>Leandro</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:33:50 +0000</pubDate>
+      <link>https://dev.to/argenkiwi/stop-reaching-for-the-arrow-keys-an-intro-to-the-kenkyo-keyboard-layout-25d9</link>
+      <guid>https://dev.to/argenkiwi/stop-reaching-for-the-arrow-keys-an-intro-to-the-kenkyo-keyboard-layout-25d9</guid>
+      <description>&lt;p&gt;Every developer knows the subtle tax of context-switching in your physical environment. You’re deep in the flow state, writing code, when you need to select a word three lines up or trigger an &lt;code&gt;Escape&lt;/code&gt; key in Vim or your IDE. Your right hand leaves the home row, reaches across the desk to the arrow keys or navigation cluster, makes the adjustment, and travels back to reset your home-row positioning.&lt;/p&gt;
+
+&lt;p&gt;Do that hundreds of times a day, and it adds up to physical strain and micro-interruptions to your concentration.&lt;/p&gt;
+
+&lt;p&gt;Split ergonomic ortholinear keyboards (like the Moonlander, Glove80, or Corne) solve this using &lt;strong&gt;layers&lt;/strong&gt; and &lt;strong&gt;home-row modifiers&lt;/strong&gt;. But what if you could get 90% of those ergonomic powers on the standard ANSI keyboard on your laptop without buying new hardware or ruining your regular typing habits?&lt;/p&gt;
+
+&lt;p&gt;Enter &lt;strong&gt;&lt;a href="https://github.com/argenkiwi/kenkyo" rel="noopener noreferrer"&gt;Kenkyo&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  What is Kenkyo?
+&lt;/h2&gt;
+
+&lt;p&gt;Named after the Japanese word for humility or modesty (&lt;em&gt;謙虚&lt;/em&gt;), &lt;strong&gt;Kenkyo&lt;/strong&gt; is a open-source, software-based layered keyboard layout. True to its name, its core design philosophy is to stay completely out of your way until you need it.&lt;/p&gt;
+
+&lt;p&gt;Unlike custom layouts that force you to re-learn where letters sit (like Dvorak or Colemak), Kenkyo retains standard &lt;strong&gt;QWERTY&lt;/strong&gt; typing for basic input. It simply supercharges your keyboard through software overlays like &lt;strong&gt;Kanata&lt;/strong&gt; (cross-platform) or &lt;strong&gt;Keyd&lt;/strong&gt; (Linux).&lt;/p&gt;
+
+&lt;p&gt;With Kenkyo, you can access &lt;strong&gt;100% of standard keyboard functionality using just 31 keys&lt;/strong&gt;, keeping your hands centered on the home row at all times.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Core Philosophy &amp;amp; Key Features
+&lt;/h2&gt;
+
+&lt;p&gt;Kenkyo is built on four developer-friendly principles:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;strong&gt;Hardware Agnostic:&lt;/strong&gt; Works on any standard ANSI built-in laptop keyboard or external desktop board.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Progressive Learning:&lt;/strong&gt; You don't have to go all-in on day one. Your standard typing muscle memory remains intact; you opt into shortcut layers at your own pace.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Composability:&lt;/strong&gt; Combines established power-user paradigms like &lt;strong&gt;SpaceFn&lt;/strong&gt; (holding &lt;code&gt;Space&lt;/code&gt; triggers a navigation layer) and &lt;strong&gt;Home Row Modifiers&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Zero Motion Overhead:&lt;/strong&gt; Keeps navigation, function keys, symbols, and modifier chords directly under your fingertips.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  How It Works: The Layers
+&lt;/h2&gt;
+
+&lt;p&gt;Kenkyo relies on a few intuitive layers toggled by holding down specific keys.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  1. Main Layer (Home Row Modifiers)
+&lt;/h3&gt;
+
+&lt;p&gt;Instead of twisting your pinkies to reach &lt;code&gt;Ctrl&lt;/code&gt;, &lt;code&gt;Alt&lt;/code&gt;, &lt;code&gt;Shift&lt;/code&gt;, or &lt;code&gt;Cmd/Super&lt;/code&gt;, Kenkyo turns your home row keys into modifiers when held down:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Left Hand:&lt;/strong&gt; &lt;code&gt;A&lt;/code&gt; (Meta/Cmd), &lt;code&gt;S&lt;/code&gt; (Alt), &lt;code&gt;D&lt;/code&gt; (Shift), &lt;code&gt;F&lt;/code&gt; (Ctrl)&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Right Hand:&lt;/strong&gt; &lt;code&gt;J&lt;/code&gt; (Ctrl), &lt;code&gt;K&lt;/code&gt; (Shift), &lt;code&gt;L&lt;/code&gt; (Alt), &lt;code&gt;;&lt;/code&gt; (Meta/Cmd)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tapping the key types the letter normally; holding it acts as the modifier.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  2. Extend Layer (Navigation &amp;amp; Editing)
+&lt;/h3&gt;
+
+&lt;p&gt;Hold down the &lt;strong&gt;Spacebar&lt;/strong&gt; to activate the &lt;strong&gt;Extend Layer&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Right Hand:&lt;/strong&gt; Becomes your complete navigation cluster. Arrow keys, &lt;code&gt;Home&lt;/code&gt;, &lt;code&gt;End&lt;/code&gt;, &lt;code&gt;Page Up&lt;/code&gt;, and &lt;code&gt;Page Down&lt;/code&gt; sit under &lt;code&gt;HJKL&lt;/code&gt; / &lt;code&gt;IJKM&lt;/code&gt; positions. Editing keys like &lt;code&gt;Backspace&lt;/code&gt;, &lt;code&gt;Delete&lt;/code&gt;, &lt;code&gt;Enter&lt;/code&gt;, and &lt;code&gt;Tab&lt;/code&gt; are right next to them.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Left Hand:&lt;/strong&gt; Media controls (Volume Up/Down, Mute, Play/Pause).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+  
+  
+  3. Fumbol Layer (Numbers, Symbols &amp;amp; F-Keys)
+&lt;/h3&gt;
+
+&lt;p&gt;Hold &lt;code&gt;V&lt;/code&gt; or &lt;code&gt;M&lt;/code&gt; (or trigger it from the Extend Layer) to transform your home row into a high-speed number pad and function bar:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Numbers:&lt;/strong&gt; Arranged conveniently along the home row.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;F-Keys:&lt;/strong&gt; &lt;code&gt;F1&lt;/code&gt;–&lt;code&gt;F10&lt;/code&gt; mapped across the top row, with &lt;code&gt;F11&lt;/code&gt;–&lt;code&gt;F12&lt;/code&gt; on the bottom.&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Math Chords:&lt;/strong&gt; Built-in fast chords for common math operations (&lt;code&gt;-&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Ergonomic "Chords"
+&lt;/h2&gt;
+
+&lt;p&gt;To eliminate far-reaching key stretches altogether, Kenkyo introduces two-key simultaneous "chords" for high-frequency actions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;W + E&lt;/code&gt; → &lt;strong&gt;Escape&lt;/strong&gt; &lt;em&gt;(Vim users rejoice!)&lt;/em&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;I + O&lt;/code&gt; → &lt;strong&gt;Backspace&lt;/strong&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;X + C&lt;/code&gt; → &lt;strong&gt;Tab&lt;/strong&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;, + .&lt;/code&gt; → &lt;strong&gt;Enter&lt;/strong&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Getting Started in 5 Minutes
+&lt;/h2&gt;
+
+&lt;p&gt;Setting up Kenkyo is straightforward since it runs as an invisible software daemon in the background.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Step 1: Choose Your Driver
+&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;Windows, macOS, Linux:&lt;/strong&gt; &lt;a href="https://github.com/jtroo/kanata" rel="noopener noreferrer"&gt;Kanata&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Linux (Alternative):&lt;/strong&gt; &lt;a href="https://github.com/rvaiya/keyd" rel="noopener noreferrer"&gt;Keyd&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+  
+  
+  Step 2: Install the Configuration
+&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the Kenkyo repository:
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git clone https://github.com/argenkiwi/kenkyo.git
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;ol&gt;
+&lt;li&gt;Copy the corresponding configuration file (&lt;code&gt;kanata.kbd&lt;/code&gt; or &lt;code&gt;keyd/default.conf&lt;/code&gt;) to your software's config folder (e.g., &lt;code&gt;~/.config/kanata/&lt;/code&gt; or &lt;code&gt;/etc/keyd/default.conf&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Start the daemon service.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That’s it! You can now start using SpaceFn navigation immediately. If you ever feel stuck, releasing held keys instantly drops you back into regular QWERTY typing.&lt;/p&gt;
+
+
+
+
+&lt;h2&gt;
+  
+  
+  Why Give It a Try?
+&lt;/h2&gt;
+
+&lt;p&gt;If you've been curious about the productivity and health benefits of layered, ergonomic typing but aren't ready to invest in custom split hardware or completely rewire your muscle memory, &lt;strong&gt;Kenkyo&lt;/strong&gt; offers the perfect middle ground.&lt;/p&gt;
+
+&lt;p&gt;Check out the full repository, documentation, and keymaps on GitHub:&lt;br&gt;
+👉 &lt;strong&gt;&lt;a href="https://github.com/argenkiwi/kenkyo" rel="noopener noreferrer"&gt;github.com/argenkiwi/kenkyo&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Have you experimented with layered keyboard layouts or Home Row Modifiers in your dev workflow? Drop your thoughts in the comments below!&lt;/em&gt;&lt;/p&gt;
+
+</description>
+      <category>tools</category>
+      <category>productivity</category>
+      <category>a11y</category>
+    </item>
+    <item>
+      <title>100 Days of DevOps and Cloud (AWS), Day 25: Git Won't Guess, and an Unconfirmed Alarm Never Rings</title>
+      <dc:creator>Nnamdi Felix Ibe</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:29:57 +0000</pubDate>
+      <link>https://dev.to/ndcodes/100-days-of-devops-and-cloud-aws-day-25-git-wont-guess-and-an-unconfirmed-alarm-never-rings-2e3b</link>
+      <guid>https://dev.to/ndcodes/100-days-of-devops-and-cloud-aws-day-25-git-wont-guess-and-an-unconfirmed-alarm-never-rings-2e3b</guid>
+      <description>&lt;p&gt;Quarter of the way in, and Day 25 landed on a theme I did not expect: the last step of both tasks can only be completed by a person. Not a flag, not a retry, not a smarter command. A human has to decide something, and until they do, the system waits.&lt;/p&gt;
+
+&lt;p&gt;One Git task, one AWS task. Merge a feature branch back into master and deal with a conflict, then launch an EC2 instance and put a CloudWatch alarm on it. The tasks come from the KodeKloud Engineer platform.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Merging: two kinds, and Git picks for you
+&lt;/h2&gt;
+
+&lt;p&gt;The first thing to get straight is direction. A merge runs &lt;strong&gt;from&lt;/strong&gt; the branch you are merging &lt;strong&gt;into&lt;/strong&gt;. You stand on master and pull the feature branch towards you, not the other way round.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git switch master
+git pull                        &lt;span class="c"&gt;# make sure master is current first&lt;/span&gt;
+git merge feature-x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;What happens next depends on something you did not choose. If master has not moved since the branch was created, Git performs a &lt;strong&gt;fast-forward&lt;/strong&gt;: it simply slides the master pointer up to the tip of your branch. No merge commit exists. The history looks like the branch never happened.&lt;/p&gt;
+
+&lt;p&gt;If both branches have new commits, Git does a &lt;strong&gt;three-way merge&lt;/strong&gt; and creates a merge commit with two parents, recording that two lines of work came back together.&lt;/p&gt;
+
+&lt;p&gt;That difference matters more than it sounds, because a fast-forward erases the shape of what you did. If you want the record kept:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git merge &lt;span class="nt"&gt;--no-ff&lt;/span&gt; feature-x
+git log &lt;span class="nt"&gt;--graph&lt;/span&gt; &lt;span class="nt"&gt;--oneline&lt;/span&gt; &lt;span class="nt"&gt;--all&lt;/span&gt; &lt;span class="nt"&gt;--decorate&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--no-ff&lt;/code&gt; forces a merge commit even when a fast-forward was available. It costs one commit and buys a permanent, readable record that a branch existed and when it landed. Plenty of teams require it for exactly that reason.&lt;/p&gt;
+
+&lt;p&gt;And then, sooner or later, this:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight console"&gt;&lt;code&gt;&lt;span class="go"&gt;CONFLICT (content): Merge conflict in app.py
+&lt;/span&gt;&lt;span class="gp"&gt;Automatic merge failed;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;fix conflicts and &lt;span class="k"&gt;then &lt;/span&gt;commit the result.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;A conflict is not an error, and it is not Git failing. It is Git refusing to guess. Two branches changed the same lines, and there is no correct answer available from the data alone, so it stops and hands the decision to you. That is the right behaviour, and it is worth reframing it that way, because the panic response is what causes damage.&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git status                      &lt;span class="c"&gt;# exactly which files are stuck&lt;/span&gt;
+
+&lt;span class="c"&gt;# Open each one, find the markers, decide what the file should say:&lt;/span&gt;
+&lt;span class="c"&gt;#   &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD           the version already on master&lt;/span&gt;
+&lt;span class="c"&gt;#   =======&lt;/span&gt;
+&lt;span class="c"&gt;#   &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; feature-x      the version from your branch&lt;/span&gt;
+
+git add app.py                  &lt;span class="c"&gt;# staging IS the resolution signal&lt;/span&gt;
+git commit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Editing the file is not enough. &lt;code&gt;git add&lt;/code&gt; is how you tell Git you have decided. Until the file is staged, the merge is still in progress no matter how clean the file looks.&lt;/p&gt;
+
+&lt;p&gt;And the safety valve nobody mentions until you are already sweating:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git merge &lt;span class="nt"&gt;--abort&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;That puts everything back exactly as it was. Knowing it exists is the difference between a conflict being a problem and a conflict being a nuisance.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The alarm: a threshold, a duration, and a link somebody has to click
+&lt;/h2&gt;
+
+&lt;p&gt;The AWS side was launching an instance and alarming on its CPU. The alarm itself is one command, but two of its arguments carry all the meaning:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;aws cloudwatch put-metric-alarm &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--alarm-name&lt;/span&gt; nautilus-high-cpu &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--namespace&lt;/span&gt; AWS/EC2 &lt;span class="nt"&gt;--metric-name&lt;/span&gt; CPUUtilization &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--dimensions&lt;/span&gt; &lt;span class="s2"&gt;"Name=InstanceId,Value=&lt;/span&gt;&lt;span class="nv"&gt;$INSTANCE_ID&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--statistic&lt;/span&gt; Average &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--period&lt;/span&gt; 300 &lt;span class="nt"&gt;--evaluation-periods&lt;/span&gt; 2 &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--threshold&lt;/span&gt; 70 &lt;span class="nt"&gt;--comparison-operator&lt;/span&gt; GreaterThanThreshold &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--alarm-actions&lt;/span&gt; &lt;span class="nv"&gt;$TOPIC_ARN&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;code&gt;--period&lt;/code&gt; is the length of one measurement window in seconds. &lt;code&gt;--evaluation-periods&lt;/code&gt; is how many consecutive windows have to breach before the alarm fires. Together, 300 and 2 mean CPU must stay above 70% for a full ten minutes. That is not pedantry, it is the difference between an alarm that tells you something and an alarm that screams every time a cron job runs and gets muted within a week.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;--dimensions&lt;/code&gt; is what scopes the metric to one instance. Leave it off, and you get the aggregate across everything reporting that metric, which is rarely what anyone means.&lt;/p&gt;
+
+&lt;p&gt;The alarm notifies through an SNS topic, and an SNS email subscription does nothing at all until the recipient clicks a confirmation link:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;aws sns subscribe &lt;span class="nt"&gt;--topic-arn&lt;/span&gt; &lt;span class="nv"&gt;$TOPIC_ARN&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+  &lt;span class="nt"&gt;--protocol&lt;/span&gt; email &lt;span class="nt"&gt;--notification-endpoint&lt;/span&gt; ops@example.com
+
+aws sns list-subscriptions-by-topic &lt;span class="nt"&gt;--topic-arn&lt;/span&gt; &lt;span class="nv"&gt;$TOPIC_ARN&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;If that comes back &lt;code&gt;PendingConfirmation&lt;/code&gt;, your monitoring is decorative. The alarm will transition to &lt;code&gt;ALARM&lt;/code&gt; exactly as designed, publish to the topic exactly as designed, and reach nobody. Every command succeeded. Nothing works.&lt;/p&gt;
+
+&lt;p&gt;Two more things worth knowing. A new alarm sits in &lt;code&gt;INSUFFICIENT_DATA&lt;/code&gt; until enough data points arrive, which is expected rather than broken. And memory and disk usage are not default EC2 metrics at all, because the hypervisor cannot see inside the operating system. If you want those, you install the CloudWatch agent.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  The step only a person can take
+&lt;/h2&gt;
+
+&lt;p&gt;Both tasks end the same way. Git stages a conflict and waits for a human to say what the file should be. CloudWatch wires up a notification and waits for a human to confirm they want it. In both cases, everything upstream reports success, and the whole thing is inert until somebody does the last small thing.&lt;/p&gt;
+
+&lt;p&gt;So here is the Day 25 question. How much of your setup currently reports green while quietly waiting on a step nobody has taken?&lt;/p&gt;
+
+&lt;p&gt;Day 25 down. Seventy-five to go.&lt;/p&gt;
+
+</description>
+      <category>devops</category>
+      <category>git</category>
+      <category>aws</category>
+      <category>monitoring</category>
+    </item>
+    <item>
+      <title>🚀 Introducing pack.nvim: The Modern UI for Neovim's Native Package Manager</title>
+      <dc:creator>The Lazy</dc:creator>
+      <pubDate>Mon, 10 Aug 2026 20:24:10 +0000</pubDate>
+      <link>https://dev.to/igmrrf/introducing-packnvim-the-modern-ui-for-neovims-native-package-manager-eii</link>
+      <guid>https://dev.to/igmrrf/introducing-packnvim-the-modern-ui-for-neovims-native-package-manager-eii</guid>
+      <description>&lt;p&gt;If you've been using Neovim for a while, you've likely traversed the plugin manager landscape: from the classic &lt;code&gt;vim-plug&lt;/code&gt; to &lt;code&gt;packer.nvim&lt;/code&gt;, and more recently, the dominance of &lt;code&gt;lazy.nvim&lt;/code&gt;. These tools are fantastic, but as Neovim's core evolves, so do the possibilities for how we manage our environments.&lt;/p&gt;
+
+&lt;p&gt;Enter &lt;strong&gt;&lt;a href="https://github.com/igmrrf/pack.nvim" rel="noopener noreferrer"&gt;pack.nvim&lt;/a&gt;&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;If you haven't been keeping up with recent Neovim releases, you might have missed a massive feature drop introduced in 0.12: Neovim now has a powerful, fully-featured native package management API via &lt;strong&gt;&lt;code&gt;vim.pack&lt;/code&gt;&lt;/strong&gt;. It can clone, checkout, update, and manage lockfiles out-of-the-box. &lt;/p&gt;
+
+&lt;p&gt;But while the native backend is robust, it intentionally lacks the flashy UI and rich developer experience features we've grown accustomed to. That's exactly where &lt;code&gt;pack.nvim&lt;/code&gt; comes in.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  🤔 What is pack.nvim?
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;pack.nvim&lt;/code&gt; is a modern, high-performance Neovim plugin manager that sits directly on top of Neovim's built-in &lt;code&gt;vim.pack&lt;/code&gt; API. &lt;/p&gt;
+
+&lt;p&gt;It delegates all the heavy lifting—cloning, checkout, updating, pinning, and lockfile management—to the native Neovim C backend, while providing a beautiful, interactive floating-window UI and advanced lazy-loading features written in about 2,000 lines of Lua (probably more).&lt;/p&gt;
+
+&lt;p&gt;It gives you the raw performance and standardization of a native engine, combined with the developer experience you'd expect from a modern tool.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  ✨ Standout Features
+&lt;/h2&gt;
+
+&lt;h3&gt;
+  
+  
+  1. The Dashboard 🎨
+&lt;/h3&gt;
+
+&lt;p&gt;Instead of parsing through terminal text or minimal command-line messages, &lt;code&gt;pack.nvim&lt;/code&gt; gives you a gorgeous, centralized floating dashboard. It features tabs for &lt;strong&gt;Plugins&lt;/strong&gt;, &lt;strong&gt;Updates&lt;/strong&gt;, and &lt;strong&gt;Disabled&lt;/strong&gt; plugins. You get real-time status indicators, live streaming logs for git operations, and rich commit diff previews for outdated plugins before you decide to upgrade.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  2. True Native Backend ⚙️
+&lt;/h3&gt;
+
+&lt;p&gt;Unlike managers that build their own isolated ecosystems, all plugins installed via &lt;code&gt;pack.nvim&lt;/code&gt; live directly under &lt;code&gt;vim.pack&lt;/code&gt;'s standard directory (&lt;code&gt;&amp;lt;stdpath("data")&amp;gt;/site/pack/core/opt&lt;/code&gt;). The lockfile (&lt;code&gt;nvim-pack-lock.json&lt;/code&gt;) is owned and resolved by native Neovim. If you already have plugins installed via &lt;code&gt;vim.pack.add()&lt;/code&gt;, &lt;code&gt;pack.nvim&lt;/code&gt; adopts them instantly without re-cloning.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  3. Advanced Lazy Loading 💤
+&lt;/h3&gt;
+
+&lt;p&gt;Just because it uses the native backend doesn't mean it sacrifices modern loading techniques. &lt;code&gt;pack.nvim&lt;/code&gt; fully supports lazy loading via:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;code&gt;cmd&lt;/code&gt;: Triggered by user commands&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;event&lt;/code&gt;: Triggered by autocmd events (with patterns)&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;ft&lt;/code&gt;: Filetype triggers&lt;/li&gt;
+&lt;li&gt;
+&lt;code&gt;keys&lt;/code&gt;: Keymap shortcuts&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It also pre-compiles lazy plugins' &lt;code&gt;ftdetect&lt;/code&gt; files into a single cache block, sourcing it at startup so filetypes are detected correctly &lt;em&gt;before&lt;/em&gt; the plugin even loads.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  4. Non-Blocking Async Git 🚀
+&lt;/h3&gt;
+
+&lt;p&gt;Checking for updates shouldn't freeze your editor. &lt;code&gt;pack.nvim&lt;/code&gt; uses concurrency-limited, non-blocking git probes via &lt;code&gt;vim.system&lt;/code&gt; simply to power the dashboard's "outdated" indicators and commit previews. &lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  5. Modular Configuration 🧩
+&lt;/h3&gt;
+
+&lt;p&gt;Keep your &lt;code&gt;init.lua&lt;/code&gt; clean. You can split your plugin specifications across multiple files easily using &lt;code&gt;{ import = "plugins" }&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  🛠️ Getting Started
+&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Note: You must be running Neovim 0.12 or later to use &lt;code&gt;pack.nvim&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bootstrapping is incredibly straightforward since Neovim 0.12 has &lt;code&gt;vim.pack&lt;/code&gt; built-in. Add this to the top of your &lt;code&gt;init.lua&lt;/code&gt;:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight lua"&gt;&lt;code&gt;&lt;span class="c1"&gt;-- 1. Enable Neovim's built-in bytecode cache&lt;/span&gt;
+&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loader&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapleader&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;" "&lt;/span&gt;
+&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;maplocalleader&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;" "&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- 2. Bootstrap pack.nvim using Neovim's native vim.pack&lt;/span&gt;
+&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pack&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"https://github.com/igmrrf/pack.nvim"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"main"&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="p"&gt;})&lt;/span&gt;
+&lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;cmd&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;packadd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"pack.nvim"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;-- 3. Initialize pack.nvim&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"pack"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+  &lt;span class="n"&gt;ui&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;border&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"rounded"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;auto_open&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="n"&gt;plugins&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="s2"&gt;"igmrrf/pack.nvim"&lt;/span&gt; &lt;span class="p"&gt;},&lt;/span&gt;  &lt;span class="c1"&gt;-- Let pack.nvim manage itself&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"plugins"&lt;/span&gt; &lt;span class="p"&gt;},&lt;/span&gt;  &lt;span class="c1"&gt;-- Import your plugin specs from lua/plugins/&lt;/span&gt;
+  &lt;span class="p"&gt;},&lt;/span&gt;
+&lt;span class="p"&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;From there, you define your plugins using a declarative syntax very similar to what you might already be used to:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight lua"&gt;&lt;code&gt;&lt;span class="c1"&gt;-- In lua/plugins/init.lua&lt;/span&gt;
+&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="p"&gt;{&lt;/span&gt; 
+    &lt;span class="s2"&gt;"nvim-treesitter/nvim-treesitter"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+    &lt;span class="n"&gt;build&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;":TSUpdate"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;event&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"BufReadPre"&lt;/span&gt; 
+  &lt;span class="p"&gt;},&lt;/span&gt;
+  &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s2"&gt;"nvim-lualine/lualine.nvim"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;dependencies&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="s2"&gt;"nvim-tree/nvim-web-devicons"&lt;/span&gt; &lt;span class="p"&gt;},&lt;/span&gt;
+    &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="nb"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"lualine"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+        &lt;span class="n"&gt;extensions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="s2"&gt;"pack"&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="c1"&gt;-- pack.nvim includes a lualine extension!&lt;/span&gt;
+      &lt;span class="p"&gt;})&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Pop open Neovim, type &lt;code&gt;:Pack&lt;/code&gt;, and enjoy the view!&lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  🏁 Final Thoughts
+&lt;/h2&gt;
+
+&lt;p&gt;If you've upgraded to Neovim 0.12 and want to start migrating towards the new native package management standard without giving up a premium UI and lazy-loading conveniences, &lt;code&gt;pack.nvim&lt;/code&gt; is exactly what you need. &lt;/p&gt;
+
+&lt;p&gt;Because it offloads the hardest parts of package management to Neovim core, the plugin itself is remarkably lightweight (around 2k lines of code) and is in a strict feature-freeze to guarantee rock-solid stability going forward.&lt;/p&gt;
+
+&lt;p&gt;Check out the source code, full feature matrix, and migration guides on &lt;a href="https://github.com/igmrrf/pack.nvim" rel="noopener noreferrer"&gt;GitHub&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Happy hacking! 🚀&lt;/p&gt;
+
+</description>
+      <category>pack</category>
+      <category>neovim</category>
+      <category>lua</category>
+      <category>vim</category>
+    </item>
+  </channel>
+</rss>

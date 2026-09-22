@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "note": "Raw filenames retain original artifact identity. For five redacted snapshots use shared_sha256 to verify shared bytes; original citations refer to original bytes.",
+  "files": [
+    {
+      "path": "raw/772fa4cc931e13c0ed5c18a03742f7bce5a50933a40f091f6827902d73221f29.bin",
+      "local_original": "local-originals/772fa4cc931e13c0ed5c18a03742f7bce5a50933a40f091f6827902d73221f29.bin",
+      "original_sha256": "772fa4cc931e13c0ed5c18a03742f7bce5a50933a40f091f6827902d73221f29",
+      "shared_sha256": "22d88dbb3ddd4f6e5e7ac32b56b45088b5a728064cc41a2f93acb1cad9c197c5",
+      "replacements": 1,
+      "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    },
+    {
+      "path": "raw/fe1e26ea4efe934f8c437af2c8cf4be5bba9fa220f7a385261f782529d941e93.bin",
+      "local_original": "local-originals/fe1e26ea4efe934f8c437af2c8cf4be5bba9fa220f7a385261f782529d941e93.bin",
+      "original_sha256": "fe1e26ea4efe934f8c437af2c8cf4be5bba9fa220f7a385261f782529d941e93",
+      "shared_sha256": "719032f4edab0fb217237855d0615b540c15f0891e9c551ed0f132539c1aa191",
+      "replacements": 1,
+      "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    },
+    {
+      "path": "raw/056ab5dd98cef3358d031174bd8723f034f72f74e2ae25c8cc51c7373462330e.bin",
+      "local_original": "local-originals/056ab5dd98cef3358d031174bd8723f034f72f74e2ae25c8cc51c7373462330e.bin",
+      "original_sha256": "056ab5dd98cef3358d031174bd8723f034f72f74e2ae25c8cc51c7373462330e",
+      "shared_sha256": "b3d1cadf113d308919b7519d0c14827f8fae23c0a995a924f36a4602829fa7b9",
+      "replacements": 11,
+      "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    },
+    {
+      "path": "raw/5d219fd358a4e833df0a073cd3cb8817f1ec533f1a431301afaea84dda7299e0.bin",
+      "local_original": "local-originals/5d219fd358a4e833df0a073cd3cb8817f1ec533f1a431301afaea84dda7299e0.bin",
+      "original_sha256": "5d219fd358a4e833df0a073cd3cb8817f1ec533f1a431301afaea84dda7299e0",
+      "shared_sha256": "a1b09ee9e58426eac7173b36956348324f45c3b1312282e5df05d536cd1ca834",
+      "replacements": 11,
+      "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    },
+    {
+      "path": "raw/1d1acabbd75555298b3a6912baa0e5dc1ac63a804c9f10365daacf0116f0aab8.bin",
+      "local_original": "local-originals/1d1acabbd75555298b3a6912baa0e5dc1ac63a804c9f10365daacf0116f0aab8.bin",
+      "original_sha256": "1d1acabbd75555298b3a6912baa0e5dc1ac63a804c9f10365daacf0116f0aab8",
+      "shared_sha256": "ea3a05f11428c132d8b21bc3e6bc7c3e572f1768af63192384b3a7f0f09c720b",
+      "replacements": 11,
+      "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    }
+  ]
+}

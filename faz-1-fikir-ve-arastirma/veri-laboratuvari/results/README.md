@@ -1,20 +1,14 @@
-# Koşu Artefact'ları
+# Paylaşılan araştırma çıktıları
 
-Bu dizin, kaynak erişim laboratuvarının koşu sonuçlarını ve içerik-adresli ham
-artefact'larını taşır.
+Ekip erişimi için 22 Eylül 2026'da Git kapsamına alındı. Önceden .gitignore nedeniyle yalnız yerel diskte bulunuyordu.
 
-- `*.json` — koşu sonucu, yöntem sonucu, hata sınıfı ve provenance kayıtları.
-- `raw/<sha256>.bin` — içerik hash'iyle adreslenmiş ham response gövdeleri.
-- `ARTEFAKT-DIZINI.csv` (üst dizinde) — her artefact'ın kaynak, URL, yöntem,
-  koşu, zaman, sonuç ve hash bağını kuran kanonik indekstir.
+- raw/:134 alınmış kaynak yanıtı/artefakt (.bin).
+- Kök dizin:7 tarihsel araştırma/arama/erişim koşusu JSON çıktısı.
+- .bulk-progress-*/:3 mevcut koşu checkpoint kaydı.
+- Toplam144 mevcut çıktı paylaşıldı; bugün siteler yeniden sorgulanmış sayılmaz.
 
-Bu dosyalar kanıttır; silinmez veya elle yeniden adlandırılmaz. Bir kayıt
-`source_unavailable`, `blocked_by_policy` veya `no_results` ise bunlar ayrı
-durumlardır ve başarıya dönüştürülmemelidir.
+Beş YouTube/Google Play HTML kaydındaki API anahtarı biçimli kaynak-site yapılandırmaları paylaşılan kopyadan temizlendi. Özgün beş dosya yalnız yerelde, Git dışında local-originals/ altında korunur. Diğer139 dosya değişmeden paylaşıldı. Hiçbir proje Gemini/SSH anahtarı bu dosyalara eklenmedi.
 
-## Tarihsel belge adı uyumluluğu
+shared-redactions.json hangi dosyanın değiştiğini, özgün ve paylaşılan SHA256 değerlerini kaydeder. raw/ dosya adları özgün artefakt kimliğini korur; temizlenen beş dosyanın adı içerik hash'i olarak doğrulanmamalı, shared_sha256 kullanılmalıdır. Önceki alıntı/hash/offset kayıtları özgün baytlara aittir; temizlenmiş kopyayı özgün kanıtın birebir eşiti kabul etmeyin.
 
-Bazı immutable koşu artefact'larında geçen `acceptance_doc:
-"ACQUISITION-METHODS.md"` değeri, taşınmadan önceki belge adıdır. Bu değer
-kanıt kaydının parçası olduğu için değiştirilmez; güncel kanonik belge
-[`docs/pilots/duckduckgo-acquisition.md`](../docs/pilots/duckduckgo-acquisition.md)'dir.
+veriler-ornek/ altındaki548 dosya zaten Git kapsamındaydı. Güncel main çekildiğinde ekip bu çıktılara da erişebilir. API anahtarları ve sunucu runtime ortam dosyaları Git'e eklenmez. Backend build büyük ham artefaktları Docker imajına dahil etmez.

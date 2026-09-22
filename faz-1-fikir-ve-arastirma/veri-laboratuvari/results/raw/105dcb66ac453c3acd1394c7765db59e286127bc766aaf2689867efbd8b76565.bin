@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RubyGems.org | your community gem host</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="google-site-verification" content="AuesbWQ9MCDMmC1lbDlw25RJzyqWOcDYpuaCjgPxEZY" />
+  <link rel="apple-touch-icon" href="/apple-touch-icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icons/apple-touch-icon-180x180.png" />
+  <link rel="mask-icon" href="/rubygems_logo.svg" color="#e9573f">
+  <link rel="fluid-icon" href="/fluid-icon.png"/>
+  <link rel="search" type="application/opensearchdescription+xml" title="RubyGems.org" href="/opensearch.xml">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/hammy-ffd33ff6.css" />
+  <link rel="stylesheet" href="/assets/tailwind-6d3db55c.css" data-turbo-track="reload" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" type="text/css">
+  
+<link rel="alternate" type="application/atom+xml" href="https://feeds.feedburner.com/gemcutter-latest" title="RubyGems.org | Latest Gems">
+
+  
+  
+  <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "jquery": "/assets/jquery-15a62848.js",
+    "@rails/ujs": "/assets/@rails--ujs-2089e246.js",
+    "application": "/assets/application-ae34b86d.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/@hotwired--stimulus-132cbc23.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "@stimulus-components/clipboard": "/assets/@stimulus-components--clipboard-d9c44ea9.js",
+    "@stimulus-components/dialog": "/assets/@stimulus-components--dialog-74866932.js",
+    "@stimulus-components/reveal": "/assets/@stimulus-components--reveal-77f6cb39.js",
+    "@stimulus-components/checkbox-select-all": "/assets/@stimulus-components--checkbox-select-all-e7db6a97.js",
+    "github-buttons": "/assets/github-buttons-0a3c6d01.js",
+    "webauthn-json": "/assets/webauthn-json-74adc0e8.js",
+    "avo.custom": "/assets/avo.custom-4b185d31.js",
+    "stimulus-rails-nested-form": "/assets/stimulus-rails-nested-form-3f712873.js",
+    "local-time": "/assets/local-time-a331fc59.js",
+    "src/oidc_api_key_role_form": "/assets/src/oidc_api_key_role_form-223a59d4.js",
+    "src/pages": "/assets/src/pages-64095f36.js",
+    "src/transitive_dependencies": "/assets/src/transitive_dependencies-9280dc42.js",
+    "src/webauthn": "/assets/src/webauthn-44f86263.js",
+    "controllers/application": "/assets/controllers/application-e33ffaa8.js",
+    "controllers/autocomplete_controller": "/assets/controllers/autocomplete_controller-e9f78a76.js",
+    "controllers/avatar_controller": "/assets/controllers/avatar_controller-c357c7d9.js",
+    "controllers/confirm_remove_self_controller": "/assets/controllers/confirm_remove_self_controller-a256dee9.js",
+    "controllers/counter_controller": "/assets/controllers/counter_controller-b739ef1d.js",
+    "controllers/dialog_controller": "/assets/controllers/dialog_controller-c788489b.js",
+    "controllers/dropdown_controller": "/assets/controllers/dropdown_controller-baaf189b.js",
+    "controllers/dump_controller": "/assets/controllers/dump_controller-5d671745.js",
+    "controllers/exclusive_checkbox_controller": "/assets/controllers/exclusive_checkbox_controller-c624394a.js",
+    "controllers/gem_scope_controller": "/assets/controllers/gem_scope_controller-9c330c45.js",
+    "controllers": "/assets/controllers/index-236ab973.js",
+    "controllers/nav_controller": "/assets/controllers/nav_controller-8f4ea870.js",
+    "controllers/onboarding_name_controller": "/assets/controllers/onboarding_name_controller-60f43d80.js",
+    "controllers/password_strength_controller": "/assets/controllers/password_strength_controller-ccb00d57.js",
+    "controllers/radio_reveal_controller": "/assets/controllers/radio_reveal_controller-41774e15.js",
+    "controllers/recovery_controller": "/assets/controllers/recovery_controller-b051251b.js",
+    "controllers/reveal_controller": "/assets/controllers/reveal_controller-a90af4d9.js",
+    "controllers/reveal_search_controller": "/assets/controllers/reveal_search_controller-8dc44279.js",
+    "controllers/scroll_controller": "/assets/controllers/scroll_controller-07f12b0d.js",
+    "controllers/search_controller": "/assets/controllers/search_controller-79d09057.js",
+    "controllers/stats_controller": "/assets/controllers/stats_controller-5bae7b7f.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/jquery-15a62848.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@rails--ujs-2089e246.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/application-ae34b86d.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@hotwired--stimulus-132cbc23.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@stimulus-components--clipboard-d9c44ea9.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@stimulus-components--dialog-74866932.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@stimulus-components--reveal-77f6cb39.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/@stimulus-components--checkbox-select-all-e7db6a97.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/github-buttons-0a3c6d01.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/webauthn-json-74adc0e8.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/local-time-a331fc59.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/src/oidc_api_key_role_form-223a59d4.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/src/pages-64095f36.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/src/transitive_dependencies-9280dc42.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/src/webauthn-44f86263.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/application-e33ffaa8.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/autocomplete_controller-e9f78a76.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/avatar_controller-c357c7d9.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/confirm_remove_self_controller-a256dee9.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/counter_controller-b739ef1d.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/dialog_controller-c788489b.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/dropdown_controller-baaf189b.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/dump_controller-5d671745.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/exclusive_checkbox_controller-c624394a.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/gem_scope_controller-9c330c45.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/index-236ab973.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/nav_controller-8f4ea870.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/onboarding_name_controller-60f43d80.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/password_strength_controller-ccb00d57.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/radio_reveal_controller-41774e15.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/recovery_controller-b051251b.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/reveal_controller-a90af4d9.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/reveal_search_controller-8dc44279.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/scroll_controller-07f12b0d.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/search_controller-79d09057.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<link rel="modulepreload" href="/assets/controllers/stats_controller-5bae7b7f.js" nonce="aj1Q+eoa/ltZvOeohh0mBA==">
+<script type="module" nonce="aj1Q+eoa/ltZvOeohh0mBA==">import "application"</script>
+</head>
+<body class="bg-neutral-050 dark:bg-neutral-950">
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white dark:bg-black">
+      <!-- Header Nav -->
+      <div class="py-4 px-8 border-b border-neutral-400 dark:border-neutral-800">
+        <div class="flex flex-wrap justify-between max-w-screen-xl mx-auto" data-controller="reveal-search" data-reveal-search-toggle-class="bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 border">
+          <!-- Menu button, Logo, desktop nav, mobile nav dialog -->
+          <div class="flex flex-row items-center xl:mr-auto" data-controller="dialog">
+            <!-- Mobile Menu Button -->
+            <button data-action="dialog#open" data-dialog-target="button" aria-label="Open menu" class="px-2 py-1 w-10 h-9 mr-3 items-center rounded text-white bg-orange hover:bg-orange-600 dark:bg-orange-600 dark:hover:bg-orange-700 lg:hidden focus:outline-none">
+              <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#menu" /></svg>
+            </button>
+
+            <!-- Logo -->
+            <a title="RubyGems" class="flex h-8 items-center text-orange text-b1" href="/">
+              <svg class="h-8 w-8 flex-shrink-0 stroke-current stroke-0 fill-current w-7 h-7 lg:w-8 lg:h-8" aria-label="RubyGems Home" height="32" width="32" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#logo" /></svg>
+              <span class="hidden sm:flex ml-1 text-h5 text-orange">RubyGems</span>
+</a>
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex flex-row ml-7 items-center justify-end text-b2 text-neutral-800 dark:text-white leading-7">
+              <a class="lowercase hover:text-neutral-600 dark:hover:text-neutral-400" href="https://blog.rubygems.org">Blog</a>
+              <a class="ml-7 lowercase hover:text-neutral-600 dark:hover:text-neutral-400" href="/stats">Stats</a>
+              <a class="ml-7 lowercase hover:text-neutral-600 dark:hover:text-neutral-400" href="https://guides.rubygems.org/command-reference/#gem-install">Docs</a>
+              <!-- About links -->
+              <div class="flex relative ml-7" data-controller="dropdown">
+                <button data-action="dropdown#toggle click@window->dropdown#hide" class="flex items-center text-neutral-900 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-400 focus:outline-none lowercase">
+                  <span>About</span>
+                  <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#arrow-drop-down" /></svg>
+                </button>
+
+                <!-- About Dropdown Menu -->
+                <div data-dropdown-target="menu" class="z-50 hidden absolute -left-4 top-8 bg-white dark:bg-black border border-neutral-200 dark:border-neutral-800 rounded shadow-lg text-b2 text-neutral-700 dark:text-neutral-300 divide-y divide-neutral-200 dark:divide-neutral-800">
+                  <a data-reveal-target="item" class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/about">RubyGems.org</a>
+                  <a data-reveal-target="item" class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="https://status.rubygems.org">Status</a>
+                  <a data-reveal-target="item" class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/data">Data</a>
+                  <a data-reveal-target="item" class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/security">Security</a>
+                  <a data-reveal-target="item" class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="mailto:support@rubygems.org">Help</a>
+                </div>
+              </div>
+            </nav>
+
+            <!-- Mobile Left Navigation Menu -->
+            <dialog
+              data-dialog-target="dialog" data-action="click->dialog#backdropClose"
+              role="dialog" aria-modal="true"
+              class="fixed left-0 top-0 h-full w-screen max-h-full max-w-screen bg-white bg-opacity-20 z-50 overflow-hidden">
+              <div class="h-full w-72 bg-white dark:bg-black overflow-y-auto border-r border-neutral-400 dark:border-neutral-800 shadow-[5px_0px_9px_3px_rgba(0,0,0,0.10)]">
+                <!-- Mobile nav header -->
+                <div class="flex flex-row items-center px-8 py-4 border-b border-neutral-400 dark:border-neutral-800">
+                  <!-- Close Menu Button -->
+                  <button data-action="dialog#close" aria-label="Close menu" class="px-2 py-1 w-10 h-9 mr-3 rounded text-white bg-orange dark:bg-orange-600 hover:bg-orange-700 dark:hover:bg-orange-700 focus:outline-none items-center">
+                    <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#close" /></svg>
+                  </button>
+                  <!-- Logo -->
+                  <a title="RubyGems" class="flex h-8 items-center text-orange text-b1" href="/">
+                    <svg class="h-8 w-8 flex-shrink-0 stroke-current stroke-0 fill-current w-7 h-7 lg:w-8 lg:h-8" aria-label="RubyGems Home" height="32" width="32" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#logo" /></svg>
+                    <span class="ml-1 text-h5 lg:text-h4 text-orange">RubyGems</span>
+</a>                </div>
+
+                <!-- Mobile nav links -->
+                <nav class="flex flex-col py-6 text-left text-b2 text-neutral-900 dark:text-white">
+                  <a class="px-8 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="https://blog.rubygems.org">Blog</a>
+                  <a class="px-8 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/stats">Stats</a>
+                  <a class="px-8 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="https://guides.rubygems.org/command-reference/#gem-install">Docs</a>
+
+                  <!-- About links expand -->
+                  <div data-controller="reveal" data-reveal-toggle-class="rotate-180" class="flex flex-col">
+                    <button class="flex items-center px-8 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none justify-between" data-action="reveal#toggle" data-reveal-target="button">
+                      <span>About</span>
+                      <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current transition-transform transform" data-reveal-target="toggle" height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#keyboard-arrow-down" /></svg>
+                    </button>
+
+                    <a data-reveal-target="item" class="hidden px-16 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/about">RubyGems.org</a>
+                    <a data-reveal-target="item" class="hidden px-16 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="https://status.rubygems.org">Status</a>
+                    <a data-reveal-target="item" class="hidden px-16 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/data">Data</a>
+                    <a data-reveal-target="item" class="hidden px-16 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/pages/security">Security</a>
+                    <a data-reveal-target="item" class="mb-4 hidden px-16 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="mailto:support@rubygems.org">Help</a>
+                  </div>
+
+                </nav>
+              </div>
+            </dialog>
+          </div>
+
+          <!-- Search button and Profile -->
+          <div class="ml-auto flex flex-row items-center xl:ml-0 xl:order-3">
+            <!-- Search button -->
+            <button type="button" data-action="reveal-search#toggle" data-reveal-search-target="toggle" aria-label="Open search" class="flex xl:hidden h-9 w-9 box-border text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-400 items-center justify-center rounded border-neutral-300 dark:border-neutral-700">
+              <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current h-6 w-6" height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#search" /></svg>
+            </button>
+
+            <!-- Profile -->
+            <div class="ml-3 flex text-neutral-900 dark:text-white hover:text-black dark:hover:text-neutral-400 items-center" data-controller="dialog">
+    <div class="hidden md:flex text-nowrap">
+      <a class="text-nowrap no-underline inline-flex border-box justify-content-center items-center hover:shadow-md disabled:bg-neutral-200 disabled:border-neutral-200 disabled:text-neutral-600 dark:disabled:bg-neutral-800 dark:disabled:border-neutral-800 dark:disabled:text-neutral-600 disabled:cursor-default disabled:hover:shadow-none transition duration-200 ease-in-out focus:outline-2 focus:outline-offset-2 text-orange-900 bg-orange-200 hover:bg-orange-300 active:bg-orange-300 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-900 dark:active:bg-orange-900 focus:outline-orange-800 dark:focus:outline-orange-200 px-4 py-3 h-9 min-h-9 text-b3 rounded " href="/sign_in">Sign in</a>
+      <a class="text-nowrap no-underline inline-flex border-box justify-content-center items-center hover:shadow-md disabled:bg-neutral-200 disabled:border-neutral-200 disabled:text-neutral-600 dark:disabled:bg-neutral-800 dark:disabled:border-neutral-800 dark:disabled:text-neutral-600 disabled:cursor-default disabled:hover:shadow-none transition duration-200 ease-in-out focus:outline-2 focus:outline-offset-2 text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-700 dark:active:bg-orange-700 focus:outline-orange-500 px-4 py-3 h-9 min-h-9 text-b3 rounded ml-3" href="/sign_up">Sign up</a>
+    </div>
+
+    <a class="-mr-1 p-1 md:hidden text-neutral-800 dark:text-white hover:text-neutral-600 dark:hover:text-neutral-400 " href="/sign_up">
+      <svg class="h-7 w-7 flex-shrink-0 stroke-current stroke-0 fill-current " height="28" width="28" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#account-box" /></svg>
+</a>
+  <dialog
+    data-dialog-target="dialog" data-action="click->dialog#backdropClose"
+    class="fixed m-0 inset-0 py-16 px-8 z-50 w-full h-full max-w-screen max-h-screen bg-white bg-opacity-20 p-0 ems-start justify-center sm:justify-right"
+  >
+    <div class="max-w-screen-xl mx-auto flex items-center relative">
+      <!-- Dialog content -->
+      <div
+        class="w-full sm:absolute sm:top-0 sm:right-0 sm:max-w-sm bg-white dark:bg-black rounded-lg shadow-xl shadow-black/10 max-h-[90vh] overflow-y-auto dark:border dark:border-neutral-800
+        flex flex-col px-4 py-4 text-b2 text-left text-neutral-900 dark:text-white"
+      >
+        <!-- Dialog header -->
+        <div class="flex justify-between items-center">
+          <h2 class="flex h-7 lg:h-8 lg:mb-0 items-center space-x-1 text-orange text-b1">
+            <svg class="h-8 w-8 flex-shrink-0 stroke-current stroke-0 fill-current w-6 h-6" height="32" width="32" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#logo" /></svg>
+            <span class="text-h5 text-orange">RubyGems</span>
+          </h2>
+
+          <button data-action="dialog#close" class="h-8 w-8 items-center justify-center outline-none">
+            <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current w-6 h-6" aria-label="Close profile modal" height="24" width="24" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#close" /></svg>
+          </button>
+        </div>
+
+        <!-- Authenticated user content -->
+        <nav class="flex flex-col py-6 text-left text-b2 text-neutral-900 dark:text-white border-b border-neutral-400 dark:border-neutral-800">
+          <a class="px-6 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/dashboard">Profile</a>
+          <a class="px-6 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/profile/edit">Edit profile</a>
+          <a class="px-6 py-3 hover:bg-neutral-100 dark:hover:bg-neutral-800" href="/settings/edit">Settings</a>
+        </nav>
+        <a class="w-full my-8 px-4 py-2 text-b2 rounded border border-black dark:border-white bg-white dark:bg-black hover:bg-neutral-100 dark:hover:bg-neutral-800 text-black dark:text-white text-center" rel="nofollow" data-method="delete" href="/sign_out">Sign out</a>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+          </div>
+
+          <!-- Search Bar -->
+          <div data-reveal-search-target="item" class="hidden pt-4 w-full items-center xl:flex xl:pt-0 xl:w-72 xl:order-2" role="search">
+            <form data-controller="autocomplete" data-autocomplete-selected-class="bg-neutral-100 dark:bg-neutral-800" data-reveal-target="item" class="relative w-full items-center" role="search" action="/search" accept-charset="UTF-8" method="get">
+              <input type="search" name="query" id="query" placeholder="Search Gems&hellip;" class="w-full md h-9 pr-12 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded border-neutral-300 dark:border-neutral-700 box-border outline-none focus:ring-0 focus:border-neutral-500" autocomplete="off" aria-autocomplete="list" data-autocomplete-target="query" data-action="autocomplete#suggest keydown.down-&gt;autocomplete#next keydown.up-&gt;autocomplete#prev keydown.esc-&gt;autocomplete#hide keydown.enter-&gt;autocomplete#clear click@window-&gt;autocomplete#hide focus-&gt;autocomplete#suggest blur-&gt;autocomplete#hide" data-reveal-search-target="input" />
+
+              <ul role="listbox" data-autocomplete-target="suggestions" class="hidden absolute z-40 start-0 mt-2 w-full bg-white dark:bg-black text-b2 text-neutral-800 dark:text-neutral-200 border border-neutral-200 dark:border-neutral-800 rounded shadow-md divide-y divide-neutral-200 dark:divide-neutral-800"></ul>
+
+              <template id="suggestion" data-autocomplete-target="template">
+                <li class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" role="option" tabindex="-1" data-autocomplete-target="item" data-action="click->autocomplete#choose mouseover->autocomplete#highlight"></li>
+              </template>
+
+              <label id="querylabel" for="query">
+                <span class="hidden">Search Gems&hellip;</span>
+</label>
+              <button type="submit" id="search_submit" aria-labelledby="querylabel" class="absolute end-[1px] top-[1px] p-[5px] text-neutral-900 dark:text-white focus:outline-neutral-700 dark:focus:outline-white border-l border-neutral-300 dark:border-neutral-700 hover:text-neutral-600 dark:hover:text-neutral-400 rounded-r">
+                <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current h-6 w-6" height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#search" /></svg>
+              </button>
+</form>          </div>
+        </div>
+      </div>
+
+      <!-- Policies acknowledgment banner -->
+      
+
+      <!-- Breadcrumbs -->
+      
+    </header>
+
+    <!-- Content -->
+      <main class="flex-1 w-full px-8 flex-col bg-neutral-050 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-050 text-b2 items-center inline-flex">
+        <div class="max-w-screen-xl w-full mx-auto pt-8 pb-10 mb-12 md:mb-16 lg:mb-28">
+
+
+          <section class="w-full rounded-[2rem] bg-[#FFE2D3] dark:bg-orange-950">
+  <div class="mx-auto flex max-w-5xl flex-col items-center gap-8 px-6 py-12 text-center sm:gap-10 sm:px-10 sm:py-16 lg:py-20">
+    <h1 class="flex flex-col items-center gap-1 font-bold leading-none sm:gap-2">
+      <span class="text-[2.5rem] text-[#720000] dark:text-orange-200 sm:text-[3.5rem] lg:text-[5rem]">Find, install, and publish</span>
+      <span class="flex items-center gap-3 text-orange-500 sm:gap-4">
+        <svg class="h-8 w-8 flex-shrink-0 stroke-current stroke-0 fill-current h-10 w-10 sm:h-14 sm:w-14 lg:h-[4.25rem] lg:w-[4.25rem]" height="32" width="32" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#logo" /></svg>
+        <span class="text-[2.5rem] sm:text-[3.5rem] lg:text-[5rem]">RubyGems</span>
+      </span>
+    </h1>
+
+    <div class="w-full max-w-2xl" role="search">
+      <form data-controller="autocomplete" data-autocomplete-selected-class="bg-neutral-100 dark:bg-neutral-800" class="relative w-full text-left" action="/search" accept-charset="UTF-8" method="get">
+        <input type="search" name="query" id="homepage_gem_query" placeholder="Search Gems&hellip;" autofocus="autofocus" class="h-14 w-full rounded border border-neutral-500 bg-neutral-050 px-4 pr-14 text-b2 text-neutral-800 outline-none focus:border-neutral-500 focus:ring-0 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200" autocomplete="off" aria-autocomplete="list" data-autocomplete-target="query" data-action="autocomplete#suggest keydown.down-&gt;autocomplete#next keydown.up-&gt;autocomplete#prev keydown.esc-&gt;autocomplete#hide keydown.enter-&gt;autocomplete#clear click@window-&gt;autocomplete#hide focus-&gt;autocomplete#suggest blur-&gt;autocomplete#hide" />
+
+        <ul role="listbox" data-autocomplete-target="suggestions" class="absolute start-0 z-40 mt-2 hidden w-full divide-y divide-neutral-200 rounded border border-neutral-200 bg-white text-b2 text-neutral-800 shadow-md dark:divide-neutral-800 dark:border-neutral-800 dark:bg-black dark:text-neutral-200"></ul>
+
+        <template id="home_suggestion" data-autocomplete-target="template">
+          <li class="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800" role="option" tabindex="-1" data-autocomplete-target="item" data-action="click->autocomplete#choose mouseover->autocomplete#highlight"></li>
+        </template>
+
+        <label id="homepage_gem_querylabel" for="homepage_gem_query">
+          <span class="sr-only">Search Gems&hellip;</span>
+</label>
+        <button type="submit" aria-labelledby="homepage_gem_querylabel" class="absolute end-3 top-1/2 -translate-y-1/2 text-neutral-700 dark:text-white focus:outline-neutral-700 dark:focus:outline-white hover:text-neutral-600 dark:hover:text-neutral-400 rounded-r">
+          <svg class="h-9 w-9 flex-shrink-0 stroke-current stroke-0 fill-current " height="36" width="36" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#search" /></svg>
+        </button>
+</form>    </div>
+
+    <div class="flex flex-col items-center gap-6 sm:flex-row sm:gap-8">
+        <div class="flex flex-col items-center gap-1.5 leading-none text-orange-900 dark:text-orange-200">
+          <p class="text-b1 font-bold">261,686,774,469</p>
+          <p class="text-b4 font-semibold uppercase tracking-wide">downloads &amp; counting</p>
+        </div>
+
+      <a class="text-nowrap no-underline inline-flex border-box justify-content-center items-center hover:shadow-md disabled:bg-neutral-200 disabled:border-neutral-200 disabled:text-neutral-600 dark:disabled:bg-neutral-800 dark:disabled:border-neutral-800 dark:disabled:text-neutral-600 disabled:cursor-default disabled:hover:shadow-none transition duration-200 ease-in-out focus:outline-2 focus:outline-offset-2 text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-700 dark:active:bg-orange-700 focus:outline-orange-500 px-6 py-3 min-h-14 text-b1 rounded-lg font-semibold gap-3" href="/pages/download">
+        <span>Install RubyGems</span>
+        <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#arrow-forward" /></svg>
+</a>    </div>
+  </div>
+</section>
+
+<section class="mx-auto mt-16 flex max-w-5xl flex-col items-center gap-10 text-center lg:mt-24">
+  <h2 class="text-[2.25rem] font-bold leading-tight text-neutral-900 dark:text-white sm:text-[3.25rem] lg:text-[5rem]">Powered by people</h2>
+  <p class="max-w-4xl text-b1 leading-relaxed text-neutral-900 [&_a]:text-orange-500 [&_a]:underline hover:[&_a]:text-orange-600 dark:text-neutral-200">The RubyGems website and service is maintained and operated by Ruby Central’s Open Source Program and the RubyGems team. If you build with Ruby and believe in our mission, you can join us in keeping RubyGems.org, RubyGems, and Bundler secure and sustainable for years to come by <a href="https://rubycentral.org/">contributing here</a>.</p>
+
+  <div class="grid w-full grid-cols-1 gap-6 text-left md:grid-cols-2">
+    <div class="flex h-full flex-col gap-8 rounded-[2rem] bg-[#FFEEDD] p-8 dark:bg-orange-950 sm:p-12">
+      <div class="flex items-center gap-4">
+        <svg class="h-11 w-11 flex-shrink-0 stroke-current stroke-0 fill-current text-orange-900 dark:text-orange-200" height="44" width="44" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#health_cross" /></svg>
+        <h3 class="text-h1 font-bold text-orange-900 dark:text-orange-200">Supporters Program</h3>
+      </div>
+      <p class="text-b1 leading-relaxed text-orange-950 dark:text-orange-100">RubyGems.org is a community-run service overseen by Ruby Central. The Supporter Program lets you or your company directly fund its maintenance, operations, and growth.</p>
+      <a class="text-nowrap no-underline inline-flex border-box justify-content-center items-center hover:shadow-md disabled:bg-neutral-200 disabled:border-neutral-200 disabled:text-neutral-600 dark:disabled:bg-neutral-800 dark:disabled:border-neutral-800 dark:disabled:text-neutral-600 disabled:cursor-default disabled:hover:shadow-none transition duration-200 ease-in-out focus:outline-2 focus:outline-offset-2 text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-700 dark:active:bg-orange-700 focus:outline-orange-500 px-6 py-3 min-h-14 text-b1 rounded-lg font-semibold gap-2 justify-center" href="/pages/supporters">
+        <span>See our sponsors</span>
+        <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#arrow-forward" /></svg>
+</a>    </div>
+
+    <div class="flex h-full flex-col gap-8 rounded-[2rem] bg-[#FFE2D3] p-8 dark:bg-orange-900 sm:p-12">
+      <div class="flex items-center gap-4">
+        <svg class="h-11 w-11 flex-shrink-0 stroke-current stroke-0 fill-current text-orange-900 dark:text-orange-200" height="44" width="44" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#favorite" /></svg>
+        <h3 class="text-h1 font-bold text-orange-900 dark:text-orange-200">Make a donation</h3>
+      </div>
+      <p class="text-b1 leading-relaxed text-orange-950 dark:text-orange-100">Believe in open source? Make a tax-deductible donation to Ruby Central, the 501(c)(3) nonprofit that keeps RubyGems.org, RubyGems, and Bundler secure and sustainable.</p>
+      <a class="text-nowrap no-underline inline-flex border-box justify-content-center items-center hover:shadow-md disabled:bg-neutral-200 disabled:border-neutral-200 disabled:text-neutral-600 dark:disabled:bg-neutral-800 dark:disabled:border-neutral-800 dark:disabled:text-neutral-600 disabled:cursor-default disabled:hover:shadow-none transition duration-200 ease-in-out focus:outline-2 focus:outline-offset-2 text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-600 dark:bg-orange-500 dark:hover:bg-orange-700 dark:active:bg-orange-700 focus:outline-orange-500 px-6 py-3 min-h-14 text-b1 rounded-lg font-semibold gap-2 justify-center" href="https://rubycentral.org/open-source/#/portal/signup">
+        <span>Donate now</span>
+        <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#arrow-forward" /></svg>
+</a>    </div>
+  </div>
+</section>
+
+        </div>
+      </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="w-full px-8 py-8 bg-orange-100 dark:bg-orange-950 text-neutral-800 dark:text-neutral-200">
+        <!-- Footer Nav -->
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between">
+          <nav class="mb-4 md:mb-0 justify-start">
+            <ul class="flex flex-col md:flex-row md:space-x-8 text-b1 md:text-b2">
+              <li><a class="hover:text-neutral-600" href="/pages/about">About</a></li>
+              <li><a class="hover:text-neutral-600" href="https://guides.rubygems.org/command-reference/#gem-install">Docs</a></li>
+              <li><a class="hover:text-neutral-600" href="/policies">Policies</a></li>
+              <li><a class="hover:text-neutral-600" href="https://status.rubygems.org">Status</a></li>
+              <li><a class="hover:text-neutral-600" href="/pages/security">Security</a></li>
+              <li><a class="hover:text-neutral-600" href="mailto:support@rubygems.org">Help</a></li>
+            </ul>
+          </nav>
+          <div class="flex space-x-4">
+            <a href="https://github.com/rubygems/rubygems.org">
+              <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#github" /></svg>
+            </a>
+            <a href="https://ruby.social/users/rubygems">
+              <svg class="h-6 w-6 flex-shrink-0 stroke-current stroke-0 fill-current " height="24" width="24" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#mastodon" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-6 bg-orange-200 dark:bg-orange-900 text-neutral-900 dark:text-neutral-100">
+        <!-- Supported By -->
+        <div class="flex flex-col lg:flex-row max-w-screen-xl mx-auto py-6 items-center justify-between">
+          <!-- RubyGems.org is supported by -->
+          <p class="mb-6 lg:mb-0 lg:mr-14 lg:w-52 text-b2 leading-6 text-balance">
+            <a href="https://rubygems.org" class="font-semibold">RubyGems.org</a>
+is supported by
+
+          </p>
+
+          <!-- Supporter Icons -->
+          <div class="w-full lg:grow mx-auto grid grid-cols-3 gap-6 justify-items-center md:flex md:items-center md:justify-between">
+            <a href="https://rubycentral.org/" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#ruby-central" /></svg></a>
+            <a href="https://aws.amazon.com/" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#aws" /></svg></a>
+            <a href="https://dnsimple.link/resolving-rubygems" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#dnsimple" /></svg></a>
+            <a href="https://www.datadoghq.com/" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#datadog" /></svg></a>
+            <a href="https://www.fastly.com/" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#fastly" /></svg></a>
+            <a href="https://www.honeybadger.io/" class="p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#honeybadger" /></svg></a>
+            <a href="https://mend.io/" class="col-start-2 p-1"><svg class="h-15 w-15 flex-shrink-0 stroke-current stroke-0 fill-current " height="60" width="60" aria-hidden="true" role="graphics-symbol"><use href="/assets/icons-4970ccf2.svg#mend-io" /></svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
