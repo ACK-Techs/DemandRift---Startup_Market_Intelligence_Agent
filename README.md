@@ -1,94 +1,49 @@
-# DemandRift — Startup Market Intelligence Agent
- 
-DemandRift is an evidence-driven startup research and decision platform. It turns an early idea into a traceable research brief, gathers and normalizes permitted market evidence, identifies what is still unknown, and produces a defensible direction: **Build**, **Modify**, **Kill**, or **Investigate More**.
+# DemandRift
 
-> Don't just validate your idea. Leave with a build-ready MVP.
+**Kapsam kararı — Çağlar:** Build kararı, MVP/PRD önerisi, geliştirilecek ürünün özellikleri ve geliştirme yol haritası mevcut üç fazın hiçbirine dahil değildir. Bunlar projenin sonraki aşamasıdır; yönetici Çağlar tarafından daha sonra değerlendirilip planlanacaktır. Bu aşama kanıtları, araştırma değerlendirmesini ve eksikleri raporlar. Olumlu bulgu otomatik geliştirme kararı üretmez.
 
-## Repository status
+Fikri araştırma planına dönüştüren, kaynaklardan veri toplayıp hazırlayan ve kaynaklı karar raporu üreten ürün.
 
-This repository currently contains the approved architecture and implementation plans for Phases 1–7. It is a planning baseline, not a claim that the application runtime is already implemented. Phase 8 is intentionally out of scope until it is explicitly approved.
+## Üç faz
 
-## Research lifecycle
+| Faz | Amaç | Başlangıç |
+|---|---|---|
+| 1 — Fikir ve araştırma hazırlığı | Fikir, kategori, araştırma soruları, kaynak/sorgu planı; kaynak verisi ve test hazırlığı | [Faz 1](faz-1-fikir-ve-arastirma/README.md) |
+| 2 — Veri toplama ve hazırlama | Aynı scriptlerle toplama, temizleme, filtreleme, alıntılı site bulguları | [Faz 2](faz-2-veri-toplama-ve-hazirlama/README.md) |
+| 3 — Karar ve rapor | Kanıt yeterliliği, gerekçe, karşıt bulgular, belirsizlik ve sonraki adım | [Faz 3](faz-3-karar-ve-rapor/README.md) |
 
-| Phase | Responsibility | Primary output |
-| --- | --- | --- |
-| 1 — Intake | Turn an ambiguous idea into a user-confirmed, researchable brief while preserving field origins and assumptions. | `IdeaBriefVersion` |
-| 2 — Planning | Compile research questions, source/query coverage, market and language scope, and a budget contract. | `ResearchPlanVersion` |
-| 3 — Acquisition | Collect raw evidence from policy-approved sources with provenance, execution status, cost, and access metadata. | `RawArtifact` set |
-| 4 — Normalization | Parse and normalize immutable artifacts; produce segments, deduplication relations, entity candidates, and lineage. | Normalized corpus |
-| 5 — Gap policy | Audit secondary-research gaps and, when policy and budget permit, route gap-driven work back through the Phase 3 acquisition runtime. | Gap-closure trace |
-| 6 — Analysis | Create citation-bound claims, independence groups, clusters, evidence maps, counter-evidence, and classified research gaps. | `AnalysisDossier` |
-| 7 — Decision | Apply deterministic sufficiency and decision gates, then generate a grounded, versioned decision dossier. | `DecisionDossier` |
+Her fazda `docs/` altında hazırlık, entegrasyon, teknolojiler/kararlar, test, veri sözleşmeleri ve görev/teslim belgeleri; `tests/` altında değerlendirme girdileri bulunur.
 
-The core flow is:
+## Dosya haritası
 
-```text
-Intake -> Plan -> Acquire -> Normalize -> Analyze -> Decide
-                                      ^        |
-                                      |        v
-                                      +-- Gap policy
-```
+- [ortak/](ortak/README.md): ortak mimari, sözleşmeler, kalite, ekip; araştırma ve durum raporları.
+- [Faz 1 veri laboratuvarı](faz-1-fikir-ve-arastirma/veri-laboratuvari/README.md): mevcut Python scriptleri, çekilmiş veriler, kaynak indeksleri ve mevcut offline testler. Eski `research/source-access-lab` buraya taşındı; iç yerleşimi korundu.
+- `apps/web/`: mevcut Next.js arayüz prototipi.
+- [trash/](trash/README.md): kullanımdan kaldırılan eski plan ve raporlar; silinmedi.
 
-Phase 5 does not create a second acquisition pipeline. It controls a bounded `gap_driven` loop through Phases 3, 4, and 6. Primary-validation gaps are kept separate and cannot be closed by additional web research.
+## Şu an ne var?
 
-## Planned platform architecture
+Web arayüzü örnek veri kullanıyor. Bağımsız Python erişim/arama scriptleri, kaynak kayıtları ve örnek içerikler var. Fikirden gerçek karar raporuna çalışan backend henüz uygulanmış değil. Yeni faz belgeleri ve senaryo JSON'ları planlama teslimidir; çalışan servis veya geçmiş test sonucu olarak sunulmaz.
 
-DemandRift is designed as a TypeScript/Node.js modular monolith with clear, versioned contracts between phase modules.
+## Ekip için okuma sırası
 
-- Next.js for the web and API layer
-- PostgreSQL as the primary transactional and analytical store
-- S3-compatible object storage for immutable raw artifacts
-- Temporal, behind an adapter boundary, for durable workflows
-- A provider-neutral AI Gateway with schema validation, model routing, prompt versioning, and cost accounting
-- A policy-controlled connector runtime behind a shared Egress Gateway
-- Optional isolated Playwright and Python analytics workers
-- OpenTelemetry-based traces, metrics, structured logs, and audit records
+1. Bu README ve [ortak belgeler](ortak/README.md).
+2. Atanılan fazın README'si ve altı dokümanı.
+3. Fazın test planı, senaryoları ve gerçek veri örnekleri.
+4. Gerekiyorsa [Ayselin araştırma referansı](ortak/arastirmalar/ayselin/README.md).
 
-Cross-cutting platform modules own tenant isolation, source policy, workflow state, budget reservations, citation binding, storage, and observability. Shared contracts are planned under `packages/contracts` using Zod and JSON Schema.
+API anahtarını Çağlar Batuhan’a verecek. Yerel kayıtlı-veri testleri ve ortak entegrasyon ortamı onaylandı; Hetzner kurulumu/uzaktan build ve Vercel/API bağlantısının ayrıntıları [ortak mimari kaydına](ortak/mimari-ve-kararlar.md) göre netleştirilecek.
 
-## Non-negotiable evidence rules
+## Belge geçişi
 
-- An unconfirmed AI hypothesis cannot seed research.
-- A search result is not fetched evidence, and an unavailable source is not a no-results finding.
-- Duplicates and reposts are not independent evidence.
-- A citation must bind an exact quote to offsets, content hashes, and a normalization version.
-- Stated willingness to pay is not observed payment behavior.
-- Absence of complaints is not evidence of satisfaction.
-- Evidence scarcity in a new market is not, by itself, a Kill signal.
-- AI cannot bypass source, tenant, budget, citation, or decision-policy gates.
+22 Eylül 2026'daki kullanıcı kararıyla eski yedi faz yerine bu üç aşamalı yapı kullanılmaktadır. [Eski–yeni eşleme](ortak/raporlar/belge-esleme.md) taşınan içerikleri gösterir. Agent talimat dosyaları değiştirilmedi; içlerindeki eski belge yolları tarihsel kaldı. Eski planlara ihtiyaç olursa `trash/eski-planlar/` altında bulunur. `.orchestrator` geliştirme araçlarıdır, ürünün araştırma motoru değildir.
 
-## Planning documents
+## Lisans
 
-Read the project documents in this order:
+[MIT](LICENSE).
 
-1. [`Ust-Yonetim-Ana-Mimari-Plani.md`](Ust-Yonetim-Ana-Mimari-Plani.md) — system scope, phase boundaries, and integration order
-2. [`Platform-Temeli.md`](Platform-Temeli.md) — shared technical architecture and invariants
-3. [`Faz1-Plan.md`](Faz1-Plan.md) through [`Faz7-Plan.md`](Faz7-Plan.md) — phase-specific plans
-4. [`.orchestrator/SYSTEM.md`](.orchestrator/SYSTEM.md) — delivery control plane and evidence-based work-item lifecycle
+## Ekip ve uygulama kuralları
 
-## Repository map
+Batuhan yürütücü/backend, Ayselin veri sorunları, Ayşenur tasarım ve kademeli frontend bağlantısı. [Kişi görevleri](ortak/ekip-ve-teslim.md), [AI kuralları](ortak/RULES.md) ve [onaylı 3/2 kanıt politikası](ortak/kanit-yeterliligi-ve-karar-kurallari.md) aktif planın parçasıdır.
 
-- [`research/source-access-lab/`](research/source-access-lab/) — source-access
-  evidence, provenance indexes, reproducible tools, tests, and constrained
-  pilots.
-- [`research/source-access-lab/docs/`](research/source-access-lab/docs/) —
-  dated access reports and pilot contracts, separate from canonical evidence.
-- [`research/`](research/) — research workspaces and internal market records.
-- [`tasks/`](tasks/) — durable owner-specific project tasks. The current
-  research-design brief is [`tasks/ayselin-task/`](tasks/ayselin-task/).
-- [`internal/pazar/`](internal/pazar/) — private market-positioning record;
-  it is not product-runtime data.
-
-## Local configuration
-
-Only safe templates are committed. Copy the appropriate template and replace blank or `replace-with-*` values locally:
-
-```powershell
-Copy-Item .env.example .env.local
-```
-
-Use `.env.test.example` as the basis for isolated test configuration. Real `.env` variants are ignored by Git and must never be committed.
-
-## License
-
-DemandRift is available under the [MIT License](LICENSE).
+[Planlama teslimi](ortak/teslim.md) hazır. Backend hedefi Hetzner, frontend hedefi Vercel, repo private; ortamların kurulması ve bağlanması Çağlar ile sonraki ayrı çalışmadır.

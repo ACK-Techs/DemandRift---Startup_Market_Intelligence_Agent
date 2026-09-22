@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-22",
+  "note": "Original archived docs retained byte-for-byte. Lab move includes all files; historical run refs keep original identities.",
+  "moves": [
+    {
+      "old": "research/source-access-lab",
+      "new": "faz-1-fikir-ve-arastirma/veri-laboratuvari",
+      "sha256_before": null
+    },
+    {
+      "old": "Faz1-Plan.md",
+      "new": "trash/eski-planlar/Faz1-Plan.md",
+      "sha256_before": "0f9ff6a6b4c9bfe7967b1670dcc01ffe0e90592d14c91ab3d2fdc5c8f8e98b2a"
+    },
+    {
+      "old": "Faz2-Plan.md",
+      "new": "trash/eski-planlar/Faz2-Plan.md",
+      "sha256_before": "55ca1ac5de910e61809f8b728db7daef5fba6a227aa19ed174e0659f6dca14f7"
+    },
+    {
+      "old": "Faz3-Plan.md",
+      "new": "trash/eski-planlar/Faz3-Plan.md",
+      "sha256_before": "36cb8685fe6a3f8bf4dbf870999a347cb16fc950d3997e25be1c7165f4b7a2c0"
+    },
+    {
+      "old": "Faz4-Plan.md",
+      "new": "trash/eski-planlar/Faz4-Plan.md",
+      "sha256_before": "fceade0e65246c7faec7bacffbfe5951819656f2b19fb22865784d804bade314"
+    },
+    {
+      "old": "Faz5-Plan.md",
+      "new": "trash/eski-planlar/Faz5-Plan.md",
+      "sha256_before": "116d42d3fcf1e4be77667e8a11658ad14ffa1e9f12eadade2e995b5f11582bd3"
+    },
+    {
+      "old": "Faz6-Plan.md",
+      "new": "trash/eski-planlar/Faz6-Plan.md",
+      "sha256_before": "af2f074b2b600fbbd07e886ed2b108c37b0566d3327a1b864681dc5e0d1ee65c"
+    },
+    {
+      "old": "Faz7-Plan.md",
+      "new": "trash/eski-planlar/Faz7-Plan.md",
+      "sha256_before": "b3bfd5bd2794fd5ed35a8ef65cf713d79ecdf6f440f435cd157c400b6bcd286b"
+    },
+    {
+      "old": "Platform-Temeli.md",
+      "new": "trash/eski-planlar/Platform-Temeli.md",
+      "sha256_before": "c375ed170a7125d419eb7d359501d8bb030dbff53205d4fd44f1e4c258d3b0d5"
+    },
+    {
+      "old": "Ust-Yonetim-Ana-Mimari-Plani.md",
+      "new": "trash/eski-planlar/Ust-Yonetim-Ana-Mimari-Plani.md",
+      "sha256_before": "0d40a41d09d10025fd79b69e5810e38d48f7fd8bc32aceb61ddaa9c01c6cdc92"
+    },
+    {
+      "old": "Gerekli-Iyilestirmeler.md",
+      "new": "trash/eski-planlar/Gerekli-Iyilestirmeler.md",
+      "sha256_before": "9026e50a9e75259f703c89261b284611c592fdbdeaea1ee3008bb1bad13f4922"
+    },
+    {
+      "old": "KILAVUZ.md",
+      "new": "ortak/arastirmalar/ayselin/KILAVUZ.md",
+      "sha256_before": "200ea485731ff0ff6ba0065c6cd4096edafb99f73d3d3153de7e0907f44103a7"
+    },
+    {
+      "old": "tasks/ayselin-task/README.md",
+      "new": "ortak/arastirmalar/ayselin/GOREV-TANIMI.md",
+      "sha256_before": "4c8d949640f72aa2b790d2caac191f8a1534dd69499e98b7040e4b32895109f0"
+    },
+    {
+      "old": "tasks/README.md",
+      "new": "trash/eski-indeksler/tasks-README.md",
+      "sha256_before": "479eb04085c76c27e4a5ad7215af58963cdbacaacab66a9fb392653bee8a8890"
+    },
+    {
+      "old": "internal/pazar/KAYNAKLAR.md",
+      "new": "trash/eski-pazar/KAYNAKLAR.md",
+      "sha256_before": "e7aafc92e44696e563a2112f1d9234e1791d3799896ba77a75ecd886ddfe7053"
+    },
+    {
+      "old": "internal/pazar/KONUMLANDIRMA.md",
+      "new": "trash/eski-pazar/KONUMLANDIRMA.md",
+      "sha256_before": "c4f8055b3b0e7cc5ce3373a6fa79c514be81badee18b561b3b35dfe3e45e5511"
+    },
+    {
+      "old": "internal/pazar/OZET.md",
+      "new": "trash/eski-pazar/OZET.md",
+      "sha256_before": "8531e85cdc69c754cecbaab826b0056640903f19c21ddd589047065087d4cf04"
+    },
+    {
+      "old": "internal/pazar/PAZAR.md",
+      "new": "trash/eski-pazar/PAZAR.md",
+      "sha256_before": "f7088a9007d91fade7a1dbcabe65958834ff60c9df8f162fa5db08915939e90a"
+    },
+    {
+      "old": "internal/pazar/RAKIPLER.md",
+      "new": "trash/eski-pazar/RAKIPLER.md",
+      "sha256_before": "5025789c67136fbb8023563e19d48128602c9cb794d8e8726a19155d22c06922"
+    },
+    {
+      "old": "internal/pazar/README.md",
+      "new": "trash/eski-pazar/README.md",
+      "sha256_before": "866364c25aaa06d41b70c13d4ab9a9cc0dda183957d505e803281da64beca292"
+    },
+    {
+      "old": "faz-1-fikir-ve-arastirma/veri-laboratuvari/docs/reports/site-access-summary.md",
+      "new": "trash/eski-raporlar/site-access-summary.md",
+      "sha256_before": "03e2c2324cda3b4bbf60250e9e1947952503d2b94342500670c3bacbd0d142fe"
+    },
+    {
+      "old": "faz-1-fikir-ve-arastirma/veri-laboratuvari/docs/reports/source-access-status-2026-09-02.md",
+      "new": "trash/eski-raporlar/source-access-status-2026-09-02.md",
+      "sha256_before": "7dba54f665bde981f36545c484136872239070a89a4da3a017452185fd18056a"
+    },
+    {
+      "old": "README.md",
+      "new": "trash/eski-indeksler/README.md",
+      "sha256_before": "dc3d93dd24667edcf6ac46a87d88b3f843e958687422c56b6e913cf490dce5a9",
+      "action": "copy-before-rewrite"
+    },
+    {
+      "old": "research/source-access-lab/README.md",
+      "new": "trash/eski-indeksler/lab-README.md",
+      "sha256_before": "34f66385ffa406a7e4a20f978724993711178a59f9cf35e4ebf41fae669e151c",
+      "action": "copy-before-update"
+    },
+    {
+      "old": "research/source-access-lab/docs/README.md",
+      "new": "trash/eski-indeksler/lab-docs-README.md",
+      "sha256_before": "a8783bf3ab96b4a3d935290b5d4ce89df6d46517768fed53e38970b496434878",
+      "action": "copy-before-update"
+    }
+  ]
+}

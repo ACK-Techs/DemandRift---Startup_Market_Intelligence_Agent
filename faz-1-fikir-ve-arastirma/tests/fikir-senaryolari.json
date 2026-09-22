@@ -1,0 +1,1364 @@
+{
+  "schema_version": "1.0.0",
+  "fixture_status": "planned_not_executed",
+  "purpose": "Faz 1 fikir, kategori, netleştirme ve sorgu planı değerlendirmesi",
+  "category_ids": [
+    "mobil-uygulama",
+    "b2b-web-yazilimi",
+    "gelistirici-araci",
+    "eklenti-entegrasyon",
+    "yapay-zeka-urunu",
+    "oyun",
+    "yerel-hizmet"
+  ],
+  "case_count": 30,
+  "evaluation_rules": [
+    "Modele yalnız input alanını ver; expected referansını verme.",
+    "Eksik girdileri diğer varyantın gizli bilgisiyle puanlama.",
+    "Sorgu örnekleri birebir metin beklentisi değildir.",
+    "Uygulanamaz araştırma niyetini gerekçeyle dışarıda bırak; fiyatı ödeme davranışıyla eşitleme.",
+    "Kaynak aileleri entegrasyon/erişim garantisi değildir; etkin registry ile doğrula.",
+    "Bunlar runner veya geçirilmiş test sonucu değildir."
+  ],
+  "cases": [
+    {
+      "case_id": "F01-net",
+      "idea_id": "F01",
+      "idea_name": "Vardiyalı çalışanlar için uyku takibi",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Vardiyalı çalışanların uyku düzenlerini takip edip vardiyalarına göre uyku alışkanlıklarını görebileceği bir mobil uygulama yapmak istiyorum.",
+      "expected": {
+        "primary_category": "mobil-uygulama",
+        "acceptable_primary_categories": [
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "saglik"
+        ],
+        "customer": "Vardiyalı çalışanlar",
+        "problem": "Değişen vardiyalar nedeniyle uyku düzenini takip etmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Vardiyalı çalışanlar hangi uyku takip sorunlarını yaşıyor?",
+          "Mevcut takip uygulamalarında vardiya desteği ne kadar yeterli?"
+        ],
+        "query_examples": [
+          "shift worker sleep tracking app complaints",
+          "vardiyalı çalışan uyku takibi uygulaması"
+        ],
+        "source_families": [
+          "Uygulama mağazaları",
+          "Vardiyalı çalışan toplulukları",
+          "Sağlık araştırmaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Vardiyalı çalışanı eksik girdiden kesin çıkarma",
+          "Tedavi etkinliğini veya klinik doğruluğu varsayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F01-eksik",
+      "idea_id": "F01",
+      "idea_name": "Vardiyalı çalışanlar için uyku takibi",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Uyku takibi için bir şey yapmak istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Hangi kullanıcı grubu için?",
+          "Hangi uyku sorununu çözecek ve ürün hangi biçimde kullanılacak?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Vardiyalı çalışanı eksik girdiden kesin çıkarma",
+          "Tedavi etkinliğini veya klinik doğruluğu varsayma"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F01-yanlis-etiket",
+      "idea_id": "F01",
+      "idea_name": "Vardiyalı çalışanlar için uyku takibi",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Buna geliştirici aracı diyorum: vardiyalı çalışanların telefonunda uyku düzenlerini takip edip vardiyalarına göre uyku alışkanlıklarını göreceği bir uygulama.",
+      "expected": {
+        "primary_category": "mobil-uygulama",
+        "acceptable_primary_categories": [
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "saglik"
+        ],
+        "customer": "Vardiyalı çalışanlar",
+        "problem": "Değişen vardiyalar nedeniyle uyku düzenini takip etmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Vardiyalı çalışanlar hangi uyku takip sorunlarını yaşıyor?",
+          "Mevcut takip uygulamalarında vardiya desteği ne kadar yeterli?"
+        ],
+        "query_examples": [
+          "shift worker sleep tracking app complaints",
+          "vardiyalı çalışan uyku takibi uygulaması"
+        ],
+        "source_families": [
+          "Uygulama mağazaları",
+          "Vardiyalı çalışan toplulukları",
+          "Sağlık araştırmaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Vardiyalı çalışanı eksik girdiden kesin çıkarma",
+          "Tedavi etkinliğini veya klinik doğruluğu varsayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F02-net",
+      "idea_id": "F02",
+      "idea_name": "Ajans müşteri onayı ve revizyon SaaS",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Küçük ajansların müşterilerinden onay toplamasını ve revizyonları takip etmesini sağlayan bir web SaaS yapmak istiyorum.",
+      "expected": {
+        "primary_category": "b2b-web-yazilimi",
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": "Küçük ajanslar",
+        "problem": "Müşteri onayı ve revizyon takibini yönetmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Ajansların onay/revizyon sürecindeki darboğazları neler?",
+          "Mevcut çözümlerin paketleri ve eksikleri neler?"
+        ],
+        "query_examples": [
+          "agency client approval revision tracking software",
+          "creative agency approval software complaints pricing"
+        ],
+        "source_families": [
+          "Resmî rakip ve fiyat sayfaları",
+          "B2B yazılım incelemeleri",
+          "Ajans toplulukları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdide küçük ajans müşteri grubunu kesinleştirme",
+          "Yanlış oyun etiketine göre oyun mağazası paketi seçme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F02-eksik",
+      "idea_id": "F02",
+      "idea_name": "Ajans müşteri onayı ve revizyon SaaS",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Müşteri onaylarını takip eden bir yazılım istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Hangi işletmeler ve hangi onay süreci için?",
+          "Takipte bugün yaşanan esas sorun nedir?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdide küçük ajans müşteri grubunu kesinleştirme",
+          "Yanlış oyun etiketine göre oyun mağazası paketi seçme"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F02-yanlis-etiket",
+      "idea_id": "F02",
+      "idea_name": "Ajans müşteri onayı ve revizyon SaaS",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Bir oyun fikrim var: küçük ajanslara satılan, web üzerinden müşterilerinden onay toplayıp revizyonlarını takip ettiren abonelikli yazılım.",
+      "expected": {
+        "primary_category": "b2b-web-yazilimi",
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": "Küçük ajanslar",
+        "problem": "Müşteri onayı ve revizyon takibini yönetmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Ajansların onay/revizyon sürecindeki darboğazları neler?",
+          "Mevcut çözümlerin paketleri ve eksikleri neler?"
+        ],
+        "query_examples": [
+          "agency client approval revision tracking software",
+          "creative agency approval software complaints pricing"
+        ],
+        "source_families": [
+          "Resmî rakip ve fiyat sayfaları",
+          "B2B yazılım incelemeleri",
+          "Ajans toplulukları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdide küçük ajans müşteri grubunu kesinleştirme",
+          "Yanlış oyun etiketine göre oyun mağazası paketi seçme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F03-net",
+      "idea_id": "F03",
+      "idea_name": "API geriye uyumluluk CLI",
+      "variant": "net",
+      "status": "not_run",
+      "input": "API geliştiren ekiplerin API değişikliklerinde geriye uyumluluğu bozan durumları kontrol edebileceği bir CLI aracı yapmak istiyorum.",
+      "expected": {
+        "primary_category": "gelistirici-araci",
+        "acceptable_primary_categories": [
+          "gelistirici-araci"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": "API geliştiren ekipler",
+        "problem": "API değişikliklerinin geriye uyumluluğu bozup bozmadığını bulmak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "API değişiklikleri ekiplerde hangi uyumluluk sorunlarına yol açıyor?",
+          "Mevcut diff/compatibility araçlarının eksikleri neler?"
+        ],
+        "query_examples": [
+          "API breaking changes backward compatibility CLI",
+          "OpenAPI diff tool false positives issues"
+        ],
+        "source_families": [
+          "Kod depoları ve issue kayıtları",
+          "Geliştirici toplulukları",
+          "Resmî ürün dokümanları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "CLI ifadesini mobil uygulama sayma",
+          "Belirtilmemiş API protokolünü kesin kapsam yapma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F03-eksik",
+      "idea_id": "F03",
+      "idea_name": "API geriye uyumluluk CLI",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "API değişikliklerini kontrol eden bir araç yapacağım.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "gelistirici-araci"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Değişikliklerin hangi yönünü kontrol edecek?",
+          "CLI, CI entegrasyonu veya başka bir kullanım biçimi mi hedefleniyor?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "CLI ifadesini mobil uygulama sayma",
+          "Belirtilmemiş API protokolünü kesin kapsam yapma"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F03-yanlis-etiket",
+      "idea_id": "F03",
+      "idea_name": "API geriye uyumluluk CLI",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Bu bir yerel hizmet platformu: geliştiriciler terminalde bir CLI çalıştırıp API değişikliklerinin geriye uyumluluğu bozup bozmadığını kontrol edecek.",
+      "expected": {
+        "primary_category": "gelistirici-araci",
+        "acceptable_primary_categories": [
+          "gelistirici-araci"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": "API geliştiren ekipler",
+        "problem": "API değişikliklerinin geriye uyumluluğu bozup bozmadığını bulmak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "API değişiklikleri ekiplerde hangi uyumluluk sorunlarına yol açıyor?",
+          "Mevcut diff/compatibility araçlarının eksikleri neler?"
+        ],
+        "query_examples": [
+          "API breaking changes backward compatibility CLI",
+          "OpenAPI diff tool false positives issues"
+        ],
+        "source_families": [
+          "Kod depoları ve issue kayıtları",
+          "Geliştirici toplulukları",
+          "Resmî ürün dokümanları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "CLI ifadesini mobil uygulama sayma",
+          "Belirtilmemiş API protokolünü kesin kapsam yapma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F04-net",
+      "idea_id": "F04",
+      "idea_name": "Shopify iade nedenleri eklentisi",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Shopify mağazalarının ürün iadelerinin nedenlerini analiz edebileceği bir Shopify eklentisi yapmak istiyorum.",
+      "expected": {
+        "primary_category": "eklenti-entegrasyon",
+        "acceptable_primary_categories": [
+          "eklenti-entegrasyon"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "e-ticaret"
+        ],
+        "customer": "Shopify mağaza sahipleri",
+        "problem": "İade nedenlerini analiz etmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Mağazalar iade nedenlerini bugün nasıl sınıflandırıyor?",
+          "Mevcut Shopify çözümlerinin analiz eksikleri ve fiyatları neler?"
+        ],
+        "query_examples": [
+          "Shopify return reasons analytics app reviews",
+          "Shopify merchants return reason reporting problems"
+        ],
+        "source_families": [
+          "Shopify uygulama pazarı",
+          "Mağaza sahibi toplulukları",
+          "Resmî entegrasyon dokümanları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdiden Shopify varsayma",
+          "İade sayısını otomatik kötü ürün kanıtı sayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F04-eksik",
+      "idea_id": "F04",
+      "idea_name": "Shopify iade nedenleri eklentisi",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Mağazalar için iadeleri analiz eden bir çözüm istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "eklenti-entegrasyon",
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Hangi mağaza platformuyla çalışacak?",
+          "İade nedenlerini hangi mevcut veriden analiz edecek?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdiden Shopify varsayma",
+          "İade sayısını otomatik kötü ürün kanıtı sayma"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F04-yanlis-etiket",
+      "idea_id": "F04",
+      "idea_name": "Shopify iade nedenleri eklentisi",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Mobil oyun kategorisine yazdım: Shopify mağaza sahipleri mağazalarına bir eklenti kuracak, eklenti ürün iadelerinin nedenlerini analiz edecek.",
+      "expected": {
+        "primary_category": "eklenti-entegrasyon",
+        "acceptable_primary_categories": [
+          "eklenti-entegrasyon"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "e-ticaret"
+        ],
+        "customer": "Shopify mağaza sahipleri",
+        "problem": "İade nedenlerini analiz etmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Mağazalar iade nedenlerini bugün nasıl sınıflandırıyor?",
+          "Mevcut Shopify çözümlerinin analiz eksikleri ve fiyatları neler?"
+        ],
+        "query_examples": [
+          "Shopify return reasons analytics app reviews",
+          "Shopify merchants return reason reporting problems"
+        ],
+        "source_families": [
+          "Shopify uygulama pazarı",
+          "Mağaza sahibi toplulukları",
+          "Resmî entegrasyon dokümanları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Eksik girdiden Shopify varsayma",
+          "İade sayısını otomatik kötü ürün kanıtı sayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F05-net",
+      "idea_id": "F05",
+      "idea_name": "Self-host Türkçe konuşma tanıma API",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Şirketlerin kendi sunucularında çalıştırabileceği, Türkçe konuşmayı metne dönüştüren bir AI API ürünü yapmak istiyorum.",
+      "expected": {
+        "primary_category": "yapay-zeka-urunu",
+        "acceptable_primary_categories": [
+          "yapay-zeka-urunu"
+        ],
+        "secondary_categories": [
+          "gelistirici-araci"
+        ],
+        "modifiers": [
+          "self-host",
+          "turkce-dil"
+        ],
+        "customer": "Konuşma tanımayı kendi sunucusunda çalıştırmak isteyen şirketler",
+        "problem": "Türkçe konuşmayı şirketin kendi altyapısında metne dönüştürmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Türkçe konuşma tanımada hangi kullanım koşulları sorun çıkarıyor?",
+          "Self-host seçeneklerinin teknik ve lisans sınırları neler?"
+        ],
+        "query_examples": [
+          "Turkish speech recognition self hosted API",
+          "Turkish ASR self hosted benchmarks licensing"
+        ],
+        "source_families": [
+          "Konuşma tanıma model/depo kaynakları",
+          "Resmî API ürün ve fiyat sayfaları",
+          "Teknik değerlendirmeler"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Türkçe dili doğrudan yalnız Türkiye pazarı sayma",
+          "Eksik girdiden self-host zorunluluğu çıkarma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F05-eksik",
+      "idea_id": "F05",
+      "idea_name": "Self-host Türkçe konuşma tanıma API",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Türkçe konuşmayı metne çeviren bir çözüm yapmak istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "yapay-zeka-urunu",
+          "gelistirici-araci",
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Hedef kullanıcı kim?",
+          "Ürün API mı, son kullanıcı uygulaması mı; nerede çalışacak?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Türkçe dili doğrudan yalnız Türkiye pazarı sayma",
+          "Eksik girdiden self-host zorunluluğu çıkarma"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F05-yanlis-etiket",
+      "idea_id": "F05",
+      "idea_name": "Self-host Türkçe konuşma tanıma API",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Bir Shopify eklentisi fikri diye etiketledim: şirketler ürünü kendi sunucusunda çalıştıracak ve Türkçe konuşmayı metne dönüştüren AI API hizmetini kullanacak; Shopify bağlantısı olmayacak.",
+      "expected": {
+        "primary_category": "yapay-zeka-urunu",
+        "acceptable_primary_categories": [
+          "yapay-zeka-urunu"
+        ],
+        "secondary_categories": [
+          "gelistirici-araci"
+        ],
+        "modifiers": [
+          "self-host",
+          "turkce-dil"
+        ],
+        "customer": "Konuşma tanımayı kendi sunucusunda çalıştırmak isteyen şirketler",
+        "problem": "Türkçe konuşmayı şirketin kendi altyapısında metne dönüştürmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Türkçe konuşma tanımada hangi kullanım koşulları sorun çıkarıyor?",
+          "Self-host seçeneklerinin teknik ve lisans sınırları neler?"
+        ],
+        "query_examples": [
+          "Turkish speech recognition self hosted API",
+          "Turkish ASR self hosted benchmarks licensing"
+        ],
+        "source_families": [
+          "Konuşma tanıma model/depo kaynakları",
+          "Resmî API ürün ve fiyat sayfaları",
+          "Teknik değerlendirmeler"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Türkçe dili doğrudan yalnız Türkiye pazarı sayma",
+          "Eksik girdiden self-host zorunluluğu çıkarma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F06-net",
+      "idea_id": "F06",
+      "idea_name": "PC için iki kişilik bulmaca oyunu",
+      "variant": "net",
+      "status": "not_run",
+      "input": "PC üzerinde iki kişinin birlikte oynadığı bir bulmaca oyunu yapmak istiyorum.",
+      "expected": {
+        "primary_category": "oyun",
+        "acceptable_primary_categories": [
+          "oyun"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "pc",
+          "co-op"
+        ],
+        "customer": "Birlikte oynamak isteyen PC oyuncuları",
+        "problem": "İki kişilik ortak bulmaca deneyimi",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "İki kişilik bulmaca oyunlarında oyuncular hangi eksikleri görüyor?",
+          "Benzer oyunların oyun süresi, fiyatı ve deneyimi nasıl?"
+        ],
+        "query_examples": [
+          "PC two player co op puzzle game reviews",
+          "cooperative puzzle games player complaints"
+        ],
+        "source_families": [
+          "Oyun mağazaları ve oyuncu incelemeleri",
+          "Oyuncu toplulukları",
+          "Resmî oyun sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Belirtilmemiş online/local birlikte oynama biçimini kesinleştirme",
+          "Oyun talebini şirket SaaS bütçesiyle ölçme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F06-eksik",
+      "idea_id": "F06",
+      "idea_name": "PC için iki kişilik bulmaca oyunu",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "İki kişilik bir bulmaca fikrim var.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "oyun"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Dijital oyun mu, başka bir ürün mü?",
+          "Hangi platformda ve nasıl birlikte oynanacak?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Belirtilmemiş online/local birlikte oynama biçimini kesinleştirme",
+          "Oyun talebini şirket SaaS bütçesiyle ölçme"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F06-yanlis-etiket",
+      "idea_id": "F06",
+      "idea_name": "PC için iki kişilik bulmaca oyunu",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "B2B SaaS olarak etiketledim: PC oyuncularına yönelik, iki kişinin birlikte oynayıp bulmaca çözdüğü bir oyun yapacağım.",
+      "expected": {
+        "primary_category": "oyun",
+        "acceptable_primary_categories": [
+          "oyun"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "pc",
+          "co-op"
+        ],
+        "customer": "Birlikte oynamak isteyen PC oyuncuları",
+        "problem": "İki kişilik ortak bulmaca deneyimi",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "İki kişilik bulmaca oyunlarında oyuncular hangi eksikleri görüyor?",
+          "Benzer oyunların oyun süresi, fiyatı ve deneyimi nasıl?"
+        ],
+        "query_examples": [
+          "PC two player co op puzzle game reviews",
+          "cooperative puzzle games player complaints"
+        ],
+        "source_families": [
+          "Oyun mağazaları ve oyuncu incelemeleri",
+          "Oyuncu toplulukları",
+          "Resmî oyun sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Belirtilmemiş online/local birlikte oynama biçimini kesinleştirme",
+          "Oyun talebini şirket SaaS bütçesiyle ölçme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F07-net",
+      "idea_id": "F07",
+      "idea_name": "İstanbul ev temizliği rezervasyonu",
+      "variant": "net",
+      "status": "not_run",
+      "input": "İstanbul’da ev temizliği hizmeti arayan kişilerin hizmet sağlayıcı bulup rezervasyon yapabileceği bir platform yapmak istiyorum.",
+      "expected": {
+        "primary_category": "yerel-hizmet",
+        "acceptable_primary_categories": [
+          "yerel-hizmet"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "turkiye-pazari",
+          "istanbul",
+          "hizmet-pazaryeri"
+        ],
+        "customer": "İstanbul’da ev temizliği hizmeti arayan kişiler",
+        "problem": "Temizlik hizmeti bulup rezervasyon yapmak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "İstanbul’da temizlik rezervasyonunda güven ve bulunabilirlik sorunları neler?",
+          "Mevcut sağlayıcıların hizmet kapsamı ve fiyatları nasıl?"
+        ],
+        "query_examples": [
+          "İstanbul ev temizliği rezervasyon şikayetleri",
+          "İstanbul temizlik hizmeti fiyat rezervasyon"
+        ],
+        "source_families": [
+          "Yerel hizmet platformları",
+          "Yerel müşteri yorumları",
+          "Resmî hizmet ve fiyat sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "İstanbul kapsamını yalnız ABD hizmetleriyle araştırma",
+          "Eksik girdiden İstanbul veya ev temizliği varsayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F07-eksik",
+      "idea_id": "F07",
+      "idea_name": "İstanbul ev temizliği rezervasyonu",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Temizlik rezervasyonu için bir platform düşünüyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "yerel-hizmet",
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Müşteriler hizmet mi bulacak, işletme kendi rezervasyonunu mu yönetecek?",
+          "Hangi şehir/pazar ve temizlik türü hedefleniyor?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "İstanbul kapsamını yalnız ABD hizmetleriyle araştırma",
+          "Eksik girdiden İstanbul veya ev temizliği varsayma"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F07-yanlis-etiket",
+      "idea_id": "F07",
+      "idea_name": "İstanbul ev temizliği rezervasyonu",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Geliştirici API aracı kategorisinde: İstanbul’daki kişiler platformdan ev temizliği hizmeti sağlayıcısı bulup temizlik rezervasyonu yapacak.",
+      "expected": {
+        "primary_category": "yerel-hizmet",
+        "acceptable_primary_categories": [
+          "yerel-hizmet"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "turkiye-pazari",
+          "istanbul",
+          "hizmet-pazaryeri"
+        ],
+        "customer": "İstanbul’da ev temizliği hizmeti arayan kişiler",
+        "problem": "Temizlik hizmeti bulup rezervasyon yapmak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "İstanbul’da temizlik rezervasyonunda güven ve bulunabilirlik sorunları neler?",
+          "Mevcut sağlayıcıların hizmet kapsamı ve fiyatları nasıl?"
+        ],
+        "query_examples": [
+          "İstanbul ev temizliği rezervasyon şikayetleri",
+          "İstanbul temizlik hizmeti fiyat rezervasyon"
+        ],
+        "source_families": [
+          "Yerel hizmet platformları",
+          "Yerel müşteri yorumları",
+          "Resmî hizmet ve fiyat sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "İstanbul kapsamını yalnız ABD hizmetleriyle araştırma",
+          "Eksik girdiden İstanbul veya ev temizliği varsayma"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F08-net",
+      "idea_id": "F08",
+      "idea_name": "Günlük mobil kelime bulmacası",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Telefonda oynanan, kullanıcılara her gün yeni bir kelime bulmacası sunan bir mobil oyun yapmak istiyorum.",
+      "expected": {
+        "primary_category": "oyun",
+        "acceptable_primary_categories": [
+          "oyun"
+        ],
+        "secondary_categories": [
+          "mobil-uygulama"
+        ],
+        "modifiers": [],
+        "customer": "Telefonda kelime bulmacası oynamak isteyenler",
+        "problem": "Günlük kelime bulmacası deneyimi",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Günlük kelime oyunlarında devamlılık ve tekrar sorunları neler?",
+          "Oyuncular mevcut oyunların hangi özelliklerinden şikâyet ediyor?"
+        ],
+        "query_examples": [
+          "daily mobile word puzzle game reviews",
+          "günlük kelime oyunu kullanıcı şikayetleri"
+        ],
+        "source_families": [
+          "Mobil oyun mağazaları",
+          "Oyuncu incelemeleri",
+          "Kelime oyunu toplulukları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Mobil dağıtımı oyunun önüne ana kategori yapma",
+          "Belirtilmemiş oyun dilini kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F08-eksik",
+      "idea_id": "F08",
+      "idea_name": "Günlük mobil kelime bulmacası",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Her gün bir kelime sorusu sunan bir şey yapmak istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "oyun",
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Oyun mu, dil eğitimi veya başka bir deneyim mi?",
+          "Hangi platform ve dilde sunulacak?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Mobil dağıtımı oyunun önüne ana kategori yapma",
+          "Belirtilmemiş oyun dilini kesinleştirme"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F08-yanlis-etiket",
+      "idea_id": "F08",
+      "idea_name": "Günlük mobil kelime bulmacası",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Yerel hizmet yazılımı diyorum: telefonda oynanacak ve her gün yeni bir kelime bulmacası sunacak bir mobil oyun.",
+      "expected": {
+        "primary_category": "oyun",
+        "acceptable_primary_categories": [
+          "oyun"
+        ],
+        "secondary_categories": [
+          "mobil-uygulama"
+        ],
+        "modifiers": [],
+        "customer": "Telefonda kelime bulmacası oynamak isteyenler",
+        "problem": "Günlük kelime bulmacası deneyimi",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Günlük kelime oyunlarında devamlılık ve tekrar sorunları neler?",
+          "Oyuncular mevcut oyunların hangi özelliklerinden şikâyet ediyor?"
+        ],
+        "query_examples": [
+          "daily mobile word puzzle game reviews",
+          "günlük kelime oyunu kullanıcı şikayetleri"
+        ],
+        "source_families": [
+          "Mobil oyun mağazaları",
+          "Oyuncu incelemeleri",
+          "Kelime oyunu toplulukları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Mobil dağıtımı oyunun önüne ana kategori yapma",
+          "Belirtilmemiş oyun dilini kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F09-net",
+      "idea_id": "F09",
+      "idea_name": "Berber randevu ve gelmeme SaaS",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Berber işletmelerine abonelikle sunulan, kendi randevularını ve randevuya gelmeme sorununu yönetecekleri bir web SaaS yapmak istiyorum.",
+      "expected": {
+        "primary_category": "b2b-web-yazilimi",
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "yerel-isletme"
+        ],
+        "customer": "Berber işletmeleri",
+        "problem": "Randevuları ve randevuya gelmeme sorununu yönetmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Berberler randevuya gelmeme sorununu nasıl yönetiyor?",
+          "Mevcut randevu SaaS’larının eksikleri ve paketleri neler?"
+        ],
+        "query_examples": [
+          "barbershop scheduling software no show problems",
+          "berber randevu yazılımı fiyat yorum"
+        ],
+        "source_families": [
+          "İşletme randevu yazılımları",
+          "Resmî fiyat sayfaları",
+          "Berber işletmesi toplulukları ve incelemeler"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Yalnız berber sözcüğü nedeniyle ana kategoriyi yerel-hizmet yapma",
+          "Eksik girdide SaaS/pazaryeri ayrımını sormadan kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F09-eksik",
+      "idea_id": "F09",
+      "idea_name": "Berber randevu ve gelmeme SaaS",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Berber randevuları için bir uygulama istiyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi",
+          "yerel-hizmet",
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Berber işletmesi kendi takvimini mi yönetecek, müşteriler berber mi bulacak?",
+          "Öncelikli problem randevu yönetimi mi, başka bir sorun mu?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Yalnız berber sözcüğü nedeniyle ana kategoriyi yerel-hizmet yapma",
+          "Eksik girdide SaaS/pazaryeri ayrımını sormadan kesinleştirme"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F09-yanlis-etiket",
+      "idea_id": "F09",
+      "idea_name": "Berber randevu ve gelmeme SaaS",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Buna yerel hizmet pazaryeri dedim ama müşteriler berber bulmayacak; berber işletmeleri abonelikli web yazılımında kendi randevularını ve gelmeme sorununu yönetecek.",
+      "expected": {
+        "primary_category": "b2b-web-yazilimi",
+        "acceptable_primary_categories": [
+          "b2b-web-yazilimi"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "yerel-isletme"
+        ],
+        "customer": "Berber işletmeleri",
+        "problem": "Randevuları ve randevuya gelmeme sorununu yönetmek",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Berberler randevuya gelmeme sorununu nasıl yönetiyor?",
+          "Mevcut randevu SaaS’larının eksikleri ve paketleri neler?"
+        ],
+        "query_examples": [
+          "barbershop scheduling software no show problems",
+          "berber randevu yazılımı fiyat yorum"
+        ],
+        "source_families": [
+          "İşletme randevu yazılımları",
+          "Resmî fiyat sayfaları",
+          "Berber işletmesi toplulukları ve incelemeler"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Yalnız berber sözcüğü nedeniyle ana kategoriyi yerel-hizmet yapma",
+          "Eksik girdide SaaS/pazaryeri ayrımını sormadan kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    },
+    {
+      "case_id": "F10-net",
+      "idea_id": "F10",
+      "idea_name": "Öğretmen notlarından AI alıştırma mobil uygulaması",
+      "variant": "net",
+      "status": "not_run",
+      "input": "Öğretmenlerin ders notlarını yükleyip AI yardımıyla bu notlardan alıştırmalar hazırlayabildiği bir mobil uygulama yapmak istiyorum.",
+      "expected": {
+        "primary_category": "mobil-uygulama",
+        "acceptable_primary_categories": [
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "egitim",
+          "ai-ozelligi"
+        ],
+        "customer": "Öğretmenler",
+        "problem": "Yüklenen ders notlarından alıştırma hazırlamak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Öğretmenler notlardan alıştırma hazırlarken hangi zorlukları yaşıyor?",
+          "AI alıştırma araçlarında doğruluk ve öğretmen kontrolü sorunları neler?"
+        ],
+        "query_examples": [
+          "teacher notes to exercises AI app reviews",
+          "teachers AI worksheet generator accuracy complaints"
+        ],
+        "source_families": [
+          "Eğitim uygulaması mağazaları",
+          "Öğretmen toplulukları",
+          "Resmî eğitim ürünü sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Her AI özelliğinde yapay-zeka-urunu ana kategorisini otomatik seçme",
+          "Eksik girdiden öğretmen hedefini kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir."
+      }
+    },
+    {
+      "case_id": "F10-eksik",
+      "idea_id": "F10",
+      "idea_name": "Öğretmen notlarından AI alıştırma mobil uygulaması",
+      "variant": "eksik",
+      "status": "not_run",
+      "input": "Ders notlarından alıştırma üreten bir ürün düşünüyorum.",
+      "expected": {
+        "primary_category": null,
+        "acceptable_primary_categories": [
+          "mobil-uygulama",
+          "b2b-web-yazilimi",
+          "yapay-zeka-urunu"
+        ],
+        "secondary_categories": [],
+        "modifiers": [],
+        "customer": null,
+        "problem": null,
+        "clarify": [
+          "Ürünü öğretmenler mi, öğrenciler mi kullanacak?",
+          "Hangi platformda ve hangi ders/yaş kapsamı için?"
+        ],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [],
+        "query_examples": [],
+        "source_families": [],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Her AI özelliğinde yapay-zeka-urunu ana kategorisini otomatik seçme",
+          "Eksik girdiden öğretmen hedefini kesinleştirme"
+        ],
+        "evaluation_note": "Bu girdide gizli ana fikir ayrıntılarını bekleme. Olası kategoriler onay değil; belirsizliği gerekçelendir, kısa soru sor ve gerekirse geniş kapsamla devam et."
+      }
+    },
+    {
+      "case_id": "F10-yanlis-etiket",
+      "idea_id": "F10",
+      "idea_name": "Öğretmen notlarından AI alıştırma mobil uygulaması",
+      "variant": "yanlis-etiket",
+      "status": "not_run",
+      "input": "Buna geliştirici API ürünü dedim: öğretmenler telefondaki uygulamaya ders notlarını yükleyip AI ile alıştırma oluşturacak; geliştiricilere API sunulmayacak.",
+      "expected": {
+        "primary_category": "mobil-uygulama",
+        "acceptable_primary_categories": [
+          "mobil-uygulama"
+        ],
+        "secondary_categories": [],
+        "modifiers": [
+          "egitim",
+          "ai-ozelligi"
+        ],
+        "customer": "Öğretmenler",
+        "problem": "Yüklenen ders notlarından alıştırma hazırlamak",
+        "clarify": [],
+        "unknowns_policy": "Belirtilmeyen pazar, dil, ödeme modeli ve kullanım ayrıntılarını kesin gerçek olarak ekleme; kritik boşlukları sor, kullanıcı atlarsa koru.",
+        "research_questions": [
+          "Öğretmenler notlardan alıştırma hazırlarken hangi zorlukları yaşıyor?",
+          "AI alıştırma araçlarında doğruluk ve öğretmen kontrolü sorunları neler?"
+        ],
+        "query_examples": [
+          "teacher notes to exercises AI app reviews",
+          "teachers AI worksheet generator accuracy complaints"
+        ],
+        "source_families": [
+          "Eğitim uygulaması mağazaları",
+          "Öğretmen toplulukları",
+          "Resmî eğitim ürünü sayfaları"
+        ],
+        "required_intents_after_clarification": [
+          "problem_demand",
+          "existing_alternatives",
+          "dissatisfaction",
+          "competitor_discovery",
+          "observed_market_pricing"
+        ],
+        "forbidden_behaviors": [
+          "Her AI özelliğinde yapay-zeka-urunu ana kategorisini otomatik seçme",
+          "Eksik girdiden öğretmen hedefini kesinleştirme"
+        ],
+        "evaluation_note": "Sorguları örnek metinle birebir değil, müşteri/problem/niyet/pazar anlamı açısından değerlendir. Yanlış etiketi ürünün açık kullanım amacıyla karşılaştır; kullanıcı metnini koruyup gerekçeli kategori öner, gerçek bir çelişki varsa netleştir."
+      }
+    }
+  ],
+  "model": "Gemini 3.1 Flash Lite",
+  "model_external_tools": "disabled",
+  "execution_owner": "Batuhan",
+  "data_issue_owner": "Ayselin"
+}

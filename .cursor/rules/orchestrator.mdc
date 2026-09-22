@@ -1,6 +1,8 @@
 ---
-description: Central project orchestration for Faz 1–7 platform work
+description: Central project orchestration for current three-phase platform work
 alwaysApply: true
 ---
 
 Use `.agents/skills/orchestrate-research-platform/SKILL.md` and `.orchestrator/SYSTEM.md` for non-trivial work. The active run graph is the source of truth. Do not reduce approved scope, bypass independent gates, or begin Faz 8 without explicit approval.
+
+Current product scope and AI restrictions are in `ortak/RULES.md` and `demandrift-product.mdc`. Historical seven-phase/Build instructions do not override these user decisions.

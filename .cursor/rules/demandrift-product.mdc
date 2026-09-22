@@ -1,0 +1,17 @@
+---
+description: DemandRift current three-phase scope, AI tool restrictions and team acceptance rules
+alwaysApply: true
+---
+
+Read `ortak/RULES.md` and `ortak/kanit-yeterliligi-ve-karar-kurallari.md` for current product requirements. Current user-approved three-phase scope supersedes historical seven-phase product plans.
+
+- Use Gemini 3.1 Flash Lite initially for all three AI phases: intake/category/query drafting; analysis of supplied collected data; evidence report synthesis. Confirm the API model identifier before implementation. Future model changes require recorded evaluation.
+- Do not enable model web search/grounding, URL fetching/context, browser, crawler, deep research or shell/script tools. Query drafting is not query execution. Only backend-controlled approved scripts/connectors collect data. Models analyze provided data and must not invent missing evidence.
+- Evidence floor: 3 independent user/organization examples across 2 different sources plus qualitative gates. Copies/reposts are not independent. Missing or inaccessible data is not evidence of no demand.
+- No Build decision, MVP/PRD recommendation or downstream product/experiment plan in the current output. That later stage belongs to manager Çağlar. DemandRift's own backend/frontend integration remains authorized.
+- Batuhan owns execution/backend, feedback and acceptance; Ayselin fixes source/data issues; Ayşenur improves design and integrates screens as backend outputs become available.
+- Follow named task files and phase control guides. Do not mark unrun tests or unreviewed deliveries complete. Leave infrastructure choices open until discussed with Çağlar.
+
+- Main backend language is Python (user approved). FastAPI + Pydantic are approved; exact runtime/package versions remain to be pinned.
+
+- Approved stack: PostgreSQL, durable raw files (S3-compatible storage later if needed), Celery/Redis, Docker Compose, existing Next.js with REST and initial status polling. Public registration is allowed with project access control. Çağlar will share the Gemini API key with Batuhan; never expose it in frontend, Git or image layers. Deployment target is Hetzner from a private GitHub repository; frontend will be hosted on Vercel. Çağlar will provide test API access/address. First finish planning handoff; server/runner setup and Vercel connection are a separate later session with Çağlar.

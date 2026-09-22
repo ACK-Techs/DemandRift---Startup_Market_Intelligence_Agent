@@ -18,21 +18,15 @@
       "apps",
       "packages",
       "infra",
-      "tests",
-      "Faz1-Plan.md",
-      "Faz2-Plan.md",
-      "Faz3-Plan.md",
-      "Faz4-Plan.md",
-      "Faz5-Plan.md",
-      "Faz6-Plan.md",
-      "Faz7-Plan.md",
-      "Platform-Temeli.md",
-      "Ust-Yonetim-Ana-Mimari-Plani.md"
+      "faz-1-fikir-ve-arastirma",
+      "faz-2-veri-toplama-ve-hazirlama",
+      "faz-3-karar-ve-rapor",
+      "ortak"
     ],
     "requiredContext": [
-      "AGENTS.md",
-      "Ust-Yonetim-Ana-Mimari-Plani.md",
-      "Platform-Temeli.md",
+      "README.md",
+      "ortak/README.md",
+      "ortak/mimari-ve-kararlar.md",
       ".orchestrator/SYSTEM.md",
       ".orchestrator/roles/pm-manager.md"
     ],
@@ -41,20 +35,52 @@
     "adapters": ".orchestrator/adapters"
   },
   "lifecycle": {
-    "statuses": ["draft", "ready", "active", "blocked", "done", "failed", "cancelled"],
-    "terminalStatuses": ["done", "failed", "cancelled"],
+    "statuses": [
+      "draft",
+      "ready",
+      "active",
+      "blocked",
+      "done",
+      "failed",
+      "cancelled"
+    ],
+    "terminalStatuses": [
+      "done",
+      "failed",
+      "cancelled"
+    ],
     "transitions": {
-      "draft": ["ready", "cancelled"],
-      "ready": ["active", "blocked", "cancelled"],
-      "active": ["done", "blocked", "failed", "cancelled"],
-      "blocked": ["ready", "cancelled"],
+      "draft": [
+        "ready",
+        "cancelled"
+      ],
+      "ready": [
+        "active",
+        "blocked",
+        "cancelled"
+      ],
+      "active": [
+        "done",
+        "blocked",
+        "failed",
+        "cancelled"
+      ],
+      "blocked": [
+        "ready",
+        "cancelled"
+      ],
       "done": [],
       "failed": [],
       "cancelled": []
     }
   },
   "riskPolicy": {
-    "levels": ["low", "medium", "high", "critical"],
+    "levels": [
+      "low",
+      "medium",
+      "high",
+      "critical"
+    ],
     "independentGateKinds": [
       "implement",
       "contract",
@@ -71,8 +97,14 @@
       "migration",
       "deployment"
     ],
-    "requireIndependentReviewAt": ["high", "critical"],
-    "requireVerificationAt": ["high", "critical"],
+    "requireIndependentReviewAt": [
+      "high",
+      "critical"
+    ],
+    "requireVerificationAt": [
+      "high",
+      "critical"
+    ],
     "requireHumanDecisionFor": [
       "production-write",
       "destructive-operation",
@@ -124,7 +156,9 @@
     "commitGeneratedRunsByDefault": false
   },
   "repoGuardrails": {
-    "protectedPrefixes": [".git"],
+    "protectedPrefixes": [
+      ".git"
+    ],
     "doNotTouch": [],
     "controlledWritePaths": [],
     "commitRequiresExplicitRequest": true,

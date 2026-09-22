@@ -1,0 +1,15 @@
+{
+  "imported_at": "2026-09-22T16:09:42.281794+00:00",
+  "destination": "https://www.alicaglarkocer.com/calendar/",
+  "method": "browser_file_import",
+  "file": "demandrift-tum-gorevler.json",
+  "sha256": "7e6e9a697601690d26350ac51a9a30a4d5330da8823cc652f187b39504fe779a",
+  "ui_confirmation": "22 görev eklendi.",
+  "created_count": 22,
+  "assignments_from_imported_file": {
+    "batuhanevleksiz": 9,
+    "aysenurdemezoglu": 7,
+    "ayselinaydogdu": 6
+  },
+  "note": "Ürün DemandRift ve üç username canlı UI üzerinden doğrulandı; dosya bir kez içe aktarıldı. Aynı JSON yeniden yüklenmemeli."
+}

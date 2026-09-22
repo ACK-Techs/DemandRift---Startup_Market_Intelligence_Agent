@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "product": "DemandRift",
+  "tasks": [
+    {
+      "id": "demandrift-ay-01",
+      "title": "DemandRift · AY-01 · Mevcut ekran eksiklerini ve ortak tasarım durumlarını düzenle",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-01 | Faz: Tümü\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nMevcut frontend kodundaki tasarım ve işlev eksiklerini ortak frontend rehberine göre gider. Responsive düzen, klavye/focus, okunabilirlik ve boş/hata durumlarını kontrol et. Sabit BUILD/82% confidence, sahte kaydedildi ve çalışmayan eylemleri gerçek ürün davranışına göre düzelt.\n\nBaşlama girdisi / bağımlılık: Kod envanteri; frontend rehberi. İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Öncelikli ekran listesi; responsive/klavye/okunabilirlik kontrolleri. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; ortak/ekip-ve-teslim.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "medium",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-02",
+      "title": "DemandRift · AY-02 · Batuhan ile sürümlü istek/yanıt/hata ve ekran alanlarını eşleştir",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-02 | Faz: Tümü\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nHer backend dilimi için Batuhan’dan sürümlü istek/yanıt/hata örneği al; ekran alanlarına eşle. Eksik alanları somut örnekle bildir; frontend’de veri veya durum uydurma. Başlangıç API teslimi hazırsa Batuhan’ın son kabul görevini bekleme.\n\nBaşlama girdisi / bağımlılık: Her fazın BT teslimi. İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Eksik API alan listesi ve gerçek payload eşlemesi. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; ortak/ekip-ve-teslim.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "high",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-03",
+      "title": "DemandRift · AY-03 · Fikir, netleştirme, kategori ve plan ekranını bağla",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-03 | Faz: 1\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nFikir formunu ve netleştirme/kategori/plan görünümünü gerçek API’ye bağla. Girilen metni, bilinmeyenlerle devam tercihini ve plan sürümünü koru. Gerçek başlatma/research_id, yüklenme, doğrulama hatası ve tekrar gönderim davranışını kontrol et; mock başarıyı gerçek kayıt gibi gösterme.\n\nBaşlama girdisi / bağımlılık: BT-01 + BT-04 API ilk teslimi; AY-02. İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Gerçek kayıt, kullanıcı girdisinin korunması ve hata durumları. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; faz-1-fikir-ve-arastirma/docs/kontrol-ve-kabul-rehberi.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "high",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-04",
+      "title": "DemandRift · AY-04 · Kaynak ilerlemesi, kanıt, problem ve rakip ekranlarını bağla",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-04 | Faz: 2\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nAraştırma ilerlemesini REST üzerinden periyodik sorgula. Kaynak bazında başarılı/kısmi/erişilemedi/boş durumlarını ayır. Kanıt, problem ve rakip ekranlarında gerçek filtreler, kaynak URL/alıntı/tarih ve fiyat birimlerini göster; bilinmeyen alanları doldurma.\n\nBaşlama girdisi / bağımlılık: BT-05 API ilk teslimi; AY-02 (BT-06 sonraki kabul). İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Gerçek ilerleme, kısmi/erişim durumu, kaynak/alıntı/tarih ve alanlar. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; faz-2-veri-toplama-ve-hazirlama/docs/kontrol-ve-kabul-rehberi.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "medium",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-05",
+      "title": "DemandRift · AY-05 · Rapor, olumlu bulgu/karşıt/eksik veri ve yönetici değerlendirmesini göster",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-05 | Faz: 3\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nDoğrulanmış raporu, 3/2 ve nitel gate sonuçlarını, destek/karşıt/eksik kanıtları bağla. positive_findings etiketi “Olumlu bulgular — yönetici değerlendirmesi bekliyor”. Build/MVP/ürün planına ekle veya uydurma güven yüzdesi gösterme. Kaynaktan rapora bağlantı ve hata/yenileme kontrolü yap.\n\nBaşlama girdisi / bağımlılık: BT-07 rapor API teslimi (BT-08 sonraki kabul). İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Build/MVP ve uydurma confidence kaldırılmış; gerçek rapor/kanıt bağı. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; faz-3-karar-ve-rapor/docs/kontrol-ve-kabul-rehberi.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "high",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-06",
+      "title": "DemandRift · AY-06 · Dashboard/proje listesi ve kapsamda kalan diğer ekranları bağla",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-06 | Faz: Tümü\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nDashboard/proje/araştırma seçimi ve kapsamda kalan ayar/kayıt eylemlerini gerçek API’ye bağla. Genel kayıt/giriş ve proje bazlı erişimle uyumlu çalış. Proje kimliği karışması, çift işlem ve yenilemede kayıp olmasın. API henüz yoksa sahte başarı üretme; Batuhan’a eksik uç/alanı bildir.\n\nBaşlama girdisi / bağımlılık: İlgili liste/ayar endpointleri; BT-09 önceliği. İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Mock başarı yok; desteklenmeyen buton/ayar açıkça ele alınmış. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; ortak/ekip-ve-teslim.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "medium",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    },
+    {
+      "id": "demandrift-ay-07",
+      "title": "DemandRift · AY-07 · Batuhan geri bildirimlerini düzelt; yenileme ve entegrasyon kontrollerini teslim et",
+      "owner_username": "aysenurdemezoglu",
+      "description": "DemandRift | AY-07 | Faz: Tümü\nSorumlu: Ayşenur (@aysenurdemezoglu)\nBaşlangıç durumu: planlandı.\n\nHer teslim için ekran, görev ID, backend/sözleşme sürümü, gerçek research_id, beklenen/gerçek davranış ve kanıtı Batuhan’a ver. İstenen düzeltmeyi yapıp aynı durumu tekrar kontrol et. Frontend Vercel’e uygun ortamdan API adresi okuyacak; yayın bağlantısı daha sonra Çağlar ile yapılacak.\n\nBaşlama girdisi / bağımlılık: Her AY teslimi. İlk API/geri bildirim teslimiyle başlanır; yeniden kontrol ve son kabul karşı tarafın tesliminden sonra yapılır.\n\nTeslim ve kabul: Beklenen/gerçek ekran verisi, hata durumları ve düzeltme kanıtı. Batuhan kontrol eder; kanıtsız veya çalıştırılmamış test kabul edilmiş sayılmaz. Geri bildirim: beklenen, gerçekleşen, kanıt, yapılacak düzeltme ve tekrar sonucu.\n\nOrtak sınırlar: Üç fazda Gemini 3.1 Flash Lite; model site aramaz, URL açmaz veya script çalıştırmaz. Veri alımı backend scriptlerindedir. Build/MVP/sonraki ürün planı kapsam dışı; Çağlar daha sonra değerlendirir. Hetzner/runner/Vercel kurulumu bu görevin şu anki teslimine dahil değildir.\n\nRepo içi başvuru: ortak/gorevler/aysenur.md; ortak/ekip-ve-teslim.md; ortak/frontend-entegrasyon-ve-eksikler.md; ortak/RULES.md; ortak/kanit-yeterliligi-ve-karar-kurallari.md.",
+      "priority": "medium",
+      "estimated_time": "",
+      "deadline_date": "",
+      "deadline_time": ""
+    }
+  ]
+}
