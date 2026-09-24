@@ -1,0 +1,865 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="https://www.destatis.de/"/>
+  <meta charset="UTF-8"/>
+  <title>Data by topic  -  German Federal Statistical Office</title>
+  <meta name="title" content="Data by topic"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1"/>
+  <meta name="generator" content="Government Site Builder"/>
+  
+      <link rel="canonical" href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html"/>
+  <!--
+     Realisiert mit dem Government Site Builder.
+     Die Content Management Lösung der Bundesverwaltung.
+     www.government-site-builder.de
+   -->
+ <link rel="copyright" href="EN/Service/Legal-Notice/_node.html" type="text/html" title="Legal Notice" />
+<link rel="glossary" href="EN/Service/Glossary/glossary_node.html" type="text/html" title="Glossary" />
+<link rel="start" href="Europa/EN/Home/_node.html" type="text/html" title="Homepage" />
+<link rel="contents" href="Europa/EN/Service/Sitemap/sitemap_node.html" type="text/html" title="Sitemap" />
+<link rel="search" href="Europa/EN/Service/Search/search_node.html" type="text/html" title="Search" />
+<link rel="shortcut icon" href="/SiteGlobals/Frontend/Images/favicon.ico?__blob=normal&amp;v=4" type="image/ico" />
+  
+  
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/normalize.css?v=3" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/_libs.css?v=2" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/small.css?v=107" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/medium.css?v=67" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/large.css?v=80" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/custom.css?v=72" type="text/css"/>
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/custom_destatis.css?v=47" type="text/css"/>
+<!--[if IE 9]><link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/addon_iefix_9.css?v=5" type="text/css"/><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="SiteGlobals/Frontend/Styles/addon_iefix.css?v=1" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/addon_print.css?v=15" type="text/css" media="print" />
+
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/addon_eiz.css?v=21" type="text/css"/>
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/addon_eiz_cp.css?v=6" type="text/css"/>
+
+  
+</head>
+<body class="gsb startseite js-off lang-en" data-nn="218540-219116" data-tracking-site-id="58" id="Start">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="wrapperOuter" id="wrapperOuter">
+  <div class="wrapperInner">
+    <nav class="navskip" role="navigation" aria-labelledby="navskiphead">
+      <p class="navSkip" id="navskiphead">
+        <em>Go to:</em>
+      </p>
+      <ul class="navSkip">
+        <li><a href="Europa/EN/Topic/DatabyTopic.html?nn=218540#content">Content</a></li>
+        <li><a href="Europa/EN/Topic/DatabyTopic.html?nn=218540#navPrimary">Main Menu</a></li>
+        <li><a href="Europa/EN/Topic/DatabyTopic.html?nn=218540#search">Search</a></li>
+      </ul>
+    </nav>
+    <div id="wrapperDivisions" class="wrapperDivisions" data-mobile-menu-url="SiteGlobals/Modules/MobileNavigation/EN/Europa/MobileNavigation.html?view=renderMobileNavigation">
+      <header id="header" class="header">
+        <div class="row">
+          <div class="small-12 column">
+            <div class="row collapse align-justify">
+              <div class="column small-12 show-for-large">
+                <nav class="navServiceMeta" role="navigation" aria-labelledby="serviceMenu">
+                  <h2 class="aural" id="serviceMenu" aria-hidden="true">Servicemeu</h2>
+                  <ul class="c-nav-service-meta">
+    <li class="c-nav-service-meta__item">
+
+          <a href="EN/Home/_node.html"
+   title="Homepage"
+  
+  
+  >Homepage</a></li>
+      <li class="c-nav-service-meta__item">
+
+          <a href="Europa/EN/Service/Contact/_inhalt.html"
+  
+  
+  
+  >Contact</a></li>
+      <li class="c-nav-service-meta__item">
+
+          <a title="Zum deutschen Auftritt" class="languageLink lang_de" href="Europa/DE/Home/_inhalt.html" xml:lang="de" hreflang="de" lang="de">Deutsch</a>
+</li>
+      </ul>
+
+                </nav>
+              </div>
+              <div class="column shrink">
+                <a href="Europa/EN/Home/_node.html" class="logo" id="anfang" title="to homepage">
+  <img src="/SiteGlobals/Frontend/Images/logo.svg?__blob=normal&amp;v=11" alt="Logo: Destatis Statistisches Bundesamt (Link to homepage)" />
+</a>
+                  <div class="header__badge-wrapper">
+  <p class="header__badge">Europe in figures</p>
+</div>
+
+
+              </div>
+              <nav class="header__nav column shrink">
+                <ul class="nav">
+                      <li class="nav__list-item nav__list-item--search">
+                        <a class="nav__item nav__toggle-search js-search-opener" href="Europa/EN/Service/Search/search_node.html" id="search" aria-label="Open search">
+                          <svg width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M23.7 21.3l-5.9-5.7c1.4-1.7 2.2-3.8 2.2-6C20 4.3 15.5 0 10 0S0 4.3 0 9.6s4.5 9.6 10 9.6c2.4 0 4.6-.8 6.3-2.2l6 5.7c.2.2.4.3.7.3.3 0 .5-.1.7-.3.4-.4.4-1 0-1.4zM10 17.2c-4.4 0-8-3.4-8-7.6C2 5.4 5.6 2 10 2s8 3.4 8 7.6c0 4.2-3.6 7.6-8 7.6z" fill="#333" fill-rule="nonzero"/></svg>
+                        </a>
+                          <div class="l-content-wrapper l-content-wrapper--no-space-inner l-content-wrapper--bg-color l-content-wrapper--gradient l-content-wrapper--less-space-after l-content-wrapper--position"
+                               id="header-search">
+                            <div class="c-search-banner">
+                              <div class="row collapse">
+                                <div class="column large-10 large-offset-1">
+                                  <h2 class="aural">Search</h2>
+                                  <form name="searchService" id="searchService"
+      action="SiteGlobals/Forms/Suche/Europa/EN/Servicesuche_Formular.html"
+      role="search"
+      method="get"
+      enctype="application/x-www-form-urlencoded"
+    
+      class="c-search-box__form  js-autosuggest"
+
+    
+      data-autosuggest-form="SiteGlobals/Forms/Suche/EN/Servicesuche_Autosuggest_Formular.html?nn=218540"
+      data-autosuggest-box-description="Gets submit immediately by selection"
+    
+>
+  
+  <input type="hidden" name="nn" value="218540"/>
+  <input type="hidden" name="resourceId" value="261114" />
+  <input type="hidden" name="input_" value="265112" />
+  <input type="hidden" name="pageLocale" value="en" /><div class="c-search-banner__wrapper">
+  
+  
+<span class="formLabel aural">
+  <label for="f261114d2370">Search item </label></span><div class="formField">
+  <input id="f261114d2370" name="templateQueryString" value="" title="Search item must not beginn with ? or *" type="text" pattern="^[^*?].*$" placeholder="search item" size="26" maxlength="100"/>
+</div>
+
+  
+  <input class="image" type="image" src="/SiteGlobals/Forms/_components/Buttons/Submit_weiss.svg?__blob=image&amp;v=1" id="f261114d2372" name="submit" alt="Search" title="Search" />
+</div></form>
+
+
+                                  <div class="c-search-banner__close">
+                                    <button class="c-search-banner__close-button js-search-opener" type="button">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </li>
+                    <li class="nav__list-item nav__list-item--mobilemenu" id="navMobileMenu">
+                      <a class="nav__item nav__toggle-nav" href="Europa/EN/Service/Sitemap/sitemap_node.html"
+                         id="navPrimary"><span>Menu</span>
+                      </a>
+                    </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+        <nav id="navBreadcrumbs" class="c-breadcrumb" aria-labelledby="breadcrumbhead">
+          <div class="row">
+            <div class="column">
+              <h2 class="aural" aria-hidden="true" id="breadcrumbhead">You are here:</h2>
+              <ol class="c-breadcrumb__list">
+  <li class="c-breadcrumb__item">
+
+        <a href="Europa/EN/Home/_node.html"
+  
+  
+  
+  >Europe in figures</a></li>
+    <li class="c-breadcrumb__item">
+
+        <a href="Europa/EN/Topic/_node.html"
+   title="Data by topic"
+  
+  
+  >Data by topic</a></li>
+    <li class="c-breadcrumb__item"><strong>Data by topic</strong></li>
+
+  </ol>
+
+
+            </div>
+          </div>
+        </nav>
+      <main id="main" class="main row">
+  <div id="content" class="content richtext column medium-offset-2 medium-8 large-offset-2 large-7">
+    <div class="l-content-wrapper l-content-wrapper--expand-full l-content-wrapper--less-space-after">
+      <div class="row">
+        <div class="column">
+          <div class="c-jumbotron c-jumbotron--category">
+            <div class="row">
+              <div class="column">
+                <div class="c-jumbotron__wrapper">
+                  <h1 class="c-jumbotron__heading">
+                    <small class="c-jumbotron__category">
+                        Europe</small>
+                    Data by topic</h1>
+                  <p>Topics in brief</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="l-content-wrapper l-content-wrapper--expand-full">
+    <div class="row">
+      <div class="column" style="position: relative;">
+        <div class="c-actions ">
+  <div class="row">
+    <div class="column">
+      <p class="c-actions__list">
+        <span class="c-actions__item">
+          <a class="c-actions__action c-actions__action--share"
+             href="mailto:?body=https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html&subject=SeiteTeilen_Subject_en">
+            Share</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+  </div>
+<div class="l-content-wrapper" id="sprg265110">
+  <div class="row">
+    <div class="column">
+      <div class="c-toggle c-toggle--expand-right">
+        <div class="tabaccordion">
+          <div class="tabs-container">
+                  <h2 class="c-toggle__subheading"> </h2>
+
+                    <h3 class="c-toggle__heading heading">
+              General and regional statistics</h3>
+
+
+<div class="c-toggle__entry" id="413986">
+
+  <table class="wide"><caption>Important general and regional indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th rowspan="3">Country</th><th>Land area</th><th><abbr title="Gross domestic product">GDP</abbr> per capita</th><th>Unemployment rate</th><th>Online shopping</th><th>Broadband connection</th></tr><tr><th valign="top"><abbr title="Square kilometre">km<sup>2</sup></abbr></th><th valign="top">euro</th><th valign="top">% of active population<br/>
+
+(age 20 to 64)</th><th valign="top">% of individuals aged 16 to 74</th><th valign="top">% of households</th></tr><tr><th valign="top">2026</th><th colspan="4">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>353,260</td><td>54,240</td><td>3.8</td><td>81.4</td><td>97.4</td></tr><tr><td class="Vorspalte">Austria</td><td>82,494</td><td>55,870</td><td>5.4</td><td>72.7</td><td>96.1</td></tr><tr><td class="Vorspalte">Belgium</td><td>30,452</td><td>53,930</td><td>5.8</td><td>78.5</td><td>96.0</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>110,001</td><td>18,060</td><td>3.5</td><td>51.2</td><td>96.6</td></tr><tr><td class="Vorspalte">Croatia</td><td>55,896</td><td>23,950</td><td>4.5</td><td>61.7</td><td>94.0</td></tr><tr><td class="Vorspalte">Cyprus</td><td>9,213</td><td>36,850</td><td>4.2</td><td>63.4</td><td>100.0</td></tr><tr><td class="Vorspalte">Czechia</td><td>77,212</td><td>31,880</td><td>2.6</td><td>83.7</td><td>99.2</td></tr><tr><td class="Vorspalte">Denmark</td><td>41,987</td><td>69,550</td><td>5.8</td><td>91.2</td><td>98.7</td></tr><tr><td class="Vorspalte">Estonia</td><td>43,110</td><td>30,570</td><td>7.1</td><td>76.5</td><td>100.0</td></tr><tr><td class="Vorspalte">Finland</td><td>303,109</td><td>49,850</td><td>9.0</td><td>82.0</td><td>86.0</td></tr><tr><td class="Vorspalte">France</td><td>633,886</td><td>43,350</td><td>7.2</td><td>80.2</td><td>99.9</td></tr><tr><td class="Vorspalte">Greece</td><td>130,048</td><td>23,570</td><td>8.8</td><td>68.0</td><td>99.8</td></tr><tr><td class="Vorspalte">Hungary</td><td>91,248</td><td>23,000</td><td>4.3</td><td>67.7</td><td>97.2</td></tr><tr><td class="Vorspalte">Ireland</td><td>68,655</td><td>110,150</td><td>4.2</td><td>95.0</td><td>100.0</td></tr><tr><td class="Vorspalte">Italy</td><td>297,823</td><td>38,310</td><td>6.1</td><td>56.2</td><td>96.8</td></tr><tr><td class="Vorspalte">Latvia</td><td>62,227</td><td>23,410</td><td>7.1</td><td>69.7</td><td>63.4</td></tr><tr><td class="Vorspalte">Lithuania</td><td>62,643</td><td>29,170</td><td>6.9</td><td>64.8</td><td>88.4</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>2,586</td><td>130,300</td><td>6.1</td><td>80.1</td><td>97.2</td></tr><tr><td class="Vorspalte">Malta</td><td>313</td><td>42,390</td><td>2.9</td><td>71.4</td><td>100.0</td></tr><tr><td class="Vorspalte">Netherlands</td><td>33,984</td><td>64,710</td><td>3.3</td><td>94.2</td><td>99.2</td></tr><tr><td class="Vorspalte">Poland</td><td>307,236</td><td>24,680</td><td>3.0</td><td>69.7</td><td>89.3</td></tr><tr><td class="Vorspalte">Portugal</td><td>90,977</td><td>28,390</td><td>5.9</td><td>60.5</td><td>97.2</td></tr><tr><td class="Vorspalte">Romania</td><td>234,270</td><td>19,960</td><td>5.6</td><td>60.3</td><td>96.9</td></tr><tr><td class="Vorspalte">Slovakia</td><td>48,702</td><td>25,060</td><td>5.3</td><td>78.8</td><td>97.4</td></tr><tr><td class="Vorspalte">Slovenia</td><td>20,145</td><td>33,060</td><td>3.6</td><td>66.9</td><td>94.1</td></tr><tr><td class="Vorspalte">Spain</td><td>502,654</td><td>34,210</td><td>10.3</td><td>70.8</td><td>98.7</td></tr><tr><td class="Vorspalte">Sweden</td><td>407,300</td><td>56,250</td><td>7.6</td><td>88.8</td><td>92.4</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>4,101,431</td><td>41,570</td><td>5.8</td><td>73.6</td><td>96.8</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/439b4d10-e4ba-4e36-a13a-4615842b5fcb?lang=en" target="_blank" rel="noopener noreferrer" title="External link Land area (Opens new window)">Land area</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/da4effdc-8488-4890-b449-47582bfa6658?lang=en" target="_blank" rel="noopener noreferrer" title="External link Gross domestic product at market prices in euro per capita (Opens new window)"><abbr title="Gross domestic product">GDP</abbr> per capita</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/a97ece6f-af00-4fd1-8564-805beba3668d?lang=en" target="_blank" rel="noopener noreferrer" title="External link Unemployment rate 20-64 (Opens new window)">Unemployment rate</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/a4b3954c-a258-46b0-9b3b-9d1f50d8c85c?lang=en" target="_blank" rel="noopener noreferrer" title="External link Onlineshopping total (Opens new window)">Onlineshopping</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/b591266f-8cba-4527-9608-379fcbfb5b47?lang=en" target="_blank" rel="noopener noreferrer" title="External link Households with broadband connection (Opens new window)">Broadband connection</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><strong>- </strong>= No figures or magnitude zero.</p>
+
+
+
+<p class="left">. = Numerical value unknown or not to be disclosed.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/GeneralRegional.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Economy and finance</h3>
+
+
+<div class="c-toggle__entry" id="414132">
+
+  <table class="wide"><caption>Important economic and financial indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th colspan="2">Gross domestic product (GDP) at market prices</th><th><abbr title="Gross domestic product">GDP</abbr> growth rate</th><th>Inflation rate<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote2a" title="Link to Footnote 2"><sup>2</sup></a></th><th>General government deficit/surplus<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote3a" title="Link to Footnote 3"><sup>3</sup></a></th><th>General government gross debt</th></tr><tr><th><abbr title="billion">bn</abbr> euros</th><th>per inhabitant (PPS)<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1a" title="Link to Footnote 1"><sup>1</sup></a></th><th colspan="2">%</th><th colspan="2">% of <abbr title="Gross domestic product">GDP</abbr></th></tr><tr><th colspan="6">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>4,530</td><td>48,622</td><td>0.2</td><td>2.3</td><td>-2.7</td><td>63.5</td></tr><tr><td class="Vorspalte">Austria</td><td>514</td><td>49,022</td><td>0.8</td><td>3.6</td><td>-4.2</td><td>81.5</td></tr><tr><td class="Vorspalte">Belgium</td><td>642</td><td>47,676</td><td>1.0</td><td>3.0</td><td>-5.2</td><td>107.9</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>116</td><td>28,332</td><td>3.1</td><td>3.5</td><td>-3.5</td><td>29.9</td></tr><tr><td class="Vorspalte">Croatia</td><td>93</td><td>32,370</td><td>3.4</td><td>4.4</td><td>-3.0</td><td>56.3</td></tr><tr><td class="Vorspalte">Cyprus</td><td>36</td><td>40,957</td><td>3.8</td><td>0.8</td><td>3.4</td><td>55.0</td></tr><tr><td class="Vorspalte">Czechia</td><td>347</td><td>38,557</td><td>2.6</td><td>2.3</td><td>-2.1</td><td>44.3</td></tr><tr><td class="Vorspalte">Denmark</td><td>418</td><td>53,941</td><td>3.5</td><td>1.8</td><td>2.9</td><td>27.9</td></tr><tr><td class="Vorspalte">Estonia</td><td>42</td><td>33,279</td><td>1.3</td><td>4.8</td><td>-2.0</td><td>24.1</td></tr><tr><td class="Vorspalte">Finland</td><td>282</td><td>42,070</td><td>0.8</td><td>1.8</td><td>-3.4</td><td>88.5</td></tr><tr><td class="Vorspalte">France</td><td>2,991</td><td>40,716</td><td>0.8</td><td>0.9</td><td>-5.1</td><td>115.6</td></tr><tr><td class="Vorspalte">Greece</td><td>248</td><td>28,470</td><td>2.1</td><td>2.9</td><td>1.7</td><td>146.1</td></tr><tr><td class="Vorspalte">Hungary</td><td>219</td><td>31,719</td><td>0.5</td><td>4.4</td><td>-4.7</td><td>74.6</td></tr><tr><td class="Vorspalte">Ireland</td><td>602</td><td>93,360</td><td>8.0</td><td>2.1</td><td>1.8</td><td>32.9</td></tr><tr><td class="Vorspalte">Italy</td><td>2,258</td><td>39,949</td><td>0.5</td><td>1.7</td><td>-3.1</td><td>137.1</td></tr><tr><td class="Vorspalte">Latvia</td><td>43</td><td>29,518</td><td>2.1</td><td>3.8</td><td>-2.5</td><td>46.9</td></tr><tr><td class="Vorspalte">Lithuania</td><td>84</td><td>36,174</td><td>2.9</td><td>3.4</td><td>-1.8</td><td>39.5</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>90</td><td>99,621</td><td>0.6</td><td>2.5</td><td>-2.0</td><td>26.5</td></tr><tr><td class="Vorspalte">Malta</td><td>25</td><td>45,952</td><td>4.7</td><td>2.4</td><td>-2.2</td><td>46.4</td></tr><tr><td class="Vorspalte">Netherlands</td><td>1,171</td><td>55,152</td><td>1.6</td><td>3.0</td><td>-1.6</td><td>44.4</td></tr><tr><td class="Vorspalte">Poland</td><td>923</td><td>33,816</td><td>3.6</td><td>3.3</td><td>-7.3</td><td>59.7</td></tr><tr><td class="Vorspalte">Portugal</td><td>307</td><td>33,825</td><td>1.9</td><td>2.2</td><td>0.7</td><td>89.7</td></tr><tr><td class="Vorspalte">Romania</td><td>380</td><td>32,353</td><td>0.7</td><td>6.8</td><td>-7.9</td><td>59.3</td></tr><tr><td class="Vorspalte">Slovakia</td><td>137</td><td>31,139</td><td>0.8</td><td>4.2</td><td>-4.5</td><td>61.4</td></tr><tr><td class="Vorspalte">Slovenia</td><td>70</td><td>37,689</td><td>1.1</td><td>2.5</td><td>-2.5</td><td>65.7</td></tr><tr><td class="Vorspalte">Spain</td><td>1,687</td><td>38,136</td><td>2.8</td><td>2.7</td><td>-2.4</td><td>100.7</td></tr><tr><td class="Vorspalte">Sweden</td><td>600</td><td>46,344</td><td>1.4</td><td>2.6</td><td>-1.3</td><td>35.1</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>18,796</td><td>41,566</td><td>1.4</td><td>2.5</td><td>-3.1</td><td>81.7</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/8e5010e8-4789-4728-a917-d6a2c3fcd13a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Gross domestic product at market prices (Opens new window)">Gross domestic product at market prices</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/29ab0c4d-7959-4e59-9747-14bf2e432167?lang=en" target="_blank" rel="noopener noreferrer" title="External link Gross domestic product at market prices in PPS per capita (Opens new window)">Gross domestic product per inhabitant</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/9f727da7-3466-4e82-af24-c35c703fe6f9?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Real GDP growth rate (Opens new window)">Gross domestic product growth rate</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/3efe343c-a547-49c2-85a9-3f208376cb7d?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: HICP - inflation rate (Opens new window)">Inflation rate</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/6e51c8e8-8fac-47a9-aee7-3208f644255f?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: General government deficit/surplus (Opens new window)">General government deficit/surplus</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/ee74a283-cf7f-4c54-a632-a647f0bc1db5?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: General government gross debt (Opens new window)">General government gross debt</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1a"></a> 1 Purchasing Power Standards (PPS) = artificial currency to compensate for price level differences between the European Union countries; 1 Purchasing Power Standard (PPS) is the average purchasing power of 1 euro in the European Union (EU-27).</p>
+
+
+
+<p><a id="Footnote2a"></a> 2 Harmonised Indices of Consumer Prices (HICP) - annual rate of change.</p>
+
+
+
+<p><a id="Footnote3a"></a> 3 Annual government deficit (-) or surplus (+).</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/EconomyFinance.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Population</h3>
+
+
+<div class="c-toggle__entry" id="414260">
+
+  <table class="wide"><caption>EU member states: key population indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th rowspan="3">EU member state</th><th>Total population</th><th>Population projections<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1b" title="Link to footnote 1"><sup>1</sup></a></th><th>Total fertility rate</th><th colspan="2">Life expectancy at birth</th></tr><tr><th colspan="2" valign="top">millions</th><th valign="top">children per woman</th><th valign="top">female</th><th valign="top">male</th></tr><tr><th valign="top">2025</th><th valign="top">2060</th><th colspan="3" valign="top">2024</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>83.6</td><td>78.5</td><td>1.36</td><td>83.5</td><td>78.9</td></tr><tr><td class="Vorspalte">Austria</td><td>9.2</td><td>9.4</td><td>1.31</td><td>84.3</td><td>79.8</td></tr><tr><td class="Vorspalte">Belgium</td><td>11.9</td><td>12.6</td><td>1.44</td><td>84.4</td><td>80.3</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>6.4</td><td>5.1</td><td>1.72</td><td>79.5</td><td>72.2</td></tr><tr><td class="Vorspalte">Croatia</td><td>3.9</td><td>3.3</td><td>1.46</td><td>81.8</td><td>76.0</td></tr><tr><td class="Vorspalte">Cyprus</td><td>1.0</td><td>1.1</td><td>1.38</td><td>85.6</td><td>81.5</td></tr><tr><td class="Vorspalte">Czechia</td><td>10.9</td><td>10.4</td><td>1.36</td><td>83.0</td><td>77.1</td></tr><tr><td class="Vorspalte">Denmark</td><td>6.0</td><td>6.3</td><td>1.47</td><td>83.9</td><td>80.2</td></tr><tr><td class="Vorspalte">Estonia</td><td>1.4</td><td>1.2</td><td>1.18</td><td>83.4</td><td>75.1</td></tr><tr><td class="Vorspalte">Finland</td><td>5.6</td><td>5.5</td><td>1.25</td><td>84.8</td><td>79.6</td></tr><tr><td class="Vorspalte">France</td><td>68.9</td><td>70.3</td><td>1.61</td><td>85.8</td><td>80.2</td></tr><tr><td class="Vorspalte">Greece</td><td>10.4</td><td>8.6</td><td>1.24</td><td>84.4</td><td>79.4</td></tr><tr><td class="Vorspalte">Hungary</td><td>9.5</td><td>8.2</td><td>1.41</td><td>79.9</td><td>73.7</td></tr><tr><td class="Vorspalte">Ireland</td><td>5.4</td><td>6.6</td><td>1.47</td><td>84.7</td><td>81.4</td></tr><tr><td class="Vorspalte">Italy</td><td>58.9</td><td>52.8</td><td>1.18</td><td>85.7</td><td>81.6</td></tr><tr><td class="Vorspalte">Latvia</td><td>1.9</td><td>1.4</td><td>1.24</td><td>81.2</td><td>71.4</td></tr><tr><td class="Vorspalte">Lithuania</td><td>2.9</td><td>2.3</td><td>1.11</td><td>81.6</td><td>73.0</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>0.7</td><td>0.9</td><td>1.25</td><td>85.5</td><td>81.0</td></tr><tr><td class="Vorspalte">Malta</td><td>0.6</td><td>0.8</td><td>1.01</td><td>84.8</td><td>81.2</td></tr><tr><td class="Vorspalte">Netherlands</td><td>18.0</td><td>19.1</td><td>1.43</td><td>83.3</td><td>80.5</td></tr><tr><td class="Vorspalte">Poland</td><td>36.5</td><td>31.2</td><td>1.14</td><td>82.2</td><td>74.8</td></tr><tr><td class="Vorspalte">Portugal</td><td>10.7</td><td>10.2</td><td>1.41</td><td>85.2</td><td>79.7</td></tr><tr><td class="Vorspalte">Romania</td><td>19.0</td><td>16.3</td><td>1.39</td><td>80.3</td><td>72.8</td></tr><tr><td class="Vorspalte">Slovakia</td><td>5.4</td><td>4.9</td><td>1.46</td><td>81.7</td><td>75.2</td></tr><tr><td class="Vorspalte">Slovenia</td><td>2.1</td><td>2.0</td><td>1.52</td><td>84.7</td><td>79.5</td></tr><tr><td class="Vorspalte">Spain</td><td>49.1</td><td>53.5</td><td>1.10</td><td>86.5</td><td>81.4</td></tr><tr><td class="Vorspalte">Sweden</td><td>10.6</td><td>11.7</td><td>1.43</td><td>85.3</td><td>82.3</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>450.6</td><td>434.3</td><td>1.34</td><td>84.1</td><td>78.9</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/20f3abba-7244-48a2-a571-a4a9c563b8e7?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Population (Opens new window)">Population</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/d3b015f0-ad13-4e8f-93ab-e68e37d9457f?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Population projections (Opens new window)">Population projections</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/a6719285-5c0f-4431-a493-db7573d6a5d2?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Total fertility rate (Opens new window)">Total fertility rate</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/a5e6d10c-6c47-4fe6-93e3-a6686752fd81?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Life expectancy at birth (Opens new window)">Life expectancy at birth (female)</a></td><td class="right" colspan="1" rowspan="1"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/0071c3a2-ff18-4bba-bf15-7091a3de9b40?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Life expectancy at birth (Opens new window)">Life expectancy at birth (male)</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1b"></a> 1 Eurostat population projections EUROPOP 2025.</p>
+
+
+
+<p><strong>- </strong>= No figures or magnitude zero.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/Population.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Labour market</h3>
+
+
+<div class="c-toggle__entry" id="414344">
+
+  <table class="wide"><caption>Important labour market indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="4">Country</th><th colspan="2">Employment rate</th><th colspan="2">Unemployment rate</th></tr><tr><th>age 20 to 64</th><th>age 55 to 64</th><th>age 20 to 64</th><th>age 15 to 24</th></tr><tr><th colspan="2">%</th><th colspan="2">% of active population</th></tr><tr><th colspan="4">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>81.1</td><td>75.3</td><td>3.8</td><td>7.1</td></tr><tr><td class="Vorspalte">Austria</td><td>77.6</td><td>60.9</td><td>5.4</td><td>11.5</td></tr><tr><td class="Vorspalte">Belgium</td><td>72.8</td><td>61.5</td><td>5.8</td><td>17.4</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>77.0</td><td>71.2</td><td>3.5</td><td>13.1</td></tr><tr><td class="Vorspalte">Croatia</td><td>74.4</td><td>54.9</td><td>4.5</td><td>18.3</td></tr><tr><td class="Vorspalte">Cyprus</td><td>81.3</td><td>71.0</td><td>4.2</td><td>13.5</td></tr><tr><td class="Vorspalte">Czechia</td><td>82.9</td><td>78.3</td><td>2.6</td><td>10.4</td></tr><tr><td class="Vorspalte">Denmark</td><td>79.8</td><td>74.7</td><td>5.8</td><td>13.8</td></tr><tr><td class="Vorspalte">Estonia</td><td>81.7</td><td>77.0</td><td>7.1</td><td>20.7</td></tr><tr><td class="Vorspalte">Finland</td><td>76.3</td><td>72.3</td><td>9.0</td><td>21.8</td></tr><tr><td class="Vorspalte">France</td><td>75.4</td><td>61.7</td><td>7.2</td><td>19.8</td></tr><tr><td class="Vorspalte">Greece</td><td>71.0</td><td>59.6</td><td>8.8</td><td>19.1</td></tr><tr><td class="Vorspalte">Hungary</td><td>81.1</td><td>72.1</td><td>4.3</td><td>13.9</td></tr><tr><td class="Vorspalte">Ireland</td><td>80.2</td><td>69.4</td><td>4.2</td><td>11.8</td></tr><tr><td class="Vorspalte">Italy</td><td>67.6</td><td>61.2</td><td>6.1</td><td>20.6</td></tr><tr><td class="Vorspalte">Latvia</td><td>78.2</td><td>73.6</td><td>7.1</td><td>14.8</td></tr><tr><td class="Vorspalte">Lithuania</td><td>80.0</td><td>69.9</td><td>6.9</td><td>14.1</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>73.9</td><td>49.5</td><td>6.1</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Malta</td><td>83.6</td><td>61.4</td><td>2.9</td><td>9.6</td></tr><tr><td class="Vorspalte">Netherlands</td><td>83.4</td><td>75.8</td><td>3.3</td><td>8.8</td></tr><tr><td class="Vorspalte">Poland</td><td>78.8</td><td>60.1</td><td>3.0</td><td>12.2</td></tr><tr><td class="Vorspalte">Portugal</td><td>79.6</td><td>69.5</td><td>5.9</td><td>19.5</td></tr><tr><td class="Vorspalte">Romania</td><td>69.0</td><td>57.0</td><td>5.6</td><td>26.1</td></tr><tr><td class="Vorspalte">Slovakia</td><td>78.1</td><td>66.6</td><td>5.3</td><td>15.3</td></tr><tr><td class="Vorspalte">Slovenia</td><td>78.3</td><td>57.6</td><td>3.6</td><td>12.1</td></tr><tr><td class="Vorspalte">Spain</td><td>72.4</td><td>62.4</td><td>10.3</td><td>24.9</td></tr><tr><td class="Vorspalte">Sweden</td><td>81.8</td><td>78.3</td><td>7.6</td><td>24.3</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>76.1</td><td>66.4</td><td>5.8</td><td>15.2</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/daabc439-fde2-4dc6-b65a-1c75a0d4ff92?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Employment rate (Opens new window)">Employment rate (age 20 to 64)</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/f5806d76-f5f2-4151-92f9-63f9e532f60d?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Employment rate of older workers (Opens new window)">Employment rate (age 55 to 64)</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/a97ece6f-af00-4fd1-8564-805beba3668d?lang=en" target="_blank" rel="noopener noreferrer" title="External link Unemployment rate 20-64 (Opens new window)">Unemployment rate (age 20 to 64)</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/01063645-ef5e-438c-bfc7-4d7ee07e5b62?lang=en" target="_blank" rel="noopener noreferrer" title="External link Unemployment rate 15-24 (Opens new window)">Unemployment rate (age 15 to 24)</a></td></tr></tbody></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/LabourMarket.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Education</h3>
+
+
+<div class="c-toggle__entry" id="414370">
+
+  <table class="wide"><caption>Important education indicators</caption><colgroup><col style="width:20%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="4">Country</th><th rowspan="2">Pupils per teacher - secondary level<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1c" title="Link to footnote 1"><sup>1</sup></a></th><th rowspan="2">Early leavers from education (aged 18-24)<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote2c" title="Link to footnote 2"><sup>2</sup></a></th><th colspan="2">Tertiary educational attainment (age group 30-34)<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote3c" title="Link to footnote 3"><sup>3</sup></a></th><th>Public expenditure</th></tr><tr><th>female</th><th>male</th><th>Education<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote4c" title="Link to footnote 4"><sup>4</sup></a></th></tr><tr><th>number</th><th colspan="3">%</th><th>% of <abbr title="Gross domestic product">GDP</abbr></th></tr><tr><th>2024</th><th colspan="3">2025</th><th>2023</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>11.9</td><td>13.1</td><td>46.3</td><td>41.7</td><td>4.8</td></tr><tr><td class="Vorspalte">Austria</td><td>9.9</td><td>10.0</td><td>49.0</td><td>40.0</td><td>5.2</td></tr><tr><td class="Vorspalte">Belgium</td><td>9.2</td><td>7.3</td><td>60.1</td><td>45.8</td><td>6.2</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>12.4</td><td>8.6</td><td>49.8</td><td>35.3</td><td>4.4</td></tr><tr><td class="Vorspalte">Croatia</td><td>7.8</td><td>2.1</td><td>55.1</td><td>35.9</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Cyprus</td><td>8.1</td><td>9.8</td><td>75.0</td><td>56.7</td><td>4.8</td></tr><tr><td class="Vorspalte">Czechia</td><td>11.1</td><td>6.1</td><td>44.4</td><td>31.5</td><td>4.3</td></tr><tr><td class="Vorspalte">Denmark</td><td>12.7</td><td>10.0</td><td>64.9</td><td>47.9</td><td>6.1</td></tr><tr><td class="Vorspalte">Estonia</td><td>16.2</td><td>10.2</td><td>58.1</td><td>34.0</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Finland</td><td>17.4</td><td>9.9</td><td>48.3</td><td>35.0</td><td>6.3</td></tr><tr><td class="Vorspalte">France</td><td>11.5</td><td>7.2</td><td>58.5</td><td>50.8</td><td>5.3</td></tr><tr><td class="Vorspalte">Greece</td><td>9.6</td><td>3.0</td><td>51.4</td><td>35.7</td><td>3.3</td></tr><tr><td class="Vorspalte">Hungary</td><td>11.4</td><td>9.3</td><td>39.1</td><td>28.4</td><td>3.6</td></tr><tr><td class="Vorspalte">Ireland</td><td>14.2</td><td>3.6</td><td>72.3</td><td>65.3</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Italy</td><td>10.6</td><td>8.2</td><td>37.3</td><td>23.9</td><td>4.1</td></tr><tr><td class="Vorspalte">Latvia</td><td>13.9</td><td>8.8</td><td>59.2</td><td>38.0</td><td>4.3</td></tr><tr><td class="Vorspalte">Lithuania</td><td>10.5</td><td>5.9</td><td>68.7</td><td>55.5</td><td>4.3</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>8.2</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>70.0</td><td>65.5</td><td>3.9</td></tr><tr><td class="Vorspalte">Malta</td><td>7.4</td><td>8.6</td><td>54.9</td><td>40.2</td><td>3.4</td></tr><tr><td class="Vorspalte">Netherlands</td><td>16.4</td><td>7.4</td><td>59.7</td><td>52.5</td><td>5.2</td></tr><tr><td class="Vorspalte">Poland</td><td>11.9</td><td>4.0</td><td>57.3</td><td>39.7</td><td>4.5</td></tr><tr><td class="Vorspalte">Portugal</td><td>8.8</td><td>6.1</td><td>49.7</td><td>33.8</td><td>4.5</td></tr><tr><td class="Vorspalte">Romania</td><td>12.9</td><td>15.5</td><td>24.4</td><td>21.0</td><td>3.0</td></tr><tr><td class="Vorspalte">Slovakia</td><td>13.8</td><td>6.8</td><td>44.4</td><td>27.1</td><td>4.9</td></tr><tr><td class="Vorspalte">Slovenia</td><td>14.4</td><td>5.5</td><td>57.5</td><td>30.1</td><td>4.8</td></tr><tr><td class="Vorspalte">Spain</td><td>9.6</td><td>12.8</td><td>57.6</td><td>45.4</td><td>4.3</td></tr><tr><td class="Vorspalte">Sweden</td><td>13.1</td><td>6.7</td><td>62.8</td><td>50.2</td><td>6.8</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>11.3</td><td>9.1</td><td>51.1</td><td>40.3</td><td>4.7</td></tr></tbody></table><table class="wide"><colgroup><col style="width:20%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte">Eurostat database</td><td class="right" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/336e583e-5ec8-4bb4-82d3-cdc93a67c341?lang=en" target="_blank" rel="noopener noreferrer" title="External link Pupils per teacher - secondary level (Opens new window)">Pupils per teacher</a></td><td class="right" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/e48bf39d-5176-410d-b32f-f4a5d22fbfdd?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Early leavers from education (Opens new window)">Early leavers from education</a></td><td class="right" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/4147d6cf-6aaf-4983-810c-1029103bf80a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Tertiary educational attainment age group 30-34 - Female (Opens new window)">Tertiary educational attainment (female, age group 30-34)</a></td><td class="right" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/4147d6cf-6aaf-4983-810c-1029103bf80a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Tertiary educational attainment age group 30-34 - Male (Opens new window)">Tertiary educational attainment (male, age group 30-34)</a></td><td class="right" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/9087b697-600e-4a15-8f01-4f692078a245?lang=en" target="_blank" rel="noopener noreferrer" title="External link Public expenditure on education (% of GDP) (Opens new window)">Public expenditure on education</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1c"></a> 1 Full-time equivalents. Classroom teachers, special education teachers and other teachers. Partly differing <a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/cache/metadata/en/educ_uoe_enr_esms.htm" target="_blank" rel="noopener noreferrer" title="External link Eurostat metadata: Pupils and students (Opens new window)">definition</a>.</p>
+
+
+
+<p><a id="Footnote2c"></a> 2 Early leavers from education are all persons aged 18-24 years with at most school graduation lower secondary level, currently no further education or training.</p>
+
+
+
+<p><a id="Footnote3c"></a> 3 People aged 30-34 who have successfully completed tertiary studies (International Standard Classification of Education ISCED level 5 to 8, e.g. university, higher technical institution, etc.).</p>
+
+
+
+<p><a id="Footnote4c"></a> 4 <abbr title="International Standard Classification of Education">ISCED</abbr> level 2 to 8.</p>
+
+
+
+<p><strong>- </strong>= No figures or magnitude zero.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/EducationCulture.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Health</h3>
+
+
+<div class="c-toggle__entry" id="414376">
+
+  <table class="wide"><caption>Important health indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>Hospital beds</th><th>Deaths due to cancer</th><th colspan="2">Healthy life years</th></tr><tr><th colspan="2">per 100,000 inhabitants</th><th>age 65, female</th><th>age 65, male</th></tr><tr><th>2024</th><th>2023</th><th colspan="2">2024</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>758.6</td><td>234.8</td><td>8.8</td><td>8.3</td></tr><tr><td class="Vorspalte">Austria</td><td>655.1</td><td>221.2</td><td>9.3</td><td>9.1</td></tr><tr><td class="Vorspalte">Belgium</td><td>536.2</td><td>216.1</td><td>12.1</td><td>11.5</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>870.3</td><td>221.3</td><td>12.7</td><td>11.0</td></tr><tr><td class="Vorspalte">Croatia</td><td>558.2</td><td>303.4</td><td>6.6</td><td>6.9</td></tr><tr><td class="Vorspalte">Cyprus</td><td>329.4</td><td>181.2</td><td>8.1</td><td>8.3</td></tr><tr><td class="Vorspalte">Czechia</td><td>639.5</td><td>250.4</td><td>8.2</td><td>7.8</td></tr><tr><td class="Vorspalte">Denmark</td><td>226.3</td><td>262.7</td><td>11.8</td><td>10.7</td></tr><tr><td class="Vorspalte">Estonia</td><td>412.7</td><td>238.0</td><td>7.9</td><td>7.4</td></tr><tr><td class="Vorspalte">Finland</td><td>247.5</td><td>208.0</td><td>10.0</td><td>9.4</td></tr><tr><td class="Vorspalte">France</td><td>533.8</td><td>218.6</td><td>11.5</td><td>10.3</td></tr><tr><td class="Vorspalte">Greece</td><td>423.2</td><td>232.5</td><td>10.4</td><td>9.7</td></tr><tr><td class="Vorspalte">Hungary</td><td>637.1</td><td>315.9</td><td>7.9</td><td>7.2</td></tr><tr><td class="Vorspalte">Ireland</td><td>292.5</td><td>242.9</td><td>12.7</td><td>11.9</td></tr><tr><td class="Vorspalte">Italy</td><td>311.7</td><td>216.7</td><td>13.3</td><td>12.9</td></tr><tr><td class="Vorspalte">Latvia</td><td>497.3</td><td>277.7</td><td>4.5</td><td>3.9</td></tr><tr><td class="Vorspalte">Lithuania</td><td>535.5</td><td>255.1</td><td>9.3</td><td>8.5</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>391.6</td><td>191.6</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Malta</td><td>390.6</td><td>192.7</td><td>12.2</td><td>12.5</td></tr><tr><td class="Vorspalte">Netherlands</td><td>221.2</td><td>247.6</td><td>9.6</td><td>9.7</td></tr><tr><td class="Vorspalte">Poland</td><td>627.5</td><td>274.0</td><td>9.7</td><td>8.8</td></tr><tr><td class="Vorspalte">Portugal</td><td>331.0</td><td>218.2</td><td>9.4</td><td>10.3</td></tr><tr><td class="Vorspalte">Romania</td><td>730.7</td><td>241.5</td><td>7.1</td><td>6.8</td></tr><tr><td class="Vorspalte">Slovakia</td><td>557.7</td><td>270.2</td><td>5.3</td><td>4.5</td></tr><tr><td class="Vorspalte">Slovenia</td><td>399.1</td><td>286.9</td><td>12.5</td><td>11.2</td></tr><tr><td class="Vorspalte">Spain</td><td>283.5</td><td>210.0</td><td>12.5</td><td>12.4</td></tr><tr><td class="Vorspalte">Sweden</td><td>186.6</td><td>202.6</td><td>14.2</td><td>14.3</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>507.4</td><td>233.1</td><td>10.5</td><td>10.0</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/9e1921d4-bf7c-404f-b0be-8d19134952bd?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Hospital beds (Opens new window)">Hospital beds per 100,000 inhabitants</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/dd04d473-ab13-4c5e-8c8b-6f1ad14f5728?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Death due to cancer (Opens new window)">Deaths due to cancer per 100,000 inhabitants</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/21e18708-f53e-4031-a743-702dfa1479ec?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Healthy life years at age 65, female (Opens new window)">Healthy life years (age 65, female)</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/c2fd0771-f8c4-43a4-b162-2ba9d9c6253a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Healthy life years at age 65, male (Opens new window)">Healthy life years (age 65, male)</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><strong>- </strong>= No figures or magnitude zero.</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/Health.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Social issues and living conditions</h3>
+
+
+<div class="c-toggle__entry" id="414400">
+
+  <table class="wide"><caption>Important indicators on social issues and living conditions</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>People at risk of poverty or social exclusion</th><th>At-risk-of-poverty rate<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1d" title="Link to footnote 1"><sup>1</sup></a></th><th>Overburding by housing cost<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote2d" title="Link to footnote 2"><sup>2</sup></a></th><th>Inability to face unexpected financial expenses</th></tr><tr><th>Persons in <abbr title="millions">mn</abbr></th><th colspan="3">% of population</th></tr><tr><th colspan="4">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>17.5</td><td>16.1</td><td>11.2</td><td>31.9</td></tr><tr><td class="Vorspalte">Austria</td><td>1.7</td><td>15.9</td><td>6.1</td><td>20.9</td></tr><tr><td class="Vorspalte">Belgium</td><td>1.9</td><td>10.9</td><td>6.7</td><td>22.1</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>1.9</td><td>21.2</td><td>6.9</td><td>42.4</td></tr><tr><td class="Vorspalte">Croatia</td><td>0.8</td><td>19.5</td><td>3.2</td><td>31.2</td></tr><tr><td class="Vorspalte">Cyprus</td><td>0.2</td><td>14.9</td><td>2.4</td><td>32.0</td></tr><tr><td class="Vorspalte">Czechia</td><td>1.2</td><td>9.6</td><td>8.2</td><td>18.7</td></tr><tr><td class="Vorspalte">Denmark</td><td>1.1</td><td>11.8</td><td>23.4</td><td>20.1</td></tr><tr><td class="Vorspalte">Estonia</td><td>0.3</td><td>19.5</td><td>8.8</td><td>36.0</td></tr><tr><td class="Vorspalte">Finland</td><td>1.0</td><td>13.4</td><td>4.7</td><td>28.0</td></tr><tr><td class="Vorspalte">France</td><td>13.9</td><td>16.3</td><td>6.4</td><td>28.8</td></tr><tr><td class="Vorspalte">Greece</td><td>2.8</td><td>19.6</td><td>26.4</td><td>50.5</td></tr><tr><td class="Vorspalte">Hungary</td><td>1.8</td><td>14.0</td><td>5.3</td><td>30.5</td></tr><tr><td class="Vorspalte">Ireland</td><td>1.0</td><td>13.0</td><td>5.3</td><td>30.6</td></tr><tr><td class="Vorspalte">Italy</td><td>13.3</td><td>18.6</td><td>5.0</td><td>25.6</td></tr><tr><td class="Vorspalte">Latvia</td><td>0.5</td><td>22.0</td><td>5.7</td><td>43.7</td></tr><tr><td class="Vorspalte">Lithuania</td><td>0.8</td><td>22.6</td><td>5.7</td><td>41.1</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>0.1</td><td>14.8</td><td>8.1</td><td>21.8</td></tr><tr><td class="Vorspalte">Malta</td><td>0.1</td><td>16.9</td><td>6.0</td><td>18.7</td></tr><tr><td class="Vorspalte">Netherlands</td><td>2.8</td><td>13.4</td><td>6.5</td><td>15.3</td></tr><tr><td class="Vorspalte">Poland</td><td>5.4</td><td>13.2</td><td>4.1</td><td>22.5</td></tr><tr><td class="Vorspalte">Portugal</td><td>2.0</td><td>15.4</td><td>6.3</td><td>29.2</td></tr><tr><td class="Vorspalte">Romania</td><td>5.2</td><td>18.4</td><td>5.0</td><td>37.8</td></tr><tr><td class="Vorspalte">Slovakia</td><td>0.9</td><td>12.2</td><td>3.5</td><td>26.0</td></tr><tr><td class="Vorspalte">Slovenia</td><td>0.3</td><td>14.3</td><td>3.5</td><td>23.9</td></tr><tr><td class="Vorspalte">Spain</td><td>12.5</td><td>19.5</td><td>7.2</td><td>36.4</td></tr><tr><td class="Vorspalte">Sweden</td><td>2.0</td><td>15.6</td><td>10.8</td><td>23.0</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>92.7</td><td>16.3</td><td>7.7</td><td>29.2</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/693f27a1-5d03-44d9-9738-63ca60e04379?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: People at risk of poverty or social exclusion (Opens new window)">People at risk of poverty or social exclusion</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/6c799b55-d2ae-41dd-9420-7e24313f2ab9?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: At-risk-of-poverty rate by age group - EU-SILC survey (Opens new window)">At-risk-of-poverty rate</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/97062748-dc95-4626-a825-5417dbe91580?lang=en" target="_blank" rel="noopener noreferrer" title="External link Housing cost overburden rate (Opens new window)">Overburding by housing cost</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/8e195f40-5d4b-40db-9a11-49a57cef26f5?lang=en" target="_blank" rel="noopener noreferrer" title="External link Inability to face unexpected financial expenses (Opens new window)">Inability to face unexpected financial expenses</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1d"></a> 1 The share of persons with an equivalised disposable income below the risk-of-poverty threshold, which is set at 60% of the national median equivalised disposable income (after social transfers).</p>
+
+
+
+<p><a id="Footnote2d"></a> 2 The share of persons living in households spending more than 40% of net disposable income on housing.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/SocialIssuesLivingConditions.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Industry, trade and services</h3>
+
+
+<div class="c-toggle__entry" id="414446">
+
+  <table class="wide"><caption>Important indicators on industry, trade and services</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th colspan="2">Industry</th><th>Retail trade: Turnover</th><th>Building permits (dwellings)</th></tr><tr><th>% of gross value added</th><th>Manufacturing production index: % change on previous year</th><th>Real % change on previous year</th><th>Number: % change on previous year</th></tr><tr><th colspan="4">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>22.8</td><td>-0.9</td><td>3.2</td><td>12.2</td></tr><tr><td class="Vorspalte">Austria</td><td>20.8</td><td>3.4</td><td>0.9</td><td>-6.8</td></tr><tr><td class="Vorspalte">Belgium</td><td>15.1</td><td>1.5</td><td>0.8</td><td>-3.8</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>19.2</td><td>-3.9</td><td>6.8</td><td>25.1</td></tr><tr><td class="Vorspalte">Croatia</td><td>14.9</td><td>5.1</td><td>3.6</td><td>6.7</td></tr><tr><td class="Vorspalte">Cyprus</td><td>6.8</td><td>6.0</td><td>8.3</td><td>42.8</td></tr><tr><td class="Vorspalte">Czechia</td><td>25.5</td><td>2.2</td><td>3.3</td><td>-1.9</td></tr><tr><td class="Vorspalte">Denmark</td><td>22.9</td><td>-3.1</td><td>3.3</td><td>17.7</td></tr><tr><td class="Vorspalte">Estonia</td><td>16.5</td><td>3.2</td><td>2.2</td><td>34.6</td></tr><tr><td class="Vorspalte">Finland</td><td>19.9</td><td>1.6</td><td>-0.4</td><td>-12.4</td></tr><tr><td class="Vorspalte">France</td><td>13.5</td><td>0.6</td><td>2.9</td><td>14.0</td></tr><tr><td class="Vorspalte">Greece</td><td>15.2</td><td>3.1</td><td>2.1</td><td>-23.5</td></tr><tr><td class="Vorspalte">Hungary</td><td>20.7</td><td>-3.6</td><td>3.0</td><td>34.6</td></tr><tr><td class="Vorspalte">Ireland</td><td>32.2</td><td>18.5</td><td>1.3</td><td>8.0</td></tr><tr><td class="Vorspalte">Italy</td><td>19.7</td><td>-0.6</td><td>-0.3</td><td>-6.1</td></tr><tr><td class="Vorspalte">Latvia</td><td>15.1</td><td>5.6</td><td>1.6</td><td>37.4</td></tr><tr><td class="Vorspalte">Lithuania</td><td>17.3</td><td>3.0</td><td>3.7</td><td>21.5</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>5.1</td><td>2.8</td><td>10.8</td><td>-12.1</td></tr><tr><td class="Vorspalte">Malta</td><td>7.1</td><td>3.9</td><td>4.1</td><td>41.4</td></tr><tr><td class="Vorspalte">Netherlands</td><td>15.0</td><td>0.0</td><td>1.2</td><td>-13.0</td></tr><tr><td class="Vorspalte">Poland</td><td>21.6</td><td>3.7</td><td>2.3</td><td>-9.1</td></tr><tr><td class="Vorspalte">Portugal</td><td>15.9</td><td>-0.8</td><td>5.2</td><td>21.4</td></tr><tr><td class="Vorspalte">Romania</td><td>18.6</td><td>-0.6</td><td>0.2</td><td>11.4</td></tr><tr><td class="Vorspalte">Slovakia</td><td>22.8</td><td>-1.4</td><td>-1.0</td><td>0.7</td></tr><tr><td class="Vorspalte">Slovenia</td><td>25.0</td><td>-1.4</td><td>1.8</td><td>-3.1</td></tr><tr><td class="Vorspalte">Spain</td><td>15.7</td><td>0.6</td><td>4.3</td><td>11.5</td></tr><tr><td class="Vorspalte">Sweden</td><td>17.2</td><td>6.2</td><td>3.0</td><td>8.8</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>19.1</td><td>1.7</td><td>2.5</td><td>5.2</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/316db23a-bdcb-401e-ae69-16d336ff36f6?lang=en" target="_blank" rel="noopener noreferrer" title="External link Share of industry in gross value added (Opens new window)">Industry: % of gross value added</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/ac6d1ea2-afd8-4012-b037-d79681884b59?lang=en" target="_blank" rel="noopener noreferrer" title="External link Production in industry (Opens new window)">Manufacturing production index</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/3f40b8d8-e14e-4ea5-86de-120fc40c1179?lang=en" target="_blank" rel="noopener noreferrer" title="External link Turnover in retail trade (real % change on previous year) (Opens new window)">Retail trade: Turnover</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/80f94a67-27c9-4882-bb69-5aab1c16d894?lang=en" target="_blank" rel="noopener noreferrer" title="External link Building permits (% change on previous year) (Opens new window)">Building permits (dwellings)</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="left" colspan="1" rowspan="1">. = Numerical value unknown or not to be disclosed.</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/IndustryTradeServices.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Agriculture, forestry and fisheries</h3>
+
+
+<div class="c-toggle__entry" id="417480">
+
+  <table class="wide"><caption>Important indicators on agriculture, forestry and fisheries</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>Agriculture, forestry and fisheries</th><th>Area under organic farming</th><th>Roundwood production</th><th>Fishing</th></tr><tr><th>% of gross value added</th><th>% of <abbr title="utilised agricultural area">UAA</abbr></th><th>1,000 <abbr title="cubic meters">m<sup>3</sup></abbr></th><th><abbr title="tonnes">t</abbr></th></tr><tr><th>2025</th><th colspan="3">2024</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>0.9</td><td>11.1</td><td>70,832</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Austria</td><td>1.4</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>20,031</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Belgium</td><td>0.8</td><td>7.4</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>16,478</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>2.8</td><td>4.0</td><td>4,405</td><td>6,549</td></tr><tr><td class="Vorspalte">Croatia</td><td>3.4</td><td>9.0</td><td>5,458</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Cyprus</td><td>1.3</td><td>8.8</td><td>6</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Czechia</td><td>2.2</td><td>16.0</td><td>17,807</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Denmark</td><td>1.6</td><td>11.1</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>520,718</td></tr><tr><td class="Vorspalte">Estonia</td><td>1.9</td><td>22.6</td><td>9,949</td><td>54,944</td></tr><tr><td class="Vorspalte">Finland</td><td>3.1</td><td>13.5</td><td>64,450</td><td>93,354</td></tr><tr><td class="Vorspalte">France</td><td>1.6</td><td>9.5</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Greece</td><td>4.1</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>41,561</td></tr><tr><td class="Vorspalte">Hungary</td><td>3.1</td><td>6.1</td><td>5,516</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Ireland</td><td>1.3</td><td>5.0</td><td>3,996</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Italy</td><td>2.3</td><td>19.5</td><td>9,000</td><td>114,532</td></tr><tr><td class="Vorspalte">Latvia</td><td>4.6</td><td>15.6</td><td>16,050</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Lithuania</td><td>2.5</td><td>8.8</td><td>7,655</td><td>69,949</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>0.3</td><td>7.2</td><td>305</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Malta</td><td>0.6</td><td>0.8</td><td>0</td><td>1,602</td></tr><tr><td class="Vorspalte">Netherlands</td><td>1.9</td><td>5.1</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Poland</td><td>2.8</td><td>4.9</td><td>42,537</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Portugal</td><td>2.2</td><td>21.2</td><td>14,583</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Romania</td><td>3.3</td><td>6.2</td><td>16,112</td><td>2,521</td></tr><tr><td class="Vorspalte">Slovakia</td><td>1.8</td><td>14.8</td><td>8,536</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Slovenia</td><td>1.8</td><td>11.9</td><td>4,738</td><td>91</td></tr><tr><td class="Vorspalte">Spain</td><td>3.0</td><td>11.9</td><td>18,834</td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Sweden</td><td>1.7</td><td>16.7</td><td>70,400</td><td>141,701</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>1.8</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/354275e8-7150-4362-8da4-e55b458cde0f?lang=en" target="_blank" rel="noopener noreferrer" title="External link Share of agriculture, forestry and fishing in gross value added (Opens new window)">Agriculture, forestry and fisheries</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/fbb66b74-9509-4ce7-9b5b-651a7622a2ee?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Area under organic farming (Opens new window)">Area under organic farming</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/9c462189-124e-439f-9389-f1db626f6c03?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Roundwood production (Opens new window)">Roundwood production</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/7e5f7a89-214c-4eea-b6e0-0a9d04d52bcc?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Catches in all fishing regions (Opens new window)">Fishing</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><strong>- </strong>= No figures or magnitude zero.</p>
+
+
+
+<p class="left">. = Numerical value unknown or not to be disclosed.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/AgricultureForestryFisheries.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Foreign trade in goods</h3>
+
+
+<div class="c-toggle__entry" id="417570">
+
+  <table class="wide"><caption>Important foreign trade in goods indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>Exports</th><th>Imports</th><th>Foreign trade balance</th></tr><tr><th colspan="3">million euros</th></tr><tr><th colspan="3">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>1,563,386.5</td><td>1,361,843.6</td><td>201,542.9</td></tr><tr><td class="Vorspalte">Austria</td><td>196,683.1</td><td>203,764.2</td><td>-7,081.1</td></tr><tr><td class="Vorspalte">Belgium</td><td>505,930.3</td><td>487,467.5</td><td>18,462.8</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>42,882.8</td><td>53,655.8</td><td>-10,773.0</td></tr><tr><td class="Vorspalte">Croatia</td><td>25,241.8</td><td>45,775.0</td><td>-20,533.2</td></tr><tr><td class="Vorspalte">Cyprus</td><td>5,501.7</td><td>13,835.1</td><td>-8,333.5</td></tr><tr><td class="Vorspalte">Czechia</td><td>251,342.4</td><td>224,828.5</td><td>26,513.9</td></tr><tr><td class="Vorspalte">Denmark</td><td>131,664.6</td><td>121,629.6</td><td>10,035.0</td></tr><tr><td class="Vorspalte">Estonia</td><td>18,577.9</td><td>22,403.3</td><td>-3,825.5</td></tr><tr><td class="Vorspalte">Finland</td><td>74,267.8</td><td>75,694.0</td><td>-1,426.1</td></tr><tr><td class="Vorspalte">France</td><td>606,033.4</td><td>699,998.7</td><td>-93,965.2</td></tr><tr><td class="Vorspalte">Greece</td><td>48,658.1</td><td>82,453.5</td><td>-33,795.4</td></tr><tr><td class="Vorspalte">Hungary</td><td>149,695.2</td><td>141,614.1</td><td>8,081.1</td></tr><tr><td class="Vorspalte">Ireland</td><td>258,258.7</td><td>142,234.6</td><td>116,024.2</td></tr><tr><td class="Vorspalte">Italy</td><td>643,153.3</td><td>592,451.4</td><td>50,701.8</td></tr><tr><td class="Vorspalte">Latvia</td><td>19,946.4</td><td>23,507.0</td><td>-3,560.6</td></tr><tr><td class="Vorspalte">Lithuania</td><td>36,865.7</td><td>43,457.8</td><td>-6,592.1</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>16,253.9</td><td>25,097.9</td><td>-8,844.1</td></tr><tr><td class="Vorspalte">Malta</td><td>3,457.7</td><td>8,634.7</td><td>-5,177.0</td></tr><tr><td class="Vorspalte">Netherlands</td><td>875,641.1</td><td>772,690.1</td><td>102,951.0</td></tr><tr><td class="Vorspalte">Poland</td><td>366,455.1</td><td>372,653.4</td><td>-6,198.3</td></tr><tr><td class="Vorspalte">Portugal</td><td>79,358.8</td><td>111,646.7</td><td>-32,287.9</td></tr><tr><td class="Vorspalte">Romania</td><td>96,544.4</td><td>129,262.6</td><td>-32,718.2</td></tr><tr><td class="Vorspalte">Slovakia</td><td>111,237.2</td><td>108,754.5</td><td>2,482.7</td></tr><tr><td class="Vorspalte">Slovenia</td><td>85,887.8</td><td>82,095.7</td><td>3,792.1</td></tr><tr><td class="Vorspalte">Spain</td><td>394,380.3</td><td>460,758.6</td><td>-66,378.3</td></tr><tr><td class="Vorspalte">Sweden</td><td>183,332.8</td><td>179,108.7</td><td>4,224.1</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong><a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1a" title="Link to Footnote 1"><sup>1</sup></a><strong> </strong><a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote2a" title="Link to Footnote 2"><sup>2</sup></a></td><td>2,645,784.9</td><td>2,531,608.0</td><td>114,176.9</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/9aceef6c-3749-44db-9534-f07818dfa95a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: International trade, export (Opens new window)">Exports in million euros</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/b2d6dcdf-6ff4-4de4-aff6-7ec022cd05d5?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: International trade, import (Opens new window)">Imports in million euros</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/793dfdd8-59a8-4925-9b4c-c26f9886117a?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: International trade, balance (Opens new window)">Foreign trade balance in million euros</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1a"></a> 1 Extra-EU-Trade (Total Trade with all countries outside of the European Union).</p>
+
+
+
+<p><a id="Footnote2a"></a> 2 Eurostat Database on <a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/144b371a-6900-4c13-a206-f4608e84745e?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat-Database: Extra-EU-Trade by partner (ext_lt_maineu) (Opens new window)">Extra-EU-Trade</a>.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/ForeignTrade.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Transport</h3>
+
+
+<div class="c-toggle__entry" id="417706">
+
+  <table class="wide"><caption>Important transport indicators</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>Air transport passengers</th><th colspan="2">Passenger transport<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1e" title="Link to footnote 1"><sup>1</sup></a></th><th>Freight transport</th></tr><tr><th>millions</th><th>% passenger cars</th><th>% trains</th><th>% railways</th></tr><tr><th class="center">2025</th><th class="center" colspan="3">2024</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>207.2</td><td>84.1</td><td>10.6</td><td>20.3</td></tr><tr><td class="Vorspalte">Austria</td><td>36.2</td><td>76.2</td><td>13.7</td><td>30.3</td></tr><tr><td class="Vorspalte">Belgium</td><td>35.7</td><td>79.5</td><td>9.7</td><td>11.0</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>12.0</td><td>88.8</td><td>2.2</td><td>18.0</td></tr><tr><td class="Vorspalte">Croatia</td><td>13.5</td><td>83.0</td><td>4.0</td><td>24.3</td></tr><tr><td class="Vorspalte">Cyprus</td><td>13.7</td><td>82.8</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Czechia</td><td>19.2</td><td>81.2</td><td>8.8</td><td>21.3</td></tr><tr><td class="Vorspalte">Denmark</td><td>36.4</td><td>83.1</td><td>7.7</td><td>7.8</td></tr><tr><td class="Vorspalte">Estonia</td><td>3.5</td><td>86.0</td><td>2.5</td><td>14.6</td></tr><tr><td class="Vorspalte">Finland</td><td>18.7</td><td>82.6</td><td>7.4</td><td>23.3</td></tr><tr><td class="Vorspalte">France</td><td>172.0</td><td>82.6</td><td>11.6</td><td>9.8</td></tr><tr><td class="Vorspalte">Greece</td><td>73.0</td><td>84.1</td><td>0.6</td><td>1.3</td></tr><tr><td class="Vorspalte">Hungary</td><td>19.8</td><td>66.9</td><td>14.0</td><td>26.2</td></tr><tr><td class="Vorspalte">Ireland</td><td>43.3</td><td>77.9</td><td>3.1</td><td>0.6</td></tr><tr><td class="Vorspalte">Italy</td><td>193.3</td><td>83.3</td><td>7.0</td><td>11.6</td></tr><tr><td class="Vorspalte">Latvia</td><td>7.1</td><td>83.5</td><td>4.3</td><td>35.1</td></tr><tr><td class="Vorspalte">Lithuania</td><td>7.1</td><td>91.0</td><td>1.1</td><td>37.7</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>5.3</td><td>80.0</td><td>5.4</td><td>6.4</td></tr><tr><td class="Vorspalte">Malta</td><td>10.1</td><td>80.3</td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td></tr><tr><td class="Vorspalte">Netherlands</td><td>78.4</td><td>86.0</td><td>11.0</td><td>5.9</td></tr><tr><td class="Vorspalte">Poland</td><td>64.0</td><td>81.0</td><td>9.2</td><td>23.6</td></tr><tr><td class="Vorspalte">Portugal</td><td>67.2</td><td>87.3</td><td>4.6</td><td>13.7</td></tr><tr><td class="Vorspalte">Romania</td><td>26.2</td><td>82.1</td><td>3.8</td><td>21.2</td></tr><tr><td class="Vorspalte">Slovakia</td><td>3.2</td><td>78.5</td><td>9.1</td><td>30.1</td></tr><tr><td class="Vorspalte">Slovenia</td><td>1.6</td><td>85.0</td><td>3.0</td><td>31.1</td></tr><tr><td class="Vorspalte">Spain</td><td>272.1</td><td>80.8</td><td>8.8</td><td>3.9</td></tr><tr><td class="Vorspalte">Sweden</td><td>30.5</td><td>80.7</td><td>11.3</td><td>30.0</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>1,093.3</td><td>82.5</td><td>8.9</td><td>16.6</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/767abbdd-0f53-4692-bd8c-3d3eaee894fd?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Air transport of passengers (Opens new window)">Air transport passengers</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/2ae2357d-3f0d-4d03-92ef-7876420a0338?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Modal split of passenger transport - passenger cars (Opens new window)">Passenger transport: % passenger cars</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/01883f10-1376-49b9-8b4c-e2b9e273932f?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Modal split of passenger transport - trains (Opens new window)">Passenger transport: % trains</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/d95b6a65-6b24-4bee-a4b7-d959fcaee763?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Modal split of freight transport - railways (Opens new window)">Freight transport: % railways</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><a id="Footnote1e"></a> 1 Calculation based on transport by passenger cars, buses and coaches and trains.</p>
+
+
+
+<p><strong>- </strong>= No figures or magnitude zero.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/Transport.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Environment and energy</h3>
+
+
+<div class="c-toggle__entry" id="417896">
+
+  <table class="wide"><caption>Important indicators on environment and energy</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th colspan="2">Greenhouse gas emissions</th><th>Energy dependency rate<a href="https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html#Footnote1f" title="Link to footnote 1"><sup>1</sup></a></th><th>Renewable energy</th></tr><tr><th>tonnes of <abbr title="carbon dioxide">CO<sub>2</sub></abbr> equivalent per capita</th><th>index<br/>
+
+(1990=100)</th><th>% in gross domestic consumption</th><th>% share in gross final energy consumption</th></tr><tr><th colspan="3">2024</th><th>2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>7.8</td><td>52</td><td>67</td><td>23.9</td></tr><tr><td class="Vorspalte">Austria</td><td>7.3</td><td>84</td><td>53</td><td>44.2</td></tr><tr><td class="Vorspalte">Belgium</td><td>8.3</td><td>67</td><td>75</td><td>14.9</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>6.7</td><td>43</td><td>42</td><td>22.7</td></tr><tr><td class="Vorspalte">Croatia</td><td>6.5</td><td>80</td><td>60</td><td>28.5</td></tr><tr><td class="Vorspalte">Cyprus</td><td>9.1</td><td>158</td><td>88</td><td>21.5</td></tr><tr><td class="Vorspalte">Czechia</td><td>8.9</td><td>50</td><td>39</td><td>19.1</td></tr><tr><td class="Vorspalte">Denmark</td><td>6.2</td><td>51</td><td>38</td><td>48.2</td></tr><tr><td class="Vorspalte">Estonia</td><td>7.5</td><td>25</td><td>5</td><td>42.3</td></tr><tr><td class="Vorspalte">Finland</td><td>7.0</td><td>55</td><td>33</td><td>53.0</td></tr><tr><td class="Vorspalte">France</td><td>5.3</td><td>67</td><td>42</td><td>23.9</td></tr><tr><td class="Vorspalte">Greece</td><td>7.1</td><td>70</td><td>78</td><td>26.9</td></tr><tr><td class="Vorspalte">Hungary</td><td>5.6</td><td>56</td><td>49</td><td>19.6</td></tr><tr><td class="Vorspalte">Ireland</td><td>10.0</td><td>97</td><td>80</td><td>17.2</td></tr><tr><td class="Vorspalte">Italy</td><td>6.2</td><td>70</td><td>74</td><td>20.5</td></tr><tr><td class="Vorspalte">Latvia</td><td>5.2</td><td>37</td><td>29</td><td>46.3</td></tr><tr><td class="Vorspalte">Lithuania</td><td>6.3</td><td>38</td><td>66</td><td>38.5</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>11.1</td><td>59</td><td>91</td><td>20.2</td></tr><tr><td class="Vorspalte">Malta</td><td>3.8</td><td>83</td><td>98</td><td>18.8</td></tr><tr><td class="Vorspalte">Netherlands</td><td>7.8</td><td>63</td><td>71</td><td>22.7</td></tr><tr><td class="Vorspalte">Poland</td><td>9.3</td><td>72</td><td>46</td><td>18.7</td></tr><tr><td class="Vorspalte">Portugal</td><td>4.8</td><td>87</td><td>65</td><td>36.7</td></tr><tr><td class="Vorspalte">Romania</td><td>5.0</td><td>38</td><td>30</td><td>25.6</td></tr><tr><td class="Vorspalte">Slovakia</td><td>6.3</td><td>46</td><td>54</td><td>16.3</td></tr><tr><td class="Vorspalte">Slovenia</td><td>7.3</td><td>82</td><td>46</td><td>25.4</td></tr><tr><td class="Vorspalte">Spain</td><td>5.5</td><td>94</td><td>69</td><td>26.0</td></tr><tr><td class="Vorspalte">Sweden</td><td>4.5</td><td>67</td><td>27</td><td>65.4</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td><abbr title=" No figures or magnitude zero">- </abbr></td><td>57</td><td>26.2</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/8f883fb9-d391-4e2b-b1bc-4bbabeabf32b?lang=en&amp;createdAt=2025-11-05T13:39:49Z" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Greenhouse gas emissions per capita (Opens new window)">Greenhouse gas emissions per capita</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/8f883fb9-d391-4e2b-b1bc-4bbabeabf32b?lang=en&amp;createdAt=2025-11-05T13:39:49Z" target="_blank" rel="noopener noreferrer" title="External link EEurostat-Database: Greenhouse gas emissions by source sector [SDG_13_10] (Opens new window)">Greenhouse gas emissions</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/65dcfc55-80f4-46af-9451-1e68e86645cb?lang=en" target="_blank" rel="noopener noreferrer" title="External link Energy imports dependency (Opens new window)">Energy dependency rate</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/view/sdg_07_40__custom_14671188/default/table?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Share of renewable energy (Opens new window)">Share of renewable energy</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><a id="Footnote1f"></a> 1 The energy dependence shows how an economy is dependent on imports to fulfill its energy needs. It is calculated as net imports divided by the gross available energy. Countries that export more than they import energy have negative values. Gross available energy is a calculated value, defined as: Primary production + Recovered &amp; recycled products + Imports – Exports + Stock changes.</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/EnvironmentEnergy.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+                    <h3 class="c-toggle__heading heading">
+              Science and technology</h3>
+
+
+<div class="c-toggle__entry" id="417986">
+
+  <table class="wide"><caption>Important indicators on science and technology</caption><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><thead><tr><th class="Vorspalte" rowspan="3">Country</th><th>Gross domestic expenditure on research and development (R&amp;D)</th><th>Share of women researchers</th><th>Internet use</th><th>Broadband access</th></tr><tr><th>% of <abbr title="Gross domestic product">GDP</abbr></th><th>% of total researchers</th><th>% of individuals aged 16 to 74</th><th>% of households</th></tr><tr><th>2024</th><th>2023</th><th colspan="2">2025</th></tr></thead><tbody><tr><td class="Vorspalte"><strong>Germany</strong></td><td>3.1</td><td>29.6</td><td>94.6</td><td>97.4</td></tr><tr><td class="Vorspalte">Austria</td><td>3.3</td><td>32.0</td><td>95.3</td><td>96.1</td></tr><tr><td class="Vorspalte">Belgium</td><td>3.4</td><td>34.7</td><td>96.5</td><td>96.0</td></tr><tr><td class="Vorspalte">Bulgaria</td><td>0.8</td><td>48.6</td><td>86.8</td><td>96.6</td></tr><tr><td class="Vorspalte">Croatia</td><td>1.4</td><td>49.1</td><td>85.9</td><td>94.0</td></tr><tr><td class="Vorspalte">Cyprus</td><td>0.7</td><td>38.7</td><td>93.8</td><td>100.0</td></tr><tr><td class="Vorspalte">Czechia</td><td>1.8</td><td>28.1</td><td>94.5</td><td>99.2</td></tr><tr><td class="Vorspalte">Denmark</td><td>3.0</td><td>38.0</td><td>99.7</td><td>98.7</td></tr><tr><td class="Vorspalte">Estonia</td><td>2.0</td><td>43.0</td><td>94.9</td><td>100.0</td></tr><tr><td class="Vorspalte">Finland</td><td>3.2</td><td>34.6</td><td>98.1</td><td>86.0</td></tr><tr><td class="Vorspalte">France</td><td>2.2</td><td>30.6</td><td>95.0</td><td>99.9</td></tr><tr><td class="Vorspalte">Greece</td><td>1.5</td><td>39.6</td><td>89.2</td><td>99.8</td></tr><tr><td class="Vorspalte">Hungary</td><td>1.3</td><td>29.8</td><td>92.8</td><td>97.2</td></tr><tr><td class="Vorspalte">Ireland</td><td>1.4</td><td>40.3</td><td>99.8</td><td>100.0</td></tr><tr><td class="Vorspalte">Italy</td><td>1.4</td><td>37.5</td><td>90.3</td><td>96.8</td></tr><tr><td class="Vorspalte">Latvia</td><td>0.9</td><td>48.8</td><td>94.5</td><td>63.4</td></tr><tr><td class="Vorspalte">Lithuania</td><td>1.0</td><td>49.0</td><td>89.3</td><td>88.4</td></tr><tr><td class="Vorspalte">Luxembourg</td><td>1.0</td><td>32.1</td><td>99.1</td><td>97.2</td></tr><tr><td class="Vorspalte">Malta</td><td>0.5</td><td>36.0</td><td>96.0</td><td>100.0</td></tr><tr><td class="Vorspalte">Netherlands</td><td>2.3</td><td>30.2</td><td>99.7</td><td>99.2</td></tr><tr><td class="Vorspalte">Poland</td><td>1.4</td><td>36.0</td><td>89.7</td><td>89.3</td></tr><tr><td class="Vorspalte">Portugal</td><td>1.7</td><td>42.7</td><td>89.5</td><td>97.2</td></tr><tr><td class="Vorspalte">Romania</td><td>0.5</td><td>46.5</td><td>93.2</td><td>96.9</td></tr><tr><td class="Vorspalte">Slovakia</td><td>1.0</td><td>39.5</td><td>92.5</td><td>97.4</td></tr><tr><td class="Vorspalte">Slovenia</td><td>2.2</td><td>35.9</td><td>91.6</td><td>94.1</td></tr><tr><td class="Vorspalte">Spain</td><td>1.5</td><td>41.7</td><td>96.3</td><td>98.7</td></tr><tr><td class="Vorspalte">Sweden</td><td>3.6</td><td>33.6</td><td>98.2</td><td>92.4</td></tr><tr><td class="Vorspalte"><strong>EU-27</strong></td><td>2.2</td><td>34.3</td><td>93.8</td><td>96.8</td></tr></tbody></table><table class="wide"><colgroup><col style="width:16%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/><col style="width:14%;"/></colgroup><tbody><tr><td class="Vorspalte" colspan="1" rowspan="1">Eurostat database</td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/112ac720-3a77-4b71-8113-f3ce9fabfc26?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Gross domestic expenditure on R&amp;D (Opens new window)">Expenditure on research and development</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/2fac6039-4f9c-4ee3-86a9-c6cea42b1c74?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Share of women researchers (Opens new window)">Share of women researchers</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/bc1ae7db-18de-4376-b791-c1b1294051d1?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Internet use by individuals (Opens new window)">Internet use</a></td><td class="right" colspan="1" rowspan="1" valign="top"><a class="RichTextExtLink ExternalLink" href="https://ec.europa.eu/eurostat/databrowser/bookmark/b591266f-8cba-4527-9608-379fcbfb5b47?lang=en" target="_blank" rel="noopener noreferrer" title="External link Eurostat main table: Households - type of connection to the internet - Broadband (Opens new window)">Broadband access</a></td></tr></tbody></table><table class="wide"><tfoot><tr><td class="Vorspalte" colspan="1" rowspan="1"><p><strong>- </strong>= No figures or magnitude zero.</p>
+
+
+
+<p class="left">. = Numerical value unknown or not to be disclosed.</p>
+
+</td></tr></tfoot></table>
+<p class="text-right c-law-stand">As at&nbsp;September 1, 2026</p>
+
+  
+<p>
+  <a href="Europa/EN/Topic/Key-indicators/ScienceTechnology.html?view=main[Print]" class="c-more c-more--print" target="_blank" title="Opens new window">Show print version</a>
+</p>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="sectionRelated">
+  </div>
+
+
+  </div>
+</main>
+      <footer id="footer" class="footer">
+        <div class="footer__wrapper">
+          <div class="c-actions c-actions--inverted">
+            <div class="row">
+              <div class="column">
+                <ul class="c-actions__list js-actions" role="none">
+                  <li class="c-actions__item">
+                    <a class="c-actions__action c-actions__action--share" href="mailto:?body=https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html?nn=218540&subject=SeiteTeilen_Subject_en">
+                      Share
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+<div class="row">
+  <div class="column small-12">
+    <div class="row">
+      <div class="column small-12 large-3">
+          <div class="c-actions c-actions--inverted">
+  <div class="row">
+    <div class="column">
+      <p class="c-actions__list">
+        <span class="c-actions__item">
+          <a class="c-actions__action c-actions__action--share"
+             href="mailto:?body=https://www.destatis.de/Europa/EN/Topic/DatabyTopic.html?nn=218540&subject=SeiteTeilen_Subject_en">
+            Share</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+      <div class="column small-12 medium-6 large-3">
+          
+
+
+<nav class="footer__sitemap" aria-labelledby="footersitemaphead">
+  <h2 class="aural" aria-hidden="true" id="footersitemaphead">Subnavigation of all website sections</h2>
+  <h3 class="heading">Service</h3>
+    <ul class="row">
+     <li class="column small-12">
+       <a href="Europa/EN/Topic/_node.html"
+   title="Data by topic"
+  
+  
+  >Data by topic</a>
+     </li>
+     <li class="column small-12">
+       <a href="Europa/EN/Service/_node.html"
+  
+  
+  
+  >Service</a>
+     </li>
+     <li class="column small-12">
+       <a href="Europa/EN/Country/_node.html"
+   title="Data by country"
+  
+  
+  >Data by country</a>
+     </li>
+     <li class="column small-12">
+       <a href="Europa/EN/Methods/_node.html"
+  
+  
+  
+  >Methods, metadata</a>
+     </li>
+    </ul>
+</nav>
+      </div>
+      <div class="column small-12 medium-6">
+        <div class="row align-justify">
+          <div class="column small-12 medium-6">
+            <div class="footer__contact">
+              <h3>Address</h3>
+                <p>Statistisches Bundesamt<br/>
+Berlin Office<br/>
+Friedrichstraße 50<br/>
+10117 Berlin</p>
+
+                  <p><a href="Europa/EN/Service/Contact/_inhalt.html"
+  
+  
+  
+   class="c-more">Contact Form</a></p>
+            </div>
+          </div>
+          <div class="column small-12 medium-6">
+            <div class="footer__social">
+              <h3>Follow us!</h3>
+              <ul class="row large-up-3">
+                    <li class="column shrink">
+                        <a class="" href="/DE/Service/RSS/_inhalt.html"
+        title="External link Zum RSS-Feed (Opens new window)"
+  aria-label="External link Zum RSS-Feed (Opens new window)"
+
+        target="_blank"
+        rel="noopener noreferrer"><svg width="45" height="45" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g fill="#FFFFFF">
+      <path d="M22.5,43 C33.8218374,43 43,33.8218374 43,22.5 C43,11.1781626 33.8218374,2 22.5,2 C11.1781626,2 2,11.1781626 2,22.5 C2,33.8218374 11.1781626,43 22.5,43 Z M22.5,45 C10.0735931,45 0,34.9264069 0,22.5 C0,10.0735931 10.0735931,0 22.5,0 C34.9264069,0 45,10.0735931 45,22.5 C45,34.9264069 34.9264069,45 22.5,45 Z M14.122284,12.0016546 C24.272421,12.5667779 32.4012338,20.6925543 32.966348,30.8395498 C32.9821471,31.1457963 32.8849324,31.4171753 32.6765763,31.6350155 C32.4682201,31.856011 32.2058457,31.9679744 31.8996356,31.9679744 L30.4813251,31.9679744 C29.9130603,31.9742712 29.4431973,31.5341799 29.4084484,30.9690566 C28.9096356,22.6847644 22.2832429,16.0583989 13.9989507,15.559577 C13.4338366,15.5248418 13.0000009,15.0579377 13.0000009,14.4928099 L13.0000009,13.0684126 C13.0000009,12.762166 13.1120101,12.4998144 13.3330146,12.2914446 C13.5540192,12.0830747 13.8192247,11.9858692 14.122284,12.0016546 Z M14.153106,18.2727096 C20.8272612,18.8283626 26.1458,24.1439014 26.7014621,30.8149014 C26.7267133,31.1242895 26.6323297,31.4015087 26.4239735,31.6288329 C26.2124667,31.8561434 25.9472612,31.9741571 25.6347041,31.9741571 L24.2102749,31.9741571 C23.6578092,31.9741571 23.2002292,31.5523534 23.1496813,30.9998648 C22.6919187,26.1442073 18.8237909,22.2822667 13.9681288,21.8244721 C13.4156174,21.7739699 13.0000009,21.3164082 13.0000009,20.7639059 L13.0000009,19.3394676 C13.0000009,19.0269196 13.1118731,18.7617187 13.339179,18.550189 C13.566485,18.3386868 13.8436996,18.2474813 14.153106,18.2727096 Z M15.922832,26.1162027 C16.6998364,26.1155809 17.4451957,26.4239678 17.9946231,26.9733909 C18.5440505,27.522814 18.8524432,28.268171 18.8518274,29.0451753 C18.8524456,29.8221813 18.544054,30.5675406 17.9946263,31.1169657 C17.4451987,31.6663907 16.699838,31.9747789 15.922832,31.9741571 C14.3070696,31.9720468 12.9987146,30.6609386 13.0000009,29.0451753 C12.9987197,27.4294157 14.3070732,26.118313 15.922832,26.1162027 Z"/>
+    </g>
+  </g>
+</svg></a>
+                    </li>
+                    <li class="column shrink">
+                        <a class="" href="https://x.com/destatis"
+        title="External link Zu Destatis auf X (ehemals Twitter) (Opens new window)"
+  aria-label="External link Zu Destatis auf X (ehemals Twitter) (Opens new window)"
+
+        target="_blank"
+        rel="noopener noreferrer"><svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Group-17">
+        <path d="M22.55,45C10.05,45 -0.05,34.9 -0.05,22.5C-0.05,10.1 10.05,0 22.55,0C35.05,0 45.05,10.1 45.05,22.5C44.95,34.9 34.95,45 22.55,45ZM22.55,2C11.15,2 1.95,11.2 1.95,22.5C1.95,33.8 11.15,43 22.55,43C33.95,43 43.05,33.8 43.05,22.5C43.05,11.2 33.85,2 22.55,2Z" style="fill:#fff;fill-rule:nonzero;"/>
+        <g transform="matrix(0.0224825,0,0,0.0224825,4.92119,8.20891)">
+            <path d="M283.94,167.31L670.33,683.95L281.5,1104L369.01,1104L709.43,736.24L984.48,1104L1282.28,1104L874.15,558.3L1236.07,167.31L1148.56,167.31L835.05,506.01L581.74,167.31L283.94,167.31ZM412.63,231.77L549.44,231.77L1153.57,1039.53L1016.76,1039.53L412.63,231.77Z" style="fill:#fff;"/>
+        </g>
+    </g>
+</svg></a>
+                    </li>
+                    <li class="column shrink">
+                        <a class="" href="https://www.youtube.com/user/destatis"
+        title="External link Zum Destatis Youtube-Kanal (Opens new window)"
+  aria-label="External link Zum Destatis Youtube-Kanal (Opens new window)"
+
+        target="_blank"
+        rel="noopener noreferrer"><svg width="45" height="45" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g><path d="M22.5,45c-12.4,0 -22.5,-10.1 -22.5,-22.5c0,-12.4 10.1,-22.5 22.5,-22.5c12.4,0 22.5,10.1 22.5,22.5c0,12.4 -10.1,22.5 -22.5,22.5Zm0,-43c-11.3,0 -20.5,9.2 -20.5,20.5c0,11.3 9.2,20.5 20.5,20.5c11.3,0 20.5,-9.2 20.5,-20.5c0,-11.3 -9.2,-20.5 -20.5,-20.5Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M35.8,15.3c-0.3,-1.2 -1.3,-2.2 -2.5,-2.5c-2.2,-0.6 -11.1,-0.6 -11.1,-0.6c0,0 -8.9,0 -11.1,0.6c-1.2,0.3 -2.2,1.3 -2.5,2.5c-0.6,2.2 -0.6,6.8 -0.6,6.8c0,0 0,4.6 0.6,6.8c0.3,1.2 1.3,2.2 2.5,2.5c2.2,0.6 11.1,0.6 11.1,0.6c0,0 8.9,0 11.1,-0.6c1.2,-0.3 2.2,-1.3 2.5,-2.5c0.6,-2.2 0.6,-6.8 0.6,-6.8c0,0 0,-4.6 -0.6,-6.8Zm-16.4,11.6l0,-8.8l7,4.4l-7,4.4Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg></a>
+                    </li>
+                    <li class="column shrink">
+                        <a class="" href="https://www.xing.com/jobs/statistisches-bundesamt"
+        title="External link Destatis (Statistisches Bundesamt) bei Xing (Opens new window)"
+  aria-label="External link Destatis (Statistisches Bundesamt) bei Xing (Opens new window)"
+
+        target="_blank"
+        rel="noopener noreferrer"><svg width="45" height="45" xmlns="http://www.w3.org/2000/svg"><path d="M22.5 43C33.822 43 43 33.822 43 22.5S33.822 2 22.5 2 2 11.178 2 22.5 11.178 43 22.5 43zm0 2C10.074 45 0 34.926 0 22.5S10.074 0 22.5 0 45 10.074 45 22.5 34.926 45 22.5 45zm-3.423-27.46L21 20.974c-.078.144-1.083 1.969-3.014 5.474-.21.368-.465.552-.762.552h-2.802a.39.39 0 01-.363-.204.428.428 0 010-.433l2.966-5.377c.008 0 .008-.004 0-.013l-1.888-3.349c-.093-.176-.097-.324-.011-.444.07-.12.195-.18.375-.18h2.802c.313 0 .57.18.774.54zm11.853-3.91l-6.657 11.294v.012l4.236 7.436c.092.161.097.31.013.448-.085.12-.219.181-.404.181h-3.013c-.353 0-.63-.181-.832-.544L20 24.935l6.695-11.39c.21-.364.479-.545.807-.545h3.038c.185 0 .315.06.39.181.093.13.093.279 0 .448z" fill="#FFF" fill-rule="evenodd"/></svg></a>
+                    </li>
+                    <li class="column shrink">
+                        <a class="" href="https://www.linkedin.com/company/statistisches-bundesamt-destatis/"
+        title="External link Destatis (Statistisches Bundesamt) bei LinkedIn (Opens new window)"
+  aria-label="External link Destatis (Statistisches Bundesamt) bei LinkedIn (Opens new window)"
+
+        target="_blank"
+        rel="noopener noreferrer"><svg width="45" height="45" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="Group-17-Copy"><path d="M22.45,45c-12.4,0 -22.4,-10.1 -22.4,-22.5c0,-12.4 10,-22.5 22.4,-22.5c12.4,0 22.5,10.1 22.5,22.5c0.1,12.4 -10,22.5 -22.5,22.5Zm0,-43c-11.3,0 -20.4,9.2 -20.4,20.5c0,11.3 9.1,20.5 20.4,20.5c11.3,0 20.5,-9.2 20.5,-20.5c0,-11.3 -9.1,-20.5 -20.5,-20.5Z" style="fill:#fff;fill-rule:nonzero;"></path><path id="LinkedIn" d="M32.85,23.3l0,7.7l-4.5,0l0,-7.2c0,-1.8 -0.6,-3 -2.3,-3c-1.2,0 -2,0.8 -2.3,1.6c-0.1,0.3 -0.1,0.7 -0.1,1.1l0,7.5l-4.4,0c0,0 0,-12.2 0,-13.5l4.5,0l0,1.9c0.6,-0.9 1.7,-2.2 4,-2.2c2.9,0 5.1,1.9 5.1,6.1Zm-18.3,-12.3c-1.5,0 -2.5,1 -2.5,2.4c0,1.3 1,2.3 2.5,2.3c1.6,0 2.5,-1 2.5,-2.3c0,-1.4 -1,-2.4 -2.5,-2.4Zm-2.3,20l4.5,0l0,-13.5l-4.5,0l0,13.5Z" style="fill:#fff;fill-rule:nonzero;"></path></g></svg></a>
+                    </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>            <div class="c-to-top">
+              <div class="row">
+                <div class="column">
+                  <p class="navToTop">
+                    <a href="Europa/EN/Topic/DatabyTopic.html?nn=218540#Start">
+              
+
+              
+              
+              
+                
+                
+              
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+
+  <img src="/SiteGlobals/Frontend/Images/icons/to-top.svg?__blob=normal&amp;v=9"
+                
+                  
+     title="to the top"
+                  
+                
+
+                
+     alt="to the top"
+                
+
+                
+                
+                
+
+                
+
+                
+    
+                
+
+                
+   />
+
+              </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+<div class="footer__meta">
+  <div class="row">
+    <div class="column small-12">
+      <div class="row flex-dir-column large-flex-dir-row align-justify">
+        <div class="column shrink">
+          <ul class="row collapse flex-dir-column medium-flex-dir-row">
+            <li class="column shrink"><a href="Europa/EN/Service/LegalNotice/legalnotice_node.html"
+  
+  
+  
+  >Legal Notice</a></li>
+            <li class="column shrink"><a href="Europa/EN/Service/PrivacyPolicy/privacypolicy_node.html"
+  
+  
+  
+  >Privacy Policy</a></li>
+            <li class="column shrink"><a href="Europa/EN/Service/Sitemap/sitemap_node.html"
+  
+  
+  
+  >Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="column shrink">
+          <p>&copy;&nbsp;
+              
+
+              
+              
+              
+                
+                
+              
+
+              
+              
+              
+              
+                
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+
+  <img src="/SiteGlobals/Frontend/Images/icons/logo-partial.png?__blob=normal&amp;v=3"
+                
+                  
+     title=""
+                  
+                
+
+                
+     alt=""
+                
+
+                
+                
+                
+
+                
+
+                
+    
+                
+
+                
+   />
+
+              &nbsp;Statistisches Bundesamt (Destatis) | 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>      </footer>
+<section id="cookiebanner" class="cookiebanner"
+  data-gsb-tracking-config="SiteGlobals/Modules/CookieBanner/EN/General/CookieBanner.json?view=renderCookieBannerExtended"></section>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="SiteGlobals/Frontend/JavaScript/init/Europa/EN/global_EIZ_EN_new.js?v=7"></script>
+<!-- Seite generiert am: Fri Sep 18 11:18:11 CEST 2026 -->
+</body>
+</html>

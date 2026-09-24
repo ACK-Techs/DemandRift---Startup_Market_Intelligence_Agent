@@ -166,16 +166,29 @@ normalize belgenin ham dosyası nerede:
 
 | | Belge |
 |---|---:|
-| Bu depoda | **21** |
-| Yalnız yerel arşivde (depoda yok) | **1228** |
+| Bu depoda | **179** |
+| Yalnız yerel arşivde (depoda yok) | **1070** |
 | Hiçbir yerde | 0 |
 
 Rehber açık: *"kayıp artefakt başarılı sayılmaz"* ve *"indeksteki dosya
 gerçekten checkout'ta veya kayıtlı depoda bulunuyor mu?"*
 
 Bugünkü yoklamanın 14 kanıt
-artefaktı **bu depoya** yazıldı; Batuhan hash'ten doğrulayabilir. Geçmiş
-korpusun tamamı için karar gerekiyor — 1332 dosya yaklaşık 700 MB.
+artefaktı **bu depoya** yazıldı; Batuhan hash'ten doğrulayabilir.
+
+Geçmiş korpus için seçici bir paylaşım yapıldı: **sayı çıkardığımız her
+belgenin** ham dosyası depoya alındı (154 dosya, 49 MB). Böylece
+`KATEGORI-ALANLARI.csv`'deki her fiyat, puan ve sayının kaynağı açılabiliyor.
+
+| Ne doğrulanabilir | Oran |
+|---|---|
+| Çıkarılan alanlar (fiyat, puan, yorum sayısı…) | **%100 (164/164)** |
+| Bugünkü AS-01 yoklamaları | **%100** |
+| SourceFitMatrix örnek kayıtları | %29 (101/346) |
+
+Kalan 1070 belge çoğunlukla ana sayfa ve sitemap; onlardan sayı çıkarılmadı,
+yani doğrulanacak bir iddia taşımıyorlar. SourceFitMatrix'in örnek kayıtlarını
+da tamamlamak ~75 MB daha eklemek demek — karar Batuhan'ın.
 
 ## 5b. Kapalı kaynaklar için aranan alternatifler
 

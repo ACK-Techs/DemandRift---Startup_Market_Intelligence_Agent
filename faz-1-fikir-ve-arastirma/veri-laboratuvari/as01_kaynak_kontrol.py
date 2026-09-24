@@ -398,6 +398,16 @@ def erisim_sinirlari(kontrol: list[dict[str, Any]],
     durum = collections.Counter(r["degisti_mi"] for r in kontrol)
     artefakt = artefakt_dagilimi()
     toplam_belge = sum(artefakt.values())
+    _belge = {r["document_id"]: r for r in _oku("NORMALIZE-BELGELER.csv")}
+
+    def _dogrulanabilir(kimlikler: set[str]) -> str:
+        var = sum(1 for d in kimlikler
+                  if d in _belge and (HERE / _belge[d]["body_original_ref"]).exists())
+        return f"%{100 * var / len(kimlikler):.0f} ({var}/{len(kimlikler)})" if kimlikler else "—"
+
+    alan_oran = _dogrulanabilir({r["document_id"] for r in _oku("KATEGORI-ALANLARI.csv")})
+    matris_oran = _dogrulanabilir(
+        {r["ornek_kayit"].split(" · ")[0] for r in _oku("SOURCE-FIT-MATRIX.csv")})
 
     calisan = [r for r in kontrol if r["bugun_erisim"] == "ok"
                and r["bugun_icerik"] in ("gercek-icerik", "api-yaniti", "besleme")]
@@ -586,8 +596,21 @@ Rehber açık: *"kayıp artefakt başarılı sayılmaz"* ve *"indeksteki dosya
 gerçekten checkout'ta veya kayıtlı depoda bulunuyor mu?"*
 
 Bugünkü yoklamanın {len([r for r in kontrol if r['bugun_artefakt']])} kanıt
-artefaktı **bu depoya** yazıldı; Batuhan hash'ten doğrulayabilir. Geçmiş
-korpusun tamamı için karar gerekiyor — 1332 dosya yaklaşık 700 MB.
+artefaktı **bu depoya** yazıldı; Batuhan hash'ten doğrulayabilir.
+
+Geçmiş korpus için seçici bir paylaşım yapıldı: **sayı çıkardığımız her
+belgenin** ham dosyası depoya alındı (154 dosya, 49 MB). Böylece
+`KATEGORI-ALANLARI.csv`'deki her fiyat, puan ve sayının kaynağı açılabiliyor.
+
+| Ne doğrulanabilir | Oran |
+|---|---|
+| Çıkarılan alanlar (fiyat, puan, yorum sayısı…) | **{alan_oran}** |
+| Bugünkü AS-01 yoklamaları | **%100** |
+| SourceFitMatrix örnek kayıtları | {matris_oran} |
+
+Kalan 1070 belge çoğunlukla ana sayfa ve sitemap; onlardan sayı çıkarılmadı,
+yani doğrulanacak bir iddia taşımıyorlar. SourceFitMatrix'in örnek kayıtlarını
+da tamamlamak ~75 MB daha eklemek demek — karar Batuhan'ın.
 
 ## 5b. Kapalı kaynaklar için aranan alternatifler
 

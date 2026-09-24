@@ -1,0 +1,2194 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+<link rel="shortlink" href="https://www.esma.europa.eu/" />
+<link rel="canonical" href="https://www.esma.europa.eu/" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/esma_webst_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>| European Securities and Markets Authority</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_0mmC47JTjUuU1lIN0ndpmHaaGWskffG-smf0XkR2uGY.css?delta=0&amp;language=en&amp;theme=esma_webst_theme&amp;include=eJx9UltygzAMvBDgn96HkbFw3MgWtUQy5PQV0HaS0ORHtrRrrR72BLfFEUNIJTaeWUUrTB_Og-C9PyZ68COxB2pFF3p6mVEEIkozwKTDCfZUwxlDUq69MpOmSdxYuWiLJbSf8hb-1ThyzExLCyVl0MSllQHoP6mdxxesNYW1Mq7oCtcMlG7YoGTor-hFez1hxufmvuY0nBW8ONMwRhsrLHfRv1sjZDe32W6QRz9DKl3AEWbSIzDORNcU9PQAbeU8RebsCyTqQApcRq6NLKKY9zGr7zNGyFjmY2Dtx7q_JLyK22yXOcw2MmveMmX3c3ZIplvUylWTkk45xje0DMU2Hvrtk7wk7f_iNW5LOYCr-QaFZwaG" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_9yZFVLapRkH0KmGcnQUnRb3zsGxQEESpQq5cIjvQywc.css?delta=1&amp;language=en&amp;theme=esma_webst_theme&amp;include=eJx9UltygzAMvBDgn96HkbFw3MgWtUQy5PQV0HaS0ORHtrRrrR72BLfFEUNIJTaeWUUrTB_Og-C9PyZ68COxB2pFF3p6mVEEIkozwKTDCfZUwxlDUq69MpOmSdxYuWiLJbSf8hb-1ThyzExLCyVl0MSllQHoP6mdxxesNYW1Mq7oCtcMlG7YoGTor-hFez1hxufmvuY0nBW8ONMwRhsrLHfRv1sjZDe32W6QRz9DKl3AEWbSIzDORNcU9PQAbeU8RebsCyTqQApcRq6NLKKY9zGr7zNGyFjmY2Dtx7q_JLyK22yXOcw2MmveMmX3c3ZIplvUylWTkk45xje0DMU2Hvrtk7wk7f_iNW5LOYCr-QaFZwaG" />
+
+    
+  </head>
+  <body class="path-frontpage   d-flex flex-column h-100">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas d-flex flex-column h-100" data-off-canvas-main-canvas>
+    
+
+<header>
+    <div class="logo-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="/" rel="home" class="site-logo">
+            <img src="/themes/custom/esma_webst_theme/assets/images/ESMALogo.png"
+              alt="Home" oncontextmenu="return false;" />
+          </a>
+        </div>
+        <div class="search-bar">
+          <div class="search-block-form block block-search container-inline" data-drupal-selector="search-block-form" role="search">
+  
+    
+      <form action="/search/site" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+              <label for="edit-keys" class="visually-hidden">Search</label>
+
+
+        
+  <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search form-control" />
+
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+  <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit btn btn-primary" />
+
+</div>
+
+  </form>
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="top-bar">
+    <div  class="region region-header">
+      <div class="container">
+        <div id="block-esmamegamenu" class="block block-tb-megamenu block-tb-megamenu-menu-blockmenu-esma-megamenu">
+  
+    
+      <nav  class="tbm tbm-menu-esma-megamenu tbm-arrows" id="49f0966b-e643-4b7b-94d3-f052f373a975" data-breakpoint="992" aria-label="menu-esma-megamenu navigation">
+      <button class="tbm-button" type="button">
+    <i class="bi bi-list"></i>
+    </button>
+    <div class="tbm-collapse ">
+    <ul  class="tbm-nav level-0 items-6" >
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/about-esma"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                About ESMA
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-8">
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Governance Structure
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-11">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/board-of-supervisors"  class="tbm-link level-3">
+                Board of Supervisors
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/management-board"  class="tbm-link level-3">
+                Management Board
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/senior-management"  class="tbm-link level-3">
+                Senior Management
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/joint-committee"  class="tbm-link level-3">
+                Joint Committee
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/ccp-supervisory-committee"  class="tbm-link level-3">
+                CCP Supervisory Committee
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/ccp-resolution-committee"  class="tbm-link level-3">
+                CCP Resolution Committee
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/joint-monitoring-mechanism"  class="tbm-link level-3">
+                Joint Monitoring Mechanism
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/standing-committees"  class="tbm-link level-3">
+                Standing Committees
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/stakeholder-engagement/smsg"  class="tbm-link level-3">
+                SMSG
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/board-appeal"  class="tbm-link level-3">
+                Board of Appeal
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/ethics-and-conflict-interests"  class="tbm-link level-3">
+                Ethics and Conflicts of interest
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/internal-organisation"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Internal Organisation
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-3">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/internal-organisation/strategy-and-work-programme"  class="tbm-link level-3" title="/work-programme">
+                Strategy and Work Programme
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/internal-organisation/working-methods"  class="tbm-link level-3">
+                Working Methods
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/internal-organisation/diversity-equity-and-inclusion"  class="tbm-link level-3">
+                Diversity, Equity and Inclusion
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/international-cooperation"  class="tbm-link level-2">
+                International Cooperation
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/governance-structure/legal-notice-data-protection"  class="tbm-link level-2">
+                Legal Notice and Data Protection
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/transparency-and-access-documents"  class="tbm-link level-2">
+                Transparency and Access to Documents
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/press-news/key-dates"  class="tbm-link level-2">
+                Agenda
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/careers"  class="tbm-link level-2">
+                Careers
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/procurements"  class="tbm-link level-2">
+                Procurement Opportunities
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                ESMA&#039;s Activities
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-10">
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Investors and Issuers
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-7">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/benchmark-administrators"  class="tbm-link level-3">
+                Benchmark Administrators
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/credit-rating-agencies"  class="tbm-link level-3">
+                Credit Rating Agencies
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/esg-rating-providers"  class="tbm-link level-3">
+                ESG Rating Providers
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/external-reviewers-european-green-bonds"  class="tbm-link level-3">
+                External Reviewers of European Green Bonds
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/fund-management"  class="tbm-link level-3">
+                Fund Management
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/issuer-disclosure"  class="tbm-link level-3">
+                Issuer Disclosure
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/investors-and-issuers/investment-services-and-crowdfunding"  class="tbm-link level-3">
+                Investment Services and Crowdfunding
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Markets and Infrastructure
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-11">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/central-counterparties"  class="tbm-link level-3">
+                Central Counterparties
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/data-reporting-services-providers"  class="tbm-link level-3">
+                Data Reporting Services Providers
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/trading"  class="tbm-link level-3">
+                Trading
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/consolidated-tape-providers"  class="tbm-link level-3">
+                Consolidated Tape Providers
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/post-trading"  class="tbm-link level-3">
+                Post-trading
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/shortening-settlement-cycle-t1-eu"  class="tbm-link level-3">
+                Shortening the settlement cycle to T+1 in the EU
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/market-integrity"  class="tbm-link level-3">
+                Market Integrity
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/short-selling"  class="tbm-link level-3">
+                Short Selling
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/central-securities-depositories"  class="tbm-link level-3">
+                Central Securities Depositories
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/securitisation"  class="tbm-link level-3">
+                Securitisation
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/markets-and-infrastructure/trade-repositories"  class="tbm-link level-3">
+                Trade Repositories
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/risk-analysis"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Risk Analysis
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-3">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/risk-analysis/risk-monitoring"  class="tbm-link level-3">
+                Risk Monitoring
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/risk-analysis/topical-analysis"  class="tbm-link level-3">
+                Topical Analysis
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/risk-analysis/interactive-dashboards"  class="tbm-link level-3">
+                Interactive Dashboards
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/sustainable-finance"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Sustainable Finance
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-4">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/sustainable-finance/climate-benchmarks-and-esg-disclosure"  class="tbm-link level-3">
+                Climate benchmarks and ESG disclosure
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/sustainable-finance/cras-and-sustainability"  class="tbm-link level-3">
+                CRAs and Sustainability
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/sustainable-finance/investment-services-and-fund-management"  class="tbm-link level-3">
+                Investment Services and Fund Management
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/sustainable-finance/sustainability-reporting"  class="tbm-link level-3">
+                Sustainability Reporting
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/digital-finance-and-innovation"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Digital Finance and Innovation
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-3">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/digital-finance-and-innovation/digital-operational-resilience-act-dora"  class="tbm-link level-3">
+                Digital Operational Resilience Act (DORA)
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/digital-finance-and-innovation/dlt-pilot-regime"  class="tbm-link level-3">
+                DLT Pilot Regime
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica"  class="tbm-link level-3">
+                Markets in Crypto-Assets Regulation (MiCA)
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Supervision
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-3">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision-and-convergence/registration-with-ESMA"  class="tbm-link level-3">
+                Registration with ESMA
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision-and-convergence/investigations-and-inspections"  class="tbm-link level-3">
+                Investigations and Inspections
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision-and-convergence/sanctions-and-enforcement"  class="tbm-link level-3">
+                Sanctions and Enforcement
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervisory-convergence"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Supervisory Convergence
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-4">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision-and-convergence/supervisory-convergence-tools"  class="tbm-link level-3">
+                Supervisory Convergence Tools
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/supervision-and-convergence/enforcement-convergence-initiatives"  class="tbm-link level-3">
+                Enforcement Convergence Initiatives
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/peer-reviews"  class="tbm-link level-3">
+                Peer Reviews
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/supervisory-convergence-tools/breach-union-law"  class="tbm-link level-3">
+                Breach of Union Law
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/data"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Data
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-5">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/data-reporting"  class="tbm-link level-3">
+                Data Reporting
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/databases-and-registers"  class="tbm-link level-3">
+                Databases and Registers
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/data/data-quality-and-use"  class="tbm-link level-3">
+                Data Quality and Use
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/data/statistical-information"  class="tbm-link level-3">
+                Statistical Information
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/data/european-single-access-point-esap"  class="tbm-link level-3">
+                European Single Access Point (ESAP)
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/listing-act"  class="tbm-link level-2">
+                Listing Act
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/simplification-and-burden-reduction"  class="tbm-link level-2">
+                Simplification and Burden Reduction
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                News &amp; Publications
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-8">
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/press-news/esma-news"  class="tbm-link level-2">
+                News
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/databases-library/esma-library"  class="tbm-link level-2">
+                Documents
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/esma-speeches"  class="tbm-link level-2">
+                Speeches
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/contact-help/newsletter"  class="tbm-link level-2">
+                Newsletter
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/interactive-single-rulebook"  class="tbm-link level-2">
+                Interactive Single Rulebook
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/guidelines-recommendations-and-technical-standards"  class="tbm-link level-2">
+                Guidelines, Recommendations and Technical  Standards
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/esmas-activities/risk-analysis"  class="tbm-link level-2">
+                Risk Monitoring and Analysis
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/questions-answers"  class="tbm-link level-2">
+                Questions and Answers
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                Investor Corner
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-7">
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/is-the-firm-regulated"  class="tbm-link level-2">
+                Is the firm regulated?
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/get-ready-invest"  class="tbm-link level-2">
+                Get ready to invest
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/frauds-and-scams"  class="tbm-link level-2">
+                Frauds and Scams related to ESMA Logo and ID
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/publications-investors"  class="tbm-link level-2">
+                Publications for Investors
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/product-intervention"  class="tbm-link level-2">
+                Product Intervention
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/make-complaint"  class="tbm-link level-2">
+                Make a complaint
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/investor-corner/cost-investment-products"  class="tbm-link level-2">
+                Cost of Investment Products
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/interact-with-esma"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                Interact With ESMA
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-6">
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/contact-help/media-corner"  class="tbm-link level-2">
+                Media Corner
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/stakeholder-engagement/speaking-requests"  class="tbm-link level-2">
+                Speaking Requests
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2 tbm-item--has-flyout" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/stakeholder-engagement"  class="tbm-link level-2 tbm-toggle" aria-expanded="false">
+                Stakeholder Engagement
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-2 items-1">
+        <li  class="tbm-item level-3" aria-level="3" >
+      <div class="tbm-link-container">
+            <a href="/stakeholder-relations"  class="tbm-link level-3">
+                Stakeholder Relations
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/press-news/consultations"  class="tbm-link level-2">
+                Consultations
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/press-news/hearings"  class="tbm-link level-2">
+                Events
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/about-esma/whistleblowers"  class="tbm-link level-2">
+                Whistleblowers
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+        <li  class="tbm-item level-1 tbm-item--has-dropdown" aria-level="1" >
+      <div class="tbm-link-container">
+            <a href="/contact-help"  class="tbm-link level-1 tbm-toggle" aria-expanded="false">
+                Contact &amp; Help
+          </a>
+                <button class="tbm-submenu-toggle always-show"><span class="visually-hidden">Toggle submenu</span></button>
+          </div>
+    <div  class="tbm-submenu tbm-item-child">
+      <div  class="tbm-row">
+      <div  class="tbm-column span12">
+  <div class="tbm-column-inner">
+               <ul  class="tbm-subnav level-1 items-3">
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/contact-help/esma-contact-information"  class="tbm-link level-2">
+                Contact Information
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/contact-help/faqs"  class="tbm-link level-2">
+                FAQs
+          </a>
+            </div>
+    
+</li>
+
+        <li  class="tbm-item level-2" aria-level="2" >
+      <div class="tbm-link-container">
+            <a href="/publications-and-data/glossary"  class="tbm-link level-2">
+                Glossary
+          </a>
+            </div>
+    
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+  </div>
+
+</li>
+
+  </ul>
+
+      </div>
+  </nav>
+
+<script>
+if (window.matchMedia("(max-width: 992px)").matches) {
+  document.getElementById("49f0966b-e643-4b7b-94d3-f052f373a975").classList.add('tbm--mobile')
+}
+
+var hideMobile = 
+if (hideMobile === 1) {
+  document.getElementById('49f0966b-e643-4b7b-94d3-f052f373a975').classList.add('tbm--mobile-hide')
+}
+
+</script>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+</header>
+
+<main role="main">
+  <a id="main-content" tabindex="-1"></a>
+  
+  
+  
+          
+                
+  <div class="">
+        <div class="row no-gutters ">
+            <div class="order-1 order-lg-2 col-12">
+          <div class="region region-content">
+    
+
+<div class="region__container">
+                    <div class="home-slide"
+          style="background-image: url(/sites/default/files/homepage_banner_sept2026.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="views-element-container"><div class="view--blazy view view-homepage view-id-homepage view-display-id-block_slide js-view-dom-id-5ff1fec76f054a3d23e03753f7a252eb9ae1040cfc69068feee8349cc8bf68da">
+  
+    
+      
+      <div class="view-content">
+      <div class="slick blazy slick--view slick--view--homepage slick--view--homepage--block-slide slick--view--homepage-block-block-slide slick--skin--fullwidth slick--optionset--default" data-blazy=""><div id="slick-2f8b78b335d" data-slick="{&quot;count&quot;:5,&quot;total&quot;:5,&quot;dots&quot;:true,&quot;arrows&quot;:false,&quot;draggable&quot;:false,&quot;infinite&quot;:false,&quot;lazyLoad&quot;:&quot;blazy&quot;}" class="slick__slider">  <div class="slick__slide slide slide--0">
+<div  class="node__content">
+  <h1>
+    <span class="field field--name-title field--type-string field--label-hidden">ESMA calls on unauthorised crypto-asset service providers to wind down orderly</span>
+
+  </h1>
+  <p>
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ESMA has issued a statement to clarify expectations for how unauthorised crypto asset service providers (CASPs) must wind down activities while also protecting investors after the end of the transitional period under the Markets in Crypto-Assets Regulation (MiCA) on 1 July 2026.</p>
+</div>
+      
+  </p>
+  <a class="btn btn-primary" href="/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf">More about</a>
+</div>
+
+
+</div>
+  <div class="slick__slide slide slide--1">
+<div  class="node__content">
+  <h1>
+    <span class="field field--name-title field--type-string field--label-hidden">ESMA identifies up to €1 billion in potential annual savings from simplifying EU transaction reporting</span>
+
+  </h1>
+  <p>
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ESMA has published its final report on the simplification of transaction reporting, setting out a clear path towards a ‘Report Once’ approach. ESMA’s review confirms that the main drivers of cost and complexity include frequent and unsynchronised regulatory changes, duplication of reporting across frameworks and channels, and dual-sided reporting and associated reconciliation processes. &nbsp;</p>
+<p>&nbsp;</p>
+</div>
+      
+  </p>
+  <a class="btn btn-primary" href="/press-news/esma-news/esma-identifies-eu1-billion-potential-annual-savings-simplifying-eu">More about</a>
+</div>
+
+
+</div>
+  <div class="slick__slide slide slide--2">
+<div  class="node__content">
+  <h1>
+    <span class="field field--name-title field--type-string field--label-hidden">ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines</span>
+
+  </h1>
+  <p>
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ESMA has published a statement highlighting key deadlines and action points to be ready for the transition to a T+1 settlement cycle in EU financial markets. With the move scheduled for 11 October 2027, 2026 is a critical year for market participants to finalise their preparations.</p>
+</div>
+      
+  </p>
+  <a class="btn btn-primary" href="/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines">More about</a>
+</div>
+
+
+</div>
+  <div class="slick__slide slide slide--3">
+<div  class="node__content">
+  <h1>
+    <span class="field field--name-title field--type-string field--label-hidden">ESMA makes recommendations for more effective and attractive capital markets in the EU</span>
+
+  </h1>
+  <p>
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ESMA published its Position Paper on “Building more effective and attractive capital markets in the EU”. The Paper includes 20 recommendations to strengthen EU capital markets and address the needs of European citizens and businesses.</p>
+</div>
+      
+  </p>
+  <a class="btn btn-primary" href="/press-news/esma-news/esma-makes-recommendations-more-effective-and-attractive-capital-markets-eu">More about</a>
+</div>
+
+
+</div>
+  <div class="slick__slide slide slide--4">
+<div  class="node__content">
+  <h1>
+    <span class="field field--name-title field--type-string field--label-hidden">ESMA Strategic priorities 2023-2028 &amp; Work Programme 2026</span>
+
+  </h1>
+  <p>
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>ESMA will focus on strengthening supervision, enhancing the protection of retail investors, fostering effective markets and financial stability, enabling sustainable finance, as well as facilitating technological innovation and effective use of data.</p>
+</div>
+      
+  </p>
+  <a class="btn btn-primary" href="/about-esma/internal-organisation/work-programme">More about</a>
+</div>
+
+
+</div>
+</div>
+          <nav role="navigation" class="slick__arrow">
+        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
+      </nav>
+    </div>
+
+    </div>
+  
+          </div>
+</div>
+
+              </div>
+              <div class="col-md-5">
+                <div class="block block-quicktabs block-quicktabs-blockyour-input">
+  
+    
+      <div class="quicktabs-wrapper on-the-gray" id="quicktabs-your_input"><div class="item-list"><ul class="quicktabs-tabs" role="tablist"><li role="tab" aria-controls="quicktabs-tabpage-your_input-0" aria-selected="true" id="quicktabs-tab-your_input-0" class="active your-input-tab open-consultations"><a href="/quicktabs/nojs/your_input/0" class="quicktabs-loaded" data-quicktabs-tab-index="0" data-quicktabs-tab-name="open-consultations" tabindex="0" rel="noindex">Open Consultations</a></li><li role="tab" aria-controls="quicktabs-tabpage-your_input-1" aria-selected="false" id="quicktabs-tab-your_input-1" class="your-input-tab upcoming-events"><a href="/quicktabs/nojs/your_input/1" class="quicktabs-loaded" data-quicktabs-tab-index="1" data-quicktabs-tab-name="upcoming-events" tabindex="-1" rel="noindex">Upcoming Events</a></li></ul></div><div class="quicktabs-main" id="quicktabs-container-your_input"><div id="quicktabs-tabpage-your_input-0" class="quicktabs-tabpage" role="tabpanel" aria-labelledby="quicktabs-tab-your_input-0" tabindex="0">
+<div class="quicktabs-block-title"></div>
+<div><div class="views-element-container"><div class="view view-esma-your-input view-id-esma_your_input view-display-id-block_2 js-view-dom-id-ff6d52028303e4924eb643790a5156b2ad065cb29ab3b752c7e0a944687ee329">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="consultation__info">
+ <a href="/press-news/consultations/consultation-reporting-framework-under-emir-clearing-activity-recognised"> Consultation on the reporting framework under EMIR for clearing activity at recognised third-… </a> 
+  <span class="field-content yourinput-date">
+    12 October 2026
+  </span>
+</div><span class="views-field views-field-nothing"><span class="field-content"><a href="/press-news/consultations/consultation-reporting-framework-under-emir-clearing-activity-recognised#form">RESPOND</a></span></span></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <a title="all consultations" href="press-news/consultations" class="listnews_footer-link">All Consultations</a>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="quicktabs-tabpage-your_input-1" class="quicktabs-tabpage quicktabs-hide" role="tabpanel" aria-labelledby="quicktabs-tab-your_input-1" tabindex="0">
+<div class="quicktabs-block-title"></div>
+<div><div class="views-element-container"><div class="view view-esma-your-input view-id-esma_your_input view-display-id-block_3 js-view-dom-id-b742fa4a2f9c189875c07dc2ddfc70dae9892b4f9bd9cfa34f7231bf22df0121">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><span class="views-field views-field-field-hearing-date"><div class="hearing__info">
+  <a href="/press-news/hearings/research-conference-strong-eu-financial-markets-volatile-world"> Research conference: Strong EU financial markets in a volatile world </a> 
+  <span class="field-content yourinput-date">
+    22 September 2026
+  </span>
+</div></span><span class="views-field views-field-nothing"><span class="field-content"><a href="/press-news/hearings/research-conference-strong-eu-financial-markets-volatile-world#form">BOOK</a></span></span></div>
+    <div class="views-row"><span class="views-field views-field-field-hearing-date"><div class="hearing__info">
+  <a href="/press-news/hearings/13th-joint-esas-consumer-protection-day"> 13th Joint ESAs Consumer Protection Day </a> 
+  <span class="field-content yourinput-date">
+    04 November 2026
+  </span>
+</div></span><span class="views-field views-field-nothing"><span class="field-content"><a href="/press-news/hearings/13th-joint-esas-consumer-protection-day#form">BOOK</a></span></span></div>
+
+    </div>
+  
+            <div class="view-footer">
+      <a title="all events" href="press-news/hearings" class="listnews_footer-link">All Events</a>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+                        <div class="views-element-container"><div class="container-fluid view view-homepage view-id-homepage view-display-id-block_one_row js-view-dom-id-af5358656823323b577922c95afe8a8ce7b82a3cf4fab2cb2ef4377caf7cc545">
+  
+    
+      
+      <div class="view-content">
+      <div class="views-view-grid horizontal cols-5 clearfix">
+            <div class="row">
+                  <div class="col-md-3"><a href="/esmas-activities/supervision">
+	<div class="node__content">
+		<div class="card card--home card--home--one-row">
+			<div>
+					
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--one-row blazy--view--homepage-block-block-multiple-row blazy--view--homepage blazy--view--homepage--block-multiple-row field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-39568d16b2e" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Supervision" decoding="async" class="media__element b-lazy" loading="eager" data-src="/sites/default/files/styles/one_row_style/public/2026-04/Supervision_card.png?itok=jmjwnVfZ" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="320" height="320" />
+        </div>
+  </div>
+      
+			</div>
+			<div class="card__text-contianer">
+				<div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Supervision</span>
+
+          </h3>
+        </div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+                  <div class="col-md-3"><a href="/esmas-activities/sustainable-finance">
+	<div class="node__content">
+		<div class="card card--home card--home--one-row">
+			<div>
+					
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--one-row blazy--view--homepage-block-block-multiple-row blazy--view--homepage blazy--view--homepage--block-multiple-row field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-f7d2da2460e" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Sustainable Finance Alt Text" decoding="async" class="media__element b-lazy" loading="eager" data-src="/sites/default/files/styles/one_row_style/public/2022-12/Sustainable%20Finance_card.png?itok=GkmISYHW" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="320" height="320" />
+        </div>
+  </div>
+      
+			</div>
+			<div class="card__text-contianer">
+				<div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Sustainable Finance</span>
+
+          </h3>
+        </div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+                  <div class="col-md-3"><a href="/esmas-activities/digital-finance-and-innovation">
+	<div class="node__content">
+		<div class="card card--home card--home--one-row">
+			<div>
+					
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--one-row blazy--view--homepage-block-block-multiple-row blazy--view--homepage blazy--view--homepage--block-multiple-row field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-0b27552a8d1" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Innovation and digital image" decoding="async" class="media__element b-lazy" loading="eager" data-src="/sites/default/files/styles/one_row_style/public/2022-10/Innovation%20and%20digital_card.png?itok=ICYOS11h" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="320" height="320" />
+        </div>
+  </div>
+      
+			</div>
+			<div class="card__text-contianer">
+				<div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Digital Finance and Innovation</span>
+
+          </h3>
+        </div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+                  <div class="col-md-3"><a href="/esmas-activities/data">
+	<div class="node__content">
+		<div class="card card--home card--home--one-row">
+			<div>
+					
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--one-row blazy--view--homepage-block-block-multiple-row blazy--view--homepage blazy--view--homepage--block-multiple-row field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-9d9d3a16ead" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Data" decoding="async" class="media__element b-lazy" loading="eager" data-src="/sites/default/files/styles/one_row_style/public/2024-06/Data_card.png?itok=n4cZ0F1R" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="320" height="320" />
+        </div>
+  </div>
+      
+			</div>
+			<div class="card__text-contianer">
+				<div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Data</span>
+
+          </h3>
+        </div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+              </div>
+      </div>
+
+    </div>
+  
+          </div>
+</div>
+
+                        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section">
+                <div class="news-slider">
+                        <div class="views-element-container"><div class="view--blazy view view-news-carousel view-id-news_carousel view-display-id-block_1 js-view-dom-id-e3cdfe586816bb0d76a767178c3e08799ea78e3ad0b25dc7b34b989507e59dd2">
+  
+    
+      
+      <div class="view-content">
+      <div class="slick blazy slick--view slick--view--news-carousel slick--view--news-carousel--block-1 slick--view--news-carousel-block-block-1 slick--skin--default slick--optionset--news-carousel slick--multiple-view" data-blazy=""><div id="slick-febde751fc9" data-slick="{&quot;count&quot;:10,&quot;total&quot;:10,&quot;lazyLoad&quot;:&quot;blazy&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3,&quot;responsive&quot;:[{&quot;breakpoint&quot;:768,&quot;settings&quot;:{&quot;arrows&quot;:false,&quot;draggable&quot;:false,&quot;infinite&quot;:false,&quot;rows&quot;:2,&quot;swipe&quot;:false,&quot;touchMove&quot;:false,&quot;waitForAnimate&quot;:false}}]}" class="slick__slider"><div class="slick__slide slide slide--0"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-consults-reporting-framework-clearing-activity-recognised-third-country"><span class="field field--name-title field--type-string field--label-hidden">ESMA consults on reporting framework for clearing activity at recognised third-country CCPs</span>
+</a></h3>
+      <span class="newscard__date">18/08/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-08/ESMA12-2121844265-6008_-_Consultation_Paper_on_EMIR_Article_7d.pdf" type="application/pdf">ESMA12-2121844265-6008_-_Consultation_Paper_on_EMIR_Article_7d.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--consult">
+            <div class="field field--name-field-news-consultation field--type-entity-reference field--label-hidden field__item"><a href="/press-news/consultations/consultation-reporting-framework-under-emir-clearing-activity-recognised" hreflang="en">Consultation on the reporting framework under EMIR for clearing activity at recognised third-country CCPs</a></div>
+      </div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--1"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-confirms-go-live-weekly-commodity-derivatives-position-reporting"><span class="field field--name-title field--type-string field--label-hidden">ESMA confirms go-live for weekly commodity derivatives position reporting</span>
+</a></h3>
+      <span class="newscard__date">14/08/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2025-09/ESMA65-955014868-14991_CODER_Weekly_Position_Data_Reporting_Instructions.pdf" type="application/pdf">ESMA65-955014868-14991_CODER_Weekly_Position_Data_Reporting_Instructions.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--2"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/eba-eiopa-and-esma-propose-amendments-bilateral-margin-requirements"><span class="field field--name-title field--type-string field--label-hidden">EBA, EIOPA and ESMA propose amendments to bilateral margin requirements</span>
+</a></h3>
+      <span class="newscard__date">03/08/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-08/ESA_2026_07_Final_Report_on_amending_RTS_on_uncleared_OTC_derivatives.pdf" type="application/pdf">ESA_2026_07_Final_Report_on_amending_RTS_on_uncleared_OTC_derivatives.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--3"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/eba-eiopa-and-esma-call-enhanced-governance-and-consistent-supervision"><span class="field field--name-title field--type-string field--label-hidden">EBA, EIOPA and ESMA call for enhanced governance and consistent supervision to mitigate ICT risks from frontier AI models in the EU financial sector</span>
+</a></h3>
+      <span class="newscard__date">31/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/JC_2026_25_ESA_statement_on_frontier_AI_models.pdf" type="application/pdf">JC_2026_25_ESA_statement_on_frontier_AI_models.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--4"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-publishes-latest-edition-its-newsletter-44"><span class="field field--name-title field--type-string field--label-hidden">ESMA publishes latest edition of its newsletter</span>
+</a></h3>
+      <span class="newscard__date">31/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/Newsletter_June_and_July_2026.pdf" type="application/pdf">Newsletter_June_and_July_2026.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--5"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-authorises-euroctp-consolidated-tape-provider-shares-and-exchange-traded"><span class="field field--name-title field--type-string field--label-hidden">ESMA authorises EuroCTP as the Consolidated Tape Provider for shares and exchange-traded funds</span>
+</a></h3>
+      <span class="newscard__date">27/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/ESMA71-545613100-2975_ESMA_authorises_EuroCTP_as_the_Consolidated_Tape_Provider_for_shares_and_exchange-traded_funds_-_Press_release.pdf" type="application/pdf">ESMA71-545613100-2975_ESMA_authorises_EuroCTP_as_the_Consolidated_Tape_Provider_for_shares_and_exchange-traded_funds_-_Press_release.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--6"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-calls-firms-finalise-preparations-ahead-t1-settlement-deadlines"><span class="field field--name-title field--type-string field--label-hidden">ESMA calls on firms to finalise preparations ahead of T+1 settlement deadlines</span>
+</a></h3>
+      <span class="newscard__date">20/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/ESMA74-2119945926-3773_T_1_statement.pdf" type="application/pdf">ESMA74-2119945926-3773_T_1_statement.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--7"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-publishes-report-cross-border-investment-services-supervision"><span class="field field--name-title field--type-string field--label-hidden">ESMA publishes report on cross-border investment services supervision</span>
+</a></h3>
+      <span class="newscard__date">20/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/ESMA42-2004696504-8471_Follow-up_report_to_peer_review_on_cross_border_activities_of_investment_firms.pdf" type="application/pdf">ESMA42-2004696504-8471_Follow-up_report_to_peer_review_on_cross_border_activities_of_investment_firms.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--8"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/joint-board-appeal-dismisses-appeal-against-eba"><span class="field field--name-title field--type-string field--label-hidden">Joint Board of Appeal dismisses appeal against the EBA</span>
+</a></h3>
+      <span class="newscard__date">16/07/2026</span>
+    </div>
+  <div class="actionscard">
+          <div class="actionscard__left">
+<div  class="node node--type-library-document node--view-mode-slide-teaser">
+  
+            <div class="field field--name-field-main-document-test field--type-entity-reference field--label-hidden field__item"><article class="media media--type-file media--view-mode-slick">
+  
+      
+            <div class="field field--name-field-media-file field--type-file field--label-hidden field__item">
+<span class="file file--mime-application-pdf file--application-pdf"> <a href="/sites/default/files/2026-07/BoA-D-2026-01_Decision_by_the_Board_of_Appeal_on_D_v_EBA.pdf" type="application/pdf">BoA-D-2026-01_Decision_by_the_Board_of_Appeal_on_D_v_EBA.pdf</a></span>
+</div>
+      
+  </article>
+</div>
+      
+</div>
+
+
+</div>
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div><div class="slick__slide slide slide--9"><div class="slide__content"><div class="slide__media">    <div class="media media--blazy media--slick media--image is-b-loading">        </div></div>
+  <div class="slide__caption"><div class="slide__description"><div class="container">
+<article class="node node--type-news node--promoted node--view-mode-slide-teaser">
+    
+    <div class="newscard">
+      <h3><a href="/press-news/esma-news/esma-launches-data-collection-under-first-phase-esap"><span class="field field--name-title field--type-string field--label-hidden">ESMA launches data collection under the first phase of ESAP</span>
+</a></h3>
+      <span class="newscard__date">10/07/2026</span>
+    </div>
+  <div class="actionscard">
+        <div class="actionscard__right">
+                                <div class="actionscard__right--responses"></div>
+                </div>
+  </div>
+</article>
+</div>
+</div>
+</div></div>
+</div></div>
+          <nav role="navigation" class="slick__arrow">
+        <button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0">Previous</button><button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0">Next</button>
+      </nav>
+    </div>
+
+    </div>
+  
+          </div>
+</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                        <div class="views-element-container"><div class="container view view-homepage view-id-homepage view-display-id-block_multiple_row js-view-dom-id-9a4f4cf519dd9af9414df97838864296da5d6f4a53d1b33c20586833b1bb1af3">
+  
+    
+      
+      <div class="view-content">
+      <div class="views-view-grid vertical cols-1 clearfix">
+            <div class="row">
+                  <div class="col-md-6">
+<a href="/news-publications/newsletter">
+  <div class="node__content">
+    <div class="card card--home card--home--multiple-row">
+      <div>
+        
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--multiple-row blazy--view--manage-responses-block-consultation-response blazy--view--manage-responses blazy--view--manage-responses--consultation-response field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-f9b14addb87" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Newsletter - June and July 2026" decoding="async" class="media__element b-lazy" loading="lazy" data-src="/sites/default/files/styles/mutiple_row_stlye/public/2026-07/Newsletter_-_June_and_July_2026.png?itok=vBCHEz3m" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="800" height="400" />
+        </div>
+  </div>
+      
+      </div>
+      <div class="card__text-contianer">
+        <div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Spotlight on markets newsletter</span>
+
+          </h3>
+        </div>
+        <div class="card__category">
+          
+            <div class="field field--name-field-category field--type-string field--label-hidden field__item">Focus: End of the MiCA transitional period</div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+                  <div class="col-md-6">
+<a href="https://link.europa.eu/gYpgBj">
+  <div class="node__content">
+    <div class="card card--home card--home--multiple-row">
+      <div>
+        
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--multiple-row blazy--view--manage-responses-block-consultation-response blazy--view--manage-responses blazy--view--manage-responses--consultation-response field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-464a1fa707e" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Statement on the application of the national product intervention measures on binary options to event contracts" decoding="async" class="media__element b-lazy" loading="lazy" data-src="/sites/default/files/styles/mutiple_row_stlye/public/2026-07/Statement_on_the_application_of_the_national_product_intervention_measures_on_binary_options_to_event_contracts.png?itok=qT2jHkvs" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="800" height="400" />
+        </div>
+  </div>
+      
+      </div>
+      <div class="card__text-contianer">
+        <div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Product intervention measures on binary options to event contracts</span>
+
+          </h3>
+        </div>
+        <div class="card__category">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+                  <div class="col-md-6">
+<a href="/frauds-and-scams">
+  <div class="node__content">
+    <div class="card card--home card--home--multiple-row">
+      <div>
+        
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--multiple-row blazy--view--manage-responses-block-consultation-response blazy--view--manage-responses blazy--view--manage-responses--consultation-response field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-a697d76d1d7" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="Frauds and scams" decoding="async" class="media__element b-lazy" loading="lazy" data-src="/sites/default/files/styles/mutiple_row_stlye/public/2022-11/Frauds%20and%20scams_card.png?itok=qM7VlG2l" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="800" height="400" />
+        </div>
+  </div>
+      
+      </div>
+      <div class="card__text-contianer">
+        <div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Frauds and Scams related to ESMA Logo and ID</span>
+
+          </h3>
+        </div>
+        <div class="card__category">
+          
+            <div class="field field--name-field-category field--type-string field--label-hidden field__item">How can I protect myself from being scammed?</div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+                  <div class="col-md-6">
+<a href="https://link.europa.eu/Nmmtc4">
+  <div class="node__content">
+    <div class="card card--home card--home--multiple-row">
+      <div>
+        
+            <div class="blazy blazy--field blazy--view blazy--field-image blazy--field-image--multiple-row blazy--view--manage-responses-block-consultation-response blazy--view--manage-responses blazy--view--manage-responses--consultation-response field field--name-field-image field--type-entity-reference field--label-hidden field__item" data-blazy="">    <div data-b-token="b-56fad0b2b22" class="media media--blazy media--bundle--image media--image is-b-loading"><img alt="MiCA interim register" decoding="async" class="media__element b-lazy" loading="lazy" data-src="/sites/default/files/styles/mutiple_row_stlye/public/2025-11/MiCA_interim_register.png?itok=0Ki5Wg8S" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039;%20viewBox%3D&#039;0%200%201%201&#039;%2F%3E" width="800" height="400" />
+        </div>
+  </div>
+      
+      </div>
+      <div class="card__text-contianer">
+        <div class="card__title">
+          <h3>
+            <span class="field field--name-title field--type-string field--label-hidden">Interim MiCA Register</span>
+
+          </h3>
+        </div>
+        <div class="card__category">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+</div>
+              </div>
+      </div>
+
+    </div>
+  
+          </div>
+</div>
+
+                        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section">
+                <div class="newsletter">
+                  <div class="text-contianer">
+                    <div>
+                      <h3>
+                        Spotlight on Markets
+                      </h3>
+                      <p>
+                        Interested in the financial markets activities? Stay up to date with our notifications and newsletter.
+                      </p>
+                      <a href="/webform/newsletter">Subscribe</a>
+                    </div>
+                  </div>
+                  <div class="img-contianer">
+                    <img alt="Newsletter image" src="/sites/default/files/GettyImages-1432215133.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+
+  </div>
+
+      </div>
+          </div>
+  </div>
+
+</main>
+
+<footer class="mt-auto     ">
+  <div class="">
+      <div  class="region region-footer">
+    <div class="container">
+<div class="row">
+      <div class="col-md-3">
+        <a href="/" rel="home" class="site-logo">
+          <img src="/themes/custom/esma_webst_theme/assets/images/ESMALogo.png"
+            alt="Home" />
+        </a>
+
+        <div class="europe_container">
+          <span class="text_europe">ESMA is an authority of the European Union</span>
+          <span class="europe_flag"><img src="/themes/custom/esma_webst_theme/assets/images/picto-europe.png"
+            alt="Home" /></span>
+        </div>
+
+      </div>
+       <div class="col-md-9">
+        <div class="footer-content"><nav role="navigation" aria-labelledby="block-footermenuleft-menu" id="block-footermenuleft" class="block block-menu navigation menu--footer-menu-left">
+            
+              <ul class="nav navbar-nav">
+              
+            
+      <li class="nav-item">
+        <a href="/about-esma/internal-organisation/careers" class="nav-link">Careers</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="/databases-library/esma-library" class="nav-link" data-drupal-link-system-path="databases-library/esma-library">ESMA Documents</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footermenucenter-menu" id="block-footermenucenter" class="block block-menu navigation menu--footer-menu-center">
+            
+              <ul class="nav navbar-nav">
+              
+            
+      <li class="nav-item">
+        <a href="/contact-help" class="nav-link">Contact &amp; Help</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="/contact-help/media-corner" class="nav-link">Media Corner</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footermenuright-menu" id="block-footermenuright" class="block block-menu navigation menu--footer-menu-right">
+            
+              <ul class="nav navbar-nav">
+              
+            
+      <li class="nav-item">
+        <a href="/cookie-policy" class="nav-link" data-drupal-link-system-path="node/200095">Cookie Policy</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="/about-esma/governance-structure/legal-notice-data-protection" class="nav-link">Data Protection</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+<div id="block-footermenusociallinks-2" class="block block-tb-megamenu block-tb-megamenu-menu-blockfooter-menu-social-links">
+  <h6>Social Media</h6>
+  <div class="tb-megamenu tb-megamenu-footer-menu-social-links" role="navigation" aria-label="Social Media Menu">
+    <div class="always-show" style="height: auto;">
+        <ul class="tb-megamenu-nav nav level-0 items-4" role="list">
+                      <li class="tb-megamenu-item level-1 mega">
+              <a href="https://www.linkedin.com/company/european-securities-and-markets-authority-esma/" aria-label="Open ESMA Twitter"></a>
+            </li>
+                      <li class="tb-megamenu-item level-1 mega">
+              <a href="https://instagram.com/esmacomms/" aria-label="Open ESMA Instagram"></a>
+            </li>
+                      <li class="tb-megamenu-item level-1 mega">
+              <a href="https://twitter.com/ESMAComms" aria-label="Open ESMA Linkedin"></a>
+            </li>
+                      <li class="tb-megamenu-item level-1 mega">
+              <a href="https://www.youtube.com/channel/UCe5tFtIMPE5BbFGdqT330WQ" aria-label="Open ESMA Youtube channel"></a>
+            </li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      </div></div>
+    </div>
+  </div>
+
+  </div>
+</footer>
+
+  </div>
+
+    <script type="application/json">{"utility":"piwik","siteID":"179","sitePath":["www.esma.europa.eu"],"instance":"europa.eu"}</script>
+<script type="application/json">{"utility":"cck","url":"https:\/\/www.esma.europa.eu\/cookie-policy"}</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"home","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyFUtt2ozAM_CHAL_s_HGELoka2qSWSQ7--MpBssmm6L0LSDB7dBoav1Q3VNpt1nkGESfSIOUM43DnzOhLzLSw5kuARFRgP74rD3Aw5q2iB-Y8boJIe4rvbfkjLoFjF_uIm8cSfOA_ArejKlKZHJKIITCiNh1n9CXYpf8ZAmkuvObPSLG4sOWmLKZjgr_BN45VjZl5bSBRBKadWPPBPUjsvX7AUCviT2saodeSCjpJiScDdx-eCZe3GXOKOJPOA6QsblAi9dUa-9zmNNNmOcsLQmwiN5LeCdpaNXrTXE0a8j80XmlXe40fLGStaqxQXyjJbTbe4tV-L1kPA0nwu5M8Kgzibgr3UTgXWh-zda-yK_NlttvPyHEeg1AUcYWF9BcaF-UpBT0_QVvY_mSUOCYg7kAQXG14jqyjG_RB06CNOEDEtr4nat-3nQngVt9ku5rDYUq3tugZ3fDtk001q5apJSSdw-T9J8zT98laEZIcb-u3W35L2836P2528BcUcry9wNd_jtIpU","theme":"esma_webst_theme","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/home?element_parents=elements\/field_reg_cons_attach_files\u0026ajax_form=1":true,"\/search\/site":true},"ckeditor_tooltips":{"followCursor":false,"interactive":1,"allowHTML":1,"maxWidth":500,"trigger":"mouseenter","offset":[0,15],"animation":"scale","inertia":true},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"validateDelay":25,"container":"","loader":true,"unblazy":false,"visibleClass":false},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"autoplaySpeed":3000,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.35,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"quicktabs":{"qt_your_input":{"tabs":[{"title":"Open Consultations","weight":0,"type":"block_content","content":{"qtabs_content":{"options":{"machine_name":"related_library"}},"block_content":{"options":{"bid":"views_block:esma_your_input-block_2","block_title":"open_consultation_block","display_title":false}},"view_content":{"options":{"vid":"consultation_submissions","display":"default","args":""}},"node_content":{"options":{"nid":"","view_mode":"full","hide_title":true}}},"tab_page":0},{"title":"Upcoming Events","weight":0,"type":"block_content","content":{"qtabs_content":{"options":{"machine_name":"related_library"}},"block_content":{"options":{"bid":"views_block:esma_your_input-block_3","block_title":"open_hearings_block","display_title":false}},"view_content":{"options":{"vid":"consultation_submissions","display":"default","args":""}},"node_content":{"options":{"nid":"","view_mode":"full","hide_title":true}}},"tab_page":1}],"directLinking":true}},"ajax":{"edit-field-reg-cons-attach-files-upload-button":{"callback":["Drupal\\file\\Element\\ManagedFile","uploadAjaxCallback"],"wrapper":"ajax-wrapper","effect":"fade","progress":{"type":"throbber","message":null},"event":"mousedown","keypress":true,"prevent":"click","url":"\/home?element_parents=elements\/field_reg_cons_attach_files\u0026ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"field_reg_cons_attach_files_upload_button","_triggering_element_value":"Upload"}}},"file":{"elements":{"#edit-field-reg-cons-attach-files-upload":"doc,docx,pdf,xlsx"}},"TBMegaMenu":{"TBElementsCounter":{"column":null},"theme":"esma_webst_theme","49f0966b-e643-4b7b-94d3-f052f373a975":{"arrows":"1"}},"user":{"uid":0,"permissionsHash":"54cbe802c4ab08137bc1f8bb50ddb72daaf24b4fb74dcde61d4119489ed37dd8"}}</script>
+<script src="/sites/default/files/js/js_D1Axe9dyiDBcI6q_VmkF1TmtNRtBXH1siHz_Gk8PSfE.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=esma_webst_theme&amp;include=eJyFUUFywyAM_BA2l_7HI7DskghEkJyO-_oK12kPbdrLsju7SEIEgvfdh47uQB8JRCiJnpoY5pNWpn1JRA_ZOCfBUzVYTvaGobrArKIN6ov_psNFBgJFKx6vOCflNikzaaril8ZFByyzpX6xDereHW7oU1FsBWi83DZs-7hwyw4lwxRAUpwilyWt9hYuOE93bGlJETRx-UzZiKKTvmJGvxIHoEFiS1XFMXa3txU_t61ak4ce7GrTvhBs7raleFUI4r-Ys73Fqz9wPPamYcq4QsayeZsMnZXqs_rzHJFshKLjjAqJZBS4_x9SXld6HstQYLVn21f9EUIRSz33bc1PTTES9Yfd4QN8SecJ"></script>
+<script src="https://webtools.europa.eu/load.js" defer></script>
+<script src="/sites/default/files/js/js_7DjupmXNwgC1FJu7x-RIEu6-ejo4SHU-6LvM1BmIWtE.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=esma_webst_theme&amp;include=eJyFUUFywyAM_BA2l_7HI7DskghEkJyO-_oK12kPbdrLsju7SEIEgvfdh47uQB8JRCiJnpoY5pNWpn1JRA_ZOCfBUzVYTvaGobrArKIN6ov_psNFBgJFKx6vOCflNikzaaril8ZFByyzpX6xDereHW7oU1FsBWi83DZs-7hwyw4lwxRAUpwilyWt9hYuOE93bGlJETRx-UzZiKKTvmJGvxIHoEFiS1XFMXa3txU_t61ak4ce7GrTvhBs7raleFUI4r-Ys73Fqz9wPPamYcq4QsayeZsMnZXqs_rzHJFshKLjjAqJZBS4_x9SXld6HstQYLVn21f9EUIRSz33bc1PTTES9Yfd4QN8SecJ"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script src="/sites/default/files/js/js_s7vc3v6ihWyzw9PAmkANShe__iC95s917eZ8gqeE5QQ.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=esma_webst_theme&amp;include=eJyFUUFywyAM_BA2l_7HI7DskghEkJyO-_oK12kPbdrLsju7SEIEgvfdh47uQB8JRCiJnpoY5pNWpn1JRA_ZOCfBUzVYTvaGobrArKIN6ov_psNFBgJFKx6vOCflNikzaaril8ZFByyzpX6xDereHW7oU1FsBWi83DZs-7hwyw4lwxRAUpwilyWt9hYuOE93bGlJETRx-UzZiKKTvmJGvxIHoEFiS1XFMXa3txU_t61ak4ce7GrTvhBs7raleFUI4r-Ys73Fqz9wPPamYcq4QsayeZsMnZXqs_rzHJFshKLjjAqJZBS4_x9SXld6HstQYLVn21f9EUIRSz33bc1PTTES9Yfd4QN8SecJ"></script>
+
+  </body>
+</html>

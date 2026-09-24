@@ -1,0 +1,1170 @@
+
+
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta name="google" content="notranslate">
+        <title>KAP</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <base href="https://www.kap.org.tr" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href='/assets/images/kap-favico.png'>
+        <link rel="apple-touch-icon" href='/assets/images/kap-favico-L.png'>
+        <meta name="format-detection" content="telephone=no">
+        <link rel="alternate" hreflang="tr" href="/tr/" />
+        <link rel="alternate" hreflang="en" href="/en/" />
+        <link rel="alternate" href="/" hreflang="x-default" />
+
+        <link rel="stylesheet" type="text/css" href='/assets/stylesheets/bundle.min.css?b=2068' >
+        <script src='/assets/javascripts/thirdparty.min.js?b=2068'></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $(".loader222").fadeOut("slow");
+            });
+
+            var currentLanguageCode = "tr";
+            var atLeast3CharactersRequired = "En az 3 karakter giriniz!";
+            function PrintPage ( ) {
+                jQuery ( '#disclosureContent' ).printArea ('disclosure') ;
+            }
+
+            function PrintGeneral (purposeString) {
+                jQuery ('#printAreaDiv').printArea(purposeString);
+            }
+
+            function openSubMenu() {
+                return false;
+            }
+        </script>
+<!--[if lt IE 9]>
+        <script src='/assets/javascripts/html5.js?b=2068' type="text/javascript"></script>
+<![endif]-->
+<!--[if lte IE 8]>
+          <script type="text/javascript">
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+          </script>
+        <![endif]-->
+    </head>
+    <body ng-cloak>
+        <div class="loader222"></div>
+        
+
+<div style="expand-view-container">
+    <div class="expand-view">
+        <div class="panner-container">
+            <div class="panner panLeft" data-scroll-modifier='-1'><img src="/assets/images/view_pan_left.png"></div>
+            <div class="panner expand-point"><img class="expand-point-img" src="/assets/images/view_expand.png"></div>
+            <div class="panner panRight" data-scroll-modifier='1'><img src="/assets/images/view_pan_right.png"></div>
+        </div>
+    </div>
+</div>
+
+        <div class="smartbanner" id="mobile-smartbanner" style="display: none;background-color: #d9d9dd;">
+            <div class="smartbanner-container">
+                <a href="#" id="smb-close" class="smartbanner-close">&times;</a>
+                <img class="smartbanner-icon" src='/assets/images/kap-mobil-icon_1.png'/>
+                <div class="smartbanner-info">
+                    <div class="smartbanner-title">KAP Mobil</div>
+                    <div id="smartbanner-title_android" style="display: none;">Android Uygulaması</div>
+                    <div id="smartbanner-title_ios" style="display: none;">IOS Uygulaması</div>
+                    <div id="smartbanner-title_chrome" style="display: none;">Test Chrome Uygulaması</div>
+                </div>
+                <a id="redirect-store" href="https://play.google.com/" target="_blank" class="smartbanner-button">
+                    <span class="smartbanner-button-text">Görüntüle</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-section header-section">
+            <div class="rightmenu">
+                <a class="w-inline-block rightmenu-image" href="javascript:void(0);">
+                    <img src='/assets/images/RightMenu.png' width="27">
+                </a>
+                <div class="rightmenu-subblock">
+                    <a class="rightmenu-item" href="http://egk.mkk.com.tr" id="rightMenueGenelKurul">e-Genel Kurul</a>
+                    <a class="rightmenu-item" href="http://e-sirket.mkk.com.tr" id="rightMenueSirket">e-Şirket</a>
+                    <a class="rightmenu-item" href="http://www.mkk.com.tr" id="rightMenuMkk">Merkezi Kayıt Kuruluşu</a>
+                    
+                    <a class="rightmenu-item" href="https://eyatirimci.mkk.com.tr/auth/login" id="rightMenuCapital">Sermaye Piyasası Aracı Alım Satım Bildirimi</a>
+                </div>
+            </div>
+            <div class="w-container">
+                <div class="header-menu-section">
+                    <a class="bi-black header-toplinks type-small-en" href='/en/'>English</a>
+                </div>
+            </div>
+
+            <div class="w-nav header-navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+                <div class="w-container header-container">
+                    <a class="w-nav-brand w-clearfix a-kap-logo" href="/tr/">
+                        
+                            <img class="header-logo img-kap-logo" src='/assets/images/kap-logo.png' width="141">
+                        
+                    </a>
+                    <div class="w-nav-button header-menubutton">
+                        <div class="w-icon-nav-menu"></div>
+                    </div>
+                    <div class="middle-header-elements">
+                    <nav class="w-nav-menu w-clearfix header-menu on" role="navigation">
+                        
+
+    
+            
+                <div class="menuitem"><a class="w-nav-link type-small bi-dim-gray header-divider header-menuitem" href="javascript:void(0);" onclick="openSubMenu();"  id="menu0">Bildirim Sorguları</a>
+                    <div class="submenu-block">
+                    
+
+    
+            
+                <a class="submenu-item" href="/tr/today" id="submenu02010">Bugün Gelen Bildirimler</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/beklenen-bildirim-sorgu" id="submenu02120">Beklenen Bildirimler</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/bildirim-sorgu" id="submenu02230">Detaylı Sorgulama</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/kalem-karsilastirma" id="submenu02340">Finansal Tablo Kalem Sorgulama</a>
+            
+        
+
+
+                    </div>
+                </div>
+            
+        
+
+    
+            
+                <div class="menuitem"><a class="w-nav-link type-small bi-dim-gray header-divider header-menuitem" href="javascript:void(0);" onclick="openSubMenu();"  id="menu1">Şirketler</a>
+                    <div class="submenu-block">
+                    
+
+    
+            
+                <a class="submenu-item" href="/tr/bist-sirketler" id="submenu0201">BIST Şirketleri</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/YK" id="submenu0212">Yatırım Kuruluşları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/PYS" id="submenu0223">Portföy Yönetim Şirketleri</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/BDK" id="submenu0234">Bağımsız Denetim Kuruluşları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/DCS" id="submenu0245">Derecelendirme Şirketleri</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/DS" id="submenu0256">Değerleme Şirketleri</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/DK" id="submenu0267">Diğer KAP Üyeleri ve İşlem Görmeyen Şirketler</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/sirketler/KSE" id="submenu0278">KAP Üyeliği Sona Eren Şirketler</a>
+            
+        
+
+
+                    </div>
+                </div>
+            
+        
+
+    
+            
+                <div class="menuitem"><a class="w-nav-link type-small bi-dim-gray header-divider header-menuitem" href="javascript:void(0);" onclick="openSubMenu();"  id="menu2">Fonlar</a>
+                    <div class="submenu-block">
+                    
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/BYF" id="submenu02010">Borsa Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/YF" id="submenu02120">Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/EYF" id="submenu02230">Emeklilik Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/OKS" id="submenu02335">OKS Emeklilik Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/YYF" id="submenu02440">Yabancı Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/VFF" id="submenu02550">Varlık Finansman Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/KFF" id="submenu02660">Konut Finansman Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/GMF" id="submenu02770">Gayrimenkul Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/GSF" id="submenu02880">Girişim Sermayesi Yatırım Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/PFF" id="submenu02985">Proje Finansman Fonları</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/YatirimFonlari/TEYF" id="submenu021090">Tasfiye Olmuş Fonlar</a>
+            
+        
+
+
+                    </div>
+                </div>
+            
+        
+
+    
+            
+                <div class="menuitem"><a class="w-nav-link type-small bi-dim-gray header-menuitem" href="javascript:void(0);" onclick="openSubMenu();" id="menu-block3">KAP Hakkında</a>
+                    <div class="submenu-block">
+                    
+
+    
+            
+                <a class="submenu-item" href="/tr/menu-icerik/KAP-Hakkinda/Mevzuat-Duyurular-ve-Kilavuzlar" id="submenu01">Mevzuat, Duyurular ve Kılavuzlar</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/menu-icerik/KAP-Hakkinda/Sertifika-Islemleri" id="submenu120">Sertifika İşlemleri</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/menu-icerik/KAP-Hakkinda/Genel-Bilgi" id="submenu230">Genel Bilgi</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/menu-icerik/KAP-Hakkinda/Ilgili-Linkler" id="submenu360">İlgili Linkler</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="https://eyatirimci.mkk.com.tr/auth/login" id="submenu470">Sermaye Piyasası Aracı Alım Satım Bildirimi</a>
+            
+        
+
+    
+            
+                <a class="submenu-item" href="/tr/menu-icerik/KAP-Hakkinda/KVKK-Kapsaminda-Duzeltilmis-Bildirimler" id="submenu580">KVKK Kapsamında Düzeltilmiş Bildirimler</a>
+            
+        
+
+
+                    </div>
+                </div>
+            
+        
+
+
+                    </nav>
+                    </div>
+                        
+                        <a href="https://www.mkk.com.tr" target="_blank">
+                            <img class="img-mkk-logo" src='/assets/images/merkezi-kayit-istanbul-logo.png'>
+                        </a>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div id="search-container" class="w-container" style="position:relative">
+            <form class="w-section searchbar-section" onsubmit="startSearch(keywords.value, categories.value,30)" style="margin-bottom: 0px !important;">
+                <select class="filter-multi2" name="categories" id="categories">
+                    <option value="ALL">Tüm Kategoriler</option>
+                    <option value="ODA">Özel Durum Açıklaması</option>
+                    <option value="FR">Finansal Rapor</option>
+                    
+                    <option value="DG">Diğer Bildirimler</option>
+                    <option value="FON">Fon Bildirimleri</option>
+                </select>
+                <input id="searchInput" name="keywords" class="filter-inputbox w-input" placeholder="Arama Yapınız..." style="margin-bottom: 0px !important; padding: 10px;" />
+                <div type="submit" class="search-button" onclick="startSearch(document.getElementById('searchInput').value, document.getElementById('categories').value,30)">
+                    <img src="/assets/images/Header_Search.png" />
+                </div>
+                <input type="hidden" name="as_fid" value="b2abc50440edbd54b50f80ec0f06d3a3de961eee" autocomplete="off">
+            <input type="hidden" name="as_fid" value="2715b0829d589296495b4d0891e058b9b20ddeb7" /></form>
+            <div id="searchDivId" class="header-search-div" style="opacity: 0">
+            </div>
+        </div>
+
+        <div class="w-section banner-section">
+            <div class="w-slider banner-slider" data-autoplay="-1" data-animation="cross" data-delay="7777" data-duration="500" data-infinite="1" data-easing="ease-in-out">
+                <div class="w-slider-mask banner-mask" data-step="1"  data-intro="Kamu Aydınlatma Platformu Yeni haliyle karşınızda">
+                    
+                        
+                            <div class="w-slide banner-slide" style="cursor: pointer; background-size: cover;background-position: 50% 50%;background-image: url('/tr/file/Banner/Banner-5')" onclick="window.open('https://www.vap.org.tr/donemsel-finansal-oranlar','new_window');" >
+                        
+                            <div class="w-container">
+                                    <div class="banner-title"></div>
+                                    <h1 class="banner-header"></h1>
+                            </div>
+                        </div>
+                    
+                        
+                            <div class="w-slide banner-slide" style="cursor: pointer; background-size: cover;background-position: 50% 50%;background-image: url('/tr/file/Banner/Banner-1')" onclick="window.open('https://www.vap.org.tr/','new_window');" >
+                        
+                            <div class="w-container">
+                                    <div class="banner-title"></div>
+                                    <h1 class="banner-header"></h1>
+                            </div>
+                        </div>
+                    
+                        
+                            <div class="w-slide banner-slide" style="cursor: pointer; background-size: cover;background-position: 50% 50%;background-image: url('/tr/file/Banner/Banner-2')" onclick="window.open('https://eyatirimci.mkk.com.tr/auth/login','new_window');" >
+                        
+                            <div class="w-container">
+                                    <div class="banner-title"></div>
+                                    <h1 class="banner-header"></h1>
+                            </div>
+                        </div>
+                    
+                        
+                            <div class="w-slide banner-slide" style="cursor: pointer; background-size: cover;background-position: 50% 50%;background-image: url('/tr/file/Banner/Banner-3')" onclick="window.open('https://www.vap.org.tr/','new_window');" >
+                        
+                            <div class="w-container">
+                                    <div class="banner-title"></div>
+                                    <h1 class="banner-header"></h1>
+                            </div>
+                        </div>
+                    
+                        
+                            <div class="w-slide banner-slide" style="background-size: cover;background-position: 50% 50%;background-image: url('/tr/file/Banner/Banner-4')">
+                        
+                            <div class="w-container">
+                                    <div class="banner-title"></div>
+                                    <h1 class="banner-header"></h1>
+                            </div>
+                        </div>
+                    
+                    <div class="w-clearfix banner-minimize-box banner-minimize-forClick">
+                        <a class="w-inline-block banner-minimize" href="#">
+                            <img src="/assets/images/Banner_Minimize.png" width="35">
+                        </a>
+                        <a class="w-inline-block banner-maximize" href="#">
+                            <img src="/assets/images/Banner_Maximize.png" width="35">
+                        </a>
+                    </div>
+                </div>
+                <div class="w-slider-arrow-left banner-left">
+                    <div class="w-icon-slider-left banner-left-icon"></div>
+                </div>
+                <div class="w-slider-arrow-right banner-right">
+                    <div class="w-icon-slider-right banner-right-icon"></div>
+                </div>
+                <div class="w-slider-nav banner-nav">
+                    <div class="w-slider-dot w-active" data-wf-ignore=""></div>
+                    <div class="w-slider-dot" data-wf-ignore=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-section middle-section">
+            <div class="w-container middle-container">
+            
+
+<div class="w-clearfix tab-container" data-step="2" data-intro="Bildirim Filtreleme buraya taşındı">
+    <a class="w-inline-block tab-settings notificationssettings" href="#" id="Filtre"></a>
+    <a class="w-inline-block tabs notificationstab active" href="#">
+        <div class="type-medium type-shrink tab-text">Bildirimler</div>
+    </a>
+</div>
+<div class="tab-container left financial-table-filter-button" data-step="3" data-intro="Finansal tablolaraı buradan indirebilirsiniz." onclick="myReDraw()">
+    <a class="w-inline-block tabs financialsettings" href="#" id="financialTablesTab">
+        <div class="type-medium type-shrink tab-text">Finansal Tablolar</div>
+    </a>
+</div>
+<div class="w-clearfix tab-container left" data-step="4" data-intro="Hak Kullanımları takvim olarak daha rahat erişebilirsiniz." ng-controller="DummyCtrlForCa" ng-click="initFunc('tr')">
+    <a class="w-inline-block tabs calendartab" href="#">
+        <div class="type-medium type-shrink tab-text">Hak Kullanımları</div>
+    </a>
+</div>
+<div class="filternotifications filter" ng-controller="FilterCtrl">
+    <div class="w-form filter-form">
+        <form class="w-clearfix" id="email-form" name="email-form" data-name="EmailForm">
+            <div class="filter-buttons">
+                <div class="w-row">
+                    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 columnleft">
+                        <a class="filter-button1 type-medium" href="/tr/bildirim-sorgu" id="detailedViewButton">Detaylı Ara</a>
+                    </div>
+                    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 columnright">
+                        <a class="filter-button2 bi-white type-medium" href="#" id="disclosureFilterButton" notification-filter-button ng-click="filterDisclosures()">Filtrele</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-slider slidebox align aleft padding right medium" data-animation="slide" data-duration="500" data-infinite="1" selected-item="notificationsDateRange">
+                <div class="w-slider-mask">
+                    <div class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="today">
+                        <div>Bugün</div>
+                    </div>
+                    <div class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="yesterday">
+                        <div>Dün</div>
+                    </div>
+                    <div class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="last7">
+                        <div>Son 7 Gün</div>
+                    </div>
+                    <div class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="last15">
+                        <div>Son 15 Gün</div>
+                    </div>
+                    <div class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="custom">
+                        <div>Diğer</div>
+                    </div>
+                </div>
+                <div class="w-slider-arrow-left slideboxbutton" id="LeftButton">
+                    <div class="w-icon-slider-left"></div>
+                </div>
+                <div class="w-slider-arrow-right slideboxbutton" id="RightButton">
+                    <div class="w-icon-slider-right"></div>
+                </div>
+                <div class="w-slider-nav w-round slidebox-nav"></div>
+            </div>
+
+            <div class="filter-multi align aleft padding right" selected-items="selectedMemberFundTypes" id="companyFundTypeFilterMulti" company-fund-multi>
+                <div class="filter-multidrop">
+                    <div class="type-xsmall type-bold bi-dim-gray subtitle">Şirket Tipleri</div>
+                    <a class="filter-multidropselect selected" href="#" code="mt_IGS" option-type="member" id="BISTcompanies">BIST Şirketleri</a>
+                    <a class="filter-multidropselect" href="#" code="mt_YK" option-type="member">Yatırım Kuruluşları</a>
+                    <a class="filter-multidropselect" href="#" code="mt_PYS" option-type="member">Portföy Yönetim Şirketleri</a>
+                    <a class="filter-multidropselect selected" href="#" code="mt_DDK" option-type="member">Düzenleyici Denetleyici Kurumlar</a>
+                    <a class="filter-multidropselect last-member" href="#" code="mt_DG" option-type="member">Diğer KAP Üyeleri</a>
+                    <div class="type-xsmall type-bold bi-dim-gray padding subtitle">Fon Tipleri</div>
+                    <a class="filter-multidropselect selected" href="#" code="ft_BYF" option-type="fund">Borsa Yatırım Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_YF" option-type="fund">Yatırım Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_EYF" option-type="fund">Emeklilik Yatırım Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_OKS" option-type="fund">OKS Emeklilik Yatırım Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_YYF" option-type="fund">Yabancı Yatırım Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_VFF" option-type="fund">Varlık Finansman Fonu</a>
+                    <a class="filter-multidropselect" href="#" code="ft_KFF" option-type="fund">Konut Finansman Fonu</a>
+                    <a class="filter-multidropselect selected" href="#" code="ft_GMF" option-type="fund">Gayrimenkul Yatırım Fonu</a>
+                    <a class="filter-multidropselect selected" href="#" code="ft_GSF" option-type="fund">Girişim Sermayesi Yatırım Fonu</a>
+                    <a class="filter-multidropselect selected" href="#" code="ft_PFF" option-type="fund">Proje Finansman Fonları</a>
+                </div>
+                <div class="filter-multicounter">0</div>
+                <a class="filter-multitext bi-dim-gray type-small" href="#">Şirket/Fon Tipi</a>
+            </div>
+            <div class="filter-multi align aleft padding right" selected-items="selectedNotificationTypes" id="notificationTypeFilterMulti">
+                <div class="filter-multidrop">
+                    <a class="filter-multidropselect" href="#" code="ODA" id="disclosureTypeODA">Özel Durum Açıklaması</a>
+                    <a class="filter-multidropselect" href="#" code="FR" id="disclosureTypeFR">Finansal Rapor</a>
+                    <a class="filter-multidropselect" href="#" code="DUY" id="disclosureTypeDUY">Düzenleyici Kurum Bildirimleri</a>
+                    <a class="filter-multidropselect" href="#" code="DG" id="disclosureTypeDG">Diğer</a>
+                    <a class="filter-multidropselect" href="#" code="CA" id="disclosureTypeCA">Hak Kullanımları</a>
+                </div>
+                <div class="filter-multicounter">0</div>
+                <a class="filter-multitext bi-dim-gray type-small" href="#">Bildirim Tipi</a>
+            </div>
+            <div class="filter-input align aleft" company-filter filter-results="companyFilterResults" selected-result="selectedCompany">
+                <input class="w-input filter-inputbox type-small" id="Sirket-5" type="text" placeholder="Şirket Ünvanı" name="Sirket-5" required="required" data-name="Sirket 5" ng-model="companyFilterInput">
+                <div class="filter-inputsuggest" ng-class="{ opened: companyFilterResults.length }">
+                    <a class="filter-inputlink" href="#" ng-repeat="company in companyFilterResults" code="{{company.mkkMemberOid}}">
+                        {{company.title}}</a>
+                </div>
+            </div>
+
+            <div class="filter-date col-lg-6" ng-class="{invisible: notificationsDateRange.value != 'custom'}">
+                <div class="input-group" id="filterDateRange">
+                    <input date-range-picker class="form-control date-picker dateRangePicker" type="text" ng-model="filterDate" id="filterDateRange" name="filterDateRange" options="dateOpts" placeholder="Seçim Yapılmadı" readonly/>
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                    </span>
+                </div>
+            </div>
+        <input type="hidden" name="as_fid" value="7451efcc61f4d3586654eeb3c5b3206bdafe4efd" /></form>
+    </div>
+</div>
+<div class="filter filterfinancial" ng-controller="FinancialTableCtrl" ng-init="getPeriodsAndYears('tr')">
+    <div class="w-form filter-form">
+        <form class="w-clearfix" id="email-form" name="email-form" data-name="EmailForm">
+            <div class="filterbuttonalign"><a class="filter-button2 bi-white type-medium" href="#" ng-click="writeselectedperiod('tr')" id="Getir">
+                Getir</a>
+            </div>
+            <div class="filter-input align aleft" company-filter filter-results="companyFilterResults" selected-result="selectedCompany" types="types" id="calendarFilterInputFinancialTable" style="margin-top: 20px ;">
+                <input class="w-input filter-inputbox type-small" id="Sirket-6" type="text" placeholder='Şirket Ünvanı' name="Sirket-5" required="required" data-name="Sirket 5" ng-model="companyFilterInput">
+                <div class="filter-inputsuggest" ng-class="{ opened: companyFilterResults.length }">
+                    <a class="filter-inputlink" href="#" ng-repeat="company in companyFilterResults" code="{{company.mkkMemberOid}}">
+                        {{company.title}}</a>
+                </div>
+            </div>
+            <div class="align aleft padding right filter-box" style="margin-left: 20px;">
+                <div class="type-xsmall type-bold bi-dim-gray padding bottom small">Yıl</div>
+                <div class="w-slider slidebox" data-animation="slide" data-duration="500" data-infinite="1" selected-item="selectedYear">
+                    <div class="w-slider-mask">
+                        <div ng-repeat="y in years" class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="{{y.value}}">
+                            <div>{{y.text}}</div>
+                        </div>
+                    </div>
+                    <div class="w-slider-arrow-left slideboxbutton" id="leftFinancialTableYearSliderButton">
+                        <div class="w-icon-slider-left"></div>
+                    </div>
+                    <div class="w-slider-arrow-right slideboxbutton" id="rightFinancialTableYearSliderButton">
+                        <div class="w-icon-slider-right"></div>
+                    </div>
+                    <div class="w-slider-nav w-round slidebox-nav">
+                    </div>
+                </div>
+            </div>
+            <div class="align aleft padding right filter-box">
+                <div class="type-xsmall type-bold bi-dim-gray padding bottom small">Periyot</div>
+                <div class="w-slider slidebox" data-animation="slide" data-duration="500" data-infinite="1" selected-item="selectedPeriod">
+                    <div class="w-slider-mask">
+                        <div ng-repeat="p in periods" class="w-slide slidebox-slide type-small type-bold bi-dim-gray" value="{{p.value}}">
+                            <div>{{p.text}}</div>
+                        </div>
+                    </div>
+                    <div class="w-slider-arrow-left slideboxbutton" id="leftFinancialTablePeriodSliderButton">
+                        <div class="w-icon-slider-left"></div>
+                    </div>
+                    <div class="w-slider-arrow-right slideboxbutton" id="rightFinancialTablePeriodSliderButton">
+                        <div class="w-icon-slider-right"></div>
+                    </div>
+                    <div class="w-slider-nav w-round slidebox-nav">
+                    </div>
+                </div>
+            </div>
+            <div class="w-clearfix align aright">
+                <a class="filter-button3 type-small align aright" href="/file/Finansal-Rapor-Ilan-Tarihleri/Finansal-Rapor-Ilan-Tarihleri">
+                    Finansal Rapor Tarihleri
+                </a>
+            </div>
+        <input type="hidden" name="as_fid" value="ceaa5054999e698fe0fcc9f7d8900433fd75c6d7" /></form>
+        <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p><!--TODO-->
+        </div>
+        <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p><!--TODO-->
+        </div>
+    </div>
+</div>
+<div ng-controller="DisclosuresPageCtrl">
+    <disclosure-list    notification-types="notificationTypes"
+                        member-types="memberTypes"
+                        fund-types="fundTypes"
+                        company="company"
+                        from-date="startDate"
+                        to-date="endDate"
+                        is-auto-refresh=true
+                        refresh-interval=180
+                        items-per-page=10
+                        trigger-update="triggerUpdate"
+    >
+    </disclosure-list>
+</div>
+
+<div ng-controller="CaMemberCtrl"  class="w-container calendar-container">
+  <div class="w-slider w-clearfix calendar-block" data-animation="slide" data-duration="500" data-infinite="1">
+    <a class="w-inline-block calendar-monthblock" href="#">
+      <div class="w-form">
+        <form id="email-form-2" name="email-form-2" data-name="Email Form 2">
+          <select ng-model="yearAndMonth" ng-change="getCaMembersByDate('tr',yearAndMonth)" class="w-select calendar-month type-xlarge" id="field-8" name="field-8" data-name="Field 8">
+            <option ng-if='thisMonth == "01"' value="{{beforeYear}}-{{beforeMonth}}">
+              {{beforeYear}} {{monthNames[beforeMonthIndex]}}</option>
+            <option ng-if='thisMonth != "01"' value="{{thisYear}}-{{beforeMonth}}">
+              {{thisYear}} {{monthNames[beforeMonthIndex]}}</option>
+            <option selected value="{{thisYear}}-{{thisMonth}}">
+              {{thisYear}} {{monthNames[thisMonthIndex]}}</option>
+            <option ng-if='thisMonth == "12"' value="{{nextYear}}-{{nextMonth}}">
+              {{nextYear}} {{monthNames[nextMonthIndex]}}</option>
+            <option ng-if='thisMonth != "12"' value="{{thisYear}}-{{nextMonth}}">
+              {{thisYear}} {{monthNames[nextMonthIndex]}}</option>
+          </select>
+        <input type="hidden" name="as_fid" value="4cc9177e2753dff9b463cfda556cf595a198d0b5" /></form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div>
+    </a>
+    <div class="filter-input align aleft" company-filter filter-results="companyFilterResults" selected-result="selectedCompany" id="calendarFilterInput">
+      <input class="w-input filter-inputbox type-small" id="Sirket-5" type="text" placeholder='Şirket Ünvanı' name="Sirket-5" required="required" data-name="Sirket 5" ng-model="companyFilterInput">
+      <div class="filter-inputsuggest" ng-class="{ opened: companyFilterResults.length }">
+        <a class="filter-inputlink" href="#" ng-repeat="company in companyFilterResults" code="{{company.mkkMemberOid}}">
+          {{company.title}}</a>
+      </div>
+    </div>
+    <div class="w-slider-mask calendar-mask">
+  <div ng-repeat='i in weekArray' class="w-slide w-clearfix">
+    <div ng-repeat="k in firstweekblankrange" ng-if='i == thisWeekStr && firstweekblankrange.length != 7' class="calendar-day blank">
+      <div class="type-medium padding bottom left"></div>
+      <div class="calendar-dayblock blank"></div>
+    </div>
+    <div ng-repeat="j in [0,1,2,3,4,5,6]" ng-if="groupedCa[i][j] != undefined" class="calendar-day" ng-class="{'today':groupedCa[i][j].getFullYear()==today.getFullYear() && groupedCa[i][j].getMonth()==today.getMonth() && groupedCa[i][j].getDate()==today.getDate()}">
+      <div class="type-medium padding bottom left">
+        {{groupedCa[i][j].getDate()}} {{weekDayNames[groupedCa[i][j].getDay()]}}
+        <span ng-if="groupedCa[i][j].getFullYear()==today.getFullYear() && groupedCa[i][j].getMonth()==today.getMonth() && groupedCa[i][j].getDate()==today.getDate()" class="calendar-today type-medium">Bugün</span>
+      </div>
+      <div ng-repeat="ca in CaMembers" ng-if="ca.date == formatDate(groupedCa[i][j])" class="calendar-dayblock">
+        <a ng-if="ca.generalMeeting.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Genel Kurul</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.generalMeeting.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock green" href="#" id="{{parseForId('gm',ca.date,ca.generalMeeting.disclosureIndex[0])}}" ng-click='makeVisible(parseForId("gm",ca.date,ca.generalMeeting.disclosureIndex[0]))'>
+            <div class="calendar-itemleft type-xsmall">Genel Kurul</div>
+            <div class="calendar-itemrght type-medium bi-white">{{ca.generalMeeting.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.generalMeeting.count)" class="w-clearfix w-inline-block calendar-itemsubblock green" href="#" ng-click="openDisclosureModal(getStrArray(ca.generalMeeting.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.generalMeeting.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.capitalIncreaseDecrease.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Sermaye Artırımı Azaltımı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.capitalIncreaseDecrease.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock blue" href="#" id="{{parseForId('cid',ca.date,ca.capitalIncreaseDecrease.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('cid',ca.date,ca.capitalIncreaseDecrease.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Sermaye Artırımı Azaltımı</div>
+            <div class="calendar-itemrght type-medium bi-white">{{ca.capitalIncreaseDecrease.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.capitalIncreaseDecrease.count)" class="w-clearfix w-inline-block calendar-itemsubblock blue" href="#" ng-click="openDisclosureModal(getStrArray(ca.capitalIncreaseDecrease.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.capitalIncreaseDecrease.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.dividendPayment.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Kar Payı Ödemesi</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.dividendPayment.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock orange" href="#" id="{{parseForId('dp',ca.date,ca.dividendPayment.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('dp',ca.date,ca.dividendPayment.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Kar Payı Ödemesi</div>
+            <div class="calendar-itemrght type-medium bi-white">{{ca.dividendPayment.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.dividendPayment.count)" class="w-clearfix w-inline-block calendar-itemsubblock orange" href="#" ng-click="openDisclosureModal(getStrArray(ca.dividendPayment.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.dividendPayment.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.mergerDemergerAssignsubject.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Birleşme, Devrolma, Bölünme</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.mergerDemergerAssignsubject.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock violet" href="#" id="{{parseForId('mda',ca.date,ca.mergerDemergerAssignsubject.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('mda',ca.date,ca.mergerDemergerAssignsubject.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Birleşme, Devrolma, Bölünme</div>
+            <div class="calendar-itemrght type-medium bi-white">
+              {{ca.mergerDemergerAssignsubject.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.mergerDemergerAssignsubject.count)" class="w-clearfix w-inline-block calendar-itemsubblock violet" href="#" ng-click="openDisclosureModal(getStrArray(ca.mergerDemergerAssignsubject.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.mergerDemergerAssignsubject.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.retirementRight.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Ayrılma Hakkı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.retirementRight.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock yellow" href="#" id="{{parseForId('mda',ca.date,ca.retirementRight.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('mda',ca.date,ca.retirementRight.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Ayrılma Hakkı</div>
+            <div class="calendar-itemrght type-medium bi-white">
+              {{ca.retirementRight.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.retirementRight.count)" class="w-clearfix w-inline-block calendar-itemsubblock yellow" href="#" ng-click="openDisclosureModal(getStrArray(ca.retirementRight.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.retirementRight.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.tenderOffer.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Pay Alım Teklifi</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.tenderOffer.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock claretRed" href="#" id="{{parseForId('mda',ca.date,ca.tenderOffer.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('mda',ca.date,ca.tenderOffer.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Pay Alım Teklifi</div>
+            <div class="calendar-itemrght type-medium bi-white">
+              {{ca.tenderOffer.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.tenderOffer.count)" class="w-clearfix w-inline-block calendar-itemsubblock claretRed" href="#" ng-click="openDisclosureModal(getStrArray(ca.tenderOffer.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.tenderOffer.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+        <a ng-if="ca.saleOutRight.count == 0" class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Satma Hakkı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <div ng-if="ca.saleOutRight.count != 0">
+          <a class="w-clearfix w-inline-block calendar-itemblock metalicGreen" href="#" id="{{parseForId('mda',ca.date,ca.saleOutRight.disclosureIndex[0])}}" ng-click="makeVisible(parseForId('mda',ca.date,ca.saleOutRight.disclosureIndex[0]))">
+            <div class="calendar-itemleft type-xsmall">Satma Hakkı</div>
+            <div class="calendar-itemrght type-medium bi-white">
+              {{ca.saleOutRight.count}}</div>
+          </a>
+          <div class="calendar-expblock">
+            <a ng-repeat="i in getRange(ca.saleOutRight.count)" class="w-clearfix w-inline-block calendar-itemsubblock metalicGreen" href="#" ng-click="openDisclosureModal(getStrArray(ca.saleOutRight.disclosureIndex[$index]),'tr')">
+              <div class="calendar-itemleft type-xsmall calendar-company">
+                {{ca.saleOutRight.companies[$index]}}</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div ng-if="!CaContains(formatDate(groupedCa[i][j]))" class="calendar-dayblock">
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Genel Kurul</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Sermaye Artırımı Azaltımı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Kar Payı Ödemesi</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Birleşme, Devrolma, Bölünme</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Ayrılma Hakkı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Pay Alım Teklifi</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+        <a class="w-clearfix w-inline-block calendar-itemblock" href="#">
+          <div class="calendar-itemleft type-xsmall">Satma Hakkı</div>
+          <div class="calendar-itemrght type-medium bi-white">0</div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-slider-arrow-left calendar-buttonbox left" ng-click="callDrawFunction()">
+  <div class="w-icon-slider-left calendararrow"></div>
+  <div class="type-small bi-dim-gray calendar-buttontext">Önceki</div>
+</div>
+<div class="w-slider-arrow-right calendar-buttonbox right" ng-click="callDrawFunction()">
+  <div class="type-small bi-dim-gray calendar-buttontext">Sonraki</div>
+  <div class="w-icon-slider-right calendararrow"></div>
+</div>
+</div>
+</div>
+
+
+
+
+            </div>
+        </div>
+        <div class="w-section footer-section">
+            
+                <div class="footer-buttons">
+                    <div class="w-container">
+                        <a class="w-inline-block footer-button first" target="_blank" href="https://www.vap.org.tr/">
+                            <div class="type-small bi-sky-black">Veri Analiz Platformu </div>
+                        </a>
+                        <a class="w-inline-block footer-button forth" target="_blank" href="https://eyatirimci.mkk.com.tr/auth/login">
+                            <div class="type-small bi-sky-black">Yatırımcı Bilgi Merkezi</div>
+                        </a>
+                        <a class="w-inline-block footer-button second" target="_blank" href="https://www.borsaistanbul.com/tr/sayfa/477/gunluk-bulten">
+                            <div class="type-small bi-sky-black">Borsa Günlük Bülteni</div>
+                        </a>
+                        <a class="w-inline-block footer-button third" target="_blank" href="http://www.spk.gov.tr/Bulten">
+                            <div class="type-small bi-sky-black">SPK Bülteni</div>
+                        </a>
+                        <a class="w-inline-block footer-button fifth" target="_blank" href="https://gms.kap.org.tr">
+                            <div class="type-small bi-sky-black">Gayrimenkul Sertifikaları</div>
+                        </a>
+                    </div>
+                </div>
+            
+            <div class="footer-links">
+                <div class="w-container">
+                    <div class="w-row padding bottom kapstyle3">
+
+                    
+                        <div class="w-col w-col-3">
+                            <div class="bi-lightgray type-medium">Bildirim Sorguları</div>
+                        </div>
+                    
+                        <div class="w-col w-col-3">
+                            <div class="bi-lightgray type-medium">Şirketler</div>
+                        </div>
+                    
+                        <div class="w-col w-col-3">
+                            <div class="bi-lightgray type-medium">Fonlar</div>
+                        </div>
+                    
+                        <div class="w-col w-col-3">
+                            <div class="bi-lightgray type-medium">KAP Hakkında</div>
+                        </div>
+                    
+
+                    </div>
+                    <div class="w-row type-xsmall kapstyle4">
+                    
+                        
+                            <div class="w-col w-col-3">
+                            
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/today">Bugün Gelen Bildirimler</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/beklenen-bildirim-sorgu">Beklenen Bildirimler</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/bildirim-sorgu">Detaylı Sorgulama</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/kalem-karsilastirma">Finansal Tablo Kalem Sorgulama</a>
+                                            
+                                        
+                                
+                            
+                            </div>
+                        
+                    
+                        
+                            <div class="w-col w-col-3">
+                            
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/bist-sirketler">BIST Şirketleri</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/YK">Yatırım Kuruluşları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/PYS">Portföy Yönetim Şirketleri</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/BDK">Bağımsız Denetim Kuruluşları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/DCS">Derecelendirme Şirketleri</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/DS">Değerleme Şirketleri</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/DK">Diğer KAP Üyeleri ve İşlem Görmeyen Şirketler</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/sirketler/KSE">KAP Üyeliği Sona Eren Şirketler</a>
+                                            
+                                        
+                                
+                            
+                            </div>
+                        
+                    
+                        
+                            <div class="w-col w-col-3">
+                            
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/BYF">Borsa Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/YF">Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/EYF">Emeklilik Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/OKS">OKS Emeklilik Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/YYF">Yabancı Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/VFF">Varlık Finansman Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/KFF">Konut Finansman Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/GMF">Gayrimenkul Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/GSF">Girişim Sermayesi Yatırım Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/PFF">Proje Finansman Fonları</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/YatirimFonlari/TEYF">Tasfiye Olmuş Fonlar</a>
+                                            
+                                        
+                                
+                            
+                            </div>
+                        
+                    
+                        
+                            <div class="w-col w-col-3">
+                            
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/menu-icerik/KAP-Hakkinda/Mevzuat-Duyurular-ve-Kilavuzlar">Mevzuat, Duyurular ve Kılavuzlar</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/menu-icerik/KAP-Hakkinda/Sertifika-Islemleri">Sertifika İşlemleri</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/menu-icerik/KAP-Hakkinda/Genel-Bilgi">Genel Bilgi</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/menu-icerik/KAP-Hakkinda/Ilgili-Linkler">İlgili Linkler</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="https://eyatirimci.mkk.com.tr/auth/login">Sermaye Piyasası Aracı Alım Satım Bildirimi</a>
+                                            
+                                        
+                                
+                                    
+                                            
+                                                <a class="type-expand bi-white padding bottom small" href="/tr/menu-icerik/KAP-Hakkinda/KVKK-Kapsaminda-Duzeltilmis-Bildirimler">KVKK Kapsamında Düzeltilmiş Bildirimler</a>
+                                            
+                                        
+                                
+                            
+                            </div>
+                        
+                    
+
+                    </div>
+                    <div class="padding bottom top">
+                        <div class="bi-lightgray type-medium kapstyle3">İlgili Bağlantılar</div>
+                    </div>
+
+                    <div class="bi-white type-xsmall"  >
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href="http://egk.mkk.com.tr" id="footerMenu1">e-Genel Kurul</a> </span>
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href="https://eyatirimci.mkk.com.tr/auth/login" id="footerMenu2">e-Yatırımcı</a></span>
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href="http://e-sirket.mkk.com.tr" id="footerMenu3">e-Şirket</a></span>
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href='https://www.mkk.com.tr/tr-tr/Veri-Depolama-Hizmetleri/e-VERi/Sayfalar/Yillik-Istatistiki-Veriler.aspx' id="footerMenu4">e-Veri</a></span>
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href="http://www.borsaistanbul.com" id="footerMenu6">Borsa İstanbul A.Ş.</a> </span>
+                        <span class="padding right medium"><a class="footermenu-item" target="_blank" href="https://www.vap.org.tr/Sayfalar/home.aspx" id="footerMenu7">VAP</a> </span>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="back-to-top">Yukarı</a>
+            <div class="footer-bottom">
+                <div class="w-container">
+                    <img class="footer-logo" src='/assets/images/Footer_Logo.png' />
+                    <div class="footer-middle-elems">
+                    <a class="bi-white footer-bottomlinks type-small" href='/tr/icerik/Diger/Site-Haritasi'>
+                        Site Haritası
+                    </a>
+                    <a class="bi-white footer-bottomlinks type-small" href='/tr/icerik/Diger/Iletisim'>
+                        İletişim
+                    </a>
+                    <a class="bi-white footer-bottomlinks type-small" href='/tr/icerik/Diger/Yardim'>
+                        Yardım
+                    </a>
+                    <a class="bi-white footer-bottomlinks type-small" href='/tr/icerik/Diger/Kisisel-Verilerin-Korunmasi'>
+                        Kişisel Verilerin Korunması
+                    </a>
+                    <a class="bi-white footer-bottomlinks type-small" href='/tr/icerik/Diger/Telif-Hakki-ve-Cekince-Bildirimi'>
+                        Telif Hakkı ve Çekince İhbarı
+                    </a>
+                    </div>
+                    <img class="mkk-footer-logo" src='/assets/images/mkk-footer.png' />
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src='/assets/javascripts/angular_bundle.min.js?b=2068'></script>
+        <script type="text/javascript" src='/assets/javascripts/thirdparty_extended.min.js?b=2068'></script>
+        
+        
+    
+        <script type="text/javascript" src='/assets/javascripts/bundle.min.js?b=2068'></script>
+    
+<!--[if lte IE 9]><script type="text/javascript" src='/assets/javascripts/placeholders.min.js?b=2068'></script><![endif]-->
+
+    <script type="text/javascript" src='/assets/javascripts/custom2.min.js?b=2068'></script>
+    
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBNFVK7SX4"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-MBNFVK7SX4',
+                        {
+                            //'page_title' : 'Sayfa Başlığı', // opsiyonel
+                            'page_location': window.location.href, // opsiyonel
+                            'page_path': location.pathname
+                        });
+                gtag('event', 'screen_view', {
+                    'app_name': 'KAP'
+                });
+        </script>
+    
+    </body>
+</html>
+
+

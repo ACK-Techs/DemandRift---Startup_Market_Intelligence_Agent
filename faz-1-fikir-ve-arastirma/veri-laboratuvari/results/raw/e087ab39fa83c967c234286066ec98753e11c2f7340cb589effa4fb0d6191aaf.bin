@@ -1,0 +1,1567 @@
+<!DOCTYPE html><!-- Last Published: Mon Aug 17 2026 20:50:20 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.sastrify.com" data-wf-page="65d72560511a42c804d36ed4" data-wf-site="61926ae506154e2b813f793d" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>AI-Powered Software Management &amp; Procurement | Sastrify</title><link rel="alternate" hrefLang="x-default" href="https://www.sastrify.com/"/><link rel="alternate" hrefLang="en" href="https://www.sastrify.com/"/><link rel="alternate" hrefLang="de" href="https://www.sastrify.com/de"/><meta content="Simplify software management with AI. Discover every app, manage licenses, and optimize spend - all in one platform for IT, Procurement, and Finance." name="description"/><meta content="AI-Powered Software Management &amp; Procurement | Sastrify" property="og:title"/><meta content="Simplify software management with AI. Discover every app, manage licenses, and optimize spend - all in one platform for IT, Procurement, and Finance." property="og:description"/><meta content="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa084870a34253c9756d0f_new-og-image.webp" property="og:image"/><meta content="AI-Powered Software Management &amp; Procurement | Sastrify" name="twitter:title"/><meta content="Simplify software management with AI. Discover every app, manage licenses, and optimize spend - all in one platform for IT, Procurement, and Finance." name="twitter:description"/><meta content="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa084870a34253c9756d0f_new-og-image.webp" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="DmlGnxJUZFhZCWsiHzbZz5Y21vv8yPeq0ZNuq77RMXA" name="google-site-verification"/><link href="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/css/sastrify2-0.webflow.shared.5add72bf6.min.css" rel="stylesheet" type="text/css" integrity="sha384-Wt1yv2ave3/UsrgDfbUGiMqZOosyUmyo6P93G7W4pUQ0Oi6f4hlVpuQA+CUQyU7Q" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Inter:300,400,500,600,700","Poppins:300,400,500,600,700","Poppins:300,400,500,600,700","Roboto:300,400,500,600,700","Roboto:300,400,500,600,700","Roboto:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/61cd72c8e4f826fcfd13d374_favicon_32x32px.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/61cd7365e6b4857685f3f192_webclip_256x256px%20(1).png" rel="apple-touch-icon"/><link href="https://www.sastrify.com" rel="canonical"/><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push.apply(w[g],Array.isArray(i)?i:[i]);})(window,['G-R10GVGF4V4'],'google_tags_first_party');</script><script async="" src="/9i1h7htkfq16NjE5MjZhZTUwNjE1NGUyYjgxM2Y3OTNk/uZeix-yt0UYl7NhFOBATI6U5WCM"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('set', 'developer_id.dZGVlNj', true);gtag('set', 'developer_id.dYWYxNW', true);gtag('js', new Date());gtag('config', 'G-R10GVGF4V4');</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PW2LNBJ');</script>
+<!-- End Google Tag Manager -->
+    
+<meta name="facebook-domain-verification" content="wj4bi4isk5ty27f0sis6o77ujrm02g" />
+
+
+<!-- [Attributes by Finsweet] Modal -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-modal@1/modal.js"></script>
+
+<script type="text/javascript" referrerpolicy="strict-origin-when-cross-origin" src="https://tag.clearbitscripts.com/v1/pk_e80de230facf8e2b016582d14f26eded/tags.js"></script>
+
+<!-- Start VWO Async SmartCode -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code || (function() {
+var account_id=816992,
+version=2.0,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();
+</script>
+<!-- End VWO Async SmartCode -->
+
+<!-- Memberstack webflow package -->
+<script data-memberstack-app="app_cls4n327000p70stfduy36r4b" src="https://static.memberstack.com/scripts/v1/memberstack.js" type="text/javascript"></script>
+<script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('DzLR5a5Ygk0aBoQ2'); </script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20137352.js"></script>
+<!-- End of HubSpot Embed Code -->
+<!-- [Attributes by Finsweet] Modal -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-modal@1/modal.js"></script>
+
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script>
+  window.__ow = window.__ow || {};
+  window.__ow.organizationId = "f668e4d2-1038-4060-ad4a-ef71f38116d3";
+  window.__ow.template_id = "e98db2fe-87f8-4712-a56a-77de32cb7249";
+  window.__ow.integration_name = "manual_settings";
+  window.__ow.product_name = "chatbot";   
+  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+</script>
+<noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+<!-- End of ChatBot code --><script src="https://static.heyflow.app/widget/latest/webview.js"></script>
+
+<meta name="google-site-verification" content="qDvJOfGGnfwEzgtnk7YX45LguBYFoeKDxmJT56B-40c" />
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name": "Sastrify",
+"description": "Sastrify is a leading SaaS Management & SaaS Procurement solution, revolutionizing the way companies discover, buy, and manage software and cloud subscriptions.",
+"logo": "https://assets-global.website-files.com/61926ae506154e2b813f793d/646f53cfa64f42e6c9164509_sastrify_logo.webp",
+"url": "https://www.sastrify.com",
+"sameAs": [
+"https://twitter.com/sastrify",
+"https://www.linkedin.com/company/sastrify",
+"https://www.facebook.com/sastrify",
+"https://www.instagram.com/sastrify/",
+"https://www.crunchbase.com/organization/sastrify"
+],
+"address": [
+{
+"@type": "PostalAddress",
+"streetAddress": "Subbelrather Str. 15A",
+"addressLocality": "Cologne",
+"postalCode": "50823",
+"addressCountry": "Germany"
+},
+{
+"@type": "PostalAddress",
+"streetAddress": "80 Pine St, 24th Floor",
+"addressLocality": "New York",
+"addressRegion": "NY",
+"postalCode": "10005",
+"addressCountry": "USA"
+}
+],
+"foundingDate": "2020-06-09",
+"founders": ["Sven Lackinger", "Maximilian Messing"],
+"slogan": "Optimizing SaaS spend efficiently",
+"numberOfEmployees": {
+"@type": "QuantitativeValue",
+"value": "150"
+}
+}
+</script></head><body class="body-redesigned"><div class="w-embed w-iframe"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW2LNBJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div><div class="hide w-embed"><style>
+  /* Make text look crisper and more legible in all browsers */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;  /* This allows the main section to grow based on content */
+    -webkit-overflow-scrolling: touch;
+    min-height: fit-content;
+  }
+
+  footer {
+    flex-shrink: 0; /* Ensures the footer does not collapse */
+  }
+
+  /* Focus state style for keyboard navigation for the focusable elements */
+  *[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+    outline: 0.125rem solid #4d65ff;
+    outline-offset: 0.125rem;
+  }
+
+  /* Set color style to inherit */
+  .inherit-color * {
+    color: inherit;
+  }
+
+  /* Get rid of top margin on first element in any rich text element */
+  .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Get rid of bottom margin on last element in any rich text element */
+  .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* Make sure containers never lose their center alignment */
+  .container-medium,.container-small, .container-large {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* 
+  Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+  Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+  Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+  */
+  /*
+  a,
+  .w-input,
+  .w-select,
+  .w-tab-link,
+  .w-nav-link,
+  .w-dropdown-btn,
+  .w-dropdown-toggle,
+  .w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+  }
+  */
+
+  /* Apply "..." after 3 lines of text */
+  .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Apply "..." after 2 lines of text */
+  .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* These classes are never overwritten */
+  .hide {
+    display: none !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+  }
+
+  .margin-0 {
+    margin: 0rem !important;
+  }
+
+  .padding-0 {
+    padding: 0rem !important;
+  }
+
+  .spacing-clean {
+    padding: 0rem !important;
+    margin: 0rem !important;
+  }
+
+  .margin-top {
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-top {
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-right {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-right {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-bottom {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-bottom {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .margin-left {
+    margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-left {
+    padding-top: 0rem !important;
+    padding-right: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-horizontal {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .padding-horizontal {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  .margin-vertical {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .padding-vertical {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .w-tabs:before, .w-tabs:after {
+    content: none; /* Removes the pseudo-elements completely */
+    display: none; /* Ensures they do not take up space */
+  }
+
+  .hamburger-bar:nth-child(1) {
+    top: 0;
+    transition: all .3s ease;
+  }
+
+  .hamburger-bar:nth-child(2) {
+    top: 12px;
+    transition: all .3s ease;
+  }
+
+
+  /* Active (X) State */
+  .hamburger.active .hamburger-bar:nth-child(1) {
+    transform: rotate(10deg);
+    top: 12px;
+  }
+
+  .hamburger.active .hamburger-bar:nth-child(2) {
+    transform: rotate(-10deg);
+  }
+
+  input::placholder,
+  select::placeholder {
+    color: #94A3B8;
+  }
+
+  .policy-link-form {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  .customer-stories__filters-wrapper {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .customer-stories__filters-wrapper::-webkit-scrollbar {
+    display: none; /* WebKit Browsers */
+  }
+
+  .inner-page-hero__content {
+    align-self: center;
+  }
+
+  .swiper-slide {
+    height: auto; /* Ensure content defines height */
+    display: flex; /* Helps align inner content */
+    align-items: stretch; /* Ensures uniform height */
+  }
+
+  .nav-dropdown-link-item-redesigned:hover 
+  .nav-dropdwon-text-wrapper-redesigned 
+  .nav-dropdown-item-title {
+    color: #229F7E;
+  }
+
+  .h-full {
+    max-height: fit-content !important;
+  }
+
+  .footer__form .hbspt-form .hs-button.adjust-bottom {
+    bottom: 26px !important;
+  }
+
+  .portfolio__wrapper {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(174deg, #27343A -4.05%, #35D0BA 263.28%);
+  }
+
+  .careers-cards__section {
+    background: linear-gradient(180deg, #35D0BA -42.66%, #27343A 100%);
+  }
+
+  li::marker {
+    color: #3DAE2B;
+  }
+
+  .hs-form p {
+    font-size: 14px;
+  }
+
+  .what-you-learn__rich-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .what-you-learn__rich-text li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-family: Bdogrotesk;
+    color: var(--primary--dark-grey);
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+  }
+
+  /* Custom bullet point replacement with an SVG icon */
+  .what-you-learn__rich-text li::before {
+    content: "";
+    display: inline-block;
+    min-width: 1.375rem;
+    min-height: 1.375rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23' fill='none'%3E%3Crect x='0.5' y='1' width='21' height='21' rx='10.5' fill='%23068466'/%3E%3Crect x='0.5' y='1' width='21' height='21' rx='10.5' stroke='url(%23paint0_linear_7981_64246)'/%3E%3Cpath d='M15.2403 7.5L14.5683 8.17202C13.0588 9.68479 11.4607 11.3931 9.95306 12.9305L7.937 11.2702L7.20568 10.6674L6 12.135L6.73132 12.7378L9.4194 14.9515L10.0865 15.5L10.6943 14.8873C12.4003 13.1776 14.2451 11.1819 15.9123 9.51112L16.5843 8.8391L15.2403 7.5Z' fill='%23F4FAF9'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_7981_64246' x1='5' y1='7.5' x2='18.5' y2='22.5' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%236DDFCE'/%3E%3Cstop offset='1' stop-color='%2345A976'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px; /* Adjust spacing between icon and text */
+  }
+  
+  .blog-rich-text figure img {
+  	margin-top: 2.5rem;
+  	border-radius: 0.5rem;
+  }
+  
+  @media (max-width: 992px) {
+    .intergration__tabs {
+      overflow: auto; /* Ensures scrolling still works */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    .intergration__tabs::-webkit-scrollbar {
+      display: none; /* WebKit Browsers */
+    }
+
+    .intergration__tabs::before {
+      content: "";
+      position: sticky;
+      top: 0;
+      left: -2rem;
+      min-width: 32px;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(37, 77, 76, 0.5) 0%, #254D4C 100%);
+      z-index: 2;
+    }
+
+    .intergration__tabs::after {
+      content: "";
+      position: sticky;
+      top: 0;
+      right: -2rem;
+      min-width: 32px;
+      height: 100%;
+      background: linear-gradient(-270deg, rgba(37, 77, 76, 0.5) 0%, #254D4C 100%);
+      z-index: 2;
+    }
+
+    .find-software__tabs-menu-wrapper::after {
+      content: "";
+      position: sticky;
+      top: 0;
+      right: -2rem;
+      min-width: 32px;
+      height: 100%;
+      background: linear-gradient(-270deg, rgba(37, 77, 76, 0.5) 0%, #254D4C 100%);
+      z-index: 2;
+    }
+
+    .find-software__tabs-menu-wrapper::before {
+      content: "";
+      position: sticky;
+      top: 0;
+      left: -2rem;
+      min-width: 32px;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(37, 77, 76, 0.5) 0%, #254D4C 100%);
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 1156px) {
+    .software-management__card {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 5.625rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .software-management__card {
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .find-software__wrapper {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(174deg, #27343A -4.05%, #35D0BA 263.28%);
+    }
+    
+     .blog-rich-text figure img {
+      margin-top: 4rem;
+    }
+  }
+
+</style></div><header class="header"><div class="banner-2026"><div class="new-container"><div class="banner-inner"><div><span class="banner-2026-span">Sastrify has joined Deel</span> to revolutionize software management.</div><a href="https://www.deel.com/blog/deel-acquires-sastrify/?utm_source=sastrify" target="_blank" class="banner-learn-more w-inline-block"><div class="banner-svg w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="20" rx="10" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.93333 6L8 6.93333L11.0667 10L8 13.0667L8.93333 14L12.9333 10L8.93333 6Z" fill="white"/>
+</svg>
+</div><div>Learn more</div></a></div></div></div><div data-animation="default" data-collapse="medium" data-duration="500" data-easing="ease" data-easing2="ease" role="banner" class="navbar is-index-high is-sticky w-nav"><div class="container w-container"><div class="navigation__wrapper"><a href="/" aria-current="page" class="navigation__brand w-nav-brand w--current"><div class="w-embed"><svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_197895_600)">
+<path d="M58.7222 25.8181C58.5705 25.5181 58.4473 24.9826 58.3525 24.2114C57.1299 25.4673 55.6698 26.0952 53.9723 26.0952C52.4563 26.0952 51.2125 25.6712 50.2409 24.8232C49.7711 24.4262 49.3966 23.9308 49.1446 23.3729C48.8925 22.815 48.7692 22.2086 48.7836 21.5978C48.7836 20.0143 49.3926 18.7843 50.6107 17.9078C51.8287 17.0312 53.5421 16.5934 55.7506 16.5943H58.3159V15.3986C58.3159 14.4891 58.0414 13.7652 57.4924 13.2269C56.9434 12.6887 56.1308 12.4209 55.0545 12.4236C54.1154 12.4236 53.329 12.6579 52.6951 13.1265C52.0613 13.5951 51.7452 14.1619 51.747 14.8269H49.0965C49.0965 14.0682 49.3673 13.3349 49.9091 12.6271C50.4914 11.8898 51.2546 11.3119 52.1263 10.9481C53.098 10.5273 54.1495 10.3168 55.2102 10.3309C56.9818 10.3309 58.3705 10.7691 59.3764 11.6457C60.3822 12.5222 60.9032 13.7272 60.9394 15.2607V22.2606C60.9394 23.6566 61.1199 24.767 61.4811 25.5918V25.8167L58.7222 25.8181ZM54.357 23.8365C55.1821 23.8361 55.992 23.6174 56.7028 23.2032C57.3978 22.8309 57.9608 22.2571 58.3159 21.559V18.4393H56.2477C53.0251 18.4393 51.4139 19.3716 51.4139 21.2363C51.4139 22.0504 51.6888 22.6872 52.2387 23.1469C52.7886 23.6066 53.4947 23.8365 54.357 23.8365Z" fill="#27343A"/>
+<path d="M72.786 21.7839C72.7999 21.4665 72.7338 21.1507 72.5936 20.8648C72.4534 20.579 72.2435 20.3321 71.9828 20.1464C71.4492 19.7617 70.5151 19.4265 69.1806 19.1409C67.846 18.8552 66.7896 18.5183 66.0113 18.13C65.2284 17.7363 64.6501 17.2677 64.2763 16.7241C63.8921 16.1497 63.6959 15.4724 63.7142 14.784C63.7142 13.5344 64.2474 12.4802 65.3138 11.6215C66.3801 10.7628 67.7427 10.3326 69.4013 10.3308C71.1458 10.3308 72.5607 10.7771 73.646 11.6697C74.1653 12.0764 74.5822 12.5964 74.8642 13.1889C75.1462 13.7815 75.2855 14.4306 75.2713 15.0853H72.6289C72.6289 14.3712 72.3232 13.7571 71.712 13.2429C71.1007 12.7288 70.3305 12.4713 69.4013 12.4704C68.4433 12.4704 67.6948 12.6766 67.1557 13.089C66.8984 13.2735 66.6901 13.5169 66.5485 13.7983C66.407 14.0797 66.3365 14.3908 66.3431 14.705C66.3431 15.3299 66.5941 15.8029 67.0961 16.1243C67.5982 16.4456 68.5088 16.7487 69.828 17.0334C71.1408 17.3244 72.205 17.6712 73.0203 18.0737C73.8357 18.4763 74.4397 18.961 74.8325 19.5278C75.2398 20.1429 75.4459 20.8669 75.423 21.6018C75.4401 22.2383 75.2986 22.8692 75.0109 23.4389C74.7232 24.0086 74.2982 24.4996 73.7734 24.8687C72.6736 25.689 71.2469 26.0992 69.4934 26.0992C68.369 26.1211 67.2533 25.9004 66.2239 25.4525C65.3278 25.0649 64.5576 24.4398 63.9986 23.6463C63.4736 22.9126 63.1916 22.0359 63.1914 21.1372H65.8189C65.8277 21.5391 65.9273 21.934 66.1106 22.2929C66.2939 22.6518 66.5561 22.9655 66.8781 23.2111C67.5363 23.7208 68.4059 23.9761 69.4867 23.977C70.4799 23.977 71.2785 23.7775 71.8826 23.3785C72.4867 22.9795 72.7878 22.448 72.786 21.7839Z" fill="#27343A"/>
+<path d="M81.1765 6.92737V10.6094H84.0492V12.6177H81.1779V22.0598C81.1779 22.6703 81.3056 23.1278 81.5612 23.4321C81.8167 23.7365 82.2528 23.8892 82.8695 23.89C83.2913 23.875 83.7105 23.8185 84.121 23.7213V25.8167C83.4636 25.999 82.7843 26.0931 82.1016 26.0966C80.9278 26.0966 80.0415 25.7453 79.4429 25.0428C78.8442 24.3404 78.5458 23.342 78.5476 22.0477V12.6204H75.7454V10.6121H78.5463V6.93005L81.1765 6.92737Z" fill="#27343A"/>
+<path d="M93.3202 12.943C92.8925 12.8753 92.4599 12.8426 92.0267 12.8453C90.3012 12.8453 89.1306 13.5714 88.5148 15.0237V25.818H85.8845V10.6093H88.4443L88.4863 12.3673C89.3495 11.0096 90.5721 10.3308 92.1541 10.3308C92.666 10.3308 93.0547 10.3969 93.3202 10.529V12.943Z" fill="#27343A"/>
+<path d="M97.3605 25.8182H94.7302V10.6095H97.3605V25.8182Z" fill="#27343A"/>
+<path d="M101.628 25.8181V12.6204H99.197V10.6121H101.628V9.04956C101.628 7.41877 102.069 6.15841 102.95 5.26848C103.831 4.37855 105.078 3.93224 106.69 3.92957C107.3 3.93173 107.907 4.01321 108.495 4.17191L108.36 6.26865C107.891 6.17908 107.415 6.13424 106.937 6.13475C106.084 6.13475 105.425 6.38156 104.961 6.87517C104.497 7.36878 104.265 8.07618 104.265 8.99735V10.604H106.09L106.887 12.6124H104.258V25.8101L101.628 25.8181Z" fill="#27343A"/>
+<path d="M113.624 22.009L117.207 10.6095H120.022L113.837 28.1653C112.881 30.6959 111.359 31.9607 109.272 31.9598L108.775 31.9183L107.795 31.7349V29.6274L108.506 29.6836C109.397 29.6836 110.091 29.5051 110.588 29.1481C111.084 28.791 111.493 28.1421 111.815 27.2013L112.397 25.6549L106.913 10.6095H109.783L113.624 22.009Z" fill="#27343A"/>
+<path d="M39.4568 16.2315C36.9909 15.5308 35.1959 14.6699 34.0717 13.6488C33.5311 13.1758 33.1005 12.5927 32.8097 11.9395C32.5188 11.2863 32.3746 10.5786 32.3868 9.865C32.3868 8.16905 33.0735 6.76498 34.4469 5.65279C35.8203 4.5406 37.6049 3.98495 39.8008 3.98584C41.2988 3.98584 42.6342 4.27237 43.8072 4.84542C44.9218 5.36731 45.8659 6.18793 46.5322 7.21396C47.1699 8.19925 47.5053 9.34603 47.4979 10.5157H44.609C44.609 9.20894 44.1896 8.18244 43.3507 7.43622C42.5119 6.69 41.3286 6.31599 39.8008 6.31421C38.3832 6.31421 37.2776 6.6235 36.4839 7.24207C35.6902 7.86065 35.2925 8.71711 35.2907 9.81145C35.2907 10.6925 35.6672 11.4364 36.4202 12.0434C37.1733 12.6504 38.4568 13.2069 40.2708 13.713C42.083 14.2174 43.5006 14.773 44.5236 15.38C45.5467 15.987 46.3065 16.6952 46.8031 17.5048C47.297 18.3144 47.5444 19.2668 47.5453 20.3621C47.5453 22.1089 46.8559 23.5081 45.4771 24.5596C44.0984 25.6111 42.2564 26.1368 39.9512 26.1368C38.5066 26.1485 37.0758 25.8583 35.7525 25.2853C34.455 24.7176 33.4541 23.9405 32.7498 22.9542C32.047 21.9721 31.6771 20.7951 31.6934 19.5922H34.5837C34.5837 20.8963 35.0708 21.9255 36.0451 22.6797C37.0193 23.434 38.32 23.8116 39.9471 23.8125C41.464 23.8125 42.627 23.5067 43.4361 22.8953C44.2451 22.2839 44.6514 21.4493 44.655 20.3915C44.655 19.3365 44.2807 18.5197 43.5322 17.9413C42.7837 17.3629 41.4252 16.793 39.4568 16.2315Z" fill="#27343A"/>
+<path d="M94.5122 6.67964C94.5015 6.28908 94.6403 5.90892 94.9009 5.6152C95.161 5.3251 95.5461 5.18005 96.0562 5.18005C96.5664 5.18005 96.9537 5.3251 97.2183 5.6152C97.4835 5.90673 97.6255 6.28769 97.6151 6.67964C97.627 7.0678 97.4845 7.44511 97.2183 7.73068C96.9537 8.01007 96.5664 8.14976 96.0562 8.14976C95.5461 8.14976 95.161 8.01007 94.9009 7.73068C94.6393 7.4429 94.5 7.0664 94.5122 6.67964V6.67964Z" fill="#27343A"/>
+<g clip-path="url(#clip1_197895_600)">
+<path d="M10.062 20.0743C8.71241 20.0847 7.37522 19.8194 6.13421 19.295C4.93904 18.7894 3.85514 18.058 2.94324 17.1421C2.42133 16.6132 1.95944 16.0296 1.56581 15.4015C1.26759 15.8629 1.0076 16.3474 0.788385 16.8502C0.262837 18.0718 -0.00448842 19.3868 0.00283192 20.7143V30.6611L10.7351 20.0502C10.5076 20.0649 10.2882 20.0743 10.062 20.0743Z" fill="#FFCD3C"/>
+<path d="M20.1467 20.7143C20.154 19.3868 19.8867 18.0718 19.3612 16.8502C19.1433 16.351 18.8865 15.8694 18.5932 15.4095L18.5824 15.3934C18.1896 14.7648 17.7276 14.181 17.205 13.6528L10.7418 20.0408L10.7323 20.0502L0 30.661H10.0849C11.4342 30.6722 12.7714 30.4078 14.0126 29.8845C15.2037 29.381 16.2863 28.6571 17.2023 27.7516C17.3147 27.6404 17.4244 27.5266 17.53 27.4115C18.2931 26.581 18.911 25.6308 19.3585 24.5998C19.8892 23.3721 20.1575 22.0493 20.1467 20.7143V20.7143Z" fill="#F67031"/>
+<path d="M20.1469 0.133789L9.41187 10.746C9.64076 10.7313 9.87236 10.7206 10.1053 10.7206C11.4548 10.7099 12.7919 10.9747 14.0331 11.4985C15.2279 12.0048 16.3117 12.736 17.2241 13.6514C17.7453 14.1809 18.2071 14.7645 18.6015 15.392C18.8997 14.9311 19.1606 14.4476 19.3816 13.946C19.9075 12.7244 20.1753 11.4095 20.1685 10.0819V0.133789H20.1469Z" fill="#35D0BA"/>
+<path d="M10.0618 0.13393C8.71239 0.122017 7.37507 0.386423 6.13407 0.9105C3.72981 1.92523 1.81471 3.81843 0.788242 6.19519C0.269694 7.42271 0.00268555 8.73974 0.00268555 10.07C0.00268555 11.4003 0.269694 12.7173 0.788242 13.9448C1.00912 14.4499 1.26998 14.937 1.56838 15.4015C1.96201 16.0296 2.42389 16.6133 2.9458 17.1421L9.40901 10.7542L9.41714 10.7461L20.1521 0.13393H10.0618Z" fill="#08A07C"/>
+<path d="M10.7419 20.0408C10.517 20.0555 10.2908 20.0743 10.0647 20.0743C8.7151 20.0847 7.37791 19.8194 6.13689 19.295C4.94173 18.7894 3.85783 18.058 2.94592 17.1421C2.42401 16.6132 1.96213 16.0296 1.5685 15.4015C1.27027 15.8629 1.01028 16.3474 0.791071 16.8502C0.265523 18.0718 -0.00180288 19.3868 0.00551747 20.7143V21.9193C6.82629 23.2355 10.7364 20.0448 10.7419 20.0408Z" fill="#F7DD0E"/>
+<path d="M9.42383 10.7648C9.65001 10.7501 9.87484 10.7327 10.101 10.7327C11.4505 10.7218 12.7877 10.9867 14.0288 11.5106C15.221 12.0171 16.3013 12.7494 17.2089 13.6662C17.7347 14.1986 18.1997 14.7863 18.5958 15.4189C18.8968 14.9525 19.1595 14.4632 19.3814 13.9554C19.9074 12.7339 20.1752 11.4189 20.1683 10.0913V8.8863C13.3408 7.57015 9.4306 10.7608 9.42383 10.7648Z" fill="#6DDFCE"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_197895_600">
+<rect width="120" height="32" fill="white"/>
+</clipPath>
+<clipPath id="clip1_197895_600">
+<rect width="20.1806" height="30.795" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><nav role="navigation" class="navigation__menu w-nav-menu"><div class="navigation__links"><div class="navigation__dropdown-wrapper"><div class="nav-dropdown-top-arrow is--platform w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="12" viewBox="0 0 26 12" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.8293H25.3155L14.072 0.585786C13.2909 -0.195262 12.0246 -0.195262 11.2435 0.585787L0 11.8293Z" fill="white"/>
+</svg></div><div data-delay="0" data-hover="true" class="navigation__dropdown w-dropdown"><div class="navigation__dropdown-trigger-redesigned w-dropdown-toggle"><div>Platform</div><div class="navigation__dropdown-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.4926 13.4359L8.34603 10.2897L7.63617 10.9985L11.4997 14.8621L15.3633 10.9985L14.6534 10.2897L11.5069 13.4359L11.4926 13.4359Z" fill="#2557E9"/>
+<path id="Vector_2" d="M8.34663 10.1538C8.38286 10.1538 8.41766 10.1683 8.44287 10.1939L11.5 13.251L14.5571 10.1939C14.6079 10.1431 14.6988 10.1431 14.7499 10.1939L15.4598 10.9038C15.5134 10.9574 15.5134 11.0437 15.4598 11.0966L11.5966 14.9598C11.543 15.0134 11.4567 15.0134 11.4038 14.9598L7.54022 11.0962C7.4866 11.0426 7.4866 10.9563 7.54022 10.9034L8.25007 10.1935C8.27564 10.168 8.31009 10.1534 8.34631 10.1534L8.34663 10.1538ZM11.5075 13.5727L11.494 13.5727C11.4578 13.5727 11.423 13.5582 11.3977 13.5326L8.34699 10.4818L7.82961 10.9992L11.5003 14.67L15.1711 10.9989L14.6537 10.4815L11.6029 13.5322C11.5774 13.5578 11.5429 13.5723 11.5067 13.5723L11.5075 13.5727Z" fill="#068466"/>
+</g>
+</g>
+</svg></div></div><nav class="nav-dropdown-list-redesigned is--platform w-dropdown-list"><div class="nav-dropdown-list-inner-redesigned is--platform"><div class="nav-dropdown-list-inner-wrapper-redesigned is--platform"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Software Visibility</div><a href="/platform" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9472_4306)">
+<path d="M12.998 0.138672C16.2889 0.138672 19.2942 2.02701 20.7842 4.99219L20.8184 5.06055L20.8945 5.06738C24.5013 5.3912 27.3623 8.40857 27.3623 12.1396C27.3623 15.7615 24.6547 18.7734 21.1133 19.2012L21.0391 19.21L21.0059 19.2783C21.0046 19.281 21.0048 19.2803 21.002 19.2861L20.959 19.374L25.0547 23.4697C25.9433 24.3583 25.9431 25.8047 25.0547 26.6934C24.166 27.5821 22.7197 27.582 21.8311 26.6934L17.708 22.5703L17.6201 22.6113C16.7057 23.0404 15.6857 23.2764 14.6094 23.2764C11.8226 23.2764 9.40466 21.6593 8.23828 19.3184L8.2002 19.2422H5.63965C2.60554 19.2422 0.137696 16.7844 0.137695 13.751C0.137695 11.2826 1.76234 9.16389 4.08496 8.48633L4.17773 8.45898L4.18359 8.36328C4.47047 3.85503 8.30248 0.138672 12.998 0.138672ZM14.6094 10.3799C11.4237 10.3799 8.82129 12.9823 8.82129 16.168C8.82129 19.3539 11.4241 21.9453 14.6094 21.9453C15.8407 21.9453 16.9833 21.5556 17.9238 20.8965L18.0049 20.9775L22.7754 25.749C23.1432 26.1168 23.7415 26.1166 24.1094 25.749C24.4772 25.3812 24.4773 24.7828 24.1094 24.415L19.3477 19.6523L19.2734 19.5791C19.9782 18.6223 20.3975 17.4435 20.3975 16.168C20.3975 12.9823 17.795 10.3799 14.6094 10.3799Z" fill="#229F7E" stroke="white" stroke-width="0.275"/>
+<path d="M14.6094 12.1406C12.3882 12.1406 10.5811 13.9477 10.5811 16.1689C10.5811 18.3902 12.3882 20.1973 14.6094 20.1973C16.8306 20.1973 18.6377 18.3902 18.6377 16.1689C18.6377 13.9477 16.8306 12.1406 14.6094 12.1406Z" fill="#229F7E"/>
+</g>
+<defs>
+<clipPath id="clip0_9472_4306">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Shadow IT Detection</div><div class="nav-dropdwon-item-text">Visibility across your entire software landscape.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4482)">
+<g clip-path="url(#clip1_9475_4482)">
+<path d="M17 20.0625H3.1875V2.88869C3.1875 2.50194 3.50194 2.1875 3.88869 2.1875H15.4871C15.8739 2.1875 16.1875 2.50194 16.1875 2.88869V4.625C16.1875 5.0735 16.5507 5.4375 17 5.4375C17.4493 5.4375 17.8125 5.0735 17.8125 4.625V2.88869C17.8125 1.60575 16.7693 0.5625 15.4871 0.5625H3.88869C2.60575 0.5625 1.5625 1.60575 1.5625 2.88869V22.6121C1.5625 23.8943 2.60575 24.9375 3.88869 24.9375H15.4871C16.7693 24.9375 17.8125 23.8943 17.8125 22.6121V20.875C17.8125 20.4257 17.4493 20.0625 17 20.0625Z" fill="#229F7E"/>
+<path d="M22.6875 11.9375H17.8125V7.0625C17.8125 6.614 17.4493 6.25 17 6.25C13.4161 6.25 10.5 9.16606 10.5 12.75C10.5 16.3339 13.4161 19.25 17 19.25C20.5839 19.25 23.5 16.3339 23.5 12.75C23.5 12.3015 23.1368 11.9375 22.6875 11.9375Z" fill="#229F7E"/>
+<path d="M19.4375 3.8125C18.9882 3.8125 18.625 4.1765 18.625 4.625V10.3125C18.625 10.761 18.9882 11.125 19.4375 11.125H25.125C25.5743 11.125 25.9375 10.761 25.9375 10.3125C25.9375 6.72856 23.0214 3.8125 19.4375 3.8125ZM20.25 9.5V5.50494C22.2886 5.84781 23.9014 7.46144 24.2451 9.5H20.25Z" fill="#229F7E"/>
+<path d="M14.5625 4.625C14.5625 4.1765 14.1985 3.8125 13.75 3.8125H5.625C5.1765 3.8125 4.8125 4.1765 4.8125 4.625C4.8125 5.0735 5.1765 5.4375 5.625 5.4375H13.75C14.1985 5.4375 14.5625 5.0735 14.5625 4.625Z" fill="#229F7E"/>
+<path d="M5.625 6.25C5.1765 6.25 4.8125 6.614 4.8125 7.0625C4.8125 7.511 5.1765 7.875 5.625 7.875H9.6875C10.136 7.875 10.5 7.511 10.5 7.0625C10.5 6.614 10.136 6.25 9.6875 6.25H5.625Z" fill="#229F7E"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_9475_4482">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+<clipPath id="clip1_9475_4482">
+<rect width="26" height="26" fill="white" transform="translate(0.75 -0.25)"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Usage Analytics</div><div class="nav-dropdwon-item-text">Uncover unused seats and overlapping tools.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.3518 21.0001L16.0185 4.66677C15.815 4.30767 15.5199 4.00898 15.1632 3.80118C14.8066 3.59337 14.4012 3.48389 13.9885 3.48389C13.5757 3.48389 13.1704 3.59337 12.8138 3.80118C12.4571 4.00898 12.162 4.30767 11.9585 4.66677L2.62516 21.0001C2.41946 21.3563 2.31159 21.7607 2.31251 22.172C2.31342 22.5834 2.42307 22.9872 2.63035 23.3426C2.83763 23.6979 3.13517 23.9921 3.49281 24.1954C3.85045 24.3987 4.25547 24.5038 4.66683 24.5001H23.3335C23.7429 24.4997 24.1449 24.3916 24.4993 24.1866C24.8537 23.9816 25.1479 23.687 25.3524 23.3324C25.5569 22.9778 25.6645 22.5756 25.6644 22.1662C25.6643 21.7568 25.5565 21.3546 25.3518 21.0001Z" fill="#229F7E" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 10.5V15.1667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 19.8335H14.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Risk Management</div><div class="nav-dropdwon-item-text">Built-in third-party risk vendor assessments.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9499_5702)">
+<path d="M22.6663 14.6457C22.6663 20.3749 18.6559 23.2394 13.8893 24.9009C13.6397 24.9855 13.3685 24.9814 13.1215 24.8894C8.34342 23.2394 4.33301 20.3749 4.33301 14.6457V6.62486C4.33301 6.32097 4.45373 6.02952 4.66861 5.81464C4.8835 5.59975 5.17495 5.47903 5.47884 5.47903C7.77051 5.47903 10.6351 4.10403 12.6288 2.36236C12.8716 2.15497 13.1804 2.04102 13.4997 2.04102C13.819 2.04102 14.1278 2.15497 14.3705 2.36236C16.3757 4.11549 19.2288 5.47903 21.5205 5.47903C21.8244 5.47903 22.1159 5.59975 22.3307 5.81464C22.5456 6.02952 22.6663 6.32097 22.6663 6.62486V14.6457Z" fill="#229F7E"/>
+<path d="M13.5 22.75L13.5 4.25" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_9499_5702">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Compliance Monitoring</div><div class="nav-dropdwon-item-text">Automated visibility into certifications, risks, and compliance status.</div></div></div></a></div><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Procurement Excellence</div><a href="/workflow-orchestration" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4614)">
+<path d="M18.116 15.204C16.7432 15.204 15.6258 16.3214 15.6258 17.6942V18.8667C15.6258 20.2396 16.7432 21.3569 18.116 21.3569H25.8979C27.2707 21.3569 28.3881 20.2396 28.3881 18.8667V17.6942C28.3881 16.4562 27.4793 15.4261 26.2939 15.2356V8.73057C26.2939 7.35772 25.1766 6.24033 23.8037 6.24033H22.6893C22.3313 3.62939 20.0859 1.61143 17.3783 1.61143C16.1027 1.61143 14.9303 2.05908 14.0092 2.80557C13.5709 2.09014 12.7828 1.61084 11.884 1.61084H4.10156C2.72871 1.61084 1.61133 2.72822 1.61133 4.10107V15.8216C1.61133 17.1944 2.72871 18.3118 4.10156 18.3118H7.26035V23.5536C7.26035 24.9265 8.37774 26.0438 9.75059 26.0438H15.6305C15.7066 27.3493 16.7918 28.3876 18.116 28.3876H25.8979C27.2707 28.3876 28.3881 27.2702 28.3881 25.8974V24.7249C28.3881 23.3521 27.2707 22.2347 25.8979 22.2347H18.116C16.7918 22.2347 15.7066 23.2735 15.6305 24.5784H9.75059C9.18516 24.5784 8.7252 24.1185 8.7252 23.553V18.3112H11.884C13.2568 18.3112 14.3742 17.1938 14.3742 15.821V11.4101C15.2314 11.9925 16.2662 12.3329 17.3783 12.3329C20.0859 12.3329 22.3313 10.3149 22.6893 7.704H23.8037C24.3691 7.704 24.8291 8.16397 24.8291 8.72939V15.2022H18.116V15.204ZM17.0906 24.7261C17.0906 24.1606 17.5506 23.7007 18.116 23.7007H25.8979C26.4633 23.7007 26.9232 24.1606 26.9232 24.7261V25.8985C26.9232 26.464 26.4633 26.9239 25.8979 26.9239H18.116C17.5506 26.9239 17.0906 26.464 17.0906 25.8985V24.7261ZM5.27402 11.8665C4.86973 11.8665 4.5416 11.5384 4.5416 11.1341C4.5416 10.7298 4.86973 10.4017 5.27402 10.4017H10.7115C11.1164 10.4017 11.4439 10.7298 11.4439 11.1341C11.4439 11.5384 11.1164 11.8665 10.7115 11.8665H5.27402ZM9.3627 14.0638C9.3627 14.4687 9.03457 14.7962 8.63027 14.7962H5.27402C4.86973 14.7962 4.5416 14.4687 4.5416 14.0638C4.5416 13.6589 4.86973 13.3313 5.27402 13.3313H8.63027C9.03457 13.3313 9.3627 13.6595 9.3627 14.0638ZM10.7115 8.93623H5.27402C4.86973 8.93623 4.5416 8.60869 4.5416 8.20381C4.5416 7.79893 4.86973 7.47139 5.27402 7.47139H10.7115C11.1164 7.47139 11.4439 7.79951 11.4439 8.20381C11.4439 8.60811 11.1164 8.93623 10.7115 8.93623ZM10.7115 6.00654H5.27402C4.86973 6.00654 4.5416 5.67842 4.5416 5.27412C4.5416 4.86982 4.86973 4.5417 5.27402 4.5417H10.7115C11.1164 4.5417 11.4439 4.86982 11.4439 5.27412C11.4439 5.67842 11.1164 6.00654 10.7115 6.00654ZM17.3783 10.8692C15.2297 10.8692 13.4818 9.12139 13.4818 6.97275C13.4818 4.82412 15.2297 3.07627 17.3783 3.07627C19.527 3.07627 21.2748 4.82412 21.2748 6.97275C21.2748 9.12139 19.527 10.8692 17.3783 10.8692ZM26.9238 17.6937V18.8661C26.9238 19.4315 26.4639 19.8915 25.8984 19.8915H18.1166C17.5512 19.8915 17.0912 19.4315 17.0912 18.8661V17.6937C17.0912 17.1282 17.5512 16.6683 18.1166 16.6683H25.8984C26.4639 16.6683 26.9238 17.1282 26.9238 17.6937Z" fill="#229F7E"/>
+<path d="M18.6068 5.29348L16.7992 7.09876L16.15 6.45012C15.8635 6.16418 15.4 6.16477 15.1141 6.45071C14.8281 6.73665 14.8287 7.20071 15.1146 7.48665L16.2818 8.65208C16.4248 8.79504 16.6123 8.86653 16.7992 8.86653C16.9861 8.86653 17.1736 8.79504 17.3166 8.65208L19.6416 6.33001C19.9275 6.04407 19.9281 5.58059 19.6422 5.29407C19.3563 5.00754 18.8928 5.00754 18.6062 5.29348H18.6068Z" fill="#229F7E"/>
+<path d="M24.0457 17.5479H19.9688C19.5645 17.5479 19.2363 17.876 19.2363 18.2803C19.2363 18.6846 19.5645 19.0127 19.9688 19.0127H24.0457C24.45 19.0127 24.7781 18.6846 24.7781 18.2803C24.7781 17.876 24.45 17.5479 24.0457 17.5479Z" fill="#229F7E"/>
+<path d="M19.9688 26.0444H24.0457C24.45 26.0444 24.7781 25.7163 24.7781 25.312C24.7781 24.9077 24.45 24.5796 24.0457 24.5796H19.9688C19.5645 24.5796 19.2363 24.9077 19.2363 25.312C19.2363 25.7163 19.5645 26.0444 19.9688 26.0444Z" fill="#229F7E"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4614">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Intake-to-Procure</div><div class="nav-dropdwon-item-text">Streamlined request-to-approval workflows.</div></div></div></a><a href="/paas" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4968)">
+<path d="M16.6069 0.685547L16.7651 0.699219C16.9217 0.726597 17.07 0.793477 17.1948 0.894531C17.3611 1.02911 17.4765 1.21677 17.522 1.42578L17.8696 3.06055C19.1197 3.35977 20.3143 3.85471 21.4097 4.52734L22.814 3.61914L22.8149 3.61816C22.9946 3.50305 23.2082 3.4523 23.4204 3.47461C23.5798 3.49144 23.732 3.54864 23.8618 3.63965L23.9839 3.74219L26.2544 6.0127C26.4048 6.16449 26.4995 6.36367 26.522 6.57617C26.5443 6.78841 26.4935 7.00195 26.3784 7.18164L26.3774 7.18262L25.4683 8.58594C26.1413 9.68185 26.6359 10.8772 26.9351 12.1279L28.5708 12.4775C28.7806 12.5223 28.9687 12.6372 29.104 12.8037C29.2394 12.9704 29.3132 13.1789 29.314 13.3936V16.6064C29.313 16.8202 29.2394 17.0271 29.105 17.1934C28.9705 17.3596 28.7836 17.4759 28.5747 17.5215H28.5737L26.938 17.8691C26.6386 19.1196 26.1442 20.3145 25.4712 21.4102L26.3813 22.8135V22.8145C26.4966 22.9942 26.5472 23.2076 26.5249 23.4199C26.5025 23.6324 26.4087 23.8316 26.2583 23.9834H26.2573L23.9868 26.2539C23.8351 26.4043 23.6368 26.499 23.4243 26.5215C23.2118 26.5439 22.9977 26.4933 22.8179 26.3779V26.377L21.4126 25.4678C20.3174 26.1403 19.1234 26.6353 17.8735 26.9346L17.5249 28.5703C17.48 28.7805 17.3647 28.9692 17.1978 29.1045C17.0307 29.2398 16.8219 29.3132 16.6069 29.3135H13.3931C13.1793 29.3125 12.9723 29.239 12.8062 29.1045C12.6399 28.9699 12.5244 28.7823 12.479 28.5732L12.1294 26.9375C10.8786 26.6383 9.68332 26.1438 8.5874 25.4707L7.18408 26.3809C7.00422 26.4962 6.79014 26.5469 6.57764 26.5244C6.36529 26.502 6.16689 26.408 6.01514 26.2578L3.74365 23.9863C3.59336 23.8346 3.49955 23.6362 3.47705 23.4238C3.45461 23.2113 3.50523 22.9972 3.62061 22.8174L4.52881 21.4121C3.85642 20.3171 3.3622 19.1227 3.06299 17.873L1.42725 17.5244C1.21763 17.479 1.02981 17.3631 0.89502 17.1963C0.760288 17.0293 0.686273 16.821 0.686035 16.6064V13.3926L0.699707 13.2344C0.727117 13.0781 0.794155 12.9304 0.89502 12.8057C1.0296 12.6394 1.21722 12.524 1.42627 12.4785L3.06104 12.1289C3.36013 10.8785 3.85515 9.68353 4.52783 8.58789L3.61963 7.18359L3.61865 7.18262C3.50353 7.00297 3.45279 6.78935 3.4751 6.57715C3.49754 6.36464 3.59228 6.16547 3.74268 6.01367L6.01318 3.74316L6.13525 3.64062C6.26509 3.54942 6.41715 3.49243 6.57666 3.47559C6.73616 3.45879 6.89648 3.48282 7.04248 3.54492L7.18311 3.61914V3.62012L8.58643 4.52832C9.68247 3.85462 10.8782 3.35924 12.1294 3.05957L12.478 1.4248H12.479C12.5247 1.21604 12.6399 1.02883 12.8062 0.894531C12.9725 0.760213 13.1802 0.686235 13.394 0.685547H16.6069Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M13.249 6.19824C14.9898 5.85201 16.7938 6.02979 18.4336 6.70898C20.0733 7.38818 21.4749 8.53801 22.4609 10.0137C23.447 11.4895 23.9736 13.2251 23.9736 15C23.9708 17.3791 23.0251 19.6605 21.3428 21.3428C19.6605 23.0251 17.3791 23.9708 15 23.9736C13.2251 23.9736 11.4895 23.447 10.0137 22.4609C8.53801 21.4749 7.38818 20.0733 6.70898 18.4336C6.02979 16.7938 5.85201 14.9898 6.19824 13.249C6.54451 11.5082 7.39923 9.90936 8.6543 8.6543C9.90936 7.39923 11.5082 6.54451 13.249 6.19824Z" fill="white" stroke="white" stroke-width="0.25"/>
+<path d="M18.0063 11.7056L18.104 11.7144C18.2 11.7319 18.2903 11.7752 18.3638 11.8413C18.4618 11.9296 18.5234 12.0518 18.5366 12.1831L19.0903 17.6753C19.1147 17.9168 19.088 18.1605 19.0122 18.3911C18.9364 18.6216 18.8137 18.8342 18.6509 19.0142C18.488 19.1941 18.2887 19.3377 18.0669 19.436C17.9005 19.5097 17.7237 19.5569 17.5435 19.5757L17.3618 19.5845H12.6382C12.3957 19.5845 12.1557 19.5344 11.9341 19.436C11.7124 19.3376 11.5138 19.1931 11.3511 19.0132C11.1885 18.8333 11.0654 18.6215 10.9897 18.3911C10.9141 18.1606 10.8873 17.9166 10.9116 17.6753L11.4653 12.1831C11.4785 12.0518 11.5411 11.9296 11.6392 11.8413C11.737 11.7534 11.8641 11.706 11.9956 11.7065V11.7056H18.0063Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M17.1846 13.5767C17.1845 13.7172 17.1277 13.8523 17.0283 13.9517C16.9289 14.0509 16.7938 14.1069 16.6533 14.1069C16.5128 14.1068 16.3777 14.051 16.2783 13.9517C16.1789 13.8523 16.1232 13.7172 16.123 13.5767V11.4702C16.1177 11.1759 15.9971 10.8952 15.7871 10.689C15.5771 10.4828 15.2943 10.3677 15 10.3677C14.7057 10.3677 14.4229 10.4827 14.2129 10.689C14.0029 10.8952 13.8823 11.1759 13.877 11.4702V13.5767C13.8768 13.7172 13.8211 13.8523 13.7217 13.9517C13.6222 14.051 13.4872 14.1069 13.3467 14.1069C13.2061 14.1069 13.0711 14.051 12.9717 13.9517C12.8723 13.8523 12.8165 13.7172 12.8164 13.5767V11.4663L12.8301 11.2524C12.8858 10.7577 13.1093 10.2944 13.4668 9.94189C13.8754 9.53898 14.4262 9.31306 15 9.31299C15.5739 9.31299 16.1255 9.53892 16.5342 9.94189C16.9427 10.3448 17.1765 10.8926 17.1846 11.4663V13.5767Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4968">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Software Purchasing</div><div class="nav-dropdwon-item-text">Expert-supported purchasing and renewals.</div></div></div></a><a href="/solutions/procurement" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.08203 7.63477C9.5904 7.63496 10.8134 8.85781 10.8135 10.3662V14.5283C10.8134 16.0367 9.59036 17.2596 8.08203 17.2598H6.65137V20.7715C6.65144 21.1508 6.80214 21.515 7.07031 21.7832C7.33858 22.0513 7.70275 22.2021 8.08203 22.2021H11.5938V20.7715C11.5938 19.2631 12.8169 18.0403 14.3252 18.04H18.4873C19.9958 18.04 21.2187 19.263 21.2188 20.7715V24.9336C21.2187 26.4422 19.9959 27.665 18.4873 27.665H14.3252C12.8168 27.6648 11.5938 26.442 11.5938 24.9336V23.5029H8.08203C7.35778 23.5029 6.66259 23.2152 6.15039 22.7031C5.63829 22.1909 5.35066 21.4958 5.35059 20.7715V17.2598H3.91992C2.41147 17.2597 1.1886 16.0368 1.18848 14.5283V10.3662C1.18853 8.85772 2.41143 7.63482 3.91992 7.63477H8.08203ZM20.3955 1.39062C24.1069 1.39079 27.1152 4.39987 27.1152 8.11133C27.1151 11.8226 24.1068 14.8309 20.3955 14.8311C16.6841 14.831 13.675 11.8227 13.6748 8.11133C13.6748 4.3998 16.684 1.39067 20.3955 1.39062ZM20.3955 2.69141C17.4024 2.69145 14.9756 5.11816 14.9756 8.11133C14.9757 11.1044 17.4025 13.5302 20.3955 13.5303C23.3885 13.5301 25.8143 11.1043 25.8145 8.11133C25.8145 5.11824 23.3886 2.69157 20.3955 2.69141ZM20.3955 3.81836C20.7545 3.81846 21.0457 4.10976 21.0459 4.46875V5.0332H22.8242C23.183 5.03369 23.4746 5.32471 23.4746 5.68359C23.4746 6.04246 23.183 6.33349 22.8242 6.33398H21.0459V7.46094H21.6094C22.1035 7.46106 22.5783 7.65757 22.9277 8.00684C23.2771 8.35635 23.4745 8.831 23.4746 9.3252C23.4746 9.81954 23.2772 10.2939 22.9277 10.6436C22.5782 10.9931 22.1037 11.1903 21.6094 11.1904H21.0459V11.7529C21.0458 12.112 20.7545 12.4032 20.3955 12.4033C20.0364 12.4033 19.7452 12.112 19.7451 11.7529V11.1904H17.9678C17.6087 11.1904 17.3176 10.899 17.3174 10.54C17.3174 10.1809 17.6086 9.88965 17.9678 9.88965H19.7451V8.76172H19.1816C18.6873 8.76168 18.2129 8.56527 17.8633 8.21582C17.5137 7.8662 17.3174 7.39185 17.3174 6.89746C17.3174 6.40305 17.5137 5.9287 17.8633 5.5791C18.2129 5.22964 18.6873 5.03324 19.1816 5.0332H19.7451V4.46875C19.7453 4.1097 20.0364 3.81836 20.3955 3.81836ZM21.0459 9.88965H21.6094C21.7587 9.88952 21.9032 9.8302 22.0088 9.72461C22.1143 9.61893 22.1738 9.47457 22.1738 9.3252C22.1737 9.17601 22.1142 9.03233 22.0088 8.92676C21.9032 8.82117 21.7587 8.76184 21.6094 8.76172H21.0459V9.88965ZM19.1816 6.33398C19.0323 6.33402 18.8889 6.39349 18.7832 6.49902C18.6775 6.6047 18.6182 6.74802 18.6182 6.89746C18.6182 7.04687 18.6776 7.19021 18.7832 7.2959C18.8889 7.40141 19.0323 7.4609 19.1816 7.46094H19.7451V6.33398H19.1816Z" fill="#229F7E"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Pricing Benchmarks</div><div class="nav-dropdwon-item-text">Pricing intelligence, negotiation playbooks, and contract terms.</div></div></div></a><a href="/solutions/procurement" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3996 6.36544C12.4611 5.71824 12.7617 5.11722 13.2427 4.6798C13.7237 4.24238 14.3504 4 15.0006 4C15.6507 4 16.2774 4.24238 16.7584 4.6798C17.2394 5.11722 17.54 5.71824 17.6015 6.36544C17.6385 6.78353 17.7756 7.18655 18.0014 7.5404C18.2271 7.89425 18.5348 8.18851 18.8983 8.39827C19.2619 8.60803 19.6706 8.72712 20.0899 8.74545C20.5092 8.76378 20.9268 8.68082 21.3072 8.50359C21.898 8.23537 22.5674 8.19656 23.1852 8.39471C23.803 8.59286 24.325 9.01378 24.6496 9.57557C24.9741 10.1374 25.0781 10.7998 24.9411 11.434C24.8042 12.0682 24.4362 12.6287 23.9088 13.0065C23.5653 13.2475 23.2849 13.5677 23.0914 13.94C22.8978 14.3122 22.7967 14.7257 22.7967 15.1452C22.7967 15.5648 22.8978 15.9782 23.0914 16.3505C23.2849 16.7228 23.5653 17.0429 23.9088 17.2839C24.4362 17.6618 24.8042 18.2223 24.9411 18.8565C25.0781 19.4907 24.9741 20.1531 24.6496 20.7149C24.325 21.2767 23.803 21.6976 23.1852 21.8958C22.5674 22.0939 21.898 22.0551 21.3072 21.7869C20.9268 21.6097 20.5092 21.5267 20.0899 21.545C19.6706 21.5634 19.2619 21.6824 18.8983 21.8922C18.5348 22.102 18.2271 22.3962 18.0014 22.7501C17.7756 23.1039 17.6385 23.5069 17.6015 23.925C17.54 24.5722 17.2394 25.1733 16.7584 25.6107C16.2774 26.0481 15.6507 26.2905 15.0006 26.2905C14.3504 26.2905 13.7237 26.0481 13.2427 25.6107C12.7617 25.1733 12.4611 24.5722 12.3996 23.925C12.3627 23.5068 12.2255 23.1036 11.9997 22.7496C11.7739 22.3957 11.4662 22.1013 11.1025 21.8915C10.7388 21.6817 10.3299 21.5627 9.91041 21.5445C9.49094 21.5263 9.07326 21.6094 8.69275 21.7869C8.10198 22.0551 7.43256 22.0939 6.81475 21.8958C6.19695 21.6976 5.67497 21.2767 5.35041 20.7149C5.02585 20.1531 4.92193 19.4907 5.05886 18.8565C5.1958 18.2223 5.5638 17.6618 6.09125 17.2839C6.43471 17.0429 6.71508 16.7228 6.90864 16.3505C7.1022 15.9782 7.20325 15.5648 7.20325 15.1452C7.20325 14.7257 7.1022 14.3122 6.90864 13.94C6.71508 13.5677 6.43471 13.2475 6.09125 13.0065C5.56454 12.6285 5.19719 12.0682 5.06058 11.4344C4.92398 10.8007 5.02788 10.1388 5.35209 9.57736C5.6763 9.01594 6.19766 8.59512 6.81485 8.39667C7.43205 8.19822 8.10097 8.23633 8.69163 8.50359C9.0721 8.68082 9.48966 8.76378 9.90898 8.74545C10.3283 8.72712 10.737 8.60803 11.1006 8.39827C11.4641 8.18851 11.7718 7.89425 11.9975 7.5404C12.2232 7.18655 12.3604 6.78353 12.3974 6.36544" fill="#229F7E"/>
+<path d="M12.3996 6.36544C12.4611 5.71824 12.7617 5.11722 13.2427 4.6798C13.7237 4.24238 14.3504 4 15.0006 4C15.6507 4 16.2774 4.24238 16.7584 4.6798C17.2394 5.11722 17.54 5.71824 17.6015 6.36544C17.6385 6.78353 17.7756 7.18655 18.0014 7.5404C18.2271 7.89425 18.5348 8.18851 18.8983 8.39827C19.2619 8.60803 19.6706 8.72712 20.0899 8.74545C20.5092 8.76378 20.9268 8.68082 21.3072 8.50359C21.898 8.23537 22.5674 8.19656 23.1852 8.39471C23.803 8.59286 24.325 9.01378 24.6496 9.57557C24.9741 10.1374 25.0781 10.7998 24.9411 11.434C24.8042 12.0682 24.4362 12.6287 23.9088 13.0065C23.5653 13.2475 23.2849 13.5677 23.0914 13.94C22.8978 14.3122 22.7967 14.7257 22.7967 15.1452C22.7967 15.5648 22.8978 15.9782 23.0914 16.3505C23.2849 16.7228 23.5653 17.0429 23.9088 17.2839C24.4362 17.6618 24.8042 18.2223 24.9411 18.8565C25.0781 19.4907 24.9741 20.1531 24.6496 20.7149C24.325 21.2767 23.803 21.6976 23.1852 21.8958C22.5674 22.0939 21.898 22.0551 21.3072 21.7869C20.9268 21.6097 20.5092 21.5267 20.0899 21.545C19.6706 21.5634 19.2619 21.6824 18.8983 21.8922C18.5348 22.102 18.2271 22.3962 18.0014 22.7501C17.7756 23.1039 17.6385 23.5069 17.6015 23.925C17.54 24.5722 17.2394 25.1733 16.7584 25.6107C16.2774 26.0481 15.6507 26.2905 15.0006 26.2905C14.3504 26.2905 13.7237 26.0481 13.2427 25.6107C12.7617 25.1733 12.4611 24.5722 12.3996 23.925C12.3627 23.5068 12.2255 23.1036 11.9997 22.7496C11.7739 22.3957 11.4662 22.1013 11.1025 21.8915C10.7388 21.6817 10.3299 21.5627 9.91041 21.5445C9.49094 21.5263 9.07326 21.6094 8.69275 21.7869C8.10198 22.0551 7.43256 22.0939 6.81475 21.8958C6.19695 21.6976 5.67497 21.2767 5.35041 20.7149C5.02585 20.1531 4.92193 19.4907 5.05886 18.8565C5.1958 18.2223 5.5638 17.6618 6.09125 17.2839C6.43471 17.0429 6.71508 16.7228 6.90864 16.3505C7.1022 15.9782 7.20325 15.5648 7.20325 15.1452C7.20325 14.7257 7.1022 14.3122 6.90864 13.94C6.71508 13.5677 6.43471 13.2475 6.09125 13.0065C5.56454 12.6285 5.19719 12.0682 5.06058 11.4344C4.92398 10.8007 5.02788 10.1388 5.35209 9.57736C5.6763 9.01594 6.19766 8.59512 6.81486 8.39667C7.43205 8.19822 8.10097 8.23633 8.69163 8.50359C9.0721 8.68082 9.48966 8.76378 9.90898 8.74545C10.3283 8.72712 10.737 8.60803 11.1006 8.39827C11.4641 8.18851 11.7718 7.89425 11.9975 7.5404C12.2232 7.18655 12.3604 6.78353 12.3974 6.36544" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.4662 15.1457C19.4662 16.029 19.2043 16.8924 18.7135 17.6269C18.2228 18.3613 17.5253 18.9337 16.7093 19.2718C15.8932 19.6098 14.9952 19.6982 14.1289 19.5259C13.2626 19.3536 12.4668 18.9282 11.8422 18.3036C11.2177 17.6791 10.7923 16.8833 10.62 16.017C10.4477 15.1507 10.5361 14.2527 10.8741 13.4366C11.2122 12.6206 11.7846 11.9231 12.519 11.4323C13.2534 10.9416 14.1169 10.6797 15.0002 10.6797C16.2507 10.6797 17.4466 11.1759 18.3447 12.0393L19.4662 13.1608" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.466 10.6797V13.1608H16.9849" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Renewal Management</div><div class="nav-dropdwon-item-text">Automated renewal alerts so nothing slips through.</div></div></div></a></div><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Platform &amp; Integrations</div><a href="/platform" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4968)">
+<path d="M16.6069 0.685547L16.7651 0.699219C16.9217 0.726597 17.07 0.793477 17.1948 0.894531C17.3611 1.02911 17.4765 1.21677 17.522 1.42578L17.8696 3.06055C19.1197 3.35977 20.3143 3.85471 21.4097 4.52734L22.814 3.61914L22.8149 3.61816C22.9946 3.50305 23.2082 3.4523 23.4204 3.47461C23.5798 3.49144 23.732 3.54864 23.8618 3.63965L23.9839 3.74219L26.2544 6.0127C26.4048 6.16449 26.4995 6.36367 26.522 6.57617C26.5443 6.78841 26.4935 7.00195 26.3784 7.18164L26.3774 7.18262L25.4683 8.58594C26.1413 9.68185 26.6359 10.8772 26.9351 12.1279L28.5708 12.4775C28.7806 12.5223 28.9687 12.6372 29.104 12.8037C29.2394 12.9704 29.3132 13.1789 29.314 13.3936V16.6064C29.313 16.8202 29.2394 17.0271 29.105 17.1934C28.9705 17.3596 28.7836 17.4759 28.5747 17.5215H28.5737L26.938 17.8691C26.6386 19.1196 26.1442 20.3145 25.4712 21.4102L26.3813 22.8135V22.8145C26.4966 22.9942 26.5472 23.2076 26.5249 23.4199C26.5025 23.6324 26.4087 23.8316 26.2583 23.9834H26.2573L23.9868 26.2539C23.8351 26.4043 23.6368 26.499 23.4243 26.5215C23.2118 26.5439 22.9977 26.4933 22.8179 26.3779V26.377L21.4126 25.4678C20.3174 26.1403 19.1234 26.6353 17.8735 26.9346L17.5249 28.5703C17.48 28.7805 17.3647 28.9692 17.1978 29.1045C17.0307 29.2398 16.8219 29.3132 16.6069 29.3135H13.3931C13.1793 29.3125 12.9723 29.239 12.8062 29.1045C12.6399 28.9699 12.5244 28.7823 12.479 28.5732L12.1294 26.9375C10.8786 26.6383 9.68332 26.1438 8.5874 25.4707L7.18408 26.3809C7.00422 26.4962 6.79014 26.5469 6.57764 26.5244C6.36529 26.502 6.16689 26.408 6.01514 26.2578L3.74365 23.9863C3.59336 23.8346 3.49955 23.6362 3.47705 23.4238C3.45461 23.2113 3.50523 22.9972 3.62061 22.8174L4.52881 21.4121C3.85642 20.3171 3.3622 19.1227 3.06299 17.873L1.42725 17.5244C1.21763 17.479 1.02981 17.3631 0.89502 17.1963C0.760288 17.0293 0.686273 16.821 0.686035 16.6064V13.3926L0.699707 13.2344C0.727117 13.0781 0.794155 12.9304 0.89502 12.8057C1.0296 12.6394 1.21722 12.524 1.42627 12.4785L3.06104 12.1289C3.36013 10.8785 3.85515 9.68353 4.52783 8.58789L3.61963 7.18359L3.61865 7.18262C3.50353 7.00297 3.45279 6.78935 3.4751 6.57715C3.49754 6.36464 3.59228 6.16547 3.74268 6.01367L6.01318 3.74316L6.13525 3.64062C6.26509 3.54942 6.41715 3.49243 6.57666 3.47559C6.73616 3.45879 6.89648 3.48282 7.04248 3.54492L7.18311 3.61914V3.62012L8.58643 4.52832C9.68247 3.85462 10.8782 3.35924 12.1294 3.05957L12.478 1.4248H12.479C12.5247 1.21604 12.6399 1.02883 12.8062 0.894531C12.9725 0.760213 13.1802 0.686235 13.394 0.685547H16.6069Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M13.249 6.19824C14.9898 5.85201 16.7938 6.02979 18.4336 6.70898C20.0733 7.38818 21.4749 8.53801 22.4609 10.0137C23.447 11.4895 23.9736 13.2251 23.9736 15C23.9708 17.3791 23.0251 19.6605 21.3428 21.3428C19.6605 23.0251 17.3791 23.9708 15 23.9736C13.2251 23.9736 11.4895 23.447 10.0137 22.4609C8.53801 21.4749 7.38818 20.0733 6.70898 18.4336C6.02979 16.7938 5.85201 14.9898 6.19824 13.249C6.54451 11.5082 7.39923 9.90936 8.6543 8.6543C9.90936 7.39923 11.5082 6.54451 13.249 6.19824Z" fill="white" stroke="white" stroke-width="0.25"/>
+<path d="M18.0063 11.7056L18.104 11.7144C18.2 11.7319 18.2903 11.7752 18.3638 11.8413C18.4618 11.9296 18.5234 12.0518 18.5366 12.1831L19.0903 17.6753C19.1147 17.9168 19.088 18.1605 19.0122 18.3911C18.9364 18.6216 18.8137 18.8342 18.6509 19.0142C18.488 19.1941 18.2887 19.3377 18.0669 19.436C17.9005 19.5097 17.7237 19.5569 17.5435 19.5757L17.3618 19.5845H12.6382C12.3957 19.5845 12.1557 19.5344 11.9341 19.436C11.7124 19.3376 11.5138 19.1931 11.3511 19.0132C11.1885 18.8333 11.0654 18.6215 10.9897 18.3911C10.9141 18.1606 10.8873 17.9166 10.9116 17.6753L11.4653 12.1831C11.4785 12.0518 11.5411 11.9296 11.6392 11.8413C11.737 11.7534 11.8641 11.706 11.9956 11.7065V11.7056H18.0063Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M17.1846 13.5767C17.1845 13.7172 17.1277 13.8523 17.0283 13.9517C16.9289 14.0509 16.7938 14.1069 16.6533 14.1069C16.5128 14.1068 16.3777 14.051 16.2783 13.9517C16.1789 13.8523 16.1232 13.7172 16.123 13.5767V11.4702C16.1177 11.1759 15.9971 10.8952 15.7871 10.689C15.5771 10.4828 15.2943 10.3677 15 10.3677C14.7057 10.3677 14.4229 10.4827 14.2129 10.689C14.0029 10.8952 13.8823 11.1759 13.877 11.4702V13.5767C13.8768 13.7172 13.8211 13.8523 13.7217 13.9517C13.6222 14.051 13.4872 14.1069 13.3467 14.1069C13.2061 14.1069 13.0711 14.051 12.9717 13.9517C12.8723 13.8523 12.8165 13.7172 12.8164 13.5767V11.4663L12.8301 11.2524C12.8858 10.7577 13.1093 10.2944 13.4668 9.94189C13.8754 9.53898 14.4262 9.31306 15 9.31299C15.5739 9.31299 16.1255 9.53892 16.5342 9.94189C16.9427 10.3448 17.1765 10.8926 17.1846 11.4663V13.5767Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4968">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Smart Recommendations</div><div class="nav-dropdwon-item-text">AI-driven suggestions to optimize your setup.</div></div></div></a><a href="/native-integrations" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.4587 25.2083V8.02083C11.4587 7.71694 11.3379 7.42549 11.1231 7.21061C10.9082 6.99572 10.6167 6.875 10.3128 6.875H4.58366C3.97587 6.875 3.39298 7.11644 2.96321 7.54621C2.53343 7.97598 2.29199 8.55888 2.29199 9.16667V22.9167C2.29199 23.5245 2.53343 24.1073 2.96321 24.5371C3.39298 24.9669 3.97587 25.2083 4.58366 25.2083H18.3337C18.9414 25.2083 19.5243 24.9669 19.9541 24.5371C20.3839 24.1073 20.6253 23.5245 20.6253 22.9167V17.1875C20.6253 16.8836 20.5046 16.5922 20.2897 16.3773C20.0748 16.1624 19.7834 16.0417 19.4795 16.0417H2.29199" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.0628 2.29199H17.1878C16.555 2.29199 16.042 2.805 16.042 3.43783V10.3128C16.042 10.9457 16.555 11.4587 17.1878 11.4587H24.0628C24.6957 11.4587 25.2087 10.9457 25.2087 10.3128V3.43783C25.2087 2.805 24.6957 2.29199 24.0628 2.29199Z" fill="#229F7E" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Integrations</div><div class="nav-dropdwon-item-text">Fully integrate into your software ecosystem.</div></div></div></a><a href="/marketplace" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.75 26.25V20C18.75 19.6685 18.6183 19.3505 18.3839 19.1161C18.1495 18.8817 17.8315 18.75 17.5 18.75H12.5C12.1685 18.75 11.8505 18.8817 11.6161 19.1161C11.3817 19.3505 11.25 19.6685 11.25 20V26.25" fill="#229F7E"/>
+<path d="M22.2177 12.8875C21.9571 12.638 21.6103 12.4988 21.2496 12.4988C20.8888 12.4988 20.542 12.638 20.2814 12.8875C19.7002 13.4419 18.9278 13.7512 18.1246 13.7512C17.3213 13.7512 16.5489 13.4419 15.9677 12.8875C15.7072 12.6384 15.3606 12.4994 15.0002 12.4994C14.6397 12.4994 14.2932 12.6384 14.0327 12.8875C13.4514 13.4423 12.6787 13.7518 11.8752 13.7518C11.0716 13.7518 10.299 13.4423 9.71768 12.8875C9.45711 12.638 9.11029 12.4988 8.74956 12.4988C8.38883 12.4988 8.04201 12.638 7.78143 12.8875C7.21999 13.4233 6.47928 13.731 5.70347 13.7507C4.92766 13.7704 4.17227 13.5008 3.58432 12.9942C2.99637 12.4877 2.61793 11.7805 2.52267 11.0103C2.4274 10.2401 2.62212 9.46203 3.06893 8.8275L6.68018 3.5975C6.90932 3.25939 7.2178 2.98257 7.57866 2.79124C7.93951 2.59992 8.34175 2.49992 8.75018 2.5H21.2502C21.6574 2.49984 22.0585 2.59918 22.4186 2.78936C22.7788 2.97954 23.087 3.25482 23.3164 3.59125L26.9352 8.83125C27.3821 9.46628 27.5766 10.245 27.4807 11.0155C27.3849 11.7861 27.0055 12.4934 26.4166 12.9996C25.8278 13.5058 25.0715 13.7746 24.2953 13.7536C23.519 13.7327 22.7784 13.4235 22.2177 12.8862" fill="#229F7E"/>
+<path d="M22.2177 12.8875C21.9571 12.638 21.6103 12.4988 21.2496 12.4988C20.8888 12.4988 20.542 12.638 20.2814 12.8875C19.7002 13.4419 18.9278 13.7512 18.1246 13.7512C17.3213 13.7512 16.5489 13.4419 15.9677 12.8875C15.7072 12.6384 15.3606 12.4994 15.0002 12.4994C14.6397 12.4994 14.2932 12.6384 14.0327 12.8875C13.4514 13.4423 12.6787 13.7518 11.8752 13.7518C11.0716 13.7518 10.299 13.4423 9.71768 12.8875C9.45711 12.638 9.11029 12.4988 8.74956 12.4988C8.38883 12.4988 8.04201 12.638 7.78143 12.8875C7.21999 13.4233 6.47928 13.731 5.70347 13.7507C4.92766 13.7704 4.17227 13.5008 3.58432 12.9942C2.99637 12.4877 2.61793 11.7805 2.52267 11.0103C2.4274 10.2401 2.62212 9.46203 3.06893 8.8275L6.68018 3.5975C6.90932 3.25939 7.2178 2.98257 7.57866 2.79124C7.93951 2.59992 8.34175 2.49992 8.75018 2.5H21.2502C21.6574 2.49984 22.0585 2.59918 22.4187 2.78936C22.7788 2.97954 23.087 3.25482 23.3164 3.59125L26.9352 8.83125C27.3821 9.46628 27.5766 10.245 27.4807 11.0155C27.3849 11.7861 27.0055 12.4934 26.4166 12.9996C25.8278 13.5058 25.0715 13.7746 24.2953 13.7536C23.519 13.7327 22.7784 13.4235 22.2177 12.8863" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13.6875V23.75C5 24.413 5.26339 25.0489 5.73223 25.5178C6.20107 25.9866 6.83696 26.25 7.5 26.25H22.5C23.163 26.25 23.7989 25.9866 24.2678 25.5178C24.7366 25.0489 25 24.413 25 23.75V13.6875" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Software Marketplace</div><div class="nav-dropdwon-item-text">Instant access to discounted rates and preferred contract terms.</div></div></div></a></div></div></div></nav></div></div><div data-delay="0" data-hover="true" class="navigation__dropdown w-dropdown"><div class="navigation__dropdown-trigger-redesigned w-dropdown-toggle"><div>Solutions</div><div class="navigation__dropdown-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.4926 13.4359L8.34603 10.2897L7.63617 10.9985L11.4997 14.8621L15.3633 10.9985L14.6534 10.2897L11.5069 13.4359L11.4926 13.4359Z" fill="#2557E9"/>
+<path id="Vector_2" d="M8.34663 10.1538C8.38286 10.1538 8.41766 10.1683 8.44287 10.1939L11.5 13.251L14.5571 10.1939C14.6079 10.1431 14.6988 10.1431 14.7499 10.1939L15.4598 10.9038C15.5134 10.9574 15.5134 11.0437 15.4598 11.0966L11.5966 14.9598C11.543 15.0134 11.4567 15.0134 11.4038 14.9598L7.54022 11.0962C7.4866 11.0426 7.4866 10.9563 7.54022 10.9034L8.25007 10.1935C8.27564 10.168 8.31009 10.1534 8.34631 10.1534L8.34663 10.1538ZM11.5075 13.5727L11.494 13.5727C11.4578 13.5727 11.423 13.5582 11.3977 13.5326L8.34699 10.4818L7.82961 10.9992L11.5003 14.67L15.1711 10.9989L14.6537 10.4815L11.6029 13.5322C11.5774 13.5578 11.5429 13.5723 11.5067 13.5723L11.5075 13.5727Z" fill="#068466"/>
+</g>
+</g>
+</svg></div></div><nav class="nav-dropdown-list-redesigned w-dropdown-list"><div class="nav-dropdown-list-inner-redesigned is--solution"><div class="nav-dropdown-top-arrow is--solutions w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="12" viewBox="0 0 26 12" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.8293H25.3155L14.072 0.585786C13.2909 -0.195262 12.0246 -0.195262 11.2435 0.585787L0 11.8293Z" fill="white"/>
+</svg></div><div class="nav-dropdown-list-inner-wrapper-redesigned"><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6.07935C2.25 4.42249 3.59315 3.07935 5.25 3.07935H18.75C20.4069 3.07935 21.75 4.42249 21.75 6.07935V15.8293C21.75 17.4862 20.4069 18.8293 18.75 18.8293H15.75V19.0867C15.75 19.6834 15.9871 20.2557 16.409 20.6777L17.0303 21.299C17.2448 21.5135 17.309 21.8361 17.1929 22.1164C17.0768 22.3966 16.8033 22.5793 16.5 22.5793H7.5C7.19665 22.5793 6.92318 22.3966 6.80709 22.1164C6.691 21.8361 6.75517 21.5135 6.96967 21.299L7.59099 20.6777C8.01295 20.2557 8.25 19.6834 8.25 19.0867V18.8293H5.25C3.59315 18.8293 2.25 17.4862 2.25 15.8293V6.07935ZM3.75 6.07935V13.5793C3.75 14.4078 4.42157 15.0793 5.25 15.0793H18.75C19.5784 15.0793 20.25 14.4078 20.25 13.5793V6.07935C20.25 5.25092 19.5784 4.57935 18.75 4.57935H5.25C4.42157 4.57935 3.75 5.25092 3.75 6.07935Z" fill="#229F7E"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">IT Teams</div><div class="nav-dropdwon-item-text">Automate software management and focus on your core projects.</div></div></div></a><a href="/solutions/procurement" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M2.25 3.07935C1.83579 3.07935 1.5 3.41513 1.5 3.82935C1.5 4.24356 1.83579 4.57935 2.25 4.57935H3.63568C3.80558 4.57935 3.95425 4.69357 3.99803 4.85772L6.55576 14.4492C4.94178 14.8679 3.75 16.3344 3.75 18.0793C3.75 18.4936 4.08579 18.8293 4.5 18.8293H20.25C20.6642 18.8293 21 18.4936 21 18.0793C21 17.6651 20.6642 17.3293 20.25 17.3293H5.37803C5.68691 16.4555 6.52034 15.8293 7.5 15.8293H18.7183C19.0051 15.8293 19.2668 15.6657 19.3925 15.4079C20.5277 13.0784 21.5183 10.6654 22.3527 8.1806C22.4191 7.98291 22.4002 7.76651 22.3005 7.58334C22.2008 7.40017 22.0294 7.26677 21.8273 7.21517C17.0055 5.98377 11.9536 5.32935 6.75 5.32935C6.39217 5.32935 6.03505 5.33244 5.67868 5.33861L5.44738 4.47123C5.2285 3.65043 4.48515 3.07935 3.63568 3.07935H2.25Z" fill="#229F7E"/>
+  <path d="M3.75 21.0793C3.75 20.2509 4.42157 19.5793 5.25 19.5793C6.07843 19.5793 6.75 20.2509 6.75 21.0793C6.75 21.9078 6.07843 22.5793 5.25 22.5793C4.42157 22.5793 3.75 21.9078 3.75 21.0793Z" fill="#229F7E"/>
+  <path d="M16.5 21.0793C16.5 20.2509 17.1716 19.5793 18 19.5793C18.8284 19.5793 19.5 20.2509 19.5 21.0793C19.5 21.9078 18.8284 22.5793 18 22.5793C17.1716 22.5793 16.5 21.9078 16.5 21.0793Z" fill="#229F7E"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Procurement</div><div class="nav-dropdwon-item-text">Streamline intake, automate workflows, and access price benchmarks for smarter purchasing.</div></div></div></a><a href="/solutions/finance" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#229F7E" d="M128 96V80c0-44.2 86-80 192-80s192 35.8 192 80v16c0 30.6-41.3 57.2-102 70.7c-2.4-2.8-4.9-5.5-7.4-8c-15.5-15.3-35.5-26.9-56.4-35.5c-41.9-17.5-96.5-27.1-154.2-27.1c-21.9 0-43.3 1.4-63.8 4.1c-.2-1.3-.2-2.7-.2-4.1zm304 257v-46.2c15.1-3.9 29.3-8.5 42.2-13.9c13.2-5.5 26.1-12.2 37.8-20.3V288c0 26.8-31.5 50.5-80 65m0-96v-33c0-4.5-.4-8.8-1-13c15.5-3.9 30-8.6 43.2-14.2s26.1-12.2 37.8-20.3v15.4c0 26.8-31.5 50.5-80 65zM0 240v-16c0-44.2 86-80 192-80s192 35.8 192 80v16c0 44.2-86 80-192 80S0 284.2 0 240m384 96c0 44.2-86 80-192 80S0 380.2 0 336v-15.4c11.6 8.1 24.5 14.7 37.8 20.3C79.7 358.4 134.3 368 192 368s112.3-9.7 154.2-27.1c13.2-5.5 26.1-12.2 37.8-20.3zm0 80.6V432c0 44.2-86 80-192 80S0 476.2 0 432v-15.4c11.6 8.1 24.5 14.7 37.8 20.3C79.7 454.4 134.3 464 192 464s112.3-9.7 154.2-27.1c13.2-5.5 26.1-12.2 37.8-20.3"/></svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Finance</div><div class="nav-dropdwon-item-text">Get real-time spend visibility, automate reporting, uncover savings, and cut hours of manual renewal work.</div></div></div></a></div></div></nav></div><a href="/pricing" class="navigation__link-redesigned w-inline-block"><div>Pricing</div><div class="navigation__dropdown-icon"></div></a><a href="/customer-stories" class="navigation__link-redesigned w-inline-block"><div>Customers</div><div class="navigation__dropdown-icon"></div></a><div data-delay="0" data-hover="true" class="navigation__dropdown w-dropdown"><div class="navigation__dropdown-trigger-redesigned w-dropdown-toggle"><div>Resources</div><div class="navigation__dropdown-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.4926 13.4359L8.34603 10.2897L7.63617 10.9985L11.4997 14.8621L15.3633 10.9985L14.6534 10.2897L11.5069 13.4359L11.4926 13.4359Z" fill="#2557E9"/>
+<path id="Vector_2" d="M8.34663 10.1538C8.38286 10.1538 8.41766 10.1683 8.44287 10.1939L11.5 13.251L14.5571 10.1939C14.6079 10.1431 14.6988 10.1431 14.7499 10.1939L15.4598 10.9038C15.5134 10.9574 15.5134 11.0437 15.4598 11.0966L11.5966 14.9598C11.543 15.0134 11.4567 15.0134 11.4038 14.9598L7.54022 11.0962C7.4866 11.0426 7.4866 10.9563 7.54022 10.9034L8.25007 10.1935C8.27564 10.168 8.31009 10.1534 8.34631 10.1534L8.34663 10.1538ZM11.5075 13.5727L11.494 13.5727C11.4578 13.5727 11.423 13.5582 11.3977 13.5326L8.34699 10.4818L7.82961 10.9992L11.5003 14.67L15.1711 10.9989L14.6537 10.4815L11.6029 13.5322C11.5774 13.5578 11.5429 13.5723 11.5067 13.5723L11.5075 13.5727Z" fill="#068466"/>
+</g>
+</g>
+</svg></div></div><nav class="nav-dropdown-list-redesigned is--resources w-dropdown-list"><div class="nav-dropdown-list-inner-redesigned is--resources"><div class="nav-dropdown-top-arrow is--resources w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="12" viewBox="0 0 26 12" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.8293H25.3155L14.072 0.585786C13.2909 -0.195262 12.0246 -0.195262 11.2435 0.585787L0 11.8293Z" fill="white"/>
+</svg></div><div class="nav-dropdown-list-inner-wrapper-redesigned"><a href="/blog" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M19.1773 23.0365C19.0752 23.0365 18.9723 23.0365 18.8703 23.0182C17.3451 22.869 16.1538 21.4833 16.1538 19.8744V9.30752C16.1538 8.92643 16.4704 8.60986 16.8515 8.60986H19.6421C21.0557 8.60986 22.1999 9.75402 22.1999 11.1676V20.0043C22.1999 20.8598 21.8371 21.6787 21.2048 22.2464C20.6467 22.7487 19.9211 23.0278 19.1677 23.0278L19.1773 23.0365ZM17.5587 10.013V19.8822C17.5587 20.7848 18.2006 21.5566 19.0194 21.6307C19.4842 21.6769 19.9307 21.5286 20.2848 21.2217C20.6293 20.9147 20.8246 20.4778 20.8246 20.0121V11.1755C20.8246 10.5336 20.304 10.013 19.6622 10.013H17.5587Z" fill="#229F7E"/>
+  <path d="M19.1866 21.6411C18.2936 21.6411 17.5584 20.9059 17.5584 20.0129V5.59502C17.5584 4.1814 16.4143 3.03725 15.0007 3.03725L4.76871 3.03638C3.35509 3.03638 2.21094 4.18053 2.21094 5.59415V18.6167C2.21094 21.0542 4.19228 23.0355 6.62971 23.0355H19.1875C19.5686 23.0355 19.8852 22.7189 19.8852 22.3379C19.8852 21.9568 19.5686 21.6402 19.1875 21.6402L19.1866 21.6411ZM6.16402 6.75748H10.3499C10.731 6.75748 11.0476 7.07405 11.0476 7.45513C11.0476 7.83622 10.731 8.15279 10.3499 8.15279H6.16402C5.78293 8.15279 5.46636 7.83622 5.46636 7.45513C5.46636 7.07405 5.78293 6.75748 6.16402 6.75748ZM13.6054 19.3153H6.16402C5.78293 19.3153 5.46636 18.9987 5.46636 18.6176C5.46636 18.2365 5.78293 17.92 6.16402 17.92H13.6054C13.9865 17.92 14.303 18.2365 14.303 18.6176C14.303 18.9987 13.9865 19.3153 13.6054 19.3153ZM13.6054 15.5941H6.16402C5.78293 15.5941 5.46636 15.2776 5.46636 14.8965C5.46636 14.5154 5.78293 14.1988 6.16402 14.1988H13.6054C13.9865 14.1988 14.303 14.5154 14.303 14.8965C14.303 15.2776 13.9865 15.5941 13.6054 15.5941ZM13.6054 11.8739H6.16402C5.78293 11.8739 5.46636 11.5573 5.46636 11.1763C5.46636 10.7952 5.78293 10.4786 6.16402 10.4786H13.6054C13.9865 10.4786 14.303 10.7952 14.303 11.1763C14.303 11.5573 13.9865 11.8739 13.6054 11.8739Z" fill="#229F7E"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Blog</div></div></div></a><a href="/guides-reports" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <g clip-path="url(#clip0_9015_3773)">
+    <path d="M2.51673 22.0028H5.14517C5.38195 22.0028 5.57903 21.8137 5.57903 21.5689L5.57771 10.645C5.57771 10.4083 5.38458 10.2112 5.14384 10.2112H2.51541C2.27863 10.2112 2.08154 10.4043 2.08154 10.645V21.5703C2.08287 21.8137 2.27993 22.0028 2.51673 22.0028Z" fill="#229F7E"/>
+    <path d="M7.6702 13.3674C7.43341 13.3674 7.23633 13.5566 7.23633 13.8013V21.5728C7.23633 21.8135 7.42946 22.0067 7.6702 22.0067H10.2986C10.5354 22.0067 10.7325 21.8175 10.7325 21.5728V13.8013C10.7325 13.5605 10.5394 13.3674 10.2986 13.3674H7.6702Z" fill="#229F7E"/>
+    <path d="M10.7827 0.987305V5.01646H14.8119C14.5883 2.89995 12.8951 1.21081 10.7827 0.987305Z" fill="#229F7E"/>
+    <path d="M10.2987 10.0461C12.6347 10.0461 14.5727 8.26165 14.8094 5.98242H10.4985L7.45068 9.03416C8.22983 9.66383 9.22188 10.0461 10.2987 10.0461Z" fill="#229F7E"/>
+    <path d="M9.81419 5.30092V0.987305C7.53496 1.22409 5.75049 3.16467 5.75049 5.49801C5.75049 6.57479 6.13278 7.56691 6.75981 8.34605L9.81419 5.30092Z" fill="#229F7E"/>
+    <path d="M12.3916 11.9414V21.5727C12.3916 21.8135 12.5847 22.0066 12.8255 22.0066H15.446C15.6867 22.0066 15.8798 21.8174 15.8798 21.5727V11.9414C15.8798 11.7047 15.6907 11.5076 15.446 11.5076H12.8255C12.5887 11.5089 12.3916 11.7047 12.3916 11.9414Z" fill="#229F7E"/>
+    <path d="M17.9353 22.0028H20.5558C20.7966 22.0028 20.9897 21.8136 20.9897 21.5689V7.34598C20.9897 7.10919 20.8005 6.91211 20.5558 6.91211H17.9353C17.6985 6.91211 17.5015 7.10524 17.5015 7.34598V21.5689C17.5054 21.8136 17.6986 22.0028 17.9353 22.0028Z" fill="#229F7E"/>
+    <path d="M23.7797 23.7028H0.356505V1.00467C0.356505 0.767884 0.167343 0.570801 -0.0773628 0.570801C-0.314148 0.570801 -0.51123 0.763932 -0.51123 1.00467V24.1369C-0.51123 24.3737 -0.3181 24.5708 -0.0773628 24.5708H23.7796C24.0164 24.5708 24.2135 24.3777 24.2135 24.1369C24.2135 23.8935 24.0204 23.7028 23.7797 23.7028Z" fill="#229F7E"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_9015_3773">
+      <rect width="24" height="24" fill="white" transform="translate(0 0.829346)"/>
+    </clipPath>
+  </defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Guides &amp; Reports</div></div></div></a><a href="/webinars" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.73769 4.44556H13.8423L20.2845 11.1707V16.6931C20.2845 18.2028 19.0565 19.4308 17.5468 19.4308L12 19.4316V20.6707H14.2788C14.6771 20.6707 15 20.9936 15 21.3919C15 21.7898 14.6774 22.1123 14.2796 22.1122L5.72045 22.1109C5.32254 22.1108 5 21.7882 5 21.3903C5 20.9924 5.32255 20.6699 5.72044 20.6699H8V19.4308H2.73769C1.22796 19.4308 0 18.2028 0 16.6931V7.18324C0 5.67351 1.22796 4.44556 2.73769 4.44556Z" fill="#229F7E"/>
+<path d="M10.1553 7.90015C12.1515 7.90015 13.7762 9.52404 13.7764 11.5203C13.7764 12.5527 13.3357 13.4797 12.6377 14.1394L12.4365 14.3298L12.6807 14.4607C13.2581 14.7702 13.7234 15.1736 14.0146 15.6492C14.2009 15.953 14.106 16.3489 13.8027 16.5349V16.5359C13.4986 16.7225 13.1032 16.626 12.917 16.323C12.5479 15.7227 11.5226 15.1404 10.1553 15.1404C8.7813 15.1404 7.77323 15.705 7.39355 16.325C7.27212 16.5227 7.06128 16.6314 6.84375 16.6316C6.72955 16.6316 6.61247 16.6006 6.50684 16.5359H6.50586C6.24168 16.3728 6.13595 16.0488 6.23828 15.7673L6.29492 15.6501C6.5873 15.1751 7.0527 14.771 7.62891 14.4626L7.87305 14.3328L7.67188 14.1414C6.97471 13.4796 6.53516 12.5525 6.53516 11.5203C6.53528 9.52409 8.15909 7.90022 10.1553 7.90015ZM10.1543 9.18823C8.86866 9.18833 7.82239 10.2346 7.82227 11.5203C7.82227 12.807 8.86865 13.8522 10.1543 13.8523C11.4401 13.8523 12.4863 12.8061 12.4863 11.5203C12.4862 10.2346 11.44 9.18823 10.1543 9.18823Z" fill="white" stroke="#229F7E" stroke-width="0.4"/>
+<path d="M18.5435 1.57104C21.2514 1.57118 23.4546 3.77493 23.4546 6.48218C23.4545 9.18927 21.2505 11.3932 18.5435 11.3933C15.8362 11.3933 13.6325 9.19011 13.6323 6.48218C13.6323 3.77409 15.8354 1.57104 18.5435 1.57104Z" fill="#229F7E" stroke="white" stroke-width="0.8"/>
+<path d="M20.2 6.2588C20.3333 6.33578 20.3333 6.52823 20.2 6.60521L17.8 7.99085C17.6667 8.06783 17.5 7.9716 17.5 7.81764L17.5 5.04636C17.5 4.8924 17.6667 4.79618 17.8 4.87316L20.2 6.2588Z" fill="white"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Webinars</div></div></div></a></div></div></nav></div><div class="nav-right mobile"><div class="w-layout-grid nav-buttons-2"><a href="/schedule-demo" id="w-node-_011fc853-0871-cf75-5a12-b5e430cc74ea-30cc746f" class="button nav-button green w-button">Schedule a call</a></div></div><a href="https://app.sastrify.com/" class="login-button">Log-in</a></div></nav><nav role="navigation" class="navigation__menu-mobile-redesigned w-nav-menu"><div class="navigation__menu-mobile-inner"><div data-accordion="accordion-wrapper" class="navigation__mobile-links"><div data-accordion="accordion-item" class="navigation__menu-mobile--item"><div class="navigation__mobile-item--header"><div>Product</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu is--first"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Software Visibility</div><a href="/platform" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9472_4306)">
+<path d="M12.998 0.138672C16.2889 0.138672 19.2942 2.02701 20.7842 4.99219L20.8184 5.06055L20.8945 5.06738C24.5013 5.3912 27.3623 8.40857 27.3623 12.1396C27.3623 15.7615 24.6547 18.7734 21.1133 19.2012L21.0391 19.21L21.0059 19.2783C21.0046 19.281 21.0048 19.2803 21.002 19.2861L20.959 19.374L25.0547 23.4697C25.9433 24.3583 25.9431 25.8047 25.0547 26.6934C24.166 27.5821 22.7197 27.582 21.8311 26.6934L17.708 22.5703L17.6201 22.6113C16.7057 23.0404 15.6857 23.2764 14.6094 23.2764C11.8226 23.2764 9.40466 21.6593 8.23828 19.3184L8.2002 19.2422H5.63965C2.60554 19.2422 0.137696 16.7844 0.137695 13.751C0.137695 11.2826 1.76234 9.16389 4.08496 8.48633L4.17773 8.45898L4.18359 8.36328C4.47047 3.85503 8.30248 0.138672 12.998 0.138672ZM14.6094 10.3799C11.4237 10.3799 8.82129 12.9823 8.82129 16.168C8.82129 19.3539 11.4241 21.9453 14.6094 21.9453C15.8407 21.9453 16.9833 21.5556 17.9238 20.8965L18.0049 20.9775L22.7754 25.749C23.1432 26.1168 23.7415 26.1166 24.1094 25.749C24.4772 25.3812 24.4773 24.7828 24.1094 24.415L19.3477 19.6523L19.2734 19.5791C19.9782 18.6223 20.3975 17.4435 20.3975 16.168C20.3975 12.9823 17.795 10.3799 14.6094 10.3799Z" fill="#229F7E" stroke="white" stroke-width="0.275"/>
+<path d="M14.6094 12.1406C12.3882 12.1406 10.5811 13.9477 10.5811 16.1689C10.5811 18.3902 12.3882 20.1973 14.6094 20.1973C16.8306 20.1973 18.6377 18.3902 18.6377 16.1689C18.6377 13.9477 16.8306 12.1406 14.6094 12.1406Z" fill="#229F7E"/>
+</g>
+<defs>
+<clipPath id="clip0_9472_4306">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Shadow IT Detection</div><div class="nav-dropdwon-item-text">Visibility across your entire software landscape.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4482)">
+<g clip-path="url(#clip1_9475_4482)">
+<path d="M17 20.0625H3.1875V2.88869C3.1875 2.50194 3.50194 2.1875 3.88869 2.1875H15.4871C15.8739 2.1875 16.1875 2.50194 16.1875 2.88869V4.625C16.1875 5.0735 16.5507 5.4375 17 5.4375C17.4493 5.4375 17.8125 5.0735 17.8125 4.625V2.88869C17.8125 1.60575 16.7693 0.5625 15.4871 0.5625H3.88869C2.60575 0.5625 1.5625 1.60575 1.5625 2.88869V22.6121C1.5625 23.8943 2.60575 24.9375 3.88869 24.9375H15.4871C16.7693 24.9375 17.8125 23.8943 17.8125 22.6121V20.875C17.8125 20.4257 17.4493 20.0625 17 20.0625Z" fill="#229F7E"/>
+<path d="M22.6875 11.9375H17.8125V7.0625C17.8125 6.614 17.4493 6.25 17 6.25C13.4161 6.25 10.5 9.16606 10.5 12.75C10.5 16.3339 13.4161 19.25 17 19.25C20.5839 19.25 23.5 16.3339 23.5 12.75C23.5 12.3015 23.1368 11.9375 22.6875 11.9375Z" fill="#229F7E"/>
+<path d="M19.4375 3.8125C18.9882 3.8125 18.625 4.1765 18.625 4.625V10.3125C18.625 10.761 18.9882 11.125 19.4375 11.125H25.125C25.5743 11.125 25.9375 10.761 25.9375 10.3125C25.9375 6.72856 23.0214 3.8125 19.4375 3.8125ZM20.25 9.5V5.50494C22.2886 5.84781 23.9014 7.46144 24.2451 9.5H20.25Z" fill="#229F7E"/>
+<path d="M14.5625 4.625C14.5625 4.1765 14.1985 3.8125 13.75 3.8125H5.625C5.1765 3.8125 4.8125 4.1765 4.8125 4.625C4.8125 5.0735 5.1765 5.4375 5.625 5.4375H13.75C14.1985 5.4375 14.5625 5.0735 14.5625 4.625Z" fill="#229F7E"/>
+<path d="M5.625 6.25C5.1765 6.25 4.8125 6.614 4.8125 7.0625C4.8125 7.511 5.1765 7.875 5.625 7.875H9.6875C10.136 7.875 10.5 7.511 10.5 7.0625C10.5 6.614 10.136 6.25 9.6875 6.25H5.625Z" fill="#229F7E"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_9475_4482">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+<clipPath id="clip1_9475_4482">
+<rect width="26" height="26" fill="white" transform="translate(0.75 -0.25)"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Usage Analytics</div><div class="nav-dropdwon-item-text">Uncover unused seats and overlapping tools.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.3518 21.0001L16.0185 4.66677C15.815 4.30767 15.5199 4.00898 15.1632 3.80118C14.8066 3.59337 14.4012 3.48389 13.9885 3.48389C13.5757 3.48389 13.1704 3.59337 12.8138 3.80118C12.4571 4.00898 12.162 4.30767 11.9585 4.66677L2.62516 21.0001C2.41946 21.3563 2.31159 21.7607 2.31251 22.172C2.31342 22.5834 2.42307 22.9872 2.63035 23.3426C2.83763 23.6979 3.13517 23.9921 3.49281 24.1954C3.85045 24.3987 4.25547 24.5038 4.66683 24.5001H23.3335C23.7429 24.4997 24.1449 24.3916 24.4993 24.1866C24.8537 23.9816 25.1479 23.687 25.3524 23.3324C25.5569 22.9778 25.6645 22.5756 25.6644 22.1662C25.6643 21.7568 25.5565 21.3546 25.3518 21.0001Z" fill="#229F7E" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 10.5V15.1667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 19.8335H14.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Risk Management</div><div class="nav-dropdwon-item-text">Built-in third-party risk vendor assessments.</div></div></div></a><a href="/solutions/it-teams" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9499_5702)">
+<path d="M22.6663 14.6457C22.6663 20.3749 18.6559 23.2394 13.8893 24.9009C13.6397 24.9855 13.3685 24.9814 13.1215 24.8894C8.34342 23.2394 4.33301 20.3749 4.33301 14.6457V6.62486C4.33301 6.32097 4.45373 6.02952 4.66861 5.81464C4.8835 5.59975 5.17495 5.47903 5.47884 5.47903C7.77051 5.47903 10.6351 4.10403 12.6288 2.36236C12.8716 2.15497 13.1804 2.04102 13.4997 2.04102C13.819 2.04102 14.1278 2.15497 14.3705 2.36236C16.3757 4.11549 19.2288 5.47903 21.5205 5.47903C21.8244 5.47903 22.1159 5.59975 22.3307 5.81464C22.5456 6.02952 22.6663 6.32097 22.6663 6.62486V14.6457Z" fill="#229F7E"/>
+<path d="M13.5 22.75L13.5 4.25" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_9499_5702">
+<rect width="27.5" height="27.5" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Compliance Monitoring</div><div class="nav-dropdwon-item-text">Automated visibility into certifications, risks, and compliance status.</div></div></div></a></div><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Procurement Excellence</div><a href="/workflow-orchestration" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4614)">
+<path d="M18.116 15.204C16.7432 15.204 15.6258 16.3214 15.6258 17.6942V18.8667C15.6258 20.2396 16.7432 21.3569 18.116 21.3569H25.8979C27.2707 21.3569 28.3881 20.2396 28.3881 18.8667V17.6942C28.3881 16.4562 27.4793 15.4261 26.2939 15.2356V8.73057C26.2939 7.35772 25.1766 6.24033 23.8037 6.24033H22.6893C22.3313 3.62939 20.0859 1.61143 17.3783 1.61143C16.1027 1.61143 14.9303 2.05908 14.0092 2.80557C13.5709 2.09014 12.7828 1.61084 11.884 1.61084H4.10156C2.72871 1.61084 1.61133 2.72822 1.61133 4.10107V15.8216C1.61133 17.1944 2.72871 18.3118 4.10156 18.3118H7.26035V23.5536C7.26035 24.9265 8.37774 26.0438 9.75059 26.0438H15.6305C15.7066 27.3493 16.7918 28.3876 18.116 28.3876H25.8979C27.2707 28.3876 28.3881 27.2702 28.3881 25.8974V24.7249C28.3881 23.3521 27.2707 22.2347 25.8979 22.2347H18.116C16.7918 22.2347 15.7066 23.2735 15.6305 24.5784H9.75059C9.18516 24.5784 8.7252 24.1185 8.7252 23.553V18.3112H11.884C13.2568 18.3112 14.3742 17.1938 14.3742 15.821V11.4101C15.2314 11.9925 16.2662 12.3329 17.3783 12.3329C20.0859 12.3329 22.3313 10.3149 22.6893 7.704H23.8037C24.3691 7.704 24.8291 8.16397 24.8291 8.72939V15.2022H18.116V15.204ZM17.0906 24.7261C17.0906 24.1606 17.5506 23.7007 18.116 23.7007H25.8979C26.4633 23.7007 26.9232 24.1606 26.9232 24.7261V25.8985C26.9232 26.464 26.4633 26.9239 25.8979 26.9239H18.116C17.5506 26.9239 17.0906 26.464 17.0906 25.8985V24.7261ZM5.27402 11.8665C4.86973 11.8665 4.5416 11.5384 4.5416 11.1341C4.5416 10.7298 4.86973 10.4017 5.27402 10.4017H10.7115C11.1164 10.4017 11.4439 10.7298 11.4439 11.1341C11.4439 11.5384 11.1164 11.8665 10.7115 11.8665H5.27402ZM9.3627 14.0638C9.3627 14.4687 9.03457 14.7962 8.63027 14.7962H5.27402C4.86973 14.7962 4.5416 14.4687 4.5416 14.0638C4.5416 13.6589 4.86973 13.3313 5.27402 13.3313H8.63027C9.03457 13.3313 9.3627 13.6595 9.3627 14.0638ZM10.7115 8.93623H5.27402C4.86973 8.93623 4.5416 8.60869 4.5416 8.20381C4.5416 7.79893 4.86973 7.47139 5.27402 7.47139H10.7115C11.1164 7.47139 11.4439 7.79951 11.4439 8.20381C11.4439 8.60811 11.1164 8.93623 10.7115 8.93623ZM10.7115 6.00654H5.27402C4.86973 6.00654 4.5416 5.67842 4.5416 5.27412C4.5416 4.86982 4.86973 4.5417 5.27402 4.5417H10.7115C11.1164 4.5417 11.4439 4.86982 11.4439 5.27412C11.4439 5.67842 11.1164 6.00654 10.7115 6.00654ZM17.3783 10.8692C15.2297 10.8692 13.4818 9.12139 13.4818 6.97275C13.4818 4.82412 15.2297 3.07627 17.3783 3.07627C19.527 3.07627 21.2748 4.82412 21.2748 6.97275C21.2748 9.12139 19.527 10.8692 17.3783 10.8692ZM26.9238 17.6937V18.8661C26.9238 19.4315 26.4639 19.8915 25.8984 19.8915H18.1166C17.5512 19.8915 17.0912 19.4315 17.0912 18.8661V17.6937C17.0912 17.1282 17.5512 16.6683 18.1166 16.6683H25.8984C26.4639 16.6683 26.9238 17.1282 26.9238 17.6937Z" fill="#229F7E"/>
+<path d="M18.6068 5.29348L16.7992 7.09876L16.15 6.45012C15.8635 6.16418 15.4 6.16477 15.1141 6.45071C14.8281 6.73665 14.8287 7.20071 15.1146 7.48665L16.2818 8.65208C16.4248 8.79504 16.6123 8.86653 16.7992 8.86653C16.9861 8.86653 17.1736 8.79504 17.3166 8.65208L19.6416 6.33001C19.9275 6.04407 19.9281 5.58059 19.6422 5.29407C19.3563 5.00754 18.8928 5.00754 18.6062 5.29348H18.6068Z" fill="#229F7E"/>
+<path d="M24.0457 17.5479H19.9688C19.5645 17.5479 19.2363 17.876 19.2363 18.2803C19.2363 18.6846 19.5645 19.0127 19.9688 19.0127H24.0457C24.45 19.0127 24.7781 18.6846 24.7781 18.2803C24.7781 17.876 24.45 17.5479 24.0457 17.5479Z" fill="#229F7E"/>
+<path d="M19.9688 26.0444H24.0457C24.45 26.0444 24.7781 25.7163 24.7781 25.312C24.7781 24.9077 24.45 24.5796 24.0457 24.5796H19.9688C19.5645 24.5796 19.2363 24.9077 19.2363 25.312C19.2363 25.7163 19.5645 26.0444 19.9688 26.0444Z" fill="#229F7E"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4614">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Intake-to-Procure</div><div class="nav-dropdwon-item-text">Streamlined request-to-approval workflows.</div></div></div></a><a href="/paas" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4968)">
+<path d="M16.6069 0.685547L16.7651 0.699219C16.9217 0.726597 17.07 0.793477 17.1948 0.894531C17.3611 1.02911 17.4765 1.21677 17.522 1.42578L17.8696 3.06055C19.1197 3.35977 20.3143 3.85471 21.4097 4.52734L22.814 3.61914L22.8149 3.61816C22.9946 3.50305 23.2082 3.4523 23.4204 3.47461C23.5798 3.49144 23.732 3.54864 23.8618 3.63965L23.9839 3.74219L26.2544 6.0127C26.4048 6.16449 26.4995 6.36367 26.522 6.57617C26.5443 6.78841 26.4935 7.00195 26.3784 7.18164L26.3774 7.18262L25.4683 8.58594C26.1413 9.68185 26.6359 10.8772 26.9351 12.1279L28.5708 12.4775C28.7806 12.5223 28.9687 12.6372 29.104 12.8037C29.2394 12.9704 29.3132 13.1789 29.314 13.3936V16.6064C29.313 16.8202 29.2394 17.0271 29.105 17.1934C28.9705 17.3596 28.7836 17.4759 28.5747 17.5215H28.5737L26.938 17.8691C26.6386 19.1196 26.1442 20.3145 25.4712 21.4102L26.3813 22.8135V22.8145C26.4966 22.9942 26.5472 23.2076 26.5249 23.4199C26.5025 23.6324 26.4087 23.8316 26.2583 23.9834H26.2573L23.9868 26.2539C23.8351 26.4043 23.6368 26.499 23.4243 26.5215C23.2118 26.5439 22.9977 26.4933 22.8179 26.3779V26.377L21.4126 25.4678C20.3174 26.1403 19.1234 26.6353 17.8735 26.9346L17.5249 28.5703C17.48 28.7805 17.3647 28.9692 17.1978 29.1045C17.0307 29.2398 16.8219 29.3132 16.6069 29.3135H13.3931C13.1793 29.3125 12.9723 29.239 12.8062 29.1045C12.6399 28.9699 12.5244 28.7823 12.479 28.5732L12.1294 26.9375C10.8786 26.6383 9.68332 26.1438 8.5874 25.4707L7.18408 26.3809C7.00422 26.4962 6.79014 26.5469 6.57764 26.5244C6.36529 26.502 6.16689 26.408 6.01514 26.2578L3.74365 23.9863C3.59336 23.8346 3.49955 23.6362 3.47705 23.4238C3.45461 23.2113 3.50523 22.9972 3.62061 22.8174L4.52881 21.4121C3.85642 20.3171 3.3622 19.1227 3.06299 17.873L1.42725 17.5244C1.21763 17.479 1.02981 17.3631 0.89502 17.1963C0.760288 17.0293 0.686273 16.821 0.686035 16.6064V13.3926L0.699707 13.2344C0.727117 13.0781 0.794155 12.9304 0.89502 12.8057C1.0296 12.6394 1.21722 12.524 1.42627 12.4785L3.06104 12.1289C3.36013 10.8785 3.85515 9.68353 4.52783 8.58789L3.61963 7.18359L3.61865 7.18262C3.50353 7.00297 3.45279 6.78935 3.4751 6.57715C3.49754 6.36464 3.59228 6.16547 3.74268 6.01367L6.01318 3.74316L6.13525 3.64062C6.26509 3.54942 6.41715 3.49243 6.57666 3.47559C6.73616 3.45879 6.89648 3.48282 7.04248 3.54492L7.18311 3.61914V3.62012L8.58643 4.52832C9.68247 3.85462 10.8782 3.35924 12.1294 3.05957L12.478 1.4248H12.479C12.5247 1.21604 12.6399 1.02883 12.8062 0.894531C12.9725 0.760213 13.1802 0.686235 13.394 0.685547H16.6069Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M13.249 6.19824C14.9898 5.85201 16.7938 6.02979 18.4336 6.70898C20.0733 7.38818 21.4749 8.53801 22.4609 10.0137C23.447 11.4895 23.9736 13.2251 23.9736 15C23.9708 17.3791 23.0251 19.6605 21.3428 21.3428C19.6605 23.0251 17.3791 23.9708 15 23.9736C13.2251 23.9736 11.4895 23.447 10.0137 22.4609C8.53801 21.4749 7.38818 20.0733 6.70898 18.4336C6.02979 16.7938 5.85201 14.9898 6.19824 13.249C6.54451 11.5082 7.39923 9.90936 8.6543 8.6543C9.90936 7.39923 11.5082 6.54451 13.249 6.19824Z" fill="white" stroke="white" stroke-width="0.25"/>
+<path d="M18.0063 11.7056L18.104 11.7144C18.2 11.7319 18.2903 11.7752 18.3638 11.8413C18.4618 11.9296 18.5234 12.0518 18.5366 12.1831L19.0903 17.6753C19.1147 17.9168 19.088 18.1605 19.0122 18.3911C18.9364 18.6216 18.8137 18.8342 18.6509 19.0142C18.488 19.1941 18.2887 19.3377 18.0669 19.436C17.9005 19.5097 17.7237 19.5569 17.5435 19.5757L17.3618 19.5845H12.6382C12.3957 19.5845 12.1557 19.5344 11.9341 19.436C11.7124 19.3376 11.5138 19.1931 11.3511 19.0132C11.1885 18.8333 11.0654 18.6215 10.9897 18.3911C10.9141 18.1606 10.8873 17.9166 10.9116 17.6753L11.4653 12.1831C11.4785 12.0518 11.5411 11.9296 11.6392 11.8413C11.737 11.7534 11.8641 11.706 11.9956 11.7065V11.7056H18.0063Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M17.1846 13.5767C17.1845 13.7172 17.1277 13.8523 17.0283 13.9517C16.9289 14.0509 16.7938 14.1069 16.6533 14.1069C16.5128 14.1068 16.3777 14.051 16.2783 13.9517C16.1789 13.8523 16.1232 13.7172 16.123 13.5767V11.4702C16.1177 11.1759 15.9971 10.8952 15.7871 10.689C15.5771 10.4828 15.2943 10.3677 15 10.3677C14.7057 10.3677 14.4229 10.4827 14.2129 10.689C14.0029 10.8952 13.8823 11.1759 13.877 11.4702V13.5767C13.8768 13.7172 13.8211 13.8523 13.7217 13.9517C13.6222 14.051 13.4872 14.1069 13.3467 14.1069C13.2061 14.1069 13.0711 14.051 12.9717 13.9517C12.8723 13.8523 12.8165 13.7172 12.8164 13.5767V11.4663L12.8301 11.2524C12.8858 10.7577 13.1093 10.2944 13.4668 9.94189C13.8754 9.53898 14.4262 9.31306 15 9.31299C15.5739 9.31299 16.1255 9.53892 16.5342 9.94189C16.9427 10.3448 17.1765 10.8926 17.1846 11.4663V13.5767Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4968">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Software Purchasing</div><div class="nav-dropdwon-item-text">Expert-supported purchasing and renewals.</div></div></div></a><a href="/solutions/procurement" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.08203 7.63477C9.5904 7.63496 10.8134 8.85781 10.8135 10.3662V14.5283C10.8134 16.0367 9.59036 17.2596 8.08203 17.2598H6.65137V20.7715C6.65144 21.1508 6.80214 21.515 7.07031 21.7832C7.33858 22.0513 7.70275 22.2021 8.08203 22.2021H11.5938V20.7715C11.5938 19.2631 12.8169 18.0403 14.3252 18.04H18.4873C19.9958 18.04 21.2187 19.263 21.2188 20.7715V24.9336C21.2187 26.4422 19.9959 27.665 18.4873 27.665H14.3252C12.8168 27.6648 11.5938 26.442 11.5938 24.9336V23.5029H8.08203C7.35778 23.5029 6.66259 23.2152 6.15039 22.7031C5.63829 22.1909 5.35066 21.4958 5.35059 20.7715V17.2598H3.91992C2.41147 17.2597 1.1886 16.0368 1.18848 14.5283V10.3662C1.18853 8.85772 2.41143 7.63482 3.91992 7.63477H8.08203ZM20.3955 1.39062C24.1069 1.39079 27.1152 4.39987 27.1152 8.11133C27.1151 11.8226 24.1068 14.8309 20.3955 14.8311C16.6841 14.831 13.675 11.8227 13.6748 8.11133C13.6748 4.3998 16.684 1.39067 20.3955 1.39062ZM20.3955 2.69141C17.4024 2.69145 14.9756 5.11816 14.9756 8.11133C14.9757 11.1044 17.4025 13.5302 20.3955 13.5303C23.3885 13.5301 25.8143 11.1043 25.8145 8.11133C25.8145 5.11824 23.3886 2.69157 20.3955 2.69141ZM20.3955 3.81836C20.7545 3.81846 21.0457 4.10976 21.0459 4.46875V5.0332H22.8242C23.183 5.03369 23.4746 5.32471 23.4746 5.68359C23.4746 6.04246 23.183 6.33349 22.8242 6.33398H21.0459V7.46094H21.6094C22.1035 7.46106 22.5783 7.65757 22.9277 8.00684C23.2771 8.35635 23.4745 8.831 23.4746 9.3252C23.4746 9.81954 23.2772 10.2939 22.9277 10.6436C22.5782 10.9931 22.1037 11.1903 21.6094 11.1904H21.0459V11.7529C21.0458 12.112 20.7545 12.4032 20.3955 12.4033C20.0364 12.4033 19.7452 12.112 19.7451 11.7529V11.1904H17.9678C17.6087 11.1904 17.3176 10.899 17.3174 10.54C17.3174 10.1809 17.6086 9.88965 17.9678 9.88965H19.7451V8.76172H19.1816C18.6873 8.76168 18.2129 8.56527 17.8633 8.21582C17.5137 7.8662 17.3174 7.39185 17.3174 6.89746C17.3174 6.40305 17.5137 5.9287 17.8633 5.5791C18.2129 5.22964 18.6873 5.03324 19.1816 5.0332H19.7451V4.46875C19.7453 4.1097 20.0364 3.81836 20.3955 3.81836ZM21.0459 9.88965H21.6094C21.7587 9.88952 21.9032 9.8302 22.0088 9.72461C22.1143 9.61893 22.1738 9.47457 22.1738 9.3252C22.1737 9.17601 22.1142 9.03233 22.0088 8.92676C21.9032 8.82117 21.7587 8.76184 21.6094 8.76172H21.0459V9.88965ZM19.1816 6.33398C19.0323 6.33402 18.8889 6.39349 18.7832 6.49902C18.6775 6.6047 18.6182 6.74802 18.6182 6.89746C18.6182 7.04687 18.6776 7.19021 18.7832 7.2959C18.8889 7.40141 19.0323 7.4609 19.1816 7.46094H19.7451V6.33398H19.1816Z" fill="#229F7E"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Pricing Benchmarks</div><div class="nav-dropdwon-item-text">Pricing intelligence, negotiation playbooks, and contract terms.</div></div></div></a><a href="/solutions/procurement" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3996 6.36544C12.4611 5.71824 12.7617 5.11722 13.2427 4.6798C13.7237 4.24238 14.3504 4 15.0006 4C15.6507 4 16.2774 4.24238 16.7584 4.6798C17.2394 5.11722 17.54 5.71824 17.6015 6.36544C17.6385 6.78353 17.7756 7.18655 18.0014 7.5404C18.2271 7.89425 18.5348 8.18851 18.8983 8.39827C19.2619 8.60803 19.6706 8.72712 20.0899 8.74545C20.5092 8.76378 20.9268 8.68082 21.3072 8.50359C21.898 8.23537 22.5674 8.19656 23.1852 8.39471C23.803 8.59286 24.325 9.01378 24.6496 9.57557C24.9741 10.1374 25.0781 10.7998 24.9411 11.434C24.8042 12.0682 24.4362 12.6287 23.9088 13.0065C23.5653 13.2475 23.2849 13.5677 23.0914 13.94C22.8978 14.3122 22.7967 14.7257 22.7967 15.1452C22.7967 15.5648 22.8978 15.9782 23.0914 16.3505C23.2849 16.7228 23.5653 17.0429 23.9088 17.2839C24.4362 17.6618 24.8042 18.2223 24.9411 18.8565C25.0781 19.4907 24.9741 20.1531 24.6496 20.7149C24.325 21.2767 23.803 21.6976 23.1852 21.8958C22.5674 22.0939 21.898 22.0551 21.3072 21.7869C20.9268 21.6097 20.5092 21.5267 20.0899 21.545C19.6706 21.5634 19.2619 21.6824 18.8983 21.8922C18.5348 22.102 18.2271 22.3962 18.0014 22.7501C17.7756 23.1039 17.6385 23.5069 17.6015 23.925C17.54 24.5722 17.2394 25.1733 16.7584 25.6107C16.2774 26.0481 15.6507 26.2905 15.0006 26.2905C14.3504 26.2905 13.7237 26.0481 13.2427 25.6107C12.7617 25.1733 12.4611 24.5722 12.3996 23.925C12.3627 23.5068 12.2255 23.1036 11.9997 22.7496C11.7739 22.3957 11.4662 22.1013 11.1025 21.8915C10.7388 21.6817 10.3299 21.5627 9.91041 21.5445C9.49094 21.5263 9.07326 21.6094 8.69275 21.7869C8.10198 22.0551 7.43256 22.0939 6.81475 21.8958C6.19695 21.6976 5.67497 21.2767 5.35041 20.7149C5.02585 20.1531 4.92193 19.4907 5.05886 18.8565C5.1958 18.2223 5.5638 17.6618 6.09125 17.2839C6.43471 17.0429 6.71508 16.7228 6.90864 16.3505C7.1022 15.9782 7.20325 15.5648 7.20325 15.1452C7.20325 14.7257 7.1022 14.3122 6.90864 13.94C6.71508 13.5677 6.43471 13.2475 6.09125 13.0065C5.56454 12.6285 5.19719 12.0682 5.06058 11.4344C4.92398 10.8007 5.02788 10.1388 5.35209 9.57736C5.6763 9.01594 6.19766 8.59512 6.81485 8.39667C7.43205 8.19822 8.10097 8.23633 8.69163 8.50359C9.0721 8.68082 9.48966 8.76378 9.90898 8.74545C10.3283 8.72712 10.737 8.60803 11.1006 8.39827C11.4641 8.18851 11.7718 7.89425 11.9975 7.5404C12.2232 7.18655 12.3604 6.78353 12.3974 6.36544" fill="#229F7E"/>
+<path d="M12.3996 6.36544C12.4611 5.71824 12.7617 5.11722 13.2427 4.6798C13.7237 4.24238 14.3504 4 15.0006 4C15.6507 4 16.2774 4.24238 16.7584 4.6798C17.2394 5.11722 17.54 5.71824 17.6015 6.36544C17.6385 6.78353 17.7756 7.18655 18.0014 7.5404C18.2271 7.89425 18.5348 8.18851 18.8983 8.39827C19.2619 8.60803 19.6706 8.72712 20.0899 8.74545C20.5092 8.76378 20.9268 8.68082 21.3072 8.50359C21.898 8.23537 22.5674 8.19656 23.1852 8.39471C23.803 8.59286 24.325 9.01378 24.6496 9.57557C24.9741 10.1374 25.0781 10.7998 24.9411 11.434C24.8042 12.0682 24.4362 12.6287 23.9088 13.0065C23.5653 13.2475 23.2849 13.5677 23.0914 13.94C22.8978 14.3122 22.7967 14.7257 22.7967 15.1452C22.7967 15.5648 22.8978 15.9782 23.0914 16.3505C23.2849 16.7228 23.5653 17.0429 23.9088 17.2839C24.4362 17.6618 24.8042 18.2223 24.9411 18.8565C25.0781 19.4907 24.9741 20.1531 24.6496 20.7149C24.325 21.2767 23.803 21.6976 23.1852 21.8958C22.5674 22.0939 21.898 22.0551 21.3072 21.7869C20.9268 21.6097 20.5092 21.5267 20.0899 21.545C19.6706 21.5634 19.2619 21.6824 18.8983 21.8922C18.5348 22.102 18.2271 22.3962 18.0014 22.7501C17.7756 23.1039 17.6385 23.5069 17.6015 23.925C17.54 24.5722 17.2394 25.1733 16.7584 25.6107C16.2774 26.0481 15.6507 26.2905 15.0006 26.2905C14.3504 26.2905 13.7237 26.0481 13.2427 25.6107C12.7617 25.1733 12.4611 24.5722 12.3996 23.925C12.3627 23.5068 12.2255 23.1036 11.9997 22.7496C11.7739 22.3957 11.4662 22.1013 11.1025 21.8915C10.7388 21.6817 10.3299 21.5627 9.91041 21.5445C9.49094 21.5263 9.07326 21.6094 8.69275 21.7869C8.10198 22.0551 7.43256 22.0939 6.81475 21.8958C6.19695 21.6976 5.67497 21.2767 5.35041 20.7149C5.02585 20.1531 4.92193 19.4907 5.05886 18.8565C5.1958 18.2223 5.5638 17.6618 6.09125 17.2839C6.43471 17.0429 6.71508 16.7228 6.90864 16.3505C7.1022 15.9782 7.20325 15.5648 7.20325 15.1452C7.20325 14.7257 7.1022 14.3122 6.90864 13.94C6.71508 13.5677 6.43471 13.2475 6.09125 13.0065C5.56454 12.6285 5.19719 12.0682 5.06058 11.4344C4.92398 10.8007 5.02788 10.1388 5.35209 9.57736C5.6763 9.01594 6.19766 8.59512 6.81486 8.39667C7.43205 8.19822 8.10097 8.23633 8.69163 8.50359C9.0721 8.68082 9.48966 8.76378 9.90898 8.74545C10.3283 8.72712 10.737 8.60803 11.1006 8.39827C11.4641 8.18851 11.7718 7.89425 11.9975 7.5404C12.2232 7.18655 12.3604 6.78353 12.3974 6.36544" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.4662 15.1457C19.4662 16.029 19.2043 16.8924 18.7135 17.6269C18.2228 18.3613 17.5253 18.9337 16.7093 19.2718C15.8932 19.6098 14.9952 19.6982 14.1289 19.5259C13.2626 19.3536 12.4668 18.9282 11.8422 18.3036C11.2177 17.6791 10.7923 16.8833 10.62 16.017C10.4477 15.1507 10.5361 14.2527 10.8741 13.4366C11.2122 12.6206 11.7846 11.9231 12.519 11.4323C13.2534 10.9416 14.1169 10.6797 15.0002 10.6797C16.2507 10.6797 17.4466 11.1759 18.3447 12.0393L19.4662 13.1608" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.466 10.6797V13.1608H16.9849" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Renewal Management</div><div class="nav-dropdwon-item-text">Automated renewal alerts so nothing slips through.</div></div></div></a></div><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu"><div class="nav-dropdown-list-inner-wrapper-redesigned__submenu-title">Platform &amp; Integrations</div><a href="/platform" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9475_4968)">
+<path d="M16.6069 0.685547L16.7651 0.699219C16.9217 0.726597 17.07 0.793477 17.1948 0.894531C17.3611 1.02911 17.4765 1.21677 17.522 1.42578L17.8696 3.06055C19.1197 3.35977 20.3143 3.85471 21.4097 4.52734L22.814 3.61914L22.8149 3.61816C22.9946 3.50305 23.2082 3.4523 23.4204 3.47461C23.5798 3.49144 23.732 3.54864 23.8618 3.63965L23.9839 3.74219L26.2544 6.0127C26.4048 6.16449 26.4995 6.36367 26.522 6.57617C26.5443 6.78841 26.4935 7.00195 26.3784 7.18164L26.3774 7.18262L25.4683 8.58594C26.1413 9.68185 26.6359 10.8772 26.9351 12.1279L28.5708 12.4775C28.7806 12.5223 28.9687 12.6372 29.104 12.8037C29.2394 12.9704 29.3132 13.1789 29.314 13.3936V16.6064C29.313 16.8202 29.2394 17.0271 29.105 17.1934C28.9705 17.3596 28.7836 17.4759 28.5747 17.5215H28.5737L26.938 17.8691C26.6386 19.1196 26.1442 20.3145 25.4712 21.4102L26.3813 22.8135V22.8145C26.4966 22.9942 26.5472 23.2076 26.5249 23.4199C26.5025 23.6324 26.4087 23.8316 26.2583 23.9834H26.2573L23.9868 26.2539C23.8351 26.4043 23.6368 26.499 23.4243 26.5215C23.2118 26.5439 22.9977 26.4933 22.8179 26.3779V26.377L21.4126 25.4678C20.3174 26.1403 19.1234 26.6353 17.8735 26.9346L17.5249 28.5703C17.48 28.7805 17.3647 28.9692 17.1978 29.1045C17.0307 29.2398 16.8219 29.3132 16.6069 29.3135H13.3931C13.1793 29.3125 12.9723 29.239 12.8062 29.1045C12.6399 28.9699 12.5244 28.7823 12.479 28.5732L12.1294 26.9375C10.8786 26.6383 9.68332 26.1438 8.5874 25.4707L7.18408 26.3809C7.00422 26.4962 6.79014 26.5469 6.57764 26.5244C6.36529 26.502 6.16689 26.408 6.01514 26.2578L3.74365 23.9863C3.59336 23.8346 3.49955 23.6362 3.47705 23.4238C3.45461 23.2113 3.50523 22.9972 3.62061 22.8174L4.52881 21.4121C3.85642 20.3171 3.3622 19.1227 3.06299 17.873L1.42725 17.5244C1.21763 17.479 1.02981 17.3631 0.89502 17.1963C0.760288 17.0293 0.686273 16.821 0.686035 16.6064V13.3926L0.699707 13.2344C0.727117 13.0781 0.794155 12.9304 0.89502 12.8057C1.0296 12.6394 1.21722 12.524 1.42627 12.4785L3.06104 12.1289C3.36013 10.8785 3.85515 9.68353 4.52783 8.58789L3.61963 7.18359L3.61865 7.18262C3.50353 7.00297 3.45279 6.78935 3.4751 6.57715C3.49754 6.36464 3.59228 6.16547 3.74268 6.01367L6.01318 3.74316L6.13525 3.64062C6.26509 3.54942 6.41715 3.49243 6.57666 3.47559C6.73616 3.45879 6.89648 3.48282 7.04248 3.54492L7.18311 3.61914V3.62012L8.58643 4.52832C9.68247 3.85462 10.8782 3.35924 12.1294 3.05957L12.478 1.4248H12.479C12.5247 1.21604 12.6399 1.02883 12.8062 0.894531C12.9725 0.760213 13.1802 0.686235 13.394 0.685547H16.6069Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M13.249 6.19824C14.9898 5.85201 16.7938 6.02979 18.4336 6.70898C20.0733 7.38818 21.4749 8.53801 22.4609 10.0137C23.447 11.4895 23.9736 13.2251 23.9736 15C23.9708 17.3791 23.0251 19.6605 21.3428 21.3428C19.6605 23.0251 17.3791 23.9708 15 23.9736C13.2251 23.9736 11.4895 23.447 10.0137 22.4609C8.53801 21.4749 7.38818 20.0733 6.70898 18.4336C6.02979 16.7938 5.85201 14.9898 6.19824 13.249C6.54451 11.5082 7.39923 9.90936 8.6543 8.6543C9.90936 7.39923 11.5082 6.54451 13.249 6.19824Z" fill="white" stroke="white" stroke-width="0.25"/>
+<path d="M18.0063 11.7056L18.104 11.7144C18.2 11.7319 18.2903 11.7752 18.3638 11.8413C18.4618 11.9296 18.5234 12.0518 18.5366 12.1831L19.0903 17.6753C19.1147 17.9168 19.088 18.1605 19.0122 18.3911C18.9364 18.6216 18.8137 18.8342 18.6509 19.0142C18.488 19.1941 18.2887 19.3377 18.0669 19.436C17.9005 19.5097 17.7237 19.5569 17.5435 19.5757L17.3618 19.5845H12.6382C12.3957 19.5845 12.1557 19.5344 11.9341 19.436C11.7124 19.3376 11.5138 19.1931 11.3511 19.0132C11.1885 18.8333 11.0654 18.6215 10.9897 18.3911C10.9141 18.1606 10.8873 17.9166 10.9116 17.6753L11.4653 12.1831C11.4785 12.0518 11.5411 11.9296 11.6392 11.8413C11.737 11.7534 11.8641 11.706 11.9956 11.7065V11.7056H18.0063Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+<path d="M17.1846 13.5767C17.1845 13.7172 17.1277 13.8523 17.0283 13.9517C16.9289 14.0509 16.7938 14.1069 16.6533 14.1069C16.5128 14.1068 16.3777 14.051 16.2783 13.9517C16.1789 13.8523 16.1232 13.7172 16.123 13.5767V11.4702C16.1177 11.1759 15.9971 10.8952 15.7871 10.689C15.5771 10.4828 15.2943 10.3677 15 10.3677C14.7057 10.3677 14.4229 10.4827 14.2129 10.689C14.0029 10.8952 13.8823 11.1759 13.877 11.4702V13.5767C13.8768 13.7172 13.8211 13.8523 13.7217 13.9517C13.6222 14.051 13.4872 14.1069 13.3467 14.1069C13.2061 14.1069 13.0711 14.051 12.9717 13.9517C12.8723 13.8523 12.8165 13.7172 12.8164 13.5767V11.4663L12.8301 11.2524C12.8858 10.7577 13.1093 10.2944 13.4668 9.94189C13.8754 9.53898 14.4262 9.31306 15 9.31299C15.5739 9.31299 16.1255 9.53892 16.5342 9.94189C16.9427 10.3448 17.1765 10.8926 17.1846 11.4663V13.5767Z" fill="#229F7E" stroke="#229F7E" stroke-width="0.25"/>
+</g>
+<defs>
+<clipPath id="clip0_9475_4968">
+<rect width="30" height="30" fill="white"/>
+</clipPath>
+</defs>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Smart Recommendations</div><div class="nav-dropdwon-item-text">AI-driven suggestions to optimize your setup.</div></div></div></a><a href="/native-integrations" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.4587 25.2083V8.02083C11.4587 7.71694 11.3379 7.42549 11.1231 7.21061C10.9082 6.99572 10.6167 6.875 10.3128 6.875H4.58366C3.97587 6.875 3.39298 7.11644 2.96321 7.54621C2.53343 7.97598 2.29199 8.55888 2.29199 9.16667V22.9167C2.29199 23.5245 2.53343 24.1073 2.96321 24.5371C3.39298 24.9669 3.97587 25.2083 4.58366 25.2083H18.3337C18.9414 25.2083 19.5243 24.9669 19.9541 24.5371C20.3839 24.1073 20.6253 23.5245 20.6253 22.9167V17.1875C20.6253 16.8836 20.5046 16.5922 20.2897 16.3773C20.0748 16.1624 19.7834 16.0417 19.4795 16.0417H2.29199" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.0628 2.29199H17.1878C16.555 2.29199 16.042 2.805 16.042 3.43783V10.3128C16.042 10.9457 16.555 11.4587 17.1878 11.4587H24.0628C24.6957 11.4587 25.2087 10.9457 25.2087 10.3128V3.43783C25.2087 2.805 24.6957 2.29199 24.0628 2.29199Z" fill="#229F7E" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Integrations</div><div class="nav-dropdwon-item-text">Fully integrate into your software ecosystem.</div></div></div></a><a href="/marketplace" class="nav-dropdown-link-item-redesigned w-inline-block"><div class="nav-dropdonw-icon w-embed"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.75 26.25V20C18.75 19.6685 18.6183 19.3505 18.3839 19.1161C18.1495 18.8817 17.8315 18.75 17.5 18.75H12.5C12.1685 18.75 11.8505 18.8817 11.6161 19.1161C11.3817 19.3505 11.25 19.6685 11.25 20V26.25" fill="#229F7E"/>
+<path d="M22.2177 12.8875C21.9571 12.638 21.6103 12.4988 21.2496 12.4988C20.8888 12.4988 20.542 12.638 20.2814 12.8875C19.7002 13.4419 18.9278 13.7512 18.1246 13.7512C17.3213 13.7512 16.5489 13.4419 15.9677 12.8875C15.7072 12.6384 15.3606 12.4994 15.0002 12.4994C14.6397 12.4994 14.2932 12.6384 14.0327 12.8875C13.4514 13.4423 12.6787 13.7518 11.8752 13.7518C11.0716 13.7518 10.299 13.4423 9.71768 12.8875C9.45711 12.638 9.11029 12.4988 8.74956 12.4988C8.38883 12.4988 8.04201 12.638 7.78143 12.8875C7.21999 13.4233 6.47928 13.731 5.70347 13.7507C4.92766 13.7704 4.17227 13.5008 3.58432 12.9942C2.99637 12.4877 2.61793 11.7805 2.52267 11.0103C2.4274 10.2401 2.62212 9.46203 3.06893 8.8275L6.68018 3.5975C6.90932 3.25939 7.2178 2.98257 7.57866 2.79124C7.93951 2.59992 8.34175 2.49992 8.75018 2.5H21.2502C21.6574 2.49984 22.0585 2.59918 22.4186 2.78936C22.7788 2.97954 23.087 3.25482 23.3164 3.59125L26.9352 8.83125C27.3821 9.46628 27.5766 10.245 27.4807 11.0155C27.3849 11.7861 27.0055 12.4934 26.4166 12.9996C25.8278 13.5058 25.0715 13.7746 24.2953 13.7536C23.519 13.7327 22.7784 13.4235 22.2177 12.8862" fill="#229F7E"/>
+<path d="M22.2177 12.8875C21.9571 12.638 21.6103 12.4988 21.2496 12.4988C20.8888 12.4988 20.542 12.638 20.2814 12.8875C19.7002 13.4419 18.9278 13.7512 18.1246 13.7512C17.3213 13.7512 16.5489 13.4419 15.9677 12.8875C15.7072 12.6384 15.3606 12.4994 15.0002 12.4994C14.6397 12.4994 14.2932 12.6384 14.0327 12.8875C13.4514 13.4423 12.6787 13.7518 11.8752 13.7518C11.0716 13.7518 10.299 13.4423 9.71768 12.8875C9.45711 12.638 9.11029 12.4988 8.74956 12.4988C8.38883 12.4988 8.04201 12.638 7.78143 12.8875C7.21999 13.4233 6.47928 13.731 5.70347 13.7507C4.92766 13.7704 4.17227 13.5008 3.58432 12.9942C2.99637 12.4877 2.61793 11.7805 2.52267 11.0103C2.4274 10.2401 2.62212 9.46203 3.06893 8.8275L6.68018 3.5975C6.90932 3.25939 7.2178 2.98257 7.57866 2.79124C7.93951 2.59992 8.34175 2.49992 8.75018 2.5H21.2502C21.6574 2.49984 22.0585 2.59918 22.4187 2.78936C22.7788 2.97954 23.087 3.25482 23.3164 3.59125L26.9352 8.83125C27.3821 9.46628 27.5766 10.245 27.4807 11.0155C27.3849 11.7861 27.0055 12.4934 26.4166 12.9996C25.8278 13.5058 25.0715 13.7746 24.2953 13.7536C23.519 13.7327 22.7784 13.4235 22.2177 12.8863" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13.6875V23.75C5 24.413 5.26339 25.0489 5.73223 25.5178C6.20107 25.9866 6.83696 26.25 7.5 26.25H22.5C23.163 26.25 23.7989 25.9866 24.2678 25.5178C24.7366 25.0489 25 24.413 25 23.75V13.6875" stroke="#229F7E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div class="dropdwn-new-text-wrapper"><div class="nav-dropdwon-text-wrapper-redesigned"><div class="nav-dropdown-item-title">Software Marketplace</div><div class="nav-dropdwon-item-text">Instant access to discounted rates and preferred contract terms.</div></div></div></a></div></div></div><div data-accordion="accordion-item" class="navigation__menu-mobile--item"><div class="navigation__mobile-item--header"><div>Solutions</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><a href="/solutions/it-teams" class="navigation__mobile-inner--link">IT</a><a href="/solutions/procurement" class="navigation__mobile-inner--link">Procurement</a><a href="/solutions/finance" class="navigation__mobile-inner--link">Finance</a></div></div><a href="/customer-stories" class="navigation__menu-mobile--item is-outter w-inline-block"><div class="navigation__mobile-item--header"><div>Customers</div></div></a><a href="/pricing" class="navigation__menu-mobile--item is-outter w-inline-block"><div class="navigation__mobile-item--header"><div>Pricing</div></div></a><a href="/marketplace" class="navigation__menu-mobile--item is-outter hide w-inline-block"><div class="navigation__mobile-item--header"><div>Software Marketplace</div></div></a><a href="/native-integrations" class="navigation__menu-mobile--item is-outter hide w-inline-block"><div class="navigation__mobile-item--header"><div>Integrations</div></div></a><div data-accordion="accordion-item" class="navigation__menu-mobile--item"><div class="navigation__mobile-item--header"><div>About</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><a href="/about" class="navigation__mobile-inner--link">About Sastrify</a><a href="/careers" class="navigation__mobile-inner--link">Careers</a></div></div><div data-accordion="accordion-item" class="navigation__menu-mobile--item hide"><div class="navigation__mobile-item--header"><div>Education</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><a href="#" class="navigation__mobile-inner--link">Blog</a><a href="#" class="navigation__mobile-inner--link">Interactive tour</a></div></div><div data-accordion="accordion-item" class="navigation__menu-mobile--item"><div class="navigation__mobile-item--header"><div>Free Downloads</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><button type="button" fs-modal-element="open-3" class="navigation__mobile-inner--link"><div>Compliance tool stack</div></button><button type="button" fs-modal-element="open-2" class="navigation__mobile-inner--link"><div>IT Offboarding Checklist</div></button><button type="button" fs-modal-element="open-1" class="navigation__mobile-inner--link"><div>SaaS governance Framework</div></button></div></div><div data-accordion="accordion-item" class="navigation__menu-mobile--item"><div class="navigation__mobile-item--header"><div>Resources</div><div class="navigation__mobile-item--icon w-embed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow">
+<g id="Group">
+<path id="Vector" d="M11.2222 5V11.2222H5V12.7778H11.2222V19H12.7778V12.7778H19V11.2222H12.7778V5H11.2222Z" fill="#229F7E"/>
+</g>
+</g>
+</svg></div></div><div data-accordion="accordion-content" class="navigation__mobile-item--content"><a href="/press" class="navigation__mobile-inner--link">Press</a><a href="/partners" class="navigation__mobile-inner--link">Partners</a><a href="/blog" class="navigation__mobile-inner--link">Blog</a><a href="/guides-reports" class="navigation__mobile-inner--link hide">Guide &amp; Reports</a><a href="/webinars" class="navigation__mobile-inner--link">Webinars</a></div></div></div><a href="#" id="w-node-ccd31c43-f07e-364a-276e-dfb0cd9e71a2-30cc746f" class="btn navigation__mobile-btn w-button">Book a Demo</a><div class="hide w-embed"><style>
+  [data-accordion="accordion-content"] {
+    display: none;
+  }
+
+  [data-accordion="accordion-item"].active .navigation__mobile-item--icon{
+    transform: rotate(180deg);
+  }
+  
+  .mobile-flex {
+		display: flex !important;
+	}
+</style></div><div class="navigation__mobile-footer"><div class="hide w-embed w-script"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function() {
+    if ($('[data-accordion="accordion-wrapper"]').length) {
+      $('[data-accordion="accordion-item"]').on('click', function() {
+        var parentAccordion = $(this).closest('[data-accordion="accordion-wrapper"]');
+        var itemsInThisAccordion = $('[data-accordion="accordion-item"]', parentAccordion);
+        var contentInThisAccordion = $('[data-accordion="accordion-content"]', parentAccordion);
+
+        if (!$(this).hasClass('active')) {
+          itemsInThisAccordion.removeClass('active');
+          contentInThisAccordion.slideUp(300);
+
+          $(this).addClass('active');
+          $('[data-accordion="accordion-content"]', this).slideDown(300);
+        } else {
+          $(this).removeClass('active');
+          $('[data-accordion="accordion-content"]', this).slideUp(300);
+        }
+      });
+    }
+  });
+</script></div><div>Follow us:</div><div class="navigation__social-wrapper"><a href="#" class="navigation__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8308_157355)">
+<path d="M10 0.405273C12.717 0.405273 13.056 0.415273 14.122 0.465273C15.187 0.515273 15.912 0.682274 16.55 0.930274C17.21 1.18427 17.766 1.52827 18.322 2.08327C18.8305 2.58317 19.224 3.18786 19.475 3.85527C19.722 4.49227 19.89 5.21827 19.94 6.28327C19.987 7.34927 20 7.68827 20 10.4053C20 13.1223 19.99 13.4613 19.94 14.5273C19.89 15.5923 19.722 16.3173 19.475 16.9553C19.2247 17.623 18.8311 18.2279 18.322 18.7273C17.822 19.2356 17.2173 19.629 16.55 19.8803C15.913 20.1273 15.187 20.2953 14.122 20.3453C13.056 20.3923 12.717 20.4053 10 20.4053C7.283 20.4053 6.944 20.3953 5.878 20.3453C4.813 20.2953 4.088 20.1273 3.45 19.8803C2.78233 19.6297 2.17753 19.2362 1.678 18.7273C1.16941 18.2275 0.775931 17.6227 0.525 16.9553C0.277 16.3183 0.11 15.5923 0.0599999 14.5273C0.0129999 13.4613 0 13.1223 0 10.4053C0 7.68827 0.00999994 7.34927 0.0599999 6.28327C0.11 5.21727 0.277 4.49327 0.525 3.85527C0.775236 3.18745 1.1688 2.58259 1.678 2.08327C2.17767 1.5745 2.78243 1.181 3.45 0.930274C4.088 0.682274 4.812 0.515273 5.878 0.465273C6.944 0.418273 7.283 0.405273 10 0.405273ZM10 5.40527C8.67392 5.40527 7.40215 5.93206 6.46447 6.86974C5.52678 7.80742 5 9.07919 5 10.4053C5 11.7314 5.52678 13.0031 6.46447 13.9408C7.40215 14.8785 8.67392 15.4053 10 15.4053C11.3261 15.4053 12.5979 14.8785 13.5355 13.9408C14.4732 13.0031 15 11.7314 15 10.4053C15 9.07919 14.4732 7.80742 13.5355 6.86974C12.5979 5.93206 11.3261 5.40527 10 5.40527ZM16.5 5.15527C16.5 4.82375 16.3683 4.50581 16.1339 4.27139C15.8995 4.03697 15.5815 3.90527 15.25 3.90527C14.9185 3.90527 14.6005 4.03697 14.3661 4.27139C14.1317 4.50581 14 4.82375 14 5.15527C14 5.48679 14.1317 5.80474 14.3661 6.03916C14.6005 6.27358 14.9185 6.40527 15.25 6.40527C15.5815 6.40527 15.8995 6.27358 16.1339 6.03916C16.3683 5.80474 16.5 5.48679 16.5 5.15527ZM10 7.40527C10.7956 7.40527 11.5587 7.72134 12.1213 8.28395C12.6839 8.84656 13 9.60962 13 10.4053C13 11.2009 12.6839 11.964 12.1213 12.5266C11.5587 13.0892 10.7956 13.4053 10 13.4053C9.20435 13.4053 8.44129 13.0892 7.87868 12.5266C7.31607 11.964 7 11.2009 7 10.4053C7 9.60962 7.31607 8.84656 7.87868 8.28395C8.44129 7.72134 9.20435 7.40527 10 7.40527Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_8308_157355">
+<rect width="20" height="20" fill="currentColor" transform="translate(0 0.405273)"/>
+</clipPath>
+</defs>
+</svg></div></a><a href="#" class="navigation__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5724 9.58928V9.56348C10.5671 9.57219 10.5614 9.5809 10.5557 9.58928H10.5724Z" fill="currentColor"/>
+<path d="M17.0044 2.07129H2.8904C2.21486 2.07129 1.66699 2.60609 1.66699 3.26521V17.5444C1.66699 18.2032 2.21486 18.738 2.8904 18.738H17.0044C17.6809 18.738 18.2288 18.2028 18.2288 17.5444V3.26521C18.2288 2.60576 17.6806 2.07129 17.0044 2.07129ZM6.68696 16.0234H4.18552V8.49763H6.68696V16.0234ZM5.43641 7.46958H5.41966C4.58059 7.46958 4.03775 6.89155 4.03775 6.16943C4.03775 5.43123 4.59735 4.86928 5.45283 4.86928C6.30865 4.86928 6.83507 5.43123 6.85183 6.16943C6.85183 6.89155 6.30831 7.46958 5.43641 7.46958ZM15.7072 16.0234H13.2058V11.9963C13.2058 10.985 12.8439 10.2947 11.9388 10.2947C11.2479 10.2947 10.8364 10.7602 10.6551 11.2098C10.5891 11.3703 10.573 11.5949 10.573 11.82V16.0231H8.07155C8.07155 16.0231 8.10439 9.20266 8.07155 8.49729H10.573V9.56254C10.9054 9.04986 11.4998 8.3197 12.8278 8.3197C14.4734 8.3197 15.7076 9.39567 15.7076 11.7074L15.7072 16.0234Z" fill="currentColor"/>
+</svg></div></a><a href="#" class="navigation__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4142 2.07129H2.58644C2.0788 2.07129 1.66699 2.48309 1.66699 2.99073V17.8185C1.66699 18.3268 2.0788 18.738 2.58644 18.738H10.5684V12.2838H8.39546V9.76921H10.5684V7.91157C10.5684 5.75948 11.8837 4.58865 13.8038 4.58865C14.7239 4.58865 15.5149 4.65601 15.7455 4.68657V6.93657H14.4114C13.3698 6.93657 13.167 7.43726 13.167 8.16643V9.77129H15.6559L15.333 12.2921H13.167V18.738H17.4135C17.9225 18.738 18.3337 18.3268 18.3337 17.8185V2.99073C18.3337 2.48309 17.9225 2.07129 17.4142 2.07129Z" fill="currentColor"/>
+</svg></div></a><a href="#" class="navigation__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.1169 9.44315L7.03716 5.13379H5.39453L9.2096 10.4716L9.68983 11.1431L12.9553 15.7159H14.5979L10.5951 10.1146L10.1169 9.44315Z" fill="white" fill-opacity="0.5"/>
+<path d="M16.9396 2.07129H3.06109C2.29112 2.07129 1.66699 2.69542 1.66699 3.46539V17.3439C1.66699 18.1138 2.29112 18.738 3.06109 18.738H16.9396C17.7095 18.738 18.3337 18.1138 18.3337 17.3439V3.46539C18.3337 2.69542 17.7095 2.07129 16.9396 2.07129ZM12.4513 16.4652L9.14639 11.7584L5.00899 16.4652H3.93972L8.67221 11.0829L3.93972 4.34402H7.5493L10.6782 8.80005L14.5985 4.34402H15.6677L11.1549 9.47707L16.0609 16.4652H12.4513Z" fill="currentColor"/>
+</svg></div></a><a href="#" class="navigation__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8308_157367)">
+<path d="M21.3796 4.90371C21.1168 3.92023 20.3423 3.14581 19.3588 2.88295C17.5762 2.40527 10.4286 2.40527 10.4286 2.40527C10.4286 2.40527 3.28094 2.40527 1.49826 2.88295C0.514955 3.14581 -0.259643 3.92023 -0.522455 4.90371C-1 6.68621 -1 10.4054 -1 10.4054C-1 10.4054 -1 14.1245 -0.522455 15.9068C-0.259643 16.8903 0.514955 17.665 1.49826 17.9278C3.28094 18.4053 10.4286 18.4053 10.4286 18.4053C10.4286 18.4053 17.5762 18.4053 19.3588 17.9278C20.3423 17.665 21.1168 16.8903 21.3796 15.9068C21.8571 14.1245 21.8571 10.4054 21.8571 10.4054C21.8571 10.4054 21.8571 6.68621 21.3796 4.90371ZM8.14272 13.834V6.97675L14.0811 10.4054L8.14272 13.834Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_8308_157367">
+<rect width="20" height="20" fill="white" transform="translate(0 0.405273)"/>
+</clipPath>
+</defs>
+</svg></div></a></div></div></div></nav><a href="/schedule-demo" id="w-node-_4fc52ba9-c043-b685-22cc-978969c1bb98-30cc746f" class="btn navbar-btn w-button">Get a Demo</a><div class="language-picker w-locales-list"><div class="language-picker__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <g clip-path="url(#clip0_8503_4329)">
+    <path d="M1.5 9C1.5 13.1421 4.85786 16.5 9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9Z" stroke="#068466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.75 1.53711C9.75 1.53711 12 4.50007 12 9.00004C12 13.5 9.75 16.4631 9.75 16.4631" stroke="#068466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.25 16.4631C8.25 16.4631 6 13.5 6 9.00004C6 4.50007 8.25 1.53711 8.25 1.53711" stroke="#068466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.96875 11.625H16.0243" stroke="#068466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.96875 6.375H16.0243" stroke="#068466" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_8503_4329">
+      <rect width="18" height="18" fill="white"/>
+    </clipPath>
+  </defs>
+</svg></div><div data-hover="false" data-delay="0" class="language-picker__dropdown w-dropdown"><div class="language-picker__dropdown-trigger w-dropdown-toggle"><div class="language-picker__dropdown-icon w-icon-dropdown-toggle"></div><div class="language-picker__text">en</div></div><nav class="language-picker__dropdown-list w-dropdown-list"><div role="list" class="locales-list w-locales-items"><div role="listitem" class="locale w-locales-item"><a hreflang="en" href="/" aria-current="page" class="link-21 w--current">English</a></div><div role="listitem" class="locale w-locales-item"><a hreflang="de" href="/de" class="link-21">German </a></div></div></nav></div></div><div class="navigation-mobile__button w-clearfix w-nav-button"><div class="hamburger"><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div><div class="hide w-embed w-script"><script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger') || document.querySelector('.w-nav-burger');
+    const hamburgerButton = document.querySelector('.w-nav-button') || document.querySelector('[data-collapse="medium"]');
+    const mobileMenu = document.querySelector('.navigation__menu-mobile') || document.querySelector('.w-nav-menu');
+
+    if (hamburgerButton) {
+      // Add direct click handler to the button
+      hamburgerButton.addEventListener('click', (e) => {
+        console.log('Button clicked!');
+
+        if (hamburger) {
+          hamburger.classList.toggle('active');
+        }
+
+        if (mobileMenu) {
+          mobileMenu.classList.toggle('mobile-flex');
+        }
+
+        // Prevent any default behaviors or event propagation issues
+        e.preventDefault();
+        e.stopPropagation();
+      });
+    }
+
+    // Remove 'mobile-flex' class when resizing the window
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 767) {
+        if (mobileMenu) {
+          mobileMenu.classList.remove('mobile-flex');
+        }
+        if (hamburger) {
+          hamburger.classList.remove('active');
+        }
+      }
+    });
+  });
+</script></div></div></div><div class="hide w-embed"><style>
+  .navigation__dropdown-trigger-redesigned.w--open .navigation__dropdown-icon {
+    transform: rotate(180deg);
+  }
+
+  .nav-dropdown-link-item-redesigned.w--current .nav-dropdown-item-title {
+    color: #229F7E !important;
+  }
+
+  .navigation__dropdown-wrapper:has(
+  .navigation__dropdown-trigger-redesigned.w-dropdown-toggle.w--open
+  ) .nav-dropdown-top-arrow.is--platform {
+    display: block;
+  }
+
+  @media (max-width: 1162px) {
+    .nav-dropdown-list-redesigned.is--platform {
+      left: 23vw;
+    }
+  }
+</style></div></div></div><section fs-modal-element="modal-15" class="modal-overlay"><div class="new-container padding-global is--modal"><div class="modal__wrapper"><h2 class="modal_title">Get a Personalized Walkthrough</h2><div class="p-0 w-embed w-script"><style>
+  .hs-form__virality-link {
+    display: none!important;
+  }
+</style>
+<body>
+  <!-- ====== Contact Start ====== -->
+  <section id="contact" class="ud-contact">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-7">
+          <div class="ud-contact-content-wrapper">
+          </div>
+        </div>
+        <div
+             class="col-xl-6 col-lg-5"
+             id="embedHere"
+             style="position: relative;"
+             >
+          <div
+               id="replaceThis"
+               class="ud-contact-form-wrapper wow fadeInUp"
+               data-wow-delay=".2s"
+               >
+            <div
+                 id="hubSpotFormHere"
+                 style="height: 100%;"
+                 class="hbspt-form"
+                 ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Contact End ====== -->
+  <!-- ====== All Javascript Files ====== -->
+<script
+        charset="utf-8"
+        type="text/javascript"
+        src="//js-na1.hsforms.net/forms/embed/v2.js"
+        ></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "20137352",
+      formId: "9f421b24-d28d-43d0-8c57-f3abd4e50fe2",
+      target: "#hubSpotFormHere",
+      onFormReady: function($form) {
+        if ($form && $form.length) {
+          $form.addClass("schedule-demo-form"); // jQuery method to add a class
+        } else {
+          console.error("HubSpot form object is empty or undefined");
+        }
+      }
+    });
+  </script>
+  <!-- ====== RevenueHero Schedular script starts ====== -->
+  <script
+          type="text/javascript"
+          src="https://app.revenuehero.io/scheduler.min.js"
+          ></script>
+  <script type="text/javascript">
+    window.hero = new RevenueHero({ routerId: "871" });
+    hero.schedule(
+      "hsForm_9bf19c3f-563a-4e1c-aeec-b42828b68767",
+      "#embedHere"
+    );
+    //document.querySelector("#embedHere").style.height = "50vh";
+  </script>
+</body>
+<style>
+  .hbspt-form .schedule-demo-form .form-columns-2 .hs-form-field {
+    width: 100%!important;
+  }
+  .hbspt-form .schedule-demo-form .legal-consent-container p {
+    font-size: 12px;
+    display: none;
+  }
+  .hbspt-form .schedule-demo-form .hs-error-msgs {
+    padding-left: 0;
+    list-style: none;
+  }
+  .hbspt-form .schedule-demo-form .hs-error-msgs .hs-error-msg {
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+    margin-top: -24px;
+  }
+  .hbspt-form .schedule-demo-form .hs_sso_tools__marketing_ label span,
+  .hbspt-form .schedule-demo-form .hs_erp_tools_marketing label span {
+    display: none;
+  }
+  .hs_numemployees label{
+    display:none;
+  }
+  .hbspt-form .schedule-demo-form .form-columns-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .hs-form-field label {
+    display: none !important; /* Seems they need to enable labels */
+    color: #020617 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 16px !important;
+  }
+  .hbspt-form .schedule-demo-form select,
+  .hbspt-form .schedule-demo-form input.hs-input {
+    border-radius: 4px !important;
+    border: 1px solid #D8DEE6 !important;
+    background: #F2F5F8 !important;
+    display: flex !important;
+    padding: 12px 16px !important;
+    align-items: center !important;
+    gap: 4px !important;
+    align-self: stretch !important;
+    color: #333 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important; /* 150% */
+    letter-spacing: -0.16px !important;
+    min-width: 100%;
+    width: 100% !important;
+    margin-bottom: 24px;
+    height: 48px !important;
+  }
+  .hbspt-form .schedule-demo-form input::placeholder {
+    color: #94A3B8 !important;
+  }
+  .hbspt-form .schedule-demo-form .hs-button.primary {
+    display: flex !important;
+    padding: 20px 24px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex: 1 0 0 !important;
+    border-radius: 4px !important;
+    background: #068466 !important;
+    color: #FFF !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 16px !important; /* 100% */
+    letter-spacing: -0.16px !important;
+    margin-top: 16px;
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
+    border: none;
+    min-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+  }
+  .hbspt-form .schedule-demo-form select.is-placeholder {
+    color: #94A3B8 !important;
+  }
+  @media (max-width: 767px) {
+    .hbspt-form .schedule-demo-form select,
+    .hbspt-form .schedule-demo-form input.hs-input {
+      margin-bottom: 16px;
+    }
+    .hbspt-form .schedule-demo-form .hs-button.primary {
+      margin-top: 8px;
+    }
+  }
+</style></div><div fs-modal-element="close-15" class="icon-1x1-medium modal__close w-embed"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 2.5L17.5 17.5" stroke="#2A3439" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 2.5L2.5 17.5" stroke="#2A3439" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div></div></section><div class="global-js w-embed w-script"><script>
+document.addEventListener('DOMContentLoaded', () => {
+  const mainWrapper = document.querySelector('.intergration__wrapper');
+  if (!mainWrapper) return;
+
+  const cardWrappers = mainWrapper.querySelectorAll('.intergration__cards-wrapper');
+  const originalCard = document.getElementById('and-more-card');
+
+  if (!originalCard || cardWrappers.length === 0) return;
+
+  cardWrappers.forEach((cardsWrapper, index) => {
+    let card;
+
+    if (index === 0) {
+      // Move original card into the first wrapper (and keep its id)
+      card = originalCard;
+    } else {
+      // Clone for other wrappers
+      card = originalCard.cloneNode(true);
+      // remove or change id so it's unique
+      card.removeAttribute('id'); 
+    }
+
+    cardsWrapper.appendChild(card); // will be last element in grid
+  });
+});
+</script></div></header><main class="new-page-wrapper"><section class="home-hero__section"><div class="new-container padding-global"><div class="home-hero__wrapper"><div id="w-node-_2873ecc6-0863-a9ec-5313-59fe3a81c478-04d36ed4" class="home-hero__content"><h1 class="home-hero__title"><strong class="bold-text-66">Your </strong><span class="text-span-100"><strong class="bold-text-64">AI co-pilot </strong></span><strong class="bold-text-65">for software management.</strong></h1><p class="home-hero__text">Sastrify empowers IT, Procurement, and Finance teams with full visibility, automated tracking, and guaranteed ROI on their software landscape.<br/></p><div id="w-node-d7e9aeda-9303-b617-5a04-3fa8ab56cc3b-04d36ed4" class="home-hero__button-group"><a href="/schedule-demo" class="btn is--large w-button">Get a Demo</a></div></div></div></div></section><section class="companies-logo__section"><div class="new-container padding-global is--marquee"><div class="companies-logo__wrapper"><div class="track-gradient-2 is--right is--redesigned"></div><div class="track-gradient-2 is--redesigned"></div><div class="companies-logo__track"><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc19940fbc31f89af15_logo-riverty.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8bdd83c2c4600a1357_logo-recharge.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8b9d826171b9f69e89_logo-billie.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8b8198ca36a35b2675_logo-billie-1.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8cdd83c2c4600a13dd_logo-urban.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc1208131b4daf861e7_logo-teamviewer.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc24b14dbcf70bc1daa_logo-tonies.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc04853dcb34a220853_logo-easypark.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a9bc0d8ed2c3b8a1da59c4_logo-apo.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1).webp" loading="lazy" sizes="(max-width: 970px) 100vw, 970px" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1).webp 970w" alt="" class="companies-logo__image is-remerge"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc19940fbc31f89af15_logo-riverty.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8bdd83c2c4600a1357_logo-recharge.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8b9d826171b9f69e89_logo-billie.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8b8198ca36a35b2675_logo-billie-1.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8cdd83c2c4600a13dd_logo-urban.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc1208131b4daf861e7_logo-teamviewer.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc24b14dbcf70bc1daa_logo-tonies.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a5cbc04853dcb34a220853_logo-easypark.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67a9bc0d8ed2c3b8a1da59c4_logo-apo.webp" loading="lazy" alt="" class="companies-logo__image"/><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1).webp" loading="lazy" sizes="(max-width: 970px) 100vw, 970px" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6926e66924c7667d82e3f1ca_remerge-logo%20(1).webp 970w" alt="" class="companies-logo__image is-remerge"/></div></div><div class="w-embed"><style>
+   .companies-logo__wrapper {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .companies-logo__track {
+    animation: marquee 40s linear infinite;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .companies-logo__image {
+    flex-shrink: 0;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  </style></div></div></section><section class="everything-you-need__section"><div class="new-container padding-global"><div class="everything-you-need__wrapper"><div class="everything-you-need__header"><h2 class="everything-you-need__title">See every tool, license, <br/>and renewal in <span class="text-span-102">one place.</span></h2></div><div class="everything-you-need__row"><div class="everything-you-need__row-content"><h3 class="everything-you-need__row-title">Discover every tool automatically.</h3><p class="everything-you-need__row-text">Sastrify connects to your systems (IDP, Browser, ERP) and automatically discovers every software tool in use. Then it maps ownership, usage, renewals, and spend - giving you a single, accurate software inventory in minutes.<br/></p><a href="https://sastrify.com/platform" class="btn-learn-more is--large-copy w-button">Learn more      →</a></div><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/69083fa360fed0ad60672f41_card.webp" loading="lazy" width="627" sizes="(max-width: 767px) 100vw, 627px" alt="" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/69083fa360fed0ad60672f41_card-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/69083fa360fed0ad60672f41_card-p-800.webp 800w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/69083fa360fed0ad60672f41_card-p-1080.webp 1080w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/69083fa360fed0ad60672f41_card.webp 1254w" class="everything-you-need__image"/></div><div class="everything-you-need__row--reverse"><div class="everything-you-need__row-content"><h3 class="everything-you-need__row-title">Control access and license usage.</h3><p class="everything-you-need__row-text">Manage permissions, seats, and ownership automatically. Sastrify right-sizes seats, and handles renewals so nothing slips through the cracks - keeping your software stack secure, compliant, and efficient.<br/></p><a href="https://www.sastrify.com/platform" class="btn-learn-more is--large-copy w-button">Discover      →</a></div><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card.webp" loading="lazy" width="627" sizes="(max-width: 767px) 100vw, 627px" alt="" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card-p-800.webp 800w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card-p-1080.webp 1080w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card-p-1600.webp 1600w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card-p-2000.webp 2000w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690840f4fa6875df88ba03c6_card.webp 2508w" class="everything-you-need__image"/></div><div class="everything-you-need__row"><div class="everything-you-need__row-content"><h3 class="everything-you-need__row-title">Automate renewals and workflows.</h3><p class="everything-you-need__row-text">Never miss another renewal or chase a contract again. Sastrify automates renewal alerts, approvals, and vendor tracking so your IT and Procurement teams can stay proactive without manual effort.<br/></p><a href="https://www.sastrify.com/paas" class="btn-learn-more is--large-copy w-button">Learn more      →</a></div><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908a52eebbe1d4a9ef4cbfd_c653aa8d4d1af6eaf67bfef39ad9e60b_Untitled%20design%20%281%29.svg" loading="lazy" width="627" height="100" alt="" class="everything-you-need__image"/></div><div class="everything-you-need__row--reverse"><div class="everything-you-need__row-content"><h3 class="everything-you-need__row-title">Benchmark and optimize software spend.</h3><p class="everything-you-need__row-text">Sastrify benchmarks every software contract against thousands of live data points. Our AI suggests fair pricing, renewal timing, and negotiation levers - helping you secure better deals.</p><a href="https://www.sastrify.com/saas-spend-control" class="btn-learn-more is--large-copy w-button">See how it works      →</a></div><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/681db2c987fb811e8e6562c9_card.webp" loading="lazy" width="627" height="Auto" alt="" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/681db2c987fb811e8e6562c9_card-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/681db2c987fb811e8e6562c9_card-p-800.webp 800w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/681db2c987fb811e8e6562c9_card-p-1080.webp 1080w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/681db2c987fb811e8e6562c9_card.webp 1254w" sizes="(max-width: 767px) 100vw, 627px" class="everything-you-need__image"/></div><div class="everything-you-need__row"><div class="everything-you-need__row-content"><h3 class="everything-you-need__row-title">Stay audit-ready with zero manual effort.</h3><p class="everything-you-need__row-text">Sastrify auto-documents compliance status for each vendor, attaches certificates, and generates audit reports with one click. Your security, procurement, and finance teams stay aligned - and audit prep goes from days to minutes for DORA, NIS2, the AI Act, and more.<br/></p><a href="https://www.sastrify.com/grc-ai-act-compliance" class="btn-learn-more is--large-copy w-button">Discover      →</a></div><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908408c9c5e4131bd629720_card-1.webp" loading="lazy" width="627" sizes="(max-width: 767px) 100vw, 627px" alt="" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908408c9c5e4131bd629720_card-1-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908408c9c5e4131bd629720_card-1-p-800.webp 800w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908408c9c5e4131bd629720_card-1-p-1080.webp 1080w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/6908408c9c5e4131bd629720_card-1.webp 1254w" class="everything-you-need__image"/></div></div></div><div class="paas_wrapper-3"><div class="paas-section__header"><h2 class="software-management__title-copy">Visibility that <span class="text-span-103">saves time and money <br/>‍</span>from day one. <br/></h2></div><div class="w-layout-grid grid-21"><div id="w-node-bf54611b-ae49-8409-7cfd-2ec83305116a-04d36ed4" class="tile-paas"><div class="w-layout-hflex flex-block-paas"><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e578a162123d0f30ee00df_icons8-360-100.png" loading="lazy" width="51" alt=""/><div class="text-block-393-4">Full visibility and control.</div></div><div class="w-layout-hflex"><h4 class="numer_paas_tile">90%</h4><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e5774c38cc73b2c62c09a3_icons8-up-100%20(3).png" loading="lazy" width="40" alt="" class="image-4180"/></div><div class="text-block-360">of vendors and spend under management within 7 days. Eliminate Shadow IT, enforce compliance, and unlock AI-powered monitoring across your software landscape fast.<br/></div></div><div id="w-node-bf54611b-ae49-8409-7cfd-2ec833051152-04d36ed4" class="tile-paas"><div class="w-layout-hflex flex-block-paas"><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e5788d62123d0f30edfa73_icons8-clock-100%20(2).png" loading="lazy" width="51" alt=""/><div class="text-block-393-2">Lean teams, less manual work.</div></div><div class="w-layout-hflex"><h4 class="numer_paas_tile">6h</h4><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e57ca928a4d6850544483a_icons8-plus-100.png" loading="lazy" width="40" alt="" class="image-4180"/></div><div class="text-block-360">time back per week: We handle intake, negotiations &amp; vendor management - you keep the steering wheel while we handle the busywork.<br/></div></div><div id="w-node-bf54611b-ae49-8409-7cfd-2ec833051146-04d36ed4" class="tile-paas-1"><div class="w-layout-hflex flex-block-paas"><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e574914851c92573731534_icons8-dollar-100%20(1).png" loading="lazy" width="54" alt="" class="image-4179"/><div class="text-block-393-1">Proven savings, guaranteed.</div></div><div class="w-layout-hflex"><h4 class="numer_paas_tile">30%</h4><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e5774c398ac1c52b65e951_icons8-up-100.png" loading="lazy" width="40" alt="" class="image-4180"/></div><div class="text-block-360">average savings across your software landscape. Stop overspending with $6B+ in benchmark data.<br/></div></div><div id="w-node-bf54611b-ae49-8409-7cfd-2ec83305115e-04d36ed4" class="tile-paas"><div class="w-layout-hflex flex-block-paas"><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e57808fc2f8a47de7c9817_icons8-artificial-intelligence-100%20(2).png" loading="lazy" width="51" alt=""/><div class="text-block-393">AI-powered intelligence.</div></div><div class="w-layout-hflex"><h4 class="numer_paas_tile">15k</h4><img src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/68e57ca92898506be80d8b50_icons8-plus-100%20(1).png" loading="lazy" width="40" alt="" class="image-4180"/></div><div class="text-block-360">vendors auto-mapped and benchmarked. Our AI continuously detects inefficiencies, predicts costs, and keeps every software dollar accountable.<br/></div></div></div><div class="popup-block"><a href="#" fs-modal-element="open-99" id="w-node-_9d915cf6-809e-ac5e-6007-e9a34de9c137-4de9c136" class="btn-bottom-center is--large w-button">Get a Demo</a><section fs-modal-animation="fade" fs-modal-element="modal-99" class="popup_overlay-redesign"><div class="new-container padding-global is-pop-up"><div class="right-shape-hero__form is-pop-up"><h2 class="right-shape-hero__form-title">More impact. Less admin.</h2><div id="17" class="p-0 _w-full w-embed w-script"><style>
+  .hs-form__virality-link {
+    display: none!important;
+  }
+</style>
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "20137352",
+    formId: "9bf19c3f-563a-4e1c-aeec-b42828b68767",
+    css: "",
+    cssClass:"schedule-demo-form"
+  });
+</script>
+
+<script>
+  /*hbspt.forms.create({
+    region: "na1",
+    portalId: "20137352",
+    formId: "9bf19c3f-563a-4e1c-aeec-b42828b68767",
+    css: "",
+    onFormReady: function($form) {
+      if ($form && $form.length) {
+        $form.addClass("schedule-demo-form"); // jQuery method to add a class
+      } else {
+        console.error("HubSpot form object is empty or undefined");
+      }
+    }
+  });*7
+</script>
+
+<style>
+  .hbspt-form .schedule-demo-form fieldset {
+    max-width: none;
+  }
+  
+  .hbspt-form .schedule-demo-form .form-columns-2 .hs-form-field {
+    width: 100%!important;
+  }
+
+  .hbspt-form .schedule-demo-form .legal-consent-container p {
+    font-size: 12px;
+    display: none;
+  }
+
+  .hbspt-form .schedule-demo-form .hs-error-msgs {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .hbspt-form .schedule-demo-form .hs-error-msgs .hs-error-msg {
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+    margin-top: -24px;
+  }
+
+  .hbspt-form .schedule-demo-form .hs_sso_tools__marketing_ label span,
+  .hbspt-form .schedule-demo-form .hs_erp_tools_marketing label span {
+    display: none;
+  }
+
+  .hs_numemployees label{
+    display:none;
+  }
+
+  .hbspt-form .schedule-demo-form .form-columns-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hs-form-field label {
+    display: none !important; /* Seems they need to enable labels */
+    color: #020617 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 16px !important;
+  }
+
+  .hbspt-form .schedule-demo-form select,
+  .hbspt-form .schedule-demo-form input.hs-input {
+    border-radius: 4px !important;
+    border: 1px solid #D8DEE6 !important;
+    background: #F2F5F8 !important;
+    display: flex !important;
+    padding: 12px 16px !important;
+    align-items: center !important;
+    gap: 4px !important;
+    align-self: stretch !important;
+    color: #333 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 24px !important; /* 150% */
+    letter-spacing: -0.16px !important;
+    min-width: 100%;
+    width: 100% !important;
+    margin-bottom: 24px;
+    height: 48px !important;
+  }
+
+  .hbspt-form .schedule-demo-form input::placeholder {
+    color: #94A3B8 !important;
+  }
+
+  .hbspt-form .schedule-demo-form .hs-button.primary {
+    display: flex !important;
+    padding: 20px 24px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex: 1 0 0 !important;
+    border-radius: 4px !important;
+    background: #068466 !important;
+    color: #FFF !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 16px !important; /* 100% */
+    letter-spacing: -0.16px !important;
+    margin-top: 16px;
+    position: relative;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    right: unset;
+    border: none;
+    min-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+    min-height: 56px;
+  }
+
+  .hbspt-form .schedule-demo-form select.is-placeholder {
+    color: #94A3B8 !important;
+  }
+
+
+  @media (max-width: 767px) {
+    .hbspt-form .schedule-demo-form select,
+    .hbspt-form .schedule-demo-form input.hs-input {
+      margin-bottom: 16px;
+    }
+
+    .hbspt-form .schedule-demo-form .hs-button.primary {
+      margin-top: 8px;
+    }
+  }
+</style></div><div class="right-shape-hero__policy-text w-embed"><p class="right-shape-hero__policy-text">Sastrify requires the contact information you provide to contact you about our products and services. For information please review our <a href="https://www.sastrify.com/privacy-policy" target="_blank">Privacy Policy</a>.</p></div><button type="button" aria-label="Close modal" fs-modal-element="close-99" class="popup-close-button"><div class="popup-close-button__icon w-embed"><svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+</svg></div></button></div></div></section><div class="hide w-embed w-script"><!-- [Attributes by Finsweet] Modal -->
+<script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-modal@1/modal.js"></script></div></div></div></section><section class="testimonial__section"><div class="new-container padding-global"><div class="testimonial__wrapper"><div class="testimonial__header"><h2 class="testimonial__title">Results worth talking about.</h2></div><div data-current="IT" data-easing="ease" data-duration-in="300" data-duration-out="100" class="testimonial__tabs-wrapper w-tabs"><div class="testimonial__tabs w-tab-menu"><a data-w-tab="IT" class="testimonial__tab w-inline-block w-tab-link w--current"><div>IT</div></a><a data-w-tab="Procurement" class="testimonial__tab w-inline-block w-tab-link"><div>Procurement</div></a><a data-w-tab="Finance" class="testimonial__tab w-inline-block w-tab-link"><div>Finance</div></a></div><div class="w-tab-content"><div data-w-tab="IT" class="w-tab-pane w--tab-active"><div class="testimonial__tab-content"><div class="testimonial__tab-table"><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">15x</div><div class="testimonial__tab-item--text">ROI</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">$200k</div><div class="testimonial__tab-item--text">saved through eliminating overlaps and inefficiencies</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">500+ </div><div class="testimonial__tab-item--text">software tools discovered and tracked</div></div></div><div class="testimonial__content-wrapper"><div class="testimonial__quote w-embed"><svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Heading 3 &#226;&#134;&#146; FinOps teams" d="M22.9037 32.3984V23.5435C22.9037 18.9023 23.4534 15.0956 24.5526 12.1236C25.6926 9.15162 27.606 6.62745 30.2931 4.55111C32.9801 2.47477 36.0335 1.09055 39.4534 0.398438V7.48241C37.0513 8.86663 35.6875 10.719 35.3618 13.0397H39.4534V32.3984H22.9037ZM0.796875 32.3984V23.5435C0.796875 18.9023 1.34649 15.0956 2.44573 12.1236C3.58568 9.15162 5.49917 6.62745 8.18619 4.55111C10.9139 2.47477 13.9674 1.09055 17.3465 0.398438V7.48241C14.9445 8.86663 13.5806 10.719 13.2549 13.0397H17.3465V32.3984H0.796875Z" fill="#068466"/>
+</svg></div><div class="testimonial__quote is--mobile w-embed"><svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5802 24V17.3588C16.5802 13.8779 16.9924 11.0229 17.8168 8.79389C18.6718 6.56489 20.1069 4.67176 22.1221 3.1145C24.1374 1.55725 26.4275 0.519084 28.9924 0V5.31298C27.1908 6.35115 26.1679 7.74046 25.9237 9.48092H28.9924V24H16.5802ZM0 24V17.3588C0 13.8779 0.412214 11.0229 1.23664 8.79389C2.0916 6.56489 3.52672 4.67176 5.54199 3.1145C7.58779 1.55725 9.87786 0.519084 12.4122 0V5.31298C10.6107 6.35115 9.58779 7.74046 9.34351 9.48092H12.4122V24H0Z" fill="#068466"/>
+</svg></div><p class="testimonial__text">Sennder operates across more than ten offices, and we often had an overlap among the offices using singular software or different tools. Sastrify empowered our team in that we have a 360-degree overview of the software that we use and the different licenses.<br/></p><div class="testimonial__footer-wrapper"><div class="testimonial__author-wrapper"><img sizes="(max-width: 900px) 100vw, 900px" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/63d0dfb53b9fe73cf69e564b_sennder_CustomerStoryThumbnail_450x450px-p-500.jpg 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/63d0dfb53b9fe73cf69e564b_sennder_CustomerStoryThumbnail_450x450px-p-800.jpg 800w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/63d0dfb53b9fe73cf69e564b_sennder_CustomerStoryThumbnail_450x450px.jpg 900w" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/63d0dfb53b9fe73cf69e564b_sennder_CustomerStoryThumbnail_450x450px.jpg" loading="lazy" class="testimonial__author-image"/><div><div class="testimonial__author-name">Julius Köhler</div><div class="testimonial__author-job-title">Co-Founder &amp; Managing Director @ Sennder</div></div></div><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8b8198ca36a35b2675_logo-billie-1.webp" alt="" class="testimonial__logo"/></div></div></div></div><div data-w-tab="Procurement" class="w-tab-pane"><div class="testimonial__tab-content"><div class="testimonial__tab-table"><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">$550k</div><div class="testimonial__tab-item--text">saved through eliminating overlaps and inefficiencies</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">250h+</div><div class="testimonial__tab-item--text">saved through IT automations and negotiation support</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">20%</div><div class="testimonial__tab-item--text">of software stack optimized</div></div></div><div class="testimonial__content-wrapper"><div class="testimonial__quote w-embed"><svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Heading 3 &#226;&#134;&#146; FinOps teams" d="M22.9037 32.3984V23.5435C22.9037 18.9023 23.4534 15.0956 24.5526 12.1236C25.6926 9.15162 27.606 6.62745 30.2931 4.55111C32.9801 2.47477 36.0335 1.09055 39.4534 0.398438V7.48241C37.0513 8.86663 35.6875 10.719 35.3618 13.0397H39.4534V32.3984H22.9037ZM0.796875 32.3984V23.5435C0.796875 18.9023 1.34649 15.0956 2.44573 12.1236C3.58568 9.15162 5.49917 6.62745 8.18619 4.55111C10.9139 2.47477 13.9674 1.09055 17.3465 0.398438V7.48241C14.9445 8.86663 13.5806 10.719 13.2549 13.0397H17.3465V32.3984H0.796875Z" fill="#068466"/>
+</svg></div><p class="testimonial__text">Sastrify transformed the way we approach DORA compliance. Active vendor management, automated compliance documentation and a central registry of information save us countless hours and keep us ready for audits at all times.</p><div class="testimonial__footer-wrapper"><div class="testimonial__author-wrapper"><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c9e75c8a9859eedc9810b_sharen-overdijkink.webp" alt="" class="testimonial__author-image"/><div><div class="testimonial__author-name">Sharen Overdijkink</div><div class="testimonial__author-job-title">Procurement Lead @ Bitvavo</div></div></div><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679c7a8bec2f4b60fbcb52e8_logo-Bitvavo.webp" alt="" class="testimonial__logo"/></div></div></div></div><div data-w-tab="Finance" class="w-tab-pane"><div class="testimonial__tab-content"><div class="testimonial__tab-table"><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">€400k</div><div class="testimonial__tab-item--text">saved on software with Sastrify</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">50+</div><div class="testimonial__tab-item--text">employees using the Sastrify platform</div></div><div class="testimonial__table-item"><div class="testimonial__tab-item--highlight">100+</div><div class="testimonial__tab-item--text">tools actively managed with Sastrify</div></div></div><div class="testimonial__content-wrapper"><div class="testimonial__quote w-embed"><svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Heading 3 &#226;&#134;&#146; FinOps teams" d="M22.9037 32.3984V23.5435C22.9037 18.9023 23.4534 15.0956 24.5526 12.1236C25.6926 9.15162 27.606 6.62745 30.2931 4.55111C32.9801 2.47477 36.0335 1.09055 39.4534 0.398438V7.48241C37.0513 8.86663 35.6875 10.719 35.3618 13.0397H39.4534V32.3984H22.9037ZM0.796875 32.3984V23.5435C0.796875 18.9023 1.34649 15.0956 2.44573 12.1236C3.58568 9.15162 5.49917 6.62745 8.18619 4.55111C10.9139 2.47477 13.9674 1.09055 17.3465 0.398438V7.48241C14.9445 8.86663 13.5806 10.719 13.2549 13.0397H17.3465V32.3984H0.796875Z" fill="#068466"/>
+</svg></div><p class="testimonial__text">We wanted to empower our team to get the tools they need when they need them, but we also wanted them to be in charge of the supplier and negotiation management. At some point we hit a limit because teams simply didn’t have the time to negotiate or the ability to get accurate benchmarking data.</p><div class="testimonial__footer-wrapper"><div class="testimonial__author-wrapper"><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/690203827a357cd3e0b87eb1_6555f55547b8bd13f0700f80_Spendesk_CustomerStoryThumbnail_400x400px.webp" alt="" class="testimonial__author-image"/><div><div class="testimonial__author-name">Clémentine Svartz</div><div class="testimonial__author-job-title">Head of Finance at Spendesk</div></div></div><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/646deace61f77e68c19eb2e3_spendesk.svg" alt="" class="testimonial__logo spendesk"/></div></div></div></div></div></div><a href="/customer-stories" class="btn-bottom-center is--large w-button">Read the full stories</a></div></div></section></main><footer><div class="new-footer"><div class="new-container padding-global"><div class="footer__wrapper"><div class="footer__main"><div class="footer__col-1"><div class="footer__info"><div class="footer__info-wrapper"><img loading="lazy" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/679cc3011e27434e5cbbec84_Logo.webp" alt="" class="footer__brand"/><address class="footer__address">Sastrify GmbH<br/>Subbelrather Straße 15a<br/>50823 Cologne</address><a href="mailto:hello@sastrify.com?subject=Contact%20us%20-%20Sastrify" class="footer__email">hello@sastrify.com</a></div><div class="footer__social-wrapper"><a href="https://www.instagram.com/sastrify/" class="footer__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8308_157355)">
+<path d="M10 0.405273C12.717 0.405273 13.056 0.415273 14.122 0.465273C15.187 0.515273 15.912 0.682274 16.55 0.930274C17.21 1.18427 17.766 1.52827 18.322 2.08327C18.8305 2.58317 19.224 3.18786 19.475 3.85527C19.722 4.49227 19.89 5.21827 19.94 6.28327C19.987 7.34927 20 7.68827 20 10.4053C20 13.1223 19.99 13.4613 19.94 14.5273C19.89 15.5923 19.722 16.3173 19.475 16.9553C19.2247 17.623 18.8311 18.2279 18.322 18.7273C17.822 19.2356 17.2173 19.629 16.55 19.8803C15.913 20.1273 15.187 20.2953 14.122 20.3453C13.056 20.3923 12.717 20.4053 10 20.4053C7.283 20.4053 6.944 20.3953 5.878 20.3453C4.813 20.2953 4.088 20.1273 3.45 19.8803C2.78233 19.6297 2.17753 19.2362 1.678 18.7273C1.16941 18.2275 0.775931 17.6227 0.525 16.9553C0.277 16.3183 0.11 15.5923 0.0599999 14.5273C0.0129999 13.4613 0 13.1223 0 10.4053C0 7.68827 0.00999994 7.34927 0.0599999 6.28327C0.11 5.21727 0.277 4.49327 0.525 3.85527C0.775236 3.18745 1.1688 2.58259 1.678 2.08327C2.17767 1.5745 2.78243 1.181 3.45 0.930274C4.088 0.682274 4.812 0.515273 5.878 0.465273C6.944 0.418273 7.283 0.405273 10 0.405273ZM10 5.40527C8.67392 5.40527 7.40215 5.93206 6.46447 6.86974C5.52678 7.80742 5 9.07919 5 10.4053C5 11.7314 5.52678 13.0031 6.46447 13.9408C7.40215 14.8785 8.67392 15.4053 10 15.4053C11.3261 15.4053 12.5979 14.8785 13.5355 13.9408C14.4732 13.0031 15 11.7314 15 10.4053C15 9.07919 14.4732 7.80742 13.5355 6.86974C12.5979 5.93206 11.3261 5.40527 10 5.40527ZM16.5 5.15527C16.5 4.82375 16.3683 4.50581 16.1339 4.27139C15.8995 4.03697 15.5815 3.90527 15.25 3.90527C14.9185 3.90527 14.6005 4.03697 14.3661 4.27139C14.1317 4.50581 14 4.82375 14 5.15527C14 5.48679 14.1317 5.80474 14.3661 6.03916C14.6005 6.27358 14.9185 6.40527 15.25 6.40527C15.5815 6.40527 15.8995 6.27358 16.1339 6.03916C16.3683 5.80474 16.5 5.48679 16.5 5.15527ZM10 7.40527C10.7956 7.40527 11.5587 7.72134 12.1213 8.28395C12.6839 8.84656 13 9.60962 13 10.4053C13 11.2009 12.6839 11.964 12.1213 12.5266C11.5587 13.0892 10.7956 13.4053 10 13.4053C9.20435 13.4053 8.44129 13.0892 7.87868 12.5266C7.31607 11.964 7 11.2009 7 10.4053C7 9.60962 7.31607 8.84656 7.87868 8.28395C8.44129 7.72134 9.20435 7.40527 10 7.40527Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_8308_157355">
+<rect width="20" height="20" fill="currentColor" transform="translate(0 0.405273)"/>
+</clipPath>
+</defs>
+</svg></div></a><a href="https://www.linkedin.com/company/sastrify/" class="footer__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5724 9.58928V9.56348C10.5671 9.57219 10.5614 9.5809 10.5557 9.58928H10.5724Z" fill="currentColor"/>
+<path d="M17.0044 2.07129H2.8904C2.21486 2.07129 1.66699 2.60609 1.66699 3.26521V17.5444C1.66699 18.2032 2.21486 18.738 2.8904 18.738H17.0044C17.6809 18.738 18.2288 18.2028 18.2288 17.5444V3.26521C18.2288 2.60576 17.6806 2.07129 17.0044 2.07129ZM6.68696 16.0234H4.18552V8.49763H6.68696V16.0234ZM5.43641 7.46958H5.41966C4.58059 7.46958 4.03775 6.89155 4.03775 6.16943C4.03775 5.43123 4.59735 4.86928 5.45283 4.86928C6.30865 4.86928 6.83507 5.43123 6.85183 6.16943C6.85183 6.89155 6.30831 7.46958 5.43641 7.46958ZM15.7072 16.0234H13.2058V11.9963C13.2058 10.985 12.8439 10.2947 11.9388 10.2947C11.2479 10.2947 10.8364 10.7602 10.6551 11.2098C10.5891 11.3703 10.573 11.5949 10.573 11.82V16.0231H8.07155C8.07155 16.0231 8.10439 9.20266 8.07155 8.49729H10.573V9.56254C10.9054 9.04986 11.4998 8.3197 12.8278 8.3197C14.4734 8.3197 15.7076 9.39567 15.7076 11.7074L15.7072 16.0234Z" fill="currentColor"/>
+</svg></div></a><a href="https://www.facebook.com/sastrify" class="footer__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.4142 2.07129H2.58644C2.0788 2.07129 1.66699 2.48309 1.66699 2.99073V17.8185C1.66699 18.3268 2.0788 18.738 2.58644 18.738H10.5684V12.2838H8.39546V9.76921H10.5684V7.91157C10.5684 5.75948 11.8837 4.58865 13.8038 4.58865C14.7239 4.58865 15.5149 4.65601 15.7455 4.68657V6.93657H14.4114C13.3698 6.93657 13.167 7.43726 13.167 8.16643V9.77129H15.6559L15.333 12.2921H13.167V18.738H17.4135C17.9225 18.738 18.3337 18.3268 18.3337 17.8185V2.99073C18.3337 2.48309 17.9225 2.07129 17.4142 2.07129Z" fill="currentColor"/>
+</svg></div></a><a href="https://x.com/sastrify" class="footer__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.1169 9.44315L7.03716 5.13379H5.39453L9.2096 10.4716L9.68983 11.1431L12.9553 15.7159H14.5979L10.5951 10.1146L10.1169 9.44315Z" fill="white" fill-opacity="0.5"/>
+<path d="M16.9396 2.07129H3.06109C2.29112 2.07129 1.66699 2.69542 1.66699 3.46539V17.3439C1.66699 18.1138 2.29112 18.738 3.06109 18.738H16.9396C17.7095 18.738 18.3337 18.1138 18.3337 17.3439V3.46539C18.3337 2.69542 17.7095 2.07129 16.9396 2.07129ZM12.4513 16.4652L9.14639 11.7584L5.00899 16.4652H3.93972L8.67221 11.0829L3.93972 4.34402H7.5493L10.6782 8.80005L14.5985 4.34402H15.6677L11.1549 9.47707L16.0609 16.4652H12.4513Z" fill="currentColor"/>
+</svg></div></a><a href="https://www.youtube.com/@sastrify" class="footer__social-link w-inline-block"><div class="footer__social-icon w-embed"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8308_157367)">
+<path d="M21.3796 4.90371C21.1168 3.92023 20.3423 3.14581 19.3588 2.88295C17.5762 2.40527 10.4286 2.40527 10.4286 2.40527C10.4286 2.40527 3.28094 2.40527 1.49826 2.88295C0.514955 3.14581 -0.259643 3.92023 -0.522455 4.90371C-1 6.68621 -1 10.4054 -1 10.4054C-1 10.4054 -1 14.1245 -0.522455 15.9068C-0.259643 16.8903 0.514955 17.665 1.49826 17.9278C3.28094 18.4053 10.4286 18.4053 10.4286 18.4053C10.4286 18.4053 17.5762 18.4053 19.3588 17.9278C20.3423 17.665 21.1168 16.8903 21.3796 15.9068C21.8571 14.1245 21.8571 10.4054 21.8571 10.4054C21.8571 10.4054 21.8571 6.68621 21.3796 4.90371ZM8.14272 13.834V6.97675L14.0811 10.4054L8.14272 13.834Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_8308_157367">
+<rect width="20" height="20" fill="white" transform="translate(0 0.405273)"/>
+</clipPath>
+</defs>
+</svg></div></a></div></div><div class="footer__subscribe-wrapper"><div class="text-block-359">Get more information</div><div class="footer__form w-embed w-script"><style>
+  .footer__form .hs-form-mail .submitted-message{
+    text-align: center;
+    color: white !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    padding-right: 45px;
+  }
+  .footer__form .hs-form-mail p {
+    margin-bottom: 70px;
+  }
+  .footer__form .hs-form-mail ul.hs-error-msgs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .footer__form .hs-form-mail ul.hs-error-msgs li{
+    display: flex;
+  }
+  .footer__form .hs-form-mail label.hs-error-msg{
+    /* color: #F67031;*/
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: inherit;
+  }
+  .footer__form .hs-form-mail .hbspt-form form {
+    height: 100px;
+  }
+  .footer__form .hs-form-mail .hs-form input[type="email"]:focus {
+    outline: none !important;
+    border:0px solid #27343A;
+  }
+  .footer__form .hs-form-mail input.hs-button.primary.large {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .footer__form .hs-form-mail .actions .hs-button{
+    cursor: pointer;
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    padding: 14px 0px;
+    border-radius: 6px;
+    background-color: #0da07c;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 700;
+    display: block;
+    color: white;
+    border: none;
+  }
+  .footer__form .hs-form-mail .actions .hs-button:hover{
+    background-color: #35D0BA;
+  }
+  .footer__form .hs-form-mail .actions .hs-button:focus{
+    background-color: #35D0BA;
+  } 
+
+
+  .footer__form .hs-form-mail form.hs-form {
+    position: relative;
+    width: 100% !important; 
+    max-width: 384px !important; 
+  }
+
+  .footer__form .hs-form-mail #label-email-0f494255-009f-447e-81c7-64d2fcedd152{
+    display: none;
+  }
+
+  .footer__form .hs-form-mail .hs-form-field .input{
+    padding: 0;
+  }
+  .footer__form .hs-form-mail input.hs-button.primary.large {
+    margin: 0px 0 0 0;
+    width: 100%;
+    max-width: 120px;
+    height: 46px;
+    border-radius: 10px;
+  }
+
+  .footer__form .hs-form {
+    position: relative;
+  }
+  .footer__form .hs-form input.hs-input{
+    display: flex !important;
+    width: 379px !important;
+    padding: 15px 4px 15px 24px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-radius: 900px !important;
+    border: 1px solid rgba(0, 0, 0, 0.10) !important;
+    background: #FAFAFA !important;
+    color: #667D89 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 150% !important;
+    position: relative !important;
+    height: 56px !important;
+  }
+
+  .footer__form .hs-form .hs-button {
+    display: flex !important;
+    padding: 12px 24px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    border-radius: 100px !important;
+    background: #068466 !important;
+    border: 1px solid #068466 !important;
+    margin: 0 !important;
+    position: absolute !important;
+    bottom: 8px !important;
+    right: 8px !important;
+    color: white;
+    text-align: center !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.14px !important;
+    font-family: inherit !important;
+   	min-width: 0 !important;
+    width: fit-content !important;
+  }
+
+  @media (max-width: 767px) {
+    .footer__form .hs-form input.hs-input {
+      width: 280px !important;
+    }
+  }
+  /*.hs-form-mail input[type=email]:focus{
+  border-color: #35D0BA !important;
+  }*/
+</style>
+<!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "20137352",
+    formId: "c7f0f501-b14f-4597-b725-d9f8b0b12c52",
+    css: ""
+  });
+</script></div></div></div><div class="footer__col-22"><div class="footer__links-col"><div class="footer__links with--links"><div class="footer__links-title">Solutions</div><a href="/solutions/it-teams" class="footer__link">IT</a><a href="/solutions/procurement" class="footer__link">Procurement</a><a href="/solutions/finance" class="footer__link">Finance</a><a href="/native-integrations" class="footer__link hide">Integrations</a></div><div class="footer__links"><a href="/pricing" class="footer__links-title w-inline-block"><div class="text-block-358">Pricing</div></a></div><div class="footer__links cc-m"><a href="/native-integrations" class="footer__links-title w-inline-block"><div>integrations</div></a></div></div><div class="footer__links-col"><div class="footer__links"><div class="footer__links-title">Media &amp; Partnerships</div><a href="/press" class="footer__link">Press</a><a href="/partners" class="footer__link">Partners</a><a href="/customer-stories" class="footer__link hide">Success Stories</a><a href="#" class="footer__link hide">Contact</a></div><div class="footer__links with--links"><div class="footer__links-title">Resources</div><a href="/blog" class="footer__link">Blog</a><a href="/guides-reports" class="footer__link no-cap">Guides &amp; Reports</a><a href="/guides-reports" class="footer__link no-cap">Webinars</a></div></div><div id="w-node-_19220753-9c37-5019-d3a2-9207d939ffa6-d115b3ce" class="footer__links-col is--last"><div class="footer__links"><div class="footer__links-title">about</div><a href="/about" class="footer__link">Company</a><a href="/careers" class="footer__link">Careers</a></div></div><div class="footer__links"><div class="footer__links-title">Compare</div><a href="/sastrify-vs-vertice" class="footer__link">Sastrify vs. Vertice</a><a href="/sastrify-toriihq" class="footer__link">Sastrify vs. Torii</a><a href="/sastrify-trelica" class="footer__link">Sastrify vs. Trelica</a></div></div></div><div class="footer__bottom"><div class="footer__policy-links"><a href="/terms-conditions" class="footer__policy-link">Terms</a><a href="/privacy-policy" class="footer__policy-link">Privacy</a><a href="/imprint" class="footer__policy-link">Imprint</a><a href="/data-protection" class="footer__policy-link is--last">Data protection</a></div><div class="footer__social-proof"><a href="https://www.g2.com/products/sastrify/reviews?utm_source=rewards-badge" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" sizes="(max-width: 479px) 100vw, 104px" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e6221021e951e7faf68_SaaSSpendManagement_Leader_Mid-Market_Leader.webp" loading="lazy" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e6221021e951e7faf68_SaaSSpendManagement_Leader_Mid-Market_Leader-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e6221021e951e7faf68_SaaSSpendManagement_Leader_Mid-Market_Leader.webp 770w" class="footer__social-proof--image"/></a><a href="https://www.g2.com/products/sastrify/reviews?utm_source=rewards-badge" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" sizes="(max-width: 479px) 100vw, 104px" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e629424a4788e480079_SaaSSpendManagement_BestSupport_Small-Business_QualityOfSupport.webp" loading="lazy" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e629424a4788e480079_SaaSSpendManagement_BestSupport_Small-Business_QualityOfSupport-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6e629424a4788e480079_SaaSSpendManagement_BestSupport_Small-Business_QualityOfSupport.webp 770w" class="footer__social-proof--image"/></a><a href="https://www.g2.com/products/sastrify/reviews?utm_source=rewards-badge" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" sizes="(max-width: 479px) 100vw, 104px" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6ea6a82ea735b6342aff_SaaSOperationsManagement_FastestImplementation_Mid-Market_GoLiveTime.webp" loading="lazy" srcset="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6ea6a82ea735b6342aff_SaaSOperationsManagement_FastestImplementation_Mid-Market_GoLiveTime-p-500.webp 500w, https://cdn.prod.website-files.com/61926ae506154e2b813f793d/67aa6ea6a82ea735b6342aff_SaaSOperationsManagement_FastestImplementation_Mid-Market_GoLiveTime.webp 770w" class="footer__social-proof--image"/></a><a href="https://www.g2.com/products/sastrify/reviews?utm_source=rewards-badge" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" loading="lazy" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/63ee1c2f7d510daa67e487d5_users-love-us%201.svg" class="footer__social-proof--image"/></a><a href="https://app.eu.vanta.com/sastrify.com/trust/8vgp5pwjtvjpn7hohw7ejb" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" loading="lazy" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/630879da72ead471ea497985_21972-312_SOC_NonCPA.svg" class="footer__social-proof--image"/></a><a href="https://app.eu.vanta.com/sastrify.com/trust/8vgp5pwjtvjpn7hohw7ejb" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" loading="lazy" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/645b53ce9de175092c1e0689_gdpr-light.webp" class="footer__social-proof--image"/></a><a href="https://heydata.eu" target="_blank" class="footer__social-proof--item w-inline-block"><img width="104" loading="lazy" alt="" src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/645b53cc227d4a28512bf4e0_heydata.webp" class="footer__social-proof--image"/></a></div></div></div></div></div><div class="sticky-footer"><a href="/schedule-demo" class="btn btn-footer w-button">Get a Demo</a></div></footer><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61926ae506154e2b813f793d" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/js/webflow.schunk.dae3a638fdbd7aa8.js" type="text/javascript" integrity="sha384-Orfqmeg9peDxOSoz+aLAEPksgYvFxo2jlMu11bLplielH6yXESz5vYMUSofwlOkk" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/61926ae506154e2b813f793d/js/webflow.cfcbb32d.18e3c5a1864166eb.js" type="text/javascript" integrity="sha384-CnJzhpn1HIQKvypUPqJbh8JeA/SFYe3kYBzlLlr0j/m1aa1t/D4eLj5TwOPgKBzj" crossorigin="anonymous"></script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW2LNBJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['SLScoutObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://scout-cdn.salesloft.com/sl.js','slscout');
+    slscout(["init", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0IjoxMDg2Nzd9.-fKl7D08WeAnuBB35R76v8luwYHYTfrQ9VZOEuNVVm4"]);
+</script>
+
+<script src="https://app.optibase.io/script.js" public-api-key="cls4pi2rn004790g84wq0ose9"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+
+  // Only run if body has text-replace class
+  if (!body.classList.contains("text-replace")) return;
+
+  // If you also want to support capitalized version:
+  const isCapitalize = body.classList.contains("text-capitalize");
+
+  // Regex: match "saas" in any casing
+  const RE = /\bsaas\b/gi;
+  const REPLACEMENT = isCapitalize ? "Software" : "software";
+
+  const walker = document.createTreeWalker(
+    body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        if (!node.nodeValue || !node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        const p = node.parentNode;
+        if (!p) return NodeFilter.FILTER_REJECT;
+        const tag = p.nodeName.toLowerCase();
+        if (/(script|style|code|pre|textarea)/.test(tag)) return NodeFilter.FILTER_REJECT;
+        if (p.isContentEditable) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  let n;
+  while ((n = walker.nextNode())) {
+    if (RE.test(n.nodeValue)) {
+      n.nodeValue = n.nodeValue.replace(RE, REPLACEMENT);
+    }
+  }
+});
+</script><script src="https://hubspotonwebflow.com/assets/js/form-124.js" type="text/javascript" integrity="sha384-bjyNIOqAKScdeQ3THsDZLGagNN56B4X2Auu9YZIGu+tA/PlggMk4jbWruG/P6zYj" crossorigin="anonymous"></script></body></html>

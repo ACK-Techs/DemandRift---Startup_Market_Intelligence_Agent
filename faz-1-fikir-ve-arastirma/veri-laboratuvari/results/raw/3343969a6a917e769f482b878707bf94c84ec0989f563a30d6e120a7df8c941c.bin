@@ -1,0 +1,3267 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="codeberg-auto">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Issues - Codeberg/Community - Codeberg.org</title>
+	<link rel="manifest" href="/manifest.json">
+	<meta name="author" content="Codeberg">
+	<meta name="description" content="Community - Discussion of community- and platform-related issues">
+	<meta name="keywords" content="git,non-profit,foss,oss,free,software,open,source,code,hosting">
+	<meta name="referrer" content="same-origin">
+
+
+	<link rel="alternate" type="application/atom+xml" title="" href="/Codeberg/Community.atom">
+	<link rel="alternate" type="application/rss+xml" title="" href="/Codeberg/Community.rss">
+
+	<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+	<link rel="alternate icon" href="/assets/img/favicon.png" type="image/png">
+
+	
+<script>
+	
+	window.addEventListener('error', function(e) {window._globalHandlerErrors=window._globalHandlerErrors||[]; window._globalHandlerErrors.push(e);});
+	window.addEventListener('unhandledrejection', function(e) {window._globalHandlerErrors=window._globalHandlerErrors||[]; window._globalHandlerErrors.push(e);});
+	window.config = {
+		appUrl: 'https:\/\/codeberg.org\/',
+		appSubUrl: '',
+		assetVersionEncoded: encodeURIComponent('16.0.0-dev-753-6bcc6da0~gitea-1.22.0'), 
+		assetUrlPrefix: '\/assets',
+		runModeIsProd:  true ,
+		customEmojis: new Set(["git","gitea","codeberg","gitlab","github","gogs","forgejo"]),
+		pageData: {"DATETIMESTRINGS":{"FUTURE":"in future","NOW":"now","relativetime.1day":"yesterday","relativetime.1month":"last month","relativetime.1week":"last week","relativetime.1year":"last year"},"PLURALSTRINGS_FALLBACK":{},"PLURALSTRINGS_LANG":{"relativetime.days":["%d day ago","%d days ago"],"relativetime.duration.days":["%d day","%d days"],"relativetime.duration.hours":["%d hour","%d hours"],"relativetime.duration.mins":["%d minute","%d minutes"],"relativetime.duration.months":["%d month","%d months"],"relativetime.duration.secs":["%d second","%d seconds"],"relativetime.duration.weeks":["%d week","%d weeks"],"relativetime.duration.years":["%d year","%d years"],"relativetime.hours":["%d hour ago","%d hours ago"],"relativetime.mins":["%d minute ago","%d minutes ago"],"relativetime.months":["%d month ago","%d months ago"],"relativetime.weeks":["%d week ago","%d weeks ago"],"relativetime.years":["%d year ago","%d years ago"]},"PLURAL_RULE_FALLBACK":0,"PLURAL_RULE_LANG":0},
+		notificationSettings: {"EventSourceUpdateTime":10000,"MaxTimeout":60000,"MinTimeout":10000,"TimeoutStep":10000}, 
+		enableTimeTracking:  true ,
+		
+		mentionValues: Array.from(new Map([['ashimokawa', {key: 'ashimokawa Andreas Shimokawa', value: 'ashimokawa', name: 'ashimokawa', fullname: 'Andreas Shimokawa', avatar: 'https:\/\/codeberg.org\/avatars\/08a6e264d4a8e159718256c6dfd392b242e9ec8f7e7bf8993bb3afba7d13fe7b'}],['Codeberg.org', {key: 'Codeberg.org ', value: 'Codeberg.org', name: 'Codeberg.org', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/29ad907e5a8cbe775c8a49d852bf2447'}],['crapStone', {key: 'crapStone ', value: 'crapStone', name: 'crapStone', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/ad8d55229af377718a731df357aa4257'}],['crystal', {key: 'crystal crystal', value: 'crystal', name: 'crystal', fullname: 'crystal', avatar: 'https:\/\/codeberg.org\/avatars\/f965882a888d78f97338d3df24bcaaedbc903534bc5203e7d451f27ee9176b4a'}],['dmi-cb', {key: 'dmi-cb ', value: 'dmi-cb', name: 'dmi-cb', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/3eecd22a025207d111881ea19acd65c1f2328eb4399e04115b873f5b06afb5a7'}],['dpk', {key: 'dpk Daphne Preston-Kendal', value: 'dpk', name: 'dpk', fullname: 'Daphne Preston-Kendal', avatar: 'https:\/\/codeberg.org\/avatars\/1a089ee4993a2c976a0a6d1e8f31a345ee004af8746f93082a1cb71753775d74'}],['famfo', {key: 'famfo ', value: 'famfo', name: 'famfo', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/d008fadd41da79f792e7cca47be5a0c7758f62545ff408797f72668019f54c59'}],['famfo-cb', {key: 'famfo-cb ', value: 'famfo-cb', name: 'famfo-cb', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/e7ebcefa6a9b60bf0c20bbaf0da14408f96a511b26d015736bcf0b3292d47d91'}],['fnetX', {key: 'fnetX Otto', value: 'fnetX', name: 'fnetX', fullname: 'Otto', avatar: 'https:\/\/codeberg.org\/avatars\/5bf762c71ac84565e8a1773d4fd63744'}],['gedankenstuecke', {key: 'gedankenstuecke Bastian Greshake Tzovaras', value: 'gedankenstuecke', name: 'gedankenstuecke', fullname: 'Bastian Greshake Tzovaras', avatar: 'https:\/\/codeberg.org\/avatars\/751880322b070104c0a5b14bd65075deef243fdf0fa51a86fc837ca0a84ede38'}],['Gusted', {key: 'Gusted ', value: 'Gusted', name: 'Gusted', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/44a59264e976fa585ed9f0a92abad9d7'}],['jerger', {key: 'jerger ', value: 'jerger', name: 'jerger', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/54d9e06f0c8aa40932f1f902cae5fcc4'}],['mahlzahn', {key: 'mahlzahn Robert Wolff', value: 'mahlzahn', name: 'mahlzahn', fullname: 'Robert Wolff', avatar: 'https:\/\/codeberg.org\/avatars\/38aaf335c256be75baad14a954801bfeb7aea344f7dadc3e699a683f535fab6a'}],['momar', {key: 'momar Moritz Marquardt', value: 'momar', name: 'momar', fullname: 'Moritz Marquardt', avatar: 'https:\/\/codeberg.org\/avatars\/095f54d002ad70e2ca3217eb66f9cff2'}],['n0toose', {key: 'n0toose Panagiotis \u0022Ivory\u0022 Vasilopoulos', value: 'n0toose', name: 'n0toose', fullname: 'Panagiotis \u0022Ivory\u0022 Vasilopoulos', avatar: 'https:\/\/codeberg.org\/avatars\/d3e911eec058bc2605b5bf5a1af2c968f64815a2f6aedefd3e5f93cb6ba514a4'}],['patdyn', {key: 'patdyn ', value: 'patdyn', name: 'patdyn', fullname: '', avatar: 'https:\/\/codeberg.org\/avatars\/d562b7736cb9ea2dee358a1e51a2ea58c65863318d725b777247bbd546a386d0'}],['whitequark', {key: 'whitequark Catherine', value: 'whitequark', name: 'whitequark', fullname: 'Catherine', avatar: 'https:\/\/codeberg.org\/avatars\/47018ce4739b642a796f78142ff69a45541db3bfde16a159d075bdad357f1a3a'}],['zoe', {key: 'zoe Zoë Finja Emilia Kron', value: 'zoe', name: 'zoe', fullname: 'Zoë Finja Emilia Kron', avatar: 'https:\/\/codeberg.org\/avatars\/e3298315250201c467e8e74cf7d562c7e0f3a672792ebdcd5671de3bed8a3a71'}],]).values()),
+		
+		mermaidMaxSourceCharacters:  50000 ,
+		
+		i18n: {
+			copy_success: "Copied!",
+			copy_error: "Copy failed",
+			error_occurred: "An error occurred",
+			network_error: "Network error",
+			remove_label_str: "Remove item \"%s\"",
+			modal_confirm: "Confirm",
+			modal_cancel: "Cancel",
+			more_items: "More items",
+			incorrect_root_url: "This Forgejo instance is configured to be served on \"https://codeberg.org/\". You are currently viewing Forgejo through a different URL, which may cause parts of the application to break. The canonical URL is controlled by Forgejo admins via the ROOT_URL setting in the app.ini.",
+		},
+	};
+	
+	window.config.pageData = window.config.pageData || {};
+</script>
+<script src="/assets/js/webcomponents.js?v=16.0.0-dev-753-6bcc6da0~gitea-1.22.0"></script>
+
+	
+
+	
+	<meta property="og:title" content="Community">
+
+	<meta property="og:description" content="Discussion of community- and platform-related issues">
+
+
+	<meta property="og:url" content="https://codeberg.org/Codeberg/Community">
+
+
+	<meta property="og:type" content="object">
+
+
+	<meta property="og:image" content="https://codeberg.org/Codeberg/Community/-/summary-card">
+	
+		<meta property="og:image:width" content="1200">
+	
+	
+		<meta property="og:image:height" content="600">
+	
+	
+		<meta property="og:image:alt" content="Summary card of repository Codeberg/Community, described as: Discussion of community- and platform-related issues">
+	
+
+<meta property="og:site_name" content="Codeberg.org">
+
+	<link rel="stylesheet" href="/assets/css/index.css?v=16.0.0-dev-753-6bcc6da0~gitea-1.22.0">
+<link rel="stylesheet" href="/assets/css/theme-codeberg-auto.css?v=16.0.0-dev-753-6bcc6da0~gitea-1.22.0">
+
+	
+</head>
+<body class="no-js" hx-swap="outerHTML" hx-ext="morph" hx-push-url="false">
+	
+	<noscript>
+		<style>
+			#tou-announcement { display: flex !important; justify-content: center; }
+			#tou-announcement > :first-child, #tou-announcement > :last-child { display: none; }
+		</style>
+	</noscript>
+	<div id="tou-announcement" class="tw-hidden">
+		<div style="width: 108.3px"></div>
+		<div>
+		<span>Codeberg has changed its Terms of Use. <a href="https://codeberg.org/Codeberg/org/compare/17bdb39b0c1ecd0e423f3ba592650ce57fcdfbf5..71149c7fc95ccfeae36109b5cddca339e4aa1473?files=TermsOfUse.md#diff-d760d688bb9b929b62db808bfc76abe4493d095a">View complete changes</a>.</span>
+		<ol>
+			<li>LLM-generated content is being restricted. <a href="https://codeberg.org/Codeberg/org/commit/71149c7fc95ccfeae36109b5cddca339e4aa1473">View change</a> or <a href="https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html">read the blog post</a></li>
+			<li>Cryptocurrency projects are no longer allowed. <a href="https://codeberg.org/Codeberg/org/commit/f383b648fd733ab88083dc390b91e77cd7589980">View change</a></li>
+		</ol>
+		</div>
+		<button class="ui secondary button small"><svg viewBox="0 0 16 16" class="svg octicon-x" aria-hidden="true" width="16" height="16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-3.22 3.22a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06"/></svg> Dismiss</button>
+	</div>
+	<div class="full height">
+		<noscript>
+			<div class="tw-ml-2 tw-mr-2 tw-text-center tw-text-text-light-2">This website requires JavaScript.</div>
+		</noscript>
+
+		
+
+		
+			
+
+
+<nav id="navbar" aria-label="Navigation bar">
+	<div class="navbar-left ui secondary menu">
+		
+		<a class="item" id="navbar-logo" href="/" aria-label="Home">
+			<div class="branding" aria-hidden="true">
+				<img width="30" height="30" loading="lazy" class="light-logo" src="/assets/img/svg/cb-logo.svg" alt="Logo">
+				<img width="30" height="30" loading="lazy" class="dark-logo" src="/assets/img/svg/cb-logo-mono.svg" alt="Logo">
+			</div>
+		</a>
+
+		
+		<div class="ui secondary menu item navbar-mobile-right only-mobile">
+			
+			<button class="item tw-w-auto ui icon mini button tw-p-2 tw-m-0" id="navbar-expand-toggle" aria-label="Toggle menu"><svg viewBox="0 0 16 16" class="svg octicon-three-bars" aria-hidden="true" width="16" height="16"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75m0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75M1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5"/></svg></button>
+		</div>
+
+		
+		
+			<a class="item" href="/explore/repos">Explore</a>
+		
+
+		
+			<a class="item" target="_blank" href="https://docs.codeberg.org/getting-started/what-is-codeberg/#what-is-codeberg-e.v.%3F">About</a>
+			<a class="item" target="_blank" href="https://docs.codeberg.org/getting-started/faq/">FAQ</a>
+			<a class="item" target="_blank" rel="noopener noreferrer" href="https://docs.codeberg.org">Help</a>
+		
+
+		<a class="item donation-pretty" href="https://donate.codeberg.org">Donate</a>
+	</div>
+
+	
+	<div class="navbar-right ui secondary menu">
+		
+			
+				<a class="item" href="/user/sign_up">
+					<svg viewBox="0 0 16 16" class="tw-mr-1 svg octicon-person" aria-hidden="true" width="16" height="16"><path d="M10.561 8.073a6 6 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6 6 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0M10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0"/></svg>
+					<span>Register</span>
+				</a>
+			
+			<a class="item" rel="nofollow" href="/user/login?redirect_to=%2fCodeberg%2fCommunity%2fissues">
+				<svg viewBox="0 0 16 16" class="tw-mr-1 svg octicon-sign-in" aria-hidden="true" width="16" height="16"><path d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 0 1 0 1.5h-2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 0 1.5h-2.5A1.75 1.75 0 0 1 2 13.25Zm6.56 4.5h5.69a.75.75 0 0 1 0 1.5H8.56l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L6.22 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734Z"/></svg>
+				<span>Sign in</span>
+			</a>
+		
+	</div>
+</nav>
+
+		
+
+
+
+<div role="main" aria-label="Issues" class="page-content repository issue-list">
+	<div class="secondary-nav">
+
+	<div class="ui container">
+		<div class="repo-header">
+			<div class="flex-item tw-items-center">
+				<div class="flex-item-leading">
+					
+
+	<img class="ui avatar tw-align-middle" src="/repo-avatars/0a7a2ce17429859df679cd24a8d9398b1a87f0d1806f01ab44ec760f038c2f3c" width="24" height="24" alt="Codeberg/Community">
+
+
+				</div>
+				<div class="flex-item-main">
+					<div class="flex-item-title tw-font-normal">
+						<a class="muted" href="/Codeberg">Codeberg</a>/<a class="muted tw-font-semibold" href="/Codeberg/Community">Community</a>
+					</div>
+				</div>
+				<div class="flex-item-trailing">
+					
+					
+						
+					
+					
+					
+				</div>
+			</div>
+			
+				<div class="repo-buttons button-row">
+					
+					
+					
+					
+					<a class="ui compact small basic button" href="/Codeberg/Community.rss" data-tooltip-content="RSS feed">
+						<svg viewBox="0 0 16 16" class="svg octicon-rss" aria-hidden="true" width="16" height="16"><path d="M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.5 10.5 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7 7 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.5 5.5 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489M2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0"/></svg>
+					</a>
+					
+					
+	
+	<div class="ui disabled labeled button" data-tooltip-content="Sign in to watch this repository.">
+		<div class="ui compact small basic button">
+			<svg viewBox="0 0 16 16" class="svg octicon-eye" aria-hidden="true" width="16" height="16"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14s-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2M1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5s2.825-.742 3.955-1.715c1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5s-2.825.742-3.955 1.715c-1.124.967-1.954 2.096-2.366 2.717M8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10"/></svg><span class="text not-mobile">Watch</span>
+		</div>
+		<a class="ui basic label" href="/Codeberg/Community/watchers"
+			aria-label="63 watchers"
+			>
+			63
+		</a>
+	</div>
+
+
+					
+					<form hx-target="this" hx-post="/Codeberg/Community/action/star" hx-on::after-settle="this.querySelector('button').focus()" method="post" action="/Codeberg/Community/action/star">
+	<div class="ui labeled button" data-tooltip-content="Sign in to star this repository.">
+		<button type="submit" class="ui compact small basic button" disabled aria-label="Star">
+			
+				<svg viewBox="0 0 16 16" class="svg octicon-star" aria-hidden="true" width="16" height="16"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25m0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41z"/></svg><span class="text not-mobile">Star</span>
+			
+		</button>
+		<a hx-boost="false" class="ui basic label" href="/Codeberg/Community/stars"
+			aria-label="414 stars"
+			>
+			414
+		</a>
+	</div>
+</form>
+
+					
+					
+					
+
+
+	<div class="ui labeled button
+		
+			disabled
+		"
+		
+			data-tooltip-content="Sign in to fork this repository."
+		
+	>
+		<a class="ui compact small basic button"
+			
+				
+			
+		>
+			<svg viewBox="0 0 16 16" class="svg octicon-repo-forked" aria-hidden="true" width="16" height="16"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0M5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0m6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5m-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0"/></svg><span class="text not-mobile">Fork</span>
+		</a>
+		<dialog id="fork-repo-modal">
+			<article>
+				<header>You've already forked Community</header>
+				<div class="content tw-text-left">
+					<div class="ui list">
+						
+					</div>
+					
+				</div>
+			</article>
+		</dialog>
+		<a class="ui basic label" href="/Codeberg/Community/forks"
+			aria-label="13 forks"
+			>
+			13
+		</a>
+	</div>
+
+
+
+
+					
+					
+				</div>
+			
+		</div>
+		
+		
+		
+	</div>
+
+	<overflow-menu class="ui container secondary pointing tabular top attached borderless menu tw-pt-0 tw-my-0">
+		
+			<div class="overflow-menu-items">
+				
+					<a class="item" href="/Codeberg/Community">
+						<svg viewBox="0 0 16 16" class="svg octicon-code" aria-hidden="true" width="16" height="16"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215m-6.56 0a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"/></svg> Code
+					</a>
+				
+
+				
+					<a class="active item" href="/Codeberg/Community/issues">
+						<svg viewBox="0 0 16 16" class="svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg> Issues
+						
+							<span class="ui small label">449</span>
+						
+					</a>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+					<a class="item" href="/Codeberg/Community/activity">
+						<svg viewBox="0 0 16 16" class="svg octicon-pulse" aria-hidden="true" width="16" height="16"><path d="M6 2c.306 0 .582.187.696.471L10 10.731l1.304-3.26A.75.75 0 0 1 12 7h3.25a.75.75 0 0 1 0 1.5h-2.742l-1.812 4.528a.751.751 0 0 1-1.392 0L6 4.77 4.696 8.03A.75.75 0 0 1 4 8.5H.75a.75.75 0 0 1 0-1.5h2.742l1.812-4.529A.75.75 0 0 1 6 2"/></svg> Activity
+					</a>
+				
+
+				
+
+				
+
+				
+
+				
+			</div>
+		
+	</overflow-menu>
+	<div class="ui tabs divider"></div>
+</div>
+
+	<div class="ui container">
+	
+
+
+
+
+	<div id="flash-message" hx-swap-oob="true"></div>
+
+
+
+	
+		<div id="issue-pins" >
+			
+				<div class="issue-card tw-break-anywhere " data-move-url="/Codeberg/Community/issues/move_pin" data-issue-id="4888790">
+					
+	
+	<div class="content tw-w-full">
+		<div class="tw-flex tw-items-start tw-gap-[5px]">
+			<div class="issue-card-icon">
+				
+	
+		<svg viewBox="0 0 16 16" class="text red svg octicon-issue-closed" aria-hidden="true" width="16" height="16"><path d="M11.28 6.78a.75.75 0 0 0-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+	
+
+
+			</div>
+			<a class="issue-card-title muted issue-title tw-break-anywhere" href="/Codeberg/Community/issues/2596">500/504 server error creating issues/PR, commenting etc.</a>
+			
+		</div>
+		<div class="meta">
+			<span class="text light grey muted-links">
+				#2596
+				
+				
+					by <a href="/pastk">pastk</a> was closed <relative-time prefix="" tense="past" datetime="2026-09-12T10:47:20+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-12 10:47:20 +02:00</relative-time>
+				
+			</span>
+		</div>
+		
+		
+		
+		
+	</div>
+
+	
+
+
+				</div>
+			
+		</div>
+	
+
+		<div class="list-header list-header-issues">
+			<div class="switch issue-list-navbar">
+	<a class="item" href="/Codeberg/Community/labels">Labels</a>
+	<a class="item" href="/Codeberg/Community/milestones">Milestones</a>
+</div>
+
+			<form class="list-header-search ui form ignore-dirty issue-list-search">
+	<div class="ui search fluid action input">
+		<input type="hidden" name="state" value="open">
+		
+			<input type="hidden" name="type" value="all">
+			<input type="hidden" name="labels" value="">
+			<input type="hidden" name="milestone" value="0">
+			<input type="hidden" name="project" value="0">
+			<input type="hidden" name="assignee" value="0">
+			<input type="hidden" name="poster" value="0">
+			<input type="hidden" name="sort" value="relevance">
+		
+		
+			
+
+
+
+<div class="ui small fluid action input">
+	
+
+
+<input type="search" spellcheck="false" name="q" maxlength="255" placeholder="Search issues…">
+
+	
+
+<button class="ui small icon button" aria-label="Search…" data-tooltip-content="Go to"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></button>
+
+</div>
+
+		
+	</div>
+	
+		<a class="ui icon tw-px-4 tw-py-2 show-modal" data-modal="#search-syntax-modal"><svg viewBox="0 0 16 16" class="svg octicon-question" aria-hidden="true" width="16" height="16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg></a>
+<dialog id="search-syntax-modal">
+	<article>
+		<header>Search syntax</header>
+		<div class="content">
+			<a target="_blank" rel="noopener noreferrer" href="https://forgejo.org/docs/latest/user/issue-search/">See the documentation</a> for further details on search, operators, and filters.
+			<dl class="search-syntax-list">
+					
+						<div class="row">
+							<dt><code>&#34;forgejo&#34;</code></dt>
+							<dd>Include only results that match the term in quotes</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>assignee:&lt;username&gt;</code></dt>
+							<dd>Filter by assigned user</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>author:&lt;username&gt;</code></dt>
+							<dd>Filter by the author</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>is:all</code></dt>
+							<dd>All</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>is:closed</code></dt>
+							<dd>Closed</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>is:open</code></dt>
+							<dd>Open</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>mentions:&lt;username&gt;</code></dt>
+							<dd>Filter by mentioned user</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>modified:[&gt;|&lt;]&lt;date&gt;</code></dt>
+							<dd>Filter by last modified date</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>review:&lt;username&gt;</code></dt>
+							<dd>Filter by user who reviewed</td>
+						</div>
+					
+						<div class="row">
+							<dt><code>sort:&lt;by&gt;:[asc|desc]</code></dt>
+							<dd>Sort by: <code>created|comments|updated|deadline</code></td>
+						</div>
+					
+			</dl>
+		</div>
+		<footer class="actions">
+			<button class="secondary button cancel">Cancel</button>
+		</footer>
+	</article>
+</dialog>
+
+	
+</form>
+
+			
+				
+					<a class="primary button issue-list-new" href="/Codeberg/Community/issues/new">New issue</a>
+				
+			
+		</div>
+
+		<div id="issue-filters" class="issue-list-toolbar">
+	<div class="issue-list-toolbar-left">
+		
+		<div class="switch">
+	<a class="active item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="open-issue-count">
+		
+			<svg viewBox="0 0 16 16" class="svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+		
+		449&nbsp;Open
+	</a>
+	<a class="item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=closed&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="closed-issue-count">
+		<svg viewBox="0 0 16 16" class="svg octicon-issue-closed" aria-hidden="true" width="16" height="16"><path d="M11.28 6.78a.75.75 0 0 0-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+		2,279&nbsp;Closed
+	</a>
+	
+		<a class="item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=all&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="all-issue-count">
+			<svg viewBox="0 0 16 16" class="svg octicon-eye" aria-hidden="true" width="16" height="16"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14s-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2M1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5s2.825-.742 3.955-1.715c1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5s-2.825.742-3.955 1.715c-1.124.967-1.954 2.096-2.366 2.717M8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10"/></svg>
+			2,728&nbsp;All
+		</a>
+	
+</div>
+
+		
+		
+	</div>
+	<div class="issue-list-toolbar-right">
+		<div class="ui secondary filter menu">
+			
+				
+
+<div class="ui  dropdown jump item label-filter">
+	<span class="text">
+		Label
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		<div class="ui icon search input">
+			<i class="icon"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></i>
+			<input type="text" placeholder="Label">
+		</div>
+		<div class="ui checkbox compact archived-label-filter">
+			<input name="archived" type="checkbox"
+				id="archived-filter-checkbox"
+				
+			>
+			<label for="archived-filter-checkbox">
+				Show archived labels
+				<i class="tw-ml-1" data-tooltip-content=Archived&#32;labels&#32;are&#32;excluded&#32;by&#32;default&#32;from&#32;the&#32;suggestions&#32;when&#32;searching&#32;by&#32;label.>
+					<svg viewBox="0 0 16 16" class="svg octicon-info" aria-hidden="true" width="16" height="16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>
+				</i>
+			</label>
+		</div>
+		<div class="divider"></div>
+		<a rel="nofollow" class="active selected item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">All labels</a>
+		<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=0&milestone=0&project=0&assignee=0&poster=0">No label</a>
+		
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=171368&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="171368">
+					<div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.' aria-description='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.'>accessibility</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=2142535&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="2142535">
+					<div class='ui label ' style='color: #fff !important; background-color: #207de5ff !important;' data-tooltip-content='Codeberg admins may do something, e.g., garbage collection' aria-description='Codeberg admins may do something, e.g., garbage collection'>admin request</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=102&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="102">
+					<div class='ui label ' style='color: #fff !important; background-color: #ee0701ff !important;' data-tooltip-content='Something is not working the way it should. Does not concern outages.' aria-description='Something is not working the way it should. Does not concern outages.'>bug</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=171388&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="171388">
+					<span class='ui label  scope-parent' data-tooltip-content='Errors evidently caused by infrastructure malfunctions or outages' aria-description='Errors evidently caused by infrastructure malfunctions or outages'><div class='ui label scope-left' style='color: #fff !important; background-color: #d21b1fff !important'>bug</div><div class='ui label scope-right' style='color: #fff !important; background-color: #f01f23ff !important'>infrastructure</div></span>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=18282&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="18282">
+					<div class='ui label ' style='color: #000 !important; background-color: #2185d0ff !important;' data-tooltip-content='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.' aria-description='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.'>Codeberg</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=105&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="105">
+					<div class='ui label ' style='color: #fff !important; background-color: #128a0cff !important;' data-tooltip-content='Please join the discussion and consider contributing a PR!' aria-description='Please join the discussion and consider contributing a PR!'>contributions welcome</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=13745&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="13745">
+					<div class='ui label ' style='color: #000 !important; background-color: #53e917ff !important;' data-tooltip-content='No bug, but an improvement to the docs or UI description will help' aria-description='No bug, but an improvement to the docs or UI description will help'>docs</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=103&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="103">
+					<div class='ui label ' style='color: #000 !important; background-color: #ccccccff !important;' data-tooltip-content='This issue or pull request already exists' aria-description='This issue or pull request already exists'>duplicate</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=104&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="104">
+					<div class='ui label ' style='color: #000 !important; background-color: #bfe5bfff !important;' data-tooltip-content='New feature' aria-description='New feature'>enhancement</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=13969&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="13969">
+					<div class='ui label ' style='color: #000 !important; background-color: #fef2c0ff !important;' data-tooltip-content='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.' aria-description='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.'>infrastructure</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=6650&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="6650">
+					<div class='ui label ' style='color: #000 !important; background-color: #fbca04ff !important;' data-tooltip-content='An issue directly involving legal compliance' aria-description='An issue directly involving legal compliance'>legal</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=17704&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="17704">
+					<div class='ui label ' style='color: #000 !important; background-color: #ebd35bff !important;' data-tooltip-content='involving questions about the ToS, especially licencing compliance' aria-description='involving questions about the ToS, especially licencing compliance'>licence / ToS</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=171387&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="171387">
+					<span class='ui label  scope-parent' data-tooltip-content='Please consider editing your posts and remember that there is a human on the other side. We get that you are frustrated, but it&#39;s harder for us to help you this way.' aria-description='Please consider editing your posts and remember that there is a human on the other side. We get that you are frustrated, but it&#39;s harder for us to help you this way.'><div class='ui label scope-left' style='color: #fff !important; background-color: #7d4712ff !important'>please chill</div><div class='ui label scope-right' style='color: #fff !important; background-color: #8d5114ff !important'>we are volunteers</div></span>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=13644&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="13644">
+					<div class='ui label ' style='color: #000 !important; background-color: #bfd4f2ff !important;' data-tooltip-content='Things related to Codeberg&#39;s external communication' aria-description='Things related to Codeberg&#39;s external communication'>public relations</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=107&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="107">
+					<div class='ui label ' style='color: #fff !important; background-color: #cc317cff !important;' data-tooltip-content='More information is needed' aria-description='More information is needed'>question</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=178056&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="178056">
+					<span class='ui label  scope-parent' data-tooltip-content='This issue contains a clearly stated problem. However, it is not clear whether we have to fix anything on Codeberg&#39;s end, but we&#39;re helping them fix it and/or find the cause.' aria-description='This issue contains a clearly stated problem. However, it is not clear whether we have to fix anything on Codeberg&#39;s end, but we&#39;re helping them fix it and/or find the cause.'><div class='ui label scope-left' style='color: #fff !important; background-color: #4c17d5ff !important'>question</div><div class='ui label scope-right' style='color: #fff !important; background-color: #5a1bf9ff !important'>user support</div></span>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+				<div class="divider"></div>
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=338&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="338">
+					<div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.' aria-description='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.'>s/Forgejo</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=481796&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="481796">
+					<div class='ui label ' style='color: #000 !important; background-color: #fbca04ff !important;' data-tooltip-content='Migration related issues in Forgejo' aria-description='Migration related issues in Forgejo'>s/Forgejo/migration</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=13876&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="13876">
+					<div class='ui label ' style='color: #000 !important; background-color: #c7def8ff !important;' data-tooltip-content='Issues related to the Codeberg Pages feature' aria-description='Issues related to the Codeberg Pages feature'>s/Pages</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=73496&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="73496">
+					<div class='ui label ' style='color: #000 !important; background-color: #2eccaaff !important;' data-tooltip-content='Issue is related to the Weblate instance at https://translate.codeberg.org' aria-description='Issue is related to the Weblate instance at https://translate.codeberg.org'>s/Weblate</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=76089&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="76089">
+					<div class='ui label ' style='color: #000 !important; background-color: #4caf50ff !important;' data-tooltip-content='Woodpecker CI related issue' aria-description='Woodpecker CI related issue'>s/Woodpecker</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=15256&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="15256">
+					<div class='ui label ' style='color: #fff !important; background-color: #e11d21ff !important;' data-tooltip-content='involves improvements to the sites security' aria-description='involves improvements to the sites security'>security</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=17020&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="17020">
+					<div class='ui label ' style='color: #fff !important; background-color: #006b75ff !important;' data-tooltip-content='Add a new service to the Codeberg ecosystem (instead of implementing into Forgejo)' aria-description='Add a new service to the Codeberg ecosystem (instead of implementing into Forgejo)'>service</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=11356&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="11356">
+					<div class='ui label ' style='color: #fff !important; background-color: #0052ccff !important;' data-tooltip-content='An open issue or pull request to an upstream repository to fix this issue (partially or completely) exists (i.e. Forgejo, Weblate, etc.)' aria-description='An open issue or pull request to an upstream repository to fix this issue (partially or completely) exists (i.e. Forgejo, Weblate, etc.)'>upstream</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+			
+			
+			
+			<div class="item tw-flex tw-items-center" >
+				
+				<a rel="nofollow" class="label-filter-item tw-flex tw-items-center tw-flex-1"  href="?q=&type=all&sort=relevance&labels=108&state=open&milestone=0&project=0&assignee=0&poster=0" data-label-id="108">
+					<div class='ui label ' style='color: #000 !important; background-color: #ffffffff !important;' data-tooltip-content='Codeberg&#39;s current set of contributors are not planning to spend time on delegating this issue.' aria-description='Codeberg&#39;s current set of contributors are not planning to spend time on delegating this issue.'>wontfix</div>
+				</a>
+				
+
+
+				
+				
+				<button type="button" data-tooltip-content="Exclude label" class="label-exclude-item-btn ">
+					<svg viewBox="0 0 16 16" class="svg octicon-no-entry" aria-hidden="true" width="16" height="16"><path d="M4.25 7.25a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+				</button>
+			</div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="list-header-milestone ui  dropdown jump item">
+	<span class="text">
+		Milestone
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		<div class="ui icon search input">
+			<i class="icon"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></i>
+			<input type="text" placeholder="Milestone">
+		</div>
+		<div class="divider"></div>
+		<a rel="nofollow" class="active selected item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">All milestones</a>
+		<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=-1&project=0&assignee=0&poster=0">No milestones</a>
+		
+			<div class="divider"></div>
+			<div class="header">Open milestones</div>
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=7803&project=0&assignee=0&poster=0">
+				<svg viewBox="0 0 16 16" class="mr-2 svg octicon-milestone" aria-hidden="true" width="16" height="16"><path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0m4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25z"/></svg>
+				Fall 2024
+			</a>
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=624&project=0&assignee=0&poster=0">
+				<svg viewBox="0 0 16 16" class="mr-2 svg octicon-milestone" aria-hidden="true" width="16" height="16"><path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0m4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25z"/></svg>
+				Theme diversity
+			</a>
+			
+		
+		
+			<div class="divider"></div>
+			<div class="header">Closed milestones</div>
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=1506&project=0&assignee=0&poster=0">
+				<svg viewBox="0 0 16 16" class="mr-2 svg octicon-milestone" aria-hidden="true" width="16" height="16"><path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0m4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25z"/></svg>
+				2022
+			</a>
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=3996&project=0&assignee=0&poster=0">
+				<svg viewBox="0 0 16 16" class="mr-2 svg octicon-milestone" aria-hidden="true" width="16" height="16"><path d="M7.75 0a.75.75 0 0 1 .75.75V3h3.634c.414 0 .814.147 1.13.414l2.07 1.75a1.75 1.75 0 0 1 0 2.672l-2.07 1.75a1.75 1.75 0 0 1-1.13.414H8.5v5.25a.75.75 0 0 1-1.5 0V10H2.75A1.75 1.75 0 0 1 1 8.25v-3.5C1 3.784 1.784 3 2.75 3H7V.75A.75.75 0 0 1 7.75 0m4.384 8.5a.25.25 0 0 0 .161-.06l2.07-1.75a.248.248 0 0 0 0-.38l-2.07-1.75a.25.25 0 0 0-.161-.06H2.75a.25.25 0 0 0-.25.25v3.5c0 .138.112.25.25.25z"/></svg>
+				Accessing Codeberg
+			</a>
+			
+		
+	</div>
+</div>
+
+
+
+<div class="list-header-project ui disabled dropdown jump item">
+	<span class="text">
+		Project
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		<div class="ui icon search input">
+			<i class="icon"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></i>
+			<input type="text" placeholder="Project">
+		</div>
+		<a rel="nofollow" class="active selected item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=&assignee=0&poster=0">All projects</a>
+		<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=-1&assignee=0&poster=0">No project</a>
+		
+		
+	</div>
+</div>
+
+
+<div class="list-header-author ui dropdown jump item user-remote-search" data-tooltip-content="Shows a maximum of 30 users"
+	data-search-url="/Codeberg/Community/issues/posters"
+	data-selected-user-id="0"
+	data-action-jump-url="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=0&poster={user_id}"
+>
+	<span class="text">
+		Author
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		<div class="ui icon search input">
+			<i class="icon"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></i>
+			<input type="text" placeholder="Author">
+		</div>
+		<a class="item" data-value="0">All authors</a>
+	</div>
+</div>
+
+
+<div class="list-header-assignee ui  dropdown jump item">
+	<span class="text">
+		Assignee
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		<div class="ui icon search input">
+			<i class="icon"><svg viewBox="0 0 16 16" class="svg octicon-search" aria-hidden="true" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7"/></svg></i>
+			<input type="text" placeholder="Assignee">
+		</div>
+		
+		<a rel="nofollow" class="active selected item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=&poster=0">All assignees</a>
+		<a rel="nofollow" class="item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=-1&poster=0">No assignee</a>
+		<div class="divider"></div>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=173&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/08a6e264d4a8e159718256c6dfd392b242e9ec8f7e7bf8993bb3afba7d13fe7b?size=64" title="Andreas Shimokawa" width="20" height="20"/><span class="gt-ellipsis">ashimokawa</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=25240&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/29ad907e5a8cbe775c8a49d852bf2447?size=64" title="Codeberg.org" width="20" height="20"/><span class="gt-ellipsis">Codeberg.org</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=28806&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/ad8d55229af377718a731df357aa4257?size=64" title="crapStone" width="20" height="20"/><span class="gt-ellipsis">crapStone</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=13593&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/f965882a888d78f97338d3df24bcaaedbc903534bc5203e7d451f27ee9176b4a?size=64" title="crystal" width="20" height="20"/><span class="gt-ellipsis">crystal</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=1443991&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/3eecd22a025207d111881ea19acd65c1f2328eb4399e04115b873f5b06afb5a7?size=64" title="dmi-cb" width="20" height="20"/><span class="gt-ellipsis">dmi-cb</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=42426&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/1a089ee4993a2c976a0a6d1e8f31a345ee004af8746f93082a1cb71753775d74?size=64" title="Daphne Preston-Kendal" width="20" height="20"/><span class="gt-ellipsis">dpk</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=157636&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d008fadd41da79f792e7cca47be5a0c7758f62545ff408797f72668019f54c59?size=64" title="famfo" width="20" height="20"/><span class="gt-ellipsis">famfo</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=1280705&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/e7ebcefa6a9b60bf0c20bbaf0da14408f96a511b26d015736bcf0b3292d47d91?size=64" title="famfo-cb" width="20" height="20"/><span class="gt-ellipsis">famfo-cb</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=179&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/5bf762c71ac84565e8a1773d4fd63744?size=64" title="Otto" width="20" height="20"/><span class="gt-ellipsis">fnetX</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=193156&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/751880322b070104c0a5b14bd65075deef243fdf0fa51a86fc837ca0a84ede38?size=64" title="Bastian Greshake Tzovaras" width="20" height="20"/><span class="gt-ellipsis">gedankenstuecke</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=26734&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/44a59264e976fa585ed9f0a92abad9d7?size=64" title="Gusted" width="20" height="20"/><span class="gt-ellipsis">Gusted</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=33936&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/54d9e06f0c8aa40932f1f902cae5fcc4?size=64" title="jerger" width="20" height="20"/><span class="gt-ellipsis">jerger</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=55597&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/38aaf335c256be75baad14a954801bfeb7aea344f7dadc3e699a683f535fab6a?size=64" title="Robert Wolff" width="20" height="20"/><span class="gt-ellipsis">mahlzahn</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=110&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/095f54d002ad70e2ca3217eb66f9cff2?size=64" title="Moritz Marquardt" width="20" height="20"/><span class="gt-ellipsis">momar</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=33716&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d3e911eec058bc2605b5bf5a1af2c968f64815a2f6aedefd3e5f93cb6ba514a4?size=64" title="Panagiotis &#34;Ivory&#34; Vasilopoulos" width="20" height="20"/><span class="gt-ellipsis">n0toose</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=91002&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d562b7736cb9ea2dee358a1e51a2ea58c65863318d725b777247bbd546a386d0?size=64" title="patdyn" width="20" height="20"/><span class="gt-ellipsis">patdyn</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=363735&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/47018ce4739b642a796f78142ff69a45541db3bfde16a159d075bdad357f1a3a?size=64" title="Catherine" width="20" height="20"/><span class="gt-ellipsis">whitequark</span>
+
+			</a>
+		
+			<a rel="nofollow" class=" item tw-flex" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=491131&poster=0">
+				<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/e3298315250201c467e8e74cf7d562c7e0f3a672792ebdcd5671de3bed8a3a71?size=64" title="Zoë Finja Emilia Kron" width="20" height="20"/><span class="gt-ellipsis">zoe</span>
+
+			</a>
+		
+	</div>
+</div>
+
+
+
+
+<div class="list-header-sort ui dropdown downward type jump item">
+	<span class="text">
+		Sort
+	</span>
+	<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+	<div class="menu">
+		
+		
+		
+
+		
+			
+			<a rel="nofollow" class="active item" href="?q=&type=all&sort=relevance&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Relevance</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=latest&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Newest</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=oldest&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Oldest</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=recentupdate&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Recently updated</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=leastupdate&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Least recently updated</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=mostcomment&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Most commented</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=leastcomment&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Least commented</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=nearduedate&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Nearest due date</a>
+		
+			
+			<a rel="nofollow" class="item" href="?q=&type=all&sort=farduedate&state=open&labels=&milestone=0&project=0&assignee=0&poster=0">Farthest due date</a>
+		
+	</div>
+</div>
+
+			
+		</div>
+	</div>
+</div>
+
+
+		<div id="issue-actions" class="issue-list-toolbar tw-hidden">
+			<div class="issue-list-toolbar-left">
+				<div class="switch">
+	<a class="active item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="open-issue-count">
+		
+			<svg viewBox="0 0 16 16" class="svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+		
+		449&nbsp;Open
+	</a>
+	<a class="item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=closed&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="closed-issue-count">
+		<svg viewBox="0 0 16 16" class="svg octicon-issue-closed" aria-hidden="true" width="16" height="16"><path d="M11.28 6.78a.75.75 0 0 0-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>
+		2,279&nbsp;Closed
+	</a>
+	
+		<a class="item" href="?q=&amp;type=all&amp;sort=relevance&amp;state=all&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false" data-test-name="all-issue-count">
+			<svg viewBox="0 0 16 16" class="svg octicon-eye" aria-hidden="true" width="16" height="16"><path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14s-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2M1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5s2.825-.742 3.955-1.715c1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5s-2.825.742-3.955 1.715c-1.124.967-1.954 2.096-2.366 2.717M8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10"/></svg>
+			2,728&nbsp;All
+		</a>
+	
+</div>
+
+				
+				
+			</div>
+			<div class="issue-list-toolbar-right">
+				<div class="ui secondary filter menu">
+	
+		
+		
+			<button class="ui red basic button issue-action" data-action="close" data-url="/Codeberg/Community/issues/status">Close</button>
+		
+		
+	
+		<div class="ui  dropdown jump item">
+			<span class="text">
+				Label
+			</span>
+			<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+			<div class="menu">
+				<div class="item issue-action" data-action="clear" data-url="/Codeberg/Community/issues/labels">
+					Clear labels
+				</div>
+				
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="171368" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.' aria-description='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.'>accessibility</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="2142535" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #207de5ff !important;' data-tooltip-content='Codeberg admins may do something, e.g., garbage collection' aria-description='Codeberg admins may do something, e.g., garbage collection'>admin request</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="102" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #ee0701ff !important;' data-tooltip-content='Something is not working the way it should. Does not concern outages.' aria-description='Something is not working the way it should. Does not concern outages.'>bug</div>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="171388" data-url="/Codeberg/Community/issues/labels">
+						 <span class='ui label  scope-parent' data-tooltip-content='Errors evidently caused by infrastructure malfunctions or outages' aria-description='Errors evidently caused by infrastructure malfunctions or outages'><div class='ui label scope-left' style='color: #fff !important; background-color: #d21b1fff !important'>bug</div><div class='ui label scope-right' style='color: #fff !important; background-color: #f01f23ff !important'>infrastructure</div></span>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="18282" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #2185d0ff !important;' data-tooltip-content='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.' aria-description='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.'>Codeberg</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="105" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #128a0cff !important;' data-tooltip-content='Please join the discussion and consider contributing a PR!' aria-description='Please join the discussion and consider contributing a PR!'>contributions welcome</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="13745" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #53e917ff !important;' data-tooltip-content='No bug, but an improvement to the docs or UI description will help' aria-description='No bug, but an improvement to the docs or UI description will help'>docs</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="103" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #ccccccff !important;' data-tooltip-content='This issue or pull request already exists' aria-description='This issue or pull request already exists'>duplicate</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="104" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #bfe5bfff !important;' data-tooltip-content='New feature' aria-description='New feature'>enhancement</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="13969" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #fef2c0ff !important;' data-tooltip-content='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.' aria-description='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.'>infrastructure</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="6650" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #fbca04ff !important;' data-tooltip-content='An issue directly involving legal compliance' aria-description='An issue directly involving legal compliance'>legal</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="17704" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #ebd35bff !important;' data-tooltip-content='involving questions about the ToS, especially licencing compliance' aria-description='involving questions about the ToS, especially licencing compliance'>licence / ToS</div>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="171387" data-url="/Codeberg/Community/issues/labels">
+						 <span class='ui label  scope-parent' data-tooltip-content='Please consider editing your posts and remember that there is a human on the other side. We get that you are frustrated, but it&#39;s harder for us to help you this way.' aria-description='Please consider editing your posts and remember that there is a human on the other side. We get that you are frustrated, but it&#39;s harder for us to help you this way.'><div class='ui label scope-left' style='color: #fff !important; background-color: #7d4712ff !important'>please chill</div><div class='ui label scope-right' style='color: #fff !important; background-color: #8d5114ff !important'>we are volunteers</div></span>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="13644" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #bfd4f2ff !important;' data-tooltip-content='Things related to Codeberg&#39;s external communication' aria-description='Things related to Codeberg&#39;s external communication'>public relations</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="107" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #cc317cff !important;' data-tooltip-content='More information is needed' aria-description='More information is needed'>question</div>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="178056" data-url="/Codeberg/Community/issues/labels">
+						 <span class='ui label  scope-parent' data-tooltip-content='This issue contains a clearly stated problem. However, it is not clear whether we have to fix anything on Codeberg&#39;s end, but we&#39;re helping them fix it and/or find the cause.' aria-description='This issue contains a clearly stated problem. However, it is not clear whether we have to fix anything on Codeberg&#39;s end, but we&#39;re helping them fix it and/or find the cause.'><div class='ui label scope-left' style='color: #fff !important; background-color: #4c17d5ff !important'>question</div><div class='ui label scope-right' style='color: #fff !important; background-color: #5a1bf9ff !important'>user support</div></span>
+						
+
+					</div>
+				
+					
+					
+						<div class="divider"></div>
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="338" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.' aria-description='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.'>s/Forgejo</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="481796" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #fbca04ff !important;' data-tooltip-content='Migration related issues in Forgejo' aria-description='Migration related issues in Forgejo'>s/Forgejo/migration</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="13876" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #c7def8ff !important;' data-tooltip-content='Issues related to the Codeberg Pages feature' aria-description='Issues related to the Codeberg Pages feature'>s/Pages</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="73496" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #2eccaaff !important;' data-tooltip-content='Issue is related to the Weblate instance at https://translate.codeberg.org' aria-description='Issue is related to the Weblate instance at https://translate.codeberg.org'>s/Weblate</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="76089" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #4caf50ff !important;' data-tooltip-content='Woodpecker CI related issue' aria-description='Woodpecker CI related issue'>s/Woodpecker</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="15256" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #e11d21ff !important;' data-tooltip-content='involves improvements to the sites security' aria-description='involves improvements to the sites security'>security</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="17020" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #006b75ff !important;' data-tooltip-content='Add a new service to the Codeberg ecosystem (instead of implementing into Forgejo)' aria-description='Add a new service to the Codeberg ecosystem (instead of implementing into Forgejo)'>service</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="11356" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #fff !important; background-color: #0052ccff !important;' data-tooltip-content='An open issue or pull request to an upstream repository to fix this issue (partially or completely) exists (i.e. Forgejo, Weblate, etc.)' aria-description='An open issue or pull request to an upstream repository to fix this issue (partially or completely) exists (i.e. Forgejo, Weblate, etc.)'>upstream</div>
+						
+
+					</div>
+				
+					
+					
+					
+					<div class="item issue-action tw-flex tw-justify-between" data-action="toggle" data-element-id="108" data-url="/Codeberg/Community/issues/labels">
+						 <div class='ui label ' style='color: #000 !important; background-color: #ffffffff !important;' data-tooltip-content='Codeberg&#39;s current set of contributors are not planning to spend time on delegating this issue.' aria-description='Codeberg&#39;s current set of contributors are not planning to spend time on delegating this issue.'>wontfix</div>
+						
+
+					</div>
+				
+			</div>
+		</div>
+
+		
+		<div class="ui  dropdown jump item">
+			<span class="text">
+				Milestone
+			</span>
+			<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+			<div class="menu">
+				<div class="item issue-action" data-element-id="0" data-url="/Codeberg/Community/issues/milestone">
+				No milestone
+				</div>
+				
+					<div class="divider"></div>
+					<div class="header">Open milestones</div>
+					
+						<div class="item issue-action" data-element-id="7803" data-url="/Codeberg/Community/issues/milestone">
+							Fall 2024
+						</div>
+					
+						<div class="item issue-action" data-element-id="624" data-url="/Codeberg/Community/issues/milestone">
+							Theme diversity
+						</div>
+					
+				
+				
+					<div class="divider"></div>
+					<div class="header">Closed milestones</div>
+					
+						<div class="item issue-action" data-element-id="1506" data-url="/Codeberg/Community/issues/milestone">
+							2022
+						</div>
+					
+						<div class="item issue-action" data-element-id="3996" data-url="/Codeberg/Community/issues/milestone">
+							Accessing Codeberg
+						</div>
+					
+				
+			</div>
+		</div>
+
+		
+		<div class="ui disabled dropdown jump item">
+			<span class="text">
+				Projects
+			</span>
+			<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+			<div class="menu">
+				<div class="item issue-action" data-element-id="0" data-url="/Codeberg/Community/issues/projects">
+				Clear projects
+				</div>
+				
+				
+			</div>
+		</div>
+
+		
+		<div class="ui  dropdown jump item">
+			<span class="text">
+				Assignee
+			</span>
+			<svg viewBox="0 0 16 16" class="dropdown icon svg octicon-triangle-down" aria-hidden="true" width="14" height="14"><path d="m4.427 7.427 3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427"/></svg>
+			<div class="menu">
+				<div class="item issue-action" data-action="clear" data-url="/Codeberg/Community/issues/assignee">
+					Clear assignees
+				</div>
+				<div class="item issue-action" data-element-id="0" data-url="/Codeberg/Community/issues/assignee">
+					No assignee
+				</div>
+				
+					<div class="item issue-action" data-element-id="173" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/08a6e264d4a8e159718256c6dfd392b242e9ec8f7e7bf8993bb3afba7d13fe7b?size=64" title="Andreas Shimokawa" width="20" height="20"/> ashimokawa
+					</div>
+				
+					<div class="item issue-action" data-element-id="25240" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/29ad907e5a8cbe775c8a49d852bf2447?size=64" title="Codeberg.org" width="20" height="20"/> Codeberg.org
+					</div>
+				
+					<div class="item issue-action" data-element-id="28806" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/ad8d55229af377718a731df357aa4257?size=64" title="crapStone" width="20" height="20"/> crapStone
+					</div>
+				
+					<div class="item issue-action" data-element-id="13593" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/f965882a888d78f97338d3df24bcaaedbc903534bc5203e7d451f27ee9176b4a?size=64" title="crystal" width="20" height="20"/> crystal
+					</div>
+				
+					<div class="item issue-action" data-element-id="1443991" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/3eecd22a025207d111881ea19acd65c1f2328eb4399e04115b873f5b06afb5a7?size=64" title="dmi-cb" width="20" height="20"/> dmi-cb
+					</div>
+				
+					<div class="item issue-action" data-element-id="42426" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/1a089ee4993a2c976a0a6d1e8f31a345ee004af8746f93082a1cb71753775d74?size=64" title="Daphne Preston-Kendal" width="20" height="20"/> dpk
+					</div>
+				
+					<div class="item issue-action" data-element-id="157636" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d008fadd41da79f792e7cca47be5a0c7758f62545ff408797f72668019f54c59?size=64" title="famfo" width="20" height="20"/> famfo
+					</div>
+				
+					<div class="item issue-action" data-element-id="1280705" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/e7ebcefa6a9b60bf0c20bbaf0da14408f96a511b26d015736bcf0b3292d47d91?size=64" title="famfo-cb" width="20" height="20"/> famfo-cb
+					</div>
+				
+					<div class="item issue-action" data-element-id="179" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/5bf762c71ac84565e8a1773d4fd63744?size=64" title="Otto" width="20" height="20"/> fnetX
+					</div>
+				
+					<div class="item issue-action" data-element-id="193156" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/751880322b070104c0a5b14bd65075deef243fdf0fa51a86fc837ca0a84ede38?size=64" title="Bastian Greshake Tzovaras" width="20" height="20"/> gedankenstuecke
+					</div>
+				
+					<div class="item issue-action" data-element-id="26734" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/44a59264e976fa585ed9f0a92abad9d7?size=64" title="Gusted" width="20" height="20"/> Gusted
+					</div>
+				
+					<div class="item issue-action" data-element-id="33936" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/54d9e06f0c8aa40932f1f902cae5fcc4?size=64" title="jerger" width="20" height="20"/> jerger
+					</div>
+				
+					<div class="item issue-action" data-element-id="55597" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/38aaf335c256be75baad14a954801bfeb7aea344f7dadc3e699a683f535fab6a?size=64" title="Robert Wolff" width="20" height="20"/> mahlzahn
+					</div>
+				
+					<div class="item issue-action" data-element-id="110" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/095f54d002ad70e2ca3217eb66f9cff2?size=64" title="Moritz Marquardt" width="20" height="20"/> momar
+					</div>
+				
+					<div class="item issue-action" data-element-id="33716" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d3e911eec058bc2605b5bf5a1af2c968f64815a2f6aedefd3e5f93cb6ba514a4?size=64" title="Panagiotis &#34;Ivory&#34; Vasilopoulos" width="20" height="20"/> n0toose
+					</div>
+				
+					<div class="item issue-action" data-element-id="91002" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/d562b7736cb9ea2dee358a1e51a2ea58c65863318d725b777247bbd546a386d0?size=64" title="patdyn" width="20" height="20"/> patdyn
+					</div>
+				
+					<div class="item issue-action" data-element-id="363735" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/47018ce4739b642a796f78142ff69a45541db3bfde16a159d075bdad357f1a3a?size=64" title="Catherine" width="20" height="20"/> whitequark
+					</div>
+				
+					<div class="item issue-action" data-element-id="491131" data-url="/Codeberg/Community/issues/assignee">
+						<img loading="lazy" alt="" class="ui avatar tw-align-middle" src="/avatars/e3298315250201c467e8e74cf7d562c7e0f3a672792ebdcd5671de3bed8a3a71?size=64" title="Zoë Finja Emilia Kron" width="20" height="20"/> zoe
+					</div>
+				
+			</div>
+		</div>
+	
+</div>
+
+
+			</div>
+		</div>
+		<div id="issue-list" class="flex-list">
+	
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3108">Contribution heatmap shows migrated commits on migration/push dates</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3108">#3108</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-18T05:23:44+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-18 05:23:44 +02:00</relative-time> by <a href="/giriaryan694-a11y">giriaryan694-a11y</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3106">Deleted Pages repository is still being served after several days</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=13876&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #c7def8ff !important;' data-tooltip-content='Issues related to the Codeberg Pages feature' aria-description='Issues related to the Codeberg Pages feature'>s/Pages</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3106">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3106">#3106</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-17T10:57:53+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-17 10:57:53 +02:00</relative-time> by <a href="/lavocedelcampus">lavocedelcampus</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3103">Error create new repo</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3103">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3103">#3103</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-16T14:33:25+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-16 14:33:25 +02:00</relative-time> by <a href="/spraddl1337">spraddl1337</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3100">Pushes + repo-create hang/fail for org RugMunchMedia while reads work (since ~11:30 UTC)</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3100">#3100</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-14T14:25:35+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-14 14:25:35 +02:00</relative-time> by <a href="/cryptorugmunch">cryptorugmunch</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3096">could/should we split public clone hostname from work name?</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3096">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>2
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3096">#3096</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-13T05:16:33+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-13 05:16:33 +02:00</relative-time> by <a href="/mcr">mcr</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3093">Forked repo size massively increasing at (seemingly) random</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=2142535&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #fff !important; background-color: #207de5ff !important;' data-tooltip-content='Codeberg admins may do something, e.g., garbage collection' aria-description='Codeberg admins may do something, e.g., garbage collection'>admin request</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3093">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>6
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3093">#3093</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-12T03:56:32+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-12 03:56:32 +02:00</relative-time> by <a href="/Enmiyu">Enmiyu</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3091">Sanitizing data inputs when using issue templates</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3091">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>2
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3091">#3091</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-11T21:17:17+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-11 21:17:17 +02:00</relative-time> by <a href="/lumiworx">lumiworx</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3090">Suggestion: Make selectable elements in Issue Templates uneditable after submissions</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3090">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>3
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3090">#3090</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-11T20:50:18+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-11 20:50:18 +02:00</relative-time> by <a href="/lumiworx">lumiworx</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3089">Accounts inaccessible, password reset emails not received</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3089">#3089</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-11T20:40:55+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-11 20:40:55 +02:00</relative-time> by <a href="/alexdrevel">alexdrevel</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3083">Effect of new AI policies on security reporting</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=17704&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #ebd35bff !important;' data-tooltip-content='involving questions about the ToS, especially licencing compliance' aria-description='involving questions about the ToS, especially licencing compliance'>licence / ToS</div></a>
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3083">#3083</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-10T21:01:52+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-10 21:01:52 +02:00</relative-time> by <a href="/minimalmatt">minimalmatt</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3080">Push mirrors are not working</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3080">#3080</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-10T14:43:57+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-10 14:43:57 +02:00</relative-time> by <a href="/Vaishnav-Sabari-Girish">Vaishnav-Sabari-Girish</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3077">500 error when trying to push via CLI</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3077">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>2
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3077">#3077</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-10T03:24:01+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-10 03:24:01 +02:00</relative-time> by <a href="/PublicNewsWorld">PublicNewsWorld</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3071">Cannot push; git using wrong username</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3071">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>6
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3071">#3071</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-08T22:16:01+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-08 22:16:01 +02:00</relative-time> by <a href="/wonn">wonn</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3068">codeberg-small action runner fails to setup with &#34;received unexpected HTTP status: 500 Internal Server Error&#34;</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3068">#3068</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-08T15:00:53+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-08 15:00:53 +02:00</relative-time> by <a href="/limiting-factor">limiting-factor</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3066">Overflow of colored box in diff view (Forgejo)</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=102&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #fff !important; background-color: #ee0701ff !important;' data-tooltip-content='Something is not working the way it should. Does not concern outages.' aria-description='Something is not working the way it should. Does not concern outages.'>bug</div></a>
+							
+								<a href="?q=&type=all&state=open&labels=338&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.' aria-description='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.'>s/Forgejo</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3066">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>12
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3066">#3066</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-07T15:15:19+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-07 15:15:19 +02:00</relative-time> by <a href="/FRLT">FRLT</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3055">Issue text gets silently truncated after 65536 bytes due to omitted DB migration</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=171388&milestone=0&assignee=0&poster=0" rel="nofollow"><span class='ui label  scope-parent' data-tooltip-content='Errors evidently caused by infrastructure malfunctions or outages' aria-description='Errors evidently caused by infrastructure malfunctions or outages'><div class='ui label scope-left' style='color: #fff !important; background-color: #d21b1fff !important'>bug</div><div class='ui label scope-right' style='color: #fff !important; background-color: #f01f23ff !important'>infrastructure</div></span></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3055">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>3
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3055">#3055</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-09-01T12:41:09+02:00" data-tooltip-content data-tooltip-interactive="true">2026-09-01 12:41:09 +02:00</relative-time> by <a href="/linus">linus</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3047">can&#39;t login to non-local user</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3047">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3047">#3047</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-31T02:22:41+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-31 02:22:41 +02:00</relative-time> by <a href="/amimardev">amimardev</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3046">Retain Signed-off-by trailers in squash commits</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=338&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.' aria-description='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.'>s/Forgejo</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3046">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3046">#3046</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-30T06:57:20+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-30 06:57:20 +02:00</relative-time> by <a href="/pastk">pastk</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3034">Support &lt;picture&gt; (&amp; &lt;source&gt;) in rendered markdown? For dark/light mode, responsive images, etc.</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3034">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3034">#3034</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-22T19:18:21+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-22 19:18:21 +02:00</relative-time> by <a href="/sethp">sethp</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3031">File has different content in /raw view vs browser GUI view / server caching?</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=338&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.' aria-description='Related to Forgejo. Please also check Forgejo&#39;s issue tracker.'>s/Forgejo</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3031">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3031">#3031</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-22T09:09:38+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-22 09:09:38 +02:00</relative-time> by <a href="/JWMB">JWMB</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3024">Still can&#39;t push due to quota exceeded even though quota is not exceeded according to account settings</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3024">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>10
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3024">#3024</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-20T15:40:27+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-20 15:40:27 +02:00</relative-time> by <a href="/WildRikku">WildRikku</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3017">Question about using gun.js (P2P database) on Codeberg Pages</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=13876&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #c7def8ff !important;' data-tooltip-content='Issues related to the Codeberg Pages feature' aria-description='Issues related to the Codeberg Pages feature'>s/Pages</div></a>
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3017">#3017</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-19T00:29:27+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-19 00:29:27 +02:00</relative-time> by <a href="/tukinyanJP">tukinyanJP</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3015">Question about hosting sensitive projects</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3015">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>1
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3015">#3015</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-18T05:38:48+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-18 05:38:48 +02:00</relative-time> by <a href="/honchohoncho">honchohoncho</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3012">feat: Add Codeberg deuteranopia/protanopia/tritanopia color themes</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=171368&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #eb6420ff !important;' data-tooltip-content='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.' aria-description='Reduces accessibility and is thus a &#34;bug&#34; for certain user groups on Codeberg.'>accessibility</div></a>
+							
+								<a href="?q=&type=all&state=open&labels=18282&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #2185d0ff !important;' data-tooltip-content='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.' aria-description='This issue involves Codeberg&#39;s downstream modifications and settings and/or Codeberg&#39;s structures.'>Codeberg</div></a>
+							
+								<a href="?q=&type=all&state=open&labels=104&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #bfe5bfff !important;' data-tooltip-content='New feature' aria-description='New feature'>enhancement</div></a>
+							
+						</span>
+					</div>
+					
+					<div class="flex-item-trailing">
+						
+						
+						
+						<div class="text grey">
+							<a class="tw-no-underline muted flex-text-block" href="/Codeberg/Community/issues/3012">
+								<svg viewBox="0 0 16 16" class="svg octicon-comment-discussion" aria-hidden="true" width="16" height="16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg>2
+							</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3012">#3012</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-16T23:22:17+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-16 23:22:17 +02:00</relative-time> by <a href="/AverageHelper">AverageHelper</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		<div class="flex-item">
+
+			<div class="flex-item-icon">
+				
+				
+	
+		<svg viewBox="0 0 16 16" class="text green svg octicon-issue-opened" aria-hidden="true" width="16" height="16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0"/></svg>
+	
+
+
+			</div>
+
+			<div class="flex-item-main">
+				<div class="flex-item-header">
+					<div class="flex-item-title">
+						<a class="tw-no-underline issue-title" href="/Codeberg/Community/issues/3010">Server IP Blocked</a>
+						
+						<span class="labels-list tw-ml-1">
+							
+								<a href="?q=&type=all&state=open&labels=13969&milestone=0&assignee=0&poster=0" rel="nofollow"><div class='ui label ' style='color: #000 !important; background-color: #fef2c0ff !important;' data-tooltip-content='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.' aria-description='Involves changes to the server setups, use `bug/infrastructure` for infrastructure-related user errors.'>infrastructure</div></a>
+							
+						</span>
+					</div>
+					
+				</div>
+				<div class="flex-item-body issue-meta">
+					<span>
+						<a class="index" href="/Codeberg/Community/issues/3010">#3010</a>
+						
+						
+							opened <relative-time prefix="" tense="past" datetime="2026-08-16T03:22:52+02:00" data-tooltip-content data-tooltip-interactive="true">2026-08-16 03:22:52 +02:00</relative-time> by <a href="/tekpatl">tekpatl</a>
+						
+					</span>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		</div>
+	
+	
+</div>
+
+
+
+
+	
+		<div class="center page buttons">
+			<div class="ui borderless pagination menu">
+				<a class="disabled item navigation" >
+					<svg viewBox="0 0 16 16" class="tw-mr-1 svg gitea-double-chevron-left" aria-hidden="true" width="16" height="16"><g fill-rule="evenodd"><path d="M7.91 12.77a.75.75 0 0 1-1.06 0L2.61 8.52a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 1.06L4.2 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/><path d="M13.39 12.77a.75.75 0 0 1-1.06 0L8.08 8.52a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 1.06L9.67 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></g></svg>
+					<span class="navigation_label">First</span>
+				</a>
+				<a class="disabled item navigation" >
+					<svg viewBox="0 0 16 16" class="tw-mr-1 svg octicon-chevron-left" aria-hidden="true" width="16" height="16"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06"/></svg>
+					<span class="navigation_label">Previous</span>
+				</a>
+				
+					
+						<a class="active item" >1</a>
+					
+				
+					
+						<a class="item" href="/Codeberg/Community/issues?page=2&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">2</a>
+					
+				
+					
+						<a class="item" href="/Codeberg/Community/issues?page=3&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">3</a>
+					
+				
+					
+						<a class="item" href="/Codeberg/Community/issues?page=4&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">4</a>
+					
+				
+					
+						<a class="item" href="/Codeberg/Community/issues?page=5&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">5</a>
+					
+				
+					
+						<a class="disabled item">...</a>
+					
+				
+				<a class=" item navigation" href="/Codeberg/Community/issues?page=2&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">
+					<span class="navigation_label">Next</span>
+					<svg viewBox="0 0 16 16" class="tw-ml-1 svg octicon-chevron-right" aria-hidden="true" width="16" height="16"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06"/></svg>
+				</a>
+				<a class=" item navigation" href="/Codeberg/Community/issues?page=18&q=&amp;type=all&amp;sort=relevance&amp;state=open&amp;labels=&amp;milestone=0&amp;project=0&amp;assignee=0&amp;poster=0&amp;archived=false">
+					<span class="navigation_label">Last</span>
+					<svg viewBox="0 0 16 16" class="tw-ml-1 svg gitea-double-chevron-right" aria-hidden="true" width="16" height="16"><g fill-rule="evenodd"><path d="M8.09 3.23a.75.75 0 0 1 1.06 0l4.24 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.8 8 8.08 4.28a.75.75 0 0 1 0-1.06z"/><path d="M2.61 3.23a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L6.33 8 2.61 4.28a.75.75 0 0 1 0-1.06z"/></g></svg>
+				</a>
+			</div>
+		</div>
+	
+
+
+
+	</div>
+</div>
+
+
+	
+
+	</div>
+
+	
+
+	<footer class="page-footer" role="group" aria-label="Footer">
+	<div class="grid" aria-label="Links">
+		<div class="not-mobile">
+			<div class="branding" aria-hidden="true">
+				<img class="light-logo" loading="lazy" src="/assets/img/svg/cb-logo.svg" alt="Logo">
+				<img class="dark-logo" loading="lazy" src="/assets/img/svg/cb-logo-mono.svg" alt="Logo">
+			</div>
+			<div class="powered-by">
+				<div class="title">Powered by </div>
+				<a target="_blank" rel="noopener noreferrer" href="https://forgejo.org" aria-label="Forgejo">
+					<div class="branding" aria-hidden="true">
+						<img class="light-logo" loading="lazy" src="/assets/img/svg/forgejo-wordmark.svg" alt="Forgejo logo">
+						<img class="dark-logo" loading="lazy" src="/assets/img/svg/forgejo-wordmark-mono.svg" alt="Forgejo logo">
+					</div>
+				</a>
+				with <a class="tw-mt-0" href="/Codeberg-Infrastructure/forgejo" target="_blank">modifications</a>
+			</div>
+		</div>
+		<div>
+			<b id="codeberg-codeberg">Codeberg</b>
+			<ul>
+				<li><a href="https://blog.codeberg.org" target="_blank">Blog</a></li>
+				<li><a href="https://docs.codeberg.org" target="_blank">Documentation</a></li>
+				<li><a href="/Codeberg/Community/issues">Community issues</a></li>
+				
+				<li><a href="/Codeberg/Contributing">Contributing</a>
+				<li><a href="https://docs.codeberg.org/contact/#abuse" target="_blank">Report abuse</a>
+			</ul>
+		</div>
+		<div>
+			<b id="codeberg-association">Association</b>
+			<ul>
+				<li><a href="https://docs.codeberg.org/getting-started/what-is-codeberg/#what-is-codeberg-e.v.%3F" target="_blank">Who are we?</a></li>
+				<li><a href="https://codeberg.org/codeberg/org/src/en/bylaws.md" target="_blank">Bylaws / Satzung</a></li>
+				<li><a href="https://docs.codeberg.org/improving-codeberg/donate/" target="_blank">Donate</a></li>
+				<li><a href="https://join.codeberg.org" target="_blank">Join / Support</a></li>
+				<li><a href="https://docs.codeberg.org/contact/" target="_blank">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<b id="codeberg-service">Services</b>
+			<ul>
+				<li><a href="https://codeberg.page" target="_blank">Codeberg Pages</a></li>
+				<li><a href="https://translate.codeberg.org" target="_blank">Codeberg Translate</a></li>
+				<li><a href="https://docs.codeberg.org/ci/#using-codeberg's-instance-of-woodpecker-ci" target="_blank">Woodpecker CI</a></li>
+				
+					<li><a href="/api/swagger">Forgejo API</a></li>
+				
+				<li><a href="https://status.codeberg.eu" target="_blank">Status page</a></li>
+			</ul>
+		</div>
+		<div>
+			<b id="codeberg-legal">Legal</b>
+			<ul>
+				<li><a href="https://codeberg.org/codeberg/org/src/Imprint.md" target="_blank">Imprint / Impressum</a></li>
+				<li><a href="/codeberg/org/src/PrivacyPolicy.md" target="_blank">Privacy Policy</a></li>
+				<li><a href="/assets/licenses.txt">Licenses</a></li>
+				<li><a href="/codeberg/org/src/TermsOfUse.md">Terms of Use</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom-grid">
+		<div class="footer-social">
+			<a href="https://social.anoxinon.de/@Codeberg" target="_blank" rel="noopener noreferrer">Mastodon</a> |
+			<a href="matrix:r/codeberg-space:matrix.org?action=join" target="_blank" rel="noopener noreferrer">Matrix Space</a>
+			<a href="https://matrix.to/#/#codeberg-space:matrix.org" target="_blank" rel="noopener noreferrer">(Web link)</a>
+			<button class="btn interact-fg tw-p-2 tw-inline" data-clipboard-text="#codeberg-space:matrix.org" data-tooltip-content="Copy to clipboard"><svg viewBox="0 0 16 16" class="svg octicon-copy" aria-hidden="true" width="14" height="14"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"/></svg></button>
+			<p class="only-mobile">
+				<a target="_blank" rel="noopener noreferrer" href="https://forgejo.org">Powered by Forgejo</a>
+			</p>
+		</div>
+		<div class="footer-language-switch">
+			<div class="ui language bottom floating slide up dropdown link item button">
+				<svg viewBox="0 0 16 16" class="svg octicon-globe" aria-hidden="true" width="16" height="16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M5.78 8.75a9.64 9.64 0 0 0 1.363 4.177q.383.64.857 1.215c.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a10 10 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.51 6.51 0 0 0 4.666 5.5q-.184-.271-.352-.552c-.715-1.192-1.437-2.874-1.581-4.948m-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948q.18-.295.353-.552a6.51 6.51 0 0 0-4.666 5.5m10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948q-.18.296-.353.552a6.51 6.51 0 0 0 4.666-5.5Zm2.733-1.5a6.51 6.51 0 0 0-4.666-5.5q.184.272.353.552c.714 1.192 1.436 2.874 1.58 4.948Z"/></svg>
+				<div class="text">English</div>
+				<div class="menu language-menu">
+					
+						<a lang="id-ID" data-url="/?lang=id-ID" class="item ">Bahasa Indonesia</a>
+					
+						<a lang="da" data-url="/?lang=da" class="item ">Dansk</a>
+					
+						<a lang="de-DE" data-url="/?lang=de-DE" class="item ">Deutsch</a>
+					
+						<a lang="en-US" data-url="/?lang=en-US" class="item active selected">English</a>
+					
+						<a lang="es-ES" data-url="/?lang=es-ES" class="item ">Español</a>
+					
+						<a lang="eo" data-url="/?lang=eo" class="item ">Esperanto</a>
+					
+						<a lang="fil" data-url="/?lang=fil" class="item ">Filipino</a>
+					
+						<a lang="fr-FR" data-url="/?lang=fr-FR" class="item ">Français</a>
+					
+						<a lang="it-IT" data-url="/?lang=it-IT" class="item ">Italiano</a>
+					
+						<a lang="lv-LV" data-url="/?lang=lv-LV" class="item ">Latviešu</a>
+					
+						<a lang="hu-HU" data-url="/?lang=hu-HU" class="item ">Magyar nyelv</a>
+					
+						<a lang="nl-NL" data-url="/?lang=nl-NL" class="item ">Nederlands</a>
+					
+						<a lang="nds" data-url="/?lang=nds" class="item ">Plattdüütsch</a>
+					
+						<a lang="pl-PL" data-url="/?lang=pl-PL" class="item ">Polski</a>
+					
+						<a lang="pt-PT" data-url="/?lang=pt-PT" class="item ">Português de Portugal</a>
+					
+						<a lang="pt-BR" data-url="/?lang=pt-BR" class="item ">Português do Brasil</a>
+					
+						<a lang="sl" data-url="/?lang=sl" class="item ">Slovenščina</a>
+					
+						<a lang="fi-FI" data-url="/?lang=fi-FI" class="item ">Suomi</a>
+					
+						<a lang="sv-SE" data-url="/?lang=sv-SE" class="item ">Svenska</a>
+					
+						<a lang="tr-TR" data-url="/?lang=tr-TR" class="item ">Türkçe</a>
+					
+						<a lang="cs-CZ" data-url="/?lang=cs-CZ" class="item ">Čeština</a>
+					
+						<a lang="el-GR" data-url="/?lang=el-GR" class="item ">Ελληνικά</a>
+					
+						<a lang="bg" data-url="/?lang=bg" class="item ">Български</a>
+					
+						<a lang="ru-RU" data-url="/?lang=ru-RU" class="item ">Русский</a>
+					
+						<a lang="uk-UA" data-url="/?lang=uk-UA" class="item ">Українська</a>
+					
+						<a lang="fa-IR" data-url="/?lang=fa-IR" class="item ">فارسی</a>
+					
+						<a lang="ja-JP" data-url="/?lang=ja-JP" class="item ">日本語</a>
+					
+						<a lang="zh-CN" data-url="/?lang=zh-CN" class="item ">简体中文</a>
+					
+						<a lang="zh-TW" data-url="/?lang=zh-TW" class="item ">繁體中文（台灣）</a>
+					
+						<a lang="zh-HK" data-url="/?lang=zh-HK" class="item ">繁體中文（香港）</a>
+					
+						<a lang="ko-KR" data-url="/?lang=ko-KR" class="item ">한국어</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tw-hidden">
+		
+			Page: 725ms<br>
+			Template: 87ms
+		
+	</div>
+  
+	
+		<div class="symbol-of-tolerance" role="img"></div>
+	
+</footer>
+
+
+	<script src="/assets/js/index.js?v=16.0.0-dev-753-6bcc6da0~gitea-1.22.0" onerror="alert('Failed to load asset files from {path}. Please make sure the asset files can be accessed.'.replace('{path}', this.src))"></script>
+
+	
+</body>
+</html>
+

@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://analytics.eba.europa.eu/" : "https://analytics.eba.europa.eu/");_paq.push(["setSiteId", "1"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(['requireCookieConsent']);
+_paq.push(['requireConsent']);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+<link rel="canonical" href="https://www.eba.europa.eu/homepage" />
+<meta property="og:site_name" content="European Banking Authority" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.eba.europa.eu/homepage" />
+<meta property="og:title" content="Homepage | European Banking Authority" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Homepage | European Banking Authority" />
+<script type="application/json">{"utility":"cck","url":"\/cookie-policy-for-eba-official-website"}</script>
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/eba_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.eba.europa.eu/homepage" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Homepage | European Banking Authority</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_b4VfDItjU_f4JkcagS1b78a-u7a0lagQI1UpbDodcwo.css?delta=0&amp;language=en&amp;theme=eba_theme&amp;include=eJxtkFuKwzAMRTfkyEsycnxJDH4h2Wln95O0hdaQnyt0jkBI8Oz6jgy71txqQem0SQwGN6LxhkW7xIYfv6XqOS2siq6msfAm3Ha1QUbjRF9Co7ThU9QdweifdmTrWWFGdI17hxS1vj7d2pk-dXI7pNIVE20QrYXeZTKdvdIVM8W5U9xa08jl9FN7N4njvN6tnFACC91Sc0Q81L6Scg0jYUICPb-o8cBy_fcfYk2UGg" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_UZ-cJXtXD4bywfAZFHey_QvxB01n4qP1J5UJSuSW1JY.css?delta=2&amp;language=en&amp;theme=eba_theme&amp;include=eJxtkFuKwzAMRTfkyEsycnxJDH4h2Wln95O0hdaQnyt0jkBI8Oz6jgy71txqQem0SQwGN6LxhkW7xIYfv6XqOS2siq6msfAm3Ha1QUbjRF9Co7ThU9QdweifdmTrWWFGdI17hxS1vj7d2pk-dXI7pNIVE20QrYXeZTKdvdIVM8W5U9xa08jl9FN7N4njvN6tnFACC91Sc0Q81L6Scg0jYUICPb-o8cBy_fcfYk2UGg" />
+
+    
+  </head>
+  <body class="path-node page-node-type-page">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<div class="page page--with-hero">
+  <header class="site-header" data-js-hook="site-header" role="banner">
+    <div class="site-header__inner-container">
+          <a class="site-logo" href="/" rel="home">
+    <img src="/themes/eba_theme/templates/components/site-logo/images/EBA-logo.svg" alt="European Banking Authority logo" width="312" height="108" />
+  </a>
+
+
+
+
+      <div class="navigation-main" data-js-hook="navigation-main" data-js-navigation-area="true">
+  <button class="navigation-main__toggler" data-js-hook="navigation-main__toggler" aria-label="Toggle main menu" aria-controls="navigation-main__panel" aria-expanded="false">
+    <span class="navigation-main__toggler-label">Menu</span>
+    <span class="navigation-main__toggler-icon"></span>
+  </button>
+  <div id="navigation-main__panel" class="navigation-main__panel" aria-hidden="true">
+    <div class="navigation-main__panel-content menu-mobile" data-js-hook="navigation-main__panel-content">
+      <nav class="menu-secondary" aria-label="Secondary menu" data-js-hook="navigation-main__secondary">
+          
+  <ul class="menu" data-js-hook="menu">
+                  <li class="menu__item ">
+          <a href="/extranet" class="menu__title" data-drupal-link-system-path="node/17507">Extranet</a>
+        </li>
+                        <li class="menu__item ">
+          <a href="/user/login" class="menu__title" data-drupal-link-system-path="user/login">Log in</a>
+        </li>
+            </ul>
+
+
+
+      </nav>
+      <nav class="menu-primary" aria-label="Main menu" data-js-hook="navigation-main__primary">
+        <div data-js-hook="navigation-main__primary-menu">
+              <ul class="menu" data-js-hook="menu">
+                  <li class="menu__item menu__item--has-children" data-js-hook="menu__panel-toggler">
+          <a href="/about-us" class="menu__title" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09" aria-expanded="false" data-drupal-link-system-path="node/16245">About us</a>
+          <div class="menu__item-panel" id="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09" aria-hidden="true">
+            <a class="menu__item-closer--mobile" data-js-hook="menu__panel-closer" href="#" aria-controls="" aria-expanded="false">Back</a>
+
+            <div class="menu__item-intro">
+              <h2 class="menu__item-intro-title">About us</h2>
+                              <div class="menu__item-intro-text">
+                  <p>The EBA is an independent EU Authority. &nbsp;We play a key role in safeguarding the integrity and robustness of the EU banking sector to support financial stability in the EU.</p>
+                </div>
+                            <a href="/about-us" class="btn btn-sm btn-primary">Learn more</a>
+            </div>
+
+            <ul class="menu__submenu">
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="/about-us/mission-values-and-tasks" data-drupal-link-system-path="node/16246">Mission, values and tasks</a>
+                                        </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/about-us/organisation-and-governance" data-drupal-link-system-path="node/16247">Organisation and governance</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/about-us/organisation-and-governance/governance-structure-and-decision-making" data-drupal-link-system-path="node/16248">Governance structure and decision making</a></li>
+                                                      <li><a href="/about-us/organisation-and-governance/eba-within-eu-institutional-framework" data-drupal-link-system-path="node/16408">EBA within the EU institutional framework</a></li>
+                                                      <li><a href="/about-us/organisation-and-governance/internal-organisation" data-drupal-link-system-path="node/2477">Internal organisation</a></li>
+                                                      <li><a href="/about-us/organisation-and-governance/accountability" data-drupal-link-system-path="node/16250">Accountability</a></li>
+                                                  </ul>
+                                                              </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/about-us/legal-and-policy-framework" data-drupal-link-system-path="node/16410">Legal and policy framework</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/about-us/legal-and-policy-framework/eba-regulation-and-institutional-framework" data-drupal-link-system-path="node/2447">EBA regulation and institutional framework</a></li>
+                                                      <li><a href="/about-us/legal-and-policy-framework/compliance-eba-regulatory-products" data-drupal-link-system-path="node/2608">Compliance with EBA regulatory products</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="/about-us/sustainable-eba" data-drupal-link-system-path="node/2297">Sustainable EBA</a>
+                                        </li>
+                                      <li>
+                                          <a href="/about-us/diversity-and-inclusion" data-drupal-link-system-path="node/2257">Diversity and inclusion</a>
+                                        </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/about-us/careers" data-drupal-link-system-path="node/2547">Careers</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/about-us/careers/meet-our-team" data-drupal-link-system-path="node/17537">Meet our team</a></li>
+                                                      <li><a href="/about-us/careers/vacancies" data-drupal-link-system-path="node/19592">Vacancies</a></li>
+                                                  </ul>
+                                                              </li>
+                                      <li>
+                                          <a href="/about-us/budget" data-drupal-link-system-path="node/2472">Budget</a>
+                                        </li>
+                                      <li>
+                                          <a href="/about-us/procurement" data-drupal-link-system-path="node/2546">Procurement</a>
+                                        </li>
+                                    </ul>
+                </li>
+                          </ul>
+
+            <a class="menu__item-closer--desktop" data-js-hook="menu__panel-closer" href="#megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09" aria-expanded="false" role="button" aria-label="Close menu panel">
+              <img src="/themes/eba_theme/templates/components/menu/images/close--black.svg" alt="Close icon">
+            </a>
+          </div>
+        </li>
+                        <li class="menu__item menu__item--has-children" data-js-hook="menu__panel-toggler">
+          <a href="/activities" class="menu__title" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--2" aria-expanded="false" data-drupal-link-system-path="node/16413">Activities</a>
+          <div class="menu__item-panel" id="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--2" aria-hidden="true">
+            <a class="menu__item-closer--mobile" data-js-hook="menu__panel-closer" href="#" aria-controls="" aria-expanded="false">Back</a>
+
+            <div class="menu__item-intro">
+              <h2 class="menu__item-intro-title">Activities</h2>
+                              <div class="menu__item-intro-text">
+                  <p>To contribute to the stability and effectiveness of the European financial system, the EBA develops harmonised rules for financial institutions, promotes convergence of supervisory practices, monitors, and advises on the impact of financial innovation and the transition to sustainable finance.</p>
+                </div>
+                            <a href="/activities" class="btn btn-sm btn-primary" data-drupal-link-system-path="node/16413">Start here</a>
+            </div>
+
+            <ul class="menu__submenu">
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="/activities/single-rulebook" data-drupal-link-system-path="node/4">Single Rulebook</a>
+                                        </li>
+                                      <li>
+                                          <a href="https://www.eba.europa.eu/regulation-and-policy/simplification-and-efficiency-regulatory-and-supervisory-framework">Simplification and efficiency</a>
+                                        </li>
+                                      <li>
+                                          <a href="/activities/basel-framework-global-regulatory-standards-banks" data-drupal-link-system-path="node/2542">Implementing Basel III in Europe</a>
+                                        </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/activities/supervisory-convergence" data-drupal-link-system-path="node/16415">Supervisory convergence</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/activities/supervisory-convergence/supervisory-convergence" data-drupal-link-system-path="node/2440">Supervisory convergence</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/supervisory-disclosure" data-drupal-link-system-path="node/2545">Supervisory disclosure</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/peer-reviews" data-drupal-link-system-path="node/2520">Peer Reviews</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/mediation" data-drupal-link-system-path="node/16447">Mediation</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/breach-union-law" data-drupal-link-system-path="node/16420">Breach of Union Law</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/colleges" data-drupal-link-system-path="node/2544">Colleges</a></li>
+                                                      <li><a href="/activities/supervisory-convergence/training" data-drupal-link-system-path="node/2557">Training</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <h6 class="menu__submenu-title"><span>Direct supervision and oversight</span></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/activities/direct-supervision-and-oversight/ebas-supervisory-role-under-mica" data-drupal-link-system-path="node/16417">Markets in Crypto-assets</a></li>
+                                                      <li><a href="/activities/direct-supervision-and-oversight/digital-operational-resilience-act" data-drupal-link-system-path="node/16418">Digital operational resilience Act</a></li>
+                                                      <li><a href="/activities/direct-supervision-and-oversight/validation-pro-forma-initial-margin-models" data-drupal-link-system-path="node/19343">Validation of pro forma-initial margin models</a></li>
+                                                  </ul>
+                                                              </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/activities/information-consumers" data-drupal-link-system-path="node/16422">Information for consumers</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/activities/information-consumers/national-competent-authorities-consumer-protection" data-drupal-link-system-path="node/2515">National competent authorities for consumer protection</a></li>
+                                                      <li><a href="/activities/information-consumers/how-complain" data-drupal-link-system-path="node/2458">How to complain</a></li>
+                                                      <li><a href="/activities/information-consumers/personal-finance-eu-level" data-drupal-link-system-path="node/2513">Personal finance at the EU level</a></li>
+                                                      <li><a href="/activities/information-consumers/warnings-against-potentially-harmful-financial-activities" data-drupal-link-system-path="node/2554">Warnings</a></li>
+                                                      <li><a href="/activities/information-consumers/financial-education" data-drupal-link-system-path="node/2347">Financial education</a></li>
+                                                      <li><a href="/activities/information-consumers/national-registers-and-national-authorities-responsible-handling-complaints-related-credit-servicers" data-drupal-link-system-path="node/17432">National registers and national authorities responsible for handling complaints related to credit servicers</a></li>
+                                                      <li><a href="/activities/information-consumers/frauds-and-scams" data-drupal-link-system-path="node/2602">Frauds and scams</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="/activities/eba-research-workshops" data-drupal-link-system-path="node/2449">Research Workshops</a>
+                                        </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/activities/ad-hoc-activities" data-drupal-link-system-path="node/16423">Ad hoc activities</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/activities/ad-hoc-activities/our-response-coronavirus-covid-19" data-drupal-link-system-path="node/2346">Our response to Covid-19</a></li>
+                                                      <li><a href="/activities/ad-hoc-activities/brexit" data-drupal-link-system-path="node/2337">Brexit</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                          </ul>
+
+            <a class="menu__item-closer--desktop" data-js-hook="menu__panel-closer" href="#megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--2" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--2" aria-expanded="false" role="button" aria-label="Close menu panel">
+              <img src="/themes/eba_theme/templates/components/menu/images/close--black.svg" alt="Close icon">
+            </a>
+          </div>
+        </li>
+                        <li class="menu__item menu__item--has-children" data-js-hook="menu__panel-toggler">
+          <a href="/risk-and-data-analysis" class="menu__title" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--3" aria-expanded="false" data-drupal-link-system-path="node/2">Risk and data analysis</a>
+          <div class="menu__item-panel" id="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--3" aria-hidden="true">
+            <a class="menu__item-closer--mobile" data-js-hook="menu__panel-closer" href="#" aria-controls="" aria-expanded="false">Back</a>
+
+            <div class="menu__item-intro">
+              <h2 class="menu__item-intro-title">Risk and data analysis</h2>
+                              <div class="menu__item-intro-text">
+                  <p>To ensure the orderly functioning and stability of the financial system in the European Union, we monitor and analyse risks and vulnerabilities relevant for the regulation of banks and investment firms. We also facilitate information sharing among authorities and institutions through supervisory reporting and data disclosure.</p>
+                </div>
+                            <a href="/risk-and-data-analysis" class="btn btn-sm btn-primary">Learn more</a>
+            </div>
+
+            <ul class="menu__submenu">
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="https://edap-public.eba.europa.eu/ExternalLinks/index?id=Mg%3D%3D&amp;rhversion=20251216204040-2">European Data Access Portal (EDAP)</a>
+                                        </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/risk-and-data-analysis/risk-analysis" data-drupal-link-system-path="node/16424">Risk analysis</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/risk-and-data-analysis/risk-analysis/eu-wide-stress-testing" data-drupal-link-system-path="node/18012">EU-wide stress testing</a></li>
+                                                      <li><a href="/risk-and-data-analysis/risk-analysis/eu-wide-transparency-exercise" data-drupal-link-system-path="node/18852">EU wide transparency exercise</a></li>
+                                                      <li><a href="/risk-and-data-analysis/risk-analysis/risk-monitoring" data-drupal-link-system-path="node/16425">Risk monitoring</a></li>
+                                                      <li><a href="/risk-and-data-analysis/risk-analysis/thematic-analysis" data-drupal-link-system-path="node/16426">Thematic analysis</a></li>
+                                                  </ul>
+                                                              </li>
+                                      <li>
+                                          <a href="/risk-and-data-analysis/remuneration-and-diversity-analysis" data-drupal-link-system-path="node/18092">Remuneration and diversity analysis</a>
+                                        </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/risk-and-data-analysis/pillar-3-data-hub" data-drupal-link-system-path="node/18415">Pillar 3 data hub</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="https://edap-public.eba.europa.eu/Report/index/MTE1?rhversion=20260121164608-2">Access to P3DH</a></li>
+                                                  </ul>
+                                                              </li>
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/risk-and-data-analysis/reporting" data-drupal-link-system-path="node/18460">Reporting</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/risk-and-data-analysis/reporting/reporting-frameworks" data-drupal-link-system-path="node/2535">Reporting frameworks</a></li>
+                                                      <li><a href="/reporting-time-traveller" data-drupal-link-system-path="reporting-time-traveller">Reporting Time Traveller</a></li>
+                                                      <li><a href="/risk-and-data-analysis/reporting/dpm-data-dictionary" data-drupal-link-system-path="node/2551">DPM data dictionary</a></li>
+                                                      <li><a href="/activities/single-rulebook/regulatory-activities/supervisory-reporting/integrated-and-consistent-reporting-system" data-drupal-link-system-path="node/16259">Integrated reporting</a></li>
+                                                      <li><a href="/activities/single-rulebook/regulatory-activities/supervisory-reporting/joint-bank-reporting-committee-jbrc" data-drupal-link-system-path="node/18225">Joint Bank Reporting Committee (JBRC)</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/risk-and-data-analysis/data" data-drupal-link-system-path="node/16427">Data</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/risk-and-data-analysis/data/registers-and-other-list-institutions" data-drupal-link-system-path="node/16428">Registers and other list of institutions</a></li>
+                                                      <li><a href="/risk-and-data-analysis/data/guides-data" data-drupal-link-system-path="node/2446">Guides on data</a></li>
+                                                      <li><a href="/risk-and-data-analysis/data/aggregate-statistical-data" data-drupal-link-system-path="node/2475">Aggregate statistical  data</a></li>
+                                                      <li><a href="/risk-and-data-analysis/data/secondary-reporting-data-competent-authorities-eba" data-drupal-link-system-path="node/2342">Secondary reporting: data from Competent Authorities to the EBA</a></li>
+                                                      <li><a href="/risk-and-data-analysis/data/data-analytics-tools" data-drupal-link-system-path="node/2316">Data analytics tools</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                          </ul>
+
+            <a class="menu__item-closer--desktop" data-js-hook="menu__panel-closer" href="#megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--3" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--3" aria-expanded="false" role="button" aria-label="Close menu panel">
+              <img src="/themes/eba_theme/templates/components/menu/images/close--black.svg" alt="Close icon">
+            </a>
+          </div>
+        </li>
+                        <li class="menu__item menu__item--has-children" data-js-hook="menu__panel-toggler">
+          <a href="/publications-and-media" class="menu__title" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--4" aria-expanded="false" data-drupal-link-system-path="node/1">Publications and media</a>
+          <div class="menu__item-panel" id="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--4" aria-hidden="true">
+            <a class="menu__item-closer--mobile" data-js-hook="menu__panel-closer" href="#" aria-controls="" aria-expanded="false">Back</a>
+
+            <div class="menu__item-intro">
+              <h2 class="menu__item-intro-title">Publications and media</h2>
+                              <div class="menu__item-intro-text">
+                  <p>Communicating to all our&nbsp;audiences in&nbsp;the most effective way and using the&nbsp;most appropriate channels is crucial for us. Through our publications, announcements, and participation in external events, we are committed to reaching out to all our stakeholders to report about our policies, activities, and initiatives.</p>
+                </div>
+                            <a href="/publications-and-media" class="btn btn-sm btn-primary">Learn more</a>
+            </div>
+
+            <ul class="menu__submenu">
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/publications-and-media/publications" data-drupal-link-system-path="node/16764">Publications</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="/publications?text=&amp;document_type=250&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;250&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}">Guidelines</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=248&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;248&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Regulatory Technical Standards</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=247&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;247&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Implementing Technical Standards</a></li>
+                                                      <li><a href="/publications?text=&amp;document_type=257&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;257&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}">Reports</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=244&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;244&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Consultation papers</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=252&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;252&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Opinions</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=245&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;245&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Decisions</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=5294&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;5294&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Staff papers</a></li>
+                                                      <li><a href="/publications-and-media/publications?text=&amp;document_type=241&amp;media_topics=All" data-drupal-link-query="{&quot;document_type&quot;:&quot;241&quot;,&quot;media_topics&quot;:&quot;All&quot;,&quot;text&quot;:&quot;&quot;}" data-drupal-link-system-path="node/16764">Annual reports</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <a href="/publications-and-media/press-releases" data-drupal-link-system-path="node/6">Press releases</a>
+                                        </li>
+                                      <li>
+                                          <a href="/publications-and-media/speeches" data-drupal-link-system-path="node/9">Speeches</a>
+                                        </li>
+                                      <li>
+                                          <a href="/publications-and-media/interviews" data-drupal-link-system-path="node/8">Interviews</a>
+                                        </li>
+                                      <li>
+                                          <a href="/publications-and-media/events" data-drupal-link-system-path="node/5">Events</a>
+                                        </li>
+                                    </ul>
+                </li>
+                              <li class="menu__submenu-item">
+                  <ul class="menu__submenu-list">
+                                      <li>
+                                          <h6 class="menu__submenu-title"><a href="/publications-and-media/media-centre" data-drupal-link-system-path="node/16443">Media centre</a></h6>
+                                              <ul class="menu__submenu-list menu__submenu-list--under-title">
+                                                      <li><a href="https://www.eba.europa.eu/factsheets?text=&amp;document_type=5606&amp;media_topics=All">Factsheets</a></li>
+                                                      <li><a href="/media-gallery" data-drupal-link-system-path="node/16814">Media gallery</a></li>
+                                                      <li><a href="/publications-and-media/media-centre/media-resources" data-drupal-link-system-path="node/16444">Media resources</a></li>
+                                                  </ul>
+                                                              </li>
+                                    </ul>
+                </li>
+                          </ul>
+
+            <a class="menu__item-closer--desktop" data-js-hook="menu__panel-closer" href="#megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--4" aria-controls="megamenu-panel-bda9b858-f8ce-44b2-b50c-28663a5b6d09--4" aria-expanded="false" role="button" aria-label="Close menu panel">
+              <img src="/themes/eba_theme/templates/components/menu/images/close--black.svg" alt="Close icon">
+            </a>
+          </div>
+        </li>
+            </ul>
+
+
+
+        </div>
+        <div class="box-search" role="search" data-js-hook="navigation-main__primary-search">
+          <form action="/search?" method="get" accept-charset="UTF-8" class="input-group">
+            <input title="Enter the terms you wish to search for." placeholder="Search..." type="search" name="query" value="" size="15" maxlength="128" class="form-control" autocomplete="off">
+            <button type="submit" class="btn btn-primary" value="Search" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </header>
+
+    
+
+    <div class="page__header-below page__header-below--with-hero">
+    
+
+  
+<section class="hero hero--full-width hero--big" style="background-image: var(--gradient), url('/sites/default/files/styles/wide/public/2023-12/homepage%20banner%201.png?itok=OEF4hmzu')" role="banner">
+  <div class="hero__inner-container">
+          <h1 class="hero__title">
+            <div class="field field--name-title field--type-string field--label-hidden field__item">Welcome to the EBA</div>
+      </h1>
+              <p class="hero__subtitle">Contributing to the stability and effectiveness of the European financial system</p>
+              <a class="btn btn-lg btn-bright btn-with-icon hero__button" href="/find-out-about-us/eba-glance">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+</a>
+      </div>
+</section>
+
+
+
+
+  </div>
+
+  <main role="main" class="__inner-container">
+    <a id="main-content" tabindex="-1"></a>      <div class="page__highlighted">
+          <div data-drupal-messages-fallback class="hidden"></div>
+
+
+      </div>
+
+          <div class="page__content">
+                <div>
+          
+            <div id="block-eba-theme-content">
+  
+    
+      
+<article class="node node--type-page node--view-mode-full">
+
+  
+    
+
+  
+      <div class="node__content">
+        
+
+
+
+
+
+<section class="grid grid--cta-boxes responsive-grid--horizontal" style="--responsive-grid--column-count: 3">
+        
+
+<section class="box-cta box-cta--bg-image" style="background-image: url('/sites/default/files/styles/wide/public/2026-04/yellow%20tab.png?itok=tMEtaLVj')">
+  <div class="box-cta__content">
+    <h2 class="box-cta__title">
+      Simplification and efficiency
+    </h2>
+          <div class="box-cta__text">The EBA work to streamline regulatory and supervisory rules and processes, while safeguarding financial stability and resilience.</div>
+              <a class="btn btn-lg btn-primary btn-with-icon box-cta__button" href="https://www.eba.europa.eu/regulation-and-policy/simplification-and-efficiency-regulatory-and-supervisory-framework">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+</a>
+      </div>
+</section>
+
+      
+
+<section class="box-cta box-cta--bg-image" style="background-image: url('/sites/default/files/styles/wide/public/2023-12/blue_yellow.png?itok=Mcs2VfNt')">
+  <div class="box-cta__content">
+    <h2 class="box-cta__title">
+      Interactive Single Rulebook
+    </h2>
+          <div class="box-cta__text">An online tool assembling Level 1 and Level 2 legislation and Q&amp;As under our remit</div>
+              <a class="btn btn-lg btn-primary btn-with-icon box-cta__button" href="/regulation-and-policy/single-rulebook/interactive-single-rulebook">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+</a>
+      </div>
+</section>
+
+  
+  <section>
+  <div class="mb-4">
+    
+  <h2>Consultations</h2>
+
+  </div>
+
+  
+            <div class="field field--name-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-dynamic-content-events view-id-dynamic_content_events view-display-id-open_consultations js-view-dom-id-5b82ed3b167fb288dd8c2b6160ab5b119461f908b883dbde7c522edbcbb6eef1">
+  
+    
+      
+      <div class="view-content">
+        
+  
+            
+  <article class="teaser teaser--compact teaser--cta">
+  <div class="teaser__body">
+          <div class="teaser__metadata">
+            <span class="link-icon link-icon--flex link-icon--calendar"> 17 JULY - 3 SEPTEMBER 2026 </span>
+  
+      </div>
+        <h4 class="h6 teaser__title"><a href="/publications-and-media/events/consultation-amending-its-benchmarking-approaches-calculating-own-funds-requirements-2027-market">
+<span>Consultation on amending ITS on the benchmarking of approaches for calculating own funds requirements – 2027 market risk benchmarking exercise</span>
+</a></h4>
+  </div>
+      <footer class="teaser__actions">
+      <a class="btn btn-sm btn-primary" href="/form/webform-consultation-19856?source_entity_type=node&amp;source_entity_id=19856">Respond</a>
+    </footer>
+  </article>
+
+
+
+  
+  
+            
+  <article class="teaser teaser--compact teaser--cta">
+  <div class="teaser__body">
+          <div class="teaser__metadata">
+            <span class="link-icon link-icon--flex link-icon--calendar"> 26 JUNE - 28 SEPTEMBER 2026 </span>
+  
+      </div>
+        <h4 class="h6 teaser__title"><a href="/publications-and-media/events/consultation-methodology-setting-fines-under-mica">
+<span>Consultation on methodology for setting fines under MiCA</span>
+</a></h4>
+  </div>
+      <footer class="teaser__actions">
+      <a class="btn btn-sm btn-primary" href="/form/webform-consultation-19784?source_entity_type=node&amp;source_entity_id=19784">Respond</a>
+    </footer>
+  </article>
+
+
+
+  
+  
+            
+  <article class="teaser teaser--compact teaser--cta">
+  <div class="teaser__body">
+          <div class="teaser__metadata">
+            <span class="link-icon link-icon--flex link-icon--calendar"> 23 JULY - 23 OCTOBER 2026 </span>
+  
+      </div>
+        <h4 class="h6 teaser__title"><a href="/publications-and-media/events/consultation-guidelines-investment-available-financial-means">
+<span>Consultation on Guidelines on investment of available financial means</span>
+</a></h4>
+  </div>
+      <footer class="teaser__actions">
+      <a class="btn btn-sm btn-primary" href="/form/webform-consultation-19875?source_entity_type=node&amp;source_entity_id=19875">Respond</a>
+    </footer>
+  </article>
+
+
+
+
+    </div>
+  
+          </div>
+</div>
+</div>
+      
+
+      
+    <footer class="text-end">
+            <a class="link-icon link-icon--primary link-icon--more" href="/publications-and-media/consultations">View all</a>
+    
+    </footer>
+  
+  
+</section>
+
+
+
+</section>
+
+
+
+
+          
+
+
+  
+  <section class="tabs">
+          <h2 class="tabs__title">News &amp; Media</h2>
+        <div class="tabs__items" style="grid-template-columns: repeat(4, 1fr)" data-js-hook="tabs__items"><h3 class="h4 tabs__tab-title" tabindex="0" role="button" aria-controls="tab-panel--1101413197-1" aria-expanded="true" data-js-hook="tabs__tab-title">In focus</h3>
+        <div id="tab-panel--1101413197-1" aria-hidden="false" class="tabs__tab-panel">
+  <section class="responsive-grid--horizontal" style="--responsive-grid--cell-min-width: 240px">
+      
+
+
+<article class="card border-light">
+      <a class="card__link" href="https://www.eba.europa.eu/publications-and-media/press-releases/eba-reaches-another-important-milestone-enhancing-supervisory-efficiency-its-revised-srep-guidelines">
+              <div class="card__image">
+            <img loading="lazy" src="/sites/default/files/styles/card/public/2026-06/simplification_report.png?itok=Gv1fTke2" width="420" height="220" alt="Report Simplification" />
+
+
+
+        </div>
+            <div class="card-body">
+                  <h3 class="h4 card-title">​The EBA reaches another important milestone in enhancing supervisory efficiency with its revised SREP Guidelines </h3>
+                              </div>
+              <div class="card-footer border-top-0">June 26, 2026</div>
+          </a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="card border-light">
+      <a class="card__link" href="https://www.eba.europa.eu/publications-and-media/press-releases/eueea-banks-remain-resilient-amid-rising-geopolitical-market-and-technological-risks">
+              <div class="card__image">
+            <img loading="lazy" src="/sites/default/files/styles/card/public/2024-11/rar_autumn_2024.png?itok=0zjh13KS" width="420" height="220" alt="rar_autumn_2024" />
+
+
+
+        </div>
+            <div class="card-body">
+                  <h3 class="h4 card-title">EU/EEA banks remain resilient amid rising geopolitical, market and technological risks</h3>
+                              </div>
+              <div class="card-footer border-top-0">June 18, 2026</div>
+          </a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="card border-light">
+      <a class="card__link" href="https://www.eba.europa.eu/publications-and-media/press-releases/eba-proposes-simplifications-eu-bank-capital-framework-holistic-manner-strengthen-its-efficiency">
+              <div class="card__image">
+            <img loading="lazy" src="/sites/default/files/styles/card/public/2026-06/simplification_-_stacking_order.png?itok=hY-nwnm2" width="420" height="220" alt="simplification_-_stacking_order" />
+
+
+
+        </div>
+            <div class="card-body">
+                  <h3 class="h4 card-title">The EBA proposes simplifications to the EU bank capital framework in a holistic manner to strengthen its efficiency </h3>
+                              </div>
+              <div class="card-footer border-top-0">June 16, 2026</div>
+          </a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+</div><h3 class="h4 tabs__tab-title" tabindex="0" role="button" aria-controls="tab-panel--1101413197-2" aria-expanded="false" data-js-hook="tabs__tab-title">Press releases</h3>
+        <div id="tab-panel--1101413197-2" aria-hidden="true" class="tabs__tab-panel">
+            <div class="field field--name-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-press-releases view-id-press_releases view-display-id-block_1 js-view-dom-id-9e2636c20babdb0a96df980b6bd637ec384f8574ab8ff8ffbf1961bef998c464">
+  
+    
+      
+      <div class="view-content">
+          <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    27 AUGUST 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/press-releases/eba-responds-european-parliaments-observations-made-2024-discharge-report" rel="bookmark">
+<span>​The EBA responds to the European Parliament’s observations made in the 2024 Discharge report </span>
+</a></h3>
+
+          <div class="teaser-columns__text" data-field="text">
+        <p><p>​The European Banking Authority (EBA) today published an Opinion in response to the observations made by European Parliament in its 2024 Discharge Report covering all agencies, including the EBA. The EBA welcomes the overall positive feedback from the European Parliament. Only nine observations of the Parliament’s report directly mention the EBA, and none warrant the adoption of specific follow-up actions.</p>
+</p>
+      </div>
+      </div>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    26 AUGUST 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/press-releases/eba-consults-draft-technical-standards-institutions-operational-risk-management" rel="bookmark">
+<span>​The EBA consults on draft technical standards on institutions’ operational risk management</span>
+</a></h3>
+
+          <div class="teaser-columns__text" data-field="text">
+        <p><p>​The European Banking Authority (EBA) today launched a public consultation on draft Regulatory Technical Standards (RTS) specifying the operational risk management framework that institutions must have in place as per Article 323 of the Capital Requirements Regulation (CRR3). The draft RTS set out harmonised, proportionate requirements for the governance, management process and systems institutions should use to identify, assess, monitor and manage operational risk. The consultation runs until 31 December 2026.</p>
+</p>
+      </div>
+      </div>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    25 AUGUST 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/press-releases/eba-consults-revised-technical-standards-reclassification-investment-firms-credit-institutions" rel="bookmark">
+<span>The EBA consults on revised technical standards for the reclassification of investment firms as credit institutions</span>
+</a></h3>
+
+          <div class="teaser-columns__text" data-field="text">
+        <p><p>The European Banking Authority (EBA) today launched a consultation on three draft Regulatory Technical Standards (RTS) on the reclassification of investment firms as credit institutions, when they exceed the EUR 30 billion total assets threshold. The proposals clarify how total assets should be calculated against this threshold, how investment firms should report this information to competent authorities, and the conditions under which competent authorities can decide to grant a waiver. The revised RTS reflect the 2024 amendments to the Capital Requirements Directive (CRD) and contribute to a more proportionate and risk-based application of the framework for investment firms. The consultation is open until 25 November 2026.</p>
+</p>
+      </div>
+      </div>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    6 AUGUST 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/press-releases/eba-esg-risk-dashboard-shows-stable-climate-risk-exposures-and-continued-improvements-data-quality" rel="bookmark">
+<span>EBA ESG risk dashboard shows stable climate risk exposures and continued improvements in data quality </span>
+</a></h3>
+
+          <div class="teaser-columns__text" data-field="text">
+        <p><p>The European Banking Authority (EBA) today published its latest Environmental, Social and Governance (ESG) risk dashboard, showing continued stability in banks’ transition and physical climate risk indicators across the EU/EEA in second half of 2025. The results also indicate gradual improvements in the availability and quality of climate-related data, particularly for energy efficiency assessments of mortgage portfolios, supporting more robust climate risk monitoring in the banking sector.</p>
+</p>
+      </div>
+      </div>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    5 AUGUST 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/press-releases/eba-consults-reporting-framework-validation-and-monitoring-isda-standard-initial-margin-model" rel="bookmark">
+<span>​The EBA consults on reporting framework for validation and monitoring of ISDA Standard Initial Margin Model</span>
+</a></h3>
+
+          <div class="teaser-columns__text" data-field="text">
+        <p><p>​The European Banking Authority (EBA) is consulting on a new reporting framework to support the validation and ongoing monitoring of initial margin models based on the ‘Standard Initial Margin Model’ (SIMM) developed by the International Swaps and Derivatives Association (ISDA).  The proposed reporting requirements will provide the EBA with information necessary to effectively perform its role as central validator of pro forma models under EMIR, while ensuring a proportionate approach for reporting entities. The consultation runs until 2 November 2026.</p>
+</p>
+      </div>
+      </div>
+  </article>
+
+
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+</div>
+      
+
+  
+  <footer class="text-end">
+        <a class="link-icon link-icon--primary link-icon--more" href="/publications-and-media/press-releases">View all</a>
+  
+  </footer>
+
+
+
+</div><h3 class="h4 tabs__tab-title" tabindex="0" role="button" aria-controls="tab-panel--1101413197-3" aria-expanded="false" data-js-hook="tabs__tab-title">Speeches</h3>
+        <div id="tab-panel--1101413197-3" aria-hidden="true" class="tabs__tab-panel">
+
+  
+
+
+
+
+<section class="page-stripe">
+  <div class="page-stripe__inner-container">
+        <div class="page-stripe__content">
+            <div class="field field--name-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-dynamic-content-events view-id-dynamic_content_events view-display-id-block_4 js-view-dom-id-975eb2de6f8129e288622ac2c7e42fb4ce81bed6bd0c59ca2b5618981612d64b">
+  
+    
+      
+      <div class="view-content">
+          <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    19 MARCH 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/speeches/vision-implementation-simplifying-eu-regulatory-and-supervisory-framework-banks" rel="bookmark">
+<span>From vision to implementation: simplifying the EU regulatory and supervisory framework for banks</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2023-12/Francois-Louis%20Michaud%20square.jpg?itok=B4DOoG1v" width="200" height="200" alt="Francois-Louis Michaud square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name"> François-Louis Michaud</p>
+          <p class="person__role">EBA Executive Director</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    4 FEBRUARY 2026
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/speeches/efficiency-banking-regulation-and-supervision-ebas-mission" rel="bookmark">
+<span>Efficiency in banking regulation and supervision - the EBA&#039;s mission</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2023-12/Francois-Louis%20Michaud%20square.jpg?itok=B4DOoG1v" width="200" height="200" alt="Francois-Louis Michaud square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name"> François-Louis Michaud</p>
+          <p class="person__role">EBA Executive Director</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    17 NOVEMBER 2025
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/speeches/introductory-statement-eba-chairperson-jose-manuel-campa-annual-hearing-committee-economic-and-0" rel="bookmark">
+<span>Introductory statement by the EBA Chairperson José Manuel Campa at the annual hearing of the Committee on Economic and Monetary Affairs (ECON) of the European Parliament</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2024-06/2023-04-20-eba-142_-_copy.jpg?itok=6xiB7J4y" width="200" height="200" alt="José Manuel Campa_square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">José Manuel Campa</p>
+          <p class="person__role">EBA Chairperson</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    7 OCTOBER 2025
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/speeches/advancing-simplification-europes-financial-sector-ebas-contribution" rel="bookmark">
+<span>Advancing simplification in Europe&#039;s financial sector: the EBA&#039;s contribution</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2024-06/2023-04-20-eba-142_-_copy.jpg?itok=6xiB7J4y" width="200" height="200" alt="José Manuel Campa_square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">José Manuel Campa</p>
+          <p class="person__role">EBA Chairperson</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    25 SEPTEMBER 2025
+  </div>
+
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/speeches/innovation-competition-and-security-how-regulation-continues-shape-eu-payments-market" rel="bookmark">
+<span>Innovation, competition and security: how regulation continues to shape the EU payments market</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2023-12/Francois-Louis%20Michaud%20square.jpg?itok=B4DOoG1v" width="200" height="200" alt="Francois-Louis Michaud square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">François-Louis Michaud</p>
+          <p class="person__role">EBA Executive Director</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+</div>
+      </div>
+          <footer class="page-stripe__footer-actions">
+            <a class="link-icon link-icon--primary link-icon--more" href="/publications-and-media/speeches">View all</a>
+  
+      </footer>
+      </div>
+</section>
+
+
+
+
+</div><h3 class="h4 tabs__tab-title" tabindex="0" role="button" aria-controls="tab-panel--1101413197-4" aria-expanded="false" data-js-hook="tabs__tab-title">Interviews</h3>
+        <div id="tab-panel--1101413197-4" aria-hidden="true" class="tabs__tab-panel">
+
+  
+
+
+
+
+<section class="page-stripe">
+  <div class="page-stripe__inner-container">
+        <div class="page-stripe__content">
+            <div class="field field--name-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-dynamic-content-events view-id-dynamic_content_events view-display-id-block_3 js-view-dom-id-7fcf546a0e4c797edbf80152d3ca7551bfad557deff649df2ab74447f7e68a4e">
+  
+    
+      
+      <div class="view-content">
+          <div>
+
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    20 DECEMBER 2025
+  </div>
+      <div class="link-icon link-icon--flex link-icon--newspaper">
+      <b>El Economista</b>
+    </div>
+  
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/interviews/angel-monzon-interview-el-economista-it-would-be-worth-discussing-bank-capital-buffers-see-if-they" rel="bookmark">
+<span>Ángel Monzón interview with El Economista: It would be worth discussing bank capital buffers, to see if they can be simplified</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2026-01/angel-monzon_square.jpg?itok=FtK6PZws" width="200" height="200" alt="Angel Monzon" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">Ángel Monzón</p>
+          <p class="person__role">Head of the Risk Analysis and Stress Testing Unit</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    24 NOVEMBER 2025
+  </div>
+      <div class="link-icon link-icon--flex link-icon--newspaper">
+      <b>El Mundo</b>
+    </div>
+  
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/interviews/jose-manuel-campa-interview-el-mundo-member-states-be-worst-enemy-single-market-unacceptable" rel="bookmark">
+<span>José Manuel Campa interview with El Mundo: For Member States to be the worst enemy of the single market is unacceptable</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2024-06/2023-04-20-eba-142_-_copy.jpg?itok=6xiB7J4y" width="200" height="200" alt="José Manuel Campa_square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">José Manuel Campa</p>
+          <p class="person__role">Chair of the EBA</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    20 OCTOBER 2025
+  </div>
+      <div class="link-icon link-icon--flex link-icon--newspaper">
+      <b>Central Banking</b>
+    </div>
+  
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/interviews/jose-manuel-campa-interview-central-banking-ebas-campa-simplifying-eu-regulations-and-supervising" rel="bookmark">
+<span>José Manuel Campa interview with Central Banking: EBA’s Campa on simplifying EU regulations and supervising stablecoins</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2024-06/2023-04-20-eba-142_-_copy.jpg?itok=6xiB7J4y" width="200" height="200" alt="José Manuel Campa_square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">José Manuel Campa</p>
+          <p class="person__role">Chair of the EBA</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    6 AUGUST 2025
+  </div>
+      <div class="link-icon link-icon--flex link-icon--newspaper">
+      <b>Il Sole 24 Ore</b>
+    </div>
+  
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/interviews/jose-manuel-campa-interview-il-sole-24-ore-stress-test-shows-european-institutions-are-resilient-and" rel="bookmark">
+<span>José Manuel Campa interview with Il sole 24 Ore: Stress test shows that European institutions are resilient and able to provide the economy with credit in a very adverse and difficult scenario</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2024-06/2023-04-20-eba-142_-_copy.jpg?itok=6xiB7J4y" width="200" height="200" alt="José Manuel Campa_square" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">José Manuel Campa</p>
+          <p class="person__role">Chair of the EBA</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+    <div>
+
+
+
+<article class="teaser-columns" data-element="teaser-columns">
+      <div class="teaser-columns__metadata" data-field="metadata">
+        <div class="link-icon link-icon--flex link-icon--calendar">
+    4 AUGUST 2025
+  </div>
+      <div class="link-icon link-icon--flex link-icon--newspaper">
+      <b>Börsen Zeitung</b>
+    </div>
+  
+    </div>
+    <div class="teaser-columns__content">
+    <h3 class="h5 teaser-columns__title" data-field="title"><a href="/publications-and-media/interviews/kamil-liberadzki-and-angel-monzon-interview-borsen-zeitung-strong-performance-banks-stress-test" rel="bookmark">
+<span>Kamil Liberadzki and Angel Monzon interview with Börsen Zeitung: The strong performance of banks in the stress test is reassuring</span>
+</a></h3>
+
+      </div>
+      <footer class="teaser-columns__footer" data-field="footer">
+      
+
+<div class="person">
+      <div class="person__image">
+        <img loading="lazy" src="/sites/default/files/styles/avatar/public/2025-03/kamil.png?itok=SGVKi2Bi" width="200" height="200" alt="Kamil Liberadzki" />
+
+
+
+    </div>
+    <div class="person__content">
+    <p class="person__name">Kamil Liberadzki &amp; Angel Monzon</p>
+          <p class="person__role">Economic and Risk Analysis Department</p>
+      </div>
+</div>
+
+
+
+
+    </footer>
+  </article>
+
+
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+</div>
+      </div>
+          <footer class="page-stripe__footer-actions">
+            <a class="link-icon link-icon--primary link-icon--more" href="/publications-and-media/interviews">View all</a>
+  
+      </footer>
+      </div>
+</section>
+
+
+
+
+</div></div>
+  </section>
+
+
+
+  
+
+  
+
+
+
+                
+<section class="page-stripe page-stripe--background-gray page-stripe--full-width">
+  <div class="page-stripe__inner-container">
+          <header class="page-stripe__header">
+        <h2 class="page-stripe__title">Calendar</h2>
+              </header>
+        <div class="page-stripe__content">
+            <div class="field field--name-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-dynamic-content-events view-id-dynamic_content_events view-display-id-block_1 js-view-dom-id-bfd3dbb7fcbce863c60c8312de1faa36985ee0cbd7f720080f0bcbeb94b4b2e9">
+  
+    
+      
+      <div class="view-content">
+      
+
+
+
+
+<div class="views-view-responsive-grid views-view-responsive-grid--horizontal" style="--views-responsive-grid--column-count:6;--views-responsive-grid--cell-min-width:600px;--views-responsive-grid--layout-gap:25px;">
+      <div class="views-view-responsive-grid__item">
+      <div class="views-view-responsive-grid__item-inner">
+
+
+
+
+  
+
+
+<article class="teaser-event-calendar teaser-event-calendar--eba official meeting" data-element="event-teaser">
+  <a href="/publications-and-media/events/board-supervisors-meeting-76" class="teaser-event-calendar__calendar" data-field="date">
+    <div class="teaser-event-calendar__calendar-day-month" data-field="month">                    <div>
+          <span class="teaser-event-calendar__calendar-day">10</span>
+          <span class="teaser-event-calendar__calendar-month">Sep</span>
+        </div>
+            </div>
+    <div class="teaser-event-calendar__calendar-year" data-field="year">      2026
+  </div>
+  </a>
+  <div class="teaser-event-calendar__content">
+    <h3 class="h4 teaser-event-calendar__title" data-field="title"><a href="/publications-and-media/events/board-supervisors-meeting-76" rel="bookmark">
+<span>Board of Supervisors meeting</span>
+</a></h3>
+          </div>
+</article>
+
+
+
+</div>
+    </div>
+      <div class="views-view-responsive-grid__item">
+      <div class="views-view-responsive-grid__item-inner">
+
+
+
+
+  
+
+
+<article class="teaser-event-calendar teaser-event-calendar--public hearing" data-element="event-teaser">
+  <a href="/publications-and-media/events/public-hearing-eba-consultation-papers-first-batch-mandates-under-dgsd3" class="teaser-event-calendar__calendar" data-field="date">
+    <div class="teaser-event-calendar__calendar-day-month" data-field="month">                    <div>
+          <span class="teaser-event-calendar__calendar-day">24</span>
+          <span class="teaser-event-calendar__calendar-month">Sep</span>
+        </div>
+            </div>
+    <div class="teaser-event-calendar__calendar-year" data-field="year">      2026
+  </div>
+  </a>
+  <div class="teaser-event-calendar__content">
+    <h3 class="h4 teaser-event-calendar__title" data-field="title"><a href="/publications-and-media/events/public-hearing-eba-consultation-papers-first-batch-mandates-under-dgsd3" rel="bookmark">
+<span>Public hearing on the EBA consultation papers on the first batch of mandates under DGSD3</span>
+</a></h3>
+          </div>
+</article>
+
+
+
+</div>
+    </div>
+      <div class="views-view-responsive-grid__item">
+      <div class="views-view-responsive-grid__item-inner">
+
+
+
+
+  
+
+
+<article class="teaser-event-calendar teaser-event-calendar--public hearing" data-element="event-teaser">
+  <a href="/publications-and-media/events/public-hearing-draft-regulatory-technical-standards-operational-risk-management-framework" class="teaser-event-calendar__calendar" data-field="date">
+    <div class="teaser-event-calendar__calendar-day-month" data-field="month">                    <div>
+          <span class="teaser-event-calendar__calendar-day">29</span>
+          <span class="teaser-event-calendar__calendar-month">Sep</span>
+        </div>
+            </div>
+    <div class="teaser-event-calendar__calendar-year" data-field="year">      2026
+  </div>
+  </a>
+  <div class="teaser-event-calendar__content">
+    <h3 class="h4 teaser-event-calendar__title" data-field="title"><a href="/publications-and-media/events/public-hearing-draft-regulatory-technical-standards-operational-risk-management-framework" rel="bookmark">
+<span>Public hearing on draft Regulatory Technical Standards on operational risk management framework</span>
+</a></h3>
+          </div>
+</article>
+
+
+
+</div>
+    </div>
+      <div class="views-view-responsive-grid__item">
+      <div class="views-view-responsive-grid__item-inner">
+
+
+
+
+  
+
+
+<article class="teaser-event-calendar teaser-event-calendar--public hearing" data-element="event-teaser">
+  <a href="/publications-and-media/events/public-hearing-revised-rts-prudential-requirements-investment-firms" class="teaser-event-calendar__calendar" data-field="date">
+    <div class="teaser-event-calendar__calendar-day-month" data-field="month">                    <div>
+          <span class="teaser-event-calendar__calendar-day">30</span>
+          <span class="teaser-event-calendar__calendar-month">Sep</span>
+        </div>
+            </div>
+    <div class="teaser-event-calendar__calendar-year" data-field="year">      2026
+  </div>
+  </a>
+  <div class="teaser-event-calendar__content">
+    <h3 class="h4 teaser-event-calendar__title" data-field="title"><a href="/publications-and-media/events/public-hearing-revised-rts-prudential-requirements-investment-firms" rel="bookmark">
+<span>Public hearing on revised RTS on prudential requirements for investment firms</span>
+</a></h3>
+          </div>
+</article>
+
+
+
+</div>
+    </div>
+  </div>
+
+    </div>
+  
+          </div>
+</div>
+</div>
+      </div>
+          <footer class="page-stripe__footer-actions">
+            <a class="link-icon link-icon--primary link-icon--more" href="/publications-and-media/events">View all events</a>
+  
+      </footer>
+      </div>
+</section>
+
+
+
+
+  
+
+
+
+
+
+<section class="grid grid--cta-boxes responsive-grid--horizontal" style="--responsive-grid--column-count: 2">
+        
+
+<section class="box-cta box-cta--background-blue">
+  <h2 class="box-cta__title">
+    Subscribe to email alerts
+  </h2>
+      <div class="box-cta__text">Subscribe to our mailing list to receive our latest news and announcements </div>
+        <a class="btn btn-lg btn-bright btn-with-icon box-cta__button" href="/subscribe-to-email-alerts">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+</a>
+  </section>
+
+      
+
+<section class="box-cta box-cta--background-blue">
+  <h2 class="box-cta__title">
+    Receive vacancy email alerts
+  </h2>
+      <div class="box-cta__text">Subscribe to our mailing list and never miss a new vacancy</div>
+        <a class="btn btn-lg btn-bright btn-with-icon box-cta__button" href="https://www.careers.eba.europa.eu/en#:~:text=ANY%20SUITABLE%20OFFER%3F-,JOB%20OFFER%20ALERT,-Choose%20a%20job">Subscribe <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+</a>
+  </section>
+
+  
+  
+
+
+</section>
+
+
+
+
+
+    </div>
+  
+</article>
+
+  </div>
+
+
+        </div>
+      </div>
+      </main>
+
+  
+    <nav role="navigation" aria-labelledby="block-eba-theme-footer-menu" id="block-eba-theme-footer">
+            
+  <h2 class="visually-hidden" id="block-eba-theme-footer-menu">Footer</h2>
+  
+
+        
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner-container">
+
+    <section class="row site-footer__top">
+            
+      <div class="col-lg-4">
+        <section class="box-info">
+            <h2 class="h6">EUROPEAN BANKING AUTHORITY</h2>
+        <p>Our mission is to contribute to the stability and effectiveness of the European financial system through simple, consistent, transparent, fair regulation and supervision that benefits all EU citizens.</p>
+        <br>
+        <p><a target="_blank" href="https://europa.eu/"><img alt="UE logo" width="41" height="28" style="margin-inline-end: 10px" src="/themes/eba_theme/templates/components/site-footer/images/eu-flag-logo-A.png">An agency of the EU</a></p>
+        <p><a target="_blank" href="https://agencies-network.europa.eu/"><img alt="EU Agencies Network logo" width="40" height="37" style="margin-inline-end: 10px" src="/themes/eba_theme/templates/components/site-footer/images/eu-agencies-logo-A.png">EU Agencies Network</a></p>
+        <p><a href="/about-us/sustainable-eba"><img alt="EMAS logo" width="80" height="37" style="margin-inline-end: 10px" src="/themes/eba_theme/templates/components/site-footer/images/EMAS-logo.png">Sustainable EBA</a></p>
+      
+</section>
+
+      </div>
+
+                      <div class="col-md-6 col-lg-4">
+                                  <section class="box-info">
+      <h3 class="h6 box-info__title">Contact us</h3>
+                  <ul>
+                                  <li>
+                                        <a href="/contacts" target="" data-drupal-link-system-path="node/2448">Contacts</a>
+                  </li>
+                                  <li>
+                                        <a href="/form/webform-162" target="" data-drupal-link-system-path="webform/webform_162">Ask a general question</a>
+                  </li>
+                                  <li>
+                                        <a href="/form/press-enquiry" target="" data-drupal-link-system-path="webform/press_enquiry">Send a press query</a>
+                  </li>
+                                  <li>
+                                        <a href="/single-rule-book-qa" target="" data-drupal-link-system-path="node/16252">Ask a regulatory question</a>
+                  </li>
+                                  <li>
+                                        <a href="/about-us/organisation-and-governance/accountability/transparency-and-access-documents" target="" data-drupal-link-system-path="node/2308">Request access to documents</a>
+                  </li>
+                                  <li>
+                                        <a href="/activities/information-consumers/how-complain" target="" data-drupal-link-system-path="node/2458">File a complaint</a>
+                  </li>
+                                  <li>
+                                        <a href="https://eba.integrityline.com/frontpage" target="_blank">Whistleblower reports</a>
+                  </li>
+                              </ul>
+            
+</section>
+
+                                  <section class="box-info">
+      <h3 class="h6 box-info__title">Stay up to date with our work</h3>
+                  <ul>
+                                  <li>
+                                        <a href="/subscribe-to-email-alerts" target="" data-drupal-link-system-path="node/16500">Subscribe to our email alerts</a>
+                  </li>
+                                  <li>
+                                        <a href="/news-press/news/rss.xml" target="" data-drupal-link-system-path="news-press/news/rss.xml">News &amp; press RSS feed</a>
+                  </li>
+                              </ul>
+            
+</section>
+
+                  </div>
+                      <div class="col-md-6 col-lg-4">
+                                  <section class="box-info">
+      <h3 class="h6 box-info__title">Follow us on Social media</h3>
+                  <ul>
+                                  <li>
+                                        <a href="https://bsky.app/profile/eba.europa.eu" class="link-icon link-icon--social" target="_blank">Bluesky</a>
+                  </li>
+                                  <li>
+                                        <a href="https://www.linkedin.com/company/european-banking-authority" class="link-icon link-icon--social" target="_blank">LinkedIn</a>
+                  </li>
+                                  <li>
+                                        <a href="https://twitter.com/EBA_News" class="link-icon link-icon--social" target="_blank">X</a>
+                  </li>
+                                  <li>
+                                        <a href="https://www.youtube.com/user/EUbankingauthority" class="link-icon link-icon--social" target="_blank">YouTube</a>
+                  </li>
+                              </ul>
+            
+</section>
+
+                                  <section class="box-info">
+      <h3 class="h6 box-info__title">Find out about us</h3>
+                  <ul>
+                                  <li>
+                                        <a href="/find-out-about-us/eba-glance" target="" data-drupal-link-system-path="node/16452">The EBA at a glance</a>
+                  </li>
+                                  <li>
+                                        <a href="/privacy-notice" target="" data-drupal-link-system-path="node/2359">Privacy policy</a>
+                  </li>
+                                  <li>
+                                        <a href="/find-out-about-us/legal-notice" target="" data-drupal-link-system-path="node/2694">Legal notice</a>
+                  </li>
+                                  <li>
+                                        <a href="/find-out-about-us/cookie-policy-eba-official-website" target="" data-drupal-link-system-path="node/2521">Cookies policy</a>
+                  </li>
+                                  <li>
+                                        <a href="/activities/information-consumers/frauds-and-scams" target="" data-drupal-link-system-path="node/2602">Frauds and scams</a>
+                  </li>
+                              </ul>
+            
+</section>
+
+                                  <section class="box-info">
+      <h3 class="h6 box-info__title">Explore related sites</h3>
+                  <ul>
+                                  <li>
+                                        <a href="https://www.eiopa.europa.eu/index_en" target="_blank">EIOPA</a>
+                  </li>
+                                  <li>
+                                        <a href="https://www.esma.europa.eu/" target="_blank">ESMA</a>
+                  </li>
+                                  <li>
+                                        <a href="https://www.esrb.europa.eu/home/html/index.en.html" target="_blank">ESRB</a>
+                  </li>
+                                  <li>
+                                        <a href="https://www.eba.europa.eu/cebs-archive" target="_blank">CEBS archive</a>
+                  </li>
+                              </ul>
+            
+</section>
+
+                  </div>
+      
+    </section>
+  </div>
+</footer>
+
+  </nav>
+
+
+  
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/7","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"matomo":{"disableCookies":false,"trackMailto":true},"user":{"uid":0,"permissionsHash":"77b1abe247368d13e8861b4e80e60b3d28a771a48fc78903c3da7a4d14a1be37"}}</script>
+<script src="/sites/default/files/js/js_j0AYZvNv2xlhTu8gDd-LV5m2ANVZY8J5vh-ir6BwXuw.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=eba_theme&amp;include=eJw1iFEOgzAMxS5UyJGq1_LEEClBSRDX3ybEjy2bDbWbU3rfazr6vh1r4e_mh4OyqjXohAhmlIG0YfKoGOvNlmYasvh1Que3pxjwVMNCL9dWT2TSj5BEi_mPLzWvL1Y"></script>
+<script src="https://webtools.europa.eu/load.js" defer></script>
+<script src="/sites/default/files/js/js_aTDHyGGZ23WNhoIpXxUDuO6ihLZCvQUGFY104vItnt8.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=eba_theme&amp;include=eJw1iFEOgzAMxS5UyJGq1_LEEClBSRDX3ybEjy2bDbWbU3rfazr6vh1r4e_mh4OyqjXohAhmlIG0YfKoGOvNlmYasvh1Que3pxjwVMNCL9dWT2TSj5BEi_mPLzWvL1Y"></script>
+
+  </body>
+</html>

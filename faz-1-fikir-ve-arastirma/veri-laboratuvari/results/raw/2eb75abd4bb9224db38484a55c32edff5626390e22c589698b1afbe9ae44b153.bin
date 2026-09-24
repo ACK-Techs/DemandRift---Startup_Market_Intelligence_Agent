@@ -1,0 +1,1842 @@
+
+<!DOCTYPE html>
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2"><title>
+	T.C. Sağlık Bakanlığı  
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<script src="/WebFiles/js/jquery.js" ></script>
+	<script src="/WebFiles/js/bootstrap.js"></script>
+	
+	
+	<link href="/webfiles/images/logo.svg" rel="icon" type="image/svg" />
+	<link href="/webfiles/favicon.svg" rel="icon" type="image/svg" />
+	<link href="/WebFiles/css/bootstrap.css" rel="stylesheet"> 
+	<link href="/WebFiles/css/animate.css" rel="stylesheet"> 
+	<link href="/WebFiles/css/default.css" rel="stylesheet"> 
+	<link href="/WebFiles/css/carosel.css" rel="stylesheet"> 
+	<link href="/WebFiles/css/pages.css" rel="stylesheet"> 
+	 
+	 
+	<link href="/WebFiles/css/timepicker.less" rel="stylesheet"> 
+	<link href="/WebFiles/css/bootstrap-datepicker3.min.css" rel="stylesheet"> 
+	<link href="/WebFiles/css/responsive.css" rel="stylesheet"> 
+	
+	<link href="/Fonts/font-awesome.css" rel="stylesheet"> 
+	
+	
+	<!--[if gt IE 6]>
+		<link rel="stylesheet" type="text/css" href="style/general/all-ie-only.css" />
+		<![endif]-->
+	<!-- Google tag (gtag.js) --> 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NP6RE0WQ7S"></script> 
+	<script> 
+		window.dataLayer = window.dataLayer || []; 
+		function gtag(){dataLayer.push(arguments);} 
+		gtag('js', new Date()); gtag('config', 'G-NP6RE0WQ7S');
+	</script>	
+	
+	
+	</head>
+
+<body>	
+ 
+	
+	<!-- site arama alanı -->
+	<div class="site_search_area">
+		
+		
+		<div class="closed_search"> × </div>
+	
+		<div class="container"> 
+			<div class="arama_alani_form"> 
+				<div class="topnav">
+					 
+					<input type="text" id="search_query" name="search_query" placeholder="Aranacak kelimeyi yazınız" >
+					<button type="submit" class="site_search_button"><i class="fa fa-search"></i></button>
+					
+				</div>
+			</div>
+		</div>
+				
+	</div>
+	
+	
+	
+	<div class="off_canvars_overlay"> </div>
+	
+	
+	<div class="about-sidebar-section">
+		 
+		<div class="about-sidebar-section-full">
+		 
+			<div class="col-xl-12">
+			
+				<div class="sidebar_menu_content">
+					 
+					<div class="sidebar_menu_content_header">
+						<div class="row">
+							<div class="col-xl-9">
+								<a href="/?_Dil=1"> 
+									<img src="/webfiles/images/mobil_logo.svg" alt="T.C. Sağlık Bakanlığı"  /> 
+								</a>
+							</div>
+							<div class="col-xl-3">
+								<div class="hide-sidebar">
+									<span> &times; </span>
+								</div>
+							</div>
+						 
+						</div>
+					</div>
+					 
+					<div class="sidebar_menu_content_search">
+						
+						<div class="search_form">
+							<label class="form-groups">
+								<input id="query" type="text" name="query" onkeydown="searchs()" class="form-control" placeholder="Aranacak Kelimeyi Yazınız" >
+								<button type="submit" class="btn btn-submit" id="mobil_searchs_button"> <span>ARA</span> <i class="fa fa-angle-right"></i></button>
+							</label>
+						</div>
+						
+					</div>
+					
+					 <div class="sidebar_content">
+						 
+						 <div class="accordion" id="MobilMenu">
+							  
+							  
+							  <!-- SiteAgacDallar:1.0.0.0 -->
+								 
+										 
+										  
+										
+										
+										
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="heading99126">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse99126" aria-expanded="false" aria-controls="collapse99126">
+												Bakan 
+											  </button>
+											</h2>
+											<div id="collapse99126" class="accordion-collapse collapse" aria-labelledby="heading99126" data-bs-parent="#MobilMenu">
+												<div class="accordion-contents">
+													<ul>
+														<!-- SiteAgacDallar:1.0.0.0 -->  
+																<li>
+																	<a href="/TR-11442/saglik-bakanimiz.html"  > 
+																		<i class="fa fa-angle-right"> </i> Sağlık Bakanımız
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11499/bakan-yardimcilari.html"  > 
+																		<i class="fa fa-angle-right"> </i> Bakan Yardımcıları
+																	</a>
+																</li>
+															 
+													</ul>
+												</div>
+											</div>
+									    </div> 
+									    
+								
+								 
+										 
+										  
+										
+										
+										
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="heading11441">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11441" aria-expanded="false" aria-controls="collapse11441">
+												Bakanlık 
+											  </button>
+											</h2>
+											<div id="collapse11441" class="accordion-collapse collapse" aria-labelledby="heading11441" data-bs-parent="#MobilMenu">
+												<div class="accordion-contents">
+													<ul>
+														<!-- SiteAgacDallar:1.0.0.0 -->  
+																<li>
+																	<a href="/TR-11492/tarihce.html"  > 
+																		<i class="fa fa-angle-right"> </i> Tarihçe
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11531/bakanlik-birimleri.html"  > 
+																		<i class="fa fa-angle-right"> </i> Bakanlık Birimleri
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11465/kurumsal-politikalarimiz.html"  > 
+																		<i class="fa fa-angle-right"> </i> Kurumsal Politikalarımız
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11443/teskilat-semasi.html"  > 
+																		<i class="fa fa-angle-right"> </i> Teşkilat Şeması
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-61717/stratejik-yonetim.html" target='_blank' > 
+																		<i class="fa fa-angle-right"> </i> Stratejik Yönetim
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11464/gorev-ve-yetkiler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Görev ve Yetkiler
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-61718/ic-kontrol.html" target='_blank' > 
+																		<i class="fa fa-angle-right"> </i> İç Kontrol
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11484/kurumsal-kimlik-ve-logo.html"  > 
+																		<i class="fa fa-angle-right"> </i> Kurumsal Kimlik ve Logo
+																	</a>
+																</li>
+															 
+													</ul>
+												</div>
+											</div>
+									    </div> 
+									    
+								
+								 
+										 
+										  
+										
+										
+										
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="heading10357">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10357" aria-expanded="false" aria-controls="collapse10357">
+												Sağlık Mevzuatı  
+											  </button>
+											</h2>
+											<div id="collapse10357" class="accordion-collapse collapse" aria-labelledby="heading10357" data-bs-parent="#MobilMenu">
+												<div class="accordion-contents">
+													<ul>
+														<!-- SiteAgacDallar:1.0.0.0 -->  
+																<li>
+																	<a href="/TR-10358/kanunlar.html"  > 
+																		<i class="fa fa-angle-right"> </i> Kanunlar
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-10413/yonetmelikler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Yönetmelikler 
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-10535/genelgeler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Genelgeler
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11186/yonergeler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Yönergeler 
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11293/tuzukler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Tüzükler
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11300/tebligler.html"  > 
+																		<i class="fa fa-angle-right"> </i> Tebliğler
+																	</a>
+																</li>
+															 
+													</ul>
+												</div>
+											</div>
+									    </div> 
+									    
+								
+								 
+										 
+										  
+										
+										
+										
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="heading11583">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11583" aria-expanded="false" aria-controls="collapse11583">
+												Hizmetlerimiz 
+											  </button>
+											</h2>
+											<div id="collapse11583" class="accordion-collapse collapse" aria-labelledby="heading11583" data-bs-parent="#MobilMenu">
+												<div class="accordion-contents">
+													<ul>
+														<!-- SiteAgacDallar:1.0.0.0 -->  
+																<li>
+																	<a href="/TR-11680/kurumsal-uygulamalar.html"  > 
+																		<i class="fa fa-angle-right"> </i> Kurumsal Uygulamalar
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11681/cagri-merkezleri.html"  > 
+																		<i class="fa fa-angle-right"> </i> Çağrı Merkezleri
+																	</a>
+																</li>
+															  
+																<li>
+																	<a href="/TR-11584/istatistikler-ve-yayinlar.html"  > 
+																		<i class="fa fa-angle-right"> </i> İstatistikler ve Yayınlar
+																	</a>
+																</li>
+															 
+													</ul>
+												</div>
+											</div>
+									    </div> 
+									    
+									
+
+
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingBasinOdasi">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBasinOdasi" aria-expanded="false" aria-controls="collapseBasinOdasi">
+									Basın Odası
+								  </button>
+								</h2>
+								<div id="collapseBasinOdasi" class="accordion-collapse collapse" aria-labelledby="headingBasinOdasi" data-bs-parent="#MobilMenu">
+									<div class="accordion-contents">
+										<ul>
+											<!-- SiteAgacDallar:1.0.0.0 -->  
+													<li>
+														<a href="/TR-84146/haberler.html"   title="Haberler"> 
+															<i class="fa fa-angle-right"> </i> Haberler
+														</a>
+													</li>
+												  
+													<li>
+														<a href="/TR-105314/ziyaretler.html"   title="Ziyaretler"> 
+															<i class="fa fa-angle-right"> </i> Ziyaretler
+														</a>
+													</li>
+												  
+													<li>
+														<a href="/TR-3197/basin-duyurulari.html"   title="Basın Duyuruları"> 
+															<i class="fa fa-angle-right"> </i> Basın Duyuruları
+														</a>
+													</li>
+												  
+													<li>
+														<a href="/TR-96648/basinda-biz.html"   title="Basında Biz"> 
+															<i class="fa fa-angle-right"> </i> Basında Biz
+														</a>
+													</li>
+												  
+													<li>
+														<a href="/TR-32945/video-galeri.html"   title="Video Galeri"> 
+															<i class="fa fa-angle-right"> </i> Video Galeri
+														</a>
+													</li>
+												  
+													<li>
+														<a href="/TR-25639/haber-arsivi.html"   title="Haber Arşivi"> 
+															<i class="fa fa-angle-right"> </i> Haber Arşivi
+														</a>
+													</li>
+												 
+										</ul>
+									</div>
+								</div>
+							</div>	
+							
+							<div class="accordion-item">
+								<a href="/TR-11549/iletisim.html" class="mobil_contact" title="İletişim">İletişim</a>
+							</div>
+
+							
+						</div>
+						
+					</div>
+					
+				
+					
+					
+				</div>
+			</div>
+				
+		</div>
+		
+	</div>
+
+   
+    <form method="post" action="/?_Dil=1" id="form2">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="e2A8TckwAz2zKvp4EwNWclEfKIN1oB810bshsGePOsEU7R9L6d32O+39DyU9n5I1BxQ4gWfsox6dT+yLqNzIZ7r+lx7vbCZgJ4HEKlEfIV/fzE0ZgnWaC1KfgNmSmwkqVl1fSRgFIB5jsbuGQ/N+JQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form2'];
+if (!theForm) {
+    theForm = document.form2;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZH48JxPRkYnGxhHzXtf-Y_uFUbQ6WiIR4m9ztd90kHgO93aULFQI4ZQ18gt7xAJFMg2&amp;t=638563380220000000" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var wiy_page_data = {SiteAnah:15193,
+	Anah:-1,
+	DilAnah:1,
+	Dil:'TR',
+	AppUrl:'http://www.saglik.gov.tr',
+	AppPath:'/',
+	KisaUrl:''};
+
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yMB7wbnLfdhPbDnHpt53P52bVxvl_G6VVDNp56sxh6rcN80LTvSVmNucA9E9OJbIqSW4sBat7ZObe_9YRqeFtVI8uRq6InYDX_q3fWSu20a9LH6tG3Wh24HL066yTajZ8a0y8EHRaSc2_qweyHNHSS81&amp;t=ffffffffc820c398" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Jw6tUGWnA15YEa3ai3FadAltY7I-eAOmjurGDxWL3M6H8tmGJY4YWOSrLwhoK5IpYOa24hKOVu-Z2RQy3-aZg-qbIHVNMmIWF6Z0C2lKkEqoK0r8DyDTMzCoi0_LCZlUZx5POF3I4cGMLlRDdwSlwDneFo2INq2PdFgu_HuMZgc1&amp;t=ffffffffc820c398" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1EBFB506" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form2', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+			
+		<header>
+			 
+			 <div class="header-top">
+				<div class="container">
+					
+					<div class="row"> 
+						<div class="col-xl-6 col-6"> 
+							
+							 <!-- WebParcasiSiteAgacDallar:1.0.0.0 --><ul class="social"> 
+										<li><a href="/TR-99281/instagram.html" target="_blank" title="Instagram"> <img src="/Webfiles/svg_social_media/instagram_white.svg" alt="Instagram " /></a> </li>
+									 
+										<li><a href="/TR-99279/twitter.html" target="_blank" title="Twitter"> <img src="/Webfiles/svg_social_media/twitter_white.svg" alt="Twitter " /></a> </li>
+									 
+										<li><a href="/TR-99280/facebook.html" target="_blank" title="Facebook"> <img src="/Webfiles/svg_social_media/facebook_white.svg" alt="Facebook " /></a> </li>
+									 
+										<li><a href="/TR-99283/linkedin.html" target="_blank" title="Linkedin"> <img src="/Webfiles/svg_social_media/linkedin_white.svg" alt="Linkedin " /></a> </li>
+									 
+										<li><a href="/TR-99282/youtube.html" target="_blank" title="Youtube"> <img src="/Webfiles/svg_social_media/youtube_white.svg" alt="Youtube " /></a> </li>
+									 
+										<li><a href="/TR-102910/whatsapp.html" target="_blank" title="Whatsapp"> <img src="/Webfiles/svg_social_media/whatsapp_white.svg" alt="Whatsapp " /></a> </li>
+									 
+										<li><a href="/TR-99285/e-posta.html" target="_blank" title="E-posta"> <img src="/Webfiles/svg_social_media/eposta_white.svg" alt="E-posta " /></a> </li>
+									</ul>   
+							
+							
+						</div> 
+						<div class="col-xl-5 col-6">  
+							<ul class="header_right_menu"> 
+								<li><a href="/Siteagaci" title="Site Haritası"> Site Haritası </a> </li> 
+								<li><a href="/TR-11549/iletisim.html" title="İletişim"> İletişim </a> </li> 
+								<li><a href="/?_Dil=2" title="English">English</a> </li>
+								<li><a class="search" href="#" title="Site içi arama"> <i class="fa fa-search"></i> </a> </li>
+							</ul> 
+ 
+						</div> 
+						
+						<div class="col-xl-1 col-3" id="mobil_ata">  
+							<img class="ataturk" src="/Webfiles/images/ataturk-bayrak.png" alt="Atatürk" />  
+						</div> 
+						
+						
+					</div> 
+				</div>
+				 
+			</div>
+			
+			<div class="header-middle">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-xl-3 col-lg-4">
+					  
+							<div class="logo"> 
+								<a href="/?_Dil=1" title="T.C.Sağlık Bakanlığı"> 
+									<img src="/webfiles/images/sb-logo.svg" alt="T.C.Sağlık Bakanlığı" /> 
+									<h1>T.C. SAĞLIK BAKANLIĞI</h1>
+								</a>
+							</div> 
+						</div>
+	
+						<div class="col-xl-9 col-lg-8">  
+							
+							<div id="mainMenu">
+								
+								<nav class="nav">
+									<ul data-type="navbar">
+										 
+										<!-- SiteAgacDallar:1.0.0.0 -->
+										 
+												
+											
+												
+														
+													<li class="dropdown minister"> 
+														<a href="/TR-99126/bakan.html">
+															Bakan <i class="fa fa-angle-down"></i> 
+															<span class="sub_line"> </span>
+														</a> 
+															<ul class="dropdown-menu menu_animated">
+																<li class="minister_content">
+																	
+																	<div class="row">  
+																		<div class="col-lg-6">	 
+																			<div class="bakan_block"> 
+																				
+																				<a href="/TR,11442/saglik-bakanimiz.html" title="Sağlık Bakanı">
+																					<div class="hc-overlay"> </div>
+																					<img src="/WebFiles/images/bakanimiz.jpg" alt="Prof. Dr. Kemal MEMİŞOĞLU" />  
+																					<div class="bakan_footer">
+																					
+																						<p>
+																							<a href="/TR,11442/saglik-bakanimiz.html" title="Prof. Dr. Kemal MEMİŞOĞLU">Prof. Dr. Kemal MEMİŞOĞLU
+																								<span>T.C. Sağlık Bakanı</span>
+																							</a>
+																						</p>
+																					</div>
+																				 </a>
+																			</div>
+																		</div> 
+																		
+																		<div class="col-lg-6"> 
+																			<h5>Bakan Yardımcıları</h5>
+																			<ul class="minister_sub_links">  
+																				 <!-- SiteAgacDallar:1.0.0.0 -->  
+																						<a class="minister-link" href="/TR-44859/doc-dr-suayip-birinci.html"> 
+																							<i class="fa fa-angle-right"> </i> Doç. Dr. Şuayıp BİRİNCİ <span class="bakan_yardimcillari_line"></span> 
+																						</a>   
+																					  
+																						<a class="minister-link" href="/TR-96486/huseyin-kursat-kirbiyik.html"> 
+																							<i class="fa fa-angle-right"> </i> Hüseyin Kürşat KIRBIYIK <span class="bakan_yardimcillari_line"></span> 
+																						</a>   
+																					  
+																						<a class="minister-link" href="/TR-82178/dr-ogr-uyesi-halim-ozcevik.html"> 
+																							<i class="fa fa-angle-right"> </i> Dr. Öğr. Üyesi Halim ÖZÇEVİK <span class="bakan_yardimcillari_line"></span> 
+																						</a>   
+																					  
+																						<a class="minister-link" href="/TR-105828/dr-yasin-erkoc.html"> 
+																							<i class="fa fa-angle-right"> </i> Dr. Yasin ERKOÇ <span class="bakan_yardimcillari_line"></span> 
+																						</a>   
+																					 
+																			</ul>
+																		</div>
+																	</div>
+																
+																</li> 
+															</ul> 
+													
+													</li>
+											
+													
+											 
+											
+										 
+												
+											
+													
+														  
+														<li class="dropdown">
+															
+															<a href="/TR-11441/bakanlik.html">
+																Bakanlık <i class="fa fa-angle-down"></i> 
+																<span class="sub_line"> </span>
+															</a>
+															
+															<!-- SiteAgacDallar:1.0.0.0 --><ul class="dropdown-menu menu_animated"> <!-- nofade -->  
+																		
+																		<li class=""> 
+																		  <a href="/TR-11492/tarihce.html"  title="Tarihçe"> 
+																			<i class="fa fa-angle-right"></i>  Tarihçe 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11531/bakanlik-birimleri.html"  title="Bakanlık Birimleri"> 
+																			<i class="fa fa-angle-right"></i>  Bakanlık Birimleri 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11465/kurumsal-politikalarimiz.html"  title="Kurumsal Politikalarımız"> 
+																			<i class="fa fa-angle-right"></i>  Kurumsal Politikalarımız 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11443/teskilat-semasi.html"  title="Teşkilat Şeması"> 
+																			<i class="fa fa-angle-right"></i>  Teşkilat Şeması 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-61717/stratejik-yonetim.html" target='_blank' title="Stratejik Yönetim"> 
+																			<i class="fa fa-angle-right"></i>  Stratejik Yönetim 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11464/gorev-ve-yetkiler.html"  title="Görev ve Yetkiler"> 
+																			<i class="fa fa-angle-right"></i>  Görev ve Yetkiler 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-61718/ic-kontrol.html" target='_blank' title="İç Kontrol"> 
+																			<i class="fa fa-angle-right"></i>  İç Kontrol 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11484/kurumsal-kimlik-ve-logo.html"  title="Kurumsal Kimlik ve Logo"> 
+																			<i class="fa fa-angle-right"></i>  Kurumsal Kimlik ve Logo 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	</ul>
+														</li>
+													 
+											 
+											
+										 
+												
+											
+													
+														  
+														<li class="dropdown">
+															
+															<a href="/TR-10357/saglik-mevzuati.html">
+																Sağlık Mevzuatı  <i class="fa fa-angle-down"></i> 
+																<span class="sub_line"> </span>
+															</a>
+															
+															<!-- SiteAgacDallar:1.0.0.0 --><ul class="dropdown-menu menu_animated"> <!-- nofade -->  
+																		
+																		<li class=""> 
+																		  <a href="/TR-10358/kanunlar.html"  title="Kanunlar"> 
+																			<i class="fa fa-angle-right"></i>  Kanunlar 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-10413/yonetmelikler.html"  title="Yönetmelikler "> 
+																			<i class="fa fa-angle-right"></i>  Yönetmelikler  
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-10535/genelgeler.html"  title="Genelgeler"> 
+																			<i class="fa fa-angle-right"></i>  Genelgeler 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11186/yonergeler.html"  title="Yönergeler "> 
+																			<i class="fa fa-angle-right"></i>  Yönergeler  
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11293/tuzukler.html"  title="Tüzükler"> 
+																			<i class="fa fa-angle-right"></i>  Tüzükler 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11300/tebligler.html"  title="Tebliğler"> 
+																			<i class="fa fa-angle-right"></i>  Tebliğler 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	</ul>
+														</li>
+													 
+											 
+											
+										 
+												
+											
+													
+														  
+														<li class="dropdown">
+															
+															<a href="/TR-11583/hizmetlerimiz.html">
+																Hizmetlerimiz <i class="fa fa-angle-down"></i> 
+																<span class="sub_line"> </span>
+															</a>
+															
+															<!-- SiteAgacDallar:1.0.0.0 --><ul class="dropdown-menu menu_animated"> <!-- nofade -->  
+																		
+																		<li class=""> 
+																		  <a href="/TR-11680/kurumsal-uygulamalar.html"  title="Kurumsal Uygulamalar"> 
+																			<i class="fa fa-angle-right"></i>  Kurumsal Uygulamalar 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11681/cagri-merkezleri.html"  title="Çağrı Merkezleri"> 
+																			<i class="fa fa-angle-right"></i>  Çağrı Merkezleri 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	 
+																		
+																		<li class=""> 
+																		  <a href="/TR-11584/istatistikler-ve-yayinlar.html"  title="İstatistikler ve Yayınlar"> 
+																			<i class="fa fa-angle-right"></i>  İstatistikler ve Yayınlar 
+																			<div class="menu_line"></div>
+																		  </a>
+																			 
+																		 </li>
+																	</ul>
+														</li>
+													 
+											 
+												
+										<li class="dropdown">
+											
+											<a href="/TR-3187/basin-odasi.html" title="Basın Odası">
+												Basın Odası <i class="fa fa-angle-down"></i> 
+												<span class="sub_line"> </span>
+											</a>
+											
+											<ul class="dropdown-menu menu_animated">
+												
+													<li>
+														<a id="84146" href="/TR-84146/haberler.html" title="Haberler"> <i class="fa fa-angle-right"></i> Haberler  </a>  
+													</li>  
+													<li style="margin-left:10px">
+														<a id="105314" href="/TR-105314/ziyaretler.html" title="Ziyaretler"> 
+														<i class="fa fa-angle-right"></i> Ziyaretler	<div class="menu_line"></div></a>
+													</li>													
+													<li>
+														<a id="3197" href="/TR-3197/basin-duyurulari.html" title="Basın Duyuruları">
+															<i class="fa fa-angle-right"></i>  Basın Duyuruları <div class="menu_line"></div>
+														</a>
+													</li> 
+													<li>
+														<a id="96648" href="/TR-96648/basinda-biz.html" title="Basında Biz"> <i class="fa fa-angle-right"></i>Basında Biz <div class="menu_line"></div></a>
+													</li> 
+													<li>
+														<a id="32945" href="/TR-32945/video-galeri.html" title="Video Galeri">
+															<i class="fa fa-angle-right"></i>  Video Galeri  <div class="menu_line"></div>
+														</a>
+													</li>   
+												
+											</ul>
+											
+										</li>
+									</ul>
+									 
+								</nav> 
+								 
+							</div> 
+							
+							<div class="right-humbugur-btn">
+								<span class="fa fa-bars" aria-hidden="true"></span>
+							</div>
+						
+						</div>
+						 
+						
+					</div>
+				</div>
+			</div>
+			 
+		
+		</header>
+		 
+		
+  
+	<section id="main-slider-full"> 
+		<div class="m_slide owl-carousel">   
+			<!-- WebParcasiSiteAgacDallar:1.0.0.0 --> 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2>Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun Kütahya Ziyareti </h2>
+								<a href="/TR-107130/saglik-bakani-prof-dr-kemal-memisoglunun-kutahya-ziyareti.html"  title="Sağlık Bakanı Prof. Dr. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/77050/0/kutahyapng.png" alt="Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2>Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun Eskişehir Ziyareti </h2>
+								<a href="/TR-107129/saglik-bakani-prof-dr-kemal-memisoglunun-eskisehir-ziyareti.html"  title="Sağlık Bakanı Prof. Dr. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/77046/0/esskisehirpng.png" alt="Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2> Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun İzmir Ziyareti </h2>
+								<a href="/TR-106950/saglik-bakani-prof-dr-kemal-memisoglunun-izmir-ziyareti.html"  title=" Sağlık Bakanı Prof. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/77007/0/slider11png.png" alt=" Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2> Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun Van Ziyareti </h2>
+								<a href="/TR-106865/saglik-bakani-prof-dr-kemal-memisoglunun-van-ziyareti.html"  title=" Sağlık Bakanı Prof. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/76929/0/slider-4png.png" alt=" Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2>Moğolistan ile Sağlık ve Tıp Bilimleri Alanlarında Anlaşma İmzalandı  </h2>
+								<a href="/TR-106864/mogolistan-ile-saglik-ve-tip-bilimleri-alanlarinda-anlasma-imzalandi.html"  title="Moğolistan ile Sağlık ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/76926/0/slider-2-2png.png" alt="Moğolistan ile ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2>Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun Şırnak Ziyareti </h2>
+								<a href="/TR-106863/saglik-bakani-prof-dr-kemal-memisoglunun-sirnak-ziyareti.html"  title="Sağlık Bakanı Prof. Dr. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/76924/0/slider-3png.png" alt="Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2>Sağlık Bakanı Prof. Dr. Kemal Memişoğlu’nun Düzce Ziyareti </h2>
+								<a href="/TR-106862/saglik-bakani-prof-dr-kemal-memisoglunun-duzce-ziyareti.html"  title="Sağlık Bakanı Prof. Dr. ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/76922/0/slider-1png.png" alt="Sağlık Bakanı ..." />
+						
+					</div> 
+				 	 
+					<div class="item">
+						<div class="hc-overlay"></div> 
+						<div class="slider_content">
+							<div class="container"> 
+								<h2> Üreten Sağlık Modeli ile Güçlü Bir Türkiye için Çalışıyoruz </h2>
+								<a href="/TR-106821/ureten-saglik-modeli-ile-guclu-bir-turkiye-icin-calisiyoruz.html"  title=" Üreten Sağlık Modeli ..."> Daha Fazlası </a> 
+							</div>	
+						</div>	 
+						
+						<img src="https://dosyasb.saglik.gov.tr/Resim/76873/0/tusebpng.png" alt=" Üreten Sağlık ..." />
+						
+					</div> 
+				 		 
+		</div>  
+		 
+		<div class="section_link">
+			<div class="container">
+				<div class="row">
+					
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons item_first"> 
+								<a href="https://enabiz.gov.tr/" target="_blank" title="e-Nabız">  
+									<img src="..//WebFiles/images/icon/e-nabiz.svg"  />  
+									<span> e-Nabız   </span> 
+									<span class="menu_lines"></span>  
+								</a> 
+							</div>					
+						</div>
+				 
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons"> 
+								<a href="https://acilafet.saglik.gov.tr/" target="_blank" title="Acil Sağlık">  
+									<img src="..//WebFiles/images/icon/umke.svg"  />  
+									<span> Acil Sağlık </span>  
+									<span class="menu_lines"></span>  
+								</a> 
+							</div>					
+						</div>
+				 
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons"> 
+								<a href="https://sabim.gov.tr" target="_blank" title="SABİM">  
+									<img src="..//WebFiles/images/icon/sabim.svg"  />  
+									<span> SABİM   </span> 
+									<span class="menu_lines"></span>  									
+								</a> 
+							</div>					
+						</div>
+				 
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons"> 
+								<a href="https://www.mhrs.gov.tr/" target="_blank" title="MHRS"> 
+									<img src="..//WebFiles/images/icon/mhrs.svg"  />  
+									<span> MHRS   </span>
+									<span class="menu_lines"></span>  
+								</a> 
+							</div>					
+						</div>
+				 
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons"> 
+								<a href="https://www.cimer.gov.tr" target="_blank" title="Bilgi Edinme">  
+									<img src="..//WebFiles/images/icon/bilgi-edinme3.svg" />  
+									<span> Bilgi Edinme   </span>
+									<span class="menu_lines"></span>  
+								</a> 
+							</div>					
+						</div>
+				 
+						<div class="col-xl-2 col-md-2 col-4">
+							<div class="icons item_last"> 
+								<a href="https://www.healthturkiye.com/" target="_blank" title="Health Türkiye">  
+									<img src="..//WebFiles/images/icon/health-turkiye.svg"  />  
+									<span> HealthTürkiye   </span>
+									<span class="menu_lines"></span>  
+								</a> 
+							</div>					
+						</div>
+				 
+				</div>
+			</div>
+		</div>
+		 
+		<div class="slide-progress"></div>
+		<div class="slide-progress_bg"></div>
+		
+		
+		 
+	</section>
+	
+	
+	<section class="main_content">
+		
+		<div class="container">
+			<div class="row">
+				 
+				<div class="col-xl-4 col-lg-6 col-md-6 col-12" style="overflow:hidden;">
+					 <div class="box_home">
+						
+						<div class="box_home_header box_haberler">
+							<h4>Haberler</h4>
+						 
+							<div class="all_item_left">
+								<a href="/TR-84146/haberler.html" title="Tüm Haberler">Tümü <i class="fa fa-angle-double-right "></i> </a>
+							</div>
+						</div>
+					 
+						<div class="box_home_content">
+							<div class="news_list owl-carousel">  
+								<!-- WebParcasiSiteAgacDallar:1.0.0.0 --> 
+										<div class="news_list_item">   
+											<div class="item">  
+												<div class="news_list_content">  
+													<a href="/TR-106782/saglik-bakanimiz-prof-dr-kemal-memisoglu-sanayi-ve-teknoloji-bakani-sayin-mehmet-fatih-kaciri-bakanligimizda-agirladi.html" class="hover_effect black" title="Sağlık Bakanımız Prof. ...">
+														<div class="kapak_resimi" style="background-image:url(https://dosyasb.saglik.gov.tr/Resim/76845/0/whatsapp-image-2025-01-09-at-104507jpeg.png)"> </div>
+													</a>
+												</div>  
+												<div class="new_list_middle">
+													
+													<div class="news_list_content_desc">  
+														<h5> 
+															<a href="/TR-106782/saglik-bakanimiz-prof-dr-kemal-memisoglu-sanayi-ve-teknoloji-bakani-sayin-mehmet-fatih-kaciri-bakanligimizda-agirladi.html"  title="Sağlık Bakanımız Prof. ..."> 
+																Sağlık Bakanımız Prof. Dr. Kemal Memişoğlu, Sanayi ...  
+															</a>
+														</h5>	
+													</div>  
+													<div class="news_list_content_footer">  
+														<span> 09 Ocak 2025 </span> 
+														<a href="/TR-106782/saglik-bakanimiz-prof-dr-kemal-memisoglu-sanayi-ve-teknoloji-bakani-sayin-mehmet-fatih-kaciri-bakanligimizda-agirladi.html"  title="Sağlık Bakanımız Prof. ...">Devamını Oku </a>
+													</div> 
+												</div> 
+											</div>  
+										</div> 
+									 
+										<div class="news_list_item">   
+											<div class="item">  
+												<div class="news_list_content">  
+													<a href="/TR-99807/kovid-19-icin-yeni-bir-asi-programi-uygulamayi-dusunmuyoruz.html" class="hover_effect black" title="Kovid-19 İçin Yeni Bir ...">
+														<div class="kapak_resimi" style="background-image:url(https://dosyasb.saglik.gov.tr/Resim/71369/0/kovid-19-icin-yenijpg.png)"> </div>
+													</a>
+												</div>  
+												<div class="new_list_middle">
+													
+													<div class="news_list_content_desc">  
+														<h5> 
+															<a href="/TR-99807/kovid-19-icin-yeni-bir-asi-programi-uygulamayi-dusunmuyoruz.html"  title="Kovid-19 İçin Yeni Bir ..."> 
+																Kovid-19 İçin Yeni Bir Aşı Programı Uygulamayı Düşünmüyoruz   
+															</a>
+														</h5>	
+													</div>  
+													<div class="news_list_content_footer">  
+														<span> 26 Eylül 2023 </span> 
+														<a href="/TR-99807/kovid-19-icin-yeni-bir-asi-programi-uygulamayi-dusunmuyoruz.html"  title="Kovid-19 İçin Yeni Bir ...">Devamını Oku </a>
+													</div> 
+												</div> 
+											</div>  
+										</div> 
+									 
+										<div class="news_list_item">   
+											<div class="item">  
+												<div class="news_list_content">  
+													<a href="/TR-99842/etlik-sehir-hastanesi-1-yilda-5-milyondan-fazla-hastaya-hizmet-sundu.html" class="hover_effect black" title="Etlik Şehir Hastanesi, ...">
+														<div class="kapak_resimi" style="background-image:url(https://dosyasb.saglik.gov.tr/Resim/71368/0/yeni-etlik-sehir-hastanesijpg.png)"> </div>
+													</a>
+												</div>  
+												<div class="new_list_middle">
+													
+													<div class="news_list_content_desc">  
+														<h5> 
+															<a href="/TR-99842/etlik-sehir-hastanesi-1-yilda-5-milyondan-fazla-hastaya-hizmet-sundu.html"  title="Etlik Şehir Hastanesi, ..."> 
+																Etlik Şehir Hastanesi, 1 Yılda 5 Milyondan Fazla Hastaya ...  
+															</a>
+														</h5>	
+													</div>  
+													<div class="news_list_content_footer">  
+														<span> 28 Eylül 2023 </span> 
+														<a href="/TR-99842/etlik-sehir-hastanesi-1-yilda-5-milyondan-fazla-hastaya-hizmet-sundu.html"  title="Etlik Şehir Hastanesi, ...">Devamını Oku </a>
+													</div> 
+												</div> 
+											</div>  
+										</div> 
+									 
+										<div class="news_list_item">   
+											<div class="item">  
+												<div class="news_list_content">  
+													<a href="/TR-99883/cocuklarin-asilarinin-tam-olmasi-ozellikle-bugunlerde-neden-onemli.html" class="hover_effect black" title="Çocukların Aşılarının ...">
+														<div class="kapak_resimi" style="background-image:url(https://dosyasb.saglik.gov.tr/Resim/71286/0/1jpg.png)"> </div>
+													</a>
+												</div>  
+												<div class="new_list_middle">
+													
+													<div class="news_list_content_desc">  
+														<h5> 
+															<a href="/TR-99883/cocuklarin-asilarinin-tam-olmasi-ozellikle-bugunlerde-neden-onemli.html"  title="Çocukların Aşılarının ..."> 
+																Çocukların Aşılarının Tam Olması Özellikle Bugünlerde ...  
+															</a>
+														</h5>	
+													</div>  
+													<div class="news_list_content_footer">  
+														<span> 28 Eylül 2023 </span> 
+														<a href="/TR-99883/cocuklarin-asilarinin-tam-olmasi-ozellikle-bugunlerde-neden-onemli.html"  title="Çocukların Aşılarının ...">Devamını Oku </a>
+													</div> 
+												</div> 
+											</div>  
+										</div> 
+									 
+										<div class="news_list_item">   
+											<div class="item">  
+												<div class="news_list_content">  
+													<a href="/TR-99885/hayatiniz-icin-kalbinize-iyi-bakin.html" class="hover_effect black" title="Hayatınız İçin Kalbinize ...">
+														<div class="kapak_resimi" style="background-image:url(https://dosyasb.saglik.gov.tr/Resim/71370/0/kalp-yenijpg.png)"> </div>
+													</a>
+												</div>  
+												<div class="new_list_middle">
+													
+													<div class="news_list_content_desc">  
+														<h5> 
+															<a href="/TR-99885/hayatiniz-icin-kalbinize-iyi-bakin.html"  title="Hayatınız İçin Kalbinize ..."> 
+																Hayatınız İçin Kalbinize İyi Bakın   
+															</a>
+														</h5>	
+													</div>  
+													<div class="news_list_content_footer">  
+														<span> 28 Eylül 2023 </span> 
+														<a href="/TR-99885/hayatiniz-icin-kalbinize-iyi-bakin.html"  title="Hayatınız İçin Kalbinize ...">Devamını Oku </a>
+													</div> 
+												</div> 
+											</div>  
+										</div> 
+									 
+							</div>  
+						</div>
+						<!-- box_home_content -->
+						
+					 </div>
+				</div>
+				<!-- haberler -->
+				
+				<div class="col-xl-4 col-lg-6 col-md-6 col-12">
+					<div class="box_home box_duyurular"> 
+					
+						<div class="box_home_header">
+							<h4>Duyurular</h4>
+							<div class="all_item_right">
+								<a href="/TR,11693/duyurular.html" title="Tüm Duyurular">Tümü <i class="fa fa-angle-double-right "></i> </a>
+							</div>
+						</div> 
+						
+						<div class="box_home_content">
+							<div class="notice_content"> 
+								 <!-- WebParcasiSiteAgacDallar:1.0.0.0 --> 
+										<div class="col-xl-12">
+											<div class="notice_item"> 
+												
+												
+												<div class="notice_date default">
+													<span class="date_01">31 </span>
+													<span class="date_02">Oca</span>
+													<span class="date_03">2025</span> 
+													 
+												</div> 
+												
+												
+												<div class="notice_text">
+													 
+													 
+													
+													
+														 
+														<a href="15193/TR-107086/saglik-istatistikleri-yilligi-2023-yayinlanmistir.html" target="_blank"> 
+															Sağlık İstatistikleri Yıllığı 2023 Yayınlanmıştır  
+														</a> 
+														
+														
+													  
+												</div> 
+												
+												
+											</div>
+										</div>
+									 
+										<div class="col-xl-12">
+											<div class="notice_item"> 
+												
+												
+												<div class="notice_date default">
+													<span class="date_01">29 </span>
+													<span class="date_02">Oca</span>
+													<span class="date_03">2025</span> 
+													 
+												</div> 
+												
+												
+												<div class="notice_text">
+													 
+													 
+													
+													
+														 
+														<a href="https://shgm.saglik.gov.tr/TR-106952/4-donem-ucus-tabipligi-sertifikali-egitim-programi.html" target="_blank"> 
+															4. Dönem Uçuş Tabipliği Sertifikalı Eğitim Programı  
+														</a> 
+														
+														
+													  
+												</div> 
+												
+												
+											</div>
+										</div>
+									 
+										<div class="col-xl-12">
+											<div class="notice_item"> 
+												
+												
+												<div class="notice_date default">
+													<span class="date_01">28 </span>
+													<span class="date_02">Oca</span>
+													<span class="date_03">2025</span> 
+													 
+												</div> 
+												
+												
+												<div class="notice_text">
+													 
+													 
+													
+													
+														 
+														<a href="https://sgb.saglik.gov.tr/TR-106932/genel-yonetim-muhasebe-yonetmeligi-geregi-saglik-bakanligi-2024--aralik-donemi-mali-tablolari-yayimlanmistir.html" target="_blank"> 
+															Genel Yönetim Muhasebe Yönetmeliği Gereği Sağlık Bakanlığı 2024 / Aralık Dönemi Mali Tabloları Yayımlanmıştır.  
+														</a> 
+														
+														
+													  
+												</div> 
+												
+												
+											</div>
+										</div>
+									  
+							</div>
+						</div>
+						<!-- box_home_content --> 
+					 </div> 
+					 
+				</div>
+				  
+				<div class="col-xl-4 col-lg-12 col-md-12 col-12">
+					<div class="box_home">
+						
+						<div class="box_home_header box_personel_duyurulari">
+							<h4>Personel Duyuruları</h4>
+							<div class="all_item_right">
+								<a href="/TR-99316/personel-duyurulari.html" title="Tüm Personel Duyuruları">Tümü <i class="fa fa-angle-double-right "></i> </a>
+							</div>
+						</div>
+					 
+						<div class="box_home_content">
+							<div class="post_personel_news_content">
+								<!-- SiteAgacDallar:1.0.0.0 -->
+										<div class="post_personel_news_item">
+											<a href="https://yhgm.saglik.gov.tr//TR-107183/bakanligimiz-merkez-teskilatinda-istihdam-edilmek-uzere-yapilan-saglik-uzman-yardimciligi-yarisma-sinav-sonuclari-hakkinda-duyuru.html" target="_blank" title="Bakanlığımız Merkez Teşkilatında ...">
+												
+												Bakanlığımız Merkez Teşkilatında İstihdam Edilmek Üzere Yapılan Sağlık Uzman Yardımcılığı ...  
+												
+												<div>
+													<span> 06 Şubat 2025</span>
+													<b>YENİ</b> 
+												</div>
+											</a>
+										</div>
+									
+										<div class="post_personel_news_item">
+											<a href="https://yhgm.saglik.gov.tr//TR-106954/turkiye-hudut-ve-sahiller-saglik-genel-mudurlugu-saglik-uzman-yardimciligi-yarisma-sinav-sonuclari-hakkinda-duyuru.html" target="_blank" title="Türkiye Hudut ve Sahiller ...">
+												
+												Türkiye Hudut ve Sahiller Sağlık Genel Müdürlüğü Sağlık Uzman Yardımcılığı Yarışma ...  
+												
+												<div>
+													<span> 29 Ocak 2025</span>
+													
+												</div>
+											</a>
+										</div>
+									
+										<div class="post_personel_news_item">
+											<a href="https://yhgm.saglik.gov.tr//TR-106949/121donem-devlet-hizmeti-yukumlulugu-kurasi.html" target="_blank" title="121.Dönem Devlet Hizmeti ...">
+												
+												121.Dönem Devlet Hizmeti Yükümlülüğü Kurası   
+												
+												<div>
+													<span> 29 Ocak 2025</span>
+													
+												</div>
+											</a>
+										</div>
+									 
+							</div> 
+						</div>
+						<!-- box_home_content -->
+					 </div> 
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</section>
+
+ 	
+	<section class="spot-slider-full"> 
+		<div class="containerss">
+			<div class="spot_slide owl-carousel">   
+				
+				<!-- WebParcasiSiteAgacDallar:1.0.0.0 --> 	 
+						<div class="item">
+							<div class="hc-overlay"></div> 
+							 <div class="slider_content">
+								<div class="container"> 
+									<h2>Ulusal Medikal Kurtarma Ekibi; UMKE </h2>
+									<p>
+										<!-- #99586 anahlı dal içerik başlıyor: [versiyon :0] --> 
+	Afet ve Acil Durumlarda UMKE Daima Yanınızda
+	<!-- ######  99586 anahlı dal içerik bitti  ##### -->
+									</p>
+									<a href="https://ashgmafetacildb.saglik.gov.tr/TR-80255/ulusal-medikal-kurtarma-ekibi-birimi-umke.html" title="Ulusal Medikal Kurtarma Ekibi; UMKE" target="_blank"> Detalı Bilgi </a> 
+								</div>	
+							</div>	 
+							<img src="https://dosyasb.saglik.gov.tr/Resim/76970/0/umkepng.png"  />  
+						</div> 
+					 	 
+						<div class="item">
+							<div class="hc-overlay"></div> 
+							 <div class="slider_content">
+								<div class="container"> 
+									<h2>Kişisel Sağlık Sistemi e-Nabız </h2>
+									<p>
+										<!-- #99585 anahlı dal içerik başlıyor: [versiyon :0] --> 
+	Türkiye'nin güvenilir kişisel sağlık kaydı sistemi
+	<!-- ######  99585 anahlı dal içerik bitti  ##### -->
+									</p>
+									<a href="https://enabiz.gov.tr/" title="Kişisel Sağlık Sistemi e-Nabız" target="_blank"> Detalı Bilgi </a> 
+								</div>	
+							</div>	 
+							<img src="https://dosyasb.saglik.gov.tr/Resim/71043/0/e-nabizjpg.png"  />  
+						</div> 
+					 	 
+						<div class="item">
+							<div class="hc-overlay"></div> 
+							 <div class="slider_content">
+								<div class="container"> 
+									<h2>Şehir Hastanelerimiz </h2>
+									<p>
+										<!-- #99584 anahlı dal içerik başlıyor: [versiyon :0] --> 
+	Türkiye’de Açılan Tüm Şehir Hastanelerimiz
+	<!-- ######  99584 anahlı dal içerik bitti  ##### -->
+									</p>
+									<a href="https://khgm.saglik.gov.tr/TR-92795/sehir-hastanelerimiz.html?Sayfa=1" title="Şehir Hastanelerimiz" target="_blank"> Detalı Bilgi </a> 
+								</div>	
+							</div>	 
+							<img src="https://dosyasb.saglik.gov.tr/Resim/71044/0/sehir-hastanelerimizjpg.png"  />  
+						</div> 
+					 	 
+						<div class="item">
+							<div class="hc-overlay"></div> 
+							 <div class="slider_content">
+								<div class="container"> 
+									<h2>Arayanların 130 Bini Sigarayı Bıraktı </h2>
+									<p>
+										<!-- #99583 anahlı dal içerik başlıyor: [versiyon :0] --> 
+	ALO 171 Sigara Bırakma Danışma Hattı
+	<!-- ######  99583 anahlı dal içerik bitti  ##### -->
+									</p>
+									<a href="https://alo171.saglik.gov.tr/?_Dil=1" title="Arayanların 130 Bini Sigarayı Bıraktı" target="_blank"> Detalı Bilgi </a> 
+								</div>	
+							</div>	 
+							<img src="https://dosyasb.saglik.gov.tr/Resim/71042/0/alo-171-sigara-birakma-danisma-hattijpg.png"  />  
+						</div> 
+					 
+			
+			</div>  
+			
+			<div class="slide-progress"></div>
+			<div class="slide-progress_bg"></div>
+			
+		</div>
+		 
+	</section>
+	
+
+	<section class="widgets">
+	 
+		<div class="container">
+			
+			<div class="widgets_header">
+				<h4>Hızlı Erişim</h4>
+			</div>
+			
+			<div class="widgets_content">
+				
+				<div class="row">
+					<!-- SiteAgacDallar:1.0.0.0 --> 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://www.turkiye.gov.tr/aile-hekim-bilgisi" target="_blank" title="Aile Hekim Bilgisi  Sorgulama ">
+										<span>  Aile Hekim Bilgisi  Sorgulama    </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://www.mhrs.gov.tr" target="_blank" title="Randevu Almak İstiyorum ">
+										<span>  Randevu Almak İstiyorum    </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://www.turkiye.gov.tr/saglik-bakanligi-doktor-bilgi-bankasi" target="_blank" title="Doktor Bilgi  Bankası">
+										<span>  Doktor Bilgi  Bankası   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://neyimvar.gov.tr" target="_blank" title="NeyimVar?  Uygulaması">
+										<span>  NeyimVar?  Uygulaması   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Aşı Bilgilerimi  Sorgula">
+										<span>  Aşı Bilgilerimi  Sorgula   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Hastalık Bilgilerim">
+										<span>  Hastalık Bilgilerim   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Hastane  Ziyaretlerim">
+										<span>  Hastane  Ziyaretlerim   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://www.turkiye.gov.tr/saglik-organ-ve-doku-bagisi-sorgulama-ve-iptali" target="_blank" title="Organ ve Doku Bağışı">
+										<span>  Organ ve Doku Bağışı   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Tahlil Sonuçlarım">
+										<span>  Tahlil Sonuçlarım   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Raporlarımı Sorgula">
+										<span>  Raporlarımı Sorgula   </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://www.turkiye.gov.tr/sosyal-guvenlik-ilac-e-recete-recete-bilgileri-sorgulama" target="_blank" title="Reçetelerimi Sorgula ">
+										<span>  Reçetelerimi Sorgula    </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						 
+						
+							<div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6">
+								<div class="hizli_erisim">
+									<a href="https://enabiz.gov.tr" target="_blank" title="Radyolojik Görüntülerim ">
+										<span>  Radyolojik Görüntülerim    </span> 
+										<i class="fa fa-angle-right"></i>
+									</a>
+								</div>
+							</div>
+						  
+				</div>
+				
+			</div>
+			
+				
+			<div class="widgets_footer">
+				
+				<div class="row">
+					
+					<div class="col-xl-3 col-6 col-md-3 col-md-3 col-lg-3">
+						<div class="widgets_box_icon"> 
+							<img src="..//WebFiles/images/svg/alo-112.svg" alt="Acil Çağrı" />
+							<strong> Alo 112 </strong>
+							<span> Acil Çağrı </span>
+							<a href="tel:112" target="_blank" title="Alo 112"> Hemen Ara </a>
+						</div>
+					</div>
+					 	
+					<div class="col-xl-3 col-6 col-md-3 col-md-3 col-lg-3">
+						<div class="widgets_box_icon"> 
+							<img src="..//WebFiles/images/svg/alo-184.svg" alt="Alo 184" />
+							<strong> Alo 184 </strong>
+							<span> SABİM </span>
+							<a href="tel:184" target="_blank" title="SABİM"> Hemen Ara </a>
+						</div>
+					</div>
+					 	
+					<div class="col-xl-3 col-6 col-md-3 col-md-3 col-lg-3">
+						<div class="widgets_box_icon"> 
+							<img src="..//WebFiles/images/svg/evde-saglik.svg" alt="Evde Sağlık" />
+							<strong style="border:none"> 444<b>3</b>833 </strong>
+							<span> Evde Sağlık </span>
+							<a href="tel:4443833" target="_blank" title="Evde Sağlık"> Hemen Ara </a>
+						</div>
+					</div>
+					 	
+					<div class="col-xl-3 col-6 col-md-3 col-md-3 col-lg-3">
+						<div class="widgets_box_icon"> 
+							<img src="..//WebFiles/images/svg/alo-171.svg" alt="Alo 171 Sigara Bırakma Hattı" />
+							<strong> Alo 171 </strong>
+							<span> Sigara Bırakma Hattı </span>
+							<a href="tel:171" target="_blank" title="Alo 171 Sigara Bırakma Hattı"> Hemen Ara </a>
+						</div>
+					</div>
+					 
+				</div>	
+				 
+			</div>
+			 
+		</div>
+
+	</section>
+	
+
+	<!--
+		
+		15904 Halk Sağlığı Genel Müdürlüğü
+		  381 Basın Ve Halkla İlişkiler Müşavirliği
+		15781 Avrupa Birliği ve Dış İlişkiler Genel Müdürlüğü
+	
+	-->
+	
+	
+ 
+		<footer>
+			
+			<div class="container">
+			 
+				<div class="footer_header">
+				
+					<div class="footer_spacer"></div>
+					
+					<div class="row">
+						
+						<div class="col-xl-3 col-lg-4 col-12 col-md-12 footer_border">
+							<div class="footer_header_top">
+								<div class="row">
+									
+									<div class="col-xl-12 col-lg-12 col-md-6 col-6">
+										<div class="footer_header_logo">
+										
+											<a href="/?_Dil=1"> 
+												<img src="/webfiles/images/sb-logo-footer.svg" alt="T.C.Sağlık Bakanlığı" /> 
+											</a>
+										  
+										</div>
+									</div>
+										
+									<div class="col-xl-12 col-lg-12 col-md-6 col-6">
+										<div class="footer_header_social"> 
+										 <!-- WebParcasiSiteAgacDallar:1.0.0.0 --><ul class="social"> 
+												<li><a href="/TR-99281/instagram.html" target="_blank" title="Instagram"> <img src="/Webfiles/svg_social_media/instagram_white.svg" alt="Instagram " /></a> </li>
+											 
+												<li><a href="/TR-99279/twitter.html" target="_blank" title="Twitter"> <img src="/Webfiles/svg_social_media/twitter_white.svg" alt="Twitter " /></a> </li>
+											 
+												<li><a href="/TR-99280/facebook.html" target="_blank" title="Facebook"> <img src="/Webfiles/svg_social_media/facebook_white.svg" alt="Facebook " /></a> </li>
+											 
+												<li><a href="/TR-99283/linkedin.html" target="_blank" title="Linkedin"> <img src="/Webfiles/svg_social_media/linkedin_white.svg" alt="Linkedin " /></a> </li>
+											 
+												<li><a href="/TR-99282/youtube.html" target="_blank" title="Youtube"> <img src="/Webfiles/svg_social_media/youtube_white.svg" alt="Youtube " /></a> </li>
+											 
+												<li><a href="/TR-102910/whatsapp.html" target="_blank" title="Whatsapp"> <img src="/Webfiles/svg_social_media/whatsapp_white.svg" alt="Whatsapp " /></a> </li>
+											 
+												<li><a href="/TR-99285/e-posta.html" target="_blank" title="E-posta"> <img src="/Webfiles/svg_social_media/eposta_white.svg" alt="E-posta " /></a> </li>
+											</ul>   
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						
+							
+						<div class="col-xl-9 col-lg-8 col-12 col-md-12">
+							<div class="row">
+									<div class="col-xl-4 col-lg-4 col-md-4 col-lg-4 col-4 footer_border_2">
+										
+										<h6>ANA MENU</h6>
+										
+										<ul class="footer_list list_01"> 
+											<!-- SiteAgacDallar:1.0.0.0 -->
+													<li><a href="/TR-99126/bakan.html" title="Bakan"> Bakan <span class="footer_menu_line"></span> </a> </li>
+												
+													<li><a href="/TR-11441/bakanlik.html" title="Bakanlık"> Bakanlık <span class="footer_menu_line"></span> </a> </li>
+												
+													<li><a href="/TR-10357/saglik-mevzuati.html" title="Sağlık Mevzuatı "> Sağlık Mevzuatı  <span class="footer_menu_line"></span> </a> </li>
+												
+													<li><a href="/TR-11583/hizmetlerimiz.html" title="Hizmetlerimiz"> Hizmetlerimiz <span class="footer_menu_line"></span> </a> </li>
+												
+													<li><a href="/TR-11549/iletisim.html" title="İletişim"> İletişim <span class="footer_menu_line"></span> </a> </li>
+												
+													<li><a href="/TR-85718/saglikli-bilgi.html" title="Sağlıklı Bilgi"> Sağlıklı Bilgi <span class="footer_menu_line"></span> </a> </li>
+													
+										</ul>
+										
+									</div>	
+									
+									<div class="col-xl-4 col-lg-4 col-md-4 col-lg-4 col-4 footer_border_2">
+										
+										<h6> HIZLI ERİŞİM </h6>
+										<ul class="footer_list list_02">
+											<li><a href="/TR,11693/duyurular.html" title="Duyurular">Duyurular<span class="footer_menu_line"></span></a></li> 
+											<li><a href="/TR-99316/personel-duyurulari.html" title="Personel Duyuruları">Personel Duyuruları<span class="footer_menu_line"></span></a></li> 
+											<li><a href="https://shgmturizmdb.saglik.gov.tr" target="_blank" title="Sağlık Turizmi">Sağlık Turizmi <span class="footer_menu_line"></span></a></li> 
+											<li><a href="https://www.cimer.gov.tr" target="_blank" title="Bilgi Edinme">Bilgi Edinme <span class="footer_menu_line"></span></a></li> 
+											<li><a href="https://sbn.saglik.gov.tr/" target="_blank" title="Sağlıkta Buluşma Noktası">Sağlıkta Buluşma Noktası <span class="footer_menu_line"></span></a></li> 
+											<li><a href="https://dys.saglik.gov.tr/" target="_blank" title="Doküman Yönetim Sistemi">Doküman Yönetim Sistemi <span class="footer_menu_line"></span></a></li> 
+										</ul>
+										
+									</div>
+									  
+									<div class="col-xl-4 col-lg-4 col-md-4 col-lg-4 col-4">
+										<h6>LİNKLER</h6>
+										<ul class="footer_list list_03">
+											<li><a href="https://www.tuseb.gov.tr" target="_blank" title="TÜSEB">TÜSEB <span class="footer_menu_line"></span></a></li>  
+											<li><a href="https://www.ushas.com.tr" target="_blank" title="USHAŞ">USHAŞ <span class="footer_menu_line"></span></a></li>  
+											<li><a href="https://www.turkiye.gov.tr" target="_blank" title="e-Devlet">e-Devlet <span class="footer_menu_line"></span></a></li>  
+											<li><a href="https://www.cimer.gov.tr" target="_blank" title="CİMER">CİMER <span class="footer_menu_line"></span></a></li>  
+											<li><a href="https://ekutuphane.saglik.gov.tr" target="_blank" title="e-Kütüphane">e-Kütüphane <span class="footer_menu_line"></span></a></li>  
+											<li><a href="https://hastahaklari.saglik.gov.tr" target="_blank" title="Hasta Hakları">Hasta Hakları <span class="footer_menu_line"></span></a></li>  
+										</ul>
+									</div>
+									 
+							 </div>	 
+						</div>
+						 
+					</div>	
+				</div>
+				<!-- footer_header -->
+				
+				<div class="footer_middle">
+					<div class="row">
+						
+						<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+							<div class="footer_map">
+								<p>
+										<i class="fa fa-map-marker"> </i>
+										<a href="/TR-11549/iletisim.html" title="İletişim">
+											T.C. Sağlık Bakanlığı Üniversiteler Mahallesi Şehit Mehmet Bayraktar Caddesi No:3 Çankaya/Ankara
+										</a>
+										
+										<span>
+											<em class="fa fa-phone"> </em>  
+											Santral: <a href="tel:903125851000" target="_blank" title="Santral"> +90 312 585 10 00 </a> 
+										</span>
+								</p>
+							</div>
+						</div>
+						
+						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+							<div class="footer_contact">
+								<a href="/TR-11549/iletisim.html" title="Diğer İletişim Seçenekleri"> Diğer İletişim Seçenekleri </a>
+							</div>
+						</div>
+						
+					</div>	
+				</div>	
+				
+			</div>	
+			
+		</footer>
+
+		<section class="footer_bottom">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-12">
+						 
+						<ul class="footer_bottom_link"> 
+							<!-- SiteAgacDallar:1.0.0.0 -->
+									<li><a href="/TR-99306/cerez-politikasi.html" title="Çerez Politikası" > Çerez Politikası  </a> </li>
+									
+							
+							<li><a href="https://bilgiguvenligi.saglik.gov.tr/OlayBildir" target="_blank" title="Bilgi Güvenliği İhlal Bildirimi">Bilgi Güvenliği İhlal Bildirimi</a></li>
+							<li><a href="https://erisilebilir.saglik.gov.tr" target="_blank" title="Erişebilirlik">Erişebilirlik</a></li>
+						</ul>  
+					</div>
+					<div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-12"> 
+						<p> © 2025   <strong>T.C. Sağlık Bakanlığı </strong> Tüm hakları saklıdır.</p>
+					</div>	
+				</div>	
+			</div>
+		</section>
+		
+	
+		<div class="video_modal_area">
+			<div id="VideoModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="VideoModal" aria-hidden="true">
+				<div class="modal-dialog modal-sm">
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							<!-- <h1 class="modal-title video_title" id="VideoModal"></h1> -->
+							<button type="button" class="btn-closes" data-bs-dismiss="modal" aria-label="btn-close"> × </button>
+						</div>
+						
+						<div class="modal-body">
+							<iframe src="" frameborder="0" allowfullscreen></iframe>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<a id="scrollUp" href="#top"> </a>
+		
+		
+		<!--
+		<div class="cookie_policy">
+			<div class="cookie_policy_content"> 
+				  
+				Sitemizde sizlere daha iyi hizmet verebilmek için gizliliğe uygun şekilde çerezler kullanmaktayız Çerez politikamızı inceleyebilirsiniz.
+				
+				<a href="/TR-99306/cerez-politikasi.html" class="modal_form_agree_button" data-toggle="modal" data-target="#exampleModalLong">  
+				  Çerez politikamızı inceleyin. 
+				</a>
+				
+				<a href="#" id="create_cerez" class="btn btn-accept"> Kabul Et </a>
+			
+				<span class="close_cerez" > × </span>
+					
+			</div>
+		</div>
+		-->
+		
+ 	 
+		<script src="/WebFiles/js/js/bootstrap-timepicker.js" type="text/javascript"></script> 
+		<script src="/WebFiles/js/bootstrap-datepicker.min.js" type="text/javascript"></script> 
+		<script src="/WebFiles/js/save_img.js" type="text/javascript"></script>  
+		<script src="/WebFiles/js/default.js" type="text/javascript"></script>  
+		
+		<script type="text/javascript"> 
+			
+			
+			$(document).ready(function() { 
+				var cssBody = wiy_page_data["Anah"]; 
+				if ( cssBody > 1 ) {
+					$('body').addClass('page');
+				} 
+			});	 
+			 
+			$(function() {
+			  $('input[name="daterange"]').daterangepicker({
+				opens: 'left'
+			  }, function(start, end, label) {
+				console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+			  });
+			}); 
+		</script>
+	
+	
+		</form>
+
+</body>
+</html>
+
+
+

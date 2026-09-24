@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>News - Marketplace | JetBrains</title>
+    <link>https://plugins.jetbrains.com</link>
+    <description>Latest news from JetBrains Marketplace</description>
+    <language>en-us</language>
+    <copyright>JetBrains s.r.o.</copyright>
+    <webMaster>plugins-admin@jetbrains.com (Marketplace)</webMaster>
+    <ttl>180</ttl>
+    <image>
+      <title>News - Marketplace | JetBrains</title>
+      <url>https://resources.jetbrains.com/storage/ui/favicons/favicon.ico</url>
+      <link>https://plugins.jetbrains.com</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
+    <item>
+      <title>News for Bazel</title>
+      <link>https://plugins.jetbrains.com/plugin/22977-bazel</link>
+      <description />
+      <pubDate>Wed, 02 Sep 2026 19:25:40 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160193</guid>
+    </item>
+    <item>
+      <title>News for Testin</title>
+      <link>https://plugins.jetbrains.com/plugin/31514-testin</link>
+      <description>&amp;lt;b&amp;gt;2.10.0-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Order is the rank a test case carries, and nothing else:&amp;lt;/b&amp;gt; cases used to store it as a chain across their files, and 2.8 and 2.9 rewrote that chain as a rank on each case the first time they indexed a set. The converter is gone, and with it the only place indexing wrote test data — a scan is a pure read again. A case that arrives with no rank, whether from an old project, an import or a file copied in by hand, sorts after the ranked ones and oldest first, which is what an unranked case has always done. Nothing is hidden and nothing is refused.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.9.3-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A badge looks like what it is, instead of saying so:&amp;lt;/b&amp;gt; a pill spent half its width naming the field its color already meant — &amp;quot;Priority: High&amp;quot; beside &amp;quot;Bug Priority: High&amp;quot; and &amp;quot;Bug Severity: Major&amp;quot;. Priority is the value now, and it is &amp;lt;b&amp;gt;P1&amp;lt;/b&amp;gt; and &amp;lt;b&amp;gt;P2&amp;lt;/b&amp;gt; rather than High and Medium, so it cannot be read as the bug&amp;apos;s. P3 draws nothing at all, because P3 is what a case is unless somebody said otherwise. Groups are ribbons rather than pills, since eight identical pills on one row was the hardest row in the plugin to read. Severity and bug priority are one badge carrying the IDE&amp;apos;s own bug mark, and each half leaves on its own when its column is unticked.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;The next cycle starts from the one before it:&amp;lt;/b&amp;gt; Re-create, on a test run in the tree, opens the create dialog holding the previous cycle&amp;apos;s cases and its configuration with the next name suggested — cycle-1 offers cycle-2. Building cycle 2 no longer means re-ticking every case and retyping every answer. No verdict, duration, actual result, stacktrace or bug field is carried across.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A disabled test case stops running:&amp;lt;/b&amp;gt; Disabled is the one status that says whether a case should run, and it said it to Testin alone — the card showed it and the suite ran the case anyway. The generated &amp;lt;b&amp;gt;@Test&amp;lt;/b&amp;gt; carries &amp;lt;b&amp;gt;enabled = false&amp;lt;/b&amp;gt; now, and leaving Disabled takes the attribute off rather than writing the word that says nothing.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A case you only looked at is not a case you edited:&amp;lt;/b&amp;gt; opening a field in the update dialog and pressing Enter without changing anything recorded the case as modified — Modified By became whoever pressed Enter, and the file was rewritten. The stamp is now decided by whether the save would leave the file different, in the one place every save passes through, so the update dialog, a grid cell, the details panel and a paste are all covered.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A description nobody wrote is empty, and names no method:&amp;lt;/b&amp;gt; a blank description was stored as the literal &amp;lt;b&amp;gt;EMPTY_DESCRIPTION&amp;lt;/b&amp;gt;, which the tester then read as the case&amp;apos;s name on the card, in the grid, in every report and in the execution log, with a generated method called emptyDescription. It is stored empty and drawn blank. Writing a description on such a case creates its method then, and the second unfinished case in a set no longer collides with the first.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;The search has a button:&amp;lt;/b&amp;gt; the keystroke reaches the search from anywhere, which is also why nothing on screen said the search existed. The project tree&amp;apos;s toolbar carries it, under the magnifier the dialog uses, with a tooltip naming whatever key the keymap currently holds — including one the tester rebound.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Editing a grid cell re-measured every row on the page, and dragging a column divider did it again on every pixel of the drag — nine hundred cell layouts on a fifty-row page. The edit measures the rows that changed, the column gestures coalesce, and the cell borders are constants instead of two thousand seven hundred objects per pass.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.9.2-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Ctrl+Z reaches the test case, on the surface it is pressed on:&amp;lt;/b&amp;gt; undo reached a node move and a node rename and nothing else, so a Remove wrote the deletion straight through and a bulk edit rewrote forty files in one gesture that could not be taken back. All of it is undoable now, and every test editor keeps its own history beside the tree&amp;apos;s — a tester with two editors open takes back what they did here, not whichever change happened to be last. Removing a node is undoable at last. A restore never overwrites work it did not remove, and never stamps the tester as having modified a case at the moment they un-modified it.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Deleted test data goes to the recycle bin:&amp;lt;/b&amp;gt; a removed test case was a file erased and a removed test set a folder erased with everything under it, with the confirmation dialog the only thing between a misclick and typing the work in again. Both go to the desktop&amp;apos;s own bin now, found in Explorer and restored the way every other file is, without needing this plugin to be working.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A long card title wraps instead of running off the card,&amp;lt;/b&amp;gt; in both the test and the run editor. The title is a wrapping text area rather than a label, so a description holding a &amp;lt;b&amp;gt;&amp;amp;lt;&amp;lt;/b&amp;gt; is the tester&amp;apos;s own sentence rather than markup that swallows the rest of the line.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Test data is shown as it was typed, commas and all:&amp;lt;/b&amp;gt; a rendering rule written for comma-separated lists turned every &amp;quot;, &amp;quot; into a line break on the way to the screen. Test data is a username, a query or a payload — values that are used rather than read — so each comma vanished between the save and the details panel while the file on disk had kept it all along.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A bulk edit stops flattening the value it saves:&amp;lt;/b&amp;gt; a multi-line expected result or test data edited in a bulk dialog was written back as one line, silently, with nothing to undo it. A line break is now written as the two characters that stand for it, so the value still sits on one editor line and comes back whole.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Generated code follows the case in and out:&amp;lt;/b&amp;gt; undoing a removal used to put the JSON back and leave the method deleted, and redoing a creation left the method standing with no case. And an import over a class automated by hand stopped appending stubs beside the real tests — the generator matched method names exactly, so &amp;quot;verify NEXT db value&amp;quot; did not recognize verifyNEXTDbValue, and 84 of one class&amp;apos;s 150 descriptions got an empty duplicate.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Refresh says it refreshed,&amp;lt;/b&amp;gt; when the cases are back on screen rather than when the button went down — the read waits for indexing and finishes on another thread, so a balloon at click time announces a refresh that has not happened.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Double-clicking a card leaves the focus on the details tab,&amp;lt;/b&amp;gt; so F2 opens the case for editing straight away instead of doing nothing until the tester clicks into the panel first.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;FQCN and Path start visible on the editor toolbar, so the editor shows where a case&amp;apos;s automation lives and where the case sits in the tree without being asked.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Stability:&amp;lt;/b&amp;gt; the plugin&amp;apos;s one private interface method compiled to a call the JVM is entitled to reject — an error waiting for a JVM that checks, which the Plugin Verifier reported against all four IDEs. It is inlined, and the verdict is Compatible everywhere with no compatibility problems.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.9.1-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;The stop no longer depends on internal API:&amp;lt;/b&amp;gt; finding the process behind a run went through a method the platform marks internal, which can change or disappear in any release with no warning - and it was the load-bearing call in the only feature that can stop a run. The run now keeps the handle the IDE offers it as each process starts, so stopping uses what it was given rather than asking the platform to find it again.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;The grid stopped detaching a hover listener it no longer needed: the cell colors are already set after the platform has had its turn, so the tint it was there to prevent could not appear anyway.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Every compatibility check the IntelliJ Plugin Verifier offers now fails the build, rather than the two it had been narrowed to.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.9.0-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Zero compatibility problems, on every IDE:&amp;lt;/b&amp;gt; the Java and TestNG code moved into content modules the IDE loads only where they apply. The plugin page reported 159 problems on PyCharm, GoLand and WebStorm — 53 apiece — because the verifier could not see past a runtime guard. It now reports none, on all four.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A run records what happened, not just that it happened:&amp;lt;/b&amp;gt; verdicts are given from the keyboard in the grid, the tester types the actual result beside them, and a failure keeps its stacktrace whole. Each case is timed — including one that passes inside a second — and the timings survive stopping, resuming and reopening. The details panel shows what the run recorded next to what the case says.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Start a run from the tree:&amp;lt;/b&amp;gt; a test set or a whole package starts a run and the verdicts land in it. One runner for one case and for a hundred, so a selection compiles once and executes in the order the tester arranged.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A stop that really stops:&amp;lt;/b&amp;gt; the process is killed rather than asked to end, a case that never started is no longer claimed by the run that asked for it, and a run is over when every case has a verdict, whoever gave it.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Execution order belongs to the tester, and the code follows it:&amp;lt;/b&amp;gt; a test case carries its own position instead of naming its neighbours, so dragging one case writes one file rather than renumbering the set. The generated &amp;lt;b&amp;gt;@Test&amp;lt;/b&amp;gt; carries that position — priority is a Testin field again, shown, filtered and reported, and no concern of the automation. Order also joins the update menu, so a case can be moved to a place by number.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A filter no longer renumbers the set:&amp;lt;/b&amp;gt; cards and grid rows show a case&amp;apos;s place in its test set, which stays the same with a filter on. Dragging while a filter was on used to move cases the tester never touched, and save them.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A test project can live on a server, with no Git at all:&amp;lt;/b&amp;gt; &amp;lt;b&amp;gt;testin.yml&amp;lt;/b&amp;gt; says where. A sync claims the project, merges, and gives the lock back even if it dies mid-claim; a case one side deleted and the other edited is left to the tester instead of stopping the whole sync.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Git that survives a conflict:&amp;lt;/b&amp;gt; a conflicted test case is merged field by field and usually asks nothing. A failed push leaves a way forward and names the files; switching branch asks before carrying uncommitted work across, and open editors follow the index rather than the branch they were opened on. A rename is committed as a move rather than as a new file beside the old one.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;One key finds anything in the test project&amp;lt;/b&amp;gt; — a test case, a set, a run, a node — and goes there.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;The test case dialog, field by field:&amp;lt;/b&amp;gt; Expected Result is multi-line, wears the same frame and focus ring as the fields around it, and grows as lines are added. Every field is set in one size. From a selected card, each field&amp;apos;s letter opens that field&amp;apos;s editor with no menu in between. A bulk edit writes the rows the tester actually edited and leaves the rest byte-identical.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Imports and copies stop freezing the IDE:&amp;lt;/b&amp;gt; an import that took 49 seconds with the processor idle now waits for the index once and says where the time went, and a set of test methods is generated as a set in one edit instead of one method at a time. Copying a test set runs under a progress bar.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Reports that agree with each other:&amp;lt;/b&amp;gt; the three formats of one run now say the same thing, a report says what it is from its file name, a run named &amp;quot;Sprint 7 R&amp;amp;amp;D&amp;quot; no longer breaks its own report, and what the tester writes about a result is kept with the run and rendered into every format.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Generated code that compiles:&amp;lt;/b&amp;gt; a description with a comma in it, two descriptions that differ only in punctuation, and a quoted phrase each used to produce a class that would not build. Go To Code opens the method that carries the case rather than one named like it, and a description that cannot name a test method is now refused where it is typed.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Credentials stay out of the log:&amp;lt;/b&amp;gt; an HTTPS remote can carry a token in its URL, and Git echoes that URL when it fails. It no longer reaches &amp;lt;b&amp;gt;idea.log&amp;lt;/b&amp;gt; or the balloon on screen.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Stability:&amp;lt;/b&amp;gt; the tree no longer waits for the index while holding the read lock, which could take the IDE down with it. Two open projects no longer share one view panel or one editor zoom. Typing in the Status cell no longer throws, and a corrupt manifest no longer reads as though the tester had deleted everything.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;One word for one thing:&amp;lt;/b&amp;gt; a refusal is red and an outcome is blue everywhere, and every status is captioned by the enum that owns it — so renaming one reaches the reports, the tree, the grid and the details panel together.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Tested by &amp;lt;b&amp;gt;Mohammed AlZamil&amp;lt;/b&amp;gt;.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.8.0-alpha&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Every change is reviewable, and the review commits and pushes:&amp;lt;/b&amp;gt; the pending-changes dialog now understands test runs and markers as well as test cases, so an executed run no longer shows as a nameless row and a run edited after its first commit no longer disappears from the list entirely. A Test Set column says where each change lives, and the button is &amp;lt;b&amp;gt;Commit &amp;amp;amp; Push&amp;lt;/b&amp;gt; with Commit alone behind it — the push is chosen with the changes still on screen, and the notification names the commit it sent.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Removed:&amp;lt;/b&amp;gt; a run keeps the row for a test case deleted under it, marked Removed, carrying the verdict and timings it recorded. The row takes no new verdict — a case that is gone cannot be run — execution steps over it, and the reports count it in a table of its own.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Removing a test project works again&amp;lt;/b&amp;gt; from the tree, behind a confirmation that says how much goes with it: &amp;quot;Holds 3 test sets, 42 test cases and 5 test runs&amp;quot;.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Dates read the way they are written:&amp;lt;/b&amp;gt; exporting a sheet and importing it back kept every date, instead of turning each one into today. An imported case now keeps the author and dates its file carried rather than being stamped with whoever ran the import.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Audit that tells the truth:&amp;lt;/b&amp;gt; all seven node markers share one audit block, every one of them reads a file written before the fields were renamed, and a node nobody has modified reports when it was made instead of the moment it was read.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Lighter lists:&amp;lt;/b&amp;gt; a card reuses its badges instead of rebuilding them for every row, so sorting, filtering and paging a full page of test cases costs a fraction of what it did.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Quieter, clearer messages:&amp;lt;/b&amp;gt; import, export, report and sync outcomes appear as status-bar balloons instead of entries in the notification log, which is left for the failures worth finding again. Syncing a project that is not under Git says so plainly and points at where a repository is created.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Absent, not broken:&amp;lt;/b&amp;gt; in IDEs without the Java or TestNG plugin, Run Test Case, Automate Test Case and Navigate To Code are no longer offered at all rather than appearing and refusing.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;The Git identity and group-selection dialogs moved onto the shared dialog framework, so every key they bind is shown; an empty list says why it is empty; and a marker that has not been written yet is no longer logged as an error.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Git on a repository of its own:&amp;lt;/b&amp;gt; test cases no longer have to live inside the automation project. The pending review reads Git directly, so a newly written test case shows up straight away, the markers that make a test set a test set travel with the commit, and a first push to an empty repository succeeds.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;A real review dialog:&amp;lt;/b&amp;gt; pending changes open in a table with a commit message field, a status bar showing the keys, and right-click to revert a single changed field.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Execution timing:&amp;lt;/b&amp;gt; a run records when it started and ended, per-case durations survive stopping and resuming, and all three report formats show a real execution date instead of the day the run was created.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Bug severity and priority as badges&amp;lt;/b&amp;gt; on the run card, each captioned so it cannot be mistaken for the test case&amp;apos;s own priority, and readable in both light and dark themes.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Tested by &amp;lt;b&amp;gt;Mohammed AlZamil&amp;lt;/b&amp;gt;.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.7&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Multi-IDE Support:&amp;lt;/b&amp;gt; Java, TestNG, and Git are now optional dependencies — Testin installs and runs on PyCharm, GoLand, WebStorm, and other IntelliJ-based IDEs. Features that need a missing plugin degrade gracefully with a clear notification instead of failing.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Accurate Metadata:&amp;lt;/b&amp;gt; Plugin metadata is declared once in the build; the compatibility statement is verified against each supported IDE by the JetBrains Plugin Verifier.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.6&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Excel-Style Grid:&amp;lt;/b&amp;gt; Row selection from the sequence column, multi-row and multi-cell selection, Excel-compatible copy/cut/paste, and automatic row-height fitting after paste.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Layout Memory:&amp;lt;/b&amp;gt; User column widths survive refreshes; the list view opens by default and loads pages asynchronously.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Safer Persistence:&amp;lt;/b&amp;gt; Run status writes go through a single sequential writer, eliminating corrupted JSON under rapid status changes.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Zero-Setup Automation Path:&amp;lt;/b&amp;gt; The Java test source root is detected automatically at startup — no manual configuration.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Many stability fixes: dialog lifecycle cleanups, unified keyboard shortcuts, and grid editing edge cases.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.5&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Grid View:&amp;lt;/b&amp;gt; Content-based automatic column sizing with word wrap, uniform cell padding, and inline editing.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Run Creation Redesign:&amp;lt;/b&amp;gt; Collapsible sections, clearer layout, and wider input fields in the test run dialog.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Font Sync:&amp;lt;/b&amp;gt; Editor zoom is mirrored across the view panel for a consistent scale.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Drag &amp;amp;amp; drop fixes in the project tree; newly created test cases are selected and scrolled into view.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.4.1&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Instant HTML Reporting:&amp;lt;/b&amp;gt; Added a one-click action to instantly generate and view clean, formatted HTML execution reports right from the toolbar.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Native Event Migration:&amp;lt;/b&amp;gt; Migrated background watchers to the verifier-safe postprocessor API to ensure full architectural compatibility with IntelliJ 2025.1+ and 2026 EAP editions.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Performance Refactoring:&amp;lt;/b&amp;gt; Optimized list rendering cycles by caching custom row boundaries and styling components, cutting down memory allocation overhead.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;br&amp;gt;
+    &amp;lt;b&amp;gt;2.0.0&amp;lt;/b&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Initial Architecture Release:&amp;lt;/b&amp;gt; Introduced the core Test Project Tree sidebar navigation and dynamic, in-memory collection handlers.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Added the interactive Test Case Editor with pagination, background async loaders, and text query filtering.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Introduced the Test Run Manager tracking live test item execution state, manual status overrides, and runtime duration counters.&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Integrated global application setting configurations under the IDE Tools menu group.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 19:22:11 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160192</guid>
+    </item>
+    <item>
+      <title>News for Bazel</title>
+      <link>https://plugins.jetbrains.com/plugin/22977-bazel</link>
+      <description />
+      <pubDate>Wed, 02 Sep 2026 18:57:15 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160187</guid>
+    </item>
+    <item>
+      <title>News for Vax Macro</title>
+      <link>https://plugins.jetbrains.com/plugin/20274-vax-macro</link>
+      <description>&amp;lt;h3&amp;gt;2.3.0&amp;lt;/h3&amp;gt;
+    &amp;lt;p&amp;gt;No IDE-plugin changes. The bundled MCP server (used by Claude Code) gained six new tools and meaningful upgrades to two existing ones:&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_format&amp;lt;/code&amp;gt; — canonical DEC-column layout (label col 0, opcode col 8, operands col 16, comment col 32).&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_lint&amp;lt;/code&amp;gt; — heuristic optimisation pass: detects CASE-candidate compare chains, DECL+BGTR loop counters (suggesting SOBGTR/SOBGEQ), runs of PUSHL collapsing to PUSHR, and stride-4 MOVL blocks collapsing to MOVC3. Includes stack-order and register-clobber caveats.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_instruction_search&amp;lt;/code&amp;gt; — natural-language reverse lookup over the ISA (&amp;quot;multiply longword&amp;quot; → MULL2/MULL3).&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_macro_expand&amp;lt;/code&amp;gt; — project-aware macro-call expansion with word-boundary substitution.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_lex&amp;lt;/code&amp;gt; — token-stream dump for debugging.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_parse&amp;lt;/code&amp;gt; errors now include the offending source line and a &amp;lt;code&amp;gt;^&amp;lt;/code&amp;gt; caret.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_doc&amp;lt;/code&amp;gt; gained reference topics for calling convention, addressing modes, entry mask, and PSECT attributes.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;vax_symbol_search&amp;lt;/code&amp;gt; accepts &amp;lt;code&amp;gt;prefix&amp;lt;/code&amp;gt; (default), &amp;lt;code&amp;gt;glob&amp;lt;/code&amp;gt;, or &amp;lt;code&amp;gt;regex&amp;lt;/code&amp;gt; modes.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;See &amp;lt;code&amp;gt;CHANGELOG.md&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;mcp-server/README.md&amp;lt;/code&amp;gt; for full details.&amp;lt;/p&amp;gt;
+
+    &amp;lt;h3&amp;gt;2.2.0&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Project-wide Go To Symbol (&amp;lt;code&amp;gt;Ctrl+Alt+Shift+N&amp;lt;/code&amp;gt;) — index-friendly &amp;lt;code&amp;gt;ChooseByNameContributorEx&amp;lt;/code&amp;gt; backed by the existing &amp;lt;code&amp;gt;LabelIndex&amp;lt;/code&amp;gt;; per-match navigation reuses the cached &amp;lt;code&amp;gt;AnnotatorIndex.definitionsByName&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Standalone &amp;lt;strong&amp;gt;MCP server&amp;lt;/strong&amp;gt; for Claude Code integration. Seven tools (parse, doc, validate-name, resolve, usages, symbol-search, macro-signature). Distributed as a single fat jar (3.6 MB) or launcher-script bundle from the build workflow. See &amp;lt;code&amp;gt;mcp-server/README.md&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;Refactor:&amp;lt;/strong&amp;gt; Inline assignment (both fused and spaced forms), Extract VAX Macro.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;strong&amp;gt;Editor:&amp;lt;/strong&amp;gt; Sticky-line header + breadcrumbs for the enclosing module label / macro / structured directive. &amp;lt;code&amp;gt;Ctrl+P&amp;lt;/code&amp;gt; parameter info on macro calls.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Eight live templates: &amp;lt;code&amp;gt;pushr&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;popr&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;entry&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;psect&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;macro&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;title&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;region&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Multi-module split (&amp;lt;code&amp;gt;:language&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;:plugin&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;:mcp-server&amp;lt;/code&amp;gt;) so the parser + ISA + symbol-name validator can be reused outside the IDE without dragging IntelliJ jars along.&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+
+    &amp;lt;h3&amp;gt;2.1.0&amp;lt;/h3&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Platform &amp;amp;amp; build&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Migrated to IntelliJ Platform Gradle Plugin 2.x; targets 2024.2+ across every JetBrains IDE&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Bumped to Kotlin 2.1, JDK 21, Gradle 9.x, ANTLR 4.13.2&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Plugin Verifier matrix in CI against the platform-recommended IDE set; clean against 2024.2 → 2026.2&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Grammar / parser&amp;lt;/b&amp;gt; — corpus pass rate &amp;lt;b&amp;gt;58.7 % → 99.6 %&amp;lt;/b&amp;gt; (501 / 853 → 849 / 853 files clean)&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Spaced direct assignment (&amp;lt;code&amp;gt;FOO = 10&amp;lt;/code&amp;gt;), CRLF line endings, lowercase hex digits, case-insensitive lexer&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Added missing instruction rules (&amp;lt;code&amp;gt;bnequ&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;clrd&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;clrf&amp;lt;/code&amp;gt;) and zero-displacement (&amp;lt;code&amp;gt;B^(reg)&amp;lt;/code&amp;gt;) / external-indirect (&amp;lt;code&amp;gt;E^@#expr&amp;lt;/code&amp;gt;) addressing modes&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;&amp;lt;code&amp;gt;D/F/G/H&amp;lt;/code&amp;gt;-suffix floating literals&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Editor features&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Line commenter, brace matcher, code folding, structure view, region folding&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Gutter icons for labels and macro definitions&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Breadcrumbs &amp;amp;amp; sticky-line header (module labels, macros, structured directives)&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Smart-Enter on &amp;lt;code&amp;gt;-&amp;lt;/code&amp;gt; continuation lines&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Live templates: &amp;lt;code&amp;gt;pushr&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;popr&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;entry&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;psect&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;macro&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;title&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;region&amp;lt;/code&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Navigation &amp;amp;amp; completion&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;FileBasedIndex-backed cross-file Go To Definition / Find Usages&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Macro parameter + &amp;lt;code&amp;gt;.IRP&amp;lt;/code&amp;gt;/&amp;lt;code&amp;gt;.IRPC&amp;lt;/code&amp;gt; loop-variable resolution inside the body&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Context-aware completion of user symbols, opcodes, directives, registers&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Ctrl+Q hover docs (99.4 % of instructions, 100 % of directives, 22/22 registers)&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Ctrl+P parameter info for macro calls&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Refactor &amp;amp;amp; analysis&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Inline assignment refactor (fused and spaced forms)&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Extract VAX Macro from a selection&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Promote to &amp;lt;code&amp;gt;.GLOBAL&amp;lt;/code&amp;gt; / Demote to module-local intentions&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Annotator: unresolved-symbol, unused-declaration, duplicate-label, unused-local-label, with Add &amp;lt;code&amp;gt;.EXTRN&amp;lt;/code&amp;gt; / Create label / Remove declaration quick fixes&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Rename with real MACRO-32 symbol validation (length, charset, register shadowing) and suffix-preserving rewrites&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Find Usages no longer false-positives on every symbol (&amp;lt;code&amp;gt;isReferenceTo&amp;lt;/code&amp;gt; now performs real equivalence)&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+    &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Performance&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Per-file Annotator cache; full rehighlight pass on a 5 000-line synthetic stays under 500 ms (currently ~370 ms)&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Parser throughput baseline: 10 000-file synthetic corpus parsed in ~2.2 s (0.22 ms/file avg)&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;
+
+    &amp;lt;h3&amp;gt;2.0.0&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;
+      &amp;lt;li&amp;gt;Migrated to IntelliJ Platform Gradle Plugin 2.x; targets 2024.2+ across every JetBrains IDE&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Bumped to Kotlin 2.1, JDK 21, Gradle 9.x, ANTLR 4.13.2&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Added Commenter, BraceMatcher, FoldingBuilder, Structure View, and Completion Contributor&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Added FileBasedIndex for fast cross-file label resolution&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Fixed Find Usages false-positive on every symbol (&amp;lt;code&amp;gt;isReferenceTo&amp;lt;/code&amp;gt; now performs real equivalence)&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Real MACRO-32 symbol validation in the rename input dialog&amp;lt;/li&amp;gt;
+      &amp;lt;li&amp;gt;Grammar pass-rate jump: 58.7 % → 99.5 % against the 853-file production corpus&amp;lt;/li&amp;gt;
+    &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:51:31 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160186</guid>
+    </item>
+    <item>
+      <title>News for Engram</title>
+      <link>https://plugins.jetbrains.com/plugin/32654-engram</link>
+      <description />
+      <pubDate>Wed, 02 Sep 2026 18:48:10 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160185</guid>
+    </item>
+    <item>
+      <title>News for Engram</title>
+      <link>https://plugins.jetbrains.com/plugin/32654-engram</link>
+      <description />
+      <pubDate>Wed, 02 Sep 2026 18:48:07 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160184</guid>
+    </item>
+    <item>
+      <title>News for Claude Code Usage Maniac</title>
+      <link>https://plugins.jetbrains.com/plugin/33152-claude-code-usage-maniac</link>
+      <description>&amp;lt;h3&amp;gt;Added&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Quota forecast card on the dashboard: graphs 5h and weekly limit consumption
+  over time (estimated from local token history, calibrated to the live account
+  reading) with a burn-rate projection to reset and a safe/warning verdict.
+  Optional weekly-Opus line via &amp;lt;code&amp;gt;quotaTrendShowOpus&amp;lt;/code&amp;gt; (default off).&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:39:28 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160183</guid>
+    </item>
+    <item>
+      <title>News for Liquid for Shopify &amp;amp; Jekyll</title>
+      <link>https://plugins.jetbrains.com/plugin/33073-liquid-for-shopify--jekyll</link>
+      <description>&amp;lt;h3&amp;gt;1.1.2&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Bug fix around multi-line tag indentation.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Bug fix around JSON-LD formatting.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+
+        &amp;lt;h3&amp;gt;1.1.1&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Change notes only — 1.1.0’s, rewritten shorter.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+
+        &amp;lt;h3&amp;gt;1.1.0&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; optional language-server layer, bundling Shopify’s own language
+                server. Needs &amp;lt;b&amp;gt;Node&amp;lt;/b&amp;gt;; on by default where the IDE has the LSP API. See
+                &amp;lt;em&amp;gt;Settings → Languages &amp;amp;amp; Frameworks → Liquid&amp;lt;/em&amp;gt;.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; nested &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt;s in a &amp;lt;code&amp;gt;{% liquid %}&amp;lt;/code&amp;gt; code block
+                lost their highlighting.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; statements in a multi-line &amp;lt;code&amp;gt;{% liquid %}&amp;lt;/code&amp;gt; tag now nest by
+                control flow.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; a &amp;lt;code&amp;gt;{% case %}&amp;lt;/code&amp;gt;’s arms are now labels — each
+                &amp;lt;code&amp;gt;{% when %}&amp;lt;/code&amp;gt; sits inside the &amp;lt;code&amp;gt;{% case %}&amp;lt;/code&amp;gt;, its body one level
+                further.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+
+        &amp;lt;h3&amp;gt;1.0.4&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Fix bug with &amp;lt;code&amp;gt;{% liquid %}&amp;lt;/code&amp;gt; usage.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+
+        &amp;lt;h3&amp;gt;1.0.3&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; &amp;lt;em&amp;gt;Reformat Code&amp;lt;/em&amp;gt; did nothing in &amp;lt;code&amp;gt;.liquid&amp;lt;/code&amp;gt; files.
+                Markup is now indented, and every &amp;lt;code&amp;gt;{{ … }}&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;{% … %}&amp;lt;/code&amp;gt; is
+                left exactly as written.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; &amp;lt;code&amp;gt;{% style %}&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;{% javascript %}&amp;lt;/code&amp;gt; and
+                &amp;lt;code&amp;gt;{% schema %}&amp;lt;/code&amp;gt; bodies are formatted by the CSS, JavaScript and JSON
+                formatters, Liquid interpolation included.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+
+        &amp;lt;h3&amp;gt;1.0.2&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Re-upload for the paid licensing model.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h3&amp;gt;1.0.1&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; removed a usage of a deprecated IntelliJ API. Auto-popup after
+                &amp;lt;code&amp;gt;.&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;|&amp;lt;/code&amp;gt; now uses the non-deprecated scheduler;
+                behaviour is unchanged.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h3&amp;gt;1.0.0&amp;lt;/h3&amp;gt;
+        &amp;lt;p&amp;gt;First public release. Support for the Shopify theme architecture announced at
+        DotDev 2026, theme-aware navigation, and LiquidDoc.&amp;lt;/p&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; the DotDev 2026 theme tags — &amp;lt;code&amp;gt;{% block %}&amp;lt;/code&amp;gt;,
+                &amp;lt;code&amp;gt;{% partial %}&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;{% content_for %}&amp;lt;/code&amp;gt; and
+                &amp;lt;code&amp;gt;{% doc %}&amp;lt;/code&amp;gt; — with highlighting, folding, completion and live
+                templates.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; LiquidDoc contracts are highlighted, including the
+                &amp;lt;code&amp;gt;{type}&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;[optional]&amp;lt;/code&amp;gt; grammar on &amp;lt;code&amp;gt;@param&amp;lt;/code&amp;gt;
+                lines.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; navigation follows the theme layout —
+                &amp;lt;code&amp;gt;{% render %}&amp;lt;/code&amp;gt; resolves to &amp;lt;code&amp;gt;snippets/&amp;lt;/code&amp;gt;,
+                &amp;lt;code&amp;gt;{% section %}&amp;lt;/code&amp;gt; to &amp;lt;code&amp;gt;sections/&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;{% block %}&amp;lt;/code&amp;gt; to
+                &amp;lt;code&amp;gt;blocks/&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;{% layout %}&amp;lt;/code&amp;gt; to &amp;lt;code&amp;gt;layout/&amp;lt;/code&amp;gt;. Jekyll
+                keeps file-relative resolution.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; object completion tags each entry with its ecosystem — a bag for
+                Shopify, a vial for Jekyll.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; a false unresolved reference on
+                &amp;lt;code&amp;gt;{% render &amp;quot;nav.header&amp;quot; %}&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;{% doc %}&amp;lt;/code&amp;gt; bodies lexed as
+                live Liquid, and completion of &amp;lt;code&amp;gt;{% assign %}&amp;lt;/code&amp;gt; and
+                &amp;lt;code&amp;gt;{% capture %}&amp;lt;/code&amp;gt; variables.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h3&amp;gt;0.2.1&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; Emmet no longer swallows the Liquid live templates —
+                &amp;lt;code&amp;gt;else&amp;lt;/code&amp;gt; + Tab gives &amp;lt;code&amp;gt;{% else %}&amp;lt;/code&amp;gt;. Markup abbreviations still
+                expand as before.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; templates for &amp;lt;code&amp;gt;else&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;elsif&amp;lt;/code&amp;gt;,
+                &amp;lt;code&amp;gt;when&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;break&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;continue&amp;lt;/code&amp;gt; and five more.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h3&amp;gt;0.2.0&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; the HTML/CSS/JS tree was never built for &amp;lt;code&amp;gt;.liquid&amp;lt;/code&amp;gt; files
+                — HTML folding, completion and structure view work again.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed:&amp;lt;/b&amp;gt; ⌘/ comments markup as &amp;lt;code&amp;gt;&amp;amp;lt;!-- … --&amp;amp;gt;&amp;lt;/code&amp;gt;, and
+                folding now covers every paired Liquid tag plus multi-line
+                &amp;lt;code&amp;gt;{% liquid %}&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New:&amp;lt;/b&amp;gt; 20 live templates, delimiter auto-closing with completion, filters
+                coloured as calls, and &amp;lt;code&amp;gt;theme.css.liquid&amp;lt;/code&amp;gt; /
+                &amp;lt;code&amp;gt;feed.xml.liquid&amp;lt;/code&amp;gt; / &amp;lt;code&amp;gt;post.md.liquid&amp;lt;/code&amp;gt; using CSS / XML /
+                Markdown between the tags.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h3&amp;gt;0.1.0&amp;lt;/h3&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Initial release: Liquid language support for JetBrains IDEs — lexer, parser,
+                syntax highlighting, Shopify object/filter/tag completion, embedded JSON/CSS/JS,
+                structure view, folding, commenter, and go-to-template navigation.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:29:52 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160181</guid>
+    </item>
+    <item>
+      <title>News for Log Lens: Large &amp;amp; Structured Log Viewer (JSONL, logfmt, ANSI)</title>
+      <link>https://plugins.jetbrains.com/plugin/33416-log-lens-large--structured-log-viewer-jsonl-logfmt-ansi-</link>
+      <description>&amp;lt;b&amp;gt;1.3.3&amp;lt;/b&amp;gt; - Export refuses to write over the log file that is open, with a
+plain message; pick another name. Switching themes recolors every level toggle, including
+levels the new theme leaves at the platform color. An out-of-range page row renders empty
+instead of raising an error.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.2&amp;lt;/b&amp;gt; - Saving a theme did not check for Pro in 1.3.1. It does now:
+any theme is free to try for the current window, and keeping it across restarts is a Pro
+feature. A theme you had already saved before this update stays kept.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.1&amp;lt;/b&amp;gt; - Two of the dark trace colors, Cyberpunk and
+Goblincore, sat below the readability floor; both are brighter now, and a contrast check
+keeps every look legible from here on. A few interface messages also traded their long
+dashes for plainer punctuation.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.0&amp;lt;/b&amp;gt; - The encoding release. Log files in EUC-KR / CP949 and Shift_JIS / CP932
+are detected on open and render correctly, with an Encoding selector in the toolbar for
+manual override - display and search both honor the chosen charset, so legacy Korean and
+Japanese logs finally read like they should. A new Theme selector restyles level and ANSI
+colors with five looks: Default, Hacker, Cyberpunk, Goblincore, and Blue - Default keeps
+exactly the colors you already know. Subscribers now get a one-time thank-you the first
+time the plugin sees its license, and a quiet Supporter-since line in the footer from
+then on. The free tier stays free.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.0&amp;lt;/b&amp;gt; - The review groundwork release. Report a Log Lens Problem now sits in the
+Help menu and opens a pre-filled issue on the family tracker - you see the whole text
+before anything is sent, and the plugin still makes no network calls. The panel footer
+names what Pro adds, or how many trial days are left, and the plugin asks exactly once
+for a review after the third fully indexed file. ANSI colors render in the viewer, match
+counts show for every search, and .log.gz opens directly. Levels, follow mode, and the
+whole free tier stay free.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - *.log files now have a real file type registration with an icon in
+Settings | File Types; the editor provider and .log.N / .log.gz handling are
+unchanged, and the plain text editor stays available. After a .jsonl export, a
+notification offers to open the result in JSONL Lens when it is installed; when
+it is not installed, a one-time suggestion points to it.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - Out of early access. Everything that was free stays free, plus new free
+follow mode (rotation-safe tail) and jump-to-source from stack-trace lines. Adds an
+optional Pro tier: filtered follow, whole-file filter queries, export to
+.log/.jsonl/CSV, and per-level time histograms.
+&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;we keep an archive for a world that lost its own.&amp;lt;br&amp;gt;on the 27th of august, a lamp answered us from a far eastern shore. we mounted it at the bow and it has not gone out.&amp;lt;br&amp;gt;the archive has no last shelf. bring a light.&amp;lt;br&amp;gt;the crew of a lantern&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:25:21 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160180</guid>
+    </item>
+    <item>
+      <title>News for Coral Code</title>
+      <link>https://plugins.jetbrains.com/plugin/33713-coral-code</link>
+      <description>&amp;lt;h3&amp;gt;Added&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Dated &amp;lt;code&amp;gt;1.YYYYMMDD.BUILD&amp;lt;/code&amp;gt; plugin versions, a persistent tool-window version footer, and an update check linked to the coral-code update page.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Kotlin callable metadata and coverage-backed gutter recognition for annotated tests.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Avoid false-positive Kotlin gutter markers and support literal-name Kotest DSL tests from the gutter and CLI.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;JetBrains Marketplace signing/publishing configuration, release workflow, and cross-platform local plugin installers for selected IDE profiles.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+
+&amp;lt;h3&amp;gt;Fixed&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Restore plugin loading on IntelliJ Platform 2026.2 after the diff module became internal.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Keep local installer builds independent of stale split-mode IDE caches after a JetBrains IDE upgrade.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:25:13 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160179</guid>
+    </item>
+    <item>
+      <title>News for Heap Dump Lens: JVM Heap Dump, Thread Dump &amp;amp; GC Log Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33908-heap-dump-lens-jvm-heap-dump-thread-dump--gc-log-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.1.1&amp;lt;/b&amp;gt; - Three fixes. A saved theme comes back on open only while the license is active; without one the tables open in the default look. An empty dump no longer counts toward the one-time review ask. The histogram filter and the retained tab keep the selected row when it is still shown.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Themes: pick a look for the whole tab from the toolbar. Eight strands shared across the Lens family (default, hacker, cyberpunk, goblincore, neon, nosferatu, halloween, blue lagoon) restyle the class histogram, the retained table, thread dumps and GC log pauses: instance counts and byte figures take the number tint, class and thread names the text tint, object ids and the heap before and after figure the structure tint, with row striping and the selection color from the strand. Thread states and the daemon flag keep the platform&amp;apos;s own look, and the default look is unchanged. Any strand tastes free for the open window, and keeping one set is Pro.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt; - Picking a thread dump or GC log through the Tools menu could open an empty view. Both actions read straight from disk now, and the plugin marketplace links point at the live listing.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - First release. The free tier opens .hprof heap dumps of any size into a streaming class histogram (a 2.6 GB dump indexes in seconds on a fixed memory budget), shows the dump summary with GC roots, parses thread dumps into a state breakdown, and reads unified GC logs as pause tables. Pro computes dominator tree retained sizes and ranks the top retainers across the whole object graph.</description>
+      <pubDate>Wed, 02 Sep 2026 18:20:07 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160178</guid>
+    </item>
+    <item>
+      <title>News for Notebook Lens: Jupyter ipynb Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33811-notebook-lens-jupyter-ipynb-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.1.1&amp;lt;/b&amp;gt; - Four fixes. A saved theme comes back on open only while the license
+is active; without one the notebook opens in the default look. Exporting over the
+open notebook is refused with a plain message. The outline and the search results
+keep their selection across a reload. The review ask counts value moments by one
+rule: a load with cells, a search with hits and a first render once per file, every
+completed export, and never an empty compare.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Themes: pick a look for the notebook from the toolbar. Eight strands
+shared across the Lens family (default, hacker, cyberpunk, goblincore, neon, nosferatu,
+halloween, blue lagoon) restyle the chrome around each cell: cell labels, execution
+counts and image chips take the strand&amp;apos;s tints, odd cells take its stripe, and the
+outline&amp;apos;s selection takes its color. Everything inside a cell stays as saved: syntax
+coloring, stderr, and every ANSI color in outputs and tracebacks keep their hues. The
+default look is unchanged. Any strand tastes free for the open window, and keeping one
+set is Pro.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.2&amp;lt;/b&amp;gt; - Compare now paints its result. The diff dialog was quietly modal, and
+dialogs of that kind hold their repaint runnables until they close, so the comparison
+rendered as an endless empty wait. It stays non-modal now, with a test pinning it
+that way.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt; - Clearer failure messages across the viewer: each one now says what
+happened and what to try. A truncated file names the byte where it ends and the
+likely cause, a broken or oversized image says why it is not rendered instead of
+loading forever, an unreadable file and an empty notebook are named plainly, and a
+failed export confirms no partial file was left behind. Pro subscribers get a
+one-time thank-you the first time their license is seen - recorded locally, nothing
+phones home. The footer&amp;apos;s marketplace link now points at the real listing. The
+description now says outright what was always true: one plugin with no
+companion install, and a static render that cannot freeze on long outputs.
+The free tier is unchanged.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - First release. The free tier reads any notebook: streaming cell
+index, rendered markdown, Python coloring, outputs with ANSI tracebacks and inline
+images, an outline rail, typed navigation, exact go-to-cell, find in the current cell,
+and named errors for truncated or legacy files. Pro: source-only notebook diff with
+exact counts, export to .py (percent format) or Markdown, and search across all cells.</description>
+      <pubDate>Wed, 02 Sep 2026 18:15:01 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160177</guid>
+    </item>
+    <item>
+      <title>News for XLSX Lens: Excel XLSX Spreadsheet Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33721-xlsx-lens-excel-xlsx-spreadsheet-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.1.2&amp;lt;/b&amp;gt; - A saved theme comes back on open only while the license is active; without one the grid opens in the default look, and tasting any theme stays free for the window. Going back to Default no longer counts as a chosen theme. Export refuses to write over the open workbook and asks for another name instead of failing.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.1&amp;lt;/b&amp;gt; - The selected row and cell stay put through a page reload and a reload from disk; the grid used to drop them whenever the data came back. The one-time review ask follows a single rule now across opening, find, the grid and export, and an empty sheet does not count.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Themes: a Theme combo at the end of the toolbar picks a look for the whole workbook tab. The eight strands the Lens family shares restyle the data grid and the diff drill-in: text and number tints, row striping, the selection color. Default stays exactly as shipped, and empty cells and merged echoes keep their quiet dimming under every strand. Tasting any strand is free for the open window; keeping one set is Pro. Also fixed: a toolbar row that wrapped at narrow widths was laid out but hidden under the row above it, so its controls vanished. The row gets its full height now.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.3&amp;lt;/b&amp;gt; - Sixteen toolbar controls used to sit in two fixed rows, and a narrow panel still pushed the last buttons past the edge. The rows reflow now, and the sheet diff controls do the same.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.2&amp;lt;/b&amp;gt; - Find shows a live match count while it scans; a 500k-row sheet no longer sits on searching until the end. Named ranges appear in the Info tab, name and reference exactly as the workbook stores them. And the first time a Pro license shows up, one thank-you, said locally, never repeated.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt; - Flip First row = headers and row 1 rides along while you page. The grid answers right-click now: row out as JSON, page out as TSV, Export on Pro one step away. Opening any workbook successfully counts for the review nudge; the old rule starved tiny files of it. When something breaks in read, search, view, export, stats or diff, the message says what broke and what to do about it.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - First release. Free: read-only workbook viewer with
+streaming open (first page renders while large sheets index), all sheets listed, merged
+cells rendered, cached formula values, 1900/1904 date systems, builtin and common custom
+number formats, whole-sheet Find across values and formulas, cell inspector, in-page
+sort/filter and copy. Pro: CSV/JSONL/Markdown export, two-workbook sheet diff with exact
+counts, whole-sheet sort and multi-column filter, column stats, formula view, watch
+mode.</description>
+      <pubDate>Wed, 02 Sep 2026 18:08:45 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160176</guid>
+    </item>
+    <item>
+      <title>News for Junie, the AI coding agent by JetBrains</title>
+      <link>https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains</link>
+      <description>&amp;lt;h2&amp;gt;2xx.2144.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Updated communication&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable 5.1&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.8 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.7 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.6&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes for WebStorm and MCP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.6-Flash and 3.5-Flash-lite&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for GPT-5.6 Sol-Terra-Luna&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Sonnet 5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1966.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;WSL projects are now supported in Junie ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Debug mode introduced for AI Chat&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;DB MCP tools are enabled out of the box&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Model-selection onboarding added for the legacy Junie tool window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Preparation for multi-project support in ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;ACP additional directories: extra workspace roots with a fallback for non-conformant clients&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Per-client configuration options and smoother model-switch announcements for ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved resilience: orphan/stuck-process mitigation for the ACP agent&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Approval prompt for reading the env file&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Required Git4Idea, Markdown, and Terminal plugins are now declared as dependencies, so Junie loads reliably&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better Android Studio support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.8&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable (currently unavailable due to US regulations)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Bug fixes:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed Junie randomly getting stuck on some actions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Removed the Settings → Tools → Junie → MCP Settings page&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed a NullPointerException in ChroniclesFileListener&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1755.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added Gemini 3.5 Flash and Grok 4.3 support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP extensions are now available&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Certain errors are now displayed as-is instead of a generic &amp;quot;Unexpected error&amp;quot; message&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed integration with JetBrains Space for discussions and commit fetching&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multiple fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1218.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rebuilt Junie integration in AI Chat from the ground up to use Junie CLI as the agent engine (Beta)
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/junie-cli.html&amp;quot;&amp;gt;Junie CLI&amp;lt;/a&amp;gt; is used via ACP (Agent Communication Protocol)&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;It doesn&amp;apos;t use legacy dependencies and is faster, more flexible, easier to improve and expand upon&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;We will follow up with this approach in our dedicated tool window as we build upon it&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) model selector is now available as a dropdown directly in the prompt window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) Junie is now fully auto – no more &amp;quot;code&amp;quot; and &amp;quot;ask&amp;quot; modes. Junie is capable of inferring the intent with a very high degree of certainty&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) you can reuse your own &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/custom-slash-commands.html&amp;quot;&amp;gt;custom commands&amp;lt;/a&amp;gt; created via &amp;quot;/commands&amp;quot; in the CLI version of Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Settings are now moved to a dedicated window
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Either use the three-dot menu from the Junie tool window, or Search Everywhere via Shift+Shift -&amp;amp;gt; Input &amp;quot;Junie Settings&amp;quot;&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;AI Chat Junie uses a separate &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/action-allowlist-junie-cli.html&amp;quot;&amp;gt;allowlist&amp;lt;/a&amp;gt; that you can build dynamically while using Junie in non-brave mode (allowlist in Junie Settings is only for the dedicated Junie tool window)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added History Migration feature in the dedicated tool window:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Import History from Previous IDE Versions — consolidates Junie history from all previous IDE versions into the current one. Run this first if you&amp;apos;ve used Junie across multiple IDE installations&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to AI Chat — exports your past sessions into AI Chat as native conversations, with full rendering of file changes, terminal output, and test results&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to CLI — exports your past sessions into the CLI session format, accessible from the Junie command line&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All changes are available starting with 2026.1 versions of JetBrains IDEs&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Known issues:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;MCP servers that require SSO during configuration can be configured only through the CLI (in the terminal)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Tasks from previous IDEs might not show up after using the history migration feature&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(AI Chat) WSL users may encounter an issue where the connection to the IDE cannot be established. In this case, Junie will still remain functional but will have a smaller toolset&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Diff line counts can sometimes be incorrect&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;File operations performed via bash commands during a Junie run can be absent from the &amp;quot;Done&amp;quot; block with diffs. In these cases, use the &amp;quot;Local History&amp;quot; IDE feature for navigating and rolling back&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Conversations with previous implementation of Junie in AI Chat remain accessible, but follow-up prompts will not retain the context&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.819.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.4&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;CLI improvements: GitHub Actions installation support, /cost and /recap commands, logout command, in-app tips, improved paste handling, Markdown table rendering&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added lint tool, web_search tool, rename refactoring, regex search with file extensions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for reading PDF, DOCX, XLSX, PPT, and PPTX files with Markdown conversion&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Enhanced task state management, history compression, and session replay functionality&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Kotlin to MCP, AGENTS.md support, enhanced MCP server suggestions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for adaptive thinking for Anthropic models&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.620.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports Agent Skills — task-oriented, reusable extensions that allow the agent to perform specialized workflows. To install a skill, add its folder to .junie/skills with a required SKILL.md file used for discovery and execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More efficient edits for non-OpenAI LLMs, now all models are capable of editing several locations in a file within one step&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for guideline directories: instead of a single guidelines file, you can now select a path to a directory with multiple .md files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved handling of library files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed an issue where the hidden plugin could not be reopened; Junie is now accessible from the Tool Windows menu&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Supported new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Claude Sonnet 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.1 Pro Preview&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;GPT 5.3 Codex&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.549.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3 Flash — now the default model for Junie&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;OpenAI GPT-5.2&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;xAI Grok 4.1 Fast (Reasoning)&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support “Bring Your Own Key” (BYOK) for OpenAI and Anthropic in the AI Chat interface&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Faster LLM responses due to infra-related improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More stable and accurate user language detection with fewer accidental switches&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Security and bug fixes via dependency updates&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.506.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support of OpenAI GPT-5.1-Codex-Max&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.487.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports multilingual responses&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;The Allowlist is now more flexible: you can individually allow Terminal (including RegEx patterns), MCP, Build, RunTest, and other actions; see &amp;lt;a href=&amp;quot;https://jb.gg/junie-docs-allowlist&amp;quot;&amp;gt;the Junie documentation&amp;lt;/a&amp;gt; for details&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;GPT-5.1&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.0&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.5&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for 2025.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2025.1 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.406.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added &amp;quot;Auto&amp;quot; mode that lets Junie choose between coding and chatting flows automatically&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP remote servers can now be configured (Beta):
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;URL servers without auth, local trusted servers, HTTP headers auth&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;SSO authorization is not supported&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Customizable guidelines path per project&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal runner – Junie can launch never‑ending processes in isolated shells (e.g., &amp;apos;npm start&amp;apos;)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rename Refactoring tool added&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie now has the &amp;quot;Default&amp;quot; model setting – stay on the model that is regularly updated to the one performing best, according to our evaluations&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Sunsetting older Claude models (Sonnet 3.7, 4.0)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Changes to edit listener&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various improvements to task view animations, layouts, and scroll behavior&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.336.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Latency improvements and reasoning optimizations for GPT-5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multi-language support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for CLion (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal initialization&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Continue block when Junie stops due to errors or reaching the step limit&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved image handling, Junie can now open images&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2024.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support of Claude Sonnet 4.5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.284.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Rider (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.264.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;GPT-5 is now the default LLM for Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for images in prompts&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Asks Questions feature: Junie will now ask for your advice when needed&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;PyCharm Community and PyCharm Unified Free support&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.204.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Beta MCP support (only text mode, SSE not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;WSL support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Beta Remote Development Support (Windows not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;30% faster agent execution, Think More option for more complex tasks&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Ask Mode response is rendered as Markdown&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie terminal commands are no longer saved to terminal history&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.167.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Single-column plan layout&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Compatibility with IDEA Community&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Optional support for Sonnet 4.0&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved license management with usage alerts and license selection dialog&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New notification system&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Explicit terminal initialization step&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.132.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Android Studio compatibility added (requires IDE version Narwhal 2025.1.1 Canary or newer)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved response times by migrating some operations to asynchronous processing&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better tracking of file changes during shell command execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Title summarization added for reports in &amp;quot;Ask&amp;quot; mode&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Implemented build script change detection system for improved IDE integration&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.105.40&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for RubyMine (IDE 2025.1 only), PhpStorm, and RustRover&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support PowerShell 7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie&amp;apos;s project directory can now be configured via settings&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;.aiignore to restrict Junie&amp;apos;s access to specific files and directories&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Flexible Brave mode: configurable allow‑list of commands with RegEx support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;UI/UX fixes and polish&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:03:03 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160175</guid>
+    </item>
+    <item>
+      <title>News for Junie, the AI coding agent by JetBrains</title>
+      <link>https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains</link>
+      <description>&amp;lt;h2&amp;gt;2xx.2144.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Updated communication&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable 5.1&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.8 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.7 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.6&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes for WebStorm and MCP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.6-Flash and 3.5-Flash-lite&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for GPT-5.6 Sol-Terra-Luna&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Sonnet 5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1966.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;WSL projects are now supported in Junie ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Debug mode introduced for AI Chat&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;DB MCP tools are enabled out of the box&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Model-selection onboarding added for the legacy Junie tool window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Preparation for multi-project support in ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;ACP additional directories: extra workspace roots with a fallback for non-conformant clients&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Per-client configuration options and smoother model-switch announcements for ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved resilience: orphan/stuck-process mitigation for the ACP agent&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Approval prompt for reading the env file&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Required Git4Idea, Markdown, and Terminal plugins are now declared as dependencies, so Junie loads reliably&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better Android Studio support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.8&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable (currently unavailable due to US regulations)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Bug fixes:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed Junie randomly getting stuck on some actions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Removed the Settings → Tools → Junie → MCP Settings page&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed a NullPointerException in ChroniclesFileListener&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1755.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added Gemini 3.5 Flash and Grok 4.3 support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP extensions are now available&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Certain errors are now displayed as-is instead of a generic &amp;quot;Unexpected error&amp;quot; message&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed integration with JetBrains Space for discussions and commit fetching&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multiple fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1218.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rebuilt Junie integration in AI Chat from the ground up to use Junie CLI as the agent engine (Beta)
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/junie-cli.html&amp;quot;&amp;gt;Junie CLI&amp;lt;/a&amp;gt; is used via ACP (Agent Communication Protocol)&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;It doesn&amp;apos;t use legacy dependencies and is faster, more flexible, easier to improve and expand upon&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;We will follow up with this approach in our dedicated tool window as we build upon it&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) model selector is now available as a dropdown directly in the prompt window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) Junie is now fully auto – no more &amp;quot;code&amp;quot; and &amp;quot;ask&amp;quot; modes. Junie is capable of inferring the intent with a very high degree of certainty&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) you can reuse your own &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/custom-slash-commands.html&amp;quot;&amp;gt;custom commands&amp;lt;/a&amp;gt; created via &amp;quot;/commands&amp;quot; in the CLI version of Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Settings are now moved to a dedicated window
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Either use the three-dot menu from the Junie tool window, or Search Everywhere via Shift+Shift -&amp;amp;gt; Input &amp;quot;Junie Settings&amp;quot;&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;AI Chat Junie uses a separate &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/action-allowlist-junie-cli.html&amp;quot;&amp;gt;allowlist&amp;lt;/a&amp;gt; that you can build dynamically while using Junie in non-brave mode (allowlist in Junie Settings is only for the dedicated Junie tool window)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added History Migration feature in the dedicated tool window:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Import History from Previous IDE Versions — consolidates Junie history from all previous IDE versions into the current one. Run this first if you&amp;apos;ve used Junie across multiple IDE installations&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to AI Chat — exports your past sessions into AI Chat as native conversations, with full rendering of file changes, terminal output, and test results&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to CLI — exports your past sessions into the CLI session format, accessible from the Junie command line&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All changes are available starting with 2026.1 versions of JetBrains IDEs&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Known issues:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;MCP servers that require SSO during configuration can be configured only through the CLI (in the terminal)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Tasks from previous IDEs might not show up after using the history migration feature&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(AI Chat) WSL users may encounter an issue where the connection to the IDE cannot be established. In this case, Junie will still remain functional but will have a smaller toolset&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Diff line counts can sometimes be incorrect&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;File operations performed via bash commands during a Junie run can be absent from the &amp;quot;Done&amp;quot; block with diffs. In these cases, use the &amp;quot;Local History&amp;quot; IDE feature for navigating and rolling back&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Conversations with previous implementation of Junie in AI Chat remain accessible, but follow-up prompts will not retain the context&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.819.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.4&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;CLI improvements: GitHub Actions installation support, /cost and /recap commands, logout command, in-app tips, improved paste handling, Markdown table rendering&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added lint tool, web_search tool, rename refactoring, regex search with file extensions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for reading PDF, DOCX, XLSX, PPT, and PPTX files with Markdown conversion&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Enhanced task state management, history compression, and session replay functionality&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Kotlin to MCP, AGENTS.md support, enhanced MCP server suggestions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for adaptive thinking for Anthropic models&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.620.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports Agent Skills — task-oriented, reusable extensions that allow the agent to perform specialized workflows. To install a skill, add its folder to .junie/skills with a required SKILL.md file used for discovery and execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More efficient edits for non-OpenAI LLMs, now all models are capable of editing several locations in a file within one step&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for guideline directories: instead of a single guidelines file, you can now select a path to a directory with multiple .md files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved handling of library files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed an issue where the hidden plugin could not be reopened; Junie is now accessible from the Tool Windows menu&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Supported new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Claude Sonnet 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.1 Pro Preview&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;GPT 5.3 Codex&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.549.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3 Flash — now the default model for Junie&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;OpenAI GPT-5.2&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;xAI Grok 4.1 Fast (Reasoning)&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support “Bring Your Own Key” (BYOK) for OpenAI and Anthropic in the AI Chat interface&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Faster LLM responses due to infra-related improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More stable and accurate user language detection with fewer accidental switches&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Security and bug fixes via dependency updates&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.506.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support of OpenAI GPT-5.1-Codex-Max&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.487.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports multilingual responses&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;The Allowlist is now more flexible: you can individually allow Terminal (including RegEx patterns), MCP, Build, RunTest, and other actions; see &amp;lt;a href=&amp;quot;https://jb.gg/junie-docs-allowlist&amp;quot;&amp;gt;the Junie documentation&amp;lt;/a&amp;gt; for details&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;GPT-5.1&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.0&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.5&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for 2025.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2025.1 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.406.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added &amp;quot;Auto&amp;quot; mode that lets Junie choose between coding and chatting flows automatically&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP remote servers can now be configured (Beta):
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;URL servers without auth, local trusted servers, HTTP headers auth&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;SSO authorization is not supported&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Customizable guidelines path per project&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal runner – Junie can launch never‑ending processes in isolated shells (e.g., &amp;apos;npm start&amp;apos;)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rename Refactoring tool added&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie now has the &amp;quot;Default&amp;quot; model setting – stay on the model that is regularly updated to the one performing best, according to our evaluations&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Sunsetting older Claude models (Sonnet 3.7, 4.0)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Changes to edit listener&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various improvements to task view animations, layouts, and scroll behavior&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.336.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Latency improvements and reasoning optimizations for GPT-5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multi-language support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for CLion (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal initialization&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Continue block when Junie stops due to errors or reaching the step limit&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved image handling, Junie can now open images&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2024.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support of Claude Sonnet 4.5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.284.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Rider (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.264.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;GPT-5 is now the default LLM for Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for images in prompts&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Asks Questions feature: Junie will now ask for your advice when needed&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;PyCharm Community and PyCharm Unified Free support&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.204.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Beta MCP support (only text mode, SSE not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;WSL support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Beta Remote Development Support (Windows not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;30% faster agent execution, Think More option for more complex tasks&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Ask Mode response is rendered as Markdown&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie terminal commands are no longer saved to terminal history&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.167.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Single-column plan layout&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Compatibility with IDEA Community&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Optional support for Sonnet 4.0&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved license management with usage alerts and license selection dialog&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New notification system&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Explicit terminal initialization step&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.132.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Android Studio compatibility added (requires IDE version Narwhal 2025.1.1 Canary or newer)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved response times by migrating some operations to asynchronous processing&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better tracking of file changes during shell command execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Title summarization added for reports in &amp;quot;Ask&amp;quot; mode&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Implemented build script change detection system for improved IDE integration&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.105.40&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for RubyMine (IDE 2025.1 only), PhpStorm, and RustRover&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support PowerShell 7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie&amp;apos;s project directory can now be configured via settings&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;.aiignore to restrict Junie&amp;apos;s access to specific files and directories&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Flexible Brave mode: configurable allow‑list of commands with RegEx support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;UI/UX fixes and polish&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 18:01:33 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160174</guid>
+    </item>
+    <item>
+      <title>News for DuckDB Lens: DuckDB Database File Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33853-duckdb-lens-duckdb-database-file-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.1.1&amp;lt;/b&amp;gt; - A saved theme comes back on open only while the license is active; without one the grid opens in the default look, and tasting any theme stays free for the window. Going back to Default no longer counts as a chosen theme. Export refuses to write over the file that is open (the database, its snapshot or its .wal) and asks for another name instead of failing.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Themes: pick a look for the whole tab from the toolbar. Eight strands shared across the Lens family (default, hacker, cyberpunk, goblincore, neon, nosferatu, halloween, blue lagoon) restyle the data grid, console results and diff drill-in with text, number and blob tints, row striping and selection; the default look is unchanged and NULL stays quietly dimmed in every strand. Any strand tastes free for the open window, and keeping one set is Pro.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.5&amp;lt;/b&amp;gt; - Reloading the page used to drop the selected row and cell; they stay put now, through a page reload and a reload from disk. The same row is found again by its key when the same page comes back, by position otherwise. The one review ask also counts its moments by one rule now: a load with rows, a search with hits and a grid with columns count once per opened file, every finished export counts, and a failure, a cancel or an empty result never does.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.4&amp;lt;/b&amp;gt; - At narrow windows the footer used to print the status text on top of the Pro line; now the Pro line drops to its own row on the right when the two no longer fit, and rejoins the row when there is room again.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.3&amp;lt;/b&amp;gt; - Two diff repairs ride this patch. Drill-in row fetches now key off the declared primary key, so Show rows works on keyed tables it used to fail on: the grid pages those tables by rowid while the diff keys them by primary key, and the old fetch trusted the grid. A finished comparison now survives the editor view rebuilding instead of coming back empty, and the drill controls say what they need, a diff or a selected row, instead of doing nothing.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.2&amp;lt;/b&amp;gt; - The toolbar keeps its buttons. Sort, Export and Reload used to fall off the right edge at ordinary window widths; the toolbar now wraps to a second row instead of clipping, and the same fix covers the diff view controls.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt; - Housekeeping release. The editor no longer volunteers for SQLite extensions (.sqlite, .sqlite3, .db3) left over from the family template: DuckDB Lens now claims .duckdb and .ddb plus magic-detected files, exactly as the listing says. Marketplace links inside the plugin point at the DuckDB Lens page instead of a sibling&amp;apos;s.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - First release. Free: a read-only viewer for .duckdb files - every schema in the tree, constant-memory paged grid, streaming case-insensitive Find, a cell inspector with image preview, a .wal banner with one-click snapshot reload, and HUGEINT, DECIMAL and BOOLEAN rendered exactly. Pro: read-only SQL console with EXPLAIN, CSV and JSONL export, two-file diff with exact counts, whole-table sort.</description>
+      <pubDate>Wed, 02 Sep 2026 18:00:56 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160173</guid>
+    </item>
+    <item>
+      <title>News for Junie, the AI coding agent by JetBrains</title>
+      <link>https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains</link>
+      <description>&amp;lt;h2&amp;gt;2xx.2144.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Updated communication&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable 5.1&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.8 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.7 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.6&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes for MCP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.6-Flash and 3.5-Flash-lite&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for GPT-5.6 Sol-Terra-Luna&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Sonnet 5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1966.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;WSL projects are now supported in Junie ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Debug mode introduced for AI Chat&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;DB MCP tools are enabled out of the box&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Model-selection onboarding added for the legacy Junie tool window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Preparation for multi-project support in ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;ACP additional directories: extra workspace roots with a fallback for non-conformant clients&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Per-client configuration options and smoother model-switch announcements for ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved resilience: orphan/stuck-process mitigation for the ACP agent&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Approval prompt for reading the env file&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Required Git4Idea, Markdown, and Terminal plugins are now declared as dependencies, so Junie loads reliably&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better Android Studio support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.8&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable (currently unavailable due to US regulations)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Bug fixes:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed Junie randomly getting stuck on some actions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Removed the Settings → Tools → Junie → MCP Settings page&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed a NullPointerException in ChroniclesFileListener&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1755.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added Gemini 3.5 Flash and Grok 4.3 support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP extensions are now available&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Certain errors are now displayed as-is instead of a generic &amp;quot;Unexpected error&amp;quot; message&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed integration with JetBrains Space for discussions and commit fetching&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multiple fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1218.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rebuilt Junie integration in AI Chat from the ground up to use Junie CLI as the agent engine (Beta)
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/junie-cli.html&amp;quot;&amp;gt;Junie CLI&amp;lt;/a&amp;gt; is used via ACP (Agent Communication Protocol)&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;It doesn&amp;apos;t use legacy dependencies and is faster, more flexible, easier to improve and expand upon&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;We will follow up with this approach in our dedicated tool window as we build upon it&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) model selector is now available as a dropdown directly in the prompt window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) Junie is now fully auto – no more &amp;quot;code&amp;quot; and &amp;quot;ask&amp;quot; modes. Junie is capable of inferring the intent with a very high degree of certainty&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) you can reuse your own &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/custom-slash-commands.html&amp;quot;&amp;gt;custom commands&amp;lt;/a&amp;gt; created via &amp;quot;/commands&amp;quot; in the CLI version of Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Settings are now moved to a dedicated window
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Either use the three-dot menu from the Junie tool window, or Search Everywhere via Shift+Shift -&amp;amp;gt; Input &amp;quot;Junie Settings&amp;quot;&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;AI Chat Junie uses a separate &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/action-allowlist-junie-cli.html&amp;quot;&amp;gt;allowlist&amp;lt;/a&amp;gt; that you can build dynamically while using Junie in non-brave mode (allowlist in Junie Settings is only for the dedicated Junie tool window)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added History Migration feature in the dedicated tool window:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Import History from Previous IDE Versions — consolidates Junie history from all previous IDE versions into the current one. Run this first if you&amp;apos;ve used Junie across multiple IDE installations&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to AI Chat — exports your past sessions into AI Chat as native conversations, with full rendering of file changes, terminal output, and test results&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to CLI — exports your past sessions into the CLI session format, accessible from the Junie command line&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All changes are available starting with 2026.1 versions of JetBrains IDEs&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Known issues:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;MCP servers that require SSO during configuration can be configured only through the CLI (in the terminal)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Tasks from previous IDEs might not show up after using the history migration feature&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(AI Chat) WSL users may encounter an issue where the connection to the IDE cannot be established. In this case, Junie will still remain functional but will have a smaller toolset&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Diff line counts can sometimes be incorrect&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;File operations performed via bash commands during a Junie run can be absent from the &amp;quot;Done&amp;quot; block with diffs. In these cases, use the &amp;quot;Local History&amp;quot; IDE feature for navigating and rolling back&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Conversations with previous implementation of Junie in AI Chat remain accessible, but follow-up prompts will not retain the context&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.819.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.4&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;CLI improvements: GitHub Actions installation support, /cost and /recap commands, logout command, in-app tips, improved paste handling, Markdown table rendering&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added lint tool, web_search tool, rename refactoring, regex search with file extensions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for reading PDF, DOCX, XLSX, PPT, and PPTX files with Markdown conversion&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Enhanced task state management, history compression, and session replay functionality&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Kotlin to MCP, AGENTS.md support, enhanced MCP server suggestions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for adaptive thinking for Anthropic models&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.620.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports Agent Skills — task-oriented, reusable extensions that allow the agent to perform specialized workflows. To install a skill, add its folder to .junie/skills with a required SKILL.md file used for discovery and execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More efficient edits for non-OpenAI LLMs, now all models are capable of editing several locations in a file within one step&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for guideline directories: instead of a single guidelines file, you can now select a path to a directory with multiple .md files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved handling of library files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed an issue where the hidden plugin could not be reopened; Junie is now accessible from the Tool Windows menu&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Supported new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Claude Sonnet 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.1 Pro Preview&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;GPT 5.3 Codex&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.549.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3 Flash — now the default model for Junie&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;OpenAI GPT-5.2&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;xAI Grok 4.1 Fast (Reasoning)&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support “Bring Your Own Key” (BYOK) for OpenAI and Anthropic in the AI Chat interface&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Faster LLM responses due to infra-related improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More stable and accurate user language detection with fewer accidental switches&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Security and bug fixes via dependency updates&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.506.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support of OpenAI GPT-5.1-Codex-Max&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.487.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports multilingual responses&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;The Allowlist is now more flexible: you can individually allow Terminal (including RegEx patterns), MCP, Build, RunTest, and other actions; see &amp;lt;a href=&amp;quot;https://jb.gg/junie-docs-allowlist&amp;quot;&amp;gt;the Junie documentation&amp;lt;/a&amp;gt; for details&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;GPT-5.1&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.0&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.5&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for 2025.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2025.1 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.406.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added &amp;quot;Auto&amp;quot; mode that lets Junie choose between coding and chatting flows automatically&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP remote servers can now be configured (Beta):
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;URL servers without auth, local trusted servers, HTTP headers auth&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;SSO authorization is not supported&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Customizable guidelines path per project&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal runner – Junie can launch never‑ending processes in isolated shells (e.g., &amp;apos;npm start&amp;apos;)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rename Refactoring tool added&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie now has the &amp;quot;Default&amp;quot; model setting – stay on the model that is regularly updated to the one performing best, according to our evaluations&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Sunsetting older Claude models (Sonnet 3.7, 4.0)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Changes to edit listener&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various improvements to task view animations, layouts, and scroll behavior&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.336.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Latency improvements and reasoning optimizations for GPT-5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multi-language support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for CLion (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal initialization&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Continue block when Junie stops due to errors or reaching the step limit&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved image handling, Junie can now open images&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2024.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support of Claude Sonnet 4.5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.284.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Rider (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.264.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;GPT-5 is now the default LLM for Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for images in prompts&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Asks Questions feature: Junie will now ask for your advice when needed&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;PyCharm Community and PyCharm Unified Free support&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.204.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Beta MCP support (only text mode, SSE not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;WSL support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Beta Remote Development Support (Windows not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;30% faster agent execution, Think More option for more complex tasks&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Ask Mode response is rendered as Markdown&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie terminal commands are no longer saved to terminal history&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.167.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Single-column plan layout&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Compatibility with IDEA Community&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Optional support for Sonnet 4.0&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved license management with usage alerts and license selection dialog&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New notification system&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Explicit terminal initialization step&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.132.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Android Studio compatibility added (requires IDE version Narwhal 2025.1.1 Canary or newer)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved response times by migrating some operations to asynchronous processing&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better tracking of file changes during shell command execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Title summarization added for reports in &amp;quot;Ask&amp;quot; mode&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Implemented build script change detection system for improved IDE integration&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.105.40&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for RubyMine (IDE 2025.1 only), PhpStorm, and RustRover&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support PowerShell 7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie&amp;apos;s project directory can now be configured via settings&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;.aiignore to restrict Junie&amp;apos;s access to specific files and directories&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Flexible Brave mode: configurable allow‑list of commands with RegEx support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;UI/UX fixes and polish&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:59:56 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160172</guid>
+    </item>
+    <item>
+      <title>News for Free AI Commit Message</title>
+      <link>https://plugins.jetbrains.com/plugin/33870-free-ai-commit-message</link>
+      <description />
+      <pubDate>Wed, 02 Sep 2026 17:58:39 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160171</guid>
+    </item>
+    <item>
+      <title>News for Junie, the AI coding agent by JetBrains</title>
+      <link>https://plugins.jetbrains.com/plugin/26104-junie-the-ai-coding-agent-by-jetbrains</link>
+      <description>&amp;lt;h2&amp;gt;2xx.2144.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Updated communication&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable 5.1&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.8 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.7 Flash&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.6&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes for MCP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Gemini 3.6-Flash and 3.5-Flash-lite&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Grok 4.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for GPT-5.6 Sol-Terra-Luna&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Sonnet 5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1966.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;WSL projects are now supported in Junie ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Debug mode introduced for AI Chat&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;DB MCP tools are enabled out of the box&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Model-selection onboarding added for the legacy Junie tool window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Preparation for multi-project support in ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;ACP additional directories: extra workspace roots with a fallback for non-conformant clients&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Per-client configuration options and smoother model-switch announcements for ACP&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved resilience: orphan/stuck-process mitigation for the ACP agent&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Approval prompt for reading the env file&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Required Git4Idea, Markdown, and Terminal plugins are now declared as dependencies, so Junie loads reliably&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better Android Studio support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.8&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for Fable (currently unavailable due to US regulations)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Bug fixes:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed Junie randomly getting stuck on some actions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Removed the Settings → Tools → Junie → MCP Settings page&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed a NullPointerException in ChroniclesFileListener&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1755.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added Gemini 3.5 Flash and Grok 4.3 support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP extensions are now available&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Certain errors are now displayed as-is instead of a generic &amp;quot;Unexpected error&amp;quot; message&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed integration with JetBrains Space for discussions and commit fetching&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multiple fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.1218.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Anthropic Opus 4.7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rebuilt Junie integration in AI Chat from the ground up to use Junie CLI as the agent engine (Beta)
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/junie-cli.html&amp;quot;&amp;gt;Junie CLI&amp;lt;/a&amp;gt; is used via ACP (Agent Communication Protocol)&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;It doesn&amp;apos;t use legacy dependencies and is faster, more flexible, easier to improve and expand upon&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;We will follow up with this approach in our dedicated tool window as we build upon it&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) model selector is now available as a dropdown directly in the prompt window&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) Junie is now fully auto – no more &amp;quot;code&amp;quot; and &amp;quot;ask&amp;quot; modes. Junie is capable of inferring the intent with a very high degree of certainty&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(ACP only) you can reuse your own &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/custom-slash-commands.html&amp;quot;&amp;gt;custom commands&amp;lt;/a&amp;gt; created via &amp;quot;/commands&amp;quot; in the CLI version of Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Settings are now moved to a dedicated window
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Either use the three-dot menu from the Junie tool window, or Search Everywhere via Shift+Shift -&amp;amp;gt; Input &amp;quot;Junie Settings&amp;quot;&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;AI Chat Junie uses a separate &amp;lt;a href=&amp;quot;https://junie.jetbrains.com/docs/action-allowlist-junie-cli.html&amp;quot;&amp;gt;allowlist&amp;lt;/a&amp;gt; that you can build dynamically while using Junie in non-brave mode (allowlist in Junie Settings is only for the dedicated Junie tool window)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added History Migration feature in the dedicated tool window:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Import History from Previous IDE Versions — consolidates Junie history from all previous IDE versions into the current one. Run this first if you&amp;apos;ve used Junie across multiple IDE installations&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to AI Chat — exports your past sessions into AI Chat as native conversations, with full rendering of file changes, terminal output, and test results&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Move Project History to CLI — exports your past sessions into the CLI session format, accessible from the Junie command line&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All changes are available starting with 2026.1 versions of JetBrains IDEs&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;Known issues:&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;MCP servers that require SSO during configuration can be configured only through the CLI (in the terminal)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Tasks from previous IDEs might not show up after using the history migration feature&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;(AI Chat) WSL users may encounter an issue where the connection to the IDE cannot be established. In this case, Junie will still remain functional but will have a smaller toolset&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Diff line counts can sometimes be incorrect&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;File operations performed via bash commands during a Junie run can be absent from the &amp;quot;Done&amp;quot; block with diffs. In these cases, use the &amp;quot;Local History&amp;quot; IDE feature for navigating and rolling back&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Conversations with previous implementation of Junie in AI Chat remain accessible, but follow-up prompts will not retain the context&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.819.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for OpenAI GPT-5.4&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;CLI improvements: GitHub Actions installation support, /cost and /recap commands, logout command, in-app tips, improved paste handling, Markdown table rendering&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added lint tool, web_search tool, rename refactoring, regex search with file extensions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for reading PDF, DOCX, XLSX, PPT, and PPTX files with Markdown conversion&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Enhanced task state management, history compression, and session replay functionality&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Kotlin to MCP, AGENTS.md support, enhanced MCP server suggestions&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for adaptive thinking for Anthropic models&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.620.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports Agent Skills — task-oriented, reusable extensions that allow the agent to perform specialized workflows. To install a skill, add its folder to .junie/skills with a required SKILL.md file used for discovery and execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More efficient edits for non-OpenAI LLMs, now all models are capable of editing several locations in a file within one step&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for guideline directories: instead of a single guidelines file, you can now select a path to a directory with multiple .md files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved handling of library files&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed an issue where the hidden plugin could not be reopened; Junie is now accessible from the Tool Windows menu&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Supported new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Claude Sonnet 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.6&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.1 Pro Preview&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;GPT 5.3 Codex&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.549.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3 Flash — now the default model for Junie&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;OpenAI GPT-5.2&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;xAI Grok 4.1 Fast (Reasoning)&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support “Bring Your Own Key” (BYOK) for OpenAI and Anthropic in the AI Chat interface&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Faster LLM responses due to infra-related improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;More stable and accurate user language detection with fewer accidental switches&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Security and bug fixes via dependency updates&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.506.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support of OpenAI GPT-5.1-Codex-Max&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.487.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Junie now supports multilingual responses&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;The Allowlist is now more flexible: you can individually allow Terminal (including RegEx patterns), MCP, Build, RunTest, and other actions; see &amp;lt;a href=&amp;quot;https://jb.gg/junie-docs-allowlist&amp;quot;&amp;gt;the Junie documentation&amp;lt;/a&amp;gt; for details&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support new models:
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;GPT-5.1&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Gemini 3.0&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;Claude Opus 4.5&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for 2025.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2025.1 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various technical improvements and bug fixes&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.406.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Added &amp;quot;Auto&amp;quot; mode that lets Junie choose between coding and chatting flows automatically&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;MCP remote servers can now be configured (Beta):
+      &amp;lt;ul&amp;gt;
+        &amp;lt;li&amp;gt;URL servers without auth, local trusted servers, HTTP headers auth&amp;lt;/li&amp;gt;
+        &amp;lt;li&amp;gt;SSO authorization is not supported&amp;lt;/li&amp;gt;
+      &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Customizable guidelines path per project&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal runner – Junie can launch never‑ending processes in isolated shells (e.g., &amp;apos;npm start&amp;apos;)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Rename Refactoring tool added&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie now has the &amp;quot;Default&amp;quot; model setting – stay on the model that is regularly updated to the one performing best, according to our evaluations&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Sunsetting older Claude models (Sonnet 3.7, 4.0)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Changes to edit listener&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Various improvements to task view animations, layouts, and scroll behavior&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.336.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Latency improvements and reasoning optimizations for GPT-5&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Multi-language support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for CLion (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Asynchronous terminal initialization&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added Continue block when Junie stops due to errors or reaching the step limit&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved image handling, Junie can now open images&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Deprecated support for 2024.3 IDE version&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support of Claude Sonnet 4.5&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.284.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for Rider (Beta, IDE 2025.2 only)&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.264.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;GPT-5 is now the default LLM for Junie&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support for images in prompts&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie Asks Questions feature: Junie will now ask for your advice when needed&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;PyCharm Community and PyCharm Unified Free support&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.204.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Beta MCP support (only text mode, SSE not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;WSL support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Beta Remote Development Support (Windows not yet supported)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;30% faster agent execution, Think More option for more complex tasks&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Ask Mode response is rendered as Markdown&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie terminal commands are no longer saved to terminal history&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.167.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Single-column plan layout&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Compatibility with IDEA Community&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Optional support for Sonnet 4.0&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved license management with usage alerts and license selection dialog&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New notification system&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Explicit terminal initialization step&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.132.xx&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Android Studio compatibility added (requires IDE version Narwhal 2025.1.1 Canary or newer)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved response times by migrating some operations to asynchronous processing&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Better tracking of file changes during shell command execution&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Title summarization added for reports in &amp;quot;Ask&amp;quot; mode&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Implemented build script change detection system for improved IDE integration&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;
+  &amp;lt;h2&amp;gt;2xx.105.40&amp;lt;/h2&amp;gt;
+  &amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Support for RubyMine (IDE 2025.1 only), PhpStorm, and RustRover&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Support PowerShell 7&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Junie&amp;apos;s project directory can now be configured via settings&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;.aiignore to restrict Junie&amp;apos;s access to specific files and directories&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Flexible Brave mode: configurable allow‑list of commands with RegEx support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;UI/UX fixes and polish&amp;lt;/li&amp;gt;
+  &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:58:13 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160170</guid>
+    </item>
+    <item>
+      <title>News for GitLink</title>
+      <link>https://plugins.jetbrains.com/plugin/8183-gitlink</link>
+      <description>&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Require IntelliJ 2026.2 or later.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Add &amp;lt;code&amp;gt;Codeberg&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;Forgejo&amp;lt;/code&amp;gt; support.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Remove the experimental &amp;lt;code&amp;gt;Chromium&amp;lt;/code&amp;gt; platform.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Improve the layout and help text throughout the settings dialogs.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Base a custom platform&amp;apos;s URL templates on an existing platform.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Detect self-hosted Gitea and Gogs installs.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Prefer a user-registered domain when detecting a platform.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fix an off-by-one error in the line numbers of a generated link.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Don&amp;apos;t encode the forward slash in branch names.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Various refactors and cleanups.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:54:15 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160169</guid>
+    </item>
+    <item>
+      <title>News for SQLite Lens: SQLite Database File Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33684-sqlite-lens-sqlite-database-file-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.2.3&amp;lt;/b&amp;gt; - A saved theme comes back on open only while the license is active; without one the grid opens in the default look, and tasting any theme stays free for the window. Going back to Default no longer counts as a chosen theme. Export refuses to write over the file that is open (the database, its snapshot or a sidecar) and asks for another name instead of failing.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.2.2&amp;lt;/b&amp;gt; - Reloading the page used to drop the selected row and cell; they stay put now, through a page reload and a reload from disk. The same row is found again by its key when the same page comes back, by position otherwise. The one review ask also counts its moments by one rule now: a load with rows, a search with hits and a grid with columns count once per opened file, every finished export counts, and a failure, a cancel or an empty result never does.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.2.1&amp;lt;/b&amp;gt; - At narrow windows the footer used to print the file size on top of the Pro line; now the Pro line drops to its own row on the right when the two no longer fit, and rejoins the row when there is room again.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.2.0&amp;lt;/b&amp;gt; - Themes: pick a look for the whole tab from the toolbar. Eight strands shared across the Lens family restyle the data grid, console results and diff drill-in with text, number and blob tints, row striping and selection; the default look is untouched and NULL stays quietly dimmed in every strand. Any strand tastes free for the open window, and keeping one set is Pro. Two diff repairs ride along: drill-in row fetches now key off the declared primary key, so Show rows works on keyed tables it used to fail on, and a finished comparison now survives the editor view rebuilding instead of coming back empty.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.1&amp;lt;/b&amp;gt; - The toolbar wraps at narrow widths now, instead of pushing Sort and Export past the window edge, and the diff view controls follow the same rule.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Blob hex now renders through a lookup table: full-table CSV export on a 5M-row bench with a blob in every row went from 38k to 460k rows a second, about 12x. Changed rows in the diff drill-in now highlight the exact cells that differ, with a Next difference jump. The first time the plugin sees your Pro license it says a one-time thank you, then keeps a quiet supporter line in the footer - stored locally, like everything else.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt; - Right-click lands in the data grid: copy the row as JSON, copy the page as CSV, and jump straight to Export on Pro. WAL banners now lead with what you might be missing, and a WAL database with no -wal file beside it points back at the source machine. Failure messages in the console, diff, export and snapshot paths now say what happened and what to try. The listing description is synced with the marketplace page.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - First release. Free: read-only viewer with an immutable
+no-locks guarantee, schema tree with row counts, constant-memory paged grid, streaming
+Find, cell inspector with BLOB image preview, WAL and hot-journal banners with snapshot
+reload. Pro: execute-only SQL console with EXPLAIN QUERY PLAN, CSV/JSONL export,
+two-file database diff with exact counts, whole-table sort.</description>
+      <pubDate>Wed, 02 Sep 2026 17:53:46 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160168</guid>
+    </item>
+    <item>
+      <title>News for ComposeGuard</title>
+      <link>https://plugins.jetbrains.com/plugin/29308-composeguard</link>
+      <description>&amp;lt;b&amp;gt;1.3.0&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Project configuration via .editorconfig&amp;lt;/b&amp;gt;: the same &amp;lt;code&amp;gt;compose_*&amp;lt;/code&amp;gt; keys as the upstream Compose Rules ktlint ruleset are honoured (allowed composable names, custom content emitters, modifier visibility scope, custom modifier types, treat-as-lambda aliases, ViewModel factories, allowed CompositionLocals, allowed forwarding, allowed Material 2 imports, preview naming strategy, nesting depth, and the disallow/enable switches). Nested files merge up to &amp;lt;code&amp;gt;root = true&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;New opt-in rules&amp;lt;/b&amp;gt;: ComposableNestingDepth and CompositionLocalAllowlist.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Suppress in file&amp;lt;/b&amp;gt;: every violation offers a quick fix that adds or extends &amp;lt;code&amp;gt;@file:Suppress(...)&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Analyze test sources&amp;lt;/b&amp;gt; setting to skip test source roots.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Report export&amp;lt;/b&amp;gt;: save a project scan as JSON or SARIF from the tool window.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.5&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed #1 (TrailingLambda)&amp;lt;/b&amp;gt;: a trailing event handler such as &amp;lt;code&amp;gt;onClick: () -&amp;amp;gt; Unit&amp;lt;/code&amp;gt; is now reported on any content-emitting composable with a &amp;lt;code&amp;gt;modifier&amp;lt;/code&amp;gt;, not only on composables that also declare a &amp;lt;code&amp;gt;@Composable&amp;lt;/code&amp;gt; slot.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Single analysis pipeline&amp;lt;/b&amp;gt;: the inspection, gutter icons, inlay hints and the statistics scan share one cached analyzer. The duplicate annotator is gone, so violations no longer appear twice, and nested composables are reported once.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Suppression&amp;lt;/b&amp;gt;: &amp;lt;code&amp;gt;@Suppress(names = [...])&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;@Suppress(&amp;quot;ALL&amp;quot;)&amp;lt;/code&amp;gt;, class-level &amp;lt;code&amp;gt;@Suppress&amp;lt;/code&amp;gt; and multi-id &amp;lt;code&amp;gt;// noinspection&amp;lt;/code&amp;gt; comments are honoured. The built-in Lint suppressor also covers UnrememberedMutableState, AutoboxingStateCreation, FrequentlyChangedStateReadInComposition, UnnecessaryComposedModifier and ComposableLambdaParameterPosition.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Rule fixes&amp;lt;/b&amp;gt;: expression-bodied composables count as Unit-returning; EventParameterNaming handles irregular participles and silent-e verbs; CompositionLocalNaming suggests a capitalised name; ParameterOrdering accepts a required trailing lambda; ModifierOrder flags &amp;lt;code&amp;gt;clickable&amp;lt;/code&amp;gt; before &amp;lt;code&amp;gt;clip&amp;lt;/code&amp;gt;/shaped &amp;lt;code&amp;gt;background&amp;lt;/code&amp;gt;; DeferStateReads only reports eager reads in non-lambda modifiers; RememberState accepts every &amp;lt;code&amp;gt;remember*&amp;lt;/code&amp;gt; wrapper; TypeSpecificState skips nullable state; HoistState skips per-item state inside &amp;lt;code&amp;gt;items { }&amp;lt;/code&amp;gt;; ContentSlotReused reports per-branch invocation; Material2Usage flags star imports and reports once per file; plus fixes in ExplicitDependencies, ViewModelForwarding, ModifierTopMost, ModifierNaming, ModifierDefaultValue, AvoidComposed, DerivedStateOfCandidate, ComponentDefaultsVisibility, UnstableCollections, LazyListContentType, LazyListMissingKey and EffectKeys.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Quick fixes&amp;lt;/b&amp;gt;: reorder/move-to-trailing fixes name arguments at call sites first; rename-parameter updates every reference; move-modifier-to-root merges with an existing root modifier; add-modifier-parameter, add-explicit-parameter, add-key, add-contentType, use-lambda-modifier, use-Material3 (keeps aliases) and the Suppress fix were corrected.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Settings&amp;lt;/b&amp;gt;: rules are listed from the registry, so DeferStateReads and ComponentDefaultsVisibility can be toggled. Rule errors are logged instead of swallowed.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Docs&amp;lt;/b&amp;gt;: suppression ids and per-rule severities corrected.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.4&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;More False-Positive Fixes (second pass)&amp;lt;/b&amp;gt;:&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;DeferStateReads&amp;lt;/b&amp;gt;: no longer treats ordinary identifiers (text, index, expanded, progress) as animated state — only values produced by animation/scroll/derived-state builders (including delegated &amp;lt;code&amp;gt;by&amp;lt;/code&amp;gt;) are considered frequently-changing.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;TypeSpecificState&amp;lt;/b&amp;gt;: removed the non-canonical collection-factory check that flagged plain &amp;lt;code&amp;gt;mutableListOf&amp;amp;lt;Int&amp;amp;gt;()&amp;lt;/code&amp;gt;; only &amp;lt;code&amp;gt;mutableStateOf&amp;lt;/code&amp;gt; primitive variants are suggested.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;ModifierReuse &amp;amp;amp; ContentSlotReused&amp;lt;/b&amp;gt;: a modifier or content slot used once per mutually-exclusive &amp;lt;code&amp;gt;if&amp;lt;/code&amp;gt;/&amp;lt;code&amp;gt;when&amp;lt;/code&amp;gt; branch is no longer reported as reuse — only usages reachable on the same composition pass count.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;ModifierTopMost&amp;lt;/b&amp;gt;: modifiers on content nested inside scope-providing emitters (Scaffold, BoxWithConstraints) or slots that expose a scope parameter are no longer flagged.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;AvoidComposed&amp;lt;/b&amp;gt;: only the real &amp;lt;code&amp;gt;Modifier.composed { }&amp;lt;/code&amp;gt; factory is flagged, not unrelated &amp;lt;code&amp;gt;composed()&amp;lt;/code&amp;gt; calls.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;MovableContent&amp;lt;/b&amp;gt;: accepts the whole remember family (rememberSaveable, custom remember wrappers) instead of only the literal &amp;lt;code&amp;gt;remember&amp;lt;/code&amp;gt;.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Tests&amp;lt;/b&amp;gt;: added behavioral regression suites for every fix above.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.3&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Major False-Positive Reduction&amp;lt;/b&amp;gt;: Audited every rule against the official Compose Rules to stop flagging valid code.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Content emission accuracy&amp;lt;/b&amp;gt;: ModifierRequired, ContentEmission and MultipleContentEmitters no longer treat value factories like &amp;lt;code&amp;gt;Color(...)&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;TextStyle(...)&amp;lt;/code&amp;gt; or &amp;lt;code&amp;gt;PaddingValues(...)&amp;lt;/code&amp;gt; as emitted UI — only calls whose result is discarded count as emission.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Modifier overrides&amp;lt;/b&amp;gt;: ModifierDefaultValue and ModifierNaming skip &amp;lt;code&amp;gt;override&amp;lt;/code&amp;gt;/&amp;lt;code&amp;gt;abstract&amp;lt;/code&amp;gt; composables, whose parameters cannot legally be renamed or given defaults.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Type matching&amp;lt;/b&amp;gt;: MutableParameter and MutableStateParameter now match the parameter&amp;apos;s own type, so function types (&amp;lt;code&amp;gt;() -&amp;amp;gt; MutableList&amp;lt;/code&amp;gt;), wrappers (&amp;lt;code&amp;gt;Holder&amp;amp;lt;MutableState&amp;amp;gt;&amp;lt;/code&amp;gt;) and observable holders (&amp;lt;code&amp;gt;MutableStateFlow&amp;lt;/code&amp;gt;) are no longer flagged.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;ViewModelForwarding&amp;lt;/b&amp;gt;: only flags ViewModels forwarded into another composable, not those handed to ordinary helpers or effects.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;EffectKeys&amp;lt;/b&amp;gt;: &amp;lt;code&amp;gt;LaunchedEffect(Unit)&amp;lt;/code&amp;gt; run-once effects are allowed; a constant key is only flagged when the effect captures parameters that should be keys.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;EventParameterNaming&amp;lt;/b&amp;gt;: stops flagging present-tense/noun callbacks ending in -ed (&amp;lt;code&amp;gt;onSpeed&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;onProceed&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;onFeed&amp;lt;/code&amp;gt;).&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Material 2&amp;lt;/b&amp;gt;: the shared &amp;lt;code&amp;gt;material.ripple&amp;lt;/code&amp;gt; package and &amp;lt;code&amp;gt;material.icons&amp;lt;/code&amp;gt; star-imports are no longer reported.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;TrailingLambda&amp;lt;/b&amp;gt;: multi-slot composables (Scaffold-style) no longer require a specific slot to be trailing.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Annotation naming&amp;lt;/b&amp;gt;: ComposableAnnotationNaming targets &amp;lt;code&amp;gt;@ComposableTargetMarker&amp;lt;/code&amp;gt; annotations, and MultipreviewNaming applies to multipreview annotation classes instead of ordinary stacked-&amp;lt;code&amp;gt;@Preview&amp;lt;/code&amp;gt; functions.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Tests&amp;lt;/b&amp;gt;: added behavioral regression tests covering each fixed false positive.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.2&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Inspection Registration Fix&amp;lt;/b&amp;gt;: Corrected ComposeGuard inspection registration mismatch by aligning the inspection shortName with plugin.xml metadata&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Regression Coverage&amp;lt;/b&amp;gt;: Added inspection registration tests to prevent future shortName and metadata drift&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.1&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;False Positive Fix&amp;lt;/b&amp;gt;: DerivedStateOfCandidate now ignores collection copies and other computed values inside event handlers such as onClick/onRemove, where the work runs only when the event fires rather than on every recomposition&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.2.0&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;False Positive Fixes&amp;lt;/b&amp;gt;: DerivedStateOfCandidate now ignores expensive computations inside named event callbacks such as onClick/onRemove&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Modifier Root Fix&amp;lt;/b&amp;gt;: ModifierTopMost and its quick fix no longer treat CompositionLocalProvider as a root layout&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Trailing Lambda Fix&amp;lt;/b&amp;gt;: Event lambda detection now works for custom callbacks following the onX naming pattern&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Rule Accuracy Improvements&amp;lt;/b&amp;gt;: ModifierRequired and ContentEmission now use PSI-based content emission detection&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Multiple Content Detection&amp;lt;/b&amp;gt;: Custom top-level composables with trailing lambdas are now counted correctly&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Release Cleanup&amp;lt;/b&amp;gt;: Updated rule counts, changelog metadata, and build configuration warnings&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.9&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;State/Callback Pairing&amp;lt;/b&amp;gt;: ReorderParametersFix now keeps state/callback pairs together (e.g., value/onValueChange, checked/onCheckedChange)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Improved Parameter Ordering&amp;lt;/b&amp;gt;: Smart pairing for common patterns like text/onTextChange, query/onQueryChange, selected/onSelectedChange&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.8&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Rule Enable/Disable Bug Fix&amp;lt;/b&amp;gt;: Fixed critical issue with rule enable/disable functionality&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Restructured Settings Architecture&amp;lt;/b&amp;gt;: Improved enable/disable state management for individual rules&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Settings Persistence Fix&amp;lt;/b&amp;gt;: Rule states are now correctly saved and restored across IDE restarts&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.7&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;All Rules Enabled by Default&amp;lt;/b&amp;gt;: All rules including experimental are now enabled out of the box&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Simplified Settings UX&amp;lt;/b&amp;gt;: Completely redesigned settings panel
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;All checkboxes are now always interactive (no more grayed-out states)&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;&amp;quot;Enable All Rules&amp;quot; master switch to select/deselect all rules at once&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Category checkboxes act as &amp;quot;select all/none&amp;quot; for rules in that category&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Parent checkbox states automatically derived from child selections&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Standard IDE settings pattern (like IntelliJ inspections panel)&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed Critical Settings Bug&amp;lt;/b&amp;gt;: Disabling one rule no longer disables ALL rules&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Hierarchical Rule Control&amp;lt;/b&amp;gt;: Proper Master → Category → Rule hierarchy&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed Rule Category Mismatch&amp;lt;/b&amp;gt;: LambdaParameterInEffect moved to correct STATE category&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Comprehensive Test Coverage&amp;lt;/b&amp;gt;: 45+ new tests for settings and enable/disable functionality&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.6&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Statistics Dashboard&amp;lt;/b&amp;gt;: New tool window with violation analytics by category, file, and rule&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Parameter Ordering Fix&amp;lt;/b&amp;gt;: Fixed modifier position to follow official Jetpack Compose guidelines&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Modifier is now correctly enforced as the FIRST optional parameter (not last)&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Order: required → modifier (first optional) → other optionals → content lambda&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Updated ReorderParametersFix quick fix to use correct ordering&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Suppress Built-in Compose Inspections&amp;lt;/b&amp;gt;: Automatically hides Android Studio&amp;apos;s built-in Compose lint warnings when ComposeGuard handles them&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New setting: &amp;quot;Suppress built-in Compose inspections&amp;quot; in Settings → Tools → ComposeGuard&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Comprehensive Test Coverage&amp;lt;/b&amp;gt;: Added tests for all 36 rules&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;New test files for Modifier, Naming, State, Composable, Stricter, Effects, and Performance categories&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added EventParameterNaming rule with past tense detection&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved settings UI with category toggles&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.5&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes and stability improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Performance optimizations for rule detection&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.4&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed Suppress action not working for ModifierRequired, MultipleContentEmitters, ParameterOrdering rules&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;SuppressComposeRuleFix now correctly handles name identifier elements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added AddLambdaAsEffectKeyFix and UseRememberUpdatedStateFix quick fixes&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved ModifierReuseRule, ParameterOrderingRule, and LambdaParameterInEffectRule&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.3&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Improved quick fix behavior - only actionable fixes provided&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Added MoveModifierToRootFix for ModifierTopMostRule&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Fixed @Suppress support for EffectKeysRule and LambdaParameterInEffectRule&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;3 New Rules: ViewModelForwardingRule, LambdaParameterInEffectRule, ContentSlotReusedRule&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All 32 rules with proper quick fixes or suppress options&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.2&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Bug fixes and stability improvements&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Performance optimizations for rule detection&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Improved ModifierReuseRule, TypeSpecificStateRule, ExplicitDependenciesRule&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;RememberStateRule now handles &amp;apos;by&amp;apos; delegate syntax properly&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.1&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;Fixed @Suppress annotation support - @Suppress(&amp;quot;RuleId&amp;quot;) now properly suppresses warnings&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Supports suppression at function, property, and class level&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;All 29 rules fully implemented with quick fixes&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Quick fixes now show directly in popup (HighPriorityAction)&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Initial release of ComposeGuard&amp;lt;/b&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;27 compose rules covering naming, modifiers, state, parameters, and composable structure&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Real-time detection with inspections, annotators, gutter icons, and inlay hints&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Quick fixes for common violations&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;Based on compose-rules documentation&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:41:40 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160166</guid>
+    </item>
+    <item>
+      <title>News for Parquet Lens: Parquet, Arrow &amp;amp; Feather Dataset Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33510-parquet-lens-parquet-arrow--feather-dataset-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.3.1&amp;lt;/b&amp;gt; - Themes: an untinted cell no longer inherits the previous
+cell&amp;apos;s tint, and switching back to Default clears every tint at once; the renderer now
+states both colors on every cell. A kept theme comes back only while the license
+holds, so a lapsed trial opens on Default. Export refuses the open file as its
+destination and asks for another name.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.0&amp;lt;/b&amp;gt; - Themes: pick a look for the grid from the toolbar. Eight strands
+shared across the Lens family (default, hacker, cyberpunk, goblincore, neon, nosferatu,
+halloween, blue lagoon) restyle the data grid with text, number and blob tints by column
+type, row striping and selection; the default look is unchanged and null stays quietly
+dimmed in every strand. Any strand tastes free for the open window, and keeping one set
+is Pro.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.3&amp;lt;/b&amp;gt; - The selected row stays selected through a page size change
+and a reload from disk; the grid used to drop it whenever the page came back. A finished
+export now counts toward the one-time review ask the way it does in the other Lens
+plugins, and the ask follows a single rule across opening, find, the grid and export.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.2&amp;lt;/b&amp;gt; - At narrow windows the paging toolbar used to print over the status line
+and the Pro line at the top of the Data tab; now that strip drops to its own row on
+the right when the two no longer fit, the toolbar wraps in the room it gains, and
+everything rejoins one row when the window is wide enough.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.1&amp;lt;/b&amp;gt; - No more clipped toolbar buttons: every control row wraps to a
+second line when the window gets narrow. A few tooltips and status lines traded long
+dashes for plainer punctuation, and empty stats cells print a plain hyphen instead of
+a dash.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.0&amp;lt;/b&amp;gt; - The review groundwork release. Report a Parquet Lens Problem now sits in
+the Help menu and opens a pre-filled issue on the family tracker - you see the whole
+text before anything is sent, and the plugin still makes no network calls. The panel
+footer names what Pro adds, or how many trial days are left, and the plugin asks exactly
+once for a review after the third file it opens cleanly. The listing says plainly what
+the plugin does not do. Everything free stays free.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - After a JSONL export, a notification offers to open the result in
+JSONL Lens when it is installed; when it is not installed, a one-time suggestion
+points to it.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - Out of early access. Everything that was free stays free - and dataset
+files now register their own file type and icon. Adds an optional Pro tier: whole-dataset
+filter queries, CSV/JSONL export, global sort, and exact full-scan statistics.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;0.1.0&amp;lt;/b&amp;gt; - First public release: instant-open viewer for Parquet, Arrow IPC
+(file + stream) and Feather v2 with constant-memory paging, schema view with footer
+stats, streaming search (Ctrl+F), page column stats, JSON/CSV copy.</description>
+      <pubDate>Wed, 02 Sep 2026 17:36:51 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160164</guid>
+    </item>
+    <item>
+      <title>News for Turtle Commander</title>
+      <link>https://plugins.jetbrains.com/plugin/30863-turtle-commander</link>
+      <description>&amp;lt;h3&amp;gt;Fixed&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Fixed Select Files / Unselect Files throwing an uncaught exception on an invalid mask&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:28:13 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160162</guid>
+    </item>
+    <item>
+      <title>News for JSONL Lens: JSON Lines / NDJSON Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33397-jsonl-lens-json-lines--ndjson-viewer</link>
+      <description>&amp;lt;b&amp;gt;1.4.1&amp;lt;/b&amp;gt; - Themes: an untinted cell no longer inherits the previous
+cell&amp;apos;s tint, and switching back to Default clears every tint at once; the renderer now
+states both colors on every cell. A kept theme comes back only while the license
+holds, so a lapsed trial opens on Default. Export refuses the open file as its
+destination and asks for another name.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.4.0&amp;lt;/b&amp;gt; - Themes: pick a look for the whole tab from the toolbar. Eight strands shared across the Lens family (default, hacker, cyberpunk, goblincore, neon, nosferatu, halloween, blue lagoon) restyle the record table: record numbers and JSON numbers take the number tint, strings and booleans the text tint, nested arrays and objects the structure tint, with row striping and the selection color from the strand; the default look is unchanged and null values take no tint in any strand. Any strand tastes free for the open window, and keeping one set is Pro.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;1.3.2&amp;lt;/b&amp;gt; - Grid fixes: the selected record survives a switch between
+Grid and Preview, and Reload keeps the grid instead of dropping it. When a sample has no
+fields to show, the Grid box unchecks itself and the status line says why; the one-time
+review ask now counts a search or an export too, not only opened files.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.1&amp;lt;/b&amp;gt; - No more clipped toolbar buttons: nav, search and
+filter rows wrap to a second line when the panel gets narrow. A few titles and
+tooltips traded long dashes for plainer punctuation.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.3.0&amp;lt;/b&amp;gt; - The encoding release. A .jsonl file in EUC-KR / CP949 or Shift_JIS /
+CP932 is detected on open and rendered correctly, and an Encoding selector on the search
+row overrides the guess when it has to - display and search both work in the file&amp;apos;s own
+encoding, on files of any size. Subscribers get a one-time thank-you the first time the
+plugin sees its license, then a quiet Supporter-since line in the footer from that day
+on - stored locally, and still no network calls. The free tier stays free.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.1&amp;lt;/b&amp;gt; - The plugin name now says both of the format&amp;apos;s names,
+JSON Lines and NDJSON, so the viewer is easier to find in search. Nothing else changes.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.2.0&amp;lt;/b&amp;gt; - Find in file gets two upgrades: a Matches only checkbox that pages
+through just the matching records, and search-term highlighting in the Raw tab. Both
+free, like the rest of search. The Help menu gains a Report a JSONL Lens Problem
+action that opens a pre-filled issue on the family tracker - you see the whole text before
+anything is sent, and the plugin still makes no network calls. The panel footer now names
+what Pro adds, or how many trial days are left, and the plugin asks exactly once for a
+review after the third fully indexed file.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.1.0&amp;lt;/b&amp;gt; - Maintenance release. Cleans up the two deprecated platform API calls
+flagged by the Marketplace verifier; where a newer IDE provides the current save and
+registration APIs, those are used instead. No feature changes. Everything free stays
+free.
+&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;
+&amp;lt;b&amp;gt;1.0.0&amp;lt;/b&amp;gt; - Out of early access. Everything that was free stays free; adds an optional
+Pro tier: whole-file filter queries, export to .jsonl/CSV, and exact full-file schema
+stats.</description>
+      <pubDate>Wed, 02 Sep 2026 17:26:06 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160160</guid>
+    </item>
+    <item>
+      <title>News for Spectra Viewer</title>
+      <link>https://plugins.jetbrains.com/plugin/33519-spectra-viewer</link>
+      <description>&amp;lt;h4&amp;gt;0.5.1&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;The plugin and its tool window now carry their own icon — a prism splitting light into a spectrum — instead of the platform&amp;apos;s generic structure icon. No functional changes.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.5.0&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Send a Spectra command straight to your terminal: right-click a change and pick &amp;lt;b&amp;gt;Send to Terminal&amp;lt;/b&amp;gt; to put &amp;lt;code&amp;gt;/spectra-apply&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;/spectra-ingest&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;/spectra-archive&amp;lt;/code&amp;gt; or &amp;lt;code&amp;gt;/spectra-commit&amp;lt;/code&amp;gt;, already carrying that change&amp;apos;s name, at the prompt of the terminal tab you currently have selected. The command is typed for you but never run — you press Enter yourself, so picking the wrong tab costs nothing more than a line you can delete.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;With the Terminal tool window closed or empty the same menu reads &amp;lt;b&amp;gt;Copy Command&amp;lt;/b&amp;gt; and writes that line to the clipboard instead. The menu title always states which of the two it is about to do.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.4.1&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Release notes are now shipped with the plugin, so this page finally has a What&amp;apos;s new section. No functional changes.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.4.0&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Change nodes show the proposer, read from &amp;lt;code&amp;gt;created_by&amp;lt;/code&amp;gt; in each change&amp;apos;s &amp;lt;code&amp;gt;.openspec.yaml&amp;lt;/code&amp;gt;, in all three groups. Only the name is shown, never the email address, and a change without a usable name shows no placeholder.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.3.0&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Copy change names: select one or more change nodes and press the IDE&amp;apos;s Copy shortcut, or right-click and choose &amp;lt;b&amp;gt;Copy Change Name&amp;lt;/b&amp;gt;. You get the bare name — no group prefix, no progress counts — one per line for a multiple selection.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.2.2&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Build fix: dropped the Kotlin &amp;lt;code&amp;gt;jvm-default&amp;lt;/code&amp;gt; compatibility bridges that made the Marketplace verifier report deprecated and experimental API usage the plugin never called.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.2.1&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Documentation and packaging only: added the README and the MIT license. No functional changes.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.2.0&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;Sorting within each group by Name, Modified or Created — Modified (newest first) is the default, and entries with an unknown date always sort last.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Name filter: type to filter change names in real time, case-insensitive, across all three groups at once.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;
+        &amp;lt;h4&amp;gt;0.1.0&amp;lt;/h4&amp;gt;
+        &amp;lt;ul&amp;gt;
+            &amp;lt;li&amp;gt;First release: a &amp;lt;b&amp;gt;Spectra&amp;lt;/b&amp;gt; tool window listing Active, Parked and Archived changes side by side, with the change count on each group.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Task progress parsed from each change&amp;apos;s &amp;lt;code&amp;gt;tasks.md&amp;lt;/code&amp;gt;, shown as completed／total.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Double-click an artifact node to open its Markdown in the editor.&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Git worktree support: when &amp;lt;code&amp;gt;.git&amp;lt;/code&amp;gt; is a file, the real git directory is resolved through &amp;lt;code&amp;gt;gitdir:&amp;lt;/code&amp;gt; and &amp;lt;code&amp;gt;commondir&amp;lt;/code&amp;gt; so parked changes are still found.&amp;lt;/li&amp;gt;
+        &amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:25:14 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160159</guid>
+    </item>
+    <item>
+      <title>News for Structured Logging</title>
+      <link>https://plugins.jetbrains.com/plugin/12083-structured-logging</link>
+      <description>https://github.com/olsh/resharper-structured-logging/releases</description>
+      <pubDate>Wed, 02 Sep 2026 17:14:38 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160157</guid>
+    </item>
+    <item>
+      <title>News for Copy Selection Context</title>
+      <link>https://plugins.jetbrains.com/plugin/30262-copy-selection-context</link>
+      <description>&amp;lt;h3&amp;gt;Added&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Add complete Japanese, Simplified Chinese, and Traditional Chinese IDE UI bundles with locale-parity validation (#66)&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+
+&amp;lt;h3&amp;gt;Changed&amp;lt;/h3&amp;gt;
+
+&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Make copy history safer with Unicode-aware previews, localized timestamps, confirmed clearing, and consecutive-duplicate refreshes (#67)&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Split reusable unit tests from isolated IntelliJ Platform tests while preserving one complete &amp;lt;code&amp;gt;allTests&amp;lt;/code&amp;gt; verification task (#68)&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Enforce Detekt analysis and generate Kover coverage reports in CI and release builds, with grouped Gradle Dependabot updates (#69)&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Consolidate per-caret selection capture into an immutable context and remove legacy helpers without changing formatted output (#70)&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:12:14 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160156</guid>
+    </item>
+    <item>
+      <title>News for SWIFT MT Validator</title>
+      <link>https://plugins.jetbrains.com/plugin/33836-swift-mt-validator</link>
+      <description>&amp;lt;h3&amp;gt;1.1.0&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Two more SWIFT MT message types on the FIN parser: &amp;lt;b&amp;gt;MT202 COV&amp;lt;/b&amp;gt; (cover payment —
+    detected by &amp;lt;code&amp;gt;{3:{119:COV}}&amp;lt;/code&amp;gt;, with the underlying sequence-B ordering/beneficiary
+    customer checked) and &amp;lt;b&amp;gt;MT910&amp;lt;/b&amp;gt; (confirmation of credit — &amp;lt;code&amp;gt;:20:&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;:21:&amp;lt;/code&amp;gt;,
+    &amp;lt;code&amp;gt;:25a:&amp;lt;/code&amp;gt;, &amp;lt;code&amp;gt;:32A:&amp;lt;/code&amp;gt; and the orderer). Each is anchored to a published reference
+    message.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+    &amp;lt;h3&amp;gt;1.0.1&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Licensing finalized for the paid model (JetBrains Marketplace product descriptor + license verification). Validation behavior is unchanged.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;
+    &amp;lt;h3&amp;gt;1.0.0&amp;lt;/h3&amp;gt;
+    &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;First release: SWIFT MT (FIN) block-structure decode, MT103/MT202 mandatory-field checks,
+    :32A: and :23B: format checks, BIC (ISO 9362) and IBAN (mod-97) validation, and field interpretation
+    in a tool window. Offline.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 17:09:50 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160155</guid>
+    </item>
+    <item>
+      <title>News for Qdrant</title>
+      <link>https://plugins.jetbrains.com/plugin/28407-qdrant</link>
+      <description>&amp;lt;h3&amp;gt;6.0.0 (September 2, 2026)&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Current Qdrant Compatibility&amp;lt;/b&amp;gt; — Vector Search and Find Similar now use the universal Query API on current servers while retaining automatic compatibility with Qdrant 1.7–1.9.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Collection Workspace&amp;lt;/b&amp;gt; - Explore points, collection configuration, payload analytics, and the vector map in one editor tab. Filters, similar-point results, and point details now stay beside the table instead of blocking it with separate windows, and the workspace tabs replace duplicate navigation actions in the Points toolbar.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Readable Wide Payload Tables&amp;lt;/b&amp;gt; - Browse collections with many payload fields using horizontal scrolling and bounded content-aware column widths. Full clipped headers and values are available as tooltips, while manual widths, order, and visibility survive paging and refresh.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;UMAP Projection&amp;lt;/b&amp;gt; - Explore natural neighborhoods in vector collections with a new UMAP option alongside Random and t-SNE, and keep the selected projection in saved workspace presets.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Bounded Vector Maps&amp;lt;/b&amp;gt; - Keep large collection visualizations responsive with an explicit 10–2,000 point sample control, a safe 500-point default, deterministic selection, and workspace-preset restore.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h3&amp;gt;5.0.0 (August 1, 2026)&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Inline Payload Cell Editing&amp;lt;/b&amp;gt; - Edit primitive payload values (string, number, boolean, null, or a missing key) directly in the points table. Enter commits, Esc cancels, Tab/Shift+Tab commit and move focus, and clicking away commits too. Invalid input is flagged with a red border and tooltip plus a status message; a successful save shows briefly as pending until the server confirms it, and a failed save rolls back with a red flash. Objects and arrays are unaffected and still open the full point editor.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Batch Payload and Delete Operations&amp;lt;/b&amp;gt; - Select two or more points in the table and use the new &amp;quot;Batch Edit Payload&amp;quot; toolbar action to set a payload key to a JSON value or remove it across the whole selection; the existing delete now also processes each selected point independently. Both report per-point success and failure (&amp;quot;N of M succeeded&amp;quot;, with each failed point&amp;apos;s id and reason) instead of aborting the entire batch on a single error.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Saved Workspace Presets&amp;lt;/b&amp;gt; - Bookmark a combination of connection, collection, current filter, active payload/vector search, and page size as a named preset from the new &amp;quot;Presets&amp;quot; toolbar menu, then reapply it in one click. Presets survive an IDE restart; saving under an existing name asks for overwrite confirmation, and applying a preset whose connection or collection no longer exists shows a warning without touching the current view. A &amp;quot;Manage Presets…&amp;quot; entry lets you rename or delete saved presets.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Progress and Cancellation for Long-Running Operations&amp;lt;/b&amp;gt; - Batch payload edits, batch deletes, point imports, payload analytics, and vector visualization sampling now show a determinate progress bar with a running &amp;quot;N of M&amp;quot; status and can be cancelled from the IDE&amp;apos;s progress popup. Cancelling stops the operation immediately without further server calls and reports the partial result through the same status label and notification used for partial failures.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Rebindable Qdrant Shortcuts&amp;lt;/b&amp;gt; - Refresh (F5), open the selected collection (Enter), and delete the selected connection or collection (Delete/Backspace) in the Qdrant tool window are now regular IDE actions and can be reassigned from Settings | Keymap under Plug-ins → Qdrant. Default keys and behaviour are unchanged.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h3&amp;gt;4.1.0 (June 30, 2026)&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed Pagination on UUID Collections&amp;lt;/b&amp;gt; - Browsing points no longer fails with a JSON parsing error when a collection uses UUID point IDs and the page size is smaller than the total number of points. Pages now load correctly regardless of integer or UUID point IDs.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h3&amp;gt;4.0.0 (June 12, 2026)&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Clear Error Messages&amp;lt;/b&amp;gt; - Failed operations now show the real reason instead of an empty result. The points view, vector search, and collection tree tell you what went wrong instead of silently showing &amp;quot;0 points&amp;quot;.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Reliable Search Feedback&amp;lt;/b&amp;gt; - Vector search and &amp;quot;Find Similar&amp;quot; distinguish a real error from &amp;quot;no matching points&amp;quot;, and invalid vector input is reported clearly.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Detailed Import Results&amp;lt;/b&amp;gt; - Point import reports each failed point with its reason, so partial imports are easy to diagnose.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Add Point Error Reporting&amp;lt;/b&amp;gt; - Failures when adding a point are now surfaced instead of being silently ignored.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Fixed API Key Restore&amp;lt;/b&amp;gt; - An API key carried over from a previous version could fail to load on first use; it now loads correctly.&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Smoother UI&amp;lt;/b&amp;gt; - More operations run in the background, keeping the interface responsive while data loads.&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;h3&amp;gt;3.0.0 (December 15, 2025)&amp;lt;/h3&amp;gt;
+&amp;lt;ul&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Named Vectors Support&amp;lt;/b&amp;gt; - Full multi-vector collections handling&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Sparse Vectors Support&amp;lt;/b&amp;gt; - Create collections with sparse vectors, display sparse data&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Advanced Filter Builder&amp;lt;/b&amp;gt; - Visual query constructor with all Qdrant operators&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Search History&amp;lt;/b&amp;gt; - Save and reuse vector, payload, and filter searches&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Filter Templates&amp;lt;/b&amp;gt; - Predefined common filters with field placeholders&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Recommend API&amp;lt;/b&amp;gt; - Find similar points based on positive/negative examples&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Payload Autocomplete&amp;lt;/b&amp;gt; - Key suggestions with type hints from schema&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Local Qdrant Auto-Detection&amp;lt;/b&amp;gt; - Automatically add localhost:6333 connection&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Secure API Key Storage&amp;lt;/b&amp;gt; - Credentials stored in system keychain&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Ktor HTTP Client&amp;lt;/b&amp;gt; - Modern async HTTP with coroutines support&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;HTTPS/TLS Support&amp;lt;/b&amp;gt; - Full URL-based connection with http:// and https:// schemes&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Connection Import/Export&amp;lt;/b&amp;gt; - Share connection configs via JSON&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Point Export/Import&amp;lt;/b&amp;gt; - Export visible points to JSON/CSV&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Collection Info Panel&amp;lt;/b&amp;gt; - View collection config, segments, optimizer status&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Collection Statistics Dashboard&amp;lt;/b&amp;gt; - Points, vectors, index status, shards info&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Payload Analytics&amp;lt;/b&amp;gt; - Field distributions, histograms, value frequencies&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Vector Space Visualization&amp;lt;/b&amp;gt; - 2D projection with random projection, zoom/pan, color by field&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Enhanced Table&amp;lt;/b&amp;gt; - Dynamic payload columns, sorting, alternating row colors, type-based coloring&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Copy Context Menu&amp;lt;/b&amp;gt; - Copy cell value, row as JSON, or point ID&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Column Visibility&amp;lt;/b&amp;gt; - Show/hide any table column&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;</description>
+      <pubDate>Wed, 02 Sep 2026 16:44:43 GMT</pubDate>
+      <guid isPermaLink="false">/rss#1160153</guid>
+    </item>
+  </channel>
+</rss>

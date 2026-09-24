@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html class=" responsive DesktopUI" lang="en"  >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#171a21">
+		<title>The Séance of Blake Manor on Steam</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	
+	
+	<link href="https://store.fastly.steamstatic.com/public/shared/css/motiva_sans.css?v=YzJgj1FjzW34&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_global.css?v=sat0mVAiy9IE&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/buttons.css?v=BZhNEtESfYSJ&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/store.css?v=jzxKLyRtIqK5&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/user_reviews.css?v=hcV4WIPnYWMf&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/store_game_shared.css?v=Xi6rfDkwSwlu&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/game.css?v=o5ROTBpz1j1D&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/store_background_shared.css?v=RuX0Jh-U_mAP&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/recommended.css?v=fwyY12y3q2Mi&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/user_reviews_rewards.css?v=nDJVyLGQ1XMI&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/apphub.css?v=otgZDLujyGMF&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/ui-lightness/jquery-ui-1.7.2.custom.css?v=qgq7mHqEwLbE&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/css/v6/game_mob.css?v=vE7NVQtmyezW&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<link href="https://store.fastly.steamstatic.com/public/shared/css/shared_responsive.css?v=FJJn0nIxXaGQ&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/jquery-1.8.3.min.js?v=NXam5zydzNu8&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">$J = jQuery.noConflict();</script><script type="text/javascript">VALVE_PUBLIC_PATH = "https:\/\/store.fastly.steamstatic.com\/public\/";</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/tooltip.js?v=a9q1REOJMDBo&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_global.js?v=LKHHGyvATtqM&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/auth_refresh.js?v=w6QbwI-5-j2S&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/main.js?v=vLI1lFq8i6H2&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/dynamicstore.js?v=waCS540JFupl&amp;l=english&amp;_cdn=fastly"></script>
+
+<script type="text/javascript">Object.seal && [ Object, Array, String, Number ].map( function( builtin ) { Object.seal( builtin.prototype ); } );</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(event) {
+				$J.data( document, 'x_readytime', new Date().getTime() );
+				$J.data( document, 'x_oldref', GetNavCookie() );
+				SetupTooltips( { tooltipCSSClass: 'store_tooltip'  } );
+		});
+		</script><script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/gamehighlightplayer.js?v=mdJgU3gDKmis&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/user_reviews.js?v=GGcui5RNq7P0&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/app_tagging.js?v=jzh2Y03tD8Ea&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/game.js?v=YgG2AXdLP8t8&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.min.js?v=mSfqk1QKKgiz&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.resize.min.js?v=MeIf0YViALgL&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.time.min.js?v=CIECDYHJjBgN&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/flot-0.8/jquery.flot.selection.min.js?v=laPWW88ZIIHe&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/dselect.js?v=xOLWzo6KWkKr&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/jquery-ui-1.9.2.js?v=wxKVOzU-zSuN&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/shared/javascript/shared_responsive_adapter.js?v=asNZNxt9kVQn&amp;l=english&amp;_cdn=fastly"></script>
+
+						<meta name="twitter:card" content="summary_large_image">
+					<meta name="Description" content="The Séance of Blake Manor is a supernatural detective mystery, set in 1897 Ireland, where you investigate the disappearance of Evelyn Deane in a remote hotel full of secrets and other-worldly occurrences.">
+			
+	<meta name="twitter:site" content="@steam" />
+
+						<meta property="og:title" content="The Séance of Blake Manor on Steam">
+					<meta property="twitter:title" content="The Séance of Blake Manor on Steam">
+					<meta property="og:type" content="website">
+					<meta property="fb:app_id" content="105386699540688">
+					<meta property="og:site" content="Steam">
+					<meta property="og:url" content="https://store.steampowered.com/app/1395520/The_Seance_of_Blake_Manor/">
+					<meta property="og:description" content="The Séance of Blake Manor is a supernatural detective mystery, set in 1897 Ireland, where you investigate the disappearance of Evelyn Deane in a remote hotel full of secrets and other-worldly occurrences.">
+					<meta property="twitter:description" content="The Séance of Blake Manor is a supernatural detective mystery, set in 1897 Ireland, where you investigate the disappearance of Evelyn Deane in a remote hotel full of secrets and other-worldly occurrences.">
+			
+			<link rel="canonical" href="https://store.steampowered.com/app/1395520/The_Seance_of_Blake_Manor/">
+	
+			<link rel="image_src" href="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/b41ea4aacdb69ef9f6c4cc4c6ab34b1e609e96c9/capsule_616x353.jpg?t=1788513685">
+		<meta property="og:image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/b41ea4aacdb69ef9f6c4cc4c6ab34b1e609e96c9/capsule_616x353.jpg?t=1788513685">
+		<meta name="twitter:image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/b41ea4aacdb69ef9f6c4cc4c6ab34b1e609e96c9/capsule_616x353.jpg?t=1788513685" />
+				
+	
+	
+	
+	
+	</head>
+<body class="v6 app game_bg menu_background_overlap application widestore v7menu responsive_page " >
+
+
+<div class="responsive_page_frame with_header">
+						<div role="navigation" class="responsive_page_menu_ctn mainmenu" aria-label="Mobile Menu">
+				<div class="responsive_page_menu"  id="responsive_page_menu">
+										<div class="mainmenu_contents">
+						<div class="mainmenu_contents_items">
+															<a class="menuitem" href="https://store.steampowered.com/login/?redir=app%2F1395520%3Fsnr%3D1_4_4__40_1&redir_ssl=1&snr=1_5_9__global-header">
+									Sign in								</a>
+															<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				Store			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
+						Home											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-responsive-menu">
+						Discovery Queue											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/wishlist/?snr=1_5_9__global-responsive-menu">
+						Wishlist											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-responsive-menu">
+						Points Shop											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-responsive-menu">
+						News											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-responsive-menu">
+						Charts											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				Community			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Home											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discussions											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Market											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Broadcasts											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_5_9__global-responsive-menu">
+				About			</a>
+										<a class="menuitem " href="https://help.steampowered.com/en/">
+				Support			</a>
+			
+							<div class="minor_menu_items">
+																								<div class="menuitem change_language_action">
+									Change language								</div>
+																																	<a class="menuitem" href="https://store.steampowered.com/mobile" target="_blank" rel="noreferrer">Get the Steam Mobile App</a>
+																									<div class="menuitem" role="link" onclick="Responsive_RequestDesktopView();">
+										View desktop website									</div>
+															</div>
+						</div>
+						<div class="mainmenu_footer_spacer  "></div>
+						<div class="mainmenu_footer">
+															<div class="mainmenu_footer_logo"><img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/footerLogo_valve_new.png"></div>
+								© Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.								<span class="mainmenu_valve_links">
+									<a href="https://store.steampowered.com/privacy_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">Privacy Policy</a>
+									&nbsp;| &nbsp;<a href="http://www.valvesoftware.com/legal.htm" target="_blank">Legal</a>
+									&nbsp;| &nbsp;<a href="https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436" target="_blank">Accessibility</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/subscriber_agreement/?snr=1_5_9__global-responsive-menu" target="_blank">Steam Subscriber Agreement</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/steam_refunds/?snr=1_5_9__global-responsive-menu" target="_blank">Refunds</a>
+									&nbsp;| &nbsp;<a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_5_9__global-responsive-menu" target="_blank">Cookies</a>
+								</span>
+													</div>
+					</div>
+									</div>
+			</div>
+		
+		<div class="responsive_local_menu_tab"></div>
+
+		<div class="responsive_page_menu_ctn localmenu">
+			<div class="responsive_page_menu"  id="responsive_page_local_menu" data-panel="{&quot;onOptionsActionDescription&quot;:&quot;Filter&quot;,&quot;onOptionsButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;,&quot;onCancelButton&quot;:&quot;Responsive_ToggleLocalMenu()&quot;}">
+				<div class="localmenu_content" data-panel="{&quot;maintainY&quot;:true,&quot;bFocusRingRoot&quot;:true,&quot;flow-children&quot;:&quot;column&quot;}">
+				</div>
+			</div>
+		</div>
+
+
+
+					<div class="responsive_header">
+				<div class="responsive_header_content">
+					<div id="responsive_menu_logo">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_menu_hamburger.png" height="100%">
+											</div>
+					<div class="responsive_header_logo">
+						<a href="https://store.steampowered.com/?snr=1_5_9__global-responsive-menu">
+															<img src="https://store.fastly.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" border="0" alt="STEAM">
+													</a>
+					</div>
+					<div class="responsive_header_react_target" data-featuretarget="store-menu-responsive-search"><div class="responsive_header_react_placeholder"></div></div>				</div>
+			</div>
+		
+		<div class="responsive_page_content_overlay">
+
+		</div>
+	
+	<div class="responsive_page_content">
+
+		<div role="banner" id="global_header" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+	<div class="content">
+		<div class="logo">
+			<span id="logo_holder">
+									<a href="https://store.steampowered.com/?snr=1_5_9__global-header" aria-label="Link to the Steam Homepage">
+						<img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="144.5" height="44" alt="Link to the Steam Homepage">
+					</a>
+							</span>
+		</div>
+
+			<div role="navigation" class="supernav_container" aria-label="Global Menu">
+								<a class="menuitem supernav supernav_active" href="https://store.steampowered.com/?snr=1_5_9__global-header" data-tooltip-type="selector" data-tooltip-content=".submenu_Store">
+				STORE			</a>
+			<div class="submenu_Store" style="display: none;" data-submenuid="Store">
+														<a class="submenuitem" href="https://store.steampowered.com/?snr=1_5_9__global-header">
+						Home											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/explore/?snr=1_5_9__global-header">
+						Discovery Queue											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/wishlist/?snr=1_5_9__global-header">
+						Wishlist											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/points/shop/?snr=1_5_9__global-header">
+						Points Shop											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/news/?snr=1_5_9__global-header">
+						News											</a>
+														<a class="submenuitem" href="https://store.steampowered.com/stats/?snr=1_5_9__global-header">
+						Charts											</a>
+							</div>
+										<a class="menuitem supernav" href="https://steamcommunity.com/" data-tooltip-type="selector" data-tooltip-content=".submenu_Community">
+				COMMUNITY			</a>
+			<div class="submenu_Community" style="display: none;" data-submenuid="Community">
+														<a class="submenuitem" href="https://steamcommunity.com/">
+						Home											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/discussions/">
+						Discussions											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/workshop/">
+						Workshop											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/market/">
+						Market											</a>
+														<a class="submenuitem" href="https://steamcommunity.com/?subsection=broadcasts">
+						Broadcasts											</a>
+							</div>
+										<a class="menuitem " href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+				About			</a>
+										<a class="menuitem " href="https://help.steampowered.com/en/">
+				SUPPORT			</a>
+				</div>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'destroyWhenDone': false, 'tooltipClass': 'supernav_content', 'offsetY':-6, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	</script>
+
+		<div id="global_actions">
+			<div role="navigation" id="global_action_menu" aria-label="Account Menu">
+									<a class="header_installsteam_btn header_installsteam_btn_green" href="https://store.steampowered.com/about/?snr=1_5_9__global-header">
+						<div class="header_installsteam_btn_content">
+							Install Steam						</div>
+					</a>
+				
+				
+									<a class="global_action_link" href="https://store.steampowered.com/login/?redir=app%2F1395520%3Fsnr%3D1_4_4__40_1&redir_ssl=1&snr=1_5_9__global-header">sign in</a>
+											&nbsp;|&nbsp;
+						<span class="pulldown global_action_link" id="language_pulldown" onclick="ShowMenu( this, 'language_dropdown', 'right' );">language</span>
+						<div class="popup_block_new" id="language_dropdown" style="display: none;">
+							<div class="popup_body popup_menu">
+																																															<a class="popup_menu_item tight" href="?l=schinese&snr=1_4_4__40_1" onclick="ChangeLanguage( 'schinese' ); return false;">
+											简体中文 (Simplified Chinese)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=tchinese&snr=1_4_4__40_1" onclick="ChangeLanguage( 'tchinese' ); return false;">
+											繁體中文 (Traditional Chinese)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=japanese&snr=1_4_4__40_1" onclick="ChangeLanguage( 'japanese' ); return false;">
+											日本語 (Japanese)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=koreana&snr=1_4_4__40_1" onclick="ChangeLanguage( 'koreana' ); return false;">
+											한국어 (Korean)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=thai&snr=1_4_4__40_1" onclick="ChangeLanguage( 'thai' ); return false;">
+											ไทย (Thai)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=indonesian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'indonesian' ); return false;">
+											Bahasa Indonesia (Indonesian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=malay&snr=1_4_4__40_1" onclick="ChangeLanguage( 'malay' ); return false;">
+											Bahasa Melayu (Malay)																							<span class="language_beta">BETA</span>
+																					</a>
+																																							<a class="popup_menu_item tight" href="?l=bulgarian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'bulgarian' ); return false;">
+											Български (Bulgarian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=czech&snr=1_4_4__40_1" onclick="ChangeLanguage( 'czech' ); return false;">
+											Čeština (Czech)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=danish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'danish' ); return false;">
+											Dansk (Danish)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=german&snr=1_4_4__40_1" onclick="ChangeLanguage( 'german' ); return false;">
+											Deutsch (German)																					</a>
+																																																	<a class="popup_menu_item tight" href="?l=spanish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'spanish' ); return false;">
+											Español - España (Spanish - Spain)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=latam&snr=1_4_4__40_1" onclick="ChangeLanguage( 'latam' ); return false;">
+											Español - Latinoamérica (Spanish - Latin America)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=greek&snr=1_4_4__40_1" onclick="ChangeLanguage( 'greek' ); return false;">
+											Ελληνικά (Greek)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=french&snr=1_4_4__40_1" onclick="ChangeLanguage( 'french' ); return false;">
+											Français (French)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=italian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'italian' ); return false;">
+											Italiano (Italian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=hungarian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'hungarian' ); return false;">
+											Magyar (Hungarian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=dutch&snr=1_4_4__40_1" onclick="ChangeLanguage( 'dutch' ); return false;">
+											Nederlands (Dutch)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=norwegian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'norwegian' ); return false;">
+											Norsk (Norwegian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=polish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'polish' ); return false;">
+											Polski (Polish)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=portuguese&snr=1_4_4__40_1" onclick="ChangeLanguage( 'portuguese' ); return false;">
+											Português (Portuguese - Portugal)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=brazilian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'brazilian' ); return false;">
+											Português - Brasil (Portuguese - Brazil)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=romanian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'romanian' ); return false;">
+											Română (Romanian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=russian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'russian' ); return false;">
+											Русский (Russian)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=finnish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'finnish' ); return false;">
+											Suomi (Finnish)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=swedish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'swedish' ); return false;">
+											Svenska (Swedish)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=turkish&snr=1_4_4__40_1" onclick="ChangeLanguage( 'turkish' ); return false;">
+											Türkçe (Turkish)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=vietnamese&snr=1_4_4__40_1" onclick="ChangeLanguage( 'vietnamese' ); return false;">
+											Tiếng Việt (Vietnamese)																					</a>
+																																							<a class="popup_menu_item tight" href="?l=ukrainian&snr=1_4_4__40_1" onclick="ChangeLanguage( 'ukrainian' ); return false;">
+											Українська (Ukrainian)																					</a>
+																									<a class="popup_menu_item tight" href="https://www.valvesoftware.com/contact?contact-person=Translation%20Team%20Feedback" target="_blank">Report a translation problem</a>
+							</div>
+						</div>
+												</div>
+					</div>
+			</div>
+</div>
+<div class="StoreMenuLoadingPlaceholder" data-featuretarget="store-menu-v7"><div class="PlaceholderInner"></div></div><div id="responsive_store_nav_ctn"></div><div id="responsive_store_nav_overlay" style="display:none"><div id="responsive_store_nav_overlay_ctn"></div><div id="responsive_store_nav_overlay_bottom"></div></div><div id="responsive_store_search_overlay" style="display:none"></div><div data-cart-banner-spot="1"></div>
+		<div role="main" class="responsive_page_template_content" id="responsive_page_template_content" data-panel="{&quot;autoFocus&quot;:true,&quot;navKey&quot;:&quot;responsive_page_template_content&quot;}" >
+
+			<div id="application_config" style="display: none;"  data-config="{&quot;EUNIVERSE&quot;:1,&quot;WEB_UNIVERSE&quot;:&quot;public&quot;,&quot;LANGUAGE&quot;:&quot;english&quot;,&quot;COUNTRY&quot;:&quot;TR&quot;,&quot;MEDIA_CDN_COMMUNITY_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;MEDIA_CDN_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/&quot;,&quot;VIDEO_CDN_URL&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_URL&quot;:&quot;https:\/\/community.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_CDN_ASSET_URL&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/steamcommunity\/public\/assets\/&quot;,&quot;STORE_CDN_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/&quot;,&quot;PUBLIC_SHARED_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/shared\/&quot;,&quot;COMMUNITY_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;CHAT_BASE_URL&quot;:&quot;https:\/\/steamcommunity.com\/&quot;,&quot;STORE_BASE_URL&quot;:&quot;https:\/\/store.steampowered.com\/&quot;,&quot;STORE_CHECKOUT_BASE_URL&quot;:&quot;https:\/\/checkout.steampowered.com\/&quot;,&quot;IMG_URL&quot;:&quot;https:\/\/store.fastly.steamstatic.com\/public\/images\/&quot;,&quot;STEAMTV_BASE_URL&quot;:&quot;https:\/\/steam.tv\/&quot;,&quot;HELP_BASE_URL&quot;:&quot;https:\/\/help.steampowered.com\/&quot;,&quot;PARTNER_BASE_URL&quot;:&quot;https:\/\/partner.steamgames.com\/&quot;,&quot;STATS_BASE_URL&quot;:&quot;https:\/\/partner.steampowered.com\/&quot;,&quot;INTERNAL_STATS_BASE_URL&quot;:&quot;https:\/\/steamstats.valve.org\/&quot;,&quot;IN_CLIENT&quot;:false,&quot;USE_POPUPS&quot;:false,&quot;STORE_ICON_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/&quot;,&quot;STORE_ITEM_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/&quot;,&quot;WEBAPI_BASE_URL&quot;:&quot;https:\/\/api.steampowered.com\/&quot;,&quot;TOKEN_URL&quot;:&quot;https:\/\/store.steampowered.com\/\/chat\/clientjstoken&quot;,&quot;BUILD_TIMESTAMP&quot;:1789670024,&quot;PAGE_TIMESTAMP&quot;:1789722986,&quot;IN_TENFOOT&quot;:false,&quot;IN_CHROMEOS&quot;:false,&quot;IN_MOBILE_WEBVIEW&quot;:false,&quot;PLATFORM&quot;:&quot;unknown&quot;,&quot;BASE_URL_STORE_CDN_ASSETS&quot;:&quot;https:\/\/cdn.fastly.steamstatic.com\/store\/&quot;,&quot;EREALM&quot;:1,&quot;LOGIN_BASE_URL&quot;:&quot;https:\/\/login.steampowered.com\/&quot;,&quot;AVATAR_BASE_URL&quot;:&quot;https:\/\/avatars.fastly.steamstatic.com\/&quot;,&quot;FROM_WEB&quot;:true,&quot;WEBSITE_ID&quot;:&quot;Store&quot;,&quot;BASE_URL_SHARED_CDN&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/&quot;,&quot;CLAN_CDN_ASSET_URL&quot;:&quot;https:\/\/clan.fastly.steamstatic.com\/&quot;,&quot;COMMUNITY_ASSETS_BASE_URL&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/community_assets\/&quot;,&quot;NOW&quot;:1789722986,&quot;SUPPORT_BASE_URL&quot;:&quot;https:\/\/steamsupport.valvesoftware.com\/&quot;,&quot;SNR&quot;:&quot;1_5_9_&quot;}" data-userinfo="{&quot;logged_in&quot;:false,&quot;country_code&quot;:&quot;TR&quot;,&quot;excluded_content_descriptors&quot;:[3,4]}" data-hwinfo="{&quot;bSteamOS&quot;:false,&quot;bSteamDeck&quot;:false,&quot;bSteamMachine&quot;:false,&quot;bSteamFrame&quot;:false}" data-broadcastuser="{&quot;success&quot;:1,&quot;bHideStoreBroadcast&quot;:false}" data-store_page_asset_url="&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/%s?t=1788513685&quot;" data-store_page_extra_assets_url="&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/%s?t=1788513685&quot;" data-store_page_extra_assets_map="{&quot;extras\/analyse_optimized.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/ee1e99cbd620f973d96c2faf44470a26.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/ee1e99cbd620f973d96c2faf44470a26.mp4&quot;,&quot;extension&quot;:&quot;mp4&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/ee1e99cbd620f973d96c2faf44470a26.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;}],&quot;extras\/corridor.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/931315c245f001573fa5823a92b25746.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/931315c245f001573fa5823a92b25746.mp4&quot;,&quot;extension&quot;:&quot;mp4&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/931315c245f001573fa5823a92b25746.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;}],&quot;extras\/priest_optimized.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/f938a94d6d5dc1d03c36e74db5b0523f.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/f938a94d6d5dc1d03c36e74db5b0523f.mp4&quot;,&quot;extension&quot;:&quot;mp4&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/f938a94d6d5dc1d03c36e74db5b0523f.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;}],&quot;extras\/corridor_statue_optimized.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/8fe26df595cc75edf32f5dd4724662af.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/8fe26df595cc75edf32f5dd4724662af.mp4&quot;,&quot;extension&quot;:&quot;mp4&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;},{&quot;urlPart&quot;:&quot;extras\/8fe26df595cc75edf32f5dd4724662af.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;600&quot;,&quot;height&quot;:&quot;338&quot;}],&quot;extras\/becomingdetective4.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/b9ba1b2c00471d3ed441f19fd34cfcd7.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/b9ba1b2c00471d3ed441f19fd34cfcd7.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/b9ba1b2c00471d3ed441f19fd34cfcd7.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/entermanor3.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/b7e719332fdc806bdbe3ad2603e604c4.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/b7e719332fdc806bdbe3ad2603e604c4.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/b7e719332fdc806bdbe3ad2603e604c4.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/uncoversecrets3.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/e52f575ce5218fdd29b656f8a4f569eb.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/e52f575ce5218fdd29b656f8a4f569eb.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/e52f575ce5218fdd29b656f8a4f569eb.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/saveevelyn4.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/4896a1980887db74b30a41984a78984d.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/4896a1980887db74b30a41984a78984d.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/4896a1980887db74b30a41984a78984d.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/becomingdetective5.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/ea961a9fca8f578a636ed521b0460813.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/ea961a9fca8f578a636ed521b0460813.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/ea961a9fca8f578a636ed521b0460813.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/entermanor4.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/saveevelyn5.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/uncoversecrets4.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/ed-becomingdetective5.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/fd7f3ce30580252f639a14377d764707.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;520&quot;,&quot;height&quot;:&quot;204&quot;}],&quot;extras\/becomingdetective_plain.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/618ac46988b29004650cb0f6386cb471.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/618ac46988b29004650cb0f6386cb471.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/618ac46988b29004650cb0f6386cb471.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/entermanor_plain.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/uncoversecrets_plain.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/saveevelyn_plain.gif&quot;:[{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/lnc_laurels_2025.png&quot;:[{&quot;urlPart&quot;:&quot;extras\/55803a2e10f5f088d18a438776283f1a.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;800&quot;,&quot;height&quot;:&quot;541&quot;}],&quot;extras\/creative_europe_logo&quot;:[{&quot;urlPart&quot;:&quot;extras\/9125585b09245a2946604f8fa9d085ec.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;800&quot;,&quot;height&quot;:&quot;209&quot;}],&quot;extras\/becomethedetective&quot;:[{&quot;urlPart&quot;:&quot;extras\/906c33cb9c57187b8de6dabe8f644193.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/906c33cb9c57187b8de6dabe8f644193.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/906c33cb9c57187b8de6dabe8f644193.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/raceagainsttime&quot;:[{&quot;urlPart&quot;:&quot;extras\/7b3d73fba9e80623caba57622e352eaa.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/7b3d73fba9e80623caba57622e352eaa.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/7b3d73fba9e80623caba57622e352eaa.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;430&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/becomethedetective_2&quot;:[{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_becomethedetective_2&quot;:[{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/82cc6998e3f7298017ee58a556cdb350.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_saveevelyn5&quot;:[{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/f6da7c4a0fb6e215d1bac1fa6e9d5f28.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_entermanor4&quot;:[{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/5f8a9c181cea7e8a681f9c26c0c638a7.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_uncoversecrets4&quot;:[{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/bad3e83cf30e511819266c4654809007.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_raceagainsttime_2&quot;:[{&quot;urlPart&quot;:&quot;extras\/a536e81e5eca3693cd51502e34aa8be3.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/a536e81e5eca3693cd51502e34aa8be3.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/a536e81e5eca3693cd51502e34aa8be3.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_becomethedetective_plain&quot;:[{&quot;urlPart&quot;:&quot;extras\/1fca7c18f1a1451dcc9c0acd1bfa3a43.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/1fca7c18f1a1451dcc9c0acd1bfa3a43.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/1fca7c18f1a1451dcc9c0acd1bfa3a43.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_raceagainsttime_plain&quot;:[{&quot;urlPart&quot;:&quot;extras\/c5a520bf28edadb1342e19ab1800d8a1.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/c5a520bf28edadb1342e19ab1800d8a1.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/c5a520bf28edadb1342e19ab1800d8a1.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_saveevelyn_plain&quot;:[{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/5dcfcf35fd0ff9224f90ed9583d5af51.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_entermanor_plain&quot;:[{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/153fd4f67bd3b9051ec8bdd3d4787c1b.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/new_uncoversecrets_plain&quot;:[{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;},{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/395621bf9ba9cdd2fcf640ba802c45eb.webp&quot;,&quot;extension&quot;:&quot;webp&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;616&quot;,&quot;height&quot;:&quot;205&quot;}],&quot;extras\/winner2025_best&quot;:[{&quot;urlPart&quot;:&quot;extras\/a2749cc715a2d5f569d5661c0bc06dc1.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:&quot;extras_big\/a2749cc715a2d5f569d5661c0bc06dc1.webp&quot;,&quot;width&quot;:&quot;1560&quot;,&quot;height&quot;:&quot;1741&quot;}],&quot;extras\/asff25_offical_selection_laurels_wht&quot;:[{&quot;urlPart&quot;:&quot;extras\/47c832a0eb465156a8e685bd8ea64c83.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:&quot;extras_big\/47c832a0eb465156a8e685bd8ea64c83.webp&quot;,&quot;width&quot;:&quot;1560&quot;,&quot;height&quot;:&quot;1105&quot;}],&quot;extras\/2025-nyx-game-awards-gold-winner-badge&quot;:[{&quot;urlPart&quot;:&quot;extras\/35b2469cd563ac01336a839cf836a663.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1560&quot;,&quot;height&quot;:&quot;2206&quot;}],&quot;extras\/adventurex_2025_laurels_light&quot;:[{&quot;urlPart&quot;:&quot;extras\/092cd1dde25fc6586fa1d55eefcf2041.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:&quot;extras_big\/092cd1dde25fc6586fa1d55eefcf2041.webp&quot;,&quot;width&quot;:&quot;1560&quot;,&quot;height&quot;:&quot;638&quot;}],&quot;extras\/imirt_irishgameawards_2026_bestgamedesign&quot;:[{&quot;urlPart&quot;:&quot;extras\/d728634d93b1207a1ac7c7329ac5f9ea.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1290&quot;,&quot;height&quot;:&quot;1008&quot;}],&quot;extras\/imirt_irishgameawards_2026_gameoftheyear&quot;:[{&quot;urlPart&quot;:&quot;extras\/26cc94b7bb4e1515cdedc3684592b812.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1290&quot;,&quot;height&quot;:&quot;1008&quot;}],&quot;extras\/imirt_irishgameawards_2026_bestgameaudio_runnerup&quot;:[{&quot;urlPart&quot;:&quot;extras\/b2128a35bb5ae5896eeca6a4a165c7fb.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1290&quot;,&quot;height&quot;:&quot;1008&quot;}],&quot;extras\/imirt_irishgameawards_2026_beststorytelling_runnerup&quot;:[{&quot;urlPart&quot;:&quot;extras\/eb9c13842fe188a14dd30d03bf4ea763.avif&quot;,&quot;extension&quot;:&quot;avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1290&quot;,&quot;height&quot;:&quot;1008&quot;}],&quot;extras\/steam_enterthemanor_1500x263&quot;:[{&quot;urlPart&quot;:&quot;extras\/29e3c1057f363a39d6775211321380f0.poster.avif&quot;,&quot;extension&quot;:&quot;poster.avif&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1170&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/29e3c1057f363a39d6775211321380f0.mp4&quot;,&quot;extension&quot;:&quot;mp4&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1170&quot;,&quot;height&quot;:&quot;204&quot;},{&quot;urlPart&quot;:&quot;extras\/29e3c1057f363a39d6775211321380f0.webm&quot;,&quot;extension&quot;:&quot;webm&quot;,&quot;alt_text&quot;:null,&quot;urlPartBig&quot;:null,&quot;width&quot;:&quot;1170&quot;,&quot;height&quot;:&quot;204&quot;}]}" data-store_user_config="{&quot;webapi_token&quot;:&quot;&quot;,&quot;shoppingcart&quot;:null,&quot;originating_navdata&quot;:{&quot;domain&quot;:&quot;store.steampowered.com&quot;,&quot;controller&quot;:&quot;default&quot;,&quot;method&quot;:&quot;default&quot;,&quot;submethod&quot;:&quot;&quot;,&quot;feature&quot;:&quot;spotlight&quot;,&quot;depth&quot;:1,&quot;countrycode&quot;:&quot;TR&quot;,&quot;webkey&quot;:null,&quot;is_client&quot;:false,&quot;curator_data&quot;:null,&quot;is_likely_bot&quot;:false,&quot;is_utm&quot;:false},&quot;wishlist_item_count&quot;:0}"></div><div id="application_root"></div><script>window.g_wapit="";</script><link href="https://store.fastly.steamstatic.com/public/css/applications/store/main.css?v=vrQwKJl8sCLO&amp;l=english&amp;_cdn=fastly" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/manifest.js?v=E5skr7jlpaKf&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/libraries~b28b7af69.js?v=LA12YAm6IwUD&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript" src="https://store.fastly.steamstatic.com/public/javascript/applications/store/main.js?v=ZK5wfAAYbnYO&amp;l=english&amp;_cdn=fastly"></script>
+<script type="text/javascript">
+	var g_AccountID = 0;
+	var g_Languages = ["english"];
+	var g_sessionID = "496b839beda7791650a64f88";
+	var g_ServerTime = 1789722986;
+	var g_bUseNewCartAPI = true;
+
+			$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
+	
+	
+	if ( typeof GStoreItemData != 'undefined' )
+	{
+		GStoreItemData.AddNavParams({
+			__page_default: "1_5_9_",
+			__page_default_obj: {"domain":"store.steampowered.com","controller":"application","method":"app","submethod":"","feature":null,"depth":null,"countrycode":"TR","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":null},
+			__originating_obj: {"domain":"store.steampowered.com","controller":"default","method":"default","submethod":"","feature":"spotlight","depth":1,"countrycode":"TR","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":false},
+			storemenu_recommendedtags: "1_5_9__17"		});
+	}
+
+	if ( typeof GDynamicStore != 'undefined' )
+	{
+		GDynamicStore.Init(0, false, "", {"primary_language":null,"secondary_languages":null,"platform_windows":null,"platform_mac":null,"platform_linux":null,"timestamp_updated":null,"hide_store_broadcast":null,"review_score_preference":null,"timestamp_content_descriptor_preferences_updated":null,"provide_deck_feedback":null,"additional_languages":null,"game_frame_rate_reporting":null,"disable_microtrailers":null,"disable_animated_marketing":null}, 'TR',
+			{"bNoDefaultDescriptors":false});
+		GStoreItemData.SetCurrencyFormatter(function( nValueInCents, bWholeUnitsOnly ) { var fnBase = function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ","); return format; };var strNegativeSymbol = '';	if ( nValueInCents < 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + "$" + fmt( nValueInCents, bWholeUnitsOnly );}; return fnBase( nValueInCents, bWholeUnitsOnly ) + ' USD'; });
+		GStoreItemData.SetCurrencyMinPriceIncrement(1);
+	}
+</script>
+
+<script type="text/javascript">
+	var g_bUseOldReviewDisplay = false;
+
+	var g_eDiscoveryQueueType = 0;
+
+	GStoreItemData.AddStoreItemDataSet(
+		{"rgApps":{"739630":{"name":"Phasmophobia","url_name":"Phasmophobia","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"949\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$9.49 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/739630\/0268c77668d5643d3f2c19e67e92e252fdfe6c7f\/capsule_184x69.jpg?t=1789487643","os_windows":true,"vr_htcvive":true,"vr_oculusrift":true,"vr_windowsmr":true,"early_access":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[43687366,33026989]},"2713000":{"name":"Resonance: A Plague Tale Legacy","url_name":"Resonance_A_Plague_Tale_Legacy","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"3499\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$34.99 USD<\/div><\/div><\/div>","descids":[2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2713000\/0d06636f2a2c3dcf0b473c91212f36a0b3e2e1a8\/capsule_184x69.jpg?t=1788365423","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true,"creator_clan_ids":[21394]},"3636770":{"name":"Servant of the Lake","url_name":"Servant_of_the_Lake","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"499\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$4.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/3636770\/c7258556e7065e6031ac6bb9bd8c255bdfd64f56\/capsule_184x69.jpg?t=1787167955","os_windows":true,"os_macos":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33593611]},"541570":{"name":"Sally Face - Episode One","url_name":"Sally_Face__Episode_One","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"199\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$1.99 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/541570\/capsule_184x69.jpg?t=1787576437","os_windows":true,"os_macos":true,"os_linux":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33151467]},"2677660":{"name":"Indiana Jones and the Great Circle","url_name":"Indiana_Jones_and_the_Great_Circle","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"4299\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$42.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2677660\/13f13e9124e41f9b931d2f286f4012cb9444c853\/capsule_184x69.jpg?t=1778168392","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33028765]},"1721470":{"name":"Poppy Playtime","url_name":"Poppy_Playtime","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"0\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">Free To Play<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1721470\/2d2d1f622b49c8589d67d294e790507715169220\/capsule_184x69.jpg?t=1789515320","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true},"753640":{"name":"Outer Wilds","url_name":"Outer_Wilds","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1299\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$12.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/753640\/c3b501a7177b6c902c69565366d4c5f4b82f23fe\/capsule_184x69.jpg?t=1785424341","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33023506]},"110800":{"name":"L.A. Noire","url_name":"LA_Noire","discount_block":"<div class=\"discount_block \" data-price-final=\"599\" data-bundlediscount=\"0\" data-discount=\"70\" role=\"link\" aria-label=\"70% off. $19.99 normally, discounted to $5.99 USD\"><div class=\"discount_pct\">-70%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$19.99<\/div><div class=\"discount_final_price\">$5.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/110800\/capsule_184x69.jpg?t=1781132798","os_windows":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"status_string":"Today\u2019s Featured Deal","creator_clan_ids":[1541443]},"632470":{"name":"Disco Elysium - The Final Cut","url_name":"Disco_Elysium__The_Final_Cut","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1849\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$18.49 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/632470\/e2afca9fe9b3e70e0da58b3006c893f6d07d10d6\/capsule_184x69.jpg?t=1780913406","os_windows":true,"os_macos":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[45415238]},"379430":{"name":"Kingdom Come: Deliverance","url_name":"Kingdom_Come_Deliverance","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"2299\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$22.99 USD<\/div><\/div><\/div>","descids":[1,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/379430\/fa82785b12a0eecc4c37668f746feead770b9379\/capsule_184x69.jpg?t=1770998376","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[32942828,4283115,40511350]},"1341290":{"name":"We Were Here Forever","url_name":"We_Were_Here_Forever","discount_block":"<div class=\"discount_block \" data-price-final=\"371\" data-bundlediscount=\"0\" data-discount=\"60\" role=\"link\" aria-label=\"60% off. $9.29 normally, discounted to $3.71 USD\"><div class=\"discount_pct\">-60%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$9.29<\/div><div class=\"discount_final_price\">$3.71 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1341290\/7176c2e34530b2d6996fbf000c87cae669f1d420\/capsule_184x69.jpg?t=1764331788","os_windows":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[33033900,28339062]},"2416450":{"name":"MOUSE: P.I. For Hire","url_name":"MOUSE_PI_For_Hire","discount_block":"<div class=\"discount_block \" data-price-final=\"1199\" data-bundlediscount=\"0\" data-discount=\"20\" role=\"link\" aria-label=\"20% off. $14.99 normally, discounted to $11.99 USD\"><div class=\"discount_pct\">-20%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$14.99<\/div><div class=\"discount_final_price\">$11.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2416450\/772ae02fc6ab5734887bc6621ed5cf7bcc739050\/capsule_184x69.jpg?t=1789672242","os_windows":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[44089455,718610]},"3949550":{"name":"1666: Amsterdam","url_name":"1666_Amsterdam","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1449\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$14.49 USD<\/div><\/div><\/div>","descids":[1,2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/3949550\/7a4619bcd473bc51b4cad9d18b3624ccac70e96d\/capsule_184x69.jpg?t=1789047112","os_windows":true,"early_access":true,"recent_early_access":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true},"960910":{"name":"Heavy Rain","url_name":"Heavy_Rain","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1599\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$15.99 USD<\/div><\/div><\/div>","descids":[1,2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/960910\/capsule_184x69.jpg?t=1675271942","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true,"creator_clan_ids":[37700027]},"2825530":{"name":"Beholder: Conductor","url_name":"Beholder_Conductor","discount_block":"<div class=\"discount_block \" data-price-final=\"233\" data-bundlediscount=\"0\" data-discount=\"70\" role=\"link\" aria-label=\"70% off. $7.79 normally, discounted to $2.33 USD\"><div class=\"discount_pct\">-70%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$7.79<\/div><div class=\"discount_final_price\">$2.33 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2825530\/69a6353ef6a79feeb45d5f6dbf95234e8e344e6f\/capsule_184x69.jpg?t=1784611423","os_windows":true,"os_macos":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[32941116]},"2879840":{"name":"Escape Simulator 2","url_name":"Escape_Simulator_2","discount_block":"<div class=\"discount_block \" data-price-final=\"629\" data-bundlediscount=\"0\" data-discount=\"30\" role=\"link\" aria-label=\"30% off. $8.99 normally, discounted to $6.29 USD\"><div class=\"discount_pct\">-30%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$8.99<\/div><div class=\"discount_final_price\">$6.29 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2879840\/fd928d2bf3742a99f5dab8aa0ad7d333f496571b\/capsule_184x69_alt_assets_2.jpg?t=1789460369","os_windows":true,"os_macos":true,"vr_htcvive":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[32969178]},"1931770":{"name":"Chants of Sennaar","url_name":"Chants_of_Sennaar","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1399\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$13.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1931770\/capsule_184x69.jpg?t=1774006124","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[21394]},"865360":{"name":"We Were Here Together","url_name":"We_Were_Here_Together","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"729\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$7.29 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/865360\/ddf36724716bf8b6f3b09104ca412e49da6dbce4\/capsule_184x69.jpg?t=1764330773","os_windows":true,"os_macos":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33033900,28339062]},"413420":{"name":"Danganronpa 2: Goodbye Despair","url_name":"Danganronpa_2_Goodbye_Despair","discount_block":"<div class=\"discount_block \" data-price-final=\"524\" data-bundlediscount=\"0\" data-discount=\"50\" role=\"link\" aria-label=\"50% off. $10.49 normally, discounted to $5.24 USD\"><div class=\"discount_pct\">-50%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$10.49<\/div><div class=\"discount_final_price\">$5.24 USD<\/div><\/div><\/div>","descids":[1,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/413420\/capsule_184x69.jpg?t=1781085654","os_windows":true,"os_macos":true,"os_linux":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[32618574,33971053]},"1435790":{"name":"Escape Simulator","url_name":"Escape_Simulator","discount_block":"<div class=\"discount_block \" data-price-final=\"449\" data-bundlediscount=\"0\" data-discount=\"50\" role=\"link\" aria-label=\"50% off. $8.99 normally, discounted to $4.49 USD\"><div class=\"discount_pct\">-50%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$8.99<\/div><div class=\"discount_final_price\">$4.49 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1435790\/45a7f618deb1486f4819e27d4b0d007fdcb5f4f3\/capsule_184x69.jpg?t=1782813501","os_windows":true,"os_macos":true,"os_linux":true,"vr_htcvive":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[32969178]},"567640":{"name":"Danganronpa V3: Killing Harmony","url_name":"Danganronpa_V3_Killing_Harmony","discount_block":"<div class=\"discount_block \" data-price-final=\"569\" data-bundlediscount=\"0\" data-discount=\"70\" role=\"link\" aria-label=\"70% off. $18.99 normally, discounted to $5.69 USD\"><div class=\"discount_pct\">-70%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$18.99<\/div><div class=\"discount_final_price\">$5.69 USD<\/div><\/div><\/div>","descids":[1,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/567640\/capsule_184x69.jpg?t=1750134757","os_windows":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[32618574,33971053]},"1949030":{"name":"Sherlock Holmes The Awakened","url_name":"Sherlock_Holmes_The_Awakened","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"2399\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$23.99 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1949030\/capsule_184x69.jpg?t=1787840980","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[1205865,36390721]},"4905780":{"name":"The Apothecary Diaries: The False Imperial Brother","url_name":"The_Apothecary_Diaries_The_False_Imperial_Brother","discount_block":"<div class=\"discount_block empty \"><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/4905780\/ebc1b117dd9fe54ff8f1ff88753bab45c763375e\/capsule_184x69.jpg?t=1789004357","os_windows":true,"has_live_broadcast":false,"coming_soon":true,"release_date_string":"Available: To be announced","localized":true,"localized_english":true,"creator_clan_ids":[33016879]},"1684350":{"name":"The Thaumaturge","url_name":"The_Thaumaturge","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1799\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$17.99 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1684350\/448960e01c761c4b9a4046ee47b44b409c813313\/capsule_184x69.jpg?t=1787664401","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[43475080,32989971]},"282140":{"name":"SOMA","url_name":"SOMA","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1499\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$14.99 USD<\/div><\/div><\/div>","descids":[1,2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/282140\/c0bc2d011b98cdcd7c4c57f140a604da13014932\/capsule_184x69.jpg?t=1786607913","os_windows":true,"os_macos":true,"os_linux":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true,"creator_clan_ids":[615744]},"2475490":{"name":"Mouthwashing","url_name":"Mouthwashing","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"729\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$7.29 USD<\/div><\/div><\/div>","descids":[1,2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2475490\/capsule_184x69.jpg?t=1786624390","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true,"creator_clan_ids":[44848652,40619234]},"3751230":{"name":"Danganronpa 2x2","url_name":"Danganronpa_2x2","discount_block":"<div class=\"discount_block empty \"><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/3751230\/407cd85c95ddfdfd34f71354943c44d57f7c78c3\/capsule_184x69.jpg?t=1789440520","os_windows":true,"has_live_broadcast":false,"coming_soon":true,"release_date_string":"Available: 2027","coming_soon_string":"Coming 2027","localized":true,"localized_english":true,"creator_clan_ids":[44797385,32618574,33971053]},"1450830":{"name":"At Dead Of Night","url_name":"At_Dead_Of_Night","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"849\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$8.49 USD<\/div><\/div><\/div>","descids":[2,5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1450830\/aa1afb3bfcfbbdcf28430ec391141b14e3f3f447\/capsule_184x69.jpg?t=1759702068","os_windows":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"has_adult_content_violence":true,"creator_clan_ids":[44990131]},"1696770":{"name":"The Mermaid Mask","url_name":"The_Mermaid_Mask","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1099\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$10.99 USD<\/div><\/div><\/div>","descids":[],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1696770\/94f17f74210539cf3f89afc6936d8a7f75b053e9\/capsule_184x69.jpg?t=1784233084","os_windows":true,"os_macos":true,"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33020920]},"1946700":{"name":"Layers of Fear","url_name":"Layers_of_Fear","discount_block":"<div class=\"discount_block \" data-price-final=\"535\" data-bundlediscount=\"0\" data-discount=\"65\" role=\"link\" aria-label=\"65% off. $15.29 normally, discounted to $5.35 USD\"><div class=\"discount_pct\">-65%<\/div><div class=\"discount_prices\"><div class=\"discount_original_price\">$15.29<\/div><div class=\"discount_final_price\">$5.35 USD<\/div><\/div><\/div>","descids":[5],"small_capsulev5":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1946700\/5e69e8d47cb8624882299ffabacde62428a14fe7\/capsule_184x69.jpg?t=1773944498","os_windows":true,"os_macos":true,"has_live_broadcast":false,"discount":true,"localized":true,"localized_english":true,"creator_clan_ids":[35624221,43212894]}},"rgPackages":{"489646":{"name":"The Seance of Blake Manor","url_name":"The_Seance_of_Blake_Manor","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1049\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$10.49 USD<\/div><\/div><\/div>","descids":[5],"tiny_capsule":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/f996db16dd5305969f0c28e2cdb44b240a56e4f8\/capsule_sm_120.jpg?t=1788513685","tags":["Supernatural","Detective","Singleplayer","Puzzle","Mystery"],"tagids":[10808,5613,4182,1664,5716,4166],"os_windows":true,"os_linux":true,"appids":[1395520],"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33396972,28981418]},"735156":{"name":"Esoteric Ebb","url_name":"Esoteric_Ebb","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1249\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$12.49 USD<\/div><\/div><\/div>","descids":[],"tiny_capsule":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/2057760\/0c8f3c4b30a022b6ce816096db0dfd385199226b\/capsule_sm_120.jpg?t=1786087309","tags":["Story Rich","Choices Matter","RPG","CRPG","Isometric"],"tagids":[1742,6426,122,4474,5851,4182],"os_windows":true,"appids":[2057760],"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[44693986,28981418,44693990]},"695944":{"name":"Chants of Sennaar","url_name":"Chants_of_Sennaar","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"1399\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$13.99 USD<\/div><\/div><\/div>","descids":[],"tiny_capsule":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1931770\/capsule_sm_120.jpg?t=1774006124","tags":["Puzzle","Adventure","Singleplayer","Indie","Colorful"],"tagids":[1664,21,4182,492,4305,24003],"os_windows":true,"appids":[1931770],"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[21394]},"406432":{"name":"The Excavation of Hob's Barrow","url_name":"The_Excavation_of_Hobs_Barrow","discount_block":"<div class=\"discount_block  no_discount\" data-price-final=\"799\" data-bundlediscount=\"0\" data-discount=\"0\"><div class=\"discount_prices\"><div class=\"discount_final_price\">$7.99 USD<\/div><\/div><\/div>","descids":[],"tiny_capsule":"https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1182310\/capsule_sm_120.jpg?t=1788988491","tags":["Point & Click","Adventure","Horror","Pixel Graphics","Female Protagonist"],"tagids":[1698,21,1667,3964,7208,1664],"os_windows":true,"os_macos":true,"os_linux":true,"appids":[1182310],"has_live_broadcast":false,"localized":true,"localized_english":true,"creator_clan_ids":[33502503,33366650]}},"rgBundles":[]}	);
+	GStoreItemData.AddNavParams( {
+		recommended: "1_5_9__300",
+		recommend_franchise: "1_5_9__316",
+		more_from_franchise: "1_5_9__317",
+		bundle_component_preview: "1_5_9__412",
+		recommended_ranked_played: "1_5_9__862",
+	} );
+
+	// Temporary code to allow React to move focus to elements that are non-React.
+	function MoveFocusToId( id )
+	{
+		$el = $J( id );
+		if ( $el.length )
+		{
+			$el[0].focus();
+		}
+	}
+	window.MoveFocusToId = MoveFocusToId;
+
+	$J( function() {
+		var $Expander = $J('#devnotes_expander');
+		if( $Expander.length && $Expander.height() < parseInt( $Expander.css('max-height') ) ) {
+			$J('#devnotes_more').hide();
+		}
+
+		CollapseLongStrings( '.dev_row .summary.column' );
+
+				InitAutocollapse();
+		InitHorizontalAutoSliders();
+
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_right', $J('#responsive_apppage_details_right_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_details_left', $J('#responsive_apppage_details_left_ctn') );
+		Responsive_ReparentItemsInResponsiveMode( '.responsive_apppage_reviewblock', $J('#responsive_apppage_reviewblock_ctn') );
+
+		//hack to workaround chrome bug
+		$J('#responsive_apppage_reviewblock_ctn' ).css('width', '100%' );
+		window.setTimeout( function() { $J('#responsive_apppage_reviewblock_ctn').css('width', '' ); }, 1 );
+
+				var watcher = new CScrollOffsetWatcher( $J('#app_reviews_hash'), OnLoadReviews, 0 );
+
+		InitPlaytimeFilterSlider();
+
+		// on Tablet wait to do this when the window is fully loaded - see OnPageLoaded()
+		ReparentAppLandingPageForSmallScreens();
+
+		
+			var usability = InitUsabilityTracker( "https:\/\/store.steampowered.com\/app\/usabilitytracking\/1395520" );
+		usability.ScheduleUpload();
+	
+		
+		SetupReviewFilterMenus();
+
+			} );
+
+	
+	function OpenTagModal()
+	{
+		ShowAppTagModal( 1395520 );
+	}
+
+</script>
+
+<div class="game_page_background game" data-miniprofile-appid=1395520>
+
+	
+			<div class="banner_open_in_steam">
+			<div data-featuretarget="open-in-desktop-client"></div>
+		</div>
+	
+	
+	<div  data-featuretarget="apppage-store-browse-cache" data-props="{&quot;rgPayloads&quot;:[{&quot;dataRequestStoreItems&quot;:null,&quot;rgStoreItems&quot;:[]}]}"></div><div  data-featuretarget="apppage-gameinterest-cache" data-props="{&quot;appid&quot;:1395520,&quot;userInterest&quot;:{&quot;owned&quot;:null,&quot;wishlist&quot;:null,&quot;ignored&quot;:null,&quot;following&quot;:null,&quot;in_queues&quot;:[],&quot;queues_with_skip&quot;:[],&quot;queue_items_remaining&quot;:[],&quot;queue_items_next_appid&quot;:[],&quot;temporarily_owned&quot;:null,&quot;queues&quot;:[],&quot;ignored_reason&quot;:null,&quot;beta_status&quot;:null}}"></div>
+	<!-- page width wrapper: gutters, max width and the horizontal bleed variable -->
+	<div id="tabletGrid" class="tablet_grid">
+
+	<div class="page_content_ctn" itemscope itemtype="http://schema.org/Product">
+
+		<meta itemprop="image" content="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/f996db16dd5305969f0c28e2cdb44b240a56e4f8/capsule_231x87.jpg?t=1788513685">
+					<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+				<meta itemprop="priceCurrency" content="USD">
+				<meta itemprop="price" content="10.49">
+							</div>
+		
+		<div class="page_top_area">
+						<div class="game_page_background_ctn game">
+				<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/852143f3a85c5178a92d60f3d067d7f2021907da/page_bg_raw.jpg?t=1788513685" class="gameColor" alt="">
+				<img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/852143f3a85c5178a92d60f3d067d7f2021907da/page_bg_raw.jpg?t=1788513685" class="gameTexture" alt="">
+			</div>
+
+		<div class="page_title_area game_title_area page_content" data-gpnav="columns">
+			<div class="breadcrumbs" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+								<div class="blockbg">
+											<a href="https://store.steampowered.com/search/?term=&snr=1_5_9__205">All Games</a>
+																					&gt; <a href="https://store.steampowered.com/genre/Adventure/?snr=1_5_9__205">Adventure Games</a>
+																										&gt; <a href="https://store.steampowered.com/app/1395520/?snr=1_5_9__205"><span itemprop="name">The Séance of Blake Manor</span></a>
+									</div>
+				<div style="clear: left;"></div>
+							</div>
+						
+
+<div class="apphub_HomeHeaderContent">
+
+	<div class="apphub_HeaderStandardTop">
+		                      <div class="apphub_OtherSiteInfo">
+
+                    
+                <a class="btnv6_blue_hoverfade btn_medium" href="https://steamcommunity.com/app/1395520">
+                    <span>Community Hub</span>
+                </a>
+            </div>
+         		<div class="apphub_AppIcon"><img src="https://shared.akamai.steamstatic.com/community_assets/images/apps/1395520/b7602bf81698c807ec8fbf228d174ca3304e5135.jpg"><div class="overlay"></div></div>
+		<div id="appHubAppName" class="apphub_AppName" role="heading" aria-level="1">The Séance of Blake Manor</div>
+		<div style="clear: both"></div>
+
+	</div>
+
+</div>
+
+											</div>
+		<div style="clear: left;"></div>
+
+
+		<div class="block game_media_and_summary_ctn">
+						<script type="text/javascript">
+				var strRequiredVersion = "9";
+				if ( typeof( g_bIsOnMac ) != 'undefined' && g_bIsOnMac )
+					strRequiredVersion = "10.1.0";
+
+			</script>
+
+			
+			<div class="game_background_glow">
+				
+
+				
+								
+				
+					
+								<div id="page_header_img" class="responsive_page_header_img" style="display: none;">
+					<img style="width:100%;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/09df209c551539dc76679ca24b079b5771c2c281/header.jpg?t=1788513685" alt="The Séance of Blake Manor">
+				</div>
+
+				<div class="block_content page_content" id="broadcast">
+
+				
+				</div>
+				<div class="block_content page_content" id="game_highlights" data-panel="{&quot;navKey&quot;:&quot;game_highlights&quot;,&quot;flow-children&quot;:&quot;column&quot;}" >
+
+				<div class="rightcol" data-panel="{&quot;flow-children&quot;:&quot;column&quot;,&quot;navKey&quot;:&quot;rightcol&quot;}">
+					<div class="glance_ctn">
+												<div id="gameHeaderCtn" class="game_header_ctn">
+							<div id="gameHeaderImageCtn" class="game_header_image_ctn">
+								<img class="game_header_image_full" alt="" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/09df209c551539dc76679ca24b079b5771c2c281/header.jpg?t=1788513685">
+
+																<div id="appHubAppName_responsive" style="display: none;" class="apphub_AppName">The Séance of Blake Manor</div>
+								<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="appHeaderGridContainer" class="app_header_grid_container" style="display:none">
+
+																			<div class="grid_label">Developer</div>
+										<div class="grid_content">
+											<a href="https://store.steampowered.com/developer/spookydoorway?snr=1_5_9__400">Spooky Doorway</a>										</div>
+																																							<div class="grid_label">Publisher</div>
+											<div class="grid_content">
+												<a href="https://store.steampowered.com/publisher/rawfury?snr=1_5_9__400">Raw Fury</a>											</div>
+																			
+																			<div class="grid_label grid_date">Released</div>
+										<div class="grid_content grid_date">
+											27 Oct, 2025										</div>
+																	</div>
+							</div>
+															<div class="game_description_snippet">
+									The Séance of Blake Manor is a supernatural detective mystery, set in 1897 Ireland, where you investigate the disappearance of Evelyn Deane in a remote hotel full of secrets and other-worldly occurrences.								</div>
+													</div> 												<div id="glanceMidCtn" class="glance_mid_ctn">
+						<div class="glance_ctn_responsive_left">
+																													<div id="userReviews" class="user_reviews">
+
+																											<a class="user_reviews_summary_row" href="#app_reviews_hash" data-tooltip-html="93% of the 180 user reviews in the last 30 days are positive.">
+										<div class="subtitle column">Recent Reviews:</div>
+										<div class="summary column">
+											<span class="game_review_summary positive">Very Positive</span>
+																							<span class="responsive_hidden">
+													(180)
+												</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 93% of the 180 user reviews in the last 30 days are positive.											</span>
+										</div>
+									</a>
+									
+																		<a class="user_reviews_summary_row" href="#app_reviews_hash" data-tooltip-html="94% of the 3,132 user reviews in your language are positive" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+										<div class="subtitle column all">
+											English Reviews:										</div>
+										<div class="summary column">
+																					<span class="game_review_summary positive" itemprop="description">Very Positive</span>
+																							<span class="responsive_hidden">
+													(3,132)
+												</span>
+																																	<span class="nonresponsive_hidden responsive_reviewdesc">
+												- 94% of the 3,132 user reviews for this game are positive.											</span>
+
+											<!-- microdata -->
+											<meta itemprop="reviewCount" content="3132">
+											<meta itemprop="ratingValue" content="9">
+											<meta itemprop="bestRating" content="10">
+											<meta itemprop="worstRating" content="1">
+																				</div>
+									</a>
+								</div>
+							
+															<div class="release_date">
+									<div class="subtitle column">Release Date:</div>
+									<div class="date">27 Oct, 2025</div>
+								</div>
+							
+																						<div class="dev_row">
+									<div class="subtitle column">Developer:</div>
+									<div class="summary column" id="developers_list">
+										<a href="https://store.steampowered.com/developer/spookydoorway?snr=1_5_9__2000">Spooky Doorway</a>									</div>
+								</div>
+							
+																								<div class="dev_row">
+										<div class="subtitle column">Publisher:</div>
+										<div class="summary column">
+										<a href="https://store.steampowered.com/publisher/rawfury?snr=1_5_9__2000">Raw Fury</a>										</div>
+									</div>
+															
+																				</div>
+
+						<div id="glanceCtnResponsiveRight" class="glance_ctn_responsive_right" data-panel="{&quot;navKey&quot;:&quot;glanceCtnResponsiveRight&quot;,&quot;flow-children&quot;:&quot;column&quot;}" >
+																								<!-- when the javascript runs, it will set these visible or not depending on what fits in the area -->
+																		<div class="responsive_block_header">Tags</div>
+									<div class="glance_tags_ctn popular_tags_ctn" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+										<div class="glance_tags_label">Popular user-defined tags for this product:</div>
+										<div data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" class="glance_tags popular_tags" data-appid="1395520">
+											<a href="https://store.steampowered.com/tags/en/Supernatural/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Supernatural												</a><a href="https://store.steampowered.com/tags/en/Detective/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Detective												</a><a href="https://store.steampowered.com/tags/en/Singleplayer/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Singleplayer												</a><a href="https://store.steampowered.com/tags/en/Puzzle/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Puzzle												</a><a href="https://store.steampowered.com/tags/en/Mystery/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Mystery												</a><a href="https://store.steampowered.com/tags/en/Atmospheric/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Atmospheric												</a><a href="https://store.steampowered.com/tags/en/Adventure/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Adventure												</a><a href="https://store.steampowered.com/tags/en/Story%20Rich/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Story Rich												</a><a href="https://store.steampowered.com/tags/en/Indie/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Indie												</a><a href="https://store.steampowered.com/tags/en/Investigation/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Investigation												</a><a href="https://store.steampowered.com/tags/en/Noir/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Noir												</a><a href="https://store.steampowered.com/tags/en/Mythology/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Mythology												</a><a href="https://store.steampowered.com/tags/en/Historical/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Historical												</a><a href="https://store.steampowered.com/tags/en/First-Person/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												First-Person												</a><a href="https://store.steampowered.com/tags/en/Word%20Game/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Word Game												</a><a href="https://store.steampowered.com/tags/en/Dark/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Dark												</a><a href="https://store.steampowered.com/tags/en/Choices%20Matter/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Choices Matter												</a><a href="https://store.steampowered.com/tags/en/Narrative/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Narrative												</a><a href="https://store.steampowered.com/tags/en/Horror/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Horror												</a><a href="https://store.steampowered.com/tags/en/Psychological%20Horror/?snr=1_5_9__409" class="app_tag" style="display: none;">
+												Psychological Horror												</a><div class="app_tag add_button" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" onclick="ShowAppTagModal( 1395520 )">+</div>
+										</div>
+									</div>
+																						</div> 																					<div id="reviewsHeader_responsive" style="display: none;" class="responsive_block_header">Reviews</div>
+															<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" id="userReviews_responsive" style="display: none;" class="user_reviews" onclick="window.location='#app_reviews_hash'">
+
+																		<a id="appReviewsAll_responsive" class="user_reviews_summary_row" href="#app_reviews_hash">
+										<div class="subtitle column all">All Reviews:</div>
+										<div class="summary column">
+																					<span class="responsive_reviewdesc_short">
+												<span class="desc_short">English Reviews</span>
+																								<span class="game_review_summary positive">Very Positive</span>
+												(94% of 3,132)
+											</span>
+																				</div>
+									</a>
+
+																											<a id="appReviewsRecent_responsive" class="user_reviews_summary_row" href="#app_reviews_hash" data-tooltip-html="93% of the 180 user reviews in the last 30 days are positive.">
+										<div class="subtitle column">Recent Reviews:</div>
+										<div class="summary column">
+											<span class="responsive_reviewdesc_short">
+												<span class="desc_short">Recent:</span>
+																								<span class="game_review_summary positive">Very Positive</span>
+												(93% of 180)
+											</span>
+										</div>
+									</a>
+																	</div>
+																				</div>
+					</div>
+				</div>
+
+				<div data-panel="{&quot;maintainX&quot;:true,&quot;navKey&quot;:&quot;leftcol&quot;,&quot;flow-children&quot;:&quot;column&quot;}" class="leftcol">
+					<div class="highlight_ctn">
+													<div class="highlight_overflow">
+								<div class="gamehighlight_desktopskeleton">
+									<div class="gamehighlight_desktopskeleton_itemview"></div>
+									<div class="gamehighlight_desktopskeleton_stripitems"></div>
+									<div class="gamehighlight_desktopskeleton_stripscrollbar"></div>
+								</div>
+								<div class="gamehighlight_desktopcarousel" data-featuretarget="gamehighlight-desktopcarousel" data-props="{&quot;appName&quot;:&quot;The S\u00e9ance of Blake Manor&quot;,&quot;trailers&quot;:[{&quot;id&quot;:1,&quot;featured&quot;:true,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257410950\/e3306abb6523b968c5aabcea6464bc011e9a45ab\/movie_232x130.jpg?t=1787904367&quot;,&quot;poster&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257410950\/e3306abb6523b968c5aabcea6464bc011e9a45ab\/movie_600x337.jpg?t=1787904367&quot;,&quot;statsURL&quot;:&quot;https:\/\/store.steampowered.com\/app\/trailerstats\/1395520\/1118846737&quot;,&quot;category&quot;:1,&quot;title&quot;:&quot;Accolades Trailer&quot;,&quot;dashManifests&quot;:[&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/1118846737\/e1a50277ba7fa9a74e2b057a0768c7df1d9ab5d1\/1787903693\/dash_av1.mpd?t=1787904367&quot;,&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/1118846737\/e1a50277ba7fa9a74e2b057a0768c7df1d9ab5d1\/1787903693\/dash_h264.mpd?t=1787904367&quot;],&quot;hlsManifest&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/1118846737\/e1a50277ba7fa9a74e2b057a0768c7df1d9ab5d1\/1787903693\/hls_264_master.m3u8?t=1787904367&quot;},{&quot;id&quot;:2,&quot;featured&quot;:true,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257222994\/e7098314528e66fb86748e1ccd637d588d0f2cbf\/movie_232x130.jpg?t=1761569368&quot;,&quot;poster&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/257222994\/e7098314528e66fb86748e1ccd637d588d0f2cbf\/movie_600x337.jpg?t=1761569368&quot;,&quot;statsURL&quot;:&quot;https:\/\/store.steampowered.com\/app\/trailerstats\/1395520\/797008089&quot;,&quot;category&quot;:1,&quot;title&quot;:&quot;The S\u00e9ance of Blake Manor - Release Trailer&quot;,&quot;dashManifests&quot;:[&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/797008089\/d0d08a053ca125e9824700245392c5edafa55ee1\/1761549602\/dash_av1.mpd?t=1761569368&quot;,&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/797008089\/d0d08a053ca125e9824700245392c5edafa55ee1\/1761549602\/dash_h264.mpd?t=1761569368&quot;],&quot;hlsManifest&quot;:&quot;https:\/\/video.fastly.steamstatic.com\/store_trailers\/1395520\/797008089\/d0d08a053ca125e9824700245392c5edafa55ee1\/1761549602\/hls_264_master.m3u8?t=1761569368&quot;}],&quot;screenshots&quot;:[{&quot;name&quot;:&quot;db877ef9e6733db346770b46d6aca80bf7f87d81_ss_db877ef9e6733db346770b46d6aca80bf7f87d81.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/db877ef9e6733db346770b46d6aca80bf7f87d81\/ss_db877ef9e6733db346770b46d6aca80bf7f87d81.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/db877ef9e6733db346770b46d6aca80bf7f87d81\/ss_db877ef9e6733db346770b46d6aca80bf7f87d81.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/db877ef9e6733db346770b46d6aca80bf7f87d81\/ss_db877ef9e6733db346770b46d6aca80bf7f87d81.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #0&quot;},{&quot;name&quot;:&quot;3633659d431bc9c596b58292c55ba5b4f14a121f_ss_3633659d431bc9c596b58292c55ba5b4f14a121f.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/3633659d431bc9c596b58292c55ba5b4f14a121f\/ss_3633659d431bc9c596b58292c55ba5b4f14a121f.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/3633659d431bc9c596b58292c55ba5b4f14a121f\/ss_3633659d431bc9c596b58292c55ba5b4f14a121f.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/3633659d431bc9c596b58292c55ba5b4f14a121f\/ss_3633659d431bc9c596b58292c55ba5b4f14a121f.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #1&quot;},{&quot;name&quot;:&quot;c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03_ss_c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03\/ss_c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03\/ss_c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03\/ss_c662fd5a8018dbf5e6b8e4762ef1abf66aa9db03.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #2&quot;},{&quot;name&quot;:&quot;ce2bfd2791d483151282a5557f20f3acb13c18eb_ss_ce2bfd2791d483151282a5557f20f3acb13c18eb.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/ce2bfd2791d483151282a5557f20f3acb13c18eb\/ss_ce2bfd2791d483151282a5557f20f3acb13c18eb.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/ce2bfd2791d483151282a5557f20f3acb13c18eb\/ss_ce2bfd2791d483151282a5557f20f3acb13c18eb.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/ce2bfd2791d483151282a5557f20f3acb13c18eb\/ss_ce2bfd2791d483151282a5557f20f3acb13c18eb.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #3&quot;},{&quot;name&quot;:&quot;a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8_ss_a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8\/ss_a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8\/ss_a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8\/ss_a3c39b47d36fb6ae6a8f0eea44f66ec388768fc8.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #4&quot;},{&quot;name&quot;:&quot;145748728334768d451b930d27455b25de1d8b9e_ss_145748728334768d451b930d27455b25de1d8b9e.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/145748728334768d451b930d27455b25de1d8b9e\/ss_145748728334768d451b930d27455b25de1d8b9e.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/145748728334768d451b930d27455b25de1d8b9e\/ss_145748728334768d451b930d27455b25de1d8b9e.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/145748728334768d451b930d27455b25de1d8b9e\/ss_145748728334768d451b930d27455b25de1d8b9e.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #5&quot;},{&quot;name&quot;:&quot;6e1480db9791d9bcc0be84d3a5b76914bfc66396_ss_6e1480db9791d9bcc0be84d3a5b76914bfc66396.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/6e1480db9791d9bcc0be84d3a5b76914bfc66396\/ss_6e1480db9791d9bcc0be84d3a5b76914bfc66396.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/6e1480db9791d9bcc0be84d3a5b76914bfc66396\/ss_6e1480db9791d9bcc0be84d3a5b76914bfc66396.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/6e1480db9791d9bcc0be84d3a5b76914bfc66396\/ss_6e1480db9791d9bcc0be84d3a5b76914bfc66396.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #6&quot;},{&quot;name&quot;:&quot;414d7e692b1470394c01bb6f3eaaa7a8d056ecf8_ss_414d7e692b1470394c01bb6f3eaaa7a8d056ecf8.jpg&quot;,&quot;thumbnail&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/414d7e692b1470394c01bb6f3eaaa7a8d056ecf8\/ss_414d7e692b1470394c01bb6f3eaaa7a8d056ecf8.116x65.jpg?t=1788513685&quot;,&quot;standard&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/414d7e692b1470394c01bb6f3eaaa7a8d056ecf8\/ss_414d7e692b1470394c01bb6f3eaaa7a8d056ecf8.600x338.jpg?t=1788513685&quot;,&quot;full&quot;:&quot;https:\/\/shared.fastly.steamstatic.com\/store_item_assets\/steam\/apps\/1395520\/414d7e692b1470394c01bb6f3eaaa7a8d056ecf8\/ss_414d7e692b1470394c01bb6f3eaaa7a8d056ecf8.1920x1080.jpg?t=1788513685&quot;,&quot;altText&quot;:&quot;Screenshot #7&quot;}]}"></div>
+							</div>
+											</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			</div>
+
+
+			
+			
+
+			
+		</div>
+
+
+		</div>
+			<div class="queue_and_playtime">
+				<div class="game_background_lighten">
+					<div class="game_background_lighten_border"></div>
+				</div>
+									<div class="queue_overflow_ctn">
+													<div class="queue_ctn">
+																<div id="queueActionsCtn" class="queue_actions_ctn">
+									<p><a href="https://store.steampowered.com/login/?redir=app%2F1395520&snr=1_5_9_">Sign in</a> to add this item to your wishlist, follow it, or mark it as ignored</p>
+																			<div id="shareBtn"><a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowNavigatorShare()"><span><img src="https://store.fastly.steamstatic.com/public/shared/images/icon_share_ios.svg"></span></a></div>
+																	</div>
+							</div>
+						
+												<div id="rowBtnActions" data-panel="{&quot;maintainY&quot;:true,&quot;flow-children&quot;:&quot;row&quot;}" style="display: none;"></div>
+
+					</div>
+				
+				
+				
+																												
+				
+								
+				<div id="purchaseOptionsContent" class="purchase_options_content" style="display: none;">
+					<!-- game_area_purchase goes here -->
+				</div>
+			</div>
+
+		
+		<div class="page_content middle_page" data-panel="[]" >
+
+				<!-- Right Column -->
+				<div class="rightcol game_meta_data" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
+					
+					<div id="responsive_apppage_details_left_ctn"></div>
+
+					<div id="responsive_apppage_details_right_ctn"></div>
+					<div style="clear: both;"></div>
+					
+					<!-- testing a banner on Desktop to open the current page in the desktop Steam client.  When that banner is displayed this section should be hidden. -->
+																		
+
+
+
+
+
+					
+					
+					
+
+												<div class="responsive_block_header responsive_apppage_details_left">Features</div>
+							<div class="block responsive_apppage_details_left" id="category_block">
+								<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" class="game_area_features_list_ctn">
+									<a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=2&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_singlePlayer.png" alt=""></div><div class="label">Single-player</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=22&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_achievements.png" alt=""></div><div class="label">Steam Achievements</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=29&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_cards.png" alt=""></div><div class="label">Steam Trading Cards</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=23&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_cloud.png" alt=""></div><div class="label">Steam Cloud</div></a><a class="game_area_details_specs_ctn" data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" href="https://store.steampowered.com/search/?category2=62&snr=1_5_9__423"><div class="icon"><img class="category_icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_familysharing.png" alt=""></div><div class="label">Family Sharing</div></a>
+<div  data-featuretarget="store-sidebar-accessibility-info" data-props="{&quot;bAccessibilityResizableUI&quot;:true,&quot;bAccessibilitySubtitles&quot;:true,&quot;bAccessibilityColorAlternatives&quot;:true,&quot;bAccessibilityCameraComfort&quot;:true,&quot;bAccessibilityBackgroundVolumeControls&quot;:true,&quot;bAccessibilityStereoSound&quot;:true,&quot;bAccessibilitySurroundSound&quot;:true,&quot;bAccessibilityNarratedMenus&quot;:false,&quot;bAccessibilityChatSpeechtoText&quot;:false,&quot;bAccessibilityChatTexttoSpeech&quot;:false,&quot;bAccessibilityPlayableWithoutQuicktimeEvents&quot;:true,&quot;bAccessibilityKeyboardOnlyOption&quot;:false,&quot;bAccessibilityMouseOnlyOption&quot;:false,&quot;bAccessibilityTouchOnlyOption&quot;:false,&quot;bAccessibilityDifficultyLevels&quot;:false,&quot;bAccessibilitySaveAnytime&quot;:true,&quot;bAccessibilityPlayableAtYourOwnPace&quot;:false,&quot;bAccessibilityPlayableWithoutVision&quot;:false,&quot;bAccessibilityContrastControls&quot;:false}"></div>								</div>
+								
+								<div data-featuretarget="store-sidebar-controller-support-info" data-props="{&quot;unAppID&quot;:1395520,&quot;bFullXboxControllerSupport&quot;:true,&quot;bPartialXboxControllerSupport&quot;:false,&quot;bPS4ControllerSupport&quot;:true,&quot;bPS4ControllerBTSupport&quot;:true,&quot;bPS5ControllerSupport&quot;:true,&quot;bPS5ControllerBTSupport&quot;:true,&quot;bSteamInputAPISupport&quot;:false,&quot;bNoKeyboardSupport&quot;:false,&quot;bGamepadPreferred&quot;:false,&quot;bControllerSupportWizardComplete&quot;:true,&quot;bHasXbox&quot;:null,&quot;bHasPS4&quot;:null,&quot;bHasPS5&quot;:null,&quot;bHasOther&quot;:false}"></div>
+								
+								
+								
+								
+								
+								
+															</div>
+																			<div class="block responsive_apppage_details_right">
+								<div class="block_title" id="LanguagesHeader">
+									Languages<span class="responsive_hidden">:</span>
+								</div>
+
+								
+<div id="bannerLanguages" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="responsive_banner_link" style="display: none" onclick="ToggleBannerContentVisibility('#languageTable', '#expandLanguageBtn')">
+	<div class="responsive_banner_link_title">
+		English	</div>
+	<div id="expandLanguageBtn" class="expand_section"></div>
+</div>
+<div id="languageTable">
+
+<table  class="game_language_options" cellpadding="0" cellspacing="0">
+	<tr>
+		<th style="width: 94px;"></th>
+				<th class="checkcol">Interface</th>
+		<th class="checkcol">Full Audio</th>
+		<th class="checkcol">Subtitles</th>
+	</tr>
+
+			<tr style="" class="">
+			<td style="width: 94px; text-align: start" class="ellipsis">
+				English			</td>
+							<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+				<td class="checkcol">
+					 <span>&#10004;</span> 				</td>
+					</tr>
+	</table>
+
+
+</div>
+
+							</div>
+											
+					
+					
+						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" id="bannerAchievements" class="responsive_banner_link" style="display: none" onclick="window.location='https://steamcommunity.com/stats/1395520/achievements'">
+							<div class="responsive_banner_link_title responsive_chevron_right">View Steam Achievements <span class="responsive_banner_link_total">(45)</span></div>
+						</div>
+
+						<div class="block responsive_apppage_details_right" id="achievement_block">
+							<div class="block_title">
+								Includes 45 Steam Achievements							</div>
+							<div class="communitylink_achievement_images">
+																	<div class="communitylink_achievement">
+										<img class="communitylink_achievement" title="J'Accuse!" src="https://shared.fastly.steamstatic.com/community_assets/images/apps/1395520/9c58eabcc6b31272b6a907f110fbc95bc14ac864.jpg">
+									</div>
+																										<a class="communitylink_achievement communitylink_achivement_plusmore" href="https://steamcommunity.com/stats/1395520/achievements">
+										View<br>all 45									</a>
+															</div>
+						</div>
+					
+					
+						<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" id="bannerPointsShop" class="responsive_banner_link" style="display: none" onclick="window.location='https://store.steampowered.com/points/shop/app/1395520/'">
+							<div class="responsive_banner_link_title responsive_chevron_right">View Points Shop Items <span class="responsive_banner_link_total">(10)</span></div>
+						</div>
+
+						<div class="block responsive_apppage_details_right" id="achievement_block">
+							<div class="block_title">
+								Points Shop Items Available							</div>
+							<div class="communitylink_points_shop_images">
+																	<a class="communitylink_points_shop_item" href="https://store.steampowered.com/points/shop/app/1395520/reward/422114/">
+										<img class="profile_background" title="Angels" src="https://community.fastly.steamstatic.com/economy/profilebackground/items/1395520/41f2610b5005002bea3bbe035efb1acbf3d9adee.jpg?size=64x0">
+									</a>
+																		<a class="communitylink_points_shop_item" href="https://store.steampowered.com/points/shop/app/1395520/reward/422110/">
+										<img class="" title=":turniphead:" src="https://shared.fastly.steamstatic.com/community_assets/images/items/1395520/c07a8d215f684db8e146a894bf21f46d283099b3.png">
+									</a>
+																		<a class="communitylink_points_shop_item" href="https://store.steampowered.com/points/shop/app/1395520/reward/422115/">
+										<img class="profile_background" title="Dream" src="https://community.fastly.steamstatic.com/economy/profilebackground/items/1395520/506d828ff74dc2601de18738753aa119b3a7d7c5.jpg?size=64x0">
+									</a>
+																		<a class="communitylink_points_shop_item" href="https://store.steampowered.com/points/shop/app/1395520/reward/422112/">
+										<img class="" title=":SOBMskull:" src="https://shared.fastly.steamstatic.com/community_assets/images/items/1395520/7bce8cc767f08afebe8c8f2d6496fcfe2b222aa7.png">
+									</a>
+																										<a class="communitylink_points_shop_item communitylink_achivement_plusmore" href="https://store.steampowered.com/points/shop/app/1395520/">
+										View<br>all 10									</a>
+															</div>
+						</div>
+					
+					<div id="appDetailsUnderlinedLinks" class="block responsive_apppage_details_left game_details underlined_links">
+						<div class="block_content">
+							<div class="block_content_inner">
+								<div id="genresAndManufacturer" class="details_block">
+
+			<b>Title:</b> The Séance of Blake Manor<br>
+	
+				<b>Genre:</b> <span data-panel="{&quot;flow-children&quot;:&quot;row&quot;}"><a href="https://store.steampowered.com/genre/Adventure/?snr=1_5_9__408">Adventure</a></span><br>
+			
+			<div class="dev_row">
+			<b>Developer:</b>
+
+				<a href="https://store.steampowered.com/developer/spookydoorway?snr=1_5_9__408">Spooky Doorway</a>
+		</div>
+	
+			<div class="dev_row">
+			<b>Publisher:</b>
+
+				<a href="https://store.steampowered.com/publisher/rawfury?snr=1_5_9__408">Raw Fury</a>
+		</div>
+	
+			
+	            <b>Release Date:</b> 27 Oct, 2025<br>
+        
+            	</div>
+
+
+<div class="details_block" style="padding-top: 14px;">
+
+				<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.spookydoorway.com%2F" target="_blank" rel="noreferrer  noopener" >
+			Visit the website <img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+		</a>
+	
+					<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fx.com%2FBlakeManorGame" target="_blank" rel=" noopener" class="ttip" data-tooltip-text="https://x.com/BlakeManorGame">
+					
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="presentation">
+				<path d="M595.2,443.5L920.9,65h-77.2l-282.8,328.7L335.1,65H74.6l341.5,497L74.6,959h77.2l298.6-347.1,238.5,347.1h260.5l-354.2-515.5h0ZM489.5,566.4l-34.6-49.5L179.6,123.1h118.5l222.2,317.8,34.6,49.5,288.8,413.1h-118.5l-235.7-337.1h0Z"/>
+			</svg>
+							<span class="social_account">X</span>
+					<img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+				</a>
+									<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fbsky.app%2Fprofile%2Fblakemanorgame.bsky.social" target="_blank" rel=" noopener" class="ttip" data-tooltip-text="https://bsky.app/profile/blakemanorgame.bsky.social">
+					
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="presentation">
+				<path d="M258.2,170.6c102.7,77.1,213.2,233.5,253.8,317.4,40.6-83.9,151.1-240.3,253.8-317.4,74.1-55.6,194.2-98.7,194.2,38.3s-15.7,229.9-24.9,262.7c-32,114.3-148.5,143.4-252.2,125.8,181.2,30.8,227.3,133,127.8,235.2-189.1,194-271.7-48.7-292.9-110.9-3.9-11.4-5.7-16.7-5.7-12.2,0-4.5-1.8.8-5.7,12.2-21.2,62.2-103.9,304.9-292.9,110.9-99.6-102.2-53.5-204.3,127.8-235.2-103.7,17.6-220.2-11.5-252.2-125.8-9.2-32.9-24.9-235.4-24.9-262.7,0-137,120.1-93.9,194.2-38.3h0Z"/>
+			</svg>
+							<span class="social_account">Bluesky</span>
+					<img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+				</a>
+									<a class="linkbar" href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fdiscord.gg%2Fw5x3gexbkC" target="_blank" rel=" noopener" class="ttip" data-tooltip-text="https://discord.gg/w5x3gexbkC">
+					
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="presentation">
+				<path d="M823,229.3c-58.9-27-121-46.1-184.9-56.9-8.7,15.6-16.6,31.7-23.7,48.1-68-10.2-137.1-10.2-205.1,0-7-16.4-14.9-32.5-23.7-48.1-63.9,10.9-126.1,30.1-185,57-117,173.1-148.7,341.9-132.8,508.3h0c68.5,50.6,145.2,89.1,226.7,113.8,18.4-24.7,34.6-50.9,48.6-78.3-26.5-9.9-52.1-22.1-76.5-36.5,6.4-4.7,12.7-9.4,18.7-14.1,143.6,67.5,309.7,67.5,453.3,0,6.1,5,12.4,9.8,18.7,14.1-24.4,14.4-50,26.7-76.6,36.6,13.9,27.4,30.2,53.6,48.6,78.2,81.6-24.6,158.3-63.1,226.9-113.7h0c18.6-193-31.8-360.2-133.2-508.5h0ZM363.2,635.4c-44.2,0-80.7-40.1-80.7-89.4s35.2-89.8,80.6-89.8,81.5,40.5,80.8,89.8c-.8,49.3-35.6,89.4-80.6,89.4h-.1ZM660.8,635.4c-44.3,0-80.6-40.1-80.6-89.4s35.2-89.8,80.6-89.8,81.3,40.5,80.6,89.8c-.8,49.3-35.5,89.4-80.6,89.4Z"/>
+			</svg>
+							<span class="social_account">Discord</span>
+					<img src="https://store.fastly.steamstatic.com/public/images/v5/ico_external_link.gif" border="0" align="bottom" alt="External">
+				</a>
+						
+	
+	
+	
+	
+	
+	
+	
+			<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/?appids=1395520&amp;snr=1_5_9__408" target="_blank" rel="noreferrer" >
+			View update history		</a>
+		<a class="linkbar responsive_chevron_right" href="https://store.steampowered.com/newshub/app/1395520?snr=1_5_9__408" target="_blank" rel="noreferrer" >
+			Read related news		</a>
+	
+				<a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/app/1395520/discussions/" target="_blank" rel="noreferrer" >
+			View discussions		</a>
+	
+    
+	        <a class="linkbar responsive_chevron_right" href="https://steamcommunity.com/actions/Search?T=ClanAccount&K=The%20Sance%20of%20Blake%20Manor">
+            Find Community Groups        </a>
+    </div>
+							</div>
+						</div>
+											</div>
+
+											<div id="shareEmbedRow" class="block responsive_apppage_details_left" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+							<a class="btnv6_blue_hoverfade btn_medium" href="#" onclick="ShowEmbedWidget(1395520); return false;"><span>Embed</span></a>
+							<a id="ReportAppBtn" class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(1395520)"><span data-tooltip-text="Report this Product" aria-label="Report this Product"><i class="ico16 reportv6"></i>&nbsp;</span></a>
+						</div>
+
+						<div id="reportBtn" style="display:none;"><a class="btnv6_blue_hoverfade btn_medium" href="javascript:void(0)" onclick="ShowReportDialog(1395520)"><span><img src="https://store.fastly.steamstatic.com/public/shared/images/icon_report.svg" alt="Report this Product"></span></a></div>
+					
+											<div id="apppage_metacritic_block" class="block responsive_apppage_reviewblock">
+															<div id="game_area_metascore">
+									<div class="score high">
+										89									</div>
+									<div class="logo"></div>
+									<div class="wordmark">
+										<div class="metacritic">metacritic</div>
+																																<div id="game_area_metalink"><a href="https://www.metacritic.com/game/pc/the-seance-of-blake-manor?ftag=MCD-06-10aaa1f" target="_blank">Read Critic Reviews</a> <img src="https://store.fastly.steamstatic.com/public/images/ico/iconExternalLink.gif" border="0" align="bottom"></div>
+																			</div>
+								</div>
+														<div style="clear: both"></div>
+						</div>
+					
+					
+						<div id="bannerAwards" class="block responsive_apppage_reviewblock" style="width:100%; display:none">
+							<div data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="responsive_banner_link" onclick="ToggleBannerContentVisibility('#awardsTable', '#expandAwardsBtn')">
+								<div class="responsive_banner_link_title">Awards</div>
+								<div id="expandAwardsBtn" class="expand_section"></div>
+							</div>
+						</div>
+						<div id="awardsTable" class="block responsive_apppage_reviewblock">
+							<div class="block_title">Awards</div>
+							<div class="block_content block_content_inner">
+								<div id="AwardsDefault">
+									<div class="game_page_autocollapse" style="max-height: 400px;">
+																				<p class="bb_paragraph" ><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/26cc94b7bb4e1515cdedc3684592b812.avif?t=1788513685" width=1290 height=1008 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/d728634d93b1207a1ac7c7329ac5f9ea.avif?t=1788513685" width=1290 height=1008 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/eb9c13842fe188a14dd30d03bf4ea763.avif?t=1788513685" width=1290 height=1008 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/b2128a35bb5ae5896eeca6a4a165c7fb.avif?t=1788513685" width=1290 height=1008 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/35b2469cd563ac01336a839cf836a663.avif?t=1788513685" width=1560 height=2206 /></span></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/a2749cc715a2d5f569d5661c0bc06dc1.avif?t=1788513685" data-big-src=https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras_big/a2749cc715a2d5f569d5661c0bc06dc1.webp?t=1788513685 width=1560 height=1741 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/47c832a0eb465156a8e685bd8ea64c83.avif?t=1788513685" data-big-src=https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras_big/47c832a0eb465156a8e685bd8ea64c83.webp?t=1788513685 width=1560 height=1105 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/55803a2e10f5f088d18a438776283f1a.avif?t=1788513685" width=800 height=541 /></span><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/9125585b09245a2946604f8fa9d085ec.avif?t=1788513685" width=800 height=209 /></span></p><p class="bb_paragraph" ><span class="bb_img_ctn"><img class="bb_img" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/092cd1dde25fc6586fa1d55eefcf2041.avif?t=1788513685" data-big-src=https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras_big/092cd1dde25fc6586fa1d55eefcf2041.webp?t=1788513685 width=1560 height=638 /></span></p>																			</div>
+								</div>
+							</div>
+
+						</div>
+					
+										
+					<div id="appLinksAndInfoCtn" style="display:none;">
+						<div class="responsive_block_header">Links &amp; info</div>
+						<div id="appLinksAndInfo" class="game_page_autocollapse" style="max-height: 180px;"></div>
+
+												
+					</div>
+
+				</div>
+				<!-- End Right Column -->
+
+
+				<div class="leftcol game_description_column"  data-panel="{&quot;flow-children&quot;:&quot;column&quot;}" >
+
+					
+										
+					
+					<div id="game_area_purchase" class="game_area_purchase">
+						
+																			
+
+						
+																															<!--[if lte IE 7]>
+<style type="text/css">
+.game_area_purchase_game_dropdown_right_panel .btn_addtocart { float: none; }
+</style>
+<![endif]-->
+
+
+		<div class="game_area_purchase_game demo_above_purchase">
+			<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img linux"></span></div>
+			<h1>
+				Download The Séance of Blake Manor Demo			</h1>
+							<div id="demoLearnMoreLink">
+					<span><a href="https://store.steampowered.com/app/3547180/The_Seance_of_Blake_Manor_Demo/?snr=1_5_9_">Learn more</a> about this demo</span>
+				</div>
+						<div class="game_purchase_action">
+				<div class="game_purchase_action_bg">
+										<div id="demoGameBtn" class="btn_addtocart">
+						<a class="btn_green_steamui btn_medium" href="javascript:ShowGotSteamModal( 'steam://install/3547180', &quot;The S\u00e9ance of Blake Manor Demo&quot;, &quot;Download&quot; )">
+							<span>Download</span>
+						</a>
+					</div>
+									</div>
+			</div>
+		</div>
+	<div class="game_area_purchase_game_wrapper">
+			<div class="game_area_purchase_game" id="game_area_purchase_section_add_to_cart_489646" role="region" aria-labelledby="game_area_purchase_section_add_to_cart_title_489646">
+				<form name="add_to_cart_489646" action="https://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="originating_snr" value="1_4_4__40_1">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="496b839beda7791650a64f88">
+			<input type="hidden" name="subid" value="489646">
+		</form>
+		<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img linux"></span></div>
+		<h2 id="game_area_purchase_section_add_to_cart_title_489646" class="title">Buy The Seance of Blake Manor</h2>
+				
+		
+										
+		<div class="game_purchase_action">
+																<div class="game_purchase_action_bg">
+															<div class="game_purchase_price price" data-price-final="1049">
+							$10.49 USD						</div>
+													<div class="btn_addtocart">
+																																<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_green_steamui btn_medium" href="javascript:addToCart(489646);" id="btn_add_to_cart_489646">
+								<span>Add to Cart</span>
+							</a>
+																		
+				</div>
+							</div>
+		</div>
+	</div>
+		</div>
+
+<div data-panel="[]" class="game_area_purchase_game_wrapper dynamic_bundle_description ds_no_flags"  data-ds-bundleid="73076" data-ds-bundle-data="{&quot;m_nDiscountPct&quot;:&quot;10&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:489646,&quot;m_rgIncludedAppIDs&quot;:[1395520],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1049,&quot;m_nFinalPriceInCents&quot;:1049,&quot;m_nFinalPriceWithBundleDiscount&quot;:944},{&quot;m_nPackageID&quot;:735156,&quot;m_rgIncludedAppIDs&quot;:[2057760],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1249,&quot;m_nFinalPriceInCents&quot;:1249,&quot;m_nFinalPriceWithBundleDiscount&quot;:1124}],&quot;m_bIsCommercial&quot;:false,&quot;m_bRestrictGifting&quot;:false}" data-ds-itemkey="Bundle_73076" data-ds-tagids="[4182,1742,10808,5613,6426,122,1664]" data-ds-descids="[5]" data-ds-crtrids="[33396972,28981418,44693986,44693990]" >
+
+	<div class="game_area_purchase_game_dropdown_subscription game_area_purchase_game" role="region" aria-labelledby="bundle_purchase_label_73076">
+		<form name="add_bundle_to_cart_73076" action="https://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="496b839beda7791650a64f88">
+			<input type="hidden" name="bundleid" value="73076">
+		</form>
+				<div class="game_area_purchase_platform"><span class="platform_img win"></span></div>
+		<h2 id="bundle_purchase_label_73076" class="title">
+			Buy Esoteric Ebb + The Séance of Blake Manor							<span class="bundle_label" data-tooltip-text="Bundles are a special discount on a set of products.  If you already own some of the products contained in the bundle, purchasing the bundle will allow you to &quot;complete the set&quot;, paying only for the products you don't already own while still receiving the full bundle discount on each of those products.">
+					BUNDLE					<span class="bundle_label_tooltip">(?)</span>
+				</span>
+					</h2>
+
+		
+		<p class="package_contents package_contents_collapsed">
+						<b>Includes 2 items:</b>
+			<a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/1395520/The_Seance_of_Blake_Manor/">The Seance of Blake Manor</a>, <a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/2057760/Esoteric_Ebb/">Esoteric Ebb</a>					</p>
+
+		<div class="game_purchase_action">
+																	<div class="game_purchase_action_bg">
+					<div class="btn_addtocart btn_packageinfo">
+						<a class="btn_blue_steamui btn_medium" href="https://store.steampowered.com/bundle/73076/Esoteric_Ebb__The_Seance_of_Blake_Manor/?snr=1_5_9__403">
+							<span>Bundle info</span>
+						</a>
+					</div>
+				</div>
+						<div class="game_purchase_action_bg">
+				<div class="discount_block game_purchase_discount no_discount" data-price-final="2068" data-bundlediscount="10" data-discount="0" role="link" aria-label="0% off. $20.68 USD normally, discounted to $20.68 USD"><div class="bundle_base_discount">-10%</div><div class="discount_prices"><div class="discount_final_price">$20.68 USD</div></div></div>
+
+				<div class="btn_addtocart">
+																		<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_green_steamui btn_medium"
+							   href="javascript:addBundleToCart( 73076);">
+
+								<span>Add to Cart</span>
+
+							</a>
+															</div>
+
+
+								<div class="btn_addtocart btn_packageinfo btn_addtoaccount" style="display: none" data-tooltip-text="This game is available for free to your account.  Click here to add this game to your account.">
+						<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_blue_steamui btn_medium" onclick="AddFreeBundle( 73076, &quot;Esoteric Ebb + The S\u00e9ance of Blake Manor&quot; );">
+							<span>Add to Account</span>
+						</span>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	</div>
+<div data-panel="[]" class="game_area_purchase_game_wrapper dynamic_bundle_description ds_no_flags"  data-ds-bundleid="80608" data-ds-bundle-data="{&quot;m_nDiscountPct&quot;:&quot;10&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:695944,&quot;m_rgIncludedAppIDs&quot;:[1931770],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1399,&quot;m_nFinalPriceInCents&quot;:1399,&quot;m_nFinalPriceWithBundleDiscount&quot;:1259},{&quot;m_nPackageID&quot;:489646,&quot;m_rgIncludedAppIDs&quot;:[1395520],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1049,&quot;m_nFinalPriceInCents&quot;:1049,&quot;m_nFinalPriceWithBundleDiscount&quot;:944}],&quot;m_bIsCommercial&quot;:false,&quot;m_bRestrictGifting&quot;:false}" data-ds-itemkey="Bundle_80608" data-ds-tagids="[1664,4182,21,5613,10808,492,4166]" data-ds-descids="[5]" data-ds-crtrids="[21394,33396972,28981418]" >
+
+	<div class="game_area_purchase_game_dropdown_subscription game_area_purchase_game" role="region" aria-labelledby="bundle_purchase_label_80608">
+		<form name="add_bundle_to_cart_80608" action="https://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="496b839beda7791650a64f88">
+			<input type="hidden" name="bundleid" value="80608">
+		</form>
+				<div class="game_area_purchase_platform"><span class="platform_img win"></span></div>
+		<h2 id="bundle_purchase_label_80608" class="title">
+			Buy Chants of Sennaar x The Séance of Blake Manor							<span class="bundle_label" data-tooltip-text="Bundles are a special discount on a set of products.  If you already own some of the products contained in the bundle, purchasing the bundle will allow you to &quot;complete the set&quot;, paying only for the products you don't already own while still receiving the full bundle discount on each of those products.">
+					BUNDLE					<span class="bundle_label_tooltip">(?)</span>
+				</span>
+					</h2>
+
+		
+		<p class="package_contents package_contents_collapsed">
+						<b>Includes 2 items:</b>
+			<a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/1931770/Chants_of_Sennaar/">Chants of Sennaar</a>, <a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/1395520/The_Seance_of_Blake_Manor/">The Seance of Blake Manor</a>					</p>
+
+		<div class="game_purchase_action">
+																	<div class="game_purchase_action_bg">
+					<div class="btn_addtocart btn_packageinfo">
+						<a class="btn_blue_steamui btn_medium" href="https://store.steampowered.com/bundle/80608/Chants_of_Sennaar_x_The_Seance_of_Blake_Manor/?snr=1_5_9__403">
+							<span>Bundle info</span>
+						</a>
+					</div>
+				</div>
+						<div class="game_purchase_action_bg">
+				<div class="discount_block game_purchase_discount no_discount" data-price-final="2203" data-bundlediscount="10" data-discount="0" role="link" aria-label="0% off. $22.03 USD normally, discounted to $22.03 USD"><div class="bundle_base_discount">-10%</div><div class="discount_prices"><div class="discount_final_price">$22.03 USD</div></div></div>
+
+				<div class="btn_addtocart">
+																		<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_green_steamui btn_medium"
+							   href="javascript:addBundleToCart( 80608);">
+
+								<span>Add to Cart</span>
+
+							</a>
+															</div>
+
+
+								<div class="btn_addtocart btn_packageinfo btn_addtoaccount" style="display: none" data-tooltip-text="This game is available for free to your account.  Click here to add this game to your account.">
+						<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_blue_steamui btn_medium" onclick="AddFreeBundle( 80608, &quot;Chants of Sennaar x The S\u00e9ance of Blake Manor&quot; );">
+							<span>Add to Account</span>
+						</span>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	</div>
+<div data-panel="[]" class="game_area_purchase_game_wrapper dynamic_bundle_description ds_no_flags"  data-ds-bundleid="78898" data-ds-bundle-data="{&quot;m_nDiscountPct&quot;:&quot;10&quot;,&quot;m_bMustPurchaseAsSet&quot;:0,&quot;m_rgItems&quot;:[{&quot;m_nPackageID&quot;:489646,&quot;m_rgIncludedAppIDs&quot;:[1395520],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:1049,&quot;m_nFinalPriceInCents&quot;:1049,&quot;m_nFinalPriceWithBundleDiscount&quot;:944},{&quot;m_nPackageID&quot;:406432,&quot;m_rgIncludedAppIDs&quot;:[1182310],&quot;m_bPackageDiscounted&quot;:false,&quot;m_nBasePriceInCents&quot;:799,&quot;m_nFinalPriceInCents&quot;:799,&quot;m_nFinalPriceWithBundleDiscount&quot;:719}],&quot;m_bIsCommercial&quot;:false,&quot;m_bRestrictGifting&quot;:false}" data-ds-itemkey="Bundle_78898" data-ds-tagids="[21,1664,10808,1698,5613,4166,4182]" data-ds-descids="[5]" data-ds-crtrids="[33396972,28981418,33502503,33366650]" >
+
+	<div class="game_area_purchase_game_dropdown_subscription game_area_purchase_game" role="region" aria-labelledby="bundle_purchase_label_78898">
+		<form name="add_bundle_to_cart_78898" action="https://store.steampowered.com/cart/" method="POST">
+			<input type="hidden" name="snr" value="1_5_9__403">
+			<input type="hidden" name="action" value="add_to_cart">
+			<input type="hidden" name="sessionid" value="496b839beda7791650a64f88">
+			<input type="hidden" name="bundleid" value="78898">
+		</form>
+				<div class="game_area_purchase_platform"><span class="platform_img win"></span><span class="platform_img linux"></span></div>
+		<h2 id="bundle_purchase_label_78898" class="title">
+			Buy The Blake Barrow							<span class="bundle_label" data-tooltip-text="Bundles are a special discount on a set of products.  If you already own some of the products contained in the bundle, purchasing the bundle will allow you to &quot;complete the set&quot;, paying only for the products you don't already own while still receiving the full bundle discount on each of those products.">
+					BUNDLE					<span class="bundle_label_tooltip">(?)</span>
+				</span>
+					</h2>
+
+		
+		<p class="package_contents package_contents_collapsed">
+						<b>Includes 2 items:</b>
+			<a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/1395520/The_Seance_of_Blake_Manor/">The Seance of Blake Manor</a>, <a data-panel="{&quot;focusable&quot;:false}"href="https://store.steampowered.com/app/1182310/The_Excavation_of_Hobs_Barrow/">The Excavation of Hob's Barrow</a>					</p>
+
+		<div class="game_purchase_action">
+																	<div class="game_purchase_action_bg">
+					<div class="btn_addtocart btn_packageinfo">
+						<a class="btn_blue_steamui btn_medium" href="https://store.steampowered.com/bundle/78898/The_Blake_Barrow/?snr=1_5_9__403">
+							<span>Bundle info</span>
+						</a>
+					</div>
+				</div>
+						<div class="game_purchase_action_bg">
+				<div class="discount_block game_purchase_discount no_discount" data-price-final="1663" data-bundlediscount="10" data-discount="0" role="link" aria-label="0% off. $16.63 USD normally, discounted to $16.63 USD"><div class="bundle_base_discount">-10%</div><div class="discount_prices"><div class="discount_final_price">$16.63 USD</div></div></div>
+
+				<div class="btn_addtocart">
+																		<a data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_green_steamui btn_medium"
+							   href="javascript:addBundleToCart( 78898);">
+
+								<span>Add to Cart</span>
+
+							</a>
+															</div>
+
+
+								<div class="btn_addtocart btn_packageinfo btn_addtoaccount" style="display: none" data-tooltip-text="This game is available for free to your account.  Click here to add this game to your account.">
+						<span data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="btn_blue_steamui btn_medium" onclick="AddFreeBundle( 78898, &quot;The Blake Barrow&quot; );">
+							<span>Add to Account</span>
+						</span>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	</div>
+<a href="https://store.steampowered.com/bundlelist/1395520">
+	See all 9 bundles.</a>
+<div id="gameAreaDLCSection" class="game_area_dlc_section">
+
+	<h2 class="gradientbg" aria-label="Content For This Game">Content For This Game<span class="note"><a href="https://store.steampowered.com/dlc/1395520/The_Seance_of_Blake_Manor/?snr=1_5_9__1061">Browse all <em>(2)</em></a></span></h2>
+
+	
+			<div class="game_area_dlc_list">
+			<form name="add_all_dlc_to_cart" action="https://store.steampowered.com/cart/?snr=1_5_9_" method="POST">
+				<input type="hidden" name="action" value="add_to_cart">
+				<input type="hidden" name="sessionid" value="496b839beda7791650a64f88">
+
+				<div class="tableView">
+											<div class="gameDlcBlocks">
+										<a class="game_area_dlc_row dlc_highlight odd ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_4159420"
+						href="https://store.steampowered.com/app/4159420/The_Seance_of_Blake_Manor__Original_Soundtrack/?snr=1_5_9__405"
+						 data-ds-appid="4159420" data-ds-itemkey="App_4159420" data-ds-crtrids="[28981418]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:4159420,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )"						data-ds-steam-deck-compat-handled="true"
+					>
+													<div class="capsule_container">
+								<img class="capsule"  src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4159420/87b6242046ab98f27853571d86a63344bd381edd/capsule_231x87.jpg?t=1764683998">
+							</div>
+						
+						<div class="game_area_dlc_name">
+															<div class="dlc_highlight_reason_container">
+									<div class="dlc_highlight_reason">Recommended</div>
+								</div>
+														The Séance of Blake Manor – Original Soundtrack						</div>
+
+						<div class="game_area_dlc_price">
+																																		$3.59 USD																														</div>
+													<input type="hidden" name="subid[]" value="1457174">
+												</a>
+											<a class="game_area_dlc_row  even ds_collapse_flag ds_collapse_flag_tiny" id="dlc_row_4159440"
+						href="https://store.steampowered.com/app/4159440/The_Seance_of_Blake_Manor__Digital_Artbook/?snr=1_5_9__405"
+						 data-ds-appid="4159440" data-ds-itemkey="App_4159440" data-ds-tagids="[21]" data-ds-crtrids="[28981418]" onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:4159440,&quot;public&quot;:1,&quot;v6&quot;:1} );" onmouseout="HideGameHover( this, event, 'global_hover' )"						data-ds-steam-deck-compat-handled="true"
+					>
+						
+						<div class="game_area_dlc_name">
+														The Séance of Blake Manor – Digital Artbook 						</div>
+
+						<div class="game_area_dlc_price">
+																																		$2.49 USD																														</div>
+													<input type="hidden" name="subid[]" value="1457180">
+												</a>
+						
+																										<div id="dlc_purchase_action" class="game_purchase_action game_purchase_action_bg"
+							     style="">
+								<div class="game_purchase_price price">
+									$6.08 USD								</div>
+								<div class="btn_addtocart">
+
+																			<a class="btn_green_steamui btn_medium" href="javascript:addAllDlcToCart();">
+											<span>Add all DLC to Cart</span>
+										</a>
+									
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+																	</div>
+							
+			</div> <!-- tableView -->
+
+			<div style="clear: right;"></div>
+
+			</form>
+		</div>
+	
+	</div>
+
+												
+					</div>
+					<!-- game_area_purchase -->
+
+					
+					<div id="bannerCommunity" data-panel="{&quot;focusable&quot;:true,&quot;clickOnActivate&quot;:true}" role="button" class="responsive_banner_link" style="display: none" onclick="window.location='https://steamcommunity.com/app/1395520'">
+						<div class="responsive_banner_link_title responsive_chevron_right">View Community Hub</div>
+					</div>
+
+					<div class="purchase_area_spacer">&nbsp;</div>
+
+					
+					
+					
+																								<script type="text/javascript">
+							var StoreDefaults = {"PartnerEventStore":[{"gid":"715663387750566030","clan_steamid":"103582791468778562","event_name":"Introducing the Chants of Sennaar x The S\u00e9ance of Blake Manor Bundle","event_type":28,"appid":1395520,"server_address":null,"server_password":null,"rtime32_start_time":1788876000,"rtime32_end_time":1788879600,"comment_count":0,"creator_steamid":"0","last_update_steamid":"0","event_notes":"see announcement body","jsondata":"{\"localized_subtitle\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_summary\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_title_image\":[\"ae230aee8bcdd023d441c51783bba5620ed9d35a.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_capsule_image\":[\"f491479f4fb15ab09df41bf2391145247bedfbd7.jpg\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"bSaleEnabled\":false,\"sale_show_creator\":false,\"sale_sections\":[],\"sale_browsemore_text\":\"\",\"sale_browsemore_url\":\"\",\"sale_browsemore_color\":\"\",\"sale_browsemore_bgcolor\":\"\",\"localized_sale_header\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_overlay\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_mobile_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_logo\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"sale_font\":\"\",\"sale_background_color\":\"\",\"sale_header_offset\":530,\"referenced_appids\":[],\"bBroadcastEnabled\":false,\"broadcastChatSetting\":\"hide\",\"default_broadcast_title\":\"#Broadcast_default_title_dev\",\"localized_broadcast_title\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_left_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_right_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"broadcast_whitelist\":[],\"bScheduleEnabled\":false,\"scheduleEntries\":[]}","announcement_body":{"gid":"715663387750566031","clanid":"39257154","posterid":"0","headline":"Introducing the Chants of Sennaar x The S\u00e9ance of Blake Manor Bundle","posttime":1788876032,"updatetime":1788876032,"body":"Hello detectives, \n\nWe are so excited to reveal our new bundle with the fantastic Chants of Sennaar. \n\n[img]{STEAM_CLAN_IMAGE}\/39257154\/422e13b6150ddefba08f2e6e3c854abff15e5697.jpg[\/img]\n[b]About Chants of Sennaar [\/b]\n\nChants of Sennaar is an award-winning puzzle adventure game where you play as the Traveler on a quest to reunite the Peoples of the Tower. You must decipher ancient languages in an enthralling world full of secrets. \n[b]\nComplete the Set [\/b]\n\nThe Chants of Sennaar x The S\u00e9ance of Blake Manor bundle is a \u201ccomplete the set\u201d bundle, which means that you will pay for and receive just the items you do not already own in your Steam Library at the discounted price. \n\nBuy the bundle: https:\/\/store.steampowered.com\/bundle\/80608\/Chants_of_Sennaar_x_The_Seance_of_Blake_Manor\/  \n","commentcount":4,"tags":["mod_reviewed","ModAct_1889321037_1788877065_0"],"language":0,"hidden":0,"forum_topic_id":"582807520276629390","event_gid":"715663387750566030","voteupcount":90,"votedowncount":1,"ban_check_result":0,"banned":0},"published":1,"hidden":0,"rtime32_visibility_start":1788876000,"rtime32_visibility_end":0,"broadcaster_accountid":0,"follower_count":0,"ignore_count":0,"forum_topic_id":"582807520276629390","rtime32_last_modified":1789623605,"news_post_gid":"0","rtime_mod_reviewed":1788877065,"featured_app_tagid":0,"referenced_appids":[],"build_id":0,"build_branch":"","unlisted":0,"rtime_created":1788869236,"votes_up":90,"votes_down":1,"comment_type":"ForumTopic","gidfeature":"508449490226648572","gidfeature2":"582807520276629390"},{"gid":"715663387750563864","clan_steamid":"103582791468778562","event_name":"Demo Update 1.1.2.337 & Patch 1.1.12.360","event_type":13,"appid":1395520,"server_address":null,"server_password":null,"rtime32_start_time":1788339480,"rtime32_end_time":1788343201,"comment_count":0,"creator_steamid":"0","last_update_steamid":"0","event_notes":"see announcement body","jsondata":"{\"localized_subtitle\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_summary\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_title_image\":[\"ae230aee8bcdd023d441c51783bba5620ed9d35a.png\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_capsule_image\":[\"38318f464ab487bc930fce7cbbf3d1ffc93a69c4.jpg\",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"bSaleEnabled\":false,\"sale_show_creator\":false,\"sale_sections\":[],\"sale_browsemore_text\":\"\",\"sale_browsemore_url\":\"\",\"sale_browsemore_color\":\"\",\"sale_browsemore_bgcolor\":\"\",\"localized_sale_header\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_overlay\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_product_mobile_banner\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_sale_logo\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"sale_font\":\"\",\"sale_background_color\":\"\",\"sale_header_offset\":530,\"referenced_appids\":[],\"bBroadcastEnabled\":false,\"broadcastChatSetting\":\"hide\",\"default_broadcast_title\":\"#Broadcast_default_title_dev\",\"localized_broadcast_title\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_left_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"localized_broadcast_right_image\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"broadcast_whitelist\":[],\"bScheduleEnabled\":false,\"scheduleEntries\":[]}","announcement_body":{"gid":"715663387750563865","clanid":"39257154","posterid":"0","headline":"Demo Update 1.1.2.337 & Patch 1.1.12.360","posttime":1788339472,"updatetime":1788339597,"body":"Hello detectives, \n\nWe have released a demo update and patch for the full game today. \n\nThe demo update brings this in line with the full released version of the game.\n\nPatch 1.1.12.360 includes a number of improvements and fixes to the full game. \n\nThe full changelog can be found below (please note this changelog may contain spoilers).\n\n[img]{STEAM_CLAN_IMAGE}\/39257154\/eac9c0b1f133d1206a3c7eb1844ed517a0f9cc5e.png[\/img]\n[list]\n[*]Various bug fixes and stability improvements, bringing the demo in line with the full game.\n[\/list]\n\n[img]{STEAM_CLAN_IMAGE}\/39257154\/3f9f9cf491bf260b6cd7b39dec5fe8d2a3ed356e.png[\/img]\nUI and settings changes\n[list]\n[*]Added the option to turn V-Sync off via the Options menu\n[*]Added target frame rate option\n[*]Changed binding for cycling through hotspot interactions to Q\n[*]Implemented a double click to skip option for dialogue\n[*]Added an option to disable skipping dialogue.\n[*]Order of categories in the Records and Discussable screens now align more closely with each other\n[*]Guest names are now sorted by last name\n[\/list]\nUI and settings bug fixes\n[list]\n[*]Fixed a visual error on the how to play screen background\n[*]Increased scroll sensitivity on how to play screen\n[*]Fixed an issue where the hourglass tutorial window didn\u2019t work with the Tutorial Mode set to Press\n[*]Preventing time data being carried over when loading save from main menu\n[*]Credits updated\n[*]Fixed an issue where the journal could get stuck on specific mindmaps after tutorials forcibly bring you to a specific one\n[*]Fixed an issue where inputs start working during ftue if alt tabbing out and back in\n[*]Changed where the cursor disabling\/enabling happens during loading\n[*]Fixed an issue where the game continues to react to your mouse clicks when using Steam overlay.\n[*]Made ampm work on timetable screen for cultures with different characters\n[*]Stopped multiple hypothesis considerations from triggering when button is spammed\n[*]Fixed some issues with the journal\u2019s behaviour on closing and switching tabs\n[*]Corrected position of the monument on the maze map\n[*]Fixed an issue that enabled players to accidentally press F5 to Quick Save while in the Title Screen\n[*]Items should only show up as discussable with Varley after you have met him.\n[\/list]\nAudio\n[list]\n[*]Removed rogue fire sfx\n[*]Fixed an issue where Ettienne\u2019s voice audio would stop before the line was finished\n[*]Added missing door sounds to some scene transitions\n[*]Adjusted sfx for analysis\n[*]Ensured voice over lines respect volume settings.\n[*]Wind and crows SFX will fade out when you enter the ballroom from the walled garden, when [*]Doyle kicks you out of the walled garden for the seance and when you enter the church.\n[*]Thunder and rain sfx should now play during the seance.\n[*]Fixed an issue where music did not play in gardens during day 3 before the seance\n[*]Fixed some music issues after loading a save at the seance.\n[*]Fixed wind and rain for some Day 3 cutscenes\n[\/list]\nJournal\n[list]\n[*]Various adjustments to NPC mind maps\n[*]Various adjustments to Main Mystery mind maps\n[*]Updated religious lore for characters.\n[\/list]\nEnvironment\n[list]\n[*]Sigil fire effects should no longer disappear when you leave the room.\n[*]Stopped Sigil lines from disappearing when moving the camera away from them.\n[*]Added missing top face collider to an object in Manager\u2019s Office.\n[*]Fixed some incorrect shadows and floating characters\n[*]Alcohol bottle now has more generic logo\n[*]Fixed various occlusion culling issues\n[*]Visually corrected some light sources in the Manor.\n[*]Corrected the Library name plaque\n[*]Fixed an issue where containers would not auto-close after walking away from them\n[*]Removed an old door hotspot for the ballroom door\n[*]Fix to prevent the player from getting stuck on a crate cart puzzle\n[*]Drawing room rope will now not still be there after time skip.\n[*]Updated age of Percival Blake\u2019s death.\n[*]Fixed a visual issue with Atrium door windows in the Ballroom from 5PM onwards on day 3\n[*]The typewriter should correctly reset on day 2.\n[*]Door open position and hotspots are now remembered in the storeroom.\n[*]Renamed travel plans hotspot to map of Europe.\n[*]Fixed highlight on garden gate\n[*]Footstep sounds on tiles outside bedroom should now play correctly.\n[*]Removed the hotspot from Lau\u2019s nightstand\n[\/list]\nTime\n[list]\n[*]Each of Hazel's lockbox barks should only take a single click now.\n[*]All coats in the cloakroom now cost 1 tick\n[*]Fixed an issue where you could progress time infinitely by interacting with one object in Ines room\n[*]Removed time cost from an item in Skerrit\u2019s room, and fixed collider\n[\/list]\nLore\n[list]\n[*]Added Doyle [spoiler]writing fact to pile of books[\/spoiler]\n[*]Added shoe size onto Jonathan Blake's shoe bark.\n[*]Removed fact and all references to fact for O Finn - [spoiler]He cannot read or write English.[\/spoiler]\n[*]Caitlin fact - [spoiler]I found some of her writings - Unlocks if you have discarded note and bible.[\/spoiler]\n[*]Caitlin fact - [spoiler]Writing lore wording tweaked, and unlocked on women's dorm letter.[\/spoiler]\n[*]Carmela fact - [spoiler]Writing lore wording tweaked, and unlocked on crumpled note in laundry.[\/spoiler]\n[*]Fixed bug where you can't access Blake\u2019s shoes in the empty bedroom.\n[*]Sinnott fact - [spoiler]In his mid-60s - should drop when you speak to him normally.[\/spoiler]\n[*]Jonathan Blake fact - [spoiler]He is mourning his late wife - unlocks when you present Mary Blake.[\/spoiler]\n[*]Saoirse fact - [spoiler]Miss Deane had started to teach her magic - unlocks on ballroom eavesdrop.[\/spoiler]\n[*]Hunter fact - [spoiler]He is in his mid-50s - drops when you speak to him for the first time in the front courtyard on day 2, 12PM.[\/spoiler]\n[*]Doyle fact - [spoiler]He is in his late 20s - Unlocks if you speak to him before a meal in the east corridors.[\/spoiler]\n[*]Ines fact - [spoiler]She is mourning the recent loss of her mother - Unlocks when you look at burial record.[\/spoiler]\n[*]Cathal fact - [spoiler]I found writings in his journal in his room - Unlocks when you interact with his journal.[\/spoiler]\n[*]Carmela fact - [spoiler]she is a famed mystic, who is helming the s\u00e9ance. Unlocks whenever you get conductor of the seance.[\/spoiler]\n[*]Seamus fact - [spoiler]age lore should unlock when you click on the dining room door.[\/spoiler]\n[\/list]\nMisc\n[list]\n[*]Addressed various typos\n[*]Fixed missing lip animations for a cutscene with Etienne\n[*]Ensured sigils still work when reloading a scene from a save.\n[*]Fixed an issue where only right clicking through a cutscene will prevent the cursor from showing to scroll through the dialog.\n[*]Fixed an issue with the Brandy staying disappeared when reloading a save.\n[*]Disabled inaccurate barks when you've found everything in rooms.\n[*]Protestant service should fire a notification when you eavesdrop.\n[*]Fixed an issue with the crow appearing outside without triggering the cutscene\n[*]Fixed an issue causing Ward to die too when loading a save in the church at the end of the game.\n[*]Changed conditions for the final bit of dialogue unlocking for the sigil under O Finn's bed to avoid early spoilers.\n[*]Angry face comic panel now appears in church cutscene\n[*]Fixed an issue where loading a save incorrectly reenables the spirit board minigame\n[*]Corrected low res evidence art for Rejected Request and Letter from Doctor Callaghan\n[*]Added a hotspot for Mantovani\u2019s remains after the seance ritual cutscene\n[*]Fixed flickering image issues on the Point of No Return screen\n[*]Fixed issues where O Finn\u2019s kidnapping could be spoiled for players by some text\/dialogue if they hadn\u2019t found out yet\n[*]Moved Ettienne to the bar at 5PM and updated his timetable dialogue accordingly.\n[*]Made Ward's reaction in the church after the Seance play by default instead of via an awkwardly placed hotspot\n[*]Fixed an issue where players were able to manually save at moments saving is meant to be blocked\n[\/list]\nThe S\u00e9ance of Blake Manor is OUT NOW. \n\nhttps:\/\/store.steampowered.com\/app\/1395520\/The_Sance_of_Blake_Manor\/","commentcount":11,"tags":["mod_reviewed","ModAct_1434411615_1788340077_0"],"language":0,"hidden":0,"forum_topic_id":"582807198746321603","event_gid":"715663387750563864","voteupcount":198,"votedowncount":1,"ban_check_result":0,"banned":0},"published":1,"hidden":0,"rtime32_visibility_start":0,"rtime32_visibility_end":0,"broadcaster_accountid":0,"follower_count":0,"ignore_count":0,"forum_topic_id":"582807198746321603","rtime32_last_modified":1789352964,"news_post_gid":"0","rtime_mod_reviewed":1788340078,"featured_app_tagid":0,"referenced_appids":[],"build_id":0,"build_branch":"","unlisted":0,"rtime_created":1788337928,"votes_up":198,"votes_down":1,"comment_type":"ForumTopic","gidfeature":"508449490226648572","gidfeature2":"582807198746321603"}],"EventWebRowEmbed":{"bPreLoaded":true,"announcementGIDList":["715663387750566031","715663387750563865"],"last_update_event":{"rtime":1788339480,"event_gid":"715663387750563864","announcement_gid":"715663387750563865","clan_account_id":39257154}}};
+						</script>
+					
+
+					<div data-featuretarget="events-row"></div>
+				
+								
+				
+				
+
+					<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="game_area_reviews" class="game_area_description">
+						<h2>Reviews</h2>
+												<p>“The Séance of Blake Manor is an autumnal treat filled with spooky scenes but it is also that most joyous of discoveries: a game that challenges, delights, thrills and educates in equal measure.”<br>5/5 – <a href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fwww.theguardian.com%2Fgames%2F2025%2Foct%2F27%2Fthe-seance-of-blake-manor-review-gripping-gothic-detective-game-steeped-in-mystery-and-menace" target="_blank" rel=" noopener"  >The Guardian</a><br><br>“one of the best mystery games in recent years”<br>4.5/5 – <a href="https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fwww.gamesradar.com%2Fgames%2Fadventure%2Fthe-seance-of-blake-manor-review%2F" target="_blank" rel=" noopener"  >Gamesradar +</a><br><br>“This enthralling mystery quickly had me in its ghostly grip and refused to let go”<br>87/100 – <a href="https://www.pcgamer.com/games/adventure/the-seance-of-blake-manor-review/" target="_blank" rel=""  >PC Gamer</a><br></p>
+					</div>
+				
+								<div id="contentForThisGame_ctn">
+				</div>
+									<div data-panel="{&quot;type&quot;:&quot;PanelGroup&quot;}" id="aboutThisGame" class="game_page_autocollapse" style="max-height: 850px;">
+						<div id="game_area_description" class="game_area_description">
+							<h2>About This Game</h2>
+							<p class="bb_paragraph" ><i>Ireland, October 29, 1897. </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>I’ll waste no time, since there’s none for wasting. I write from Blake Manor in Connemara. </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>Yesterday, a guest went missing – a young woman named Evelyn Deane. The owner and staff carry on as if nothing has happened.  </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>She has not left, of that I am sure.</i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" style="text-align: center"><span class="bb_img_ctn"><video class="bb_img" autoplay muted loop playsinline crossorigin="anonymous" poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/5f8a9c181cea7e8a681f9c26c0c638a7.poster.avif?t=1788513685" width=616 height=205 ><source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/5f8a9c181cea7e8a681f9c26c0c638a7.webm?t=1788513685" type="video/webm; codecs=vp9"></video></span></p><p class="bb_paragraph" >It is October 29th, 1897, and Private Investigator Declan Ward arrives at Blake Manor to find a missing woman.  </p><p class="bb_paragraph" >What he finds is the Grand Séance and a group of mystics who have gathered from all corners of the world – waiting for All Hallow’s Eve, the night when the veil between worlds is thinnest. The night to tear down the barrier and speak to the dead.  </p><p class="bb_paragraph" ></p><p class="bb_paragraph" style="text-align: center"><span class="bb_img_ctn"><video class="bb_img" autoplay muted loop playsinline crossorigin="anonymous" poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/82cc6998e3f7298017ee58a556cdb350.poster.avif?t=1788513685" width=616 height=205 ><source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/82cc6998e3f7298017ee58a556cdb350.webm?t=1788513685" type="video/webm; codecs=vp9"></video></span></p><p class="bb_paragraph" >Interview and interrogate your suspects, keep a record of all evidence, motivations, and clues in your journal, and confront them about their motivations when you’re certain of your deductions. Uncover the truth about Blake Manor and the mysterious séance that has brought everyone together. </p><p class="bb_paragraph" >Navigate Blake Manor's haunted corridors and uncover its secrets as you race against time to save Miss Deane. </p><p class="bb_paragraph" ></p><p class="bb_paragraph" style="text-align: center"><span class="bb_img_ctn"><video class="bb_img" autoplay muted loop playsinline crossorigin="anonymous" poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/a536e81e5eca3693cd51502e34aa8be3.poster.avif?t=1788513685" width=616 height=205 ><source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/a536e81e5eca3693cd51502e34aa8be3.webm?t=1788513685" type="video/webm; codecs=vp9"></video></span></p><p class="bb_paragraph" >Investigate the manor, solve environmental clues and reach the forbidden areas of the hotel…and beyond. </p><p class="bb_paragraph" >But be careful - each action counts the day down. Be in the right place at the right time to catch critical events pertinent to your investigation. Everyone has their own agendas and schedules – it could truly be a loss to miss out on a quick chat by mistiming your actions. And who knows what hidden secrets lie in wait once you’ve turned in for the night...   </p><p class="bb_paragraph" ></p><p class="bb_paragraph" style="text-align: center"><span class="bb_img_ctn"><video class="bb_img" autoplay muted loop playsinline crossorigin="anonymous" poster="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/f6da7c4a0fb6e215d1bac1fa6e9d5f28.poster.avif?t=1788513685" width=616 height=205 ><source src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1395520/extras/f6da7c4a0fb6e215d1bac1fa6e9d5f28.webm?t=1788513685" type="video/webm; codecs=vp9"></video></span></p><p class="bb_paragraph" >Brought to you by the creators of The Darkside Detective and Raw Fury, The Séance of Blake Manor is depicted by a beautiful comic-book art style. Inspired by Irish Mythology and the spiritualist movements of the Victorian era, players are cast into a first-person narrative adventure, blending the supernatural with a classic detective mystery. With its striking cutscenes, compelling narrative and dynamic soundtrack that reacts to the environment around you, Blake Manor and its secrets will leave you on the edge of your seat morning through night. </p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>...I know the West of Ireland might as well be the far side of the world, for its distance from you but there is no one else to turn to.  </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>I hear you are an honourable man, a steadfast investigator. And – perhaps most importantly – godly. </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ><i>I pray for the girl that this is true... </i></p><p class="bb_paragraph" ></p><p class="bb_paragraph" ></p><p class="bb_paragraph" >This game is currently only available in English language.</p>						</div>
+					</div>
+					<div class="game_page_autocollapse">
+		<div id="game_area_content_descriptors" class="game_area_description">
+			<h2>Mature Content Description</h2>
+			<p>The developers describe the content like this:</p>
+			<p><i>
+			References to violence and murder, drug and alcohol abuse.				</i>
+			</p>
+		</div>
+	</div>
+	
+				
+				
+					<div class="game_page_autocollapse sys_req" style="max-height: 300px;">
+		<h2>System Requirements</h2>
+					<div class="sysreq_tabs">
+									<div class="sysreq_tab active" data-os="win">
+						Windows					</div>
+									<div class="sysreq_tab " data-os="linux">
+						SteamOS + Linux					</div>
+								<div style="clear: left;"></div>
+			</div>
+				<div class="sysreq_contents">
+							<div class="game_area_sys_req sysreq_content active" data-os="win">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 10 (64-bit versions)<br></li><li><strong>Processor:</strong> Intel I7-7700K, AMD FX-8150<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> NVIDIA GeForce GTX 970, AMD Radeon R9 390 Series<br></li><li><strong>DirectX:</strong> Version 10<br></li><li><strong>Storage:</strong> 10 GB available space</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Windows 10, 64-bits<br></li><li><strong>Processor:</strong> Intel i7-10700K, AMD Ryzen 7 5800X<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> RTX 2070, AMD Radeon RX 5700<br></li><li><strong>DirectX:</strong> Version 10<br></li><li><strong>Storage:</strong> 10 GB available space</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+
+									</div>
+							<div class="game_area_sys_req sysreq_content " data-os="linux">
+											<div class="game_area_sys_req_leftCol">
+							<ul>
+								<strong>Minimum:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu<br></li><li><strong>Processor:</strong> Intel i-5-9400f / AMD FX - 8350 8 Core<br></li><li><strong>Memory:</strong> 8 GB RAM<br></li><li><strong>Graphics:</strong> GTX 1070 / RX 580<br></li><li><strong>Storage:</strong> 10 GB available space</li></ul>							</ul>
+						</div>
+																<div class="game_area_sys_req_rightCol">
+							<ul>
+								<strong>Recommended:</strong><br><ul class="bb_ul"><li><strong>OS:</strong> Ubuntu<br></li><li><strong>Processor:</strong> Intel i7 10700k / AMD Ryzen 7 3800X<br></li><li><strong>Memory:</strong> 16 GB RAM<br></li><li><strong>Graphics:</strong> RTX 2070 / AMD 5700 XT<br></li><li><strong>Storage:</strong> 10 GB available space</li></ul>							</ul>
+						</div>
+										<div style="clear: both;"></div>
+
+									</div>
+					</div>
+	</div>
+	<script type="text/javascript">
+		$J( function() {
+			var $Tabs = $J('.sysreq_tab');
+			var $Content = $J('.sysreq_content');
+
+			$Tabs.click( function() {
+				var $Tab = $J(this);
+				$Tabs.removeClass('active');
+				$Tab.addClass('active');
+
+				$Content.removeClass('active');
+				$Content.filter('[data-os=' + $Tab.data('os') + ']').addClass('active');
+
+				$Content.trigger('gamepage_autocollapse_expand');
+			});
+		} );
+	</script>
+
+									<div class="game_page_autocollapse" style="max-height: 400px;">
+						<div id="game_area_legal">
+							<p>© Copyright 2025 Spooky Doorway. Developed by Spooky Doorway. Published by Raw Fury AB. All Rights Reserved.</p>
+						</div>
+					</div>
+				
+								
+				</div>
+
+			<div class="clear_both" style="clear: both;"></div>
+		</div>
+
+		<div class="related_items_ctn">
+			<div class="page_content game_description_column ">
+				
+				
+				<div  data-featuretarget="creatorhome-carousel" data-props="{&quot;title&quot;:&quot;More from Raw Fury Games&quot;,&quot;clanID&quot;:28981418,&quot;seeAllLink&quot;:&quot;https://store.steampowered.com/franchise/rawfury?snr=1_5_9__317&quot;,&quot;appIDs&quot;:[3504050,1569580,4094660,1466390,1042490,865610,1221250,1395030,2020030,631570,1082930,680380,3547180,992310,1571240,1601150],&quot;rgAppIDToCreatorIDs&quot;:[],&quot;rgAllCreatorClanIDs&quot;:[],&quot;strFeatureFirstAppMsg&quot;:null,&quot;bFullWidth&quot;:false}"></div>
+				<div  data-featuretarget="storeitems-carousel" data-props="{&quot;title&quot;:&quot;More like this&quot;,&quot;seeAllLink&quot;:&quot;https://store.steampowered.com/recommended/morelike/app/1395520/?snr=1_5_9__300&quot;,&quot;appIDs&quot;:[739630,2713000,3636770,541570,2677660,1721470,753640,110800,632470,379430,1341290,2416450,3949550,960910,2825530,2879840,1931770,865360,413420,1435790,567640,1949030,4905780,1684350,282140,2475490,3751230,1450830,1696770,1946700],&quot;navKey&quot;:&quot;more_like_this_carousel&quot;,&quot;sortOrder&quot;:&quot;shuffle&quot;,&quot;scorePenaltyIfOwned&quot;:5,&quot;bFullWidth&quot;:false}"></div>
+				<div id="responsive_apppage_reviewblock_ctn" class="rightcol game_meta_data"></div>
+
+				
+				<div class="steam_curators_block block responsive_apppage_reviewblock">
+			<div class="block_header">
+				<div class="right"><a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=1395520&snr=1_5_9__top-curators">View all</a></div>
+				<h2>What Curators Say</h2>
+				<div class="no_curators_followed">
+					95 Curators have reviewed this product. Click <a href="https://store.steampowered.com/curators/curatorsreviewing/?appid=1395520&snr=1_5_9__top-curators">here</a> to see them.				</div>
+			</div>
+		</div>
+		
+
+			</div>
+		</div>
+
+
+		<div class="review_ctn">
+			<div class="page_content">
+
+				<div id="app_reviews_hash" class="app_reviews_area">
+									<div class="" data-featuretarget="appreviews" data-props="{&quot;appid&quot;:1395520,&quot;app_release_date&quot;:&quot;1761569797&quot;,&quot;appname&quot;:&quot;The S\u00e9ance of Blake Manor&quot;,&quot;steamworks_appid&quot;:1395520,&quot;app_type&quot;:0,&quot;summary_num_positive_reviews&quot;:2970,&quot;summary_num_reviews&quot;:3132,&quot;summary_options&quot;:{&quot;bHasAnyReviews&quot;:true,&quot;eUserReviewScorePreference&quot;:0,&quot;bCanManageReviewBombs&quot;:false,&quot;bCanEditApp&quot;:false,&quot;summaryDisplayed&quot;:{&quot;nReviews&quot;:3132,&quot;nReviewsPositive&quot;:2970,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:0},&quot;summaryRecent&quot;:{&quot;nReviews&quot;:180,&quot;nReviewsPositive&quot;:168,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:30},&quot;bHasLanguageOutliers&quot;:true,&quot;bIsReviewLanguageOutlier&quot;:true,&quot;summaryGlobalNoOutliers&quot;:{&quot;nReviews&quot;:3689,&quot;nReviewsPositive&quot;:3510,&quot;eReviewScore&quot;:9,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:0},&quot;summaryYourLanguage&quot;:{&quot;nReviews&quot;:3132,&quot;nReviewsPositive&quot;:2970,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:0},&quot;rgDisplayedScoreLanguages&quot;:[&quot;english&quot;]},&quot;filter_options&quot;:{&quot;nReviewsPositive&quot;:3834,&quot;nReviewsNegative&quot;:193,&quot;nReviewsSteamPurchase&quot;:3689,&quot;nReviewsNonSteamPurchase&quot;:338,&quot;nReviewsYourLanguages&quot;:3361,&quot;bCanFilterByReviewQuality&quot;:true,&quot;rgLanguageOutliers&quot;:[{&quot;nReviews&quot;:3132,&quot;nReviewsPositive&quot;:2970,&quot;eReviewScore&quot;:8,&quot;bFilteredReviews&quot;:true,&quot;nAgeInDays&quot;:0,&quot;strLanguage&quot;:&quot;english&quot;}],&quot;rgPlaytimePresetHours&quot;:[0,1,10]}}"></div>
+		<div style="clear: left"></div>
+					</div>
+			</div>
+		</div>
+
+				<dialog id="reviewSettingsPopupCtn">
+			<div id="reviewSettingsPopupContent" class="review_settings_popup_content" >
+				<div class="review_settings_popup_header">
+					<div>Review Filters</div>
+					<div onclick="CloseReviewSettingsModal();"><img src="https://store.fastly.steamstatic.com/public/images/v6/close_btn.png" /></div>
+				</div>
+			</div>
+		</dialog>
+
+
+			</div>
+	</div>
+
+</div>
+
+		<div class="hover game_hover" id="global_hover" style="display: none; left: 0; top: 0;">
+			<div class="game_hover_box hover_box">
+				<div class="content" id="global_hover_content">
+				</div>
+			</div>
+			<div class="hover_arrow_left"></div>
+			<div class="hover_arrow_right"></div>
+		</div>
+<div id="EmbedModal"  style="display: none">
+	<div id="widget_create">
+		<p>You can use this widget-maker to generate a bit of HTML that can be embedded in your website to easily allow customers to purchase this game on Steam.</p>
+
+				<p class="small">Enter up to 375 characters to add a description to your widget:</p>
+		<div class="app_embed_dialog_description">
+			<textarea name="w_text" placeholder="The Séance of Blake Manor is a supernatural detective mystery, set in 1897 Ireland, where you investigate the disappearance of Evelyn Deane in a remote hotel full of secrets and other-worldly occurrences." maxlength="375"></textarea>
+		</div>
+
+		<div class="buttoncontainer">
+			<a class="btnv6_blue_hoverfade btn_medium " href="#" onclick="CreateWidget(1395520); return false;"><span>Create widget</span></a>
+		</div>
+	</div>
+	<div id="widget_finished" style="display: none;">
+		<div id="widget_container"></div>
+
+		<p class="small">Copy and paste the HTML below into your website to make the above widget appear</p>
+		<textarea id="widget_code" style=""></textarea>
+	</div>
+
+</div>
+
+	<div id="app_tagging_modal" class="app_tag_modal nologin" style="display: none;">
+		<div class="app_tag_modal_content">
+			<div class="app_tag_modal_seperator"></div>
+			<div class="app_tag_modal_left">
+				<h2>Popular user-defined tags for this product:<span class="app_tag_modal_tooltip" data-tooltip-text="These are tags applied to the product by the most users.  You can click a tag to find other products with that tag applied.  Or, you can hit the plus symbol for any existing tags to increase that tag's popularity on this product.">(?)</span></h2>
+				<div class="app_tags popular_tags">
+				</div>
+			</div>
+			<div class="app_tag_modal_right">
+									<h2>Sign In</h2>
+					<p>Sign in to add your own tags to this product.</p>
+					<p>
+						<a class="btnv6_blue_hoverfade btn_medium" href="https://store.steampowered.com/login/?redir=app/1395520">
+							<span>Sign In</span>
+						</a>
+					</p>
+							</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$J( function() {
+			InitAppTagModal( 1395520,
+				[{"tagid":10808,"name":"Supernatural","count":355,"browseable":true},{"tagid":5613,"name":"Detective","count":334,"browseable":true},{"tagid":4182,"name":"Singleplayer","count":307,"browseable":true},{"tagid":1664,"name":"Puzzle","count":307,"browseable":true},{"tagid":5716,"name":"Mystery","count":298,"browseable":true},{"tagid":4166,"name":"Atmospheric","count":296,"browseable":true},{"tagid":21,"name":"Adventure","count":287,"browseable":true},{"tagid":1742,"name":"Story Rich","count":277,"browseable":true},{"tagid":492,"name":"Indie","count":277,"browseable":true},{"tagid":8369,"name":"Investigation","count":277,"browseable":true},{"tagid":6052,"name":"Noir","count":276,"browseable":true},{"tagid":16094,"name":"Mythology","count":275,"browseable":true},{"tagid":3987,"name":"Historical","count":260,"browseable":true},{"tagid":3839,"name":"First-Person","count":259,"browseable":true},{"tagid":24003,"name":"Word Game","count":257,"browseable":true},{"tagid":4342,"name":"Dark","count":249,"browseable":true},{"tagid":6426,"name":"Choices Matter","count":248,"browseable":true},{"tagid":7702,"name":"Narrative","count":243,"browseable":true},{"tagid":1667,"name":"Horror","count":240,"browseable":true},{"tagid":1721,"name":"Psychological Horror","count":236,"browseable":true}],
+				[],
+				"1_5_9__410",
+				"1_5_9__411",
+				null,
+				false			);
+
+						if ( typeof GDynamicStore != 'undefined' )
+				GDynamicStore.FixupNamePortion();
+			
+					});
+	</script>
+
+		</div>	<!-- responsive_page_legacy_content -->
+
+		<div  data-featuretarget="footer"></div>
+	</div>	<!-- responsive_page_content -->
+
+</div>	<!-- responsive_page_frame -->
+</body>
+</html>

@@ -103,6 +103,41 @@ class KanitZorunluTests(unittest.TestCase):
                 self.assertEqual("", r["bugun_artefakt"], r["source_id"])
 
 
+class CikarilanSayininKaynagiDepodaTests(unittest.TestCase):
+    """Rapor edilen her sayinin ham dosyasi bu depoda olmali.
+
+    Kontrol ve kabul rehberi: "kayip artefakt basarili sayilmaz" ve
+    "indeksteki dosya gercekten checkout'ta veya kayitli depoda bulunuyor mu?"
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.belgeler = {r["document_id"]: r for r in oku("NORMALIZE-BELGELER.csv")}
+
+    def test_her_cikarilan_alan_depodaki_dosyaya_dayanir(self):
+        eksik = []
+        for r in oku("KATEGORI-ALANLARI.csv"):
+            belge = self.belgeler.get(r["document_id"])
+            if belge is None or not (HERE / belge["body_original_ref"]).exists():
+                eksik.append(f'{r["source_adi"]}/{r["alan"]}')
+        self.assertEqual([], eksik[:10], f"{len(eksik)} alan doğrulanamıyor")
+
+    def test_ornek_alanlarin_hashi_tutuyor(self):
+        kontrol = 0
+        for r in oku("KATEGORI-ALANLARI.csv"):
+            belge = self.belgeler.get(r["document_id"])
+            yol = HERE / belge["body_original_ref"] if belge else None
+            if not yol or not yol.exists():
+                continue
+            self.assertEqual(belge["artifact_hash"],
+                             hashlib.sha256(yol.read_bytes()).hexdigest(),
+                             r["source_adi"])
+            kontrol += 1
+            if kontrol >= 20:
+                break
+        self.assertGreater(kontrol, 0)
+
+
 class AlanUydurulmazTests(unittest.TestCase):
     """Rehber: kaynak desteklemiyorsa null; alan uydurma yok."""
 

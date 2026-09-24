@@ -1,0 +1,312 @@
+
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://ghdx.healthdata.org/recent-data" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>GHDx: Recent</title>
+    <link>https://ghdx.healthdata.org/recent-data</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="https://ghdx.healthdata.org/recent/feed" rel="self" type="application/rss+xml" />
+      <item>
+    <title>Global Burden of Disease Study 2023 (GBD 2023) Human Resources for Health Estimates 1990-2023</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/global-human-resources-for-health-estimates-1990-2023</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 1990 - December, 2023&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Global Burden of Disease Study 2023 (GBD 2023), coordinated by the Institute for Health Metrics and Evaluation (IHME), estimated the burden of diseases, injuries, and risk factors for 204 countries and territories and selected subnational location.&lt;/p&gt;
+&lt;p&gt;This dataset provides estimates of the density (per 10,000) and sex composition of 20 human resources for health cadres. Input data was drawn from population-based surveys, censuses, administrative records, and scientific literature harmonized to the International Standard Classification of Occupations 2008. Minimum density thresholds for doctors, nurses and midwives, dentists, and pharmacists associated with reaching a score of 80 out of 100 on the UHC effective coverage index are included. Estimates were generated using spatiotemporal Gaussian process regression(ST-GPR) models, and stochastic frontier meta-regression was used to derive minimum density thresholds.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Tue, 25 Aug 2026 10:13:03 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">631426 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Honduras Regional Malaria Elimination Initiative Baseline Household Survey 2020</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/HND-RMEI-2020</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 2018 - December, 2020&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;&lt;span&gt;&lt;/span&gt;&lt;div class=&quot;field field-name-field-secondary field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items clearfix&quot;&gt;
+		&lt;div class=&quot;field-item&quot;&gt;
+						&lt;span&gt;&lt;a href=&quot;/data-type/survey&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Survey&lt;/a&gt;: &lt;/span&gt;
+						Health facility - Household - Individual		&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Regional Malaria Elimination Initiative (RMEI), run by the Inter-American Development Bank, targets zero malaria cases across nine Mesoamerican/Caribbean countries, including Guatemala, Colombia, and the Dominican Republic. IHME was its independent evaluator. RMEI&#039;s baseline measurement tracks indicators along the &quot;Detection, Diagnosis, Treatment, Investigation, Response (DTI-R)&quot; strategy: input supply, testing rates, timeliness of detection/treatment, reporting quality, and vector control coverage. IHME built survey instruments from the indicator manual and a Guatemala fact-finding visit, with Ministry of Health input. Measurement includes a facility survey (interview, observation, records review) and an LQAS household survey near selected facilities, covering primary care sites in malaria focus areas plus linked hospitals/headquarters (referral, diagnosis, surveillance pipelines), and a household survey gathering detection, prevention, and knowledge data.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Sat, 22 Aug 2026 16:32:13 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">630112 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Guatemala Regional Malaria Elimination Initiative Baseline Household Survey 2020</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/GTM-RMEI-2020</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 2018 - December, 2020&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;&lt;span&gt;&lt;/span&gt;&lt;div class=&quot;field field-name-field-secondary field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items clearfix&quot;&gt;
+		&lt;div class=&quot;field-item&quot;&gt;
+						&lt;span&gt;&lt;a href=&quot;/data-type/survey&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Survey&lt;/a&gt;: &lt;/span&gt;
+						Health facility - Household - Individual		&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Regional Malaria Elimination Initiative (RMEI), run by the Inter-American Development Bank, targets zero malaria cases across nine Mesoamerican/Caribbean countries, including Guatemala, Colombia, and the Dominican Republic. IHME was its independent evaluator. RMEI&#039;s baseline measurement tracks indicators along the &quot;Detection, Diagnosis, Treatment, Investigation, Response (DTI-R)&quot; strategy: input supply, testing rates, timeliness of detection/treatment, reporting quality, and vector control coverage. IHME built survey instruments from the indicator manual and a Guatemala fact-finding visit, with Ministry of Health input. Measurement includes a facility survey (interview, observation, records review) and an LQAS household survey near selected facilities, covering primary care sites in malaria focus areas plus linked hospitals/headquarters (referral, diagnosis, surveillance pipelines), and a household survey gathering detection, prevention, and knowledge data.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Sat, 22 Aug 2026 16:32:13 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">630110 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Global Health Spending 1995-2022, 14 November 2025</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/global-health-spending-1995-2022-20251114</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 1995 - December, 2022&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Research by the Global Burden of Disease Health Financing Collaborator Network produced estimates for 1995-2022 for 204 countries and territories covering total health spending, spending disaggregated by source into three domestic financing categories (government, out-of-pocket, and prepaid private), and development assistance for health (DAH). Source data came from the WHO’s Global Health Expenditure Database (GHED), program reports, budget data, national estimates, and National Health Accounts (NHAs). These estimates were used to forecast GDP and prospective health spending estimates for 2023-2050. Estimates are reported in constant 2023 United States Dollars, constant 2023 purchasing power parity adjusted (PPP) dollars, and as a percent of gross domestic product.&lt;/p&gt;
+&lt;p&gt;Though not released until August, 5, 2026, this dataset is part of a collection of estimates produced for Financing Global Health (FGH) 2026 with a batch release date of November 14, 2026&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Tue, 11 Aug 2026 06:55:04 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">630085 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Gross Domestic Product Per Capita 1960-2050 - FGH 2026, 14 November 2025</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/global-gdp-per-capita-1960-2050-fgh-2026-20251114</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 1960 - December, 2050&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;IHME research produced estimates for Gross Domestic Product (GDP) from 1960-2050. Estimates are reported as GDP per person in constant 2010 purchasing-power parity-adjusted (PPP) dollars.&lt;/p&gt;
+&lt;p&gt;Though not released until August, 5, 2026, this dataset is part of a collection of estimates produced for Financing Global Health (FGH) 2026 with a batch release date of November 14, 2026&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Tue, 11 Aug 2026 06:54:03 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">630040 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Global Burden of Disease Study 2023 (GBD 2023) Morbidity Gap Estimates 1990-2023</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/gbd-2023-morbidity-gap-1990-2023</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 1990 - December, 2023&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Global Burden of Disease Study 2023 (GBD 2023), coordinated by the Institute for Health Metrics and Evaluation (IHME), estimated life expectancy (LE) and healthy life expectancy (HALE) at birth for 204 countries and territories and selected subnational locations.&lt;/p&gt;
+&lt;p&gt;This dataset includes selected appendix tables as well as estimates of the morbidity gap (MG), defined as the duration of life spent in poor health, calculated as LE minus HALE, and the proportional MG, defined as the proportion of life spent in poor health, calculated as MG/LE*100%. Estimates were produced globally and for GBD super-regions, countries and territories, and Socio-demographic Index (SDI) quintiles; for the years 1990, 2010, and 2020–2023 for the MG and for the years 1990 and 2023 for the proportional MG; and for males, females, and all sexes combined.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Thu, 23 Jul 2026 09:16:42 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">629003 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Hemoglobin Concentration Effects on Maternal Peripartum Depression Burden of Proof and Risk-Outcome Scores</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/hemoglobin-maternal-ppd-bop-ros</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;July, 2026 - July, 2026&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Researchers systematically reviewed literature on the health burden of low and high hemoglobin concentrations during pregnancy. Utilizing the Burden of Proof (BoP) methodology, estimates were created to summarize the relationship between maternal hemoglobin levels and peripartum depression. A sensitivity analysis restricted to observations with postnatal depression as outcome was also performed. The datasets include 1) input data to BoP analysis and 2) its outputs including the pooled relative risks as well as metrics like burden of proof risk function, risk-outcome score, and star rating.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Thu, 16 Jul 2026 13:49:18 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">627764 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>United States Colorectal Cancer Mortality by County, Race and Ethnicity 2000-2019</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/us-colorectal-cancer-county-race-ethnicity-2000-2019</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 2000 - December, 2019&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Estimates of Colorectal Cancer mortality rates were produced at the county level in the United States, and by racial and ethnic population, for 2000-2019. They were generated using data from the National Center for Health Statistics. For age groups outside the range estimated for colorectal cancer under GBD age restrictions, rates are reported as zero. Estimates for population groups too small to produce stable rates were masked and appear as empty cells.&lt;/p&gt;
+&lt;p&gt;This data set includes the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CSV files of county-, state-, and national-level estimates of Colorectal Cancer mortality rates for each age group, sex, year, and racial and ethnic population (non-Latino and non-Hispanic American Indian or Alaska Native [AIAN], non-Latino and non-Hispanic Asian or Pacific Islander [Asian], non-Latino and non-Hispanic Black [Black], Latino or Hispanic [Latino], and non-Latino and non-Hispanic White [White]). Blank cells are for masked estimates.&lt;/li&gt;
+&lt;li&gt;Code used to generate the estimates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Thu, 20 Aug 2026 12:13:44 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">626511 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Hemoglobin Concentration Effects on Maternal and Neonatal Health Burden of Proof and Risk-Outcome Scores</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/hemoglobin-maternal-neonatal-bop-ros</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;June, 2026 - June, 2026&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Researchers systematically reviewed literature on the health burden of low and high hemoglobin concentrations during pregnancy. Utilizing the Burden of Proof (BoP) methodology, estimates were created to summarize the relationship between maternal hemoglobin levels and 13 adverse maternal and neonatal outcomes, including all-cause maternal mortality, postpartum hemorrhage, antepartum hemorrhage, preeclampsia, maternal sepsis and other infections, peripartum depression, all-cause neonatal mortality, all-cause stillbirth, preterm birth, low birthweight, small-for-gestational-age, large-for-gestational-age, and neonatal sepsis. Various sensitivity analyses based on the trimester-specific hemoglobin assessments and different definitions of outcomes, amongst others, were also performed. The datasets include 1) input data to BoP analysis and 2) its outputs including the pooled relative risks as well as metrics like burden of proof risk function, risk-outcome score, and star rating.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Wed, 01 Jul 2026 09:19:27 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">626248 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  <item>
+    <title>Development Assistance for Health Database 1990-2026, 11 June 2026</title>
+    <link>https://ghdx.healthdata.org/record/ihme-data/dah-1990-2026-20260611</link>
+    <description>&lt;div class=&quot;field field-name-field-time field-type-datetime field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;January, 1990 - December, 2026&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;	&lt;div class=&quot;field field-name-field-type field-type-taxonomy-term-reference field-label-hidden&quot;&gt;
+				&lt;div class=&quot;field-items clearfix&quot;&gt;
+							&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/data-type/estimate&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Estimate&lt;/a&gt;&lt;/div&gt;
+					&lt;/div&gt;
+	&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-provider field-type-taxonomy-term-reference field-label-inline clearfix&quot;&gt;
+      &lt;div class=&quot;field-label&quot;&gt;Provider&amp;nbsp;&lt;/div&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/organizations/institute-health-metrics-and-evaluation-ihme&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Institute for Health Metrics and Evaluation (IHME)&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-summary field-type-text field-label-hidden&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This version of the Development Assistance for Health (DAH) Database includes estimates for 1990-2026, which are based on project databases, financial statements, annual reports, IRS 990s, and correspondence with agencies. The DAH Database enables comprehensive analysis of trends in international disbursements of grants and loans for health projects in low- and middle-income countries from key agencies. The data are disaggregated by source of funds, channel of funding, country and geographic region, health focus areas, and program areas. The data for 2026 are preliminary. The data for 2025 are a mix of preliminary and final estimates.&lt;/p&gt;
+&lt;p&gt;To better understand the data and how to use it, please refer to the IHME DAH Database 2026 User Guide.&lt;/p&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;</description>
+     <pubDate>Fri, 07 Aug 2026 06:58:41 -0700</pubDate>
+ <dc:creator>GHDx</dc:creator>
+ <guid isPermaLink="false">625357 at https://ghdx.healthdata.org</guid>
+ <comments />
+  </item>
+  </channel>
+</rss>
