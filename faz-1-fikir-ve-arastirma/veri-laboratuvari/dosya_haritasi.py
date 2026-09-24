@@ -164,6 +164,7 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS01-KAYNAK-KONTROL.csv": ("AS01", "cikti", "F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana"),
     "AS01-ALAN-ORNEKLERI.csv": ("AS01", "cikti", "Her çalışan kaynaktan gerçek alan örneği; bulunmayan alan boş"),
     "AS01-GERI-BILDIRIM.csv": ("AS01", "cikti", "İçerik vermeyen kaynaklar için açık geri bildirim kayıtları"),
+    "AS01-IDDIA-DOGRULAMA.csv": ("AS01", "cikti", "KAYNAK-ALAN.csv'nin 100 alan iddiasının bugünkü yanıtla sınanması"),
     "as01_kaynak_kontrol.py": ("AS01", "kod", "Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar"),
 }
 

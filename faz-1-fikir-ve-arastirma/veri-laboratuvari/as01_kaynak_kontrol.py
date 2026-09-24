@@ -389,7 +389,8 @@ def artefakt_dagilimi() -> dict[str, int]:
 
 
 def erisim_sinirlari(kontrol: list[dict[str, Any]],
-                     ornekler: list[dict[str, Any]]) -> str:
+                     ornekler: list[dict[str, Any]],
+                     iddialar: list[dict[str, Any]] | None = None) -> str:
     import collections
     import datetime
 
@@ -420,6 +421,18 @@ def erisim_sinirlari(kontrol: list[dict[str, Any]],
         f'| {o["kaynak_adi"]} | {o["dolu_alan_sayisi"]}/11 | `{o["baslik"][:34]}` | '
         f'{o["puan"] or "—"} | {o["fiyat"] or "—"} | {o["yazar"] or "—"} | '
         f'`{o["artefakt_sha256"][:12]}` |' for o in ornekler)
+
+    iddialar = iddialar or []
+    iddia_durum = collections.Counter(r["bugun_sonuc"] for r in iddialar)
+    kaynak_iddia: dict[str, list[int]] = collections.defaultdict(lambda: [0, 0])
+    for r in iddialar:
+        kaynak_iddia[r["kaynak_adi"]][1] += 1
+        if r["bugun_sonuc"] == "dogrulandi":
+            kaynak_iddia[r["kaynak_adi"]][0] += 1
+    iddia_tablosu = "\n".join(
+        ["| Kaynak | Doğrulanan / iddia |", "|---|---:|"]
+        + [f"| {ad} | {d}/{t} |"
+           for ad, (d, t) in sorted(kaynak_iddia.items(), key=lambda x: -x[1][0])])
 
     return f"""# AS-01 — Kaynak yeteneği, alan örnekleri ve erişim sınırları
 
@@ -479,6 +492,47 @@ Rehberin istediği 11 alan: {", ".join(f"`{a}`" for a in ISTENEN_ALANLAR)}.
 **Apple App Store 11 alanın 10'unu veriyor** — F01, F08 ve F10 için en güçlü
 kaynak. **Armut** Türkçe yerel hizmet için puan ve gerçek yorumcu adı
 döndürüyor. **Stack Overflow ve Hacker News** resmî API'leriyle çalışıyor.
+
+## 2b. Arşiv, snippet ve gerçek içerik aynı şey değildir
+
+Görev kartı bu üçünün ayrılmasını istiyor. Tanımlar ve bugünkü karşılıkları:
+
+| Tür | Ne demek | Kanıt değeri | Bugün hangi kaynak |
+|---|---|---|---|
+| **Gerçek içerik** | Sayfanın kendi gövdesi, canlı çekildi | Alıntılanabilir | Apple App Store, Shopify, Steam, Armut |
+| **API yanıtı** | Kaynağın resmî ucundan yapılandırılmış veri | Alıntılanabilir | GitHub, Stack Overflow, Hacker News, Hugging Face |
+| **Arşiv** | Common Crawl kopyası; **canlı değil**, çekildiği tarihe ait | Sınırlı — `arsiv` işaretlenir, tarihi ayrı yazılır | G2 (yalnız arşivde var) |
+| **Snippet / aday keşif** | Sitemap girdisi, arama sonucu satırı, meta açıklama | **Kanıt değildir** — yalnız "şu adres var" der | Hugging Face ve Capterra Education kayıtlarındaki `aday-kesif` |
+| **JS kabuğu** | HTTP 200 döndü, gövdede görünür metin yok | Kanıt değildir | Google Play |
+| **İndekste var, dosya yok** | Dizin dosyayı gösteriyor, checkout'ta bulunmuyor | Kanıt değildir | Bölüm 5 |
+
+İkisi sık karıştırılır ve karıştırılmamalı:
+
+- **Sitemap bir snippet bile değildir.** İçinde adres listesi vardır, içerik
+  yoktur. Bir kaynağın sitemap'inin inmiş olması o kaynaktan veri alındığını
+  göstermez.
+- **Arşiv kopyası canlı veri değildir.** G2 için elimizde yalnız Common Crawl
+  kopyası var; bugün canlı erişim bot korumasına takılıyor. Arşivden gelen
+  bulgu kullanılacaksa `arsiv` etiketi ve çekilme tarihi birlikte taşınmalıdır.
+
+## 2c. Laboratuvarın mevcut alan iddiaları ne kadar doğru
+
+`KAYNAK-ALAN.csv` (Görev 4) bu 14 kaynak için {len(iddialar)} alan iddiası taşıyor ve
+büyük kısmı `beyan` durumundaydı: iddia var, doğrulama yok. Bugünkü yanıtlar
+o iddiaların üzerinde sınandı.
+
+| Sonuç | Alan |
+|---|---:|
+| **Bugünkü yanıtta bulundu** | **{iddia_durum['dogrulandi']}** |
+| Bu yüzeyde bulunamadı | {iddia_durum['dogrulanamadi']} |
+| Kaynak içerik vermediği için sınanamadı | {iddia_durum['yoklanamadi']} |
+
+{iddia_tablosu}
+
+**"Bulunamadı" alanın yok olduğu anlamına gelmez.** Kaynak başına tek örnek
+yüzey yoklandı; alan başka bir uçta bulunabilir. Ayrıntı:
+[`AS01-IDDIA-DOGRULAMA.csv`](AS01-IDDIA-DOGRULAMA.csv) — her satır hangi
+artefaktta arandığını yazar.
 
 ## 3. Politika engeli — kazımayla çözülmez
 
@@ -625,6 +679,7 @@ def main(argv: list[str] | None = None) -> int:
     kontrol = kontrol_et(canli=secenek.canli)
     ornekler = alan_ornekleri(kontrol) if secenek.canli else []
     bildirimler = geri_bildirimler(kontrol) if secenek.canli else []
+    iddialar = iddialari_dogrula(kontrol) if secenek.canli else []
     ozet = {
         "surum": SURUM,
         "fikir": len(FIKIR_KAYNAK),
@@ -635,6 +690,8 @@ def main(argv: list[str] | None = None) -> int:
         "artefakt_konumu": artefakt_dagilimi(),
         "alan_ornegi": len(ornekler),
         "geri_bildirim": len(bildirimler),
+        "iddia_dogrulama": dict(collections.Counter(
+            r["bugun_sonuc"] for r in iddialar)),
     }
     print(json.dumps(ozet, ensure_ascii=False, indent=2))
     if not secenek.yaz:
@@ -644,10 +701,12 @@ def main(argv: list[str] | None = None) -> int:
     if secenek.canli:
         _yaz("AS01-ALAN-ORNEKLERI.csv", ornekler)
         _yaz("AS01-GERI-BILDIRIM.csv", bildirimler)
+        _yaz("AS01-IDDIA-DOGRULAMA.csv", iddialar)
         (HERE / "AS01-ERISIM-SINIRLARI.md").write_text(
-            erisim_sinirlari(kontrol, ornekler), encoding="utf-8")
+            erisim_sinirlari(kontrol, ornekler, iddialar), encoding="utf-8")
         print("AS01-KAYNAK-KONTROL.csv · AS01-ALAN-ORNEKLERI.csv · "
-              "AS01-GERI-BILDIRIM.csv · AS01-ERISIM-SINIRLARI.md")
+              "AS01-GERI-BILDIRIM.csv · AS01-IDDIA-DOGRULAMA.csv · "
+              "AS01-ERISIM-SINIRLARI.md")
     else:
         print("AS01-KAYNAK-KONTROL.csv (ağsız: bugünkü sütunlar not_run)")
     return 0
@@ -655,3 +714,88 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+# --------------------------------------------------------------------------
+# Mevcut laboratuvar iddialarinin dogrulanmasi
+# --------------------------------------------------------------------------
+# KAYNAK-ALAN.csv (Gorev 4) her kaynak icin hangi alanin alinabilecegini
+# soyler, ama satirlarin cogu `beyan` durumunda: iddia var, dogrulama yok.
+# AS-01 "mevcut kaynak/alan/ornekleri incele" diyor; bu bolum o iddialari
+# BUGUNKU yanitla karsilastirir.
+#
+# Desenler yanitin icinde o alanin gercekten bulunup bulunmadigina bakar.
+# Bulunmazsa "dogrulanamadi" yazilir - "yok" DEGIL: tek bir ornek yuzeyden
+# bakildi, kaynagin baska ucunda bulunabilir.
+ALAN_DESENI: dict[str, str] = {
+    "baslik": r'(?is)<title[^>]*>\s*\S|"(?:title|name|headline)"\s*:\s*"[^"]+',
+    "url": r'(?i)https?://',
+    "puan": r'(?i)"(?:ratingValue|rating|score|aggregateRating)"|(?:\b[0-5][.,]\d\b\s*(?:/\s*5|stars?|yıldız|puan))',
+    "yorum_sayisi": r'(?i)"(?:reviewCount|ratingCount|answer_count|comment_count|num_comments)"|\d[\d.,]*\s*(?:reviews?|ratings?|yorum|değerlendirme)',
+    "fiyat": r'(?i)"(?:price|priceCurrency|offers)"|[$€£₺]\s?\d|\b\d+[.,]\d{2}\s*(?:USD|EUR|TRY|TL)',
+    "fiyat_bandi": r'(?i)"(?:lowPrice|highPrice|priceRange)"|\b(?:from|başlangıç|itibaren)\b[^.\n]{0,20}[$€£₺]\d',
+    "saglayici_adi": r'(?i)"(?:author|seller|brand|owner|provider|developer|publisher)"|"display_name"',
+    "yayin_tarihi": r'(?i)"(?:datePublished|creation_date|created_at|created_utc|published)"|<time[^>]+datetime=',
+    "son_guncelleme": r'(?i)"(?:dateModified|last_activity_date|updated_at|lastModified|last_edit_date)"',
+    "etiket": r'(?i)"(?:tags|keywords|categor|pipeline_tag|genres?)"',
+    "indirme_sayisi": r'(?i)"(?:downloads|installs?|download_count)"|\d[\d.,]*\s*(?:downloads|installs|indirme)',
+    "kullanici_sikayeti": r'(?i)"(?:reviewBody|body|text|body_markdown)"|\b(?:complain|şikayet|sorun|problem|issue)\w*\b',
+    "urun_sayisi": r'(?i)"(?:total|totalResults|nbHits|numFound|resultCount)"|\d[\d.,]*\s*(?:results?|apps?|ürün|sonuç)',
+    "kayit_sayisi": r'(?i)"(?:total|count|nbHits|has_more|quota_remaining)"',
+    "siralama": r'(?i)"(?:rank|position|order|relevance)"|\bsıralama\b',
+    "konum": r'(?i)"(?:address|location|geo|areaServed)"|\b(?:İstanbul|Ankara|İzmir)\b',
+    "lisans": r'(?i)"(?:license|licence|spdx)"|\b(?:MIT|Apache-?2|GPL|BSD-3|CC-BY)\b',
+    "trend_serisi": r'(?i)"(?:trend|history|timeseries|series)"',
+    "istatistik_serisi": r'(?i)"(?:statistics|stats|series|observations)"',
+}
+
+
+def iddialari_dogrula(kontrol: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """KAYNAK-ALAN.csv'nin iddialarini bugunku yanitla karsilastirir."""
+    import re as _re
+
+    kaynak_alan = _oku("KAYNAK-ALAN.csv")
+    bugun = {r["source_id"]: r for r in kontrol
+             if r["bugun_erisim"] == "ok" and r["bugun_artefakt"]}
+    ilgili = {r["source_id"] for r in kontrol}
+
+    govdeler: dict[str, str] = {}
+    for sid, satir in bugun.items():
+        yol = HERE / satir["bugun_artefakt_dosya"]
+        if yol.exists():
+            govdeler[sid] = yol.read_bytes()[:400_000].decode("utf-8", "replace")
+
+    satirlar: list[dict[str, Any]] = []
+    for iddia in kaynak_alan:
+        sid = iddia["source_id"]
+        if sid not in ilgili:
+            continue
+        govde = govdeler.get(sid)
+        desen = ALAN_DESENI.get(iddia["alan"])
+        if govde is None:
+            sonuc = "yoklanamadi"
+            gerekce = "kaynak bugün içerik vermedi; iddia sınanamadı"
+        elif desen is None:
+            sonuc = "desen-yok"
+            gerekce = f'"{iddia["alan"]}" için otomatik doğrulama deseni tanımlı değil'
+        elif _re.search(desen, govde):
+            sonuc = "dogrulandi"
+            gerekce = "bugünkü yanıtta bu alan bulundu"
+        else:
+            sonuc = "dogrulanamadi"
+            gerekce = ("bu yüzeyde bulunamadı — alan YOK demek değildir, "
+                       "kaynağın başka ucunda olabilir")
+        satirlar.append({
+            "source_id": sid,
+            "kaynak_adi": iddia["ad"],
+            "alan": iddia["alan"],
+            "alan_turu": iddia["alan_turu"],
+            "laboratuvar_izin": iddia["izin_durumu"],
+            "laboratuvar_guven": iddia["guven"],
+            "bugun_yoklanan_url": bugun.get(sid, {}).get("denenen_url", ""),
+            "bugun_artefakt": bugun.get(sid, {}).get("bugun_artefakt", ""),
+            "bugun_sonuc": sonuc,
+            "gerekce": gerekce,
+            "hizmet_ettigi_soru": iddia["hizmet_ettigi_soru"][:80],
+        })
+    return satirlar

@@ -169,6 +169,57 @@ class GeriBildirimTests(unittest.TestCase):
             self.assertEqual("acik", r["durum"])
 
 
+class IddiaDogrulamaTests(unittest.TestCase):
+    """AS-01: mevcut kaynak/alan/ornekleri incele."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.iddialar = oku("AS01-IDDIA-DOGRULAMA.csv")
+
+    def test_her_iddia_bir_sonuc_tasir(self):
+        gecerli = {"dogrulandi", "dogrulanamadi", "yoklanamadi", "desen-yok"}
+        for r in self.iddialar:
+            self.assertIn(r["bugun_sonuc"], gecerli, r["alan"])
+            self.assertTrue(r["gerekce"].strip())
+
+    def test_dogrulanan_iddia_artefakta_bagli(self):
+        for r in self.iddialar:
+            if r["bugun_sonuc"] == "dogrulandi":
+                self.assertEqual(64, len(r["bugun_artefakt"]), r["alan"])
+                self.assertTrue((HERE / "results" / "raw" /
+                                 f'{r["bugun_artefakt"]}.bin').exists())
+
+    def test_bulunamadi_yok_demek_degil(self):
+        """Tek yuzey yoklandi; alan baska ucta olabilir ve bu yazili."""
+        for r in self.iddialar:
+            if r["bugun_sonuc"] == "dogrulanamadi":
+                self.assertIn("YOK demek değildir", r["gerekce"])
+
+    def test_icerik_vermeyen_kaynak_sinanmis_sayilmaz(self):
+        kontrol = {r["source_id"]: r for r in oku("AS01-KAYNAK-KONTROL.csv")}
+        for r in self.iddialar:
+            if r["bugun_sonuc"] == "yoklanamadi":
+                self.assertEqual("", r["bugun_artefakt"], r["alan"])
+
+
+class ArsivSnippetAyrimiTests(unittest.TestCase):
+    """AS-01: arsiv/snippet ve gercek icerik farkini belirt."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.metin = (HERE / "AS01-ERISIM-SINIRLARI.md").read_text(encoding="utf-8")
+
+    def test_rapor_uc_turu_de_tanimliyor(self):
+        for kavram in ("Gerçek içerik", "Arşiv", "Snippet"):
+            self.assertIn(kavram, self.metin, kavram)
+
+    def test_sitemap_snippet_sayilmiyor(self):
+        self.assertIn("Sitemap bir snippet bile değildir", self.metin)
+
+    def test_arsiv_canli_sayilmiyor(self):
+        self.assertIn("Arşiv kopyası canlı veri değildir", self.metin)
+
+
 class RaporTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

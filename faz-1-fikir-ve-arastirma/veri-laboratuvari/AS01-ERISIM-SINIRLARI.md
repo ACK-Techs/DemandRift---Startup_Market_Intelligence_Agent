@@ -66,6 +66,62 @@ Rehberin istediği 11 alan: `baslik`, `govde`, `kaynak_url`, `alinma_tarihi`, `y
 kaynak. **Armut** Türkçe yerel hizmet için puan ve gerçek yorumcu adı
 döndürüyor. **Stack Overflow ve Hacker News** resmî API'leriyle çalışıyor.
 
+## 2b. Arşiv, snippet ve gerçek içerik aynı şey değildir
+
+Görev kartı bu üçünün ayrılmasını istiyor. Tanımlar ve bugünkü karşılıkları:
+
+| Tür | Ne demek | Kanıt değeri | Bugün hangi kaynak |
+|---|---|---|---|
+| **Gerçek içerik** | Sayfanın kendi gövdesi, canlı çekildi | Alıntılanabilir | Apple App Store, Shopify, Steam, Armut |
+| **API yanıtı** | Kaynağın resmî ucundan yapılandırılmış veri | Alıntılanabilir | GitHub, Stack Overflow, Hacker News, Hugging Face |
+| **Arşiv** | Common Crawl kopyası; **canlı değil**, çekildiği tarihe ait | Sınırlı — `arsiv` işaretlenir, tarihi ayrı yazılır | G2 (yalnız arşivde var) |
+| **Snippet / aday keşif** | Sitemap girdisi, arama sonucu satırı, meta açıklama | **Kanıt değildir** — yalnız "şu adres var" der | Hugging Face ve Capterra Education kayıtlarındaki `aday-kesif` |
+| **JS kabuğu** | HTTP 200 döndü, gövdede görünür metin yok | Kanıt değildir | Google Play |
+| **İndekste var, dosya yok** | Dizin dosyayı gösteriyor, checkout'ta bulunmuyor | Kanıt değildir | Bölüm 5 |
+
+İkisi sık karıştırılır ve karıştırılmamalı:
+
+- **Sitemap bir snippet bile değildir.** İçinde adres listesi vardır, içerik
+  yoktur. Bir kaynağın sitemap'inin inmiş olması o kaynaktan veri alındığını
+  göstermez.
+- **Arşiv kopyası canlı veri değildir.** G2 için elimizde yalnız Common Crawl
+  kopyası var; bugün canlı erişim bot korumasına takılıyor. Arşivden gelen
+  bulgu kullanılacaksa `arsiv` etiketi ve çekilme tarihi birlikte taşınmalıdır.
+
+## 2c. Laboratuvarın mevcut alan iddiaları ne kadar doğru
+
+`KAYNAK-ALAN.csv` (Görev 4) bu 14 kaynak için 100 alan iddiası taşıyor ve
+büyük kısmı `beyan` durumundaydı: iddia var, doğrulama yok. Bugünkü yanıtlar
+o iddiaların üzerinde sınandı.
+
+| Sonuç | Alan |
+|---|---:|
+| **Bugünkü yanıtta bulundu** | **33** |
+| Bu yüzeyde bulunamadı | 29 |
+| Kaynak içerik vermediği için sınanamadı | 38 |
+
+| Kaynak | Doğrulanan / iddia |
+|---|---:|
+| Stack Overflow | 6/7 |
+| Apple App Store | 6/9 |
+| GitHub | 5/6 |
+| Hacker News | 5/7 |
+| Armut | 4/6 |
+| Hugging Face | 3/6 |
+| Steam | 3/6 |
+| Shopify App Store | 1/6 |
+| G2 | 0/9 |
+| Capterra | 0/9 |
+| Capterra Education Software | 0/4 |
+| Google Play Store | 0/9 |
+| Reddit | 0/9 |
+| Trustpilot | 0/7 |
+
+**"Bulunamadı" alanın yok olduğu anlamına gelmez.** Kaynak başına tek örnek
+yüzey yoklandı; alan başka bir uçta bulunabilir. Ayrıntı:
+[`AS01-IDDIA-DOGRULAMA.csv`](AS01-IDDIA-DOGRULAMA.csv) — her satır hangi
+artefaktta arandığını yazar.
+
 ## 3. Politika engeli — kazımayla çözülmez
 
 8 deneme robots.txt tarafından durduruldu:
