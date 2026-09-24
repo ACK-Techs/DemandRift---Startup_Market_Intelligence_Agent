@@ -33,6 +33,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G12": ("Görev 12", "İç sayfa toplama"),
     "G13": ("Görev 13", "SourceFitMatrix v1"),
     "G14": ("Görev 14", "Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)"),
+    "AS01": ("AS-01", "Batuhan'ın F01–F10 denemeleri için kaynak yeteneği ve erişim sınırları"),
 }
 
 # dosya -> (gorev, rol, bir cumlelik aciklama)
@@ -157,6 +158,13 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "VERI-PAKETI-ORNEKLERI.csv": ("G14", "cikti", "Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor"),
     "KALAN-IS.csv": ("G14", "cikti", "Önceliklendirilmiş kalan iş; çözülebilir ve çözülemez ayrı işaretli"),
     "denetim.py": ("G14", "kod", "Sözlük, veri seti ve eşleme tablosunu birlikte denetler; raporları üretir"),
+
+    # --- AS-01 ---
+    "AS01-ERISIM-SINIRLARI.md": ("AS01", "belge", "**Batuhan için.** Bugün ölçülmüş erişim/içerik/artefakt durumu ve alan örnekleri"),
+    "AS01-KAYNAK-KONTROL.csv": ("AS01", "cikti", "F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana"),
+    "AS01-ALAN-ORNEKLERI.csv": ("AS01", "cikti", "Her çalışan kaynaktan gerçek alan örneği; bulunmayan alan boş"),
+    "AS01-GERI-BILDIRIM.csv": ("AS01", "cikti", "İçerik vermeyen kaynaklar için açık geri bildirim kayıtları"),
+    "as01_kaynak_kontrol.py": ("AS01", "kod", "Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

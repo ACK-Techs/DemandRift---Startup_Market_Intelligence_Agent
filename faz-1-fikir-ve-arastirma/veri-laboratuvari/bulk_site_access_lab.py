@@ -644,13 +644,40 @@ def robots_state(outcome: "FetchOutcome") -> str:
     * Dogrulama duvari, 401/403 ya da tasima hatasi -> devam edilmez. Burada
       'kural yok' demek yanlis olur: yanit bize ait degil, korumaya ait.
     """
-    if outcome.transaction is not None and outcome.transaction.status in {404, 410}:
+    durum = outcome.transaction.status if outcome.transaction is not None else None
+    if looks_like_challenge(outcome.body):
+        return ROBOTS_BLOCKED
+    # Once GOVDEYE bak. stackoverflow.com robots.txt'yi HTTP 418 ile donduruyor
+    # ama govdesinde "Disallow: /" yaziyor; durum koduna bakip serbest saymak
+    # sitenin acik yasagini cignemek olurdu. Gecerli yonerge tasiyan her govde
+    # politikadir, durum kodu ne olursa olsun.
+    if _politika_yonergesi_var(outcome.body):
+        return ROBOTS_POLICY
+    if durum in {401, 403, 429}:
+        return ROBOTS_BLOCKED
+    # RFC 9309 2.3.1.3: 401/403/429 disindaki 4xx "unavailable" sayilir ve
+    # tarayici kaynaga erisebilir. Kod daha once yalniz 404/410'u boyle
+    # sayiyordu; api.stackexchange.com gibi robots.txt dosyasi OLMAYAN resmi
+    # API host'lari (HTTP 400 + JSON hata) bu yuzden yasakli goruluyordu.
+    if durum is not None and 400 <= durum < 500:
         return ROBOTS_ABSENT
     if not outcome.ok:
         return ROBOTS_BLOCKED
-    if looks_like_challenge(outcome.body):
-        return ROBOTS_BLOCKED
-    return ROBOTS_POLICY if valid_robots_body(outcome.body) else ROBOTS_ABSENT
+    return ROBOTS_ABSENT
+
+
+def _politika_yonergesi_var(body: bytes) -> bool:
+    """Govde gercekten robots yonergesi tasiyor mu.
+
+    ``valid_robots_body``'den farki: bos govdeyi ve yalniz yorum satirlarini
+    politika saymaz. Bos bir 500 yaniti "kural yok" degil "yanit yok"tur.
+    """
+    if not body or looks_like_challenge(body):
+        return False
+    text = body.decode("utf-8", errors="replace")
+    if re.search(r"(?is)<\s*(?:html|!doctype|head|body)\b", text):
+        return False
+    return bool(re.search(r"(?im)^\s*(?:user-agent|allow|disallow)\s*:", text))
 
 
 def valid_robots_body(body: bytes) -> bool:

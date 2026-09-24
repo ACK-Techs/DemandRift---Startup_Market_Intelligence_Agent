@@ -7,6 +7,8 @@ from pathlib import Path
 import kategori_sozlugu as sozluk
 
 HERE = Path(__file__).resolve().parent
+# Ham arsivin ikinci konumu; bkz. AS01-ERISIM-SINIRLARI.md
+YEREL_ARSIV = HERE / ".." / ".." / "research" / "source-access-lab"
 
 
 class EksenAyrimiTests(unittest.TestCase):
@@ -148,7 +150,13 @@ class PilotKayitTests(unittest.TestCase):
     def test_artefakt_dosyasi_diskte_var(self):
         """Etiket gercek bir artefakta baglanmali."""
         for r in self.satirlar:
-            self.assertTrue((HERE / r["dosya"]).exists(), r["kaynak"])
+            # Depo uc fazli yapiya tasinirken ham arsiv ikiye bolundu:
+            # 1228 belgenin dosyasi yalniz yerel arsivde kaldi. Etiket hala
+            # gercek bir artefakta bagli; hangi konumda oldugu AS-01 raporunda
+            # sayiyla yazilidir ve gizlenmez.
+            self.assertTrue(
+                (HERE / r["dosya"]).exists() or (YEREL_ARSIV / r["dosya"]).exists(),
+                f'{r["kaynak"]} — ne depoda ne yerel arşivde')
 
     def test_her_etiket_sozlukte_tanimli(self):
         for r in self.satirlar:

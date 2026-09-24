@@ -54,3 +54,10 @@ Desktop.ini
 # Generated orchestrator run state
 .orchestrator/runs/*
 !.orchestrator/runs/.gitkeep
+
+# Uc fazli yapiya tasinmadan kalan yerel ham arsiv (~3.2k artefakt).
+# Laboratuvarin kendisi faz-1-fikir-ve-arastirma/veri-laboratuvari altinda;
+# paylasilan artefakt alt kumesi orada surumleniyor. Bu dizin yalniz yerelde
+# durur ve kazara sahnelenmemelidir. Belgelerin ham dosyalarinin hangi
+# konumda oldugu AS01-ERISIM-SINIRLARI.md icinde sayiyla yazilidir.
+/research/source-access-lab/
