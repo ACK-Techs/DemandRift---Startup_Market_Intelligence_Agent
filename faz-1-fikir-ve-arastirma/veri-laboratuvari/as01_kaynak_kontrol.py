@@ -589,6 +589,34 @@ Bugünkü yoklamanın {len([r for r in kontrol if r['bugun_artefakt']])} kanıt
 artefaktı **bu depoya** yazıldı; Batuhan hash'ten doğrulayabilir. Geçmiş
 korpusun tamamı için karar gerekiyor — 1332 dosya yaklaşık 700 MB.
 
+## 5b. Kapalı kaynaklar için aranan alternatifler
+
+F02 ve F09'un hiçbir kaynağı bugün içerik vermiyordu, bu yüzden o iki fikre
+izinli alternatif arandı. Ayrıntı ve kanıt:
+[`AS01-ALTERNATIF-RAPOR.md`](AS01-ALTERNATIF-RAPOR.md).
+
+| Fikir | İhtiyaç | Bulunan kaynak | Durum |
+|---|---|---|---|
+| **F09** | Fiyat | Fresha (`source-0317`) — TRY 240.95/ay | Katalogda, hazır |
+| **F09** | Kullanıcı şikâyeti | Apple App Store — Booksy Biz (`source-0096`) | Katalogda, hazır |
+| **F02** | Fiyat, ürün, iş akışı | Filestage, Ziflow | **Katalogda yok** — registry kararı Batuhan'da |
+| **F02** | Kullanıcı şikâyeti | — | **Açık kaldı** |
+
+Bir ayrım önemli: bulunan kaynakların çoğu **satıcının kendi sitesi**. Satıcı
+kendi hakkındaki şikâyeti yayımlamaz; "alternatifler" sayfası pazarlamadır.
+Kanıt politikası da aynı yere varıyor — *"aynı kurumun pazarlama kopyaları bir
+köken"*. Bu yüzden satıcı sayfaları G2/Capterra/Reddit'in yerini **tutmaz**:
+fiyat verirler, şikâyet vermezler.
+
+F09'un şikâyet boşluğunu kapatan tek yol üçüncü taraf çıktı: Booksy'nin
+işletme uygulamasının App Store sayfasında gerçek kullanıcı yorumu var ve
+biri doğrudan F09'un konusu — *"charged for a no show I didn't know I had"*.
+
+**F02 için böyle bir yol bulunamadı.** Filestage ve Ziflow'un mobil uygulaması
+yok, Hacker News nişe sonuç vermiyor, inceleme platformları bot korumalı.
+Batuhan F02'yi fiyat ve ürün iddiası için araştırabilir, memnuniyetsizlik için
+araştıramaz.
+
 ## 6. Bu belge ne söylemez
 
 - **Bir kaynağın bugün engelli olması o pazarda talep olmadığını göstermez.**
