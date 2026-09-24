@@ -108,6 +108,28 @@ class PolitikaKorunurTests(unittest.TestCase):
                              hashlib.sha256(yol.read_bytes()).hexdigest(), r["aday"])
 
 
+class SaticiSitesiSikayetVermezTests(unittest.TestCase):
+    """Satici kendi hakkindaki sikayeti yayimlamaz; bu satirda yazili olmali."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.satirlar = oku("AS01-ALTERNATIF-KAYNAK.csv")
+
+    def test_her_satir_kaynak_cinsini_soyler(self):
+        for r in self.satirlar:
+            self.assertIn(r["kaynak_cinsi"].split(" —")[0], ("satıcı sitesi", "üçüncü taraf"))
+
+    def test_satici_sitesi_uyari_tasir(self):
+        for r in self.satirlar:
+            if r["kaynak_cinsi"].startswith("satıcı"):
+                self.assertIn("şikâyet yayımlamaz", r["kaynak_cinsi"])
+
+    def test_bilinen_saticilar_isaretli(self):
+        cins = {r["aday"]: r["kaynak_cinsi"] for r in self.satirlar}
+        for ad in ("Filestage", "Ziflow", "Fresha", "Booksy"):
+            self.assertTrue(cins[ad].startswith("satıcı"), ad)
+
+
 class RaporTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

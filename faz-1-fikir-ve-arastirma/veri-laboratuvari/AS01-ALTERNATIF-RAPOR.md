@@ -11,8 +11,8 @@ fikre izinli alternatif arar.
 
 | | |
 |---|---|
-| Denenen aday | 8 |
-| Kullanılabilir bulunan | **4** |
+| Denenen aday | 10 |
+| Kullanılabilir bulunan | **5** |
 | Bunlardan katalogda olmayan | 2 |
 
 ### F02 — ajans müşteri onayı ve revizyon
@@ -35,6 +35,8 @@ fikre izinli alternatif arar.
 | Booksy | source-0318 | ok | relevant | — | evet | — |
 | SourceForge Reviews | source-0141 | ok | uncertain | — | hayir | ilgililik belirsiz; insan etiketi gerekir |
 | SoftwareSuggest | source-0146 | challenge | sinanamadi | — | hayir | erişim hatası: challenge |
+| Apple App Store — Booksy Biz | source-0096 | ok | relevant | $15.6 | evet | — |
+| Apple App Store — Fresha | source-0096 | rate_limited | sinanamadi | — | hayir | erişim hatası: rate_limited |
 
 ## HTTP 200 ilgili içerik demek değildir
 

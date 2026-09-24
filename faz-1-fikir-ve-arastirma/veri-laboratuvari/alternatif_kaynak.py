@@ -50,8 +50,21 @@ ADAYLAR: list[tuple[str, str, list[tuple[str, str, str, str]]]] = [
          "/directory/?q=salon%20scheduling%20software"),
         ("SoftwareSuggest", "source-0146", "https://www.softwaresuggest.com",
          "/search/index?query=salon"),
+        # Satici sitesi sikayet yayimlamaz. Booksy'nin isletme uygulamasi
+        # App Store'da ve orada gercek kullanici yorumu var — F09'un
+        # dissatisfaction bosluğunu kapatan tek yol bu cikti.
+        ("Apple App Store — Booksy Biz", "source-0096", "https://apps.apple.com",
+         "/us/app/booksy-biz-booking-payments/id725335996"),
+        ("Apple App Store — Fresha", "source-0096", "https://apps.apple.com",
+         "/us/app/fresha-for-business/id1455346253"),
     ]),
 ]
+
+# Satici sitesi ile kullanici yorumu ayni sey degildir. Bir satici kendi
+# hakkindaki sikayeti yayimlamaz; "alternatifler" sayfasi da pazarlamadir.
+# Kanit politikasi da ayni sonuca variyor: "Ayni kurumun pazarlama kopyalari
+# bir koken" — yani satici sayfalari bagimsiz ornek saymaz.
+SATICI_SITESI = frozenset({"Filestage", "Ziflow", "Fresha", "Booksy"})
 
 # Nisin kendi kelimeleri. Ilgililik bunlarin govdede gecmesiyle olculur;
 # "software" gibi her sayfada gecen genel kelimeler kasten disarida.
@@ -152,6 +165,8 @@ def ara(canli: bool) -> list[dict[str, Any]]:
     for fikir, nis, adaylar in ADAYLAR:
         for ad, sid, origin, yol in adaylar:
             sonuc = dene(ad, sid, origin, yol, fikir, canli)
+            sonuc["kaynak_cinsi"] = ("satıcı sitesi — kendi hakkında şikâyet yayımlamaz"
+                                     if ad in SATICI_SITESI else "üçüncü taraf")
             kullanilabilir = (sonuc["erisim"] == "ok"
                               and sonuc["icerik"] in ("gercek-icerik", "api-yaniti")
                               and sonuc["ilgililik"] == "relevant")

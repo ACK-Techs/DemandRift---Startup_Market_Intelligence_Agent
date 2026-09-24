@@ -415,7 +415,12 @@ def mime_and_sniff_valid(mime: str, body: bytes, expected: str) -> bool:
         "robots": {"text/plain"},
         "html": {"text/html", "application/xhtml+xml"},
         "xml": {"application/xml", "text/xml", "application/rss+xml", "application/atom+xml"},
-        "json": {"application/json", "text/json"},
+        # text/javascript: iTunes Search API gecerli JSON'u bu tiple servis
+        # ediyor ve beyan edilen tipe takilmak belgelenmis bir resmi ucu
+        # eliyordu. Govdenin gercekten JSON oldugu asagida ayrica sniff ile
+        # dogrulaniyor; robots.txt icin zaten ayni gerekce uygulaniyor.
+        "json": {"application/json", "text/json",
+                 "text/javascript", "application/javascript"},
     }[expected]
     if expected == "robots":
         # Cok sayida sunucu gecerli robots.txt'yi text/plain disinda bir tiple
