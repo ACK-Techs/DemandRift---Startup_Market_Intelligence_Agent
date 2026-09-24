@@ -166,6 +166,9 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS01-GERI-BILDIRIM.csv": ("AS01", "cikti", "İçerik vermeyen kaynaklar için açık geri bildirim kayıtları"),
     "AS01-IDDIA-DOGRULAMA.csv": ("AS01", "cikti", "KAYNAK-ALAN.csv'nin 100 alan iddiasının bugünkü yanıtla sınanması"),
     "as01_kaynak_kontrol.py": ("AS01", "kod", "Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar"),
+    "AS01-ALTERNATIF-RAPOR.md": ("AS01", "belge", "Kapalı kaynaklara izinli alternatif; F02 ve F09 için bulunanlar"),
+    "AS01-ALTERNATIF-KAYNAK.csv": ("AS01", "cikti", "Denenen adaylar: erişim, içerik ve **ilgililik** ayrı sınanır"),
+    "alternatif_kaynak.py": ("AS01", "kod", "Alternatif arar; HTTP 200'ü ilgili içerik saymaz"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

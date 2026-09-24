@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- CookiePro Cookies Consent Notice start for softwaresuggest.com -->
+<!-- <script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="060a9561-dfac-4b44-b222-3f82e395416e" ></script>-->
+<script type="text/javascript">
+//function OptanonWrapper() { }
+</script>
+<!-- CookiePro Cookies Consent Notice end for softwaresuggest.com -->
+
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+    
+    <link rel="preload" href="https://www.softwaresuggest.com/assets2/componentwise/header/ss_header.js?v=18.56" as="script">
+        
+    <!-- Canonical for Index Page-->
+    	<meta name="robots" content="noindex,follow" />
+	
+<!-- Website title -->
+<meta name="description" content=" We help you to select the right software for your organization. Get Free Demo now. " />
+<title>Software Search:proofingsoftware</title>
+<!-- End Website title -->
+
+
+
+
+
+
+
+    <!-- End Canonical for Index Page-->
+    
+    <!-- Start cookieyes banner --> <!-- <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/bfaf8f1bbd6087284be4841a/script.js"></script> --> <!-- End cookieyes banner -->
+    
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style"> -->
+        <link rel="stylesheet" type="text/css" href="https://www.softwaresuggest.com/assets2/componentwise/custom-tooltip.css">
+        <link rel="preload" href="https://www.softwaresuggest.com/assets2/desktop_view/assets/js/desktop_common.js?v=18.56" as="script">
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="https://www.softwaresuggest.com/assets2/desktop_view/assets/css/desktop_common.css?v=18.56">
+    
+        <link rel="stylesheet" type="text/css" href="https://www.softwaresuggest.com/assets2/desktop_view/assets/css/search.css?v=18.56">
+    
+    
+    <!-- site map new page css  -->
+    
+    
+    
+    
+        
+            
+    
+        
+    
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="https://www.softwaresuggest.com/assets2/componentwise/header/new_ss_header.css?v=18.56">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFQDQLYLZD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QFQDQLYLZD');
+    </script>
+    <!-- Google tag (gtag.js) :: End -->
+        <script>
+    window.clickmagick_cmc = {
+        uid: '176983',
+        hid: '3395893691',
+        cmc_project: 'SoftwareSuggest',
+    }
+    </script>
+    <script src='//cdn.clkmc.com/cmc.js'></script>
+            <script type="text/javascript">
+        /*add css or script to append in head tag*/
+        function loadCss(e,t){var a=document.createElement("link");a.rel="stylesheet",a.type="text/css",a.href=e,document.getElementsByTagName("head")[0].appendChild(a)}
+        function loadCommonCss(e,t){var a=document.createElement("link");a.rel="stylesheet",a.type="text/css",a.href=e,document.getElementsByTagName("head")[0].prepend(a)}
+        function loadScripts(e,t){!function n(){var a,c,o;0!=e.length?(a=e.shift(),c=n,(o=document.createElement("script")).async='""',o.type="text/javascript",o.src=a,o.defer='""',o.onload=o.onreadystatechange=function(){o.onreadystatechange=o.onload=null,c()},(document.getElementsByTagName("head")[0]||document.body).appendChild(o)):t&&t()}()}
+
+        const LazyIcon=()=>{let e={};const t=()=>{let t=document.createElement("link");t.rel="stylesheet",t.type="text/css",t.href=e.src,document.head.appendChild(t)},o=()=>{let o=document.querySelectorAll(e.selector),r=new IntersectionObserver((o,r)=>{o[0].intersectionRatio>0&&(t(),sessionStorage[e.selector]=!0,r.disconnect())},{rootMargin:e.rootMargin});o.forEach(e=>{r.observe(e)})};return{observe:r=>{e=r,("IntersectionObserver"in window&&!sessionStorage[e.selector]?o:t)()}}};
+    </script>
+
+    <!-- delayd add code -->
+    <script type="text/javascript">
+    var ados;
+    window.onload = (event) => {
+        setTimeout(function(){
+            
+            (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+            })(window,document.documentElement,'async-hide','dataLayer',0,
+            {'GTM-PS4MFCR':true});
+                                    (function(b,m,h,a,g){b[a]=b[a]||[];b[a].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var k=m.getElementsByTagName(h)[0],e=m.createElement(h),c=a!="dataLayer"?"&l="+a:"";e.async=true;e.src="https://www.googletagmanager.com/gtm.js?id="+g+c;k.parentNode.insertBefore(e,k)})(window,document,"script","dataLayer","GTM-WQDBJVZ");
+                                    
+            //CookiePro Cookies Consent Notice
+            //function loadCookieScripts(t, e) { !function o() { var n, a, c; 0 != t.length ? (n = t.shift(), a = o, (c = document.createElement("script")).async = '""', c.setAttribute("data-domain-script", "060a9561-dfac-4b44-b222-3f82e395416e"), c.type = "text/javascript", c.src = n, c.defer = '""', c.onload = c.onreadystatechange = function () { c.onreadystatechange = c.onload = null, a() }, (document.getElementsByTagName("head")[0] || document.body).appendChild(c)) : e && e() }() } loadCookieScripts(["//cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"]);
+            //End CookiePro Cookies Consent Notice
+
+            //loadScripts(['https://cdn.pagesense.io/js/callhippo/00f94549c9564cebb1a1db0bd87cad52.js'],function(){});
+        }, 5000);
+    }
+    </script>    <!-- delayd add code -->
+
+    <script type="text/javascript">
+                        var hostUrl = 'https://www.softwaresuggest.com';
+                        var siteregion = 'india';
+                        var ip_baseUrl = 'https://www.softwaresuggest.com';
+                        var baseUrl = 'https://www.softwaresuggest.com';
+                        var countryUrl = 'https://www.softwaresuggest.com';
+        
+        
+        // window.addEventListener('load', () => {
+        //     LazyIcon().observe({
+        //         'src': 'https://fonts.googleapis.com/icon?family=Material+Icons',
+        //         'selector': '.material-icons',
+        //         'rootMargin': '10px 0px'
+        //     });
+        // });
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            
+            loadCss('https://fonts.googleapis.com/css2?family=Golos+Text:wght@300;400;500;600;700&display=swap');
+
+                        loadCss('https://www.softwaresuggest.com/assets2/componentwise/buyersguide/bguide_table_new.css?v=18.56');
+            loadScripts([
+                                'https://www.softwaresuggest.com/assets2/desktop_view/assets/js/desktop_common.js?v=18.56',
+                
+                                                 
+                                
+                                
+                                
+                
+                
+                
+                                                // 'https://www.googleoptimize.com/optimize.js?id=GTM-PS4MFCR',
+
+                
+                
+                
+                
+                
+                
+                                
+                                
+                                
+                  
+                
+                
+                
+                
+                                  
+                                
+                                    'https://www.softwaresuggest.com/assets2/js/custom/ga_event.js?v=18.56',
+                                'https://www.softwaresuggest.com/assets2/componentwise/header/ss_header.js?v=18.56'
+            ],function(){
+                                    window.ouibounceInstance = ouibounce(null, {
+                        aggressive: true,
+                        timer: 0,
+                        cookieExpire:1,
+                        callback: function() {
+                            if (1){
+                                if($('.ga_page_type').val() == 'software_landing'){
+                                    if($('.is_exit_intent_popup').val() == 'yes'){
+                                        current_popup = 'soft_landing_exit_intent_modal';
+                                    } else {
+                                        return false;      
+                                    }
+                                } else if (MultistepPages.includes($('.ga_page_type').val())) {
+                                    if ($('.ga_page_type').val() == 'cpl_lead_page' && $('.is_exit_intent_popup').val() !== 'yes') {
+                                        return false;
+                                    }
+                                    current_popup = 'multistep_form';
+                                    current_popup_logo = '';
+                                    popup_new_button_name = "ExitIntent";
+                                } else {
+                                    current_popup = 'ouibounce-modal';
+                                }
+                                current_popup_source = 'ExitIntent';
+                                $('#'+current_popup).hide();
+                                toggle_popup();
+                                ajax_load_popup_form();
+                                ga_track_exit_intent_trigger();
+                            } else {
+                                $('#ouibounce-modal').hide();
+                                return false;
+                            }
+                        }
+                    });
+                            });
+        });
+        var exit_intent_init = '1';
+        var europien_country = '';
+        var mobile_popup_init = '';
+        var pdcmp = '';
+                pdcmp = '?utm_source=';
+                        var view_mob_session = false;
+                function ss_redirection(url, blank) {
+            if (blank == '' || !blank) {
+                window.location.href = url;
+            } else {
+                window.open(url);
+            }
+        }
+    </script>
+    <style>
+        /*Loader Css*/
+        .ssloader_overlay{width:100%;height:100%;position:fixed;z-index:99999;top:0;background:#fff;display:flex;justify-content:center;align-items:center}.ssloader{display:inline-block;width:30px;height:30px;position:absolute;z-index:3;border:2px solid #001965;border-radius:2px;top:50%;animation:loader 2s infinite ease}.ssloader-inner{vertical-align:top;display:inline-block;width:100%;background-color:#001965;animation:loader-inner 2s infinite ease-in}.ssloader-text{position:absolute;display:flex;justify-content:center;align-items:center;height:100%;width:100%;color:#ffffff;}@keyframes loader{0%{transform:rotate(0deg)}25%{transform:rotate(180deg)}50%{transform:rotate(180deg)}75%{transform:rotate(360deg)}100%{transform:rotate(360deg)}}@keyframes loader-inner{0%{height:0}25%{height:0}50%{height:100%}75%{height:100%}100%{height:0}}
+        /*#This css is used in html which inserted from data entry operators*/
+        /*Cat Description ul li*/
+        .cat_temp_div{padding: 0;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-flex-flow: row wrap;-ms-flex-flow: row wrap;}.cat_temp_div2{width: 48%;margin: 4px;}.cat_temp_div .cat_temp_div2 .cat_temp_div3{border:2px solid #ddd;margin:0 auto;height: 100%;text-align: center;font-weight: 600;color: #001965;}.cat_temp_div .cat_temp_div2 .cat_temp_div3 h4{font-size:18px;color:#fff;background-color:#266499!important;font-weight:500;text-align:center;margin:0}.cat_temp_div .cat_temp_div2 .cat_temp_div3 .cat_temp_div4 ul{margin:0;padding:0;text-align:center;list-style-type:none}.cat_temp_div .cat_temp_div2 .cat_temp_div3 .cat_temp_div4 ul li:nth-child(odd){background:#e9f0f5}.cat_temp_div .cat_temp_div2 .cat_temp_div3 .cat_temp_div4 ul li span{color:#266499;font-weight:500}@media only screen and (max-width:480px){ .cat_temp_div2 {width: 100%;}}
+        /*End Cat Description ul li*/
+        /*Cat Description Table*/
+        .cm_table_client_logo_section{border-collapse:collapse;width:100%}.cm_table_client_logo_section th img {padding:12px;}.cm_table_tr_soft_name,.cm_table_tr_soft_name td{border:1px solid #c3c3c3}.cm_table_client_logo th,.cm_table_tr_soft_name td,.cm_table_tr_soft_name th{width:25%;height:60px;text-align:center;font-weight:500}.cm_table_client_logo{width:100%}.cm_table_client_logo_th_div{width:100px;height:60px}.cm_table_client_logo_th_div img{max-width:100%;max-height:100%}.cm_table_tr_soft_name .cm_table_empty_sec{border:none}.cm_table_custom_border{border-top:1px solid #c3c3c3;border-right:1px solid #c3c3c3;border-left:1px solid #c3c3c3;background-color:#54b0e6;color:#fff;font-weight:400;font-size:15px;font-family:sans-serif;height:45px}.fa.fa-star,.fa.fa-star-half-o,.fa.fa-star-o,.star_line_hight .star_value,.s0,.s1,.s15,.s2,.s25,.s3,.s35,.s4,.s45,.s5:before,.br-theme-fontawesome-stars .br-widget a.br-selected:after,.br-active:after,.cm_table_m_icon_checak,.cm_table_m_icon_cancel{width: 26px;height: 26px;color: transparent !important;cursor: default; margin: 0 auto;background-size: contain;background-repeat: no-repeat;background-position: 50%;background-image: url('/assets2/desktop_view/assets/icon/b_guide_yes.svg');}.cm_table_m_icon_cancel{background-image: url('/assets2/desktop_view/assets/icon/b_guide_no.svg');}
+        /*End Cat Description Table*/
+
+        /*table css*/
+        .cm_table_client_logo_section tr:first-child{width:100%;border:unset}.cm_table_client_logo_section th{width:25%;height:54px;text-align:center;font-weight:500;}.cm_table_client_logo_section tr:nth-child(2){border:unset;}.cm_table_client_logo_section tr:nth-child(2) th div{background-color:#54b0e6;color:#fff;font-weight:400;font-size:15px;font-family:sans-serif;height:45px;display:flex;align-items:center;justify-content:center}.cm_table_client_logo_section tr,.cm_table_client_logo_section tr td{border-left: 1px solid #DDD;border-right: 1px solid #DDD;text-align:center}.cm_table_client_logo_section tr:nth-child(odd){background: #ffffff !important;}.cat_disc_div .table_div table td:not(:last-child) {border-right: none;padding-left: 8px;padding-right: 4px;}.cat_disc_div .table_div table{border: none;}.cat_disc_div .table_div {box-shadow: 0px 2px 4px 0 rgb(0 1 3 / 19%);}
+    </style>
+    </head>
+<body>
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQDBJVZ" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+            <input type="hidden" id="currentip" value="TR">
+        <main>
+        <input type="hidden" class="categoryid" value="">
+<input type="hidden" class="soft_startlimit" value="">
+<input type="hidden" class="ga_page_type" value="Search">
+<input type="hidden" class="page_software_count" value="">
+<input type="hidden" class="ga_page_name" value="">
+<input type="hidden" class="page_no" value="">
+ 
+ 
+<header class="new_header_shadow">
+        <div class="container ss_new_container header_div">
+        <div class="d-flex align-items-center cat_header_main_div">
+            <div class="mr-auto d-flex align-self-start link_logo_main">
+                <a class="d-flex logo_div" href="https://www.softwaresuggest.com" target="_self" rel="noopener">
+                    <img 
+                        class="sslogo" 
+                        src="https://www.softwaresuggest.com/assets2/singleview/assets/img/homepage_new/ss_logo.svg" 
+                        alt="SoftwareSuggest Logo"
+                        fetchpriority="high" />
+                </a>
+            </div>
+            <div class="list_item header_dd_main">
+                <button id="desk_ajax_software_cat_header_dd" class="ajax_header_dd_selector ajax_header_cat_dropddown header_dd_btn d-flex align-items-center justify-content-center">Categories <span class="cat_header_angle">&#10095;</span></button>
+                <div id="software_cat_header_dd" class="ajax_header_selector header_menu_dd">
+                                    </div>
+            </div>
+                                        <div class="list_item margin_right">
+                    <a href="https://www.softwaresuggest.com/write-review" target="_self" rel="noopener" class="wr_cursor d-flex align-items-center header_button_common_class wrt_rev_btn">Write a Review</a>
+                </div>
+                <div class="list_item">
+                <a target="_self" rel="noopener" href="https://www.softwaresuggest.com/vendors" class="d-flex align-items-center header_button_common_class biztech_webinar_btn">Add a Product</a>
+            </div>
+                        <div class="list_item header_login_dd_main">
+                <button class="header_button_common_class header_login_btn d-flex align-items-center justify-content-center">Login <span class="cat_header_angle">&#10095;</span></button>
+                <ul id="login_options" class="header_login_options_main">
+                    <li><a href="https://www.softwaresuggest.com/user-login" class="d-flex align-items-center" rel="noopener nofollow" target="_self"><span class="account_circle_span_icon"></span> User Login</a></li>
+                    <li><a rel="noopener" class="d-flex align-items-center" href="https://www.softwaresuggest.com/vendorsportal/index.php?r=site/login"><span class="vendor_circle_span_icon"></span> Vendor Login</a></li>
+                </ul>
+            </div>
+                                                <div class="list_item boost_ai_list_item">
+                <a target="_self" rel="noopener" href="https://www.softwaresuggest.com/aeo-geo-visibility" class="d-flex align-items-center header_button_common_class boost_ai_btn ga_track_header_boost_ai_btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-tsd-source="/src/routes/index.tsx:144:7"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                    Boost AI Visibility
+                </a>
+            </div>
+                        
+            <div class="list_item search_main">
+                <form id="header_search_form" action='https://www.softwaresuggest.com/search/index' method='get'>
+                    <input aria-label="Search" id="search" type="text" name="query" class="header_software_search" onchange="appendLoader()" placeholder="Search software or requirement...">
+                    <div class="search_icon_header">
+                        <span class="search_icon_header_bg"></span>
+                    </div>
+                </form>
+            </div>
+                        <div class="list_item header_request_cb_main">
+                <button class="ga_track_rc_header ajax_load_popup_form request_callback_btn header_menu_btn d-flex align-items-center justify-content-center btn-reqcall">Request A Call Back</button>
+            </div>
+                                                                                    
+            
+                                            </div>
+        <div class="mobile_header_main">
+            <div class="toggleon_searchopen">
+                <button id="mobile_header_sidebar_list" type="button" class="hamburger mobile_view_sidebar_ajax">
+                    <img width="100" height="100"src="https://images.softwaresuggest.com/static-frontend/ss-header/hamburger_home.svg" alt="Hamburger">
+                </button>
+                <div class="cat_mo_view_logo">
+                    <a class="sslogo" href="https://www.softwaresuggest.com">
+                        <img class="sslogo" src="https://images.softwaresuggest.com/static-frontend/ss-header/SSline_logo_new.svg" fetchpriority="high" alt="SoftwareSuggest Logo">
+                    </a>
+                </div>
+                <div class="search_icon_btn">
+                    <img width="100" height="100" src="https://images.softwaresuggest.com/static-frontend/ss-header/search_icon_home.svg" alt="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    var dd_loaded = false;
+    var dd_data = document.querySelector("#software_cat_header_dd").innerHTML;
+    document.querySelector(".ajax_header_cat_dropddown").onclick = function() {
+        if (!dd_loaded && $.trim(dd_data) === '') {
+            var dd_ajax = new XMLHttpRequest();
+            dd_ajax.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.querySelector("#software_cat_header_dd").innerHTML = this.responseText;
+                    dd_loaded = true;
+                    setTimeout(() => {
+                        tab_change();
+                    }, 100); 
+                                    }
+            };
+            dd_ajax.open("POST", "https://www.softwaresuggest.com/headerfooter/headercategory", true);
+            dd_ajax.send();
+        } else {
+            tab_change();
+        }
+        function tab_change() {
+            $(document).on("click", ".tab_in_drop_down a", function(e) {
+                $(".drop_down_tab_panel").removeClass("active");
+                $(".tab_in_drop_down a").removeClass('active');					
+                $(this).addClass("active");					
+                var selected_tab = $(this).attr("data-tab");
+                $("#" + selected_tab).stop().addClass("active");
+                return false;
+            });
+        }
+    }
+    </script>
+<div class="content">
+    <div class="subheader_add_defination">
+        <div class="container ss_new_container search_page_container">
+            <div class="row">
+	            <div class='col-sm-12 col-xl-3 sidebar_main_div'>
+	                <!-- review software and get reward -->
+<div class="sidebar_list_div_cat order-sm-3">
+    <div class="row search_select_checkbox">
+        <div class="col-md-12 search_checkbox custom-control custom-checkbox">
+            <input type="checkbox" id="all_softwares" class="input_search_checkbox custom-control-input " onClick="" disabled checked/>
+            <label class="search_checkbox_label custom-control-label" for="all_softwares">All</label>
+            <div class="search_checkbox_number">
+            <span>0</span>
+        </div>
+        </div>
+    </div>
+    <div class="row search_select_checkbox">
+        <div class="col-md-12 search_checkbox custom-control custom-checkbox">
+            <input type="checkbox" id="product-soft" class="input_search_checkbox custom-control-input this_not_checked" onClick="if (this.checked) { window.location.href = 'software?query=proofingsoftware';}"   />
+            <label class="search_checkbox_label custom-control-label" for="product-soft">Softwares</label>
+            <div class="search_checkbox_number">
+            <span>0</span>
+        </div>
+        </div>
+        
+    </div>
+    <div class="row search_select_checkbox">
+        <div class="col-md-12 search_checkbox custom-control custom-checkbox">
+            <input type="checkbox" id="cat-soft" class="input_search_checkbox custom-control-input this_not_checked" onClick="if (this.checked) { window.location.href = 'categories?query=proofingsoftware';}"  />
+            <label class="search_checkbox_label custom-control-label" for="cat-soft">Categories</label>
+             <div class="search_checkbox_number">
+            <span>0</span>
+        </div>
+        </div>
+       
+    </div> 
+    <div class="row search_select_checkbox">
+        <div class="col-md-12 search_checkbox custom-control custom-checkbox">
+            <input type="checkbox" id="service-pro" class="input_search_checkbox custom-control-input this_not_checked" onClick="if (this.checked) { window.location.href = 'services?query=proofingsoftware';}"  />
+            <label class="search_checkbox_label custom-control-label" for="service-pro">Service Profile</label>
+             <div class="search_checkbox_number">
+            <span>0</span>
+        </div>
+        </div>
+       
+    </div>  
+    <div class="row search_select_checkbox">
+        <div class="col-md-12 search_checkbox custom-control custom-checkbox">
+            <input type="checkbox" id="service-cat" class="input_search_checkbox custom-control-input this_not_checked" onClick="if (this.checked) { window.location.href = 'servicescategories?query=proofingsoftware';}"  />
+            <label class="search_checkbox_label custom-control-label" for="service-cat">Service Categories</label>
+             <div class="search_checkbox_number">
+            <span>0</span>
+        </div>
+        </div>
+       
+    </div>
+</div>
+<!-- end review software and get reward -->
+
+<!-- review software and get reward -->
+<div class="sidebar_list_div_cat order-sm-3">
+    <div class="review">
+        <center class="expert_help_main_text">We've helped 1501394+ Businesses to find the right software</center>
+        <center class= "expert_help_inner_text" > Get Expert Help Today</center>
+        <hr class="sidebar_hr_cat">
+    </div>
+    <div class="write_review_btn_sidebar request_callback_btn_sidebar">
+        <span class="wr_cursor ripple_btn ajax_load_popup_form request_callback_btn">Request a Call Back</span>
+    </div>
+</div>
+<!-- end review software and get reward -->
+
+<!-- review software and get reward -->
+
+<!-- end review software and get reward --> 
+	            </div>
+	            <div class="col-sm-12 col-xl-9 item_main_div">
+	                <div class="sidebar_list_div_cat order-sm-3 remove_padding_search">
+	<input type="hidden" class="utm_source" value="">
+	<p class="top_your_search_para">Your search: <span class="search-term">proofingsoftware</span> returned <span class="total-result">0</span> results</p>
+
+	<div class="search_section_outer">
+	   	        </div>
+    <div class="search_section_outer">
+    	<h4 class="total_prod_cat_text">Categories <span class="total_product">(0)</span></h4>
+    	<div class="row Categories_outer_div">
+    		    		
+    	</div>
+    	<div class="show_more_outer_div">
+    		
+    	</div>
+    </div>
+    
+    <div class="search_section_outer">
+    	<h4 class="total_prod_cat_text">Service Profile <span class="total_product">(0)</span></h4>
+    	<div class="row Categories_outer_div">
+    		    		
+    	</div>
+    	<div class="show_more_outer_div">
+    		
+    	</div>
+    </div>
+    <div class="search_section_outer">
+    	<h4 class="total_prod_cat_text">Service Categories <span class="total_product">(0)</span></h4>
+    	<div class="row Categories_outer_div">
+    		    		
+    	</div>
+    </div>
+</div>                                         
+                     
+                      
+	            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="ss_new_cat_footer cat_ss_footer language_translate">
+    <div class="container ss_new_container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3 ss_new_cat_footer_col">
+                <div class="footer_part_heading">
+                    <p><span>For Vendors</span></p>
+                </div>
+                <ul class="footer_link_list">
+                    <li><a  rel="noopener" href="https://www.softwaresuggest.com/vendors">Register Your Software</a></li>
+                    <li><a rel="noopener nofollow" href="https://www.softwaresuggest.com/vendorsportal/index.php?r=site/login">Vendor Login</a></li>
+                    <li><a class="footer_focus_style" rel="noopener nofollow" href="https://www.softwaresuggest.com/pricing">Pricing</a></li>
+                    <li class="add_service_cursor_outer"><a rel="nofollow" class="footer_focus_style" href="https://www.softwaresuggest.com/price-estimator">Price Estimator</a></li>
+                    <!-- <li class="add_service_cursor_outer"><a rel="noopener nofollow" href="https://www.softwaresuggest.com/vendor/value-added-services" class="footer_focus_style add_service_cursor">Brand Building Services</a></li> -->
+                    <li class="add_service_cursor_outer"><a href="https://www.softwaresuggest.com/review-badges" rel="noopener" class="footer_focus_style add_service_cursor">Generate Reviews</a></li>
+                    <!-- <li><a class="footer_focus_style" href="https://www.softwaresuggest.com/vendorsportal" target="_blank" rel="nofollow">Vendors Portal</a></li> -->
+                    <li><a rel="noopener" class="wr_cursor" href="https://www.softwaresuggest.com/write-review" target="_self">Write a Review</a></li>
+                    <!-- <li><a href="https://www.softwaresuggest.com/reviewsoftware">Software Review</a></li> -->
+                    <!-- <li><a rel="noopener nofollow" href="https://www.softwaresuggest.com/award-generate" target="_self">Media Kit</a></li> -->
+                    <!-- <li><a rel="nofollow" href="https://www.softwaresuggest.com/award">Award</a></li> -->
+                    <li><a href="https://www.softwaresuggest.com/success-stories" rel="noopener nofollow" target="_self">Success Stories</a></li>
+                    <!-- <li><a href="https://www.softwaresuggest.com/one" target="_blank">SoftwareSuggest One</a></li> -->
+                </ul>
+            </div>
+            <div class="col-sm-6 col-xl-3 ss_new_cat_footer_col">
+                <div class="footer_part_heading">
+                    <p><span>For Buyers</span></p>
+                </div>
+                <ul class="footer_link_list">
+                    <li><a rel="noopener" href="https://www.softwaresuggest.com/all-categories" target="_self">All Categories</a></li>
+                    <li><a href="https://www.softwaresuggest.com/resources" rel="noopener nofollow" target="_self">Resources</a></li>
+                    <!-- <li><a href="https://www.softwaresuggest.com/reports" rel="nofollow">Reports</a></li> -->
+                    <li><a rel="noopener" href="https://www.softwaresuggest.com/blog/" target="_self">Blog</a></li>
+                    <li><a href="https://www.softwaresuggest.com/blog/ebook/" rel="noopener nofollow" target="_self">Free Ebooks</a></li>
+                    <!--  <li><a href="https://www.softwaresuggest.com/contribution" target="_blank" rel="nofollow">Contribution</a></li> -->
+                    <!-- <li><a href="https://www.softwaresuggest.com/mediacoverage" rel="nofollow">Media Coverage </a></li> -->
+                    <!-- <li><a href="https://www.softwaresuggest.com/consultants" rel="nofollow">Consultant Program</a></li> -->
+                    <li class="footer_cen_btn">
+                      <a href="https://www.softwaresuggest.com/user-login" class="" rel="noopener nofollow" target="_self">User Sign Up/ Sign In</a>
+                    </li>
+                    <!-- <li><a href="https://www.softwaresuggest.com/affiliates" target="_blank" rel="nofollow">Affiliate Program</a></li> -->
+                    <li><a href="https://www.softwaresuggest.com/blog/write-for-us/" rel="noopener nofollow">Write for Us</a></li>
+                    <li><a href="https://www.softwaresuggest.com/lead-partner" rel="noopener nofollow">Lead Partner Program</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-xl-3 ss_new_cat_footer_col">
+                <div class="footer_part_heading">
+                    <p><span>About Company</span></p>
+                </div>
+                <ul class="footer_link_list">
+                    <li><a rel="noopener" href="https://www.softwaresuggest.com/about" target="_self">About Us</a></li>
+                    <li><a rel="noopener" href="https://www.softwaresuggest.com/contact" target="_self">Contact Us</a></li>
+                    <li><a href="https://www.softwaresuggest.com/tos" rel="noopener nofollow" target="_self">Terms of Use</a></li>
+                    <li><a href="https://www.softwaresuggest.com/privacy" rel="noopener nofollow" target="_self">Privacy Policy</a></li>
+                    <li><a href="https://images.softwaresuggest.com/static-frontend/SS-Brand-Guideline.pdf" target="_blank" rel="noopener nofollow">Brand Guidelines</a></li>
+                    <!-- <li class="new_cat_footer_flag">
+                        <span>Select your country:</span>
+                        <div class="d-flex footer_flag_main">
+                            <a rel="noopener" href="https://www.softwaresuggest.com/" target="_self">
+                                <div class="cat_new_footer_flag india_flag" title="india_flag" alt="india_flag"></div> 
+                            </a>
+                            <a rel="noopener" href="https://www.softwaresuggest.com/us/" target="_self">
+                                <div class="cat_new_footer_flag us_flag" title="us_flag" alt="us_flag"></div>
+                            </a>
+                            <a rel="noopener" href="https://www.softwaresuggest.com/gcc/" target="_self">
+                                <div class="cat_new_footer_flag gcc_flag" title="gcc_flag" alt="gcc_flag"></div>
+                            </a>
+                            <a href="https://www.softwaresuggest.co.uk/" rel="noopener" target="_self">
+                                <div class="cat_new_footer_flag uk_flag" title="uk_flag" alt="uk_flag"></div>
+                            </a>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="col-sm-6 col-xl-3 ss_new_cat_footer_col">
+                <div class="footer_part_heading">
+                    <p><span>Get In Touch <span class="with_us_txt">With Us</span></span></p>
+                </div>
+                <div class="address_main_div">
+                                                            <div class="d-flex align-items-center ss_footer_social_ico_new">
+                        <a href="https://www.facebook.com/SoftwareSuggest" target="_blank" rel="noopener nofollow">
+                            <div class="cat_new_footer_social facebook" title="facebook"></div>
+                        </a>
+                        <a href="https://x.com/SoftwareSuggest" target="_blank" rel="noopener nofollow">
+                            <div class="cat_new_footer_social twitter" title="twitter"></div>
+                        </a>
+                        <a href="https://www.instagram.com/softwaresuggest_ss/" target="_blank" rel="noopener nofollow">
+                            <div class="cat_new_footer_social instagram" title="instagram"></div>
+                        </a>
+                        <a href="https://www.youtube.com/user/SoftwareSuggest/videos" target="_blank" rel="noopener nofollow">
+                            <div class="cat_new_footer_social youtube" title="youtube"></div>
+                        </a>
+                        <a href="https://www.linkedin.com/company/softwaresuggest" target="_blank" rel="noopener nofollow">
+                            <div class="cat_new_footer_social linkedin" title="linkedin"></div>
+                        </a>
+                    </div>
+                                        <a class="d-flex align-items-center cat_new_footer_mail" href="mailto:support@softwaresuggest.com" rel="nofollow"><span class="desk_cat_footer_mail"></span>support@softwaresuggest.com</a>
+                    <p class="cat_new_footer_copyright">&#169; 2014 - 2026 SoftwareSuggest &#174;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    function setCompIdCookie(compId) {
+        let existingCompIds = getCookie('compIds');
+        existingCompIds = existingCompIds ? existingCompIds.split(',') : [];
+        if (!existingCompIds.includes(compId)) {
+            existingCompIds.push(compId);
+        }
+        const expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+        document.cookie = `compIds=${existingCompIds.join(',')}; expires=${expires.toUTCString()}; path=/; domain=.softwaresuggest.com; SameSite=None; Secure=None`;
+    }
+
+    function getCookie(cname) {
+        const name = cname + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    var buttons = document.querySelectorAll('[data-comp-id]');
+    function foreachbutton(element) {
+        element.forEach(button => {
+            button.addEventListener('click', () => {
+                const compId = button.dataset.compId;
+                setCompIdCookie(btoa(compId));
+            });
+        });
+    };
+    foreachbutton(buttons)
+    const observer = new MutationObserver((mutations) => {
+        buttons = document.querySelectorAll('[data-comp-id]');
+        foreachbutton(buttons)
+    });observer.observe(document.body, { childList: true });
+
+</script>    </main>
+    <!-- globale ppc btn color variable -->
+    <style type="text/css">
+    :root {
+        --PPCPRODUCTBTN1: #0062B3;
+        --PPCPRODUCTBTN2: #001965;
+        --PPCPRODUCTBTN1HVR: #0088f6;
+        --PPCPRODUCTBTN2HVR: #08194E;
+        --PRODUCTBTN1: #0062B3;
+        --PRODUCTBTN2: #001965;
+        --PRODUCTBTN1HVR: #0088f6;
+        --PRODUCTBTN2HVR: #08194E;
+    }
+    </style>
+    <!-- globale ppc btn color variable ENd -->
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a400ce44c9642465',t:'MTc5MDI0MjU5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

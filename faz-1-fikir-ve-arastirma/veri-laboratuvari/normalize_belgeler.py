@@ -330,7 +330,12 @@ ALAN_DESENLERI: dict[str, dict[str, re.Pattern[str]]] = {
         "lisans": re.compile(r"(?i)\b(MIT|Apache-?2\.0|GPL-?[23]\.0|BSD-3-Clause|ISC|MPL-2\.0)\b"),
     },
     "urun": {
-        "fiyat": re.compile(r"(?:[$€£₺]\s?\d[\d.,]*|\d[\d.,]*\s?(?:USD|EUR|TRY|GBP))"),
+        # Para birimi sayidan ONCE de gelebilir: Fresha fiyatlarini
+        # "TRY 240.95 per month" diye yaziyor ve onceki desen bunu kaciriyordu.
+        "fiyat": re.compile(
+            r"(?:[$€£₺]\s?\d[\d.,]*"
+            r"|\d[\d.,]*\s?(?:USD|EUR|TRY|GBP|TL)\b"
+            r"|(?:USD|EUR|TRY|GBP|TL)\s?\d[\d.,]*)"),
         "ozellik_basligi": re.compile(r"(?i)<h[23][^>]*>\s*(features?|özellikler)\s*</h[23]>"),
         # Baglam kelimesi sart: sitemap'teki <priority>0.7</priority>
         # cipciplak "0.7" olarak surum sayilmamali.

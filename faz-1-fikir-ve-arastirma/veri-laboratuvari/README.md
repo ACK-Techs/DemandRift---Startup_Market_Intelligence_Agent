@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 116 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 121 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -194,10 +194,14 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 | Dosya | Rol | Ne olduğu |
 |---|---|---|
+| [`AS01-ALTERNATIF-RAPOR.md`](AS01-ALTERNATIF-RAPOR.md) | belge | Kapalı kaynaklara izinli alternatif; F02 ve F09 için bulunanlar |
 | [`AS01-ERISIM-SINIRLARI.md`](AS01-ERISIM-SINIRLARI.md) | belge | **Batuhan için.** Bugün ölçülmüş erişim/içerik/artefakt durumu ve alan örnekleri |
 | [`AS01-ALAN-ORNEKLERI.csv`](AS01-ALAN-ORNEKLERI.csv) | çıktı | Her çalışan kaynaktan gerçek alan örneği; bulunmayan alan boş |
+| [`AS01-ALTERNATIF-KAYNAK.csv`](AS01-ALTERNATIF-KAYNAK.csv) | çıktı | Denenen adaylar: erişim, içerik ve **ilgililik** ayrı sınanır |
 | [`AS01-GERI-BILDIRIM.csv`](AS01-GERI-BILDIRIM.csv) | çıktı | İçerik vermeyen kaynaklar için açık geri bildirim kayıtları |
+| [`AS01-IDDIA-DOGRULAMA.csv`](AS01-IDDIA-DOGRULAMA.csv) | çıktı | KAYNAK-ALAN.csv'nin 100 alan iddiasının bugünkü yanıtla sınanması |
 | [`AS01-KAYNAK-KONTROL.csv`](AS01-KAYNAK-KONTROL.csv) | çıktı | F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana |
+| [`alternatif_kaynak.py`](alternatif_kaynak.py) | kod | Alternatif arar; HTTP 200'ü ilgili içerik saymaz |
 | [`as01_kaynak_kontrol.py`](as01_kaynak_kontrol.py) | kod | Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar |
 
 <details>
@@ -210,8 +214,11 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`ARAMA-YUZEYLERI.csv`](ARAMA-YUZEYLERI.csv) | Erişim laboratuvarı | Her kaynağın izinli arama yüzeyleri |
 | [`ARTEFAKT-DIZINI.csv`](ARTEFAKT-DIZINI.csv) | Erişim laboratuvarı | Hangi kaynak hangi dosyaya karşılık geliyor — izlenebilirliğin temeli |
 | [`AS01-ALAN-ORNEKLERI.csv`](AS01-ALAN-ORNEKLERI.csv) | AS-01 | Her çalışan kaynaktan gerçek alan örneği; bulunmayan alan boş |
+| [`AS01-ALTERNATIF-KAYNAK.csv`](AS01-ALTERNATIF-KAYNAK.csv) | AS-01 | Denenen adaylar: erişim, içerik ve **ilgililik** ayrı sınanır |
+| [`AS01-ALTERNATIF-RAPOR.md`](AS01-ALTERNATIF-RAPOR.md) | AS-01 | Kapalı kaynaklara izinli alternatif; F02 ve F09 için bulunanlar |
 | [`AS01-ERISIM-SINIRLARI.md`](AS01-ERISIM-SINIRLARI.md) | AS-01 | **Batuhan için.** Bugün ölçülmüş erişim/içerik/artefakt durumu ve alan örnekleri |
 | [`AS01-GERI-BILDIRIM.csv`](AS01-GERI-BILDIRIM.csv) | AS-01 | İçerik vermeyen kaynaklar için açık geri bildirim kayıtları |
+| [`AS01-IDDIA-DOGRULAMA.csv`](AS01-IDDIA-DOGRULAMA.csv) | AS-01 | KAYNAK-ALAN.csv'nin 100 alan iddiasının bugünkü yanıtla sınanması |
 | [`AS01-KAYNAK-KONTROL.csv`](AS01-KAYNAK-KONTROL.csv) | AS-01 | F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
@@ -262,6 +269,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`VERI-PAKETI-ORNEKLERI.csv`](VERI-PAKETI-ORNEKLERI.csv) | Görev 14 | Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor |
 | [`VERI-SOZLUGU.md`](VERI-SOZLUGU.md) | Görev 11 | Her sütunun anlamı + bu verinin **cevaplayamadığı** sorular |
 | [`adaptive_domain_pass.py`](adaptive_domain_pass.py) | Erişim laboratuvarı | Alan adı çözümleme geçişi |
+| [`alternatif_kaynak.py`](alternatif_kaynak.py) | AS-01 | Alternatif arar; HTTP 200'ü ilgili içerik saymaz |
 | [`as01_kaynak_kontrol.py`](as01_kaynak_kontrol.py) | AS-01 | Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar |
 | [`build_artifact_index.py`](build_artifact_index.py) | Erişim laboratuvarı | Artefakt dizinini üretir |
 | [`build_candidate_catalog.py`](build_candidate_catalog.py) | Görev 3 | Defteri kataloğa çevirir |
