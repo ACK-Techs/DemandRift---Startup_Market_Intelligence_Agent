@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 121 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 126 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -204,6 +204,15 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`alternatif_kaynak.py`](alternatif_kaynak.py) | kod | Alternatif arar; HTTP 200'ü ilgili içerik saymaz |
 | [`as01_kaynak_kontrol.py`](as01_kaynak_kontrol.py) | kod | Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar |
 
+### AS-06 — Çözüm günlüğü ve kaynak sağlık kayıtları
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`COZUM-GUNLUGU.md`](COZUM-GUNLUGU.md) | belge | **Başarı raporu değildir.** Denenen yollar, öncesi/sonrası ve çözülemeyen sınırlar |
+| [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | çıktı | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
+| [`KAYNAK-SAGLIK.csv`](KAYNAK-SAGLIK.csv) | çıktı | 19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur |
+| [`cozum_gunlugu.py`](cozum_gunlugu.py) | kod | Günlüğü tutar, sağlık kayıtlarını ölçer |
+
 <details>
 <summary><b>Alfabetik dizin</b> — GitHub'ın gösterdiği sırayla, dosyadan göreve</summary>
 
@@ -222,6 +231,8 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS01-KAYNAK-KONTROL.csv`](AS01-KAYNAK-KONTROL.csv) | AS-01 | F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
+| [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | AS-06 | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
+| [`COZUM-GUNLUGU.md`](COZUM-GUNLUGU.md) | AS-06 | **Başarı raporu değildir.** Denenen yollar, öncesi/sonrası ve çözülemeyen sınırlar |
 | [`DENETIM-BULGULARI.csv`](DENETIM-BULGULARI.csv) | Görev 14 | Açık bulgular: yanlış etiket, eksik provenance, konu dışı, mükerrer |
 | [`DENETIM-ORNEKLERI.csv`](DENETIM-ORNEKLERI.csv) | Görev 14 | Her kategoriden incelenen örnek kayıtlar (deterministik seçim) |
 | [`DENEY-KAYNAK.csv`](DENEY-KAYNAK.csv) | Görev 8 | Deneyde seçilen 64 kaynak |
@@ -250,6 +261,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`KAYNAK-ALAN.csv`](KAYNAK-ALAN.csv) | Görev 4 | 3218 satır: hangi kaynaktan hangi alan, hangi izinli yolla alınır |
 | [`KAYNAK-DEFTERI.csv`](KAYNAK-DEFTERI.csv) | Erişim laboratuvarı | 636 kaynağın erişim defteri (çekildi / kısmi / erişim yok) |
 | [`KAYNAK-DEFTERI.md`](KAYNAK-DEFTERI.md) | Erişim laboratuvarı | Defterin okunabilir özeti |
+| [`KAYNAK-SAGLIK.csv`](KAYNAK-SAGLIK.csv) | AS-06 | 19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur |
 | [`KILAVUZ.md`](KILAVUZ.md) | Ortak | **Başlangıç noktası.** On dört görevin tamamını sırayla anlatır |
 | [`NORMALIZE-BELGELER.csv`](NORMALIZE-BELGELER.csv) | Görev 11 | 591 belge — teknik normalizasyon (Faz 4 şeması) |
 | [`OPENSEARCH-SABLONLARI.csv`](OPENSEARCH-SABLONLARI.csv) | Erişim laboratuvarı | Sitelerin kendi ilan ettiği arama şablonları |
@@ -282,6 +294,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`butce_profilleri.py`](butce_profilleri.py) | Görev 7 | İki bütçe profilini tanımlar ve karşılaştırır |
 | [`common_crawl_pass.py`](common_crawl_pass.py) | Erişim laboratuvarı | Common Crawl arşiv geçişi |
 | [`compile_queries.py`](compile_queries.py) | Görev 6 | Şablonları çalıştırılabilir sorgulara derler |
+| [`cozum_gunlugu.py`](cozum_gunlugu.py) | AS-06 | Günlüğü tutar, sağlık kayıtlarını ölçer |
 | [`denetim.py`](denetim.py) | Görev 14 | Sözlük, veri seti ve eşleme tablosunu birlikte denetler; raporları üretir |
 | [`deney.py`](deney.py) | Görev 8 | Ön kayıtlı ölçütlerle kontrollü deney |
 | [`dosya_haritasi.py`](dosya_haritasi.py) | Ortak | README'deki bu haritayı üretir |

@@ -11,7 +11,7 @@ Tüm işler **planlandı**; bu dosya tamamlanma raporu değildir. Kabul eden ve 
 | AS-03 | 1 | İzinli alternatif yöntem/kaynak dene; kategori/veri kalitesini kontrol et | AS-02 | Alternatifin alan/kapsam farkı, limitleri ve kalan eksikleri; Batuhan kabulü | planlandı | — |
 | AS-04 | 2 | Alan çıkarımı, tekrar, ilgililik, karşıt kanıt kaybı ve kaynak raporu hatalarını çöz | BT-06 ilk hata bildirimi; sürümlü etiketli örnekler | Hatalı/korunacak örnekler ve düzeltme sonrası kalite farkı | planlandı | — |
 | AS-05 | 3 | Bağımsızlık, 3/2 sayımı, alıntı ve rapor yorumunu veriyle kontrol et | BT-07 | Yanlış sayım/yorum için claim düzeyinde bildirim; kanıtlı düzeltme | planlandı | — |
-| AS-06 | Tümü | Çözüm günlüğünü ve kaynak sağlık kayıtlarını güncelle | Her bulgu | Denenmiş yollar ve çalışmadığı sınırlar kayıtlı; Batuhan yeniden kontrolüne hazır | planlandı | — |
+| AS-06 | Tümü | Çözüm günlüğünü ve kaynak sağlık kayıtlarını güncelle | Her bulgu | Denenmiş yollar ve çalışmadığı sınırlar kayıtlı; Batuhan yeniden kontrolüne hazır | teslim edildi, Batuhan kontrolü bekliyor | [çözüm günlüğü](../../faz-1-fikir-ve-arastirma/veri-laboratuvari/COZUM-GUNLUGU.md) · [kaynak sağlığı](../../faz-1-fikir-ve-arastirma/veri-laboratuvari/KAYNAK-SAGLIK.csv) · 11 bulgu, 19 kaynak · ölçüm 2026-09-25 |
 ## Açık geri bildirimler
 
 [Şablon](geri-bildirim-sablonu.md) kullanılır; görev ID ve kanıt bağlantısı üst tabloya eklenir.

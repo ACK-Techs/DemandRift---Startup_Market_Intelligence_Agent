@@ -34,6 +34,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G13": ("Görev 13", "SourceFitMatrix v1"),
     "G14": ("Görev 14", "Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)"),
     "AS01": ("AS-01", "Batuhan'ın F01–F10 denemeleri için kaynak yeteneği ve erişim sınırları"),
+    "AS06": ("AS-06", "Çözüm günlüğü ve kaynak sağlık kayıtları"),
 }
 
 # dosya -> (gorev, rol, bir cumlelik aciklama)
@@ -169,6 +170,12 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS01-ALTERNATIF-RAPOR.md": ("AS01", "belge", "Kapalı kaynaklara izinli alternatif; F02 ve F09 için bulunanlar"),
     "AS01-ALTERNATIF-KAYNAK.csv": ("AS01", "cikti", "Denenen adaylar: erişim, içerik ve **ilgililik** ayrı sınanır"),
     "alternatif_kaynak.py": ("AS01", "kod", "Alternatif arar; HTTP 200'ü ilgili içerik saymaz"),
+
+    # --- AS-06 ---
+    "COZUM-GUNLUGU.md": ("AS06", "belge", "**Başarı raporu değildir.** Denenen yollar, öncesi/sonrası ve çözülemeyen sınırlar"),
+    "COZUM-GUNLUGU.csv": ("AS06", "cikti", "11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut"),
+    "KAYNAK-SAGLIK.csv": ("AS06", "cikti", "19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur"),
+    "cozum_gunlugu.py": ("AS06", "kod", "Günlüğü tutar, sağlık kayıtlarını ölçer"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}
