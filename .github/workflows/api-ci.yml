@@ -1,0 +1,46 @@
+name: FastAPI CI
+on:
+  pull_request:
+    paths:
+      - 'apps/api/**'
+      - '.github/workflows/api-ci.yml'
+      - '.github/workflows/api-deploy.yml'
+      - 'infra/api/**'
+  push:
+    branches: [main]
+    paths:
+      - 'apps/api/**'
+      - '.github/workflows/api-ci.yml'
+      - '.github/workflows/api-deploy.yml'
+      - 'infra/api/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: api-ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run offline tests in the deployment Python image
+        run: docker build --target test --tag demandrift-api:test apps/api
+      - name: Build runtime image
+        run: docker build --target runtime --build-arg APP_REVISION="$GITHUB_SHA" --tag demandrift-api:ci apps/api
+      - name: Verify runtime as non-root with deployment restrictions
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(docker image inspect demandrift-api:ci --format '{{.Config.User}}')" = '10001:10001'
+          docker run -d --name demandrift-api-ci --read-only --cap-drop ALL --security-opt no-new-privileges --publish 127.0.0.1:18000:8000 demandrift-api:ci
+          trap 'docker logs demandrift-api-ci; docker rm -f demandrift-api-ci' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:18000/health > /tmp/api-health.json; then
+              python3 -c 'import json, os; assert json.load(open("/tmp/api-health.json")) == {"status": "ok", "service": "demandrift-api", "revision": os.environ["GITHUB_SHA"]}'
+              exit 0
+            fi
+            sleep 1
+          done
+          exit 1
