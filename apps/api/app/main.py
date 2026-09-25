@@ -6,6 +6,8 @@ from typing import Literal
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from app.research_plan import router as research_plan_router
+
 
 class HealthResponse(BaseModel):
     status: Literal["ok"] = "ok"
@@ -21,6 +23,8 @@ def create_app() -> FastAPI:
     def health() -> HealthResponse:
         """Process liveness and deployed revision; does not check dependencies."""
         return HealthResponse(revision=revision)
+
+    application.include_router(research_plan_router)
 
     return application
 
