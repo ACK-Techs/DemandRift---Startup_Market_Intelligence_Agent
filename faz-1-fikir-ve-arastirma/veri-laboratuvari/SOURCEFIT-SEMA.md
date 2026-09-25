@@ -76,8 +76,8 @@ değil metninden okunur, bu çalışmada metin taraması yapılmadı.
 | | Hücre |
 |---|---:|
 | Yeterli (2+ bağımsız grup) | 47 |
-| Zayıf (tek grup) | 28 |
-| Boş (gap) | 37 |
+| Zayıf (tek grup) | 29 |
+| Boş (gap) | 36 |
 | **Toplam** | **112** |
 
 ## Bağlı dosyalar

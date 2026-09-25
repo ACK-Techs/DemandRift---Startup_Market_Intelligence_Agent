@@ -51,6 +51,21 @@ warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 warnings.filterwarnings("ignore", message=".*REPLACEMENT CHARACTER.*")
 
 HERE = Path(__file__).resolve().parent
+# Ham arsivin ikinci konumu. Depo uc fazli yapiya tasinirken artefaktlarin
+# buyuk kismi burada kaldi; yalniz HERE'a bakan bir kosu 1249 belgeyi 179'a
+# dusuruyordu. Konumu varsayma, ikisine de bak.
+YEREL_ARSIV = HERE / ".." / ".." / "research" / "source-access-lab"
+
+
+def artefakt_yolu(goreli: str) -> Path | None:
+    """Artefaktin bulundugu konum; ikisinde de yoksa None."""
+    if not goreli.strip():
+        return None
+    for taban in (HERE, YEREL_ARSIV):
+        aday = taban / goreli
+        if aday.exists():
+            return aday
+    return None
 NORMALIZASYON_SURUMU = "1.0.0"
 
 # --------------------------------------------------------------------------
@@ -315,6 +330,41 @@ AILE_SINIFI: dict[str, str] = {
 }
 VARSAYILAN_SINIF = "genel"
 
+# Cikarim yalniz KAYNAGIN ailesine bakiyordu ve 'genel' sinifinin hic deseni
+# yok. Sonuc: bir /pricing sayfasindan, uzerinde $5/$10/$25 yazdigi halde
+# fiyat cikmiyordu — kaynagin ailesi eslenmemis oldugu icin. AS-04 denetimi
+# boyle 25 sayfa buldu (Kagi, Sistrix, Exploding Topics...).
+#
+# Sayfanin KENDI turu de hangi desenlerin aranacagini belirler. Ikisi
+# birlestirilir: kaynak ailesi ne derse desin, fiyat sayfasinda fiyat aranir.
+BELGE_TURU_SINIFI: dict[str, tuple[str, ...]] = {
+    "fiyatlandirma-sayfasi": ("urun",),
+    "inceleme-sayfasi": ("urun",),
+    "kayit-sayfasi": ("urun",),
+    "liste-sayfasi": ("urun",),
+    "karsilastirma-sayfasi": ("urun",),
+}
+NIYET_SINIFI: dict[str, tuple[str, ...]] = {
+    "observed_market_pricing": ("urun",),
+    "dissatisfaction": ("urun",),
+    "competitor_discovery": ("urun",),
+}
+
+
+def cikarim_siniflari(aile: str, belge_turu: str, cekim_niyeti: str) -> tuple[str, ...]:
+    """Bu belgede hangi alan desen kumeleri aranmali.
+
+    Kaynak ailesi ve sayfanin kendi turu BIRLIKTE karar verir; biri bos
+    kalirsa digeri devreye girer.
+    """
+    siniflar: list[str] = []
+    aile_sinifi = AILE_SINIFI.get(aile)
+    if aile_sinifi and aile_sinifi != VARSAYILAN_SINIF:
+        siniflar.append(aile_sinifi)
+    siniflar.extend(BELGE_TURU_SINIFI.get(belge_turu, ()))
+    siniflar.extend(NIYET_SINIFI.get(cekim_niyeti, ()))
+    return tuple(dict.fromkeys(siniflar)) or (VARSAYILAN_SINIF,)
+
 # Bu icerik durumlarinda gorunur urun/olcum metni yoktur; alan cikarilmaz.
 ALAN_CIKARILMAYAN = frozenset({"aday-kesif", "politika", "js-kabugu",
                                "engel-sayfasi", "dosya-yok"})
@@ -498,8 +548,8 @@ def calistir() -> dict[str, Any]:
                 "source_url": kayit["cekilen_url"], "yontem": kayit["yontem"],
                 "neden": "yanıt gövdesi boş; saklanacak içerik yok"})
             continue
-        yol = HERE / kayit["dosya"]
-        if not yol.exists():
+        yol = artefakt_yolu(kayit["dosya"])
+        if yol is None:
             islenemeyen.append({
                 "source_id": sid, "ad": ad, "artefakt_hash": kayit["sha256"][:16],
                 "source_url": kayit["cekilen_url"], "yontem": kayit["yontem"],
@@ -585,16 +635,23 @@ def calistir() -> dict[str, Any]:
         })
 
         # --- Kategori bazinda cikarilabilen alanlar ---
-        sinif = next((AILE_SINIFI[a] for a in aileler if a in AILE_SINIFI),
-                     VARSAYILAN_SINIF)
+        aile_adi = next((a for a in aileler if a in AILE_SINIFI), "")
+        siniflar = cikarim_siniflari(aile_adi, belge_turu, kayit.get("niyet", ""))
         # Sitemap, robots ve bos JS kabugu urun alani tasimaz; oradan "fiyat"
         # ya da "surum" cikarmak uydurmadir.
         if icerik_durum in ALAN_CIKARILMAYAN:
             continue
-        for bulgu in alan_cikar(sinif, metin, ham[:400_000].decode("utf-8", "replace")):
-            alanlar.append({
-                "document_id": belge_id, "artifact_hash": kayit["sha256"],
-                "source_id": sid, "source_adi": ad, **bulgu})
+        ham_metin = ham[:400_000].decode("utf-8", "replace")
+        gorulen_alan: set[tuple[str, str]] = set()
+        for sinif in siniflar:
+            for bulgu in alan_cikar(sinif, metin, ham_metin):
+                anahtar = (bulgu["alan"], bulgu["deger"])
+                if anahtar in gorulen_alan:
+                    continue
+                gorulen_alan.add(anahtar)
+                alanlar.append({
+                    "document_id": belge_id, "artefakt_hash": kayit["sha256"],
+                    "source_id": sid, "source_adi": ad, **bulgu})
 
     # --- Seviye 2: near-duplicate adaylari (SimHash, Faz4) ---
     iliskiler: list[dict[str, Any]] = []

@@ -35,6 +35,8 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G14": ("Görev 14", "Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)"),
     "AS01": ("AS-01", "Batuhan'ın F01–F10 denemeleri için kaynak yeteneği ve erişim sınırları"),
     "AS02": ("AS-02", "Batuhan'ın hata bildirimini yeniden üretme hazırlığı"),
+    "AS03": ("AS-03", "Alternatifin farkı, limitleri ve arşiv yaşı"),
+    "AS04": ("AS-04", "Hata incelemesi ve etiketli referans kümesi"),
     "AS06": ("AS-06", "Çözüm günlüğü ve kaynak sağlık kayıtları"),
 }
 
@@ -183,6 +185,18 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS02-ONDOGRULAMA.csv": ("AS02", "cikti", "Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6)"),
     "AS02-ONDOGRULAMA-GIRDI.csv": ("AS02", "girdi", "Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR"),
     "yeniden_uret.py": ("AS02", "kod", "Aynı sorguyu yeniden üretir; erişim/içerik/alan/dil sorununu ayırır"),
+
+    # --- AS-03 ---
+    "AS03-ALTERNATIF-FARKI.md": ("AS03", "belge", "Alternatifin kapanandan farkı; **arşiv güncel veri değildir**"),
+    "AS03-FARK-MATRISI.csv": ("AS03", "cikti", "Kapanan → alternatif: alan/pazar/tarih/limit farkı ve kalan eksik"),
+    "AS03-ARSIV-YASI.csv": ("AS03", "cikti", "104 arşiv kopyasının **kendi** tarihi ve yaşı; 94'ü eşiği aşıyor"),
+    "alternatif_fark.py": ("AS03", "kod", "Farkı ölçer, arşivin kendi zaman damgasını koşu kaydından kurtarır"),
+
+    # --- AS-04 ---
+    "AS04-HATA-RAPORU.md": ("AS04", "belge", "Dört hata sınıfı, düzeltme öncesi/sonrası ve **recall neden üretilmedi**"),
+    "AS04-HATA-INCELEMESI.csv": ("AS04", "cikti", "366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme"),
+    "AS04-ETIKETLI-REFERANS.csv": ("AS04", "cikti", "15 elle etiketlenmiş örnek + 2 doğrudan karşıt bulgu"),
+    "hata_incelemesi.py": ("AS04", "kod", "Dört hata sınıfını arar; precision üretir, recall üretmez"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

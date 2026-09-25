@@ -91,16 +91,16 @@ sınıfın alan desenleri aranır. **Bulunmayan alan uydurulmaz**; satır yazıl
 
 | Alan | Bulgu |
 |---|---:|
-| `fiyat` | 56 |
+| `fiyat` | 108 |
 | `engagement_yorum_sayisi` | 33 |
 | `gosterge` | 31 |
 | `mevzuat_atfi` | 25 |
 | `yil_araligi` | 19 |
+| `surum` | 13 |
 | `engagement_yildiz` | 13 |
 | `paket_adi` | 8 |
-| `surum` | 6 |
+| `ozellik_basligi` | 7 |
 | `repo_yolu` | 6 |
-| `ozellik_basligi` | 5 |
 | `lisans` | 5 |
 | `engagement_indirme_sayisi` | 4 |
 | `issue_sayisi` | 1 |

@@ -471,6 +471,12 @@ def paketleri_kur(matris: dict[str, Any]) -> list[dict[str, Any]]:
                 "paket": paket,
                 "kaynak_sayisi": len(secilen),
                 "bagimsiz_grup": len({grup.get(s, s) for s, _ in secilen}),
+                # Gorev 7'nin olcusu paket degil NIYET seviyesindedir: Deep
+                # "ayni niyetlere ikinci bir bagimsiz grup ekler". Paket ayni
+                # uc gruptan cekiyor olabilir ama her niyet icin ikinci bir
+                # bagimsiz kaynak eklenmisse capraz dogrulama gercekten artar.
+                "niyet_basina_grup_toplami": sum(
+                    len(gruplar) for gruplar in kullanilan_grup.values()),
                 "kapsanan_niyet": len(kapsanan),
                 "kapsanmayan_niyet": ", ".join(eksik) or "(yok)",
                 "kaynaklar": " | ".join(

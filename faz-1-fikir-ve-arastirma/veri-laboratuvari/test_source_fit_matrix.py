@@ -191,14 +191,24 @@ class PaketTests(unittest.TestCase):
                                     int(paketler["standard"]["bagimsiz_grup"]), kategori)
 
     def test_deep_farki_bagimsizlikta_olmali(self):
-        """Deep daha cok kaynak aliyorsa, bagimsiz grup da artmali."""
+        """Deep daha cok kaynak aliyorsa capraz dogrulama da artmali.
+
+        Olcu paket seviyesindeki grup sayisi DEGIL, niyet basina kullanilan
+        bagimsiz grup toplamidir. Bir paket bastan sona ayni uc gruptan
+        cekiyor olabilir; onemli olan her niyetin ikinci bir BAGIMSIZ
+        kaynak kazanip kazanmadigi. Gorev 7'nin kurali bu: Deep "ayni
+        niyetlere ikinci bir bagimsiz grup ekler".
+        """
         bazinda = collections.defaultdict(dict)
         for r in self.paketler:
             bazinda[r["kategori"]][r["paket"]] = r
         for kategori, paketler in bazinda.items():
             if int(paketler["deep"]["kaynak_sayisi"]) > int(paketler["standard"]["kaynak_sayisi"]):
-                self.assertGreater(int(paketler["deep"]["bagimsiz_grup"]),
-                                   int(paketler["standard"]["bagimsiz_grup"]), kategori)
+                self.assertGreater(
+                    int(paketler["deep"]["niyet_basina_grup_toplami"]),
+                    int(paketler["standard"]["niyet_basina_grup_toplami"]),
+                    f"{kategori}: Deep kaynak ekliyor ama hiçbir niyete "
+                    "ikinci bağımsız grup katmıyor")
 
     def test_her_paket_gerekce_tasir(self):
         for r in self.paketler:

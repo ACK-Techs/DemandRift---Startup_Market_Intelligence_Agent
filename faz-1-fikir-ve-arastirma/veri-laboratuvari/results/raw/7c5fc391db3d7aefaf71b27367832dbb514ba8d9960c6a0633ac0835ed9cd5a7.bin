@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">var _rollbarConfig = {"accessToken":"42d40d19b6b247cd82d60d8a4076ef21","captureUncaught":true,"captureUnhandledRejections":true,"captureIp":"anonymize","payload":{"environment":"production","client":{"javascript":{"source_map_enabled":true,"code_version":"","guess_uncaught_frames":true}}},"ignoredMessages":["^Script error.*$","","scpixel is not defined"]};</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.26.1/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||function(r){return!("object"!=typeof r||void 0!==r.page&&!r.page)}(a))&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);</script>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<title>
+Fundraising on Republic — Republic
+</title>
+<link href='https://republic.com/help/category/fundraising' rel='canonical'>
+<meta content='Answers about Fundraising on Republic' name='description'>
+<meta content='republic, investment, startup, title iii, social impact, non accredited investors' name='keywords'>
+<meta content='Fundraising on Republic' itemprop='name'>
+<meta content='Answers about Fundraising on Republic' itemprop='description'>
+<meta content='https://assets.republic.com/assets/social_share/cover--default-ec3a96b8848c6e2018f2963d8fdb965c194db6f4f3cded03b081175ecef5a071.jpg' itemprop='image'>
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@joinrepublic' name='twitter:site'>
+<meta content='Fundraising on Republic' name='twitter:title'>
+<meta content='Answers about Fundraising on Republic' name='twitter:description'>
+<meta content='https://assets.republic.com/assets/social_share/cover--default-ec3a96b8848c6e2018f2963d8fdb965c194db6f4f3cded03b081175ecef5a071.jpg' name='twitter:image'>
+<meta content='https://republic.com/help/category/fundraising' property='og:url'>
+<meta content='Fundraising on Republic' property='og:title'>
+<meta content='Answers about Fundraising on Republic' property='og:description'>
+<meta content='https://assets.republic.com/assets/social_share/cover--default-ec3a96b8848c6e2018f2963d8fdb965c194db6f4f3cded03b081175ecef5a071.jpg' property='og:image'>
+<meta content='website' property='og:type'>
+<meta content='en_US' property='og:locale'>
+<meta content='1333788929968275' property='fb:app_id'>
+<meta content='c7HkWkIit50eeEjD4gcVAXX6ANIaDtO43yauW3fICgI' name='google-site-verification'>
+<meta content='Republic' name='apple-mobile-web-app-title'>
+<meta content='Republic' name='application-name'>
+
+<link rel="stylesheet" href="https://assets.republic.com/assets/application-74217955a1d49959669e29a38e08dc507915ae06eeec148f810756ea922b8db7.css" media="all" />
+<link rel="stylesheet" href="https://assets.republic.com/assets/w/css/HeaderRegionalSwitch-d0dc8a1d.css" media="screen" />
+<script src="https://cmp.osano.com/AzqSHBT6fzKGV18Hs/9e780d5a-e8d0-4873-932a-02822fc4194d/osano.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  window.FLIPPER_FEATURES = ["payment_options", "milestone_auto_checker", "legacy_auth_disabled", "city_search", "web_sdk_braze", "media_slider_react", "segment_analytics", "contora_ai_portfolio", "deal_room_react", "react_analytics", "access_tier_one_notification", "mobile_tag_notifications", "crypto_assets", "republic_wallet", "action_required_push_notifications", "braze_integration", "crypto_transfers", "reveal_seedphrase", "global_search", "teaser_pages", "xte_crypto_taxes", "trade_with_inx", "crypto_page_redirect", "note_2023_launch", "xte_secondaries_trade_button", "custodial_account_creation", "disable_raised_amount_caching", "zero_hash_payments", "datadog_log_request_params", "secondaries_portfolio", "action_list_integration", "dfi_deposit_allowance_rclient", "oauth_provider_engine", "plaid_watchlist_monitoring", "ga_rollout_eu_login", "ga_rollout_eu_registration", "ga_rollout_us_login", "upside_integration", "dfi_add_canton_network", "global_avatar", "kyc_facial_duplicates", "ga_rollout_us_registration", "dfi_warp_drive_data_migration", "ga_self_heal", "ga_rollout_merge", "zero_hash_enabled", "app_wallet", "note_portfolio", "dfi_crypto_onramp", "plaid_integration", "bitgo_payments", "bitgo_refunds", "self_serve_tagging", "validate_investor_age", "index_search_react", "onboarding_team_members", "activity_history"];
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  (function() {
+    var myCSS = document.createElement("link");
+    myCSS.rel = "stylesheet";
+    myCSS.href = "https://assets.republic.com/assets/application_noncritical-d3c6c4b502b6f79593c8efbf4236a6c07b605ab3f38024cc6a06142c92fd210a.css";
+    document.head.insertBefore(myCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
+  })();
+</script>
+
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  window.railsEnv = {
+    FROALA_KEY: "3AC6eF5A4E4A3I3B2C4B-16UJHAEFZMUJOYGYQEa2d2ZJd1RAeF3C8B5C5E3D3A2G3A14A15==",
+    COGNITO_API_PUBLISHABLE_KEY: "live_publishable_key_17f6bd8fbeeb1b8662f083339e90187a",
+    COGNITO_FLOW_TEMPLATE_ID: "flwtmp_9bkW6vqP3pC467",
+    WALLABY_BASE_URL: "https://mainnet.wallaby.cash/api/v1",
+    WALLABY_API_KEY: "25fa0db11b4540a48281077247e84333",
+    ALGO_EXPLORER: "https://algoexplorer.io/",
+    ETHER_SCAN: "https://etherscan.io/ ",
+    AVAX_NETWORK: "https://subnets.avax.network/",
+    ROLLBAR_CLIENT_TOKEN: "42d40d19b6b247cd82d60d8a4076ef21",
+    TOP_LEVEL_DOMAIN: ".republic.com",
+    EUROPE_BASE_URL: "europe.republic.com",
+  };
+</script>
+
+<meta content='https://assets.republic.com/assets/favicons/browserconfig-3bbb89e1165a27da10a48dbb42513a5f894b947963a2adbc9c35665cf3bc2360.xml' name='msapplication-config'>
+<meta content='#ceebff' name='msapplication-TileColor'>
+<meta content='#ceebff' name='theme-color'>
+<link href='/assets/favicons/site-efb520c4078896a35dd8b1e811d786b7591ead80d2f525270dcd329d53bc45dd.webmanifest' rel='manifest'>
+<link color='#0050FF' href='https://assets.republic.com/assets/favicons/safari-pinned-tab-eb367a470901f286da8f5a6a6e290dca05c5c23e73c1880d94c288375a7f2078.svg' rel='mask-icon'>
+<link rel="apple-touch-icon" type="image/png" href="https://assets.republic.com/assets/favicons/apple-touch-icon-ffaebf7906644ed190902899e0e5642d9142f4c9f260aca0fe65f819ac9a513a.png" sizes="180x180" />
+<link rel="icon" type="image/png" href="https://assets.republic.com/assets/favicons/favicon-32x32-159b5e914b05ced075689c9e433e88c43b13b1865620f49681747914ffbaadd5.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://assets.republic.com/assets/favicons/favicon-16x16-6be55f8d5e0385e8f29a3e2cc20364a1b016fbcbccb60802b3ce186c80988402.png" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://assets.republic.com/assets/favicons/favicon-2363fc36ae519848547932e383229d3cd2b94db04142dc38d966870302c76ef8.ico" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ckPcgT67QRXXOa3EcDK0F5-7Nb8P5HQ64cw_PhbRGou0kexAaEryFGjvuGXiXO8D0kUIeH1XvR1QL6a8gpwIKQ" />
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+//<![CDATA[
+window.dataLayer = [];
+//]]>
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+//<![CDATA[
+window.twitterPixels = [];
+//]]>
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="42jYTXVtWnbFrLzbDqh57sdUM5TN63vd";analytics.SNIPPET_VERSION="4.15.2";
+    analytics.load("42jYTXVtWnbFrLzbDqh57sdUM5TN63vd");
+  }}();
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  analytics.page(
+    "help",
+    "Fundraising", {
+      url: "https://republic.com/help/category/fundraising"
+    }, {
+      integrations: {
+        'Intercom': {
+          hideDefaultLauncher: true
+        },
+        'Impact Partnership Cloud': true
+      }
+    }
+  );
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  _linkedin_partner_id = "521052";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script><script type="text/javascript" nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  (function(){var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img alt='' height='1' src='https://dc.ads.linkedin.com/collect/?pid=521052&amp;fmt=gif' style='display:none;' width='1'>
+</noscript>
+
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer', 'GTM-5486ZDK');
+</script>
+
+
+</head>
+<body class=" preload layouts-application" data-rc="layouts/application"><noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-5486ZDK' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+
+
+<div class='layouts-application__content-container '>
+<div class="js-flash layouts-flashes" data-rc="layouts/flashes"></div>
+<div style="" class="layouts-footer layouts-footer--content-wrapper" data-rc="layouts/footer"><div class='layouts-footer__content'>
+<div class="layouts-cover" data-rc="layouts/cover"><div class="layouts-header_202310" data-rc="layouts/header_202310"><div class='layouts-header_202310__overlay js-header-overlay'> </div>
+<div class='layouts-header_202310__header layouts-header_202310__header--light_transparent js-header_container '>
+<div class="js-header-mobile-menu layouts-header_202310-mobile_menu layouts-header_202310-mobile_menu--light_transparent" data-open="false" data-rc="layouts/header_202310/mobile_menu"><div class='layouts-header_202310-mobile_menu__header--closed'>
+<div>
+<div class="layouts-header-logo" data-rc="layouts/header/logo"><a class="u-displayInlineBlock js-analytics_track_link" data-segment-analytics="{&quot;event_name&quot;:&quot;header_logo_clicked&quot;,&quot;destination&quot;:&quot;homepage&quot;}" href="/"><img alt="Republic" title="Republic" class="c-header-logo c-header-logo__full c-header-logo__full--nav-closed" src="https://assets.republic.com/assets/logo/full/black/logo-2c113fd1a194abf7fa3c5809c1470ca753c7a8dda7c2a3e86544990495e3056e.svg" />
+<img alt="Republic" title="Republic" class="u-hidden c-header-logo c-header-logo__full c-header-logo__full--nav-open" src="https://assets.republic.com/assets/logo/full/black/logo-2c113fd1a194abf7fa3c5809c1470ca753c7a8dda7c2a3e86544990495e3056e.svg" />
+<img alt="Republic" class="u-hidden c-header-logo c-header-logo__brand" src="https://assets.republic.com/assets/logo/icon/brand/36x40/logo-584528d3c0290325573833b80233780cd36a20e325d5b0d173bcf210463b0a3a.svg" />
+</a></div>
+</div>
+<ul class='layouts-header_202310-mobile_menu__toolbar'>
+<li class='layouts-header_202310-mobile_menu__toolbar__menu-item'>
+<div class="c-header-nav__item c-header-nav__item--text layouts-header-login" data-rc="layouts/header/login"><a class="c-header-nav-link user-menu-link" href="/login">Log in</a>
+</div>
+</li>
+</ul>
+</div>
+<div class='layouts-header_202310-mobile_menu__header--open'>
+<nav class='layouts-header_202310-mobile_menu__tabs'>
+<ul>
+<li class='layouts-header_202310-mobile_menu__tabs__item layouts-header_202310-mobile_menu__tabs__item--active js-header_mobile_menu_tab' data-tab='investors'>
+<button type='button'>Investors</button>
+</li>
+<li class='layouts-header_202310-mobile_menu__tabs__item js-header_mobile_menu_tab' data-tab='businesses'>
+<button type='button'>Businesses</button>
+</li>
+</ul>
+</nav>
+</div>
+<button class='layouts-header_202310-mobile_menu__toggle-button js-header_mobile_menu_toggle' title='Toggle mobile menu' type='button'>
+<div class='layouts-header_202310-mobile_menu__toggle-button__symbol'></div>
+</button>
+<div class='layouts-header_202310-mobile_menu__content'>
+<a class="layouts-header_202310-mobile_menu__open-account-btn" href="/open-account">Open account</a>
+<div class='layouts-header_202310-mobile_menu__tab layouts-header_202310-mobile_menu__tab--active js-header_mobile_menu_tab_container' data-tab='investors'>
+<div class="layouts-header_202310-mobile_menu__section layouts-header_202310-mobile_menu__section--open layouts-header_202310-mobile_menu-investors_us" data-rc="layouts/header_202310/mobile_menu/investors_us"><button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+All investors
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<div class='global-search-container'>
+<div class="c-search  layouts-header-search" data-api-url="https://api.republic.com" data-rc="layouts/header/search"><div class='c-search__content'>
+<div class="c-search-input layouts-header-search-input" data-rc="layouts/header/search/input"><div class='c-search-input__input-wrapper'>
+<div class='c-search-input__status-icon c-search-input__status-icon--magnifier'>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none" class="u-block u-imageFluid">
+<path d="M16.2826 15.2176L13.5001 12.4576C14.5801 11.1109 15.1032 9.40152 14.9617 7.68103C14.8201 5.96053 14.0248 4.35964 12.7392 3.20753C11.4536 2.05543 9.77541 1.43968 8.04974 1.4869C6.32408 1.53412 4.68209 2.24072 3.46141 3.46141C2.24072 4.68209 1.53412 6.32408 1.4869 8.04974C1.43968 9.77541 2.05543 11.4536 3.20753 12.7392C4.35964 14.0248 5.96053 14.8201 7.68103 14.9617C9.40152 15.1032 11.1109 14.5801 12.4576 13.5001L15.2176 16.2601C15.2873 16.3303 15.3702 16.3861 15.4616 16.4242C15.553 16.4623 15.651 16.4819 15.7501 16.4819C15.8491 16.4819 15.9471 16.4623 16.0385 16.4242C16.1299 16.3861 16.2128 16.3303 16.2826 16.2601C16.4177 16.1202 16.4933 15.9333 16.4933 15.7388C16.4933 15.5443 16.4177 15.3574 16.2826 15.2176ZM8.25005 13.5001C7.2117 13.5001 6.19667 13.1921 5.33331 12.6153C4.46995 12.0384 3.79704 11.2185 3.39968 10.2591C3.00232 9.29983 2.89836 8.24423 3.10093 7.22583C3.3035 6.20743 3.80351 5.27197 4.53774 4.53774C5.27197 3.80351 6.20743 3.3035 7.22583 3.10093C8.24423 2.89836 9.29983 3.00232 10.2591 3.39968C11.2185 3.79704 12.0384 4.46995 12.6153 5.33331C13.1921 6.19666 13.5001 7.2117 13.5001 8.25005C13.5001 9.64244 12.9469 10.9778 11.9624 11.9624C10.9778 12.9469 9.64244 13.5001 8.25005 13.5001Z" fill="currentColor"></path>
+</svg>
+
+</div>
+<div class='c-search-input__status-icon c-search-input__status-icon--loader'>
+<img class="u-block u-imageFluid" src="https://assets.republic.com/assets/ui/search/loader-62242cf1ddeed701e13538628d675bd36bfd2548f882dca8ed127fb90043bbd1.svg" />
+</div>
+<input autocomplete='off' class='c-search-input__input js-search_input' placeholder='Search'>
+<a class="c-search-input__clear u-hidden js-search_clear_button" title="Clear result" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="u-block u-imageFluid"><path d="M9.00463 18C10.2337 18 11.3917 17.7622 12.4786 17.2867C13.5656 16.8173 14.5229 16.1688 15.3505 15.3412C16.1781 14.5136 16.8266 13.5594 17.2959 12.4786C17.7653 11.3917 18 10.2306 18 8.99537C18 7.76634 17.7622 6.60834 17.2867 5.52136C16.8173 4.43438 16.1688 3.4771 15.3412 2.64951C14.5136 1.82192 13.5564 1.17344 12.4694 0.704066C11.3824 0.234689 10.2244 0 8.99537 0C7.76634 0 6.60834 0.234689 5.52136 0.704066C4.44056 1.17344 3.48327 1.82192 2.64951 2.64951C1.82192 3.4771 1.17344 4.43438 0.704066 5.52136C0.234689 6.60834 0 7.76634 0 8.99537C0 10.2306 0.234689 11.3917 0.704066 12.4786C1.17962 13.5594 1.83119 14.5136 2.65878 15.3412C3.48636 16.1688 4.44056 16.8173 5.52136 17.2867C6.60834 17.7622 7.76943 18 9.00463 18ZM6.09573 12.701C5.87957 12.701 5.69429 12.6238 5.53989 12.4694C5.39166 12.3088 5.31755 12.1204 5.31755 11.9043C5.31755 11.7005 5.39475 11.5214 5.54915 11.367L7.91148 9.00463L5.54915 6.65157C5.39475 6.50335 5.31755 6.32115 5.31755 6.10499C5.31755 5.88883 5.39166 5.70664 5.53989 5.55841C5.69429 5.40401 5.87957 5.32681 6.09573 5.32681C6.29954 5.32681 6.48173 5.40401 6.64231 5.55841L9.00463 7.92074L11.3855 5.54915C11.5399 5.39475 11.7221 5.31755 11.9321 5.31755C12.1482 5.31755 12.3304 5.39475 12.4786 5.54915C12.633 5.69738 12.7102 5.87957 12.7102 6.09573C12.7102 6.31189 12.633 6.49408 12.4786 6.64231L10.1071 9.00463L12.4694 11.3577C12.6238 11.4997 12.701 11.6819 12.701 11.9043C12.701 12.1204 12.6238 12.3088 12.4694 12.4694C12.3212 12.6238 12.1359 12.701 11.9135 12.701C11.685 12.701 11.4997 12.6238 11.3577 12.4694L9.00463 10.1163L6.66083 12.4694C6.51261 12.6238 6.32424 12.701 6.09573 12.701Z" fill="currentColor"></path></svg>
+
+</a></div>
+<a class="c-link c-link--unstyled c-search-input__close js-search_close" href="javascript:void(0)"><i class="icon-cancel-slim"></i></a>
+</div>
+<div class='c-search__dropdown c-search-dropdown js-search_dropdown'>
+<div class='c-search-dropdown__stack'>
+<div class='js-search_section js-search_no_result c-search__no-result u-hidden'>
+<div class="c-search-no-result layouts-header-search-no_result" data-rc="layouts/header/search/no_result"><div class='c-search-no-result__title'>
+<img alt="" class="c-search-no-result__sad-icon" src="https://assets.republic.com/assets/ui/search/sad-face-4e0a6424ec40ef8fcdfeafe700612e45fed331a733b7e1eb91db5eb95ed0ab2c.svg" />
+Oops! We couldn’t find any results...
+</div>
+<div class='c-search-no-result__content'>
+Can’t find a deal? Try
+<a href="/investment-opportunities">advanced search</a>.
+<br>
+Is something missing? Add your suggestion
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://republic-co.typeform.com/to/xombuUWi">here</a>.
+</div>
+</div>
+</div>
+<div class='js-search_section js-search_result c-search-dropdown__stack u-hidden'></div>
+<div class='js-search_section js-search_popular_offerings u-hidden'></div>
+<div class='js-search_section js-search_popular_categories u-hidden'></div>
+</div>
+</div>
+</div>
+<div class='c-search__overlay u-hidden js-search_overlay'></div>
+</div>
+</div>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="primary_market" href="/investment-opportunities">Live deals
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Investment opportunities
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="secondary_market" href="/secondary-market">Trading
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Buy and sell
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="republic_note" href="/note">Republic Note
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Own a piece of Republic's upside
+</span>
+</a></div>
+</div><div class='layouts-header_202310-mobile_menu__section'>
+<button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+Accredited only
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="republic_ventures" href="/ventures">Republic Ventures
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Opportunities for accredited investors
+</span>
+</a></div>
+</div>
+<div class='layouts-header_202310-mobile_menu__section'>
+<button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+Institutional
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="republic_capital" href="/capital">Republic Capital
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Multi-stage venture firm
+</span>
+</a></div>
+</div>
+<div class='layouts-header_202310-mobile_menu__section layouts-header_202310-mobile_menu__section--last'>
+<button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+More
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="wallet" href="/wallet">Wallet
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Manage your digital assets
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="mobile_app" href="/app">Mobile app
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Available on iOS or Android
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="learning_center" href="/learn/investors/how-it-works">Learning center
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Explore investor resources
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="investors" data-label="faq" href="/help">FAQ
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Get your questions answered
+</span>
+</a></div>
+</div>
+
+</div>
+<div class='layouts-header_202310-mobile_menu__tab js-header_mobile_menu_tab_container' data-tab='businesses'>
+<div class="layouts-header_202310-mobile_menu__section layouts-header_202310-mobile_menu__section--open layouts-header_202310-mobile_menu-businesses" data-rc="layouts/header_202310/mobile_menu/businesses"><button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+Growth capital solutions
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="community_fundraising" href="/raise">Capital fundraising
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Raise on Republic
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="tokenized_assets" href="/tokenization">Tokenized assets
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Design, launch, manage tokenized assets
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="sharedrops" href="/sharedrops">Sharedrops
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Gift equity as a reward
+</span>
+</a><a target="_blank" class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="founder_academy" href="/academy">Founder Academy
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="layouts-header_202310-mobile_menu__content__link__external-link-icon">
+<path d="M5.33333 4.66667C5.33333 4.29848 5.63181 4 6 4L11.3333 4C11.7015 4 12 4.29848 12 4.66667V10C12 10.3682 11.7015 10.6667 11.3333 10.6667C10.9651 10.6667 10.6667 10.3682 10.6667 10V6.27614L5.13807 11.8047C4.87772 12.0651 4.45561 12.0651 4.19526 11.8047C3.93491 11.5444 3.93491 11.1223 4.19526 10.8619L9.72386 5.33333L6 5.33333C5.63181 5.33333 5.33333 5.03486 5.33333 4.66667Z" fill="currentColor"></path>
+</svg>
+
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+A complete guide to raising funds
+</span>
+</a></div>
+</div><div class='layouts-header_202310-mobile_menu__section'>
+<button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+Web3 services
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="web3_advisory" href="/advisory">Advisory
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Access veteran web3 advisors
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="web3_infrastructure" href="/infrastructure">Infrastructure
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Stake your digital assets
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="web3_tokenization" href="/tokenization">Tokenization
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Deploy your assets on-chain
+</span>
+</a></div>
+</div>
+<div class='layouts-header_202310-mobile_menu__section layouts-header_202310-mobile_menu__section--last'>
+<button class='layouts-header_202310-mobile_menu__section__header js-header_mobile_menu_section_header' type='button'>
+Institutional services
+</button>
+<div class='layouts-header_202310-mobile_menu__section__body'>
+<a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="capital_fundraising" href="/capital">Republic Capital
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+In-house Venture Capital fund
+</span>
+</a><a class="layouts-header_202310-mobile_menu__content__link js-header_mobile_menu_link" data-category="businesses" data-label="broker_dealer" href="/capital-r">Broker dealer
+<span class='layouts-header_202310-mobile_menu__content__link__description'>
+Regulated capital services
+</span>
+</a></div>
+</div>
+
+</div>
+<div class='layouts-header_202310-mobile_menu__footer'>
+<div data-react-key="HeaderRegionalSwitch" data-react-id="aedf0ea9-bc6d-4fb5-893c-ccae48684fbc"><div class="js-react-component--placeholder"><div></div>
+</div><div class="js-react-component--content u-invisible"></div></div><script nonce="xiAjEf6Zu0p9t5mV10t9NA==" type="application/json" data-react-key="HeaderRegionalSwitch" data-react-id="aedf0ea9-bc6d-4fb5-893c-ccae48684fbc">{"mode":"mobile","variant":"light"}</script><div class='layouts-header'>
+<div class='c-header-nav__navigation'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='layouts-header_202310__nav-container'>
+<div class='layouts-header_202310__nav-container__area'>
+<div class="layouts-header-logo" data-rc="layouts/header/logo"><a class="u-displayInlineBlock js-analytics_track_link" data-segment-analytics="{&quot;event_name&quot;:&quot;header_logo_clicked&quot;,&quot;destination&quot;:&quot;homepage&quot;}" href="/"><img alt="Republic" title="Republic" class="c-header-logo c-header-logo__full c-header-logo__full--nav-closed" src="https://assets.republic.com/assets/logo/full/black/logo-2c113fd1a194abf7fa3c5809c1470ca753c7a8dda7c2a3e86544990495e3056e.svg" />
+<img alt="Republic" title="Republic" class="u-hidden c-header-logo c-header-logo__full c-header-logo__full--nav-open" src="https://assets.republic.com/assets/logo/full/black/logo-2c113fd1a194abf7fa3c5809c1470ca753c7a8dda7c2a3e86544990495e3056e.svg" />
+<img alt="Republic" class="u-hidden c-header-logo c-header-logo__brand" src="https://assets.republic.com/assets/logo/icon/brand/36x40/logo-584528d3c0290325573833b80233780cd36a20e325d5b0d173bcf210463b0a3a.svg" />
+</a></div>
+<nav class='layouts-header_202310__mega-menu-nav js-header_mega_menu_nav'>
+<ul>
+<li class='layouts-header_202310__mega-menu-nav__item js-header_mega_menu_nav_item' data-index='0' data-tab='investors'>
+<button type='button'>Investors</button>
+</li>
+<li class='layouts-header_202310__mega-menu-nav__item js-header_mega_menu_nav_item' data-index='1' data-tab='businesses'>
+<button type='button'>Businesses</button>
+</li>
+</ul>
+</nav>
+<div class="c-search  layouts-header-search" data-api-url="https://api.republic.com" data-rc="layouts/header/search"><div class='c-search__content'>
+<div class="c-search-input layouts-header-search-input" data-rc="layouts/header/search/input"><div class='c-search-input__input-wrapper'>
+<div class='c-search-input__status-icon c-search-input__status-icon--magnifier'>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none" class="u-block u-imageFluid">
+<path d="M16.2826 15.2176L13.5001 12.4576C14.5801 11.1109 15.1032 9.40152 14.9617 7.68103C14.8201 5.96053 14.0248 4.35964 12.7392 3.20753C11.4536 2.05543 9.77541 1.43968 8.04974 1.4869C6.32408 1.53412 4.68209 2.24072 3.46141 3.46141C2.24072 4.68209 1.53412 6.32408 1.4869 8.04974C1.43968 9.77541 2.05543 11.4536 3.20753 12.7392C4.35964 14.0248 5.96053 14.8201 7.68103 14.9617C9.40152 15.1032 11.1109 14.5801 12.4576 13.5001L15.2176 16.2601C15.2873 16.3303 15.3702 16.3861 15.4616 16.4242C15.553 16.4623 15.651 16.4819 15.7501 16.4819C15.8491 16.4819 15.9471 16.4623 16.0385 16.4242C16.1299 16.3861 16.2128 16.3303 16.2826 16.2601C16.4177 16.1202 16.4933 15.9333 16.4933 15.7388C16.4933 15.5443 16.4177 15.3574 16.2826 15.2176ZM8.25005 13.5001C7.2117 13.5001 6.19667 13.1921 5.33331 12.6153C4.46995 12.0384 3.79704 11.2185 3.39968 10.2591C3.00232 9.29983 2.89836 8.24423 3.10093 7.22583C3.3035 6.20743 3.80351 5.27197 4.53774 4.53774C5.27197 3.80351 6.20743 3.3035 7.22583 3.10093C8.24423 2.89836 9.29983 3.00232 10.2591 3.39968C11.2185 3.79704 12.0384 4.46995 12.6153 5.33331C13.1921 6.19666 13.5001 7.2117 13.5001 8.25005C13.5001 9.64244 12.9469 10.9778 11.9624 11.9624C10.9778 12.9469 9.64244 13.5001 8.25005 13.5001Z" fill="currentColor"></path>
+</svg>
+
+</div>
+<div class='c-search-input__status-icon c-search-input__status-icon--loader'>
+<img class="u-block u-imageFluid" src="https://assets.republic.com/assets/ui/search/loader-62242cf1ddeed701e13538628d675bd36bfd2548f882dca8ed127fb90043bbd1.svg" />
+</div>
+<input autocomplete='off' class='c-search-input__input js-search_input' placeholder='Search'>
+<a class="c-search-input__clear u-hidden js-search_clear_button" title="Clear result" href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="u-block u-imageFluid"><path d="M9.00463 18C10.2337 18 11.3917 17.7622 12.4786 17.2867C13.5656 16.8173 14.5229 16.1688 15.3505 15.3412C16.1781 14.5136 16.8266 13.5594 17.2959 12.4786C17.7653 11.3917 18 10.2306 18 8.99537C18 7.76634 17.7622 6.60834 17.2867 5.52136C16.8173 4.43438 16.1688 3.4771 15.3412 2.64951C14.5136 1.82192 13.5564 1.17344 12.4694 0.704066C11.3824 0.234689 10.2244 0 8.99537 0C7.76634 0 6.60834 0.234689 5.52136 0.704066C4.44056 1.17344 3.48327 1.82192 2.64951 2.64951C1.82192 3.4771 1.17344 4.43438 0.704066 5.52136C0.234689 6.60834 0 7.76634 0 8.99537C0 10.2306 0.234689 11.3917 0.704066 12.4786C1.17962 13.5594 1.83119 14.5136 2.65878 15.3412C3.48636 16.1688 4.44056 16.8173 5.52136 17.2867C6.60834 17.7622 7.76943 18 9.00463 18ZM6.09573 12.701C5.87957 12.701 5.69429 12.6238 5.53989 12.4694C5.39166 12.3088 5.31755 12.1204 5.31755 11.9043C5.31755 11.7005 5.39475 11.5214 5.54915 11.367L7.91148 9.00463L5.54915 6.65157C5.39475 6.50335 5.31755 6.32115 5.31755 6.10499C5.31755 5.88883 5.39166 5.70664 5.53989 5.55841C5.69429 5.40401 5.87957 5.32681 6.09573 5.32681C6.29954 5.32681 6.48173 5.40401 6.64231 5.55841L9.00463 7.92074L11.3855 5.54915C11.5399 5.39475 11.7221 5.31755 11.9321 5.31755C12.1482 5.31755 12.3304 5.39475 12.4786 5.54915C12.633 5.69738 12.7102 5.87957 12.7102 6.09573C12.7102 6.31189 12.633 6.49408 12.4786 6.64231L10.1071 9.00463L12.4694 11.3577C12.6238 11.4997 12.701 11.6819 12.701 11.9043C12.701 12.1204 12.6238 12.3088 12.4694 12.4694C12.3212 12.6238 12.1359 12.701 11.9135 12.701C11.685 12.701 11.4997 12.6238 11.3577 12.4694L9.00463 10.1163L6.66083 12.4694C6.51261 12.6238 6.32424 12.701 6.09573 12.701Z" fill="currentColor"></path></svg>
+
+</a></div>
+<a class="c-link c-link--unstyled c-search-input__close js-search_close" href="javascript:void(0)"><i class="icon-cancel-slim"></i></a>
+</div>
+<div class='c-search__dropdown c-search-dropdown js-search_dropdown'>
+<div class='c-search-dropdown__stack'>
+<div class='js-search_section js-search_no_result c-search__no-result u-hidden'>
+<div class="c-search-no-result layouts-header-search-no_result" data-rc="layouts/header/search/no_result"><div class='c-search-no-result__title'>
+<img alt="" class="c-search-no-result__sad-icon" src="https://assets.republic.com/assets/ui/search/sad-face-4e0a6424ec40ef8fcdfeafe700612e45fed331a733b7e1eb91db5eb95ed0ab2c.svg" />
+Oops! We couldn’t find any results...
+</div>
+<div class='c-search-no-result__content'>
+Can’t find a deal? Try
+<a href="/investment-opportunities">advanced search</a>.
+<br>
+Is something missing? Add your suggestion
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://republic-co.typeform.com/to/xombuUWi">here</a>.
+</div>
+</div>
+</div>
+<div class='js-search_section js-search_result c-search-dropdown__stack u-hidden'></div>
+<div class='js-search_section js-search_popular_offerings u-hidden'></div>
+<div class='js-search_section js-search_popular_categories u-hidden'></div>
+</div>
+</div>
+</div>
+<div class='c-search__overlay u-hidden js-search_overlay'></div>
+</div>
+</div>
+<div class='layouts-header_202310__nav-container__area layouts-header_202310__nav-container__area--narrow'>
+<nav class='layouts-header_202310__nav-container__user-menu'>
+<ul>
+<li class='layouts-header_202310__nav-container__user-menu__item layouts-header_202310__nav-container__user-menu__item--non-interactable'>
+<div class="layouts-header_202310-globe_button" data-rc="layouts/header_202310/globe_button"><div data-react-key="HeaderRegionalSwitch" data-react-id="432fe2b2-6f0f-408c-a11e-1599f38b4c56"><div class="js-react-component--placeholder"><div class='js-tooltip_simple' data-tippy-content='You are viewing the US site' data-tippy-placement='bottom'>
+<div class='globe-button'>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="c-chakra-icon-6 globe-icon"><path fill="currentColor" d="M12 22C6.516 22 2 17.484 2 12 2 6.525 6.516 2 11.99 2 17.475 2 22 6.525 22 12c0 5.484-4.516 10-10 10M6.209 6.104c.46.316 1.026.584 1.687.795.441-1.179 1.017-2.147 1.707-2.828A8.45 8.45 0 0 0 6.21 6.104m8.197-2.023c.681.68 1.266 1.649 1.697 2.818.662-.21 1.228-.47 1.688-.786-.94-.93-2.1-1.63-3.385-2.032m-1.706.393v2.972q1.067-.043 2.004-.202c-.518-1.37-1.228-2.387-2.004-2.77m-3.404 2.77c.623.106 1.295.173 2.004.202V4.474c-.777.383-1.486 1.4-2.004 2.77M3.745 11.3h3.327c.048-1.103.192-2.138.422-3.078-.873-.278-1.62-.642-2.186-1.073A8.2 8.2 0 0 0 3.745 11.3m13.183 0h3.327a8.2 8.2 0 0 0-1.563-4.142c-.565.422-1.313.786-2.186 1.064.23.94.374 1.976.422 3.078m-8.428 0h2.8V8.855a17 17 0 0 1-2.406-.278c-.211.844-.346 1.764-.394 2.723m4.2 0h2.8a14.2 14.2 0 0 0-.394-2.723c-.747.144-1.562.24-2.406.278zm-8.955 1.4a8.26 8.26 0 0 0 1.582 4.18c.566-.422 1.304-.776 2.176-1.054a15 15 0 0 1-.431-3.126zm4.755 0c.048.968.183 1.908.394 2.77.757-.143 1.562-.239 2.406-.277V12.7zm4.2 2.493c.844.038 1.649.134 2.406.278.211-.863.346-1.803.393-2.771h-2.8zm3.797.633c.872.277 1.61.632 2.176 1.054a8.26 8.26 0 0 0 1.582-4.18h-3.327a15 15 0 0 1-.431 3.126m-7.182.977c.509 1.343 1.218 2.35 1.985 2.742v-2.953c-.71.03-1.371.106-1.985.212m3.385-.21v2.953c.767-.394 1.476-1.4 1.985-2.742a15 15 0 0 0-1.985-.211m3.394.546c-.432 1.16-1.007 2.11-1.678 2.78a8.3 8.3 0 0 0 3.356-2.003c-.46-.307-1.026-.566-1.678-.777m-9.856.777c.93.92 2.08 1.61 3.346 2.003-.671-.67-1.247-1.62-1.678-2.78-.652.211-1.218.47-1.668.777"></path></svg>
+
+<span class='globe-text'>
+US
+</span>
+</div>
+</div>
+</div><div class="js-react-component--content u-invisible"></div></div><script nonce="xiAjEf6Zu0p9t5mV10t9NA==" type="application/json" data-react-key="HeaderRegionalSwitch" data-react-id="432fe2b2-6f0f-408c-a11e-1599f38b4c56">{"mode":"desktop","variant":"light"}</script></div>
+</li>
+<li class='layouts-header_202310__nav-container__user-menu__item layouts-header_202310__divider'>
+<hr>
+</li>
+<li class='layouts-header_202310__nav-container__user-menu__item header-login-link'>
+<div class="c-header-nav__item c-header-nav__item--text layouts-header-login" data-rc="layouts/header/login"><a class="c-header-nav-link user-menu-link" href="/login">Log in</a>
+</div>
+</li>
+<li class='layouts-header_202310__nav-container__user-menu__item'>
+<a class="layouts-header_202310__open-account-btn" href="/register">Open account</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class='layouts-header_202310__mega-menu js-header_mega_menu'>
+<div class='layouts-header_202310__mega-menu-container js-header_mega_menu-container'>
+<div class='layouts-header_202310__mega-menu__tab js-header_mega_menu_tab_container' data-tab='investors'>
+<div class="u-width100 layouts-header_202310-megamenu layouts-header_202310-megamenu-investors_us" data-rc="layouts/header_202310/megamenu/investors_us"><div class='layouts-header_202310-megamenu__menu-content-wrapper'>
+<div class='layouts-header_202310-megamenu__menu-content'>
+<div class='layouts-header_202310-megamenu__section-title'>
+All investors
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="primary_market" href="/investment-opportunities">Live deals
+<span class='layouts-header_202310-megamenu__link__description'>
+Investment opportunities
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="secondary_market" href="/secondary-market">Trading
+<span class='layouts-header_202310-megamenu__link__description'>
+Buy and sell
+</span>
+</a><div class='layouts-header_202310-megamenu__item--span2'>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="republic_note" href="/note">Republic Note
+<span class='layouts-header_202310-megamenu__link__description'>
+Own a piece of Republic's upside
+</span>
+</a></div>
+<div class='layouts-header_202310-megamenu__section-title'>
+Accredited only
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="republic_ventures" href="/ventures">Republic Ventures
+<span class='layouts-header_202310-megamenu__link__description'>
+Opportunities for accredited investors
+</span>
+</a><div class='layouts-header_202310-megamenu__section-title'>
+Institutional
+</div>
+<div class='layouts-header_202310-megamenu__item--span2'>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="republic_capital" href="/capital">Republic Capital
+<span class='layouts-header_202310-megamenu__link__description'>
+Multi-stage venture firm
+</span>
+</a></div>
+<div class='layouts-header_202310-megamenu__section-title'>
+More
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="wallet" href="/wallet">Wallet
+<span class='layouts-header_202310-megamenu__link__description'>
+Manage your digital assets
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="mobile_app" href="/app">Mobile app
+<span class='layouts-header_202310-megamenu__link__description'>
+Available on iOS or Android
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="learning_center" href="/learn/investors/how-it-works">Learning center
+<span class='layouts-header_202310-megamenu__link__description'>
+Explore investor resources
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="investors" data-label="faq" href="/help">FAQ
+<span class='layouts-header_202310-megamenu__link__description'>
+Get your questions answered
+</span>
+</a></div>
+<div class='extra-menu-content'>
+<div class='whats-new-section'>
+<div class='section-header'>
+<span class='s-fontSize18 u-colorGray6 layouts-header_202310-megamenu__pin-icon'>
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none"><path fill="currentColor" d="M2 6.066v-4.4A.667.667 0 0 1 2 .334h8a.667.667 0 1 1 0 1.334v4.4c.621.68.955 1.356 1.133 1.889.097.292.147.54.173.72a2.936 2.936 0 0 1 .027.287V9s-.002-.087 0 .001a.667.667 0 0 1-.666.667h-4V13a.667.667 0 1 1-1.333 0V9.667h-4A.667.667 0 0 1 .667 9c0-.333 0 0 0 0v-.014a1.363 1.363 0 0 1 .004-.09 4.149 4.149 0 0 1 .197-.94A5.292 5.292 0 0 1 2 6.066Zm6.667-4.4H3.334v4.667c0 .177-.07.347-.196.472-.564.564-.847 1.119-.99 1.528h7.705c-.143-.41-.426-.964-.99-1.528a.667.667 0 0 1-.196-.472V1.667Z"></path></svg>
+
+</span>
+Spotlight deal
+<i class='icon-info-letter icon--frame s-marginLeft0_5 js-tooltip_simple' data-tippy-content='This link showcases content from our partners, distinct from our regular content.'></i>
+</div>
+<a class="layouts-header_202310-megamenu__link js-analytics_track_link" data-segment-analytics="{&quot;event_name&quot;:&quot;header_spotlight_clicked&quot;,&quot;spotlight_offering_id&quot;:&quot;21372&quot;,&quot;spotlight_offering_slug&quot;:&quot;miso-robotics&quot;,&quot;spotlight_offering_company&quot;:&quot;Miso Robotics &quot;}" href="/miso-robotics"><div class='spotlight-image-wrapper'>
+<img srcset="https://uploads.republic.com/p/offerings/card_images/default_2x/000/021/372/21372-1784905458-23331206ca4e9bc7e755cafe5f175604c6ad7052.jpg 2x" alt="Miso Robotics " class="layouts-header_202310-megamenu-investors_us__cover-image" src="https://uploads.republic.com/p/offerings/card_images/default/000/021/372/21372-1784905458-c3f9b8266643c61d64d0595f7b6b5a93e1cf8fe8.jpg" />
+</div>
+<div class='event-info-wrapper'>
+<div class='event-name'>
+Miso Robotics 
+</div>
+<span class='layouts-header_202310-megamenu__link__description event-date'>
+The Flippy Fry Station robot and a new AI operating system for modern restaurants and hospitality
+</span>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class='layouts-header_202310__mega-menu__tab js-header_mega_menu_tab_container' data-tab='businesses'>
+<div class="u-width100 layouts-header_202310-megamenu layouts-header_202310-megamenu-businesses" data-rc="layouts/header_202310/megamenu/businesses"><div class='layouts-header_202310-megamenu__menu-content-wrapper'>
+<div class='layouts-header_202310-megamenu__menu-content'>
+<div class='layouts-header_202310-megamenu__section-title'>
+Growth capital solutions
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="community_fundraising" href="/raise">Capital fundraising
+<span class='layouts-header_202310-megamenu__link__description'>
+Raise on Republic
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="tokenized_assets" href="/tokenization">Tokenized assets
+<span class='layouts-header_202310-megamenu__link__description'>
+Design, launch, manage tokenized assets
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="sharedrops" href="/sharedrops">Sharedrops
+<span class='layouts-header_202310-megamenu__link__description'>
+Gift equity as a reward
+</span>
+</a><a target="_blank" class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="founder_academy" href="/academy">Founder Academy
+<span class='layouts-header_202310-megamenu__external-link-icon'>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M5.33333 4.66667C5.33333 4.29848 5.63181 4 6 4L11.3333 4C11.7015 4 12 4.29848 12 4.66667V10C12 10.3682 11.7015 10.6667 11.3333 10.6667C10.9651 10.6667 10.6667 10.3682 10.6667 10V6.27614L5.13807 11.8047C4.87772 12.0651 4.45561 12.0651 4.19526 11.8047C3.93491 11.5444 3.93491 11.1223 4.19526 10.8619L9.72386 5.33333L6 5.33333C5.63181 5.33333 5.33333 5.03486 5.33333 4.66667Z" fill="currentColor"></path>
+</svg>
+
+</span>
+<span class='layouts-header_202310-megamenu__link__description'>
+A complete guide to raising funds
+</span>
+</a><div class='layouts-header_202310-megamenu__section-title'>
+Web3 services
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="web3_advisory" href="/advisory">Advisory
+<span class='layouts-header_202310-megamenu__link__description'>
+Access veteran web3 advisors
+</span>
+</a><a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="web3_infrastructure" href="/infrastructure">Infrastructure
+<span class='layouts-header_202310-megamenu__link__description'>
+Stake your digital assets
+</span>
+</a><div class='layouts-header_202310-megamenu__item--span2'>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="web3_tokenization" href="/tokenization">Tokenization
+<span class='layouts-header_202310-megamenu__link__description'>
+Deploy your assets on-chain
+</span>
+</a></div>
+<div class='layouts-header_202310-megamenu__section-title'>
+Institutional services
+</div>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="capital_fundraising" href="/capital">Republic Capital
+<span class='layouts-header_202310-megamenu__link__description'>
+In-house Venture Capital fund
+</span>
+</a><div class='layouts-header_202310-megamenu__item--span3'>
+<a class="layouts-header_202310-megamenu__link js-header_mega_menu_link" data-category="businesses" data-label="broker_dealer" href="/capital-r">Broker dealer
+<span class='layouts-header_202310-megamenu__link__description'>
+Regulated capital services
+</span>
+</a></div>
+</div>
+<div class='extra-menu-content'>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div><div class="c-breadcrumb_learn learn-shared-issuers_breadcrumbs" data-rc="learn/shared/issuers_breadcrumbs"><div class='c-breadcrumb_learn__wrapper s-container s-gridMaxXs24 u-alignItemsCenter u-displayFlex'>
+<div class='c-breadcrumb_learn__caption'>
+For companies
+</div>
+<div class='c-breadcrumb_learn__links'>
+<a class="u-hiddenXsOnly" href="/raise">Raise funds</a>
+<span class='u-hiddenXsOnly'>&nbsp;&middot;&nbsp;</span>
+<a href="/raise/reg-a">Reg A+</a>
+<span class='u-hiddenXsOnly'>&nbsp;&middot;&nbsp;</span>
+<a class="u-hiddenXsOnly" href="/learn/issuers">Learn more</a>
+<span class='u-hiddenXsOnly'>&nbsp;&middot;&nbsp;</span>
+<a class="active" href="/help/category/fundraising">FAQ</a>
+</div>
+</div>
+</div>
+<div class='s-marginPullTop1_5 u-hiddenXsOnly'></div>
+<div class='s-marginPullTop0_5 u-hiddenSmUp'></div>
+
+</div>
+</div><div>
+<div itemscope="itemscope" itemtype="http://schema.org/QAPage" class="js-help help_articles-category" data-rc="help_articles/category"><div class='s-marginPullTop2 u-hiddenSmDown'></div>
+<div class='s-marginPullTop1 u-hidden u-blockSmOnly'></div>
+<div class='s-container s-gridMaxXs24'>
+<h1 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title'>
+FAQ: Fundraising
+</h1>
+<div class='s-gridMaxSm14'>
+<div class="help_articles-search_form" data-rc="help_articles/search_form"><form class="simple_form c-form help" action="/help/search" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="LOxbb88-8JnK_arGQ0i6qmbxtVp4483piD8jXEQvw4TqPmuumc9DmHUrv2fRJuG-Kw-InQpQBM453Lre0GLRJg" autocomplete="off" /><input value="Fundraising" autocomplete="off" type="hidden" name="help[category]" id="help_category" />
+<div class='c-input-addon-wrapper'>
+<div class='help_articles-search_form__input_addon'>
+<div class='u-colorGrayA js-search_icon help_articles-search_form__search_icon'>
+<i class='icon-search s-fontSize32 u-displayInlineBlock'></i>
+</div>
+<div class='u-colorGrayC u-hidden js-loader help_articles-search_form__loader_icon'>
+<i class='c-spinner s-fontSize22 u-displayInlineBlock'></i>
+</div>
+<div class='c-link u-colorGray8 u-hidden js-clear_result help_articles-search_form__cancel_icon'>
+<i class='icon-cancel s-fontSize24 u-displayInlineBlock'></i>
+</div>
+</div>
+<input label="false" class="c-input c-input--optional c-input--large c-input--block js-search_input" minlength="3" placeholder="Ask a question or search by keyword" type="text" name="help[search]" id="help_search" />
+</div>
+</form></div>
+</div>
+<div class='s-marginTop2'></div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='campaign_logistics'>
+Campaign logistics
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/can-i-close-my-campaign-early">Can I close my campaign early?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/can-i-close-my-campaign-early"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Yes, as long as the following conditions have been met:</p><ol><li>The campaign will have been open for a minimum of 21 days at the time of the closing;</li><li>Republic provides notice to any potential investors, and gives or sends notice to investors that have made investment commitments in the offering, of:<ol><li>The new, anticipated closing date of the offering;</li><li>The right of investors to cancel investment commitments for any reason until 48 hours prior to the new closing date; and</li><li>Whether the issuer will continue to accept investment commitments during the 48-hour period prior to the new closing date.</li></ol></li><li>The new offering closing date is scheduled for and occurs at least five business days after the notice is provided; and</li><li>At the time of the new closing date, the campaign continues to meet or exceed the target offering amount.</li></ol>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-does-my-campaign-get-featured-in-republic-s-marketing-materials-4">How does my campaign get featured in Republic’s marketing materials?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-does-my-campaign-get-featured-in-republic-s-marketing-materials-4"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Whether your raise is through our Crowdfunding Portal, OpenDeal Portal LLC, or through our Broker-Dealer, OpenDeal Broker LLC, Republic is always working to expose your campaign to our community of members, including the thousands of active investors on our platform. We take pride in your success, and provide the following opportunities for your campaign to get in front of our audience.</p><p>You can rest assured that we are aligned in the success of your campaign, and will do everything in our capacity to support your fundraising efforts.&nbsp;</p><p>A couple of important notes before we dive into the details of our marketing playbook:</p><ul><li><p><em>For some offerings — those issued under Regulation Crowdfunding (Reg CF) — we are bound by a regulatory obligation to treat all offerings equally in terms of marketing promotions. Other offerings, such as those offered under Reg A+ or Reg D, may have more flexibility in terms of how the intermediary and its ecosystem can promote the offering, but are often accompanied by heightened compliance requirements. In order to remain in compliance with regulations and our internal policies, Republic retains sole discretion over the exact manner in which your campaign is marketed on our platform, and our marketing promotions are subject to change over time based on what we find to be successful.&nbsp;</em></p></li><li><p><em>Once you launch your campaign, various agencies and vendors may contact you and try to win your business by promising extraordinary results. Before engaging with an unknown group, we suggest that you reach out to your Campaign Manager so that we can let you know if we’re familiar with their track record and results.</em></p></li></ul><h3>Our strategy</h3><p>With fundraising, narrative and momentum are paramount. This is why we encourage all companies raising on our platform to <em>leverage your own communities and networks</em> to seed the round with investment commitments prior to engaging the Republic community. This way, when we are able to drive visitors to your campaign page, the Republic community sees a campaign with visible support — a strong signal to potential investors that your offering is worth their time and attention.</p><p>Because Republic does not own the contents of your campaign page, our strategy is to drive visitors to your page and allow your campaign page do the important work of converting visitors to investors. We encourage you to utilize your own marketing tools (such as email lists) as well as tools we provide (such as Campaign Updates) to convert visitors and prospects into committed investors.&nbsp;</p><h3>Our tactics</h3><p>Republic utilizes a variety of marketing channels to drive visibility of your offering.</p><p><strong>Website placement</strong></p><ul><li><p><strong>Homepage placement for ‘Trending’</strong> - Whenever a campaign raises more that $25,000 from more than 100 unique investors within the past 3 days, it will be prominently featured with a ‘Trending’ tag.<strong><br></strong></p></li><li><p><strong>Homepage placement for 'Recently Launched' -&nbsp;</strong>Once a campaign has reached $25,000 in committed investments, it will be eligible to appear on our homepage under 'Recently Launched'.<strong><br></strong></p></li><li><p><strong>Homepage placement for ‘Most Traction’&nbsp;</strong>- The six campaigns which have raised the most money in the past 3 days are featured on our homepage under 'Most Traction'.</p></li><li><p><strong>Homepage placement for 'Most Funded'</strong> - The six campaigns which have raised the most overall are featured on our homepage under 'Most Funded'.</p></li><li><p><strong>Homepage placement for 'Closing Soon'&nbsp;</strong>- The six campaigns which are closing soonest are featured on our homepage under 'Closing Soon'.</p></li><li><p><strong>“Closing Soon”</strong> <strong>banner&nbsp;</strong>- Your campaign will appear in the header of republic.com for the 48 hours prior to the campaign concluding</p></li></ul><p><strong>Email marketing</strong></p><ul><li><p><strong>Campaign announcement email</strong> - An email will be sent on behalf of your offering when it reaches the following milestones, according to the relevant regulation:</p><ul><li><p>Regulation Crowdfunding (Reg CF)* - At $25,000 raised. This ensures that each campaign has activated its own community and network prior to engaging Republic’s audience, increasing the effectiveness of our marketing efforts. This first marketing email may feature two or more campaigns. <em>Note: “Reservation Campaigns” do not qualify for campaign announcement emails, and will need to convert to a full-fledged Investment Campaign prior to receiving this email promotion.</em></p></li><li><p>Regulation A**+ - At campaign launch</p></li><li><p>Reg D 506(c)** - At campaign launch</p></li><li><p>Red D 506(b)** and Reg S** - No public announcement</p></li></ul></li><li><p><strong>Campaign milestone emails</strong> - Reaching subsequent investment milestones will unlock additional marketing opportunities. The content of each of these emails will be at Republic’s sole discretion, but the emails will prominently feature your campaign. <em>Note: If a campaign qualifies for more than one milestone within a 1 week period, Republic will send one email based on the most recently completed milestone. For example, if your campaign raises over $1M in the first week, Republic will generally send a milestone email for $1M reached, but not for all milestones along the way to $1M.</em></p><ul><li><p>$100,000 raised</p></li><li><p>$200,000 raised</p></li><li><p>$500,000 raised</p></li><li><p>$1,000,000 raised</p></li><li><p>$3,000,000 raised</p></li></ul></li><li><p><strong>Republic’s weekly newsletter</strong> - Your campaign will appear in our weekly newsletter at the following times:</p><ul><li><p>Any week your campaign meets our weekly newsletter theme (at our sole discretion)</p></li><li><p>The week before your offering is scheduled to close</p></li><li><p>Any week in which your offering's "Campaign Update" qualifies for inclusion in Republic's weekly newsletter, according to the following criteria:</p><ul><li>The Campaign Update must include tangible traction or big product update/change, such as:<ul><li>A feature in a recognized industry publication&nbsp;</li><li><p>A new rollout of product line</p></li><li><p>An endorsement by a recognized name</p></li><li><p>An award from prestigious, sizable industry association or relevant publication</p></li></ul></li><li><p>You must submit your Campaign Update through <a href="https://forms.gle/z6Nzie3qWDFh5MD87" rel="nofollow">this form</a>.</p></li><li><p>Form is open each Thursday at 3pm ET for inclusion in the following week’s newsletter.</p></li><li><p>Due to limited space, only the first 10 to meet the criteria below will be featured in the newsletter. &nbsp;</p></li><li><p>Update must be posted on your offering page as a Campaign Update so that it can be linked to from the email</p></li></ul></li></ul></li></ul><p><strong>Social media</strong></p><p>Republic will raise visibility for your campaign on our social media platforms at various points during your campaign. Please note that we retain sole discretion over which channels and placements these mentions occur; the social media landscape is ever changing, as are our strategies for effectively reaching and engaging our communities.</p><p>Currently, all offerings (excluding “Reservation Campaigns”) are featured at the following times:</p><ul><li><p><strong>Campaign launch roundup</strong> - Posted to Republic’s social media channels the week of your campaign launch</p></li><li><p><strong>Closing soon notification</strong> - Posted to Republic’s social media channels the week of your campaign launch</p></li></ul><p><br></p><p><i>Social Media: &nbsp;Republic will repost up to 1 instagram story and 1 Twitter post per founder if @Joinrepublic is tagged while your campaign is live. Please inform your campaign manager when you plan to post and ensure your post follows Republic's compliance guide</i></p><p><br></p><hr><p>* - Offering type is facilitated by OpenDeal Portal LLC<br>** - Offering type is facilitated by OpenDeal Broker LLC</p><p>Effective August 30, 2023.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-is-the-typical-campaign-duration-2">What is the typical campaign duration?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-is-the-typical-campaign-duration-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Republic campaigns are live for 60 days, which we’ve identified as the ideal timeline for a successful and efficient raise. If your campaign includes a reservation period, this is not included in the 60 day duration. Please <a href="mailto:team@republic.co" rel="nofollow">contact the Republic team</a> for more information about campaign timelines.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='eligibility'>
+Eligibility
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/are-there-any-restrictions-on-incorporation-type-for-companies-fundraising-on-3">Are there any restrictions on incorporation type for companies fundraising on Republic?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/are-there-any-restrictions-on-incorporation-type-for-companies-fundraising-on-3"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>C-Corporations and Limited Liability Companies (LLCs)&nbsp;can fundraise on Republic.&nbsp;</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/can-companies-based-outside-the-united-states-raise-money-on-republic-1">Can companies based outside the US raise money on Republic?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/can-companies-based-outside-the-united-states-raise-money-on-republic-1"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>No, only United States-based companies can raise via equity crowdfunding per US law.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/does-my-company-need-to-be-incorporated-in-a-particular-state-to-fundraise-on-2">Does my company need to be incorporated in a particular state to fundraise on Republic?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/does-my-company-need-to-be-incorporated-in-a-particular-state-to-fundraise-on-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>No, as long as your company is based in the United States it does not need to be incorporated in a particular state to fundraise on Republic.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-do-i-know-if-my-financials-are-gaap-compliant-3">How do I know if my financials are GAAP compliant?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-do-i-know-if-my-financials-are-gaap-compliant-3"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>GAAP refers to "generally accepted accounting principles", an industry standard for reporting financial information. To fundraise using Regulation Crowdfunding, you must submit your financial statements in GAAP format.</p><p>If they're formatted <a href="https://republic.com/help/issuer-gaap-example.pdf" target="_blank" rel="nofollow">like this example</a>, meaning many of the same items and information (ex. issuance of stock) are covered in the same way, they're probably GAAP. That said, it's not just a question of formatting, and this isn't financial advice.&nbsp;</p><p>If you're still not sure, it's best to check with a CPA.&nbsp;</p><p>Remember, if you want the ability to raise over $124,000, you must have your GAAP finances reviewed by an independent CPA.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-are-gaap-financials-and-when-do-i-need-them-to-be-reviewed">What are GAAP Financials and when do I need them to be "Reviewed"?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-are-gaap-financials-and-when-do-i-need-them-to-be-reviewed"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>You must disclose your last 2 fiscal years in GAAP (Generally Accepted Accounting Principles). If you want to raise <em>more</em> than $124,000, these financial documents must be "Reviewed," <strong>Not Audited</strong>, by an independent CPA. <a href="https://drive.google.com/file/d/1uqdMfCLxpCrDenbUlEfNnrZFb1myy9j0/view?usp=sharing" target="_blank" rel="nofollow">Here is an example of what completed finances look like.</a></p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-kind-of-startups-are-accepted-to-raise">What kind of startups are accepted to raise?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-kind-of-startups-are-accepted-to-raise"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<ul><li>Only U.S.-based companies are accepted (you have to be incorporated in the US)</li><li>Only companies that <a href="https://republic.com/learn/investors/how_we_select_startups" rel="nofollow">pass the criteria</a> of our investment committee</li><li><a href="https://republic.com/learn/issuers/who_can_raise" rel="nofollow">More criteria listed here</a></li></ul><p><br></p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/who-needs-to-have-a-bad-actor-check-run-on-them">Who needs to have a Bad Actor Check run on them?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/who-needs-to-have-a-bad-actor-check-run-on-them"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Anyone in your company that falls into one or more of these categories must provide Republic their full name legal name, SSN/TIN, phone-number, address&nbsp;and DOB:</p><ul><li>Officer (anyone with "officer" in their title);</li><li>Director (anyone on your board, but not informal advisors); and/or</li><li>Any person or entity that holds 20% or more of the company.</li></ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='campaign_finances'>
+Campaign Finances
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-does-flat-fee-attorney-pricing-work">How does Flat Fee Attorney pricing work?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-does-flat-fee-attorney-pricing-work"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>&nbsp;By being affiliated with Republic, you get a special discount on Form C reviews through our independent attorneys we have partnered. How the flat fee is determined is explained below.</p><p><br></p><p><strong>Number of Prior Issuances of Securities to Investors (Equity, Debt, SAFE, SAFT, etc.)<br></strong></p><p>Depending on how many previous securities offerings you've conducted, our partners will determine the cost of your Form C review and filing based on the following formula:</p><table><tr><td>1</td><td style="width: 25%;">$1,500</td></tr><tr><td>2<br></td><td>$2,500</td></tr><tr><td>3</td><td>$3,500</td></tr><tr><td>Issuance of Debt Payable by Assets (DPA) or Token Purchase Agreements (TPA) security instruments (fee in addition to standard pricing)</td><td>$2,500</td></tr></table><p><strong><br></strong></p><p><strong>Services Included using flat fee pricing with vs. without Republic’s Referral</strong></p><table><tr><th><br></th><th>With Republic’s Referral</th><th>Without Republic’s Referral</th><th>Additional Service Fees (if not included)</th></tr><tr><td>Initial 30 Minute Consultation</td><td>Yes</td><td>Yes</td><td><br></td></tr><tr><td>Collection of Corporate Information</td><td>Yes</td><td>Yes</td><td><br></td></tr><tr><td>Review of Form C<br></td><td>Yes</td><td>Yes</td><td><br></td></tr><tr><td>30 Min Consultation relating to Security</td><td>Yes</td><td>Yes</td><td><br></td></tr><tr><td>Filing of Form C</td><td>Yes</td><td>No</td><td>$500</td></tr><tr><td>Filing of Form C-A</td><td>Variable<br></td><td>No<br></td><td>$500</td></tr><tr><td>Filing of Form C-U</td><td>Yes</td><td>No</td><td>$500</td></tr></table><p><strong>Additional Service Fee</strong></p><table><tr><th>&nbsp; &nbsp;&nbsp;</th><th>With Republic’s Referral</th><th>Without Republic’s Referral</th></tr><tr><td>Preparation of Cap Table</td><td>Hourly (if not provided by 3rd Party)</td><td>$1,500</td></tr><tr><td>Preparation of Corporate Resolutions</td><td>Hourly</td><td>Hourly</td></tr><tr><td>Updates to Corporate Documents</td><td>Hourly</td><td>Hourly</td></tr><tr><td>30 Min Consultation relating to Security &amp; Preparation of Security to be Issued in Reg CF Offering</td><td>Free if using Crowd Safe, hourly otherwise</td><td>$1,000</td></tr><tr><td>Filing of Annual Reports</td><td>{TBD}</td><td>$2,500</td></tr></table><p><em>Note: Standard Billing (per hour) includes $400 for an attorney, $150 for a paralegal, and $100 for a legal assistant. Flat-free pricing includes approximately 10 hours of legal review. Client may be billed based on the firm’s standard fee schedule for special circumstances. Any client work to be billed beyond the standard flat fee will require prior client approval and an applicable retainer.&nbsp;</em></p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-much-does-it-cost-to-raise-on-republic">How much does it cost to raise on Republic?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-much-does-it-cost-to-raise-on-republic"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Raising via investment crowdfunding on Republic is not a heavy lift, contrary to what you might expect.&nbsp;</p><p>Please note:&nbsp;these fees are <em>not</em> paid to Republic, but are objective costs associated with&nbsp;preparing the documents and running a compliant&nbsp;campaign.&nbsp;Republic only&nbsp;takes&nbsp;<a href="https://republic.com/help/what-fees-does-republic-charge" target="_blank" rel="nofollow">commission</a> on&nbsp;successful campaigns.</p><p><a href="https://republic.com/help/what-fees-does-republic-charge" target="_blank" rel="nofollow"></a><br></p><ul><li>Form C: $1,500<br>The SEC&nbsp;requires fundraising companies to provide certain information on <a href="https://www.sec.gov/info/smallbus/secg/rccomplianceguide-051316.htm#3" target="_blank" rel="nofollow">Form C</a>. &nbsp;This disclosure informs prospective investors and is provided to the SEC. &nbsp;iDisclose, a&nbsp;third party service provider, helps you complete a&nbsp;Form C in about&nbsp;9 hours when it would normally take over 4 weeks manually. We also have inhouse staff to help you along the way. You are required to pay this cost up-front when you start using the service.</li><li>Escrow: Approximately&nbsp;$1,500<br>All campaigns must have an escrow agent.&nbsp;&nbsp;The costs of escrow vary&nbsp;depending on the number of investors you end up with and is not paid until after the campaign is over, directly out of the proceeds of the escrow account.</li></ul><p><strong>Baseline cost total: $3,000</strong></p><hr><p><br></p><p><strong>Other potential costs:</strong></p><ul><li>Financials: $1,000–$4,000<br>If your financials are not complex, you have been diligent with bookkeeping and you are organized expect this cost to be in the middle to lower range. If you already have GAAP converted financials your costs will be lower. If you have a licensed CPA on the team your costs can be $0. If you use professionals expect the bill to be sent once services are complete.</li><li>Video: $0<br>Spend as little or as much as you want. It’s up to you. Already have a video? Chances are you can use that for your campaign.</li><li>Attorney review: $0-$3,500<br>If you have an in-house counsel or your own representation, you can use their services. If you need representation, our partners&nbsp;offer <a href="https://republic.com/help/how-does-idisclose-s-flat-fee-attorney-pricing-work" target="_blank" rel="nofollow">a flat fee structure</a> for Form C compliance and legal review. In addition they will file your Form C, all amendments during the campaign (if applicable) and your post campaign Form C-U declaring the campaign end. Finally, they will help you setup&nbsp;and review your investor agreement (i.e., the&nbsp;security you are selling to investors - most likely our Crowd Safe). This bill is typically paid upfront.</li><li>Marketing budget: $0<br>We <em>highly</em> recommend, but do not require, you to spend money on marketing, social media or otherwise. There might be a live event you want to attend, you might decide to have a party. These costs are optional and you decide on the total costs, but can have major impact on how much you raise.&nbsp;</li><li>Credit Card: ~2.5%<br>If you would like your investors to have the convenience of using a credit or debit card for investment a ~2.5% fee is charged by the service provider. For example if an investor uses their card for a $100 investment your fee would be $2.50. This would only apply to investments made with a credit or debit card, and only if the campaign is successful. Please note, currently Token DPA offerings cannot utilize credit card processing.</li></ul><p>Related:&nbsp;<a href="https://republic.com/help/what-fees-does-republic-charge" target="_blank" rel="nofollow">What commission does Republic charge?</a></p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='other_fundraising_questions'>
+Other fundraising questions
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/can-i-use-carta-as-a-cap-table-management-software-after-i-run-a-republic">Can I use Carta as a cap table management software after I run a Republic campaign? </a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/can-i-use-carta-as-a-cap-table-management-software-after-i-run-a-republic"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Absolutely, yes! Using Republic's own integrated transfer agent service, we have an awesome partnership with Carta for companies to represent their investors as one line item in summary on their cap table. They also provide a special discount to companies that have raised on Republic.&nbsp;</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/i-know-a-great-startup-founder-can-i-refer-a-startup-to-republic-2">I know a great startup founder. Can I refer a startup to Republic?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/i-know-a-great-startup-founder-can-i-refer-a-startup-to-republic-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Absolutely! To refer a company to raise with Republic, please send them to our application page (<a href="http://republic.com/apply/new" target="_blank" rel="nofollow">republic.com/apply/new</a>).</p><p><br></p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/should-i-be-worried-about-12-g-or-the-holders-of-record-threshold-3">Should I be worried about 12(g) or the holders of record threshold?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/should-i-be-worried-about-12-g-or-the-holders-of-record-threshold-3"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Republic offers companies <a href="https://republic.com/help/what-is-a-nominee-and-how-does-it-affect-my-cap-table-1" target="_blank" rel="nofollow">a nominee solution</a> for our SAFE in which investors are represented as a single line item on your company’s cap table summary, and there is no limit to the amount of investors who can participate. If you choose to convert investors to equity after raising more rounds, those investors who invested via a nominee round on Republic can be converted to a single equity shareholder (and “holder of record”) on your cap table through a custodial arrangement, with the custodian represented as the owner of record.&nbsp;</p><p>We created this custodial solution to increase investor protections and make cap table management easier for companies using Republic. It also happens to mitigate the 12(g) holder of record threshold concern. When held in custody, all Republic investors are considered <strong>one (1)</strong> <strong>holder of record&nbsp;</strong>so companies stay below the 12(g) threshold for public reporting with respect to their Republic raise.</p><p>Companies that did not use the custodial model during their campaign may be able to use its benefits of cap table management and investor protection &nbsp;at subsequent financing or other trigger events.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-are-blue-sky-laws">What are Blue Sky Laws? </a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-are-blue-sky-laws"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>In addition to U.S. federal securities laws, individual states have their own securities laws, called “Blue Sky Laws,” that regulate the offering and selling of securities in their jurisdiction and implement safeguards for investors against securities fraud.&nbsp;</p><p><strong>Who is affected?</strong></p><p>If your principal place of business is located in one of these states, and/or if residents of one of these states purchased 50% or greater of the aggregate amount of your offering, you may be subject to notice filing obligations.</p><p>See the updated list of states with the corresponding notice obligations here.</p><p><strong>Where is my principal place of business?</strong></p><p>A company’s principal place of business is the location where officers direct, control, and coordinate the company’s activities. This is typically the location where the primary functions and decision-making activities of the enterprise occur. The principal place of business is generally the location where the headquarters of a company is situated, but not always. &nbsp;</p><p><strong>Legal notice</strong></p><p>Blue Sky laws vary by state and require issuers to register securities offerings and sales within the state, unless an exemption is available under the Securities Act of 1933. Title III of the Jumpstart Our Business Startups (JOBS) Act of 2012, also called Regulation Crowdfunding (Reg CF), provides an exemption.&nbsp;</p><p>Title III of the JOBS Act preempts certain Regulation Crowdfunding (Reg CF) transactions from registration under state Blue Sky Laws. However, some states still require notice filings be made in order for the state to review the securities offering. A Reg CF notice filing usually comprises of: (1) a <a href="https://www.sec.gov/files/formc.pdf" rel="nofollow">Form C</a> filed with the SEC (you are doing this already); (2) a consent to service of process on <a href="https://www.state.sd.us/eforms/secure/eforms/E2194v1-FormU2-Public_Offerings.pdf" rel="nofollow">Form U-2</a>; and (3) the state filing fee, if applicable. This filing should be made to the state securities regulators, as indicated by each state’s statute.</p><p>This FAQ sheet does not constitute as legal advice, please consult with your legal counsel as to whether a state filing is necessary for your offering. This summary was last updated on July 8, 2019.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-is-a-nominee-and-how-does-it-affect-my-cap-table-1">What is a nominee and how does it affect my cap table?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-is-a-nominee-and-how-does-it-affect-my-cap-table-1"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p><strong>What is a nominee?</strong></p><p>As companies grow and change over time, they sometimes need investors to make decisions about their investments or about the future of the company. A nominee is an agent that has the right to act on behalf of investors—rather than having companies collect decisions individually from thousands of Republic investors. Republic’s nominee process has specific contractual rights, including voting, which follow a predetermined company appointee’s instruction (often the company's CEO, its board, or an existing major investor). This also includes the ability to agree to convert investments into custodial accounts on behalf of investors. Learn more about custodial accounts <a href="https://republic.com/help/what-is-a-custodial-account-and-how-does-it-affect-my-investment-1" target="_blank" rel="nofollow">here</a>.</p><p>For offerings using a nominee through Republic, Republic Investment Services LLC (f/k/a/NextSeed Services, LLC), a subsidiary of OpenDeal Inc. dba Republic is the nominee. A nominee rider is attached to each company’s Crowd SAFE or relevant security instrument. .</p><p><em><u>Note</u>: The nominee is typically only used in Regulation Crowdfunding offerings.</em></p><p><strong>What does this mean for founders?</strong></p><p>In short, the nominee structure allows companies to keep their cap tables clean and makes the mechanics of fundraising post-Republic campaign as seamless as possible.</p><p>While represented by the nominee, each individual investor remains a holder of record, but the nominee is representing a block of SAFEs that are not currently shareholders. When companies raise more capital from VCs or other private investors after their Republic campaign, they have the choice to convert their Crowd SAFE into shares. Upon conversion, the nominee structure allows companies to only add one additional shareholder (or one “holder of record”) to their cap table—not the thousands of Republic investors individually—by electing to accept the shares through a custodial solution. The nominee can, on behalf of investors, consent to holding the shares investors are entitled to “in custody” or “in street name” with a custodian. This custodian is the single shareholder and holder of record, while investors are “beneficial interest holders” and have the economic rights to their investment.&nbsp;</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='teaser-pages'>
+Teaser Pages
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-is-a-teaser-page">What is a Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-is-a-teaser-page"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Teaser Pages from Republic are a new, fast tool for founders and entrepreneurs to collect interest from investors.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/why-should-i-start-with-a-teaser-page-2">Why should I start with a Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/why-should-i-start-with-a-teaser-page-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Recent changes to regulations have made it easier than ever to raise funds from retail investors. But entrepreneurs are time constrained, and launching a campaign has an opportunity cost. With Teaser pages, entrepreneurs can quickly validate investor interest in a potential campaign.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/who-can-create-a-teaser-page-3">Who can create a Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/who-can-create-a-teaser-page-3"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>To be&nbsp;<a href="https://republic.com/learn/issuers/who-can-raise" rel="nofollow">eligible</a> to raise up to $5M in a 12 month period, your company must be a U.S.-based C-Corp, LLC, or public benefit corporation. To launch an investment campaign, you and your company will need to pass a&nbsp;<a href="https://republic.com/learn/investors/how-we-select-startups" rel="nofollow">due diligence</a> process to evaluate fit, market, team, traction, and reach, including the number of followers your Teaser Page attracts.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-information-do-i-need-to-get-started-with-a-teaser-page-2">What information do I need to get started with a Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-information-do-i-need-to-get-started-with-a-teaser-page-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Creating a Teaser Page takes minutes. Entrepreneurs only need to add a company name, logo, sector, summary, and at least one web link. Entrepreneurs will need a Republic account to get started, and can only have one published Teaser page at a time.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/which-links-can-i-use-on-my-teaser-page-2">Which links can I use on my Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/which-links-can-i-use-on-my-teaser-page-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Teaser Pages can help your audience find your company across the web. While you can drop any URL in the “Links” section of your Teaser, we’ll recognize the following list of well-known and supported social networks: AngelList, Crunchbase, Twitter, Instagram, LinkedIn, Facebook, YouTube, TikTok, Discord, Medium and Pinterest.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-are-the-relevant-regulations-for-a-teaser-page-2">What are the relevant regulations for a Teaser Page?  </a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-are-the-relevant-regulations-for-a-teaser-page-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Please refer to <a href="https://www.sec.gov/corpfin/facilitating-capital-formation-secg" rel="nofollow">Regulation Crowdfunding Rule 206</a> pertaining to promotion or public discussion of your Teaser Page, which requires certain disclosures and that you retain copies of your communications for compliance purposes.</p><p>The following disclosure must be included in all communications:</p><p><em>(i) no money or other consideration is being solicited thereby, and if sent in response, will not be accepted, (ii) no offer to buy the securities can be accepted and no part of the purchase price can be received until the offering statement is filed and only through a registered intermediary’s platform, (iii) an indication of interest is non-binding and involves no obligation or commitment of any kind.</em></p><p>For more information, please visit the <a href="https://www.sec.gov/info/smallbus/secg/rccomplianceguide-051316.htm" rel="nofollow">SEC website</a> for all crowdfunding rules and regulations.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-do-teaser-pages-lead-to-a-campaign-2">How do Teaser Pages lead to a campaign?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-do-teaser-pages-lead-to-a-campaign-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Teaser Pages are an optional way to start the journey of raising with Republic. At any point, entrepreneurs can submit an application, go through due diligence, and get started with a more formal Reservation Campaign or Investment Campaign. If you start with a Teaser Page, you’ll already have an audience for your future campaign!</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-does-republic-help-spread-the-word-about-my-teaser-page-12">How does Republic help spread the word about my Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-does-republic-help-spread-the-word-about-my-teaser-page-12"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Teaser Pages are meant to be a way for entrepreneurs to activate their network, but we’re here to help. When a Teaser Page is published and has five or more followers, we’ll share three of the most recent, highest traction pages with our investor base on our <a href="https://republic.com/tag/coming-soon-1" rel="nofollow">Coming Soon page</a>. Entrepreneurs will be able to see new followers from our network as well as their own.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/is-there-a-cost-to-launching-a-teaser-page-2">Is there a cost to launching a Teaser Page?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/is-there-a-cost-to-launching-a-teaser-page-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Nope. It’s totally free.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='transfer-agent'>
+Transfer agent
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/1-what-is-a-transfer-agent">What is a Transfer agent?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/1-what-is-a-transfer-agent"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Transfer agent manages and maintains records of securities ownership for a company. Transfer agents can also facilitate proxy voting and manage dividend/interest payments, issuances, transfers, lost shareholder searches, and much more. Most importantly, when your company converts the security you issued into common stock, preferred stock, cash, or something else, a Transfer agent is there to ensure that the conversion is smooth and compliant with applicable securities laws and regulations.</p><p>It’s important to make sure that the Transfer agent you engage is registered with the SEC. In terms of a timeline, it’s regulatory best practice to engage a Transfer agent by the end of the fiscal year (September 30) in which your campaign ended, or before any liquidity event or subsequent equity financing.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/2-what-is-brassica-services">What is Brassica Services?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/2-what-is-brassica-services"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p><span>Brassica Services LLC (“Brassica”) is</span><span>&nbsp;</span><span>an&nbsp;</span><span>integrated</span><span>&nbsp;</span><a href="https://republic.com/help/what-is-a-transfer-agent-2" rel="nofollow"><span>Transfer agent&nbsp;</span><span>solution</span></a><span>.</span><span>&nbsp;</span><span>Brassica handles the&nbsp;</span><span>recordkeeping, reporting and communications</span><span>&nbsp;</span><span>for Republic hosted&nbsp;</span><span>offerings and thousands of shareholders</span><span>&nbsp;by way of a&nbsp;</span><span>secure&nbsp;</span><span>software integration</span><span>&nbsp;</span><span>between our two platforms</span><span>.&nbsp;</span><span>Republic and&nbsp;</span><span>Brassica&nbsp;</span><span>have&nbsp;</span><span>joined forces to&nbsp;</span><span>create a streamlined experience that simplifies engaging a transfer agent for issuers, and makes</span><span>&nbsp;</span><span>tracking and&nbsp;</span><span>updating investor information less stressful.</span><span>&nbsp;</span></p><p><span>If an issuer is engaged with Brassica as their Transfer agent, you can come to&nbsp;</span><br><span>Republic directly for any changes related to your security by&nbsp;</span><br><span>emailing</span><span>&nbsp;</span><span>investors@republic.co</span><span>&nbsp;or you can contact Brassica directly at&nbsp;</span><br><a href="mailto:help@brassicaservices.com" target="_blank" rel="nofollow">help@brassicaservices.com</a><span>.</span><span>&nbsp;</span><span>For your convenience,</span><span>&nbsp;</span><span>you won't need a separate login to</span><span>&nbsp;</span><span>a&nbsp;</span><span>Brassica&nbsp;</span><span>portal&nbsp;</span><span>and all information can be&nbsp;</span><span>managed through your Republic account.</span></p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/3-how-can-i-learn-more-about-brassica-services">How can I learn more about Brassica Services?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/3-how-can-i-learn-more-about-brassica-services"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>To meet regulatory requirements and stay compliant, it is important that you engage a transfer agent as outlined in your Campaign Agreement. We have partnered with Brassica Services LLC, an SEC-registered transfer agent and a subsidiary of Brassica Technologies Inc. (“Brassica”) to offer you an integrated, cost-effective, and compliant transfer agent solution.</p><ul><li><p>Brassica’s programmatic transfer agent will enable you to:</p></li><li><p>Maintain an accurate record of all investors and their holdings.</p></li><li><p>Issue and cancel securities.</p></li><li><p>Transfer securities in the event of a change in beneficiary or sale.</p></li><li><p>Gain access to comprehensive reports on securities, investors, and transactions.</p></li><li><p>Complete investor distributions such as dividends.</p></li><li><p>Facilitate secondary liquidity through Brassica’s integration with Republic’s Secondary Market.</p></li></ul><p>Enjoy a cost-effective <a href="https://www.brassicafin.com/transfer-agent" rel="nofollow">solution for your transfer agent needs with Brassica</a>. The cost of the first year's annual subscription fee for Brassica's transfer agent will be included in your campaign fees, and will be paid to Brassica on your behalf. Brassica will invoice you directly for all subsequent annual fees.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='republic-secondary-market'>
+Republic Secondary Market
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-is-republic-secondary-market-and-how-does-it-work-2">What is Republic Secondary Market, and how does it work?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-is-republic-secondary-market-and-how-does-it-work-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Republic Secondary Market enables your investors to sell their securities and provides a clear path to liquidity. Once your fundraising is complete and holdings have been confirmed, your company will be added to Republic's portfolio of companies. Only certain companies are eligible to participate in the Secondary Market, depending on their Transfer agent, the assets used to raise funds, and other factors such as holding period restrictions. You can find the terms of the secondary market <a href="https://republic.com/market-terms" target="_blank" rel="nofollow">here</a>.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/can-i-request-to-exclude-my-company-from-the-market">Can I request to exclude my company from the market?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/can-i-request-to-exclude-my-company-from-the-market"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>You can opt out of Republic Secondary Market. To do so, reach out to your Campaign Manager to make your company ineligible. However, it's important to keep in mind that investors highly value the promise of liquidity, and having access to the secondary market may attract more people to invest in your offering.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/who-sets-the-price-for-my-assets">Who sets the price for my assets?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/who-sets-the-price-for-my-assets"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Sellers are the ones who post their intent to sell at a given price, so they control Republic Secondary Market prices.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/do-i-have-visibility-into-who-buys-and-sells-my-securities">Do I have visibility into who buys and sells my securities?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/do-i-have-visibility-into-who-buys-and-sells-my-securities"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Yes, we provide you with a dedicated market dashboard that allows you to track all transactions that affect your assets. There, you can see details such as the state of the transaction, the seller and buyer user profiles (same as what you have for primary offerings), and the respective agreements.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/why-do-i-need-to-set-up-with-brassica-to-be-eligible">Why do I need to set up with Brassica to be eligible?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/why-do-i-need-to-set-up-with-brassica-to-be-eligible"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>The Transfer agent is responsible for maintaining records of ownership and ensuring compliance. Republic has partnered with Brassica as our preferred Transfer agent and has integrated directly with Brassica to support digital settlement of transactions via APIs. However, we are not yet digitally integrated with other Transfer agents, which makes running a secondary market unfeasible while relying on manual processes.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/is-there-any-additional-cost-to-list-on-republic-secondary-market">Is there any additional cost to list on Republic Secondary Market?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/is-there-any-additional-cost-to-list-on-republic-secondary-market"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>No, Republic Secondary Market is completely free for both issuers and investors.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/do-i-need-to-meet-any-additional-requirements-to-remain-eligible">Do I need to meet any additional requirements to remain eligible?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/do-i-need-to-meet-any-additional-requirements-to-remain-eligible"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>The eligibility requirements for your initial offering will depend on the regulatory framework used. You can find the exact requirements in the market terms <a href="https://republic.com/market-terms" rel="nofollow">here</a>, under the ELIGIBLE SECURITIES section.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-will-happen-if-i-do-not-meet-the-market-requirements">What will happen if I do not meet the market requirements?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-will-happen-if-i-do-not-meet-the-market-requirements"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>No penalties or costs will be applied, but your company will become automatically ineligible, and investors will not be able to request to sell or buy your assets in Republic Secondary Market. It is important to remember that this creates a poor experience for your investor community.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-body help_articles-category__group' itemprop='mainEntity' itemscope itemtype='http://schema.org/Question'>
+<h2 class='s-marginVert1 s-fontSize35 u-fontWeight800 help_articles-category__title' id='sharedrops'>
+Sharedrops
+</h2>
+<ul class='u-listUnstyled s-marginLeft1'>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-much-does-this-cost-2">How much does this cost?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-much-does-this-cost-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>We work with Sharedrop customers to create a fair commission system for Republic that includes a flat platform fee and a securities commission. A securities commission means Republic receives a small piece of the equity you give away in the offering, just like all other offerings Republic hosts.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/how-much-equity-should-our-company-allocate-for-this-69fcb4c9-e11f-459f-bc29-7addee382d3c">How much equity should our company allocate for this?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/how-much-equity-should-our-company-allocate-for-this-69fcb4c9-e11f-459f-bc29-7addee382d3c"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>That's up to you, but we've seen companies consider everything from $50,000 to $1,070,000 worth of <a href="https://republic.com/blog/investor-education/what-does-it-mean-to-have-equity-in-a-company" rel="nofollow">equity</a>.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/i-thought-free-stock-giveaways-were-illegal-2">I thought free stock giveaways were illegal?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/i-thought-free-stock-giveaways-were-illegal-2"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Historically, they were. A Sharedrop, however, is conducted using Reg. CF squarely within the four corners of the Securities Act of 1933. In short, a 2016 change to regulations and Republic's legal innovation has made it feasible by allowing companies to collect alternative forms of consideration, so when we say "free" we mean free of cash, but not value going from the investors to your company.</p>
+</div>
+</div>
+</li>
+<li class="js-article help_articles-article" data-rc="help_articles/article"><h3 class='s-fontSize25 u-fontWeight400 help_articles-article__title' itemprop='text'>
+<i class='icon-right-dir u-floatLeft s-marginPullLeft1_5 s-fontSize16 help_articles-article__arrow'></i>
+<a class="js-article_title c-link c-link--unstyled s-marginRight0_5" href="/help/what-companies-can-sharedrop">What companies can Sharedrop?</a>
+<a class="u-hidden s-fontSize20 u-colorGrayA js-link help_articles-article__permalink" href="/help/what-companies-can-sharedrop"><i class="icon-link"></i></a>
+</h3>
+<div class='u-hidden s-paddingTop0_5 js-article_content help_articles-article__content_wrapper' itemprop='acceptedAnswer suggestedAnswer' itemscope itemtype='http://schema.org/Answer'>
+<div class='s-gridMaxSm14 c-formattedContent help_articles-article__content' itemprop='text'>
+<p>Almost any privately-held United States-based company — C-Corps, LLCs, and PBCs. If you have questions on your eligibility, drop us a line at <a href="mailto:investment@republic.co" rel="nofollow">investment@republic.co</a>.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class='js-search_result'></div>
+<div class='s-borderTop2 s-marginTop2_5 s-fontSize18 help_articles-category__footer'>
+Still have questions?
+<a class="u-whiteSpaceNowrap js-open_support" href="mailto:team@republic.co">Ask us directly</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div><div class="layouts-footer-content layouts-footer-content--footer_no_margin" data-rc="layouts/footer/content"><div class='s-container s-gridMaxXs24 s-paddingTop3_5 s-paddingBottom4 layouts-footer-content__container'>
+<div class='s-grid s-marginBottom1_5 u-colorOpaqueWhite4'>
+<div class='s-grid-colMd5'>
+<a href="/"><img alt="Republic" title="Republic" class="layouts-footer-content__logo" src="https://assets.republic.com/assets/logo/full/white/logo-f84869c4f7fd2d0fe2ff22e9a15c82b63809ed42014f19c2a8e3bb455778c6df.svg" />
+</a>
+<div class="layouts-footer-social_links" data-rc="layouts/footer/social_links"><p class='s-marginBottom1_5 u-lineHeight1_3 u-fontWeight400 layouts-footer-social_links__motto s-marginTop1_5'>
+Giving everyone access to early-stage startup investing
+</p>
+<div class='s-marginBottom2 s-fontSize24 u-lineHeight1 layouts-footer-social_links__links_wrapper'>
+<a target="_blank" class="layouts-footer-social_links__link" rel="nofollow noreferrer noopener" href="http://facebook.com/joinrepublic"><i class="icon-facebook"></i></a>
+<a target="_blank" class="layouts-footer-social_links__link" rel="nofollow noreferrer noopener" href="http://instagram.com/joinrepublic"><i class="icon-instagram"></i></a>
+<a target="_blank" class="layouts-footer-social_links__link" rel="nofollow noreferrer noopener" href="http://twitter.com/joinrepublic"><i class="icon-twitter"></i></a>
+<a target="_blank" class="layouts-footer-social_links__link" rel="nofollow noreferrer noopener" href="https://www.linkedin.com/company/republic.co"><i class="icon-linkedin"></i></a>
+<a target="_blank" class="layouts-footer-social_links__link" rel="nofollow noreferrer noopener" href="https://discord.gg/AqBrbS7sSt"><i class="icon-discord"></i></a>
+</div>
+</div>
+</div>
+<div class='s-grid-colMd19'>
+<div class="s-grid s-paddingLeft1 layouts-footer-navigation" data-rc="layouts/footer/navigation"><div class='s-grid-colSm8 s-grid-colXs24'>
+<div class='s-fontSize18 u-fontWeight500 layouts-footer-navigation__caption_wrapper'>
+For investors
+</div>
+<ul class='u-listUnstyled s-fontSize18 u-fontWeight500 u-whiteSpaceNowrap layouts-footer-navigation__links'>
+<li><a id="footer-why-invest" href="/investors/why-invest">Why invest</a></li>
+<li><a id="footer-investors-how-it-works" href="/learn/investors/how-it-works">How it works</a></li>
+<li><a id="footer-faq-for-investors" href="/help">FAQ</a></li>
+<li><a id="footer-risks" href="/risks">Risks</a></li>
+<li><a id="footer-privacy-policy" href="/privacy">Privacy policy</a></li>
+<li><a id="footer-accessibility" href="/accessibility">Accessibility</a></li>
+<li>
+<a class='js-footer_cookie-preferences' href='javascript:void(0)'>
+Cookie Preferences
+</a>
+</li>
+<li><a id="footer-form-crs" target="_blank" rel="nofollow noreferrer noopener" href="https://files.brokercheck.finra.org/crs_291387.pdf">Form CRS</a></li>
+</ul>
+<div class='s-marginBottom1_5 u-hiddenSmUp'></div>
+</div>
+<div class='s-grid-colSm8 s-grid-colXs24'>
+<div class='s-fontSize18 u-fontWeight500 layouts-footer-navigation__caption_wrapper'>
+For startups
+</div>
+<ul class='u-listUnstyled s-fontSize18 u-fontWeight500 u-whiteSpaceNowrap layouts-footer-navigation__links'>
+<li><a id="footer-why-raise" href="/raise">Why raise</a></li>
+<li><a id="footer-learn" href="/learn/issuers">Learn</a></li>
+<li><a id="footer-faq-for-startups" href="/help/category/fundraising">FAQ</a></li>
+<li><a id="footer-tokenize-assets" href="/tokenization">Tokenized assets</a></li>
+</ul>
+</div>
+<div class='s-grid-colSm8 s-grid-colXs24'>
+<div class='s-fontSize18 u-fontWeight500 layouts-footer-navigation__caption_wrapper'>
+Company
+</div>
+<ul class='u-listUnstyled s-fontSize18 u-fontWeight500 u-whiteSpaceNowrap layouts-footer-navigation__links'>
+<li><a id="footer-about" href="/about">About</a></li>
+<li><a id="footer-insights" href="/insights">Insights</a></li>
+<li><a id="footer-events" href="/events">Events</a></li>
+<li><a id="footer-contact" href="/contact">Contact</a></li>
+<li><a id="footer-security" href="/security">Security</a></li>
+<li><a id="footer-we-are-hiring" href="/jobs">We&#39;re hiring!</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='s-borderTop1_5 s-borderBottom1_5 s-marginBottom1_5 u-displayFlex u-justifyContentSpaceBetween u-alignItemsCenter layouts-footer-content__refer'>
+<div class='u-hidden u-blockSmUp'>
+<div class='u-displayFlex u-alignItemsCenter'>
+<img alt="Dollar" src="https://assets.republic.com/assets/layouts/dollar-582d5a155e415013ca316098b15357e5557a7e43a142badb0eede421774a7684.svg" />
+<span class='u-verticalAlignMiddle s-fontSize18 u-fontWeight500 u-colorOpaqueWhite8 s-marginLeft1'>
+<a class="layouts-footer-content__refer_link" rel="nofollow" href="/register?after_sign_in=%2Finvite%2Fstartups">Refer a startup, get $2,500
+</a></span>
+</div>
+</div>
+<div class='u-displayFlex u-alignItemsCenter s-marginLeftAuto s-marginRightAuto u-hiddenSmUp'>
+<img alt="Dollar" src="https://assets.republic.com/assets/layouts/dollar-582d5a155e415013ca316098b15357e5557a7e43a142badb0eede421774a7684.svg" />
+<span class='u-verticalAlignMiddle s-fontSize18 u-fontWeight500 u-colorOpaqueWhite8 s-marginLeft1'>
+<a class="layouts-footer-content__refer_link" rel="nofollow" href="/register?after_sign_in=%2Finvite%2Fstartups">Refer a startup, get $2,500
+</a></span>
+</div>
+<div class='u-hidden u-blockSmUp'>
+<div class='u-displayFlex u-alignItemsCenter'>
+<p class='s-marginRight2_5 u-colorOpaqueWhite6 s-fontSize18'>
+Invest in the app
+</p>
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://play.google.com/store/apps/details?id=com.republicmobile&amp;hl=en_US"><img alt="Android app" title="Android app" class="layouts-footer-content__store-logo s-marginRight1" src="https://assets.republic.com/assets/layouts/play-store-0d44180dd0587978e08f2ac3eb53b810461ff33756799fef2981667aee24dd2a.png" />
+</a>
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://apps.apple.com/us/app/id1475230022"><img alt="iOS app" title="iOS app" class="layouts-footer-content__store-logo" src="https://assets.republic.com/assets/layouts/app-store-9101bc9fe34a6cdc55e4436229c0ba5125905ec10aa243ce3346ab6e36e8d5c6.png" />
+</a>
+</div>
+</div>
+</div>
+<div class='u-displayFlex u-alignItemsCenter u-flexDirectionColumn u-hiddenSmUp'>
+<p class='u-colorOpaqueWhite6 s-marginBottom1_5 s-fontSize18'>
+Invest in the app
+</p>
+<div class='u-displayFlex u-alignItemsCenter'>
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://play.google.com/store/apps/details?id=com.republicmobile&amp;hl=en_US"><img alt="Android app" title="Android app" class="layouts-footer-content__store-logo s-marginRight1" src="https://assets.republic.com/assets/layouts/play-store-0d44180dd0587978e08f2ac3eb53b810461ff33756799fef2981667aee24dd2a.png" />
+</a>
+<a target="_blank" rel="nofollow noreferrer noopener" href="https://apps.apple.com/us/app/id1475230022"><img alt="iOS app" title="iOS app" class="layouts-footer-content__store-logo" src="https://assets.republic.com/assets/layouts/app-store-9101bc9fe34a6cdc55e4436229c0ba5125905ec10aa243ce3346ab6e36e8d5c6.png" />
+</a>
+</div>
+</div>
+<div class='layouts-footer-content__disclaimers-container js-disclaimers-container'>
+<div class='s-marginBottom1 s-fontSize13 layouts-footer-content__text'>
+<div class="layouts-footer-disclaimers" data-rc="layouts/footer/disclaimers"><div class="layouts-footer-disclaimers-note_disclaimer" data-rc="layouts/footer/disclaimers/note_disclaimer"><div class='s-marginBottom2 s-borderBottom1_5 layouts-footer-disclaimers-note_disclaimer__with_border'>
+<p class='s-marginBottom1'>
+Republic Core LLC (“Core”) provides technology and support services to OpenDeal Inc. and its
+affiliates (collectively, the “Republic Ecosystem”). Republic Note holders and as well as
+users of the site and services maintained by the Republic Ecosystem, regardless of and their
+activities on or relating to the Republic Ecosystem, are subject to the applicable terms of
+service, in their entirety.
+</p>
+<p class='s-marginBottom1'>
+Core is currently conducting an offering of Republic Notes under Rule 506(c) of Regulation D
+under the Securities Act of 1933, as amended (the “Securities Act”) to persons who are
+accredited investors, as that term is defined in Rule 501. Only accredited investors are
+eligible to participate in the Rule 506(c) offering. Accredited investors who wish to
+participate in the Rule 506(c) offering should receive and review carefully the Private
+Placement Memorandum pertaining to that offering, as it contains important information for
+potential investors to consider prior to making an investment decision. Accredited investors
+who wish to participate in the Rule 506(c) offering will be required to (i) complete a
+subscription agreement, (ii) acknowledge that they have received and read the Private
+Placement Memorandum, and (iii) provide information verifying their status as accredited
+investors.
+</p>
+<p class='s-marginBottom1'>
+Core is also “testing the waters” with respect to the sale of Republic Notes under Regulation
+A of the Securities Act. The “testing the waters” process allows companies to determine
+whether there may be interest in an eventual offering of its securities to qualified
+purchasers under Regulation A. Core is not under any obligation to make an offering under
+Regulation A. No money or other consideration is being solicited for an offering under
+Regulation A at this time and, if sent, it will not be accepted.
+</p>
+<p class='s-marginBottom1'>
+Core may choose to make an offering to some, but not all, of the people who indicate an
+interest in investing, and that offering may or may not be made under Regulation A. For
+example, Core may choose to proceed with its offering under Rule 506(c) without ever
+conducting a Regulation A offering, in which case only accredited investors within the meaning
+of Rule 501 will be able to buy Republic Notes.
+</p>
+<p class='s-marginBottom1'>
+If and when Core conducts an offering under Regulation A of the Act, it will do so only once
+(i) it has filed an offering statement with the Securities and Exchange Commission (“SEC”),
+(ii) the SEC has qualified such offering statement and (iii) investors have subscribed to the
+offering in the manner provided for in the offering statement. The information in the offering
+statement will be more complete than any test-the-waters materials and could differ in
+important ways. Prospective investors who are interested in participating in the Regulation A
+offering must read the offering statement filed with the SEC, when that offering statement
+becomes publicly available.
+</p>
+<p class='s-marginBottom1'>
+No money or other consideration is being solicited at this time in connection with any
+potential Regulation A offering and, if tendered, will not be accepted. No offer to buy
+securities in a Regulation A offering can be accepted and no part of the purchase price can be
+received until an offering statement is qualified with the SEC. Any offer to buy securities
+may be withdrawn or revoked, without obligation or commitment of any kind, at any time before
+notice of its acceptance is given after the qualification date. Any indication of interest in
+Core’s offering involves no obligation or commitment of any kind.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='layouts-footer-content__show-disclaimers-box'>
+<button class='js-show-disclaimers-button'>
+Show disclaimers
+</button>
+</div>
+</div>
+<div class='s-grid u-colorOpaqueWhite4'>
+<div class='s-grid-colSm12 u-text-right layouts-footer-content__bottom_content_section'>
+<div class='s-marginBottom0_5 s-fontSize13 u-fontWeight400 u-hiddenSmUp'>
+Invest in startups using your credit card
+</div>
+<img alt="You can invest using your credit card" src="https://assets.republic.com/assets/layouts/credit_cards-fb323581910488f0885fc63613e42a2d07ebc908e0af4df4ed139ed8cb3254fc.svg" />
+</div>
+<div class='s-grid-colSm12 u-floatLeftSmUp layouts-footer-content__bottom_content_section'>
+<div class='s-marginTop1_5 u-hiddenSmUp'></div>
+<p class='s-fontSize13'>
+Made in SF/NYC
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div id='media-sm'></div>
+<div id='media-md'></div>
+<div id='media-lg'></div>
+<div class='js-environment' data-environment='production'></div>
+<script src="https://assets.republic.com/assets/head-871c0e7c512f766793a271e6e515605a2bd981b33e86911157bdc80f831a149d.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/application-f7d278d4f3290aa385b11c6066f1141a08ef40e12c184c98afa22f84342d0c9f.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+
+<script src="https://static.zdassets.com/ekr/snippet.js?key=d10adfc1-5afd-478b-b60b-d5f58ec5e520" id="ze-snippet" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+  window.zESettings = {
+    webWidget: {
+      zIndex: 86,
+      offset: {
+        horizontal: '55px',
+        vertical: '2px',
+        mobile: {
+          horizontal: '-4px',
+          vertical: '4px'
+        }
+      },
+      contactForm: {
+        title: {'*': 'How can we help?'},
+        ticketForms: [{ id: 6139814921239 }],
+        fields: [
+          { id: 'subject', prefill: { '*': 'Need help!' } },
+          { id: 'email', prefill: { '*': "" } },
+          { id: 'key:6164328823703', prefill: { '*': "" } },
+        ],
+      },
+      helpCenter: {
+        title: {'*': 'FAQ'},
+        searchPlaceholder: {'*': 'What can we help you with?'},
+        messageButton: {'*': 'Contact Us'},
+        originalArticleButton: false,
+      },
+    },
+  };
+  
+  zE('webWidget', 'setLocale', 'en');
+  zE('webWidget', 'helpCenter:setSuggestions', { search: 'invest' });
+</script>
+
+<div class="layouts-braze_integration" data-rc="layouts/braze_integration"></div>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==" type="application/ld+json">
+//<![CDATA[
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name" : "Republic",
+"url": "https://republic.com/",
+  "sameAs" : [
+    "http://facebook.com/joinrepublic",
+    "http://twitter.com/joinrepublic",
+    "https://www.linkedin.com/company/republic.co",
+    "https://plus.google.com/u/1/114437189753254785722",
+    "http://angel.co/republic"
+  ]
+}
+
+
+//]]>
+</script><script nonce="xiAjEf6Zu0p9t5mV10t9NA==" type="application/ld+json">
+//<![CDATA[
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Republic",
+  "logo": "https://assets.republic.com/assets/logo/full/black/120x30/logo@3x-dc2dcf5b5bdfd67bd4003a7ab0c4e1615e3ce79c7751868705dd34af50e11f49.png",
+  "image": "https://assets.republic.com/assets/logo/full/black/120x30/logo@3x-dc2dcf5b5bdfd67bd4003a7ab0c4e1615e3ce79c7751868705dd34af50e11f49.png",
+  "about": "Republic is a startup investing platform where you can invest as little as $10 in impactful startups",
+  "url": "https://republic.com/"
+}
+
+
+//]]>
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==" type="application/ld+json">
+//<![CDATA[
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "name" : "Republic",
+  "foundingDate": "2016",
+  "url": "https://republic.com/",
+  "logo": "https://assets.republic.com/assets/logo/full/black/120x30/logo@3x-dc2dcf5b5bdfd67bd4003a7ab0c4e1615e3ce79c7751868705dd34af50e11f49.png",
+  "image": "https://assets.republic.com/assets/logo/full/black/120x30/logo@3x-dc2dcf5b5bdfd67bd4003a7ab0c4e1615e3ce79c7751868705dd34af50e11f49.png",
+  "description": "Republic is a startup investing platform where you can invest as little as $10 in impactful startups",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "streetAddress": "149 Fifth Ave",
+    "postalCode": "10005"
+  }
+}
+
+
+//]]>
+</script>
+<script nonce="xiAjEf6Zu0p9t5mV10t9NA==">
+//<![CDATA[
+!function(){window.unify||(window.unify=Object.assign([],["identify","page","startAutoPage","stopAutoPage","startAutoIdentify","stopAutoIdentify"].reduce((function(t,e){return t[e]=function(){return unify.push([e,[].slice.call(arguments)]),unify},t}),{})));var t=document.createElement("script");t.async=!0,t.setAttribute("src","https://tag.unifyintent.com/v1/YRqvFGWiGRekUrdDjxuLSj/script.js"),t.setAttribute("data-api-key","wk_3LRkDUv8_FKRQUZeiLsfBEeoPHVc28zSDcyJ7XSCK"),t.setAttribute("id","unifytag"),(document.body||document.head).appendChild(t)}();
+
+
+//]]>
+</script>
+<script src="https://assets.republic.com/assets/w/runtime~HeaderRegionalSwitch-2f936fd9f2dabfd4deec.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/w/vendors-node_modules_antd_es_button_index_js-node_modules_debug_src_browser_js-node_modules_l-e1967c-a7e069301784c1c23548.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/w/vendors-node_modules_core-js_stable_index_js-node_modules_rollbar_dist_rollbar_umd_min_js-24c220e7222f8ed9983c.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/w/vendors-node_modules_chakra-ui_react_dist_chakra-ui-react_esm_js-78ba0ed6629220ced859.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/w/client_helpers_env_ts-client_providers_OnReadyProvider_ts-client_services_reporting_ts-client-868d24-762ee356714dc9b9a2bd.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+<script src="https://assets.republic.com/assets/w/HeaderRegionalSwitch-1b8074cef86a1b238280.js" nonce="xiAjEf6Zu0p9t5mV10t9NA=="></script>
+</body></html>
+
+

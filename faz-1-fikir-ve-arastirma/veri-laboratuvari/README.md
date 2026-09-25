@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 131 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 141 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -213,6 +213,24 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS02-BILDIRIM.csv`](AS02-BILDIRIM.csv) | girdi | **Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar |
 | [`AS02-ONDOGRULAMA-GIRDI.csv`](AS02-ONDOGRULAMA-GIRDI.csv) | girdi | Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR |
 
+### AS-03 — Alternatifin farkı, limitleri ve arşiv yaşı
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`AS03-ALTERNATIF-FARKI.md`](AS03-ALTERNATIF-FARKI.md) | belge | Alternatifin kapanandan farkı; **arşiv güncel veri değildir** |
+| [`AS03-ARSIV-YASI.csv`](AS03-ARSIV-YASI.csv) | çıktı | 104 arşiv kopyasının **kendi** tarihi ve yaşı; 94'ü eşiği aşıyor |
+| [`AS03-FARK-MATRISI.csv`](AS03-FARK-MATRISI.csv) | çıktı | Kapanan → alternatif: alan/pazar/tarih/limit farkı ve kalan eksik |
+| [`alternatif_fark.py`](alternatif_fark.py) | kod | Farkı ölçer, arşivin kendi zaman damgasını koşu kaydından kurtarır |
+
+### AS-04 — Hata incelemesi ve etiketli referans kümesi
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`AS04-HATA-RAPORU.md`](AS04-HATA-RAPORU.md) | belge | Dört hata sınıfı, düzeltme öncesi/sonrası ve **recall neden üretilmedi** |
+| [`AS04-ETIKETLI-REFERANS.csv`](AS04-ETIKETLI-REFERANS.csv) | çıktı | 15 elle etiketlenmiş örnek + 2 doğrudan karşıt bulgu |
+| [`AS04-HATA-INCELEMESI.csv`](AS04-HATA-INCELEMESI.csv) | çıktı | 366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme |
+| [`hata_incelemesi.py`](hata_incelemesi.py) | kod | Dört hata sınıfını arar; precision üretir, recall üretmez |
+
 ### AS-06 — Çözüm günlüğü ve kaynak sağlık kayıtları
 
 | Dosya | Rol | Ne olduğu |
@@ -241,6 +259,12 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS02-BILDIRIM.csv`](AS02-BILDIRIM.csv) | AS-02 | **Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar |
 | [`AS02-ONDOGRULAMA-GIRDI.csv`](AS02-ONDOGRULAMA-GIRDI.csv) | AS-02 | Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR |
 | [`AS02-ONDOGRULAMA.csv`](AS02-ONDOGRULAMA.csv) | AS-02 | Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6) |
+| [`AS03-ALTERNATIF-FARKI.md`](AS03-ALTERNATIF-FARKI.md) | AS-03 | Alternatifin kapanandan farkı; **arşiv güncel veri değildir** |
+| [`AS03-ARSIV-YASI.csv`](AS03-ARSIV-YASI.csv) | AS-03 | 104 arşiv kopyasının **kendi** tarihi ve yaşı; 94'ü eşiği aşıyor |
+| [`AS03-FARK-MATRISI.csv`](AS03-FARK-MATRISI.csv) | AS-03 | Kapanan → alternatif: alan/pazar/tarih/limit farkı ve kalan eksik |
+| [`AS04-ETIKETLI-REFERANS.csv`](AS04-ETIKETLI-REFERANS.csv) | AS-04 | 15 elle etiketlenmiş örnek + 2 doğrudan karşıt bulgu |
+| [`AS04-HATA-INCELEMESI.csv`](AS04-HATA-INCELEMESI.csv) | AS-04 | 366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme |
+| [`AS04-HATA-RAPORU.md`](AS04-HATA-RAPORU.md) | AS-04 | Dört hata sınıfı, düzeltme öncesi/sonrası ve **recall neden üretilmedi** |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
 | [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | AS-06 | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
@@ -293,6 +317,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`VERI-PAKETI-ORNEKLERI.csv`](VERI-PAKETI-ORNEKLERI.csv) | Görev 14 | Hangi ürün tipi hangi soruyu hangi gerçek kayıtla cevaplıyor |
 | [`VERI-SOZLUGU.md`](VERI-SOZLUGU.md) | Görev 11 | Her sütunun anlamı + bu verinin **cevaplayamadığı** sorular |
 | [`adaptive_domain_pass.py`](adaptive_domain_pass.py) | Erişim laboratuvarı | Alan adı çözümleme geçişi |
+| [`alternatif_fark.py`](alternatif_fark.py) | AS-03 | Farkı ölçer, arşivin kendi zaman damgasını koşu kaydından kurtarır |
 | [`alternatif_kaynak.py`](alternatif_kaynak.py) | AS-01 | Alternatif arar; HTTP 200'ü ilgili içerik saymaz |
 | [`as01_kaynak_kontrol.py`](as01_kaynak_kontrol.py) | AS-01 | Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar |
 | [`build_artifact_index.py`](build_artifact_index.py) | Erişim laboratuvarı | Artefakt dizinini üretir |
@@ -312,6 +337,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`dosya_haritasi.py`](dosya_haritasi.py) | Ortak | README'deki bu haritayı üretir |
 | [`export_by_source.py`](export_by_source.py) | Erişim laboratuvarı | Kaynak bazında dışa aktarım |
 | [`fetch_opensearch_templates.py`](fetch_opensearch_templates.py) | Erişim laboratuvarı | OpenSearch şablonlarını toplar |
+| [`hata_incelemesi.py`](hata_incelemesi.py) | AS-04 | Dört hata sınıfını arar; precision üretir, recall üretmez |
 | [`ic_sayfa_gecisi.py`](ic_sayfa_gecisi.py) | Görev 12 | Sitemap ve ana sayfa bağlantılarından iç sayfa çeker; her aday bir arama niyetine bağlanır |
 | [`kategori_sozlugu.py`](kategori_sozlugu.py) | Görev 9 | Sözlüğü ve pilot çıktıları üretir |
 | [`keyword_search_pass.py`](keyword_search_pass.py) | Erişim laboratuvarı | Anahtar kelime arama geçişi |

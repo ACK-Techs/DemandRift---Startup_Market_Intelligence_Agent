@@ -1,21 +1,23 @@
 kategori,arama_niyeti,cevaplanan_soru,source_id,kaynak_adi,document_id,artifact_hash,source_url,bulunan_veri,olcum_mu,sinir
+ortak,competitor_discovery,Rakip kim?,source-0266,Companies House,doc-2904ec61cc76,8536c299bd7e461a,https://www.gov.uk/browse,surum=3.0,ölçüm,tek belgeye dayanıyor
 ortak,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0015,DataForSEO,doc-e36ba3ae5ce2,c2cce22a289b05c3,https://dataforseo.com/feed,engagement_yorum_sayisi=10 | engagement_yildiz=5,ölçüm,tek belgeye dayanıyor
 ortak,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0065,AppSumo,doc-dfc3493d66fa,b527ea7f0fb84956,https://appsumo.com/browse/,fiyat=$29,ölçüm,3 belge
-ortak,problem_demand,Kullanıcılar bu problemi nasıl anlatıyor?,source-0362,Bureau of Labor Statistics,doc-6accd6a4efe5,61bf69df0db83aab,https://www.bls.gov/?utm_medium=email&utm_source=et&utm_content=http%3A%2F%2Fwww.bls.gov%2F&utm_camp,gosterge=rates) Productivity increased  | yil_araligi=2019–2023,ölçüm,tek belgeye dayanıyor
 b2b-web-yazilimi,competitor_discovery,Rakip kim?,source-0141,SourceForge Reviews,doc-40b43fe59315,e543b8c3abb861e0,https://sourceforge.net/directory/,surum=1.0.0,ölçüm,tek belgeye dayanıyor
 b2b-web-yazilimi,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0065,AppSumo,doc-dfc3493d66fa,b527ea7f0fb84956,https://appsumo.com/browse/,engagement_yorum_sayisi=926,ölçüm,3 belge
 b2b-web-yazilimi,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0065,AppSumo,doc-dfc3493d66fa,b527ea7f0fb84956,https://appsumo.com/browse/,fiyat=$29,ölçüm,3 belge
+fintech,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0441,NYSE,doc-f7bb7655ef63,a5d6c031a75eaf24,https://www.nyse.com/listings,fiyat=$2,ölçüm,tek belgeye dayanıyor
+fintech,problem_demand,Kullanıcılar bu problemi nasıl anlatıyor?,source-0436,European Central Bank,doc-84cb20820bb9,4498a2fb35484b83,https://www.ecb.europa.eu/home/html/index.en.html,gosterge=rate statistics: July 2026 | yil_araligi=2000–2020,ölçüm,tek belgeye dayanıyor
+fintech,competitor_discovery,Rakip kim?,source-0266,Companies House,doc-2904ec61cc76,8536c299bd7e461a,https://www.gov.uk/browse,surum=3.0,ölçüm,tek belgeye dayanıyor
 eklenti-entegrasyon,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0115,WooCommerce Marketplace,doc-72d46efc6184,6368ba5c7579fe06,https://woocommerce.com/products/,engagement_yildiz=5,ölçüm,2 belge
 eklenti-entegrasyon,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0115,WooCommerce Marketplace,doc-72d46efc6184,6368ba5c7579fe06,https://woocommerce.com/products/,fiyat=$79,ölçüm,3 belge
 eklenti-entegrasyon,use_case,Bu ürün hangi iş akışında kullanılıyor?,source-0133,Canva Apps Marketplace,doc-43c45e205db6,f7a6c9d38b59d835,https://www.canva.com/case-studies/,ozellik_basligi=Features,etiket,tek belgeye dayanıyor
-fintech,problem_demand,Kullanıcılar bu problemi nasıl anlatıyor?,source-0436,European Central Bank,doc-84cb20820bb9,4498a2fb35484b83,https://www.ecb.europa.eu/home/html/index.en.html,gosterge=rate statistics: July 2026 | yil_araligi=2000–2020,ölçüm,tek belgeye dayanıyor
-fintech,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0445,Investing.com,doc-4d7d45daba61,859b21e42453a2c9,https://www.investing.com/,engagement_yorum_sayisi=1.3M,ölçüm,tek belgeye dayanıyor
-fintech,use_case,Bu ürün hangi iş akışında kullanılıyor?,source-0266,Companies House,doc-74e670d1bf2f,93ec3ff77948e831,https://www.gov.uk/government/case-studies/20-million-investment-for-sports-and-leisure-in-forest-of,mevzuat_atfi=regulation,etiket,tek belgeye dayanıyor
+gelistirici-araci,competitor_discovery,Rakip kim?,source-0020,SourceForge,doc-65997616edf3,9b90594dea59666c,https://sourceforge.net/directory/,surum=1.0.0,ölçüm,2 belge
+gelistirici-araci,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0020,SourceForge,doc-65997616edf3,9b90594dea59666c,https://sourceforge.net/directory/,engagement_yorum_sayisi=225,ölçüm,3 belge
+gelistirici-araci,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0033,DZone,doc-681dcd544185,3e1657fe835a73bf,https://dzone.com/integration,fiyat=$5.,ölçüm,tek belgeye dayanıyor
 oyun,competitor_discovery,Rakip kim?,source-0521,itch.io,doc-806359170d2b,ec5b3702ffff9fd3,https://itch.io/,surum=26.18.0,ölçüm,2 belge
 oyun,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0518,Steam,doc-6e0e658a0d8c,cbc29ad8135f2c16,https://store.steampowered.com/,engagement_yildiz=34.99,ölçüm,tek belgeye dayanıyor
 oyun,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0518,Steam,doc-6e0e658a0d8c,cbc29ad8135f2c16,https://store.steampowered.com/,fiyat=$10.49,ölçüm,2 belge
-gelistirici-araci,competitor_discovery,Rakip kim?,source-0020,SourceForge,doc-71cc3d88346e,240c50479df1b869,https://sourceforge.net/,"engagement_indirme_sayisi=19,884,515",ölçüm,2 belge
-gelistirici-araci,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0020,SourceForge,doc-71cc3d88346e,240c50479df1b869,https://sourceforge.net/,issue_sayisi=1 | engagement_yorum_sayisi=999,ölçüm,3 belge
+regule-sektor,competitor_discovery,Rakip kim?,source-0404,UK Information Commissioner's Office,doc-54b396ca9e05,c8da45ab57165f83,https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guid,surum=3.0,ölçüm,tek belgeye dayanıyor
 regule-sektor,problem_demand,Kullanıcılar bu problemi nasıl anlatıyor?,source-0382,BTK,doc-52494270bdd5,b0480a331811f829,https://www.btk.gov.tr/,yil_araligi=2026-2027,ölçüm,tek belgeye dayanıyor
-yerel-hizmet,dissatisfaction,Mevcut çözümlerden neden memnun değiller?,source-0313,Thumbtack,doc-c466768ba78c,b8a71a74e82deec6,https://www.thumbtack.com/,engagement_yorum_sayisi=300k,ölçüm,tek belgeye dayanıyor
-yerel-hizmet,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0313,Thumbtack,doc-c466768ba78c,b8a71a74e82deec6,https://www.thumbtack.com/,fiyat=$ 110,ölçüm,tek belgeye dayanıyor
+yapay-zeka-urunu,competitor_discovery,Rakip kim?,source-0537,Together AI,doc-afef1be1cd8b,5d3cbeab14ac8c0a,https://www.together.ai/pricing,surum=4.1,ölçüm,2 belge
+yapay-zeka-urunu,observed_market_pricing,Rakiplerin gözlemlenen fiyatı ne?,source-0537,Together AI,doc-afef1be1cd8b,5d3cbeab14ac8c0a,https://www.together.ai/pricing,fiyat=$0.30,ölçüm,tek belgeye dayanıyor

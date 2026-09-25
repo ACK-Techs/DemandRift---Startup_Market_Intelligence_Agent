@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head><body>
+
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="pingback" href="/xmlrpc.php">
+    <title>Pricing &ndash; OpenCorporates</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//js-eu1.hs-scripts.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="alternate" type="application/rss+xml" title="OpenCorporates &raquo; Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="OpenCorporates &raquo; Comments Feed" href="/comments/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.8"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.8.8" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="safe-svg-svg-icon-style-inline-css" type="text/css">
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{fill:currentColor;height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<link rel="stylesheet" id="me-spr-block-styles-css" href="/wp-content/plugins/simple-post-redirect/css/block-styles.min.css?ver=6.8.8" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/creote/assets/css/bootstrap.min.css?ver=5.1.2" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="/wp-content/plugins/creote-addons/assets/css/animate.css?ver=3.7.2" type="text/css" media="all">
+<link rel="stylesheet" id="swiper-style-css" href="/wp-content/plugins/creote-addons/assets/css/swiper.min.css?ver=6.7.5" type="text/css" media="all">
+<link rel="stylesheet" id="owl-style-css" href="/wp-content/plugins/creote-addons/assets/css/owl.css?ver=2.3.4" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-style-css" href="/wp-content/plugins/creote-addons/assets/css/jquery.fancybox.min.css?ver=3.5.7" type="text/css" media="all">
+<link rel="stylesheet" id="popupcss-css" href="/wp-content/plugins/creote-addons/assets/css/popupcss.css?ver=1.1.0" type="text/css" media="all">
+<link rel="stylesheet" id="aos-css" href="/wp-content/plugins/creote-addons/assets/css/aos.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="icomoon-icons-css" href="/wp-content/themes/creote/assets/css/icomoon.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-icons-css" href="/wp-content/themes/creote/assets/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="style-css" href="/wp-content/themes/creote/style.css?ver=6.8.8" type="text/css" media="all">
+<link rel="stylesheet" id="rtl-style-css" href="/wp-content/themes/creote/assets/css/rtl.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="creote-theme-css" href="/wp-content/themes/creote/assets/css/scss/elements/theme-css.css?ver=6.8.8" type="text/css" media="all">
+<style id="creote-theme-inline-css" type="text/css">
+:root   {--primary-color-one:#9F1F34!important}:root   {--heading-dark:#9F1F34!important}:root   {--menu-color:#000000!important}:root   {--menu-active-color:#9F1F34!important} .loader-wrap .layer {background-color:#9F1F34!important; !important} .sticky_header_main .header_logo_box img {margin-top:0px!important; } .sticky_header_main .header_logo_box img {margin-left:0px!important; }
+:root   {--creote-family-one:Roboto!important}:root   {--creote-family-two:Roboto!important}
+</style>
+<link rel="stylesheet" id="creote-mobile-header-css" href="/wp-content/themes/creote/assets/css/scss/elements/mobile.css?ver=6.8.8" type="text/css" media="all">
+<link rel="stylesheet" id="creote-fonts-css" href="https://fonts.googleapis.com/css?family=Spartan%3A400%2C500%2C600%2C700%2C800%2C900%7CInter%3A300%2C400%2C500%2C600%2C700%2C800%2C900&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="creote-meta-box-css" href="/wp-content/themes/creote/assets/css/metabox.css?ver=6.8.8" type="text/css" media="all">
+<link rel="stylesheet" id="ocsearch-frontend-styles-css" href="/wp-content/plugins/oc-search-box/core/includes/assets/css/frontend-styles.css?ver=1.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.53.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-4-css" href="/wp-content/uploads/elementor/css/post-4.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="widget-spacer-css" href="/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="e-animation-fadeInUp-css" href="/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-6889-css" href="/wp-content/uploads/elementor/css/post-6889.css?ver=1789454301" type="text/css" media="all">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&amp;ver=1735732660"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&amp;ver=1735732660" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&amp;ver=1735732660"></noscript><link rel="stylesheet" id="elementor-gf-local-roboto-css" href="/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1753955452" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-gf-local-robotoslab-css" href="/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1753955459" type="text/css" media="all">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js?ver=3.7.1" id="jquery-js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.5.2.min.js?ver=3.5.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=4.2.4" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/6889"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="canonical" href="/pricing/">
+<link rel="shortlink" href="/?p=6889">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fpricing%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fpricing%2F&amp;format=xml">
+<meta name="generator" content="Redux 4.5.10"><!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/145756848.js"></script>
+<!-- End of HubSpot Embed Code -->
+<style>
+:root {
+  /* Global Colors */
+  --e-global-color-primary: #6EC1E4;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #7A7A7A;
+  --e-global-color-accent: #9F1F34;
+  --e-global-color-24010e4: #9F1F34;
+  --e-global-color-651c97a: #F0F0F0;
+  --e-global-color-edb081a: #FFFFFF;
+  --e-global-color-597a7fa: #E64558;
+  --e-global-color-4cb836a: #28596E;
+  --e-global-color-2bf378f: #EFD9C3;
+
+  /* Global Typography */
+  --e-global-typography-primary-font-family: "Roboto";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Roboto Slab";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Roboto";
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Roboto";
+  --e-global-typography-accent-font-weight: 500;
+  --e-global-typography-3c92f08-font-family: "Roboto";
+  --e-global-typography-3c92f08-font-size: 38px;
+  --e-global-typography-3c92f08-font-weight: bold;
+  --e-global-typography-3c92f08-line-height: 1.2em;
+}
+</style>			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.21-->
+			<script class="hsq-set-content-id" data-content-id="standard-page">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "standard-page"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			
+		<script type="text/javascript">
+				window.rocketSplitTest = { 'config': { 'page': { 'base': { 'protocol': 'https://', 'host': 'opencorporastg.wpengine.com', 'path': '/' } } } };
+				window.rocketSplitTest.cookie = { };
+				window.rocketSplitTest.cookie.create = function (name, value, days) {
+					var date = new Date();
+					date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+					document.cookie = name + "=" + value + "; expires=" + date.toGMTString() + "; path=" + window.rocketSplitTest.config.page.base.path;
+				};
+				window.rocketSplitTest.cookie.read = function (name) {
+					var parts = ("; " + document.cookie).split("; " + name + "=");
+					return (parts.length === 2) ? parts.pop().split(";").shift() : null;
+				};
+		</script>
+
+					                <meta name="ssp-config-path" content="/wp-content/uploads/simply-static/configs/">
+			
+						<meta name="generator" content="Elementor 4.2.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<script>(function waitForLink() {
+    const link = document.querySelector('.oc-home-search__links a');
+    if (link) {
+        link.innerHTML = link.innerHTML.replace(/ /g, ' ');
+    } else {
+        setTimeout(waitForLink, 200); // check again in 200ms
+    }
+})();
+</script><!-- Start cookieyes banner -->
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/0c7e2a1b343978e408eb46cb/script.js"></script>
+<!-- End cookieyes banner --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDHMHCR');</script>
+<!-- End Google Tag Manager --><link rel="icon" href="/wp-content/uploads/2023/03/opencorporates-favicon-150x150.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2023/03/opencorporates-favicon-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2023/03/opencorporates-favicon-300x300.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2023/03/opencorporates-favicon-300x300.png">
+		<style type="text/css" id="wp-custom-css">
+			#menu-item-7196 > ul {left: 20%}
+
+.oc_search_row {
+    display: table-row;
+}
+.w-60-percent {
+    width: 60%;
+}
+.oc_select_cell {
+    width: 35%;
+}
+.oc_table_cell {
+    display: table-cell;
+}
+.oc-home_list {
+    position: relative;
+}
+.oc-home-search_input {
+    float: left;
+    width: 100%;
+    border: none;
+    height: 3em;
+    border-top-left-radius: 1.5em 1.5em;
+    border-bottom-left-radius: 1.5em 1.5em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 1em;
+    margin: 0;
+}
+.oc-home-search_select select {
+    position: relative;
+    float: left;
+    height: 3em;
+    height: 3em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 0 1em;
+    margin: 0;
+}
+.relative {
+    position: relative;
+}
+.oc-home-search_button {
+    float: left;
+    width: 75px;
+    height: 3em;
+    background-color: #ef4654;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-top-right-radius: 1.5em 1.5em;
+    border-bottom-right-radius: 1.5em 1.5em;
+    margin: 0;
+    transition: 300ms;
+}
+.oc-home_search_foot {
+    font-size: .9em;
+}
+
+
+.oc-home-search__options {
+    float: left;
+    margin-top: 1em;
+    color: #fff;
+}
+.oc-home-search__option {
+    margin-right: 1em;
+}
+.oc-home_search_foot .label_ttile {
+    margin-left: 0.3em;
+}
+.oc-home-search__links a {
+    margin-top: 1em;
+    float: right;
+    color: #fff;
+}
+
+
+
+.project_box.type_one .image_box img {
+	  object-fit: contain !important;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project_box.type_one .zm_btn {
+	display: none;
+}
+
+.project_box.type_one .image_box:before {
+	background-image: none;
+}
+
+body:not(.archive) .auto-container,  body:not(.archive) .auto_container {
+  max-width: 100%;
+	padding: 0;
+}
+
+#main article {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@media (max-width: 550px){ 
+	#content ul:not(.project_filter, .content_tabs_btns, .elementor-price-table__features-list) li {
+		font-size: 14px !important;
+		line-height: 24px !important;
+	}
+}
+
+#content ul:not(.project_filter, .content_tabs_btns, .elementor-price-table__features-list) li {
+	font-size: 16px !important;
+	line-height: 26px !important;
+}
+
+@media (min-width: 1201px){
+	.header .menu-item.login {
+		position: absolute !important;
+		top: -10px;
+		right: 15px;
+	}
+
+	.header .menu-item.login a {
+		color: #505050 !important;
+		font-weight: 500 !important;
+	}
+}
+
+.elementor-widget-creote-text-editor-v1 .position-relative a {
+	color: #9F1F34 !important;
+}
+
+:root {
+  --creote-family-one: "Roboto", sans-serif!important;
+    --creote-family-two: "Roboto", sans-serif!important;
+}
+
+.crt_mobile_menu .menu-box form {
+	display: none;
+}
+
+/* Remove the Case Study overlay effect */
+.project_box.type_one:hover .image_box .overlay:before {
+	opacity: 0;
+}
+
+.project_box.type_one .image_box .overlay:before {
+	display: none;
+}
+
+.project_box.type_one .image_box:before {
+	content: none;
+}
+
+.project_box.type_one:hover .content_box .content_box_inner h2 {
+	transform: translateY(0px);
+}
+
+.project_box.type_one:hover .content_box .content_box_inner p {
+	transform: translateY(0px);
+}
+
+.project_box.type_one:hover .content_box .content_box_inner a.read_more_link {
+    transform: translateY(250px);
+}
+
+.project_box.type_one .content_box .content_box_inner p a{
+	font-size: 14px
+}
+		</style>
+		
+
+<div id="page" class="page_wapper hfeed site">
+
+<ul class="sidemenu_content_bx">
+    
+
+
+    
+
+    
+     
+
+        </ul>
+
+	<div class="quick_view_loading"></div>
+		<div id="wrapper_full" class="content_all_warpper">
+	
+    	 
+	 					<div class="header_area " id="header_contents">
+   <style>.elementor-85 .elementor-element.elementor-element-fc937e3 .header .header_logo_box img{width:350px!important;min-width:350px!important;}</style>		<div data-elementor-type="wp-post" data-elementor-id="85" class="elementor elementor-85" data-elementor-post-type="header">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-62d101b elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="62d101b" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-841fda8" data-id="841fda8" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fc937e3 elementor-widget elementor-widget-creote-header-v1" data-id="fc937e3" data-element_type="widget" data-e-type="widget" data-widget_type="creote-header-v1.default">
+				<div class="elementor-widget-container">
+					<header class="header header_default style_one style_one_no_remade"> <div class="full-container"> <div class="row align-items-center"> <div class="col-lg-2 col-md-9 col-sm-9 col-xs-9 logo_column"> <div class="header_logo_box"> <a href="/" class="logo navbar-brand"> <img src="/wp-content/uploads/2023/05/opencorporates-logo1.svg" alt="OpenCorporates" class="logo_default"> </a> </div> </div> <div class="col-lg-10 col-md-3 col-sm-3 col-xs-3 menu_column"> <div class="navbar_togglers hamburger_menu"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </div> <div class="header_content_collapse"> <div class="header_menu_box"> <div class="navigation_menu"> <ul id="myNavbar" class="navbar_nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-7496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7496 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7496"><span itemprop="name">Use cases</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7496">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="6631" class="elementor elementor-6631" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Use cases</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/entity-verification/"> Entity verification</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-99cf555 elementor-widget elementor-widget-creote-text-editor-v1" data-id="99cf555" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"KYC, KYB, due-diligence, customer onboarding, risk. compliance or ESG monitoring, underwriting..."}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Customer onboarding, KYC/B, due-diligence, ESG monitoring, underwriting</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-195624a elementor-widget elementor-widget-creote-list-items-v1" data-id="195624a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/third-party-risk-management/"> Third-party risk management</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e3213b4 elementor-widget elementor-widget-creote-text-editor-v1" data-id="e3213b4" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Vendor and supplier due diligence, monitoring..."}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Vendor and supplier due-diligence, risk management and monitoring</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0194b56 elementor-widget elementor-widget-creote-list-items-v1" data-id="0194b56" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/investigations/"> Investigations</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ef58fb3 elementor-widget elementor-widget-creote-text-editor-v1" data-id="ef58fb3" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Anti-money laundering, Anti-bribery and corruption, anti-fraud, financial crime, conflicts of interest, human trafficking, deforestation, ESG"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Financial crime, AML, bribery, corruption, fraud, conflicts of interest, human trafficking, deforestation, ESG</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f21e910 elementor-widget elementor-widget-creote-list-items-v1" data-id="f21e910" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/data-management/"> Data management</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f86119a elementor-widget elementor-widget-creote-text-editor-v1" data-id="f86119a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Master-data management, cleansing and enrichment"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Master-data management, data cleansing and enrichment</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-19264c8 elementor-widget elementor-widget-creote-list-items-v1" data-id="19264c8" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/business-discovery/"> Business discovery</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1406686 elementor-widget elementor-widget-creote-text-editor-v1" data-id="1406686" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Prospect targeting, sales and marketing intelligence and analytics"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Prospect targeting, sales and marketing intelligence</span></p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3939361" data-id="3939361" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Industries</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/financial-services/"> Financial services</a>  </li>  <li><a href="/use-cases/professional-services"> Professional services</a>  </li>  <li><a href="/use-cases/government"> Government</a>  </li>  <li><a href="/use-cases/real-estate"> Real estate</a>  </li>  <li><a href="/uses-cases/application-developers"> Application developers</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0710c5d" data-id="0710c5d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fb9ae19 elementor-widget elementor-widget-heading" data-id="fb9ae19" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Public benefit</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3750496 elementor-widget elementor-widget-creote-list-items-v1" data-id="3750496" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/ngos"> NGOs</a>  </li>  <li><a href="/use-cases/journalism"> Journalism</a>  </li>  <li><a href="/use-cases/academia"> Academia</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li id="menu-item-7195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7195 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7195"><span itemprop="name">Resources</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7195">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="6625" class="elementor elementor-6625" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Our data</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/legal-entity-data-principles"> Legal-Entity Data Principles</a>  </li>  <li><a href="https://knowledge.opencorporates.com/knowledge-base/overview/"> Data coverage</a>  </li>  <li><a href="https://knowledge.opencorporates.com/article-categories/dictionaries/"> Data dictionaries</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3939361" data-id="3939361" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">User resources</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="https://knowledge.opencorporates.com/"> Getting started</a>  </li>  <li><a href="https://knowledge.opencorporates.com/knowledge-base/api-documentation/"> API developer documentation</a>  </li>  <li><a href="https://knowledge.opencorporates.com/article-categories/bulk-delivery/"> Bulk-delivery guide</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4e8f4b1" data-id="4e8f4b1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d7946e4 elementor-widget elementor-widget-heading" data-id="d7946e4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Insights</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-957d35b elementor-widget elementor-widget-creote-list-items-v1" data-id="957d35b" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/case-studies"> Case studies</a>  </li>  <li><a href="https://blog.opencorporates.com/"> Blog</a>  </li>  <li><a href="/insights-and-events/"> Events and insights</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-03edef7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="03edef7" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9a3d24" data-id="e9a3d24" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li id="menu-item-7196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7196 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7196"><span itemprop="name">About</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7196">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="2579" class="elementor elementor-2579" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Why</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/purpose"> Purpose, history and principles</a>  </li>  <li><a href="/impact"> Our impact</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0710c5d" data-id="0710c5d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Who</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/team"> Team</a>  </li>  <li><a href="/partners"> Partners</a>  </li>  <li><a href="https://opencorporates.recruitee.com/"> Careers</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li id="menu-item-7078" class="cta dark menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6889 current_page_item active menu-item-7078 nav-item"><a itemprop="url" href="/pricing/" class="nav-link" aria-current="page"><span itemprop="name">Pricing</span></a></li>
+<li id="menu-item-7274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7274 nav-item"><a itemprop="url" href="/contact/" class="nav-link"><span itemprop="name">Contact</span></a></li>
+<li id="menu-item-6720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6720 nav-item"><a itemprop="url" href="https://opencorporates.com/users/sign_in" class="nav-link"><span itemprop="name">Login</span></a></li>
+</ul> </div> </div> <div class="header_right_content"> <ul>    </ul> </div> </div> </div> </div> </div></header>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		   </div>
+					 		
+<header class="mobile_header   mobile_header_style_two ">
+        
+    <div class="bottom_content clearfix">
+        <div class="container">
+
+            <div class="d-flex align-items-center">
+                <div class="mobile_logo">
+                        <div class="logo_box">
+    <a href="/" class="logo">
+        <img src="/wp-content/uploads/2023/03/logo-512.png" alt="OpenCorporates" class="logo_default_sticky">
+    </a>
+</div>
+                </div>
+                
+                <div>
+                    <ul>
+                                            <li class="nav_menu_mb">
+                            <div class="navbar_togglers hamburger_menu">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</header>		 
+	    		 												            <div id="content" class="site-content ">
+		        		<div class="no-container">
+				 <div class="no-row"><div class="full_width_box">
+		<div data-elementor-type="wp-page" data-elementor-id="6889" class="elementor elementor-6889" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-22f5e310 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22f5e310" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-300fc294 elementor-hidden-mobile" data-id="300fc294" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3b46d214 elementor-widget__width-initial elementor-widget elementor-widget-creote-text-editor-v1" data-id="3b46d214" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><a href="/"><span style="color: #9f1f34">Home</span></a> &gt;&gt; Pricing</p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-55997b84 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="55997b84" data-element_type="section" data-e-type="section">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-621cd295" data-id="621cd295" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0965363 elementor-widget elementor-widget-creote-title-v1" data-id="0965363" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one dark_color">
+            <!-- Default title style -->
+        <div class="title_sections left">
+                                        <h1 class="title">
+                    Build on strong foundations                </h1>
+                                </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-fe7c316 elementor-widget__width-initial elementor-widget elementor-widget-creote-text-editor-v1" data-id="fe7c316" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p>Plug the world's largest open legal-entity database direct into your applications using secure bulk delivery or API &mdash; or both.</p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8fea61e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8fea61e" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-212a796" data-id="212a796" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-749af69 elementor-widget elementor-widget-creote-title-v1" data-id="749af69" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one light_color">
+            <!-- Default title style -->
+        <div class="title_sections left">
+                                        <h2 class="title">
+                    Bulk data
+                </h2>
+                                        <p></p><p>If you're running analytics or AI and need the big picture, our bulk data delivers. </p>
+<ul>
+<li>Select only the jurisdictions you require</li>
+<li>Set your preferred delivery frequency</li>
+<li>Receive data securely via SFTP</li>
+</ul>
+                    </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d72713f" data-id="d72713f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-76bff79 elementor-widget elementor-widget-creote-title-v1" data-id="76bff79" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one light_color">
+            <!-- Default title style -->
+        <div class="title_sections left">
+                                        <h2 class="title">
+                    API
+                </h2>
+                                        <p></p><p>Our self-serve API plans give you direct, real-time access to underlying structured data on the OpenCorporates dataset.</p>
+<p>Powerful queries and results as JSON or XML enable you to power onboarding or investigation workflows.</p>
+                    </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4a738b5 elementor-widget elementor-widget-spacer" data-id="4a738b5" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-20d542a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="20d542a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-99970dc" data-id="99970dc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9cc5151 elementor-widget elementor-widget-creote-tab-v1-new" data-id="9cc5151" data-element_type="widget" data-e-type="widget" data-widget_type="creote-tab-v1-new.default">
+				<div class="elementor-widget-container">
+					 
+ <section class="tabs_all_box_two content_tabs type_one">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tabs_header clearfix">
+                <ul class="content_tabs_btns text-left clearfix">
+                                            <li class="c_tab_btn active-btn" data-tab="#tab_commercial-pricing">
+                            Commercial pricing                        </li>
+                                            <li class="c_tab_btn " data-tab="#tab_public-benefit">
+                            Public-benefit projects                        </li>
+                                    </ul>
+            </div>
+            <div class="c_tab_wrapper">
+                <div class="c_tabs_content">
+                                            <div class="c_tab active-tab" id="tab_commercial-pricing">
+                                                            <div class="tab_box type_one">
+                                    <div class="tab_inner_box">
+                                                                                    <h2 class="tabtitle">
+                                                <a target='"_blank"' rel='"nofollow"' href="#">
+                                                    From low-volume API access to enterprise bulk-data delivery, we have you covered                                                </a>
+                                            </h2>
+                                                                                                                            <p></p><p>Choose the package you want below.</p>
+<p>If you require a bespoke solution, <strong><a href="https://opencorporates.com/sales-enquiries/">contact one of our solution experts</a></strong> about how best to evaluate, map and consume our data into your applications. </p>
+		<div data-elementor-type="section" data-elementor-id="6692" class="elementor elementor-6692" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-64b5a878 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64b5a878" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3aa49bad" data-id="3aa49bad" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8fab532 elementor-widget elementor-widget-price-table" data-id="8fab532" data-element_type="widget" data-e-type="widget" data-widget_type="price-table.default">
+				<div class="elementor-widget-container">
+					
+		<div class="elementor-price-table">
+							<div class="elementor-price-table__header">
+											<h3 class="elementor-price-table__heading">
+						Essentials						</h3>
+					
+											<span class="elementor-price-table__subheading">
+							API only<br>						</span>
+									</div>
+			
+			<div class="elementor-price-table__price">
+								<span class="elementor-price-table__currency">&pound;</span>									<span class="elementor-price-table__integer-part">
+						<small>2,250/year</small>					</span>
+				
+				
+				
+									<span class="elementor-price-table__period elementor-typo-excluded"><br>&pound;225 per month</span>							</div>
+
+							<ul class="elementor-price-table__features-list">
+											<li class="elementor-repeater-item-db653eb">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>API access</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-847a414">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Internal &amp; external use									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-58dcb71">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 500 API calls/mth									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-02d9b1b">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 200 API calls/day									</span>
+																</div>
+						</li>
+									</ul>
+			
+							<div class="elementor-price-table__footer">
+											<a class="elementor-price-table__button elementor-button elementor-size-md" href="https://opencorporates.com/payments/new?product_code=api_plan_entry_annual_2022">
+							Buy now						</a>
+					
+									</div>
+					</div>
+
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-612e9550" data-id="612e9550" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d999902 elementor-widget elementor-widget-price-table" data-id="d999902" data-element_type="widget" data-e-type="widget" data-widget_type="price-table.default">
+				<div class="elementor-widget-container">
+					
+		<div class="elementor-price-table">
+							<div class="elementor-price-table__header">
+											<h3 class="elementor-price-table__heading">
+						Starter						</h3>
+					
+											<span class="elementor-price-table__subheading">
+							API only<br>						</span>
+									</div>
+			
+			<div class="elementor-price-table__price">
+								<span class="elementor-price-table__currency">&pound;</span>									<span class="elementor-price-table__integer-part">
+						<small>6,600/year</small>					</span>
+				
+				
+				
+									<span class="elementor-price-table__period elementor-typo-excluded"><br>&pound;660 per month</span>							</div>
+
+							<ul class="elementor-price-table__features-list">
+											<li class="elementor-repeater-item-0e5fd7b">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>API access</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-847a414">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Internal &amp; external use									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-58dcb71">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 2,500 API calls/mth									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-02d9b1b">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 500 API calls/day									</span>
+																</div>
+						</li>
+									</ul>
+			
+							<div class="elementor-price-table__footer">
+											<a class="elementor-price-table__button elementor-button elementor-size-md" href="https://opencorporates.com/payments/new?product_code=api_plan_starter_annual_2022">
+							Buy now						</a>
+					
+									</div>
+					</div>
+
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3030f99a" data-id="3030f99a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f679ccf elementor-widget elementor-widget-price-table" data-id="f679ccf" data-element_type="widget" data-e-type="widget" data-widget_type="price-table.default">
+				<div class="elementor-widget-container">
+					
+		<div class="elementor-price-table">
+							<div class="elementor-price-table__header">
+											<h3 class="elementor-price-table__heading">
+						Basic						</h3>
+					
+											<span class="elementor-price-table__subheading">
+							API only<br>						</span>
+									</div>
+			
+			<div class="elementor-price-table__price">
+								<span class="elementor-price-table__currency">&pound;</span>									<span class="elementor-price-table__integer-part">
+						<small>12,000/year</small>					</span>
+				
+				
+				
+									<span class="elementor-price-table__period elementor-typo-excluded"><br>&pound;1,200 per month</span>							</div>
+
+							<ul class="elementor-price-table__features-list">
+											<li class="elementor-repeater-item-dc6d0e7">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>API access</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-847a414">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Internal &amp; external use									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-58dcb71">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 5,000 API calls/mth									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-02d9b1b">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										Up to 1,000 API calls/day									</span>
+																</div>
+						</li>
+									</ul>
+			
+							<div class="elementor-price-table__footer">
+											<a class="elementor-price-table__button elementor-button elementor-size-md" href="https://opencorporates.com/payments/new?product_code=api_plan_basic_annual_2022">
+							Buy now						</a>
+					
+									</div>
+					</div>
+
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ec2184b" data-id="ec2184b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a6b2f27 elementor-widget elementor-widget-price-table" data-id="a6b2f27" data-element_type="widget" data-e-type="widget" data-widget_type="price-table.default">
+				<div class="elementor-widget-container">
+					
+		<div class="elementor-price-table">
+							<div class="elementor-price-table__header">
+											<h3 class="elementor-price-table__heading">
+						Enterprise						</h3>
+					
+											<span class="elementor-price-table__subheading">
+							Bulk delivery, bespoke API						</span>
+									</div>
+			
+			<div class="elementor-price-table__price">
+																	<span class="elementor-price-table__integer-part">
+						<small>Talk to a</small><br><small> specialist</small>					</span>
+				
+				
+				
+							</div>
+
+							<ul class="elementor-price-table__features-list">
+											<li class="elementor-repeater-item-02d9b1b">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>Bulk-data delivery</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-777132f">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>API access</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-5ee5add">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>Internal &amp; external use</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-b73d56e">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>Enterprise support plan</strong>									</span>
+																</div>
+						</li>
+											<li class="elementor-repeater-item-ab574f8">
+							<div class="elementor-price-table__feature-inner">
+								<i aria-hidden="true" class="far fa-check-circle"></i>																	<span>
+										<strong>Choose your jurisdictions</strong>									</span>
+																</div>
+						</li>
+									</ul>
+			
+							<div class="elementor-price-table__footer">
+											<a class="elementor-price-table__button elementor-button elementor-size-md" href="https://landing.opencorporates.com/contact-us">
+							Contact us						</a>
+					
+									</div>
+					</div>
+
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+                                                                                                                                                            </div>
+                                </div>
+                                                    </div>
+                                            <div class="c_tab " id="tab_public-benefit">
+                                                            <div class="tab_box type_one">
+                                    <div class="tab_inner_box">
+                                                                                    <h2 class="tabtitle">
+                                                <a target='"_blank"' rel='"nofollow"' href="#">
+                                                    Get free at-scale access to our data                                                </a>
+                                            </h2>
+                                                                                                                            <p></p><p>Public benefit is in our DNA.</p>
+
+<p>We believe greater corporate transparency is essential to a fairer, more prosperous and sustainable society.</p>
+
+<p>We support investigative journalists, NGOs, universities and anti-crime-and-corruption research groups around the world by providing free at-scale access to our data.</p>
+
+<p>If you have a project or initiative to improve the use, quality and understanding of legal-entity data &mdash; or to shine a light on the business world for the greater good &mdash; please contact us</p>
+
+<br>
+
+		<div data-elementor-type="section" data-elementor-id="6838" class="elementor elementor-6838" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-10f14206 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="10f14206" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-44c5133e" data-id="44c5133e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ab6b827 elementor-widget elementor-widget-button" data-id="ab6b827" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://opencorporates.atlassian.net/servicedesk/customer/portal/4/group/16/create/36">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contact us</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+                                                                                                                                                            </div>
+                                </div>
+                                                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-64e76b4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64e76b4" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-43e1528" data-id="43e1528" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-811ff74 elementor-widget elementor-widget-creote-title-v1" data-id="811ff74" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one dark_color">
+            <!-- Default title style -->
+        <div class="title_sections center">
+                                        <div class="title">
+                    Getting started is easy                </div>
+                                </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-df3e9ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="df3e9ff" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-8ac00d1" data-id="8ac00d1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-65c3066 elementor-widget elementor-widget-image" data-id="65c3066" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="100" height="100" src="/wp-content/uploads/2023/06/number-1-3.png" class="attachment-thumbnail size-thumbnail wp-image-7402" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-43c12b5 elementor-widget elementor-widget-creote-text-editor-v1" data-id="43c12b5" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><strong>Check out our data coverage</strong></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-724e38a elementor-widget elementor-widget-global elementor-global-7214 elementor-widget-creote-text-editor-v1" data-id="724e38a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p>View our <a href="https://knowledge.opencorporates.com/">latest data coverage</a> to ensure our data meets your needs</p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f793d78" data-id="f793d78" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e7fd70c elementor-widget elementor-widget-image" data-id="e7fd70c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="100" height="100" src="/wp-content/uploads/2023/06/number-2.png" class="attachment-thumbnail size-thumbnail wp-image-7400" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-afadd17 elementor-widget elementor-widget-creote-text-editor-v1" data-id="afadd17" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><strong>Follow our step-by-step user guides</strong></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0b00728 elementor-widget elementor-widget-global elementor-global-7215 elementor-widget-creote-text-editor-v1" data-id="0b00728" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p>Find get-started user guides for search, API services, and more in our <a href="https://knowledge.opencorporates.com/">knowledge base</a></p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7a7f9db" data-id="7a7f9db" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-be84999 elementor-widget elementor-widget-image" data-id="be84999" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="100" height="100" src="/wp-content/uploads/2023/06/number-3.png" class="attachment-thumbnail size-thumbnail wp-image-7401" alt="">															</div>
+				</div>
+				<div class="elementor-element elementor-element-67b10b4 elementor-widget elementor-widget-creote-text-editor-v1" data-id="67b10b4" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><strong>Speak to a solution expert</strong></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-97e8aa9 elementor-widget elementor-widget-global elementor-global-7216 elementor-widget-creote-text-editor-v1" data-id="97e8aa9" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p>Our <a href="/contact/">solution experts can help</a> save you time and effort evaluating and deploying our data</p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9505486 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9505486" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2d94b5a" data-id="2d94b5a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b0595e1 elementor-widget elementor-widget-creote-title-v1" data-id="b0595e1" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one dark_color">
+            <!-- Default title style -->
+        <div class="title_sections left">
+                                        <h2 class="title">
+                    Case studies                </h2>
+                                </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3f6a62f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3f6a62f" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-576fe6d" data-id="576fe6d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-bd5591a elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="bd5591a" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a3b38a9" data-id="a3b38a9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ec554e elementor-invisible elementor-widget elementor-widget-creote-service-box-v1" data-id="6ec554e" data-element_type="widget" data-e-type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="creote-service-box-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="service_box style_one dark_color" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0">
+            <div class="service_content">
+                            <div class="image  image_fit ">
+                    <img decoding="async" src="/wp-content/uploads/2023/06/Quantifind_Logo.jpg" class="img-fluid" alt="image">
+                </div>
+                        <div class="content_inner">
+                                                    <p>Quantifind powers financial crime investigations using OpenCorporates&rsquo; data
+</p>
+                                                    <a href="/project/quantifind/" class="read_more">
+                        Read more                    </a>
+                            </div>
+        </div>
+    </div>
+
+   				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b521aef" data-id="b521aef" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7efd074 elementor-invisible elementor-widget elementor-widget-creote-service-box-v1" data-id="7efd074" data-element_type="widget" data-e-type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="creote-service-box-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="service_box style_one dark_color" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+            <div class="service_content">
+                            <div class="image  image_fit ">
+                    <img decoding="async" src="/wp-content/uploads/2023/05/exiger.png" class="img-fluid" alt="image">
+                </div>
+                        <div class="content_inner">
+                                                    <p>Exiger&rsquo;s DDIQ automates due diligence verification using OpenCorporates&rsquo; data &ndash; helping identify risk at scale
+</p>
+                                                    <a href="/project/exiger/" class="read_more">
+                        Read more                    </a>
+                            </div>
+        </div>
+    </div>
+
+   				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a137b8d" data-id="a137b8d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2e5317e elementor-invisible elementor-widget elementor-widget-creote-service-box-v1" data-id="2e5317e" data-element_type="widget" data-e-type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="creote-service-box-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="service_box style_one dark_color" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+            <div class="service_content">
+                            <div class="image  image_fit ">
+                    <img decoding="async" src="/wp-content/uploads/2023/05/Quantexa-logo-positive-RGB.svg" class="img-fluid" alt="image">
+                </div>
+                        <div class="content_inner">
+                                                    <p>Quantexa uncovers risk hidden in corporate networks using OpenCorporates data
+</p>
+                                                    <a href="/project/quantexa/" class="read_more">
+                        Read more                    </a>
+                            </div>
+        </div>
+    </div>
+
+   				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+                                      </div>
+                </div>
+              </div>
+            </div>
+
+                                  <div class="footer_area no_footer_sticky_enable_foo" id="footer_contents">
+  <style>.elementor-3454 .elementor-element.elementor-element-53761a7:not(.elementor-motion-effects-element-type-background), .elementor-3454 .elementor-element.elementor-element-53761a7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#9F1F34;}.elementor-3454 .elementor-element.elementor-element-53761a7{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:010px 0px 00px 0px;}.elementor-3454 .elementor-element.elementor-element-53761a7 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-3454 .elementor-element.elementor-element-d584ccf{width:var( --container-widget-width, 122.364% );max-width:122.364%;--container-widget-width:122.364%;--container-widget-flex-grow:0;}.elementor-3454 .elementor-element.elementor-element-d584ccf .title_all_box {text-align:left!important;}.elementor-3454 .elementor-element.elementor-element-d584ccf .title_all_box .title_sections .title  {color:#FFFFFF;}.elementor-3454 .elementor-element.elementor-element-d584ccf .title_all_box .title_sections p  {color:#FFFFFF;}.elementor-bc-flex-widget .elementor-3454 .elementor-element.elementor-element-3dd8831.elementor-column .elementor-widget-wrap{align-items:center;}.elementor-3454 .elementor-element.elementor-element-3dd8831.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:center;align-items:center;}.elementor-3454 .elementor-element.elementor-element-5abb12a .theme_btn_all  {text-align:center!important;}.elementor-3454 .elementor-element.elementor-element-5abb12a .theme_btn_all a {font-size:14px;}.elementor-3454 .elementor-element.elementor-element-142e89a:not(.elementor-motion-effects-element-type-background), .elementor-3454 .elementor-element.elementor-element-142e89a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#282F3B;}.elementor-3454 .elementor-element.elementor-element-142e89a{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:90px 0px 10px 0px;}.elementor-3454 .elementor-element.elementor-element-142e89a > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-3454 .elementor-element.elementor-element-38528a7 > .elementor-element-populated{margin:0px 0px 0px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;padding:0px 30px 0px 0px;}.elementor-3454 .elementor-element.elementor-element-3725ae0{width:var( --container-widget-width, 64.998% );max-width:64.998%;--container-widget-width:64.998%;--container-widget-flex-grow:0;}.elementor-3454 .elementor-element.elementor-element-3725ae0 .about_company .logo  img{width:100px;}.elementor-3454 .elementor-element.elementor-element-5262771{--spacer-size:15px;}.elementor-3454 .elementor-element.elementor-element-b6f99ef > .elementor-widget-container{padding:15px 0px 0px 0px;}.elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative  , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative  p , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h1 , .elementor-3454 .elementor-element.elementor-element-b6f99ef
+                .position-relative h2 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h3 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h4 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h5 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h6 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative a , .elementor-3454 .elementor-element.elementor-element-b6f99ef
+                .position-relative ul li , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative ul li a {color:#B1B1B1!important;}.elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative  , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative  p , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h1 , .elementor-3454 .elementor-element.elementor-element-b6f99ef body
+                .position-relative h2 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h3 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h4 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h5 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative h6 , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative a ,
+                 .position-relative ul li , .elementor-3454 .elementor-element.elementor-element-b6f99ef .position-relative ul li a {line-height:10px;}.elementor-3454 .elementor-element.elementor-element-bfdaec4:not(.elementor-motion-effects-element-type-background), .elementor-3454 .elementor-element.elementor-element-bfdaec4 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#1F2530;}.elementor-3454 .elementor-element.elementor-element-bfdaec4{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:8px 0px 8px 0px;}.elementor-3454 .elementor-element.elementor-element-bfdaec4 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}@media(max-width:1024px){.elementor-3454 .elementor-element.elementor-element-38528a7 > .elementor-element-populated{padding:0px 15px 0px 15px;}.elementor-3454 .elementor-element.elementor-element-6145812 > .elementor-element-populated{padding:0px 15px 0px 15px;}.elementor-3454 .elementor-element.elementor-element-380b317 > .elementor-element-populated{padding:0px 15px 0px 15px;}.elementor-3454 .elementor-element.elementor-element-cdc6577 > .elementor-element-populated{padding:0px 15px 0px 15px;}.elementor-3454 .elementor-element.elementor-element-4ed61cc > .elementor-element-populated{padding:0px 15px 0px 15px;}}@media(min-width:768px){.elementor-3454 .elementor-element.elementor-element-fce8aa9{width:63.509%;}.elementor-3454 .elementor-element.elementor-element-3dd8831{width:36.447%;}}@media(max-width:1024px) and (min-width:768px){.elementor-3454 .elementor-element.elementor-element-38528a7{width:50%;}.elementor-3454 .elementor-element.elementor-element-6145812{width:50%;}.elementor-3454 .elementor-element.elementor-element-380b317{width:33.33%;}.elementor-3454 .elementor-element.elementor-element-cdc6577{width:33.33%;}.elementor-3454 .elementor-element.elementor-element-4ed61cc{width:33.33%;}}@media(max-width:767px){.elementor-3454 .elementor-element.elementor-element-38528a7 > .elementor-element-populated{margin:0px 0px 21px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;padding:0px 15px 0px 15px;}.elementor-3454 .elementor-element.elementor-element-6145812 > .elementor-element-populated{margin:0px 0px 17px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;}.elementor-3454 .elementor-element.elementor-element-380b317 > .elementor-element-populated{margin:0px 0px 11px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;}.elementor-3454 .elementor-element.elementor-element-cdc6577 > .elementor-element-populated{margin:0px 0px 11px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;}.elementor-3454 .elementor-element.elementor-element-4ed61cc > .elementor-element-populated{margin:0px 0px 11px 0px;--e-column-margin-right:0px;--e-column-margin-left:0px;}}</style>		<div data-elementor-type="wp-post" data-elementor-id="3454" class="elementor elementor-3454" data-elementor-post-type="footer">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-53761a7 elementor-section-full_width primarg_bg_color elementor-section-height-default elementor-section-height-default" data-id="53761a7" data-element_type="section" data-e-type="section" id="footer-newsletter-signup" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2b51c85" data-id="2b51c85" data-element_type="column" data-e-type="column" id="footer-newsletter-signup">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-08e0625 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="08e0625" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fce8aa9" data-id="fce8aa9" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d584ccf elementor-widget__width-initial elementor-widget elementor-widget-creote-title-v1" data-id="d584ccf" data-element_type="widget" data-e-type="widget" data-widget_type="creote-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="title_all_box style_one light_color">
+            <!-- Default title style -->
+        <div class="title_sections left">
+                                        <div class="title">
+                    Sign up to our newsletter                </div>
+                                        <p>Register for our newsletter, regular updates, insights and educational materials
+</p>
+                    </div>
+        <!-- End of default title style -->
+
+    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3dd8831" data-id="3dd8831" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5abb12a elementor-widget elementor-widget-creote-themebtns-v1" data-id="5abb12a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-themebtns-v1.default">
+				<div class="elementor-widget-container">
+					<div class="theme_btn_all color_two">  <a href="/newsletter-signup/" target='"_blank"' rel='"nofollow"' class="theme-btn three"> Sign up </a> </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-142e89a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="142e89a" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-38528a7" data-id="38528a7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3725ae0 elementor-widget__width-initial elementor-widget elementor-widget-creote-about-company-v1" data-id="3725ae0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-about-company-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets about_company light_color"> <div class="about_company_inner">  <div class="logo"> <a href="https://blog.opencorporates.com/2023/10/24/opencorporates-b-corp-certification/" target='"_blank"' rel='"nofollow"'> <img src="/wp-content/uploads/bcorp-logo-no-border-gray.png" alt="image"> </a> </div>  <div class="content_in_r">  <div class="consulting">  <div class="help_con">   </div> </div> </div> </div></div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-6145812" data-id="6145812" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4cafa2f elementor-widget elementor-widget-creote-widget-title-v1" data-id="4cafa2f" data-element_type="widget" data-e-type="widget" data-widget_type="creote-widget-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets wid_tit style_one">
+   <div class="fo_wid_title">
+      <h2>Data</h2>
+   </div>
+</div>
+   
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a3aaf54 elementor-widget elementor-widget-creote-foo-navigation-v1" data-id="a3aaf54" data-element_type="widget" data-e-type="widget" data-widget_type="creote-foo-navigation-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets clearfix navigation_foo light_color style_one">  <div class="navigation_foo_box"> <div class="navigation_foo_inner"> <div class="menu-footer-data-container"><ul id="menu-footer-data" class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-7147" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6889 current_page_item menu-item-7147"><a href="/pricing/" aria-current="page">API and bulk pricing</a></li>
+<li id="menu-item-7148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7148"><a href="/advanced-search/">Advanced search</a></li>
+<li id="menu-item-7149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7149"><a href="https://knowledge.opencorporates.com/knowledge-base/overview/">Data coverage</a></li>
+<li id="menu-item-7150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7150"><a href="/legal-entity-data-principles/">Legal-Entity Data Principles</a></li>
+</ul></div> </div> </div> </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-380b317" data-id="380b317" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8da61e1 elementor-widget elementor-widget-creote-widget-title-v1" data-id="8da61e1" data-element_type="widget" data-e-type="widget" data-widget_type="creote-widget-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets wid_tit style_one">
+   <div class="fo_wid_title">
+      <h2>Resources</h2>
+   </div>
+</div>
+   
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-48f7728 elementor-widget elementor-widget-creote-foo-navigation-v1" data-id="48f7728" data-element_type="widget" data-e-type="widget" data-widget_type="creote-foo-navigation-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets clearfix navigation_foo light_color style_one">  <div class="navigation_foo_box"> <div class="navigation_foo_inner"> <div class="menu-footer-resources-container"><ul id="menu-footer-resources" class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-7145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7145"><a href="https://knowledge.opencorporates.com/">Knowledge base</a></li>
+<li id="menu-item-7144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7144"><a href="/case-studies/">Case studies</a></li>
+<li id="menu-item-7146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7146"><a href="https://blog.opencorporates.com/">Blog</a></li>
+</ul></div> </div> </div> </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-cdc6577" data-id="cdc6577" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0de8f00 elementor-widget elementor-widget-creote-widget-title-v1" data-id="0de8f00" data-element_type="widget" data-e-type="widget" data-widget_type="creote-widget-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets wid_tit style_one">
+   <div class="fo_wid_title">
+      <h2>Company</h2>
+   </div>
+</div>
+   
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0285b05 elementor-widget elementor-widget-creote-foo-navigation-v1" data-id="0285b05" data-element_type="widget" data-e-type="widget" data-widget_type="creote-foo-navigation-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets clearfix navigation_foo light_color style_one">  <div class="navigation_foo_box"> <div class="navigation_foo_inner"> <div class="menu-footer-company-container"><ul id="menu-footer-company" class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-7133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7133"><a href="/purpose/">Purpose</a></li>
+<li id="menu-item-7131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7131"><a href="/impact/">Impact</a></li>
+<li id="menu-item-7134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7134"><a href="/team/">Team</a></li>
+<li id="menu-item-7132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7132"><a href="/partners/">Partners</a></li>
+</ul></div> </div> </div> </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5262771 elementor-widget elementor-widget-spacer" data-id="5262771" data-element_type="widget" data-e-type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-4ed61cc" data-id="4ed61cc" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a157181 elementor-widget elementor-widget-creote-widget-title-v1" data-id="a157181" data-element_type="widget" data-e-type="widget" data-widget_type="creote-widget-title-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets wid_tit style_one">
+   <div class="fo_wid_title">
+      <h2>Legal</h2>
+   </div>
+</div>
+   
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-61838df elementor-widget elementor-widget-creote-foo-navigation-v1" data-id="61838df" data-element_type="widget" data-e-type="widget" data-widget_type="creote-foo-navigation-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_widgets clearfix navigation_foo light_color style_one">  <div class="navigation_foo_box"> <div class="navigation_foo_inner"> <div class="menu-footer-legal-container"><ul id="menu-footer-legal" class="menu" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li id="menu-item-7209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7209"><a href="/user-privacy-policy/">User privacy policy</a></li>
+<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a href="/public-records-privacy-policy/">Public records privacy policy</a></li>
+<li id="menu-item-7211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7211"><a href="/terms-of-use-2/">Website terms of use</a></li>
+<li id="menu-item-7506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7506"><a href="/legal-information/">Legal Hub</a></li>
+</ul></div> </div> </div> </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-496d28b" data-id="496d28b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b6f99ef elementor-widget elementor-widget-creote-text-editor-v1" data-id="b6f99ef" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><strong>UEI:</strong>&nbsp; N1BMYRHYV7L5</p><p><strong>CAGE:&nbsp; </strong>U0XV5</p><p><strong>NAICS:</strong>&nbsp; 518210</p><p><strong>PSC:</strong>&nbsp; DH10</p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-bfdaec4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bfdaec4" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f9bb7d4" data-id="f9bb7d4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-909328c elementor-widget elementor-widget-creote-footer-copyright-v1" data-id="909328c" data-element_type="widget" data-e-type="widget" data-widget_type="creote-footer-copyright-v1.default">
+				<div class="elementor-widget-container">
+					<div class="footer_copy_right style_one"> <div class="row"> <div class="col-lg-6 col-md-12"> <div class="footer_copy_content"> &copy; 2024 OpenCorporates Limited </div> </div>  <div class="col-lg-6 col-md-12"> <div class="footer_copy_content_right"> <div class="social_media_v_one"> <ul>  <li> <a href="https://www.linkedin.com/company/opencorporates/" target='"_blank"'> <span class="fa-linkedin fab"></span> <small>LinkedIn</small> </a> </li>  <li> <a href="https://twitter.com/opencorporates" target='"_blank"'> <span class="fa-twitter fab"></span> <small>twitter</small> </a> </li>  </ul> </div> </div> </div>  </div></div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+
+                 
+       
+                      <div class="crt_mobile_menu ">
+    <div class="menu-backdrop"></div>
+        <nav class="menu-box">
+            <div class="close-btn"><i class="icon-close"></i></div>
+            
+            <form role="search" method="get" action="/">
+	<input type="search" class="search" placeholder="Search..." value="" name="s" title="Search">
+	<button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+</form>
+            <div class="menu-outer">
+
+            <div class="navigation_menu">
+                     <ul id="menu-primary-menu" class="navbar_nav" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7496 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7496"><span itemprop="name">Use cases</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7496">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="6631" class="elementor elementor-6631" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Use cases</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/entity-verification/"> Entity verification</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-99cf555 elementor-widget elementor-widget-creote-text-editor-v1" data-id="99cf555" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"KYC, KYB, due-diligence, customer onboarding, risk. compliance or ESG monitoring, underwriting..."}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Customer onboarding, KYC/B, due-diligence, ESG monitoring, underwriting</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-195624a elementor-widget elementor-widget-creote-list-items-v1" data-id="195624a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/third-party-risk-management/"> Third-party risk management</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e3213b4 elementor-widget elementor-widget-creote-text-editor-v1" data-id="e3213b4" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Vendor and supplier due diligence, monitoring..."}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Vendor and supplier due-diligence, risk management and monitoring</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0194b56 elementor-widget elementor-widget-creote-list-items-v1" data-id="0194b56" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/investigations/"> Investigations</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ef58fb3 elementor-widget elementor-widget-creote-text-editor-v1" data-id="ef58fb3" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Anti-money laundering, Anti-bribery and corruption, anti-fraud, financial crime, conflicts of interest, human trafficking, deforestation, ESG"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Financial crime, AML, bribery, corruption, fraud, conflicts of interest, human trafficking, deforestation, ESG</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f21e910 elementor-widget elementor-widget-creote-list-items-v1" data-id="f21e910" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/data-management/"> Data management</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f86119a elementor-widget elementor-widget-creote-text-editor-v1" data-id="f86119a" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Master-data management, cleansing and enrichment"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Master-data management, data cleansing and enrichment</span></p>    </div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-19264c8 elementor-widget elementor-widget-creote-list-items-v1" data-id="19264c8" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/business-discovery/"> Business discovery</a>  </li>  </ul></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1406686 elementor-widget elementor-widget-creote-text-editor-v1" data-id="1406686" data-element_type="widget" data-e-type="widget" data-widget_type="creote-text-editor-v1.default">
+				<div class="elementor-widget-container">
+					   <div class="position-relative">
+        <p><span data-sheets-value='{"1":2,"2":"Prospect targeting, sales and marketing intelligence and analytics"}' data-sheets-userformat='{"2":897,"3":{"1":0},"10":0,"11":4,"12":0}'>Prospect targeting, sales and marketing intelligence</span></p>    </div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3939361" data-id="3939361" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Industries</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/financial-services/"> Financial services</a>  </li>  <li><a href="/use-cases/professional-services"> Professional services</a>  </li>  <li><a href="/use-cases/government"> Government</a>  </li>  <li><a href="/use-cases/real-estate"> Real estate</a>  </li>  <li><a href="/uses-cases/application-developers"> Application developers</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0710c5d" data-id="0710c5d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fb9ae19 elementor-widget elementor-widget-heading" data-id="fb9ae19" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Public benefit</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3750496 elementor-widget elementor-widget-creote-list-items-v1" data-id="3750496" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/use-cases/ngos"> NGOs</a>  </li>  <li><a href="/use-cases/journalism"> Journalism</a>  </li>  <li><a href="/use-cases/academia"> Academia</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7195 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7195"><span itemprop="name">Resources</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7195">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="6625" class="elementor elementor-6625" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Our data</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/legal-entity-data-principles"> Legal-Entity Data Principles</a>  </li>  <li><a href="https://knowledge.opencorporates.com/knowledge-base/overview/"> Data coverage</a>  </li>  <li><a href="https://knowledge.opencorporates.com/article-categories/dictionaries/"> Data dictionaries</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3939361" data-id="3939361" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">User resources</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="https://knowledge.opencorporates.com/"> Getting started</a>  </li>  <li><a href="https://knowledge.opencorporates.com/knowledge-base/api-documentation/"> API developer documentation</a>  </li>  <li><a href="https://knowledge.opencorporates.com/article-categories/bulk-delivery/"> Bulk-delivery guide</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4e8f4b1" data-id="4e8f4b1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d7946e4 elementor-widget elementor-widget-heading" data-id="d7946e4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Insights</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-957d35b elementor-widget elementor-widget-creote-list-items-v1" data-id="957d35b" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/case-studies"> Case studies</a>  </li>  <li><a href="https://blog.opencorporates.com/"> Blog</a>  </li>  <li><a href="/insights-and-events/"> Events and insights</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-03edef7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="03edef7" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9a3d24" data-id="e9a3d24" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown dropdown_full position-static mega_menu menu-item-7196 nav-item"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-7196"><span itemprop="name">About</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-7196">
+<li>		<div data-elementor-type="wp-post" data-elementor-id="2579" class="elementor elementor-2579" data-elementor-post-type="mega_menu">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e97ab3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e97ab3" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-79790b7" data-id="79790b7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-59ae4cf elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="59ae4cf" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-969af9d" data-id="969af9d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a189b elementor-widget elementor-widget-heading" data-id="64a189b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Why</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2281 elementor-widget elementor-widget-creote-list-items-v1" data-id="15a2281" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/purpose"> Purpose, history and principles</a>  </li>  <li><a href="/impact"> Our impact</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0710c5d" data-id="0710c5d" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-edad3d4 elementor-widget elementor-widget-heading" data-id="edad3d4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Who</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7924eb0 elementor-widget elementor-widget-creote-list-items-v1" data-id="7924eb0" data-element_type="widget" data-e-type="widget" data-widget_type="creote-list-items-v1.default">
+				<div class="elementor-widget-container">
+					 
+   <div class="list_item_box style_one"> <ul>  <li><a href="/team"> Team</a>  </li>  <li><a href="/partners"> Partners</a>  </li>  <li><a href="https://opencorporates.recruitee.com/"> Careers</a>  </li>  </ul></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</li>
+</ul>
+</li>
+<li class="cta dark menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6889 current_page_item active menu-item-7078 nav-item"><a itemprop="url" href="/pricing/" class="nav-link" aria-current="page"><span itemprop="name">Pricing</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7274 nav-item"><a itemprop="url" href="/contact/" class="nav-link"><span itemprop="name">Contact</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6720 nav-item"><a itemprop="url" href="https://opencorporates.com/users/sign_in" class="nav-link"><span itemprop="name">Login</span></a></li>
+</ul>                  </div>
+
+            </div>
+        </nav>
+    </div>
+                              <div id="search-popup" class="search-popup">
+    <div class="close-search"><i class="fas  fa-times"></i></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+                <div class="search-form">
+                    <fieldset>
+                        <form role="search" method="get" action="/">
+	                        <input type="search" class="search" placeholder="Search..." value="" name="s" title="Search">
+	                        <button type="submit" class="sch_btn"> <i class="icon-search"></i></button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+                                                   <div class="cart_notice"></div>
+    <div class="wcqv_contend"> </div>
+
+        <!-- Back to top with progress indicator-->
+    <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+      </svg>
+    </div>
+
+    </div>
+<script src="/wp-content/themes/creote/assets/js/user-initials.js" defer></script>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/creote\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const link = document.querySelector("div.oc-home-search__links > a");
+    if (link) {
+        // Get only the text before the icon
+        const icon = link.querySelector(".search_arrow");
+        let textOnly = "";
+
+        // Loop through child nodes to separate text from the icon
+        link.childNodes.forEach(function (node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+                textOnly += node.textContent;
+            }
+        });
+
+        // Clean up spaces and nbsp characters
+        textOnly = textOnly
+            .replace(/ /g, " ")
+            .replace(/\u00A0/g, " ")
+            .replace(/\s{2,}/g, " ")
+            .trim();
+
+        // Clear link content and rebuild with clean text + icon
+        link.innerHTML = textOnly + (icon ? " " + icon.outerHTML : "");
+    }
+});
+</script>
+        <span class="ssp-id" style="display:none">6889</span>
+		<link rel="stylesheet" id="elementor-post-85-css" href="/wp-content/uploads/elementor/css/post-85.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-6631-css" href="/wp-content/uploads/elementor/css/post-6631.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.2.4" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-6625-css" href="/wp-content/uploads/elementor/css/post-6625.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-2579-css" href="/wp-content/uploads/elementor/css/post-2579.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-6692-css" href="/wp-content/uploads/elementor/css/post-6692.css?ver=1789454301" type="text/css" media="all">
+<link rel="stylesheet" id="e-ribbon-css" href="/wp-content/plugins/elementor-pro/assets/css/conditionals/ribbon.min.css?ver=4.2.3" type="text/css" media="all">
+<link rel="stylesheet" id="widget-price-table-css" href="/wp-content/plugins/elementor-pro/assets/css/widget-price-table.min.css?ver=4.2.3" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-6838-css" href="/wp-content/uploads/elementor/css/post-6838.css?ver=1789454301" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-3454-css" href="/wp-content/uploads/elementor/css/post-3454.css?ver=1789122334" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3" type="text/css" media="all">
+<script type="text/javascript" src="/wp-content/themes/creote/assets/js/bootstrap.min.js?ver=5.1.2" id="bootstrap-bundle-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/TweenMax.min.js?ver=1.18.0" id="TweenMax-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/jquery.fancybox.js?ver=3.5.7" id="fancybox-js"></script>
+<script type="text/javascript" src="/wp-content/themes/creote/assets/js/magnific-popup.js?ver=3.5.7" id="popup-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/owl.js?ver=2.3.4" id="owl-carousel-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/isotope.min.js?ver=3.0.6" id="isotope-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/countdown.js?ver=0.1.0" id="countdown-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/simpleParallax.min.js?ver=5.2.0" id="simpleParallax-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/appear.js?ver=1.0" id="appear-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/jquery.countTo.js?ver=1.0" id="counter-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/sharer.js?ver=0.4.0" id="sharer-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/hc-sticky.js?ver=2.2.7" id="hc-sticky-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/aos.js?ver=1.0.0" id="aos-animate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/aos-active.js?ver=1.0.0" id="creote-aos-active-js"></script>
+<script type="text/javascript" id="creote_quick_view-js-extra">
+/* <![CDATA[ */
+var CreoteAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/creote/assets/js/shop.js?ver=1.0" id="creote_quick_view-js"></script>
+<script type="text/javascript" src="/wp-content/themes/creote/assets/js/main.js?ver=1.0.0" id="creote-main-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/sticky-header-desktop.js?ver=1.0.0" id="creote-sticky-desktop-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/sticky-header-mobile.js?ver=1.0.0" id="creote-sticky-mobile-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/smoothscroll.js?ver=1.0.0" id="creote-smoothscroll-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/creote-elemetor-extension.js?ver=1789454744" id="creote-core-script-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax.js?ver=1789454744" id="creote-add-to-cart-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/creote-addons/assets/js/add-to-cart-ajax-single.js?ver=1789454744" id="creote-add-to-cart-single-js"></script>
+<script type="text/javascript" id="leadin-script-loader-js-js-extra">
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"11.3.21"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://js-eu1.hs-scripts.com/145756848.js?integration=WordPress&amp;ver=11.3.21" id="leadin-script-loader-js-js"></script>
+<script type="text/javascript" id="wcqv_frontend_js-js-extra">
+/* <![CDATA[ */
+var MyAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/themes/creote/assets/js/shop.js?ver=1.0" id="wcqv_frontend_js-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/oc-search-box/core/includes/assets/js/frontend-scripts.js?ver=1.0.0" id="ocsearch-rontend-scripts-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.4" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.4" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_panel_promotions":true,"theme_builder_v2":true,"landing-pages":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_atomic_form":true,"e_pro_collection_loop":true,"e_pro_variables":true,"e_pro_interactions":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"52f2568664","atomicFormsSendForm":"1d2285d787"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6889,"title":"Pricing%20%E2%80%93%20OpenCorporates","excerpt":"","featuredImage":"\/wp-content\/uploads\/2023\/03\/opencorporates-favicon.png"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.4" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=4.2.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+/* <![CDATA[ */
+var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"a2d3dd2b3f","urls":{"assets":"\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"\/wp-json\/"},"settings":{"lazy_load_background_images":false},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.2.3" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.2.3" id="pro-elements-handlers-js"></script>
+
+</body></html>

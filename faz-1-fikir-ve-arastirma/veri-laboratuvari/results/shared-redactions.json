@@ -41,6 +41,38 @@
       "shared_sha256": "ea3a05f11428c132d8b21bc3e6bc7c3e572f1768af63192384b3a7f0f09c720b",
       "replacements": 11,
       "reason": "API-key-shaped client configuration in third-party source HTML; removed from shared copy"
+    },
+    {
+      "path": "raw/337c678ac9eb62a5cceffd581d02560f8bb672242c54a7f4ce962c115b0401ae.bin",
+      "local_original": "local-originals/337c678ac9eb62a5cceffd581d02560f8bb672242c54a7f4ce962c115b0401ae.bin",
+      "original_sha256": "337c678ac9eb62a5cceffd581d02560f8bb672242c54a7f4ce962c115b0401ae",
+      "shared_sha256": "5a3b07af29166e72bf7135847a2ce5bcf70810b0592ae05418dba57f94ab648c",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/9f77ae641d99ce12979f0f295f4cc04a4e7780fb5647ed7f48063a7b629fec03.bin",
+      "local_original": "local-originals/9f77ae641d99ce12979f0f295f4cc04a4e7780fb5647ed7f48063a7b629fec03.bin",
+      "original_sha256": "9f77ae641d99ce12979f0f295f4cc04a4e7780fb5647ed7f48063a7b629fec03",
+      "shared_sha256": "eb5e0e1da99912945878653f95bde859905450606d4f860fe84c5739affd1ecc",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/cb88c0ee37dfdcdef495b950147ffb097b6ecb35df5112c1d30c98a7bd55b4f7.bin",
+      "local_original": "local-originals/cb88c0ee37dfdcdef495b950147ffb097b6ecb35df5112c1d30c98a7bd55b4f7.bin",
+      "original_sha256": "cb88c0ee37dfdcdef495b950147ffb097b6ecb35df5112c1d30c98a7bd55b4f7",
+      "shared_sha256": "c6ec99103ab07bb652bbf840d7e69f2cfb64d0da513f729f3adb31859da15572",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/4e28fe8e15286be77b9cd3b14c020955b84b0eb840cd919898f1d4391425ca3b.bin",
+      "local_original": "local-originals/4e28fe8e15286be77b9cd3b14c020955b84b0eb840cd919898f1d4391425ca3b.bin",
+      "original_sha256": "4e28fe8e15286be77b9cd3b14c020955b84b0eb840cd919898f1d4391425ca3b",
+      "shared_sha256": "a9054cdaf30c70d4072613f61131f86ccb3cb698a2e6eeeb80b499b98365e761",
+      "replacements": 1,
+      "reason": "Replicate API token published by the source site; redacted for the shared copy, original kept locally"
     }
   ]
 }

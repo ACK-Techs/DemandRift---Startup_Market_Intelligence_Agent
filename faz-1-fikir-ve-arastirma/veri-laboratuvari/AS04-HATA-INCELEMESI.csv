@@ -1,0 +1,367 @@
+hata_sinifi,document_id,ilgili_kayit,kaynak,bulgu,karar,gerekce,duzeltme
+dedup-yanlis-birlesme,doc-39af50a4d9a2,doc-e9f87e3f9a0d,Bing News <-> Bing,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-f7dafa7ca7f1,doc-9291066bee9f,Competition and Markets Authority <-> Companies House,gov.uk / gov.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-bd9a6e09bb4e,doc-acd7c02cefaf,Etsy Reviews <-> Etsy,etsy.com / etsy.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-f4f82efbd239,doc-a664732ec757,Facebook Marketplace <-> Facebook,facebook.com / facebook.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-7e40151264e4,doc-a664732ec757,Facebook Pages <-> Facebook,facebook.com / facebook.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-1400d65aa7cb,doc-a03395244a9d,G2 Education Software <-> G2,g2.com / g2.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e06a47dee657,doc-a03395244a9d,G2 Track <-> G2,g2.com / g2.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-1af2d9ed044a,doc-7e3df8af4b3c,LinkedIn Jobs <-> LinkedIn Ad Library,linkedin.com / linkedin.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a5b070a37335,doc-4d51f4a2992b,OECD Health Statistics <-> OECD Education,data-explorer.oecd.org / data-explorer.oecd.org,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-dc7fb5fc93d4,doc-d435f4218281,T.C. Sağlık Bakanlığı <-> Sağlık Bakanlığı,saglik.gov.tr / saglik.gov.tr,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-30ccef1dd4e2,doc-589b9da42cc5,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-78c4b499f76f,doc-ae16a060ace2,UsabilityHub <-> Lyssna,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-6f5d3dd56462,doc-e7daaffe189a,Yandex Maps <-> Yandex,yandex.com / yandex.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-7791964a7388,doc-60e80b2ea5c6,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-cf9d6860d1e9,doc-aa414cf42a76,US Census Bureau <-> U.S. Census Building Permits,census.gov / census.gov,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-c459b7cfcae0,doc-9f387d9e7810,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e9ee0d17d4dd,doc-3d8e30f533f9,Slack Marketplace <-> Slack,slack.com / slack.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a1e1d8574ea3,doc-f7002c0870f0,Slack Marketplace <-> Slack,slack.com / slack.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a9dd29a3f551,doc-c72b43594418,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-fdf08c25ee82,doc-1bc87618d0d0,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e73808d35813,doc-9d9cc76e37d1,Bing News <-> Bing Maps,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-d49bd080f6e0,doc-6831ca955803,Bing News <-> Bing Maps,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-42f8c1fd73ce,doc-7d74d5feb40f,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-b75bedf93717,doc-ff7ecda596d6,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a2a48c72337a,doc-245760a50269,Safari Extensions <-> Apple App Store,apps.apple.com / apps.apple.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-94624c6b44a2,doc-019d0ec23ee0,FRED <-> Federal Reserve Economic Data,fred.stlouisfed.org / fred.stlouisfed.org,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-8990b48bd701,doc-ff914c29bac3,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-ec17c2914324,doc-d4710c307dbe,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-be989754498e,doc-5bdd23d25f7a,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-9f46b484554e,doc-d39a0c35423e,ThemeForest <-> Envato Market,themeforest.net / themeforest.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-091116dfa9fa,doc-2904ec61cc76,Competition and Markets Authority <-> Companies House,gov.uk / gov.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-6b9d4aac6a04,doc-67de9f093dfb,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-62443914df00,doc-2db4b205be03,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-8aa179a68b41,doc-d6ffa9908476,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-b3616f1cc5e0,doc-19338f2a3b87,Zapier <-> Zapier App Directory,zapier.com / zapier.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-18837117fe5f,doc-dc1d4e5011bd,Zapier <-> Zapier App Directory,zapier.com / zapier.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-2d0fd4369365,doc-39af50a4d9a2,Bing Webmaster Tools <-> Bing News,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-f7dafa7ca7f1,doc-9291066bee9f,Competition and Markets Authority <-> Companies House,gov.uk / gov.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-144ee3fbd835,doc-7a7c4ee875bd,ThemeForest <-> Envato Market,themeforest.net / themeforest.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-bd9a6e09bb4e,doc-faeb98f3a400,Etsy Reviews <-> Etsy,etsy.com / etsy.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-f4f82efbd239,doc-a664732ec757,Facebook Marketplace <-> Facebook,facebook.com / facebook.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-7e40151264e4,doc-a664732ec757,Facebook Pages <-> Facebook,facebook.com / facebook.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-556aa2629598,doc-bcff7ad791c6,FRED <-> Federal Reserve Economic Data,fred.stlouisfed.org / fred.stlouisfed.org,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-30ccef1dd4e2,doc-589b9da42cc5,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-1400d65aa7cb,doc-a03395244a9d,G2 Education Software <-> G2,g2.com / g2.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e06a47dee657,doc-a03395244a9d,G2 Track <-> G2,g2.com / g2.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-1af2d9ed044a,doc-7e3df8af4b3c,LinkedIn Jobs <-> LinkedIn Ad Library,linkedin.com / linkedin.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-78c4b499f76f,doc-ae16a060ace2,UsabilityHub <-> Lyssna,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a5b070a37335,doc-4d51f4a2992b,OECD Health Statistics <-> OECD Education,data-explorer.oecd.org / data-explorer.oecd.org,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-dc7fb5fc93d4,doc-d435f4218281,T.C. Sağlık Bakanlığı <-> Sağlık Bakanlığı,saglik.gov.tr / saglik.gov.tr,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-301a1cfc708a,doc-d87b67b63071,U.S. Securities and Exchange Commission <-> SEC EDGAR,sec.gov / sec.gov,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-6f5d3dd56462,doc-e7daaffe189a,Yandex Maps <-> Yandex,yandex.com / yandex.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-b3616f1cc5e0,doc-0c0a507167e1,Zapier <-> Zapier App Directory,zapier.com / zapier.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-7791964a7388,doc-60e80b2ea5c6,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-cf9d6860d1e9,doc-e4e30ede2931,US Census Bureau <-> U.S. Census Building Permits,census.gov / census.gov,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-c459b7cfcae0,doc-9f387d9e7810,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e9ee0d17d4dd,doc-3d8e30f533f9,Slack Marketplace <-> Slack,slack.com / slack.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a1e1d8574ea3,doc-f7002c0870f0,Slack Marketplace <-> Slack,slack.com / slack.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a9dd29a3f551,doc-c72b43594418,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-fdf08c25ee82,doc-1bc87618d0d0,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-e73808d35813,doc-9d9cc76e37d1,Bing News <-> Bing Maps,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-d49bd080f6e0,doc-6831ca955803,Bing News <-> Bing Maps,bing.com / bing.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-42f8c1fd73ce,doc-7d74d5feb40f,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-b75bedf93717,doc-ff7ecda596d6,UK Financial Conduct Authority <-> Financial Conduct Authority,fca.org.uk / fca.org.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-a2a48c72337a,doc-245760a50269,Safari Extensions <-> Apple App Store,apps.apple.com / apps.apple.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-94624c6b44a2,doc-019d0ec23ee0,FRED <-> Federal Reserve Economic Data,fred.stlouisfed.org / fred.stlouisfed.org,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-40b43fe59315,doc-65997616edf3,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-8990b48bd701,doc-ff914c29bac3,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-ec17c2914324,doc-d4710c307dbe,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-be989754498e,doc-5bdd23d25f7a,SourceForge Reviews <-> SourceForge,sourceforge.net / sourceforge.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-9f46b484554e,doc-d39a0c35423e,ThemeForest <-> Envato Market,themeforest.net / themeforest.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-091116dfa9fa,doc-2904ec61cc76,Competition and Markets Authority <-> Companies House,gov.uk / gov.uk,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-6b9d4aac6a04,doc-67de9f093dfb,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-62443914df00,doc-2db4b205be03,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-8aa179a68b41,doc-d6ffa9908476,Lyssna <-> UsabilityHub,lyssna.com / lyssna.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-18837117fe5f,doc-dc1d4e5011bd,Zapier <-> Zapier App Directory,zapier.com / zapier.com,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+dedup-yanlis-birlesme,doc-144ee3fbd835,doc-7a7c4ee875bd,ThemeForest <-> Envato Market,themeforest.net / themeforest.net,"doğru — aynı alan adı, farklı katalog kaydı",iki katalog kaydı tek dosyayı paylaşıyor; birleşme doğru,—
+yanlis-eksik-alan,doc-ecaab644623a,,İşkur,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-844f47fa6780,,Azure Pricing Calculator,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-d4710c307dbe,,SourceForge,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-e50e2861d94f,,Homebrew Formulae,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-d8ac8391adcd,,Ahrefs,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-026c9777dced,,BigSpy,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-033393383aa1,,Dealroom,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-f8494181f70e,,PrivCo,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-4000838f2b95,,Ekonomim,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-cfb5c0ac39fc,,UserTesting,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-c6b39317cae3,,Sprig,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-3bc1dd539e43,,TÜBİTAK,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-77c04b310125,,Armut,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+filtrede-kayip-kanit,doc-331b26cd14d4,,500 Global Companies,$2.3 · al | 500 Global We invest in the world's potential 500 Global is a VC ,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-e42a7d9043d0,,Airbnb,"₺4,733 · r sign up Popular homes in Istanbul 0 of 0 items showing Guesthouse in",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-71ab68710120,,Alibaba,"$1,000,000 · .header_Takepool"":""Pitch your startup to elite judges on a global stag",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-3bf6ee8fa8c1,,Amazon,$50 · l delivery. Click here to go to amazon.com.tr Shop Fashion for less Je,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-28ab68be2d3d,,AngelList,"$500 · , distributions, tax, and reporting run on one platform — the same sys",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-d1ed39bc00b3,,AppSumo,$39 · p Manifest V3 Chrome extensions from a plain-English prompt 3 reviews ,KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-1842436b8403,,AppSumo,"$79 · rs, covers, and KDP-ready exports from one AI workspace 119 reviews 11",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-eca232816ec3,,Ars Technica,$2.1 · opters or bust for NASA’s Mars program NASA’s cost estimate for SR-1 F,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-95e5d4ef57b5,,Axios,$1 · acker TOP STORIES MOST POPULAR Herb Scribner 1 hour ago - Politics & P,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-a67c025e8be1,,Bloomberg HT,"0,08 USD · 41,39 -38,50 -0,97 48,3176 0,09 56,1568 0,31 65,3003 0,24 1,1587 -0,01",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-07c2dee9042b,,BuiltWith,"$60,000 · kla Using BuiltWith's tools we've already won two clients who've spent",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-2682d44f32a5,,CDC,$2.7 · Sovereign CDC Progress Secured as Shareholders Double Down on Growth C,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-4f191d950382,,Censys,$70 · it. About Us Leadership Newsroom Our Customers Partners Careers - Cens,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-9fe44b0bf7a0,,Class Central,$100 · ng Critical Thinking View all Personal Growth & Lifestyle The Report C,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-b0740422a168,,CodeCanyon,$79 · AI-Powered No-Code Website Builder SaaS Platform by TitanSystems in PH,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-d86cbfe3b9fc,,Consumer Financial Protection Bureau,"$237 · conomic Advisers estimates that since 2011, the CFPB has cost consumer",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-836398035d96,,Crunchbase,$113 · e Trial Talk to Sales Explore Our Data Live signals Onyx Security Fund,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-ea64ed1a4f90,,Crunchbase News,"$1 · st half of this year, 58 venture-backed companies joined the public li",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-ffd4c309a4e5,,DefiLlama,$85.066 · i OP Mainnet Cronos Stellar Anubis Provenance Others Total Value Locke,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-6a63f292b8fa,,Emlakjet,"₺ 35.000 · ı’nde Kıralık 2 + 1 Esenyurt, İstanbul 2+1 · 90 m² · 1. Kat · 21.08.20",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-7a7c4ee875bd,,Envato Market,$69 · red themes Trigger – AJAX Portfolio WordPress Theme by ArtemSemkin in ,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-89c49a37b76b,,EU-Startups,€2.6 · akes an exceptional founder.... Finland-Startups Finland’s S-Transisto,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-ee3b29147a5f,,EU-Startups,€2.5 · er – CLUB – Register Now Log In CLUB Benefits Search UK startup Pharos,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-8b26e285e6ae,,European Securities and Markets Authority,€1 · rypto-Assets Regulation (MiCA) on 1 July 2026. More about ESMA identif,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-d399df9a7b5c,,Federal Reserve,$100 · Supervision Community Banks Regional Banks and Foreign Banks with U.S.,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-12c616435f12,,Financial Times,$47 · e pandemic China’s real robot revolution is not about humanoids Tim Co,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-f371497d2180,,Financial Times,$47 · e pandemic China’s real robot revolution is not about humanoids Tim Co,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-00fd12b66f1f,,Firecrawl,"$100 · ] [ . JSON ] 1 { 2 "" success "" : true , 3 "" output "" : "" Keyboard avai",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-e27cc098d7d8,,Gumroad,$1 · Discover Blog Pricing Features About Gumclaw Log in Start selling Go f,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-01be99bc1364,,Hostelworld,€ 93.8 · tories to tell. Read our story Star Hostel Taipei Main Station 2025 KE,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-aa69bacc5aca,,Hotjar,"$20,000 · lipino, Portuguese, Spanish Platforms supported: Drupal, WordPress Bud",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-7dade13ab46a,,Indeed,"$70,000 · te customer experience insight manager remote rn case manager aws lamb",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-8f38b74e4e04,,Infracost,$51 · What is Infracost? github.com/acme/infra Last scanned: 1 hour ago Cost,KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-4d7d45daba61,,Investing.com,500.59 EUR · Short Strategy RT 18 Vontobel 7X Long Fixed Lever on Natural Gas 8.06 ,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-806359170d2b,,itch.io,$5 · Comics Books Randomizer Games by price On Sale Free games With demo To,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-30886aa0574b,,İTÜ Çekirdek,"900.000 TL · noloji odaklı iş fikirlerini hayata geçirme yolculuğunda, %3 hisse kar",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-fb1aaf5d74b9,,Lyft,"$23 · ng on XL, Extra Comfort, Black, and Black SUV rides. Members save an a",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-bda7b114496c,,Meetup,"TRY 300.00 · ntalya Sat, Sep 19 · 4:00 PM UTC by Social Meetup Group by Wildpack 2 ",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-f229d3c727a6,,Microlaunch,"$10,000. · cts on Microlaunch Tiun × Microlaunch Hackathon Live Build, monetize, ",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-fa83038744ad,,n11,100 TL · Ev Gereçleri Yapı Market & Bahçe Magly Ürünlerinde %35 Sepette İndirim,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-4dd13d636800,,Nintendo eShop,$34.99 · leases See all Pokémon™ Pokopia Expansion Pass 6/9/26 DLC bundle Regul,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-c4a0e64218a6,,NYSE,$97 · ties are rather subdued. Oil is slightly lower and well off its overni,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-21c33c0a39a8,,OpenRouter,$99 · team later. 2 Buy credits Credits can be used with any model or provid,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-9816f9fe0c0b,,Our World in Data,"$500 · ween 2018 and 2022, spending on building data centers in the US hovere",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-f278435e9e19,,PrivCo,$14 · o covers. Build a watchlist See a sample company profile Acme Industri,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-d4416978817a,,Remote OK,"$ 0 · lent on demand, pre-screened and thoroughly vetted. Post a remote job ",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-17f874badb4f,,Republic,$ 2 · one of the highest ROI items on our cap table. Gagan Biyani CEO Raised,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-15c35e370b75,,RICS,£39 · ly of social and affordable housing through the first major allocation,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-421a4faf8222,,Slashdot,$60.9 · ept. Dell reported record fiscal Q2 results as AI server demand surged,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-f13d245c8523,,SocialPeta,$738.3 · e trends before they go mainstream Weekly Overview Last 7 days 41.23M ,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-71cc3d88346e,,SourceForge,$300 · websites to complex applications for businesses of all sizes. New cust,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-6e0e658a0d8c,,Steam,$10.49 · ed & Recommended Send a Gift Card Discounts & Events See More MIDWEEK ,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-80dcfbac17a8,,Tavily,"$25 · rch Tavily releases /research endpoint, achieves state-of-the-art Tavi",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-b3db5dcb4319,,TechCrunch,$285 · user accounts after the launch of X Money Sarah Perez GoPro to be acqu,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-0047cf8d7a2f,,Techstars Companies,$220 · thing. We find and fund the world's most ambitious founders. Apply Tod,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-23b80fe18bc0,,The Trademark Search Company,"$69 · accuracy, real-time alerts, and detailed reports. Start Your Trademark",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-144ee3fbd835,,ThemeForest,$69 · red themes Trigger – AJAX Portfolio WordPress Theme by ArtemSemkin in ,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-fc5a2e0460ea,,Toolify,"€ 1.8 · ng layer into one defensible, audit-ready view. Request a demo See how",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-8bc168bdbfee,,Vendr,"$1,446,521,418 · sted by 5,000+ finance and procurement teams for pricing insights, sav",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-52f10f57b1e3,,Walmart,$0.00 · Items Reorder Lists Sign In Account Sign in or create account Purchase,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-d5a57205aefa,,We Work Remotely,$299 · M monthly visitors and the world's largest remote work community Post ,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-b29148d8bdf9,,Wellfound,$180 · ext. Browse jobs → Matched to you · today Senior Backend Engineer Chim,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-92b563e9a5d7,,Wellfound,$180 · ext. Browse jobs → Matched to you · today Senior Backend Engineer Chim,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-85595425b82f,,WooCommerce Marketplace,$79 · and customer satisfaction. Learn more Excellence verified Product Add-,KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-50007bd794de,,Yahoo Finance,"USD 77,009.01 · 948.36 +28.23 +0.97% VIX 15.32 -1.02 -6.24% Gold 4,416.80 +20.40 +0.46",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-499aeaedd1cd,,CDC,$2.7 · Sovereign CDC Progress Secured as Shareholders Double Down on Growth C,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-1f5cf5558ac1,,Censys,$70 · it. About Us Leadership Newsroom Our Customers Partners Careers - Cens,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-9f317b41287b,,Moz,"$16 · O to search-integrated business listings, compare the features below. ",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-c71207285924,,Hacker News,$800 · ember 2026) 374 points by david927 4 days ago | 1189 comments 3. Neovi,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-f4147e193428,,TechCrunch,$300 · over 6 industry stages. 25% off tickets now Back by popular demand: Sa,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-72d46efc6184,,WooCommerce Marketplace,$79 · and customer satisfaction. Learn more Excellence verified Product Add-,KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-83af1a4d5f44,,Bloomberg HT,"0,09 USD · 3.911,87 36,27 0,94 48,7850 0,11 56,0531 0,02 65,2663 0,04 1,1481 0,04",gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-c0b538aa369b,,Emlakjet,₺14.207 · : 85.7% Ticari : 13.0% Yazlık : 1.3% Hane Kişi/Hane 3.22 Haneye Göre K,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-2a3fdeba2391,,Failory,$250 · lists; pre-sales are the key validation indicator. Get Pre-Sell to Val,gürültü,"yalın para ifadesi, bağlamı yok",—
+filtrede-kayip-kanit,doc-3d048c9877e6,,NYSE,"$40 · mmunity is the world’s largest community of public companies, represen",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
+filtrede-kayip-kanit,doc-8a2c1ce90577,,Trulia,"$2,526 · 2 rentals Use arrow keys to navigate NEW - 1 DAY AGO SPECIAL OFFER PET",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+desteksiz-claim,doc-8c65c8605d29,b2b-web-yazilimi/competitor_discovery,Wellfound,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-00f843cfeff2,b2b-web-yazilimi/competitor_discovery,GetApp,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-f05c48810a9e,b2b-web-yazilimi/competitor_discovery,Software Advice,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-34aae470587f,b2b-web-yazilimi/competitor_discovery,Tekpon,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b9ebe6dc1b02,b2b-web-yazilimi/competitor_discovery,Wappalyzer,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c549686c7348,b2b-web-yazilimi/competitor_discovery,Lever Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-aa6ad96f762a,b2b-web-yazilimi/competitor_discovery,Ashby Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-fe031fdf8c95,b2b-web-yazilimi/competitor_discovery,Eleman.net,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-33b46ccafb04,b2b-web-yazilimi/competitor_discovery,Vendr,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3ab9b9e76604,b2b-web-yazilimi/competitor_discovery,Vertice,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-16bbcb333b95,b2b-web-yazilimi/competitor_discovery,Sastrify,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8b86f213a2e7,b2b-web-yazilimi/competitor_discovery,Infracost,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-173755f7ef01,b2b-web-yazilimi/existing_alternatives,Ashby Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ecaab644623a,b2b-web-yazilimi/observed_market_pricing,İşkur,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-844f47fa6780,b2b-web-yazilimi/observed_market_pricing,Azure Pricing Calculator,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-e42189d86fcf,b2b-web-yazilimi/problem_demand,PeerSpot,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-f0f5cd41f7fb,b2b-web-yazilimi/problem_demand,Ashby Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2ac14fb4c50f,b2b-web-yazilimi/use_case,AppSumo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-be989754498e,b2b-web-yazilimi/use_case,SourceForge Reviews,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-229909d2623c,b2b-web-yazilimi/use_case,Lever Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-7d9b6fbff305,b2b-web-yazilimi/use_case,Ashby Jobs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2c109f612eba,egitim/competitor_discovery,edX,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-acacf02f3225,egitim/competitor_discovery,Skillshare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9649ab62be06,egitim/use_case,edX,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a2a48c72337a,eklenti-entegrasyon/competitor_discovery,Safari Extensions,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-592d7f7f54f6,eklenti-entegrasyon/competitor_discovery,Opera Add-ons,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-baf1a3d9b39a,eklenti-entegrasyon/competitor_discovery,WordPress Plugin Directory,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-78fc92ff0de2,eklenti-entegrasyon/competitor_discovery,BigCommerce App Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6c693c9acc58,eklenti-entegrasyon/competitor_discovery,Webflow Apps,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2d2a8ed35d36,eklenti-entegrasyon/competitor_discovery,Atlassian Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6821c98142f8,eklenti-entegrasyon/competitor_discovery,Notion Integrations,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-19338f2a3b87,eklenti-entegrasyon/competitor_discovery,Zapier App Directory,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ebbd5199bc75,eklenti-entegrasyon/existing_alternatives,Slack Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a4664ffbab01,eklenti-entegrasyon/existing_alternatives,Airtable Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-84a096edc2ef,eklenti-entegrasyon/problem_demand,WooCommerce Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-af07ac3150d0,eklenti-entegrasyon/problem_demand,Slack Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2e5a6e24eb55,eklenti-entegrasyon/use_case,Slack Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6e88e65ee036,eklenti-entegrasyon/use_case,monday.com Apps Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ebcc7b883e8d,eklenti-entegrasyon/use_case,Notion Integrations,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c53dcd61a8ed,eklenti-entegrasyon/use_case,Zapier App Directory,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c0e9accef36b,eklenti-entegrasyon/use_case,Airtable Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-16d4dfad8790,fintech/competitor_discovery,SPK,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d7f66c1ccb96,fintech/existing_alternatives,Bank for International Settlements,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ee403382ae98,fintech/use_case,Bank for International Settlements,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ee2a04655e40,fintech/use_case,Open Banking UK,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9db4648c73a0,gayrimenkul/dissatisfaction,Rightmove,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6ee72419332a,gayrimenkul/existing_alternatives,Emlakjet,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c0b538aa369b,gayrimenkul/problem_demand,Emlakjet,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-0f838b39b8cc,gayrimenkul/problem_demand,U.S. Census Building Permits,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-95ca856eaadd,gelistirici-araci/competitor_discovery,Docker Hub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6aa8fb97dccf,gelistirici-araci/dissatisfaction,Hashnode,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2a84db52aee6,gelistirici-araci/existing_alternatives,Hashnode,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d4710c307dbe,gelistirici-araci/observed_market_pricing,SourceForge,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-e50e2861d94f,gelistirici-araci/observed_market_pricing,Homebrew Formulae,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c71207285924,gelistirici-araci/problem_demand,Hacker News,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ef4759814185,gelistirici-araci/problem_demand,Dev.to,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-990370111c45,gelistirici-araci/problem_demand,Hashnode,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-5bdd23d25f7a,gelistirici-araci/use_case,SourceForge,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-245760a50269,mobil-uygulama/competitor_discovery,Apple App Store,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4c2595ad7094,mobil-uygulama/competitor_discovery,Uptodown,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-0f87a627abda,ortak/competitor_discovery,DuckDuckGo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-5e1dd93234e3,ortak/competitor_discovery,Tavily,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d16a42cac5c7,ortak/competitor_discovery,BetaList,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-1ccde984d18d,ortak/competitor_discovery,Startup Stash,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-44c2be0cd888,ortak/competitor_discovery,SaaSHub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-dfb2e1cbe9be,ortak/competitor_discovery,Y Combinator Companies,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8c65c8605d29,ortak/competitor_discovery,Wellfound,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-dc9c5e189a3f,ortak/competitor_discovery,Mastodon,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c78919253fbd,ortak/competitor_discovery,Slack,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6a9fb7599514,ortak/competitor_discovery,Discourse,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b2377b297487,ortak/competitor_discovery,Lemmy,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d4c2b288486a,ortak/competitor_discovery,DomainTools,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b9ebe6dc1b02,ortak/competitor_discovery,Wappalyzer,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-45e8695d8ec4,ortak/competitor_discovery,Cloudflare Radar,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6f143febacb3,ortak/competitor_discovery,Ahrefs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-bf701e940737,ortak/competitor_discovery,Semrush,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ad70dceef43f,ortak/competitor_discovery,Ubersuggest,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-50c245622230,ortak/competitor_discovery,Sistrix,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3c0252a8c3ad,ortak/competitor_discovery,Exploding Topics,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9cbd318adc32,ortak/competitor_discovery,Sensor Tower,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b40e19236dfd,ortak/competitor_discovery,SocialPeta,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9cdf76c05767,ortak/competitor_discovery,PitchBook,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-5023dd7dd905,ortak/competitor_discovery,Dealroom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2c3e3ff04776,ortak/competitor_discovery,ZoomInfo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ff6ddbbe7f02,ortak/competitor_discovery,500 Global Companies,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b322dc710a0d,ortak/competitor_discovery,Seedrs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-768881c7a992,ortak/competitor_discovery,BASE,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-343511c515b5,ortak/competitor_discovery,Dimensions,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-f837fe21f12e,ortak/competitor_discovery,Sifted,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-0bb338e9207d,ortak/competitor_discovery,EU-Startups,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8f27ee3e7dff,ortak/competitor_discovery,Ekonomim,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a6ec7d128993,ortak/competitor_discovery,Typeform,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c26627224acf,ortak/competitor_discovery,UserTesting,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d189a29fab0d,ortak/competitor_discovery,dscout,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-7cfea6038c91,ortak/competitor_discovery,Wynter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8505a557d5bd,ortak/competitor_discovery,Sprig,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-67de9f093dfb,ortak/competitor_discovery,UsabilityHub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6b9d4aac6a04,ortak/competitor_discovery,Lyssna,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c88679fe1f9b,ortak/dissatisfaction,Cloudflare Radar,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a3d49374ce17,ortak/dissatisfaction,Ahrefs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2552ff3b807b,ortak/dissatisfaction,BASE,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4fe5ef46abc5,ortak/dissatisfaction,Our World in Data,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-49143575f541,ortak/dissatisfaction,Typeform,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-bd835b9e962a,ortak/dissatisfaction,Wynter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-64fcff03d639,ortak/existing_alternatives,Startup Stash,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-45c742270cce,ortak/existing_alternatives,SaaSHub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2b030445bd4c,ortak/existing_alternatives,Slack,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4f2739640166,ortak/existing_alternatives,Semrush,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-5e1f390257a1,ortak/existing_alternatives,Mangools,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9aad62ba2c3f,ortak/existing_alternatives,Majestic,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-355d67a9b80a,ortak/existing_alternatives,Sistrix,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8f66449e6d38,ortak/existing_alternatives,Dealroom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ab4416b465ce,ortak/existing_alternatives,Clearbit,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-aa5f43d3d7cc,ortak/existing_alternatives,Bloomberg HT,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-00322532292c,ortak/existing_alternatives,Wynter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-89a9c86aefd0,ortak/existing_alternatives,Sprig,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d8ac8391adcd,ortak/observed_market_pricing,Ahrefs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-026c9777dced,ortak/observed_market_pricing,BigSpy,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-033393383aa1,ortak/observed_market_pricing,Dealroom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-f8494181f70e,ortak/observed_market_pricing,PrivCo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4000838f2b95,ortak/observed_market_pricing,Ekonomim,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-cfb5c0ac39fc,ortak/observed_market_pricing,UserTesting,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c6b39317cae3,ortak/observed_market_pricing,Sprig,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-681cf0026990,ortak/problem_demand,Tavily,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-c71207285924,ortak/problem_demand,Hacker News,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-eb01ba0cf590,ortak/problem_demand,SaaSHub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a7c59aefdfca,ortak/problem_demand,Slack,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8c7aa3286a40,ortak/problem_demand,Ahrefs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-0051ec7d8551,ortak/problem_demand,Majestic,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-53b1cc11d620,ortak/problem_demand,Exploding Topics,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-af279bc3dff1,ortak/problem_demand,US Census Bureau,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-83af1a4d5f44,ortak/problem_demand,Bloomberg HT,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-272e8dd4a5b2,ortak/problem_demand,Ekonomim,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-f9b3ff60d6d2,ortak/problem_demand,dscout,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9d315fdf2c2f,ortak/use_case,Tavily,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2ac14fb4c50f,ortak/use_case,AppSumo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b8576f8976d2,ortak/use_case,Slack,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-bc4168960ad1,ortak/use_case,Censys,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d180ba1ec957,ortak/use_case,DomainTools,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-7db1f61f7355,ortak/use_case,Ahrefs,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a30ffa70f0a3,ortak/use_case,Semrush,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d4dc0f5c4177,ortak/use_case,Exploding Topics,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-eb52d26d4948,ortak/use_case,SparkToro,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ff16cd331ef3,ortak/use_case,BuzzSumo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-5731c3efd00f,ortak/use_case,Pathmatics,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-0b5c00523ea1,ortak/use_case,Sensor Tower,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4f3e04ef0bf7,ortak/use_case,SocialPeta,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-ac9f71a40b1e,ortak/use_case,Dealroom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-fb7d66892f26,ortak/use_case,PrivCo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a479e4c25d0d,ortak/use_case,ZoomInfo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b9d67333cf58,ortak/use_case,Dimensions,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b5568e28cbce,ortak/use_case,Typeform,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-7421dd5c9d6e,ortak/use_case,Qualtrics,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-6b63569439cc,ortak/use_case,UserTesting,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-fbdbbe6a8c49,ortak/use_case,dscout,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3a41b53b18e9,ortak/use_case,Wynter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2965c0c7aeb3,ortak/use_case,Pollfish,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3ebcd6e55bfa,ortak/use_case,Sprig,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-9724d596eacb,ortak/use_case,Microsoft Clarity,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d6ffa9908476,ortak/use_case,UsabilityHub,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8aa179a68b41,ortak/use_case,Lyssna,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-fa25496adfe5,oyun/competitor_discovery,PlayStation Store,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-fcdf2d494d90,oyun/competitor_discovery,Nintendo eShop,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-431153172854,oyun/competitor_discovery,Metacritic,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-7186d067415e,oyun/competitor_discovery,OpenCritic,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-1175b63f885c,oyun/existing_alternatives,Nintendo eShop,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-efeb6675d1c8,oyun/problem_demand,itch.io,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-16d4dfad8790,regule-sektor/competitor_discovery,SPK,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-8836753c311f,regule-sektor/dissatisfaction,Consumer Financial Protection Bureau,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-804f0c206f80,regule-sektor/existing_alternatives,Consumer Financial Protection Bureau,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-05ed7463055e,regule-sektor/use_case,UK Information Commissioner's Office,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b238b0fd74cc,saglik/competitor_discovery,NICE,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-499aeaedd1cd,saglik/problem_demand,CDC,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-859bfdbac6d6,saglik/use_case,NICE,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-d0db387b4828,seyahat/competitor_discovery,FlightAware,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-429b476ff3da,seyahat/problem_demand,Skyscanner,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-be524d25bf94,seyahat/use_case,Moovit,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-820ae4db92b3,turkiye-pazari/competitor_discovery,Galata Business Angels,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-828598886724,turkiye-pazari/competitor_discovery,Arya Women Investment Platform,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-77c33d27c5d5,turkiye-pazari/competitor_discovery,Meetup,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-63d6231e2d16,turkiye-pazari/existing_alternatives,Bilişim Vadisi,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3bc1dd539e43,turkiye-pazari/observed_market_pricing,TÜBİTAK,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a84eb63de883,turkiye-pazari/problem_demand,Meetup,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-1736c864f8c5,yapay-zeka-urunu/competitor_discovery,OpenRouter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-a7a46f5c0ae2,yapay-zeka-urunu/competitor_discovery,Glama,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-b3616f1cc5e0,yapay-zeka-urunu/competitor_discovery,Zapier,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-540bfe93f0a8,yapay-zeka-urunu/competitor_discovery,Make,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-2addc7553fc4,yapay-zeka-urunu/dissatisfaction,OpenRouter,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-10756e1210fc,yapay-zeka-urunu/existing_alternatives,AWS Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-14aef5905af1,yapay-zeka-urunu/problem_demand,AWS Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-3c0b295044bc,yapay-zeka-urunu/use_case,Together AI,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4ade5dc6348a,yapay-zeka-urunu/use_case,AWS Marketplace,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-239a208466c6,yeme-icme/competitor_discovery,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-86b5783e2ae5,yeme-icme/problem_demand,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-239a208466c6,yerel-hizmet/competitor_discovery,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-4d72c50d4a64,yerel-hizmet/competitor_discovery,TomTom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-77c04b310125,yerel-hizmet/observed_market_pricing,Armut,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-86b5783e2ae5,yerel-hizmet/problem_demand,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-953d74bd5e3c,yerel-hizmet/problem_demand,Houzz,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-36e66a60a31e,yerel-hizmet/use_case,TomTom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—

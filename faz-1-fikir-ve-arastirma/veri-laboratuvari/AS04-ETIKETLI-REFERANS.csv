@@ -1,0 +1,16 @@
+etiket_id,ornek,etiket,sebep,dogrudan_karsit_bulgu,etiketleyen,etiketleme_tarihi,batuhan_yeniden_kontrolu
+ET-01,500 Global ana sayfası · fiyat=$2.3,irrelevant,"bağlam 'VC firm with $2.3 billion in AUM' — fon büyüklüğü, ürün fiyatı değil",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-02,"Alibaba ana sayfası · fiyat=$1,000,000",irrelevant,"'total prize pool' — yarışma ödülü, üstelik JSON bloğu içinde",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-03,Ars Technica ana sayfası · fiyat=$2.1,irrelevant,'NASA's cost estimate ... $2.1 billion' — haber başlığı,hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-04,Axios ana sayfası · fiyat=$1,irrelevant,'$1 Trump coins' — haber başlığı,hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-05,"Airbnb ana sayfası · fiyat=₺4,733",relevant,"'₺4,733 for 2 nights · 4.78 out of 5' — gerçek ilan fiyatı, puanıyla birlikte, TR pazarı",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-06,AppSumo ana sayfası · fiyat=$39,relevant,'3 reviews $39 / lifetime $129' — gerçek ürün listesi,hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-07,SourceForge · 'salon scheduling software' araması,irrelevant,HTTP 200 ve 19 bin karakter geldi ama içerik Kubernetes orkestrasyon ve kripto fiyatlama; 'salon' yalnız sitenin sorguyu geri yazdığı yerde geçiyor,hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-08,Kagi /pricing · $5 $10 $25,relevant,"plan fiyatları; çıkarıcı kaçırıyordu, sayfa doğru",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-09,Google Play · Sleep Cycle uygulama sayfası,uncertain,"HTTP 200 geldi ama gövde boş; sayfa doğru olabilir, biz göremiyoruz — ilgililik ölçülemiyor",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-10,G2 arşiv kopyası (2025-02-12),uncertain,"G2'nin ana sayfası, yorum sayfası değil; 596 gün eski. İçerik gerçek ama sorulan soruya cevap vermiyor",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-11,Booksy Biz App Store yorumu · 'charged for a no show',relevant,"F09'un tam konusu: işletmenin no-show sorunu, gerçek kullanıcı ifadesiyle",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-12,Fresha /pricing · TRY 240.95 per month,relevant,"satıcının ilan ettiği plan fiyatı, TR pazarına yerelleşmiş",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-13,Filestage 'alternatives' sayfası,uncertain,"rakip listesi var ama satıcının kendi pazarlama sayfası; bağımsız kanıt sayılmaz, kanıt politikası 'aynı kurumun pazarlama kopyaları bir köken' diyor",hayir,Ayselin (elle),2026-09-25,bekliyor
+ET-14,"Booksy Biz · 4.5 puan, 14.888 yorum",relevant,"yüksek puan, F09'un 'bu alanda çözüm yok' varsayımına KARŞIT sinyal — mevcut çözüm var ve memnuniyet yüksek",EVET,Ayselin (elle),2026-09-25,bekliyor
+ET-15,Fresha · ücretsiz katman + düşük abonelik,relevant,F09'un 'ödeme isteği var' varsayımına KARŞIT: pazarda ücretsiz alternatif mevcut,EVET,Ayselin (elle),2026-09-25,bekliyor

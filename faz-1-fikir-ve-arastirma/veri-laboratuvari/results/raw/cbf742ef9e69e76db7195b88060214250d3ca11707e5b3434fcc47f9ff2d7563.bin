@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pricing - urlscan.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="urlscan.io - Website scanner for suspicious and malicious URLs" />
+    <meta name="keywords" content="url,website,web,scanner,analyze,analyzer" />
+    <meta name="author" content="urlscan.io">
+
+    <meta name="theme-color" content="#2c3e50">
+
+    <link rel="alternate" type="application/rss+xml" title="Blog - urlscan.io" href="https://urlscan.io/blog/feed.xml">
+
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//www.google.com">
+    <link rel="preconnect" href="//www.gstatic.com">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic&display=swap" rel="stylesheet">
+    <link rel="preload" href="/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" as="font" crossorigin>
+
+    <link rel="icon" type="image/png" href="/img/urlscan_256.png" />
+    <link id="bootstrap-theme" href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/vendor/bootstrap/css/glyphicons.css?version=0bcace068a2ddcfbea51bcc61d40524587ec9e9137394197d709f7ab2bd62a32" rel="stylesheet" type="text/css" media="screen">
+    <link href="/vendor/social-buttons/sc-btn.css?version=cdaa043da36b05e233c207b1665a195ea1e7838dbd6c49b70e6db45c567a5b21" rel="stylesheet" type="text/css" media="screen">
+    <link href="/urlscan.css?version=bc6d19916d2af71ee18b0181b3d00025b21da0179ef47dec4c622468ac717bce" rel="stylesheet" type="text/css" media="screen">
+    <link href="/vendor/flag-icon-css/css/flag-icon.min.css?version=1108d9c16e258ebb7d76ca276f25feb22ea46f182455d7b8ed3cbd1507a19d48" rel="stylesheet" type="text/css" media="screen">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+      <div class="container">
+        
+          <a class="navbar-brand navbar-brand-img d-none d-md-inline-block paddingleft5pxpaddingright5px" href="/"><img src="/img/urlscan_256.png" class="height50pxmargintop15pxpadding0px0px0px0px" alt="urlscan.io logo"></a>
+          <a class="navbar-brand navbar-brand-img d-inline-block d-md-none" href="/"><img src="/img/urlscan_256.png" class="height50pxmargintop15px" alt="urlscan.io logo"></a>
+        
+
+        <a class="navbar-brand" href="/">
+          <span class="header">urlscan.<span class="text-success">io</span></span>
+        </a>
+
+        <div class="sectr-mobile d-lg-none ms-auto">
+          
+          <a href="/securitytrails/" target="_blank" rel="noopener">
+            <img src="/img/securitytrails-rf.png" alt="SecurityTrails logo">
+          </a>
+          
+        </div>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link " href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="/search/"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+            <li class="nav-item"><a class="nav-link " href="/live/"><span class="glyphicon glyphicon-fire"></span> Live</a></li>
+            <li class="nav-item"><a class="nav-link " href="https://docs.urlscan.io/pages/api-intro" target="_blank"><span class="glyphicon glyphicon-qrcode"></span> API</a></li>
+            <li class="nav-item"><a class="nav-link " href="/blog/"><span class="glyphicon glyphicon-flash"></span> Blog</a></li>
+            <li class="nav-item"><a class="nav-link " href="/docs/"><span class="glyphicon glyphicon-bookmark"></span> Docs</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/pricing/"><span class="glyphicon glyphicon-new-window"></span> Pricing</a></li>
+
+            <li class="nav-item">
+              <a class="nav-link loggedout " href="/user/login/"><span class="glyphicon glyphicon-user"></span> Login</a>
+              <a class="nav-link loggedin d-none " href="/user/"><span class="glyphicon glyphicon-user green"></span> <i><span id="username"></span></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="theme-toggle" title="Toggle dark mode">
+                <span class="glyphicon glyphicon-adjust"></span>
+              </a>
+            </li>
+          </ul>
+          
+          <div class="sectr ms-auto d-none d-lg-block">
+            
+            <a href="/securitytrails/" target="_blank" rel="noopener">
+              <img src="/img/securitytrails-rf.png" alt="SecurityTrails logo">
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="main">
+
+      
+
+      <div class="main content">
+        
+
+<div class="row">
+  <div class="col col-xl-12">
+    <h1 class="text-center">Commercial Plans</h1>
+
+    <p class="text-center">All
+    plans integrate with dozens of <a href="/docs/integrations/">commercial
+      SOAR and Threat Intelligence platforms</a>.
+    <br/>Subscriptions can be used as
+    part of a <b>Team</b>.</p>
+
+
+    <table class="table table-sm table-striped pricing-table">
+      <thead>
+        <tr>
+          <th class="col-12 col-lg-2 text-center text-muted"><h3>Plan<small><br/>Modules</small></h3></th>
+          <th class="col-12 col-lg-2">
+            <h3 class="top text-center">Free
+              <small>
+                <br/>
+                <span class="badge text-bg-info">API Only</span>
+              </small>
+
+            </h3>
+          </th>
+          <th class="col-12 col-lg-2">
+            <h3 class="top text-center">Automate
+              <small>
+                <br/>
+                <span class="badge text-bg-info">API Only</span>
+              </small>
+
+            </h3>
+          </th>
+          <th class="col-12 col-lg-2">
+            <h3 class="top text-center">Professional
+              <small>
+                <br/>
+                <span class="badge text-bg-info">API</span>
+                <span class="badge text-bg-warning">Threat Hunting</span>
+              </small>
+
+            </h3>
+          </th>
+          <th class="col-12 col-lg-2">
+            <h3 class="top text-center"><small class="text-warning">Popular!</small><br/>Enterprise
+              <small>
+                <br/>
+                <span class="badge text-bg-info">API</span>
+                <span class="badge text-bg-warning">Threat Hunting</span>
+              </small>
+            </h3>
+          </th>
+          <th class="col-12 col-lg-2">
+            <h3 class="top text-center text-nowrap">Ultimate
+              <small>
+                <br/>
+                <span class="badge text-bg-info">API</span>
+                <span class="badge text-bg-warning">Threat Hunting</span>
+              </small>
+            </h3>
+          </th>
+        </tr>
+      </thead>
+      <thead class="text-center">
+        <tr class="small">
+          <td class=""><h4 class="top">Monthly Price</h4></td>
+          <td><h4 class="top text-muted">$0</h4></td>
+          <td><h4 class="top text-muted">N/A</h4></td>
+          <td><h4 class="top">$1,250</h4></td>
+          <td><h4 class="top">$2,500</h4></td>
+          <td><h4 class="top">$5,000</h4></td>
+        </tr>
+        <tr>
+          <td class=""><h4 class="top">Annual Price
+            </h4></td>
+            <td><h4 class="top text-muted">$0</h4></td>
+            <td><h4 class="top">$5,000<small class="text-primary"><br/>$416 / mo</small></h4></td>
+            <td><h4 class="top">$12,500<small class="text-primary"><br/>$1,042 / mo</small></h4></td>
+            <td><h4 class="top">$25,000<small class="text-primary"><br/>$2,084 / mo</small></h4></td>
+            <td><h4 class="top">$50,000<small class="text-primary"><br/>$4,167 / mo</small></h4></td>
+        </tr>
+      </thead>
+      <thead><tr><th colspan="6">Daily API &amp; Platform Quotas <small class="text-muted left5">Quotas applied per day, use via UI or API<span class="float-end">(Hover for more info)</span></small></th></tr></thead>
+      <tbody class="text-center">
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <span class="badge badge-warning">Private</span> Scans
+              <span class="tooltiptext">
+                Private Scans are only visible to yourself, they are not visible to
+                other users through our search API or the urlscan Pro product.
+                Private Scans are perfect for URLs you don't want to share with
+                anyone. If set, we delete your Private Scans after the Scan Retention
+                period.
+              </span>
+            </span>
+          </td>
+          <td>50</td>
+          <td>2,500</td>
+          <td>20,000</td>
+          <td>100,000</td>
+          <td>200,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <span class="badge badge-info">Unlisted</span> Scans
+              <span class="tooltiptext">
+                Unlisted Scans are only visible to yourself and users of urlscan Pro. They are not visible to the general public.
+                Unlisted Scans should be used when you want to scan and report malicious websites but are concerned about potentially leaking sensitive information.
+              </span>
+            </span>
+          </td>
+          <td>1,000</td>
+          <td>5,000</td>
+          <td>40,000</td>
+          <td>100,000</td>
+          <td>200,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <span class="badge badge-success">Public</span> Scans
+              <span class="tooltiptext">
+                Public Scans are visible to anyone using urlscan.io. Public Scans
+                should be used when you want to publicly document the state of a
+                website and do not care about who is able to see the scan.
+              </span>
+            </span>
+          </td>
+          <td>5,000</td>
+          <td>10,000</td>
+          <td>50,000</td>
+          <td>150,000</td>
+          <td>300,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Search Requests
+              <span class="tooltiptext">
+                You can perform this many Search Requests against our Search API
+                or UI. Each Search Request can contain a complex query term which
+                queries for multiple terms simultaneously. Only syntactically
+                correct searches count against your quota.
+              </span>
+            </span>
+          </td>
+          <td>1,000</td>
+          <td>12,500</td>
+          <td>150,000</td>
+          <td>500,000</td>
+          <td>500,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Result Requests
+              <span class="tooltiptext">
+                You can retrieve this many API results for individual scans from our Results API.
+              </span>
+            </span>
+          </td>
+          <td>10,000</td>
+          <td>25,000</td>
+          <td>150,000</td>
+          <td>500,000</td>
+          <td>1,000,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Residential / Tor
+              <span class="tooltiptext">
+                Quickly scan websites from different geographical locations,
+                residential IP addresses and the Tor network. Choose different
+                device settings.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">None</td>
+          <td class="text-muted">None</td>
+          <td>10,000</td>
+          <td>50,000</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Country Selection
+              <span class="tooltiptext">
+                You will be able to select which country your scan should
+                performed from from a list of common choices. This allows you to
+                more closely control the scan to potentially bypass
+                geo-restrictions.
+              </span>
+            </span>
+          </td>
+          <td><span class="glyphicon glyphicon-adjust text-warning"></span> Public Scans</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> All Scans</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> All Scans</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> All Scans</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> All Scans</td>
+        </tr>
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Private Locations
+              <span class="tooltiptext">
+                Private scanning locations which can be customised to your
+                requirements, e.g., residential IPs. These are not shared with
+                other customers.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 1 Location</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 2 Locations</td>
+        </tr>
+      </tbody>
+      <thead>
+        <tr>
+          <th colspan="6">Threat Hunting &amp; Intelligence
+            <small>
+              <span class="float-end text-muted">
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span> - Click for more information
+              </span>
+            </small>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr>
+          <td class="text-start">
+            <a href="/pricing/urlscanpro/" title="urlscan Pro - More Information">
+              <span class="ctooltip">
+                <b>
+                  <span class="text-primary">urlscan</span> <span class="procolor">Pro</span>
+                </b> 
+                <span class="tooltiptext">
+                  Access to the urlscan Pro - Threat Hunting platform.
+                </span>
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+            </a>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 10 Seats
+            <a href="/pricing/urlscanpro/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 30 Seats
+            <a href="/pricing/urlscanpro/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 100 Seats
+            <a href="/pricing/urlscanpro/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <a href="/pricing/phishingfeed/" class="text-primary" title="More Information">
+              <span class="ctooltip">
+                Phishing Feed
+                <span class="tooltiptext">
+                  Access the list of scans detected as malicious, brand impersonation or phishing from our database of 1500+ brands.
+                </span>
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+            </a>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes
+            <a href="/pricing/phishingfeed/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes
+            <a href="/pricing/phishingfeed/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes
+            <a href="/pricing/phishingfeed/" class="left5 text-muted" title="More Information"><span class="glyphicon glyphicon-new-window"></span></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <a href="/pricing/newly-observed-domains/" class="text-primary" title="More Information">
+              <span class="ctooltip">
+                Domain Feed
+                <span class="tooltiptext">
+                  Real-time search and alerting for newly observed hostnames and
+                  domains. Can be used to hunt for domain impersonation and to set
+                  up automatic monitoring rules. 
+                  Contains 6 billion historical domains and hostnames with 250k new
+                  domains being added every day.
+                </span>
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+            </a>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://docs.urlscan.io/pages/visibility" target="_blank" class="text-primary">
+                Search Visibility
+                <span class="tooltiptext">
+                  Which scans performed by other users you will be able to see via the Search API.
+                </span>
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted"><span class="badge badge-success">Public</span></td>
+          <td class="text-muted"><span class="badge badge-success">Public</span></td>
+          <td><span class="badge badge-success">Public</span> <span class="badge badge-info">Unlisted</span> </td>
+          <td><span class="badge badge-success">Public</span> <span class="badge badge-info">Unlisted</span> </td>
+          <td><span class="badge badge-success">Public</span> <span class="badge badge-info">Unlisted</span> </td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://docs.urlscan.io/pages/saved-searches" target="_blank" class="text-primary">
+                Search Alerts
+              </a>
+              <span class="tooltiptext">
+                Setup saved searches in urlscan Pro and get notified when there
+                are new scans or domains that match your search. You can choose
+                to automatically monitor changes to hostnames, domains,
+                and URLs discovered by one of your saved searches.
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Saved Searches
+              <span class="tooltiptext">
+                Maximum number of Saved Searches you can create in urlscan Pro.
+                Saved Searches let you store and reuse complex search queries and match on incoming new scans, domains, and hostnames.
+                Saved Searches can be used as the basis for alert subscriptions.
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 100</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 300</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 1000</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Subscriptions
+              <span class="tooltiptext">
+                Subscriptions are used to send out notifications for one or
+                multiple Saved Searches. Each subscription can notify multiple
+                recipients and track hits from multiple Saved Searches.
+              </span>
+              <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 30</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 100</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 300</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://docs.urlscan.io/pages/visual-search" target="_blank" class="text-primary">
+                Similarity Search
+                <span class="tooltiptext">
+                  Find similar pages based on page structure or visual appearance of a page. Available in the UI and via the API.
+                </span>
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://docs.urlscan.io/pages/search-api-reference#urlscan-professional-enterprise-ultimate" target="_blank" class="text-primary">
+                Advanced Search
+                <span class="tooltiptext">
+                  Search for historical scans using additional fields, including text on the page and the page title.
+                </span>
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://docs.urlscan.io/pages/urlscan-observe" target="_blank" class="text-primary">
+                Domain Monitoring
+                <span class="tooltiptext">
+                  Automatically monitor domains, hostnames and URLs for activity
+                  and changes using the urlscan Observe module.
+                </span>
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 100 Domains
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 300 Domains
+          </td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 1000 Domains
+          </td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              <a href="https://urlscan.io/blog/2025/08/26/urlscan-intel-reports/" target="_blank" class="text-primary">
+                Intel Reports
+                <span class="tooltiptext">
+                  Frequent threat reports produced by the urlscan Threat Research
+                  team. The reports cover interesting clusters of activity, provide
+                  background, and show you how to use the urlscan platform to
+                  discover and continuously track these threats.
+                </span>
+                <span class="glyphicon glyphicon-certificate halfgray text-warning"></span>
+              </a>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="badge text-bg-success halfgray">Free Reports</span></td>
+          <td><span class="badge text-bg-warning halfgray">Premium Reports</span></td>
+          <td><span class="badge text-bg-warning halfgray">Premium Reports</span></td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Data Dumps
+              <span class="tooltiptext">
+                Hourly and daily single-file compressed data dumps of newly
+                scanned websites and newly observed hostnames and
+                domains. This will make it easy to consume our data feed without
+                complex and resource-intensive API calls.
+              </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Managed Rules &amp; Brands
+              <span class="tooltiptext">
+                Quarterly review and setup of watch rules with our team on behalf
+                of the customer.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+      </tbody>
+
+      <thead><tr><th colspan="6">Enterprise Features</th></tr></thead>
+      <tbody class="text-center">
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Support
+              <span class="tooltiptext">
+                Available channels for customer support. Customer support via phone and Zoom is generally available during CET business hours.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-adjust text-warning"></span> Email</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Email, Zoom</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Email, Phone, Zoom</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Email, Phone, Zoom</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Single Sign-On (SSO)
+              <span class="tooltiptext">
+                Support for Single Sign-On based on SAML 2.0 and integrating with
+                the majority of modern identity providers such as Okta and
+                Onelogin. SSO can be set to optional or mandatory.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> SAML 2.0</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> SAML 2.0</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> SAML 2.0</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Custom Retention 
+              <span class="tooltiptext">
+                Custom retention time for your Private Scans.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Onboarding Call
+              <span class="tooltiptext">
+                One Hour onboarding call with our team. 
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 1 Hour</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 1 Hour</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> 2 Hours</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Enterprise Security
+              <span class="tooltiptext text-start">
+                <ul class="text-start">
+                  <li>Access restrictions based on IP and IP subnets.</li>
+                  <li>Custom idle session timeout.</li>
+                  <li>Custom max session duration.</li>
+                  <li>Exclusive session enforcement per user.</li>
+                </ul>
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Frequent Trainings
+              <span class="tooltiptext">
+                One Hour training calls with your team.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Semiannually</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Quarterly</td>
+        </tr>
+
+        <tr>
+          <td class="text-start">
+            <span class="ctooltip">
+              Custom T&amp;Cs
+              <span class="tooltiptext">
+                We will work with you to get set up on your vendor management
+                system and allow you to request custom terms &amp; conditions.
+              </span>
+            </span>
+          </td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td class="text-muted">No</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+          <td><span class="glyphicon glyphicon-ok dark-green"></span> Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="text-center top20">
+      <h3 class="text-center">Interested?</h3>
+      <h4>Get in touch with our <a href="mailto:sales@urlscan.io">sales team</a> to find out more or to set up a trial!</h4>
+    </div>
+
+    <hr class="top20"/>
+
+    <div class="text-center top20">
+      <h3 class="text-muted"><i>Additional Information</i></h3>
+    </div>
+    <div class="row top20">
+      <div class="col-12 col-lg-3">
+
+        <h3 class="text-center">urlscan <span class="procolor">Pro</span></h3>
+        <hr/>
+        <p>
+        The <b>urlscan <span class="procolor">Pro</span> - Threat
+          Hunting</b> platform is our complete solution that allows
+        your team to harness our API, get access to our Phishing URL Feed,
+        and use our powerful <b>urlscan <span class="procolor">Pro</span></b>
+        portal to hunt for related websites and infrastructure.
+        <br/>
+        <h4 class="text-center">
+          <a href="/pricing/urlscanpro/">Learn More</a>
+        </h4>
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">Phishing URL Feed</h3>
+        <hr/>
+        <p>Our phishing detection flags thousands of malicious and phishing URLs every day, many of them targeting one of the
+        900+ popular brands we track. You can retrieve the feed of
+        detected URLs via our API.
+        </p>
+        <h4 class="text-center">
+          <a href="/pricing/phishingfeed/">Learn More</a>
+        </h4>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">API &amp; UI</h3>
+        <hr/>
+        <p>You can use the features of products via the UI or the API, it does
+        not make a difference. All of our products are API-first, meaning you
+        never have to use our UI unless you want to.</p>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">SOAR</h3>
+        <hr/>
+        <p>All of our plans work with the <a href="/docs/integrations/">majority of popular SOAR platforms</a>. Just plug your API key into your SOAR platform and you are ready to go!</p>
+      </div>
+
+
+    </div>
+    <div class="row top20">
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">Proof of Value</h3>
+        <hr/>
+        <p>If you are unsure if our product meet your needs we would be happy to set you up for a 30-day free trial of any plan, no strings attached.</p>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">Custom Pricing</h3>
+        <hr/>
+        <p>Do you require a plan that goes beyond our available commercial plans? Do you need a custom payment schedule? <a href="mailto:sales@urlscan.io">Contact us</a> and we will figure something out!</p>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">Resellers</h3>
+        <hr/>
+        <p>We work with <a href="/partners/">various trusted global partners</a> who distribute our products.</p>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <h3 class="text-center">OEM</h3>
+        <hr/>
+        <p>Do you want to use our data or APIs in your own product? <a href="mailto:sales@urlscan.io">Talk to us</a> about the available options!</p>
+      </div>
+
+    </div>
+
+    <hr/>
+
+
+    <h2 class="text-center top10">Third-party API Integrations</h2>
+    <p class="text-center">Some of the existing API integrations. See the <a href="/docs/integrations/">full list here</a>.</p>
+    <div class="text-center">	
+  <img class="vendorlogo" src="/img/logos/paloalto.png"/>
+  <img class="vendorlogo" src="/img/logos/phantom.png"/>
+  <img class="vendorlogo" src="/img/logos/demisto.png"/>
+  <img class="vendorlogo" src="/img/logos/securex.png"/>
+  <img class="vendorlogo" src="/img/logos/threatconnect.png"/>
+  <img class="vendorlogo" src="/img/logos/anomali.png"/>
+  <img class="vendorlogo" src="/img/logos/exabeam.png"/>
+  <img class="vendorlogo" src="/img/logos/swimlane.png"/>
+  <img class="vendorlogo" src="/img/logos/insightconnect.png"/>
+  <img class="vendorlogo" src="/img/logos/fireeye.png"/>
+  <img class="vendorlogo" src="/img/logos/netwitness.png"/>
+  <img class="vendorlogo" src="/img/logos/resilient.png"/>
+  <img class="vendorlogo" src="/img/logos/siemplify.png"/>
+  <img class="vendorlogo" src="/img/logos/tines.png"/>
+  <img class="vendorlogo" src="/img/logos/fortinet.png"/>
+  <img class="vendorlogo" src="/img/logos/logichub.png"/>
+  <img class="vendorlogo" src="/img/logos/polarity.png"/>
+  <img class="vendorlogo" src="/img/logos/thehive.png"/>
+  <img class="vendorlogo" src="/img/logos/intelowl.png"/>
+  <img class="vendorlogo" src="/img/logos/n8n.png"/>
+  <p class="text-muted"><b>Disclaimer</b>: All trademarks belong to their respective owners.</p>
+</div>
+
+
+
+
+    <hr/>
+
+    <div class="text-center">
+      <h3 class="text-center">Our Trusted Partners</h3>
+      <div class="text-center">	
+        <a href="https://optiv.com"><img class="vendorlogo" src="/img/logos/optiv.png" title="Optiv"/></a>
+        <a href="https://shi.com"><img class="vendorlogo" src="/img/logos/shi.png" title="SHI International"/></a>
+        <a href="https://guidepointsecurity.com"><img class="vendorlogo" src="/img/logos/guidepoint.png" title="Guidepoint Security"/></a>
+        <a href="https://insight.com"><img class="vendorlogo" src="/img/logos/insight.png" title="Insight"/></a>
+        <br/>
+        <a href="https://softwareone.com"><img class="vendorlogo" src="/img/logos/softwareone.png" title="SoftwareOne AG (CH)"/></a>
+        <a href="https://asmtech.com/"><img class="vendorlogo" src="/img/logos/asmtech.svg" title="ASM Technologies" /></a>
+        <a href="https://qbssoftware.com/"><img class="vendorlogo" src="/img/logos/qbssoftware.png" title="QBS Software" /></a>
+        <a href="https://tegara.com"><img class="vendorlogo" src="/img/logos/tegara.png" title="Tegara (JP)" /></a>
+      </div>
+      <p class="text-muted">See the full list of our resellers and technology partners <a href="/partners/">here</a>.</p>
+    </div>
+
+    <hr/>
+
+    <div class="text-center">
+      <p class="text-muted"><b>Disclaimer</b><br/>This site is for informational
+      purposes only, it does not constitute a formal quote or offer.<br/>All prices
+      shown are in USD and are quoted without any applicable taxes. 
+      <br/>
+      All product and company names are trademarks or registered trademarks of their respective holders.
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<footer class="footer bg-navbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <div class="text-start">
+          <div><span class="d-none d-sm-inline">Copyright</span> &copy; 2026, urlscan GmbH</div>
+          <div>Version: <span id="version" class="text-muted"></span></div>
+          <div class="d-none d-sm-block top5">
+          <a href="https://twitter.com/urlscanio" class="sc-btn sc--twitter sc--tiny sc--flat">
+            <span class="sc-icon">
+              <svg viewBox="0 0 33 33" width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M 32,6.076c-1.177,0.522-2.443,0.875-3.771,1.034c 1.355-0.813, 2.396-2.099, 2.887-3.632 c-1.269,0.752-2.674,1.299-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.565,2.939-6.565,6.565 c0,0.515, 0.058,1.016, 0.17,1.496c-5.456-0.274-10.294-2.888-13.532-6.86c-0.565,0.97-0.889,2.097-0.889,3.301 c0,2.278, 1.159,4.287, 2.921,5.465c-1.076-0.034-2.088-0.329-2.974-0.821c-0.001,0.027-0.001,0.055-0.001,0.083 c0,3.181, 2.263,5.834, 5.266,6.438c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118 c 0.836,2.608, 3.26,4.506, 6.133,4.559c-2.247,1.761-5.078,2.81-8.154,2.81c-0.53,0-1.052-0.031-1.566-0.092 c 2.905,1.863, 6.356,2.95, 10.064,2.95c 12.076,0, 18.679-10.004, 18.679-18.68c0-0.285-0.006-0.568-0.019-0.849 C 30.007,8.548, 31.12,7.392, 32,6.076z"></path></g></svg>
+            </span>
+            <span class="sc-text">
+              Follow @urlscanio
+            </span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 text-center d-none d-sm-block">
+        <h4 class="bottom5 none">
+          <span class="badge text-bg-success halfgray" id="stats-running" title="Scans running">0</span> 
+          <span class="badge text-bg-warning halfgray" id="stats-queued" title="Scans queued">0</span>
+        </h4>
+        <h4>
+          <span class="badge text-bg-success" id="stats-public" title="Public scans over the past 24h">0</span> 
+          <span class="badge text-bg-info" id="stats-unlisted" title="Unlisted scans over the past 24h">0</span>
+          <span class="badge text-bg-warning" id="stats-private" title="Private scans over the past 24h">0</span>
+        </h4>
+        <div class="text-muted text-center d-none d-sm-block">Page generated on 2026-09-18 09:17:00</div>
+      </div>
+      <div class="col-md-3 col-6">
+        <ul class="float-end left10 d-none d-sm-block d-md-block">
+          <li><a href="/about/" class="fw-bold">About Us</a></li>
+          <li><a href="/security/" class="">Security</a></li>
+          <li><a href="/sitemap/">Sitemap</a></li>
+        </ul>
+        <ul class="float-end">
+          <li><a href="https://status.urlscan.io" class="fw-bold" target="_blank" rel="noopener">Status Page</a></li>
+          <li><a href="/terms/">Terms of Service</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/impressum/">Impressum / Legal</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="/js/338.9bcfb20afab8738fde39.js"></script><script defer src="/js/496.27fe123ce3321e06f9bf.js"></script><script defer src="/js/app.5e6c73cf5ba304ce8878.js"></script></body>
+</html>
+

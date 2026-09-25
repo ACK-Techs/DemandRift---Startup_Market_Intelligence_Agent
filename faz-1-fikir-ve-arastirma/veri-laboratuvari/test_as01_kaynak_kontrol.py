@@ -122,6 +122,22 @@ class CikarilanSayininKaynagiDepodaTests(unittest.TestCase):
                 eksik.append(f'{r["source_adi"]}/{r["alan"]}')
         self.assertEqual([], eksik[:10], f"{len(eksik)} alan doğrulanamıyor")
 
+    @staticmethod
+    def _paylasilan_ozetler() -> dict[str, str]:
+        """Temizlenmis kopyalarin kendi sha256'si.
+
+        Kaynak sitelerin yayimladigi API anahtari benzeri dizeler paylasilan
+        kopyadan cikarilir (takimin `shared-redactions.json` sozlesmesi);
+        dosya adi ORIJINAL kimligi korur ama baytlarin ozeti degisir.
+        Dogrulama o durumda `shared_sha256` ile yapilir.
+        """
+        import json
+        yol = HERE / "results" / "shared-redactions.json"
+        if not yol.exists():
+            return {}
+        veri = json.loads(yol.read_text(encoding="utf-8"))
+        return {k["original_sha256"]: k["shared_sha256"] for k in veri["files"]}
+
     def test_ornek_alanlarin_hashi_tutuyor(self):
         kontrol = 0
         for r in oku("KATEGORI-ALANLARI.csv"):
@@ -129,7 +145,9 @@ class CikarilanSayininKaynagiDepodaTests(unittest.TestCase):
             yol = HERE / belge["body_original_ref"] if belge else None
             if not yol or not yol.exists():
                 continue
-            self.assertEqual(belge["artifact_hash"],
+            temizlenmis = self._paylasilan_ozetler()
+            beklenen = temizlenmis.get(belge["artifact_hash"], belge["artifact_hash"])
+            self.assertEqual(beklenen,
                              hashlib.sha256(yol.read_bytes()).hexdigest(),
                              r["source_adi"])
             kontrol += 1

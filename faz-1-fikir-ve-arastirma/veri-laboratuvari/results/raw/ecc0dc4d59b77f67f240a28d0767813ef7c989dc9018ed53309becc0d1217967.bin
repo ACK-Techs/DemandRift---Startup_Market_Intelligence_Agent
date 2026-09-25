@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            
+        <title>
+            Pricing - Base.com        </title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Base.com">
+        <meta name="title" content="Pricing - Base.com">
+        <meta name="description"
+            content="Check the Base.com pricing. Subscription always paid in arrears based on the number of active offers and completed orders. Test for 14 days for free!">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+
+        <meta http-equiv="content-language" content="en-US">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+        <meta name="theme-color" content="#2F7DFF">
+
+        <meta name="facebook-domain-verification" content="4qn7z2pqhpjwxk9mld0abuchfoq2kn" />
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pricing - Base.com">
+        <meta name="twitter:description" content="Check the Base.com pricing. Subscription always paid in arrears based on the number of active offers and completed orders. Test for 14 days for free!">
+        <meta name="twitter:image" content="https://base.com/assets/images/favicons/base.com/og_r.png">
+        <meta name="twitter:image:alt" content="Base.com">
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Base.com">
+        <meta property="og:locale" content="en_US">
+                <meta property="og:title" content="Pricing - Base.com">
+        <meta property="og:description" content="Check the Base.com pricing. Subscription always paid in arrears based on the number of active offers and completed orders. Test for 14 days for free!">
+        <meta property="og:image" content="https://base.com/assets/images/favicons/base.com/og_r.png">
+        <meta property="og:url" content="https://base.com/en-US/pricing/">
+
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+            {
+      "@type": "SoftwareApplication",
+      "@id": "https://base.com/en-US/pricing/#software",
+      "name": "Base.com",
+      "inLanguage": "en-US",
+      "description": "Base.com is a sales management and automation system for e-commerce. It integrates marketplaces, online stores, courier companies, wholesalers, and accounting systems in one place.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web-based",
+      "url": "https://base.com/en-US/pricing/",
+      "provider": {
+        "@id": "https://base.com/en-US/home/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://base.com/en-US/pricing/",
+        "description": "Pricing depends on the subscription plan. Check our pricing."
+      },
+            "softwareHelp": {
+        "@type": "CreativeWork",
+        "url": "https://base.com/en-EN/help/"
+      }
+    }    
+      ]
+}
+</script>
+
+        <link rel="canonical" href="https://base.com/en-US/pricing/">
+
+        <link rel="alternate" hreflang="en-US" href="https://base.com/en-US/pricing/"><link rel="alternate" hreflang="en-GB" href="https://base.com/en-GB/pricing/"><link rel="alternate" hreflang="en-IN" href="https://base.com/en-IN/pricing/"><link rel="alternate" hreflang="cs-CZ" href="https://base.com/cs-CZ/cenik/"><link rel="alternate" hreflang="de-DE" href="https://base.com/de-DE/preise/"><link rel="alternate" hreflang="el-GR" href="https://base.com/el-GR/pricing/"><link rel="alternate" hreflang="es-AR" href="https://base.com/es-AR/planes/"><link rel="alternate" hreflang="es-MX" href="https://base.com/es-MX/planes/"><link rel="alternate" hreflang="fr-FR" href="https://base.com/fr-FR/tarifs/"><link rel="alternate" hreflang="it-IT" href="https://base.com/it-IT/prezzi/"><link rel="alternate" hreflang="pl-PL" href="https://base.com/pl-PL/cennik/"><link rel="alternate" hreflang="pt-BR" href="https://base.com/pt-BR/planos/"><link rel="alternate" hreflang="ro-RO" href="https://base.com/ro-RO/preturi/"><link rel="alternate" hreflang="zh-CN" href="https://base.com/zh-CN/pricing/"><link rel="alternate" hreflang="x-default" href="https://base.com/en-US/pricing/">            <link rel="preload" href="/assets/fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin />
+            <link rel="preload" href="/assets/fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+            <link rel="preload" href="/assets/fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+            <link rel="preload" href="/assets/fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
+            <link rel="preload" href="/assets/fonts/OpenSans-Italic.woff2" as="font" type="font/woff2" crossorigin />
+                    <link rel="apple-touch-icon" sizes="57x57" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://base.com/assets/images/favicons/base.com/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://base.com/assets/images/favicons/base.com/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="https://base.com/assets/images/favicons/base.com/android-icon-512x512.png">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="https://base.com/assets/images/favicons/base.com/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://base.com/assets/images/favicons/base.com/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://base.com/assets/images/favicons/base.com/favicon-16x16.png">
+
+        <meta name="msapplication-TileImage" content="https://base.com/assets/images/favicons/base.com/ms-icon-144x144.png">
+
+        <link rel="manifest" href="https://base.com/assets/manifest-en-US.json">
+        <link rel="stylesheet" href="https://base.com/assets/dist/critical-pricing-ek180926.css" /><link rel="stylesheet" href="https://base.com/assets/dist/bundle-pricing-ek180926.css" />
+            <script data-cookieconsent="ignore">
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("consent", "default", {
+				ad_personalization: "denied",
+				ad_user_data: "denied",
+				ad_storage: "denied",
+				analytics_storage: "denied",
+				functionality_storage: "denied",
+				personalization_storage: "denied",
+				security_storage: "granted",
+				wait_for_update: 500,
+			});
+			gtag("set", "ads_data_redaction", true);
+			gtag("set", "url_passthrough", false);
+		</script>
+<!-- End Google Tag Manager (Consent mode) -->            
+            <script type="text/javascript">
+
+var domain = "https://base.com/";
+var lang = "en";
+var country = "US";
+var locale = "en-US";
+var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+var packages = {"currency":"USD","currencySymbol":"","currencyPrefixSymbol":"$","packages":{"freemium":0,"business":99},"packagesPriceUnder1000":{"business":0.49},"packagesPriceOver1000":{"business":0.49},"packagesOrdersFrom":{"freemium":0,"business":101},"packagesOrdersTo":{"freemium":100,"business":5000},"services":{"stockSynchronization":{"1hour":5,"5minutes":100},"priceChecking":{"1day":5}},"baseForShopify":{"packages":{"freemium":0,"business":20},"packagesPriceUnder1000":{"business":0.49},"packagesPriceOver1000":{"business":0.49},"packagesOrdersFrom":{"freemium":0,"business":101},"packagesOrdersTo":{"freemium":100,"business":5000}}};
+
+var startPackage = "b";
+
+
+var uploadAddress = "https://static.cdn.baselinker.com/integrations/";
+var integrationsAddress = "https://base.com/en-US/integrations/";
+
+    var countriesNipPrefix = {"AT":"AT","BE":"BE","BG":"BG","CY":"CY","CZ":"CZ","DE":"DE","DK":"DK","EE":"EE","GR":"EL","ES":"ES","FI":"FI","FR":"FR","HR":"HR","HU":"HU","IE":"IE","IT":"IT","LT":"LT","LU":"LU","LV":"LV","MT":"MT","NL":"NL","PL":"PL","PT":"PT","RO":"RO","SE":"SE","SI":"SI","SK":"SK","NB":"XI"};
+    window.dataLayer.push({
+        'user_client': 'F'
+    });
+</script>
+            <script> 
+window.addEventListener('CookiebotOnDialogDisplay', function () { 
+document.body.removeAttribute('style'); 
+}); 
+window.addEventListener('CookiebotOnDecline', function () { 
+document.body.removeAttribute('style'); 
+}); 
+document.addEventListener('click', function (e) {
+    if (e.target && e.target.id === 'CybotCookiebotDialogBodyLevelButtonCustomize') {
+        document.body.removeAttribute('style');
+    }
+});
+
+
+</script>
+<script id="Cookiebot" data-culture="en" src="https://consent.cookiebot.com/uc.js" data-cbid="b4e70ca0-eaf1-42b2-ab0e-e9ebaa3dace5" data-blockingmode="auto" type="text/javascript"></script>
+<!-- Google Tag Manager -->
+<script type="text/javascript" data-cookieconsent="ignore">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window, document, 'script', 'dataLayer', 'GTM-W7C2NLL');</script>
+<!-- End Google Tag Manager -->
+
+        <!-- Hotjar Tracking Code for base.com -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+                h._hjSettings = { hjid: 965411, hjsv: 6 };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script'); r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+        <!-- Leadinfo tracking code -->
+        <script
+    src="https://www.datadoghq-browser-agent.com/us1/v6/datadog-rum.js"
+    type="text/javascript"
+    crossorigin>
+</script>
+<script>
+    window.DD_RUM && window.DD_RUM.init({
+      clientToken: 'pube3f35b57456a7cf6b0b45e7c5e2b811d',
+      applicationId: 'dfd25884-8c02-4f06-85b3-6fc666238da5',
+      site: 'datadoghq.com',
+      service: 'base.com-website',
+      env: 'prod',
+      // Specify a version number to identify the deployed version of your application in Datadog
+      // version: '1.0.0',
+      sessionSampleRate: 100,
+      sessionReplaySampleRate: 20,
+      trackBfcacheViews: true,
+      defaultPrivacyLevel: 'mask-user-input',
+    });
+</script>
+        </head>
+
+        <body class="body-padding no-padding">
+
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7C2NLL" height="0"
+                    width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+                        <header class="sticky-header">
+                                <div class="overflow-scroll">
+                                        <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light row">
+                            <a href="https://base.com/en-US/home/" class="navbar-brand en-US">
+                                <strong>Base.com</strong>
+                            </a>
+                            <div class="collapse navbar-collapse align-items-start" id="navbarSupportedContent">
+                                <div class="collapse-overflow">
+                                            <ul class="navbar-nav">
+            <li class="nav-item dropdown white"><a class="nav-link dropdown-toggle white preventme" href="https://base.com/en-US/functions/" id="navbarDropdownFunctions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Functions<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55078 5.19922L0.800781 1.44922C0.546875 1.21484 0.546875 0.804688 0.800781 0.570312C1.03516 0.316406 1.44531 0.316406 1.67969 0.570312L5 3.87109L8.30078 0.570312C8.53516 0.316406 8.94531 0.316406 9.17969 0.570312C9.43359 0.804688 9.43359 1.21484 9.17969 1.44922L5.42969 5.19922C5.19531 5.45312 4.78516 5.45312 4.55078 5.19922Z" fill="#FFFFFF"/></svg></a><div class="dropdown-menu type-functions" aria-labelledby="navbarDropdownFunctions"><div class="dropdown-menu-columns"><div class="dropdown-menu-column column-1"><a class="dropdown-item col-padding-reset-sm mobile-only"  href="https://base.com/en-US/functions/"><strong>Functions overview</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/orders-manager/"><strong>Order Manager</strong>Sales from all channels</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/marketplace-manager/"><strong>Marketplace Manager</strong>Listing and synchronizing offers</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/product-manager/"><strong>Product Manager</strong>Warehouses, suppliers and documents</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/price-automation/"><strong>Price automation</strong>Repricing for marketplaces</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/wms/"><strong>WMS</strong>Warehouse Management System</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/erp/"><strong>ERP</strong>Sync orders, stock and invoices</a></div><div class="dropdown-menu-column column-2"><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/shipping-management/"><strong>Shipping management</strong>Sending, printing, tracking</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/workflow-automation/"><strong>Workflow automation</strong>Automatic actions</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/base-connect/"><strong>Base Connect</strong>Easy B2B collaboration</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/ai/"><strong>AI for e-commerce</strong>Artificial Intelligence for stores</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/functions/base-analytics/"><strong>Base Analytics</strong>Automated analytics & reporting</a></div></div></div></li><li class="nav-item dropdown white"><a class="nav-link dropdown-toggle white preventme" href="#" id="navbarDropdownSolutions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55078 5.19922L0.800781 1.44922C0.546875 1.21484 0.546875 0.804688 0.800781 0.570312C1.03516 0.316406 1.44531 0.316406 1.67969 0.570312L5 3.87109L8.30078 0.570312C8.53516 0.316406 8.94531 0.316406 9.17969 0.570312C9.43359 0.804688 9.43359 1.21484 9.17969 1.44922L5.42969 5.19922C5.19531 5.45312 4.78516 5.45312 4.55078 5.19922Z" fill="#FFFFFF"/></svg></a><div class="dropdown-menu type-solutions" aria-labelledby="navbarDropdownSolutions"><div class="dropdown-menu-columns"><div class="dropdown-menu-column column-1"><div class="dropdown-menu-title">Company size</div><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/freemium/"><strong>For e-commerce startups</strong>Plan Freemium</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/business/"><strong>For growing businesses</strong>Plan Business</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/enterprise/"><strong>For large e-commerce</strong>Plan Enterprise</a></div><div class="dropdown-menu-column column-2 fdci"><div class="dropdown-menu-title">Industry</div><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/home-and-garden/"><strong>Home & Garden</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/childrens-products/"><strong>Children’s Products</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/electronics/"><strong>Electronics</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/automotive-parts/"><strong>Automotive Parts</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/supermarket/"><strong>Supermarket</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/health-and-beauty/"><strong>Health & Beauty</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/industry/fashion/"><strong>Fashion</strong></a></div></div></div></li><li class="nav-item"><a class="nav-link" href="https://base.com/en-US/integrations/">Integrations</a></li><li class="nav-item"><a class="nav-link" href="https://base.com/en-US/pricing/">Pricing</a></li><li class="nav-item dropdown white"><a class="nav-link dropdown-toggle white preventme" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55078 5.19922L0.800781 1.44922C0.546875 1.21484 0.546875 0.804688 0.800781 0.570312C1.03516 0.316406 1.44531 0.316406 1.67969 0.570312L5 3.87109L8.30078 0.570312C8.53516 0.316406 8.94531 0.316406 9.17969 0.570312C9.43359 0.804688 9.43359 1.21484 9.17969 1.44922L5.42969 5.19922C5.19531 5.45312 4.78516 5.45312 4.55078 5.19922Z" fill="#FFFFFF"/></svg></a><div class="dropdown-menu type-more" aria-labelledby="navbarDropdownMore"><div class="dropdown-menu-columns"><div class="dropdown-menu-column column-1"><div class="dropdown-menu-title">Education</div><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-EN/help/"><strong>Help</strong>Base.com step by step</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-EN/academy/"><strong>Academy</strong>Authorized courses</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-EN/blog/?mo=US"><strong>Blog</strong>more articles</a></div><div class="dropdown-menu-column column-2 fdci"><div class="dropdown-menu-title">Services</div><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/base-for-shopify-pricing/"><strong>Base for Shopify pricing</strong></a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/implementation/"><strong>System implementations</strong>Optimize e&#8209;commerce processes for your business</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/audit/"><strong>Account audit</strong>Optimize your Base account</a></div><div class="dropdown-menu-column column-3 fdci"><div class="dropdown-menu-title">Other</div><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/calculator/"><strong>Benefits calculator</strong>Project sales growth and costs savings</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/partners/partner-with-base/"><strong>Partner Program</strong>Grow Your Ecosystem with Base.com</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/partners/"><strong>Base Partner Directory</strong>Find an e-commerce expert</a><a class="dropdown-item col-padding-reset-sm"  href="https://base.com/en-US/contact/"><strong>Contact</strong></a></div></div></div></li>        </ul>
+        <script>
+            var navbarDropdownFunctionsUrl = document.getElementById('navbarDropdownFunctions').getAttribute('href');
+            var navbarDropdownFunctionsResize = function() {
+                if (window.innerWidth < 992) {
+                    document.getElementById('navbarDropdownFunctions').setAttribute('href', '#');
+                } else {
+                    document.getElementById('navbarDropdownFunctions').setAttribute('href', navbarDropdownFunctionsUrl);
+                }
+            };
+            window.addEventListener('DOMContentLoaded', function(event) {
+                navbarDropdownFunctionsResize();
+            });
+            window.addEventListener('resize', function(event) {
+                navbarDropdownFunctionsResize();
+            });
+            var navbarPrevent = function(event) {
+                event.preventDefault();
+                var menuHref = this.getAttribute('href');
+                if(menuHref.length && menuHref != "#") window.location.href = menuHref;
+            };
+            document.addEventListener('click', (event) => {
+                if (event.target.closest('#navbarSupportedContent .preventme')) {
+                    navbarPrevent.call(event.target, event);
+                }
+            });
+        </script>
+                                            <div class="dropdown white ml-md-auto">
+                                        <a class="nav-link dropdown-toggle white preventme" href="#" id="btnGroupDropLanguage" role="button" aria-label="language choice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0"><svg width="35" height="28" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="langs-icon"><path d="M11.812 18.3577L11.1995 16.3452H8.11953L7.50703 18.3577H5.58203L8.55703 9.8877H10.7445L13.737 18.3577H11.812ZM10.7795 14.8577L10.167 12.8977C10.132 12.7752 10.0795 12.6002 10.0095 12.3902C9.93953 12.1802 9.88703 11.9702 9.81703 11.7602C9.74703 11.5502 9.69453 11.3577 9.65953 11.2002C9.62453 11.3577 9.57203 11.5502 9.50203 11.7777C9.43203 12.0052 9.36203 12.2327 9.30953 12.4427C9.25703 12.6527 9.20453 12.7927 9.16953 12.8802L8.55703 14.8402H10.7445L10.7795 14.8577Z" fill="#FFFFFF"/><path d="M28.6133 16.9751C27.6683 16.6776 26.8808 16.2926 26.2158 15.8376C27.0733 14.7526 27.3708 13.6676 27.4408 12.8976H28.4033V11.1126H25.7783V9.64258H23.9933V11.1126H21.3683V12.8976H25.6558C25.5858 13.3526 25.3933 13.9826 24.9033 14.6301C24.7458 14.4376 24.5883 14.2451 24.4833 14.0351L22.8908 14.8576C23.0658 15.2076 23.3108 15.5401 23.5733 15.8551C22.9608 16.2576 22.1733 16.6601 21.1758 16.9751L21.7183 18.6726C23.0658 18.2351 24.0808 17.6926 24.8683 17.1151C25.7258 17.7451 26.7933 18.2701 28.0533 18.6726L28.5958 16.9751H28.6133Z" fill="#FFFFFF"/><path d="M31.5177 3.46484H3.50016C1.59266 3.46484 0.0351562 5.02234 0.0351562 6.92984V21.0873C0.0351562 22.9948 1.59266 24.5523 3.50016 24.5523H31.5177C33.4252 24.5523 34.9827 22.9948 34.9827 21.0873V6.92984C34.9827 5.02234 33.4252 3.46484 31.5177 3.46484ZM2.34516 21.0873V6.92984C2.34516 6.29984 2.87016 5.77484 3.50016 5.77484H17.3952L15.6802 22.1023C15.6802 22.1023 15.6802 22.1898 15.6802 22.2423H3.50016C2.87016 22.2423 2.34516 21.7173 2.34516 21.0873ZM32.6727 21.0873C32.6727 21.7173 32.1477 22.2423 31.5177 22.2423H17.4652L19.1977 5.77484H31.5177C32.1477 5.77484 32.6727 6.29984 32.6727 6.92984V21.0873Z" fill="#FFFFFF"/></svg><strong>english (US)</strong><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55078 5.19922L0.800781 1.44922C0.546875 1.21484 0.546875 0.804688 0.800781 0.570312C1.03516 0.316406 1.44531 0.316406 1.67969 0.570312L5 3.87109L8.30078 0.570312C8.53516 0.316406 8.94531 0.316406 9.17969 0.570312C9.43359 0.804688 9.43359 1.21484 9.17969 1.44922L5.42969 5.19922C5.19531 5.45312 4.78516 5.45312 4.55078 5.19922Z" fill="#FFFFFF"/></svg></a>
+                                        <div class="dropdown-menu type-lang" aria-labelledby="btnGroupDropLanguage">
+                                            <div class="dropdown-menu-columns">
+                                                <div class="dropdown-menu-column column-1">
+                                                    <a class="dropdown-item" href="https://base.com/en-US/pricing/" data-name="english (US)"><span class="lang-item lang-item-en-US"></span><strong>english (US)</strong></a><a class="dropdown-item" href="https://base.com/en-GB/pricing/" data-name="english (GB)"><span class="lang-item lang-item-en-GB"></span><strong>english (GB)</strong></a><a class="dropdown-item" href="https://base.com/en-IN/pricing/" data-name="english (IN)"><span class="lang-item lang-item-en-IN"></span><strong>english (IN)</strong></a><a class="dropdown-item" href="https://base.com/cs-CZ/cenik/" data-name="čeština"><span class="lang-item lang-item-cs-CZ"></span><strong>čeština</strong></a><a class="dropdown-item" href="https://base.com/de-DE/preise/" data-name="deutsch"><span class="lang-item lang-item-de-DE"></span><strong>deutsch</strong></a><a class="dropdown-item" href="https://base.com/el-GR/pricing/" data-name="Ελληνικά"><span class="lang-item lang-item-el-GR"></span><strong>Ελληνικά</strong></a><a class="dropdown-item" href="https://base.com/es-AR/planes/" data-name="español (AR)"><span class="lang-item lang-item-es-AR"></span><strong>español (AR)</strong></a><a class="dropdown-item" href="https://base.com/es-MX/planes/" data-name="español (MX)"><span class="lang-item lang-item-es-MX"></span><strong>español (MX)</strong></a><a class="dropdown-item" href="https://base.com/fr-FR/tarifs/" data-name="Français"><span class="lang-item lang-item-fr-FR"></span><strong>Français</strong></a><a class="dropdown-item" href="https://base.com/it-IT/prezzi/" data-name="Italiano"><span class="lang-item lang-item-it-IT"></span><strong>Italiano</strong></a><a class="dropdown-item" href="https://base.com/pl-PL/cennik/" data-name="polski"><span class="lang-item lang-item-pl-PL"></span><strong>polski</strong></a><a class="dropdown-item" href="https://base.com/pt-BR/planos/" data-name="português (BR)"><span class="lang-item lang-item-pt-BR"></span><strong>português (BR)</strong></a><a class="dropdown-item" href="https://base.com/ro-RO/preturi/" data-name="română"><span class="lang-item lang-item-ro-RO"></span><strong>română</strong></a><a class="dropdown-item" href="https://base.com/zh-CN/pricing/" data-name="中文"><span class="lang-item lang-item-zh-CN"></span><strong>中文</strong></a>                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex d-sm-none d-xl-flex flex-row-reverse flex-sm-row align-items-center justify-between-sm for-user">
+                                        <a href="https://login.baselinker.com/?lang=en-US" class="btn btn-outline-light btn-short login-button">
+                                            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.62647 9.34551C9.9897 9.34551 11.9055 7.42973 11.9055 5.06651C11.9055 2.70328 9.9897 0.787506 7.62647 0.787506C5.26325 0.787506 3.34747 2.70328 3.34747 5.06651C3.34747 7.42973 5.26325 9.34551 7.62647 9.34551Z" fill="white"/>
+                                                <path d="M10.7175 9.46149C9.86746 10.1875 8.79446 10.6215 7.62746 10.6215C6.43146 10.6215 5.33346 10.1655 4.47346 9.40549C4.46246 9.39549 4.41146 9.38549 4.39746 9.39049C2.42346 10.0275 0.907459 11.2275 0.282459 12.6905C0.268459 12.7235 0.276459 12.8525 0.294459 12.8825C1.91846 15.5005 4.60346 17.2125 7.64246 17.2125C10.6635 17.2125 13.3335 15.5235 14.9615 12.9295C14.9895 12.8845 15.0115 12.7105 14.9935 12.6685C14.3745 11.2385 12.9025 10.0635 10.9865 9.42149C10.9305 9.40449 10.7535 9.43149 10.7175 9.46149Z" fill="white"/>
+                                            </svg>Sign in                                        </a>
+                                                                                    <a href="https://base.com/en-US/register/"
+                                                class="btn btn-light btn-short sign-up btn-arrow-right register-button">Try it for free</a>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-sm-flex d-xl-none align-items-center justify-between-sm for-user-tablet">
+                                <a href="https://login.baselinker.com/?lang=en-US" class="btn btn-outline-light btn-short login-button">
+                                    <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.62647 9.34551C9.9897 9.34551 11.9055 7.42973 11.9055 5.06651C11.9055 2.70328 9.9897 0.787506 7.62647 0.787506C5.26325 0.787506 3.34747 2.70328 3.34747 5.06651C3.34747 7.42973 5.26325 9.34551 7.62647 9.34551Z" fill="white"/>
+                                        <path d="M10.7175 9.46149C9.86746 10.1875 8.79446 10.6215 7.62746 10.6215C6.43146 10.6215 5.33346 10.1655 4.47346 9.40549C4.46246 9.39549 4.41146 9.38549 4.39746 9.39049C2.42346 10.0275 0.907459 11.2275 0.282459 12.6905C0.268459 12.7235 0.276459 12.8525 0.294459 12.8825C1.91846 15.5005 4.60346 17.2125 7.64246 17.2125C10.6635 17.2125 13.3335 15.5235 14.9615 12.9295C14.9895 12.8845 15.0115 12.7105 14.9935 12.6685C14.3745 11.2385 12.9025 10.0635 10.9865 9.42149C10.9305 9.40449 10.7535 9.43149 10.7175 9.46149Z" fill="white"/>
+                                    </svg>Sign in                                </a>
+                                                                    <a href="https://base.com/en-US/register/"
+                                        class="btn btn-light btn-short sign-up btn-arrow-right register-button">Try it for free</a>
+                                                            </div>
+                            <button id="nav-icon2" class="navbar-toggler" type="button"
+                                data-toggle="display" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="animation-span"></span>
+                                <span class="animation-span"></span>
+                                <span class="animation-span"></span>
+                                <span class="animation-span"></span>
+                                <span class="animation-span"></span>
+                                <span class="animation-span"></span>
+                                <span class="click-target"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="grad-anim-bg">
+    <div class="container">
+        <div class="primitives-bg-relative">
+            <span class="circle- circle-1"></span>
+            <span class="circle- circle-2"></span>
+            <span class="circle- circle-5"></span>
+            <span class="circle- circle-6"></span>
+            <span class="square- square-1"></span>
+            <span class="square- square-2"></span>
+            <section class="abonament padding-x-60">
+                <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Homepage",
+            "item": "https://base.com/en-US/home/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pricing"
+        }
+    ]
+}</script><ul class="breadcrumb-custom d-flex mb-0 centered"><li class="breadcrumb-custom-item h-custom-12-11-reg"><a href="https://base.com/en-US/home/">Homepage</a></li><li class="breadcrumb-custom-item h-custom-12-11-reg">Pricing</li></ul>                <h1 class="h-custom h-custom-24--36 text-center h-main">
+                    Welcome to the Base.com ecosystem                </h1>
+                <p class="text-center p-main main-subheader">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="bottom" title="No credit card required">
+                        <path d="M2.91033 2.31037C4.47542 0.745282 6.33863 0 8.49995 0C10.7358 0 12.599 0.745282 14.0896 2.31037C15.6547 3.87547 16.4 5.73867 16.4 7.89999C16.4 10.1358 15.6547 11.999 14.0896 13.4896C12.5245 15.0547 10.6613 15.8 8.49995 15.8C6.2641 15.8 4.4009 15.0547 2.91033 13.4896C1.34524 11.9245 0.599976 10.0613 0.599976 7.89999C0.599976 5.73867 1.34524 3.87547 2.91033 2.31037Z" fill="#677386"/>
+                        <path d="M8.49966 1.04346C6.56192 1.04346 4.92232 1.71421 3.58081 3.05572C2.23931 4.39723 1.56854 6.03685 1.56854 7.97458C1.56854 9.91231 2.23931 11.5519 3.58081 12.8934C4.92232 14.235 6.56192 14.9057 8.49966 14.9057C10.4374 14.9057 12.077 14.235 13.4185 12.8934C14.7601 11.5519 15.4308 9.91231 15.4308 7.97458C15.4308 6.03685 14.7601 4.39723 13.4185 3.05572C12.077 1.71421 10.4374 1.04346 8.49966 1.04346Z" fill="white"/>
+                        <path d="M7.38192 11.0304H7.75456V7.1549H7.38192C7.15833 7.1549 7.00928 7.00584 7.00928 6.78226V6.55868C7.00928 6.33509 7.15833 6.18604 7.38192 6.18604H8.94704C9.17062 6.18604 9.31968 6.33509 9.31968 6.55868V11.0304H9.69232C9.9159 11.0304 10.065 11.1794 10.065 11.403V11.6266C10.065 11.8502 9.9159 11.9992 9.69232 11.9992H7.38192C7.15833 11.9992 7.00928 11.8502 7.00928 11.6266V11.403C7.00928 11.1049 7.08381 11.0304 7.38192 11.0304Z" fill="#677386"/>
+                        <path d="M7.82889 3.65212C8.05248 3.42853 8.27606 3.354 8.57417 3.354C8.87229 3.354 9.09587 3.42853 9.31946 3.65212C9.54304 3.8757 9.61754 4.09929 9.61754 4.3974C9.61754 4.69551 9.54304 4.9191 9.31946 5.14268C9.09587 5.36627 8.87229 5.44079 8.57417 5.44079C8.27606 5.44079 8.05248 5.36627 7.82889 5.14268C7.60531 4.9191 7.53076 4.69551 7.53076 4.3974C7.53076 4.09929 7.60531 3.80117 7.82889 3.65212Z" fill="#677386"/>
+                    </svg>Free 14-day full access trial                                    </p>
+                                <div class="row justify-content-center" id="priceSliderComponent">
+                    <div class="col-md-12 slider-custom range-slider-col">
+                        <h3 class="h-custom h-custom-16--16-b text-center mb-3" id="rangeLabel">
+                            <span>Set the slider to your estimated monthly orders to estimate your pricing</span>
+                        </h3>
+                        <div class="range-slider range-1000">
+                            <div class="d-flex flex-row flex-wrap justify-content-between align-items-center item-spaces">
+                                <div class="input-wrapper d-none">
+                                    <input id="minOrders" class="form-control hidden-input" type="text" name="pf" value="0" placeholder="od" />
+                                    <input id="maxOrders" class="form-control" type="text" name="pt" value="1500" placeholder="do" />
+                                </div>
+                            </div>
+                            <div id="orders-slider"></div>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-12 col-padding-reset">
+                    <div class="row owl-responsive-padding range-showed">
+                        <div id="owl-responsive" class="owl-carousel owl-item-after">
+                            <div id="setPlanFreemium" class="column-inner range-1 range-click ptes" tabindex="0">
+                                <div class="column-inner-gradient currency-with-prefix">
+                                                                        <div class="column-inner-row">
+                                        <div class="package-name-row">
+                                            <a href="https://base.com/en-US/freemium/" class="pname" target="_blank">Freemium<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" fill="#b4bac0"/></svg></a>                                        </div>
+                                        <div class="package-subname-row">New Businesses &&nbsp;Ecommerce Part&#8209;Timers</div>
+                                    </div>
+                                                                        <div class="column-inner-row package-price-row">
+                                        <h6 class="package-price">
+                                            <span class="currency-prefix">$</span>
+                                            <strong class="price">0</strong>
+                                            <span class="currency-suffix"></span>
+                                        </h6>
+                                        <p class="price-details">/per month</p>
+                                    </div>
+                                    <div class="column-inner-row package-limits">
+                                        max 100 orders/per month                                                                            </div>
+                                                                        <div class="column-inner-row package-button-row">
+                                        <a href="https://base.com/en-US/register/" class="btn btn-outline-primary sign-up">Start free trial</a>
+                                    </div>
+                                                                        <div class="column-inner-row package-includes">
+                                        <button class="package-expander">Plan details</button>
+                                        <div class="package-expandable">
+                                            <strong>Includes:</strong>
+                                                                                        <ul>
+                                                                                                <li>Unlimited <span style="white-space: nowrap">Integrations</span></li>
+                                                                                                        <li>Up to 1000 <span style="white-space: nowrap">products<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Products in inventory or marketplace offers"></span></span></li>
+                                                                                                        <li>3 team <span style="white-space: nowrap">profiles</span></li>
+                                                                                                        <li>Orders, Stocks & Prices - 1 hour <span style="white-space: nowrap">sync</span></li>
+                                                                                                        <li>Data Retention - 6 <span style="white-space: nowrap">months</span></li>
+                                                                                                        <li>AI <span style="white-space: nowrap">Functionalities</span></li>
+                                                                                                        <li>Multichannel <span style="white-space: nowrap">Listing</span></li>
+                                                                                                        <li>Inventory and invoicing management (ERP + WMS + <span style="white-space: nowrap">PIM)</span></li>
+                                                                                                        <li>Purchase <span style="white-space: nowrap">Orders</span></li>
+                                                                                                        <li>Pick&Pack <span style="white-space: nowrap">Assistant</span></li>
+                                                                                                        <li>Base.com apps: Printer & <span style="white-space: nowrap">Caller<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Base Printer - allows direct integration with printers connected to the company network (including thermal and fiscal printers). Base Caller - mobile application enabling immediate recognition of a calling customer"></span></span></li>
+                                                                                                        <li>Easy B2B data sharing (Base <span style="white-space: nowrap">Connect)</span></li>
+                                                                                                        <li>Developer <span style="white-space: nowrap">API</span></li>
+                                                                                                        <li>Base.com ecosystem <span style="white-space: nowrap">benefits<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Multichannel Communication with Responso, Discounted shipping rates with Base Courier, Special offers within Base.com Ecosystem, Free Suppliers Connections (via Base Connect)"></span></span></li>
+                                                                                                </ul>
+                                            <button class="package-collapser">hide details<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M0.526875 4.52699C0.470916 4.57778 0.442936 4.64128 0.442936 4.71112C0.442936 4.78096 0.470916 4.84445 0.526875 4.89525C0.638795 4.99683 0.820665 4.99683 0.932585 4.89525L4.50003 1.65715L8.06748 4.89525C8.1794 4.99683 8.36127 4.99683 8.47319 4.89525C8.58511 4.79366 8.58511 4.62858 8.47319 4.52699L4.70289 1.10477C4.59097 1.00318 4.4091 1.00318 4.29718 1.10477L0.526875 4.52699Z" fill="#0E192A" stroke="#0E192A" stroke-width="0.5"/>
+</svg></button>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                            <div id="setPlanBusiness" class="column-inner range-2 range-click ptes" tabindex="0">
+                                <div class="column-inner-gradient currency-with-prefix">
+                                                                        <div class="column-inner-row">
+                                        <div class="package-name-row">
+                                            <a href="https://base.com/en-US/business/" class="pname" target="_blank">Business<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" fill="#b4bac0"/></svg></a>                                            <span class="tag">RECOMENDED</span>                                        </div>
+                                        <div class="package-subname-row">SMEs &&nbsp;Ecommerce Professionals</div>
+                                    </div>
+                                                                                                            <div class="column-inner-row package-price-row">
+                                        <h6 class="package-price">
+                                            <span class="currency-prefix">$</span>
+                                            <strong class="price">99</strong>
+                                            <span class="currency-suffix"></span>
+                                        </h6>
+                                        <p class="price-details">/per month</p>
+                                    </div>
+                                    <div class="column-inner-row package-limits">
+                                        <div class="over-0">for <span data-number-of-orders>1000</span> orders/per month</div>
+                                                                                <div class="package-limits-smaller"><span style="white-space:nowrap"><strong><span class="currency-prefix">$&nbsp;</span><span class="packages-business-value">99</span><span class="currency-suffix">&nbsp;</span>&nbsp;of fixed fee</strong></span> <span style="white-space:nowrap">+&nbsp;<strong><span class="currency-prefix">$&nbsp;</span><span class="packagesPriceUnder1000">0.49</span><span class="currency-suffix">&nbsp;</span></strong>/order</span>                                        </div>
+                                                                            </div>
+                                                                        <div class="column-inner-row package-button-row">
+                                        <a href="https://base.com/en-US/register/" class="btn btn-outline-primary sign-up">Start free trial</a>
+                                    </div>
+                                                                        <div class="column-inner-row package-includes">
+                                        <button class="package-expander">Plan details</button>
+                                        <div class="package-expandable">
+                                            <strong>Everything in Freemium, plus:</strong>
+                                            <ul>
+                                                                                                <li>Unlimited number of <span style="white-space: nowrap">Products/Offers</span></li>
+                                                                                                        <li>Unlimited number of team <span style="white-space: nowrap">profiles</span></li>
+                                                                                                        <li>Real time Orders, Stock & Prices <span style="white-space: nowrap">sync</span></li>
+                                                                                                        <li>Data Retention - 24 <span style="white-space: nowrap">months</span></li>
+                                                                                                        <li>Extended AI <span style="white-space: nowrap">Functionalities</span></li>
+                                                                                                        <li>Priority Support <span style="white-space: nowrap">24/7</span></li>
+                                                                                                        <li>Access to <span style="white-space: nowrap">Boosts<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Ability to activate higher limits and more frequent sync for selected elements (e.g. API limits, courier status verification time)"></span></span></li>
+                                                                                                        <li>Repricer for marketplace <span style="white-space: nowrap">platforms<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Cost-free daily monitoring of competitor offers and automatic price changes (within limit with option of paid extension). Applies to marketplace accounts: Allegro, eMAG, Amazon."></span></span></li>
+                                                                                                        <li>B2B data exchange through Base Connect <span style="white-space: nowrap">module<span class="bs-icon bs-icon-small bs-info" data-toggle="tooltip" data-container=".abonament" data-offset="0,10" data-placement="auto" title="" data-original-title="Sending orders between accounts in Base Connect is free, receiving orders follows the order pricing."></span></span></li>
+                                                                                                </ul>
+                                            <button class="package-collapser">hide details<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+  <path d="M0.526875 4.52699C0.470916 4.57778 0.442936 4.64128 0.442936 4.71112C0.442936 4.78096 0.470916 4.84445 0.526875 4.89525C0.638795 4.99683 0.820665 4.99683 0.932585 4.89525L4.50003 1.65715L8.06748 4.89525C8.1794 4.99683 8.36127 4.99683 8.47319 4.89525C8.58511 4.79366 8.58511 4.62858 8.47319 4.52699L4.70289 1.10477C4.59097 1.00318 4.4091 1.00318 4.29718 1.10477L0.526875 4.52699Z" fill="#0E192A" stroke="#0E192A" stroke-width="0.5"/>
+</svg></button>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                            <div id="setPlanEnterprise" class="column-inner range-3 range-click ptes" tabindex="0">
+                                <div class="column-inner-gradient">
+                                                                        <div class="column-inner-row">
+                                        <div class="package-name-row">
+                                            <a href="https://base.com/en-US/enterprise/" class="pname" target="_blank">Enterprise<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z" fill="#b4bac0"/></svg></a>                                        </div>
+                                        <div class="package-subname-row">High Volume Sellers, Retailers &&nbsp;Manufacturers</div>
+                                    </div>
+                                                                        <div class="column-inner-row package-price-row">
+                                        <h6 class="package-price not-currency"><strong class="price">Individual offer</strong></h6>
+                                        <p class="price-details"></p>
+                                    </div>
+                                    <div class="column-inner-row package-limits">
+                                        over 5k orders or $300K GMV per month                                    </div>
+                                                                        <div class="column-inner-row package-button-row">
+                                        <a href="https://base.com/en-US/enterprise/" target="_blank" class="btn btn-outline-primary">Learn more</a>
+                                    </div>
+                                                                        <div class="column-inner-row package-includes">
+                                        <button class="package-expander">Plan details</button>
+                                        <div class="package-expandable">
+                                            <strong>Everything in Business, plus:</strong>
+                                            <ul>
+                                                                                                <li>Enterprise <span style="white-space: nowrap">Infrastructure</span></li>
+                                                                                                        <li>Enterprise Uptime <span style="white-space: nowrap">SLA</span></li>
+                                                                                                        <li>Unlimited Max Data <span style="white-space: nowrap">Storage</span></li>
+                                                                                                        <li>Custom Data <span style="white-space: nowrap">Retention</span></li>
+                                                                                                        <li>Dedicated Technical <span style="white-space: nowrap">Expert</span></li>
+                                                                                                        <li>24/7 Support Hotline <span style="white-space: nowrap">(Multi-language)</span></li>
+                                                                                                        <li>API <span style="white-space: nowrap">Support</span></li>
+                                                                                                        <li>Unlimited AI <span style="white-space: nowrap">Functionalities</span></li>
+                                                                                                        <li>All Boosts <span style="white-space: nowrap">Included</span></li>
+                                                                                                        <li>Custom integrations and system <span style="white-space: nowrap">adjustments</span></li>
+                                                                                                        <li>Extended Repricer for marketplace <span style="white-space: nowrap">platforms</span></li>
+                                                                                                </ul>
+                                            <button class="package-collapser">hide details<svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M0.526875 4.52699C0.470916 4.57778 0.442936 4.64128 0.442936 4.71112C0.442936 4.78096 0.470916 4.84445 0.526875 4.89525C0.638795 4.99683 0.820665 4.99683 0.932585 4.89525L4.50003 1.65715L8.06748 4.89525C8.1794 4.99683 8.36127 4.99683 8.47319 4.89525C8.58511 4.79366 8.58511 4.62858 8.47319 4.52699L4.70289 1.10477C4.59097 1.00318 4.4091 1.00318 4.29718 1.10477L0.526875 4.52699Z" fill="#0E192A" stroke="#0E192A" stroke-width="0.5"/>
+</svg></button>
+                                        </div>
+                                    </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center">
+                    The rates shown in the price list are net amounts                </p>
+            </section>
+        </div>
+    </div>
+</div>
+<section class="padding-x-md-60 padd-btm-reset hide-sticky-pricebar">
+    <div class="container">
+        <h3 class="h-custom h-custom-24--36 small-margin text-center-sm">The subscription includes</h3>
+        <p class="h-custom-16--15 small-margin text-center-sm">applies to all subscription plans</p>
+        <div class="shadow-medium-3 no-shadow-xs box-radius ov-hidden-md  col-lg-10 col-padding-reset auto-left-right sh-no-hidden">
+            <div class="accordion acc-mobile-desktop" id="accFee">
+                <div class="acc-item acc-check">
+                    <div class="" id="accFeeHeadingOne">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseOne" data-toggle="collapse" aria-expanded="true" aria-controls="accFeeCollapseOne">
+                                <strong>Unlimited integrations</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseOne" class="collapse show box-radius accordion-content" aria-labelledby="accFeeHeadingOne" data-parent="#accFee">
+                        <ul>
+<li>over 2000 e-commerce integrations (including marketplace platforms, online stores, carriers and many more)</li>
+<li>access to all integrations from one panel without having to log in to each account separately</li>
+<li>ability to integrate any number of systems in any configuration</li>
+<li>all integrations available during the free trial period and then at subscription price (does not apply to wholesale integrations outside of Base Connect)</li>
+<li>no restrictions to the number of accounts connected even within the same marketplace or carrier</li>
+</ul>
+<a href="/en-US/integrations/" target="_blank">See the range of integrations Base.com has to offer</a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingTwo">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseTwo" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseTwo">
+                                <strong>Marketplace Manager</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseTwo" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingTwo" data-parent="#accFee">
+                        <ul>
+<li>list products from any warehouse (store, wholesaler, ERP or Base.com warehouse)</li>
+<li>quick listing tools (including parameter auto-fill, offer templates, shipping templates and category links)</li>
+<li>list product variants </li>
+<li>bulk operations on multiple offers at the same time</li>
+<li>forward orders from marketplace to store and ERP</li>
+<li>automatic stock synchronization between marketplace platforms and product warehouse</li>
+<li>ability to automatically close out of stock offers</li>
+<li>automatic offer price synchronization with prices in the main warehouse</li>
+<li>ability to automatically close zero-price offers</li>
+</ul>
+<a href="/en-US/functions/marketplace-manager/" target="_blank">Explore the other functions of the Marketplace Manager </a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingThree">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseThree" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseThree">
+                                <strong>Order Manager</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseThree" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingThree" data-parent="#accFee">
+                        <ul>
+<li>managing orders from marketplaces, stores, placed by phone or in person</li>
+<li>fast order processing thanks to automatic actions</li>
+<li>automatic forwarding of dropshipping orders (for wholesalers)</li>
+<li>ability to forward orders to the store and ERP</li>
+<li>Pick&Pack Assistant support (packing error warnings, taking photo of the shipment)</li>
+<li>shipping packages (one by one, in bulk, automatically)</li>
+<li>issuing invoices, proforma's, corrections and receipts as well as forwarding to online accounting systems</li>
+<li>automatic email and SMS notifications to customers and a unique order information page</li>
+<li>phone app displaying orders for the calling customer</li>
+</ul>
+<a href="/en-US/functions/orders-manager/" target="_blank">Explore the other Order Manager functions </a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingFour">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseFour" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseFour">
+                                <strong>Shipping management</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseFour" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingFour" data-parent="#accFee">
+                        <ul>
+<li>instant access to multiple courier integrations</li>
+<li>shipping packages (one by one, in bulk, automatically)</li>
+<li>ordering a pick-up</li>
+<li>forwarding tracking number to the marketplace and store</li>
+<li>automatic printouts of the shipping labels and shipping manifest</li>
+<li>customer updates on shipping number and package status</li>
+<li>ability to create your own shipment size and weight templates</li>
+<li>ability to monitor shipment statuses, delivery time, and each package's history</li>
+<li>automatic verification of package delivery</li>
+</ul>
+<a href="/en-US/functions/shipping-management/" target="_blank">Explore the other benefits of Base.com shipping management</a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingFive">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseFive" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseFive">
+                                <strong>Workflow automation</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseFive" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingFive" data-parent="#accFee">
+                        <ul>
+<li>unlimited number of automatic actions, e.g. in status changes, issuing invoices, sending parcels, customer correspondence</li>
+<li>Pick&Pack Assistant support - use a barcode scanner for product picking and parcel packing</li>
+<li>fast printing of documents and shipping labels without the need to download files</li>
+<li>trigger system actions with a keyboard shortcut, custom button or by scanning the barcode</li>
+<li>information on the status of customer orders visible on the phone screen as soon as the caller's number is displayed (with Base Caller app)</li>
+</ul>
+<a href="/en-US/functions/workflow-automation/" target="_blank">Find out how to automate your business</a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingSix">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseSix" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseSix">
+                                <strong>Product warehouse</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseSix" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingSix" data-parent="#accFee">
+                        <ul>
+<li>ability to create custom product database in the Base.com system (designed for retailers without a store)</li>
+<li>ability to add an additional product catalogue from an online storefront (designed for store owners)</li>
+<li>quick product listing to marketplaces directly from Base.com's warehouse</li>
+<li>stock and price synchronization between warehouse and marketplace services</li>
+<li>multiple ways to import products into warehouse: manually, by importing XML, or CSV files, or by creating products directly in the warehouse</li>
+<li>ability to quickly export data using predefined templates or custom templates formats with selected content</li>
+</ul>
+<a href="/en-US/functions/product-manager/" target="_blank">Find out more about the capabilities of Base.com Warehouse</a>                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingSeven">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseSeven" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseSeven">
+                                <strong>Online access from any device</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseSeven" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingSeven" data-parent="#accFee">
+                        <ul>
+<li>Base.com runs in a web browser - you can run the system on any device with Internet access</li>
+<li>seamless access to cloud-based data</li>
+<li>data security - backups created twice a day</li>
+</ul>
+                    </div>
+                </div>
+                <div class="acc-item acc-check">
+                    <div id="accFeeHeadingEight">
+                        <h2 class="collapsing-header">
+                            <a href="#accFeeCollapseEight" data-toggle="collapse" aria-expanded="false" aria-controls="accFeeCollapseEight">
+                                <strong>Team profiles</strong>
+                                <span class="arrow-toggle"></span>
+                                <span class="bs-icon bs-icon-check bs-icon-check-blue"></span>
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="accFeeCollapseEight" class="box-radius collapse accordion-content" aria-labelledby="accFeeHeadingEight" data-parent="#accFee">
+                        <ul>
+<li>employee profiles with separate logins and passwords</li>
+<li>ability to define user privileges and access areas</li>
+<li>verification of actions performed by employees</li>
+<li>ability to create automatic actions with user-specific conditions</li>
+<li>employee efficiency tracking</li>
+<li>ability to set a different panel language version for each employee</li>
+</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container hide-sticky-pricebar">
+    <hr class="between-sections" />
+</div>
+<div class="container mt-5 pt-5">
+    <div class="col-12">
+        <div class="calculator-ad row flex-column-reverse flex-lg-row align-items-center mx-auto">
+            <div class="col-12 col-lg-7 pl-lg-4 txt-calc">
+                <h3>Unlock Missed Revenue, Slash Your Costs</h3>
+                <p>Running an ecommerce business? See how much profit you're missing out on. Get a custom growth estimate in seconds, just enter a few numbers.</p>
+                <a href="https://base.com/en-US/calculator/" class="btn btn-primary">Go to calculator</a>
+            </div>
+            <div class="col-12 col-lg-5 calc-img en-US"><a href="https://base.com/en-US/calculator/" class="stretched-link"></a></div>
+        </div>
+    </div>
+</div>
+<section class="jumbotron-custom padd-top-reset hide-sticky-pricebar">
+    <div class="container col-padding-reset">
+        <div class="item-before-bg">
+            <div class="d-flex flex-wrap justify-content-between align-items-center shadow-medium-2 jumbotron-wrapper">
+                <div class="col-xs-12 col-sm-12 col-lg-7 col-xl-8 padding-x-10">
+                    <h4 class="h-custom h-custom-24--22 text-center text-lg-left">Is there something you need that we do not currently offer? Let's chat!</h4>
+                </div>
+                <div class="col-xs-12 col-lg-auto text-center text-lg-left">
+                    <a href="https://base.com/en-US/contact/" class="btn btn-outline-primary mobile-line-height btn-block btn-not-block-md">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq-section hide-sticky-pricebar">
+    <div class="container">
+        <div class="col-lg-8 auto-left-right">
+            <div class="padding-x-md-60 padding-x-xl-83 padding-revise col-padding-reset-sm">
+                <h6 class="h-custom h-custom-24--32 h-mobile-28 text-center-sm">Frequently Asked Questions</h6>
+                <div class="accordion acc-desktop padding-x-30 padd-btm-reset" id="accFAQ">
+                    <div class="acc-item">
+                        <div class="" id="accFAQheadingOne">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseOne" role="button" data-toggle="collapse" aria-expanded="true" aria-controls="accFAQcollapseOne">
+                                    <strong>Can I try the system before buying it?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseOne" class="collapse show box-radius accordion-content" aria-labelledby="accFAQheadingOne" data-parent="#accFAQ">
+                            <p> Before you decide to buy our services, you can test the program without any obligations for 14 days. The system is fully functional during the test period. </p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingTwo">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseTwo" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseTwo">
+                                    <strong>Can I change the subscription plan I am using?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseTwo" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingTwo" data-parent="#accFAQ">
+                            <p> You can change your plan from Freemium to Business or from Business to Enterprise. Other plan changes are not possible. </p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingThree">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseThree" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseThree">
+                                    <strong>Can I choose whether I am on the Business plan or the Enterprise plan?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseThree" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingThree" data-parent="#accFAQ">
+                            <p>Once you qualify for the Enterprise plan you will be contacted by our team, and to continue to use Base.com, you must switch to a dedicated Enterprise plan.</p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingFour">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseFour" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseFour">
+                                    <strong>When do I need to switch to the Enterprise plan?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseFour" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingFour" data-parent="#accFAQ">
+                            <p> Our Enterprise team will contact you when the scale of your business qualifies you for the Enterprise plan.</p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingFive">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseFive" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseFive">
+                                    <strong>Can I use the Enterprise plan when my number of orders and GMV are lower than indicated in the Enterprise plan?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseFive" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingFive" data-parent="#accFAQ">
+                            <p>Yes. To do so, schedule a call with our enterprise team using <a href="https://form.jotform.com/baselinker/en-US" target="_blank" class="primary-strong">this link</a>.</p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingSix">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseSix" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseSix">
+                                    <strong>If I have multiple Base.com accounts, do the volumes add up to determine if I qualify for the Enterprise plan?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseSix" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingSix" data-parent="#accFAQ">
+                            <p>Yes, in a situation where you manage your business using multiple accounts, we take into account the aggregated volumes from all accounts to qualify for the Enterprise plan.</p>                        </div>
+                    </div>
+                    <div class="acc-item">
+                        <div id="accFAQheadingSeven">
+                            <h4 class="collapsing-header">
+                                <a href="#accFAQcollapseSeven" data-toggle="collapse" aria-expanded="false" aria-controls="accFAQcollapseSeven">
+                                    <strong>Do you issue VAT invoices?</strong>
+                                    <span class="arrow-toggle"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="accFAQcollapseSeven" class="box-radius collapse accordion-content" aria-labelledby="accFAQheadingSeven" data-parent="#accFAQ">
+                            <p>Yes, we issue VAT invoices. Subscription for using the system and payment details are described in the <a href="/en-US/pricing/" target="_blank" class="primary-strong">pricing section</a>.</p>                        </div>
+                    </div>
+                                                            <script type="application/ld+json">
+                    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Can I try the system before buying it?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": " Before you decide to buy our services, you can test the program without any obligations for 14 days. The system is fully functional during the test period. "
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I change the subscription plan I am using?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": " You can change your plan from Freemium to Business or from Business to Enterprise. Other plan changes are not possible. "
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I choose whether I am on the Business plan or the Enterprise plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Once you qualify for the Enterprise plan you will be contacted by our team, and to continue to use Base.com, you must switch to a dedicated Enterprise plan."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "When do I need to switch to the Enterprise plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": " Our Enterprise team will contact you when the scale of your business qualifies you for the Enterprise plan."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use the Enterprise plan when my number of orders and GMV are lower than indicated in the Enterprise plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. To do so, schedule a call with our enterprise team using this link."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "If I have multiple Base.com accounts, do the volumes add up to determine if I qualify for the Enterprise plan?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, in a situation where you manage your business using multiple accounts, we take into account the aggregated volumes from all accounts to qualify for the Enterprise plan."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you issue VAT invoices?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we issue VAT invoices. Subscription for using the system and payment details are described in the pricing section."
+            }
+        }
+    ]
+}                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="popup__overlay">
+    <div class="popup">
+        <span class="popup__close">X</span>
+        <iframe id="player" width="560" height="315" src="" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+                
+                    <div class="container hide-sticky-pricebar">
+                        <hr class="between-sections" />
+                    </div>
+
+                    <section class="ov-hidden relative-jumbotron-info lozad-background lozad-bg-desktop hide-sticky-pricebar"
+                        data-background-image="https://base.com/assets/images/animbg.gif">
+                        <div class="container">
+                            <div class="text-center lead-text-section">
+                                <h2 class="h-custom h-custom-26--36 auto-left-right"><strong>Try all features and integrations free for 14 days</strong></h2>
+                                <a href="https://base.com/en-US/register/"
+                                    class="btn btn-primary btn-block btn-not-block-md d-md-inline-block mobile-line-height auto-left-right sign-up-below">Try it for free</a>
+                            </div>
+                        </div>
+                    </section>
+
+                
+                <footer class="hide-sticky-pricebar">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="accordion acoordion-100 acc-footer col-xs12 col-md-12 col-lg-9 uncollapse-md d-flex flex-row flex-wrap"
+                                id="accordionFooter">
+
+                                <div class="col-sm-12 col-md-4 acc-item">
+                                    <div class="" id="headingLinksOne">
+                                        <div class="collapsing-header collapsed-bg exh5">
+                                            <a href="#collapseLinksOne" data-toggle="collapse" aria-expanded="false"
+                                                aria-controls="collapseLinksOne">
+                                                <strong>
+                                                    Functions                                                </strong>
+                                                <span class="arrow-toggle"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="collapseLinksOne" class="collapse accordion-content" aria-labelledby="headingLinksOne"
+                                        data-parent="#accordionFooter">
+                                        <ul class="no-style-ul">
+                                            <li><a href="https://base.com/en-US/functions/">Functions overview</a></li><li><a href="https://base.com/en-US/functions/orders-manager/">Order Manager</a></li><li><a href="https://base.com/en-US/functions/marketplace-manager/">Marketplace Manager</a></li><li><a href="https://base.com/en-US/functions/product-manager/">Product Manager</a></li><li><a href="https://base.com/en-US/functions/price-automation/">Price automation</a></li><li><a href="https://base.com/en-US/functions/wms/">WMS</a></li><li><a href="https://base.com/en-US/functions/erp/">ERP</a></li><li><a href="https://base.com/en-US/functions/shipping-management/">Shipping management</a></li><li><a href="https://base.com/en-US/functions/workflow-automation/">Workflow automation</a></li><li><a href="https://base.com/en-US/functions/base-connect/">Base Connect</a></li><li><a href="https://base.com/en-US/functions/ai/">AI for e-commerce</a></li><li><a href="https://base.com/en-US/functions/base-analytics/">Base Analytics</a></li>                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 padding-md-0 acc-item">
+                                    <div id="headingLinksTwo">
+                                        <div class="collapsing-header collapsed-bg exh5">
+                                            <a href="#collapseLinksTwo" data-toggle="collapse" aria-expanded="false"
+                                                aria-controls="collapseLinksTwo">
+                                                <strong>
+                                                    Integrations                                                </strong>
+                                                <span class="arrow-toggle"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="collapseLinksTwo" class="collapse accordion-content" aria-labelledby="headingLinksTwo"
+                                        data-parent="#accordionFooter">
+                                        <ul class="no-style-ul">
+                                            <li><a href="https://base.com/en-US/integrations/amazon/">Amazon</a></li><li><a href="https://base.com/en-US/integrations/ebay/">eBay</a></li><li><a href="https://base.com/en-US/integrations/etsy/">Etsy</a></li><li><a href="https://base.com/en-US/integrations/google/">Google Merchant Center</a></li><li><a href="https://base.com/en-US/integrations/shopify/">Shopify App</a></li><li><a href="https://base.com/en-US/integrations/woocommerce/">wooCommerce</a></li><li><a href="https://base.com/en-US/integrations/bigcommerce/">BigCommerce</a></li><li><a href="https://base.com/en-US/integrations/magento/">Magento / Adobe Commerce</a></li><li><a href="https://base.com/en-US/integrations/ups/">UPS</a></li><li><a href="https://base.com/en-US/integrations/fedex/">FedEx</a></li><li><a href="https://base.com/en-US/integrations/tnt/">TNT</a></li><li><a href="https://base.com/en-US/integrations/dhl/">DHL</a></li>                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-lg-3 col-xl-3 padding-md-0 acc-item">
+                                    <div id="headingLinksThree">
+                                        <div class="collapsing-header collapsed-bg exh5">
+                                            <a href="#collapseLinksThree" data-toggle="collapse" aria-expanded="false"
+                                                aria-controls="collapseLinksThree">
+                                                <strong>
+                                                    Service                                                </strong>
+                                                <span class="arrow-toggle"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="collapseLinksThree" class="collapse accordion-content"
+                                        aria-labelledby="headingLinksThree" data-parent="#accordionFooter">
+                                        <ul class="no-style-ul">
+                                            <li><a href="https://base.com/en-US/contact/">Contact</a></li><li><a href="https://base.com/en-EN/help/">Help</a></li><li><a href="https://base.com/en-US/faq/">FAQ</a></li><li><a href="https://base.com/en-US/reviews/">Reviews</a></li><li><a href="https://base.com/en-US/implementation/">System implementations</a></li><li><a href="https://base.com/en-US/partners/partner-with-base/">Cooperation and partners</a></li><li><a href="https://base.com/en-US/partners/">Base Partner Directory</a></li>                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-12 col-lg-3 no-links-aside">
+                                <div class="collapsing-header collapsed-bg exh5">
+                                    <strong>
+                                        What's new?                                    </strong>
+                                </div>
+                                <div class="small-notification-text row">
+                                    <div class="notification-item col-xs12 col-sm-6 col-lg-12"><strong><a href="https://base.com/en-EN/blog/blog-odoo-marketplace-integration/?mo=US" target="_blank" title="Odoo marketplace integration: connect any sales channel" >Odoo marketplace integration: connect any sales channel</a></strong><span class="notification-date">2026-09-17</span></div><div class="notification-item col-xs12 col-sm-6 col-lg-12"><strong><a href="https://base.com/en-EN/blog/ai-in-base-6-mcp-connect-your-ai-tools-to-the-base-panel/?mo=US" target="_blank" title="AI in Base #6: MCP — connect your AI tools to the Base panel" >AI in Base #6: MCP — connect your AI tools to the Base panel</a></strong><span class="notification-date">2026-09-15</span></div><div class="notification-item col-xs12 col-sm-6 col-lg-12"><strong><a href="https://base.com/en-EN/blog/benefits-of-erp-integration-and-why-they-matter/?mo=US" target="_blank" title="Benefits of ERP Integration (and Why They Matter)" >Benefits of ERP Integration (and Why They Matter)</a></strong><span class="notification-date">2026-09-09</span></div><div class="notification-item col-xs12 col-sm-6 col-lg-12"><strong><a href="https://base.com/en-EN/blog/how-to-sell-on-amazon-in-2026-setup-fees-and-operations-guide/?mo=US" target="_blank" title="How to Sell on Amazon in 2026: Setup, Fees, and Operations Guide" >How to Sell on Amazon in 2026: Setup, Fees, and Operations Guide</a></strong><span class="notification-date">2026-09-07</span></div><a href="https://base.com/en-EN/blog/?mo=US" target="_blank" class="mt-4">Read more – Base Blog</a>                                </div>
+                            </div>
+
+                            <hr class="between-sections" />
+
+                            <div
+                                class="col-xs12 bottom-of-footer d-flex flex-wrap flex-row-reverse justify-content-md-between align-items-center">
+
+                                <div
+                                    class="col-xs12- flex-item-left col-md-7 d-sm-flex flex-wrap flex-row-reverse flex-row justify-content-sm-between align-items-center">
+                                    <div class="footer-buttons">
+                                        <ul class="bl-social">
+                                                                                        <li class="bl-icon lazy icon-youtube"><a href="https://www.youtube.com/channel/UCfghb0LSyeQi2T3DOSrvh7A"
+                                                    target="_blank" class="spin-circle" aria-label="Loading..."></a></li>
+                                            <li class="bl-icon lazy icon-facebook"><a href="https://www.facebook.com/BaseLinker"
+                                                    target="_blank" class="spin-circle" aria-label="Loading..."></a></li>
+                                            <li class="bl-icon lazy icon-linkedin"><a href="https://www.linkedin.com/company/baselinkerglobal/"
+                                                    target="_blank" class="spin-circle" aria-label="Loading..."></a></li>
+                                                                                    </ul>
+                                        <div class="d-flex flex-row flex-wrap btn-group-styles" style="height:40px; width:60px;">
+                                            <div class="d-flex flex-row flex-wrap btn-group-styles">
+                                                <div class="dropdown-small">
+                                                    <button id="btnGroupDrop1" type="button"
+                                                        class="btn btn-outline-secondary btn-sm dropdown-toggle btn-padding-0"
+                                                        aria-label="language choice" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+                                                        <span class="lang-circle circle-en-US"></span>
+                                                        <span class="arrow-toggle"></span>
+                                                    </button>
+                                                    <div class="dropdown-menu " aria-labelledby="btnGroupDrop1">
+                                                        <a class="dropdown-item" href="https://base.com/en-US/pricing/" data-name="english (US)"><span class="lang-item lang-item-en-US"></span><strong>english (US)</strong></a><a class="dropdown-item" href="https://base.com/en-GB/pricing/" data-name="english (GB)"><span class="lang-item lang-item-en-GB"></span><strong>english (GB)</strong></a><a class="dropdown-item" href="https://base.com/en-IN/pricing/" data-name="english (IN)"><span class="lang-item lang-item-en-IN"></span><strong>english (IN)</strong></a><a class="dropdown-item" href="https://base.com/cs-CZ/cenik/" data-name="čeština"><span class="lang-item lang-item-cs-CZ"></span><strong>čeština</strong></a><a class="dropdown-item" href="https://base.com/de-DE/preise/" data-name="deutsch"><span class="lang-item lang-item-de-DE"></span><strong>deutsch</strong></a><a class="dropdown-item" href="https://base.com/el-GR/pricing/" data-name="Ελληνικά"><span class="lang-item lang-item-el-GR"></span><strong>Ελληνικά</strong></a><a class="dropdown-item" href="https://base.com/es-AR/planes/" data-name="español (AR)"><span class="lang-item lang-item-es-AR"></span><strong>español (AR)</strong></a><a class="dropdown-item" href="https://base.com/es-MX/planes/" data-name="español (MX)"><span class="lang-item lang-item-es-MX"></span><strong>español (MX)</strong></a><a class="dropdown-item" href="https://base.com/fr-FR/tarifs/" data-name="Français"><span class="lang-item lang-item-fr-FR"></span><strong>Français</strong></a><a class="dropdown-item" href="https://base.com/it-IT/prezzi/" data-name="Italiano"><span class="lang-item lang-item-it-IT"></span><strong>Italiano</strong></a><a class="dropdown-item" href="https://base.com/pl-PL/cennik/" data-name="polski"><span class="lang-item lang-item-pl-PL"></span><strong>polski</strong></a><a class="dropdown-item" href="https://base.com/pt-BR/planos/" data-name="português (BR)"><span class="lang-item lang-item-pt-BR"></span><strong>português (BR)</strong></a><a class="dropdown-item" href="https://base.com/ro-RO/preturi/" data-name="română"><span class="lang-item lang-item-ro-RO"></span><strong>română</strong></a><a class="dropdown-item" href="https://base.com/zh-CN/pricing/" data-name="中文"><span class="lang-item lang-item-zh-CN"></span><strong>中文</strong></a>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul>
+                                        <li><a href="https://base.com/en-US/terms/" rel="nofollow">Terms of Use</a></li><li><a href="https://base.com/en-US/policy/" rel="nofollow">Security and privacy policy</a></li>                                    </ul>
+                                </div>
+                                <p class="bg-light-">
+                                    2026 <a href="https://base.com/en-US/home/">Base.com</a>, Integration of e-commerce systems                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                                    </footer>
+                        
+                        
+            <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"585201ea46fc418a8591774acdef38b3","spa":2}' crossorigin="anonymous"></script>
+</body>
+            <script src="https://base.com/assets/lang/translations_en-US.js?v=1153" defer></script><script src="https://base.com/assets/dist/vendor-ek180926.js" defer></script><script src="https://base.com/assets/dist/scripts-ek180926.js" defer></script><script src="https://base.com/assets/dist/scripts-pricing-ek180926.js" defer></script><script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 13440864;
+        window.__lc.integration_name = "manual_channels";
+        window.__lc.product_name = "livechat";
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechatinc.com/chat-with/13440864/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></html>

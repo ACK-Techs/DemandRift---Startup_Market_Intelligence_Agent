@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58160674-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-58160674-1');
+    </script>
+    <title>Plans / Startups.watch</title>
+    <meta name="action-cable-url" content="wss://startups.watch/cable" />
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tyZ07tGBc9kVDxwbCNOuBkf6A9rJsPxHOYF_YnyjDHfgJPCzpVm0XrlxXCWxfTw-2s-P9dQZYGmhg1I4T1Zneg" />
+    <meta name="description" content="plans" />
+    <meta name="keywords" content="plans" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="/favicon.png"/>
+    <link rel="icon" href="/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/application-b8eac3f3c98a97246afdc87759367c73c6db5ed5c15a567527478ca4b19e8d5e.css" media="all" data-turbolinks-track="reload" />
+    <script src="/assets/application-799a9ff8fe837eb453247ab2242f9153a38b41b2a5f6984edf1d6cfde7f94c6d.js" data-turbolinks-track="reload"></script>
+  </head>
+  <body >
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sw-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">toggle</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/assets/sw-logo-bfdadfd2ea076752ce5d120b0ff6392db48e7b144ec9833a0a9fc2754a42643e.png" /></a>
+    </div>
+      <div class="collapse navbar-collapse" id="sw-navbar-collapse">
+        <ul class="nav navbar-nav navbar-nav-underlined">
+          
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Data <span class="caret"></span>
+</a>            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Startups
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/startups">
+                      Startups
+</a>                  </li>
+                  <li class="">
+                    <a href="/lists">
+                      Lists <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>              
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  People
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/people">
+                      People <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/universities">
+                      Universities <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/lists?list_type=person">
+                      Lists <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Investors
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/investors">
+                      Investment Firms <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/investors/angel-investors">
+                      Angel Investors <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/investors/limited-partners">
+                      Limited Partners <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/lists?list_type=investment_firm">
+                      Lists <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="/investments">
+                  Investments <i class='fa fa-lock' aria-hidden='true'></i>
+</a>              </li>
+              <li class="">
+                <a href="/acquisitions">
+                  Acquisitions <i class='fa fa-lock' aria-hidden='true'></i>
+</a>              </li>
+              <li class="">
+                <a href="/accelerators">
+                  Accelerators <i class='fa fa-lock' aria-hidden='true'></i>
+</a>              </li>
+              <li class="">
+                <a href="/incubators">
+                  Incubators <i class='fa fa-lock' aria-hidden='true'></i>
+</a>              </li>
+              <li class="">
+                <a href="/science-parks">
+                  Science Parks <i class='fa fa-lock' aria-hidden='true'></i>
+</a>              </li>    
+            </ul>
+          </li>
+ 
+          <li class="">
+            <a href="/reports">
+              Reports
+</a>          </li>
+          
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Tools <span class="caret"></span>
+</a>            <ul class="dropdown-menu">
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  For Startups
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/startups/new">
+                      Add Startup
+</a>                  </li>
+                  <li class="">
+                    <a href="/claimed-profiles">
+                      Claimed Profile(s)
+</a>                  </li>
+                  <li class="">
+                    <a href="/investor-intelligence">
+                      Investor Intelligence <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/programs">
+                      <span class="translation_missing" title="translation missing: en.programs">Programs</span>
+</a>                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  For Investors
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/claimed-profiles">
+                      Claimed Profile(s)
+</a>                  </li>
+                  <li class="">
+                    <a href="/investments/open-rounds">
+                      Startups looking for investment <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                      <a data-toggle="tooltip" data-placement="right" title="It can only be viewed by verified investors" href="/acquisitions/open-to-secondaries">
+                        Startups open to sell some equity <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                  <li class="">
+                    <a href="/deal-flow-management">
+                      Deal Flow Management <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                </ul>
+              </li>
+          
+              <li class="dropdown dropdown-submenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  For Accelerators
+</a>                <ul class="dropdown-menu">
+                  <li class="">
+                    <a href="/pipeline-for-accelerators">
+                      Pipeline Management <i class='fa fa-lock' aria-hidden='true'></i>
+</a>                  </li>
+                </ul>
+              </li>
+              
+              <li class="">
+                <a href="/developer">
+                  API Management
+</a>              </li>
+
+            </ul>
+          </li>
+          
+          <li class="">
+            <a href="/events">
+              Events
+</a>          </li>
+          <li class="">
+            <a href="/perks">
+              Perks
+</a>          </li>
+        </ul>
+        
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/login">Log in</a>
+            </li>
+          </ul>
+        <form class="navbar-form navbar-right" action="/search" accept-charset="UTF-8" method="get">
+          <div class="form-group has-feedback">
+            <input type="text" name="q" id="navbar_q" class="form-control input-search" autocomplete="off" placeholder="Search" />
+            <span class="fa fa-search feedback-search form-control-feedback"></span>
+          </div>
+</form>      </div>
+    
+  </div>
+</nav>
+
+
+    
+      <section id="heading" class="heading-setting">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>SUBSCRIPTION PLANS</h1>
+    </div>
+  </div>
+</section>
+
+
+    <section id="content">
+    <div class="container-fluid">
+      
+
+      
+
+      
+
+      
+      
+      
+  
+ 
+
+
+<div class="row">
+  <div class="col-md-7">
+    
+    <div class="alert alert-secondary alert-dismissible text-left" role="alert">
+STEPS: (1) Select country, package and term. (2) Fill out basic registration form. (3) Confirm your email. (4) Choose your package via “Upgrade” button. (5) Pay by credit card or by bank transfer. (6) Fill out billing information to get e-invoice.
+</div>
+
+
+    
+    <form class="form-horizontal" id="new_payment" enctype="multipart/form-data" action="/settings/payments/upgrade" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="xExTKiLV9lOu5P-VupXxJoHmFm9zD82dHhAL3VgiFTUcRSbDcKB_pU_fChzMnESPyRrD0fhs82qwKvKohhBq3A" autocomplete="off" />
+        
+        <div class="panel panel-sw">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-3">
+                CHOOSE YOUR COUNTRY
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <select class="form-control" placeholder="Country" name="payment[country]" id="payment_country"><option value="Albania">Albania</option>
+<option value="Argentina">Argentina</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Barbados">Barbados</option>
+<option value="Belgium">Belgium</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Brazil">Brazil</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Croatia">Croatia</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="Estonia">Estonia</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Japan">Japan</option>
+<option value="Jersey">Jersey</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhistan">Kazakhistan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg (Country)">Luxembourg (Country)</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Malta">Malta</option>
+<option value="Mexico">Mexico</option>
+<option value="Monaco">Monaco</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Morocco">Morocco</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Nepal">Nepal</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Northern Cyprus">Northern Cyprus</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palestine">Palestine</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="San Marino">San Marino</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Cyprus">South Cyprus</option>
+<option value="South Korea">South Korea</option>
+<option value="Spain">Spain</option>
+<option value="Sudan">Sudan</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Thailand">Thailand</option>
+<option value="The Netherlands">The Netherlands</option>
+<option value="Tunusia">Tunusia</option>
+<option selected="selected" value="Turkey">Turkey</option>
+<option value="UAE">UAE</option>
+<option value="Uganda">Uganda</option>
+<option value="UK">UK</option>
+<option value="Ukraine">Ukraine</option>
+<option value="Uruguay">Uruguay</option>
+<option value="USA">USA</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Zimbabwe">Zimbabwe</option></select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-sw">
+          <div class="panel-body">
+            
+            <div class="row">
+              <div class="col-md-3">
+                CHOOSE YOUR PACKAGE
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+
+                      <div class="row mb-15">
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="0" name="payment[plan_id]" id="payment_plan_id_0">
+                              <label for="payment_plan_id_0">FREE TIER</label>
+                              <div class="plan-description">
+                                Limited Startups Lists<br>
+                                Free Reports
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="2" name="payment[plan_id]" id="payment_plan_id_2" />
+                              <label for="payment_plan_id">PRO</label>
+                              <div class="plan-description">
+                                1 User Account <br>Full Dashboard<br>All Reports<br>Excel Export (1500)<br>1 SW Event Ticket
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="3" name="payment[plan_id]" id="payment_plan_id_3" />
+                              <label for="payment_plan_id">ENTERPRISE</label>
+                              <div class="plan-description">
+                                8 User Accounts <br>Full Dashboard<br>All Reports<br>Excel Export (1500)<br>8 Tickets for SW Events <br>
+
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row mb-15">
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="5" name="payment[plan_id]" id="payment_plan_id_5" />
+                              <label for="payment_plan_id">ENTERPRISE PLUS</label>
+                              <div class="plan-description">
+                                16 User Accounts <br>Full Dashboard<br>All Reports<br>Excel Export (1500)<br>16 Tickets for SW Events <br>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="6" name="payment[plan_id]" id="payment_plan_id_6" />
+                              <label for="payment_plan_id">ULTIMATE</label>
+                              <div class="plan-description">
+                                100 User Accounts <br>Full
+Dashboard<br>ALl Reports<br>Excel
+Export (1500)
+<br>100 Tickets for SW Events <br>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <input class="plan-id" type="radio" value="4" name="payment[plan_id]" id="payment_plan_id_4" />
+                              <label for="payment_plan_id">API</label>
+                              <div class="plan-description">
+                                API (Internal Use Only)<br>16 User Accounts <br>Full Dashboard<br>All Reports<br>Excel Export (1500)<br>16 Tickets for SW Events<br>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-sw">
+          <div class="panel-body">
+            
+            <div class="row">
+              <div class="col-md-3">
+                CHOOSE YOUR TERM
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                    <div class="col-md-4">
+                      <input class="duration-type" type="radio" value="month" name="payment[duration_type]" id="payment_duration_type_month" />
+                      <label for="payment_duration_type">1 MONTH</label>
+                    </div>
+                    <div class="col-md-4">
+                      <input class="duration-type" type="radio" value="year" name="payment[duration_type]" id="payment_duration_type_year" />
+                      <label for="payment_duration_type">1 YEAR</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="panel panel-sw">
+          <div class="panel-body">
+            
+            <div class="row">
+              <div class="col-md-3">
+                PRICE
+              </div>
+              <div class="col-md-9">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <span id="plan_selected"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="panel panel-sw">
+          <div class="panel-body">
+            
+            <div class="row">
+              <div class="col-md-3">
+                
+              </div>
+              <div class="col-md-9">
+      
+                <div class="form-group">
+                  <div class="col-md-12 text-right">
+                    <a class="btn btn-primary" href="/users/sign_up">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+</form>     
+ 
+      
+  </div>
+</div>
+
+<p id="0_month" class="hidden">
+  Free
+</p>
+<p id="0_year" class="hidden">
+  Free
+</p>
+
+<p id="0_month" class="hidden">
+  Free
+</p>
+<p id="0_year" class="hidden">
+  Free
+</p>
+
+  <p id="2_month_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>980 + <span class='icon-unit'>&#x20BA;</span>196 KDV
+  </p>
+  <p id="2_year_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>9,800 + <span class='icon-unit'>&#x20BA;</span>1,960 KDV
+  </p>
+  <p id="2_month_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>25
+  </p>
+  <p id="2_year_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>200
+  </p>
+  <p id="3_month_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>1,960 + <span class='icon-unit'>&#x20BA;</span>392 KDV
+  </p>
+  <p id="3_year_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>19,600 + <span class='icon-unit'>&#x20BA;</span>3,920 KDV
+  </p>
+  <p id="3_month_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>40
+  </p>
+  <p id="3_year_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>400
+  </p>
+  <p id="5_month_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>3,000 + <span class='icon-unit'>&#x20BA;</span>600 KDV
+  </p>
+  <p id="5_year_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>25,000 + <span class='icon-unit'>&#x20BA;</span>5,000 KDV
+  </p>
+  <p id="5_month_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>70
+  </p>
+  <p id="5_year_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>650
+  </p>
+  <p id="6_month_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>20,000 + <span class='icon-unit'>&#x20BA;</span>4,000 KDV
+  </p>
+  <p id="6_year_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>200,000 + <span class='icon-unit'>&#x20BA;</span>40,000 KDV
+  </p>
+  <p id="6_month_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>500
+  </p>
+  <p id="6_year_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>5,000
+  </p>
+  <p id="4_month_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>5,000 + <span class='icon-unit'>&#x20BA;</span>1,000 KDV
+  </p>
+  <p id="4_year_try" class="hidden">
+    <span class='icon-unit'>&#x20BA;</span>55,000 + <span class='icon-unit'>&#x20BA;</span>11,000 KDV
+  </p>
+  <p id="4_month_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>150
+  </p>
+  <p id="4_year_usd" class="hidden">
+    <span class='icon-unit'>&#36;</span>1,500
+  </p>
+
+    </div>
+  </section>
+    <footer id="footer">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 text-left">
+    </div>
+    <div class="col-md-6 text-right">
+      <ul class="list-inline list-lg">
+        <li>
+          <a href="/faq">FAQ</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/company/startups-watch">Team</a>
+        </li>
+        <li>
+          <a href="/tos">Terms of Service</a>
+        </li>
+        <li>
+          <a href="/privacy">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/cookie">Cookie Policy</a>
+        </li>
+        <li>
+          <a href="mailto:support@startups.watch ">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4 text-left">
+      <ul class="list-inline list-lg">
+        <li>
+          Copyright 2026 - Powered by 212 & Inveo Ventures
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8 text-right">
+      <ul class="list-inline list-lg">
+        <li>
+          <a target="_blank" data-toggle="tooltip" data-placement="top" data-title="Facebook" href="https://facebook.com/startups.watch">
+            <i class="fa fa-brands fa-facebook"></i>
+</a>        </li>
+        <li>
+          <a target="_blank" data-toggle="tooltip" data-placement="top" data-title="Twitter" href="https://x.com/startups_watch">
+            <i class="fa fa-brands fa-x-twitter"></i>
+</a>        </li>
+        <li>
+          <a target="_blank" data-toggle="tooltip" data-placement="top" data-title="Medium" href="https://medium.com/startups-watch">
+            <i class="fa fa-brands fa-medium"></i>
+</a>        </li>
+        <li>
+          <a target="_blank" data-toggle="tooltip" data-placement="top" data-title="Youtube" href="https://www.youtube.com/@startupswatch">
+            <i class="fa fa-brands fa-youtube"></i>
+</a>        </li>
+        <li>
+          <a target="_blank" data-toggle="tooltip" data-placement="top" data-title="Instagram" href="https://www.instagram.com/startups_watch">
+            <i class="fa fa-brands fa-instagram"></i>
+</a>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+    <section id="cookie_alert">
+  <div class="alert alert-info alert-dismissible text-left" role="alert">
+    <div class="pull-left">Startups.watch uses cookies to ensure you get the best experience on our websites. Learn more about our <a href="/cookie">Cookie Policy</a></div> 
+    <div class="text-right"><a id="cookie_accept" class="btn btn-primary" href="#">I Accept</a></div>
+  </div>
+</section>
+  </body>
+</html>
