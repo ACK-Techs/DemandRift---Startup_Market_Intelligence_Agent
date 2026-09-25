@@ -33,6 +33,7 @@ Repo kökünden:
 
 ```bash
 docker build --target test -t demandrift-api:test apps/api
+docker run --rm --network none --read-only --tmpfs /tmp:rw,noexec,nosuid,size=64m --memory 512m --cpus 1 --pids-limit 128 demandrift-api:test
 docker build --target runtime --build-arg APP_REVISION="$(git rev-parse HEAD)" -t demandrift-api:local apps/api
 docker run --rm --read-only --cap-drop ALL --security-opt no-new-privileges -p 127.0.0.1:8000:8000 demandrift-api:local
 ```

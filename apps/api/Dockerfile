@@ -14,6 +14,7 @@ RUN pip install --no-cache-dir -r requirements-dev.txt
 COPY app ./app
 COPY tests ./tests
 RUN python -m pytest -q
+CMD ["python", "-m", "pytest", "-q", "-p", "no:cacheprovider"]
 
 FROM dependencies AS runtime
 ARG APP_REVISION=development
