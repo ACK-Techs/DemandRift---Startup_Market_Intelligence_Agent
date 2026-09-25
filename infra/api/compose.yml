@@ -1,0 +1,22 @@
+services:
+  api:
+    image: demandrift-api:${APP_REVISION:?APP_REVISION required}
+    environment:
+      APP_REVISION: ${APP_REVISION}
+    ports:
+      - '127.0.0.1:18082:8000'
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    pids_limit: 128
+    mem_limit: 512m
+    cpus: 1
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    healthcheck:
+      test: ['CMD', 'python', '-c', "import json,os,urllib.request; d=json.load(urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=3)); assert d['status']=='ok' and d['revision']==os.environ['APP_REVISION']"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+      start_period: 5s

@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+# Administrator-installed trusted entrypoint; never execute a fetched deploy script.
+set -Eeuo pipefail
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+export GIT_TERMINAL_PROMPT=0
+umask 077
+sha=${1:-}
+[[ "$sha" =~ ^[0-9a-f]{40}$ ]] || { echo 'Expected exact commit SHA' >&2; exit 64; }
+base=/opt/demandrift-api
+repo=/opt/demandrift-build/repository
+exec 9>"$base/deploy.lock"
+flock -w 600 9 || exit 75
+exec > >(tee "$base/logs/$(date -u +%Y%m%dT%H%M%SZ)-$sha.log") 2>&1
+# Share the fetch lock with the existing laboratory builder.
+exec 8>/opt/demandrift-build/build.lock
+flock -w 600 8 || exit 75
+timeout 180s git -C "$repo" fetch --depth=1 origin main
+[[ "$sha" == "$(git -C "$repo" rev-parse FETCH_HEAD)" ]] || { echo 'Rejected: stale main SHA'; exit 65; }
+context=$(mktemp -d "$base/context.XXXXXXXX")
+trap 'rm -rf -- "$context"' EXIT
+# Bounded regular-file extraction; no checkout hooks, symlinks or host mounts.
+python3 - "$repo" "$sha" "$context" <<'PY'
+import pathlib, subprocess, sys
+repo, sha, target = sys.argv[1:]
+entries = subprocess.check_output(['git','-C',repo,'ls-tree','-rz',sha,'--','apps/api/']).split(b'\0')
+total = count = 0
+for entry in filter(None, entries):
+    meta, rawpath = entry.split(b'\t',1)
+    mode, kind, blob = meta.split()
+    name = pathlib.PurePosixPath(rawpath.decode()).relative_to('apps/api')
+    if mode not in (b'100644',b'100755') or kind != b'blob' or '..' in name.parts:
+        raise SystemExit('Rejected non-regular API file')
+    size = int(subprocess.check_output(['git','-C',repo,'cat-file','-s',blob.decode()]))
+    total += size; count += 1
+    if size > 8*1024**2 or total > 64*1024**2 or count > 1000:
+        raise SystemExit('API build context exceeds limits')
+    path = pathlib.Path(target, name); path.parent.mkdir(parents=True,exist_ok=True)
+    path.write_bytes(subprocess.check_output(['git','-C',repo,'cat-file','blob',blob.decode()]))
+if not pathlib.Path(target,'Dockerfile').is_file(): raise SystemExit('Missing API Dockerfile')
+PY
+flock -u 8
+timeout --kill-after=15s 600s docker build --target test -t "demandrift-api-test:$sha" "$context"
+timeout --kill-after=15s 180s docker run --rm --network=none --read-only --cap-drop=ALL --security-opt=no-new-privileges --pids-limit=128 --memory=512m --cpus=1 --tmpfs /tmp:rw,noexec,nosuid,size=64m "demandrift-api-test:$sha"
+timeout --kill-after=15s 600s docker build --target runtime --build-arg "APP_REVISION=$sha" --label "org.opencontainers.image.revision=$sha" -t "demandrift-api:$sha" "$context"
+# Recheck after build: a newer push must never be overwritten by an old build.
+flock -w 600 8 || exit 75
+timeout 180s git -C "$repo" fetch --depth=1 origin main
+[[ "$sha" == "$(git -C "$repo" rev-parse FETCH_HEAD)" ]] || { echo 'Rejected: main advanced during build'; exit 65; }
+previous=''
+[[ ! -f "$base/last-successful-sha" ]] || previous=$(cat "$base/last-successful-sha")
+compose() { APP_REVISION="$1" docker compose -p demandrift-api -f "$base/compose.yml" "${@:2}"; }
+if compose "$sha" up -d --wait --wait-timeout 90; then
+  printf '%s\n' "$sha" > "$base/last-successful-sha.tmp"
+  mv "$base/last-successful-sha.tmp" "$base/last-successful-sha"
+  printf 'SUCCESS API commit=%s loopback=127.0.0.1:18082\n' "$sha"
+else
+  echo 'Deployment unhealthy; restoring previous successful image' >&2
+  if [[ "$previous" =~ ^[0-9a-f]{40}$ ]]; then
+    compose "$previous" up -d --wait --wait-timeout 90 || { echo 'ROLLBACK FAILED' >&2; exit 71; }
+  else
+    compose "$sha" down
+  fi
+  exit 70
+fi

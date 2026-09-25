@@ -1,0 +1,42 @@
+name: FastAPI build, test and deploy
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/api/**'
+      - 'infra/api/**'
+      - 'infra/backend-build/demandrift-build'
+      - '.github/workflows/api-deploy.yml'
+      - 'scripts/build-backend.sh'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: demandrift-api-deploy
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Test, build and deploy exact main API commit on Hetzner
+        env:
+          BUILD_KEY: ${{ secrets.HETZNER_BUILD_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.HETZNER_BUILD_KNOWN_HOSTS }}
+          TARGET: ${{ vars.HETZNER_BUILD_HOST }}
+          COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$BUILD_KEY" && test -n "$KNOWN_HOSTS" && test -n "$TARGET"
+          temp_dir=$(mktemp -d)
+          trap 'rm -rf "$temp_dir"' EXIT
+          umask 077
+          printf '%s\n' "$BUILD_KEY" > "$temp_dir/key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$temp_dir/known_hosts"
+          ssh -F /dev/null -i "$temp_dir/key" \
+            -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+            -o UserKnownHostsFile="$temp_dir/known_hosts" \
+            -o ConnectTimeout=20 -o ServerAliveInterval=15 -o ServerAliveCountMax=4 \
+            "root@$TARGET" "build-api $COMMIT"

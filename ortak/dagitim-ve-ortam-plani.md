@@ -2,6 +2,8 @@
 
 **22 Eylül 2026 durumu:** Frontend https://demandrift.vercel.app üzerinde yayında (`main`, root `apps/web`, Next.js). Hetzner `/opt/demandrift-build` altında kısıtlı SSH tetiklemesiyle Docker veri-scripti build/test akışı kuruldu. GitHub `build-test.yml` push ve manuel tetiklemesi başarıyla doğrulandı (70 offline test). Batuhan `gh workflow run build-test.yml --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --ref main` komutunu kullanabilir. Genel runner yerine yalnız build komutuna izin veren anahtar kullanılıyor. FastAPI/worker/veritabanı servis yayını hâlâ sonraki backend teslimidir. [Kontrol raporu](raporlar/dagitim-kontrol-2026-09-22.md).
 
+**25 Eylül 2026 güncellemesi:** `apps/api` FastAPI sağlık servisi ve ayrı `api-ci.yml` / `api-deploy.yml` eklendi. Tek komut `bash scripts/build-backend.sh`; laboratuvar için sona `lab` eklenir. GitHub hosted runner → kısıtlı SSH yaklaşımı sürer; aşağıdaki self-hosted runner önerisi uygulanmış kurulum değildir. [Güncel API işletim belgesi](../infra/api/README.md).
+
 ## Kesinleşen yerleşim
 
 | Bileşen | Yer / sorumluluk |

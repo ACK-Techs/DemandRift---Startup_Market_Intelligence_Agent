@@ -1,6 +1,6 @@
 # Hetzner backend build
 
-Mevcut veri laboratuvarını Docker imajı yapıp 70 offline sorgu/kaynak seçimi/bütçe testini çalıştırır. Henüz FastAPI servisi yok: bu workflow çalışan bir API yayınladığını iddia etmez. Gerçek API/worker geldiğinde servis dağıtımı ayrıca eklenecek.
+Mevcut veri laboratuvarını Docker imajı yapıp 70 offline sorgu/kaynak seçimi/bütçe testini çalıştırır. Bu workflow API yayınlamaz. `apps/api` FastAPI temeli için ayrı [API build/deploy akışı](../api/README.md) vardır.
 
 ## Batuhan'ın komutu
 
@@ -10,7 +10,7 @@ GitHub CLI ile repo yazma/Actions çalıştırma yetkisi olan hesabına giriş y
 gh workflow run build-test.yml --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --ref main
 ```
 
-Repo içinden alternatif: `bash scripts/build-backend.sh`.
+Repo içinden alternatif: `bash scripts/build-backend.sh lab`.
 
 Sonuç: GitHub → Actions → **Hetzner backend build and test**. `gh run list --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --workflow build-test.yml --limit 5` ve `gh run watch RUN_ID --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --exit-status` ile izlenebilir.
 
@@ -30,4 +30,4 @@ Kilit ile tek build; exact-current-main kontrolü; yalnız normal `.py/.csv/.jso
 
 Başarılı sürüm `/opt/demandrift-build/last-successful-sha`; loglar `/opt/demandrift-build/logs`; imaj `demandrift-lab:<SHA>`. Başarısız build/test başarılı sürüm işaretini değiştirmez. Geçici context/container temizlenir. SHA imajları/logları korunur; bu ilk kurulum otomatik retention uygulamaz. Büyüme durumunda yönetici yalnız `demandrift-lab` imajlarını seçerek temizler, genel `docker system prune` kullanmaz. Sunucudaki diğer uygulamalara dokunulmaz.
 
-FastAPI/PostgreSQL/Redis/Celery yayını, HTTPS API, CORS ve Gemini anahtarı bu veri-scripti build'inden ayrı sonraki teslimdir. Frontend Vercel'de `apps/web` olarak kalır.
+FastAPI sağlık servisi ayrı API workflow’undadır; PostgreSQL/Redis/Celery, HTTPS API, CORS ve Gemini entegrasyonu sonraki ürün teslimidir. Frontend Vercel'de `apps/web` olarak kalır.
