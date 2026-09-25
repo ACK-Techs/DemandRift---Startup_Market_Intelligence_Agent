@@ -34,6 +34,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "G13": ("Görev 13", "SourceFitMatrix v1"),
     "G14": ("Görev 14", "Denetim ve sürümlü teslim paketi (veri çalışması Gün 5)"),
     "AS01": ("AS-01", "Batuhan'ın F01–F10 denemeleri için kaynak yeteneği ve erişim sınırları"),
+    "AS02": ("AS-02", "Batuhan'ın hata bildirimini yeniden üretme hazırlığı"),
     "AS06": ("AS-06", "Çözüm günlüğü ve kaynak sağlık kayıtları"),
 }
 
@@ -176,6 +177,12 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "COZUM-GUNLUGU.csv": ("AS06", "cikti", "11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut"),
     "KAYNAK-SAGLIK.csv": ("AS06", "cikti", "19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur"),
     "cozum_gunlugu.py": ("AS06", "kod", "Günlüğü tutar, sağlık kayıtlarını ölçer"),
+
+    # --- AS-02 ---
+    "AS02-BILDIRIM.csv": ("AS02", "girdi", "**Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar"),
+    "AS02-ONDOGRULAMA.csv": ("AS02", "cikti", "Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6)"),
+    "AS02-ONDOGRULAMA-GIRDI.csv": ("AS02", "girdi", "Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR"),
+    "yeniden_uret.py": ("AS02", "kod", "Aynı sorguyu yeniden üretir; erişim/içerik/alan/dil sorununu ayırır"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

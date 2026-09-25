@@ -1,0 +1,7 @@
+fb_id,fikir,source_id,denenen_url,sorgu_metni,beklenen,batuhan_gozlemi,hedef_dil,hedef_pazar,bildirim_tarihi,beklenen_alanlar
+ON-01,F02,source-0075,https://www.reddit.com/r/agency/,,erisim sinifi,(ön doğrulama — AS-01'de robots yasağı ölçüldü),,global,2026-09-25,
+ON-02,F02,source-0135,https://www.capterra.com/proofing-software/,,erisim sinifi,(ön doğrulama — AS-01'de bot koruması ölçüldü),,global,2026-09-25,
+ON-03,F01,source-0097,https://play.google.com/store/apps/details?id=com.northcube.sleepcycle,,yanlis-bos-icerik sinifi,(ön doğrulama — AS-01'de JS kabuğu ölçüldü),,global,2026-09-25,
+ON-04,F09,source-0317,https://www.fresha.com/pricing,,sorun-yok (fiyat cikmali),(ön doğrulama — desen düzeltmesinden sonra fiyat çıkıyor),,TR,2026-09-25,fiyat
+ON-05,F09,source-0141,https://sourceforge.net/directory/?q=salon%20scheduling%20software,salon scheduling software,yanlis-bos-icerik (ilgisiz),(ön doğrulama — AS-01'de ilgisiz sonuç ölçüldü),,global,2026-09-25,
+ON-06,F08,source-0096,https://apps.apple.com/us/app/wordle/id1095569891,,"dil-pazar (icerik en, hedef tr)",(ön doğrulama — hedef dil tr verilince ayrım çalışmalı),tr,TR,2026-09-25,

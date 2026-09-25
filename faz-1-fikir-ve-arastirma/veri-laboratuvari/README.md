@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 126 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 131 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -204,6 +204,15 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`alternatif_kaynak.py`](alternatif_kaynak.py) | kod | Alternatif arar; HTTP 200'ü ilgili içerik saymaz |
 | [`as01_kaynak_kontrol.py`](as01_kaynak_kontrol.py) | kod | Kaynakları bugün yeniden yoklar, kanıt artefaktını depoya yazar |
 
+### AS-02 — Batuhan'ın hata bildirimini yeniden üretme hazırlığı
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`AS02-ONDOGRULAMA.csv`](AS02-ONDOGRULAMA.csv) | çıktı | Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6) |
+| [`yeniden_uret.py`](yeniden_uret.py) | kod | Aynı sorguyu yeniden üretir; erişim/içerik/alan/dil sorununu ayırır |
+| [`AS02-BILDIRIM.csv`](AS02-BILDIRIM.csv) | girdi | **Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar |
+| [`AS02-ONDOGRULAMA-GIRDI.csv`](AS02-ONDOGRULAMA-GIRDI.csv) | girdi | Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR |
+
 ### AS-06 — Çözüm günlüğü ve kaynak sağlık kayıtları
 
 | Dosya | Rol | Ne olduğu |
@@ -229,6 +238,9 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS01-GERI-BILDIRIM.csv`](AS01-GERI-BILDIRIM.csv) | AS-01 | İçerik vermeyen kaynaklar için açık geri bildirim kayıtları |
 | [`AS01-IDDIA-DOGRULAMA.csv`](AS01-IDDIA-DOGRULAMA.csv) | AS-01 | KAYNAK-ALAN.csv'nin 100 alan iddiasının bugünkü yanıtla sınanması |
 | [`AS01-KAYNAK-KONTROL.csv`](AS01-KAYNAK-KONTROL.csv) | AS-01 | F01–F10 × kaynak: kayıtlı durum ve bugünkü yoklama yan yana |
+| [`AS02-BILDIRIM.csv`](AS02-BILDIRIM.csv) | AS-02 | **Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar |
+| [`AS02-ONDOGRULAMA-GIRDI.csv`](AS02-ONDOGRULAMA-GIRDI.csv) | AS-02 | Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR |
+| [`AS02-ONDOGRULAMA.csv`](AS02-ONDOGRULAMA.csv) | AS-02 | Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6) |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
 | [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | AS-06 | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
@@ -319,6 +331,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`survey_common_crawl.py`](survey_common_crawl.py) | Erişim laboratuvarı | Arşivde ne var diye tarar |
 | [`terim_sozlugu.py`](terim_sozlugu.py) | Görev 5 | Türkçe terimleri hedef pazarın diline çevirir |
 | [`veri_envanteri.py`](veri_envanteri.py) | Görev 10 | Envanteri ve raporları üretir |
+| [`yeniden_uret.py`](yeniden_uret.py) | AS-02 | Aynı sorguyu yeniden üretir; erişim/içerik/alan/dil sorununu ayırır |
 
 </details>
 <!-- HARITA:BITIS -->
