@@ -114,6 +114,14 @@ def build_initial_run_manifest() -> InitialRunManifest:
     return InitialRunManifest(runs=runs)
 
 
+def find_scenario_run_seed(scenario_id: str) -> ScenarioRunSeed | None:
+    """Return the planned scenario metadata used to validate submitted results."""
+    return next(
+        (run for run in build_initial_run_manifest().runs if run.scenario_id == scenario_id),
+        None,
+    )
+
+
 router = APIRouter(prefix="/api/v1/research", tags=["research-planning"])
 
 

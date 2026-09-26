@@ -12,7 +12,7 @@ VALID_F03_RECORD = {
     "script": "faz-1-fikir-ve-arastirma/veri-laboratuvari/keyword_search_pass.py",
     "script_version": "v1",
     "access_method": "api",
-    "expected_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi"],
+    "expected_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi", "surum"],
     "returned_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi"],
     "limits": {"max_records": 10, "timeout_seconds": 30},
     "counts": {"discovered": 5, "fetched": 4, "eligible": 3, "unique": 3},
@@ -49,7 +49,10 @@ def test_successful_record_cannot_claim_success_without_an_artifact():
 def test_source_unavailable_is_not_misrepresented_as_empty_results():
     unavailable_record = {
         **VALID_F03_RECORD,
+        "scenario_id": "F02-net",
         "source_id": "source-0134",
+        "script": "faz-1-fikir-ve-arastirma/veri-laboratuvari/as01_kaynak_kontrol.py",
+        "expected_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi", "fiyat", "para_birimi"],
         "access_status": "challenge",
         "returned_fields": [],
         "counts": {"discovered": 0, "fetched": 0, "eligible": 0, "unique": 0},
@@ -62,6 +65,30 @@ def test_source_unavailable_is_not_misrepresented_as_empty_results():
 
     assert response.status_code == 200
     assert response.json()["record"]["access_status"] == "challenge"
+
+
+def test_success_cannot_be_reported_for_a_planned_but_ineligible_source():
+    invalid_record = {
+        **VALID_F03_RECORD,
+        "scenario_id": "F01-net",
+        "source_id": "source-0097",
+        "script": "faz-1-fikir-ve-arastirma/veri-laboratuvari/as01_kaynak_kontrol.py",
+        "expected_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi"],
+    }
+    with TestClient(create_app()) as client:
+        response = client.post("/api/v1/research/run-records/validate", json=invalid_record)
+
+    assert response.status_code == 422
+    assert "eligible_for_execution" in response.text
+
+
+def test_result_cannot_claim_a_source_that_is_not_planned_for_its_scenario():
+    invalid_record = {**VALID_F03_RECORD, "source_id": "source-0134"}
+    with TestClient(create_app()) as client:
+        response = client.post("/api/v1/research/run-records/validate", json=invalid_record)
+
+    assert response.status_code == 422
+    assert "not planned" in response.text
 
 
 def test_collection_counts_cannot_reverse_the_provenance_flow():

@@ -7,6 +7,8 @@ from uuid import UUID
 from fastapi import APIRouter
 from pydantic import BaseModel, Field, model_validator
 
+from app.initial_runs import find_scenario_run_seed
+
 
 class AccessStatus(StrEnum):
     SUCCESS = "success"
@@ -58,7 +60,22 @@ class SourceRunRecord(BaseModel):
 
     @model_validator(mode="after")
     def successful_runs_need_inspectable_provenance(self) -> "SourceRunRecord":
+        scenario = find_scenario_run_seed(self.scenario_id)
+        if scenario is None:  # Defensive guard for a future manifest/schema divergence.
+            raise ValueError("scenario_id is not present in the initial run manifest")
+        source = next(
+            (candidate for candidate in scenario.source_candidates if candidate.source_id == self.source_id),
+            None,
+        )
+        if source is None:
+            raise ValueError("source_id is not planned for this scenario")
+        if self.script not in scenario.script_paths:
+            raise ValueError("script is not planned for this scenario")
+        if self.expected_fields != source.expected_fields:
+            raise ValueError("expected_fields must match the planned source fields")
         if self.access_status == AccessStatus.SUCCESS:
+            if not source.eligible_for_execution:
+                raise ValueError("successful runs require a source eligible_for_execution")
             if not self.raw_artifact_refs:
                 raise ValueError("successful runs require raw_artifact_refs")
             if not self.returned_fields:

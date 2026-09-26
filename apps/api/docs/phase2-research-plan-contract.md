@@ -59,6 +59,11 @@ etiketi taşımak zorundadır. Kaynak erişilemez/challenge/policy engelli ise
 başarı iddiası yerine erişim durumu ve hata açıklaması zorunludur. Bu endpoint
 veri tabanına yazmaz, kaynak çağrısı veya model çağrısı yapmaz.
 
+Kayıt, manifestteki `scenario_id` ile `source_id` eşleşmesine ve o senaryonun
+izin verdiği script yoluna bağlıdır. `success` yalnız `eligible_for_execution`
+olan bir kaynakta kabul edilir; challenge, JS kabuğu veya policy engeli bulunan
+adaylar ancak açık erişim durumu ve hata bilgisiyle kaydedilebilir.
+
 ## Plan girdisi
 
 İlk istek aşağıdaki alanları taşır:
