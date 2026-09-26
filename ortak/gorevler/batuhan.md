@@ -7,7 +7,7 @@ Tüm işler **planlandı**; bu dosya tamamlanma raporu değildir. Kabul eden ve 
 | ID | Faz | Görev | Bağımlılık | Teslim / kabul koşulu | Durum | Kanıt / FB / son güncelleme |
 |---|---|---|---|---|---|---|
 | BT-01 | 1 | Kategori/sorgu kuralları, sürümlü ResearchPlan ve Gemini sohbet akışı | Ortak teknoloji/API kararları; F1 senaryoları | Şema kontrollü akış; model araçsız; eksik bilgi korunur | planlandı | — |
-| BT-02 | 1 | Kategori → kaynak → script → alan eşlemesi ve ilk gerçek sorgu denemeleri | BT-01; kaynak profilleri; test erişimi | 30 fikir sonucu ve seçili kaynaklarda ham kanıtlı denemeler | planlandı | — |
+| BT-02 | 1 | Kategori → kaynak → script → alan eşlemesi ve ilk gerçek sorgu denemeleri | BT-01; kaynak profilleri; test erişimi | 30 fikir sonucu ve seçili kaynaklarda ham kanıtlı denemeler | çalışılıyor | [AS-01 ön kabul / kaynak kullanım sınırları](geri-bildirim/BT02-AS01-KONTROL-2026-09-26.md) · 2026-09-26 |
 | BT-03 | 1 | Başarısız denemeleri Ayselin’e bildir; düzeltmeleri yeniden kontrol et | Başlangıç: BT-02; yeniden kontrol: AS-02/03 teslimi | Her bulgu beklenen/gerçek/düzeltme/kabul koşullu; geri kontrol kaydı | planlandı | — |
 | BT-04 | 1 | Ayşenur’a fikir/plan API ve hata örnekleri ver; bağlı ekranı kabul et | Başlangıç: BT-01; son kabul: AY-03 teslimi | Gerçek plan kimliği ve ekran durumları kontrol edilmiş | planlandı | — |
 | BT-05 | 2 | Script adaptörü, kayıt, limit/retry/iptal ve veri hazırlama hattı | Faz 1 kabulü; mimari seçimleri | Ham→normalize→claim/citation→SourceReport→EvidenceBundle izlenebilir | planlandı | — |
