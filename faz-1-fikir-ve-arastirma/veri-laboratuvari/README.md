@@ -521,7 +521,15 @@ Bunun yerine **her kaynağın kendi arama yüzeyi** kataloglandı.
 python3 build_search_surfaces.py                      # katalog + URL dizini
 python3 keyword_search_pass.py "market intelligence"  # yalnızca yerel arama
 python3 keyword_search_pass.py "market intelligence" --live --limit 40
+# F03 geliştirici aracı denemesi: yalnız katalogdaki üç aday kaynağı daraltır.
+python3 keyword_search_pass.py "API breaking changes backward compatibility CLI" --live --limit 3 --source-id source-0017 --source-id source-0023 --source-id source-0022
 ```
+
+`--source-id` ile seçilen her kaynak raporda görünür. URL'ye sorgu
+yerleştirilemeyen kaynak `cozulemeyen_source_ids` altında kalır; bu durum
+başarılı sonuç veya sıfır bulgu değildir. F03'te Hacker News'in resmî API
+girişi arama parametresi taşımadığından, erişim sonucu ayrı bir
+`source_unavailable`/geri bildirim kaydıyla kapatılmalıdır.
 
 Örnek: arXiv'in ana sayfasındaki `<form action="https://arxiv.org/search">`
 formundan `arxiv.org/search?query={kelime}` kalıbı çıkarıldı. Katalog yolu

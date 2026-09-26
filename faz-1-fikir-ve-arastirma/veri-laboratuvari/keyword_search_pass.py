@@ -122,12 +122,27 @@ def yerel_ara(kelime: str, dizin: Path, limit: int = 200) -> list[dict[str, str]
     return vurus
 
 
+def kaynaklari_sec(
+    katalog: list[dict[str, str]], source_ids: set[str],
+) -> tuple[list[dict[str, str]], set[str]]:
+    """Return only explicitly selected catalog sources and any unknown IDs."""
+    if not source_ids:
+        return katalog, set()
+    katalog_ids = {satir["source_id"] for satir in katalog}
+    return (
+        [satir for satir in katalog if satir["source_id"] in source_ids],
+        source_ids - katalog_ids,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("kelime", help="Aranacak anahtar kelime")
     parser.add_argument("--catalog", type=Path, default=HERE / "ARAMA-YUZEYLERI.csv")
     parser.add_argument("--url-index", type=Path, default=RESULTS_DIR / "yerel-url-dizini.tsv")
     parser.add_argument("--limit", type=int, default=25, help="Canli sorgulanacak kaynak sayisi")
+    parser.add_argument("--source-id", action="append", default=[],
+                        help="Yalnız bu katalog source_id değerini çalıştırır; tekrarlanabilir.")
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--live", action="store_true",
@@ -135,7 +150,13 @@ def main() -> int:
     args = parser.parse_args()
 
     katalog = list(csv.DictReader(args.catalog.open(encoding="utf-8")))
+    selected_source_ids = set(args.source_id)
+    katalog, unknown_source_ids = kaynaklari_sec(katalog, selected_source_ids)
+    if unknown_source_ids:
+        parser.error("bilinmeyen source_id: " + ", ".join(sorted(unknown_source_ids)))
     yerel = yerel_ara(args.kelime, args.url_index)
+    if selected_source_ids:
+        yerel = [vurus for vurus in yerel if vurus["source_id"] in selected_source_ids]
     kaynak_sayisi = len({v["source_id"] for v in yerel})
     print(json.dumps({
         "kelime": args.kelime, "yerel_vurus": len(yerel), "yerel_kaynak": kaynak_sayisi,
@@ -162,8 +183,13 @@ def main() -> int:
         if len(hedefler) >= args.limit:
             break
 
+    resolved_source_ids = {hedef["source_id"] for hedef in hedefler}
+    unresolved_source_ids = sorted(selected_source_ids - resolved_source_ids)
+
     print(json.dumps({
         "canli_hedef": len(hedefler), "sablon_cozulemedi": atlanan,
+        "secili_source_ids": sorted(selected_source_ids),
+        "cozulemeyen_source_ids": unresolved_source_ids,
         "canli_kosu": bool(args.live),
     }, ensure_ascii=False), flush=True)
 
@@ -190,6 +216,7 @@ def main() -> int:
         atomic_write_json(cikti, {
             "kelime": args.kelime, "yerel_sonuclar": yerel,
             "canli_hedefler": [h["display_name"] for h in hedefler],
+            "cozulemeyen_source_ids": unresolved_source_ids,
         })
         print(json.dumps({"cikti": str(cikti)}, ensure_ascii=False))
     return 0

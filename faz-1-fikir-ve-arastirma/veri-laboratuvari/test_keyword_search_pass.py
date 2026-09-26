@@ -102,5 +102,21 @@ class YerelAramaTests(unittest.TestCase):
         self.assertEqual([], ara.yerel_ara("fitness", Path("/yok/olmayan.tsv")))
 
 
+class KaynakSecimiTests(unittest.TestCase):
+    def test_secili_kaynaklar_katalogla_sinirlanir(self):
+        katalog = [{"source_id": "source-0017"}, {"source_id": "source-0023"}]
+        secilen, bilinmeyen = ara.kaynaklari_sec(katalog, {"source-0023"})
+
+        self.assertEqual([{"source_id": "source-0023"}], secilen)
+        self.assertEqual(set(), bilinmeyen)
+
+    def test_bilinmeyen_kaynaklar_acikca_dondurulur(self):
+        katalog = [{"source_id": "source-0017"}]
+        secilen, bilinmeyen = ara.kaynaklari_sec(katalog, {"source-0017", "source-9999"})
+
+        self.assertEqual([{"source_id": "source-0017"}], secilen)
+        self.assertEqual({"source-9999"}, bilinmeyen)
+
+
 if __name__ == "__main__":
     unittest.main()
