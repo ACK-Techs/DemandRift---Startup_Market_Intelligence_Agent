@@ -34,6 +34,7 @@ tek etiket altında birleştirilmez.
 | `GET` | `/api/v1/research/categories` | Kanonik ana kategori ve ek paket kataloğunu döndürür. |
 | `POST` | `/api/v1/research-plans` | Doğrulanmış bir Idea Brief için, dış çağrı yapmadan sürümlü ResearchPlan taslağı üretir. |
 | `GET` | `/api/v1/research/source-plans/{category}` | AS-01 sağlık kaydına göre kategori → kaynak → script → alan eşlemesini döndürür; script çalıştırmaz. |
+| `GET` | `/api/v1/research/initial-runs` | BT-02 için 10 fikir × net/eksik/yanlış-etiket olmak üzere 30 senaryoluk manifest ve aday kaynakları döndürür; canlı sorgu veya kaynak çalıştırmaz. |
 
 `POST /api/v1/research-plans` yalnız planlama kontratını uygular. Kaynak
 çalıştırma Faz 3'ün sorumluluğudur ve bu endpointten başlatılamaz.
@@ -42,6 +43,13 @@ tek etiket altında birleştirilmez.
 Kaynak satırları 2026-09-24 AS-01 sağlık ölçümünü taşır. `eligible_for_first_run`
 değeri yalnız ilk deneme uygunluğunu anlatır; kaynak güncelliği ve izin durumu
 her gerçek koşuda yeniden doğrulanır.
+
+`GET /api/v1/research/initial-runs` bir sonuç API'si değildir. Her satırın
+`execution_status` değeri başlangıçta `not_run` olur; `raw_artifact_refs` ve
+`feedback_ids` boş döner. Kaynak sağlık durumu ve uygunluğu planlama bilgisidir;
+gerçek erişim, sayım, artefakt ve hata kaydı ancak yetkili runner gerçekten
+çalıştıktan sonra eklenebilir. Böylece bot koruması, JS kabuğu veya robots/policy
+kısıtı "sonuç yok" ya da başarılı çalışma olarak gizlenmez.
 
 ## Plan girdisi
 

@@ -7,6 +7,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from app.research_plan import router as research_plan_router
+from app.initial_runs import router as initial_runs_router
 from app.source_plan import router as source_plan_router
 
 
@@ -27,6 +28,7 @@ def create_app() -> FastAPI:
 
     application.include_router(research_plan_router)
     application.include_router(source_plan_router)
+    application.include_router(initial_runs_router)
 
     return application
 
