@@ -35,6 +35,7 @@ tek etiket altında birleştirilmez.
 | `POST` | `/api/v1/research-plans` | Doğrulanmış bir Idea Brief için, dış çağrı yapmadan sürümlü ResearchPlan taslağı üretir. |
 | `GET` | `/api/v1/research/source-plans/{category}` | AS-01 sağlık kaydına göre kategori → kaynak → script → alan eşlemesini döndürür; script çalıştırmaz. |
 | `GET` | `/api/v1/research/initial-runs` | BT-02 için 10 fikir × net/eksik/yanlış-etiket olmak üzere 30 senaryoluk manifest ve aday kaynakları döndürür; canlı sorgu veya kaynak çalıştırmaz. |
+| `POST` | `/api/v1/research/run-records/validate` | Gerçek sorgudan sonra oluşan kaynak kaydını doğrular; kayıt yazmaz ve sorgu çalıştırmaz. |
 
 `POST /api/v1/research-plans` yalnız planlama kontratını uygular. Kaynak
 çalıştırma Faz 3'ün sorumluluğudur ve bu endpointten başlatılamaz.
@@ -50,6 +51,13 @@ her gerçek koşuda yeniden doğrulanır.
 gerçek erişim, sayım, artefakt ve hata kaydı ancak yetkili runner gerçekten
 çalıştıktan sonra eklenebilir. Böylece bot koruması, JS kabuğu veya robots/policy
 kısıtı "sonuç yok" ya da başarılı çalışma olarak gizlenmez.
+
+`POST /api/v1/research/run-records/validate`, canlı veya manuel çalıştırmadan
+gelen bir sonucu kaydetmeden önce sözleşmeye karşı denetler. Başarılı kayıt;
+ham artefakt referansı, dönen alanlar, sıfırdan büyük fetched sayısı ve insan
+etiketi taşımak zorundadır. Kaynak erişilemez/challenge/policy engelli ise
+başarı iddiası yerine erişim durumu ve hata açıklaması zorunludur. Bu endpoint
+veri tabanına yazmaz, kaynak çağrısı veya model çağrısı yapmaz.
 
 ## Plan girdisi
 

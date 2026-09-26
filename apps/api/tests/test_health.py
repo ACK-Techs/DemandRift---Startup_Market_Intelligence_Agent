@@ -42,6 +42,7 @@ def test_unimplemented_business_routes_are_not_advertised():
         "/api/v1/research/plans",
         "/api/v1/research/source-plans/{category}",
         "/api/v1/research/initial-runs",
+        "/api/v1/research/run-records/validate",
     }
     assert schema["paths"]["/health"]["get"]["responses"]["200"]["content"][
         "application/json"
