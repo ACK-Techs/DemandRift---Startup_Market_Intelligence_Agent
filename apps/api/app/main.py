@@ -7,6 +7,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from app.research_plan import router as research_plan_router
+from app.source_plan import router as source_plan_router
 
 
 class HealthResponse(BaseModel):
@@ -25,6 +26,7 @@ def create_app() -> FastAPI:
         return HealthResponse(revision=revision)
 
     application.include_router(research_plan_router)
+    application.include_router(source_plan_router)
 
     return application
 

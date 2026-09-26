@@ -36,7 +36,12 @@ def test_unimplemented_business_routes_are_not_advertised():
     with TestClient(create_app()) as client:
         assert client.post("/research", json={}).status_code == 404
         schema = client.get("/openapi.json").json()
-    assert set(schema["paths"]) == {"/health", "/api/v1/research/categories", "/api/v1/research/plans"}
+    assert set(schema["paths"]) == {
+        "/health",
+        "/api/v1/research/categories",
+        "/api/v1/research/plans",
+        "/api/v1/research/source-plans/{category}",
+    }
     assert schema["paths"]["/health"]["get"]["responses"]["200"]["content"][
         "application/json"
     ]["schema"]["$ref"].endswith("/HealthResponse")

@@ -33,9 +33,15 @@ tek etiket altında birleştirilmez.
 | `GET` | `/health` | Süreç canlılığı; araştırma hazırlığını göstermez. |
 | `GET` | `/api/v1/research/categories` | Kanonik ana kategori ve ek paket kataloğunu döndürür. |
 | `POST` | `/api/v1/research-plans` | Doğrulanmış bir Idea Brief için, dış çağrı yapmadan sürümlü ResearchPlan taslağı üretir. |
+| `GET` | `/api/v1/research/source-plans/{category}` | AS-01 sağlık kaydına göre kategori → kaynak → script → alan eşlemesini döndürür; script çalıştırmaz. |
 
 `POST /api/v1/research-plans` yalnız planlama kontratını uygular. Kaynak
 çalıştırma Faz 3'ün sorumluluğudur ve bu endpointten başlatılamaz.
+
+`GET /api/v1/research/source-plans/{category}` BT-02'nin ilk eşleme yüzeyidir.
+Kaynak satırları 2026-09-24 AS-01 sağlık ölçümünü taşır. `eligible_for_first_run`
+değeri yalnız ilk deneme uygunluğunu anlatır; kaynak güncelliği ve izin durumu
+her gerçek koşuda yeniden doğrulanır.
 
 ## Plan girdisi
 
