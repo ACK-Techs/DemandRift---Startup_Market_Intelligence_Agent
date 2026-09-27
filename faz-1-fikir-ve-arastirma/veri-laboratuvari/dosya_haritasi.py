@@ -37,6 +37,7 @@ GOREVLER: dict[str, tuple[str, str]] = {
     "AS02": ("AS-02", "Batuhan'ın hata bildirimini yeniden üretme hazırlığı"),
     "AS03": ("AS-03", "Alternatifin farkı, limitleri ve arşiv yaşı"),
     "AS04": ("AS-04", "Hata incelemesi ve etiketli referans kümesi"),
+    "AS05": ("AS-05", "Kanıt sayımı, bağımsızlık ve alıntı kontrolü"),
     "AS06": ("AS-06", "Çözüm günlüğü ve kaynak sağlık kayıtları"),
 }
 
@@ -197,6 +198,13 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS04-HATA-INCELEMESI.csv": ("AS04", "cikti", "366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme"),
     "AS04-ETIKETLI-REFERANS.csv": ("AS04", "cikti", "15 elle etiketlenmiş örnek + 2 doğrudan karşıt bulgu"),
     "hata_incelemesi.py": ("AS04", "kod", "Dört hata sınıfını arar; precision üretir, recall üretmez"),
+
+    # --- AS-05 ---
+    "AS05-SAYIM-RAPORU.md": ("AS05", "belge", "3/2 eşiği uygulandığında ne geçiyor; **bilinmeyen bağımsızlık sayılmaz**"),
+    "AS05-KANIT-SAYIMI.csv": ("AS05", "cikti", "Hücre başına politikanın istediği yedi sayım alanı ve gate sonucu"),
+    "AS05-ALINTI-KONTROL.csv": ("AS05", "cikti", "Her çıkarılan değerin metin/hash/sürüm bağı"),
+    "AS05-CLAIM-BILDIRIMI.csv": ("AS05", "cikti", "Claim düzeyinde bildirim: hangi iddia neden taşınamaz"),
+    "kanit_sayimi.py": ("AS05", "kod", "3/2 sayımını uygular, bağımsızlığı ve alıntıları denetler"),
 }
 
 ROL_SIRASI = {"belge": 0, "cikti": 1, "kod": 2, "girdi": 3}

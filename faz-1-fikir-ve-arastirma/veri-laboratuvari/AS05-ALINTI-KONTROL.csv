@@ -1,0 +1,308 @@
+document_id,kaynak_adi,alan,deger,metin_bagi,hash_bagi,surum_bagi,durum
+doc-9509549100e9,AlternativeTo,engagement_yorum_sayisi,6,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-b0124bcad21d,Angi,fiyat,"$1,890",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c7a276cf2965,APKMirror,fiyat,$10,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-c7a276cf2965,APKMirror,surum,7.14.1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1e29b756ea67,APKMirror,fiyat,$10,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d1ed39bc00b3,AppSumo,fiyat,$39,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d1ed39bc00b3,AppSumo,engagement_yorum_sayisi,3,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1842436b8403,AppSumo,fiyat,$79,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1842436b8403,AppSumo,engagement_yorum_sayisi,119,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2d703b201b2c,AWS Marketplace,repo_yolu,aws/CICD-for-SageMakerUnifiedStudio,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-3cef2cb31eff,Bank for International Settlements,gosterge,indicators at end-March 2026,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-5c8e678dc72c,Borsa İstanbul,gosterge,Endeksleri 1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-5c8e678dc72c,Borsa İstanbul,yil_araligi,2025-2026,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-52494270bdd5,BTK,mevzuat_atfi,Kanun,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-52494270bdd5,BTK,yil_araligi,2026-2027,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-07c2dee9042b,BuiltWith,fiyat,"$60,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-07c2dee9042b,BuiltWith,ozellik_basligi,Features,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6accd6a4efe5,Bureau of Labor Statistics,gosterge,rates) Productivity increased 1.2,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-6accd6a4efe5,Bureau of Labor Statistics,yil_araligi,2019–2023,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-9fe44b0bf7a0,Class Central,engagement_yorum_sayisi,"250,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-b0740422a168,CodeCanyon,fiyat,$79,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9291066bee9f,Companies House,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-f7dafa7ca7f1,Competition and Markets Authority,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d86cbfe3b9fc,Consumer Financial Protection Bureau,yil_araligi,2026-2030,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1b07b96e922f,ConsumerAffairs,fiyat,"$1,400",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-1b07b96e922f,ConsumerAffairs,engagement_yorum_sayisi,3M+,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e4681ee45a1a,Creative Market,fiyat,$0.00,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-cba093356aaa,Crozdesk,fiyat,$5.00,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e36ba3ae5ce2,DataForSEO,engagement_yorum_sayisi,10,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-e36ba3ae5ce2,DataForSEO,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c6a94d95a7a7,Dev.to,repo_yolu,loncadev/baron,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-c6a94d95a7a7,Dev.to,lisans,MIT,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-3967b66ad8fb,DZone,paket_adi,postgres-inventory-connector,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-2e738043de4b,DZone,paket_adi,postgres-inventory-connector,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7a7c4ee875bd,Envato Market,fiyat,$69,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-87f7efcaebe4,European Banking Authority,gosterge,indicators across the EU/EEA in second h,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-87f7efcaebe4,European Banking Authority,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-84cb20820bb9,European Central Bank,gosterge,rate statistics: July 2026,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-84cb20820bb9,European Central Bank,mevzuat_atfi,Regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-84cb20820bb9,European Central Bank,yil_araligi,2000–2020,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-b863db524518,European Medicines Agency,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-b863db524518,European Medicines Agency,yil_araligi,1995 - 2026,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-8b26e285e6ae,European Securities and Markets Authority,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8b26e285e6ae,European Securities and Markets Authority,yil_araligi,2023-2028,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-f333a0f1d1e0,F-Droid,surum,0.5,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-8f61465706d8,Federal Register,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d399df9a7b5c,Federal Reserve,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-bcff7ad791c6,Federal Reserve Economic Data,gosterge,Index updated 5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-589b9da42cc5,Financial Conduct Authority,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-0dbe6bf144b3,Firefox Add-ons,surum,3.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-3763bf9685fd,Foursquare,fiyat,$100,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-556aa2629598,FRED,gosterge,rate unemployment inflation sofr pce m2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9703069da0a5,GitHub,paket_adi,build-your-own-x,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9703069da0a5,GitHub,repo_yolu,users/codecrafters-io,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9703069da0a5,GitHub,lisans,mit,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-796b0b20504a,Global Health Data Exchange,yil_araligi,1990-2023,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ce17a0e9d2d5,Global Health Data Exchange,gosterge,Index (SDI) quintiles; for the years 199,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-ce17a0e9d2d5,Global Health Data Exchange,yil_araligi,1990-2023,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e27cc098d7d8,Gumroad,fiyat,$1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e7269b34c092,IMF,gosterge,Index[819,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8f38b74e4e04,Infracost,fiyat,$51,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4d7d45daba61,Investing.com,gosterge,Rate (Jul) Act : 2.30%,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-4d7d45daba61,Investing.com,engagement_yorum_sayisi,1.3M,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-806359170d2b,itch.io,fiyat,$5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-806359170d2b,itch.io,surum,26.18.0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a6c1ee1facac,JetBrains Marketplace,repo_yolu,olsh/resharper-structured-logging,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-a6c1ee1facac,JetBrains Marketplace,lisans,MIT,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-5d229973497b,Justia Patents,gosterge,indicators (Class 116,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-5d229973497b,Justia Patents,mevzuat_atfi,regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-a0974365ee29,KAP,gosterge,index]}} Sermaye Artırımı Azaltımı 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-eab705470770,Lemon Squeezy,fiyat,$99,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-81dd91be53af,Mangools,engagement_yorum_sayisi,130+,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-cbf301388450,Metacritic,engagement_yildiz,31,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9369d61eda66,Nasdaq,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4dd13d636800,Nintendo eShop,fiyat,$34.99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-416d804f012d,npm,paket_adi,startup,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-416d804f012d,npm,repo_yolu,camshaft/startup,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-416d804f012d,npm,lisans,MIT,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c4a0e64218a6,NYSE,mevzuat_atfi,Regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-cdbf0e296de8,Open Banking UK,gosterge,Indicators 17,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-cdbf0e296de8,Open Banking UK,mevzuat_atfi,regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-46a691effc9c,Open Banking UK,gosterge,"indicators/ Patrick Cannon Mon, 17",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-46a691effc9c,Open Banking UK,mevzuat_atfi,regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-eff8e262d0eb,OpenCritic,engagement_yildiz,88,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9816f9fe0c0b,Our World in Data,gosterge,"Indicators, July 2026",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-96a98ee308d5,Rekabet Kurumu,mevzuat_atfi,Kanun,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d4416978817a,Remote OK,engagement_yorum_sayisi,"10,000+",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-3c17ae13a8f0,Respondent,engagement_yorum_sayisi,900+,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-fef0c56163b6,Reviews.io,engagement_yorum_sayisi,"7,000",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-553db2de4c91,RubyGems,engagement_indirme_sayisi,"261,686,774,469",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1055b5afe2f1,SaaSworthy,engagement_yorum_sayisi,3895,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-324b294b3622,Sastrify,fiyat,$6,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d435f4218281,Sağlık Bakanlığı,gosterge,İstatistikleri Yıllığı 2023,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d87b67b63071,SEC EDGAR,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ebdb18780434,Seloger,fiyat,€ 02,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-0d11a262d847,Serchen,engagement_yorum_sayisi,60,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2f69c0b4d121,Serpstat,engagement_yorum_sayisi,600+,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ef841e69fd11,Server Fault,paket_adi,Information Security Meta Stack Exchange,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-bf953280336e,Shopify App Store,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-dc9fc1b80472,Sitejabber,engagement_yorum_sayisi,648,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-6bfdf24750e4,Slashdot,engagement_indirme_sayisi,2.2B,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-421a4faf8222,Slashdot,engagement_indirme_sayisi,2.2B,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-4dc9009304b6,SoftwareSuggest,engagement_yorum_sayisi,2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-71cc3d88346e,SourceForge,issue_sayisi,1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-71cc3d88346e,SourceForge,engagement_indirme_sayisi,"19,884,515",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-71cc3d88346e,SourceForge,engagement_yorum_sayisi,999,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-49c778af34e8,SourceForge Reviews,fiyat,$19,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-49c778af34e8,SourceForge Reviews,engagement_yorum_sayisi,2026,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-bb4e35b2da9d,SPK,yil_araligi,1976-2026,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a14f468c745f,Stack Exchange,paket_adi,Meta Stack Overflow,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6e0e658a0d8c,Steam,fiyat,$10.49,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6e0e658a0d8c,Steam,engagement_yildiz,34.99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c9d091b3b2e8,SteamDB,fiyat,$69.99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8677b8437b13,Super User,paket_adi,Android Enthusiasts Meta Stack Exchange,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-dc7fb5fc93d4,T.C. Sağlık Bakanlığı,gosterge,İstatistikleri Yıllığı 2023,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-be05f504edd2,T.C. Ticaret Bakanlığı,gosterge,Endeksi Ocak 2025,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-dfb9b9014a34,TCMB,gosterge,İstatistikleri 02,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-23b80fe18bc0,The Trademark Search Company,yil_araligi,2008-2026,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-144ee3fbd835,ThemeForest,fiyat,$69,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c466768ba78c,Thumbtack,fiyat,$ 110,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c466768ba78c,Thumbtack,engagement_yorum_sayisi,300k,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-246a804ebae7,Together AI,lisans,MIT,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-986917f20cd2,TradingView,gosterge,"indicator, with +80%",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-986917f20cd2,TradingView,yil_araligi,2021–2025,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-81d1c6f37665,Tripadvisor,fiyat,$1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-87da683edecb,TrustRadius,engagement_yorum_sayisi,48,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9c007d60d414,TÜİK,gosterge,İstatistikleri Temmuz 2026,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9c007d60d414,TÜİK,mevzuat_atfi,Kanun,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c3a538144c9c,Türk Patent ve Marka Kurumu,yil_araligi,2022 - 2025,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-30ccef1dd4e2,UK Financial Conduct Authority,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2556abda108b,Uneed,engagement_yorum_sayisi,2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2556abda108b,Uneed,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-3ba40d1b28f2,United Nations Data,gosterge,rates PDF | CSV Updated: 22,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8bc168bdbfee,Vendr,fiyat,"$1,446,521,418",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-78cc4784df82,Vertice,fiyat,$1,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-f15b198df4bb,WHO Global Health Observatory,yil_araligi,2016-2030,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-85595425b82f,WooCommerce Marketplace,fiyat,$79,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-85595425b82f,WooCommerce Marketplace,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-32bcb88b13b0,World Bank Open Data,gosterge,Indicators by Economy or Indicator Data ,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-0efc56ad508f,ZoomInfo,engagement_yorum_sayisi,2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-935bd7a42d03,Firefox Add-ons,surum,3.0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6d4693038cba,Airtable Marketplace,fiyat,$20,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7810ae1f522d,Salesforce AppExchange,fiyat,$30,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e901167e68df,Shopify App Store,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-dfc3493d66fa,AppSumo,fiyat,$29,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-dfc3493d66fa,AppSumo,engagement_yorum_sayisi,926,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6faf0827d2a5,AWS Marketplace,fiyat,$400,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c941e0f36d12,BASE,fiyat,$ 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-455907975a76,Borsa İstanbul,gosterge,Endeksleri 1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-455907975a76,Borsa İstanbul,yil_araligi,2013-2025,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-66d9cf28f8ad,Borsa İstanbul,gosterge,Endeksleri 1,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-66d9cf28f8ad,Borsa İstanbul,yil_araligi,2013-2025,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-dab87113fd9d,BuiltWith,fiyat,$ 295,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e8ab51093bc5,Walmart,fiyat,$0.00,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e8ab51093bc5,Walmart,engagement_yorum_sayisi,84,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e8ab51093bc5,Walmart,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-bd59f7c74fd8,BuzzSumo,fiyat,$ 199,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-22894f1a6844,Indeed,fiyat,$500,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-1f5cf5558ac1,Censys,fiyat,$70,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d27670bcfbe0,Censys,fiyat,$70,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-113f83ef0d49,Codeberg,engagement_yildiz,63,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d09db1dac191,SurveyMonkey,fiyat,548 TRY,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-64d748f29979,World Bank Open Data,gosterge,indicators going back more than 50,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a3c74e0329f8,Dev.to,fiyat,$200,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-00b2c34b2b02,dscout,fiyat,$2.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-681dcd544185,DZone,paket_adi,Password Reset,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-681dcd544185,DZone,fiyat,$5.,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-681dcd544185,DZone,surum,56.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-a6b75fdc68fe,Exploding Topics,fiyat,$39,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-55838b052d85,Founder Institute Türkiye,fiyat,"$150,000",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-a9f970a9e9eb,FinancesOnline,fiyat,$20,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-499a05176bac,Foursquare,fiyat,$0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-019d0ec23ee0,Federal Reserve Economic Data,gosterge,Rates (910,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-019d0ec23ee0,Federal Reserve Economic Data,yil_araligi,1914-1941,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-94624c6b44a2,FRED,gosterge,Rates (910,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-94624c6b44a2,FRED,yil_araligi,1914-1941,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ebbe4754b7b6,Gumroad,fiyat,$0.50,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-54b396ca9e05,UK Information Commissioner's Office,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-54b396ca9e05,UK Information Commissioner's Office,surum,3.0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e29fb3582f28,itch.io,engagement_yorum_sayisi,25,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2f337fab5a1d,Kagi,fiyat,$5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9c27ec37505e,Glimpse,fiyat,$10,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-90083462f3a5,Glimpse,fiyat,$99,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-90083462f3a5,Glimpse,engagement_yildiz,4.9,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4fc831b4f4af,monday.com Apps Marketplace,engagement_yorum_sayisi,"10,000+",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e59b965e8d8b,monday.com Apps Marketplace,engagement_yorum_sayisi,2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d2ca5716b0e6,monday.com Apps Marketplace,fiyat,€ 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-9f317b41287b,Moz,fiyat,$16,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8a1f099ee82d,Moz,fiyat,$20,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-cbe091d1b2d9,OpenCorporates,fiyat,"£ 2,250",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-986f43a123cd,OpenRouter,fiyat,"$25,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-0d240750b4cd,Pathmatics,fiyat,$9.00,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-e27c5a693187,PitchBook,engagement_yorum_sayisi,2,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7c7607413aba,Replicate,fiyat,$0.04,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a1e2bfd3a47e,Republic,fiyat,"$25,000",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-15b3567c8d5d,Slack,fiyat,$0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-adb49b47bd9a,Slack Marketplace,fiyat,0 USD,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-65997616edf3,SourceForge,repo_yolu,bruderstein/npppluginmanager,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-65997616edf3,SourceForge,engagement_yorum_sayisi,225,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-65997616edf3,SourceForge,surum,1.0.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-40b43fe59315,SourceForge Reviews,surum,1.0.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-40b43fe59315,SourceForge Reviews,engagement_yorum_sayisi,225,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d49d35f1cafb,SparkToro,fiyat,$ 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-784ab7fa4129,startups.watch,fiyat,₺ 980,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a47cfd47d217,Steam,fiyat,$10.49,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-f4147e193428,TechCrunch,fiyat,$300,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d92bd058db92,Tekpon,fiyat,$ 7,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-44ab0f2f1e8f,Tekpon,fiyat,$249,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d39a0c35423e,Envato Market,fiyat,"$1,254,342,673",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-9f46b484554e,ThemeForest,fiyat,"$1,254,342,673",ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-df673b1eb38c,urlscan.io,fiyat,$0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1473aaad4c07,We Work Remotely,fiyat,"$50,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-72d46efc6184,WooCommerce Marketplace,fiyat,$79,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-72d46efc6184,WooCommerce Marketplace,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ba1ef8ade27a,WooCommerce Marketplace,fiyat,$25,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1f3dfb3153d5,AngelList,fiyat,$10,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-cc4a7d7522a0,Ashby Jobs,fiyat,$ 400,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4b4e8843b1dd,Canva Apps Marketplace,ozellik_basligi,Features,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4c83ca306de4,Canva Apps Marketplace,ozellik_basligi,Features,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-43c45e205db6,Canva Apps Marketplace,fiyat,"$2,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-43c45e205db6,Canva Apps Marketplace,ozellik_basligi,Features,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a83398989efe,Destatis,gosterge,rate Inflation rate 2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-dfa30ff7907a,Emlakjet,fiyat,₺ 70.000,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-2a3fdeba2391,Failory,fiyat,$250,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-af314b32f6f9,Firecrawl,fiyat,$83,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2904ec61cc76,Companies House,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2904ec61cc76,Companies House,surum,3.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-74e670d1bf2f,Companies House,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-091116dfa9fa,Competition and Markets Authority,mevzuat_atfi,regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-091116dfa9fa,Competition and Markets Authority,surum,3.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d1543d4ddf34,Houzz,fiyat,$99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-43baf08c5f73,Infracost,fiyat,$250,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2358b8573fe0,Lemon Squeezy,fiyat,$0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2358b8573fe0,Lemon Squeezy,ozellik_basligi,Features,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1a82faa9a1e8,Lever Jobs,fiyat,$75,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-39fd21c323d0,UsabilityHub,fiyat,$166,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2db4b205be03,UsabilityHub,fiyat,$0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-2db4b205be03,UsabilityHub,ozellik_basligi,Features,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-62443914df00,Lyssna,fiyat,$0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-62443914df00,Lyssna,ozellik_basligi,Features,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-f67bbd60814d,NICE,fiyat,$110,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-03404e7fc8c6,Notion Integrations,fiyat,$0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-f7bb7655ef63,NYSE,gosterge,"index provider globally, with over $2",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-f7bb7655ef63,NYSE,mevzuat_atfi,Regulation,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-f7bb7655ef63,NYSE,fiyat,$2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-3d048c9877e6,NYSE,mevzuat_atfi,Regulation,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8933d65383f3,Open Banking UK,surum,4.0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c9b97525e94d,Pollfish,fiyat,$0.95.,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-855cca237255,Prolific,fiyat,£9.00,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-d7c7597d0db9,Sastrify,fiyat,$6,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-7d6cd27f0d5c,Sastrify,fiyat,$6,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a1f4eb592091,Serchen,engagement_yorum_sayisi,155,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-19ee1e8ff15e,Sistrix,engagement_yildiz,4.0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-1d7d5ee0be19,Sistrix,fiyat,€ 119,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4d8988f6d83e,Tavily,fiyat,$0.008,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8137de44b688,The Verge,fiyat,"$12,299",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-afef1be1cd8b,Together AI,fiyat,$0.30,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-afef1be1cd8b,Together AI,surum,4.1,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-8a2c1ce90577,Trulia,fiyat,"$2,526",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-35dc43fd6785,Typeform,fiyat,39 USD,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-8c615a1a7650,Typeform,fiyat,169 USD,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-24c70a10c077,Vendr,fiyat,$1.2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-5fc19743b15d,Vertice,fiyat,$500,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-4ed6a5fb25e1,Vertice,fiyat,$3.4,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-f58c9684ab2e,Vertice,fiyat,$140,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-16ab26aeaa1a,Wappalyzer,fiyat,$250,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-af5b04124cef,World Bank,gosterge,"Index (HCI) scores at 0.32,",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-af5b04124cef,World Bank,yil_araligi,2017-2022,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-a4e66a2d71d8,ZoomInfo,engagement_yorum_sayisi,2,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-7c5cc32ddc95,Wynter,fiyat,"$20,000",gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-98395aef3c45,Zapier App Directory,engagement_yorum_sayisi,73,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-dc1d4e5011bd,Zapier App Directory,fiyat,$0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-18837117fe5f,Zapier,fiyat,$0,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7429a055c418,Apple App Store,fiyat,$57.99,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7429a055c418,Apple App Store,surum,6.26.15,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-7429a055c418,Apple App Store,engagement_yorum_sayisi,29K,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6a28fef829cc,GitHub,paket_adi,type:story,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6a28fef829cc,GitHub,repo_yolu,repos/d-ducluzeaud,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-6a28fef829cc,GitHub,issue_sayisi,11,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-852ddf762026,Stack Overflow,paket_adi,Ask Different Meta,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-1195e732bc2b,Hacker News,repo_yolu,mkdocstrings/griffe,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-96f4cc6083b1,Shopify App Store,fiyat,$2.99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-96f4cc6083b1,Shopify App Store,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-5640047314a7,Hugging Face,lisans,apache-2.0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-98819a422428,GitHub,paket_adi,wav2vec2-turkish,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-98819a422428,GitHub,repo_yolu,users/mpoyraz,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-98819a422428,GitHub,lisans,mit,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-b614cbdfbba5,Hacker News,repo_yolu,toverainc/willow,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d1f5c4c0c115,Steam,fiyat,$1.99,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d399a6a8fbd6,Armut,fiyat,2.000 TL,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-64308c870808,Apple App Store,fiyat,$6,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-64308c870808,Apple App Store,surum,3.1.5,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-64308c870808,Apple App Store,engagement_yorum_sayisi,842K,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-17d48568bc0f,Apple App Store,fiyat,$9.99,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-17d48568bc0f,Apple App Store,surum,10.53,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-17d48568bc0f,Apple App Store,engagement_yorum_sayisi,1.1M,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-17d48568bc0f,Apple App Store,engagement_yildiz,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-d1b3af5b18ea,Filestage,fiyat,$ 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-832305f0dcfc,Ziflow,fiyat,$ 0,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-45d12466a0ad,SourceForge Reviews,engagement_yorum_sayisi,7,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-084310b5989b,Fresha,fiyat,TRY 240.95,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-c1e05a11361f,SourceForge Reviews,surum,4.0.30319,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-c1e05a11361f,SourceForge Reviews,engagement_yorum_sayisi,5,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ce1b31a48e76,Apple App Store — Booksy Biz,fiyat,$15.6,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ce1b31a48e76,Apple App Store — Booksy Biz,surum,26.09.2200,ham artefaktta (gövde sütunu kırpılmış),doğrulandı,1.0.0,geçerli
+doc-ce1b31a48e76,Apple App Store — Booksy Biz,engagement_yorum_sayisi,15K,gövde sütununda,doğrulandı,1.0.0,geçerli
+doc-ce1b31a48e76,Apple App Store — Booksy Biz,engagement_yildiz,4.9,gövde sütununda,doğrulandı,1.0.0,geçerli

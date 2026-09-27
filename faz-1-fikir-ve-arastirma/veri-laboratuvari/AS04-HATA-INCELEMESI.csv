@@ -88,7 +88,7 @@ yanlis-eksik-alan,doc-4000838f2b95,,Ekonomim,sayfada para ifadesi yok,sayfada ge
 yanlis-eksik-alan,doc-cfb5c0ac39fc,,UserTesting,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
 yanlis-eksik-alan,doc-c6b39317cae3,,Sprig,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
 yanlis-eksik-alan,doc-3bc1dd539e43,,TÜBİTAK,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
-yanlis-eksik-alan,doc-77c04b310125,,Armut,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
+yanlis-eksik-alan,doc-949a6ef950e9,,Booksy,sayfada para ifadesi yok,sayfada gerçekten fiyat yok,fiyat yüzeyi ama sayfa fiyat yayımlamıyor,—
 filtrede-kayip-kanit,doc-331b26cd14d4,,500 Global Companies,$2.3 · al | 500 Global We invest in the world's potential 500 Global is a VC ,gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
 filtrede-kayip-kanit,doc-e42a7d9043d0,,Airbnb,"₺4,733 · r sign up Popular homes in Istanbul 0 of 0 items showing Guesthouse in",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
 filtrede-kayip-kanit,doc-71ab68710120,,Alibaba,"$1,000,000 · .header_Takepool"":""Pitch your startup to elite judges on a global stag",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
@@ -165,6 +165,7 @@ filtrede-kayip-kanit,doc-c0b538aa369b,,Emlakjet,₺14.207 · : 85.7% Ticari : 13
 filtrede-kayip-kanit,doc-2a3fdeba2391,,Failory,$250 · lists; pre-sales are the key validation indicator. Get Pre-Sell to Val,gürültü,"yalın para ifadesi, bağlamı yok",—
 filtrede-kayip-kanit,doc-3d048c9877e6,,NYSE,"$40 · mmunity is the world’s largest community of public companies, represen",gürültü,"büyüklük ifadesi (milyar/fon/ödül), ürün fiyatı değil",—
 filtrede-kayip-kanit,doc-8a2c1ce90577,,Trulia,"$2,526 · 2 rentals Use arrow keys to navigate NEW - 1 DAY AGO SPECIAL OFFER PET",KAYIP KANIT,ilan/puan işaretinin yanında gerçek fiyat,ana sayfa filtresi ilan taşıyan sayfayı elememeli
+filtrede-kayip-kanit,doc-d1f5c4c0c115,,Steam,"$1.99 · p 22 Jan, 2016 Free Think And Co-op Coming soon Art Spotting Co-op 28 ",gürültü,"yalın para ifadesi, bağlamı yok",—
 desteksiz-claim,doc-8c65c8605d29,b2b-web-yazilimi/competitor_discovery,Wellfound,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-00f843cfeff2,b2b-web-yazilimi/competitor_discovery,GetApp,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-f05c48810a9e,b2b-web-yazilimi/competitor_discovery,Software Advice,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
@@ -223,7 +224,6 @@ desteksiz-claim,doc-c71207285924,gelistirici-araci/problem_demand,Hacker News,(�
 desteksiz-claim,doc-ef4759814185,gelistirici-araci/problem_demand,Dev.to,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-990370111c45,gelistirici-araci/problem_demand,Hashnode,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-5bdd23d25f7a,gelistirici-araci/use_case,SourceForge,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
-desteksiz-claim,doc-245760a50269,mobil-uygulama/competitor_discovery,Apple App Store,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-4c2595ad7094,mobil-uygulama/competitor_discovery,Uptodown,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-0f87a627abda,ortak/competitor_discovery,DuckDuckGo,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-5e1dd93234e3,ortak/competitor_discovery,Tavily,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
@@ -361,7 +361,7 @@ desteksiz-claim,doc-239a208466c6,yeme-icme/competitor_discovery,Foursquare,(öl�
 desteksiz-claim,doc-86b5783e2ae5,yeme-icme/problem_demand,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-239a208466c6,yerel-hizmet/competitor_discovery,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-4d72c50d4a64,yerel-hizmet/competitor_discovery,TomTom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
-desteksiz-claim,doc-77c04b310125,yerel-hizmet/observed_market_pricing,Armut,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
+desteksiz-claim,doc-949a6ef950e9,yerel-hizmet/observed_market_pricing,Booksy,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-86b5783e2ae5,yerel-hizmet/problem_demand,Foursquare,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-953d74bd5e3c,yerel-hizmet/problem_demand,Houzz,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—
 desteksiz-claim,doc-36e66a60a31e,yerel-hizmet/use_case,TomTom,(ölçülebilir alan yok),dürüst,satır zaten '(ölçülebilir alan yok)' diyor; yüzey kanıtı,—

@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 141 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 147 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -231,6 +231,16 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS04-HATA-INCELEMESI.csv`](AS04-HATA-INCELEMESI.csv) | çıktı | 366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme |
 | [`hata_incelemesi.py`](hata_incelemesi.py) | kod | Dört hata sınıfını arar; precision üretir, recall üretmez |
 
+### AS-05 — Kanıt sayımı, bağımsızlık ve alıntı kontrolü
+
+| Dosya | Rol | Ne olduğu |
+|---|---|---|
+| [`AS05-SAYIM-RAPORU.md`](AS05-SAYIM-RAPORU.md) | belge | 3/2 eşiği uygulandığında ne geçiyor; **bilinmeyen bağımsızlık sayılmaz** |
+| [`AS05-ALINTI-KONTROL.csv`](AS05-ALINTI-KONTROL.csv) | çıktı | Her çıkarılan değerin metin/hash/sürüm bağı |
+| [`AS05-CLAIM-BILDIRIMI.csv`](AS05-CLAIM-BILDIRIMI.csv) | çıktı | Claim düzeyinde bildirim: hangi iddia neden taşınamaz |
+| [`AS05-KANIT-SAYIMI.csv`](AS05-KANIT-SAYIMI.csv) | çıktı | Hücre başına politikanın istediği yedi sayım alanı ve gate sonucu |
+| [`kanit_sayimi.py`](kanit_sayimi.py) | kod | 3/2 sayımını uygular, bağımsızlığı ve alıntıları denetler |
+
 ### AS-06 — Çözüm günlüğü ve kaynak sağlık kayıtları
 
 | Dosya | Rol | Ne olduğu |
@@ -265,6 +275,10 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS04-ETIKETLI-REFERANS.csv`](AS04-ETIKETLI-REFERANS.csv) | AS-04 | 15 elle etiketlenmiş örnek + 2 doğrudan karşıt bulgu |
 | [`AS04-HATA-INCELEMESI.csv`](AS04-HATA-INCELEMESI.csv) | AS-04 | 366 kayıt incelendi; bulunan hata, gerekçe ve düzeltme |
 | [`AS04-HATA-RAPORU.md`](AS04-HATA-RAPORU.md) | AS-04 | Dört hata sınıfı, düzeltme öncesi/sonrası ve **recall neden üretilmedi** |
+| [`AS05-ALINTI-KONTROL.csv`](AS05-ALINTI-KONTROL.csv) | AS-05 | Her çıkarılan değerin metin/hash/sürüm bağı |
+| [`AS05-CLAIM-BILDIRIMI.csv`](AS05-CLAIM-BILDIRIMI.csv) | AS-05 | Claim düzeyinde bildirim: hangi iddia neden taşınamaz |
+| [`AS05-KANIT-SAYIMI.csv`](AS05-KANIT-SAYIMI.csv) | AS-05 | Hücre başına politikanın istediği yedi sayım alanı ve gate sonucu |
+| [`AS05-SAYIM-RAPORU.md`](AS05-SAYIM-RAPORU.md) | AS-05 | 3/2 eşiği uygulandığında ne geçiyor; **bilinmeyen bağımsızlık sayılmaz** |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
 | [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | AS-06 | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
@@ -339,6 +353,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`fetch_opensearch_templates.py`](fetch_opensearch_templates.py) | Erişim laboratuvarı | OpenSearch şablonlarını toplar |
 | [`hata_incelemesi.py`](hata_incelemesi.py) | AS-04 | Dört hata sınıfını arar; precision üretir, recall üretmez |
 | [`ic_sayfa_gecisi.py`](ic_sayfa_gecisi.py) | Görev 12 | Sitemap ve ana sayfa bağlantılarından iç sayfa çeker; her aday bir arama niyetine bağlanır |
+| [`kanit_sayimi.py`](kanit_sayimi.py) | AS-05 | 3/2 sayımını uygular, bağımsızlığı ve alıntıları denetler |
 | [`kategori_sozlugu.py`](kategori_sozlugu.py) | Görev 9 | Sözlüğü ve pilot çıktıları üretir |
 | [`keyword_search_pass.py`](keyword_search_pass.py) | Erişim laboratuvarı | Anahtar kelime arama geçişi |
 | [`manifest-arsiv-retry-kalan.json`](manifest-arsiv-retry-kalan.json) | Erişim laboratuvarı | Yeniden denemeden sonra kalanlar |

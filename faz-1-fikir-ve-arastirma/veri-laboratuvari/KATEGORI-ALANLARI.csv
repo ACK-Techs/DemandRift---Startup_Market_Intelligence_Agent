@@ -272,3 +272,37 @@ doc-7c5cc32ddc95,96e68f5692ed10fa26171d3322b00241dea20a9fec426eb7124e5bf7760c16a
 doc-98395aef3c45,83e87e8e8c543693f7339497c67d878111d2afc86e4dee22fc5e98eada929655,source-0130,Zapier App Directory,engagement_yorum_sayisi,73,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
 doc-dc1d4e5011bd,52a67b6f83fcdff7cef512df88d6c9f6760898f8655c82cb4eaac5a89bdfac55,source-0130,Zapier App Directory,fiyat,$0,urun,olcum,
 doc-18837117fe5f,eaa63423d4a13b5680a927e5cb1c779f4276c075f7ce87e61405a4357197ca49,source-0551,Zapier,fiyat,$0,urun,olcum,
+doc-7429a055c418,e390abde1bdd5c189728fc55c26174ba578f46b720b7c82a566e6852a7a0640f,source-0096,Apple App Store,fiyat,$57.99,urun,olcum,
+doc-7429a055c418,e390abde1bdd5c189728fc55c26174ba578f46b720b7c82a566e6852a7a0640f,source-0096,Apple App Store,surum,6.26.15,urun,olcum,
+doc-7429a055c418,e390abde1bdd5c189728fc55c26174ba578f46b720b7c82a566e6852a7a0640f,source-0096,Apple App Store,engagement_yorum_sayisi,29K,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-6a28fef829cc,73ae278a80f3b761e43924ebe3252853f6dede72ce5d6bad74f37d3f62a019b1,source-0017,GitHub,paket_adi,type:story,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-6a28fef829cc,73ae278a80f3b761e43924ebe3252853f6dede72ce5d6bad74f37d3f62a019b1,source-0017,GitHub,repo_yolu,repos/d-ducluzeaud,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-6a28fef829cc,73ae278a80f3b761e43924ebe3252853f6dede72ce5d6bad74f37d3f62a019b1,source-0017,GitHub,issue_sayisi,11,teknik,olcum,
+doc-852ddf762026,9197928c0d62c2237c39b39a5f80db0c3e508d2bf150603b290fe5aabbb4f322,source-0023,Stack Overflow,paket_adi,Ask Different Meta,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-1195e732bc2b,5d5e1beb787d5234af0e50eae10a9d4347c1d5a16c852639bf4da7e728e976c8,source-0022,Hacker News,repo_yolu,mkdocstrings/griffe,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-96f4cc6083b1,197a32b295b5f1c93b38bc1b6a7ecb74e2ba77ad8dce7bcb259678530ee6ea29,source-0114,Shopify App Store,fiyat,$2.99,urun,olcum,
+doc-96f4cc6083b1,197a32b295b5f1c93b38bc1b6a7ecb74e2ba77ad8dce7bcb259678530ee6ea29,source-0114,Shopify App Store,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-5640047314a7,93f16549d6e11c5c274d0b638524c1b799a24fc1ba1bf4011e7671d1a92de8de,source-0534,Hugging Face,lisans,apache-2.0,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-98819a422428,d16562b7f7770478a16e7a54b1106d849852d70e955117286f17761509769baa,source-0017,GitHub,paket_adi,wav2vec2-turkish,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-98819a422428,d16562b7f7770478a16e7a54b1106d849852d70e955117286f17761509769baa,source-0017,GitHub,repo_yolu,users/mpoyraz,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-98819a422428,d16562b7f7770478a16e7a54b1106d849852d70e955117286f17761509769baa,source-0017,GitHub,lisans,mit,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-b614cbdfbba5,a08912d532631d5c08635621cb268e381d86a860f6422ae4825ec0c8b15f2f0c,source-0022,Hacker News,repo_yolu,toverainc/willow,teknik,etiket,sayfada geçen ifade; doğrulanmış bir ölçüm değildir
+doc-d1f5c4c0c115,76b9e6c2b3e249f88c7c130f9f1d651aa1bcfad35ddddbcb79893b96ca62c88e,source-0518,Steam,fiyat,$1.99,urun,olcum,
+doc-d399a6a8fbd6,319c22fae587ca409260f778dfe2114e0a16d57d6db1e8b777b17602389ea345,source-0319,Armut,fiyat,2.000 TL,urun,olcum,
+doc-64308c870808,802ed4406a56975def88469b9802406b016f33b2657c4a7b347ebeaf956a18dd,source-0096,Apple App Store,fiyat,$6,urun,olcum,
+doc-64308c870808,802ed4406a56975def88469b9802406b016f33b2657c4a7b347ebeaf956a18dd,source-0096,Apple App Store,surum,3.1.5,urun,olcum,
+doc-64308c870808,802ed4406a56975def88469b9802406b016f33b2657c4a7b347ebeaf956a18dd,source-0096,Apple App Store,engagement_yorum_sayisi,842K,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-17d48568bc0f,e53bfdbabb673e65362d35601d581bb1b09ddf6f1599aecb6607d8519978cba5,source-0096,Apple App Store,fiyat,$9.99,urun,olcum,
+doc-17d48568bc0f,e53bfdbabb673e65362d35601d581bb1b09ddf6f1599aecb6607d8519978cba5,source-0096,Apple App Store,surum,10.53,urun,olcum,
+doc-17d48568bc0f,e53bfdbabb673e65362d35601d581bb1b09ddf6f1599aecb6607d8519978cba5,source-0096,Apple App Store,engagement_yorum_sayisi,1.1M,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-17d48568bc0f,e53bfdbabb673e65362d35601d581bb1b09ddf6f1599aecb6607d8519978cba5,source-0096,Apple App Store,engagement_yildiz,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-d1b3af5b18ea,99a6a0440dafe4fc39b5e07cb8ab1827a3575b80b086cfd30e55620fc7ad3272,,Filestage,fiyat,$ 0,urun,olcum,
+doc-832305f0dcfc,eb96718a97017a8abf7e26da3ee0f7ed7578e61c212d83743a18134427a0fdb7,,Ziflow,fiyat,$ 0,urun,olcum,
+doc-45d12466a0ad,9919880a8abc50101aed2c80052cac785569a7cd09677be9de347a9b993ce67b,source-0141,SourceForge Reviews,engagement_yorum_sayisi,7,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-084310b5989b,885941da0de95654009decfae5a55365a29e9e0480884098da306bc0b6fb5330,source-0317,Fresha,fiyat,TRY 240.95,urun,olcum,
+doc-c1e05a11361f,edd90d8c30ddabb9804d81c31ee447aff9d11bd7e977480f28a68748977792d7,source-0141,SourceForge Reviews,surum,4.0.30319,urun,olcum,
+doc-c1e05a11361f,edd90d8c30ddabb9804d81c31ee447aff9d11bd7e977480f28a68748977792d7,source-0141,SourceForge Reviews,engagement_yorum_sayisi,5,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-ce1b31a48e76,25ab2561ed7c4cdeba21cbd71080c71579c7c73cafffac054bc2d6723c1f98ff,source-0096,Apple App Store — Booksy Biz,fiyat,$15.6,urun,olcum,
+doc-ce1b31a48e76,25ab2561ed7c4cdeba21cbd71080c71579c7c73cafffac054bc2d6723c1f98ff,source-0096,Apple App Store — Booksy Biz,surum,26.09.2200,urun,olcum,
+doc-ce1b31a48e76,25ab2561ed7c4cdeba21cbd71080c71579c7c73cafffac054bc2d6723c1f98ff,source-0096,Apple App Store — Booksy Biz,engagement_yorum_sayisi,15K,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR
+doc-ce1b31a48e76,25ab2561ed7c4cdeba21cbd71080c71579c7c73cafffac054bc2d6723c1f98ff,source-0096,Apple App Store — Booksy Biz,engagement_yildiz,4.9,etkilesim,olcum,gözlemlenmiş etkileşim sayısı; ödeme davranışı ya da talep kanıtı DEĞİLDİR

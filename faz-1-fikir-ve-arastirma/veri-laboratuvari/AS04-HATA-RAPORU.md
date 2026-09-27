@@ -43,8 +43,8 @@ Kalan 13 sayfada gövdede fiyat ifadesi yok — sayfa fiyat yayımlamıyor.
 
 ### Filtrede kaybolan kanıt — 10 gerçek kayıp
 
-"Ölçüm kanıtı üretmez" diye elenen belgelerin 76'sinde fiyat çıktı.
-Bağlamlarına tek tek bakınca **10'u gerçek kanıt**, 66'sı gürültü:
+"Ölçüm kanıtı üretmez" diye elenen belgelerin 77'sinde fiyat çıktı.
+Bağlamlarına tek tek bakınca **10'u gerçek kanıt**, 67'sı gürültü:
 
 | Kaynak | Bulgu | Neden kayıp |
 |---|---|---|
@@ -65,7 +65,7 @@ değil.
 
 ### Desteksiz claim — bulunamadı
 
-Alan çıkmamış belgeye dayanan 200 matris satırı incelendi.
+Alan çıkmamış belgeye dayanan 199 matris satırı incelendi.
 **Hiçbiri desteksiz değil**: her biri zaten `alinabilen_alan = "(ölçülebilir
 alan yok)"` diyor ve `kanit_gerekcesi` alanında "yüzey olarak çekildi"
 yazıyor. Satırlar ne olduklarını dürüstçe beyan ediyor.

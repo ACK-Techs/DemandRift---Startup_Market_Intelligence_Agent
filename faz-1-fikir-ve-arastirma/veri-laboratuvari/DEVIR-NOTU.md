@@ -80,7 +80,7 @@ bozulur, örneklem deterministik seçilir.
 
 ## Devralan ne yapabilir
 
-**Hemen kullanılabilir:** 329 ölçüm kanıtı üreten kayıt,
+**Hemen kullanılabilir:** 337 ölçüm kanıtı üreten kayıt,
 `SOURCE-FIT-MATRIX.csv`'nin 47 yeterli hücresi.
 
 **Kısa sürede genişletilebilir:** [`KALAN-IS.csv`](KALAN-IS.csv)'nin ilk dört

@@ -1,6 +1,6 @@
 # AS-03 — Alternatifin farkı, limitleri ve kalan eksikleri
 
-**Sürüm 1.0.0** · Ölçüm: 2026-09-25 · Üreten: `alternatif_fark.py`
+**Sürüm 1.0.0** · Ölçüm: 2026-09-27 · Üreten: `alternatif_fark.py`
 Hazırlayan: Ayselin Aydoğdu · Kontrol eden: Batuhan
 
 AS-01 kapalı kaynaklara alternatif aradı ve buldu. Bu belge **farkı** ölçer:
@@ -32,16 +32,16 @@ damgası koşu JSON'unda duruyordu ve hiçbir tabloya taşınmamıştı.
 
 | Kaynak | Arşiv içerik tarihi | Bizim çekme tarihimiz | Yaş (gün) |
 |---|---|---|---:|
-| Indiegogo | 2025-02-06 | 2026-09-03 | 596 |
-| Bureau of Labor Statistics | 2025-02-06 | 2026-09-03 | 596 |
-| Regulations.gov | 2025-02-06 | 2026-09-03 | 596 |
-| U.S. Securities and Exchan | 2025-02-06 | 2026-09-03 | 596 |
-| Brave Search | 2025-02-07 | 2026-09-03 | 595 |
-| CodeProject | 2025-02-07 | 2026-09-03 | 595 |
-| Monster | 2025-02-07 | 2026-09-03 | 595 |
-| ResearchGate | 2025-02-07 | 2026-09-03 | 595 |
-| SearXNG | 2025-02-08 | 2026-09-03 | 594 |
-| TrustRadius | 2025-02-08 | 2026-09-03 | 594 |
+| Indiegogo | 2025-02-06 | 2026-09-03 | 598 |
+| Bureau of Labor Statistics | 2025-02-06 | 2026-09-03 | 598 |
+| Regulations.gov | 2025-02-06 | 2026-09-03 | 598 |
+| U.S. Securities and Exchan | 2025-02-06 | 2026-09-03 | 598 |
+| Brave Search | 2025-02-07 | 2026-09-03 | 597 |
+| CodeProject | 2025-02-07 | 2026-09-03 | 597 |
+| Monster | 2025-02-07 | 2026-09-03 | 597 |
+| ResearchGate | 2025-02-07 | 2026-09-03 | 597 |
+| SearXNG | 2025-02-08 | 2026-09-03 | 596 |
+| TrustRadius | 2025-02-08 | 2026-09-03 | 596 |
 
 Hepsi dizinde `2026-09-03` görünüyordu. Ayrıntı:
 [`AS03-ARSIV-YASI.csv`](AS03-ARSIV-YASI.csv) — her satır `guncel_veri_mi = hayır`.
@@ -71,7 +71,7 @@ hakkındaki şikâyeti yayımlamazlar. Kanıt politikası da aynı yere varıyor
 
 G2 için arşiv kopyası var ama işe yaramıyor: elimizdeki kopya G2'nin **ana
 sayfası**, yorum sayfası değil; 9.965 karakter ve sıfır çıkarılabilir alan.
-Üstelik **590 gün eski.**
+Üstelik **592 gün eski.**
 
 ### Alternatifi bulunamayanlar
 
@@ -99,7 +99,7 @@ uyuluyor.
 - **Arşiv sonucu tam ya da güncel veri gibi sunulamaz.** Her arşiv satırı
   kendi tarihini ve yaşını taşır.
 - Alternatif bulunamaması o pazarda talep olmadığını göstermez.
-- Ölçüm 2026-09-25 tarihlidir.
+- Ölçüm 2026-09-27 tarihlidir.
 
 ## 5. Yeniden üretim
 
