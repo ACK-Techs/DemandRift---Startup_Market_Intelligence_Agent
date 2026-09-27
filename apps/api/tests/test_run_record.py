@@ -12,6 +12,7 @@ VALID_F03_RECORD = {
     "script": "faz-1-fikir-ve-arastirma/veri-laboratuvari/keyword_search_pass.py",
     "script_version": "v1",
     "access_method": "api",
+    "artifact_origin": "live_capture",
     "expected_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi", "surum"],
     "returned_fields": ["baslik", "govde", "kaynak_url", "yayin_tarihi"],
     "limits": {"max_records": 10, "timeout_seconds": 30},
@@ -65,6 +66,34 @@ def test_source_unavailable_is_not_misrepresented_as_empty_results():
 
     assert response.status_code == 200
     assert response.json()["record"]["access_status"] == "challenge"
+
+
+def test_live_html_and_archived_warc_methods_are_represented_without_claiming_the_same_freshness():
+    live_html_record = {**VALID_F03_RECORD, "access_method": "root_html"}
+    archived_warc_record = {
+        **VALID_F03_RECORD,
+        "access_method": "common_crawl_warc",
+        "artifact_origin": "archive_copy",
+    }
+
+    with TestClient(create_app()) as client:
+        live_response = client.post("/api/v1/research/run-records/validate", json=live_html_record)
+        archive_response = client.post("/api/v1/research/run-records/validate", json=archived_warc_record)
+
+    assert live_response.status_code == 200
+    assert live_response.json()["record"]["artifact_origin"] == "live_capture"
+    assert archive_response.status_code == 200
+    assert archive_response.json()["record"]["artifact_origin"] == "archive_copy"
+
+
+def test_warc_cannot_be_mislabeled_as_a_live_capture():
+    invalid_record = {**VALID_F03_RECORD, "access_method": "common_crawl_warc"}
+
+    with TestClient(create_app()) as client:
+        response = client.post("/api/v1/research/run-records/validate", json=invalid_record)
+
+    assert response.status_code == 422
+    assert "artifact_origin" in response.text
 
 
 def test_success_cannot_be_reported_for_a_planned_but_ineligible_source():

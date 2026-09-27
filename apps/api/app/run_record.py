@@ -19,6 +19,26 @@ class AccessStatus(StrEnum):
     INVALID_OUTPUT = "invalid_output"
 
 
+class AccessMethod(StrEnum):
+    """The concrete surface used to obtain a source-run result."""
+
+    API = "api"
+    PERMITTED_BROWSER = "permitted_browser"
+    MANUAL_EXPORT = "manual_export"
+    INNER_PAGE = "ic_sayfa"
+    ROOT_HTML = "root_html"
+    SITEMAP_XML = "sitemap_xml"
+    COMMON_CRAWL_WARC = "common_crawl_warc"
+    ARCHIVE_COPY = "archive_copy"
+
+
+class ArtifactOrigin(StrEnum):
+    """Whether a referenced artefact is a live capture or an archive copy."""
+
+    LIVE_CAPTURE = "live_capture"
+    ARCHIVE_COPY = "archive_copy"
+
+
 class RunCounts(BaseModel):
     discovered: Annotated[int, Field(ge=0)] = 0
     fetched: Annotated[int, Field(ge=0)] = 0
@@ -46,7 +66,8 @@ class SourceRunRecord(BaseModel):
     query_text: Annotated[str, Field(min_length=1, max_length=1000)]
     script: Annotated[str, Field(min_length=1, max_length=512)]
     script_version: Annotated[str, Field(min_length=1, max_length=128)]
-    access_method: Literal["api", "permitted_browser", "manual_export"]
+    access_method: AccessMethod
+    artifact_origin: ArtifactOrigin
     expected_fields: list[Annotated[str, Field(min_length=1, max_length=128)]]
     returned_fields: list[Annotated[str, Field(min_length=1, max_length=128)]] = Field(default_factory=list)
     limits: dict[str, int | float | str] = Field(default_factory=dict)
@@ -73,6 +94,16 @@ class SourceRunRecord(BaseModel):
             raise ValueError("script is not planned for this scenario")
         if self.expected_fields != source.expected_fields:
             raise ValueError("expected_fields must match the planned source fields")
+        if (
+            self.access_method == AccessMethod.COMMON_CRAWL_WARC
+            and self.artifact_origin != ArtifactOrigin.ARCHIVE_COPY
+        ):
+            raise ValueError("common_crawl_warc records must declare artifact_origin as archive_copy")
+        if (
+            self.access_method == AccessMethod.ARCHIVE_COPY
+            and self.artifact_origin != ArtifactOrigin.ARCHIVE_COPY
+        ):
+            raise ValueError("archive_copy records must declare artifact_origin as archive_copy")
         if self.access_status == AccessStatus.SUCCESS:
             if not source.eligible_for_execution:
                 raise ValueError("successful runs require a source eligible_for_execution")

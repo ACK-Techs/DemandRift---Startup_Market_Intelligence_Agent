@@ -301,5 +301,16 @@ class RaporTests(unittest.TestCase):
         self.assertIn("Faz 3'e aittir", self.metin)
 
 
+class KomutSatiriGirisNoktasiTests(unittest.TestCase):
+    """Canli calismada gereken yardimcilar, main cagrilmadan once tanimli olur."""
+
+    def test_main_guard_is_after_live_run_helper(self):
+        kaynak = (HERE / "as01_kaynak_kontrol.py").read_text(encoding="utf-8")
+        self.assertGreater(
+            kaynak.rfind('if __name__ == "__main__":'),
+            kaynak.rfind("def iddialari_dogrula"),
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

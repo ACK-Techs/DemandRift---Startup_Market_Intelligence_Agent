@@ -59,6 +59,14 @@ etiketi taşımak zorundadır. Kaynak erişilemez/challenge/policy engelli ise
 başarı iddiası yerine erişim durumu ve hata açıklaması zorunludur. Bu endpoint
 veri tabanına yazmaz, kaynak çağrısı veya model çağrısı yapmaz.
 
+Her kaynak kaydı, yüzeyi `access_method` ile ve artefaktın güncelliğini
+`artifact_origin` ile ayrı taşır. Geçerli yüzeyler `api`,
+`permitted_browser`, `manual_export`, `ic_sayfa`, `root_html`, `sitemap_xml`,
+`common_crawl_warc` ve `archive_copy` değerleridir. `artifact_origin` yalnız
+`live_capture` veya `archive_copy` olur. Common Crawl WARC ve doğrudan arşiv
+kopyası, mutlaka `archive_copy` olarak işaretlenir; arşiv sonucu canlı tarama
+sonucu gibi gösterilemez.
+
 Kayıt, manifestteki `scenario_id` ile `source_id` eşleşmesine ve o senaryonun
 izin verdiği script yoluna bağlıdır. `success` yalnız `eligible_for_execution`
 olan bir kaynakta kabul edilir; challenge, JS kabuğu veya policy engeli bulunan
