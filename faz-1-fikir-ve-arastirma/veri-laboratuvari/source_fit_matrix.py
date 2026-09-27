@@ -117,6 +117,29 @@ def kayitli_alan(url: str) -> str:
 # --------------------------------------------------------------------------
 # Bagimsizlik: ayni kaynagin kopyalari bagimsiz sayilmaz
 # --------------------------------------------------------------------------
+# Ayni sirketin farkli alan adlari bagimsiz sayilamaz. Kanit politikasi:
+# "aynı kurumun pazarlama kopyaları bir köken", "aynı sahipli/kopya yayınlar
+# çeşitlilik geçişini sağlamaz". Alan adina bakan gruplama bunu kaciriyordu:
+# GetApp ve Software Advice ikisi de Gartner'in, ama ayri sayiliyorlardi.
+#
+# Bu liste OLCULMUS degil BEYAN EDILMIS bilgidir ve Batuhan'in incelemesine
+# aciktir. Suphede kalan sahiplik buraya eklenmez; yanlis birlestirmek de
+# ayri sayrmak kadar hatalidir.
+ORTAK_SAHIPLIK: dict[str, tuple[str, ...]] = {
+    "Gartner": ("Capterra", "GetApp", "Software Advice",
+                "Capterra Education Software"),
+    "Apple": ("Apple App Store",),
+    "Google": ("Google Play Store", "Google Trends", "Google Scholar", "YouTube"),
+    "Microsoft": ("GitHub", "LinkedIn", "Microsoft Store", "Bing", "Bing News"),
+    "Amazon": ("AWS Marketplace", "Amazon", "Twitch"),
+}
+
+
+def sahiplik_haritasi() -> dict[str, str]:
+    """kaynak adi -> sahip. Beyan edilmis bilgi, olculmus degil."""
+    return {ad: sahip for sahip, adlar in ORTAK_SAHIPLIK.items() for ad in adlar}
+
+
 def bagimsizlik_gruplari(belgeler: list[dict[str, str]],
                          iliskiler: list[dict[str, str]]) -> dict[str, str]:
     """source_id -> grup adi.
@@ -150,6 +173,16 @@ def bagimsizlik_gruplari(belgeler: list[dict[str, str]],
         alan_kaynak[kayitli_alan(satir["source_url"])].append(sid)
 
     for kaynaklar in alan_kaynak.values():
+        for digeri in kaynaklar[1:]:
+            birlestir(kaynaklar[0], digeri)
+    # Ayni sahibe ait markalar tek gruba iner.
+    sahip = sahiplik_haritasi()
+    sahip_kaynak: dict[str, list[str]] = collections.defaultdict(list)
+    for satir in belgeler:
+        sid = satir["source_id"]
+        if sid and satir["source_adi"] in sahip:
+            sahip_kaynak[sahip[satir["source_adi"]]].append(sid)
+    for kaynaklar in sahip_kaynak.values():
         for digeri in kaynaklar[1:]:
             birlestir(kaynaklar[0], digeri)
     for iliski in iliskiler:

@@ -101,6 +101,22 @@ class KopyalarBagimsizSayilmazTests(unittest.TestCase):
         cls.matris = oku("SOURCE-FIT-MATRIX.csv")
         cls.yeterlilik = oku("KATEGORI-YETERLILIK.csv")
 
+    def test_ayni_sahibe_ait_markalar_ayni_grupta(self):
+        """Kanit politikasi: "aynı sahipli/kopya yayınlar çeşitlilik geçişini
+        sağlamaz". Alan adina bakan gruplama bunu kaciriyordu — GetApp ve
+        Software Advice ikisi de Gartner'in ama ayri sayiliyorlardi.
+        """
+        import source_fit_matrix as sfm
+        grup = {r["kaynak_adi"]: r["bagimsizlik_grubu"] for r in self.matris}
+        sahip = sfm.sahiplik_haritasi()
+        sahip_gruplari = collections.defaultdict(set)
+        for ad, g in grup.items():
+            if ad in sahip:
+                sahip_gruplari[sahip[ad]].add(g)
+        for sahibi, gruplar in sahip_gruplari.items():
+            self.assertEqual(1, len(gruplar),
+                             f"{sahibi}: markaları {len(gruplar)} ayrı grupta")
+
     def test_ayni_alan_adi_ayni_grupta(self):
         self.assertEqual(sfm.kayitli_alan("https://www.g2.com/a"),
                          sfm.kayitli_alan("https://track.g2.com/b"))

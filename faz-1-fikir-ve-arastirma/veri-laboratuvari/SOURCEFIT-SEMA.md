@@ -63,7 +63,7 @@ değil metninden okunur, bu çalışmada metin taraması yapılmadı.
 ## Üç sayım kuralı
 
 1. **Bağımsızlık kaynak değil grup sayar.** Aynı kayıtlı alan adına sahip ya da
-   belgeleri `duplicate_of` ile bağlı kaynaklar tek gruptur. `421` grup,
+   belgeleri `duplicate_of` ile bağlı kaynaklar tek gruptur. `415` grup,
    `489` kaynaktan türedi.
 2. **Yeterlilik eşiği 2 bağımsız gruptur.** Altında kalan hücre `zayif`
    işaretlenir: kanıt var ama tek sahiplikten geliyor.
