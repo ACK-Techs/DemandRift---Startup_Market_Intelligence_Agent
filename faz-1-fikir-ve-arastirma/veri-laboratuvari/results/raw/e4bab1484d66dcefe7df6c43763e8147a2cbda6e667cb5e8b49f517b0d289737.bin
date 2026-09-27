@@ -1,0 +1,986 @@
+<!DOCTYPE html><!-- Last Published: Wed Sep 23 2026 17:16:41 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="landing.dealroom.io" data-wf-page="615afd9a576f7a924e027a64" data-wf-site="5a71001fb54d350001949400" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>M&amp;A Tools &amp; Data Room [Due Diligence + Deal Management]</title><meta content="Agile M&amp;A Tools. Reduce time and effort spent during due diligence using DealRoom. Manage m&amp;a deals in one innovative data room." name="description"/><meta content="M&amp;A Tools &amp; Data Room [Due Diligence + Deal Management]" property="og:title"/><meta content="Agile M&amp;A Tools. Reduce time and effort spent during due diligence using DealRoom. Manage m&amp;a deals in one innovative data room." property="og:description"/><meta content="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6255adacdb485c08e5cd591d_Dealroom-socials-2.png" property="og:image"/><meta content="M&amp;A Tools &amp; Data Room [Due Diligence + Deal Management]" name="twitter:title"/><meta content="Agile M&amp;A Tools. Reduce time and effort spent during due diligence using DealRoom. Manage m&amp;a deals in one innovative data room." name="twitter:description"/><meta content="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6255adacdb485c08e5cd591d_Dealroom-socials-2.png" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="HPi21lb0_U78aZ96JUMdz7a7EVvJEEYSZCj2FW7uMgA" name="google-site-verification"/><link href="https://cdn.prod.website-files.com/5a71001fb54d350001949400/css/dealroom-2018.webflow.shared.67dde0f09.min.css" rel="stylesheet" type="text/css" integrity="sha384-Z93g8JAjPEu0dCOAF5PJEEb+5FfS6rrCULw3cLvAlk4d2FX4YrQXJ8QiougrsqIT" crossorigin="anonymous"/><link href="https://cdn.prod.website-files.com/5a71001fb54d350001949400/css/dealroom-2018.webflow.615afd9a576f7a924e027a64.422f5ec64.opt.min.css" rel="stylesheet" type="text/css" integrity="sha384-Qi9exkWxIcO6/VzMeLL1Sqre6lnowcG0+KYxW3RASiB/pJ+nvEH0TzOszzbSqxrf" crossorigin="anonymous"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5a9645470f177000014ac3c3_favicon-32x32.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6863ecca6b5329a1bd14654f_fav-large.png" rel="apple-touch-icon"/><link href="https://dealroom.net/product" rel="canonical"/><link rel="preconnect" href="https://www.googletagmanager.com">
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QPSZZ5');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- Teaser Bar -->
+<style>
+[dr-element="teaser2-component-aidemo"] {
+	display: none;
+}
+[dr-element="teaser2-component-aidemo"].is-visible {
+	display: flex;
+}
+</style>
+
+<!-- Request Demo Dynamic Form -->
+<style>
+[dr-element="dyn-form-messages"] {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+</style>
+
+<meta name="google-site-verification" content="HPi21lb0_U78aZ96JUMdz7a7EVvJEEYSZCj2FW7uMgA" />
+<meta name="msvalidate.01" content="4A7BE4F1805590A7FCD0AA9515E4D671" />
+<meta name="ahrefs-site-verification" content="853c340ceaa73b9b6b0119e2d49fb6cf82dd2c563365705a4f85f33e3e5348b9">
+<meta name="google-site-verification" content="JB7m534EhnQSsp7Vej0uHxAKXk1OHmQIYuNlGpKx3Uc" />
+<meta name="google-site-verification" content="P-963sjLmoxZOsgxMwJg6zsVpeyt7IqXIe7DRPSCco8" />
+<meta name="google-site-verification" content="1gsYK47khLfxkh-V6DMiKkFZuMzvoovh8OR0-GprGrU" />
+
+<!-- Forgiving Nav Dropdowns Hover Styles -->
+<style>
+  @media (min-width: 992px) {
+  .nav-dropdown_component-click {
+    position: relative;
+  }
+
+  .safe-triangle-svg {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .safe-triangle-svg path {
+    pointer-events: auto;
+    fill: transparent;
+  }
+}
+@media (max-width: 991px) {
+  .safe-triangle-svg { display: none !important; }
+}
+</style>
+
+
+<script>
+        if (window.location.pathname === "/product") {
+            window.location.replace("/product/platform");
+        }
+</script></head><body><div class="page"><div class="section navigation-section"><div data-collapse="medium" data-animation="default" data-duration="400" dr-element="nav" data-easing="ease" data-easing2="ease" role="banner" class="nav1_component is-with-bar is-facelift1 w-nav"><div dr-sticky="to-consider" dr-element="teaser2-component-aidemo" class="teaser2_component is-style1"><div class="teaser2_negative-line"></div><a href="https://hubs.ly/Q04tJTJw0" dr-element="teaser2-link-aidemo" class="teaser2_link w-inline-block"><div class="teaser2_l1"><div class="teaser2_l1-left"></div><div class="teaser2_l1-middle"><div class="teaser2_avatar is-style1"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a01a2602814061c0764d7cf_68fffc8326992b8589fa777f_1758651440875%20small.avif" loading="eager" width="42" height="42" alt="" top-teaser="avatar-a" class="teaser2_avatar-image"/></div><div class="teaser2_text-wrapper"><div top-teaser="text1" class="teaser2_inner-text is-bold">NEW: Diligence Risk Tracker 🚀</div><div top-teaser="text1-space" class="teaser2_inner-text"> </div><div top-teaser="text2" class="teaser2_inner-text">A findings log, 40+ red flags, and a dashboard that builds itself.</div><div top-teaser="text2-text" class="teaser2_inner-text"> </div><div class="teaser2_inner-text is-link2">Get it free 👉🏻</div></div></div><div class="teaser2_l2-right"><div dr-element="teaser2-close-button-aidemo" class="teaser2_close-button"><div class="teaser2_close-button-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 288 288" fill="none"><path d="M288 33.49L254.51 0L144 110.51L33.49 0L0 33.49L110.51 144L0 254.51L33.49 288L144 177.49L254.51 288L288 254.51L177.49 144L288 33.49Z" fill="currentColor"/></svg></div></div></div></div><div class="hide w-embed"><style>
+.teaser2_bg.is-style1{
+  background: linear-gradient(269.96deg, #35A8E9 0%, #0278DB 49.79%, #35A8E9 100%);
+}
+
+  .teaser2_bg.is-style1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(269.96deg, #53B6ED 0%, #288CE1 49.79%, #53B6ED 100%);
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+  z-index: 1;
+}
+
+  .teaser2_link:hover ~ .teaser2_bg.is-style1::after {
+  opacity: 1;
+}
+
+</style></div></a><div class="teaser2_bg is-style1"></div></div><div class="nav1_z-1"><div class="container is-nav1-container"><div class="nav1_left"><a href="/" class="nav1_brand w-inline-block"><div class="nav1_brand-logo w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 153 27" fill="none" aria-label="DealRoom logo (M&A Software Company)">
+ <title>DealRoom Logo</title>
+    <path d="M0 0.210938V26.7259H26.5143V0.210938H0ZM3.40911 23.2409V3.69598H11.3633V23.2409H3.40911ZM14.7721 9.83196V3.69598H23.0295V9.83242L14.7721 9.83196ZM14.7721 23.2414V13.2412H23.0295V23.2409L14.7721 23.2414Z" fill="#0478DB"/>
+    <path class="nav1_logo_text" d="M44.9429 6.32031C49.6916 6.32031 53.1287 9.66812 53.1287 14.2905C53.1287 18.8904 49.669 22.2606 44.8751 22.2606H38.4531V6.32031H44.9429ZM41.1214 19.8465H45.0108C48.0861 19.8465 50.4378 17.5467 50.4378 14.313C50.4378 11.0567 48.0184 8.7339 44.8978 8.7339H41.1214V19.8465Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M66.0938 17.2349H57.1024C57.505 19.0957 58.914 20.253 60.7929 20.253C62.0902 20.253 63.2756 19.7536 64.1479 18.8461L65.5123 20.321C64.3492 21.6146 62.6496 22.3634 60.5916 22.3634C56.9234 22.3634 54.5078 19.8899 54.5078 16.2591C54.5078 12.6055 56.9905 10.132 60.5245 10.1094C64.7071 10.1094 66.4069 12.8779 66.0938 17.2349ZM63.8572 15.3287C63.7677 13.3771 62.4927 12.1969 60.5469 12.1969C58.668 12.1969 57.3484 13.3997 57.0576 15.3287H63.8572Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M76.112 20.7781C75.2632 21.8428 73.8995 22.3637 72.1792 22.3637C69.6089 22.3637 68 20.7554 68 18.6262C68 16.4292 69.6312 15.0247 72.4919 15.0021H76.0897V14.6395C76.0897 13.1219 75.1288 12.2159 73.2518 12.2159C72.1119 12.2159 70.9277 12.6236 69.7428 13.439L68.6928 11.6269C70.3466 10.6303 71.5531 10.1094 73.81 10.1094C76.8719 10.1094 78.5927 11.6949 78.615 14.3451L78.6372 22.2502H76.112V20.7781ZM76.0897 18.0148V16.9049H72.8719C71.1954 16.9049 70.4133 17.3579 70.4133 18.513C70.4133 19.6003 71.2848 20.3024 72.7152 20.3024C74.5477 20.3024 75.9559 19.3285 76.0897 18.0148Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M82.1875 22.165V5.32812H84.7486V22.165H82.1875Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M95.9367 17.4406C95.7134 17.4633 95.4679 17.4633 95.2223 17.4633H91.5168V22.2681H88.8828V6.32812H95.2229C99.2184 6.32812 101.517 8.30927 101.517 11.7706C101.517 14.321 100.357 16.12 98.2807 16.9398L101.786 22.2684H98.794L95.9367 17.4409V17.4406ZM95.2223 15.0495C97.6336 15.0495 99.0173 14.002 99.0173 11.8387C99.0173 9.74381 97.6336 8.74179 95.2223 8.74179H91.5168V15.0495H95.2223Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M116.267 16.2364C116.267 19.8672 113.72 22.3634 110.023 22.3634C106.305 22.3634 103.758 19.8672 103.758 16.2364C103.758 12.5829 106.305 10.1094 110.023 10.1094C113.72 10.1094 116.267 12.5829 116.267 16.2364ZM106.35 16.2591C106.35 18.5964 107.86 20.1849 110.023 20.1849C112.165 20.1849 113.675 18.5964 113.675 16.2591C113.675 13.9444 112.165 12.3559 110.023 12.3559C107.86 12.3559 106.35 13.9444 106.35 16.2591Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M130.447 16.2364C130.447 19.8672 127.9 22.3634 124.204 22.3634C120.484 22.3634 117.938 19.8672 117.938 16.2364C117.938 12.5829 120.484 10.1094 124.204 10.1094C127.9 10.1094 130.447 12.5829 130.447 16.2364ZM120.53 16.2591C120.53 18.5964 122.04 20.1849 124.204 20.1849C126.345 20.1849 127.855 18.5964 127.855 16.2591C127.855 13.9444 126.345 12.3559 124.204 12.3559C122.04 12.3559 120.53 13.9444 120.53 16.2591Z" fill="currentColor"/>
+    <path class="nav1_logo_text" d="M153.002 14.7962V22.3636H150.416V15.5278C150.416 13.676 149.336 12.5557 147.582 12.5557C145.535 12.6243 144.298 14.2247 144.298 16.3508V22.3636H141.712V15.5278C141.712 13.676 140.655 12.5557 138.901 12.5557C136.831 12.6243 135.572 14.2247 135.572 16.3508V22.3636H133.008V10.2008H135.572V12.5556C136.404 10.8412 137.933 10.1094 139.912 10.1094C142.049 10.1094 143.511 11.1839 144.074 13.0357C144.838 11.001 146.435 10.1094 148.617 10.1094C151.36 10.1094 153.002 11.8926 153.002 14.7961V14.7962Z" fill="currentColor"/>
+</svg></div></a></div><div class="nav1_right"><nav role="navigation" class="nav1_nav-menu w-nav-menu"><div class="nav1_nav-menu-left"><div data-delay="0" data-hover="true" class="nav-dropdown_component-click is-facelift w-dropdown"><div class="nav_link within-dropdown is-products w-dropdown-toggle"><div class="nav_link_text">Products</div><div class="nav-dropdown-icon w-icon-dropdown-toggle"></div></div><nav id="anchor-test" class="nav_dropdown-panel is-products-sep w-dropdown-list"><div class="nav_dropdown_mobile-shadow is-top"></div><div class="nav_dropdown_mobile-shadow is-within-style1"></div><div class="nav_dropdown_content-variant2"><div class="hide w-embed"><style>
+  .nav-tabs2_links-set1_link:hover .nav-tabs2_links-set1_link-icon {
+    background: var(--Neutral-0, rgba(255, 255, 255, 1));
+  }
+
+  .nav-tabs2_links-set1_link:hover .nav-tabs2_links-set1_link-chevron {
+    opacity: 1;
+  }
+
+@media screen and (min-width: 992px) { 
+  .nav-tabs2_menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e4bace0c754deb754d1a4_nav-bg-pattern.svg);
+  background-repeat: repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1132px) {
+  .nav-tabs2_menu {
+    max-width: 12rem;
+  }
+
+  .nav-tabs2_links-set1_link {
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .nav-tabs2_l2_card, .nav-tabs2_tab-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .nav-tabs2_links-set1_link-icon, .nav-tabs2_tab-link-icon {
+    width: 1.825rem;
+    height: 1.825rem;
+  }
+
+  .nav-tabs2_l1_item.is-c1 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+    .nav-tabs2_tab-link {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+    }
+    .nav_dropdown-panel.is-products-sep.w--open {
+      width: 64rem;
+      left: -9rem;
+    }
+}
+</style></div><div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="nav-tabs2_component w-tabs"><div class="nav-tabs2_menu w-tab-menu"><a data-w-tab="Tab 1" class="nav-tabs2_tab-link w-inline-block w-tab-link w--current"><div class="nav-tabs2_tab-link-icon w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0V16H16V0H0ZM2.05722 13.897V2.10298H6.85718V13.897H2.05722ZM8.91422 5.80563V2.10298H13.8971V5.80591L8.91422 5.80563ZM8.91422 13.8973V7.8629H13.8971V13.897L8.91422 13.8973Z" fill="white"/>
+</svg></div><div>M&amp;A Operating System</div></a></div><div class="nav-tabs2_content w-tab-content"><div data-w-tab="Tab 1" class="nav-tabs2_tab-pane w-tab-pane w--tab-active"><div class="nav-tabs2_l1"><div class="nav-tabs2_l1_item"><div class="w-layout-grid nav-tabs2_l2"><div class="nav-tabs2_l2_card"><div class="nav-tabs2_heading1">MODULES</div><div class="nav-tabs2_links-set1"><a href="/product/pipeline" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 9L15.75 9M9 2.25L9 15.75M5.85 2.25H12.15C13.4101 2.25 14.0402 2.25 14.5215 2.49524C14.9448 2.71095 15.289 3.05516 15.5048 3.47852C15.75 3.95982 15.75 4.58988 15.75 5.85V12.15C15.75 13.4101 15.75 14.0402 15.5048 14.5215C15.289 14.9448 14.9448 15.289 14.5215 15.5048C14.0402 15.75 13.4101 15.75 12.15 15.75H5.85C4.58988 15.75 3.95982 15.75 3.47852 15.5048C3.05516 15.289 2.71095 14.9448 2.49524 14.5215C2.25 14.0402 2.25 13.4101 2.25 12.15V5.85C2.25 4.58988 2.25 3.95982 2.49524 3.47852C2.71095 3.05516 3.05516 2.71095 3.47852 2.49524C3.95982 2.25 4.58988 2.25 5.85 2.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Pipeline</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="/product/diligence" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.75 9L6.75 9M15.75 4.5L6.75 4.5M15.75 13.5L6.75 13.5M3.75 9C3.75 9.41421 3.41421 9.75 3 9.75C2.58579 9.75 2.25 9.41421 2.25 9C2.25 8.58579 2.58579 8.25 3 8.25C3.41421 8.25 3.75 8.58579 3.75 9ZM3.75 4.5C3.75 4.91421 3.41421 5.25 3 5.25C2.58579 5.25 2.25 4.91421 2.25 4.5C2.25 4.08579 2.58579 3.75 3 3.75C3.41421 3.75 3.75 4.08579 3.75 4.5ZM3.75 13.5C3.75 13.9142 3.41421 14.25 3 14.25C2.58579 14.25 2.25 13.9142 2.25 13.5C2.25 13.0858 2.58579 12.75 3 12.75C3.41421 12.75 3.75 13.0858 3.75 13.5Z" stroke="#00031B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div>Diligence</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="/product/integration" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_5197_1671)">
+<path d="M5.625 3.37524C5.625 2.33971 6.46447 1.50024 7.5 1.50024C8.53553 1.50024 9.375 2.33971 9.375 3.37524V4.50024H10.125C11.1734 4.50024 11.6976 4.50024 12.111 4.67151C12.6624 4.89988 13.1004 5.33789 13.3287 5.88921C13.5 6.30269 13.5 6.82688 13.5 7.87524H14.625C15.6605 7.87524 16.5 8.71471 16.5 9.75024C16.5 10.7858 15.6605 11.6252 14.625 11.6252H13.5V12.9002C13.5 14.1604 13.5 14.7904 13.2548 15.2717C13.039 15.6951 12.6948 16.0393 12.2715 16.255C11.7902 16.5002 11.1601 16.5002 9.9 16.5002H9.375V15.1877C9.375 14.2558 8.61948 13.5002 7.6875 13.5002C6.75552 13.5002 6 14.2558 6 15.1877V16.5002H5.1C3.83988 16.5002 3.20982 16.5002 2.72852 16.255C2.30516 16.0393 1.96095 15.6951 1.74524 15.2717C1.5 14.7904 1.5 14.1604 1.5 12.9002V11.6252H2.625C3.66053 11.6252 4.5 10.7858 4.5 9.75024C4.5 8.71471 3.66053 7.87524 2.625 7.87524H1.5C1.5 6.82688 1.5 6.30269 1.67127 5.88921C1.89963 5.33789 2.33765 4.89988 2.88896 4.67151C3.30245 4.50024 3.82663 4.50024 4.875 4.50024H5.625V3.37524Z" stroke="#00031B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_5197_1671">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div><div>Integration</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a></div></div><div class="nav-tabs2_l2_card"><div class="nav-tabs2_heading1">ai features</div><div class="nav-tabs2_links-set1"><a href="/pipelineai" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.54998 15.0001H5.1C3.83988 15.0001 3.20982 15.0001 2.72852 14.7549C2.30516 14.5392 1.96095 14.195 1.74524 13.7716C1.5 13.2903 1.5 12.6602 1.5 11.4001V6.60012C1.5 5.34 1.5 4.70994 1.74524 4.22864C1.96095 3.80528 2.30516 3.46107 2.72852 3.24536C3.20982 3.00012 3.83988 3.00012 5.1 3.00012H12.9C14.1601 3.00012 14.7902 3.00012 15.2715 3.24536C15.6948 3.46107 16.039 3.80528 16.2548 4.22864C16.5 4.70994 16.2 5.39998 16.2 5.39998M1.5 5.25012L7.62369 9.5367C8.11957 9.88382 8.36751 10.0574 8.6372 10.1246C8.87542 10.184 9.12458 10.184 9.3628 10.1246C9.63249 10.0574 9.88043 9.88382 10.3763 9.53671L16.2548 5.39998" stroke="#00031B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.3252 10.8002L16.9502 13.4252L14.3252 16.0502M16.9502 13.4252L11.7002 13.4252" stroke="#00031B" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div>AI for pipeline</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="https://dealroom.net/product/diligence/ai-suggested-findings" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.25 3H5.85C4.58988 3 3.95982 3 3.47852 3.24524C3.05516 3.46095 2.71095 3.80516 2.49524 4.22852C2.25 4.70982 2.25 5.33988 2.25 6.6V12.15C2.25 13.4101 2.25 14.0402 2.49524 14.5215C2.71095 14.9448 3.05516 15.289 3.47852 15.5048C3.95982 15.75 4.58988 15.75 5.85 15.75H11.4C12.6601 15.75 13.2902 15.75 13.7715 15.5048C14.1948 15.289 14.539 14.9448 14.7548 14.5215C15 14.0402 15 13.4101 15 12.15V9.75M9.75 12.75H5.25M11.25 9.75H5.25M15.091 2.90901C15.9697 3.78769 15.9697 5.21231 15.091 6.09099C14.2123 6.96967 12.7877 6.96967 11.909 6.09099C11.0303 5.21231 11.0303 3.78769 11.909 2.90901C12.7877 2.03033 14.2123 2.03033 15.091 2.90901Z" stroke="#00031B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>AI Suggested Findings</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="https://dealroom.net/diligenceai#document-intelligence" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.6366 6.8177V4.63589C13.6366 3.49032 13.6366 2.91754 13.4137 2.48C13.2176 2.09512 12.9047 1.78221 12.5198 1.5861C12.0822 1.36316 11.5095 1.36316 10.3639 1.36316H6.00027C4.8547 1.36316 4.28192 1.36316 3.84438 1.5861C3.4595 1.78221 3.14658 2.09512 2.95048 2.48C2.72754 2.91754 2.72754 3.49032 2.72754 4.63589V11.7268C2.72754 12.8724 2.72754 13.4451 2.95048 13.8827C3.14658 14.2676 3.4595 14.5805 3.84438 14.7766C4.28192 14.9995 4.8547 14.9995 6.00027 14.9995H8.18208" stroke="#00031B" stroke-width="1.36364" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.5148 8.93164L13.6525 8.94695L13.7291 9.02348L13.8515 9.26838L14.0964 9.8347L14.3107 10.3245L14.5709 10.9214L14.6934 11.1663L14.8005 11.35L14.9382 11.5184L15.1372 11.7174L15.3974 11.901L15.6423 12.0235L16.2699 12.299L16.7291 12.498L17.2189 12.7123L17.5862 12.8806L17.6627 12.9418L17.6934 13.0184L17.6781 13.1255L17.6015 13.2174L17.4791 13.2786L16.8515 13.5541L15.6883 14.0592L15.4434 14.1816L15.2291 14.3194L15.0148 14.5031L14.9995 14.5337H14.9689L14.9382 14.5949L14.8005 14.7633L14.7087 14.901L14.5403 15.2531L14.3413 15.7123L14.0658 16.3398L13.8668 16.799L13.7291 17.0898L13.6372 17.1663L13.5454 17.1816L13.4536 17.1357L13.3923 17.0592L13.2087 16.6612L12.7036 15.4827L12.5352 15.1L12.3974 14.8398L12.2444 14.6408L12.1066 14.4878L11.877 14.3041L11.5862 14.1357L11.0352 13.8908L10.4076 13.6153L9.7954 13.3398L9.5505 13.2327L9.45867 13.1561L9.44336 13.0031L9.48928 12.9265L9.56581 12.8653L10.8515 12.299L11.4179 12.0541L11.6781 11.9316L11.9076 11.7786L12.1066 11.6102L12.2903 11.4112L12.4434 11.1663L12.5658 10.9214L12.8719 10.2174L13.0862 9.72756L13.3464 9.13062L13.4076 9.00817L13.4842 8.94695L13.5148 8.93164Z" fill="#00031B"/>
+</svg>
+</div><div>AI Document Intelligence</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="https://dealroom.net/diligenceai#document-organizer" class="nav-tabs2_links-set1_link w-inline-block"><div class="nav-tabs2_links-set1_link-icon w-embed"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75 5.25L8.91334 3.57669C8.67255 3.0951 8.55215 2.8543 8.37253 2.67837C8.21368 2.5228 8.02224 2.40448 7.81206 2.33198C7.57437 2.25 7.30515 2.25 6.76672 2.25H3.9C3.05992 2.25 2.63988 2.25 2.31901 2.41349C2.03677 2.5573 1.8073 2.78677 1.66349 3.06901C1.5 3.38988 1.5 3.80992 1.5 4.65V5.25M1.5 5.25H12.9C14.1601 5.25 14.7902 5.25 15.2715 5.49524C15.6948 5.71095 16.039 6.05516 16.2548 6.47852C16.5 6.95982 16.5 7.58988 16.5 8.85V12.15C16.5 13.4101 16.5 14.0402 16.2548 14.5215C16.039 14.9448 15.6948 15.289 15.2715 15.5048C14.7902 15.75 14.1601 15.75 12.9 15.75H5.1C3.83988 15.75 3.20982 15.75 2.72852 15.5048C2.30516 15.289 1.96095 14.9448 1.74524 14.5215C1.5 14.0402 1.5 13.4101 1.5 12.15V5.25Z" stroke="#00031B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><div>AI Document Organaizer</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a></div></div><div id="w-node-_1da2214f-a59f-aabb-c3e9-b3263b9487b3-973e8be3" class="nav-tabs2_l2_banner-wrapper"><a href="/mcp" class="banner_6_component w-inline-block"><div class="banner_6_heading">Dealroom MCP</div><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e62b1b4b87d9f735c0665_nav-banner-bg.png" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e62b1b4b87d9f735c0665_nav-banner-bg-p-500.png 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e62b1b4b87d9f735c0665_nav-banner-bg-p-800.png 800w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e62b1b4b87d9f735c0665_nav-banner-bg-p-1080.png 1080w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e62b1b4b87d9f735c0665_nav-banner-bg.png 1212w" alt="" class="banner_6_bg"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e632ffc84bdabd1e28f96_aff51bc67effce45e4f4a4d20305ee37_nav-banner-icons.png" loading="lazy" alt="" class="banner_6_bg-icons"/><div class="hide w-embed w-script"><style>
+.banner_6_component .banner_6_bg-icons {
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.banner_6_component.b6-animate .banner_6_bg-icons {
+  animation: b6IconReveal 700ms cubic-bezier(0.23, 1, 0.32, 1) 100ms both;
+}
+
+.banner_6_component:hover .banner_6_bg-icons {
+  transform: scale(1.06);
+}
+
+@keyframes b6IconReveal {
+  from { opacity: 0; transform: scale(0.9) translateY(14px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner_6_component.b6-animate .banner_6_bg-icons {
+    animation: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var banner = document.querySelector('.banner_6_component');
+  if (!banner) return;
+  var toggle = document.getElementById('w-dropdown-toggle-0');
+  if (!toggle) return;
+
+  new MutationObserver(function () {
+    if (toggle.getAttribute('aria-expanded') !== 'true') return;
+    if (sessionStorage.getItem('b6Played')) return;
+    sessionStorage.setItem('b6Played', '1');
+    banner.classList.remove('b6-animate');
+    void banner.offsetWidth;
+    banner.classList.add('b6-animate');
+  }).observe(toggle, { attributes: true, attributeFilter: ['aria-expanded'] });
+});
+</script></div></a></div><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a9e4bace0c754deb754d1a4_nav-bg-pattern.svg" loading="lazy" alt="" class="hide"/></div></div><div class="nav-tabs2_l1_item is-c1"><div class="nav-tabs2_l2_card is-within-c1"><div class="nav-tabs2_heading1 is-next-to-custom1">Explore</div><div class="nav-tabs2_links-set1"><a href="/demo-library" class="nav-tabs2_links-set1_link is-custom1 w-inline-block"><div>Demo library</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="/platform-tour" class="nav-tabs2_links-set1_link is-custom1 w-inline-block"><div>Product Tour</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a><a href="/changelog" class="nav-tabs2_links-set1_link is-custom1 w-inline-block"><div>Product Changelog</div><div class="nav-tabs2_links-set1_link-chevron w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a></div></div></div></div></div></div></div></div></nav></div><a href="/case-studies" class="nav-link is-next-to-products w-nav-link">Customers</a><div data-delay="0" data-hover="true" class="nav-dropdown_component-click is-facelift w-dropdown"><div class="nav_link within-dropdown w-dropdown-toggle"><div class="nav-link-text">Resources</div><div class="nav-dropdown-icon w-icon-dropdown-toggle"></div></div><nav class="nav_dropdown-panel is-resources w-dropdown-list"><div class="nav_dropdown_content-variant1 is-with-sidebar"><div data-current="Library" data-easing="ease-out" data-duration-in="90" data-duration-out="90" class="nav-tabs1_component w-tabs"><div class="nav-tabs1_menu w-tab-menu"><a data-w-tab="Library" class="nav-tabs1_tab-link w-inline-block w-tab-link w--current"><div class="nav-tabs1_tab-heading">Library</div><p>All M&amp;A resources in one place for deal teams.</p></a><a data-w-tab="Buyer-Led M&amp;A" class="nav-tabs1_tab-link w-inline-block w-tab-link"><div class="nav-tabs1_tab-heading">Buyer-Led M&amp;A™</div><p>Explore frameworks redefining modern, buyer-led deal execution.</p></a><a data-w-tab="For Customers" class="nav-tabs1_tab-link w-inline-block w-tab-link"><div class="nav-tabs1_tab-heading is-desktop">Exclusive for Customers</div><div class="nav-tabs1_tab-heading is-mobile">For Customers</div><p>Exclusive for Customers.</p></a></div><div class="nav-tabs1_content w-tab-content"><div data-w-tab="Library" class="nav-tabs1_pane w-tab-pane w--tab-active"><div class="nav-tabs1_pane-inner"><div class="nav-tabs1_inner-main"><a href="/resources" class="nav-tabs1_featured-link w-inline-block"><div class="nav-tabs1_featured-link_heading"><div>Explore the Library</div><div class="nav-tabs1_featured-link_icon w-embed"><svg width="100%" height="100%" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 0.75L4.75 4.75L0.75 8.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><p class="hide-tablet">Discover guides, playbooks, webinars, and practical insights for every deal stage.</p></a><div class="nav-tabs1_layout"><a href="/resources/webinars" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.76786 2.33929H1.76786C1.13667 2.33929 0.625 2.85097 0.625 3.48215V11.4822C0.625 12.1133 1.13667 12.625 1.76786 12.625H9.76786C10.399 12.625 10.9107 12.1133 10.9107 11.4822V3.48215C10.9107 2.85097 10.399 2.33929 9.76786 2.33929Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.33936 0.625V3.19643" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.19629 0.625V3.19643" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.625 5.76788H10.9107" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Webinars</div></div><p>Join live discussions and masterclasses with leading M&amp;A practitioners.</p></a><a href="/resources/ebooks" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.625 0.625H4.22501C4.86153 0.625 5.47198 0.877857 5.92207 1.32794C6.37215 1.77803 6.62501 2.38848 6.62501 3.025V11.425C6.62501 10.9476 6.43537 10.4898 6.0978 10.1522C5.76024 9.81466 5.3024 9.62502 4.82501 9.62502H0.625V0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.625 0.625H9.025C8.38848 0.625 7.77803 0.877857 7.32794 1.32794C6.87786 1.77803 6.625 2.38848 6.625 3.025V11.425C6.625 10.9476 6.81464 10.4898 7.15221 10.1522C7.48977 9.81466 7.94761 9.62502 8.425 9.62502H12.625V0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>eBooks</div></div><p>Download in-depth M&amp;A research, playbooks, and strategy guides.</p></a><a href="/demo-library" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.625 12.625C9.93871 12.625 12.625 9.93871 12.625 6.625C12.625 3.31129 9.93871 0.625 6.625 0.625C3.31129 0.625 0.625 3.31129 0.625 6.625C0.625 9.93871 3.31129 12.625 6.625 12.625Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.625 4.05359L9.05357 6.62502L5.625 9.19645V4.05359Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Demo Library</div></div><p>Explore DealRoom&#x27;s features and customer-led product demo.</p></a><a href="/resources/blog" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.95627 1.88159H1.80973C1.49552 1.88159 1.19418 2.00641 0.971998 2.22859C0.749819 2.45077 0.625 2.75211 0.625 3.06632V11.3594C0.625 11.6736 0.749819 11.975 0.971998 12.1971C1.19418 12.4193 1.49552 12.5441 1.80973 12.5441H10.1028C10.417 12.5441 10.7184 12.4193 10.9405 12.1971C11.1627 11.975 11.2875 11.6736 11.2875 11.3594V7.21286" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.399 0.993047C10.6347 0.757391 10.9543 0.625 11.2876 0.625C11.6208 0.625 11.9404 0.757391 12.1761 0.993047C12.4118 1.2287 12.5441 1.54832 12.5441 1.88159C12.5441 2.21486 12.4118 2.53448 12.1761 2.77014L6.54865 8.39759L4.1792 8.98995L4.77156 6.6205L10.399 0.993047Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Blogs</div></div><p>Stay current with M&amp;A news, trends, and expert perspectives.</p></a><a href="/resources/templates" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.5 1.22754H7.5C7.76522 1.22754 8.01957 1.33822 8.20711 1.53522C8.39464 1.73223 8.5 1.99943 8.5 2.27804V9.63158C8.5 9.91019 8.39464 10.1774 8.20711 10.3744C8.01957 10.5714 7.76522 10.6821 7.5 10.6821H1.5C1.23478 10.6821 0.98043 10.5714 0.792893 10.3744C0.605357 10.1774 0.5 9.91019 0.5 9.63158V2.27804C0.5 1.99943 0.605357 1.73223 0.792893 1.53522C0.98043 1.33822 1.23478 1.22754 1.5 1.22754H2.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.86358 0.5H3.13631C2.88527 0.5 2.68176 0.744208 2.68176 1.04545V2.13636C2.68176 2.43761 2.88527 2.68182 3.13631 2.68182H5.86358C6.11462 2.68182 6.31813 2.43761 6.31813 2.13636V1.04545C6.31813 0.744208 6.11462 0.5 5.86358 0.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Templates</div></div><p>Download ready-to-use M&amp;A checklists, playbooks, and reporting templates.</p></a><a href="https://www.mascience.com" target="_blank" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.44325 0.625C4.00926 0.625 3.59304 0.797402 3.28616 1.10428C2.97929 1.41116 2.80688 1.82737 2.80688 2.26136V6.62499C2.80688 7.05898 2.97929 7.4752 3.28616 7.78207C3.59304 8.08895 4.00926 8.26135 4.44325 8.26135C4.87724 8.26135 5.29345 8.08895 5.60033 7.78207C5.90721 7.4752 6.07961 7.05898 6.07961 6.62499V2.26136C6.07961 1.82737 5.90721 1.41116 5.60033 1.10428C5.29345 0.797402 4.87724 0.625 4.44325 0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.26135 5.53406V6.62497C8.26135 7.63761 7.85908 8.60878 7.14303 9.32482C6.42699 10.0409 5.45582 10.4431 4.44318 10.4431C3.43053 10.4431 2.45936 10.0409 1.74332 9.32482C1.02727 8.60878 0.625 7.63761 0.625 6.62497V5.53406" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.44336 10.4432V12.625" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.26147 12.625H6.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>M&amp;A Science Podcast</div></div><p>Listen to #1 M&amp;A Podcast.</p></a><a id="w-node-_06b97d91-b0b2-a242-ed13-72da69767e3c-973e8be3" href="/mapersonality" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 41 38">
+
+  <path id="User" class="cls-1" d="M190.5,1182c5.514,0,9.5-5.38,9.5-12s-3.986-12-9.5-12-9.5,5.38-9.5,12S184.986,1182,190.5,1182Zm0-21c3.866,0,6.5,4.03,6.5,9s-2.634,9-6.5,9-6.5-4.03-6.5-9S186.634,1161,190.5,1161Zm9.149,20.01a1.5,1.5,0,1,0-.3,2.98,9.753,9.753,0,0,1,8.576,9.01H173.074a9.826,9.826,0,0,1,8.579-9.01,1.5,1.5,0,0,0-.3-2.98c-0.114.01-11.351,1.27-11.351,13.49a1.5,1.5,0,0,0,1.5,1.5h38a1.5,1.5,0,0,0,1.5-1.5C211,1182.28,199.763,1181.02,199.649,1181.01Z" transform="translate(-170 -1158)" fill="currentColor"/>
+</svg></div><div>What&#x27;s Your M&amp;A Personality</div></div><p>Check what&#x27;s your M&amp;A personality and get curated resources in your inbox for free.</p></a><a id="w-node-_44c82c61-5ff6-7f60-bb31-746485aff78d-973e8be3" href="/resources/content/m-a-benchmark-tool-2026" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
+<path id="XMLID_1594_" d="M72.8,24.9L53.4,66.7c-1.7,4.3-4.7,6.8-8,6.8c-2.7,0-5-1.4-6.3-3.6c-1.4-2.6-1.3-5.8,0.4-8.5v0l25.4-40.7
+	c1.3-2,3.9-2.7,6-1.6C73,20.2,73.8,22.7,72.8,24.9z M79.6,37c-1.5-1.6-4-1.7-5.7-0.2c-1.6,1.5-1.7,4-0.2,5.7
+	C80.3,49.7,84,59.1,84,69c0,2.2,1.8,4,4,4s4-1.8,4-4C92,57.1,87.6,45.7,79.6,37z M49.2,30.4c2.2,0.2,4.1-1.4,4.3-3.6
+	c0.2-2.2-1.4-4.1-3.6-4.3c-1.3-0.1-2.6-0.2-3.9-0.2c-25.4,0-46,21-46,46.8c0,2.2,1.8,4,4,4s4-1.8,4-4c0-21.4,17-38.8,38-38.8
+	C47.1,30.2,48.2,30.3,49.2,30.4z" fill="currentColor"/>
+</svg></div><div>M&amp;A Benchmark Tool</div></div><p>Compare your deal team, process, and tools against 150+ M&amp;A teams.</p></a></div></div><div class="nav-tabs1_inner-sidebar"><div class="nav_dropdown_featured is-style1"><div class="nav_dropdown_featured-heading">Featured</div><img width="70" sizes="100vw" alt="DealRoom feature preview" src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6915966f8c1fc2b5e336889e_builder-nav-banner.webp" loading="lazy" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6915966f8c1fc2b5e336889e_builder-nav-banner-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/6915966f8c1fc2b5e336889e_builder-nav-banner.webp 672w" class="nav_dropdown_featured-image"/><div class="nav_dropdown_featured-title is-size1">Build Your Custom M&amp;A Checklist</div><div class="padding-bottom padding-xsmall"></div><p>Answer <strong>5</strong> quick questions to generate your tailored due diligence request list</p><div class="padding-bottom padding-xsmall"></div><div class="padding-bottom padding-small"></div><a dr-element="" data-wf--buttons-button-primary--variant="is-small" href="/resources/checklist-builder" class="button w-variant-72cb3ebe-e3f5-49e7-ecaa-4708c8fcbf4c w-inline-block"><div class="button_icon-layout"><div>Start building</div><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6914fc95d21a02f908e69da0_button-ai-icon.svg" loading="lazy" alt="" class="button_icon"/></div></a></div></div></div></div><div data-w-tab="Buyer-Led M&amp;A" class="nav-tabs1_pane w-tab-pane"><div class="nav-tabs1_pane-inner"><div class="nav-tabs1_inner-main"><div class="nav-tabs1_layout"><a href="/buyer-led-m-a" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.625 11.625L5.625 8.56944L0.625 11.625V1.84722C0.625 1.52307 0.77551 1.21219 1.04342 0.982981C1.31133 0.753769 1.67469 0.625 2.05357 0.625H9.19643C9.57531 0.625 9.93867 0.753769 10.2066 0.982981C10.4745 1.21219 10.625 1.52307 10.625 1.84722V11.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>The Framework</div></div><p>Learn the 5 pillars and best practices for smarter, buyer-led execution.</p></a><a href="/resources/buyer-led-m-and-a-newsletter" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.82502 0.625H11.4251C12.0852 0.625 12.6252 1.16501 12.6252 1.82502V9.02511C12.6252 9.68512 12.0852 10.2251 11.4251 10.2251H1.82502C1.16501 10.2251 0.625 9.68512 0.625 9.02511V1.82502C0.625 1.16501 1.16501 0.625 1.82502 0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.6252 1.82501L6.62508 6.02507L0.625 1.82501" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Buyer-Led Newsletter</div></div><p>Stay ahead with M&amp;A trends, strategies, and community-driven deal insights.</p></a><a href="/kison-ai" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.625 6.29168C12.6273 7.17159 12.4217 8.0396 12.025 8.82501C11.5546 9.76617 10.8315 10.5578 9.93662 11.1112C9.04175 11.6646 8.01048 11.9579 6.95832 11.9583C6.07841 11.9606 5.2104 11.755 4.42499 11.3583L0.625 12.625L1.89166 8.82501C1.49495 8.0396 1.28937 7.17159 1.29167 6.29168C1.29207 5.23952 1.58541 4.20825 2.13881 3.31338C2.69221 2.41852 3.48383 1.6954 4.42499 1.22502C5.2104 0.828306 6.07841 0.622725 6.95832 0.625019H7.29166C8.68122 0.70168 9.99368 1.28819 10.9777 2.27226C11.9618 3.25632 12.5483 4.56878 12.625 5.95834V6.29168Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>M&amp;A Copilot</div></div><p>Ask questions, get guidance — straight from Kison Patel’s digital mind.</p></a><a href="/resources/ebooks" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.625 0.625H4.22501C4.86153 0.625 5.47198 0.877857 5.92207 1.32794C6.37215 1.77803 6.62501 2.38848 6.62501 3.025V11.425C6.62501 10.9476 6.43537 10.4898 6.0978 10.1522C5.76024 9.81466 5.3024 9.62502 4.82501 9.62502H0.625V0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.625 0.625H9.025C8.38848 0.625 7.77803 0.877857 7.32794 1.32794C6.87786 1.77803 6.625 2.38848 6.625 3.025V11.425C6.625 10.9476 6.81464 10.4898 7.15221 10.1522C7.48977 9.81466 7.94761 9.62502 8.425 9.62502H12.625V0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>eBooks</div></div><p>Download in-depth buyer-led m&amp;A eBooks, playbooks, and strategy guides.</p></a></div></div><div class="nav-tabs1_inner-sidebar"><div class="nav_dropdown_featured"><div class="nav_dropdown_featured-heading">Featured</div><img width="672" height="384" alt="" src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/68fe21a125c724d218603f00_tmp_m6bc99s.webp" loading="lazy" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/68fe21a125c724d218603f00_tmp_m6bc99s-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/68fe21a125c724d218603f00_tmp_m6bc99s-p-800.webp 800w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/68fe21a125c724d218603f00_tmp_m6bc99s-p-1080.webp 1080w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/68fe21a125c724d218603f00_tmp_m6bc99s.webp 1344w" sizes="100vw" class="nav_dropdown_featured-image is-ratio1"/><div class="nav_dropdown_featured-title is-size1">Buyer-Led M&amp;A™ Newsletter</div><div class="padding-bottom padding-xsmall"></div><p>Tactical insights for serious dealmakers.</p><div class="padding-bottom padding-small"></div><a href="/resources/buyer-led-m-and-a-newsletter" class="button is-small w-button">Learn More</a></div></div></div></div><div data-w-tab="For Customers" class="nav-tabs1_pane w-tab-pane"><div class="nav-tabs1_pane-inner"><div class="nav-tabs1_inner-main"><div class="nav-tabs1_layout"><a href="https://support.dealroom.net/en/" target="_blank" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg></div><div>Help Center</div></div><p>Explore product tutorials, troubleshooting tips, and best practices to master DealRoom.</p></a><a href="/blog/meet-the-dealroom-customer-success-team-your-partners-in-deal-success" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.625 14.625C11.491 14.625 14.625 11.491 14.625 7.625C14.625 3.75901 11.491 0.625 7.625 0.625C3.75901 0.625 0.625 3.75901 0.625 7.625C0.625 11.491 3.75901 14.625 7.625 14.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.82495 9.0249C4.82495 9.0249 5.87495 10.4249 7.62495 10.4249C9.37495 10.4249 10.425 9.0249 10.425 9.0249" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.5249 5.5249H5.5319" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.7251 5.5249H9.7321" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Meet the CSMs</div></div><p>Learn about Customer Success Managers and learn how they can support you.</p></a><a href="/refer" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79159 4.29167C10.8041 4.29167 11.6249 3.47086 11.6249 2.45833C11.6249 1.44581 10.8041 0.625 9.79159 0.625C8.77906 0.625 7.95825 1.44581 7.95825 2.45833C7.95825 3.47086 8.77906 4.29167 9.79159 4.29167Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.45833 8.5695C3.47086 8.5695 4.29167 7.74869 4.29167 6.73617C4.29167 5.72364 3.47086 4.90283 2.45833 4.90283C1.44581 4.90283 0.625 5.72364 0.625 6.73617C0.625 7.74869 1.44581 8.5695 2.45833 8.5695Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.79159 12.8471C10.8041 12.8471 11.6249 12.0263 11.6249 11.0138C11.6249 10.0012 10.8041 9.18042 9.79159 9.18042C8.77906 9.18042 7.95825 10.0012 7.95825 11.0138C7.95825 12.0263 8.77906 12.8471 9.79159 12.8471Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.04102 7.65869L8.2149 10.0909" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.20879 3.38086L4.04102 5.81308" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Referral Program</div></div><p>Share DealRoom with your network and earn exclusive rewards.</p></a><a href="/changelog" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 26 19" fill="none">
+<path d="M1.66699 16.0846H11.5837M24.3337 11.8346L18.667 17.5013L15.8337 14.668M1.66699 9.0013H17.2503M1.66699 1.91797H17.2503" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Product Changelog</div></div><p>Explore the latest product releases, feature enhancements, and improvements across DealRoom.</p></a><a href="/resources/templates" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.875 1.625H10.25C10.6147 1.625 10.9644 1.77718 11.2223 2.04807C11.4801 2.31895 11.625 2.68635 11.625 3.06944V13.1806C11.625 13.5636 11.4801 13.931 11.2223 14.2019C10.9644 14.4728 10.6147 14.625 10.25 14.625H2C1.63533 14.625 1.28559 14.4728 1.02773 14.2019C0.769866 13.931 0.625 13.5636 0.625 13.1806V3.06944C0.625 2.68635 0.769866 2.31895 1.02773 2.04807C1.28559 1.77718 1.63533 1.625 2 1.625H3.375" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 0.625H4.25C3.90482 0.625 3.625 0.960786 3.625 1.375V2.875C3.625 3.28921 3.90482 3.625 4.25 3.625H8C8.34518 3.625 8.625 3.28921 8.625 2.875V1.375C8.625 0.960786 8.34518 0.625 8 0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>Templates</div></div><p>Download ready-to-use M&amp;A checklists, playbooks, and reporting templates.</p></a><a href="https://www.mascience.com/podcast" target="_blank" class="nav-tabs1_link-block w-inline-block"><div class="nav-tabs1_link-block-heading"><div class="nav-tabs1_link-block-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.44325 0.625C4.00926 0.625 3.59304 0.797402 3.28616 1.10428C2.97929 1.41116 2.80688 1.82737 2.80688 2.26136V6.62499C2.80688 7.05898 2.97929 7.4752 3.28616 7.78207C3.59304 8.08895 4.00926 8.26135 4.44325 8.26135C4.87724 8.26135 5.29345 8.08895 5.60033 7.78207C5.90721 7.4752 6.07961 7.05898 6.07961 6.62499V2.26136C6.07961 1.82737 5.90721 1.41116 5.60033 1.10428C5.29345 0.797402 4.87724 0.625 4.44325 0.625Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.26135 5.53406V6.62497C8.26135 7.63761 7.85908 8.60878 7.14303 9.32482C6.42699 10.0409 5.45582 10.4431 4.44318 10.4431C3.43053 10.4431 2.45936 10.0409 1.74332 9.32482C1.02727 8.60878 0.625 7.63761 0.625 6.62497V5.53406" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.44336 10.4432V12.625" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.26147 12.625H6.6251" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div>M&amp;A Science Podcast</div></div><p>Listen to #1 M&amp;A Podcast</p></a></div></div><div class="nav-tabs1_inner-sidebar"><div class="nav_dropdown_featured is-style1"><div class="nav_dropdown_featured-heading">Featured</div><img width="70" loading="lazy" alt="DealRoom announcement" src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/6a203505a732704a5bdc503d_whatsnew.avif" class="nav_dropdown_featured-image is-ratio1"/><div class="nav_dropdown_featured-title is-size1">What&#x27;s New in The DealRoom M&amp;A Platform</div><div class="padding-bottom padding-xsmall"></div><p>Check the latest updates and discover new features available in DealRoom.</p><div class="padding-bottom padding-small"></div><a href="/product/new-updates" class="button is-small w-button">Learn More</a></div></div></div></div></div></div><div class="hide w-embed"><style>
+@media (min-width: 992px) {
+  .nav-tabs1_tab-link.w--current::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    mask: radial-gradient(circle at top left, transparent 72%, black 72%);
+  }
+
+  .nav-tabs1_tab-link.w--current::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    mask: radial-gradient(circle at bottom left, transparent 72%, black 72%);
+  }
+
+  .nav-tabs1_tab-link.w--current:first-child::before {
+    display: none;
+  }
+
+  .nav-tabs1_menu:has(.nav-tabs1_tab-link:first-child.w--current) + .nav-tabs1_content .nav-tabs1_inner-main {
+    border-top-left-radius: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+	.nav-tabs1_tab-heading {
+  	font-size: 14px;
+  }
+  .nav-tabs1_menu {
+  	max-width: 12rem;
+  }
+  .nav-tabs1_menu {
+  	max-width: 12rem;
+  }
+  .nav-tabs1_pane {
+  	max-width: 24rem;
+  }
+  .nav_dropdown-panel.is-resources {
+  	min-width: 54rem !important;
+  }
+}
+</style></div></div></nav></div><a href="/products/pricing" class="nav-link w-nav-link">Pricing</a><div data-delay="0" data-hover="true" class="nav-dropdown_component-click is-facelift w-dropdown"><div class="nav_link within-dropdown w-dropdown-toggle"><div class="nav_link_text">Company</div><div class="nav-dropdown-icon w-icon-dropdown-toggle"></div></div><nav id="anchor-test" class="nav_dropdown-panel is-products w-dropdown-list"><div class="nav_dropdown_content-variant1"><div class="nav_dropdown_links-wrapper1"><a href="/company/about" class="nav_dropdown_link-block2 w-inline-block"><div class="nav_dropdown_link-block2_heading">About Us</div><div class="nav_dropdown_link-block2_content"><div>The DealRoom Story</div></div></a><a href="/company/awards-and-news" class="nav_dropdown_link-block2 w-inline-block"><div class="nav_dropdown_link-block2_heading">News &amp; Press</div><div class="nav_dropdown_link-block2_content"><div>Discover DealRoom&#x27;s latest News &amp; Awards</div></div></a><a href="/company/leadership-team" class="nav_dropdown_link-block2 w-inline-block"><div class="nav_dropdown_link-block2_heading">Leadership Team</div><div class="nav_dropdown_link-block2_content"><div>Learn more about our executive team</div></div></a><a href="/company/careers" class="nav_dropdown_link-block2 w-inline-block"><div class="nav_dropdown_link-block2_heading">Careers</div><div class="nav_dropdown_link-block2_content"><div>Join our mission to transform M&amp;A</div></div></a></div></div><div class="nav_dropdown_mobile-shadow"></div><div class="nav_dropdown_mobile-shadow is-top"></div></nav></div></div><div class="nav1_nav-menu-right"><div class="nav-menu-cta"><a id="login-button" href="/account/" class="nav-link is-within-nav-menu-cta w-button">Log in</a><div dr-lead-button-click="Navbar - Primary CTA" class="dr-lead_element-wrapper"><a id="signup-button" crazy-egg="button-nav" href="/product/request-a-demo" class="button is-nav1-button w-button">Request a demo</a></div><div class="nav1_ab"></div></div></div></nav></div><div class="hamburger-toggle w-nav-button"><div class="burger-icon black w-icon-nav-menu"></div></div></div></div><div class="global-styles w-embed"><style>
+/*Fallback variables, please don't delete*/
+:root {
+  --dealroom-brand: #0278db;
+  --dealroom-black: #00031b;
+  --white: #ffffff;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+section {
+	position: relative;
+}
+
+
+ .text-style-line-thin {
+ 	text-decoration-color: inherit;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.2s ease, opacity 0.2s ease; 
+}
+
+/*
+@media (min-width:1112px) and (max-width:1190px) {
+    .nav-link-text {
+        font-size: 15px;
+    }
+    .nav-link {
+        font-size: 15px;
+        padding: 5px 5px 5px 5px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1111px) {
+    .nav-link-text {
+        font-size: 12px;
+    }
+    .nav-link {
+        font-size: 12px;
+        padding: 5px 5px 5px 5px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1259px) {
+     .brand-img {
+        width: 132px;
+    }
+}
+
+*/
+
+.content-rich-text a {
+  text-decoration-color: #0077db;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+
+/* Snippet gets rid of top margin on first element in any rich text*/
+.w-richtext>:first-child {
+	margin-top: 0;
+}
+/* Snippet gets rid of bottom margin on last element in any rich text*/
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+/* Snippet makes all link elements listed below to inherit color from their parent */
+a, 
+.w-tab-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link
+{
+color: inherit;
+}
+/* Snippet allows you to add class of clickable-off and prevent all click and hover interaction with an element */
+.clickable-off {
+  pointer-events: none;
+}
+/* Snippet allows you to add class of clickable-on and enable all click and hover interaction with an element */
+.clickable-on{
+  pointer-events: auto;
+}
+/* Snippet allows you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/*Hide focus outline for main content element*/
+    main:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* Make sure containers never lose their center alignment*/
+.container-medium, .container-small, .container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/*Reset selects, buttons, and links styles*/
+.w-input, .w-select, a {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+
+/*Apply "..." After 3 lines of Text */
+[lines="3"], .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*Apply "..." After 5 lines of Text */
+[lines="5"], .text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+
+/*Apply "..." After 2 lines of Text */
+[lines="2"], .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*Apply "..." After 4 lines of Text */
+[lines="4"], .text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+/* Forces browser to follow the CSS style */
+.form-input {
+     -webkit-appearance: none;
+}
+
+/* Prevents social icons move on hover - Safari specific bug */
+.social-icon { /* If name changes, this class needs to change too */
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+@media (min-width:992px) and (max-width:1110px) {
+   	.cycle-h1.home-hero-heading {
+        font-size: 48px !important;
+    }
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+
+.text-wrap-balance {
+	 text-wrap: balance;
+}
+
+.text-wrap-pretty {
+	 text-wrap: pretty;
+}
+
+.blue-tick-list-rich-text_component li:last-child {
+	margin-bottom: 0;
+}
+
+li:last-child {
+	margin-bottom: 0 !important;
+}
+
+.features3_item:hover::after {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  right: -16px;
+  bottom: -16px;
+  background-color: #f4f9ff !important;
+  z-index: -1;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.simple_visual-image-wrapper.is-with-bottom-aligned::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 66px;
+    background: linear-gradient(to top, rgba(244, 249, 255, 1) 0%, rgba(245, 245, 247, 0) 100%);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px) { 
+.nav1_brand-logo {
+	width: 7.5rem;
+}
+.nav1_brand {
+	margin-right: .75rem;
+}
+}
+
+.tippy-box {
+	font-size: 11px !important;
+}
+
+[data-tippy-root] {
+	max-width: 240px;
+}
+
+.cta-buttons_secondary_icon {
+  transform: translateX(0);
+}
+
+.cta-buttons_item.is-secondary:hover .cta-buttons_secondary_icon {
+  transform: translateX(0.5rem);
+}
+</style>
+
+
+
+
+
+<style>
+.content-rich-text2_component ul li:last-child {
+  background-image: 
+    url(https://cdn.prod.website-files.com/5a71001fb54d350001949400/68a89b2ddcc4986862f04cc4_checkmark-list.svg),
+    url(https://cdn.prod.website-files.com/5a71001fb54d350001949400/68a89875088a949b4ee5579b_Dotted-Line.svg),
+    url(https://cdn.prod.website-files.com/5a71001fb54d350001949400/68a89875088a949b4ee5579b_Dotted-Line.svg);
+  
+  background-position:
+    0 38px,
+    50% 0,
+    50% 100%;
+}
+
+
+.content-rich-text2_component ul li strong {
+	margin-bottom: .5rem;
+  display: inline-block;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1240px) {
+  .layout79_component {
+    grid-column-gap: 2.5rem;
+  }
+  
+  .tags_tag {
+  font-size: .75rem;
+  padding: .25rem .5rem;
+  	}
+    
+  .tags_icon {
+    	width: .625rem;
+    }
+    
+    .tags_layout1 {
+    	gap: .75rem;
+    }
+    
+    .layout82_heading {
+    	font-size: 1rem;
+    }
+    
+    .layout82_item {
+    	padding: 1.35rem;
+    }
+}
+
+.filters3_radio-button.is-active {
+	background-color: #FFD578;
+}
+
+.nav-tabs1_featured-link:hover .nav-tabs1_featured-link_heading {
+	color: #0278D8;
+  gap: .75rem;
+}
+
+@media screen and (max-width: 992px) {
+
+	.nav-tabs1_link-block p {
+  	display: none;
+  }
+  
+    .nav-tabs1_tab-link p {
+  	display: none;
+  }
+	
+}
+</style></div><div dr-element="nav-bg" class="nav1_background"></div><div class="project-settings"><div class="hidden-styles"><div data-wf--utility-section-anchor--variant="base" class="section-anchor_component"></div></div></div></div></div><div class="section product-hero"><div class="container"><div class="intro mb42"><div class="product-page-pretitle center">FEATURES</div><h1>One platform for your team and your deals</h1></div><div data-easing="ease-in-quad" data-duration-in="300" data-duration-out="300" data-current="Tab 1" class="product-feature-tabs w-tabs"><div class="product-vertical-tabs-menu w-tab-menu"><a data-w-tab="Tab 1" class="product-feature-tab w-inline-block w-tab-link w--current"><div class="product-feature-tab-head"><div class="product-feature-tab-chevron"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea032d613eaa32cdee003a7_Vector-1.svg" alt="" loading="lazy" class="product-feature-tab-chevron-img black"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea0320f26dc30505516f537_ch-bl.svg" alt="" class="product-feature-tab-chevron-img blue"/></div><h3 class="product-feature-tab-title">Collaborate with everyone</h3></div><div class="vertical-tab-p-wrapper-product"><p class="p prodcut-tabs-p">Send messages and assign tasks to internal and external team members.</p></div><div class="vertical-tabs-image mobile-tabs-image"><img src="https://cdn.prod.website-files.com/5e7a16b9f9dc732ec4fab2a5/5e7a2661f9dc732996fb139e_group-440%403x-2.png" alt="" class="vertical-tabs-img"/></div></a><a data-w-tab="Tab 2" class="product-feature-tab w-inline-block w-tab-link"><div class="product-feature-tab-head"><div class="product-feature-tab-chevron"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea032d613eaa32cdee003a7_Vector-1.svg" alt="" loading="lazy" class="product-feature-tab-chevron-img black"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea0320f26dc30505516f537_ch-bl.svg" alt="" class="product-feature-tab-chevron-img blue"/></div><h3 class="product-feature-tab-title">Access deal information</h3></div><div class="vertical-tab-p-wrapper-product"><p class="p prodcut-tabs-p">Review notes, open requests, high priority items, deal contacts, and more.</p></div><div class="vertical-tabs-image mobile-tabs-image"><img src="https://cdn.prod.website-files.com/5e7a16b9f9dc732ec4fab2a5/5e7a2661f9dc732996fb139e_group-440%403x-2.png" alt="" class="vertical-tabs-img"/></div></a><a data-w-tab="Tab 3" class="product-feature-tab w-inline-block w-tab-link"><div class="product-feature-tab-head"><div class="product-feature-tab-chevron"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea032d613eaa32cdee003a7_Vector-1.svg" alt="" loading="lazy" class="product-feature-tab-chevron-img black"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea0320f26dc30505516f537_ch-bl.svg" alt="" class="product-feature-tab-chevron-img blue"/></div><h3 class="product-feature-tab-title">Eliminate inefficiencies</h3></div><div class="vertical-tab-p-wrapper-product"><p class="p prodcut-tabs-p">Prevent duplicate work, back-and-forth emails, work silos and disconnected technologies.</p></div><div class="vertical-tabs-image mobile-tabs-image"><img src="https://cdn.prod.website-files.com/5e7a16b9f9dc732ec4fab2a5/5e7a2661f9dc732996fb139e_group-440%403x-2.png" alt="" class="vertical-tabs-img"/></div></a></div><div class="product-vertical-tab-content w-tab-content"><div data-w-tab="Tab 1" class="vertical-tab-pane w-tab-pane w--tab-active"><div class="product-tabs-image"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035977d2f322e8e7e55df_group-811%402x-2-2.webp" width="650" sizes="(max-width: 479px) 100vw, 650px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035977d2f322e8e7e55df_group-811%402x-2-2-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035977d2f322e8e7e55df_group-811%402x-2-2.webp 1300w" class="product-vertical-tab-img"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5e9c1c614c5ff95fe2c36887_flipsquare-dots%402x-2%201-2.png" alt="" class="product-herio-dots"/></div></div><div data-w-tab="Tab 2" class="vertical-tab-pane w-tab-pane"><div class="product-tabs-image"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035f2ca3b8965ec5db18f_group-832%402x-2.webp" width="632" sizes="(max-width: 479px) 100vw, 632px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035f2ca3b8965ec5db18f_group-832%402x-2-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035f2ca3b8965ec5db18f_group-832%402x-2.webp 1248w" class="product-vertical-tab-img"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5e9c1c614c5ff95fe2c36887_flipsquare-dots%402x-2%201-2.png" alt="" class="product-herio-dots"/></div></div><div data-w-tab="Tab 3" class="vertical-tab-pane w-tab-pane"><div class="product-tabs-image"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea035959816bb53395b22de_group-834%402x-2.avif" width="624" alt="" loading="lazy" class="product-vertical-tab-img"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5e9c1c614c5ff95fe2c36887_flipsquare-dots%402x-2%201-2.png" alt="" class="product-herio-dots"/></div></div></div></div><div class="product-page-hero-buttons-flex"><div class="hero-product-buttons-column"><div class="hero-buttons product-page"><a id="productSignupClick" href="/product/request-a-demo" class="button product-hero-button w-button">Request a demo</a><a href="https://dealroom.net/platform-tour" class="button outline w-button">Watch video</a></div></div></div></div></div><div class="section"><div class="container"><div class="intro mw800"><h2>Securely store, share, and manage documents</h2><div class="padding-bottom padding-xsmall"></div><div class="product-subtitle">Bring files and security security-sensitive together in one place, so you can organize and tackle your work efficiently.</div></div></div></div><div class="section horizontal-tabs-section"><div class="horizontal-tabs-bg"></div><div class="container"><div data-duration-in="300" data-duration-out="100" data-current="Tab 3" data-easing="ease" class="horizontal-tabs w-tabs"><div class="horizontal-tabs-content w-tab-content"><div data-w-tab="Tab 3" class="horizontal-tab-pane w-tab-pane w--tab-active"><div class="horizontal-tabs-video"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518157?background=1&quality=720p&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div></div><div data-w-tab="Tab 4" class="horizontal-tab-pane w-tab-pane"><div class="horizontal-tabs-video"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518140?background=1&quality=720p&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div></div><div data-w-tab="Tab 5" class="horizontal-tab-pane w-tab-pane"><div class="horizontal-tabs-video"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518121?background=1&quality=720p&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div></div></div><div class="horizontal-tabs-menu w-tab-menu"><a data-w-tab="Tab 3" class="horizontal-tab-link w-inline-block w-tab-link w--current"><div class="horizontal-tabs-video mobile-visible"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518157?title=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div><div class="horizontal-tab-head"><div class="horizontal-tab-head-icon"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea05a6c9816bb303c5cb6ed_arrow-up%201.svg" alt="" loading="lazy" class="horizontal-tab-icon grey"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea05a6c26dc303956184a6d_arrow-up%202.svg" alt="" class="horizontal-tab-icon blue"/></div><h3 class="horizontal-tab-title">Drag ’n drop Upload</h3></div><div class="horizontal-tab-divider"></div><p class="horizontal-tab-p">Effortlessly bulk upload documents and folders. Auto indexing keeps everything organized and easy to find.</p></a><a data-w-tab="Tab 4" class="horizontal-tab-link w-inline-block w-tab-link"><div class="horizontal-tabs-video mobile-visible"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518140?title=0" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div><div class="horizontal-tab-head"><div class="horizontal-tab-head-icon"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea05729f1d809728e9ba608_shield-gr.svg" alt="" loading="lazy" class="horizontal-tab-icon grey"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea057299816bb85ce5c28f0_shield-bl.svg" alt="" class="horizontal-tab-icon blue"/></div><h3 class="horizontal-tab-title">4-level permissions</h3></div><div class="horizontal-tab-divider"></div><p class="horizontal-tab-p">Easily apply watermarks, and restrict viewing, downloading, and printing.</p></a><a data-w-tab="Tab 5" class="horizontal-tab-link w-inline-block w-tab-link"><div class="horizontal-tabs-video mobile-visible"><div class="horizontal-tab-video-wrapper w-embed w-iframe w-script"><div style="padding:46.9% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410518121?title=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div><div class="horizontal-tab-head"><div class="horizontal-tab-head-icon"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea05a6c13c940ff7ef7ba36_search-sharp%202.svg" alt="" loading="lazy" class="horizontal-tab-icon grey"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea05a6df1c0f4eff780f5ae_search-sharp%201.svg" alt="" class="horizontal-tab-icon blue"/></div><h3 class="horizontal-tab-title">Full text search</h3></div><div class="horizontal-tab-divider"></div><p class="horizontal-tab-p">Quickly find the information or document you need by searching keywords or phrases.</p></a></div></div></div></div><div class="section"><div class="container"><div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="contrast-tabs w-tabs"><div class="contrast-tabs-content w-tab-content"><div data-w-tab="Tab 1" class="contrast-tab-pane w-tab-pane w--tab-active"><div class="contrast-tab-content"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3.avif" sizes="100vw" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3.avif 1262w" loading="lazy" alt="" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 2" class="contrast-tab-pane w-tab-pane"><div class="contrast-tab-content"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3.webp 1220w" loading="lazy" alt="" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 3" class="contrast-tab-pane w-tab-pane"><div class="contrast-tab-content"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8373e29080c09918bb8_group-839%402x-3.avif" alt="" loading="lazy" class="contrast-tab-img"/></div></div></div><div class="contrast-tabs-menu w-tab-menu"><a data-w-tab="Tab 1" class="contrast-tab-link w-inline-block w-tab-link w--current"><div class="contrast-tab-content mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3.avif" sizes="100vw" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1b216fdc0b2269ed2f10e_group-835%402x-3.avif 1262w" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Manage multiple deals <br/>simultaneously</h3><p class="contrast-tabs-p">Access an overview of multiple deals including revenue, business unit, business type, employee count, and more.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color"></div></div></a><a data-w-tab="Tab 2" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3.webp" sizes="100vw" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8b848ebd52388332a77_group-838%402x-3.webp 1220w" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Access and manage key member information</h3><p class="contrast-tabs-p">Keep all your contacts information and team members all in one place.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color"></div></div></a><a data-w-tab="Tab 3" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2c8373e29080c09918bb8_group-839%402x-3.avif" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Preview deals from the timeline view</h3><p class="contrast-tabs-p">Visually see your deals and how they compare on a timeline. Quicky see deal lengths, start dates, end dates, and more.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color"></div></div></a></div></div></div></div><div class="section-reporting"><div class="background-color-primary"><div class="padding-vertical padding-xlarge"><div class="layout6_component"><div class="layout6_image-layout"><div class="layout6_image-wrapper"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/62cbe2a933c6502da7d02c98_s%20(1).avif" loading="lazy" width="678" height="570" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/62cbe2a933c6502da7d02c98_s%20(1)-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/62cbe2a933c6502da7d02c98_s%20(1).avif 1356w" sizes="(max-width: 479px) 100vw, 678px" class="layout6_image-image"/></div></div><div class="layout6_layout"><div class="page-padding"><div class="layout6_content"><div class="margin-bottom margin-xsmall"><div class="text-color-light3">Featured resource</div></div><h2 class="heading-xxlarge">BI Reporting</h2><div class="margin-top margin-xsmall"><div class="text-size-large">Get real-time insight into the state of your team’s work and everything you need to take action—without leaving DealRoom.</div></div><div dr-lead-button-click="BI Reporting CTA Section" class="margin-top margin-medium"><a href="/product/request-a-demo" class="button is-white w-button">Book a demo</a></div></div></div></div></div></div></div></div><div class="sections-divider"></div><div class="section fullpage-video-section"><div class="container fullpage-video-intro"><div class="intro mw800"><h2 class="medium-heading">Streamline diligence management and communication</h2><div class="product-subtitle">Eliminate Excel trackers, emails, disconnected tools and frequent meetings from the diligence process.</div></div></div><div class="video-negative-margin"><div class="fullpage-video-embed negative-margin w-embed w-iframe w-script"><div style="padding:62.45% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/410524619?background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen allow=autoplay></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div></div></div><div class="section"><div class="container"><div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="contrast-tabs w-tabs"><div class="contrast-tabs-menu vertical w-tab-menu"><a data-w-tab="Tab 1" class="contrast-tab-link w-inline-block w-tab-link w--current"><div class="contrast-tab-content no-shadow mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a0f3387d0839c8a6fb7b_group-836%402x-2.avif" width="491" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Plan integration easily</h3><p class="contrast-tabs-p">Be ready to execute your post-merger integration plan on Day 1.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a><a data-w-tab="Tab 2" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content no-shadow mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2.avif" width="491" sizes="(max-width: 479px) 100vw, 491px" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2.avif 1132w" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Keep teams aligned to realize all value opportunities</h3><p class="contrast-tabs-p">Ensure that everyone knows timelines, tasks, and dependencies.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a><a data-w-tab="Tab 3" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content no-shadow mobile-visible"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9cf4964fb9d5e5e1fe2_group-841%402x-2.webp" width="491" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Track integration progress</h3><p class="contrast-tabs-p">Be confident that you and all stakeholders are constantly in the know of integration progress and priorities.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a></div><div class="contrast-tabs-content w-tab-content"><div data-w-tab="Tab 1" class="contrast-tab-pane w-tab-pane w--tab-active"><div class="contrast-tab-content no-shadow pt60"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a0f3387d0839c8a6fb7b_group-836%402x-2.avif" width="491" alt="" loading="lazy" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 2" class="contrast-tab-pane w-tab-pane"><div class="contrast-tab-content no-shadow pt60"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2.avif" width="491" sizes="(max-width: 479px) 100vw, 491px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9d04964fb4c765e1fe3_group-799%402x-2.avif 1132w" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 3" class="contrast-tab-pane vertical w-tab-pane"><div class="contrast-tab-content no-shadow pt60"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e9cf4964fb9d5e5e1fe2_group-841%402x-2.webp" width="491" alt="" loading="lazy" class="contrast-tab-img"/></div></div></div></div></div></div><div class="section no-pt-mobile"><div class="container"><div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="contrast-tabs w-tabs"><div class="contrast-tabs-content w-tab-content"><div data-w-tab="Tab 1" class="contrast-tab-pane vertical w-tab-pane w--tab-active"><div class="contrast-tab-content no-shadow"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a4314c89878cdab9368c_group-757%402x-2.avif" width="491" alt="" loading="lazy" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 2" class="contrast-tab-pane vertical w-tab-pane"><div class="contrast-tab-content no-shadow pt60"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab8835bf2474b3a6c062f_activity%402x-3.avif" width="491" sizes="(max-width: 479px) 100vw, 491px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab8835bf2474b3a6c062f_activity%402x-3-p-500.avif 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab8835bf2474b3a6c062f_activity%402x-3.avif 1058w" class="contrast-tab-img"/></div></div><div data-w-tab="Tab 3" class="contrast-tab-pane vertical w-tab-pane"><div class="contrast-tab-content no-shadow"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab883be49fee9a7f5b7d5_group-756%402x-4.webp" width="491" sizes="(max-width: 479px) 100vw, 491px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab883be49fee9a7f5b7d5_group-756%402x-4-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5eaab883be49fee9a7f5b7d5_group-756%402x-4.webp 922w" class="contrast-tab-img"/></div></div></div><div class="contrast-tabs-menu vertical w-tab-menu"><a data-w-tab="Tab 1" class="contrast-tab-link w-inline-block w-tab-link w--current"><div class="contrast-tab-content no-shadow mobile-visible vertical-image-inside"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a4314c89878cdab9368c_group-757%402x-2.avif" width="491" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Track diligence progress</h3><p class="contrast-tabs-p">Track the progress of requests over time and monitor requests flagged as high risk or priority.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a><a data-w-tab="Tab 2" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content no-shadow mobile-visible vertical-image-inside"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a57091965b44b2ff7634_activity%402x-2.webp" width="491" sizes="(max-width: 479px) 100vw, 491px" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a57091965b44b2ff7634_activity%402x-2-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1a57091965b44b2ff7634_activity%402x-2.webp 1058w" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Review documents activity</h3><p class="contrast-tabs-p">See who viewed what documents and when, as well as who downloaded and uploaded files.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a><a data-w-tab="Tab 3" class="contrast-tab-link w-inline-block w-tab-link"><div class="contrast-tab-content no-shadow mobile-visible vertical-image-inside"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea6e3f7789969515ad722d0_group-756%402x-3.webp" width="491" alt="" class="contrast-tab-img"/></div><h3 class="contrast-tab-title">Investigate buyers engagement</h3><p class="contrast-tabs-p">See which buyer is spending the most time reviewing specific diligence requests to get a better idea of their engagement level.</p><div class="contrast-tab-color-wrapper"><div class="contrast-color ocean"></div></div></a></div></div></div></div><div class="section integrations-intro-section"><div class="container"><div class="intro mw900"><h2 class="medium-heading">Integrations</h2><div class="product-subtitle">DealRoom can integrate with modern and useful M&amp;A tools to further create a central hub for collaboration and management across your deals. Get rid of information silos and simplify your M&amp;A process.</div></div></div></div><div class="section integration-section"><div class="container"><div class="w-layout-grid integrations-grid"><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1ab68313c641c64efd4c2_image-24%402x-2.avif" alt="" loading="lazy" class="integrations-logo-img"/></div><p class="integrations-box-p">Push room notifications to designated slack channels.</p><div class="integrations-box-indicator"></div></div><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1ab62f0531e0725a9004d_image-25%402x-2.png" alt="" loading="lazy" class="integrations-logo-img sf"/></div><p class="integrations-box-p">Import and export contacts and team members right from your organization.</p><div class="integrations-box-indicator"></div></div><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea9e0571dc390ed443d04db_ms%20teams%20(2).webp" alt="" loading="lazy" class="integrations-logo-img _365"/></div><p class="integrations-box-p">Push notifications to the channel linking back to DealRoom.</p><div class="integrations-box-indicator"></div></div><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1ab684a795dd2a5e9a704_image-32%402x-2.avif" alt="" loading="lazy" class="integrations-logo-img idaptive"/></div><p class="integrations-box-p">Cover your single-sign-on needs across all apps including DealRoom.</p><div class="integrations-box-indicator"></div></div><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea9df4a33208ddf65ac437b_Okta_Logo_BrightBlue_Medium%20(1).avif" alt="" loading="lazy" class="integrations-logo-img"/></div><p class="integrations-box-p">Manage access across your applications and DealRoom.</p><div class="integrations-box-indicator"></div></div><div class="integrations-box"><div class="integrations-logo-box"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea1ab68bd4a5a654a999b99_image-34%402x-2.avif" alt="" loading="lazy" class="integrations-logo-img g"/></div><p class="integrations-box-p">Access Google apps and DealRoom directly without a second sign-in.</p><div class="integrations-box-indicator"></div></div></div></div></div><div class="section p100-80"><div class="container"><div class="templates-cta-flex"><div class="templates-cta-content"><h2 class="medium-heading">Pre-built templates</h2><p class="product-subtitle templates">Speed up your process with DealRoom’s library of pre-made templates that ranges from due diligence, form of LOI, flows of funds, to integration and more.</p></div><div class="templates-cta-image"><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2a83a855877bb0dd1147d_s-13.webp" width="590" sizes="(max-width: 479px) 100vw, 590px" loading="lazy" alt="" srcset="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2a83a855877bb0dd1147d_s-13-p-500.webp 500w, https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2a83a855877bb0dd1147d_s-13.webp 1180w" class="templates-cta-img"/><a href="/resources/templates" class="button arrow-button w-inline-block"><div>View Templates</div><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2a8f23e290840ac90b868_arrow-right%202.svg" width="16" alt="" class="button-arrow-icon ml16"/></a></div><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2b503329199489b989019_group-1446.svg" alt="" loading="lazy" class="templates-cta-bg-img left-top"/><img src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/5ea2b8a58558771df9d1779c_5ea1af35fdc0b24a9bd2dfcc_left-medium-int%201-2.png" alt="" loading="lazy" class="templates-cta-bg-img bottom-right"/></div></div></div><div class="section footer-cta"><div class="container"><div class="footer-cta-flex"><h2 class="medium-heading footer-cta-title">Ready to get started?</h2><div class="footer-cta-buttons-flex"><div class="footer-cta-button-wrapper"><a dr-lead-button-click="Footer CTA Primary Button" href="/product/request-a-demo" class="button footer-cta-button w-button">Yes, let&#x27;s talk!</a></div></div></div></div></div><footer data-wf--footer--variant="base" class="footer_component"><div class="page-padding"><div class="footer_padding-vertical"><div class="container-standard"><div class="footer_layout"><div class="footer_layout2"><div id="w-node-_6ee5e482-2215-e345-91f5-e2d700d3f9aa-560233a9" class="footer_layout2_item"><div class="footer_heading">Platform</div><div class="w-layout-grid footer_links-wrapper1"><a href="/product/platform" class="footer_link">DealRoom M&amp;A Platform</a><a href="/product/pipeline" class="footer_link">Pipeline</a><a href="/product/diligence" class="footer_link">Diligence</a><a href="/product/integration" class="footer_link">Integration</a><a href="/pipelineai" class="footer_link">AI for Pipeline</a><a href="/diligenceai" class="footer_link">AI for Diligence</a><a href="/product/virtual-data-room" class="footer_link">Virtual DataRoom</a><a href="/platform/bi-reporting" class="footer_link">BI Reporting</a></div></div><div class="footer_layout1_item"><div class="footer_heading">Solutions</div><div class="w-layout-grid footer_links-wrapper1"><a href="/industry/dealroom-for-oil-gas" class="footer_link">Oil &amp; Gas</a><a href="/industry/dealroom-for-the-biotech-and-pharma-industry" class="footer_link">Biotech &amp; Pharma</a><a href="/industry/renewable-energy-industry" class="footer_link">Energy</a><a href="/industry/dealroom-for-real-estate" class="footer_link">Real Estate</a><a href="/industry/dealroom-for-startups-and-investors" class="footer_link">Start-ups and Investors</a><a href="/buyer-led-m-a" class="footer_link">Buy Side</a><a href="/resources/templates/sell-side-due-diligence-checklist" class="footer_link">Sell Side</a><a href="/product/platform" class="footer_link">Advisors</a><a href="/product/m-a-pipeline-management-software" class="footer_link">Pipeline Management</a><a href="/sellers" class="footer_link">Due Diligence</a><a href="/advisors" class="footer_link">Post-Merger Integration</a><a href="/buyers" class="footer_link">M&amp;A Project Management</a><a href="/buyers" class="footer_link">Deal Flow Management Software</a></div></div><div class="footer_layout2_item"><div class="footer_heading">Resources</div><div class="footer_links-wrapper1"><a href="/resources" class="footer_link">Resource Library</a><a href="/resources/templates" class="footer_link">40+ M&amp;A Templates</a><a href="https://www.mascience.com/" target="_blank" class="footer_link">M&amp;A Co-pilot</a><a href="/resources/checklist-builder" class="footer_link">AI Checklist Builder</a><a href="/resources/ebooks" class="footer_link">eBooks</a><a href="/resources/blog" class="footer_link">Blogs</a><a href="/resources/webinars" class="footer_link">Webinars</a><a href="/demo-library" target="_blank" class="footer_link">Demo Library</a><a href="/resources/content/m-a-benchmark-tool-2026" class="footer_link">M&amp;A Benchmark Tool</a><a href="/blog-index" class="footer_link">Blog Top Posts</a></div></div><div id="w-node-_4489010f-039a-971a-90fd-8749012dd332-560233a9" class="footer_layout2_item"><div class="footer_heading">Company</div><div class="footer_links-wrapper1"><a href="/company/about" class="footer_link">About Us</a><a href="/company/leadership-team" class="footer_link">Leadership Team</a><a href="/company/careers" class="footer_link">Careers</a><a href="/products/pricing" class="footer_link">Pricing</a><a href="/product/new-updates" class="footer_link">News</a></div></div><div class="footer_layout2_item"><div class="footer_heading">Support</div><div class="footer_links-wrapper1"><a href="https://support.dealroom.net/en/" target="_blank" class="footer_link">Help Center</a><a href="/resources/faq" target="_blank" class="footer_link">FAQ Page</a></div><div class="footer_social-wrapper"><a aria-label="YouTube" href="https://www.youtube.com/channel/UCIpm6DNXKbZqS0cLyKraQUg" target="_blank" class="social-link w-inline-block"><div class="social-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 34"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="currentColor" transform="translate(-200.000000, -368.000000)"><path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z"/></g></g></svg></div></a><a aria-label="LinkedIn" href="https://www.linkedin.com/company/dealroom/" target="_blank" class="social-link w-inline-block"><div class="social-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 44 40"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="" transform="translate(-702.000000, -265.000000)"><path d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z" fill="currentColor"/></g></g></svg></div></a></div></div></div><div data-wf--footer-bottom--variant="base" class="footer_bottom2"><div class="footer_bottom2_left"><div>© Copyright 2026 DealRoom Technologies, Inc.</div></div><div class="footer_bottom2_links"><a href="/company/privacy" class="footer_link">Privacy Policy</a><a href="/product/terms" class="footer_link">Terms of Use</a><a href="/cookie-policy" class="footer_link">Cookie Policy</a><div class="footer_link w-embed"><button class="consent_footer-change-button" type="button" onclick="revisitCkyConsent()">
+  Do Not Sell or Share My Personal Information
+</button>
+<style>
+.consent_footer-change-button {
+	background: transparent;
+  text-align: left;
+  padding: 0;
+}
+</style></div></div></div></div></div></div></div></footer></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5a71001fb54d350001949400" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/5a71001fb54d350001949400/js/webflow.344873d3.31f386d864b2bf14.js" type="text/javascript" integrity="sha384-k3oHtwdEJH4s8fo8Hqj7HrpuiYsrq27dB07fUnitT+VHjltONRYZbEs86MZ05wfY" crossorigin="anonymous"></script><!-- Teaser bar -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const teaser = document.querySelector('[dr-element="teaser2-component-aidemo"]');
+    if (!teaser) return;
+    const closeBtn = teaser.querySelector('[dr-element="teaser2-close-button-aidemo"]');
+    const link = teaser.querySelector('[dr-element="teaser2-link-aidemo"]');
+    if (!closeBtn || !link) return;
+    const teaserId = teaser.getAttribute('dr-element').split('-').pop();
+    const hiddenKey = `teaser_hide_temp_${teaserId}`;
+    function showTeaser() {
+        teaser.classList.add('is-visible');
+    }
+    function hideTeaserTemporarily() {
+        teaser.classList.remove('is-visible');
+        const expireDate = new Date();
+        expireDate.setTime(expireDate.getTime() + (24 * 60 * 60 * 1000));
+        localStorage.setItem(hiddenKey, expireDate.getTime());
+    }
+    const hideUntil = localStorage.getItem(hiddenKey);
+    const now = Date.now();
+    if (hideUntil) {
+        if (now < hideUntil) {
+            teaser.classList.remove('is-visible');
+        } else {
+            localStorage.removeItem(hiddenKey);
+            showTeaser();
+        }
+    } else {
+        showTeaser();
+    }
+    link.addEventListener('click', hideTeaserTemporarily);
+    closeBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        hideTeaserTemporarily();
+    });
+});
+</script>
+
+<style>
+  .w-webflow-badge { display: none !important }
+</style>
+
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QPSZZ5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Nav BG -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('[dr-element="nav"]');
+  if (!nav) return;
+  const navBg = nav.querySelector('[dr-element="nav-bg"]');
+  if (!navBg) return;
+
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;top:30px;left:0;width:1px;height:1px;pointer-events:none;';
+  document.body.appendChild(sentinel);
+
+  const io = new IntersectionObserver(([entry]) => {
+    navBg.style.opacity = entry.isIntersecting ? 0 : 1;
+  }, { threshold: 0 });
+  io.observe(sentinel);
+});
+</script>
+
+<!-- Sticky Elements Position Fix -->
+<!-- Sticky Elements Position Fix -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth < 992) return;
+    const DEFAULT_TOP_VISIBLE = 124;
+    const DEFAULT_TOP_HIDDEN = 80;
+    const considerElement = document.querySelector('[dr-sticky="to-consider"]');
+    const stickyElements = document.querySelectorAll('[dr-sticky^="sticky-"], [dr-sticky="default"], [dr-sticky=""]');
+    const stickyAnchors = document.querySelectorAll('[dr-sticky="sticky-anchor"]');
+    if (!considerElement || stickyElements.length === 0) return;
+    const cache = new Map();
+    stickyElements.forEach((el) => {
+        const attr = el.getAttribute("dr-sticky");
+        if (!attr || attr === "default") {
+            cache.set(el, [DEFAULT_TOP_VISIBLE, DEFAULT_TOP_HIDDEN]);
+        } else {
+            cache.set(el, attr.split("-").slice(1).map(Number));
+        }
+    });
+    let lastState = null;
+    function apply(visible) {
+        if (visible === lastState) return;
+        lastState = visible;
+        let lastTopValue = 0;
+        stickyElements.forEach((el) => {
+            const [topVisible, topHidden] = cache.get(el);
+            const topValue = visible ? topVisible : topHidden;
+            lastTopValue = topValue;
+            el.style.setProperty("top", `${topValue}px`, "important");
+        });
+        if (stickyAnchors.length > 0) {
+            stickyAnchors.forEach((anchor) => {
+                anchor.style.setProperty("top", `${-lastTopValue}px`, "important");
+            });
+        }
+    }
+    const ro = new ResizeObserver(entries => {
+        for (const entry of entries) {
+            const r = entry.contentRect;
+            apply(r.width > 0 || r.height > 0);
+        }
+    });
+    ro.observe(considerElement);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const modalCloseButtons = document.querySelectorAll('[dr-modal="close"]');
+    if (modalCloseButtons.length > 0) {
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                modalCloseButtons.forEach(button => button.click());
+            }
+        });
+    }
+});
+</script>
+
+<!-- Mobile Tabs fix within the navbar, by Tony Seets -->
+<script>
+  (function() {
+  const TabConfig = {
+    tabletBreakpoint: 992,
+    allowTabContentLinkBubbling: true,
+    debounceTime: 100,
+    tabSelector: '[dr-element="nav"] .w-tabs'
+  };
+
+  let resizeTimeout;
+  let tabContainers;
+
+  function handleClick(event) {
+    if (
+      TabConfig.allowTabContentLinkBubbling &&
+      event.target.closest('.w-tab-content') &&
+      event.target.tagName === 'A'
+    ) {
+      return;
+    }
+    event.stopPropagation();
+  }
+
+  function updateTabStopPropagation() {
+    if (!tabContainers) {
+      tabContainers = document.querySelectorAll(TabConfig.tabSelector);
+      if (tabContainers.length === 0) return;
+    }
+
+    const isMobile = window.innerWidth <= TabConfig.tabletBreakpoint;
+    
+    tabContainers.forEach(tabContainer => {
+      tabContainer.removeEventListener('click', handleClick, false);
+      if (isMobile) {
+        tabContainer.addEventListener('click', handleClick, false);
+      }
+    });
+  }
+
+  function onResize() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateTabStopPropagation, TabConfig.debounceTime);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateTabStopPropagation);
+  } else {
+    updateTabStopPropagation();
+  }
+
+  window.addEventListener('resize', onResize, { passive: true });
+})();
+</script>
+
+<!-- Forgiving Nav Dropdowns Hover -->
+<script>
+(function () {
+  var BRIDGE = 12;
+  var triangles = [];
+  var mouseX = 0;
+  var rafId = 0;
+  var anyOpen = false;
+
+  function createTriangleFor(dd) {
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'safe-triangle-svg');
+    svg.style.display = 'none';
+    var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    svg.appendChild(path);
+    dd.appendChild(svg);
+    return {
+      dd: dd,
+      svg: svg,
+      path: path,
+      panel: dd.querySelector('.w-dropdown-list'),
+      trigger: dd.querySelector('.w-dropdown-toggle'),
+      isOpen: false,
+      cache: null
+    };
+  }
+
+  function computeCache(t) {
+    if (!t.panel || !t.trigger) return null;
+    var ddRect = t.dd.getBoundingClientRect();
+    var triggerRect = t.trigger.getBoundingClientRect();
+    var panelRect = t.panel.getBoundingClientRect();
+    if (panelRect.height === 0 || panelRect.width === 0) return null;
+    return {
+      panelLeft: panelRect.left,
+      width: panelRect.width,
+      height: (panelRect.top - triggerRect.bottom) + BRIDGE * 2,
+      top: triggerRect.bottom - ddRect.top - BRIDGE,
+      left: panelRect.left - ddRect.left
+    };
+  }
+
+  function applyCache(t) {
+    var c = t.cache;
+    if (!c) { t.svg.style.display = 'none'; return; }
+    t.svg.style.display = '';
+    t.svg.setAttribute('width', c.width);
+    t.svg.setAttribute('height', c.height);
+    t.svg.style.left = c.left + 'px';
+    t.svg.style.top = c.top + 'px';
+  }
+
+  function updateApex(t) {
+    var c = t.cache;
+    if (!c) return;
+    var apexX = mouseX - c.panelLeft;
+    if (apexX < 0) apexX = 0;
+    else if (apexX > c.width) apexX = c.width;
+    t.path.setAttribute('d', 'M ' + apexX + ',0 L ' + c.width + ',' + c.height + ' L 0,' + c.height + ' Z');
+  }
+
+  function setOpen(t, open) {
+    if (open === t.isOpen) return;
+    t.isOpen = open;
+    if (open) {
+      t.cache = computeCache(t);
+      applyCache(t);
+      updateApex(t);
+    } else {
+      t.cache = null;
+      t.svg.style.display = 'none';
+    }
+    anyOpen = false;
+    for (var i = 0; i < triangles.length; i++) {
+      if (triangles[i].isOpen) { anyOpen = true; break; }
+    }
+  }
+
+  function checkOpen(t) {
+    return !!(t.trigger && t.trigger.getAttribute('aria-expanded') === 'true');
+  }
+
+  function onMouseMove(e) {
+    mouseX = e.clientX;
+    if (!anyOpen || rafId) return;
+    rafId = requestAnimationFrame(function () {
+      rafId = 0;
+      for (var i = 0; i < triangles.length; i++) {
+        if (triangles[i].isOpen) updateApex(triangles[i]);
+      }
+    });
+  }
+
+  function onResize() {
+    for (var i = 0; i < triangles.length; i++) {
+      var t = triangles[i];
+      if (t.isOpen) {
+        t.cache = computeCache(t);
+        applyCache(t);
+        updateApex(t);
+      }
+    }
+  }
+
+  document.querySelectorAll('.nav-dropdown_component-click').forEach(function (dd) {
+    triangles.push(createTriangleFor(dd));
+  });
+
+  triangles.forEach(function (t) {
+    if (!t.trigger) return;
+    new MutationObserver(function () {
+      setOpen(t, checkOpen(t));
+    }).observe(t.trigger, { attributes: true, attributeFilter: ['aria-expanded'] });
+    setOpen(t, checkOpen(t));
+  });
+
+  document.addEventListener('mousemove', onMouseMove, { passive: true });
+  window.addEventListener('resize', onResize, { passive: true });
+})();
+</script></body></html>

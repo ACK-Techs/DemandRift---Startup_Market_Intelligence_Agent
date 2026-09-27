@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+
+<title>MEB | Zyxel Network & Security Solutions</title>
+<meta name="description" content="MEB Bilgi Teknolojileri, 35 yıllık tecrübesiyle Zyxel network, firewall, switch ve kablosuz ağ çözümleri sunan Zyxel Platinum Partner teknoloji firmasıdır.">
+<meta name="keywords" content="MEB, Zyxel, Zyxel Platinum Partner, Network, Firewall, Switch, Wireless, USG FLEX H">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,Arial,sans-serif}
+body{background:#0a0e13;color:#e5e7eb;overflow-x:hidden}
+
+/* LANGUAGE */
+.lang{
+    position:fixed;
+    top:26px;
+    right:36px;
+    z-index:10;
+}
+.lang button{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+    color:#e5e7eb;
+    padding:8px 14px;
+    border-radius:20px;
+    cursor:pointer;
+    margin-left:8px;
+}
+.lang button.active{
+    border-color:#b9c8b1;
+}
+
+/* HERO */
+#hero{
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+canvas{
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+/* BRAND */
+.brand{
+    font-size:92px;
+    font-weight:900;
+    z-index:2;
+    letter-spacing:4px;
+}
+.brand span{
+    background:linear-gradient(135deg,#b9c8b1,#d1d5db,#9fb3c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* TAGLINE */
+.tagline{
+    margin-top:26px;
+    padding:16px 34px;
+    border-radius:999px;
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.18);
+    z-index:2;
+    font-size:18px;
+}
+.tagline span{
+    font-weight:700;
+    background:linear-gradient(135deg,#b9c8b1,#d1d5db,#9fb3c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* SECTIONS */
+section{padding:110px 8%}
+h2{font-size:40px;margin-bottom:20px}
+p{max-width:900px;line-height:1.9;color:#cbd5e1}
+
+/* BADGE */
+.badge{
+    margin-top:40px;
+    display:inline-flex;
+    align-items:center;
+    gap:16px;
+    padding:18px 28px;
+    border-radius:18px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(14px);
+}
+.badge strong{
+    font-size:18px;
+}
+
+/* SOLUTIONS */
+.grid{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+}
+.card{
+    position:relative;
+    padding:40px;
+    border-radius:24px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+    text-decoration:none;
+    color:#e5e7eb;
+    transition:.5s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#b9c8b1;
+}
+.symbol{
+    position:absolute;
+    right:30px;
+    bottom:24px;
+    font-size:64px;
+    opacity:.12;
+}
+
+/* MAP */
+.map iframe{
+    width:100%;
+    height:420px;
+    border-radius:24px;
+    border:0;
+}
+
+/* FOOTER */
+footer{
+    padding:60px 8%;
+    background:#070a0f;
+    font-size:14px;
+    color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<div class="lang">
+    <button id="tr" class="active" onclick="setLang('tr')">TR</button>
+    <button id="en" onclick="setLang('en')">EN</button>
+</div>
+
+<header id="hero">
+    <canvas id="net"></canvas>
+
+    <div class="brand"><span>MEB</span></div>
+
+    <div class="tagline">
+        <span>M</span>astering Networks ·
+        <span>E</span>mpowering Connectivity ·
+        <span>B</span>uilding Security
+    </div>
+</header>
+
+<section>
+    <h2 data-tr="Hakkımızda" data-en="About Us"></h2>
+
+    <p data-tr="MEB, yaklaşık 35 yıllık sektör tecrübesiyle kurumsal ağ altyapıları, siber güvenlik ve network çözümleri alanında faaliyet gösteren köklü bir teknoloji firmasıdır. Kurulduğumuz günden bu yana işletmelerin güvenli, sürdürülebilir ve yüksek performanslı ağ altyapılarını tasarlıyor, kuruyor ve yönetiyoruz.
+
+Zyxel network ürünleri konusunda uzmanlaşmış teknik ekibimizle; firewall, switch ve kablosuz ağ çözümlerinde satış, kurulum, destek ve danışmanlık hizmetleri sunuyoruz."
+    data-en="With nearly 35 years of experience, MEB is a well-established technology company delivering enterprise network and cybersecurity solutions. We specialize in designing and managing secure, scalable, high-performance infrastructures with strong expertise in Zyxel technologies."></p>
+
+    <div class="badge">
+        🏆 <strong>Zyxel Platinum Partner</strong>
+    </div>
+</section>
+
+<section>
+    <h2 data-tr="Zyxel Çözüm Alanlarımız" data-en="Zyxel Solution Areas"></h2>
+
+    <div class="grid">
+        <a class="card" href="https://www.zyxel.com/tr/tr/products/next-gen-firewall/usg-flex-firewall-usg-flex-700h" target="_blank">
+            <h3>Next-Gen Firewall</h3>
+            <p data-tr="USG FLEX H serisi ileri seviye güvenlik"
+               data-en="Advanced security with USG FLEX H Series"></p>
+            <div class="symbol">🛡️</div>
+        </a>
+
+        <a class="card" href="https://www.zyxel.com/tr/tr/products/switch" target="_blank">
+            <h3>Switch Solutions</h3>
+            <p data-tr="Kurumsal ağ altyapıları"
+               data-en="Enterprise switching solutions"></p>
+            <div class="symbol">🔗</div>
+        </a>
+
+        <a class="card" href="https://www.zyxel.com/tr/tr/products/wireless" target="_blank">
+            <h3>Wireless & AP</h3>
+            <p data-tr="Kesintisiz kablosuz bağlantı"
+               data-en="Seamless wireless connectivity"></p>
+            <div class="symbol">📡</div>
+        </a>
+    </div>
+</section>
+
+<section class="map">
+    <h2>Lokasyon</h2>
+    <iframe src="https://maps.google.com/maps?q=Fatih%20Istanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<footer>
+    0532 366 41 66 · mustafa@meb.com.tr · Alikuşçu Mah. Yediemirler Sk No:29/A Fatih / İstanbul
+</footer>
+
+<script>
+function setLang(l){
+    document.querySelectorAll('[data-tr]').forEach(el=>{
+        el.textContent = el.dataset[l];
+    });
+    document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
+    document.getElementById(l).classList.add('active');
+}
+
+/* DEFAULT LANG */
+setLang('tr');
+
+/* AMBIENT NETWORK */
+const c=document.getElementById("net"),ctx=c.getContext("2d");
+let w,h,dots=[],hue=180;
+
+function resize(){
+    w=c.width=window.innerWidth;
+    h=c.height=window.innerHeight;
+}
+window.onresize=resize;resize();
+
+for(let i=0;i<90;i++){
+    dots.push({
+        x:Math.random()*w,
+        y:Math.random()*h,
+        vx:(Math.random()-.5)*0.5,
+        vy:(Math.random()-.5)*0.5
+    });
+}
+
+function draw(){
+    ctx.clearRect(0,0,w,h);
+    hue+=0.1;
+    dots.forEach(d=>{
+        d.x+=d.vx;d.y+=d.vy;
+        if(d.x<0||d.x>w)d.vx*=-1;
+        if(d.y<0||d.y>h)d.vy*=-1;
+        ctx.fillStyle=`hsl(${hue},35%,70%)`;
+        ctx.beginPath();
+        ctx.arc(d.x,d.y,2,0,Math.PI*2);
+        ctx.fill();
+        dots.forEach(o=>{
+            let dist=Math.hypot(d.x-o.x,d.y-o.y);
+            if(dist<130){
+                ctx.strokeStyle=`hsla(${hue},35%,70%,.15)`;
+                ctx.beginPath();
+                ctx.moveTo(d.x,d.y);
+                ctx.lineTo(o.x,o.y);
+                ctx.stroke();
+            }
+        });
+    });
+    requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>

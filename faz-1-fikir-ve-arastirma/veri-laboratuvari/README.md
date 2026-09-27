@@ -17,7 +17,7 @@ karar kanıtı anlamına gelmez.
 <!-- HARITA:BASLANGIC -->
 ## Hangi dosya hangi görev
 
-Klasörde 147 dosya var ve GitHub bunları alfabetik sıralıyor.
+Klasörde 149 dosya var ve GitHub bunları alfabetik sıralıyor.
 Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 
 **Kural:** `test_X.py` dosyası `X.py`'yi korur, ayrı satırı yoktur.
@@ -246,9 +246,11 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | Dosya | Rol | Ne olduğu |
 |---|---|---|
 | [`COZUM-GUNLUGU.md`](COZUM-GUNLUGU.md) | belge | **Başarı raporu değildir.** Denenen yollar, öncesi/sonrası ve çözülemeyen sınırlar |
+| [`BT02-ADAY-KAYNAKLAR.csv`](BT02-ADAY-KAYNAKLAR.csv) | çıktı | **Batuhan için.** 305 kaynağın canlı sağlık taraması; 265 BT-02 adayı |
 | [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | çıktı | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
 | [`KAYNAK-SAGLIK.csv`](KAYNAK-SAGLIK.csv) | çıktı | 19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur |
 | [`cozum_gunlugu.py`](cozum_gunlugu.py) | kod | Günlüğü tutar, sağlık kayıtlarını ölçer |
+| [`saglik_taramasi.py`](saglik_taramasi.py) | kod | İçerik türü uygun kaynakları canlı yoklar, BT-02 kuralını uygular |
 
 <details>
 <summary><b>Alfabetik dizin</b> — GitHub'ın gösterdiği sırayla, dosyadan göreve</summary>
@@ -280,6 +282,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`AS05-KANIT-SAYIMI.csv`](AS05-KANIT-SAYIMI.csv) | AS-05 | Hücre başına politikanın istediği yedi sayım alanı ve gate sonucu |
 | [`AS05-SAYIM-RAPORU.md`](AS05-SAYIM-RAPORU.md) | AS-05 | 3/2 eşiği uygulandığında ne geçiyor; **bilinmeyen bağımsızlık sayılmaz** |
 | [`BELGE-ILISKILERI.csv`](BELGE-ILISKILERI.csv) | Görev 11 | 98 tekrar ilişkisi — tekrarlar silinmez, ilişkilendirilir |
+| [`BT02-ADAY-KAYNAKLAR.csv`](BT02-ADAY-KAYNAKLAR.csv) | AS-06 | **Batuhan için.** 305 kaynağın canlı sağlık taraması; 265 BT-02 adayı |
 | [`BUTCE-KARSILASTIRMA.csv`](BUTCE-KARSILASTIRMA.csv) | Görev 7 | Ücretsiz ve premium profillerin farkı — 6 satır |
 | [`COZUM-GUNLUGU.csv`](COZUM-GUNLUGU.csv) | AS-06 | 11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut |
 | [`COZUM-GUNLUGU.md`](COZUM-GUNLUGU.md) | AS-06 | **Başarı raporu değildir.** Denenen yollar, öncesi/sonrası ve çözülemeyen sınırlar |
@@ -364,6 +367,7 @@ Aşağıdaki tablo her dosyanın hangi görevin parçası olduğunu söyler.
 | [`probe_site_access.py`](probe_site_access.py) | Erişim laboratuvarı | Tek kaynak erişim yoklaması |
 | [`query_templates.py`](query_templates.py) | Görev 6 | Sorgu şablonlarının tanımı |
 | [`resolve_missing_domains.py`](resolve_missing_domains.py) | Erişim laboratuvarı | Bulunamayan adresleri çözer |
+| [`saglik_taramasi.py`](saglik_taramasi.py) | AS-06 | İçerik türü uygun kaynakları canlı yoklar, BT-02 kuralını uygular |
 | [`secondary_index_pass.py`](secondary_index_pass.py) | Erişim laboratuvarı | İkincil dizin geçişi |
 | [`select_sources.py`](select_sources.py) | Görev 5 | Fikirden kaynak paketi seçer (deterministik) |
 | [`source_fit_matrix.py`](source_fit_matrix.py) | Görev 13 | Matrisi, yeterlilik tablosunu, paketleri ve şemayı üretir |

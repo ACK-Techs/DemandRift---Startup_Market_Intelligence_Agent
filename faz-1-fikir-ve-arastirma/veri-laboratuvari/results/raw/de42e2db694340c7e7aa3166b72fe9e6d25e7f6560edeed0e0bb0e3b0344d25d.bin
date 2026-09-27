@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+ 
+<html lang="en">
+ 
+
+
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="robots" content="DisallowAITraining">
+
+  <title>F-Droid - Free and Open Source Android App Repository</title>
+  <meta property="og:title" content="F-Droid - Free and Open Source Android App Repository">
+
+  <meta name="description" content="F-Droid is the app distribution ecosystem for Android where your user freedom comes first. Discover our app store, explore the world of free and open source (FOSS) apps and [learn](https://f-droid.org/about/) about our app distribution tools.">
+  <meta property="og:description" content="F-Droid is the app distribution ecosystem for Android where your user freedom comes first. Discover our app store, explore the world of free and open source (FOSS) apps and [learn](https://f-droid.org/about/) about our app distribution tools.">
+
+  <meta property="og:image" content="https://f-droid.org/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png">
+
+  <link rel="preload" href="/assets/roboto_ln5c7Pv79kCZw8EjInNILddDbwVxQmaVPE0sjunCivU=.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="style" href="/css/main.css">
+  <link rel="dns-prefetch" href="https://search.f-droid.org">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <link rel="canonical" href='https://f-droid.org/categories/action-game/'>
+  <meta property="og:url" content="https://f-droid.org/categories/action-game/">
+  <link rel="alternate" type="application/rss+xml" title="F-Droid - Free and Open Source Android App Repository" href="/feed.xml">
+
+  <link href="/en/osd.xml" rel="search" title="F-Droid" type="application/opensearchdescription+xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon_ypJwtCrcixeH_qV6LdcMYk1anFIR9o-_ufR__1wNdJY=.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon_AfYQ36xPEzFjJiCTyBFVmfWkajkehilUd2geASywhxM=.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32_Dk3aeG3k_A20gYe5zAlPSBx_CEcpJaCI89K2X2z6CFY=.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16_7yyppfDSTAVyGb3ycHY84PYjHUwP96NKICAibLRpnXw=.png">
+  <link rel="manifest" href="/assets/site_J9OLInBmO2hLlutzRFC4mdstNJjL44B6NzBbT0ecmA0=.webmanifest">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab_jVj0QIYK2TEAcXlrhjrienjgRnccBVzvX22tYumPb9Q=.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon_yJPr4UNteJc-cseeq16P0Hvl1kDbJjTVYcj-KA6-_Fs=.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/browserconfig_sI0d7L-NQ2rondQpLn2DRSqXxvj7iPI0-WPzXn-uLZA=.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="alternate" hreflang="ar" href='https://f-droid.org/ar/categories/action-game/'>
+  <link rel="alternate" hreflang="bo" href='https://f-droid.org/bo/categories/action-game/'>
+  <link rel="alternate" hreflang="ca" href='https://f-droid.org/ca/categories/action-game/'>
+  <link rel="alternate" hreflang="cs" href='https://f-droid.org/cs/categories/action-game/'>
+  <link rel="alternate" hreflang="de" href='https://f-droid.org/de/categories/action-game/'>
+  <link rel="alternate" hreflang="en" href='https://f-droid.org/en/categories/action-game/'>
+  <link rel="alternate" hreflang="es" href='https://f-droid.org/es/categories/action-game/'>
+  <link rel="alternate" hreflang="eu" href='https://f-droid.org/eu/categories/action-game/'>
+  <link rel="alternate" hreflang="fa" href='https://f-droid.org/fa/categories/action-game/'>
+  <link rel="alternate" hreflang="fr" href='https://f-droid.org/fr/categories/action-game/'>
+  <link rel="alternate" hreflang="he" href='https://f-droid.org/he/categories/action-game/'>
+  <link rel="alternate" hreflang="hr" href='https://f-droid.org/hr/categories/action-game/'>
+  <link rel="alternate" hreflang="hu" href='https://f-droid.org/hu/categories/action-game/'>
+  <link rel="alternate" hreflang="id" href='https://f-droid.org/id/categories/action-game/'>
+  <link rel="alternate" hreflang="is" href='https://f-droid.org/is/categories/action-game/'>
+  <link rel="alternate" hreflang="it" href='https://f-droid.org/it/categories/action-game/'>
+  <link rel="alternate" hreflang="ja" href='https://f-droid.org/ja/categories/action-game/'>
+  <link rel="alternate" hreflang="ko" href='https://f-droid.org/ko/categories/action-game/'>
+  <link rel="alternate" hreflang="pl" href='https://f-droid.org/pl/categories/action-game/'>
+  <link rel="alternate" hreflang="pt" href='https://f-droid.org/pt/categories/action-game/'>
+  <link rel="alternate" hreflang="pt-BR" href='https://f-droid.org/pt_BR/categories/action-game/'>
+  <link rel="alternate" hreflang="ro" href='https://f-droid.org/ro/categories/action-game/'>
+  <link rel="alternate" hreflang="ru" href='https://f-droid.org/ru/categories/action-game/'>
+  <link rel="alternate" hreflang="sq" href='https://f-droid.org/sq/categories/action-game/'>
+  <link rel="alternate" hreflang="tr" href='https://f-droid.org/tr/categories/action-game/'>
+  <link rel="alternate" hreflang="uk" href='https://f-droid.org/uk/categories/action-game/'>
+  <link rel="alternate" hreflang="zh-Hans" href='https://f-droid.org/zh_Hans/categories/action-game/'>
+  <link rel="alternate" hreflang="zh-Hant" href='https://f-droid.org/zh_Hant/categories/action-game/'>
+  <link rel="alternate" hreflang="x-default" href='https://f-droid.org/categories/action-game/'>
+</head>
+
+
+  <body>
+
+    
+
+    <div class="banner banner--danger banner--name__keepandroidopen">
+	<div class="banner--text">
+		F-Droid is under threat. Google is changing the way you install apps on your device. We need your help.
+
+		<a href="https://keepandroidopen.org/">https://keepandroidopen.org/</a>
+	</div>
+	<button class="banner--close">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"/></svg>
+	</button>
+</div>
+
+<script src="/assets/banner_YoMGgpdLnM6lO1-eNiEaJsDGclXrmjSlTM-8RGlLcho=.js" async></script>
+
+
+    <div class="site-wrapper">
+
+      <header class="site-header">
+
+  <a class="site-title" href="/en/">
+    <img src="/assets/fdroid-logo-text_S0MUfk_FsnAYL7n2MQye-34IoSNm6QM6xYjDnMqkufo=.svg" alt="F-Droid" />
+  </a>
+
+  <nav class="site-nav">
+          <a class="page-link current" aria-current="page" href="/en/packages/">Apps</a>
+          <a class="page-link" href="/en/news/">News</a>
+          <a class="page-link" href="/en/docs/">Docs</a>
+          <a class="page-link" href="/en/issues/">Issues</a>
+          <a class="page-link" href="/en/contribute/">Contribute</a>
+          <a class="page-link" href="/en/about/">About</a>
+  </nav>
+
+</header>
+
+
+      <div class="main-content with-sidebar">
+
+        <div class="article-area">
+          <article class="page">
+
+  <header class="post-header">
+    <h2 class="post-title"> </h2>
+  </header>
+
+  <div class="post-content">
+    <h3>Action Game</h3>
+<div id="package-list">
+  
+    <a class="package-header" href="/en/packages/org.codeberg.scovillo.bubble/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.codeberg.scovillo.bubble/en-US/icon_GCIPoBEJtXRvroQb1BK3dcx5IE8RoxDraq9okavGpZM=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Bubble Penetration
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Fast arcade action: collect colors, chain combos, beat the highscore.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/me.lecaro.breakout/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/me.lecaro.breakout/en-US/icon_0sHywBXlsIlGc2WWjqNJ_NM8xOrqII2D36krFDAaRl8=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Breakout 71
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Break colourful bricks, catch bouncing coins and select powerful upgrades !</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/cube.run/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/cube.run/en-US/icon_QkGUeL8S8I5G7ZnoIoIkSLQW_7vh-JqiAl_KaCo59ig=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Cube Run
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Dodge, jump and slam through a neon 3-lane gauntlet. One-thumb 3D runner.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.astroloop.game/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.astroloop.game/en-US/icon_ecMmFBKEJ5XSUEc078a3P1zcQ3QIwRfBOwfJcEGhv-A=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Astro Loop
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Open-source roguelike shooter. Simple to play, no ads, no tracking, offline.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.chenyifaer.fafarunner/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.chenyifaer.fafarunner/en-US/icon_m2mNQzSGc1Zk26fR90kfk6DDk6_K-ZjfC3PgX4IeN6Q=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			FaFa Runner
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Enjoy smooth gameplay, stunning graphics, and endless fun</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/paper.loop2/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/paper.loop2/en-US/icon_5RX5r9gcciJMDnG2XDSj6RHf_FjXXOw_WcFfSUt9pjk=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Paper Loop 2
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Grow your turf and slice other sneks&#x27; tails — a free-movement territory game.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/org.xolatgames.burgers/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.xolatgames.burgers/en-US/icon_9wl_yfzwQON0Td2U05wB35NzwXpxo_K0Sjv-PI4KPsg=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Battle for Burgers 🍔🍔🍔
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">An Online-Multiplayer game. Collect so much more burgers as you can.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/edge.roll/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/edge.roll/en-US/icon_lKEE9HCB_JprUE8SOQG4vQTv6hp984zPr254chbBeBM=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Edge Roll
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Tumble a cube across a crumbling tile bridge. One-thumb 3D arcade.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/io.github.vipaol.mobapp.game/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/io.github.vipaol.mobapp.game/en-US/icon_nZ8X90eKkpgN52KR1dIlYmmVDZXDFep-nOg2idLfY1k=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Mobapp Game
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Minimalist physics arcade: speed, flips, built-in editor</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/paper.loop/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/paper.loop/en-US/icon_CfDiXPAm8Jck4KV8IoXbYYP7Gz7lQjCwVYNNDWMsy70=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Paper Loop
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Grow your turf and slice rival sneks&#x27; tails — an offline territory game.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/stack.tower3d/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/stack.tower3d/en-US/icon_NgN87UJ2rwfOlnLsC9Ay37HLImau51Ls7iqb-Q8FW5o=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Stack Tower 3D
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Stack sliding blocks into the tallest tower you can. One-tap 3D arcade.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/org.asafonov.blockbuster/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.asafonov.blockbuster/en-US/icon_ej2sf9Oh-O-HJrzGDLyLXGHor-1yR2N0No4B5ia3zck=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Block&#x27;Buster
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Simple HTML5 arkanoid-type game</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/io.github.ebraminio.bouncy/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/io.github.ebraminio.bouncy/en-US/icon_9EUd8B8EmAk3_iA5Gt-bJEr-FKa2ABDSjCb1sJU1E5o=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Bouncy
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A tiny bouncing ball that plays musical notes when it hits the walls.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/bim.app/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/bim.app/en-US/icon_Oq0WGVjQphXbcMV4db7te-Zeae3kjv3MMCOfpaMPBU0=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Bim!
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">An online multiplayer mobile game of the last man standing genre</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.game.asteroids_revenge/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.game.asteroids_revenge/en-US/icon_WSTO3sD5p5YqIA_I-yfluQsBroCqaP6EOsZPIcFeQaY=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Asteroid&#x27;s Revenge
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Endless survival bulletHell (highscore based).</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/fr.arnaudguyon.spacevertex/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/fr.arnaudguyon.spacevertex/en-US/icon_M9pTPgsoz8Z5SbjfwirbVJYCsBJR0p1Iwzj8X3aPWB8=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Space Vertex Multiplayer
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Have you ever played a Cat and Mouse game with your friends ... in Space?</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/red.drugi.snakes/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/red.drugi.snakes/en-US/icon_2icfYdi_neIQchvD6kS3QoGGXmbY_GqNsNaHUdmgXj0=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Snakes
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Make your way through an extended version of Snake with computer-controlled oppo</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/de.georgsieber.ballbreak/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/de.georgsieber.ballbreak/en-US/icon_m74omOOEgocCtpvMiw9Ez3HCYSuONyIWHcAN2IdROHQ=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			BallBreak
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Minigame</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.github.m374lx.alexvsbus/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.github.m374lx.alexvsbus/en-US/icon_XtygeN7jGzsg0LZ4Kh6bqTNM7g-aKTjK1VI2NYkRh5I=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Alex vs Bus: The Race
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A platform runner game in which Alex needs to catch the bus on time</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.ranger.blastoff/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.ranger.blastoff/en-US/icon_w3RzgJESoflMntSw4__IOkEXvTGMHM8DKpxnOCzBlNU=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			BlastOff
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Casual endless runner featuring vector graphics</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.clicc/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.clicc/en-US/icon_zCA5joU6dNTfTkbhacHMsgxftbNa_fYXwoShYk47ks8=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Click Switch
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A game where you will have to hit the correct button.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/org.bobstuff.bobball/">
+    
+	<img class="package-icon" src="/assets/ic_repo_app_default.png " width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			BobBall
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Jezzball style clone</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/xyz.deepdaikon.quinb/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/xyz.deepdaikon.quinb/en-US/icon_PI7HCSDkOiTInZY8Q7nTJZvTvZU3tb5mrPdBtu4y3c4=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Quinb: 4 players reaction game
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A multiplayer reaction game: train your mind and your reflexes while having fun!</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.serwylo.retrowars/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.serwylo.retrowars/en-US/icon_Qg7W0cKliOAjfHCK8H-7eZz69LulJFZ117nZE2A4YmE=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Super Retro Mega Wars
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Play retro games against each other in any combination.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.serwylo.beatgame/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.serwylo.beatgame/en-US/icon_yrsvTFy3kGFW9kHX958rrVVioATpJL9j3ZhUGYL1YXs=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Beat Feet
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Jump through cities generated to the beat of the music.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/org.lettucepie.flickybee/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/org.lettucepie.flickybee/en-US/icon_VzLJmPgiLTChu8QJJDmr1N9u8bpECQhdavyRnflDdSM=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Flicky Bee
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Flick and Bumble your way through the flowers.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.dozingcatsoftware.dodge/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.dozingcatsoftware.dodge/en-US/icon_rRuz7hFOlb6zMPKNfvDEAOuiIVRhyGA9PpUPB1x1wpk=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Dodge
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Guide a ball to safety avoiding swarms of enemies.</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/io.github.lufte.lona/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/icons/io.github.lufte.lona.10002.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Lona
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A snake-like HTML5 game</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.jeffliu.balancetheball/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.jeffliu.balancetheball/en-US/icon_4QSXcjrgpM65CixcaafBlBRXcgEnySU-oFjC3DxVmeg=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Balance the Ball
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">A dexterity testing toy</span>
+		</div>
+	</div>
+</a>
+
+  
+    <a class="package-header" href="/en/packages/com.kokkle.gamevirusattack/">
+    
+	<img class="package-icon" src="https://f-droid.org/repo/com.kokkle.gamevirusattack/en-US/icon_ygVxX3i7zRtaL0AKzw26MVABs_Lc4jtZLw6Vf4LG6Rw=.png" width="40" height="40" />
+	
+
+	<div class="package-info">
+		<h4 class="package-name">
+			Virus Attack
+		</h4>
+
+		<div class="package-desc">
+			<span class="package-summary">Defend a body cell against viruses</span>
+		</div>
+	</div>
+</a>
+
+  
+
+  
+
+	<ul class="browse-navigation">
+
+	
+		<li class="nav previous disabled"><span class="label">&lt;</span></li>
+	
+
+	
+
+	
+		
+			<li class="nav page active"><span class="label">1</span></li>
+		
+	
+		
+			<li class="nav page">
+				<a class="label" href="/en/categories/action-game/2/index.html">2</a>
+			</li>
+		
+	
+
+	
+
+	
+		<li class="nav next">
+			<a class="label" href="/en/categories/action-game/2/">&gt;</a>
+		</li>
+	
+
+	</ul>
+
+
+
+</div>
+
+  </div>
+
+</article>
+
+        </div>
+
+        <div class="sidebar">
+          <div class="sidebar-widget language">
+            
+
+
+
+<form action="/categories/action-game/index.html" method="get">
+
+  <select id="language-chooser-select" name="lang" autocomplete="off">
+    
+      <option value="ar" >
+        العربية
+      </option>
+    
+      <option value="bo" >
+        བོད་སྐད་
+      </option>
+    
+      <option value="ca" >
+        català
+      </option>
+    
+      <option value="cs" >
+        Čeština
+      </option>
+    
+      <option value="de" >
+        Deutsch
+      </option>
+    
+      <option value="en" selected="selected">
+        English
+      </option>
+    
+      <option value="es" >
+        Español
+      </option>
+    
+      <option value="eu" >
+        euskara
+      </option>
+    
+      <option value="fa" >
+        فارسی
+      </option>
+    
+      <option value="fr" >
+        Français
+      </option>
+    
+      <option value="he" >
+        עברית
+      </option>
+    
+      <option value="hr" >
+        Hrvatski
+      </option>
+    
+      <option value="hu" >
+        magyar
+      </option>
+    
+      <option value="id" >
+        Indonesia
+      </option>
+    
+      <option value="is" >
+        íslenska
+      </option>
+    
+      <option value="it" >
+        Italiano
+      </option>
+    
+      <option value="ja" >
+        日本語
+      </option>
+    
+      <option value="ko" >
+        한국어
+      </option>
+    
+      <option value="pl" >
+        polski
+      </option>
+    
+      <option value="pt" >
+        Português
+      </option>
+    
+      <option value="pt_BR" >
+        Português do Brasil
+      </option>
+    
+      <option value="ro" >
+        română
+      </option>
+    
+      <option value="ru" >
+        Русский
+      </option>
+    
+      <option value="sq" >
+        shqip
+      </option>
+    
+      <option value="tr" >
+        Türkçe
+      </option>
+    
+      <option value="uk" >
+        Українська
+      </option>
+    
+      <option value="zh_Hans" >
+        简体中文
+      </option>
+    
+      <option value="zh_Hant" >
+        繁體中文
+      </option>
+    
+  </select>
+
+  <script src="/assets/sidebar-lang_j4kvB8VghKUiWGs4HpqMvN0Ucx0tTmJ_lRfuoUmiaqc=.js" async></script>
+
+  <noscript>
+    <input id="language-chooser-submit" type="submit" value="Change" />
+  </noscript>
+
+</form>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Find Apps</h3>
+
+<div>
+  <form method="get" class="search-form" action="https://search.f-droid.org/">
+    <div class="search-input-wrp">
+      <input type="search" class="search-input" name="q">
+    </div>
+    <input type="hidden" name="lang" value="en">
+    <input type="submit" value="Search" class="material-button" />
+  </form>
+</div>
+
+          </div>
+
+          <div class="sidebar-widget">
+            
+            
+<h3 id="donate">Donate</h3>
+
+<p>F-Droid is powered by your donations!</p>
+
+<ul class="donate-options">
+  <li class="donate-option opencollective"><a href="https://opencollective.com/f-droid/donate"><img src="/assets/opencollective_button_iIGF0Hixdj0EaYR3Sd7FRigTVcl7QPGu6kaoBmXHjZI=.png" alt="Donate to our Collective" /></a></li>
+  <li class="donate-option liberapay"><a href="https://liberapay.com/F-Droid-Data/donate"><img src="/assets/liberapay_donate_button_GHdOOfmFJNeSXjfjnA-98XtIuEfvE6cNJjHgHOhjdv0=.svg" alt="Donate via Liberapay" /></a></li>
+  <li class="donate-option more"><a href="/en/donate">More Options</a></li>
+</ul>
+
+          </div>
+
+          <div class="sidebar-widget sidebar-hidden">
+            <h3>Connect</h3>
+
+<a class="connect-item" rel="me" href="https://floss.social/@fdroidorg">
+    <img class="connect-icon" src="/assets/mastodon_-c62Zo613I00cO-RavNTybrSJhBC3vZToN5u4zSoMdM=.svg" alt="mastodon" />
+    <div class="connect-label">@fdroidorg@floss.social</div>
+</a>
+
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>News</h3>
+
+<ul class="post-list" dir="auto">
+  
+    <li>
+      <a class="post-link" href="/en/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html">F-Droid 2.0: A New Chapter for Android Freedom</a>
+
+      <span class="post-meta">Sep 24, 2026</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2026/09/18/twif.html">There's always a path</a>
+
+      <span class="post-meta">Sep 18, 2026</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2026/09/11/twif.html">Routing you to FLOSS</a>
+
+      <span class="post-meta">Sep 11, 2026</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2026/09/01/twif.html">Searching complexity and Taler update</a>
+
+      <span class="post-meta">Sep 01, 2026</span>
+    </li>
+  
+    <li>
+      <a class="post-link" href="/en/2026/08/31/fdroid-first-froscon-2026.html">F-Droid goes FrOSCon</a>
+
+      <span class="post-meta">Aug 31, 2026</span>
+    </li>
+  
+</ul>
+
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-description">
+      <p>© 2010-2026 F-Droid Contributors
+	<span class="edit-this-page-area"><a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank">
+	    Edit on GitLab
+	  </a></span>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+    </div>
+
+  </body>
+
+</html>

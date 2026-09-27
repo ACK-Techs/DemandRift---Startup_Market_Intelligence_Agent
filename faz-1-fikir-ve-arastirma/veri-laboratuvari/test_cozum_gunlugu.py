@@ -59,7 +59,10 @@ class BatuhanYenidenUretebilirTests(unittest.TestCase):
             self.assertTrue(b["yeniden_uretim"].strip(), b["bulgu_id"])
 
     def test_anilan_scriptler_gercekten_var(self):
+        """Script alani "—" olabilir: her bulgu bir script kosusundan cikmaz."""
         for b in self.bulgular:
+            if b["script"] == "—":
+                continue
             self.assertTrue((HERE / b["script"]).exists(),
                             f'{b["bulgu_id"]}: {b["script"]} yok')
 
@@ -121,6 +124,31 @@ class BasarisizlarSilinmezTests(unittest.TestCase):
             if r["saglik"] in ("politika-kapali", "bot-korumasi"):
                 self.assertTrue(r["yeniden_denenebilir_mi"].startswith("hayır"),
                                 r["kaynak_adi"])
+
+
+class GunlukGuncelTests(unittest.TestCase):
+    """Kart: HER bulguda kayit tut. Gunluk eskimemeli."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.bulgular = oku("COZUM-GUNLUGU.csv")
+        cls.saglik = oku("KAYNAK-SAGLIK.csv")
+
+    def test_sonraki_gorevlerin_bulgulari_da_kayitli(self):
+        """AS-03/04/05'te cikan bulgular gunluge islenmis olmali."""
+        basliklar = " ".join(b["baslik"] for b in self.bulgular).casefold()
+        for anahtar in ("arşiv", "alan çıkarımı", "filtre", "kanıt zincir",
+                        "marka", "anahtar"):
+            self.assertIn(anahtar, basliklar, f"'{anahtar}' bulgusu günlükte yok")
+
+    def test_saglik_kaydi_canli_taramayi_iceriyor(self):
+        """19 kaynakla sinirli kalmamali; BT-02 taramasi da islenmeli."""
+        self.assertGreater(len(self.saglik), 100,
+                           "sağlık kaydı canlı taramayla genişletilmemiş")
+
+    def test_her_saglik_kaydi_olcum_tarihi_tasir(self):
+        for r in self.saglik:
+            self.assertRegex(r["son_olcum"], r"^\d{4}-\d{2}-\d{2}$")
 
 
 class GunlukBasariRaporuDegildirTests(unittest.TestCase):

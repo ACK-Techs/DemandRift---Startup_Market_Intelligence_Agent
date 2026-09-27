@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html id="ie7" class="ie" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="ie" lang="en-US">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="ie" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) | !(IE 9) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",t=>{this.persisted=t.persisted}),window.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(t){if(document.hidden){t._triggerListener();return}this.triggerEvents.forEach(e=>window.addEventListener(e,t.userEventHandler,{passive:!0})),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(t){t.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))})}_waitForPendingClicks(){return new Promise(t=>{this._isClickPending?this._pendingClickFinished=t:t()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(t,e,r){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(r,event.target.getAttribute(e)),event.target.removeAttribute(e))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{if(e.hasAttribute("src")){let r=new URL(e.src).origin;r!==location.origin&&t.push({src:r,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this._batchInjectResourceHints(t,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _transformScript(t){return new Promise((await this._littleBreath(),navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)?e=>{let r=document.createElement("script");[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),r.setAttribute(e,t.nodeValue))}),t.text&&(r.text=t.text),r.hasAttribute("src")?(r.addEventListener("load",e),r.addEventListener("error",e)):(r.text=t.text,e());try{t.parentNode.replaceChild(r,t)}catch(i){e()}}:async e=>{function r(){t.setAttribute("data-rocket-status","failed"),e()}try{let i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");t.text,i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",function r(){t.setAttribute("data-rocket-status","executed"),e()}),t.addEventListener("error",r),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}catch(s){r()}})}async _loadScriptsFromList(t){let e=t.shift();return e&&e.isConnected?(await this._transformScript(e),this._loadScriptsFromList(t)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(t,e){var r=document.createDocumentFragment();t.forEach(t=>{let i=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(i){let n=document.createElement("link");n.href=i,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),r.appendChild(n),this.trash.push(n)}}),document.head.appendChild(r)}_delayEventListeners(t){let e={};function r(t,r){!function t(r){!e[r]&&(e[r]={originalFunctions:{add:r.addEventListener,remove:r.removeEventListener},eventsToRewrite:[]},r.addEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.add.apply(r,arguments)},r.removeEventListener=function(){arguments[0]=i(arguments[0]),e[r].originalFunctions.remove.apply(r,arguments)});function i(t){return e[r].eventsToRewrite.indexOf(t)>=0?"rocket-"+t:t}}(t),e[t].eventsToRewrite.push(r)}function i(t,e){let r=t[e];Object.defineProperty(t,e,{get:()=>r||function(){},set(i){t["rocket"+e]=r=i}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),i(document,"onreadystatechange"),i(window,"onload"),i(window,"onpageshow")}_delayJQueryReady(t){let e;function r(r){if(r&&r.fn&&!t.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>e.bind(document)(r)),r([])};let i=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){if(this[0]===window){function t(t){return t.split(" ").map(t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=t(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{delete Object.assign(arguments[0],{[t(e)]:arguments[0][e]})[e]})}return i.apply(this,arguments),this},t.allJQueries.push(r)}e=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){r(t)}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this._littleBreath();let t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){let t=new Map;document.write=document.writeln=function(e){let r=document.currentScript;r||console.error("WPRocket unable to document.write this: "+e);let i=document.createRange(),n=r.parentElement,s=t.get(r);void 0===s&&(s=r.nextSibling,t.set(r,s));let a=document.createDocumentFragment();i.setStart(a,0),a.appendChild(i.createContextualFragment(e)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}_emptyTrash(){this.trash.forEach(t=>t.remove())}static run(){let t=new RocketLazyLoadScripts;t._addUserInteractionListener(t)}}RocketLazyLoadScripts.run();</script>
+
+    
+
+        <script data-document-language="true" data-domain-script="3dc6b175-e3b3-4e02-9fe1-12dd6c31cb05" defer data-type="lazy" data-src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    
+        <script type="rocketlazyloadscript">
+
+        dataLayer = [{
+            "PageLanguage": "en-US",
+            "PageType": "Case Studies Hub",
+            
+            "TemplateType": ""
+        }];
+        
+        function sendUserEvent(eventCategory, eventAction, eventLabel, eventNonInteraction) {
+            if (dataLayer && typeof dataLayer == 'object') {
+                var dataLayerParameters = {
+                    'Timestamp': getTrackingTimestamp(),
+                    'event': 'seoCodeTriggeredEvent',
+                    'eventCategory': eventCategory,
+                    'eventAction': eventAction,
+                    'eventLabel': eventLabel ? eventLabel : '',
+                    'eventValue': undefined,
+                    'eventNonInteraction': !!eventNonInteraction
+                };
+                var analyticsClientId = getAnalyticsClientId();
+                if (analyticsClientId) {
+                    dataLayerParameters['AnalyticsClientId'] = analyticsClientId;
+                }
+                dataLayer.push(dataLayerParameters);
+            }
+        }
+        function getAnalyticsClientId() {
+            try {
+                if (ga && ga.loaded && ga.getAll) {
+                    var tracker = ga.getAll()[0];
+                    var gaClientId = tracker.get('clientId');
+                    if (gaClientId) {
+                        return gaClientId;
+                    }
+                }
+            } catch (ex) {
+                // probably case of content-blockers. Do nothing
+            }
+            return null;
+        }
+        function getTrackingTimestamp() {
+            return (new Date()).toISOString();
+        }
+
+        var originalGroupsHash;
+        function defineGAEvent(selector, eventAction) {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.addEventListener('click', function() {
+                    sendUserEvent("ConsentBar", eventAction, null);
+                });
+            }
+        }
+        function OptanonWrapper() {
+            defineGAEvent('#onetrust-accept-btn-handler', 'Agree');
+            defineGAEvent('#onetrust-pc-btn-handler', 'MoreOptions');
+            if (!originalGroupsHash) {
+                var optanonGroups = OptanonActiveGroups;
+                originalGroupsHash = optanonGroups.split(",").sort().join("");
+            }
+            Optanon.OnConsentChanged(function (value) {
+                if (!value.detail) {
+                    return;
+                }
+                var updatedGroupsHash = value.detail.filter(function (val) {
+                    return val.charAt(0) === "C";
+                }).sort().join("");
+                if (updatedGroupsHash !== originalGroupsHash) {
+                    document.location.reload();
+                }
+            });
+        }
+
+    </script>
+    
+    
+    <script type="rocketlazyloadscript" data-rocket-src="https://www.googleoptimize.com/optimize.js?id=OPT-TC2L25K" defer></script>
+    <script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/js/forms2/js/forms2.min.js?ver=1785847071" defer></script>
+
+	<!-- Google Tag Manager -->
+    <script type="text/plain" class="optanon-category-C0002">
+        setTimeout(function(){
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WF86RF9');
+        }, 100);
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="ahrefs-site-verification" content="8dfbcb4fee5ca2bc39df3856a784826fde0b7315845a624288b7bc5ac22d8cc8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="https://moovit.com/wp-content/themes/moovit/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://moovit.com/wp-content/themes/moovit/assets/images/favicon.png" type="image/x-icon">
+
+    <link rel="preload" href="https://static-main.moovit.com/wp-content/uploads/2021/06/22140823/moovit-logo-website.svg" as="image">
+
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" href="https://moovit.com/resources/case-studies/" hreflang="en" />
+<link rel="alternate" href="https://moovit.com/pt/resources/case-studies-pt/" hreflang="pt" />
+<link rel="alternate" href="https://moovit.com/es/resources/case-studies-es/" hreflang="es" />
+<link rel="alternate" href="https://moovit.com/it/resources/case-studies-it/" hreflang="it" />
+<link rel="alternate" href="https://moovit.com/fr/resources/case-studies-fr/" hreflang="fr" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Case Studies - Moovit</title>
+	<meta name="description" content="Learn how Moovit&#039;s Mobility as a Service solutions are enabling transit agencies and operators to digitize urban mobility and public transportation" />
+	<link rel="canonical" href="https://moovit.com/resources/case-studies/" />
+	<link rel="next" href="https://moovit.com/resources/case-studies/page/2/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale:alternate" content="pt_PT" />
+	<meta property="og:locale:alternate" content="es_ES" />
+	<meta property="og:locale:alternate" content="it_IT" />
+	<meta property="og:locale:alternate" content="fr_FR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Case Studies - Moovit" />
+	<meta property="og:description" content="Learn how Moovit&#039;s Mobility as a Service solutions are enabling transit agencies and operators to digitize and optimize urban mobility and public transportation" />
+	<meta property="og:url" content="https://moovit.com/resources/case-studies/" />
+	<meta property="og:site_name" content="Moovit" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"CollectionPage","@id":"https:\/\/moovit.com\/resources\/case-studies\/","url":"https:\/\/moovit.com\/resources\/case-studies\/","name":"Case Studies - Moovit","isPartOf":{"@id":"https:\/\/moovit.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/moovit.com\/resources\/case-studies\/#primaryimage"},"image":{"@id":"https:\/\/moovit.com\/resources\/case-studies\/#primaryimage"},"thumbnailUrl":"https:\/\/static-main.moovit.com\/wp-content\/uploads\/2026\/06\/28093658\/cdta_280x90.png","description":"Learn how Moovit's Mobility as a Service solutions are enabling transit agencies and operators to digitize urban mobility and public transportation","breadcrumb":{"@id":"https:\/\/moovit.com\/resources\/case-studies\/#breadcrumb"},"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/moovit.com\/resources\/case-studies\/#primaryimage","url":"https:\/\/static-main.moovit.com\/wp-content\/uploads\/2026\/06\/28093658\/cdta_280x90.png","contentUrl":"https:\/\/static-main.moovit.com\/wp-content\/uploads\/2026\/06\/28093658\/cdta_280x90.png","width":280,"height":90},{"@type":"BreadcrumbList","@id":"https:\/\/moovit.com\/resources\/case-studies\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/moovit.com\/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https:\/\/moovit.com\/resources\/#item.l-en"},{"@type":"ListItem","position":3,"name":"Case Studies"}]},{"@type":"WebSite","@id":"https:\/\/moovit.com\/#website","url":"https:\/\/moovit.com\/","name":"Moovit","description":"Mobility as a Service (MaaS) solutions &amp; the world&#039;s leading urban mobility app","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/moovit.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Moovit &raquo; Case Studies Post Resources Category Feed" href="https://moovit.com/resources/case-studies/feed/" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1784548825' media='all' />
+<link data-minify="1" rel='stylesheet' id='montserrat-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/fonts/montserrat/stylesheet.css?ver=1784548825' media='all' />
+<link data-minify="1" rel='stylesheet' id='publicsans-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/fonts/publicsans/stylesheet.css?ver=1784548825' media='all' />
+<link data-minify="1" rel='stylesheet' id='slick-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/slick/slick.css?ver=1784548825' media='all' />
+<link data-minify="1" rel='stylesheet' id='newdesign-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/css/newdesign.css?ver=1784548825' media='all' />
+<link data-minify="1" rel='stylesheet' id='template-resources-css' href='https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/css/template-resources.css?ver=1784548839' media='all' />
+<script type="rocketlazyloadscript" id="jquery-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/jquery-3.3.1.min.js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="bootstrap-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/bootstrap.min.4.3.1.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" id="slick-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/slick/slick.min.js" defer></script>
+<script type="rocketlazyloadscript" id="parallax-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/jquery.parallax.min.js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="masonry-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/masonry.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="theme-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/theme.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="main-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/main.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="gevents-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/gevents.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" id="mixitup-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/mixitup.min.js" defer></script>
+<script type="rocketlazyloadscript" id="mixitup-multifilter-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/mixitup-multifilter.min.js" defer></script>
+<script type="rocketlazyloadscript" id="select2-js-js" data-rocket-src="https://moovit.com/wp-content/themes/moovit/assets/js/select2.min.js" defer></script>
+<script id="rc-hub-js-js-extra">
+var pa_vars = {"pa_nonce":"83d1bc985b","global_settings":{"select_option_trans":"Select option"}};
+//# sourceURL=rc-hub-js-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="rc-hub-js-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/themes/moovit/assets/js/template-rc-hub.js?ver=1784548839" defer></script>
+<link rel="https://api.w.org/" href="https://moovit.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://moovit.com/xmlrpc.php?rsd" />
+<!-- There is no amphtml version available for this URL. --><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+    <style>
+        body.language-pt.home a:focus, body.language-pt.home a:hover{border: 1px solid transparent;}
+    </style>
+
+        <style>
+        body.page-id-30313 .arrow_custom span.arrow {left: auto;
+    right: 0px;}
+
+body.page-id-27486 .white_footer_cols_left_subtitle_social,
+body.page-id-27353 .white_footer_cols_left_subtitle_social,
+body.page-id-28310 .white_footer_cols_left_subtitle_social,
+body.page-id-27436 .white_footer_cols_left_subtitle_social,
+body.page-id-27491 .white_footer_cols_left_subtitle_social,
+body.page-id-27486 .white_footer_cols_right,
+body.page-id-27353 .white_footer_cols_right,
+body.page-id-28310 .white_footer_cols_right,
+body.page-id-27436 .white_footer_cols_right,
+body.page-id-27491 .white_footer_cols_right,
+body.page-id-27486 .white_footer_cols_left_subtitle_apps,
+body.page-id-27353 .white_footer_cols_left_subtitle_apps,
+body.page-id-28310 .white_footer_cols_left_subtitle_apps,
+body.page-id-27436 .white_footer_cols_left_subtitle_apps,
+body.page-id-27491 .white_footer_cols_left_subtitle_apps,
+body.page-id-27486 header,
+body.page-id-27353 header,
+body.page-id-28310 header,
+body.page-id-27436 header,
+body.page-id-27491 header,
+body.page-id-27486 .head_notice,
+body.page-id-27353 .head_notice,
+body.page-id-28310 .head_notice,
+body.page-id-27436 .head_notice,
+body.page-id-27491 .head_notice,
+body.page-id-27486 .breadcrumbs,
+body.page-id-27353 .breadcrumbs,
+body.page-id-27436 .breadcrumbs,
+body.page-id-27491 .breadcrumbs,
+body.page-id-28310 .breadcrumbs,
+body.page-id-27486 .white_footer .logo img,
+body.page-id-27353 .white_footer .logo img,
+body.page-id-27436 .white_footer .logo img,
+body.page-id-27491 .white_footer .logo img,
+body.page-id-28310 .white_footer .logo img
+{
+   display:none;
+}
+
+body.page-id-27486 .cover_image.strip,
+body.page-id-27353 .cover_image.strip,
+body.page-id-28310 .cover_image.strip,
+body.page-id-27436 .cover_image.strip,
+body.page-id-27491 .cover_image.strip
+{
+   padding-top:0px;
+}    </style>
+    
+</head>
+
+<body data-rsssl=1 class="archive tax-resources-category term-case-studies term-714 wp-theme-moovit language-en nopadding-from-top" data-spy="scroll"  data-langcode="en" data-target="#scroll-spy-nav" data-offset="160" data-git="123123">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF86RF9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<header class="site_header">
+
+        
+        <div class="bcontainer bcontainer_header">
+
+            <div class="site_header_content">
+                <div class="site_header_logo">
+                    <a class="logo" href="https://moovit.com/">
+                        <h1><img src="https://static-main.moovit.com/wp-content/uploads/2021/06/22140823/moovit-logo-website.svg" class="data-no-lazyload" alt="Moovit" width="130" height="28"></h1>
+                    </a>
+                    <div class="header-bloglink">
+                                                    <a href="https://moovit.com/blog/" >Blog</a>
+                                            </div>
+                </div>
+
+                <div class="menu_wrap">
+                    <nav class="site_header_menu">
+                        <ul id="menu-main-menu-english" class="menu"><li id="menu-item-18412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18412"><a href="https://moovit.com/features/">Mobility App </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-25827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25827"><a href="https://moovit.com/features/accessibility/">Accessibility Features</a></li>
+	<li id="menu-item-31612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31612"><a href="https://moovitapp.com/tickets/en">Long Distance Tickets</a></li>
+	<li id="menu-item-326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-326"><a target="_blank" href="https://moovitapp.com/?utm_medium=organic&#038;utm_source=company_website">Web App</a></li>
+	<li id="menu-item-14307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14307"><a href="https://support.moovitapp.com/hc/en-us">Help and Support</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-30230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-30230"><a href="https://moovit.com/ads/">Moovit Ads </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-30233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30233"><a href="https://moovit.com/ads/location-based/">Location-based Ads</a></li>
+	<li id="menu-item-30232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30232"><a href="https://moovit.com/ads/segmented/">Segmented Ads</a></li>
+	<li id="menu-item-30231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30231"><a href="https://moovit.com/ads/contact-sales/">Contact Us</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-14377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14377"><a href="https://moovit.com/maas-solutions/">MaaS Solutions </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-14289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14289"><a href="https://moovit.com/maas-solutions/branded-apps/">Branded Apps</a></li>
+	<li id="menu-item-14290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14290"><a href="https://moovit.com/maas-solutions/urban-mobility-analytics/">Urban Mobility Analytics</a></li>
+	<li id="menu-item-14292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14292"><a href="https://moovit.com/maas-solutions/payments-mobile-ticketing/">Fare Payments</a></li>
+	<li id="menu-item-14294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14294"><a href="https://moovit.com/maas-solutions/timepro/">Real-Time for Buses</a></li>
+	<li id="menu-item-14296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14296"><a href="https://moovit.com/maas-solutions/transit-apis/">Public Transit APIs</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-31856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31856"><a href="https://moovit.com/sustainability/">Sustainability </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-31861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31861"><a href="https://moovit.com/sustainability/how/">How Carbon Credits Work</a></li>
+	<li id="menu-item-31858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31858"><a href="https://moovit.com/sustainability/buy/">Buying Carbon Credits</a></li>
+	<li id="menu-item-31859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31859"><a href="https://moovit.com/sustainability/why/">Why Choose Moovit</a></li>
+	<li id="menu-item-31857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31857"><a href="https://moovit.com/sustainability/faq/">FAQ</a></li>
+	<li id="menu-item-15088" class="contact menu-item menu-item-type-post_type menu-item-object-page menu-item-15088"><a href="https://moovit.com/contact-us/"data-linkedin-event data-linkedin-event-id="13191705" data-custom-datalayer data-category="Click to contact us" data-action="Top menu" data-label="Contact">Contact</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-25300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-25300"><a href="https://moovit.com/on-demand/">On-Demand </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-25353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25353"><a href="https://moovit.com/on-demand/data-driven-planning-and-analytics/">Data-Driven Analytics</a></li>
+	<li id="menu-item-25354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25354"><a href="https://moovit.com/on-demand/comprehensive-on-demand-operations/">On-Demand Operations</a></li>
+	<li id="menu-item-25355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25355"><a href="https://moovit.com/on-demand/end-to-end-mobility-experience/">Mobility User Experience</a></li>
+	<li id="menu-item-25356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25356"><a href="https://moovit.com/on-demand/moovit-on-demand-service-models/">Service Models</a></li>
+	<li id="menu-item-25357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25357"><a href="https://moovit.com/on-demand/on-demand-glossary/">On-Demand Glossary</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-14301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-14301"><a href="https://moovit.com/industries/">Industries </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-16904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16904"><a href="https://moovit.com/industries/cities/">Cities and Municipalities</a></li>
+	<li id="menu-item-14304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14304"><a href="https://moovit.com/industries/transit-operators-agencies/">Transit Agencies and Operators</a></li>
+	<li id="menu-item-14302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14302"><a href="https://moovit.com/industries/private-sector/">Private Sector</a></li>
+	<li id="menu-item-19221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19221"><a href="https://moovit.com/industries/campuses/">Campuses</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-21302" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-21302"><a href="https://moovit.com/resources/">Resources </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-20277" class="menu-item menu-item-type-taxonomy menu-item-object-resources-category current-menu-item menu-item-20277"><a href="https://moovit.com/resources/case-studies/">Case Studies</a></li>
+	<li id="menu-item-21299" class="menu-item menu-item-type-taxonomy menu-item-object-resources-category menu-item-21299"><a href="https://moovit.com/resources/ebooks-and-infographics/">Ebooks and Infographics</a></li>
+	<li id="menu-item-20278" class="menu-item menu-item-type-taxonomy menu-item-object-resources-category menu-item-20278"><a href="https://moovit.com/resources/webinars/">Webinars</a></li>
+	<li id="menu-item-13703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13703"><a href="https://moovit.com/blog/">Blog</a></li>
+	<li id="menu-item-30294" class="menu-item menu-item-type-taxonomy menu-item-object-resources-category menu-item-30294"><a href="https://moovit.com/resources/funding-alerts/">Funding Alerts</a></li>
+	<li id="menu-item-31569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31569"><a href="https://moovitapp.com/report">Global Public Transport Report</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-17710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17710"><a href="https://moovit.com/about-us/">Company </a><span class="arrow-down">a</span>
+<div class='child-nav'><ul>
+	<li id="menu-item-18599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18599"><a href="https://moovit.com/about-us/">About Us</a></li>
+	<li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400"><a href="https://moovit.com/team/">Leadership Team</a></li>
+	<li id="menu-item-351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-351"><a target="_blank" href="https://mooviters.moovit.com/">Our Community</a></li>
+	<li id="menu-item-18273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18273"><a href="https://moovit.com/newsroom/">Newsroom</a></li>
+	<li id="menu-item-21236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21236"><a href="https://moovit.com/events/">Events</a></li>
+	<li id="menu-item-28262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28262"><a href="https://moovit.com/careers/">Careers</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-31899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31899"><a href="https://moovit.com/contact-us/">Contact Us</a></li>
+</ul>                                                <div class="site_header_menu_mobile_langs">
+                            <a href="#" class="current_lang">English</a>
+                            <div class="other_langs_wrap">
+                                <div class='other_langs'>
+
+<a href='https://moovit.com/pt/resources/case-studies-pt/' class='languages__item lang-pt-PT'>Português</a>
+
+<a href='https://moovit.com/es/resources/case-studies-es/' class='languages__item lang-es-ES'>Español</a>
+
+<a href='https://moovit.com/it/resources/case-studies-it/' class='languages__item lang-it-IT'>Italiano</a>
+
+<a href='https://moovit.com/fr/resources/case-studies-fr/' class='languages__item lang-fr-FR'>Français</a>
+</div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+
+                <div class="site_header_lang">
+                    <div class="current_lang">
+                        English                        <div class='other_langs'>
+
+<a href='https://moovit.com/pt/resources/case-studies-pt/' class='languages__item lang-pt-PT'>Português</a>
+
+<a href='https://moovit.com/es/resources/case-studies-es/' class='languages__item lang-es-ES'>Español</a>
+
+<a href='https://moovit.com/it/resources/case-studies-it/' class='languages__item lang-it-IT'>Italiano</a>
+
+<a href='https://moovit.com/fr/resources/case-studies-fr/' class='languages__item lang-fr-FR'>Français</a>
+</div>
+                    </div>
+                </div>
+
+                <div class="site_header_menu_mobile">
+                    <div class="site_header_menu_mobile_btn">
+                        <span>a</span>
+                        <span>a</span>
+                        <span>a</span>
+                        <span>a</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+<div id="site-wrap">
+
+        <style>
+        .cover_image_block:before{display:none !important;}
+    </style>
+    
+<div class="cover_image skinny">
+
+    <div class="cover_image_block">
+
+        
+            <picture>
+                <source media="(max-width: 768px)" data-lazy-srcset="">
+                <source media="(min-width: 768px)" data-lazy-srcset="https://moovit.com/wp-content/uploads/2020/04/header-casestudies-1.jpg">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="resources header image" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/header-casestudies-1.jpg"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/header-casestudies-1.jpg" alt="resources header image"></noscript>
+            </picture>
+
+        
+    </div>
+
+    <div class="cover_image_content bcontainer bcontainer_header">
+        <div class="cover_image_content_wrap">
+
+                        <div class="breadcrumbs">
+                <span><span><a href="https://moovit.com/">Home</a></span> <span class="divider">»</span> <span><a href="https://moovit.com/resources/#item.l-en">Resources</a></span> <span class="divider">»</span> <span class="breadcrumb_last" aria-current="page">Case Studies</span></span>                <div class="shadow"></div>
+            </div>
+            
+            
+
+            <div class="title_wrap">
+
+                
+                <h1>Case Studies</h1>
+
+            </div>
+
+
+
+            
+            
+            
+            
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="archive_rc case_studies resources_hub">
+
+    <div class="bcontainer bcontainer_1">
+
+            <div class="filters">
+
+        <form class="controls">
+
+            <div class="heading">
+                <div class="filter_title">Filter by:</div>
+
+                <button type="reset" class="filters_clear clearall mixitup-control-active">Clear filters <img width="18" height="18" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2018'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icon-cancel.svg" /><noscript><img width="18" height="18" src="https://moovit.com/wp-content/themes/moovit/assets/images/icon-cancel.svg" /></noscript></button>
+            </div>
+
+            <div class="filter">
+
+                
+                <div class="filter_option">
+                    <div class="title">Solution</div>
+
+                                        <fieldset data-filter-group class="select-wrapper">
+                        <select class="rc_solutions_select select2custom form-control" multiple="multiple" style="width:100%;">
+                                                    <option value=".s-23642" data-multilang=".s-23648, .s-23642, .s-23647, .s-23646, .s-23645">COVID-19</option>
+                                                                <option value=".s-23582" data-multilang=".s-23587, .s-23582, .s-23585, .s-23584, .s-23583">MaaS Solutions</option>
+                                                                <option value=".s-21045" data-multilang=".s-22363, .s-21045, .s-22323, .s-22232, .s-22285">Branded Apps</option>
+                                                                <option value=".s-21046" data-multilang=".s-22364, .s-21046, .s-22324, .s-22233, .s-22286">Urban Mobility Analytics</option>
+                                                                <option value=".s-21048" data-multilang=".s-22365, .s-21048, .s-22325, .s-22234, .s-22287">Fare Payments</option>
+                                                                <option value=".s-21049" data-multilang=".s-22366, .s-21049, .s-22326, .s-22235, .s-22288">On-Demand</option>
+                                                                <option value=".s-21051" data-multilang=".s-22367, .s-21051, .s-22327, .s-22236, .s-22289">Real-Time for Buses</option>
+                                                                <option value=".s-21050" data-multilang=".s-22368, .s-21050, .s-22329, .s-22237, .s-22290">Public Transit APIs</option>
+                                                                <option value=".s-21052" data-multilang=".s-22369, .s-21052, .s-22328, .s-22238, .s-22291">Transit Data Manager</option>
+                                                                <option value=".s-21095" data-multilang=".s-22369, .s-21095, .s-22328, .s-22238, .s-22291">General</option>
+                                                        </select>
+                    </fieldset>
+                    
+                    <div class="solutions_dropdown"></div>
+                </div>
+
+                <div class="filter_option">
+                    <div class="title">Industry</div>
+
+                                        <fieldset data-filter-group class="select-wrapper">
+                        <select class="rc_industries_select select2custom form-control" multiple="multiple" style="width:100%;">
+                                                <option value=".i-21053" data-multilang=".i-22239, .i-21053, .i-22292, .i-22330, .i-22370">Cities and Municipalities</option>
+                                                        <option value=".i-21054" data-multilang=".i-22240, .i-21054, .i-22293, .i-22331, .i-22371">Transit Agencies and Operators</option>
+                                                        <option value=".i-21055" data-multilang=".i-22241, .i-21055, .i-22294, .i-22332, .i-22372">Private Sector</option>
+                                                        <option value=".i-21056" data-multilang=".i-22242, .i-21056, .i-22295, .i-22333, .i-22373">Campuses</option>
+                                                        <option value=".i-21096" data-multilang=".i-22242, .i-21096, .i-22295, .i-22333, .i-22373">General</option>
+                                                    </select>
+                    </fieldset>
+                    
+                    <div class="industries_dropdown"></div>
+                </div>
+
+                
+            </div>
+
+            <div class="items_count">
+                <div class="first_load">Showing all</div>
+                <div class="filtered">Showing <span class="current"></span> of <span class="total_items">26</span> items</div>
+                <div class="noitems">No results found</div>
+            </div>
+
+        </form>
+
+    </div>
+    
+        <div class="items">
+
+            
+                <div class="item s-21095 s-21049 s-21045 s-21048 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2026/06/28093658/cdta_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2026/06/28093658/cdta_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/cdta-06-2026/"><h3 class="title-medium"><span>Connecting Communities with Smart On-Demand Transit Solutions</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/cdta-06-2026/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21095 i-21053 i-21054 i-21096 i-21055">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/lux/"><h3 class="title-medium"><span>Engaging the perfect target audience with Moovit Ads</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/lux/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-23582 s-21045 s-21049 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/vbl-victoria/"><h3 class="title-medium"><span>Statewide Microtransit: Improving Transit Access</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/vbl-victoria/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-23582 s-21045 s-21049 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/04/03134905/cdcvictoria_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/04/03134905/cdcvictoria_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/cdc-victoria/"><h3 class="title-medium"><span>FlexiRide: Rolling Digitized On-Demand Transport into New Growth Regions</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/cdc-victoria/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-23582 i-21054 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/07/17085227/sanjuan_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/07/17085227/sanjuan_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/san-juan/"><h3 class="title-medium"><span>Bringing Reliable Public Transit Information to an Entire New Transit System</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/san-juan/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-23582 s-21048 i-21054 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/05/15111727/academybus_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/05/15111727/academybus_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/academy-bus/"><h3 class="title-medium"><span>Improving the Rider Experience While Decreasing Operational Costs</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/academy-bus/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-23582 s-21049 s-21045 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/04/30140922/busitalia_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/04/30140922/busitalia_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/busitalia/"><h3 class="title-medium"><span>Improving the Customer Experience with Trip Planning and On-Demand Transit in a Single Mobility App</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/busitalia/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-23582 s-21045 s-21049 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/03/01140950/wave_280x90-1.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/03/01140950/wave_280x90-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/wave/"><h3 class="title-medium"><span>Unlocking Regional Connectivity with Digitized Transit On-Demand</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/wave/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-23582 s-21048 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2021/02/arriva_200x80.png"><noscript><img src="https://moovit.com/wp-content/uploads/2021/02/arriva_200x80.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/plan-pay-ride-for-all-public-transport-in-the-netherlands/"><h3 class="title-medium"><span>Plan-Pay-Ride for all Public Transport in the Netherlands</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/plan-pay-ride-for-all-public-transport-in-the-netherlands/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-21049 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2021/08/23090850/logo-1.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2021/08/23090850/logo-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/enhanced-drt-service-for-greater-access-to-transport-and-shorter-wait-times/"><h3 class="title-medium"><span>Enhanced DRT service for greater access to transport and shorter wait times</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/enhanced-drt-service-for-greater-access-to-transport-and-shorter-wait-times/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21049 s-21046 i-21053 i-21054 i-21055 i-21056">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/Egged_CaseStudyLogo.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/Egged_CaseStudyLogo.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/egged/"><h3 class="title-medium"><span>Reliable Transportation Alternatives for Students and Employees in the City of Haifa</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/egged/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21049 s-21045 s-21046 s-21048 s-23582 i-21053 i-21054 i-21055 i-21056">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/05/we.ride_.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/05/we.ride_.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/we-ride/"><h3 class="title-medium"><span>Smart Mobility for Business Districts and Employers</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/we-ride/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-23582 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/07/ataf-logo-1.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/07/ataf-logo-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/ataf/"><h3 class="title-medium"><span>Creating a Real-Time, Direct Channel with Riders for Enhanced Service</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/ataf/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21049 i-21053 i-21054 i-21055 i-21056">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2023/08/29122027/ventura_280x90.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/ventura/"><h3 class="title-medium"><span>Optimizing First-/Last-Mile Connections in Melbourne, Australia</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/ventura/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21045 s-21046 s-21052 s-23582 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/08/partner-idfm.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/08/partner-idfm.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/idfm/"><h3 class="title-medium"><span>Creating a Rider-Centric Mobility Experience for Parisians and Tourists</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/idfm/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21048 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/08/partner-mot.jpg"><noscript><img src="https://moovit.com/wp-content/uploads/2020/08/partner-mot.jpg"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/mot-israel/"><h3 class="title-medium"><span>Implementing a Country-Wide, Scalable Fare Payments Solution</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/mot-israel/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21049 s-21045 i-21053 i-21054 i-21055 i-21056">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2021/04/partnerlogo-smartbus-3-280x90-1.png"><noscript><img src="https://moovit.com/wp-content/uploads/2021/04/partnerlogo-smartbus-3-280x90-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/smart-michigan/"><h3 class="title-medium"><span>Modernizing Dial-a-Ride with an Intelligent, Digital On-Demand Solution</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/smart-michigan/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21052 s-21051 i-21053 i-21054 i-21096">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2021/03/trotta_400x.png"><noscript><img src="https://moovit.com/wp-content/uploads/2021/03/trotta_400x.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/digitizing-agency-services-and-adding-real-time-information-for-a-better-rider-experience/"><h3 class="title-medium"><span>Digitizing Agency Services and Adding Real-Time Information for a Better Rider Experience</span></h3></a>
+                    <div class="excerpt"></div>
+                    <a href="https://moovit.com/resources/case-studies/digitizing-agency-services-and-adding-real-time-information-for-a-better-rider-experience/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21046 s-23582 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2021/02/di5XC8HN_400x400.jpg"><noscript><img src="https://moovit.com/wp-content/uploads/2021/02/di5XC8HN_400x400.jpg"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/leveraging-transit-data-to-improve-connectivity-and-attract-more-riders/"><h3 class="title-medium"><span>Leveraging Transit Data to Improve Connectivity and Attract More Riders</span></h3></a>
+                    <div class="excerpt">Optimizing the transportation network with data-driven analysis</div>
+                    <a href="https://moovit.com/resources/case-studies/leveraging-transit-data-to-improve-connectivity-and-attract-more-riders/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21046 s-23582 i-21054 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/06/76905978-dff2-400d-9d76-f61b0376010b.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/06/76905978-dff2-400d-9d76-f61b0376010b.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/identifying-transit-gaps-and-inefficiencies-to-increase-ridership/"><h3 class="title-medium"><span>Identifying Transit Gaps and Inefficiencies to Increase Ridership</span></h3></a>
+                    <div class="excerpt">Improving services through actionable data and efficiency recommendations</div>
+                    <a href="https://moovit.com/resources/case-studies/identifying-transit-gaps-and-inefficiencies-to-increase-ridership/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21050 s-23582 i-21054 i-21055 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/partner-Cubic-logo-5.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/partner-Cubic-logo-5.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/expanding-maas-app-capabilities-with-transit-apis/"><h3 class="title-medium"><span>Expanding MaaS App Capabilities with Transit APIs</span></h3></a>
+                    <div class="excerpt">Empowering riders to plan and pay for their journeys</div>
+                    <a href="https://moovit.com/resources/case-studies/expanding-maas-app-capabilities-with-transit-apis/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21050 s-23582 i-21055 i-21054 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/partner-Uber-logo-5.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/partner-Uber-logo-5.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/expanding-urban-mobility-options-with-transit-apis/"><h3 class="title-medium"><span>Expanding Urban Mobility Options with Transit APIs</span></h3></a>
+                    <div class="excerpt">Integrating Public Transportation into the Uber App</div>
+                    <a href="https://moovit.com/resources/case-studies/expanding-urban-mobility-options-with-transit-apis/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21052 s-23582 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/MttChile_CaseStudyLogo-1.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/MttChile_CaseStudyLogo-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/enabling-easy-use-of-public-transportation-in-chile/"><h3 class="title-medium"><span>Enabling Easy Use of Public Transportation in Chile</span></h3></a>
+                    <div class="excerpt">Helping travelers get to sporting events using public transport seamlessly</div>
+                    <a href="https://moovit.com/resources/case-studies/enabling-easy-use-of-public-transportation-in-chile/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21049 s-23582 i-21055 i-21054 i-21053">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/07/banhapoalim_updatedthumb.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/07/banhapoalim_updatedthumb.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/getting-essential-employees-to-work-safely-with-on-demand/"><h3 class="title-medium"><span>Getting Essential Employees to Work Safely with On-Demand</span></h3></a>
+                    <div class="excerpt">Addressing mobility needs for essential workers during the COVID-19 pandemic</div>
+                    <a href="https://moovit.com/resources/case-studies/getting-essential-employees-to-work-safely-with-on-demand/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21051 s-23582 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/Busitalia_CaseStudyLogo-1.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/Busitalia_CaseStudyLogo-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/efficient-operations-with-timepro/"><h3 class="title-medium"><span>Efficient Operations with TimePro</span></h3></a>
+                    <div class="excerpt">Providing real-time transit data to users in Salerno, Italy</div>
+                    <a href="https://moovit.com/resources/case-studies/efficient-operations-with-timepro/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+                <div class="item s-21051 s-23582 i-21053 i-21054">
+                    <div class="thumb"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/uploads/2020/04/AMAT_CaseStudyLogo-1.png"><noscript><img src="https://moovit.com/wp-content/uploads/2020/04/AMAT_CaseStudyLogo-1.png"></noscript></div>
+                    <a href="https://moovit.com/resources/case-studies/accurate-arrival-times-with-timepro/"><h3 class="title-medium"><span>Accurate Arrival Times with TimePro</span></h3></a>
+                    <div class="excerpt">Delivering real-time bus arrival info in Palermo, Italy</div>
+                    <a href="https://moovit.com/resources/case-studies/accurate-arrival-times-with-timepro/" title="Read More" class="readmore"><img width="18" height="19" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2018%2019'%3E%3C/svg%3E" data-lazy-src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"><noscript><img width="18" height="19" src="https://moovit.com/wp-content/themes/moovit/assets/images/icons/arrow-right.svg"></noscript>Read More</a>
+<!--                    --><!---->
+<!--                        <div class="langs">-->
+<!--                            --><!---->
+<!--                                <a href="--><!--" title="--><!--">--><!--</a>-->
+<!---->
+<!--                            --><!--                        </div>-->
+<!---->
+<!--                    -->                </div>
+
+            
+        </div>
+
+    </div>
+
+</div>
+</div><!-- end #site-wrap -->
+
+
+
+<footer class="white_footer">
+
+    <div class="bcontainer bcontainer_header">
+
+        <div class="white_footer_cols">
+
+            <div class="white_footer_cols_left">
+                                <a class="logo" href="https://moovit.com/">
+                    <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Moovit" data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2021/06/22140823/moovit-logo-website.svg"><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2021/06/22140823/moovit-logo-website.svg" alt="Moovit"></noscript>
+                </a>
+
+                <div class="white_footer_cols_left_subtitle">
+                    <p>Moovit is the #1 commuter app which has guided over 1.7 billion users in 3,500 cities across 112 countries to easily get to their destination.</p>
+                </div>
+
+                <div class="el_hide_mobile">
+                    <div class="white_footer_cols_left_subtitle_apps">
+                        <a href="https://apps.apple.com/us/app/moovit-public-transit/id498477945" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="download on the app store" data-lazy-src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-apple.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-apple.svg" alt="download on the app store" /></noscript></a><a href="https://play.google.com/store/apps/details?id=com.tranzmate&hl=en-US" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="get it on google play" data-lazy-src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-google.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-google.svg" alt="get it on google play" /></noscript></a><a href="https://moovitapp.com/?utm_medium=organic&utm_source=company_website" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="open the web app" data-lazy-src="https://moovit.com/wp-content/uploads/2020/05/web_app-badge-EN.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2020/05/web_app-badge-EN.svg" alt="open the web app" /></noscript></a><a href="https://www.iso.org/standard/27001" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2026/08/24092135/iso_160x.png" /><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2026/08/24092135/iso_160x.png"  /></noscript></a>                    </div>
+
+                    <div class="white_footer_cols_left_subtitle_social">
+
+                                                    <a href="https://bit.ly/Moovit_Linkedin" class="footericon ico-link" target="_blank">link</a>
+                            
+                            <a href="https://bit.ly/Moovit_TW_EN" class="footericon ico-tw" target="_blank">tw</a>
+                            
+                            <a href="https://bit.ly/Moovit_FB_EN" class="footericon ico-fb" target="_blank">fb</a>
+                            
+                            <a href="https://bit.ly/Moovit_IG" class="footericon ico-ig" target="_blank">ig</a>
+                            
+                            <a href="https://bit.ly/Moovit_YouTube" class="footericon ico-youtube" target="_blank">youtube</a>
+                            
+                    </div>
+
+                    <div class="white_footer_cols_left_subtitle_cp">
+                        © 2026 Moovit Inc. All rights reserved.                     </div>
+
+                    <div class="white_footer_cols_left_subtitle_menu">
+
+                                                        <a href="https://moovit.me/terms_of_service" >Terms of Service</a>
+                                                                <a href="https://moovit.me/privacy_notice" >Privacy Policy</a>
+                                                                <a href="https://moovit.com/legal/accessibility-statement-eu-en/" >Accessibility Statement</a>
+                                
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="white_footer_cols_right">
+
+                <div class="white_footer_cols_right_inner">
+
+                    <div class="white_footer_cols_right_inner_col">
+                        <div class="menu_subheader">Company</div>
+                        <a href="https://moovit.com/about-us/" >About Us</a>
+<a href="https://moovit.com/maas-solutions/" >MaaS Solutions</a>
+<a href="https://moovitapp.com/tickets/en" >Moovit Tickets</a>
+<a href="https://mooviters.moovit.com/" >Our Mooviter Community</a>
+<a href="https://moovit.com/jobs/" >Careers</a>
+<a href="https://moovit.com/moovit-code-of-conduct/" >Code of Conduct</a>
+                    </div>
+                    <div class="white_footer_cols_right_inner_col">
+                        <div class="menu_subheader">Tools</div>
+                        <a href="https://moovitapp.com/report" >2024 Public Transport Report</a>
+<a href="https://moovitapp.com/insights/" >2022 Public Transport Report</a>
+<a href="https://moovit.com/developers/" >Developer Tools</a>
+                    </div>
+                    <div class="white_footer_cols_right_inner_col">
+                        <div class="menu_subheader">Contact</div>
+                        <a href="https://support.moovitapp.com/hc/en-us" target="_blank" >Moovit App Support</a>
+                    </div>
+
+                </div>
+
+                <div class="el_hide_desktop">
+                    <div class="white_footer_cols_left_subtitle_apps">
+                        <a href="https://apps.apple.com/us/app/moovit-public-transit/id498477945" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="download on the app store"  data-lazy-src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-apple.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-apple.svg" alt="download on the app store"  /></noscript></a><a href="https://play.google.com/store/apps/details?id=com.tranzmate&hl=en-US" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="get it on google play"  data-lazy-src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-google.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2019/12/appstore-badge-google.svg" alt="get it on google play"  /></noscript></a><a href="https://moovitapp.com/?utm_medium=organic&utm_source=company_website" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="open the web app"  data-lazy-src="https://moovit.com/wp-content/uploads/2020/05/web_app-badge-EN.svg" /><noscript><img src="https://moovit.com/wp-content/uploads/2020/05/web_app-badge-EN.svg" alt="open the web app"  /></noscript></a><a href="https://www.iso.org/standard/27001" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  data-lazy-src="https://static-main.moovit.com/wp-content/uploads/2026/08/24092135/iso_160x.png" /><noscript><img src="https://static-main.moovit.com/wp-content/uploads/2026/08/24092135/iso_160x.png"  /></noscript></a>                    </div>
+                    <div class="white_footer_cols_left_subtitle_social">
+
+                        <a href="https://bit.ly/Moovit_Linkedin" class="footericon ico-link" target="_blank">link</a>
+<a href="https://bit.ly/Moovit_TW_EN" class="footericon ico-tw" target="_blank">tw</a>
+<a href="https://bit.ly/Moovit_FB_EN" class="footericon ico-fb" target="_blank">fb</a>
+<a href="https://bit.ly/Moovit_IG" class="footericon ico-ig" target="_blank">ig</a>
+<a href="https://bit.ly/Moovit_YouTube" class="footericon ico-youtube" target="_blank">youtube</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="white_footer_cols_center el_hide_desktop">
+                <div class="white_footer_cols_left_subtitle_menu">
+
+                                                <a href="https://moovit.me/terms_of_service" >Terms of Service</a>
+                            
+                            <a href="https://moovit.me/privacy_notice" >Privacy Policy</a>
+                            
+                            <a href="https://moovit.com/legal/accessibility-statement-eu-en/" >Accessibility Statement</a>
+                            
+
+                    
+                </div>
+                <div class="white_footer_cols_left_subtitle_cp">
+                    © 2026 Moovit Inc. All rights reserved.                 </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script class="inlinemenu">
+
+    document.addEventListener("DOMContentLoaded", function(event){
+
+        var head_notice = document.querySelector(".site_header");
+        var head_notice_top = head_notice.offsetHeight;
+
+        document.body.style.setProperty('--header-extra-height', head_notice_top + 'px');
+        document.body.style.setProperty('--header-only-height', head_notice_top + 'px');
+
+    });
+
+    var menuBurger = document.querySelector('.site_header_menu_mobile_btn');
+    var menuWrap = document.querySelector('.site_header_menu');
+    var menuContainerWrap = document.querySelector('.menu_wrap');
+
+    menuBurger.addEventListener('click',function(){
+
+        var siteHeader = document.querySelector('.site_header');
+        var siteHeader_height = siteHeader.offsetHeight;
+
+        this.classList.toggle("open");
+        this.classList.toggle("menu-open");
+        this.classList.toggle('rotate');
+
+        document.body.classList.toggle('menu-open');
+
+        menuContainerWrap.classList.toggle("open");
+        menuWrap.classList.toggle("open");
+    });
+
+</script>
+
+<script type="rocketlazyloadscript">
+        (function(document, tag) { var script = document.createElement(tag); var element = document.getElementsByTagName('body')[0]; script.src = 'https://acsbap.com/apps/app/assets/js/acsb.js'; script.async = true; script.defer = true; (typeof element === 'undefined' ? document.getElementsByTagName('html')[0] : element).appendChild(script); script.onload = function() { acsbJS.init({ statementLink : '', feedbackLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'default', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 0, triggerOffsetY : 0, triggerRadius : '0' } }); };}(document, 'script'));
+</script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/moovit/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="flying-scripts">const loadScriptsTimer=setTimeout(loadScripts,8*1000);const userInteractionEvents=['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){loadScripts();clearTimeout(loadScriptsTimer);userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}
+function loadScripts(){document.querySelectorAll("script[data-type='lazy']").forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-src"))})}</script>
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+<script type="rocketlazyloadscript" id="wp-hooks-js" data-rocket-src="https://moovit.com/wp-includes/js/dist/hooks.min.js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js" data-rocket-src="https://moovit.com/wp-includes/js/dist/i18n.min.js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="swv-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/moovit.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="contact-form-7-js" data-rocket-src="https://moovit.com/wp-content/wp-rocket-cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1784548825" defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index\\.php/)?(.*)wp\\-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://moovit.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://moovit.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script class="inlinemenu" type="text/javascript">
+    _linkedin_partner_id = "51239";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script class="inlinemenu" type="text/javascript">
+    (function(l) {
+        if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+            window.lintrk.q=[]}
+        var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=51239&fmt=gif" />
+</noscript>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a41929dbcd91c219',t:'MTc5MDQ5ODAwNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

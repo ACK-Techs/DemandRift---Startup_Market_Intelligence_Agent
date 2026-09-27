@@ -73,6 +73,270 @@
       "shared_sha256": "a9054cdaf30c70d4072613f61131f86ccb3cb698a2e6eeeb80b499b98365e761",
       "replacements": 1,
       "reason": "Replicate API token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/0698344d5a921554069480a5ea39afa8918426cfaee90c2d98154ed8457cb477.bin",
+      "local_original": "local-originals/0698344d5a921554069480a5ea39afa8918426cfaee90c2d98154ed8457cb477.bin",
+      "original_sha256": "0698344d5a921554069480a5ea39afa8918426cfaee90c2d98154ed8457cb477",
+      "shared_sha256": "469ae993659a8f64cc6ca3734493b800e6d0c33e0f1d75fe6ed0d137176cd015",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/10517a3c111d195dbc879d0f23474759b13e04806a59c7526360a6a6843cd60a.bin",
+      "local_original": "local-originals/10517a3c111d195dbc879d0f23474759b13e04806a59c7526360a6a6843cd60a.bin",
+      "original_sha256": "10517a3c111d195dbc879d0f23474759b13e04806a59c7526360a6a6843cd60a",
+      "shared_sha256": "744faef469b24369eff0b0d2d4cb69b37ceab62c9beef379403bfabcb52d35f6",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/2121d1d1d96381440a97b786d8a30cf432ccc5c438b91a37b8437d07af49e26b.bin",
+      "local_original": "local-originals/2121d1d1d96381440a97b786d8a30cf432ccc5c438b91a37b8437d07af49e26b.bin",
+      "original_sha256": "2121d1d1d96381440a97b786d8a30cf432ccc5c438b91a37b8437d07af49e26b",
+      "shared_sha256": "0b44fd6a2e3f5828a85874183d57b36eea9207cd4d6e701475987dc96ee88fb8",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/2278f1ba9be9e4fd468a914a1ab12de3d6337bf4cf50114a1ab6c13055d16398.bin",
+      "local_original": "local-originals/2278f1ba9be9e4fd468a914a1ab12de3d6337bf4cf50114a1ab6c13055d16398.bin",
+      "original_sha256": "2278f1ba9be9e4fd468a914a1ab12de3d6337bf4cf50114a1ab6c13055d16398",
+      "shared_sha256": "23907252fffe7c9f500e3c908495674b59b73e3a53a664835727eae7401326a6",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/2cb092e123314d3098f514e13297b17c9a81fc74ef6dfed031525889210849de.bin",
+      "local_original": "local-originals/2cb092e123314d3098f514e13297b17c9a81fc74ef6dfed031525889210849de.bin",
+      "original_sha256": "2cb092e123314d3098f514e13297b17c9a81fc74ef6dfed031525889210849de",
+      "shared_sha256": "318a6511124c5b0abc584bebdf31b5ba15ebb971b09b978523f70330d58e3b4f",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/2eb8418b4844e48c227585949b8a07cfcba8c2074773a86a9432b645bb1c6a2e.bin",
+      "local_original": "local-originals/2eb8418b4844e48c227585949b8a07cfcba8c2074773a86a9432b645bb1c6a2e.bin",
+      "original_sha256": "2eb8418b4844e48c227585949b8a07cfcba8c2074773a86a9432b645bb1c6a2e",
+      "shared_sha256": "02dc458cd6b79ad0cbcb6c49b679d642dc0c9a706c75a4524a2cf37805fb75fb",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/30b22f9b8366b3ac86a1c65a2c064e94883313ecc8e7280f127239db0df1f493.bin",
+      "local_original": "local-originals/30b22f9b8366b3ac86a1c65a2c064e94883313ecc8e7280f127239db0df1f493.bin",
+      "original_sha256": "30b22f9b8366b3ac86a1c65a2c064e94883313ecc8e7280f127239db0df1f493",
+      "shared_sha256": "8ebb2002580d72c382bee47878b9721f6e38963a8a67a8502482a239d3b303ab",
+      "replacements": 4,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/3437d15c7f0ace70d98bd1b63c828801c6fffb40f9ca111422916532d532988f.bin",
+      "local_original": "local-originals/3437d15c7f0ace70d98bd1b63c828801c6fffb40f9ca111422916532d532988f.bin",
+      "original_sha256": "3437d15c7f0ace70d98bd1b63c828801c6fffb40f9ca111422916532d532988f",
+      "shared_sha256": "6e3988ab42e5ce4c9a4b98bcff7c435972db928721069d756b62424830015b40",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/43c994ae59dff13e7413b273fd69b3868106fd317836970d190d30f06575adc3.bin",
+      "local_original": "local-originals/43c994ae59dff13e7413b273fd69b3868106fd317836970d190d30f06575adc3.bin",
+      "original_sha256": "43c994ae59dff13e7413b273fd69b3868106fd317836970d190d30f06575adc3",
+      "shared_sha256": "92184ed2c7bb9becdbdb363a35aeb1ddf80c3b5cf1a3443da5c26658cafb0176",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/57bf75e131697b21ae4a56a9811eca6554ad1eb203a2fd82959d1df857d70ea3.bin",
+      "local_original": "local-originals/57bf75e131697b21ae4a56a9811eca6554ad1eb203a2fd82959d1df857d70ea3.bin",
+      "original_sha256": "57bf75e131697b21ae4a56a9811eca6554ad1eb203a2fd82959d1df857d70ea3",
+      "shared_sha256": "fcb726a05a41d33bbfb9ff744347ca56ec02c81ccdcb6b98207be95e8547c9c9",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/5df5ba21c30e771a6a5db1d594887f2f066d4ba2555430a869f8cab1374c4686.bin",
+      "local_original": "local-originals/5df5ba21c30e771a6a5db1d594887f2f066d4ba2555430a869f8cab1374c4686.bin",
+      "original_sha256": "5df5ba21c30e771a6a5db1d594887f2f066d4ba2555430a869f8cab1374c4686",
+      "shared_sha256": "4240586fe90ba9e738d23a1ee809cc3641315b79efb788a70f8612f1e3d90aba",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/6755ef30f24fa7b5bf5ed33cedb281776002bc0cf72d11f822d51c36519776b4.bin",
+      "local_original": "local-originals/6755ef30f24fa7b5bf5ed33cedb281776002bc0cf72d11f822d51c36519776b4.bin",
+      "original_sha256": "6755ef30f24fa7b5bf5ed33cedb281776002bc0cf72d11f822d51c36519776b4",
+      "shared_sha256": "7c8fff10199055db61636fa31a2a0d31962117847d5ae615f6d3c7db5603b751",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/6772d9a124ae8bbb06d5a2f8cda8465a09547240959c7c818ca671a5c2bcb14f.bin",
+      "local_original": "local-originals/6772d9a124ae8bbb06d5a2f8cda8465a09547240959c7c818ca671a5c2bcb14f.bin",
+      "original_sha256": "6772d9a124ae8bbb06d5a2f8cda8465a09547240959c7c818ca671a5c2bcb14f",
+      "shared_sha256": "118f4921458cf35e558a4da84d70ad6bf211f8a958131d82ea1605a4ae47accb",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/67d7380ef704ea86308b6df707e9c57c6c4bf65b41da60b1be9fbb0b25e15cb6.bin",
+      "local_original": "local-originals/67d7380ef704ea86308b6df707e9c57c6c4bf65b41da60b1be9fbb0b25e15cb6.bin",
+      "original_sha256": "67d7380ef704ea86308b6df707e9c57c6c4bf65b41da60b1be9fbb0b25e15cb6",
+      "shared_sha256": "48d5ed8e86cda7103510eb1ae63a80373034e6532fc4683c9c841e205120499b",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/6f4e2a51d286b7edcb9c5df471b8d14785e21339fe6252c16e01c811c9c1c4b4.bin",
+      "local_original": "local-originals/6f4e2a51d286b7edcb9c5df471b8d14785e21339fe6252c16e01c811c9c1c4b4.bin",
+      "original_sha256": "6f4e2a51d286b7edcb9c5df471b8d14785e21339fe6252c16e01c811c9c1c4b4",
+      "shared_sha256": "18594eac0eed64c7fb95e8b9e06201398d6483b3139a15f9c6976f3360835542",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/842ff6d48b29db652473df1ded337d1d4c827d3f90f4184ef6369dab2a33f493.bin",
+      "local_original": "local-originals/842ff6d48b29db652473df1ded337d1d4c827d3f90f4184ef6369dab2a33f493.bin",
+      "original_sha256": "842ff6d48b29db652473df1ded337d1d4c827d3f90f4184ef6369dab2a33f493",
+      "shared_sha256": "bd9f770ec78985530061e6d7a98d33ae2109169daa177bc84b2f9b56e7228ca5",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/8ecb80d6d14962a7b04d4921d5ee6a180d8d260b08e19c1f01ff743c7e8b43b0.bin",
+      "local_original": "local-originals/8ecb80d6d14962a7b04d4921d5ee6a180d8d260b08e19c1f01ff743c7e8b43b0.bin",
+      "original_sha256": "8ecb80d6d14962a7b04d4921d5ee6a180d8d260b08e19c1f01ff743c7e8b43b0",
+      "shared_sha256": "b5a7c58b2083f9c97317d2d1bf9e1e92f15e3b6b66f018ecf84729e562928699",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/96e878158afa3c1225db7c9fbcdf9fce9016109439aea09aee37064b825e023c.bin",
+      "local_original": "local-originals/96e878158afa3c1225db7c9fbcdf9fce9016109439aea09aee37064b825e023c.bin",
+      "original_sha256": "96e878158afa3c1225db7c9fbcdf9fce9016109439aea09aee37064b825e023c",
+      "shared_sha256": "22a4e16b1c9ed4e02e31a5a8f52def418c4f8a586bedc221310147f0e77ebfae",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/a5e0ff98226300171fa8915b197421f434f15d4c352bc19aa311065b0c332773.bin",
+      "local_original": "local-originals/a5e0ff98226300171fa8915b197421f434f15d4c352bc19aa311065b0c332773.bin",
+      "original_sha256": "a5e0ff98226300171fa8915b197421f434f15d4c352bc19aa311065b0c332773",
+      "shared_sha256": "7922c62aa761d789014a5a72ff050c7c41278af19a6a49f9aec1881f3099d78e",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/a60c03c17268224a0ab98e2dd6bd085cc933dbebb82ac5cf1398a5517674239f.bin",
+      "local_original": "local-originals/a60c03c17268224a0ab98e2dd6bd085cc933dbebb82ac5cf1398a5517674239f.bin",
+      "original_sha256": "a60c03c17268224a0ab98e2dd6bd085cc933dbebb82ac5cf1398a5517674239f",
+      "shared_sha256": "dfcea43628b75f17153deea78457755e12c5b7b0a634abdd7e0e5e9bee64fc33",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/aad7d86eb011756e58e3ef60babe9eab08a85206f82ee4526572899d8e12fda9.bin",
+      "local_original": "local-originals/aad7d86eb011756e58e3ef60babe9eab08a85206f82ee4526572899d8e12fda9.bin",
+      "original_sha256": "aad7d86eb011756e58e3ef60babe9eab08a85206f82ee4526572899d8e12fda9",
+      "shared_sha256": "7c51b6f5704e2737be1c4ef32845d8e0636a1e767f9fa4ce8b2eb07a674d4145",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/ab7621c94494d6d846ed379ea6a352739e7ca4d58964ddaaf1bae08334af7fa6.bin",
+      "local_original": "local-originals/ab7621c94494d6d846ed379ea6a352739e7ca4d58964ddaaf1bae08334af7fa6.bin",
+      "original_sha256": "ab7621c94494d6d846ed379ea6a352739e7ca4d58964ddaaf1bae08334af7fa6",
+      "shared_sha256": "30abeb4154ca5b137f3df78ad61d11fd851a7b6b4c1c00f20b9ed94e2a699d2c",
+      "replacements": 3,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/ad8efddc161132650c5772739a95c0e800e318b0d3fe97932ab47fb47c10c528.bin",
+      "local_original": "local-originals/ad8efddc161132650c5772739a95c0e800e318b0d3fe97932ab47fb47c10c528.bin",
+      "original_sha256": "ad8efddc161132650c5772739a95c0e800e318b0d3fe97932ab47fb47c10c528",
+      "shared_sha256": "9b9ef45f747953f7667e4cd0583c9c787c7840dbb97c031c60c9a99bd58ab9ec",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/b695916dd88bb46766e7e56832a6d1c5329db14036294b8700646aed8cc2a505.bin",
+      "local_original": "local-originals/b695916dd88bb46766e7e56832a6d1c5329db14036294b8700646aed8cc2a505.bin",
+      "original_sha256": "b695916dd88bb46766e7e56832a6d1c5329db14036294b8700646aed8cc2a505",
+      "shared_sha256": "14f209c6f4fc1636f510dc605030306ff7d57dce5c5a3136f2b619bd00793191",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/b951bbd26e56c6f36291d3343e60f9aef6328693cac1496d11b15b0f567736aa.bin",
+      "local_original": "local-originals/b951bbd26e56c6f36291d3343e60f9aef6328693cac1496d11b15b0f567736aa.bin",
+      "original_sha256": "b951bbd26e56c6f36291d3343e60f9aef6328693cac1496d11b15b0f567736aa",
+      "shared_sha256": "3bd7d5602cdab611ca43f875c02bacb562cdaba0b70dc24a09352478c04a6e5e",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/cc6d4b650cf00b2c745b9ca87183ea7f059f86f5995a5772abe111bfda8bae78.bin",
+      "local_original": "local-originals/cc6d4b650cf00b2c745b9ca87183ea7f059f86f5995a5772abe111bfda8bae78.bin",
+      "original_sha256": "cc6d4b650cf00b2c745b9ca87183ea7f059f86f5995a5772abe111bfda8bae78",
+      "shared_sha256": "03c0c1d75a85fe79b42e780cbbb0a2433891cb2afe1b461897c7998553502195",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/d1646b6a712244dd97749a7103955d67518ab4b24c5522c1db81aa355e4bba48.bin",
+      "local_original": "local-originals/d1646b6a712244dd97749a7103955d67518ab4b24c5522c1db81aa355e4bba48.bin",
+      "original_sha256": "d1646b6a712244dd97749a7103955d67518ab4b24c5522c1db81aa355e4bba48",
+      "shared_sha256": "48a0caa025e8f06342d986690bfa45e458061cd9c068af88be468801bd84e984",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/d80125bb197defd37a621f7e2bfdae37c67f3e6c6aaee48b3d495c5aa4ae451c.bin",
+      "local_original": "local-originals/d80125bb197defd37a621f7e2bfdae37c67f3e6c6aaee48b3d495c5aa4ae451c.bin",
+      "original_sha256": "d80125bb197defd37a621f7e2bfdae37c67f3e6c6aaee48b3d495c5aa4ae451c",
+      "shared_sha256": "c0795995edef658fe38b2b0340735003e54158ed0f7da9aa6333baa4429e0a19",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/da6b782e6f10e4090832a28affbab1f7a72d28980f353be779a4c50e8157b258.bin",
+      "local_original": "local-originals/da6b782e6f10e4090832a28affbab1f7a72d28980f353be779a4c50e8157b258.bin",
+      "original_sha256": "da6b782e6f10e4090832a28affbab1f7a72d28980f353be779a4c50e8157b258",
+      "shared_sha256": "283c3eca63321253a0fdb3fb1419b3e45283f8389602223a11e00bdcdce59e4c",
+      "replacements": 2,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/dbab0a9cef33a079e4f0fa98b91b7940511218514a89469f70dbe535c0f24612.bin",
+      "local_original": "local-originals/dbab0a9cef33a079e4f0fa98b91b7940511218514a89469f70dbe535c0f24612.bin",
+      "original_sha256": "dbab0a9cef33a079e4f0fa98b91b7940511218514a89469f70dbe535c0f24612",
+      "shared_sha256": "de7086045ed1880575fb40dd29a4984d584ca9b257a9382f57dacdbdf960a2ec",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/e6964482b4444b69db48bc72540dd6108d412e10d5f2927e76c1919aeb0731ac.bin",
+      "local_original": "local-originals/e6964482b4444b69db48bc72540dd6108d412e10d5f2927e76c1919aeb0731ac.bin",
+      "original_sha256": "e6964482b4444b69db48bc72540dd6108d412e10d5f2927e76c1919aeb0731ac",
+      "shared_sha256": "7149c063d7d3845d635b14c38f24bcda2674c0a70503c4817f42178b04ff1500",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/e9f25ae4fa581c7f6b31edc81691ddb53a559d505e18ee6395a017b8571fb445.bin",
+      "local_original": "local-originals/e9f25ae4fa581c7f6b31edc81691ddb53a559d505e18ee6395a017b8571fb445.bin",
+      "original_sha256": "e9f25ae4fa581c7f6b31edc81691ddb53a559d505e18ee6395a017b8571fb445",
+      "shared_sha256": "6ce2fc12cb0dbaa4a8b77b04cb96718ec2eea98844efb89a9ffb8aa4cee9ff58",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
+    },
+    {
+      "path": "raw/fcab4f5a4aaba5ea262652a066021426b2ec44b433beaecb4021257118abb8a9.bin",
+      "local_original": "local-originals/fcab4f5a4aaba5ea262652a066021426b2ec44b433beaecb4021257118abb8a9.bin",
+      "original_sha256": "fcab4f5a4aaba5ea262652a066021426b2ec44b433beaecb4021257118abb8a9",
+      "shared_sha256": "bff056f9213461f8e4c9f990c72127694c6e759c6be2cfef223332030dcedb7f",
+      "replacements": 1,
+      "reason": "API-key-like token published by the source site; redacted for the shared copy, original kept locally"
     }
   ]
 }

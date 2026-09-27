@@ -1,0 +1,2081 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileImage" content="https://zbase-global.zingfront.com/saasbox/product/icon/e733b168395f415ebe35d6a7e0498dec.png">
+    <link rel="shortcut icon" href="https://zbase-global.zingfront.com/saasbox/product/icon/e733b168395f415ebe35d6a7e0498dec.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://zbase-global.zingfront.com/saasbox/product/icon/e733b168395f415ebe35d6a7e0498dec.png">
+    <link rel="icon" href="https://zbase-global.zingfront.com/saasbox/product/icon/e733b168395f415ebe35d6a7e0498dec.png">
+    <link rel="apple-touch-icon-precomposed" href="https://zbase-global.zingfront.com/saasbox/product/icon/e733b168395f415ebe35d6a7e0498dec.png">
+    <link rel="canonical" href="https://bigspy.com/pricing">
+    <link rel="stylesheet" href="https://static-global.zingfront.com/static/2026/crisp_hidden.css">        <!-- quora pixel基础像素埋点 -->
+    
+    
+            <script type="text/javascript">
+            var siteAddress = "https://bigspy.com/";
+            var domain = siteAddress.trim()
+                .replace('http://', '')
+                .replace('https://', '')
+            if (domain.startsWith('www.')) {
+                domain = domain.substring(4);
+            }
+            domain = domain.split('/')[0];
+            domain = '.' + domain;
+            var affCode = "7roqt3d9";
+            (
+                function(){
+                    var t=document.createElement("script");
+                    t.type="text/javascript",
+                    t.async=!0,
+                    t.src='https://cdn.firstpromoter.com/fprom.js',
+                    t.onload=t.onreadystatechange=function(){
+                        var t=this.readyState;
+                        if(!t||"complete"==t||"loaded"==t)
+                            try
+                            {
+                                $FPROM.init(affCode,domain)
+                            }catch(t) {}
+                    };
+                    var e=document.getElementsByTagName("script")[0];
+                    e.parentNode.insertBefore(t,e)
+                })();
+        </script>
+    
+    <title>BigSpy - #1 Free Adspy Tool - ADs Analytics Industry Standard</title>    <!-- css --><link rel='stylesheet' type='text/css' href='https://zbase-global.zingfront.com/popup/css/popup-userinfo-1.7.0.css?v=1596875266'>    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="cFNWb2FZVk4vKhcNCwtnKAIxGyQKGhN6RScEMFYzJgAgfntdCRNiPQ==">
+    <meta name="renderer" content="webkit">
+<meta name="referer" content="never">
+<meta name="description" content="BigSpy - it is the best free ads spy and shopify spy tool! Total 100,000,000+ Ads. 100,000+ Ads Updated Every Hour! We can help you get inspiration from your competitor&#039;s ads creatives on Facebook!">
+<meta name="keywords" content="ads spy,tools,Facebook ads,transparence,BigSpy,bigspy.com">
+<meta name="author" content="BigSpy">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://BigSpy">
+<meta property="og:site_name" content="bigspy.com">
+<link href="https://zbase-global.zingfront.com/saasbox/assets/css/page.min.v1.css" rel="stylesheet">
+<link href="https://zbase-global.zingfront.com/saasbox/assets/css/style.min.css" rel="stylesheet">
+<script src="https://zbase-global.zingfront.com/saasbox/assets/js/jquery.min.js"></script>
+<script src="//aeis.alicdn.com/sd/ncpc/nc.js?t=2015052012"></script>
+<script src="https://zbase-global.zingfront.com/static/js/assets_zbase/jquery.min.js"></script>
+<script src="//zbase-global.zingfront.com/static/js/ga-assets.js"></script>    <style>
+        #saasbox-nav {
+            position: fixed;
+            z-index: 2000;
+            height: 60px;
+            min-height: 60px;
+            background-color: #FFFFFF;
+            border-color: #FFFFFF;
+            top: 0;
+            box-shadow: 0 10px 10px -6px rgba(170,170,170,0.5);
+        }
+        #saasbox-nav .nav {
+            flex-wrap: nowrap!important;
+        }
+        #saasbox-nav .nav-navbar .nav-item {
+            white-space: nowrap;
+        }
+        #saasbox-nav .nav-height {
+            line-height: inherit;
+        }
+        #saasbox-nav .nav-item > .nav-link {
+            color: #000000;
+            padding: 0;
+            height: 100%;
+            line-height: inherit;
+            box-sizing: border-box;
+            -webkit-transition: none;
+            transition: none;
+        }
+
+        .nav-link:hover {
+            color: #555;
+        }
+
+        .three_level_arrow {
+            position: absolute;
+            right: 1.25rem;
+            /* top: 50%;
+            margin-top: -2px; */
+            font-style: normal;
+            /* border: none; */
+            opacity: 0.7;
+            width: 5px;
+            height: 5px;
+            border-top: 1px solid rgba(117,117,117,0.8);
+            border-right: 1px solid rgba(117,117,117,0.8);
+            border-top-width: 1px !important;
+            transform: rotate(45deg); 
+
+        }
+        #saasbox-nav .nav-item > .nav-link .arrow {
+            border-top: 3px solid#000000;
+            vertical-align: middle;
+        }
+        #saasbox-nav .nav-navbar .nav {
+            display: none;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        .nav-navbar .nav .nav-link {
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .vertical-align-middle {
+            transform: translateY(-50%);
+            position: relative;
+            top: 50%;
+        }
+        .sbox-carousel .vertical-align-middle {
+            transform: none !important;
+            position: relative;
+            top: 50%;
+        }
+        #saasbox-nav .navbar-brand img {
+                        height: 33px;
+                        max-height: 60px;
+        }
+        #saasbox-nav .nav>li>a:hover {
+            background: none !important;
+        }
+        .layout-container {
+            margin-top: 60px;
+        }
+        #saasbox_page_content .main-content>.container:first-child {
+            margin-top: 3rem;
+        }
+        @media (min-width: 992px) {
+            #saasbox-nav .nav-hover .nav-link {
+                border-bottom: 2px solid transparent;
+            }
+            #saasbox-nav .nav-hover:hover .nav-link,#saasbox-nav .nav-actived .nav-link {
+                border-bottom: 2px solid #000000;
+            }
+            #saasbox-nav .nav-height {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+        nav.nav a.nav-link:hover {
+            background: #f5f5f5;
+        }
+        .second_level:hover {
+            background: #f5f5f5;
+        }
+        /* nav li:hover {
+            background: #f5f5f5;
+        } */
+
+        nav.nav a.nav-link:hover+.nav {
+            display: block!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item .nav>li:hover>nav{
+            display: block!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item .nav>li>nav{
+            display: none!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item .nav{
+            overflow:visible;
+        }
+
+        nav.nav.px-lg.py-lg-4::-webkit-scrollbar{
+            width: 0.5px;
+            height: 10px;
+        }
+
+        nav.nav.px-lg.py-lg-4::-webkit-scrollbar-thumb{
+            /* background-color: #fff; */
+            /* -webkit-border-radius: 0; */
+            /* width: 3px; */
+            height: 31px;
+            background: gray;
+            border-radius: 10px;
+        }
+
+        nav.nav a.nav-link+.nav {
+            display: none!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item:hover>.nav {
+            display: block!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item nav li a:hover+.nav {
+            display: block!important;
+        }
+
+        #saasbox-nav .nav-navbar .nav-item nav li a+.nav {
+            display: none!important;
+        } 
+        
+
+        #saasbox-nav .nav-navbar .nav-item>.nav {
+            display: none!important;
+        }
+
+        @media (max-width: 1280px) {
+            .nav-right > li:last-child > .nav {
+                right: -20px;
+            }
+        }
+        @media (min-width: 991.98px) {
+            .nav-carousel-mobile {
+                display: none;
+            }
+        }
+        .nav-carousel-mobile {
+            position: absolute;
+            right: 0px;
+        }
+        @media (max-width: 991.98px) {
+            #saasbox-nav .nav-item {
+                height: auto!important;
+            }
+
+            .nav-link {
+                display: block;
+                padding: 0.5rem 1rem;
+            }
+            #saasbox-nav .nav-item > .nav-link {
+                color: rgba(117,117,117,0.8);
+                height: inherit;
+                line-height: inherit;
+                padding: 0.5rem;
+                margin: 0 !important;
+            }
+            #saasbox-nav .nav-hover:hover,#saasbox-nav .nav-type-button:hover {
+                background: #f5f5f5; 
+            }
+            #saasbox-nav .nav-item:hover .nav-link{
+                color: #555;
+            }
+            #saasbox-nav .nav-item > .nav-link .arrow {
+                border-top: 3px solid rgba(117, 117, 117, 0.8);
+            }
+
+            #saasbox-nav .nav-type-button .vertical-align-middle {
+                transform: inherit;
+                position: inherit;
+                top: inherit;
+            }
+
+            #saasbox-nav .nav-type-button .saasbox-btn {
+                border: inherit !important;
+                color: inherit !important;
+                border-radius: inherit !important;
+                padding: 0 !important;
+                line-height: inherit !important;
+                background-color: inherit !important;
+            }
+
+            #saasbox-nav .nav-type-icon > div {
+                color: inherit !important;
+            }
+
+            #saasbox-nav .nav-type-icon > div > .arrow {
+                border-top: 3px solid rgba(117, 117, 117, 0.8)!important;
+            }
+            #saasbox-nav .nav-item-carousel-pc {
+                display: none;
+            }
+            #layout-footer .footer-logo {
+                max-height: 50px;
+            }
+        }
+        .navbar-toggler {
+            margin-right: 0px;
+        }
+        .py-7 {
+            padding-top: 1.25rem !important;
+        }
+        
+        /* .footer {
+            overflow: visible;
+        } */
+       
+        .row.gap-y>[class*="col-"] {
+            padding-top: 5px;
+            padding-bottom: 0px;
+        }
+        #saasbox-nav .saasbox-btn-corner-ad {
+            background-color: #FECC6D !important;
+            display: inline-block;
+            position: absolute;
+            bottom: -6px;
+            left: -6px;
+            transform: scale(0.6);
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            font-size: 14px;
+            border-radius: 6px;
+            color: white;
+        }
+        .sbox-carousel-hover {
+            display:none;
+            padding: 10px;
+            width: 240px;
+            border-radius: 5px;
+            box-shadow: 0 0px 1px 1px #cccccc85;
+            position: absolute;
+            background: white;
+            left:20px;
+            line-height:1.5;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+        .sbox-carousel-hover::before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 30px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: 5px solid #fff;
+            border-top: 0;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        .sbox-carousel-hover::after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 28px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: 7px solid rgba(240, 240, 240, 0.5);
+            border-top: 0;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        .sbox-carousel-hover img {
+            height:25px;
+            width:25px;
+        }
+        .sbox-carousel-hover a {
+            margin-left:10px;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+        .sbox-nav-carousel-link-mobile {
+            display:block;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.87em;
+            word-spacing: 2px;
+            padding-left: 1.125rem;
+            padding-right: 1.125rem;
+        }
+        .sbox-carousel-hover p {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 0px;
+            line-height:1.5;
+        }
+        .saasbox-container {
+            width: 100% !important;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fa {
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        .footer .social-btn-container .vertical-align-middle {
+            transform: inherit;
+            position: inherit;
+            top: inherit;
+        }
+        .footer .social-btn-container {
+            /*margin-top: 15px;*/
+            margin-bottom: 10px;
+            font-weight: 600;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer .social .fa {
+            margin-top: -4px;
+        }
+        .nav-line {
+            margin: 0 5px;
+            border-top: 1px solid #e7e8ec;
+        }
+
+        .panel-second-level-menu {
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: none;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            letter-spacing: .5px;
+            font-size: .87em;
+            word-spacing: 2px;
+            padding-left: 1.125rem;
+            padding-right: 1.125rem;
+            display: block;
+        }
+        
+
+        #saasbox-nav .nav-user-img {
+            float: left;
+            margin-right: 8px;
+            width: 48px;
+            height: 48px;
+            font-size: 48px;
+            color: rgba(117,117,117,0.8);
+            border-radius: 50%;
+        }
+        .nav-user-info {
+            float: left;
+            line-height: 30px;
+        }
+        .nav-user-info p {
+            margin-bottom: 0;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        #layout-footer {
+            background-color: #fafafa;
+        }
+        #layout-footer .footer-logo {
+                        height: 33px;
+                        max-height: 100px;
+        }
+        #layout-footer h6 {
+            color: #111;
+        }
+        #layout-footer a {
+            color: #888 !important;
+        }
+        #layout-footer p {
+            color: #888;
+        }
+        #layout-footer .social-bordered a {
+            border: 1px solid #888;
+        }
+        #layout-footer .dropup span {
+            color: #888 !important;
+        }
+        #layout-footer .dropup a {
+            color: #000 !important;
+        }
+        #layout-footer .social.social-bordered a {
+            overflow: hidden;
+        }
+        #layout-footer .fa-discord {
+            background: url("https://zbase-global.zingfront.com/zbase/test/2021/discord-line.svg");
+            position:relative;
+            left: -33px;
+            -webkit-filter:drop-shadow(32px 0 #888);
+            filter:drop-shadow(32px 0 #888);
+            background-size: 100% 100%;
+            width: 32px;
+            height: 32px;
+        }
+        #layout-footer .dropdown-menu {
+            background-color: #FFF !important;
+        }
+        #layout-footer .dropup .dropdown-toggle {
+            pointer-events: none;
+        }
+        .navbar-dark .navbar-toggler, .navbar-stick-dark.stick .navbar-toggler {
+            color: #000000;
+        }
+        .navbar-light .navbar-toggler, .navbar-stick-light.stick .navbar-toggler {
+            color: #000000;
+        }
+        .navbar-light .navbar-divider, .navbar-stick-light.stick .navbar-divider {
+            background-color: #000000;
+            opacity: 1;
+        }
+        .nav-user-profile {
+            width: max-content;
+        }
+        .nav-user-info__name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            -webkit-box-orient: vertical;
+            width: 100px;
+        }
+        .nav-user-info__plan {
+            border: 1px solid;
+            border-radius: 6px;
+            text-align: center;
+            width: max-content;
+            padding: 0 8px;
+        }
+        .nav-user-plan-icon {
+            vertical-align: sub;
+            margin-left: 5px;
+            whdth: 20px!important;
+        }
+        .bs-tooltip-bottom .arrow::before {
+            border-bottom-color: #FFFFFF;
+        }
+        .bs-tooltip-bottom .tooltip-inner {
+            color: #5A5A5A;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 3px 3px #ddd;
+        }
+
+        .trigger {
+            position: relative;
+            text-align: center;
+        }
+
+        .popup-custom {
+            position: absolute;
+            left: 0;
+            background: none;
+            border-radius: 100px;
+            width: 100%;
+            top: 83px;
+            display: none;
+        }
+
+        .popup-custom:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            transform: rotate(-45deg);
+            background: #fff;
+            position: absolute;
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+            z-index: -1;
+            top: -2px;
+            left: calc(50% - 10px);
+        }
+
+        .inner {
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            width: max-content;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        html,body{
+            height:auto
+        }
+        .site-statement {
+            text-align: center;
+            margin-bottom: -43px;
+        }
+        .site-statement hr {
+            margin: 0px;
+        }
+        #layout-footer .site-statement p {
+            font-size: 12px;
+            margin-bottom: 0px;
+            color: rgba(8,8,8,0.5);
+        }
+        #layout-footer .footer-content {
+            margin-bottom: 15px;
+        }
+        .crisp-client {
+            z-index: 1999;
+        }
+
+        .saasbox-footer-wrap  {
+            display: flex;
+            margin: 0 -16px;
+            padding: 0 16px;
+            column-gap: 10px;
+        }
+        
+        .saasbox-footer-wrap .footer-left {
+            width: 200px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .saasbox-footer-wrap .footer-middle {
+            display: grid;
+            flex-grow: 1;
+            width: 0;
+            column-gap: 10px;
+            grid-template-columns: repeat(4, max-content);
+            justify-content: space-between;
+        }
+
+
+
+        @media screen and (max-width: 1080px) {
+            .saasbox-footer-wrap .footer-middle {
+                grid-template-columns: repeat(3, max-content);
+            }
+        }
+
+
+        @media screen and (max-width: 920px){
+            .saasbox-footer-wrap .footer-middle {
+                grid-template-columns: repeat(2, max-content);
+            }
+        }
+
+
+        @media screen and (max-width: 768px){
+            .saasbox-footer-wrap .footer-middle {
+                grid-template-columns: repeat(1, max-content);
+            }
+
+            .saasbox-footer-wrap {
+                display: block;
+            }
+            .saasbox-footer-wrap .footer-left, .saasbox-footer-wrap .footer-middle {
+                width: 100%;
+            }
+        }
+
+        /* @media screen and (max-width: 576px){
+            
+            .saasbox-footer-wrap .footer-middle {
+                grid-template-columns: repeat(1, max-content);
+            }
+
+            .saasbox-footer-wrap {
+                display: block;
+            }
+            .saasbox-footer-wrap .footer-left, .saasbox-footer-wrap .footer-middle {
+                width: 100%;
+            }
+ 
+        } */
+
+        .saasbox-footer-wrap .footer-middle-item  .nav {
+            max-width: 300px;
+        }
+
+
+
+            </style>
+
+    <!-- Favicons -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-121710730-2'></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-121710730-2');
+            </script>    </head>
+
+
+<body class="">
+<style>
+    #saasbox-nav .saasbox-nav-banner {
+        height: 40px !important;
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        background: #FF9150;
+        z-index: 99999;
+    }
+
+    #saasbox-nav .saasbox-nav-banner .nav-banner-content {
+        text-align: center;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    #saasbox-nav .saasbox-nav-banner .nav-banner-close {
+        float: right;
+        margin-top: 11px;
+        margin-right: 11px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+    #saasbox-nav .nav-navbar .nav-item>.nav, .sbox-carousel-hover {
+        z-index: 100000;
+    }
+
+    #saasboxNavBanner .nav-banner-close .nav-banner-tooltip {
+        visibility: hidden;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 9px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 1;
+        font-size: 14px;
+    }
+
+    #saasboxNavBanner .nav-banner-close:hover .nav-banner-tooltip {
+        visibility: visible;
+    }
+
+    #saasboxNavBanner .nav-banner-tooltip-bottom {
+        top: 45px;
+        bottom: auto;
+        right: 6px;
+    }
+
+    nav.nav {
+        right: -40px;
+    }
+
+    #saasboxNavBanner .nav-banner-tooltip-bottom::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: 61px;
+        border-width: 4px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+    @media (min-width: 991.98px) {
+        #saasbox-nav .nav-navbar .nav-item>.nav {
+            display: none!important;
+        }
+        #saasbox-nav .nav-navbar .nav-item:hover>.nav {
+            display: block!important;
+        }
+    }
+
+    .over-navbar .navbar-toggler {
+        display: block;
+    }
+    .over-navbar .navbar-mobile {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        padding: 20px;
+        background-color: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        z-index: 1002; 
+    }
+    .over-navbar .nav-navbar .nav {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-left: 1.25rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0); 
+    }
+    .over-navbar .nav-height {
+        height: auto!important;
+        line-height: inherit!important;
+    }
+    .over-navbar .backdrop-navbar {
+        display: block!important;
+    }
+    .over-navbar .nav-item-carousel-pc {
+        display: none;
+    }
+    .over-navbar .nav-carousel-mobile {
+        display: block;
+    }
+    .over-navbar .navbar-mobile > * {
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+    .over-navbar .nav-actived .nav-link {
+        border: none!important;
+    }
+    .over-navbar .nav-item > .nav-link {
+        color: rgba(117,117,117,0.8)!important;
+        height: inherit!important;
+        line-height: inherit!important;
+        padding: 0.5rem!important;
+        margin: 0 !important;
+    }
+    .over-navbar .nav-item:hover .nav-link {
+        color: #555!important;
+    }
+    .over-navbar .nav-hover .nav-link {
+        border: none!important;
+    }
+    .over-navbar .nav-hover:hover .nav-link,.over-navbar .nav-actived .nav-link {
+        border: none!important;
+    }
+    .over-navbar .navbar-divider {
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0; 
+    }
+    .over-navbar .nav-navbar:not(.nav-inline) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%; }
+    .over-navbar .nav-navbar:not(.nav-inline) > .nav-item > .nav-link,
+    .over-navbar .nav-navbar:not(.nav-inline) > .nav-link {
+        min-height: inherit;
+        line-height: inherit;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        font-size: 0.95rem;
+        text-transform: none; 
+    }
+    .over-navbar .nav-navbar:not(.nav-inline) .arrow {
+        float: right;
+        margin-top: 12px;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg); 
+    }
+    .over-navbar .nav-navbar:not(.nav-inline) .nav-divider {
+        display: none; 
+    }
+    .over-navbar .nav-navbar:not(.nav-inline) > .nav-item > .nav {
+        display: none;
+        border-left: 1px dashed rgba(0, 0, 0, 0.08); 
+    }
+    .over-navbar .nav-navbar:not(.nav-inline) > .nav-item > .nav::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: -4px;
+        bottom: 15px;
+        border-left: 1px dashed rgba(0, 0, 0, 0.08);
+        display: none; 
+    }
+    .over-navbar .nav-navbar .nav.columns-2, .over-navbar .nav-navbar .nav.columns-3 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        min-width: 100%; 
+    }
+    .over-navbar .nav-navbar .nav.columns-2 > .nav-link,
+    .over-navbar .nav-navbar .nav.columns-2 > .nav-item, .over-navbar .nav-navbar .nav.columns-3 > .nav-link,
+    .over-navbar .nav-navbar .nav.columns-3 > .nav-item {
+        flex-basis: 100%; 
+    }
+    .over-navbar .nav-navbar .nav .nav-link {
+        padding-top: 0.375rem;
+        padding-bottom: 0.375rem;
+        font-size: 0.875rem; 
+    }
+    .over-navbar .d-mobile-none {
+        display: none !important; 
+    }
+    .over-navbar .d-mobile-block {
+        display: block !important; 
+    }
+    .over-navbar .d-mobile-flex {
+        display: -webkit-box !important;
+        display: flex !important; 
+    }
+    .over-navbar .d-mobile-inline-flex {
+        display: -webkit-inline-box !important;
+        display: inline-flex !important; 
+    }
+    .over-navbar .d-mobile-inline-block {
+        display: inline-block !important; 
+    }
+    .over-navbar .nav-item {
+        height: auto!important;
+    }
+    .over-navbar .nav-hover:hover,.over-navbar .nav-type-button:hover {
+        background: #f5f5f5; 
+    }
+    .over-navbar .nav-item:hover .nav-link{
+        color: #555;
+    }
+    .over-navbar .nav-item > .nav-link .arrow {
+        border-top: 3px solid rgba(117, 117, 117, 0.8)!important;
+    }
+    .over-navbar .nav-type-button .vertical-align-middle {
+        transform: inherit;
+        position: inherit;
+        top: inherit;
+    }
+    .over-navbar .nav-type-button .saasbox-btn {
+        border: inherit !important;
+        color: inherit !important;
+        border-radius: inherit !important;
+        padding: 0 !important;
+        line-height: inherit !important;
+        background-color: inherit !important;
+    }
+    .over-navbar .nav-type-icon > div {
+        color: inherit !important;
+    }
+    .over-navbar .nav-type-icon > div > .arrow {
+        border-top: 3px solid rgba(117, 117, 117, 0.8)!important;
+    }
+</style>
+<!-- Navbar -->
+<nav id="saasbox-nav" class="navbar navbar-expand-lg navbar-light navbar-stick-dark">
+    <div class="container saasbox-container">
+
+        <div class="navbar-left">
+            <button class="navbar-toggler" type="button">&#9776;</button>
+            <a class="navbar-brand" href="/">
+                <img class="logo-dark" src="https://zbase-global.zingfront.com/saasbox/product/icon/a94bf420b38006deb784af1f6dc3e703.png" alt="BigSpy - logo">
+                <img class="logo-light" src="https://zbase-global.zingfront.com/saasbox/product/icon/a94bf420b38006deb784af1f6dc3e703.png" alt="BigSpy - logo">
+            </a>
+        </div>
+
+        <section class="navbar-mobile">
+                        <span class='navbar-divider d-mobile-none'></span>            <ul class="nav nav-navbar nav-height">
+                <li class='nav-item nav-hover'  style='height:40px;'>
+        <a class='nav-link nav-type-text' href='https://bigspy.com/' style='margin-left: 20px; margin-right: 20px;'>Home</a>
+        
+    </li><li class='nav-item'  style='height:40px;'>
+        <span class='nav-link nav-type-text' style='margin-left: 20px; margin-right: 20px;;cursor: pointer;'>AdSpy <span class='arrow'></span></span>
+        <nav class='nav'><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/facebook/?app_type=3'>Facebook AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/admob/?app_type=3'>AdMob AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/tiktok/?app_type=3'>TikTok AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/instagram/?app_type=3'>Instagram AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/youtube/?app_type=3'>YouTube AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/twitter/?app_type=3'>Twitter AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/pinterest/?app_type=3'>Pinterest AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/yahoo/?app_type=3'>Yahoo AdSpy</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adspy/unity/?app_type=3'>Unity AdSpy</a></li></nav>
+    </li><li class='nav-item'  style='height:40px;'>
+        <span class='nav-link nav-type-text' style='margin-left: 20px; margin-right: 20px;;cursor: pointer;'>Features <span class='arrow'></span></span>
+        <nav class='nav'><li style='position: relative;' class='second_level'><a class='nav-link' href='/page-analysis?app_type=3&data_type=1'>Facebook Page</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/page-analysis?app_type=3&data_type=2'>Google Page</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/page-analysis?app_type=3&data_type=3'>TikTok Page</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/page-analysis?app_type=3&data_type=4'>Domain Analysis</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/tiktok?app_type=3'>TikTok Creatives</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/tiktok-shop?app_type=3'>TikTok Shop</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/adideas/facebook?app_type=3'>Ad Ideas</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/ecom-top-creative?app_type=3'>Top Charts</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/ecom-new-creative?app_type=3'>New Trending</a></li></nav>
+    </li><li class='nav-item nav-hover nav-actived'  style='height:40px;'>
+        <a class='nav-link nav-type-text' href='/pricing' style='margin-left: 20px; margin-right: 20px;'>Pricing</a>
+        
+    </li><li class='nav-item'  style='height:40px;'>
+        <span class='nav-link nav-type-text' style='margin-left: 5px; margin-right: 5px;;cursor: pointer;'>Resource <span class='arrow'></span></span>
+        <nav class='nav'><li style='position: relative;' class='second_level'><a class='nav-link' href='/tutorial'>Tutorials</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/blog'>Blog</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='/tools'>Tools</a></li></nav>
+    </li>            </ul>
+
+            <ul class="nav nav-navbar nav-right ml-auto nav-height">
+                <li class='nav-item'  style='height:40px;'>
+        <span class='nav-link nav-type-text' style='margin-left: 5px; margin-right: 5px;;cursor: pointer;'>EN <span class='arrow'></span></span>
+        <nav class='nav'><li style='position: relative;' class='second_level'><a class='nav-link' href='javascript:void(0);' onclick='switchLanguage("en")'>English</a></li><li style='position: relative;' class='second_level'><a class='nav-link' href='javascript:void(0);' onclick='switchLanguage("cn")'>中文（简体）</a></li></nav>
+    </li>                <li class='nav-item'  style='height:40px;'>
+        <a class='nav-link nav-type-button' href='/user/login' style='margin-left: 10px; margin-right: 10px;'><div class='saasbox-btn vertical-align-middle' style='border: 1px solid #5A5AF3; color: #FFFFFF; border-radius: 5px; padding:10px 15px; line-height: 1; background-color: #5A5AF3;;' >Login</div></a>
+        
+    </li><li class='nav-item nav-hover'  style='height:40px;'>
+        <a class='nav-link nav-type-text' href='/user/register' style='margin-left: 5px; margin-right: 5px;'>Register</a>
+        
+    </li>            </ul>
+        </section>
+        <div class="nav-carousel-mobile"></div>    </div>
+    <div id="saasboxNavBanner" class="saasbox-nav-banner" style="display: none;"></div>
+</nav>
+<!-- /.navbar -->
+<div class="layout-container" id="mainContent">
+    
+<style>
+    .iframeBox {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 60px);
+        border: 0;
+    }
+
+    #layout-footer, #iframe-transfer-content iframe, .load-tip-box {
+        display: none;
+    }
+
+    .load-tip-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .load-tip-box img {
+        display: block;
+        margin: 0 auto;
+    }
+    .load-tip-box p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .load-tip-btn {
+        display: block;
+        width: 100px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        background: #1890ff;
+        border: 1px solid #1890ff;
+        text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+        -webkit-box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+        box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+        border-radius: 4px;
+    }
+    .load-tip-btn:hover {
+        color: #fff;
+        background: #40a9ff;
+        border-color: #40a9ff;
+    }
+
+    .iframe-loading {
+        position: fixed;
+        top: 50%;
+        width: 100%;
+        margin-top: -200px;
+        text-align: center;
+    }
+    .iframe-loading .circular {
+        height: 60px;
+        width: 60px;
+        -webkit-animation: loading-rotate 2s linear infinite;
+        animation: loading-rotate 2s linear infinite;
+    }
+    .iframe-loading .path {
+        -webkit-animation: loading-dash 1.5s ease-in-out infinite;
+        animation: loading-dash 1.5s ease-in-out infinite;
+        stroke-dasharray: 90,150;
+        stroke-dashoffset: 0;
+        stroke-width: 2;
+        stroke: #1978da;
+        stroke-linecap: round;
+    }
+    @-webkit-keyframes loading-rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes loading-rotate{
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes loading-dash{
+        0% {
+            stroke-dasharray: 1,200;
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dasharray: 90,150;
+            stroke-dashoffset: -40px;
+        }
+        100% {
+            stroke-dasharray: 90,150;
+            stroke-dashoffset: -120px;
+        }
+    }
+    @keyframes loading-dash{
+        0% {
+            stroke-dasharray: 1,200;
+            stroke-dashoffset: 0;
+        }
+        50% {
+            stroke-dasharray: 90,150;
+            stroke-dashoffset: -40px;
+        }
+        100% {
+            stroke-dasharray: 90,150;
+            stroke-dashoffset: -120px;
+        }
+    }
+</style>
+<div id="iframe-transfer" data-token="JWT_REDACTED" data-target="https://bigspy.com/iframe/pricing" data-url="https://bigspy.com/user/iframe/transfer"
+     type="text/javascript"></div>
+<div id="iframe-transfer-content"></div>
+<div class="iframe-loading">
+    <svg viewBox="25 25 50 50" class="circular">
+        <circle cx="50" cy="50" r="20" fill="none" class="path"></circle>
+    </svg>
+</div>
+<div class="load-tip-box">
+    <img src="http://static-global.zingfront.com/common/img/empty.svg" alt="">
+    <p style="">Request timed out, please refresh the page and try again.</p>
+    <a href="javascript: window.location.reload();" class="load-tip-btn">Refresh Now</a>
+</div>
+<script charset="utf-8" src="https://zbase-global.zingfront.com/zbase/js/iframe-transfer-layout.js"
+        type="text/javascript"></script>
+<script src="https://static-global.zingfront.com/common/js/jszip.js"></script>
+<script src="https://static-global.zingfront.com/common/js/fileSaver.js"></script>
+<script>
+    var inUrlList = "";
+    var inUrlListAdideas = "";
+    var inUrlListUser = "";
+    var user_id = "";
+    function getNowFormatDate() {
+        let date = new Date();
+        let month = date.getMonth() + 1;
+        let strDate = date.getDate();
+        if (month >= 1 && month <= 9) {
+            month = '0' + month;
+        }
+        if (strDate >= 0 && strDate <= 9) {
+            strDate = '0' + strDate;
+        }
+        let currentdate = date.getFullYear() + '-' + month + '-' + strDate;
+        return currentdate;
+    };
+    function num() {
+        let mm = Math.random();
+        let six = '';
+        if (mm > 0.1) {
+            six = Math.round(mm * 1000000);
+        } else {
+            mm += 0.1;
+            six = Math.round(mm * 1000000);
+        }
+        return six;
+    };
+    function getExtension(fileName) {
+        return fileName.includes('.') ? `.${fileName.split('.').pop()}` : ''
+    };
+    function asyncPool(dataItem,poolLimit, array, getFile) {
+        // let downloadData = []
+        // if ( window.localStorage.getItem('downloadData')) {
+        //     downloadData = JSON.parse(window.localStorage.getItem('downloadData'));
+        // } else {
+        //     window.localStorage.setItem('downloadData',JSON.stringify([]));
+        // }
+        let i = 0;
+        let ret = []; // 存储所有的异步任务
+        let executing = []; // 存储正在执行的异步任务
+        let zip = new JSZip();
+        let cache = {};
+        let numcount = 0;
+        let enqueue = function () {
+            if (i === array.length) {
+            return Promise.resolve();
+            }
+            let item = array[i++]; // 获取新的任务项
+            let p = Promise.resolve().then(() => getFile(item.url).then(data => {
+                let arr = item.url.split('/');
+                let arrType = arr[arr.length - 1].split('.')[1];
+                let file_name =  (dataItem.advertiser_name ? dataItem.advertiser_name.split('.').join('') : dataItem.advertiser_id.split('.').join('')) + (dataItem.ad_width ? '-' + dataItem.ad_width +' X ' +  dataItem.ad_height : '') + '-' + getNowFormatDate() + '-' + num() + (item.domain == 1 ? '-' + 'Main Ads' : '') + '.' + arrType;
+                zip.file(file_name, data, { binary: true });
+                cache[file_name] = data;
+                let oneNum = (100 / array.length).toFixed(2)
+                numcount += oneNum * 1;
+                if (numcount == 100) {
+                    numcount = 99
+                }
+                // dataItem.downloadNumber += oneNum * 1
+                // if (downloadData != '') {
+                //     for (let i = 0; i < downloadData.length; i++) {
+                //         if (downloadData[i].ad_key == dataItem.ad_key) {
+                //             downloadData[i].downloadCount = dataItem.downloadNumber;
+                //             window.localStorage.setItem('downloadData',JSON.stringify(downloadData));
+                //             break;
+                //         } else if (i == downloadData.length -1 && downloadData[i].ad_key != dataItem.ad_key) {
+                //             downloadData.push({
+                //                 ad_key: dataItem.ad_key,
+                //                 downloadCount: dataItem.downloadNumber
+                //             })
+                //             window.localStorage.setItem('downloadData',JSON.stringify(downloadData));
+                //         }
+                //     }
+                // } else {
+                //     downloadData.push({
+                //         ad_key: dataItem.ad_key,
+                //         downloadCount: dataItem.downloadNumber
+                //     })
+                //     window.localStorage.setItem('downloadData',JSON.stringify(downloadData));
+                // }
+                document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'downloadNum',number:numcount}, '*');
+            }));
+            ret.push(p);
+
+            let r = Promise.resolve();
+
+            // 当poolLimit值小于或等于总任务个数时，进行并发控制
+            if (poolLimit <= array.length) {
+            // 当任务完成后，从正在执行的任务数组中移除已完成的任务
+            let e = p.then(() => executing.splice(executing.indexOf(e), 1));
+            executing.push(e);
+            if (executing.length >= poolLimit) {
+                r = Promise.race(executing);
+            }
+            }
+
+            // 正在执行任务列表 中较快的任务执行完成之后，才会从array数组中获取新的待办任务
+            return r.then(() => enqueue());
+        };
+        return enqueue().then(() => Promise.all(ret).then(() => {
+            zip.generateAsync({ type: 'blob' }).then(content => {
+                            // 生成二进制流
+                            // FileSaver.saveAs(content, '文件下载.zip') // 利用file-saver保存文件  自定义文件名
+                 saveAs( (dataItem.advertiser_name ? dataItem.advertiser_name.split('.').join('') : dataItem.advertiser_id.split('.').join(''))  + '-' + getNowFormatDate() + '-' + num(), content);
+                //saveAs(content, (dataItem.advertiser_name ? dataItem.advertiser_name.split('.').join('') : dataItem.advertiser_id.split('.').join(''))  + '-' + getNowFormatDate() + '-' + num()); // 利
+                //用file-saver保存文件  自定义文件名
+                document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'downloadNum',number: 100}, '*');
+                document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'isDownloadAllTwo'}, '*');
+            });    
+            }));
+    }
+    function saveAs( name, blob ) {
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.download = name || Math.random();
+        a.href = blobUrl;
+        a.click();
+        URL.revokeObjectURL(blob);
+    }
+    function handleDownload(dataItem, arr) {
+        let zip = new JSZip();
+        let cache = {};
+        let promises = [];
+        arr.forEach(item => {
+    
+            let promise = this.getFile(item.url).then(data => {
+                let arr = item.url.split('/');
+                let arrType = arr[arr.length - 1].split('.')[1];
+                let file_name =  (dataItem.advertiser_name ? dataItem.advertiser_name.split('.').join('') : dataItem.advertiser_id.split('.').join('')) + (dataItem.ad_width ? '-' + dataItem.ad_width + ' X ' +  dataItem.ad_height : '') + '-' + getNowFormatDate() + '-' + num() + (item.domain == 1 ? '-' + 'Main Ads' : '') + '.' + arrType;
+                zip.file(file_name, data, { binary: true });
+                cache[file_name] = data;
+            });
+            promises.push(promise);
+        });
+        Promise.all(promises).then(() => {
+            zip.generateAsync({ type: 'blob' }).then(content => {
+                // 生成二进制流
+                // FileSaver.saveAs(content, '文件下载.zip') // 利用file-saver保存文件  自定义文件名
+                saveAs(content, (dataItem.advertiser_name ? dataItem.advertiser_name.split('.').join('') : dataItem.advertiser_id.split('.').join(''))  + '-' + getNowFormatDate() + '-' + num()); // 利用file-saver保存文件  自定义文件名
+            });
+            // this.isDownloadAllTwo = false;
+            document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'isDownloadAllTwo'}, '*');
+        });
+    // this.isDownloadAllTwo = false;
+    };
+    function getFile(url) {
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                method: 'get',
+                url,
+                responseType: 'blob'
+                // responseType: 'arraybuffer'
+            })
+                .then(data => {
+                    resolve(data);
+                })
+                .catch(error => {
+                    reject(error.toString());
+                });
+        });
+    };
+    $(document).ready(function () {
+        let isIframeLoad = false;
+        let iframeTimeout = false;
+        window.addEventListener('message', function (e) {
+            let data = e.data;
+            if (data.message_type == 'iframeLoad' && data.status == 200) {
+                isIframeLoad = true;
+                $('.iframe-loading').hide();
+                if(!iframeTimeout) {
+                    $('#iframe-transfer-content iframe').show();
+                }
+            }
+            // sendGA
+            if (data.message_type == 'sendGA') {
+                if (data.label) {
+                    gtag('event', data.handle, { event_category: data.category, event_label: data.label });
+                } else {
+                    gtag('event', data.handle, { event_category: data.category });
+                }
+            }
+            // reload
+            if (data.message_type == 'iframeReload') {
+                window.location.reload();
+            }
+            // login
+            if (data.message_type == 'smbLogout') {
+                window.location.href = '/user/login';
+            }
+            // sign
+            if (data.message_type == 'smbRegister') {
+                window.location.href = '/user/register';
+            }
+            // href url
+            if (data.message_type == 'iframeJump' && data.url) {
+                window.location.href = data.url;
+            }
+            // zbase
+            if (data.message_type == 'smbPopup' && data.code) {
+                callZbasePopupOpen(data.code);
+            }
+            // sassbox nav banner
+            if (data.message_type == 'openSaasboxNavBanner') {
+                saasboxOpenNavBanner(data.placeholder1);
+            }
+            //sassbox nav height
+            if (data.message_type == 'smbNavHeight' && data.tab) {
+                $('.nav-hover').removeClass('nav-actived');
+                $(`.nav-hover a[href= '${data.tab}']`)
+                    .parent()
+                    .addClass('nav-actived'); //导航栏选中
+            }
+            //ga
+            if (data.message_type == 'gtag') {
+                gtag('event', data.type ? data.type : '', {
+                    event_category: data.event_category, 
+                    event_label: data.event_label,
+                    value: data.value ? data.value : ''
+                });
+            }
+            if (data.message_type == 'contactUs') {
+                if (typeof ssq !== 'undefined' && ssq !== null) {
+                    ssq.push('chatOpen');
+                } else {
+                    $crisp.push(['do', 'chat:open']);
+                }
+            }
+
+            if (data.message_type == 'downAds') {
+                data.data.resource_urls.map((item, index) => {
+                    let xhr = new XMLHttpRequest();
+                    if (data.activeCard && data.activeCard == 2) {
+                        xhr.open('get', data.data.html_url);
+                    } else {
+                        if (item.type == 1) {
+                            xhr.open('get', item.image_url);
+                        } else {
+                            xhr.open('get', item.video_url);
+                        }
+                    }
+                    xhr.responseType = 'blob';
+                    xhr.onload = (e) => {
+                        let mp4 = xhr.response;
+                        let mu = URL.createObjectURL(mp4);
+                        let doc = document;
+                        let a = doc.createElement('a');
+                        a.href = mu;
+                        a.download =
+                              (data.data.advertiser_name
+                                ? data.data.advertiser_name.split('.').join('')
+                                : data.data.advertiser_id.split('.').join('')) +
+                            (data.data.ad_width
+                                ? '-' + data.data.ad_width + ' X ' + data.data.ad_height
+                                : '') +
+                            '-' +
+                            getNowFormatDate() +
+                               '-' +
+                            num() +
+                            (data.imgData.length > 0 ? '-' + 'Main Ads' : '') +
+                       
+                            getExtension(e.target.responseURL);
+                        a.click();
+                        // this.isDownload = false;
+                        document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'isDownload'}, '*');
+                    };
+                    xhr.send();
+                });
+            }
+            if (data.message_type == 'downAdsOne') {
+
+                let xhr = new XMLHttpRequest();
+                if (data.data.resource_urls[data.activeIndex].video_url) {
+                    xhr.open('get', data.data.resource_urls[data.activeIndex].video_url);
+                } else {
+                    xhr.open('get', data.data.resource_urls[data.activeIndex].image_url);
+                }
+                xhr.responseType = 'blob';
+                xhr.onload = (e) => {
+                    let mp4 = xhr.response;
+                    let mu = URL.createObjectURL(mp4);
+                    let doc = document;
+                    let a = doc.createElement('a');
+                    a.href = mu;
+                    a.download =   
+                            (data.data.advertiser_name
+                            ? data.data.advertiser_name.split('.').join('')
+                            : data.data.advertiser_id.split('.').join(''))+                   
+                        (data.data.ad_width
+                            ? '-' + data.data.ad_width + ' X ' + data.data.ad_height
+                            : '') +
+                        '-' +
+                        getNowFormatDate() +
+                          '-' +
+                        num() +
+                        (data.imgData.length > 0 ? '-' + 'Main Ads' : '') +
+              
+                        getExtension(e.target.responseURL);
+                        
+                    a.click();
+                    // this.isDownload = false;
+                    document.getElementById('zbaseiframe').contentWindow.postMessage({ data: 'isDownload'}, '*');
+                };
+                xhr.send();
+            }
+            if (data.message_type == 'xhrAjax') {
+                this.asyncPool(data.data, 5 , data.arr, this.getFile);
+            }
+        }, false);
+        let timer30 = setTimeout(() => {
+            if(!isIframeLoad) {
+                iframeTimeout = true;
+                $('.iframe-loading').hide();
+                $('.load-tip-box').show();
+                gtag('event', 'load', { event_category: 'iframe_load', event_label: 'iframe_load_timeout' });
+            }
+            clearTimeout(timer30);
+        }, 30000);
+        $('#layout-footer a').click(function (e) {
+            if(e.preventDefault) {
+                e.preventDefault();
+            } else {
+                window.event.returnValue == false;
+            }
+            let url = $(this).attr('href');
+            if (url.indexOf(document.domain) != -1 || url[0] == '/') {
+                window.parent.postMessage({ message_type: 'iframeJump', url: url }, '*');
+            } else {
+                window.open(url);
+            }
+        })
+    });
+</script>
+</div>
+<style>
+    #pay_unpaid_invoice {
+        z-index: 2000;
+        border-radius: 8px;
+        width: 380px;
+        height: auto;
+        /*height: 200px;*/
+        top: 80px;
+        right: 20px;
+        background-repeat: no-repeat;
+        background-position: 5px 5px;
+        animation: slip_left_in;
+        animation-duration: 1.5s;
+        display: flex;
+        flex-direction: row;
+        padding: 14px 26px 14px 13px;
+        box-sizing: border-box;
+        border: 1px solid #ebeef5;
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+        transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
+        overflow: hidden;
+    }
+
+    @keyframes slip_left_in {
+        0% {
+            right: -380px;
+            top: 80px;
+        }
+        100% {
+            right: 20px;
+            top: 80px;
+        }
+    }
+
+    #pay_lasted_invoice_button {
+        border-radius: 5px;
+        border: none;
+        color: white;
+        width: 100px;
+        background-color: #67c23a;
+        margin-left: 50px;
+        margin-top: 7px;
+        height: 28px;
+        line-height: 1;
+    }
+
+    #cancel_pay_invoice_button {
+        border-radius: 5px;
+        border: none;
+        color: white;
+        width: 100px;
+        background-color: #F56C6C;
+        margin-left: 100px;
+        margin-top: 7px;
+        height: 28px;
+        line-height: 1;
+    }
+
+    #pay_invoice {
+        display: flex;
+    }
+
+    #pay_invoice_left_top {
+        width: 20%;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    #pay_invoice_right_top {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-top: 5px;
+    }
+
+    #pay_invoice_button {
+        width: 100%;
+        /*border-top-style: solid;*/
+        /*border-top-color: #dadce0;*/
+    }
+
+    #pay_lastest_success {
+        /*background-color: cornflowerblue;*/
+    }
+
+    #pay_invoice_close:hover {
+        background: #f4f4f4;
+        background-image: -webkit-linear-gradient(top, #f4f4f4, white);
+        background-image: -moz-linear-gradient(top, #f4f4f4, white);
+        background-image: -ms-linear-gradient(top, #f4f4f4, white);
+        background-image: -o-linear-gradient(top, #f4f4f4, white);
+        background-image: linear-gradient(to bottom, #f4f4f4, white);
+        text-decoration: none;
+    }
+
+</style>
+<script>
+    // 跳转到未完成的支付页面
+    function jumpToInvoice() {
+        // 初始化用户
+        var user_info = {
+            'id': '',
+            'email': '',
+            'registered_at': ''
+        };
+        var user_action = {
+            'user_action': 12,
+            'action_type': 1,
+            'user_info': user_info
+        };
+        // $('#pay_unpaid_invoice').css('display','none');
+        $.ajax({
+            type: "POST",
+            url: "/user/default/save-renew-popup-action",
+            async: true,
+            data: {
+                'user_action': user_action,
+                'product_mark': ''
+            },
+            success(res) {
+                if (res.code == 100000) {
+                    window.open("");
+                }
+            }
+        });
+    }
+
+    // 点击取消，不再弹出支付页面
+    function cancelJumpPayInvoice() {
+        $('#pay_unpaid_invoice').css('display', 'none');
+        // 初始化用户
+        var user_info = {
+            'id': '',
+            'email': '',
+            'registered_at': ''
+        };
+        var user_action = {
+            'user_action': 14,
+            'action_type': 1,
+            'user_info': user_info
+        };
+        // $('#pay_unpaid_invoice').css('display','none');
+        $.ajax({
+            type: "POST",
+            url: "/user/default/save-renew-popup-action",
+            async: true,
+            data: {
+                'user_action': user_action,
+                'product_mark': ''
+            },
+            success(res) {
+            }
+        });
+        // 关闭弹窗之后写入用户行为数据，是否需要异步写入
+        // user_action = 11 弹窗弹出 12 点击订阅，13 取消订阅 14 关闭弹窗
+    }
+
+    // 点击取消订阅
+    function cancelUserPayInvoice() {
+        // 初始化用户
+        var user_info = {
+            'id': '',
+            'email': '',
+            'registered_at': ''
+        };
+        var user_action = {
+            'user_action': 13,
+            'action_type': 1,
+            'user_info': user_info
+        };
+        $.ajax({
+            type: "POST",
+            url: "/pay/default/cancel-old-sub",
+            async: true,
+            data: {
+                "stripe_sub": '',
+            },
+            success(res) {
+                if (res.code == 100000) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/default/save-renew-popup-action",
+                        async: true,
+                        data: {
+                            'user_action': user_action,
+                            'product_mark': ''
+                        },
+                        success(res) {
+                            if (res.code == 100000) {
+                                // 将弹窗关闭
+                                $('#pay_unpaid_invoice').css('display', 'none');
+                            }
+                        }
+                    });
+                } else {
+                    $('#cancelUserPayInvoiceTipId').css('display','block');
+                    document.getElementById('cancelUserPayInvoiceTipId').innerHTML = res.message
+                }
+            }
+        });
+    }
+</script>
+
+                <div id="g_id_onload"
+            data-client_id="826350193634-cn0f9ounnevqh5lggdupt3j3epuljdfi.apps.googleusercontent.com"
+            data-context="signin"
+            data-callback="handleCredentialResponse">
+        </div>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+    // 新版谷歌登录callback函数 拼接GA分析参数
+    function handleCredentialResponse(res) {
+        let ga_cid = getGACid();
+        let data = {ga_cid: ga_cid};
+        let state = btoa(encodeURIComponent(JSON.stringify(data)));
+        $.ajax({
+                type: "POST",
+                url: "/user/default/new-google-callback",
+                async: true,
+                data: {
+                    "JWT": res,
+                    "state": state
+                },
+                success(res) {
+                    if (res.code == 100000) {
+                        // 向quora pixel同步用户注册事件
+                        if (res.data.is_register) {
+                            if (typeof qp === "function") {
+                                qp('track', 'CompleteRegistration');
+                            }
+                            // 向ga发送谷歌注册事件
+                            if (typeof gtag === "function") {
+                                gtag('event', 'google_register', {
+                                    'event_category': 'google_register',
+                                    'label': 'google_register_label',
+                                    'method': 'Google'
+                                });
+                            }
+                        }
+                        // 向ga发送谷歌登录事件
+                        if (typeof gtag === "function") {
+                            gtag('event', 'google_login', {
+                                'event_category': 'google_login',
+                                'label': 'google_login_label',
+                                'method': 'Google'
+                            });
+                        }
+
+                        if(res.data && res.data.url && res.data.url != "/"){
+                            window.location.href = res.data.url;
+                        } else {
+                            window.location.reload();
+                        }
+                    } else {
+                        if (res.data && res.data.url) {
+                            window.location.href = res.data.url;
+                        } else {
+                            window.location.href = '/user/login';
+                        }
+                    }
+                }
+            });
+    };
+    var overWidth = 992;
+    //  判断nav内容是否溢出，溢出切换为移动端样式
+    function navChange() {
+        var navWrap = document.querySelector('#saasbox-nav');
+        var navWidth = navWrap.clientWidth;
+        var navScrollWidth = navWrap.scrollWidth;
+        if (navWidth > 991 && navWidth < 1280 && navScrollWidth - navWidth > 0) {
+            document.body.clientWidth > overWidth ? overWidth = document.body.clientWidth : '';
+            $(navWrap).addClass('over-navbar');
+        } else {
+            if (document.body.clientWidth > overWidth || document.body.clientWidth< 992 || navWidth > 1280) {
+                $(navWrap).removeClass('over-navbar');
+            }
+        }
+    };
+    $('#saasbox-nav').ready(function(){
+        navChange();
+    });
+    $(window).resize(function() {
+        navChange();
+    });
+    window.saasboxOpenNavBanner = function (placeholder1 = '', placeholder2 = '', placeholder3 = '') {
+        var banner_cookie_name = 'saasboxNavBanner';
+        var banner_cookie = getCookie(banner_cookie_name);
+        var saasbox_language = "en-US";
+        if (banner_cookie) {
+            return;
+        }
+        var banner_config = {"active":true,"is_closed":true,"text_color":"#FFFFFF","background_color":"#FF9150","nav_banner_height":100,"content":"[%placeholder1%] queries available today\uff01 <a style = \"color: #FFFFFF;text-decoration: underline;\" href=\"https:\/\/bigspy.com\/pricing\">Upgrade Plan<\/a>"};
+        var banner_height = banner_config.nav_banner_height;
+        if (banner_config.length === 0) {
+            return;
+        }
+        if (banner_config.active !== true) {
+            return;
+        }
+        var banner_element = document.getElementById(banner_cookie_name);
+        var content = banner_config.content.replace('[%placeholder1%]', placeholder1);
+        content = content.replace('[%placeholder2%]', placeholder2);
+        content = content.replace('[%placeholder3%]', placeholder3);
+        if (banner_config.is_closed) {
+            var tooltip_text = 'Do not prompt today';
+            if (saasbox_language == 'zh-CN') {
+                tooltip_text = '今日不再提示';
+            }
+            content += '<i class="fa fa-times nav-banner-close" aria-hidden="true" onclick="saasboxCloseNavBanner()"><span class="nav-banner-tooltip nav-banner-tooltip-bottom">' + tooltip_text + '</span></i>';
+        }
+        content = '<p class="nav-banner-content">' + content + '</p>';
+        banner_element.innerHTML = content;
+        banner_element.style.display = "";
+        var layout_container = document.getElementById("mainContent");
+        layout_container.style.marginTop = banner_height + 'px';
+    };
+
+    window.saasboxCloseNavBanner = function () {
+        var banner_cookie_name = 'saasboxNavBanner';
+        var banner_element = document.getElementById(banner_cookie_name);
+        banner_element.style.display = "none";
+        var layout_container = document.getElementById("mainContent");
+        layout_container.style.marginTop = '';
+        setCookie(banner_cookie_name, banner_cookie_name, 1)
+    };
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+</script>
+<script type="text/javascript" src="https://zbase-global.zingfront.com/zbase/js/zbase-fingerprint.js">
+</script>
+<script>
+    //处理是否需要生成匿名用户的id,用于记录用户行为日志
+    function handleCookieAnonymousUserId() {
+        var cookie_expire_days = 3;
+        //从cookie取值，是否是该用户第一次访问
+        var is_first_visit = getCookie("is_first_visit");
+        //表示是第一次访问
+        if (is_first_visit == "true") {
+            var fp = new Fingerprint2();
+            fp.get(function(result) {
+                var anonymous_user_id = result;
+                
+                //设置anonymous_user_id到cookie中
+                document.cookie = "anonymous_user_id="+anonymous_user_id;
+                //从cookie中读取first_visit_path,通过ajax模拟调用一次
+                var first_visit_path = getCookie("first_visit_path");
+                if ("" != first_visit_path){
+                    //通过ajax的方式模拟调用一次
+                    first_visit_path = unescape(first_visit_path)                    
+                    $.ajax({
+                        type: "GET",
+                        url: first_visit_path,
+                        async: true,
+                        data: {
+                        },
+                        success(res) {
+                        },
+                        error(error){
+                        }
+                    });
+                }
+            });
+        }
+        //表示业务侧后端代码，没有记录用户通过渠道来的用户信息,生成匿名用户id即可
+        else if (is_first_visit == "") {
+            var fp = new Fingerprint2();
+            fp.get(function(result) {
+                var anonymous_user_id = result;
+                //设置anonymous_user_id到cookie中
+                document.cookie = "anonymous_user_id="+anonymous_user_id;
+                //设置is_first_visit到cookie中
+                document.cookie = "is_first_visit=true";
+            });
+        }
+        //表示用户不是第一次访问，不需要任何操作
+        else {
+        }
+    }
+    //默认调用
+    handleCookieAnonymousUserId();
+
+</script>
+<!-- Footer -->
+<footer id="layout-footer" class="footer bg-gray py-7">
+    <div class='footer-content'>
+        <div class='container saasbox-container'>
+        <div class='saasbox-footer-wrap'>
+            
+        <div class='footer-left'>
+            <div>
+                <a href='/'>
+                    <img src='https://zbase-global.zingfront.com/saasbox/product/icon/a94bf420b38006deb784af1f6dc3e703.png' alt='BigSpy - logo' class='footer-logo'>
+                </a>
+                <p>The Largest Ads Database.<br/>The NO.1 AD SPY & AD Finder & Ad Library Tool<br/><br/>For Business Cooperation：<br/>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="046a657065686d6144666d6377747d2a676b69">[email&#160;protected]</a></p>
+            </div>
+            <div class='dropup open-on-hover' style='padding-bottom: 10px;'> <span class='dropdown-toggle' data-toggle='dropdown'>English</span><div class='dropdown-menu'><button style="cursor: pointer;" class="dropdown-item" onclick="switchLanguage('cn')">中文(简体)</button><button style="cursor: pointer;" class="dropdown-item" onclick="switchLanguage('en')">English</button></div></div>
+        </div>
+    
+            <div class='col-6 col-md-6 col-xl-6 flex-wrap' style='display: inline-flex;justify-content: space-between;'><div style='margin:0 10px;'><h6 class='mb-4 mt-1'><strong>FEATURES</strong></h6><div class='nav flex-column' style='white-space: nowrap;'><a class='nav-link' href='/facebook-adspy' target='_blank' rel='nofollow'>Facebook AdSpy</a><a class='nav-link' href='/youtube-adspy ' target='_blank' rel='nofollow'>YouTube AdSpy</a><a class='nav-link' href='/adspy/admob/' target='_blank' rel='nofollow'>Google AdSpy</a><a class='nav-link' href='/tiktok-adspy' target='_blank' rel='nofollow'>TikTok Adspy</a><a class='nav-link' href='/adspy/unity/' target='_blank' rel='nofollow'>Unity AdSpy</a><a class='nav-link' href='https://bigspy.com/tiktok-ad-library' target='_blank' rel='nofollow'>TikTok Ad Library</a><a class='nav-link' href='https://bigspy.com/tools'>Toolbox</a></div></div><div style='margin:0 10px;'><h6 class='mb-4 mt-1'><strong>COOPERATION</strong></h6><div class='nav flex-column' style='white-space: nowrap;'><a class='nav-link' href='https://bigspy.com/blog' target='_blank'>Blog</a><a class='nav-link' href='https://bigspy.com/tutorial' target='_blank'>Tutorial</a><a class='nav-link' href='https://bigspy.com/write-for-us' target='_blank'>Write For Us</a><a class='nav-link' href='https://bigspy.com/webinar-page' target='_blank'>Webinars</a><a class='nav-link' href='https://bigspy.com/events' target='_blank'>Events</a><a class='nav-link' href='https://bigspy.com/affiliate' target='_blank'>Affiliate Program</a><a class='nav-link' href='https://bigspy.com/affiliate-agreement' target='_blank'>Affiliate Agreement</a></div></div><div style='margin:0 10px;'><h6 class='mb-4 mt-1'><strong>ABOUT US</strong></h6><div class='nav flex-column' style='white-space: nowrap;'><a class='nav-link' href='/faq' target='_blank'>FAQ</a><a class='nav-link' href='https://bigspy.com/privacy' target='_blank'>Privacy</a><a class='nav-link' href='https://bigspy.com/terms' target='_blank'>Terms</a><a class='nav-link' href='https://bigspy.com/refund-policy' target='_blank'>Refund Policy</a><a class='nav-link' href='/cn'>简体中文[CN]</a><a class='nav-link' href='/br'>Português [BR]</a><a class='nav-link' href='/vn'>Tiếng Việt [VN]</a><a class='nav-link' href='/jp'>日本語[JP]</a></div></div></div>
+            <div ><div class='social-btn-container'><a class='nav-link nav-type-button' href='https://www.tiktok.com/@bigspyofficial' style='margin-left: 5px; margin-right: 5px;'><div class='saasbox-btn vertical-align-middle' style='border: 1px solid #FAFAFA; color: #757575; border-radius: 5px; padding:5px 5px; line-height: 1; background-color: #FAFAFA;;' >BigSpy TikTok</div></a></div>
+                <div class='social social-bordered'>
+                    
+            <a href='https://twitter.com/BigSpyOfficial' target='_blank' rel='nofollow'>
+                <i class='fa fa-twitter'></i>
+            </a>
+        
+            <a href='https://www.youtube.com/@BigSpy' target='_blank' rel='nofollow'>
+                <i class='fa fa-youtube'></i>
+            </a>
+        
+            <a href='https://www.linkedin.com/company/bigspy' target='_blank' rel='nofollow'>
+                <i class='fa fa-linkedin-square'></i>
+            </a>
+        
+            <a href='https://t.me/summong' target='_blank' rel='nofollow'>
+                <i class='fa fa-telegram'></i>
+            </a>
+        
+                </div></div>
+        </div>
+    </div>    </div>
+        <div class='site-statement'>
+        <hr/>
+        <p>
+            © Copyright BigSpy.com, 2016~2024. All rights reserved.        </p>
+    </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // switch language
+    function switchLanguage(language) {
+        var name = 'sbox-l';
+        var value = language;
+        var date = new Date();
+        date.setTime(date.getTime() + (24 * 3600 * 1000));
+        var expires = date.toGMTString();
+        document.cookie = name + "=" + value + ';expires=' + expires + ";path=/";
+        // encode编码避免XSS
+        let window_href = "";
+        if (window_href != '') {
+            let url = "/" + language + window_href;
+            if (window_href == '/') {
+                url = "/" + language
+            }
+            window.location.href = url;
+            return;
+        }
+        if(self != top) {
+            window.parent.location.reload();
+        } else {
+            location.reload();
+        }
+    }
+</script>
+<script>
+    var contentMinH = $(window).height()-$("#saasbox-nav").height()-$(".footer").outerHeight();
+    $("#mainContent").css('minHeight',contentMinH+'px');
+                $(function () {
+            $(".tigger").mouseenter(function() {
+                $(this).find(".popup-custom").css("display", "block");
+            });
+            $(".tigger").mouseleave(function() {
+                $(this).find(".popup-custom").css("display", "none");
+            });
+        });
+            $(".sbox-carousel > .nav-link.nav-type-button").mouseenter(function() {
+        var sboxCarousel = $(this).parent();
+        sboxCarousel.attr('data-sboxmouseon', 1);
+        setTimeout(() => {
+            let sboxCarouselHover = sboxCarousel.siblings('.sbox-carousel-hover');
+            let navBtnFirst = $(this).children();
+            let hoverA = sboxCarouselHover.children('a');
+            hoverA.text(navBtnFirst.attr('data-sboxtitle'));
+            hoverA.attr('href', navBtnFirst.attr('data-sboxurl'));
+            let hoverP = sboxCarouselHover.children('p');
+            hoverP.text(navBtnFirst.attr('data-sboxsubtitle'));
+            let hoverImg = sboxCarouselHover.children('img');
+            hoverImg.attr('src', 'https://zbase-global.zingfront.com/' + navBtnFirst.attr('data-sboxicon'));
+            sboxCarouselHover.show();
+        }, 0);
+    });
+    $(".sbox-carousel").mouseleave(function() {
+        $(this).attr('data-sboxmouseon', 0)
+        let sboxCarousel = $(this);
+        setTimeout(function() {
+            let sboxCarouselHover = sboxCarousel.siblings('.sbox-carousel-hover');
+            if (sboxCarouselHover.attr('data-sboxmouseon') != 1) {
+                sboxCarouselHover.hide();
+            }
+        }, 50);
+    });
+    $(".sbox-carousel-hover").mouseenter(function() {
+        $(this).attr('data-sboxmouseon', 1)
+        $(this).show();
+    });
+    $(".sbox-carousel-hover").mouseleave(function() {
+        $(this).attr('data-sboxmouseon', 0)
+        $(this).hide();
+    });
+    $(".sbox-carousel").each(function(i, sboxCarousel) {
+                if (sboxCarousel.children.length <= 1) {
+            return
+        }
+        var interval = sboxCarousel.dataset.sboxinterval
+        var childFirst = sboxCarousel.children[0];
+        var timer = 0;
+        setTimeout(() => {
+            timer = setInterval(scrol, 30);
+        }, interval * 1000);
+        function scrol() {
+            if (sboxCarousel.dataset.sboxmouseon == 1) {
+                if (sboxCarousel.scrollTop >= childFirst.scrollHeight / 2) {
+                    let childFirst = sboxCarousel.children[0];
+                    sboxCarousel.removeChild(childFirst);
+                    sboxCarousel.appendChild(childFirst);
+                }
+                sboxCarousel.scrollTop = 0;
+                return;
+            }
+                        if (sboxCarousel.scrollTop >= childFirst.scrollHeight
+            ) {
+                sboxCarousel.scrollTop = 0;
+                childFirst = sboxCarousel.children[0];
+                sboxCarousel.removeChild(childFirst);
+                sboxCarousel.appendChild(childFirst);
+                clearInterval(timer);
+                setTimeout(() => {
+                    timer = setInterval(scrol, 30);
+                }, interval * 1000);
+            } else {
+                sboxCarousel.scrollTop++;
+            }
+        }
+    });
+</script>
+
+<script type="text/javascript">
+                window.CRISP_WEBSITE_ID="ebd7cf0f-b1ee-4a4e-a4ce-8064999c1331";
+        (
+            function(){
+                d=document;
+                s=d.createElement("script");
+                s.src="https://client.crisp.chat/l.js";
+                s.async=1;
+                d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+                    window.$crisp=[];
+                    </script>
+
+<!--huoYan-->
+    <script>
+        (function(para) {
+            var p = para.sdk_url, n = 'huoYan', w = window, d = document, s = 'script', x = null, y = null;
+            if(typeof(w['huoyanDataAnalytic']) !== 'undefined') {return false;}
+            w['huoyanDataAnalytic'] = n;
+            w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+            w[n]['quick'] = w[n].call(null, 'quick');
+            w[n]['search'] = w[n].call(null, 'search');
+            x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+            x.async = 1;x.src = p;
+            w[n].para = para;
+            y.parentNode.insertBefore(x, y);
+        })({
+            sdk_url: 'https://identify.tankeai.com/assets/js/identify.js',
+            server_url: 'https://identify.tankeai.com'
+        });
+        var g_huoyan_opt = {
+            site_id : 240,
+            user_company: 87        };
+        huoYan.quick('autoTrack',g_huoyan_opt);
+    </script>
+
+<!-- Taboola Pixel Code -->
+
+<!-- /.footer -->
+
+<script src="https://zbase-global.zingfront.com/saasbox/assets/js/page.20210122.min.v1.js"></script>
+<script src="https://zbase-global.zingfront.com/saasbox/assets/js/script.min.js"></script>
+<script src="//zbase-global.zingfront.com/static/js/getrefcodeuser.js?v=1603348969"></script>
+<script type="text/javascript">if (inUrlList == 1 && !user_id) {
+        let navDom = document.getElementById('saasbox-nav');
+            let navList = navDom
+            .getElementsByClassName('navbar-mobile')[0]
+            .getElementsByClassName('nav-navbar')[0]
+            .getElementsByClassName('nav-item')[1]
+            .getElementsByClassName('nav-link')[0].style['border-bottom'] = '2px solid #000';
+    }
+    if (inUrlListAdideas == 1 && !user_id) {
+        let navDom = document.getElementById('saasbox-nav');
+            let navList = navDom
+            .getElementsByClassName('navbar-mobile')[0]
+            .getElementsByClassName('nav-navbar')[0]
+            .getElementsByClassName('nav-item')[2]
+            .getElementsByClassName('nav-link')[0].style['border-bottom'] = '2px solid #000';
+    }
+    if (inUrlListUser == 1 && location.href.indexOf('app_type=3') != -1 && user_id) {
+        let navDom = document.getElementById('saasbox-nav');
+            let navList = navDom
+            .getElementsByClassName('navbar-mobile')[0]
+            .getElementsByClassName('nav-navbar')[1]
+            .getElementsByClassName('nav-item')[3]
+            .getElementsByClassName('nav-link')[0].style['border-bottom'] = '2px solid #000';
+    }
+    if (inUrlListUser == 1 && location.href.indexOf('app_type=3') == -1 && user_id) {
+        let navDom = document.getElementById('saasbox-nav');
+            let navList = navDom
+            .getElementsByClassName('navbar-mobile')[0]
+            .getElementsByClassName('nav-navbar')[1]
+            .getElementsByClassName('nav-item')[4]
+            .getElementsByClassName('nav-link')[0].style['border-bottom'] = '2px solid #000';
+    }</script><script type="text/javascript" src="https://static-global.zingfront.com/static/2026/salesmartly_global.js"></script><!-- js --><script type='text/javascript' src=https://zbase-global.zingfront.com/popup/js/popup1.6.0.js?v=1598946699></script><script type='text/javascript' src=https://zbase-global.zingfront.com/popup/js/popup_tracking_bt.js?v=1596875266></script><script type='text/javascript' src=https://zbase-global.zingfront.com/popup/js/popup-userinfo-1.7.0.js?v=1596875266></script><script type='text/javascript' src=https://static-global.zingfront.com/zbase/pjaxslot/jquery.pjax.js></script><script type='text/javascript' src=https://static-global.zingfront.com/zbase/pjaxslot/jquery.blockUI-2.70.0.js></script><script type='text/javascript' src=https://static-global.zingfront.com/zbase/pjaxslot/pjaxslot.js></script><script type='text/javascript' src=https://zbase-global.zingfront.com/static/js/payment/zbase_payment_v_1.0.3.js></script></body>
+</html>

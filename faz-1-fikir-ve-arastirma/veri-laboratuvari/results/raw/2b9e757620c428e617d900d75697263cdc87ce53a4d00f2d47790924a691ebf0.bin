@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    
+
+<html lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	
+    Extensions for Visual Studio family of products | Visual Studio Marketplace
+
+</title>
+    <meta name="description" content="One&#32;place&#32;for&#32;all&#32;extensions&#32;for&#32;Visual&#32;Studio,&#32;Azure&#32;DevOps&#32;Services,&#32;Azure&#32;DevOps&#32;Server&#32;and&#32;Visual&#32;Studio&#32;Code.&#32;Discover&#32;and&#32;install&#32;extensions&#32;and&#32;subscriptions&#32;to&#32;create&#32;the&#32;dev&#32;environment&#32;you&#32;need." /><meta name="keywords" content="Extension,&#32;Visual&#32;Studio&#32;Marketplace,&#32;Visual&#32;Studio,&#32;Visual&#32;Studio&#32;Code,&#32;Subscriptions,&#32;Azure&#32;DevOps&#32;Services,&#32;Team&#32;Services,&#32;TFS,&#32;Azure&#32;DevOps&#32;Server&#32;Extensions" /><meta property="og:title" content="Visual&#32;Studio&#32;Marketplace" /><meta property="og:type" content="website" /><meta property="og:url" content="https://marketplace.visualstudio.com/vs" /><meta property="og:image" content="https://cdn.vsassets.io/v/M280_20260923.13/_content/Header/access-marketplace.png" /><meta property="og:description" content="Extensions&#32;for&#32;Visual&#32;Studio&#32;family&#32;of&#32;products&#32;on&#32;Visual&#32;Studio&#32;Marketplace" /><meta property="twitter:card" content="summary" /><meta property="twitter:site" content="@VisualStudio" /><meta property="twitter:creator" content="@VisualStudio" />
+<meta http-equiv="X-UA-Compatible" content="IE=11;&#32;IE=10;&#32;IE=9;&#32;IE=8" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+    
+    <script type="text/javascript"  nonce="K+qnKauoRrxRkIWZgTGnBw==">
+        window.__aadTokenDisabled = true;
+    </script>
+    <script id="dataProviders" type="application/json">{"data":{"ms.vss-web.component-data":{},"ms.vss-web.page-data":{"esNextSupported":true,"hostId":"2663b13f-50e3-a655-a159-22f6f4725fab","hostType":3,"hostName":"TEAM FOUNDATION","hostPath":"/","serviceInstanceType":"00000029-0000-8888-8000-000000000000","isBundlingEnabled":true,"isCdnEnabled":true,"isCdnAvailable":true,"isHosted":true,"isProduction":true,"isDebugMode":false,"isDevfabric":false,"isSslOnly":true,"isTracePointCollectionEnabled":false,"scriptType":"ES2017","serviceVersion":"Dev20.M280.1 (AzureDevOps_M280_20260923.13)","sessionId":"ca6feb33-63db-4cb0-a4be-b682d6411325","styleType":"stylesheet","user":{"name":"Anonymous","displayName":"Anonymous","url":"https://spsprodeus25.vssps.visualstudio.com/_apis/Identities/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa","id":"aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa","uniqueName":null,"imageUrl":null},"webPlatformVersion":2},"ms.vss-web.shared-data":null,"ms.vss-web.theme-data":{"requestedThemeId":"ms.vss-web.vsts-theme"},"ms.vss-web.user-claims-data":{"anonymous":true},"ms.vss-web.msal-config-data":{"accessMapping":"PublicAccessMapping","authenticatedUser":{"tenantId":"00000000-0000-0000-0000-000000000000","oid":""},"cacheLookupPolicy":0,"redirectResponseMode":"","scopes":["499b84ac-1321-427f-aa17-267ca6975798/user_impersonation"],"fatalErrorCodes":["multiple_matching_tokens"],"spaAuthorizationCode":null,"fpsTarget":null,"configuration":{"auth":{"authority":"https://login.windows.net/organizations/","clientId":"499b84ac-1321-427f-aa17-267ca6975798","clientCapabilities":["CP1"],"redirectUri":"https://app.vssps.visualstudio.com/_msal/_popup"},"cache":{"cacheLocation":"localStorage"},"system":{"loggerOptions":{"logLevel":1}}},"cacheWatermark":null,"serviceWorkerEnabled":true,"extraQueryParameters":{}},"ms.vss-web.navigation-data":{"displayed":["ms.vss-gallery-web.gallery-page"],"hierarchy":{},"navigation":{"ms.vss-gallery-web.gallery-page":{"id":"ms.vss-gallery-web.gallery-page","name":null,"flags":3,"order":0.0}},"location":{"ms.vss-gallery-web.gallery-page":"/vs"},"routeId":"ms.vss-gallery-web.gallery-route-gallery-home-page-vs","routeTemplates":["vs"],"routeValues":{"controller":"Gallery","action":"Gallery","product":"vs"}}},"sharedData":{"_identityDetails":{"aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa":{"displayName":"Anonymous"}},"_featureFlags":{"VisualStudio.Services.WebPlatform.RedirectFlow.QueryResourceAreaByInstanceId":false,"WebPlatform.Authentication.EnableCAE":true,"WebPlatform.SessionTokens.UseEntraTokens":false,"WebPlatform.Authentication.AllowMsalInIFramesForSignout":false,"VisualStudio.Services.WebPlatform.ServiceWorkerTargetedTokenRefreshFixEnabled":false},"_contributions":{"contributions":{"ms.vss-gallery-web.gallery-msal-login-provider":{"serviceName":"IMsalLoginProviderService","::Attributes":83,"::Hashcode":"ZkN2MKBysgTHO5yCXcVuGg=="},"ms.vss-web.msal-js-token-provider":{"serviceName":"IMsalTokenProviderService","::Attributes":83,"::Hashcode":"+/Ktr7puFlxTvcG+UBdCKg==","::BaseUri":"{{ServiceUrl \u002200025394-6065-48CA-87D9-7F5672854EF7\u0022 \u0022ProjectCollection\u0022}}"},"ms.vss-web.proof-of-presence-redirect-handler":{"serviceName":"IProofOfPresenceRedirectHandler","::Attributes":83,"::Hashcode":"+/Ktr7puFlxTvcG+UBdCKg==","::BaseUri":"{{ServiceUrl \u002200025394-6065-48CA-87D9-7F5672854EF7\u0022 \u0022ProjectCollection\u0022}}"}},"relationships":{"ms.vss-gallery-web.gallery-msal-login-provider":{"children":{"ms.vss-gallery-web.msal":true},"parents":{"ms.vss-gallery-web.gallery-website":true}},"ms.vss-web.msal-js-token-provider":{"children":{"ms.vss-web.msal-content":true,"ms.vss-web.msal-config-data":true,"ms.vss-web.msal-redirect-callback-handlers":true,"ms.vss-web.msal-signout-signal-container":true},"parents":{"ms.vss-web.token-provider-service-root":true}},"ms.vss-web.proof-of-presence-redirect-handler":{"parents":{"ms.vss-web.msal-redirect-callback-handlers":true}}},"types":{"ms.vss-web.service":{"ms.vss-gallery-web.gallery-msal-login-provider":true,"ms.vss-web.msal-js-token-provider":true,"ms.vss-web.proof-of-presence-redirect-handler":true}},"providers":{}},"_themes":{"ms.vss-web.vsts-theme":{"id":"ms.vss-web.vsts-theme","name":"Light","extends":null,"data":{"palette-primary-darken-6":"rgba(0, 103, 181, 1)","palette-primary-darken-10":"rgba(0, 91, 161, 1)","palette-primary-darkened-6":"0, 103, 181","palette-primary-darkened-10":"0, 91, 161","palette-primary-shade-30":"0, 69, 120","palette-primary-shade-20":"0, 90, 158","palette-primary-shade-10":"16, 110, 190","palette-primary":"0, 120, 212","palette-primary-tint-10":"43, 136, 216","palette-primary-tint-20":"199, 224, 244","palette-primary-tint-30":"222, 236, 249","palette-primary-tint-40":"239, 246, 252","palette-neutral-100":"0, 0, 0","palette-neutral-80":"51, 51, 51","palette-neutral-70":"76, 76, 76","palette-neutral-60":"102, 102, 102","palette-neutral-30":"166, 166, 166","palette-neutral-20":"200, 200, 200","palette-neutral-10":"218, 218, 218","palette-neutral-8":"234, 234, 234","palette-neutral-6":"239, 239, 239","palette-neutral-4":"244, 244, 244","palette-neutral-2":"248, 248, 248","palette-neutral-0":"255, 255, 255","palette-error":"rgba(232, 17, 35, 1)","palette-error-6":"rgba(203, 15, 31, 1)","palette-error-10":"rgba(184, 14, 28, 1)","palette-black-alpha-0":"rgba(var(--palette-neutral-100), 0)","palette-black-alpha-2":"rgba(var(--palette-neutral-100), 0.02)","palette-black-alpha-4":"rgba(var(--palette-neutral-100), 0.04)","palette-black-alpha-6":"rgba(var(--palette-neutral-100), 0.06)","palette-black-alpha-8":"rgba(var(--palette-neutral-100), 0.08)","palette-black-alpha-10":"rgba(var(--palette-neutral-100), 0.10)","palette-black-alpha-20":"rgba(var(--palette-neutral-100), 0.20)","palette-black-alpha-30":"rgba(var(--palette-neutral-100), 0.30)","palette-black-alpha-60":"rgba(var(--palette-neutral-100), 0.60)","palette-black-alpha-70":"rgba(var(--palette-neutral-100), 0.70)","palette-black-alpha-80":"rgba(var(--palette-neutral-100), 0.80)","palette-black-alpha-100":"rgba(var(--palette-neutral-100), 1)","palette-accent1-light":"249, 235, 235","palette-accent1":"218, 10, 0","palette-accent1-dark":"168, 0, 0","palette-accent2-light":"223, 246, 221","palette-accent2":"186, 216, 10","palette-accent2-dark":"16, 124, 16","palette-accent3-light":"251, 242, 236","palette-accent3":"214, 127, 60","palette-accent3-dark":"171, 102, 48","background-color":"rgba(var(--palette-neutral-0), 1)","communication-foreground":"rgba(var(--palette-primary-shade-20), 1)","communication-background":"rgba(var(--palette-primary), 1)","status-info-foreground":"rgba(0, 120, 212, 1)","status-info-background":"rgba(0, 120, 212, 1)","status-error-foreground":"rgba(205, 74, 69, 1)","status-error-background":"rgba(var(--palette-accent1-light), 1)","status-error-text":"rgba(var(--palette-accent1), 1)","status-error-strong":"rgba(var(--palette-accent1-dark), 1)","status-success-foreground":"rgba(var(--palette-accent2-dark), 1)","status-success-background":"rgba(var(--palette-accent2-light), 1)","status-success-text":"rgba(127, 184, 0, 1)","status-warning-icon-foreground":"rgba(177, 133, 37, 1)","status-warning-foreground":"rgba(214, 127, 60, 1)","status-warning-background":"rgba(var(--palette-accent3-light), 1)","status-warning-text":"rgba(184, 94, 6, 1)","text-primary-color":"rgba(var(--palette-neutral-100), .9)","text-secondary-color":"rgba(var(--palette-neutral-100), .55)","text-disabled-color":"rgba(var(--palette-neutral-100), .38)","text-on-communication-background":"var(--background-color)","border-subtle-color":"rgba(var(--palette-neutral-100), .08)","splitter-border-color":"rgba(var(--palette-neutral-100), .42)","callout-background-color":"var(--background-color)","callout-filtered-background-color":"rgba(var(--palette-neutral-0), 0.86)","callout-shadow-color":"rgba(0, 0, 0, .132)","callout-shadow-secondary-color":"rgba(0, 0, 0, .108)","panel-shadow-color":"rgba(0, 0, 0, .22)","panel-shadow-secondary-color":"rgba(0, 0, 0, .18)","focus-pulse-max-color":"rgba(var(--palette-primary), 0.23)","focus-pulse-min-color":"rgba(var(--palette-primary), 0.15)","focus-border-color":"rgba(var(--palette-primary), 1)","third-party-icon-filter":"none","component-label-default-color":"rgba(var(--palette-neutral-6), 1)","component-label-default-color-hover":"rgba(var(--palette-neutral-10), 1)","component-status-success":"rgba(85, 163, 98, 1)","component-status-error":"rgba(205, 74, 69, 1)","component-status-warning":"rgba(214, 119, 48, 1)","component-status-info":"rgba(0, 120, 212, 1)","component-status-neutral":"rgba(102, 102, 102, 1)","component-grid-row-hover-color":"rgba(var(--palette-neutral-2), 1)","component-grid-selected-row-color":"rgba(var(--palette-primary-tint-30), 1)","component-grid-focus-border-color":"rgba(var(--palette-primary), 1)","component-grid-link-selected-row-color":"rgba(var(--palette-primary-shade-20), 1)","component-grid-link-hover-color":"rgba(var(--palette-primary-shade-20), 1)","component-grid-action-hover-color":"rgba(var(--palette-neutral-8), 1)","component-grid-action-selected-cell-hover-color":"rgba(var(--palette-primary-tint-30), 1)","component-grid-cell-bottom-border-color":"rgba(var(--palette-neutral-8), 1)","component-grid-drag-source-color":"rgba(var(--palette-neutral-0), 0.40)","component-menu-selected-item-background":"rgba(var(--palette-neutral-4), 1)"}}},"_routes":{"ms.vss-gallery-web.gallery-route-gallery-home-page-vs":["vs"]}},"resolvedProviders":[{"id":"ms.vss-web.component-data"},{"id":"ms.vss-web.page-data"},{"id":"ms.vss-web.shared-data"},{"id":"ms.vss-web.theme-data"},{"id":"ms.vss-web.user-claims-data"},{"id":"ms.vss-web.msal-config-data"},{"id":"ms.vss-web.navigation-data"}],"exceptions":null,"clientProviders":null,"scopeName":null,"scopeValue":null}</script>
+<meta name="referrer" content="strict-origin-when-cross-origin" /><script data-description="contentInit" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.__IS_BUNDLING_ENABLED = true;window.__IS_CDN_ENABLED = true;window.__azureDevOpsEnvironment = "prod";window.__fpsAllowListEnabled = false;window.$DEBUG = false;window.__scriptType = "ES2017";window.__moduleNamespaces = ["create-react-class","prop-types","react","react-dom","react-dom-factories","react-transition-group","tslib","VSS/Core","mousetrap","VSS/Platform","@azure/msal-browser","msal-browser","VSS/Msal","VSSUI","Gallery/Msal","VSS/Legacy"];window.__moduleAliases = {"react-dom/client":"react-dom"};window.__asyncModules = [];window.__extensionsStaticRoot = "https://cdn.vsassets.io/ext/";window.__extensionsLocalStaticRoot = "/_static/_ext/";window.__useEntraToken = true;window.__isCookieless = true;window.__IS_REACT_18_ENABLED = false;window.__redirectToSignout = false;window.__targetedEntraReauthenticationEnabled = false;window.resourceLoadStrategy = 'scriptsFirst';var preTraceServiceStartErrors = []; var onPreTraceServiceError = function (event) { preTraceServiceStartErrors.push(event) }; window.addEventListener('error', onPreTraceServiceError);var previousResourceLoadCompletion = window.performance.now(); var resourceLoadTimes = {}; window.logResourceLoad = function (id) {var now = window.performance.now(); resourceLoadTimes[id] = { current: now, previous: previousResourceLoadCompletion }; previousResourceLoadCompletion = now; }; </script><script data-description="disableCdn" nonce="K+qnKauoRrxRkIWZgTGnBw==">function cdnReload(fromTimeout) { 
+document.cookie = 'TFS-CDN=disabled;max-age=28800;path=/;secure'; 
+document.cookie = 'TFS-CDNTRACE=report;path=/;secure'; 
+if(fromTimeout){document.cookie = 'TFS-CDNTIMEOUT=report;path=/;secure'; }
+document.location.reload(true); 
+}
+var cdnTimeout = setTimeout(function () { cdnReload(true); }, 10000);</script><script data-description="trackLoadedBundles" nonce="K+qnKauoRrxRkIWZgTGnBw=="> var loadedScripts = {}; document.addEventListener('scriptLoaded', function (e) { if (e && e.detail) { loadedScripts[e.detail.id] = true;} });</script><script src="https://cdn.vsassets.io/ext/ms.vss-web/core-content/ms.vss-web.core-content.es6.vkdFPX.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="207565" data-clientid="ms.vss-web.core-content/core-content/ms.vss-web.core-content.es6.min.js" data-sourcecontribution="ms.vss-web.core-content" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.core-content/core-content/ms.vss-web.core-content.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-web/platform-content/ms.vss-web.platform-content.es6.rSBd9D.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="161625" data-clientid="ms.vss-web.platform-content/platform-content/ms.vss-web.platform-content.es6.min.js" data-sourcecontribution="ms.vss-web.platform-content" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.platform-content/platform-content/ms.vss-web.platform-content.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-web/msal-browser/ms.vss-web.msal-browser.es6.s4Fhb4.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="244636" data-clientid="ms.vss-web.msal-browser/msal-browser/ms.vss-web.msal-browser.es6.min.js" data-sourcecontribution="ms.vss-web.msal-browser" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.msal-browser/msal-browser/ms.vss-web.msal-browser.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-web/msal-content/ms.vss-web.msal-content.es6.wy_rif.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="33102" data-clientid="ms.vss-web.msal-content/msal-content/ms.vss-web.msal-content.es6.min.js" data-sourcecontribution="ms.vss-web.msal-content" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.msal-content/msal-content/ms.vss-web.msal-content.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-features/ui-core-content/ms.vss-features.ui-core-content.es6.g7itcZ.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="81530" data-clientid="ms.vss-features.ui-core-content/ui-core-content/ms.vss-features.ui-core-content.es6.min.js" data-sourcecontribution="ms.vss-features.ui-core-content" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-features.ui-core-content/ui-core-content/ms.vss-features.ui-core-content.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-gallery-web/msal/ms.vss-gallery-web.msal.es6.rq_xE8.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="799" data-clientid="ms.vss-gallery-web.msal/msal/ms.vss-gallery-web.msal.es6.min.js" data-sourcecontribution="ms.vss-gallery-web.msal" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-gallery-web.msal/msal/ms.vss-gallery-web.msal.es6.min.js');</script><script src="https://cdn.vsassets.io/ext/ms.vss-web/legacy-content/ms.vss-web.legacy-content.es6.SHdynN.min.js" nonce="K+qnKauoRrxRkIWZgTGnBw==" data-contentlength="7302" data-clientid="ms.vss-web.legacy-content/legacy-content/ms.vss-web.legacy-content.es6.min.js" data-sourcecontribution="ms.vss-web.legacy-content" data-loadingcontent="true"></script><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.legacy-content/legacy-content/ms.vss-web.legacy-content.es6.min.js');</script><link href="https://cdn.vsassets.io/v/M280_20260923.13/_ext/ms.vss-web/core-content/ms.vss-web.core-content.min.css" rel="stylesheet" crossorigin="anonymous" data-contentlength="13803" data-clientid="ms.vss-web.core-content/core-content/ms.vss-web.core-content.min.css" data-sourcecontribution="ms.vss-web.core-content" data-loadingcontent="true" /><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.core-content/core-content/ms.vss-web.core-content.min.css');</script><link href="https://cdn.vsassets.io/v/M280_20260923.13/_ext/ms.vss-web/platform-content/ms.vss-web.platform-content.min.css" rel="stylesheet" crossorigin="anonymous" data-contentlength="4114" data-clientid="ms.vss-web.platform-content/platform-content/ms.vss-web.platform-content.min.css" data-sourcecontribution="ms.vss-web.platform-content" data-loadingcontent="true" /><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-web.platform-content/platform-content/ms.vss-web.platform-content.min.css');</script><link href="https://cdn.vsassets.io/v/M280_20260923.13/_ext/ms.vss-features/ui-core-content/ms.vss-features.ui-core-content.min.css" rel="stylesheet" crossorigin="anonymous" data-contentlength="62808" data-clientid="ms.vss-features.ui-core-content/ui-core-content/ms.vss-features.ui-core-content.min.css" data-sourcecontribution="ms.vss-features.ui-core-content" data-loadingcontent="true" /><script data-description="logResourceLoad" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.logResourceLoad('ms.vss-features.ui-core-content/ui-core-content/ms.vss-features.ui-core-content.min.css');</script><script data-description="cdnFallback" nonce="K+qnKauoRrxRkIWZgTGnBw==">if (!window.LWL) { cdnReload(false); }</script><script data-description="clearCdnTimeout" nonce="K+qnKauoRrxRkIWZgTGnBw==">window.clearTimeout(cdnTimeout);</script><script data-description="fireLoadEvents" nonce="K+qnKauoRrxRkIWZgTGnBw==">var contentElements = document.querySelectorAll("[data-loadingcontent=true]"); for (var i=0; i<contentElements.length; i++) { var loadTimes = resourceLoadTimes[contentElements[i].getAttribute('data-clientid')]; window.__contentLoaded(contentElements[i], true, loadTimes && loadTimes.current, loadTimes && loadTimes.previous); }</script>
+
+
+    <meta name="msvalidate.01" content="21D03D894BABE1ED475954E142FF8FD2" />
+    <link data-bundlelength="105216" data-bundlename="commoncss" data-highcontrast="/_static/tfs/M280_20260923.13/_cssbundles/HighContrast/vss-bundle-commoncss-vX-eQ6OEVixXM_Q5n10fSmCV65kgwKq7iKyH4v6P1Lxs=" data-includedstyles="Gallery3rdParty;GalleryMinimal" href="/_static/tfs/M280_20260923.13/_cssbundles/Default/vss-bundle-commoncss-vDLhG3KcRlt5qU7ZuIqBuOEBkwh7Q9Oc1zN-cP635144=" rel="stylesheet" />
+<script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-basejs'); }</script>
+<script data-bundlelength="138887" data-bundlename="basejs" nonce="K+qnKauoRrxRkIWZgTGnBw==" src="/_public/_Bundling/Content?bundle=vss-bundle-basejs-vh-5EDj0aiCZ8U3pbGPKlySQ9T_RAycY0i4geeP5oQDs=" type="text/javascript"></script>
+<script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-basejs'); }</script>
+
+
+
+    <!-- JSLL script -->
+    
+    <!-- End JSLL script -->
+
+</head>
+<body class="platform gallery ">
+
+    
+           <div id="cookie-banner"></div>
+    
+    <!-- GreenId -->
+    <iframe  style="color:rgb(0,0,0);  float:left; position:absolute; top:-200px; left:-200px; border:0px" src="https://fpt.microsoft.com/tags?session_id=ca6feb33-63db-4cb0-a4be-b682d6411325" height=100  width=100 aria-hidden="true"></iframe>
+    <!-- End GreenId -->
+    
+    <script type="text/javascript" nonce="K+qnKauoRrxRkIWZgTGnBw=="> var __vssPageContext = {"webContext":{"user":{"id":"aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa","name":"Anonymous","email":"","uniqueName":"TEAM FOUNDATION\\Anonymous"},"host":{"id":"2663b13f-50e3-a655-a159-22f6f4725fab","name":"TEAM FOUNDATION","uri":"https://marketplace.visualstudio.com/","relativeUri":"/","hostType":"deployment","scheme":"https","authority":"marketplace.visualstudio.com"}},"moduleLoaderConfig":{"baseUrl":"https://cdn.vsassets.io/v/M280_20260923.13/_scripts/TFS/min/","paths":{"VSSPreview/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","VSS/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","Engagement/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","Charts/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","Gallery/Scripts/Gallery/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","ContentRendering/Resources":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","highcharts":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts.v11.4.6","highcharts/highcharts-more":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-more.v11.4.6","highcharts/modules/accessibility":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-accessibility.v11.4.6","highcharts/modules/funnel":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-funnel.v11.4.6","highcharts/modules/heatmap":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-heatmap.v11.4.6"},"map":{"*":{"office-ui-fabric-react/lib":"OfficeFabric"}},"contributionPaths":{"VSS":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/VSS","pathType":"default"},"VSS/Resources":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","pathType":"resource"},"q":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/q","pathType":"default"},"knockout":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/knockout","pathType":"default"},"mousetrap":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/mousetrap","pathType":"default"},"mustache":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/mustache","pathType":"default"},"react":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/react.15.3","pathType":"default"},"react-dom":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/react-dom.15.3","pathType":"default"},"react-transition-group":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/react-transition-group.15.3","pathType":"default"},"jQueryUI":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/jQueryUI","pathType":"default"},"jquery":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/jquery","pathType":"default"},"OfficeFabric":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/OfficeFabric","pathType":"default"},"tslib":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/tslib","pathType":"default"},"@uifabric":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/@uifabric","pathType":"default"},"VSSUI":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/VSSUI","pathType":"default"},"Charts":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/Charts","pathType":"default"},"Charts/Resources":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","pathType":"resource"},"ContentRendering":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/ContentRendering","pathType":"default"},"ContentRendering/Resources":{"value":"/_static/tfs/M280_20260923.13/_scripts/TFS/min/en-US","pathType":"resource"},"highcharts":{"value":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts.v11.4.6","pathType":"thirdParty"},"highcharts/highcharts-more":{"value":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-more.v11.4.6","pathType":"thirdParty"},"highcharts/modules/accessibility":{"value":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-accessibility.v11.4.6","pathType":"thirdParty"},"highcharts/modules/funnel":{"value":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-funnel.v11.4.6","pathType":"thirdParty"},"highcharts/modules/heatmap":{"value":"https://cdn.vsassets.io/3rdParty/_scripts/highcharts-heatmap.v11.4.6","pathType":"thirdParty"}},"shim":{"jquery":{"deps":[],"exports":"jQuery"}},"waitSeconds":30},"coreReferences":{"stylesheets":[{"url":"/_static/tfs/M280_20260923.13/_cssbundles/Default/vss-bundle-ext-core-css-vy56dBxIwQd7phb69QAn3RFxAgJ-RddGhGPdgi16Jpgk=","highContrastUrl":null,"isCoreStylesheet":true}],"scripts":[{"identifier":"JQuery","url":"https://cdn.vsassets.io/3rdParty/_scripts/jquery-3.6.0.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"JQueryXDomain","url":"https://cdn.vsassets.io/3rdParty/_scripts/jquery.xdomainrequest.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"Promise","url":"https://cdn.vsassets.io/v/M280_20260923.13/_scripts/TFS/min/promise.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"GlobalScripts","url":"https://cdn.vsassets.io/v/M280_20260923.13/_scripts/TFS/min/global-scripts.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"LoaderFixes","url":"https://cdn.vsassets.io/v/M280_20260923.13/_scripts/TFS/pre-loader-shim.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":false},{"identifier":"AMDLoader","url":"https://cdn.vsassets.io/3rdParty/_scripts/require.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"LoaderFixes","url":"https://cdn.vsassets.io/v/M280_20260923.13/_scripts/TFS/post-loader-shim.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":false}],"coreScriptsBundle":{"identifier":"CoreBundle","url":"/_public/_Bundling/Content?bundle=vss-bundle-basejs-vh-5EDj0aiCZ8U3pbGPKlySQ9T_RAycY0i4geeP5oQDs=","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},"extensionCoreReferences":{"identifier":"CoreBundle","url":"/_public/_Bundling/Content?bundle=vss-bundle-ext-core-v18vIroK2kzteRVxkiKSQ0oZGCm7oXbiyaIpjvJbJ4UQ=","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true}},"webAccessConfiguration":{"isHosted":true,"paths":{"rootPath":"/","staticContentRootPath":"/","staticContentVersion":"M280_20260923.13","resourcesPath":"https://cdn.vsassets.io/v/M280_20260923.13/_content/","staticRootTfs":"https://cdn.vsassets.io/v/M280_20260923.13/","cdnFallbackStaticRootTfs":"/_static/tfs/M280_20260923.13/","staticRoot3rdParty":"https://cdn.vsassets.io/3rdParty/"},"api":{"webApiVersion":"1","areaPrefix":"_","controllerPrefix":"_"},"mailSettings":{"enabled":false},"registryItems":{}},"microsoftAjaxConfig":{"cultureInfo":{"name":"en-US","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"0001-01-01T00:00:00","MaxSupportedDateTime":"9999-12-31T23:59:59.9999999","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2049,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"numberShortForm":{"QuantitySymbols":["K","M","B"],"NumberGroupSize":1000,"ThousandSymbol":"K"},"eras":null}},"timeZonesConfiguration":{},"featureAvailability":{"featureStates":{"VisualStudio.Services.Contribution.EnableOnPremUnsecureBrowsers":false,"VisualStudio.Service.WebPlatform.ClientErrorReporting":true,"Microsoft.VisualStudio.Services.Gallery.Client.UseCdnAssetUri":false,"VisualStudio.Services.WebAccess.SubresourceIntegrity":false,"VisualStudio.Services.IdentityPicker.ReactProfileCard":true,"Microsoft.VisualStudio.Services.Gallery.EnableVerifiedPublisherDomain":true,"Microsoft.VisualStudio.Services.Gallery.RatingReview":true,"Microsoft.VisualStudio.Services.Gallery.EnableQueriesBasedOnHiddenFlags":true,"Microsoft.VisualStudio.Services.Gallery.EnableStickyBannerOnDetailsPage":true,"VisualStudio.Services.WebPlatform.UseNewBranding":true}},"appInsightsConfiguration":{"enabled":false,"instrumentationKey":"00000000-0000-0000-0000-000000000000","insightsScriptUrl":null},"diagnostics":{"sessionId":"ca6feb33-63db-4cb0-a4be-b682d6411325","activityId":"ca6feb33-63db-4cb0-a4be-b682d6411325","bundlingEnabled":true,"cdnAvailable":true,"cdnEnabled":true,"webPlatformVersion":"M280","serviceVersion":"Dev20.M280.1 (build: AzureDevOps_M280_20260923.13)"},"navigation":{"topMostLevel":"deployment","area":"","currentController":"Gallery","currentAction":"Gallery","commandName":"Gallery.Gallery","routeId":"ms.vss-gallery-web.gallery-route-gallery-home-page-vs","routeTemplates":["vs"],"routeValues":{"controller":"Gallery","action":"Gallery","product":"vs"}},"globalization":{"explicitTheme":"","theme":"Default","culture":"en-US","timezoneOffset":0,"timeZoneId":"UTC"},"serviceInstanceId":"00000029-0000-8888-8000-000000000000","hubsContext":{},"serviceLocations":{"locations":{"951917ac-a960-4999-8464-e3f0aa25b381":{"Application":"https://spsprodeus25.vssps.visualstudio.com/","Deployment":"https://spsprodeus25.vssps.visualstudio.com/"}}}};</script><script type="text/javascript" nonce="K+qnKauoRrxRkIWZgTGnBw=="> var __cultureInfo = __vssPageContext.microsoftAjaxConfig.cultureInfo;</script>
+<script type="text/javascript" nonce="K+qnKauoRrxRkIWZgTGnBw=="> (function(){
+var unloadStarted = false;
+function onRequireError(e) {
+    var msg = 'There was an error loading a required file. Would you like to reload the page to try to load again?';
+    function reload(prompted) {
+        document.cookie = 'TFS-CDN=disabled;max-age=28800;path=/;secure';
+        document.cookie = 'TFS-CDNTRACE=report-'+prompted+'-'+(e.requireType === 'requirenotloaded' ? 'require' : encodeURIComponent(JSON.stringify(e.requireModules)))+';path=/;secure';
+        document.location.reload(true);
+    }
+    if (!e || !e.requireType || (e.requireType !== 'scripterror' && e.requireType !== 'requirenotloaded')) {
+        throw e;
+    }
+    if (unloadStarted) {
+        return;
+    }
+    if (!window.requiredModulesLoaded) {
+        reload(false);
+    }
+    else if (window.require && require.defined('VSS/Controls/Dialogs')) {
+        require(['VSS/Controls/Dialogs'], function(d) {
+            d.showMessageDialog(msg, { title: 'Network Error', buttons: [d.MessageDialog.buttons.yes, d.MessageDialog.buttons.no] }).then(function() { reload(true) });
+        });
+    }
+    else {
+        if (confirm(msg)) {
+            reload(true);
+        }
+    }
+}
+window.addEventListener('beforeunload', function() {
+    unloadStarted = true;
+});
+if (window.requirejs) {
+    requirejs.onError = onRequireError;
+}
+else {
+    onRequireError({requireType:'requirenotloaded'});
+}
+})();require.config(__vssPageContext.moduleLoaderConfig);</script>
+
+    <script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-common'); }</script>
+<script data-bundlelength="296952" data-bundlename="common" data-includedscripts="VSS/Fonts/TextFonts;VSS/Fonts/IconFonts;VSS/Bundling" nonce="K+qnKauoRrxRkIWZgTGnBw==" src="/_public/_Bundling/Content?bundle=vss-bundle-common-vZB2UzvjZ7d6oCAL2iNa44DWSoVY5mQGCzkp6JiHAm8M=" type="text/javascript"></script>
+<script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-common'); }</script>
+<script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-view'); }</script>
+<script data-bundlelength="547390" data-bundlename="view" data-includedscripts="Gallery/Client/Pages/HomePageVNext/HomePageVNext.View" nonce="K+qnKauoRrxRkIWZgTGnBw==" src="/_public/_Bundling/Content?bundle=vss-bundle-view-v47ztCJlXqoFSUtyzaEP6RW9F9e-bYloT4YfCwdDr1BM=" type="text/javascript"></script>
+<script nonce="K+qnKauoRrxRkIWZgTGnBw==" type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-view'); }</script>
+
+<script type="text/javascript" nonce="K+qnKauoRrxRkIWZgTGnBw=="> if (window.performance && window.performance.mark) { window.performance.mark('requireStart'); }
+require(["VSS/Fonts/TextFonts","VSS/Fonts/IconFonts","Gallery/Client/Pages/HomePageVNext/HomePageVNext.View"], function(){  if (window.performance && window.performance.mark) { window.performance.mark('requireEnd'); } window.requiredModulesLoaded=true;  });
+</script>
+
+
+    
+    <a href="#start-of-content" class="skip-main">Skip to content</a>  
+    <div class="page-content">
+        <div class="header-section">
+            
+            <div class="uxservices-header" role="banner">
+                <div id="ux-header">
+                <div class="upperBand">
+                    <div class="upperBandContent marketplace-header">
+                        <a href="/" title="Marketplace" class="left" >  
+                            <div class="marketPlaceLogoLink bowtie-icon bowtie-brand-visualstudio vs-brand-icon menu-item-icon"></div>
+                            <div class="visualStudioLogoLink"> Visual Studio  </div>
+                            <div id="marketPlaceLogoLink" class="marketPlaceLogoLink">|   Marketplace</div>
+                        </a>
+                        <div class="right">
+                             
+                            <div id="signIn">
+                                
+                                    <a href="https://app.vssps.visualstudio.com/_signin?realm=marketplace.visualstudio.com&amp;reply_to=https%3A%2F%2Fmarketplace.visualstudio.com%2Fvs&amp;redirect=1&amp;protocol=cookieless&amp;context=eyJodCI6MywiaGlkIjoiMjY2M2IxM2YtNTBlMy1hNjU1LWExNTktMjJmNmY0NzI1ZmFiIiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90&amp;workflowId=marketplace&amp;wt.mc_id=o~msft~marketplace~signIn#ctx=eyJTaWduSW5Db29raWVEb21haW5zIjpbImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSIsImh0dHBzOi8vbG9naW4ubWljcm9zb2Z0b25saW5lLmNvbSJdfQ2" class="scarabLink" style="float:left;margin-left:23px;padding-top:1px;color:#fff;font-weight:400;">
+                                        Sign in
+                                    </a>
+                                
+                            </div>                            
+                            <div data-fragmentname="SearchBox" id="Fragment_SearchBox">
+                              <div class="SearchBox" role="search">
+                                <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
+                                  <input id="HeaderSearchTextBox" aria-label="search" name="query" type="text" maxlength="200" autocomplete="off">
+                                  <input id="RefinementId" name="refinement" type="hidden" value="198">
+                                  <button class="bowtie-icon bowtie-search header-search-button" id="HeaderSearchButton" value="" type="submit"></button>
+                                </form>
+                                <a id="search-box" class="bowtie-icon bowtie-search metroSearchButton" tabindex="0" title="Search here" role="button"></a>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            
+        </div>
+        <div class="skiptarget" id="start-of-content"></div>
+        <div id="gallery-content">
+            
+    <div class="tab-data">
+        <script class="vs-tab-data" defer="defer" type="application/json">{"epc":[{"cn":"Featured","e":[{"ic":197902,"dc":1206069,"rc":14,"a":"SharpDevelop Team","cc":0,"l":"items?itemName=SharpDevelopTeam.ILSpy2022","s":"Integrates the ILSpy decompiler into Visual Studio.","i":"https://SharpDevelopTeam.gallerycdn.vsassets.io/extensions/sharpdevelopteam/ilspy2022/11.1.0.9782/1790146276539/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://SharpDevelopTeam.gallery.vsassets.io/_apis/public/gallery/publisher/SharpDevelopTeam/extension/ILSpy2022/11.1.0.9782/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"ILSpy 2022","r":4.7142858505249023,"pc":false,"pd":null,"pdv":false},{"ic":174535,"dc":1579809,"rc":57,"a":"VisualSVN Software Ltd.","cc":0,"l":"items?itemName=VisualSVNLimited.VisualSVN-VS2022","s":"Easy and powerful Subversion (SVN) integration for VS2022 and VS2026. Everything you need to work smoothly with version control and advanced features such as interactive diff margin to increase your productivity.","i":"https://VisualSVNLimited.gallerycdn.vsassets.io/extensions/visualsvnlimited/visualsvn-vs2022/8.5.2.64/1790105288205/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://VisualSVNLimited.gallery.vsassets.io/_apis/public/gallery/publisher/VisualSVNLimited/extension/VisualSVN-VS2022/8.5.2.64/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"VisualSVN for Visual Studio 2022 and newer","r":4.9298245614035086,"pc":false,"pd":"https://visualsvn.com","pdv":true},{"ic":102205,"dc":482677,"rc":15,"a":"Uno Platform","cc":0,"l":"items?itemName=unoplatform.uno-platform-addin-2022","s":"Uno Platform project templates","i":"https://unoplatform.gallerycdn.vsassets.io/extensions/unoplatform/uno-platform-addin-2022/6.7.11.11/1789698513223/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://unoplatform.gallery.vsassets.io/_apis/public/gallery/publisher/unoplatform/extension/uno-platform-addin-2022/6.7.11.11/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Uno Platform","r":4.7333331108093262,"pc":false,"pd":"https://platform.uno","pdv":true},{"ic":22595,"dc":62527,"rc":4,"a":"Tim Heuer","cc":0,"l":"items?itemName=TimHeuer.GitHubActionsVS","s":"A window that provides a view of GitHub Actions for the current repo of the opened solution in Visual Studio. Provided by @timheuer","i":"https://TimHeuer.gallerycdn.vsassets.io/extensions/timheuer/githubactionsvs/0.1.110/1777999488625/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://TimHeuer.gallery.vsassets.io/_apis/public/gallery/publisher/TimHeuer/extension/GitHubActionsVS/0.1.110/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"GitHub Actions","r":5.0,"pc":false,"pd":"https://timheuer.com","pdv":true},{"ic":7326,"dc":14362,"rc":7,"a":"Mads Kristensen","cc":0,"l":"items?itemName=MadsKristensen.GitHubNode","s":"Adds a GitHub node to Solution Explorer that displays the contents of your repository\u0027s `.github` folder. Quickly access and manage GitHub-specific files like workflows, Copilot instructions, agents, ","i":"https://MadsKristensen.gallerycdn.vsassets.io/extensions/madskristensen/githubnode/1.0.102/1779214157624/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://MadsKristensen.gallery.vsassets.io/_apis/public/gallery/publisher/MadsKristensen/extension/GitHubNode/1.0.102/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":".github + MCP","r":5.0,"pc":false,"pd":"https://madskristensen.net","pdv":true},{"ic":2949,"dc":7103,"rc":9,"a":"Luis Henrique Goll","cc":0,"l":"items?itemName=luislhg.BrightXaml","s":"Bright Commands and Automations made with Xaml Developers in mind! (WPF, MAUI, WinUI)","i":"https://luislhg.gallerycdn.vsassets.io/extensions/luislhg/brightxaml/1.2.1.0/1767852603459/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://luislhg.gallery.vsassets.io/_apis/public/gallery/publisher/luislhg/extension/BrightXaml/1.2.1.0/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Bright Xaml Extension","r":5.0,"pc":false,"pd":null,"pdv":false}],"hme":false,"sml":null},{"cn":"Most Popular","e":[{"ic":3041991,"dc":3041991,"rc":381,"a":"JetBrains","cc":1,"l":"items?itemName=JetBrains.ReSharper","s":"The legendary .NET and ASP.NET productivity tool, which offers support for C#, Razor, Blazor, and XAML, including features such as code analysis, code completion, navigation, find usages, refactoring, and code formatting.","i":"https://JetBrains.gallerycdn.vsassets.io/extensions/jetbrains/resharper/2026.2/1785412762510/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://JetBrains.gallery.vsassets.io/_apis/public/gallery/publisher/JetBrains/extension/ReSharper/2026.2/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"ReSharper","r":4.2992124557495117,"pc":false,"pd":"https://www.jetbrains.com","pdv":true},{"ic":1610492,"dc":2817992,"rc":442,"a":"ErikEJ","cc":0,"l":"items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox","s":"SQLite / SQL Server Compact Toolbox extension for Visual Studio. This extension adds several features to help your embedded database development efforts: Scripting of tables and data, import from SQL Server and CSV files and much, much more.","i":"https://ErikEJ.gallerycdn.vsassets.io/extensions/erikej/sqlservercompactsqlitetoolbox/4.9.65/1779349494917/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://ErikEJ.gallery.vsassets.io/_apis/public/gallery/publisher/ErikEJ/extension/SQLServerCompactSQLiteToolbox/4.9.65/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"SQLite and SQL Server Compact Toolbox","r":4.8235292434692383,"pc":false,"pd":"https://sqlcompact.dk","pdv":true},{"ic":1560405,"dc":3000442,"rc":489,"a":"Whole Tomato Software","cc":1,"l":"items?itemName=WholeTomatoSoftware.VisualAssist","s":"Productivity tool for C/C++ and C# that improves IDE features related to navigation, refactoring, code generation, and coding assistance along with specific tooling for UE4/5.","i":"https://WholeTomatoSoftware.gallerycdn.vsassets.io/extensions/wholetomatosoftware/visualassist/10.9.2615/1783968791012/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://WholeTomatoSoftware.gallery.vsassets.io/_apis/public/gallery/publisher/WholeTomatoSoftware/extension/VisualAssist/10.9.2615/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Visual Assist","r":4.752556324005127,"pc":false,"pd":"https://www.wholetomato.com/","pdv":false},{"ic":1015763,"dc":2163047,"rc":384,"a":"Visual Micro","cc":1,"l":"items?itemName=VisualMicro.ArduinoIDEforVisualStudio","s":"Fully Arduino compatible IDE with Copilot MCP assist. Edit, deploy and debug. Manage libraries \u0026 boards. Unique Serial Debugger for any board including full speed debugging, break/trace points with timing and function call features. Code remains compatible with the Arduino IDE...","i":"https://VisualMicro.gallerycdn.vsassets.io/extensions/visualmicro/arduinoideforvisualstudio/2026.708.2207/1790041688672/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://VisualMicro.gallery.vsassets.io/_apis/public/gallery/publisher/VisualMicro/extension/ArduinoIDEforVisualStudio/2026.708.2207/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Arduino IDE for Visual Studio 2022+","r":4.7421875,"pc":false,"pd":null,"pdv":false},{"ic":800748,"dc":1336895,"rc":19,"a":"Christian Resma Helle","cc":0,"l":"items?itemName=ChristianResmaHelle.ApiClientCodeGenerator2022","s":"A collection of Visual Studio custom tools for generating a strongly typed REST API Client from an Open API / Swagger specification file","i":"https://ChristianResmaHelle.gallerycdn.vsassets.io/extensions/christianresmahelle/apiclientcodegenerator2022/1.41.0/1782340237729/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://ChristianResmaHelle.gallery.vsassets.io/_apis/public/gallery/publisher/ChristianResmaHelle/extension/ApiClientCodeGenerator2022/1.41.0/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"REST API Client Code Generator","r":4.5789475440979,"pc":false,"pd":null,"pdv":false},{"ic":754492,"dc":1477553,"rc":83,"a":"Microsoft","cc":0,"l":"items?itemName=SSIS.MicrosoftDataToolsIntegrationServices","s":"This project may be used for building high performance data integration and workflow solutions, including extraction, transformation, and loading (ETL) operations for data warehousing.","i":"https://SSIS.gallerycdn.vsassets.io/extensions/ssis/microsoftdatatoolsintegrationservices/2.2/1775015623051/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://SSIS.gallery.vsassets.io/_apis/public/gallery/publisher/SSIS/extension/MicrosoftDataToolsIntegrationServices/2.2/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"SQL Server Integration Services Projects 2022+","r":2.4337348937988281,"pc":false,"pd":"https://microsoft.com","pdv":true}],"hme":true,"sml":null},{"cn":"Highest Rated","e":[{"ic":530322,"dc":597881,"rc":589,"a":"PostSharp Technologies","cc":0,"l":"items?itemName=PostSharpTechnologies.PostSharp","s":"A unified UI for Metalama and PostSharp, two code generation and validation toolkits for .NET. They help you deliver clean code, without boilerplate, strictly adhering to architecture.","i":"https://PostSharpTechnologies.gallerycdn.vsassets.io/extensions/postsharptechnologies/postsharp/2026.1.8/1788797686413/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://PostSharpTechnologies.gallery.vsassets.io/_apis/public/gallery/publisher/PostSharpTechnologies/extension/PostSharp/2026.1.8/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Metalama + PostSharp","r":4.9660439491271973,"pc":false,"pd":"https://www.postsharp.net","pdv":true},{"ic":648267,"dc":4772434,"rc":682,"a":"ErikEJ","cc":0,"l":"items?itemName=ErikEJ.EFCorePowerTools","s":"Useful design-time DbContext and database features, added to the Visual Studio Solution Explorer context menu.\n\nWhen right-clicking on a C# project, the following context menu functions are available:\nReverse Engineer - Generates POCO classes, derived DbContext and Code First ...","i":"https://ErikEJ.gallerycdn.vsassets.io/extensions/erikej/efcorepowertools/2.6.1706/1788190335890/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://ErikEJ.gallery.vsassets.io/_apis/public/gallery/publisher/ErikEJ/extension/EFCorePowerTools/2.6.1706/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"EF Core Power Tools","r":4.9149560928344727,"pc":false,"pd":"https://sqlcompact.dk","pdv":true},{"ic":193342,"dc":1134478,"rc":792,"a":"Mads Kristensen","cc":0,"l":"items?itemName=MadsKristensen.RainbowBraces","s":"Colorizes matching brace pairs to make it easy to identify them and their scope. Works for curly brackets, parentheses, and square brackets.","i":"https://MadsKristensen.gallerycdn.vsassets.io/extensions/madskristensen/rainbowbraces/1.0.176/1781646731770/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://MadsKristensen.gallery.vsassets.io/_apis/public/gallery/publisher/MadsKristensen/extension/RainbowBraces/1.0.176/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Rainbow Braces","r":4.8775253295898438,"pc":false,"pd":"https://madskristensen.net","pdv":true},{"ic":49485,"dc":218829,"rc":309,"a":"Mads Kristensen","cc":0,"l":"items?itemName=MadsKristensen.SolutionColors","s":"Allows you to associate a color with a solution and display it in various locations within Visual Studio. Inspired by the Peacock extension for VS Code.","i":"https://MadsKristensen.gallerycdn.vsassets.io/extensions/madskristensen/solutioncolors/1.1.94/1782422970116/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://MadsKristensen.gallery.vsassets.io/_apis/public/gallery/publisher/MadsKristensen/extension/SolutionColors/1.1.94/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"Solution Colors","r":4.9385113716125488,"pc":false,"pd":"https://madskristensen.net","pdv":true},{"ic":679026,"dc":3794786,"rc":457,"a":"tom-englert","cc":0,"l":"items?itemName=TomEnglert.ResXManager","s":"The most popular tool to localize and manage all kind of applications with resx-based resources. Shows all resources of a solution and let\u0027s you edit the strings and their localizations in a well-arranged data grid.","i":"https://TomEnglert.gallerycdn.vsassets.io/extensions/tomenglert/resxmanager/1.107.6842.0/1785229933247/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://TomEnglert.gallery.vsassets.io/_apis/public/gallery/publisher/TomEnglert/extension/ResXManager/1.107.6842.0/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"ResXManager","r":4.8490152359008789,"pc":false,"pd":"https://tom-englert.de","pdv":false},{"ic":1610492,"dc":2817992,"rc":442,"a":"ErikEJ","cc":0,"l":"items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox","s":"SQLite / SQL Server Compact Toolbox extension for Visual Studio. This extension adds several features to help your embedded database development efforts: Scripting of tables and data, import from SQL Server and CSV files and much, much more.","i":"https://ErikEJ.gallerycdn.vsassets.io/extensions/erikej/sqlservercompactsqlitetoolbox/4.9.65/1779349494917/Microsoft.VisualStudio.Services.Icons.Default","fi":"https://ErikEJ.gallery.vsassets.io/_apis/public/gallery/publisher/ErikEJ/extension/SQLServerCompactSQLiteToolbox/4.9.65/assetbyname/Microsoft.VisualStudio.Services.Icons.Default","t":"SQLite and SQL Server Compact Toolbox","r":4.8235292434692383,"pc":false,"pd":"https://sqlcompact.dk","pdv":true}],"hme":true,"sml":null}],"c":["Tools/Coding","Controls/Framework \u0026 Libraries","Tools/Programming Languages","Controls/Windows Forms","Tools/Team Development","See all"]}</script>
+        
+    </div>
+    <div class="user-mail-data">
+        <script class="UserMailAddress" defer="defer" type="application/json">""</script>
+    </div>
+    <div class="show-signing-status-data">
+        <script class="ShowSigningStatusToUser" defer="defer" type="application/json">false</script>
+    </div>
+    <div class="marketplace-url">
+        <script class="market-browse-url" defer="defer" type="application/json">null</script>
+    </div>
+    <script id="image-template" type="text/html">
+    <img class="image-display" alt="" data-bind="attr: { src: imageSrc}, css: imageStyle, visible: imageVisible" />
+    <div class="bowtie-icon" data-bind="visible: (!imageVisible && !bowtieStyle), css: bowtieStyle "></div>
+    <span data-bind="template: { afterRender: componentLoaded($element) }" style="visibility: hidden"> </span>
+</script>
+
+    <div class="content-section-market gallerynew">
+        <div class="gallery-home-page-view">
+            <div class="gallery-home-page">
+                <div class="tab-area-container">
+    <div class="tabs-control-content rendering">
+        <i class="tab-collection-bigspinner bowtie-icon bowtie-spinner centered"> </i>
+        <div class="tab-collection-container" role="navigation">
+            <div class="tab-collection">
+                <ul class="tab-collection-left" role="tablist">
+                    <a class="tab VS gallery-element-focus-style-dark" role="tab"
+                       data-bind="attr: { href: $data.VS_Link, 'aria-controls': $data.getTabAriaControls($data.vsTabName), 'aria-selected': $data.getAriaSelected($data.vsTabName), tabindex: $data.getTabIndex($data.vsTabName)}, hasFocus: isVSTabFocused, click: $data.clickTab($data.vsTabName), event: { keydown: $data.keyDownTab($data.vsTabName) }, css: { tabactive: $data.currentTab() === $data.vsTabName }">
+                        <div class="header" data-bind="title: VS_Header, text: VS_Header"></div>
+                    </a>
+                    <!-- ko if: showVSForMac -->
+                    <a class="tab VSForMac gallery-element-focus-style-dark" role="tab"
+                       data-bind="attr: { href: $data.VSForMac_Link, 'aria-controls': $data.getTabAriaControls($data.vsForMacTabName), 'aria-selected': $data.currentTab() === $data.vsForMacTabName, tabindex: $data.getTabIndex($data.vsForMacTabName)}, hasFocus: isVSForMacTabFocused, click: $data.clickTab($data.vsForMacTabName), event: { keydown: $data.keyDownTab($data.vsForMacTabName) }, css: { tabactive: $data.currentTab() === $data.vsForMacTabName }">
+                        <div class="header" data-bind="title: VSForMac_Header, text: VSForMac_Header"></div>
+                    </a>
+                    <a class="tab VSCode gallery-element-focus-style-dark" role="tab"
+                       data-bind="attr: { href: $data.VSCode_Link, 'aria-controls': $data.getTabAriaControls($data.vsCodeTabName), 'aria-selected': $data.currentTab() === $data.vsCodeTabName, tabindex: $data.getTabIndex($data.vsCodeTabName)}, hasFocus: isVSCodeTabFocused, click: $data.clickTab($data.vsCodeTabName), event: { keydown: $data.keyDownTab($data.vsCodeTabName) }, css: { tabactive: $data.currentTab() === $data.vsCodeTabName }">
+                        <div class="header" data-bind="title: VSCode_Header, text: VSCode_Header"></div>
+                    </a>
+                    <a class="tab VSS gallery-element-focus-style-dark" role="tab"
+                       data-bind="attr: { href: $data.VSTS_Link, 'aria-controls': $data.getTabAriaControls($data.vstsTabName), 'aria-selected': $data.currentTab() === $data.vstsTabName, tabindex: $data.getTabIndex($data.vstsTabName) }, hasFocus: isVSTSTabFocused, click: $data.clickTab($data.vstsTabName), event: {  keydown: $data.keyDownTab($data.vstsTabName)}, css: { tabactive: $data.currentTab() === $data.vstsTabName }">
+                        <div class="header" data-bind="title: VSTS_Header, text: VSTS_Header"></div>
+                    </a>
+                    <!-- /ko -->
+                    <!-- ko ifnot: showVSForMac -->
+                        <!-- ko ifnot: newBranding -->
+                        <a class="tab VSS gallery-element-focus-style-dark" role="tab"
+                           data-bind="attr: { href: $data.VSTS_Link, 'aria-controls': $data.getTabAriaControls($data.vstsTabName), 'aria-selected': $data.currentTab() === $data.vstsTabName, tabindex: $data.getTabIndex($data.vstsTabName) }, hasFocus: isVSTSTabFocused, click: $data.clickTab($data.vstsTabName), event: {  keydown: $data.keyDownTab($data.vstsTabName)}, css: { tabactive: $data.currentTab() === $data.vstsTabName }">
+                        <div class="header" data-bind="title: VSTS_Header, text: VSTS_Header"></div>
+                        </a>
+                        <a class="tab VSCode gallery-element-focus-style-dark" role="tab"
+                           data-bind="attr: { href: $data.VSCode_Link, 'aria-controls': $data.getTabAriaControls($data.vsCodeTabName), 'aria-selected': $data.currentTab() === $data.vsCodeTabName, tabindex: $data.getTabIndex($data.vsCodeTabName)}, hasFocus: isVSCodeTabFocused, click: $data.clickTab($data.vsCodeTabName), event: { keydown: $data.keyDownTab($data.vsCodeTabName) }, css: { tabactive: $data.currentTab() === $data.vsCodeTabName }">
+                           <div class="header" data-bind="title: VSCode_Header, text: VSCode_Header"></div>
+                        </a>
+                        <!-- /ko -->
+                        <!-- ko if: newBranding -->
+                        <a class="tab VSCode gallery-element-focus-style-dark" role="tab"
+                           data-bind="attr: { href: $data.VSCode_Link, 'aria-controls': $data.getTabAriaControls($data.vsCodeTabName), 'aria-selected': $data.getAriaSelected($data.vsCodeTabName), tabindex: $data.getTabIndex($data.vsCodeTabName)}, hasFocus: isVSCodeTabFocused, click: $data.clickTab($data.vsCodeTabName), event: { keydown: $data.keyDownTab($data.vsCodeTabName) }, css: { tabactive: $data.currentTab() === $data.vsCodeTabName }">
+                           <div class="header" data-bind="title: VSCode_Header, text: VSCode_Header"></div>
+                        </a>                        
+                        <a class="tab VSS gallery-element-focus-style-dark" role="tab"
+                           data-bind="attr: { href: $data.VSTS_Link, 'aria-controls': $data.getTabAriaControls($data.vstsTabName), 'aria-selected': $data.getAriaSelected($data.vstsTabName), tabindex: $data.getTabIndex($data.vstsTabName) }, hasFocus: isVSTSTabFocused, click: $data.clickTab($data.vstsTabName), event: {  keydown: $data.keyDownTab($data.vstsTabName)}, css: { tabactive: $data.currentTab() === $data.vstsTabName }">
+                        <div class="header" data-bind="title: VSTS_Header, text: VSTS_Header"></div>
+                        </a>
+                        <!-- /ko -->                        
+                    <!-- /ko -->
+                    <a class="tab VSSubs gallery-element-focus-style-dark" role="tab"
+                       data-bind="attr: { href: $data.Subs_Link,  'aria-controls': $data.getTabAriaControls($data.vsSubsTabName), 'aria-selected': $data.getAriaSelected($data.vsSubsTabName), tabindex: $data.getTabIndex($data.vsSubsTabName)}, hasFocus: isVSSubsTabFocused, click: $data.clickTab($data.vsSubsTabName), event: { keydown: $data.keyDownTab($data.vsSubsTabName) }, css: { tabactive: $data.currentTab() === $data.vsSubsTabName }">
+                        <div class="header" data-bind="title: Subs_Header, text: Subs_Header"></div>
+                    </a>
+                </ul>
+                <div class="tab-collection-right">
+                    <a class="publish-extensions" target="_blank" data-bind="attr: { href: $data.getBuildYourOwnURL() }, click: $data.buildYourOwnClick(), text: BuildYourOwnText, visible: $data.currentTab() !== $data.vsSubsTabName" href="https://go.microsoft.com/fwlink/?LinkID=703826"></a>
+                    <!-- ko if: $data.showPublishExtensions -->
+                    <a class="publish-extensions" target="_blank" data-bind="attr: { href: $data.getPublishExtensionsUrl() }, click: $data.publishExtensionsClick(), text: PublishExtensionsText, visible: $data.currentTab() !== $data.vsSubsTabName"></a>
+                    <!-- /ko-->
+                </div>
+            </div>
+        </div>
+        <!-- ko if: $data.showHomePageLockdownBanner -->
+        <div class="homepage-lockdown-banner">
+            <div class="homepage-lockdown-banner-content">
+                <span class="homepage-lockdown-banner-icon bowtie-icon bowtie-status-warning-outline"></span>
+                <span class="homepage-lockdown-banner-text"><span data-bind="text: $data.lockdownBannerMessageBeforeLink"></span><a class="homepage-lockdown-banner-link" target="_blank" data-bind="attr: { href: $data.lockdownBannerLinkUrl }, text: $data.lockdownBannerLinkText"></a><span data-bind="text: $data.lockdownBannerMessageAfterLink"></span></span>
+                <a class="homepage-lockdown-banner-button" data-bind="attr: { href: $data.publishExtensionsUrl }, text: $data.lockdownBannerButtonText"></a>
+            </div>
+        </div>
+        <!-- /ko -->
+        <div class="tab-content" role="main">
+            <div class="searchbox-carousels-content">
+                <!-- ko -->
+                <div data-bind="component: {name: 'homepage-searchbox',
+                    params: {searchClickCallback: navigateToSearch, placeholderText: searchPlaceHolder, searchHeader: searchHeader,  isSelected: isSelected}},
+                    visible: $data.currentTab() !== 'vssubs-tab' && $data.isHosted"></div>
+                <!-- /ko -->
+
+                <div class="on-prem-page-title" data-bind="text: $data.OnPrem_Header, visible: !$data.isHosted"></div>
+
+                <!-- ko if: $data.wasActivated()["vs-tab"] === true -->
+                <div id="vs-tab-content" role="tabpanel" data-bind="component: {name: 'vs-tab-content',
+                    params: {galleryDataProvider: galleryDataProvider, selectedTab: $data.currentTab, currentTab: $data.vsTabName}}"></div>
+                <!-- /ko -->
+                <!-- ko if: $data.wasActivated()["vsformac-tab"] === true -->
+                <div id="vsformac-tab-content" role="tabpanel" data-bind="component: {name: 'vsformac-tab-content',
+                    params: {galleryDataProvider: galleryDataProvider, selectedTab: $data.currentTab, currentTab: $data.vsForMacTabName}}"></div>
+                <!-- /ko -->
+                <!-- ko if: $data.wasActivated()["vsts-tab"] === true -->
+                <div id="vsts-tab-content" role="tabpanel" data-bind="component: {name: 'vsts-tab-content',
+                    params: {galleryDataProvider: galleryDataProvider, selectedTab: $data.currentTab, currentTab: $data.vstsTabName}}"></div>
+                <!-- /ko -->
+                <!-- ko if: $data.wasActivated()["vscode-tab"] === true -->
+                <div id="vscode-tab-content" role="tabpanel" data-bind="component: {name: 'vscode-tab-content',
+                    params: {galleryDataProvider: galleryDataProvider, selectedTab: $data.currentTab, currentTab: $data.vsCodeTabName}}"></div>
+                <!-- /ko -->
+                <!-- ko if: $data.wasActivated()["vssubs-tab"] === true -->
+                <div id="vssubs-tab-content" role="tabpanel" data-bind="component: {name: 'vssubs-tab-content',
+                    params: {galleryDataProvider: galleryDataProvider, selectedTab: $data.currentTab, currentTab: $data.vsSubsTabName}}"></div>
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+            <div class="general-info">
+                <script class="general-info-data" defer="defer" type="application/json">{"galleryUrl":"/","resourcesPath":"https://cdn.vsassets.io/v/M280_20260923.13/_content/","isHosted":true,"featureFlags":{"ShowPublishExtensions":true,"TileImpressionsHomePage":true,"VsTrendingHomepage":false,"Vs2019Homepage":true,"DedupeHomepageExtensions":true,"EnableVsForMac":false,"EnableCertifiedPublisherUIChanges":true,"MarketplaceBrandingChanges":true,"EnableSSRForHomepageVSCode":false,"EnableItemDetailsAFDCachingForVSCodeHomePage":false,"XamarinUniversityDisable":true,"EnableNoFilterSearchHomepageVSIDE":true},"registryItems":{"DefaultTab":"vs","RemovedExtensionsHistoryUrl":"https://github.com/microsoft/vsmarketplace/blob/main/RemovedPackages.md"}}</script>
+            </div>
+        </div>
+        
+        <div id="gallery-footer">
+            
+
+<footer>
+    
+    <div id="ux-footer" class="ltr detailed" role="contentinfo">
+    
+            <div data-bind="component: {name:'gallery-footer', params: { currentTab: currentTab }}"></div>
+        
+        <div id="baseFooter">
+            <div data-fragmentname="BaseFooterLinks" id="Fragment_BaseFooterLinks" xmlns="http://www.w3.org/1999/xhtml">
+
+                <div class="linkList">
+                    <ul class="links horizontal">
+                        <!-- EU Cookie Consent: Do not consider user consent on clicking any of the links, by setting data-mscc-ic attribute to false -->
+                        <li>
+                            
+                                <a href="https://www.visualstudio.com/support/support-overview-vs" data-mscc-ic="false">Contact us</a>
+                                                        
+                        </li>
+                        <li>
+                            <a href="https://careers.microsoft.com/" data-mscc-ic="false">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="https://go.microsoft.com/fwlink/?LinkID=521839" data-mscc-ic="false">Privacy</a>
+                        </li>
+                        
+                            <li>
+                                <a id="mgtConsentCookie" data-mscc-ic="false">Manage cookies</a>
+                            </li>
+                        
+                        <li>
+                            <a href="https://aka.ms/vsmarketplace-ToU" data-mscc-ic="false">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="https://www.microsoft.com/trademarks" data-mscc-ic="false">Trademarks</a>
+                        </li>
+                        <li>
+                            
+                            <a href="https://aka.ms/YourCaliforniaPrivacyChoices" data-mscc-ic="false"><img src="https://cdn.vsassets.io/v/M280_20260923.13/_content/privacy-options.svg" alt="" class="footer-privacy-choices-icon" />Your Privacy Choices </a>
+                        </li>
+                        <li>
+                            <a href="https://go.microsoft.com/fwlink/?linkid=2259814" data-mscc-ic="false">Consumer Health Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="rightBaseFooter">
+                &copy; 2026 Microsoft
+                <span class="microsoftLogo" title="Microsoft"></span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</footer>
+
+    <script type="text/javascript" src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+    
+        <script type="text/javascript" src="/_static/tfs/M280_20260923.13/_scripts/TFS/min/Gallery/Client/Common/ManageCookieDrop.js"></script>
+        <script type="text/javascript"  nonce="K+qnKauoRrxRkIWZgTGnBw==">
+            (function () {
+                document.getElementById("mgtConsentCookie").addEventListener("click", function (el) {
+                    manageConsent();
+                });
+            })();
+        </script>
+    
+        </div>
+        
+    </div>
+
+    
+    
+    <div id="utils-accessibility-announce-polite" class="visually-hidden" aria-live="polite"></div>
+    <div id="utils-accessibility-announce-assertive" class="visually-hidden" aria-live="assertive"></div>
+</body>
+</html>

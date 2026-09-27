@@ -1,0 +1,2661 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>
+    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/>
+
+    
+    
+    <meta name="generator" content="InvenioRDM 15.0"/>
+
+    
+    
+    
+      
+      
+      <title>Zenodo</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico"/>
+          <link rel="apple-touch-icon" sizes="120x120" href="/static/apple-touch-icon-120.png"/>
+          <link rel="apple-touch-icon" sizes="152x152" href="/static/apple-touch-icon-152.png"/>
+          <link rel="apple-touch-icon" sizes="167x167" href="/static/apple-touch-icon-167.png"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon-180.png"/>
+      <link rel="stylesheet" href="/static/dist/css/6874.66341f2e5059614d.css" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  <body data-invenio-config='{"isMathJaxEnabled": "//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"}'  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">
+      <a id="skip-to-main" class="ui button primary ml-5 mt-5 skip-link" href="#main">Skip to main</a>
+      <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+<div>
+  <header class="theme header">
+
+    <div class="outer-navbar">
+
+      <div class="ui container invenio-header-container">
+        <nav id="invenio-nav" class="ui inverted menu borderless p-0">
+          <div class="item logo p-0">
+                      <a class="logo-link" href="https://zenodo.org/">
+                      <img class="ui image rdm-logo"
+                            src="/static/images/invenio-rdm.svg"
+                            alt="Zenodo home"/>
+                    </a>
+          </div>
+
+          <div id="rdm-burger-toggle">
+            <button
+              id="rdm-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Menu"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-controls="invenio-menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <nav
+            id="invenio-menu"
+            aria-labelledby="rdm-burger-menu-icon"
+            class="ui fluid menu borderless mobile-hidden"
+          >
+            <button
+              id="rdm-close-burger-menu-icon"
+              class="ui button transparent"
+              aria-label="Close menu"
+            >
+              <span class="navicon" aria-hidden="true"></span>
+            </button>
+
+    
+    
+    
+      <div class="item p-0 search-bar">
+        <div id="header-search-bar" data-options='[{"key": "records", "text": "All Zenodo", "value": "/search"}]'>
+          <div class="ui fluid search">
+            <div class="ui icon input">
+              <input
+                autocomplete="off"
+                aria-label="Search records"
+                placeholder="Search records..."
+                type="text"
+                tabindex="0"
+                class="prompt"
+                value=""
+              >
+              <button class="ui icon button right-floated search" aria-label="Search">
+                <i aria-hidden="true" class="search icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+                  <div class="item">
+                    <a href="/communities">Communities</a>
+                  </div>
+
+              
+                <div class="item">
+                  <a href="/me/uploads">My dashboard</a>
+                </div>
+              
+              <div class="right menu item">
+    <form>
+      <a
+        href="/login/?next=/"
+        class="ui button auth-button" aria-busy="false" aria-live="polite" aria-label="Log in"
+      >
+        <i class="sign-in icon auth-icon" aria-hidden="true"></i>
+        Log in
+      </a>
+      
+        <a href="/signup/" class="ui button signup">
+          <i class="edit outline icon"></i>
+          Sign up
+        </a>
+      
+    </form>
+              </div>
+          </nav>
+        </nav>
+      </div>
+
+
+    </div>
+      
+      
+    
+      
+    
+    
+  </header>
+</div>
+
+  <main id="main">
+    <div class="invenio-page-body">
+    
+  
+    
+  <div
+    id="communities-carousel"
+    data-title="Featured communities"
+    data-animation-speed="300"
+    data-interval-delay="10000"
+  >
+    <div class="ui fluid container carousel rel-pt-2 rel-pb-2 ml-0-mobile mr-0-mobile">
+      <div class="ui container rel-mb-1">
+        <h2 class="ui header">Featured communities</h2>
+      </div>
+
+      <div class="ui container grid">
+        <div class="left aligned middle aligned two wide column pr-0">
+          <i
+            id="prev-slide-btn"
+            role="button"
+            tabindex="0"
+            aria-label="Previous slide"
+            class="angle left huge inverted icon carousel-arrow"
+          >
+          </i>
+        </div>
+        <div class="twelve wide column">
+          
+    <div id="carousel-container">
+        <div id="carousel-slides" class="ui items flex align-items-center">
+          
+            
+<div class="item slide flex align-items-center visible">
+    <img class="ui small image" src="https://zenodo.org/api/communities/f0a8b890-f97a-4eb2-9eac-8b8a712d3a6c/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/eu/">
+            EU Open Research Repository
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/eu/"
+            aria-label="Browse EU Open Research Repository"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        Open repository for EU-funded research outputs from Horizon Europe, Euratom, and earlier Framework Programmes.
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/7a140649-c350-45e3-a41d-eb8f04abd3d6/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/aas/">
+            AAS Journals
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/aas/"
+            aria-label="Browse AAS Journals"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        Collection of data and software for AAS Journal (ApJ, AJ, ApJL, ApJS, BAAS, PSJ, RNAAS) articles. Draft review &amp; community submissions are welcome and will be curated by the AAS Data Editors.
+
+More information at https://journals.aas.org/data-guide/
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/ee30dbe2-9bc2-4e6f-9739-d459f718c8da/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/generic-mapping-tools/">
+            The Generic Mapping Tools
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/generic-mapping-tools/"
+            aria-label="Browse The Generic Mapping Tools"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        Collection of items related to the Generic Mapping Tools software [www.generic-mapping-tools.org].
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/c529f97d-f8cb-4c13-a439-9e36891694c2/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/biosyslit/">
+            Biodiversity Literature Repository
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/biosyslit/"
+            aria-label="Browse Biodiversity Literature Repository"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        A community to share publications related to bio-systematics.
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/def4b89a-7537-4454-9070-ae33dc22625c/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/mpp-hep/">
+            Machine Learning for Particle Physics
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/mpp-hep/"
+            aria-label="Browse Machine Learning for Particle Physics"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/e30d4cbc-4099-459f-9723-3190b0b736b0/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/grei/">
+            Generalist Repository Ecosystem Initiative (GREI)
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/grei/"
+            aria-label="Browse Generalist Repository Ecosystem Initiative (GREI)"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        Generalist Repository Ecosystem Initiative (GREI) aims to develop collaborative approaches for data management and sharing through inclusion of the generalist repositories in the NIH data ecosystem.
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/7b3fefb8-1deb-4f23-8828-2b88d0dfd8f9/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/aurora-universities-network/">
+            Aurora Universities Network
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/aurora-universities-network/"
+            aria-label="Browse Aurora Universities Network"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        Aurora is a University network platform for European university leaders, administrators, academics, and students to learn from and with each other.
+
+The projects we do and the results that can be shared publically will be put in this community page.
+      </p>
+      
+    </div>
+  </div>
+
+          
+            
+<div class="item slide flex align-items-center hidden">
+    <img class="ui small image" src="https://zenodo.org/api/communities/c56a7bda-78e8-4092-ba8a-b7fff4e574d9/logo" alt="" />
+    <div class="content">
+      <div class="ui middle aligned grid rel-pb-1">
+        <div class="ten wide computer sixteen wide tablet column">
+          <a class="ui medium header" href="https://zenodo.org/communities/ecemf/">
+            European Climate and Energy Modelling Forum
+          </a>
+        </div>
+
+        <div class="six wide computer sixteen wide tablet column buttons">
+          <a
+            class="ui mini button"
+            href="https://zenodo.org/communities/ecemf/"
+            aria-label="Browse European Climate and Energy Modelling Forum"
+          >
+            Browse
+          </a>
+          
+        </div>
+      </div>
+
+      
+      <p class="description">
+        ECEMF is a Horizon 2020-funded project aiming to establish a European forum for energy and climate researchers and policy makers to achieve climate neutrality.
+      </p>
+      
+    </div>
+  </div>
+
+          
+        </div>
+    </div>
+
+        </div>
+        <div class="right aligned middle aligned two wide column pl-0">
+          <i
+            id="next-slide-btn"
+            role="button"
+            tabindex="0"
+            aria-label="Next slide"
+            class="angle right huge inverted icon carousel-arrow"
+            >
+          </i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="/static/dist/js/manifest.19e7088b1d606958.js"></script>
+<script src="/static/dist/js/zenodo-rdm-communities-carousel.ac1e9cac31877acf.js"></script>
+
+  
+    <div class="ui stackable grid container rel-mt-2">
+
+      
+        <div class="eleven wide computer sixteen wide tablet column">
+
+          
+  
+    
+  <div id="records-list" data-title="Recent uploads">
+
+    <h2 class="ui header">Recent uploads</h2>
+
+    <div class="ui container rel-mb-2 ml-0-mobile mr-0-mobile">
+      <ul class="ui divided link relaxed items pl-0">
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22991017" style="">
+          Supplementary material 1 from: Marle P, Stoffel C, Renahy S (2026) First record of the Ponto-Caspian amphipod Chaetogammarus trichiatus (Martynov, 1932) (= Echinogammarus trichiatus) (Crustacea, Gammaridae) in Lake Geneva. Alpine Entomology 10: 163-168. https://doi.org/10.3897/alpento.10.207817
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Marle, Pierre"
+        title="Marle, Pierre: Search"
+      >
+        <span class="creatibutor-name">Marle, Pierre</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Stoffel, Céline"
+        title="Stoffel, Céline: Search"
+      >
+        <span class="creatibutor-name">Stoffel, Céline</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Renahy, Simon"
+        title="Renahy, Simon: Search"
+      >
+        <span class="creatibutor-name">Renahy, Simon</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Fasta sequences
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22991010" style="">
+          Supplementary material 5 from: Mahato A, Hui P, Hazra N (2026) First Indian record of Heleniella nebulosa Andersen &amp; Wang (Diptera, Chironomidae): Insights into cryptic diversity and the phylogeny of the genus Heleniella Gowin. Evolutionary Systematics 10(2): 359-373. https://doi.org/10.3897/evolsyst.10.208449
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Mahato, Achintya"
+        title="Mahato, Achintya: Search"
+      >
+        <span class="creatibutor-name">Mahato, Achintya</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hui, Poulami"
+        title="Hui, Poulami: Search"
+      >
+        <span class="creatibutor-name">Hui, Poulami</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hazra, Niladri"
+        title="Hazra, Niladri: Search"
+      >
+        <span class="creatibutor-name">Hazra, Niladri</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Kimura two-parameter (K2P) pairwise genetic distance matrix for the 72 unique HeleniellaCOI sequence variants used in the reduced molecular analyses
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22991008" style="">
+          Supplementary material 4 from: Mahato A, Hui P, Hazra N (2026) First Indian record of Heleniella nebulosa Andersen &amp; Wang (Diptera, Chironomidae): Insights into cryptic diversity and the phylogeny of the genus Heleniella Gowin. Evolutionary Systematics 10(2): 359-373. https://doi.org/10.3897/evolsyst.10.208449
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Mahato, Achintya"
+        title="Mahato, Achintya: Search"
+      >
+        <span class="creatibutor-name">Mahato, Achintya</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hui, Poulami"
+        title="Hui, Poulami: Search"
+      >
+        <span class="creatibutor-name">Hui, Poulami</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hazra, Niladri"
+        title="Hazra, Niladri: Search"
+      >
+        <span class="creatibutor-name">Hazra, Niladri</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Redundancy audit of the 651 HeleniellaCOI sequences
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22991006" style="">
+          Supplementary material 3 from: Mahato A, Hui P, Hazra N (2026) First Indian record of Heleniella nebulosa Andersen &amp; Wang (Diptera, Chironomidae): Insights into cryptic diversity and the phylogeny of the genus Heleniella Gowin. Evolutionary Systematics 10(2): 359-373. https://doi.org/10.3897/evolsyst.10.208449
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Mahato, Achintya"
+        title="Mahato, Achintya: Search"
+      >
+        <span class="creatibutor-name">Mahato, Achintya</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hui, Poulami"
+        title="Hui, Poulami: Search"
+      >
+        <span class="creatibutor-name">Hui, Poulami</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hazra, Niladri"
+        title="Hazra, Niladri: Search"
+      >
+        <span class="creatibutor-name">Hazra, Niladri</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        List of the 72 unique HeleniellaCOI sequence variants retained after removal of exact sequence duplicates from the complete 651-sequence dataset, including representative accession, taxonomic identification, geographic origin, and sequence-variant frequency
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22991002" style="">
+          Supplementary material 2 from: Mahato A, Hui P, Hazra N (2026) First Indian record of Heleniella nebulosa Andersen &amp; Wang (Diptera, Chironomidae): Insights into cryptic diversity and the phylogeny of the genus Heleniella Gowin. Evolutionary Systematics 10(2): 359-373. https://doi.org/10.3897/evolsyst.10.208449
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Mahato, Achintya"
+        title="Mahato, Achintya: Search"
+      >
+        <span class="creatibutor-name">Mahato, Achintya</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hui, Poulami"
+        title="Hui, Poulami: Search"
+      >
+        <span class="creatibutor-name">Hui, Poulami</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hazra, Niladri"
+        title="Hazra, Niladri: Search"
+      >
+        <span class="creatibutor-name">Hazra, Niladri</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Complete list of the 651 HeleniellaCOI sequences included in the molecular dataset, with accession information, taxonomic identification, sequence metadata, and geographic origin where available
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22990999" style="">
+          Supplementary material 1 from: Mahato A, Hui P, Hazra N (2026) First Indian record of Heleniella nebulosa Andersen &amp; Wang (Diptera, Chironomidae): Insights into cryptic diversity and the phylogeny of the genus Heleniella Gowin. Evolutionary Systematics 10(2): 359-373. https://doi.org/10.3897/evolsyst.10.208449
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Mahato, Achintya"
+        title="Mahato, Achintya: Search"
+      >
+        <span class="creatibutor-name">Mahato, Achintya</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hui, Poulami"
+        title="Hui, Poulami: Search"
+      >
+        <span class="creatibutor-name">Hui, Poulami</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Hazra, Niladri"
+        title="Hazra, Niladri: Search"
+      >
+        <span class="creatibutor-name">Hazra, Niladri</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Neighbor-Joining (NJ) tree inferred from the complete dataset of 651 HeleniellaCOI sequences using the Kimura two-parameter (K2P) distance model in MEGA
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22990993" style="">
+          Supplementary material 1 from: Slagsvold PK, Berggren K, Voith RJDI, Johannessen ODM, Aarvik L (2026) Rhodophaea madaricola sp. nov. from the mountains of the Greek island Crete, with comments on Rhodophaea Guenée, 1845 and related genera (Lepidoptera, Pyralidae). Nota Lepidopterologica 49: 171-193. https://doi.org/10.3897/nl.49.206374
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Slagsvold, Per Kristian"
+        title="Slagsvold, Per Kristian: Search"
+      >
+        <span class="creatibutor-name">Slagsvold, Per Kristian</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Berggren, Kai"
+        title="Berggren, Kai: Search"
+      >
+        <span class="creatibutor-name">Berggren, Kai</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Voith, Reidar J.D.I."
+        title="Voith, Reidar J.D.I.: Search"
+      >
+        <span class="creatibutor-name">Voith, Reidar J.D.I.</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        Maximum likelihood dendrogram of Phycitini taxa based on CO1 sequences, with bootstrap support above nodes (cutoff &lt;30)
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22990989" style="">
+          Supplementary material 6 from: Zou B, Chesters D, Yu R, Liu H, Li H, Xiao H, Zhu C, Zhang Y (2026) Integrative species delimitation and preliminary study of host specificity of encyrtid parasitoids associated with psyllids in China. Journal of Hymenoptera Research 99: 1045-1067. https://doi.org/10.3897/jhr.99.202665
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Zou, Boyu"
+        title="Zou, Boyu: Search"
+      >
+        <span class="creatibutor-name">Zou, Boyu</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Chesters, Douglas"
+        title="Chesters, Douglas: Search"
+      >
+        <span class="creatibutor-name">Chesters, Douglas</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Yu, Runze"
+        title="Yu, Runze: Search"
+      >
+        <span class="creatibutor-name">Yu, Runze</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        The NJ tree of 81 28S-D2 rDNA haplotypes
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22990985" style="">
+          Supplementary material 5 from: Zou B, Chesters D, Yu R, Liu H, Li H, Xiao H, Zhu C, Zhang Y (2026) Integrative species delimitation and preliminary study of host specificity of encyrtid parasitoids associated with psyllids in China. Journal of Hymenoptera Research 99: 1045-1067. https://doi.org/10.3897/jhr.99.202665
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Zou, Boyu"
+        title="Zou, Boyu: Search"
+      >
+        <span class="creatibutor-name">Zou, Boyu</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Chesters, Douglas"
+        title="Chesters, Douglas: Search"
+      >
+        <span class="creatibutor-name">Chesters, Douglas</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Yu, Runze"
+        title="Yu, Runze: Search"
+      >
+        <span class="creatibutor-name">Yu, Runze</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        The NJ trees of 113 COI haplotypes
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+          
+  <li class="item">
+    <div class="content">
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      <div class="extra labels-actions">
+        <div class="ui small horizontal primary theme-primary label" style="">
+          September 25, 2026 (v1)
+        </div>
+        <div class="ui small horizontal neutral label">
+          Dataset
+        </div>
+
+        
+        
+        
+
+        <div class="ui small horizontal label access-status open">
+            <i class="icon unlock" aria-hidden="true"></i>
+            Open
+        </div>
+    </div>
+
+      
+      <div class="header theme-primary-text">
+        <a href="/records/22990983" style="">
+          Supplementary material 4 from: Zou B, Chesters D, Yu R, Liu H, Li H, Xiao H, Zhu C, Zhang Y (2026) Integrative species delimitation and preliminary study of host specificity of encyrtid parasitoids associated with psyllids in China. Journal of Hymenoptera Research 99: 1045-1067. https://doi.org/10.3897/jhr.99.202665
+        </a>
+      </div>
+
+      
+      <div class="ui item creatibutors">
+        
+        
+
+        
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Zou, Boyu"
+        title="Zou, Boyu: Search"
+      >
+        <span class="creatibutor-name">Zou, Boyu</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Chesters, Douglas"
+        title="Chesters, Douglas: Search"
+      >
+        <span class="creatibutor-name">Chesters, Douglas</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+    
+    
+
+    <span class="creatibutor-wrap separated">
+      <a
+        class="creatibutor-link"
+        href="/search?q=metadata.creators.person_or_org.name:Yu, Runze"
+        title="Yu, Runze: Search"
+      >
+        <span class="creatibutor-name">Yu, Runze</span>
+      </a>
+
+      
+  
+
+    </span>
+  
+
+      </div>
+
+      
+      <p class="description">
+        
+
+        ASAP analysis
+      </p>
+
+      <div class="extra">
+        <div class="flex justify-space-between align-items-end">
+          
+          
+          
+          <div>
+            <p>
+              <small>
+                
+                  Uploaded on September 27, 2026
+                
+              </small>
+            </p>
+
+            
+            <p>
+              <small>
+                
+                
+                
+
+                
+                  <b>Part of 
+  
+    
+    <span class="display-inline-flex comma-separated">
+      <a
+        href="/communities/biosyslit"
+        title="Biodiversity Literature Repository: Search"
+      >
+        Biodiversity Literature Repository
+      </a>
+    </span>
+  
+</b>
+                
+              </small>
+            </p>
+            <p>
+              <small>
+                
+              </small>
+            </p>
+
+            
+            
+          </div>
+
+          
+          
+          
+          <small class="flex align-items-center">
+            
+              <div class="ui transparent label stats-popup stats-views" aria-label="Views">
+                <i class="ui eye icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Views
+                </div>
+              </div>
+            
+
+            
+              <div class="ui transparent label stats-popup stats-downloads" aria-label="Downloads">
+                <i class="ui download icon" aria-hidden="true"></i>
+                0
+                <div class="ui tiny popup" aria-hidden="true">
+                  Downloads
+                </div>
+              </div>
+            
+          </small>
+        </div>
+      </div>
+    </div>
+  </li>
+
+        
+      </ul>
+    </div>
+
+    <div class="ui center aligned container">
+      <a class="ui button" href="/search" aria-label="See more records">
+        More
+      </a>
+    </div>
+  </div>
+
+  
+
+
+        </div>
+      
+
+      
+        <aside class="five wide computer sixteen wide tablet column">
+
+          
+  <section class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Why use Zenodo? </h2>
+    <div class="ui segment bottom attached rdm-sidebar">
+      <ul class="m-0">
+        <li>
+          <strong>Safe</strong> — Your research is stored safely for the future in CERN’s Data Centre for as long as CERN exists
+        </li>
+        <li>
+          <strong>Trusted</strong> — Built and operated by CERN and OpenAIRE to ensure that everyone can join in Open Science
+        </li>
+        <li>
+          <strong>Citeable</strong> — Every upload is assigned a Digital Object Identifier (DOI), to make them citable and trackable
+        </li>
+        <li>
+          <strong>No waiting time</strong> — Uploads are made available online as soon as you hit publish, and your DOI is registered within seconds
+        </li>
+        <li>
+         <strong>Open or closed</strong> — Share e.g. anonymized clinical trial data with only medical professionals via our restricted access mode
+        </li>
+        <li>
+          <strong>Versioning</strong> — Easily update your dataset with our versioning feature
+        </li>
+        <li>
+          <strong>GitHub integration</strong> — Easily preserve your GitHub repository in Zenodo
+        </li>
+        <li>
+          <strong>Usage statistics</strong> — All uploads display standards compliant usage statistics
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sidebar-container">
+    <h2 class="ui medium top attached header mt-0">Newsletter</h2>
+    <div class="ui segment bottom attached rdm-sidebar">
+      <p>Receive updates on our latest developments, projects and upcoming webinars sent quarterly.</p>
+
+      <form method="post" action="https://newsletters.zenodo.org/subscription/form">
+        <input type="hidden" name="nonce">
+        <label class="ui tiny header" for="newsletter-email">
+          <small>E-mail *</small>
+        </label>
+        <div class="ui fluid input mb-10">
+          <input id="newsletter-email" type="email" name="email" required="" placeholder="your-email@example.com">
+        </div>
+
+        <label class="ui tiny header" for="newsletter-name">
+          <small>Name</small>
+        </label>
+        <div class="ui fluid input mb-10">
+          <input id="newsletter-name" type="text" name="name" placeholder="Your name">
+        </div>
+
+        <input id="e7755" type="hidden" name="l" value="e775524d-5cce-4885-b559-ef0f6214f24b">
+        <input type="submit" value="Subscribe" class="ui primary button fluid">
+      </form>
+    </div>
+  </section>
+
+
+        </aside>
+      
+    </div>
+    </div>
+  </main>
+    <footer id="rdm-footer-element">
+        
+
+  <div class="footer-top">
+    <div class="ui container app-rdm-footer">
+<div class="ui equal width stackable grid zenodo-footer">
+  <div class="column">
+    <h2 class="ui inverted tiny header">About</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://about.zenodo.org">About</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/policies">Policies</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/infrastructure">Infrastructure</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/principles">Principles</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/projects/">Projects</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/roadmap/">Roadmap</a>
+      </li>
+      <li class="item">
+        <a href="https://about.zenodo.org/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Blog</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://blog.zenodo.org">Blog</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Support</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://help.zenodo.org/">Help</a>
+      </li>
+      <li class="item">
+        <a href="https://support.zenodo.org/help/">FAQ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Developers</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://developers.zenodo.org">REST API</a>
+      </li>
+      <li class="item">
+        <a href="https://developers.zenodo.org#oai-pmh">OAI-PMH</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2 class="ui inverted tiny header">Contribute</h2>
+    <ul class="ui inverted link list">
+      <li class="item">
+        <a href="https://github.com/zenodo/zenodo-rdm">
+          <i class="icon external" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </li>
+      <li class="item">
+        <a href="/donate">
+          <i class="icon external" aria-hidden="true"></i>
+          Donate
+        </a>
+      </li>
+    </ul>
+  </div>
+      <div class="six wide column right aligned">
+  <h2 class="ui inverted tiny header">Funded by</h2>
+  <ul class="ui horizontal link list">
+    <li class="item">
+      <a href="https://home.cern" aria-label="CERN">
+        <img src="/static/images/cern.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://www.openaire.eu" aria-label="OpenAIRE">
+        <img src="/static/images/openaire.png" width="60" height="60" alt="" />
+      </a>
+    </li>
+    <li class="item">
+      <a href="https://commission.europa.eu/index_en" aria-label="European Commission">
+        <img src="/static/images/eu.png" width="88" height="60" alt="" />
+      </a>
+    </li>
+  </ul>
+      </div>
+      </div>
+    </div>
+
+  </div>
+        
+<div class="footer-bottom">
+  <div class="ui inverted container">
+    <div class="ui grid">
+      <div class="eight wide column left middle aligned">
+        <p class="m-0">
+          Powered by
+          <a href="https://home.cern/science/computing/data-centre">CERN Data Centre</a> & <a href="https://inveniordm.docs.cern.ch/">InvenioRDM</a>
+        </p>
+      </div>
+      <div class="eight wide column right aligned">
+        <ul class="ui inverted horizontal link list">
+          <li class="item">
+            <a href="https://stats.uptimerobot.com/vlYOVuWgM/">Status</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/privacy-policy">Privacy policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/cookie-policy">Cookie policy</a>
+          </li>
+          <li class="item">
+            <a href="https://about.zenodo.org/terms">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    </footer>
+
+        
+          <script type="text/javascript">
+            window.MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true // Allows escaping $ signs if needed
+              }
+            };
+          </script>
+          <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+
+        
+<script src="/static/dist/js/2210.0ab43f134e1f4741.js"></script>
+<script src="/static/dist/js/6874.65ec0a8b2c6353ef.js"></script>
+<script src="/static/dist/js/theme.94dcfaf40ce89fce.js"></script>
+<script src="/static/dist/js/9516.90bfb7abfc1a57cc.js"></script>
+<script src="/static/dist/js/4993.8b71b9b033297984.js"></script>
+<script src="/static/dist/js/1514.d8373180d308ebb1.js"></script>
+<script src="/static/dist/js/7211.6d2b6f902ee9e311.js"></script>
+<script src="/static/dist/js/6555.699b01c9afd09bbc.js"></script>
+<script src="/static/dist/js/2028.1d4b59f583a7c22e.js"></script>
+<script src="/static/dist/js/9515.2e7aeb0a90110547.js"></script>
+<script src="/static/dist/js/1242.6d3433e37788315a.js"></script>
+<script src="/static/dist/js/4413.6964d435bb536ad3.js"></script>
+<script src="/static/dist/js/1930.5c46a3667e424fff.js"></script>
+<script src="/static/dist/js/700.874be66ad204dbca.js"></script>
+<script src="/static/dist/js/8532.08a266dd14b72292.js"></script>
+<script src="/static/dist/js/1246.6ee2537656af5076.js"></script>
+<script src="/static/dist/js/2620.bf73f48484645965.js"></script>
+<script src="/static/dist/js/7954.0f565d246955cad5.js"></script>
+<script src="/static/dist/js/base-theme-rdm.7c5ef1e992944e6e.js"></script>
+<script src="/static/dist/js/i18n_app.f29ad99db6b3d7b0.js"></script>
+<script src="/static/dist/js/1947.077e50def0d12fe6.js"></script>
+<script src="/static/dist/js/5250.accef40e35b05da8.js"></script>
+<script src="/static/dist/js/overridable-registry.1f90648db5424404.js"></script>
+        <div class="ui container info message cookie-banner hidden">
+  <i class="close icon"></i>
+  <div>
+    <i aria-hidden="true" class="info icon"></i>
+    <p class="inline">This site uses cookies. Find out more on <a href="https://about.zenodo.org/cookie-policy">how we use cookies</a></p>
+  </div>
+  <div class="buttons">
+    <button class="ui button small primary" id="cookies-all">Accept all cookies</button>
+    <button class="ui button small" id="cookies-essential">Accept only essential cookies</button>
+  </div>
+</div>
+
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['requireCookieConsent']);
+
+  (function() {
+    var u="https://webanalytics.web.cern.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '366']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+  const cookieConsent = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("cookie_consent="))
+    ?.split("=")[1];
+
+  if (cookieConsent) {
+    if (cookieConsent === "all") {
+      matomo();
+    }
+  } else {
+    document.querySelector(".cookie-banner").classList.remove("hidden")
+    _paq.push(['forgetConsentGiven']);
+  }
+
+  $('.cookie-banner .close')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-essential')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","essential");
+    });
+
+  $('#cookies-all')
+    .on('click', function () {
+      $(this)
+        .closest('.message')
+        .transition('fade');
+      setCookie("cookie_consent","all");
+      _paq.push(['rememberCookieConsentGiven']);
+      matomo();
+    });
+
+  function matomo() {
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+  }
+
+  function setCookie(cname, cvalue) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // one year
+    var expires = "expires=" + d.toUTCString();
+    var cookie = cname + "=" + cvalue + ";" + expires + ";"
+    cookie += "Domain=zenodo.org;Path=/;SameSite=None; Secure";
+    document.cookie = cookie;
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            window.spkAnalyticsConsent = false;
+            gtag('consent', 'default', {
+                analytics_storage: window.spkAnalyticsConsent ? 'granted' : 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied'
+            });
+            gtag('set', 'ads_data_redaction', true);
+            gtag('js', new Date());
+            gtag('config', 'G-GFK91LTMH1', {
+                allow_google_signals: false,
+                allow_ad_personalization_signals: false,
+                content_group: 'Urunler',
+                cookie_flags: window.location.protocol === 'https:' ? 'SameSite=Lax;Secure' : 'SameSite=Lax',
+                ignore_referrer: true,
+                page_location: window.location.origin + window.location.pathname,
+                page_referrer: ''
+            });
+            function loadAnalytics() {
+                if (document.getElementById('spk-analytics')) return;
+                var script = document.createElement('script');
+                script.id = 'spk-analytics';
+                script.async = true;
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GFK91LTMH1';
+                document.head.appendChild(script);
+            }
+            if (window.spkAnalyticsConsent) loadAnalytics();
+            document.addEventListener('click', function (event) {
+                var anchor = event.target.closest('a[href]');
+                if (!anchor) return;
+                var href = anchor.getAttribute('href') || '';
+                var method = href.indexOf('tel:') === 0 ? 'phone'
+                    : href.indexOf('mailto:') === 0 ? 'email'
+                    : href.indexOf('https://wa.me/') === 0 ? 'whatsapp'
+                    : /\.pdf(?:$|[?#])/i.test(href) ? 'document'
+                    : null;
+                if (method && window.spkAnalyticsConsent) {
+                    gtag('event', 'contact_click', { method: method, link_url: anchor.href });
+                }
+            });
+        </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|PT+Serif:400,400i&amp;display=swap" rel="stylesheet" type="text/css" />
+    <link href="/Content/Def/site-style-bundle?v=l3e-yojbL9VdhwiO1my7DVZ7bljW42zoF469FkId7jU1" rel="stylesheet"/>
+
+    <link href="/Content/Def/css/styles-bundle?v=9yR8PHrKuqqIkHyq8XxYPKxmp0E-pM9-Y20u0YQNKCc1" rel="stylesheet"/>
+
+        <link rel="stylesheet" href="/Content/Def/css/font-icons.css" media="print" onload="this.media='all'">
+        <noscript><link rel="stylesheet" href="/Content/Def/css/font-icons.css"></noscript>
+    
+
+    <title>&#220;r&#252;nler | SPK Boru &amp; Fitting</title>
+    <meta name="description" content="SPK&#39;da y&#252;ksek kaliteli boru ve bağlantı par&#231;alarını keşfedin. &#220;r&#252;nlerimiz PPR, PERT, PP, PVC ve S-PP sistemlerini i&#231;erir. &#220;r&#252;nler sayfamızda ihtiya&#231;larınıza en uygun &#231;&#246;z&#252;m&#252; bulun.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="seobility" content="5c125197099a5338f234fdd330087db9">
+
+        <link rel="canonical" href="https://www.spk.com.tr/Urunler">
+                <link rel="alternate" hreflang="tr" href="https://www.spk.com.tr/Urunler">
+            <link rel="alternate" hreflang="en" href="https://www.spk.com.tr/en/Products">
+            <link rel="alternate" hreflang="ru" href="https://www.spk.com.tr/ru/%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F">
+            <link rel="alternate" hreflang="ar" href="https://www.spk.com.tr/ar/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA">
+            <link rel="alternate" hreflang="x-default" href="https://www.spk.com.tr/en/Products">
+
+        <meta property="og:title" content="&#220;r&#252;nler | SPK Boru &amp; Fitting">
+        <meta property="og:description" content="SPK&#39;da y&#252;ksek kaliteli boru ve bağlantı par&#231;alarını keşfedin. &#220;r&#252;nlerimiz PPR, PERT, PP, PVC ve S-PP sistemlerini i&#231;erir. &#220;r&#252;nler sayfamızda ihtiya&#231;larınıza en uygun &#231;&#246;z&#252;m&#252; bulun.">
+        <meta property="og:site_name" content="SPK Boru &amp; Fitting">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.spk.com.tr/Urunler">
+        <meta property="og:image" content="https://www.spk.com.tr/Res/spkpipelogo.png">
+        <meta property="og:image:alt" content="&#220;r&#252;nler | SPK Boru &amp; Fitting">
+        <meta property="og:see_also" content="https://www.youtube.com/@spkpipefittings4398">
+        <meta property="og:see_also" content="https://www.linkedin.com/company/spk-tr">
+        <meta property="og:locale" content="tr_TR">
+                <meta property="og:locale:alternate" content="en_US" />
+                <meta property="og:locale:alternate" content="ru_RU" />
+                <meta property="og:locale:alternate" content="ar_SA" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="&#220;r&#252;nler | SPK Boru &amp; Fitting">
+        <meta name="twitter:description" content="SPK&#39;da y&#252;ksek kaliteli boru ve bağlantı par&#231;alarını keşfedin. &#220;r&#252;nlerimiz PPR, PERT, PP, PVC ve S-PP sistemlerini i&#231;erir. &#220;r&#252;nler sayfamızda ihtiya&#231;larınıza en uygun &#231;&#246;z&#252;m&#252; bulun.">
+        <meta name="twitter:image" content="https://www.spk.com.tr/Res/spkpipelogo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/Res/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/Res/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Res/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Res/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Res/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Res/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Res/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Res/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Res/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Res/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Res/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/Res/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Res/icons/favicon-16x16.png">
+    <link rel="manifest" href="/Res/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/Res/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#1A9CBC">
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://www.spk.com.tr/#organization",
+                  "name": "SPK Pipe & Fittings",
+                  "legalName": "SÖĞÜT PLASTİK ve KALIP SANAYİ ve TİCARET A.Ş.",
+                  "url": "https://www.spk.com.tr/",
+                  "logo": "https://www.spk.com.tr/Res/spkpipelogo.png",
+                  "foundingDate": "1976",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Dudullu OSB Mah. 3 Cad. SPK, No: 18/0",
+                    "addressLocality": "Ümraniye",
+                    "addressRegion": "İstanbul",
+                    "postalCode": "34775",
+                    "addressCountry": "TR"
+                  },
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "telephone": "+90-216-415-99-00",
+                    "email": "info@spk.com.tr"
+                  },
+                  "sameAs": [
+                    "https://www.youtube.com/@spkpipefittings4398",
+                    "https://www.linkedin.com/company/spk-tr"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.spk.com.tr/#website",
+                  "url": "https://www.spk.com.tr/",
+                  "name": "SPK Pipe & Fittings",
+                  "publisher": { "@id": "https://www.spk.com.tr/#organization" },
+                  "inLanguage": ["tr", "en", "ru", "ar"]
+                }
+              ]
+            }
+        </script>
+    
+</head>
+
+<body class="stretched ">
+    <a class="skip-link" href="#main-content">İ&#231;eriğe ge&#231;</a>
+    <div id="wrapper">
+        <header id="header" class="full-header">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row">
+                        <div id="logo">
+                            <a href="/">
+                                <img class="logo-default" src="/Res/spk_boru_tr.png" width="1229" height="786" alt="SPK Logo" decoding="async">
+                                <img class="logo-dark" src="/Res/spk_boru_tr.jpg" width="1229" height="786" alt="SPK Logo" decoding="async">
+                            </a>
+                        </div>
+
+                        <div class="header-misc">
+                                <details class="spk-language-menu">
+                                    <summary lang="tr"><img src="/Content/Def/images/flags/tr2.svg" width="24" height="18" alt="">T&#252;rk&#231;e</summary>
+                                    <ul>
+                                            <li><a data-default-href="en/Products" href="/en/Products" lang="en" hreflang="en" dir="ltr"><img src="/Content/Def/images/flags/gb.svg" width="24" height="18" alt="">English</a></li>
+                                            <li><a data-default-href="ru/Продукция" href="/ru/Продукция" lang="ru" hreflang="ru" dir="ltr"><img src="/Content/Def/images/flags/ru.svg" width="24" height="18" alt="">Русский</a></li>
+                                            <li><a data-default-href="ar/المنتجات" href="/ar/المنتجات" lang="ar" hreflang="ar" dir="rtl"><img src="/Content/Def/images/flags/ar-ae-sa.svg" width="24" height="18" alt="">العربية</a></li>
+                                    </ul>
+                                </details>
+                        </div>
+
+                        <div class="primary-menu-trigger">
+                            <button class="cnvs-hamburger" type="button" title="Ana men&#252;" aria-label="Ana men&#252;" aria-expanded="false" aria-controls="primary-navigation dealer-navigation">
+                                <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                            </button>
+                        </div>
+
+                            <nav id="dealer-navigation" class="primary-menu" style="position:inherit;" aria-label="Bayi">
+                                <ul class="menu-container">
+                                    <li class="menu-item">
+                                    <a class="menu-link" href="https://pos.spk.com.tr" target="_blank" rel="noopener"><div>Bayi Girişi</div></a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+
+
+
+                        <nav id="primary-navigation" class="primary-menu" aria-label="Ana men&#252;">
+                            <ul class="menu-container">
+
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/"><div>Ana Sayfa</div></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/Hakkimizda"><div>Kurumsal</div></a>
+                                    <button type="button" class="sub-menu-trigger fa-solid fa-chevron-right" aria-label="Kurumsal" aria-controls="corporate-menu" aria-expanded="false"></button>
+                                    <ul id="corporate-menu" class="sub-menu-container">
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="/Hakkimizda"><div>Hakkımızda</div></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="/Kalite-Politikasi"><div>Kalite Politikası</div></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="/Haberler"><div>Haberler</div></a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="/Blog"><div>Blog</div></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/Urunler"><div>&#220;r&#252;nler</div></a>
+                                    <button type="button" class="sub-menu-trigger fa-solid fa-chevron-right" aria-label="&#220;r&#252;nler" aria-controls="products-menu" aria-expanded="false"></button>
+                                    <ul id="products-menu" class="sub-menu-container">
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25156"><div>PPR Temiz Su Sistemleri</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25169"><div>PE-RT Isıtma Sistemleri</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25234"><div>Metal Vana Grubu</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25182"><div>PP Atık Su Sistemleri</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25208"><div>S-PP Sessiz Atık Su Sistemleri</div></a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a class="menu-link" href="/Urunler/25195"><div>PVC Atık Su Sistemleri</div></a>
+                                                </li>
+
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="/media/documents/SPK-Boru-Şubat-2026.pdf"><div>Fiyat Listesi</div></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/Sertifikalar"><div>Sertifikalar</div></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="/Iletisim"><div>İletişim</div></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header>
+        <main id="main-content" tabindex="-1">
+            
+
+<section id="content">
+    <div class="content-wrap product-content-wrap">
+        <div class="container clearfix">
+
+            <div class="row gutter-40 col-mb-80">
+                <!-- Post Content
+                ============================================= -->
+                <div class="postcontent col-lg-9 order-lg-last">
+
+                    <h1 class="h2">&#220;r&#252;nler</h1>
+
+                    <!-- Shop
+                    ============================================= -->
+                    <div id="shop" class="shop row gutter-20 product-catalog-grid">
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25156">
+                                                <img src="/media/product-groups/spk_sl1.jpg" alt="PPR, PPR Temiz Su Sistemleri" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25156">PPR Temiz Su Sistemleri</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25169">
+                                                <img src="/media/product-groups/spk_sl2.jpg" alt="PE-RT, PE-RT Isıtma Sistemleri" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25169">PE-RT Isıtma Sistemleri</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25234">
+                                                <img src="/media/product-groups/spk_sl6.jpg" alt="METAL, Metal Vana Grubu" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25234">Metal Vana Grubu</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25182">
+                                                <img src="/media/product-groups/spk_sl3.jpg" alt="PP, PP Atık Su Sistemleri" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25182">PP Atık Su Sistemleri</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25208">
+                                                <img src="/media/product-groups/spk_sl5.jpg" alt="S-PP, S-PP Sessiz Atık Su Sistemleri" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25208">S-PP Sessiz Atık Su Sistemleri</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product col-sm-4 col-6">
+                                    <div class="grid-inner">
+                                        <div class="product-image border border-light">
+                                            <a href="/Urunler/25195">
+                                                <img src="/media/product-groups/spk_sl4.jpg" alt="PVC, PVC Atık Su Sistemleri" width="600" height="450" loading="lazy" decoding="async">
+                                                <div class="bg-overlay">
+                                                    <div class="bg-overlay-content align-items-end justify-content-between" data-hover-animate="fadeIn" data-hover-speed="400">
+                                                    </div>
+                                                    <div class="bg-overlay-bg bg-transparent"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="product-desc">
+                                            <div class="product-title"><h2 class="h3"><a href="/Urunler/25195">PVC Atık Su Sistemleri</a></h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    </div><!-- #shop end -->
+
+                </div><!-- .postcontent end -->
+                <!-- Sidebar
+                ============================================= -->
+                <div class="sidebar product-sidebar col-lg-3 d-none d-lg-block">
+                    <div class="sidebar-widgets-wrap">
+                        <div class="widget widget-filter-links">
+                            <h2 style="font-size:30px;"><a href="/Urunler" class="text-dark">&#220;r&#252;nler</a></h2>
+                            
+                            <ul>
+                                        <li>
+                                            <a href="/Urunler/25156">PPR Temiz Su Sistemleri</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Urunler/25169">PE-RT Isıtma Sistemleri</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Urunler/25234">Metal Vana Grubu</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Urunler/25182">PP Atık Su Sistemleri</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Urunler/25208">S-PP Sessiz Atık Su Sistemleri</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Urunler/25195">PVC Atık Su Sistemleri</a>
+                                        </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div><!-- .sidebar end -->
+            </div>
+
+        </div>
+    </div>
+</section><!-- #content end -->
+
+
+
+        </main>
+        <footer id="footer" class="dark">
+
+            <div id="copyrights">
+                <div class="container">
+
+                    <div class="row col-mb-30">
+
+                        <div class="col-md-6 text-center text-md-start">
+                            <div class="footer-copyright">
+Copyrights &#169; 2026 S&#214;Ğ&#220;T PLASTİK ve KALIP SANAYİ ve TİCARET AŞ. T&#252;m hakları saklıdır.                            </div>
+                            <div class="copyright-links">
+                                <span class="copyright-link-item"><a href="/GizlilikPolitikasi">KVKK ve Gizlilik Politikası</a></span>
+                                <span class="copyright-link-item"><a href="/CerezPolitikasi">&#199;erez Politikası</a></span>
+                                    <span class="copyright-link-item"><button type="button" class="cookie-preferences-link" data-cookie-preferences>Tercihleri y&#246;net</button></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="d-flex justify-content-center justify-content-md-end">
+                                <a href="https://www.youtube.com/@spkpipefittings4398" class="social-icon si-small border-transparent h-bg-youtube" aria-label="SPK Youtube Channel">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/spk-tr" class="social-icon si-small border-transparent h-bg-linkedin" aria-label="SPK LinkedIn Page">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="footer-contact">
+                                <a class="footer-contact-item" href="/cdn-cgi/l/email-protection#e58c8b838aa596958ecb868a88cb9197"><i class="bi-envelope" aria-hidden="true"></i><bdi dir="ltr"><span class="__cf_email__" data-cfemail="11787f777e5162617a3f727e7c3f6563">[email&#160;protected]</span></bdi></a>
+                                <span class="footer-contact-separator" aria-hidden="true">&middot;</span>
+                                <a class="footer-contact-item" href="tel:+902164159900"><i class="fa-solid fa-phone" aria-hidden="true"></i><bdi dir="ltr">+90 (216) 415 99 00</bdi></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+        <aside id="cookie-banner" class="spk-cookie-banner" role="region" aria-labelledby="cookie-banner-title" >
+            <button type="button" class="spk-cookie-banner__close" data-cookie-banner-close aria-label="Kapat">&times;</button>
+            <div class="spk-cookie-banner__content">
+                <div>
+                    <h2 id="cookie-banner-title">&#199;erez tercihleriniz</h2>
+                    <p>
+                        Sitenin &#231;alışması i&#231;in zorunlu &#231;erezler kullanılır. Analitik &#231;erezler ve Google Haritalar yalnız izninizle etkinleştirilir.
+                        <span class="spk-cookie-banner__links">
+                            <a href="/CerezPolitikasi">&#199;erez Politikası</a>
+                            <span aria-hidden="true">·</span>
+                            <button type="button" class="cookie-preferences-link" data-cookie-preferences>Tercihleri y&#246;net</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="spk-cookie-actions">
+                    <button type="button" data-cookie-choice="analytics">&#199;erezleri kabul et</button>
+                    <button type="button" data-cookie-choice="necessary">&#199;erezleri reddet</button>
+                </div>
+            </div>
+        </aside>
+        <dialog id="cookie-preferences" class="spk-cookie-dialog" aria-labelledby="cookie-preferences-title">
+            <button type="button" class="spk-cookie-dialog__close" data-cookie-close aria-label="Kapat">&times;</button>
+            <h2 id="cookie-preferences-title">&#199;erez tercihleri</h2>
+            <p>Analitik &#231;erezleri ve Google Haritalar gibi harici i&#231;erikleri kabul edebilir veya reddedebilirsiniz. Tercihinizi daha sonra sayfanın altındaki bağlantıdan değiştirebilirsiniz.</p>
+            <div class="spk-cookie-option">
+                <div>
+                    <strong>Zorunlu &#231;erezler</strong>
+                    <p>G&#252;venlik, form doğrulama ve tercih kaydı i&#231;in gereklidir.</p>
+                </div>
+                <span>Her zaman etkin</span>
+            </div>
+            <label class="spk-cookie-option" for="cookie-analytics-toggle">
+                <span>
+                    <strong>Analitik ve harici i&#231;erik</strong>
+                    <span>Site kullanımını anlamamıza yardımcı olur ve Google Haritalar gibi harici i&#231;erikleri etkinleştirir.</span>
+                </span>
+                <input id="cookie-analytics-toggle" type="checkbox" >
+            </label>
+            <div class="spk-cookie-dialog__actions">
+                <button type="button" data-cookie-save>Tercihi kaydet</button>
+                <button type="button" data-cookie-choice="necessary">&#199;erezleri reddet</button>
+            </div>
+        </dialog>
+
+    <button id="gotoTop" type="button" class="uil uil-angle-up" aria-label="Sayfa başına d&#246;n"></button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/bundles/scripts?v=0eng-WSzZpUJBBkeg1X0sN8n80qF3JRwS_JSrTMDYjE1" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var header = document.getElementById('header');
+            var hamburger = header.querySelector('.cnvs-hamburger');
+            var menuItems = header.querySelectorAll('#primary-navigation .menu-item:has(> .sub-menu-container)');
+            var languageMenu = header.querySelector('.spk-language-menu');
+
+            if (languageMenu) {
+                languageMenu.addEventListener('pointerenter', function (event) {
+                    if (event.pointerType === 'mouse') languageMenu.open = true;
+                });
+                languageMenu.addEventListener('pointerleave', function (event) {
+                    if (event.pointerType === 'mouse' && !languageMenu.contains(document.activeElement)) languageMenu.open = false;
+                });
+                languageMenu.addEventListener('focusout', function (event) {
+                    if (!languageMenu.contains(event.relatedTarget) && !languageMenu.matches(':hover')) languageMenu.open = false;
+                });
+            }
+
+            function syncMenus() {
+                hamburger.setAttribute('aria-expanded', header.querySelector('.primary-menu-trigger').classList.contains('primary-menu-trigger-active'));
+                menuItems.forEach(function (item) {
+                    var expanded = document.body.classList.contains('is-expanded-menu')
+                        ? item.classList.contains('menu-item-hover')
+                        : !item.querySelector('.sub-menu-container').classList.contains('d-none');
+                    item.querySelector('.sub-menu-trigger').setAttribute('aria-expanded', expanded);
+                });
+            }
+
+            menuItems.forEach(function (item) {
+                var trigger = item.querySelector('.sub-menu-trigger');
+                item.addEventListener('focusin', function () {
+                    if (document.body.classList.contains('is-expanded-menu')) item.classList.add('menu-item-hover');
+                });
+                item.addEventListener('focusout', function (event) {
+                    if (!item.contains(event.relatedTarget)) item.classList.remove('menu-item-hover');
+                });
+                trigger.addEventListener('click', function (event) {
+                    if (!document.body.classList.contains('is-expanded-menu')) return;
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    item.classList.toggle('menu-item-hover');
+                }, true);
+                item.addEventListener('keydown', function (event) {
+                    if (event.key !== 'Escape' || trigger.getAttribute('aria-expanded') !== 'true') return;
+                    event.stopPropagation();
+                    trigger.focus();
+                    item.classList.remove('menu-item-hover');
+                    if (!document.body.classList.contains('is-expanded-menu')) item.querySelector('.sub-menu-container').classList.add('d-none');
+                });
+            });
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                if (languageMenu && languageMenu.open) {
+                    var languageHadFocus = languageMenu.contains(document.activeElement);
+                    languageMenu.open = false;
+                    if (languageHadFocus) languageMenu.querySelector('summary').focus();
+                } else if (header.contains(event.target) && hamburger.getAttribute('aria-expanded') === 'true') {
+                    hamburger.click();
+                    hamburger.focus();
+                }
+            });
+            document.addEventListener('click', function (event) {
+                if (languageMenu && !languageMenu.contains(event.target)) languageMenu.open = false;
+            });
+            new MutationObserver(syncMenus).observe(header, { attributes: true, attributeFilter: ['class'], subtree: true });
+            syncMenus();
+            document.getElementById('gotoTop').addEventListener('click', function () {
+                document.querySelector('.skip-link').focus({ preventScroll: true });
+            });
+        });
+    </script>
+
+        <script>
+            (function () {
+                var cookieName = 'spk_cookie_consent_v1';
+                var bannerDismissedKey = 'spk_cookie_banner_dismissed';
+                var banner = document.getElementById('cookie-banner');
+                var dialog = document.getElementById('cookie-preferences');
+                var analyticsToggle = document.getElementById('cookie-analytics-toggle');
+                var preferencesTrigger;
+
+                new ResizeObserver(function () {
+                    document.documentElement.style.setProperty('--spk-cookie-banner-height', banner.hidden ? '0px' : (banner.offsetHeight + 24) + 'px');
+                }).observe(banner);
+
+                function hideBanner() {
+                    var bannerHadFocus = banner.contains(document.activeElement);
+                    banner.hidden = true;
+                    if (bannerHadFocus) document.getElementById('main-content').focus({ preventScroll: true });
+                }
+
+                dialog.addEventListener('close', function () {
+                    if (preferencesTrigger && preferencesTrigger.getClientRects().length) preferencesTrigger.focus();
+                    else document.getElementById('main-content').focus({ preventScroll: true });
+                });
+
+                try {
+                    if (sessionStorage.getItem(bannerDismissedKey) === '1') banner.hidden = true;
+                } catch (error) { }
+
+                function storeChoice(value) {
+                    var secure = window.location.protocol === 'https:' ? '; Secure' : '';
+                    document.cookie = cookieName + '=' + value + '; Max-Age=15552000; Path=/; SameSite=Lax' + secure;
+                }
+
+                function removeAnalyticsCookies() {
+                    document.cookie.split(';').forEach(function (cookie) {
+                        var name = cookie.split('=')[0].trim();
+                        if (!/^(_ga|_gid|_gat)/.test(name)) return;
+                        ['', '; Domain=' + window.location.hostname, '; Domain=.spk.com.tr'].forEach(function (domain) {
+                            document.cookie = name + '=; Max-Age=0; Path=/' + domain + '; SameSite=Lax';
+                        });
+                    });
+                }
+
+                function closePreferences() {
+                    if (dialog.open) dialog.close();
+                }
+
+                function setChoice(analyticsAllowed) {
+                    storeChoice(analyticsAllowed ? 'analytics' : 'necessary');
+                    window.spkAnalyticsConsent = analyticsAllowed;
+                    if (analyticsAllowed) loadAnalytics();
+                    gtag('consent', 'update', {
+                        analytics_storage: analyticsAllowed ? 'granted' : 'denied',
+                        ad_storage: 'denied',
+                        ad_user_data: 'denied',
+                        ad_personalization: 'denied'
+                    });
+                    if (!analyticsAllowed) removeAnalyticsCookies();
+                    analyticsToggle.checked = analyticsAllowed;
+                    hideBanner();
+                    closePreferences();
+                    document.dispatchEvent(new CustomEvent('spk:analytics-consent-changed', {
+                        detail: { allowed: analyticsAllowed }
+                    }));
+                }
+
+                document.querySelectorAll('[data-cookie-choice]').forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        setChoice(button.getAttribute('data-cookie-choice') === 'analytics');
+                    });
+                });
+
+                document.querySelectorAll('[data-cookie-preferences]').forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        preferencesTrigger = button;
+                        analyticsToggle.checked = window.spkAnalyticsConsent;
+                        dialog.showModal();
+                    });
+                });
+
+                document.querySelector('[data-cookie-save]').addEventListener('click', function () {
+                    setChoice(analyticsToggle.checked);
+                });
+                document.querySelector('[data-cookie-banner-close]').addEventListener('click', function () {
+                    try {
+                        sessionStorage.setItem(bannerDismissedKey, '1');
+                    } catch (error) { }
+                    hideBanner();
+                });
+                document.querySelector('[data-cookie-close]').addEventListener('click', closePreferences);
+            }());
+        </script>
+
+    <!-- Section Scripts -->
+    
+
+
+
+
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b9af47c520244f7eb689524de3edf2b3","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

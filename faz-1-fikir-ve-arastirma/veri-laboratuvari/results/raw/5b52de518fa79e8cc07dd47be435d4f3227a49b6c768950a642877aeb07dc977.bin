@@ -1,0 +1,924 @@
+
+
+
+
+
+
+<!doctype html>
+<html dir="ltr" lang="en" >
+  <head>
+    
+    <!-- Google Analytics -->
+    <script nonce="zb9Fk3arTwVQ1DmsD64PBg==">
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-4118503-18', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js' nonce="zb9Fk3arTwVQ1DmsD64PBg=="></script>
+    <!-- End Google Analytics -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Extensions - Opera add-ons</title>
+
+    <link rel="stylesheet" href="https://addons-static.operacdn.com/static/CACHE/css/output.3f8825077633.css" type="text/css">
+
+    
+  
+
+  <meta name="Description" content="Add functionality to Opera, or give it a new look" />
+
+  
+  <meta property="og:title" content="Opera add-ons" />
+  <meta property="og:site_name" content="Opera add-ons" />
+  
+  <meta property="og:description" content="Add functionality to Opera, or give it a new look" />
+  <meta property="og:url" content="https://addons.opera.com/en/extensions/" />
+  <meta property="og:type" content="website" />
+
+  <meta property="og:image" content="https://addons-static.operacdn.com/static/catalog/images/Opera_100x100.png" />
+  <meta property="og:image:secure_url" content="https://addons-static.operacdn.com/static/catalog/images/Opera_100x100.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="100" />
+  <meta property="og:image:height" content="100" />
+
+  
+    
+
+
+<link rel="canonical" href="https://addons.opera.com/en/extensions/" />
+
+  
+  
+  
+    
+      <link rel="alternate" hreflang="id" href="https://addons.opera.com/id/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="sr-me" href="https://addons.opera.com/sr-me/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="cs" href="https://addons.opera.com/cs/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="da" href="https://addons.opera.com/da/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="de" href="https://addons.opera.com/de/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="el" href="https://addons.opera.com/el/extensions/" />
+    
+  
+    
+  
+    
+      <link rel="alternate" hreflang="en-gb" href="https://addons.opera.com/en-gb/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="es" href="https://addons.opera.com/es/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="es-419" href="https://addons.opera.com/es-419/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="fi" href="https://addons.opera.com/fi/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="fr" href="https://addons.opera.com/fr/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="fr-ca" href="https://addons.opera.com/fr-ca/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="fy" href="https://addons.opera.com/fy/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="gd" href="https://addons.opera.com/gd/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="he" href="https://addons.opera.com/he/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="hi" href="https://addons.opera.com/hi/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="it" href="https://addons.opera.com/it/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="hu" href="https://addons.opera.com/hu/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="ko" href="https://addons.opera.com/ko/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="ms" href="https://addons.opera.com/ms/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="nl" href="https://addons.opera.com/nl/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="nb" href="https://addons.opera.com/nb/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="pl" href="https://addons.opera.com/pl/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="pt" href="https://addons.opera.com/pt/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="pt-br" href="https://addons.opera.com/pt-br/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="sk" href="https://addons.opera.com/sk/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="sv" href="https://addons.opera.com/sv/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="vi" href="https://addons.opera.com/vi/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="th" href="https://addons.opera.com/th/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="tl" href="https://addons.opera.com/tl/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="tr" href="https://addons.opera.com/tr/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="be" href="https://addons.opera.com/be/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="bg" href="https://addons.opera.com/bg/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="ru" href="https://addons.opera.com/ru/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="uk" href="https://addons.opera.com/uk/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="ar" href="https://addons.opera.com/ar/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="zh-cn" href="https://addons.opera.com/zh-cn/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="zh-tw" href="https://addons.opera.com/zh-tw/extensions/" />
+    
+  
+    
+      <link rel="alternate" hreflang="ja" href="https://addons.opera.com/ja/extensions/" />
+    
+  
+
+
+  
+
+    <link rel="icon" href="https://addons-static.operacdn.com/static/header-footer/favicon/ico/opera.ico" type="image/png">
+  </head>
+  <body class="opera-branding">
+    
+      
+      <a id="main-content-link" href="#main">Skip to main content</a>
+    
+
+    
+    
+    
+
+
+
+
+
+
+<header id="header" class="ns--hf">
+    <div class="hf--primary">
+        <div class="hf--width-holder">
+            <div class="hf--align-to-page-content">
+                <div class="hf--main-nav" role="navigation">
+                        <a class="hf--brand" href="/en/">
+                            <img src="https://addons-static.operacdn.com/static/header-footer/css/img/opera-addons.png"
+                                srcset="https://addons-static.operacdn.com/static/header-footer/css/img/opera-addons.png 1x,
+                                        https://addons-static.operacdn.com/static/header-footer/css/img/opera-addons%402x.png 2x"
+                                alt="Opera add-ons">
+                        </a>
+                    <div class="hf--menu">
+                        <input id="hf--menu-switcher" class="hf--hide" type="checkbox">
+                        <label class="hf--menu-switcher" for="hf--menu-switcher"></label>
+                        <div>
+                            <div>
+                                <ul class="hf--main-nav-items" role="menu">
+                                    
+
+
+
+<li tabindex='-1' id='extensions' role='menuitem'>
+    <a href='/en/extensions/'
+       class='hf--selected'>
+        Extensions
+    </a>
+</li>
+
+
+<li tabindex='-1' id='themes' role='menuitem'>
+    <a href='/en/wallpapers/'
+       class=''>
+        Wallpapers
+    </a>
+</li>
+
+
+<li tabindex='-1' id='developer' role='menuitem'>
+    <a href='/developer/'
+       class=''>
+        Develop
+    </a>
+</li>
+
+                                    
+                                    <li class="hf--menu-opposite">
+                                        <a id='login' class='hf--login' href='/oauth2/login/?return_url=https%3A%2F%2Faddons.opera.com%2Fen%2Fextensions%2F&amp;service=addons'>Sign in</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+    <div id="page-wrapper">
+    
+
+
+<header>
+    <div class="header-wrapper">
+      
+      <form class="search" action="/en/search/" method="GET">
+        <input type="search" name="query" dir="ltr"
+            value=""
+            placeholder="Search for add-ons">
+        <input type="submit">
+      </form>
+    </div>
+</header>
+
+
+
+    
+  
+
+
+<div class="get-opera get-opera-big">
+    
+  <p class="get-opera-title">
+    
+    <strong>These extensions and wallpapers are made for the <strong>Opera browser</strong>.</strong>
+  </p>
+  <div class="banner-button">
+    
+
+
+<a
+  class="get-opera-link get-opera-btn"
+  data-styled="true"
+  data-type="banner"
+  
+  data-query-params="utm_medium=ip&amp;utm_source=addons_opera_com&amp;utm_campaign=computer_internal_promo&amp;utm_content=addons_non_opera_promo_box"
+  href="https://www.opera.com/computer?utm_medium=ip&amp;utm_source=addons_opera_com&amp;utm_campaign=computer_internal_promo&amp;utm_content=addons_non_opera_promo_box"
+  
+  title="Download Opera">
+  Download Opera
+</a>
+<span class="platform"></span>
+
+  </div>
+
+</div>
+
+<div id="overlay">
+  <div id="overlay-content">
+    <img id="overlay-logo" src="https://addons-static.operacdn.com/static/catalog/images/get-opera/opera-logo.png">
+    <p class="get-opera-title">
+      
+      <strong>Download Opera browser with:</strong>
+    </p>
+    
+    <ul class="get-opera-features-list">
+      
+      <li class="get-opera-features-list--adblocker">built-in ad blocker</li>
+      
+      <li class="get-opera-features-list--battery-saver">battery saver</li>
+      
+      <li class="get-opera-features-list--free-vpn">free VPN</li>
+    </ul>
+    
+    <div class="banner-button">
+      
+
+
+<a
+  class="get-opera-link get-opera-btn overlay"
+  data-styled="true"
+  data-type="banner"
+  
+  data-query-params="utm_medium=ip&amp;utm_source=addons_opera_com&amp;utm_campaign=overlay&amp;utm_content=addons_non_opera_promo_box"
+  href="https://www.opera.com/computer?utm_medium=ip&amp;utm_source=addons_opera_com&amp;utm_campaign=overlay&amp;utm_content=addons_non_opera_promo_box"
+  
+  title="Download Opera">
+  Download Opera
+</a>
+<span class="platform"></span>
+
+    </div>
+    
+    <p id="overlay-text">
+      
+      These extensions and wallpapers are made for the <strong>Opera browser</strong>.
+    </p>
+    <div id="overlay-view-all">View all</div>
+  </div>
+  <div id="overlay-image">
+    <span id="overlay-close"><strong>x</strong></span>
+    <img src="https://addons-static.operacdn.com/static/catalog/images/get-opera/laptop-big-1.png">
+  </div>
+</div>
+
+
+
+    
+      <nav class="breadcrumb" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        
+        <ul>
+          
+  
+            
+            <li><a href="/en/" itemprop="url">Home</a></li>
+          
+  
+    <li>Extensions</li>
+  
+
+        </ul>
+      </nav>
+    
+
+    
+  <section class="listing" id="main" role="main">
+    <article class="extensions m-top-margin">
+      <header class="header-listing h-border">
+        <h1>Extensions</h1>
+        
+        <ul class="order-options m-top-margin"><li><span title="Recommended">Recommended</span></li><li><a href="/en/extensions/?order=rated" title="Top rated">Top rated</a></li><li><a href="/en/extensions/category/privacy-security/?order=popular" title="Privacy & Security">Privacy & Security</a></li><li><a href="/en/extensions/?tag=sidebar&amp;order=popular" title="Sidebar">Sidebar</a></li><li><section class="drop-down categories"><h2 class="hidden">Sorting and categories</h2><button title="More..." class="drop-down-btn link">More...</button><div class="drop-down-pane"><ul class="drop-down-options"><li><a href="/en/extensions/?order=popular" title="Popular">Popular</a></li><li><a href="/en/extensions/?order=new" title="New">New</a></li></ul><hr><ul><li><a href="/en/extensions/category/accessibility/?order=popular" title="Accessibility">Accessibility</a></li><li><a href="/en/extensions/category/appearance/?order=popular" title="Appearance">Appearance</a></li><li><a href="/en/extensions/category/blockchain-cryptocurrency/?order=popular" title="Blockchain &amp; Cryptocurrency">Blockchain &amp; Cryptocurrency</a></li><li><a href="/en/extensions/category/developer-tools/?order=popular" title="Developer Tools">Developer Tools</a></li><li><a href="/en/extensions/category/downloads/?order=popular" title="Downloads">Downloads</a></li><li><a href="/en/extensions/category/fun/?order=popular" title="Fun">Fun</a></li><li><a href="/en/extensions/category/music/?order=popular" title="Music">Music</a></li><li><a href="/en/extensions/category/news-weather/?order=popular" title="News &amp; Weather">News &amp; Weather</a></li><li><a href="/en/extensions/category/productivity/?order=popular" title="Productivity">Productivity</a></li><li><a href="/en/extensions/category/search/?order=popular" title="Search">Search</a></li><li><a href="/en/extensions/category/shopping/?order=popular" title="Shopping">Shopping</a></li><li><a href="/en/extensions/category/social/?order=popular" title="Social">Social</a></li><li><a href="/en/extensions/category/translation/?order=popular" title="Translation">Translation</a></li></ul></div></section></li></ul>
+
+      </header>
+      
+        <ul class="grid listing-featured m-top-margin"><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/opera-ad-blocker/"><img class="listing-image"
+           src="https://addons-static.operacdn.com/static/maidenpackage/virtual/native-blocker/tile/300x188.png"
+           srcset="
+            https://addons-static.operacdn.com/static/maidenpackage/virtual/native-blocker/tile/300x188.png 1x,
+            
+              https://addons-static.operacdn.com/static/maidenpackage/virtual/native-blocker/tile/600x376.png 2x,
+            
+            
+              https://addons-static.operacdn.com/static/maidenpackage/virtual/native-blocker/tile/1200x752.png 4x,
+            
+           "
+           alt="Opera Ad blocker"><div><h4 dir="ltr" class="h-pkg-name">Opera Ad blocker</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="4.7" class="rating-4-5">Rating: 4.7</span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1360</span><meta itemprop="ratingValue" content="4.5" /></p><p dir="ltr" class="description ellipsis">
+          Built-in Ad blocker blocks ads and lets you surf the web up to 3x faster.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/messenger-in-opera/"><img class="listing-image"
+           src="https://addons-static.operacdn.com/static/maidenpackage/virtual/native-messenger/tile/messenger_banner.png"
+           srcset="
+            https://addons-static.operacdn.com/static/maidenpackage/virtual/native-messenger/tile/messenger_banner.png 1x,
+            
+            
+           "
+           alt="Facebook Messenger"><div><h4 dir="ltr" class="h-pkg-name">Facebook Messenger</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="4.5" class="rating-4-5">Rating: 4.5</span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">912</span><meta itemprop="ratingValue" content="4.5" /></p><p dir="ltr" class="description ellipsis">
+          Built-in Facebook Messenger integration for instant messaging and group chats.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/whatsapp-in-opera/"><img class="listing-image"
+           src="https://addons-static.operacdn.com/static/maidenpackage/virtual/native-whatsapp/banner/whatsapp_banner.png"
+           srcset="
+            https://addons-static.operacdn.com/static/maidenpackage/virtual/native-whatsapp/banner/whatsapp_banner.png 1x,
+            
+            
+           "
+           alt="WhatsApp"><div><h4 dir="ltr" class="h-pkg-name">WhatsApp</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="4.6" class="rating-4-5">Rating: 4.6</span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1404</span><meta itemprop="ratingValue" content="4.6" /></p><p dir="ltr" class="description ellipsis">
+          Built-in Whatsapp integration for instant messaging and group chats.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/lastpass/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/43/3143/featured/promo.jpg"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/43/3143/featured/promo.jpg 1x,
+            
+            
+           "
+           alt="LastPass"><div><h4 dir="ltr" class="h-pkg-name">LastPass</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">324</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          LastPass is an award-winning password manager for secure credential management on any device.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/savefromnet-helper/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/25/6425/featured/promo_c3dafdbe97ab37be0b9c2fae9273d661.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/25/6425/featured/promo_c3dafdbe97ab37be0b9c2fae9273d661.png 1x,
+            
+            
+           "
+           alt="SaveFrom.net helper"><div><h4 dir="ltr" class="h-pkg-name">SaveFrom.net helper</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">7090</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Download YouTube, Facebook, VK.com and 40+ sites in one click.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/translator/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/03/1103/featured/dev_promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/03/1103/featured/dev_promo.png 1x,
+            
+            
+           "
+           alt="Translator"><div><h4 dir="ltr" class="h-pkg-name">Translator</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">3969</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Translate selected or entered text
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/ublock/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/05/166405/featured/dev_promo_7aa3c466fc14dfdf2b4e227a35207c4e.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/05/166405/featured/dev_promo_7aa3c466fc14dfdf2b4e227a35207c4e.png 1x,
+            
+            
+           "
+           alt="uBlock Origin"><div><h4 dir="ltr" class="h-pkg-name">uBlock Origin</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-5-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">5635</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Finally, an efficient blocker. Easy on CPU and memory.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/gismeteo/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/15/113815/featured/promo_c4fa3396bdf666664c3be516d4092dbc.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/15/113815/featured/promo_c4fa3396bdf666664c3be516d4092dbc.png 1x,
+            
+            
+           "
+           alt="Gismeteo"><div><h4 dir="ltr" class="h-pkg-name">Gismeteo</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">432</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Gismeteo Weather Forecast. Real time weather and detailed forecast all round the world
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/evernote-web-clipper/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/35/109835/featured/promo.jpg"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/35/109835/featured/promo.jpg 1x,
+            
+            
+           "
+           alt="Evernote Web Clipper"><div><h4 dir="ltr" class="h-pkg-name">Evernote Web Clipper</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">555</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Use the Evernote extension to save things you see on the web into your Evernote account.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/magic-actions-for-youtube/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/65/112765/featured/promo.jpg"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/65/112765/featured/promo.jpg 1x,
+            
+            
+           "
+           alt="Magic Actions for YouTube™"><div><h4 dir="ltr" class="h-pkg-name">Magic Actions for YouTube™</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1390</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Enhance your YouTube watching experience! Cinema Mode, Mouse Wheel Volume Control, AutoHD, Expand, Snapshots …
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/360-internet-protection/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/35/192835/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/35/192835/featured/promo.png 1x,
+            
+            
+           "
+           alt="360 Internet Protection"><div><h4 dir="ltr" class="h-pkg-name">360 Internet Protection</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1138</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          360 Internet Protection
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/youtubetm-sidebar/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/02/226702/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/02/226702/featured/promo.png 1x,
+            
+            
+           "
+           alt="Sidebar for YouTube™"><div><h4 dir="ltr" class="h-pkg-name">Sidebar for YouTube™</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">614</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Easy Access to YouTube via Sidebar UI
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/opera-vpn/"><img class="listing-image"
+           src="https://addons-static.operacdn.com/static/maidenpackage/virtual/native-vpn/banner/vpn_banner.png"
+           srcset="
+            https://addons-static.operacdn.com/static/maidenpackage/virtual/native-vpn/banner/vpn_banner.png 1x,
+            
+            
+           "
+           alt="Opera Free VPN"><div><h4 dir="ltr" class="h-pkg-name">Opera Free VPN</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="4.7" class="rating-4-5">Rating: 4.7</span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">2020</span><meta itemprop="ratingValue" content="4.7" /></p><p dir="ltr" class="description ellipsis">
+          Built-in free VPN for private browsing.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/atavi-bookmarks/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/25/165425/featured/promo_en.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/25/165425/featured/promo_en.png 1x,
+            
+            
+           "
+           alt="Atavi bookmarks"><div><h4 dir="ltr" class="h-pkg-name">Atavi bookmarks</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">160</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Visual bookmarks, bookmarks sync across various browsers and absolute safety for your bookmarks
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/boomerang-for-gmailtm/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/44/226544/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/44/226544/featured/promo.png 1x,
+            
+            
+           "
+           alt="Boomerang for Gmail™"><div><h4 dir="ltr" class="h-pkg-name">Boomerang for Gmail™</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">46</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Allows you to schedule messages to be sent or returned at a later date.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/zoom/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/45/110545/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/45/110545/featured/promo.png 1x,
+            
+            
+           "
+           alt="Zoom"><div><h4 dir="ltr" class="h-pkg-name">Zoom</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">178</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Zoom in or out on web content using the zoom button and mouse scroll wheel for more comfortable reading. That to each percent value.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/pushbullet/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/05/175805/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/05/175805/featured/promo.png 1x,
+            
+            
+           "
+           alt="Pushbullet"><div><h4 dir="ltr" class="h-pkg-name">Pushbullet</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">137</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Bringing together your devices, friends, and the things you care about.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/tineye-reverse-image-search-context-menu/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/85/75185/featured/promo.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/85/75185/featured/promo.png 1x,
+            
+            
+           "
+           alt="TinEye Reverse Image Search"><div><h4 dir="ltr" class="h-pkg-name">TinEye Reverse Image Search</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">126</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          This is the official TinEye Opera extension. Find out where an image came from, how it&#x27;s used, or find higher resolution versions.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/turn-off-the-lights/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/83/1083/featured/dev_promo_9c457df8b5a17742575ccddc59756a80.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/83/1083/featured/dev_promo_9c457df8b5a17742575ccddc59756a80.png 1x,
+            
+            
+           "
+           alt="Turn Off the Lights"><div><h4 dir="ltr" class="h-pkg-name">Turn Off the Lights</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">900</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          The entire page will be fading to dark, so you can watch the videos as if you were in the cinema. Works for YouTube™ and beyond.
+        </p></div></a></div></li><li class="package span-one-fourth s-top-margin"><div class="scroll-container"><a class="scrollable" tabindex="0" href="/en/extensions/details/instant-translate-2/"><img class="listing-image"
+           src="https://addons-media.operacdn.com/media/extensions/95/163095/featured/dev_promo_2f06631836bab5b672a9d8978d177b72.png"
+           srcset="
+            https://addons-media.operacdn.com/media/extensions/95/163095/featured/dev_promo_2f06631836bab5b672a9d8978d177b72.png 1x,
+            
+            
+           "
+           alt="Mate Translate"><div><h4 dir="ltr" class="h-pkg-name">Mate Translate</h4><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1084</span><meta itemprop="ratingValue" content="" /></p><p dir="ltr" class="description ellipsis">
+          Your all-in-one translator for web pages, highlighted text, &amp; Netflix subtitles. Translate and learn words in 103 languages.
+        </p></div></a></div></li></ul>
+      
+
+      
+        <ul class="grid m-top-margin"><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/privacy-badger/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/31/226031/2026.9.15-rev1/icons/icon_64x64_a31297aa8fd3330b972c0bf05bd3ad5e.png"
+       alt="Icon for Privacy Badger"><h4 dir="ltr" class="h-pkg-name">Privacy Badger</h4><p dir="ltr" class="description ellipsis">
+      Automatically learns to block hidden trackers. Made by leading digital rights nonprofit EFF to stop companies from spying on you.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">298</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/app-launcher-customizer-for-googletm/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/25/152625/31.8.0-rev1/icons/icon_64x64_0c0153b673134ac93aa1a763ef2baf41.png"
+       alt="Icon for G App Launcher (Shortcuts for Google™)"><h4 dir="ltr" class="h-pkg-name">G App Launcher (Shortcuts for Google™)</h4><p dir="ltr" class="description ellipsis">
+      The best access to Google™ Services and Websites
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">301</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/ali-tools/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/11/229111/26.7.1.18163-rev1/icons/icon_64x64_c0ea913620cc10f7880bb5d66614c76f.png"
+       alt="Icon for AliTools"><h4 dir="ltr" class="h-pkg-name">AliTools</h4><p dir="ltr" class="description ellipsis">
+      Auto-find &amp; apply AliExpress ™ promo codes, price history, seller rating, similar products, find item by picture
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">475</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/tampermonkey-beta/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/65/115665/5.6.6239-rev1/icons/icon_64x64_61be8d1fe87710ac0c320d28a05f0cbc.png"
+       alt="Icon for Tampermonkey"><h4 dir="ltr" class="h-pkg-name">Tampermonkey</h4><p dir="ltr" class="description ellipsis">
+      Change the web at will with userscripts
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1035</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/category-tabs-for-google-keeptm/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/05/152605/20.15.0-rev1/icons/icon_64x64_9b803f9a28abcc068b9f7c62dc85fcb3.png"
+       alt="Icon for Category Tabs for Google Keep™"><h4 dir="ltr" class="h-pkg-name">Category Tabs for Google Keep™</h4><p dir="ltr" class="description ellipsis">
+      Better organise your Google Keep notes
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">29</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/avast-online-security/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/05/150505/22.4.154-rev1/icons/icon_64x64_2cc59df6938013e89a274b1d17c97e49.png"
+       alt="Icon for Avast Online Security"><h4 dir="ltr" class="h-pkg-name">Avast Online Security</h4><p dir="ltr" class="description ellipsis">
+      Avast browser security and web reputation plugin.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">1048</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/i-dont-care-about-cookies/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/25/169925/3.5.0-rev1/icons/icon_64x64_ed2a05e59cd05e545dc39334b21952f0.png"
+       alt="Icon for I don&#x27;t care about cookies"><h4 dir="ltr" class="h-pkg-name">I don&#x27;t care about cookies</h4><p dir="ltr" class="description ellipsis">
+      Get rid of cookie warnings from almost all websites!
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">108</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/distill-web-monitor/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/85/162485/3.3.12-rev1/icons/icon_64x64_5cff28c85713eda80346300af41a08bb.png"
+       alt="Icon for Distill Web Monitor"><h4 dir="ltr" class="h-pkg-name">Distill Web Monitor</h4><p dir="ltr" class="description ellipsis">
+      Monitor webpage or feed for changes. Get SMS and email alerts on change detection.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">42</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/netcraft-anti-phishing-extension/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/45/126545/1.17.0-rev1/icons/icon_64x64_48ffeb79f572ec3de09b0ce3f7b51a5a.png"
+       alt="Icon for Netcraft Extension"><h4 dir="ltr" class="h-pkg-name">Netcraft Extension</h4><p dir="ltr" class="description ellipsis">
+      Comprehensive site information and protection from phishing and malicious JavaScript when browsing the web
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">23</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/pageexpand/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/95/26095/1.5.29-rev1/icons/icon_64x64_f1c8f747abb436929e270028cf29e6bc.png"
+       alt="Icon for PageExpand"><h4 dir="ltr" class="h-pkg-name">PageExpand</h4><p dir="ltr" class="description ellipsis">
+      All Image Download. Image Zoom. Expand Thumbnail and Audio and Video. Expand the short URL. Override Referer. Extend BBS. etc...
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">30</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/octotree/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/65/213765/7.8.2-rev1/icons/icon_64x64_a04375b3821f34df6ccdd40ac56917a5.png"
+       alt="Icon for Octotree"><h4 dir="ltr" class="h-pkg-name">Octotree</h4><p dir="ltr" class="description ellipsis">
+      GitHub on steroids
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">32</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/gorgias/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/85/192185/7.7.0-rev1/icons/icon_64x64_5b660e1c9184353e3453b2d14d522151.png"
+       alt="Icon for Briskine"><h4 dir="ltr" class="h-pkg-name">Briskine</h4><p dir="ltr" class="description ellipsis">
+      Write emails faster! Increase your productivity with templates and keyboard shortcuts on Gmail, Outlook, or LinkedIn.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">26</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/googletm-translator/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/65/159265/0.6.3-rev1/icons/icon_64x64_0c4a89cf148db75bdcfc4eec9c2492c2.png"
+       alt="Icon for Google™ Translator"><h4 dir="ltr" class="h-pkg-name">Google™ Translator</h4><p dir="ltr" class="description ellipsis">
+      A handy multi-language translator built on top of Google translate.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">268</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/perfectpixel-by-welldonecode/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/71/225071/2.1.1.9-rev1/icons/icon_64x64_e032836f8d925546f465b531e191a20a.png"
+       alt="Icon for PerfectPixel by WellDoneCode"><h4 dir="ltr" class="h-pkg-name">PerfectPixel by WellDoneCode</h4><p dir="ltr" class="description ellipsis">
+      This extension helps develop your websites with pixel perfect accuracy!
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">24</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/copy-as-plain-text/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/25/225225/3.0.0-rev1/icons/icon_64x64_e2e9d5de270e2eaee1ba49886c09bee2.png"
+       alt="Icon for Copy As Plain Text"><h4 dir="ltr" class="h-pkg-name">Copy As Plain Text</h4><p dir="ltr" class="description ellipsis">
+      Copy as plain text the content of web pages with rapid preview using context menu
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">28</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/web-panel/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/75/205575/1.8-rev1/icons/icon_64x64_318809177be498db318afb88ff5af62d.png"
+       alt="Icon for Web Panel"><h4 dir="ltr" class="h-pkg-name">Web Panel</h4><p dir="ltr" class="description ellipsis">
+      Navigate to websites in the sidebar.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">87</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/asciidoctorjs-live-preview/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/05/164705/2.7.0-rev1/icons/icon_64x64_2aa017354360e6c430064729e0259007.png"
+       alt="Icon for Asciidoctor.js Live Preview"><h4 dir="ltr" class="h-pkg-name">Asciidoctor.js Live Preview</h4><p dir="ltr" class="description ellipsis">
+      Render AsciiDoc (.ad, .adoc, .asc, .asciidoc) as HTML inside your browser!
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">9</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/simpletaborder/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/55/161855/0.5.16-rev1/icons/icon_64x64_7af010592e759d8118195cc5c830f1de.png"
+       alt="Icon for SimpleTabOrder"><h4 dir="ltr" class="h-pkg-name">SimpleTabOrder</h4><p dir="ltr" class="description ellipsis">
+      A simple way to control the tab order of the browser.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">38</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/simpleextmanager/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/25/156925/1.4.11-rev1/icons/icon_64x64_9040746fd97f76a5d3ed28f1eb345637.png"
+       alt="Icon for SimpleExtManager"><h4 dir="ltr" class="h-pkg-name">SimpleExtManager</h4><p dir="ltr" class="description ellipsis">
+      A simple menu to enable, disable and access options of extensions.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">95</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/github-hovercard/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/11/224711/1.9.3-rev1/icons/icon_64x64_ee3e625db1f8ee69226a127adad88202.ico"
+       alt="Icon for GitHub Hovercard"><h4 dir="ltr" class="h-pkg-name">GitHub Hovercard</h4><p dir="ltr" class="description ellipsis">
+      Neat hovercards for GitHub.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">29</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/classic-tabs/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/15/115515/2.0.1-rev1/icons/icon_64x64_cce801c17bf5c63b12903b0aef1cf86c.png"
+       alt="Icon for Classic Tabs"><h4 dir="ltr" class="h-pkg-name">Classic Tabs</h4><p dir="ltr" class="description ellipsis">
+      Classic Tabs brings back some of the extra tab options from Opera 12.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">106</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/gismeteo-weather-forecast-in-speed-dial/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/75/14075/2.6-rev1/icons/icon_64x64.png"
+       alt="Icon for Gismeteo weather forecast in speed-dial"><h4 dir="ltr" class="h-pkg-name">Gismeteo weather forecast in speed-dial</h4><p dir="ltr" class="description ellipsis">
+      Gismeteo weather forecast in speed-dial. Real time weather and detailed forecast all round the world
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">367</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/righttasks-for-gmailtm/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/05/187905/3.0.1-rev1/icons/icon_64x64_0718cc0e3972fcd751b49030c377ba73.png"
+       alt="Icon for RightTasks for Gmail™"><h4 dir="ltr" class="h-pkg-name">RightTasks for Gmail™</h4><p dir="ltr" class="description ellipsis">
+      Improved task management in Gmail™
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">8</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/vertical-tabs/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/06/224506/1.8.8-rev1/icons/icon_64x64_24c61891a25cc1db0940591a40b2e828.png"
+       alt="Icon for Vertical Tabs"><h4 dir="ltr" class="h-pkg-name">Vertical Tabs</h4><p dir="ltr" class="description ellipsis">
+      Manage your tabs in the sidebar!
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">55</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/html5-editor/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/25/216325/1.8.0-rev1/icons/icon_64x64_aec240c7a8882122e4daeb89822a9a38.png"
+       alt="Icon for HTML5 Editor"><h4 dir="ltr" class="h-pkg-name">HTML5 Editor</h4><p dir="ltr" class="description ellipsis">
+      HTML5 Editor with CSS, JS, HTML validator and beautify code
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">46</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/hidemyass-free-web-proxy/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/35/162335/1.1.10-rev1/icons/icon_64x64_879d5d9a6b7471cbad3e4456fbb9d28f.png"
+       alt="Icon for HideMyAss - Free Web Proxy"><h4 dir="ltr" class="h-pkg-name">HideMyAss - Free Web Proxy</h4><p dir="ltr" class="description ellipsis">
+      Use free web proxy to surf anonymously online, hide your IP address, and protect your online identity.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-3-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">60</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/dotvpn-free-and-secure-vpn-2/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/45/174745/2.2.12-rev1/icons/icon_64x64_94bdb426d70df75449c5e75f128a3415.png"
+       alt="Icon for DotVPN - better than VPN"><h4 dir="ltr" class="h-pkg-name">DotVPN - better than VPN</h4><p dir="ltr" class="description ellipsis">
+      Unblock websites and apps at school, work, home, or anywhere in the world. Stay private online and protect yourself on public Wi-Fi.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-3-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">651</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/antcom-antmarks-extension/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/15/147015/1.3.14-rev1/icons/icon_64x64_6679fb1bffb33e78416dfccda62c9c60.png"
+       alt="Icon for Ant.com Antmarks Extension"><h4 dir="ltr" class="h-pkg-name">Ant.com Antmarks Extension</h4><p dir="ltr" class="description ellipsis">
+      Manage your favorite web pages
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">12</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/browserling-cross-browser-testing/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/95/219195/1.0.2-rev1/icons/icon_64x64_4d2aab921dc317f3fa9fc79a78fada79.png"
+       alt="Icon for Browserling - Cross-browser testing"><h4 dir="ltr" class="h-pkg-name">Browserling - Cross-browser testing</h4><p dir="ltr" class="description ellipsis">
+      Cross-browser test websites in the most popular browsers such as Internet Explorer, Edge, Chrome, Firefox, Safari and Opera. Try for free!
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">14</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/simpleclear/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/55/156955/1.1.2.8-rev1/icons/icon_64x64_2e08119be6037a0df53af5c86e7fc518.png"
+       alt="Icon for SimpleClear"><h4 dir="ltr" class="h-pkg-name">SimpleClear</h4><p dir="ltr" class="description ellipsis">
+      A handy way to clear cache, cookies, downloads and history.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-5">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">60</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/classic-images/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/65/146365/1.5-rev1/icons/icon_64x64.png"
+       alt="Icon for Classic Images"><h4 dir="ltr" class="h-pkg-name">Classic Images</h4><p dir="ltr" class="description ellipsis">
+      Brings back image features from Opera 12
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">53</span><meta itemprop="ratingValue" content="" /></p></div></a></li><li class="package span-one-fourth s-top-margin"><a href="/en/extensions/details/feedly-notification/"><div><img class="icon-pkg" width="64" height="64" src="https://addons-media.operacdn.com/media/extensions/65/115365/0.5.2-rev1/icons/icon_64x64.png"
+       alt="Icon for Feedly Notification"><h4 dir="ltr" class="h-pkg-name">Feedly Notification</h4><p dir="ltr" class="description ellipsis">
+      Notifier of unread articles for Feedly.
+    </p><p class="rating small" itemscope itemtype="https://schema.org/AggregateRating"><span class="meter"><span title="" class="rating-4-0">Rating: </span></span><span class="total-text">Total number of ratings:</span><span class="total" itemprop="reviewCount">15</span><meta itemprop="ratingValue" content="" /></p></div></a></li></ul>
+      
+
+      
+
+    </article>
+  </section>
+
+
+    
+    
+    </div>
+    
+
+
+
+
+
+
+<footer class="ns--hf">
+    <div class="hf--top-side">
+        <div class="hf--width-holder">
+            <p class="hf--back"><span class="hf--text-uppercase back-to-top">Top</span>
+            </p>
+        </div>
+        <div class="hf--social">
+            <div class="hf--width-holder">
+                <p class="hf--social-headline hf--hide">Follow Opera</p>
+                <div class="hf--social-icons">
+                    <a class="facebook" href="https://facebook.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Facebook</span>
+                    </a>
+                    <a class="twitter" href="https://twitter.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Twitter</span>
+                    </a>
+                    <a class="youtube" href="https://www.youtube.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Youtube</span>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/opera-software" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">LinkedIn</span>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/opera/" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hf--links">
+        <div class="hf--width-holder">
+            <ul class="hf--links-section">
+                <li><strong class="hf--text-uppercase">Download Opera</strong>
+                </li>
+                <li><a class="hf--text-regular" href="https://www.opera.com/computer">Computer browsers</a></li>
+                <li class="hf--links-sep"><a class="hf--text-regular" href="https://www.opera.com/mobile">Mobile apps</a></li>
+                <li><a class="hf--text-regular" href="https://dev.opera.com/">Dev.Opera</a></li>
+                <li><a class="hf--text-regular" href="https://www.opera.com/computer/beta">Beta version</a></li>
+                </ul>
+                <ul class="hf--links-section">
+                <li><strong class="hf--text-uppercase">Services</strong>
+                </li>
+                <li><a class="hf--text-regular" href="https://addons.opera.com">Add-ons</a></li>
+                <li><a class="hf--text-regular last-link" href="https://auth.opera.com/account/login">Opera account</a></li>
+                </ul>
+                <ul class="hf--links-section">
+                <li><strong class="hf--text-uppercase">Need help?</strong>
+                </li>
+                <li><a class="hf--text-regular" href="https://www.opera.com/help">Help & support</a>
+                </li>
+                <li><a class="hf--text-regular" href="https://blogs.opera.com/">Opera blogs</a></li>
+                <li><a class="hf--text-regular last-link" href="https://forums.opera.com">Opera forums</a></li>
+                </ul>
+                <ul class="hf--links-section">
+                <li><strong class="hf--text-uppercase">Company</strong>
+                </li>
+                <li><a class="hf--text-regular" href="https://www.opera.com/jobs">Jobs</a></li>
+                <li><a class="hf--text-regular" href="https://www.opera.com/b2b">Become a partner</a></li>
+                <li><a class="hf--text-regular" href="https://www.operasoftware.com/press">Press info</a></li>
+                <li><a class="hf--text-regular" href="https://www.operasoftware.com/company/contact">Contact us</a></li>
+                <li><a class="hf--text-regular last-link" href="https://www.opera.com/about">About Opera</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hf--bottom-side hf--width-holder">
+        <div class="hf--bottom-wrapper">
+            <div class="hf--social">
+                <p class="hf--social-headline hf--hide">Follow Opera</p>
+                <div class="hf--social-icons">
+                    <a class="facebook" href="https://facebook.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Facebook</span>
+                    </a>
+                    <a class="twitter" href="https://twitter.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Twitter</span>
+                    </a>
+                    <a class="youtube" href="https://www.youtube.com/opera" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Youtube</span>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/company/opera-software" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">LinkedIn</span>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/opera/" data-event-action="hf-footer-social-item" data-event-category="hf">
+                        <span class="hf--hide">Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hf--copyrights">
+                <ul class="hf--copyrights-items">
+                    <li><strong>© Opera Software</strong></li>
+                    <li><a href="https://www.opera.com/privacy">Privacy</a></li>
+                    <li><a href="https://www.opera.com/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="hf--controls">
+                <div class="hf--language">
+                    <span class="hf--language-selector-icon"><span class="hf--hide">Select your language:</span></span>
+                    <span>
+                        <select class="hf--language-selector">
+                            
+                            <option data-name="id" value="/id/extensions/">Indonesia</option>
+                            
+                            <option data-name="id" value="/sr-me/extensions/">Crnogorski</option>
+                            
+                            <option data-name="id" value="/cs/extensions/">Čeština</option>
+                            
+                            <option data-name="id" value="/da/extensions/">Dansk</option>
+                            
+                            <option data-name="id" value="/de/extensions/">Deutsch</option>
+                            
+                            <option data-name="id" value="/el/extensions/">Ελληνικά</option>
+                            
+                            <option data-name="id" value="/en/extensions/" selected>English</option>
+                            
+                            <option data-name="id" value="/en-gb/extensions/">English (United Kingdom)</option>
+                            
+                            <option data-name="id" value="/es/extensions/">Español</option>
+                            
+                            <option data-name="id" value="/es-419/extensions/">Español (Latinoamérica)</option>
+                            
+                            <option data-name="id" value="/fi/extensions/">Suomi</option>
+                            
+                            <option data-name="id" value="/fr/extensions/">Français</option>
+                            
+                            <option data-name="id" value="/fr-ca/extensions/">Français (Canada)</option>
+                            
+                            <option data-name="id" value="/fy/extensions/">Frysk</option>
+                            
+                            <option data-name="id" value="/gd/extensions/">Gàidhlig</option>
+                            
+                            <option data-name="id" value="/he/extensions/">עברית</option>
+                            
+                            <option data-name="id" value="/hi/extensions/">हिन्दी</option>
+                            
+                            <option data-name="id" value="/it/extensions/">Italiano</option>
+                            
+                            <option data-name="id" value="/hu/extensions/">Magyar</option>
+                            
+                            <option data-name="id" value="/ko/extensions/">한국어</option>
+                            
+                            <option data-name="id" value="/ms/extensions/">Melayu</option>
+                            
+                            <option data-name="id" value="/nl/extensions/">Nederlands</option>
+                            
+                            <option data-name="id" value="/nb/extensions/">Norsk (bokmål)</option>
+                            
+                            <option data-name="id" value="/pl/extensions/">Polski</option>
+                            
+                            <option data-name="id" value="/pt/extensions/">Português</option>
+                            
+                            <option data-name="id" value="/pt-br/extensions/">Português (Brasil)</option>
+                            
+                            <option data-name="id" value="/sk/extensions/">Slovenčina</option>
+                            
+                            <option data-name="id" value="/sv/extensions/">Svenska</option>
+                            
+                            <option data-name="id" value="/vi/extensions/">Tiếng Việt</option>
+                            
+                            <option data-name="id" value="/th/extensions/">ไทย</option>
+                            
+                            <option data-name="id" value="/tl/extensions/">Tagalog</option>
+                            
+                            <option data-name="id" value="/tr/extensions/">Türkçe</option>
+                            
+                            <option data-name="id" value="/be/extensions/">Беларуская</option>
+                            
+                            <option data-name="id" value="/bg/extensions/">Български</option>
+                            
+                            <option data-name="id" value="/ru/extensions/">Русский</option>
+                            
+                            <option data-name="id" value="/uk/extensions/">Українська</option>
+                            
+                            <option data-name="id" value="/ar/extensions/">العربية</option>
+                            
+                            <option data-name="id" value="/zh-cn/extensions/">中文（中国）</option>
+                            
+                            <option data-name="id" value="/zh-tw/extensions/">中文（台灣）</option>
+                            
+                            <option data-name="id" value="/ja/extensions/">日本語</option>
+                            
+                        </select>
+                    </span>
+                </div>
+                <div class="hf--nav">
+                    <div class="hf--width-holder">
+                        <p class="hf--back"><span class="hf--text-uppercase back-to-top" href="#">Top</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <script src="https://addons-static.operacdn.com/static/CACHE/js/catalog.86728dbeac70.js"></script>
+
+    
+    
+
+  </body>
+</html>

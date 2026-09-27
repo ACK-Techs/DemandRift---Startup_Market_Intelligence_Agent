@@ -180,6 +180,8 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "COZUM-GUNLUGU.csv": ("AS06", "cikti", "11 bulgu: ne denendi, tarih, script, önce/sonra, sınır, FB-ID, komut"),
     "KAYNAK-SAGLIK.csv": ("AS06", "cikti", "19 kaynağın sağlığı; çalışan ve çalışmayan **birlikte** tutulur"),
     "cozum_gunlugu.py": ("AS06", "kod", "Günlüğü tutar, sağlık kayıtlarını ölçer"),
+    "BT02-ADAY-KAYNAKLAR.csv": ("AS06", "cikti", "**Batuhan için.** 305 kaynağın canlı sağlık taraması; 265 BT-02 adayı"),
+    "saglik_taramasi.py": ("AS06", "kod", "İçerik türü uygun kaynakları canlı yoklar, BT-02 kuralını uygular"),
 
     # --- AS-02 ---
     "AS02-BILDIRIM.csv": ("AS02", "girdi", "**Batuhan doldurur.** Hata bildirimi satırı eklenince makine koşar"),

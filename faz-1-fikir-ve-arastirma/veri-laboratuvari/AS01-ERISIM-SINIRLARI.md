@@ -1,7 +1,7 @@
 # AS-01 — Kaynak yeteneği, alan örnekleri ve erişim sınırları
 
 **Sürüm 1.0.0** · Hazırlayan: Ayselin Aydoğdu · Kontrol eden: Batuhan
-**Ölçüm tarihi: 2026-09-24** · Üreten: `as01_kaynak_kontrol.py`
+**Ölçüm tarihi: 2026-09-27** · Üreten: `as01_kaynak_kontrol.py`
 
 Bu belge Batuhan'ın F01–F10 kategori/sorgu denemelerine başlamadan önce
 **hangi kaynaktan ne beklenebileceğini** söyler. İçindeki her sayı bugün
@@ -50,14 +50,14 @@ döndü ve gövdesinde **0 karakter** görünür metin vardı.
 
 | Kaynak | Dolu alan | Başlık örneği | Puan | Fiyat | Yazar | Artefakt |
 |---|---:|---|---|---|---|---|
-| Apple App Store | 10/11 | `‎Sleep Cycle - Tracker & Sounds Ap` | 4.7 | 0 | Sleep Cycle AB | `e390abde1bdd` |
-| Google Play Store | 2/11 | `` | — | — | — | `b1da17ff4bd1` |
-| GitHub | 5/11 | `Detect breaking OpenAPI contract c` | — | — | — | `73ae278a80f3` |
-| Stack Overflow | 6/11 | `Is ServiceLocator an anti-pattern?` | — | — | davidoff | `9197928c0d62` |
-| Hacker News | 6/11 | `Swagger::Diff – detect breaking AP` | — | — | ezekg | `5d5e1beb787d` |
-| Shopify App Store | 6/11 | `Best Support Apps For 2026 - Shopi` | — | $2.99 | — | `197a32b295b5` |
-| Hugging Face | 4/11 | `oguzhankarahan/asr-300m-turkish` | — | — | — | `93f16549d6e1` |
-| Steam | 6/11 | `Steam Search` | — | $1.99 | — | `76b9e6c2b3e2` |
+| Apple App Store | 10/11 | `‎Sleep Cycle - Tracker & Sounds Ap` | 4.7 | 0 | Sleep Cycle AB | `b73d8b544d8b` |
+| Google Play Store | 2/11 | `` | — | — | — | `da6b782e6f10` |
+| GitHub | 5/11 | `Detect breaking OpenAPI contract c` | — | — | — | `a95e443be432` |
+| Stack Overflow | 6/11 | `Is ServiceLocator an anti-pattern?` | — | — | davidoff | `d60648738baf` |
+| Hacker News | 6/11 | `Swagger::Diff – detect breaking AP` | — | — | ezekg | `769ecc999463` |
+| Shopify App Store | 6/11 | `Best Support Apps For 2026 - Shopi` | — | $2.99 | — | `4a424bfdab23` |
+| Hugging Face | 4/11 | `oguzhankarahan/asr-300m-turkish` | — | — | — | `ef662cca33f1` |
+| Steam | 6/11 | `Steam Search` | — | $1.99 | — | `94c8b8edde58` |
 | Armut | 8/11 | `Ev Temizliği | Memnuniyet Garantil` | 4.4 | 2.000 TL | Ezgi B. Ş. | `319c22fae587` |
 
 Rehberin istediği 11 alan: `baslik`, `govde`, `kaynak_url`, `alinma_tarihi`, `yayin_tarihi`, `yazar`, `puan`, `puan_olcegi`, `fiyat`, `para_birimi`, `donem`.
@@ -161,13 +161,13 @@ yoktur. Site bizi bot olarak tanıyıp reddediyorsa bu bir karardır.
 
 ## 5. Kendi teslimimizdeki sınır
 
-Depo üç fazlı yapıya taşınırken ham artefaktlar ikiye bölündü. 1249
+Depo üç fazlı yapıya taşınırken ham artefaktlar ikiye bölündü. 1270
 normalize belgenin ham dosyası nerede:
 
 | | Belge |
 |---|---:|
-| Bu depoda | **179** |
-| Yalnız yerel arşivde (depoda yok) | **1070** |
+| Bu depoda | **249** |
+| Yalnız yerel arşivde (depoda yok) | **1021** |
 | Hiçbir yerde | 0 |
 
 Rehber açık: *"kayıp artefakt başarılı sayılmaz"* ve *"indeksteki dosya
@@ -182,9 +182,9 @@ belgenin** ham dosyası depoya alındı (154 dosya, 49 MB). Böylece
 
 | Ne doğrulanabilir | Oran |
 |---|---|
-| Çıkarılan alanlar (fiyat, puan, yorum sayısı…) | **%100 (164/164)** |
+| Çıkarılan alanlar (fiyat, puan, yorum sayısı…) | **%100 (231/231)** |
 | Bugünkü AS-01 yoklamaları | **%100** |
-| SourceFitMatrix örnek kayıtları | %29 (101/346) |
+| SourceFitMatrix örnek kayıtları | %45 (155/346) |
 
 Kalan 1070 belge çoğunlukla ana sayfa ve sitemap; onlardan sayı çıkarılmadı,
 yani doğrulanacak bir iddia taşımıyorlar. SourceFitMatrix'in örnek kayıtlarını
@@ -226,7 +226,7 @@ araştıramaz.
   örnek / 2 ayrı kaynak eşiği Faz 3'e aittir ve bunun yerine geçmez.
 - Fiyat alanları **satıcının ilan ettiği fiyattır**; kullanıcının ödediği
   değildir.
-- Bu ölçüm 2026-09-24 tarihlidir. Batuhan denemeye başlarken yeniden koşmalıdır;
+- Bu ölçüm 2026-09-27 tarihlidir. Batuhan denemeye başlarken yeniden koşmalıdır;
   bu belge de bir snapshot'tır.
 
 ## 7. Yeniden üretim

@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<title>Uptodown App Store: Descubre, descarga, comparte</title>
+<meta name="description" content="Explora una tienda de aplicaciones para Android formada por millones de aplicaciones seguras disponibles de forma gratuita y sin necesidad de registro. Descarga y actualiza tus apps en cualquier dispositivo.">
+<link rel="preconnect" href="https://img.utdstc.com">
+<link rel="preconnect" href="https://stc.utdstc.com">
+<link rel="preload" crossorigin="anonymous" href="https://stc.utdstc.com/fonts/geomanist-medium-webfont.woff2" as="font" type="font/woff2">
+<link rel="preload" crossorigin="anonymous" href="https://stc.utdstc.com/fonts/geomanist-regular-webfont.woff2" as="font" type="font/woff2">
+<link href="https://stc.utdstc.com/1790334109235/vendor.css" as="style">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://stc.utdstc.com/1790334109235/vendor.css">
+<noscript><link rel="stylesheet" media="all" href="https://stc.utdstc.com/1790334109235/vendor.css"></noscript>
+<link href="https://stc.utdstc.com/1790334109235/marketplace.css" as="style">
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://stc.utdstc.com/1790334109235/marketplace.css">
+<noscript><link rel="stylesheet" media="all" href="https://stc.utdstc.com/1790334109235/marketplace.css"></noscript>
+<script defer src="//geo.cookie-script.com/s/a52be48a31f50475bd697e1db8507f9d.js?country=no-is-li-gb-ch-br&state=ca&region=eu"></script>
+<meta name="description" content="Descarga software para Android, comparte tus opiniones con otros usuarios, imágenes, etc." />
+<meta name="keywords" content="descargar, descargar gratis, software, en español, descargar software, última versión" />
+<meta name="theme-color" content="#fff"/>
+<link rel="icon" type="image/png" href="https://stc.utdstc.com/favicon.png" sizes="192x192"/>
+<link rel="alternate" hreflang="en" href="https://en.uptodown.com/marketplace">
+<link rel="alternate" hreflang="x-default" href="https://en.uptodown.com/marketplace">
+<link rel="alternate" hreflang="es" href="https://www.uptodown.com/marketplace">
+<link rel="alternate" hreflang="pt" href="https://br.uptodown.com/marketplace">
+<link rel="alternate" hreflang="de" href="https://de.uptodown.com/marktplatz">
+<link rel="alternate" hreflang="fr" href="https://fr.uptodown.com/marketplace">
+<link rel="alternate" hreflang="it" href="https://it.uptodown.com/marketplace">
+<link rel="alternate" hreflang="zh" href="https://cn.uptodown.com/marketplace">
+<link rel="alternate" hreflang="ja" href="https://jp.uptodown.com/marketplace">
+<link rel="alternate" hreflang="ru" href="https://ru.uptodown.com/marketplace">
+<link rel="alternate" hreflang="ko" href="https://kr.uptodown.com/marketplace">
+<link rel="alternate" hreflang="id" href="https://id.uptodown.com/marketplace">
+<link rel="alternate" hreflang="ar" href="https://ar.uptodown.com/marketplace">
+<link rel="alternate" hreflang="th" href="https://th.uptodown.com/marketplace">
+<link rel="alternate" hreflang="tr" href="https://tr.uptodown.com/pazaryeri">
+<link rel="alternate" hreflang="hi" href="https://in.uptodown.com/marketplace">
+<link rel="alternate" hreflang="vi" href="https://vi.uptodown.com/thi-truong">
+<link rel="alternate" hreflang="ro" href="https://ro.uptodown.com/marketplace">
+<link rel="canonical" href="https://www.uptodown.com/marketplace">
+<meta name="domain" content="uptodown.com">
+<meta name="gdpr" content="0"/>
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<meta name="robots" content="index,follow" /><meta name="author" content="Uptodown Technologies SL" />
+<meta name="dc.language" content="es" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<style>
+/* ---------- Tokens ---------- */
+:root {
+color-scheme: light dark;
+--font-regular: 'geomanistregular', sans-serif;
+--font-medium: 'geomanistmedium', sans-serif;
+--size0-text: 10px;
+--base-text: 12px;
+--size1-text: 16px;
+--size2-text: 20px;
+--size3-text: 32px;
+--size4-text: 48px;
+--size-h1-desktop: 90px;
+/* Marca */
+--color1: #1F4E5A;
+--color2: #00AAD5;
+--color3: #EDF3F4;
+--turbo: #E06290;
+/* Semánticos (claro) */
+--page: #ffffff;
+--ink: var(--color1);
+--ink-soft: #4E7580;
+--surface: var(--color3);
+--surface-raised: #ffffff;
+--surface-deep: var(--color1);
+--border: #DCE7E9;
+--accent-soft: rgba(0, 170, 213, 0.1);
+--spacing: 10px;
+--spacing2: 20px;
+--spacing4: 40px;
+--spacing8: 80px;
+--gutter: 20px;
+--section-y: 64px;
+--radius: 14px;
+--radius-sm: 10px;
+--radius-lg: 24px;
+--maxw: 1120px;
+--maxw-text: 65ch;
+--shadow-sm: 0 1px 2px rgba(31, 78, 90, 0.06), 0 8px 24px rgba(31, 78, 90, 0.06);
+--shadow-md: 0 12px 32px rgba(31, 78, 90, 0.12);
+--lineheight: 150%;
+}
+/* ---------- Base ---------- */
+body {
+font-family: var(--font-regular);
+background: var(--page);
+color: var(--ink);
+}
+.content header {
+position: sticky;
+top: 0;
+overflow: hidden;
+z-index: 20;
+}
+.breadcrumb {
+box-sizing: border-box;
+width: 100%;
+margin: 0 auto;
+font-size: var(--base-text);
+padding: var(--spacing) var(--gutter);
+color: var(--ink-soft);
+}
+.breadcrumb a {
+color: var(--ink-soft);
+text-decoration: none;
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+color: var(--color2);
+text-decoration: underline;
+}
+:where(a, button):focus-visible {
+outline: 2px solid var(--color2);
+outline-offset: 3px;
+border-radius: 4px;
+}
+/* ---------- Ritmo de sección ---------- */
+/* Cada sección paga su propio espaciado y puede ocupar el ancho
+completo; el contenido se centra con una medida máxima propia. */
+main {
+display: flex;
+flex-direction: column;
+margin: 0;
+gap: 0;
+}
+main section {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: var(--spacing2);
+padding: var(--section-y) var(--gutter);
+text-align: center;
+}
+main section > * {
+width: 100%;
+max-width: var(--maxw);
+}
+/* Bandas con superficie propia, para separar bloques sin reglas */
+.security,
+.installer {
+background: var(--surface);
+}
+.turbo {
+background: linear-gradient(180deg, rgba(224, 98, 144, 0.08), rgba(224, 98, 144, 0.14));
+}
+/* ---------- Tipografía ---------- */
+.title-h1 {
+font-family: var(--font-medium);
+font-size: clamp(34px, 7vw, 48px);
+line-height: 1.1;
+letter-spacing: -0.5px;
+color: var(--ink);
+text-wrap: balance;
+}
+.title-h1 span {
+color: var(--color2);
+}
+.title-h2 {
+font-family: var(--font-medium);
+font-size: clamp(26px, 4.4vw, 34px);
+line-height: 1.2;
+letter-spacing: -0.3px;
+color: var(--ink);
+text-wrap: balance;
+}
+.title-h2 span {
+color: var(--color2);
+}
+.turbo .title-h2 span {
+color: var(--turbo);
+}
+.subtitle,
+.text {
+color: var(--ink-soft);
+line-height: var(--lineheight);
+font-size: var(--size1-text);
+max-width: var(--maxw-text);
+margin: 0 auto;
+}
+.text a,
+.subtitle a {
+color: var(--color2);
+font-family: var(--font-medium);
+text-decoration: underline;
+text-underline-offset: 2px;
+}
+.bold {
+font-family: var(--font-medium);
+}
+.center {
+text-align: center;
+align-self: center;
+}
+/* ---------- Botones ---------- */
+main button,
+main .button {
+background: var(--color2);
+border: 1px solid var(--color2);
+width: fit-content;
+max-width: 100%;
+color: #ffffff;
+padding: 14px var(--spacing2);
+border-radius: var(--radius-sm);
+text-transform: uppercase;
+font-family: var(--font-medium);
+font-size: var(--base-text);
+letter-spacing: 0.4px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: var(--spacing);
+cursor: pointer;
+text-decoration: none;
+box-shadow: 0 8px 20px rgba(0, 170, 213, 0.24);
+transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+main .button:hover {
+transform: translateY(-2px);
+box-shadow: 0 14px 28px rgba(0, 170, 213, 0.32);
+}
+main .button:active {
+transform: translateY(0);
+}
+.turbo .button {
+background: var(--turbo);
+border-color: var(--turbo);
+box-shadow: 0 8px 20px rgba(224, 98, 144, 0.28);
+}
+.turbo .button:hover {
+box-shadow: 0 14px 28px rgba(224, 98, 144, 0.36);
+}
+a .button img,
+a.button img {
+filter: brightness(0) invert(1);
+}
+/* ---------- Hero ---------- */
+/* El orden visual no es el del marcado: titulo, reclamo, texto,
+mockup y por ultimo las cifras. */
+.hero {
+padding-top: var(--spacing4);
+padding-bottom: var(--spacing4);
+gap: var(--spacing2);
+}
+.hero .title-h1 { order: 1; }
+.hero .title-h2 { order: 2; }
+.hero .subtitle { order: 3; }
+.hero .feature { order: 4; }
+.hero .list { order: 5; }
+.hero .title-h2 {
+font-family: var(--font-regular);
+font-size: clamp(20px, 3vw, 26px);
+color: var(--ink-soft);
+letter-spacing: 0;
+}
+.feature {
+display: block;
+margin: var(--spacing2) auto 0;
+width: 100%;
+max-width: 360px;
+height: auto;
+}
+/* ---------- Cifras ---------- */
+section ul.list {
+list-style: none;
+display: grid;
+grid-template-columns: 1fr;
+gap: var(--spacing2);
+padding: 0;
+margin: var(--spacing2) 0 0;
+}
+section ul.list li {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: var(--spacing2);
+padding: var(--spacing2);
+background: var(--surface);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+text-align: left;
+}
+.list li > h3 {
+display: flex;
+align-items: center;
+gap: var(--spacing2);
+width: 100%;
+justify-content: center;
+}
+section ul.list li span {
+font-family: var(--font-medium);
+color: var(--color2);
+font-size: clamp(38px, 8vw, 52px);
+line-height: 1;
+text-align: right;
+flex: none;
+}
+.list li > h3 div {
+flex: 1;
+max-width: 22ch;
+font-size: var(--size1-text);
+font-family: var(--font-regular);
+color: var(--ink-soft);
+line-height: 1.35;
+}
+section ul.list li b {
+font-family: var(--font-medium);
+color: var(--ink);
+}
+/* ---------- Productos ---------- */
+section .box {
+display: grid;
+grid-template-columns: 1fr;
+gap: var(--spacing2);
+width: 100%;
+align-items: stretch;
+}
+.products {
+position: relative;
+background: var(--surface);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: var(--spacing) var(--spacing) var(--spacing2);
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+gap: var(--spacing);
+transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.products:hover,
+.products:has(.button:focus-visible) {
+transform: translateY(-4px);
+border-color: rgba(0, 170, 213, 0.35);
+box-shadow: var(--shadow-md);
+}
+.products .button::after {
+content: '';
+position: absolute;
+inset: 0;
+}
+.products .button:hover,
+.products .button:active {
+transform: none;
+}
+.products .mockup-wrap {
+display: flex;
+align-items: flex-end;
+justify-content: center;
+width: 100%;
+height: 200px;
+padding: var(--spacing2) var(--spacing2) 0;
+border-radius: calc(var(--radius) - 4px);
+overflow: hidden;
+}
+.products .mockup {
+max-width: 100%;
+max-height: 100%;
+width: auto;
+object-fit: contain;
+object-position: bottom;
+transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.products:hover .mockup {
+transform: translateY(-6px) scale(1.02);
+}
+/* La captura del cliente se monta en un monitor sin peana, para que
+pese lo mismo que los renders de dispositivo de las otras tarjetas. */
+/* Los renders de movil se apoyan abajo; el monitor, mas bajo, se
+centra en el panel para no dejar el hueco arriba. */
+.products .mockup-wrap:has(.monitor) {
+align-items: center;
+padding: var(--spacing2) 0 0;
+}
+.products .monitor {
+display: block;
+width: 100%;
+max-width: 250px;
+margin: 0 auto;
+padding: 9px 9px 20px;
+border-radius: 12px;
+background: linear-gradient(180deg, #2E4048 0%, #1D2C33 65%, #16232A 100%);
+box-shadow:
+0 18px 34px rgba(0, 0, 0, 0.3),
+inset 0 1px 0 rgba(255, 255, 255, 0.14);
+transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* Marca del chasis: sugiere el monitor sin dibujar la peana */
+.products .monitor::after {
+content: '';
+display: block;
+width: 32px;
+height: 3px;
+margin: 8px auto 0;
+border-radius: 2px;
+background: rgba(255, 255, 255, 0.2);
+}
+.products .monitor .mockup {
+display: block;
+width: 100%;
+max-width: none;
+max-height: none;
+aspect-ratio: 16 / 10;
+object-fit: cover;
+object-position: top center;
+border-radius: 4px;
+transform: none;
+}
+.products:hover .monitor {
+transform: translateY(-6px) scale(1.02);
+}
+.products:hover .monitor .mockup {
+transform: none;
+}
+.products h3 {
+color: var(--ink);
+font-size: var(--size2-text);
+font-family: var(--font-medium);
+line-height: 1.25;
+margin-top: var(--spacing);
+text-wrap: balance;
+}
+.products p {
+font-size: var(--base-text);
+color: var(--ink-soft);
+line-height: var(--lineheight);
+max-width: 34ch;
+margin: 0 auto;
+text-wrap: pretty;
+}
+.products .platforms {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+margin-top: auto;
+padding-top: var(--spacing);
+}
+.products .platform {
+width: 28px;
+height: 28px;
+border-radius: 50%;
+border: 1px solid var(--border);
+color: var(--ink-soft);
+display: flex;
+align-items: center;
+justify-content: center;
+flex: none;
+}
+.products .platform svg {
+width: 14px;
+height: 14px;
+}
+.products .button {
+text-decoration: underline;
+text-underline-offset: 2px;
+min-width: 180px;
+margin-bottom: var(--spacing);
+text-decoration: none;
+}
+/* ---------- Ventajas ---------- */
+section ul.points {
+list-style: none;
+display: grid;
+grid-template-columns: 1fr;
+gap: var(--spacing2);
+padding: 0;
+margin: var(--spacing2) 0 0;
+text-align: left;
+}
+section ul.points li {
+position: relative;
+display: grid;
+grid-template-columns: auto minmax(0, 1fr);
+align-items: start;
+gap: var(--spacing2);
+padding: var(--spacing2);
+background: var(--surface-raised);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+box-shadow: var(--shadow-sm);
+transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+section ul.points li:hover {
+transform: translateY(-3px);
+border-color: rgba(0, 170, 213, 0.35);
+box-shadow: var(--shadow-md);
+}
+/* El rombo de marca hace de icono, a tamaño de chip */
+section ul.points li svg {
+position: static;
+width: 34px;
+height: 34px;
+flex: none;
+}
+section li h3 {
+font-family: var(--font-medium);
+color: var(--ink);
+font-size: var(--size1-text);
+display: block;
+line-height: 1.3;
+}
+.point {
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+.point span {
+color: var(--ink-soft);
+font-size: var(--base-text);
+line-height: var(--lineheight);
+}
+section li span a {
+font-family: var(--font-medium);
+color: var(--color2);
+text-decoration: underline;
+text-underline-offset: 2px;
+}
+section li span a:lang(ro), section li span a:lang(ru), section li span a:lang(tr), section li span a:lang(vi) {
+font-weight: 600;
+font-family: sans-serif;
+}
+/* ---------- Breakpoints ---------- */
+@media (min-width: 600px) {
+:root {
+--gutter: 32px;
+--section-y: 80px;
+}
+section ul.list,
+section ul.points {
+grid-template-columns: repeat(2, 1fr);
+}
+section .box {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (min-width: 1024px) {
+:root {
+--size0-text: 12px;
+--base-text: 14px;
+--size1-text: 18px;
+--size2-text: 22px;
+--size3-text: 40px;
+--size4-text: 80px;
+--gutter: 40px;
+--section-y: 112px;
+}
+.title-h1 {
+font-size: clamp(48px, 5vw, var(--size-h1-desktop));
+}
+.title-h1:lang(hi),
+.title-h1 span:lang(hi) {
+line-height: normal;
+}
+.feature {
+max-width: 420px;
+}
+/* Hero a dos columnas: el marcado sigue igual, la colocacion es
+explicita para no depender del orden de los nodos. */
+.hero {
+display: grid;
+grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+column-gap: var(--spacing8);
+row-gap: var(--spacing2);
+align-items: center;
+justify-content: center;
+text-align: start;
+padding-top: var(--spacing8);
+/* La rejilla del hero se cine a la misma medida que el resto
+de secciones, cuyos hijos van topados a --maxw. */
+max-width: var(--maxw);
+margin-inline: auto;
+}
+.hero > * {
+max-width: none;
+}
+.hero .title-h1 { grid-area: 1 / 1; }
+.hero .title-h2 { grid-area: 2 / 1; }
+.hero .subtitle { grid-area: 3 / 1; margin: 0; max-width: 54ch; }
+.hero .feature { grid-area: 1 / 2 / 4 / 3; margin: 0; justify-self: center; }
+.hero .list { grid-area: 4 / 1 / 5 / -1; margin-top: var(--spacing4); }
+section ul.list {
+grid-template-columns: repeat(3, 1fr);
+}
+section ul.points {
+grid-template-columns: repeat(3, 1fr);
+}
+section .box {
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+}
+.products {
+padding: var(--spacing) var(--spacing) 25px;
+}
+.products .mockup-wrap {
+height: 240px;
+}
+.products h3 {
+font-size: 24px;
+}
+section ul.points li {
+padding: var(--spacing4) var(--spacing2);
+}
+}
+/* ---------- Modo oscuro ---------- */
+@media (prefers-color-scheme: dark) {
+:root {
+--page: #0E1F24;
+--ink: #D7E2E4;
+--ink-soft: #9CB4BA;
+--surface: #16333B;
+--surface-raised: #16333B;
+--surface-deep: #123039;
+--border: #24454E;
+--color3: #16333B;
+--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+--shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+.turbo {
+background: linear-gradient(180deg, rgba(224, 98, 144, 0.1), rgba(224, 98, 144, 0.18));
+}
+.products .mockup-wrap {
+}
+}
+/* ---------- Accesibilidad ---------- */
+@media (prefers-reduced-motion: reduce) {
+* {
+transition-duration: 0.01ms !important;
+animation-duration: 0.01ms !important;
+}
+}
+@font-face {
+font-family: 'geomanistmedium';
+src: url('https://stc.utdstc.com/fonts/geomanist-medium-webfont.woff2') format('woff2');
+font-weight: 500;
+font-style: normal;
+font-display: swap;
+}
+@font-face {
+font-family: 'geomanistregular';
+src: url('https://stc.utdstc.com/fonts/geomanist-regular-webfont.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<style>
+a,abbr,acronym,address,applet,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dl,dt,em,embed,fieldset,figcaption,figure,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;text-rendering: geometricPrecision;}
+body {background: #eeeeee;font-family: 'geomanistregular', sans-serif;margin:0;}
+body > .content {max-width: 1366px;margin: auto;background: white;position: relative;}
+a {text-decoration: none;color: inherit;cursor:pointer;}
+.hidden {display: none;}
+section {display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 50px 0 0;}
+section .content {padding: 10px 10px 15px;}
+section .title {font-family: 'geomanistmedium', sans-serif;color: #00AAD5;font-size: 20px;font-weight:600;padding: 20px 10px 0;display: inline-block;text-transform: uppercase;}
+section .title + span {font-family: 'geomanistregular', sans-serif;color: #7F949A;font-size: 14px;font-weight: 300;padding: 0 10px 0;display: block;}
+section .title + span b {color:#1F4E5A;font-family: 'geomanistmedium', sans-serif;}
+header {display:flex;position:fixed;height:50px;width: 100%;z-index:4;border-bottom: 1px solid #eeeeee;background: white;justify-content: space-between;}
+header a {-ms-flex-align: center;align-items: center;display: -ms-flexbox;display: inline-flex;-ms-flex-pack: center;justify-content: center;cursor:pointer;}
+header .logo {position: absolute;top: 15px;right: 0;left: 9px;width: 200px;}
+header .logo img {height: 20px;}
+header .menu-button {height: 50px;width: 50px;padding: 0;font-family: 'geomanistregular', sans-serif;font-size: 12px;}
+header .menu-button:lang(ar) {rotate:180deg;}
+header .menu-button svg {margin-right: 20px;fill: #00aad5;}
+header .menu-button span {display: none;color: #0081A2;}
+header .search {height: 50px;width: 50px;fill:#0081A2;}
+header > svg {display: none;}
+.nav-main, .panel, .shadow {transition: all .5s cubic-bezier(.165,.84,.44,1);transition-timing-function: cubic-bezier(.165,.84,.44,1);}
+.nav-main {position: fixed;top: 0;right: 0;bottom: 0;left: -256px;width: 256px;height: auto;z-index: 5;background: white;overflow: auto;}
+@media (min-width: 1366px) {
+section .content {padding: 10px 20px 15px;}
+section .title {padding: 20px 20px 0;font-family: 'geomanistregular', sans-serif;color: #1F4E5A;font-size: 30px;font-weight: 600;}
+section .title + span {padding: 0 20px 10px;font-family: 'geomanistregular', sans-serif;color: #7F949A;font-size: 20px;font-weight: 300;}
+header {max-width:1366px;margin: auto;left:0;right:0;position: relative;height: 80px;justify-content: flex-start;}
+header .menu-button {height: 80px; width:auto;padding: 0 20px 0;display:flex; gap:20px;}
+header > svg {display: block;fill:#2D709B;padding: 30px;margin-left: auto;}
+header .menu-button span {display: block;font-size: 14px;}
+header .logo {transform: scale(1.5);position: relative;top: 3px;left: -20px;}
+header .logo img {height: 20px;}
+}
+@media (prefers-color-scheme: dark) {
+body {background: #09191d;}
+body > .content {background: #0F292F;}
+header {background: #0F292F;}
+header .search, header .menu-button, header > svg {fill:#fff;}
+header .menu-button span {color: white;}
+header .menu-button svg {fill: #fff;}
+section .title {color: white;}
+section .title + span {color: white;}
+}
+</style>
+<header class="">
+<a id="menu-button-id" class="menu-button" onclick="goBackFallBack()">
+<img alt="Icono de menú" width="10" height="24" decoding="async" style="color:transparent" src="https://stc.utdstc.com//img/svgs/icon-bar-arrow.svg">
+</a>
+<a href="https://www.uptodown.com" class="logo">
+<picture>
+<source srcset="https://stc.utdstc.com/img/svgs/logo-uptodown-dark.svg " media="(prefers-color-scheme: dark)"/>
+<img fetchpriority="high" height="20" width="157" src="https://stc.utdstc.com/img/svgs/logo-uptodown.svg" data-src="https://stc.utdstc.com/img/svgs/logo-uptodown.svg" alt="Descarga, descubre, comparte">
+</picture>
+</a>
+<script>
+function goBackFallBack() {
+if(window.history.length > 2) {
+window.history.back();
+} else {
+window.location.href = "https://www.uptodown.com";
+}
+}
+</script>
+</header>
+<div class="breadcrumb"><a href="https://www.uptodown.com/sobre-nosotros">Sobre nosotros</a> / Marketplace</div>
+<main>
+<section class="hero">
+<h1 class="title-h1">Uptodown <span>App Store</span></h1>
+<img class="feature" alt="" src="https://stc.utdstc.com/img/mockups/mockup3-2025.png">
+<h2 class="title-h2">Descubre, descarga, comparte</h2>
+<p class="subtitle">Uptodown es nuestra tienda de aplicaciones multiplataforma especializada en Android, que te ofrece acceso gratuito, cómodo y seguro al software. Más de 100 millones de usuarios cada mes confían en Uptodown para acceder sin restricciones a un amplio catálogo de aplicaciones. Somos una plataforma de distribución totalmente legal, accesible desde cualquier dispositivo y comprometida con ofrecer el mejor servicio posible.</p>
+<ul class="list">
+<li><h3><span>+3.2</span><div><b>millones de apps</b> disponibles en la tienda</div></h3></li>
+<li><h3><span>+70</span><div><b>antivirus</b> escanean cada app publicada</div></h3></li>
+<li><h3><span>17</span><div><b>idiomas</b> disponibles con información editorial localizada</div></h3></li>
+</ul>
+</section>
+<section>
+<h2 class="title-h2 center"><span>Disponible</span> en cualquier lugar</h2>
+<div class="box">
+<div class="products">
+<div class="mockup-wrap">
+<img class="mockup" alt="" loading="lazy" src="https://stc.utdstc.com/img/uptodown-marketplace-web.png">
+</div>
+<h3>Uptodown en tu navegador</h3>
+<p>La versión web de Uptodown permite descargar software directamente desde cualquier navegador y dispositivo sin ningún tipo de restricción.</p>
+<div class="platforms">
+<span class="platform" title="Navegador">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9h18"/></svg>
+</span>
+</div>
+<a class="button" href="https://www.uptodown.com/marketplace/web">Más información</a>
+</div>
+<div class="products">
+<div class="mockup-wrap">
+<img class="mockup" alt="" loading="lazy" src="https://stc.utdstc.com/img/uptodown-maketplace-mobile.png">
+</div>
+<h3>Uptodown en tu móvil</h3>
+<p>Nuestra app nativa es una solución completa para administrar, descargar y actualizar tus aplicaciones móviles en dispositivos Android a través de nuestro marketplace.</p>
+<div class="platforms">
+<span class="platform" title="Android">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 9.5h12v7.2a1.6 1.6 0 0 1-1.6 1.6H7.6A1.6 1.6 0 0 1 6 16.7V9.5Zm1.9-1.2a4.4 4.4 0 0 1 8.2 0H7.9Zm1.4-3.6-.8-1.4a.4.4 0 0 1 .7-.4l.8 1.4a5.6 5.6 0 0 1 3.6 0l.8-1.4a.4.4 0 0 1 .7.4l-.8 1.4a4.7 4.7 0 0 1 .9.6H8.4c.3-.2.6-.4.9-.6ZM3.8 9.5c.5 0 .9.4.9.9v4.4a.9.9 0 0 1-1.8 0v-4.4c0-.5.4-.9.9-.9Zm16.4 0c.5 0 .9.4.9.9v4.4a.9.9 0 0 1-1.8 0v-4.4c0-.5.4-.9.9-.9ZM9 19.1h1.8v2a.9.9 0 0 1-1.8 0v-2Zm4.2 0H15v2a.9.9 0 0 1-1.8 0v-2Z"/></svg>
+</span>
+<span class="platform" title="iOS">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.3-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.9-3.6 2.2-1.5 2.7-.4 6.6 1.1 8.8.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.7.7 1.1 0 1.9-1.1 2.6-2.2.8-1.2 1.1-2.4 1.1-2.5-.1 0-2.1-.8-2.1-3.4ZM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
+</span>
+</div>
+<a class="button" href="https://www.uptodown.com/marketplace/android-app">Más información</a>
+</div>
+<div class="products">
+<div class="mockup-wrap">
+<img class="mockup" alt="" loading="lazy" src="https://stc.utdstc.com/img/uptodown-marketplace-desktop.png">
+</div>
+<h3>Uptodown en tu escritorio</h3>
+<p>Descarga software para Windows y Mac en tu ordenador desde una herramienta adaptada a tu sistema operativo que detecta y actualiza lo que ya tienes instalado.</p>
+<div class="platforms">
+<span class="platform" title="Windows">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.4 10.4 4.4v7.1H3V5.4Zm0 13.2 7.4 1v-7H3v6ZM11.6 4.2 21 3v8.5h-9.4V4.2Zm0 8.5H21V21l-9.4-1.3v-7Z"/></svg>
+</span>
+<span class="platform" title="macOS">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.3-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.9-3.6 2.2-1.5 2.7-.4 6.6 1.1 8.8.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.7.7 1.1 0 1.9-1.1 2.6-2.2.8-1.2 1.1-2.4 1.1-2.5-.1 0-2.1-.8-2.1-3.4ZM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
+</span>
+</div>
+<a class="button" href="https://www.uptodown.com/marketplace/desktop">Más información</a>
+</div>
+<div class="products">
+<div class="mockup-wrap">
+<img class="mockup" alt="" loading="lazy" src="https://stc.utdstc.com/img/uptodown-marketplace-cli.webp">
+</div>
+<h3>Uptodown en tu terminal</h3>
+<p>Uptodown CLI lleva nuestras funciones principales a la línea de comandos, para que puedas buscar, instalar y actualizar software sin salir del terminal.</p>
+<div class="platforms">
+<span class="platform" title="Windows">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.4 10.4 4.4v7.1H3V5.4Zm0 13.2 7.4 1v-7H3v6ZM11.6 4.2 21 3v8.5h-9.4V4.2Zm0 8.5H21V21l-9.4-1.3v-7Z"/></svg>
+</span>
+<span class="platform" title="macOS">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.3-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.8.9-3.6 2.2-1.5 2.7-.4 6.6 1.1 8.8.7 1 1.6 2.2 2.7 2.2 1.1 0 1.5-.7 2.8-.7 1.3 0 1.6.7 2.7.7 1.1 0 1.9-1.1 2.6-2.2.8-1.2 1.1-2.4 1.1-2.5-.1 0-2.1-.8-2.1-3.4ZM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.6-1.2Z"/></svg>
+</span>
+</div>
+<a class="button" href="https://www.uptodown.com/marketplace/CLI">Más información</a>
+</div>
+</div>
+</section>
+<section class="security">
+<h2 class="title-h2">Total <span>seguridad</span> sin comprometer tu libertad</h2>
+<p class="subtitle text">En Uptodown, son los usuarios quienes deciden qué y cómo quieren descargar software, por lo que velamos por ofrecerles el mayor catálogo posible de aplicaciones sin restricciones.</p>
+<p class="subtitle text">Todas las aplicaciones disponibles en Uptodown provienen de fuentes oficiales o han sido publicadas directamente por el desarrollador a través de nuestra plataforma de publicación de software. Para preservar la <a href="https://support.uptodown.com/hc/es/articles/360062090652--Es-seguro-Uptodown">seguridad</a>, verificamos cada archivo que hospedamos a través del servicio VirusTotal con más de 70 antivirus y ofrecemos un detallado informe para asegurarnos de que encuentres exactamente lo que necesitas.</p>
+<p class="subtitle text">Y lo que es más importante, el uso de Uptodown es completamente libre, por lo que puedes utilizar nuestra tienda sin necesidad de registro alguno a través de cualquier dispositivo. ¡Tú decides cómo utilizar nuestros servicios!</p>
+</section>
+<section class="advantages">
+<h2 class="title-h2"><span>Ventajas</span> de utilizar Uptodown</h2>
+<ul class="points">
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Descarga versiones anteriores de tus apps:</h3> <span>además de ofrecer las últimas actualizaciones de cada aplicación, ofrecemos también versiones anteriores para cubrir todas las necesidades de compatibilidad.</span></div>
+</li>
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Información editorial de primer nivel:</h3> <span>acceso a reseñas neutrales, capturas de pantalla y vídeos de cada app para que tengas toda la información necesaria antes de descargar una app. <a href="https://www.uptodown.com/sobre-nosotros/editores">Más información sobre nuestra política editorial.</a></span></div>
+</li>
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Te avisamos del lanzamiento de novedades:</h3> <span>gracias a nuestro sistema de prerregistro, podrás recibir una notificación cuando esa app que tanto esperas sea lanzada en nuestra tienda.</span></div>
+</li>
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Personaliza tu perfil:</h3> <span>edita tu página personal, recomienda aplicaciones y comparte tus descubrimientos.</span></div>
+</li>
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Participa en la comunidad:</h3> <span>publica tus propias reseñas en la tienda y lee las de millones de usuarios. Valora las aplicaciones que descargas y obtén un resumen con los comentarios más relevantes.</span></div>
+</li>
+<li>
+<svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_784_1004)">
+<rect x="16" y="55.5" width="61" height="61" rx="10" transform="rotate(-45 16 55.5)" fill="#00AAD5"/>
+</g>
+<defs>
+<filter id="filter0_d_784_1004" x="0.14209" y="0.508789" width="117.983" height="117.982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.666667 0 0 0 0 0.835294 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_784_1004"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_784_1004" result="shape"/>
+</filter>
+</defs>
+</svg>
+<div class="point"><h3>Descubre nuevas aplicaciones:</h3> <span>navega por nuestro enorme catálogo de aplicaciones organizadas en categorías para que encuentres alternativas a lo que buscas. No solo somos una tienda, ¡también una plataforma de descubrimiento!</span></div>
+</li>
+</ul>
+</section>
+<section class="turbo">
+<h2 class="title-h2">Uptodown <span>Turbo</span></h2>
+<p class="subtitle">En Uptodown apostamos por una experiencia lo más cómoda posible para los usuarios, pero basamos parte de nuestro modelo de negocio en la publicidad web. Si deseas utilizar una versión ad-free de nuestro app store y tener acceso a un sinfín de funcionalidades exclusivas, Uptodown Turbo es nuestro modelo de suscripción premium para sacarle el mayor partido posible a Uptodown.</p>
+<a href="https://uptodown.com/turbo" class="button center">Suscríbete ahora</a>
+</section>
+<section class="installer">
+<h2 class="title-h2">APK <span>Installer</span></h2>
+<p class="subtitle">APK Installer es nuestra aplicación universal para instalar aplicaciones Android compatible con la mayoría de los formatos de empaquetado (APK, XAPK, app bundles, etc.). Se trata de una herramienta totalmente independiente de nuestro marketplace que puede utilizarse con aplicaciones de cualquier proveniencia, por lo que forma parte de nuestro compromiso para ofrecer herramientas abiertas y no restrictivas.</p>
+<a href="https://uptodown-apk-installer.uptodown.com/android" class="button center">Descubre APK Installer</a>
+</section>
+</main>
+<footer>
+<script defer src="https://accounts.google.com/gsi/client"></script>
+<div class="info">
+<span class="logo">
+<img loading="lazy" alt="Imagotipo de Uptodown" width="200" height="31" src="https://stc.utdstc.com/img/svgs/logo-uptodown.svg">
+</span>
+<p>Uptodown es una app store multiplataforma especializada en Android. Nuestro objetivo es proporcionar acceso libre y gratuito a un gran catálogo de aplicaciones sin restricciones, ofreciendo una plataforma de distribución legal accesible desde cualquier navegador, así como a través de su app oficial.</p>
+<div class="social">
+<a title="Uptodown YouTube URL" href="https://www.youtube.com/uptodown">
+<img loading="lazy" alt="Icono de YouTube" width="24" height="24" src="https://stc.utdstc.com/img//social/youtube.svg">
+</a>
+<a title="Uptodown TikTok URL" href="https://www.tiktok.com/@uptodown_com">
+<img loading="lazy" alt="Icono de TikTok" width="24" height="24" src="https://stc.utdstc.com/img//social/tiktok.svg">
+</a>
+<a title="Uptodown Twitter URL" href="https://x.com/uptodown_es">
+<img loading="lazy" alt="Icono de X" width="24" height="24" src="https://stc.utdstc.com/img//social/x.svg">
+</a>
+<a title="Uptodown Instagram URL" href="https://instagram.com/uptodown">
+<img loading="lazy" alt="Icono de Instagram" width="24" height="24" src="https://stc.utdstc.com/img//social/instagram.svg">
+</a>
+<a title="Uptodown LinkedIn URL" href="https://www.linkedin.com/company/uptodown/">
+<img loading="lazy" alt="Icono de LinkedIn" width="24" height="24" src="https://stc.utdstc.com/img//social/linkedin.svg">
+</a>
+<a title="Uptodown Facebook URL" href="https://www.facebook.com/Uptodown">
+<img loading="lazy" alt="Icono de Facebook" width="24" height="24" src="https://stc.utdstc.com/img//social/facebook.svg">
+</a>
+</div>
+</div>
+<div>
+<p>CONÓCENOS</p>
+<ul>
+<li><a href="https://www.uptodown.com/sobre-nosotros">Sobre nosotros</a></li>
+<li><a href="https://www.uptodown.com/sobre-nosotros/nuestra-empresa">Nuestra empresa</a></li>
+<li><a href="https://www.uptodown.com/sobre-nosotros/editores">Política editorial</a></li>
+<li><a href="https://www.uptodown.com/sobre-nosotros/estadisticas">Centro de transparencia</a></li>
+<li><a href="https://www.uptodown.com/sobre-nosotros/recursos-de-marca">Recursos de marca y prensa</a></li>
+<li><a href="https://blog.uptodown.com/">Blog corporativo</a></li>
+<li><a href="https://uptodown.factorialhr.es/">Contratación</a></li>
+</ul>
+</div>
+<div>
+<p>NUESTROS SERVICIOS</p>
+<ul>
+<li><a href="https://www.uptodown.com/marketplace">Uptodown App Store</a></li>
+<li><a id="developers-console-anchor" href="https://www.uptodown.com/consola-de-desarrolladores">Publica tu app</a></li>
+<li><a href="https://www.uptodown.com/publicidad">Promociona tu app</a></li>
+<li><a href="https://ads.uptodown.dev/ads/">Uptodown Ads</a></li>
+<li><a onclick="addEventAnalytics('footer', {'event_category': 'turbo-landing'});" href="https://www.uptodown.com/turbo?platform=android">Uptodown Turbo<span>Nuevo</span></a></li> <li><a href="https://support.uptodown.com/hc/es">FAQ & Soporte</a></li>
+</ul>
+</div>
+<div>
+<p>LEGAL</p>
+<ul>
+<li><a href="https://en.uptodown.com/aboutus/services">Condiciones de uso para usuarios</a></li>
+<li><a href="https://en.uptodown.com/aboutus/privacy">Política de privacidad y cookies</a></li>
+<li><button id="csconsentlink" class="cookie-settings">Configuración de las cookies</button></li> <li><a href="https://en.uptodown.com/developers-zone/services">Condiciones de uso para desarrolladores</a></li>
+<li><a href="https://www.uptodown.com/dmca">DMCA</a></li>
+</ul>
+</div>
+<img loading="lazy" fetchpriority="low" class="svg" alt="" width="112" height="208" src="https://stc.utdstc.com/img/svgs/logo-element.svg">
+</footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DW5XRK7GYT"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DW5XRK7GYT');
+function addEventGoogleAnalytics(eventName, arguments) {
+gtag('event', eventName, arguments);
+}
+</script>
+<script>
+function addEventAnalytics(eventName, arguments) {
+if (typeof addEventGoogleAnalytics === 'function') addEventGoogleAnalytics(eventName, arguments);
+}
+function setCookie(cname, cvalue, exdays, domain) {
+let d = new Date();
+d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+let expires = 'expires=' + d.toUTCString();
+document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/; domain=' + domain;
+}
+function getCookie(cname) {
+let name = cname + '=';
+let decodedCookie = decodeURIComponent(document.cookie);
+let ca = decodedCookie.split(';');
+for (let i = 0; i < ca.length; i++) {
+let c = ca[i];
+while (c.charAt(0) === ' ') {
+c = c.substring(1);
+}
+if (c.indexOf(name) === 0) {
+return c.substring(name.length, c.length);
+}
+}
+return undefined;
+}
+(function() {
+var scrollThresholds = [10, 25, 50, 75, 90];
+var triggeredThresholds = [];
+function getScrollPercent() {
+var h = document.documentElement;
+var b = document.body;
+var scrollHeight = h.scrollHeight || b.scrollHeight;
+var scrollTop = h.scrollTop || b.scrollTop;
+var maxScroll = scrollHeight - h.clientHeight;
+if (maxScroll <= 0) return 100;
+return Math.round((scrollTop / maxScroll) * 100);
+}
+function checkScroll() {
+var percent = getScrollPercent();
+scrollThresholds.forEach(function(threshold) {
+if (percent >= threshold && triggeredThresholds.indexOf(threshold) === -1) {
+triggeredThresholds.push(threshold);
+addEventAnalytics('scroll', { percent_scrolled: threshold });
+}
+});
+}
+var lastCheck = 0;
+window.addEventListener('scroll', function() {
+var now = Date.now();
+if (now - lastCheck >= 100) {
+lastCheck = now;
+checkScroll();
+}
+}, { passive: true });
+})();
+(function() {
+if (!('connection' in navigator) || !navigator.connection) return;
+try { if (sessionStorage.getItem('connection_info_sent')) return; } catch (e) { return; }
+var attempts = 0;
+var maxAttempts = 10;
+function sendConnectionInfo() {
+if (typeof addEventGoogleAnalytics !== 'function') {
+if (++attempts < maxAttempts) setTimeout(sendConnectionInfo, 2000);
+return;
+}
+var conn = navigator.connection;
+var params = { event_category: 'performance' };
+if (typeof conn.effectiveType === 'string') params.effectiveType = conn.effectiveType;
+if (typeof conn.downlink === 'number') params.downlink = conn.downlink;
+if (typeof conn.rtt === 'number') params.rtt = conn.rtt;
+addEventAnalytics('connection_info', params);
+try { sessionStorage.setItem('connection_info_sent', '1'); } catch (e) {}
+}
+sendConnectionInfo();
+})();
+</script>
+</div>
+<script defer src="https://stc.utdstc.com/1790334109235/vendor.js"></script>
+<script defer src="https://stc.utdstc.com/1790334109235/marketplace.js"></script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"name": "Uptodown",
+"logo": "https://stc.utdstc.com/img/mediakit/isotipo.png",
+"url": [
+{
+"@language":"en",
+"@value":"https://en.uptodown.com/"
+},
+{
+"@language":"es",
+"@value":"https://www.uptodown.com/"
+},
+{
+"@language":"pt",
+"@value":"https://br.uptodown.com/"
+},
+{
+"@language":"de",
+"@value":"https://de.uptodown.com/"
+},
+{
+"@language":"fr",
+"@value":"https://fr.uptodown.com/"
+},
+{
+"@language":"it",
+"@value":"https://it.uptodown.com/"
+},
+{
+"@language":"zh",
+"@value":"https://cn.uptodown.com/"
+},
+{
+"@language":"ja",
+"@value":"https://jp.uptodown.com/"
+},
+{
+"@language":"ru",
+"@value":"https://ru.uptodown.com/"
+},
+{
+"@language":"ko",
+"@value":"https://kr.uptodown.com/"
+},
+{
+"@language":"id",
+"@value":"https://id.uptodown.com/"
+},
+{
+"@language":"ar",
+"@value":"https://ar.uptodown.com/"
+},
+{
+"@language":"th",
+"@value":"https://th.uptodown.com/"
+},
+{
+"@language":"tr",
+"@value":"https://tr.uptodown.com/"
+},
+{
+"@language":"hi",
+"@value":"https://in.uptodown.com/"
+},
+{
+"@language":"vi",
+"@value":"https://vi.uptodown.com/"
+},
+{
+"@language":"ro",
+"@value":"https://ro.uptodown.com/"
+}
+],
+"@id": "https://www.uptodown.com/#organization",
+"sameAs": [
+"https://www.facebook.com/Uptodown",
+"https://www.facebook.com/Uptodown.International",
+"https://twitter.com/Uptodown",
+"https://www.youtube.com/user/UptodownVideos",
+"https://www.wikidata.org/wiki/Q6157280",
+"https://www.linkedin.com/company/uptodown/",
+"https://instagram.com/uptodown",
+"https://mastodon.online/@uptodown"
+]
+}
+</script>
+</body>
+</html>

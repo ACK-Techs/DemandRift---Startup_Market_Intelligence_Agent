@@ -1,0 +1,2798 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" theme="">
+<head>
+	
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({"ustatus":"G","uxg":"a"});
+	</script>
+
+		<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WL6MF3T');
+		</script>
+
+<script>
+	window.gaEvent = function() {
+		if(typeof(window.dataLayer) !== 'object') {
+			return;
+		}
+
+		if(arguments.length == 1) {
+			window.dataLayer.push({'event': arguments[0]});
+		}
+		else if(arguments.length == 3) {
+			window.dataLayer.push({
+				'event': arguments[1],
+				'event_category': arguments[0],
+				'event_label': arguments[2]
+			});
+		} else {
+			console.warn('Invalid use of gaEvent(). Expects 1 or 3 parameters.');
+		}
+	};
+</script>
+	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="last-modified" content="2023-07-20"/>
+	<meta name="description" content="Learn how to use Majestic, get some tips and hints to get you up and running as quickly as possible.">
+	<meta name="viewport" content="initial-scale=1.0">
+	
+
+	
+	
+
+	<title>Majestic Help Centre - Compare</title>
+	
+	<link href="/static/images/icons/touch-icons/apple-touch-icon.png" rel="apple-touch-icon" />
+	<link href="/static/images/icons/touch-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+	<link href="/static/images/icons/touch-icons/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+	<link href="/static/images/icons/touch-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+	<link href="/static/images/icons/touch-icons/icon-hires.png" rel="icon" sizes="192x192" />
+	<link href="/static/images/icons/touch-icons/icon-normal.png" rel="icon" sizes="128x128" />	
+	
+	<link rel="icon" type="image/png" href="/static/images/majestic/favicon.png">
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-320x320.png" sizes="320x320" />
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="/static/images/icons/touch-icons/favicon-128.png" sizes="128x128" />
+	
+	<meta name="application-name" content="Majestic"/>
+	<meta name="theme-color" content="#2d526d">	
+	
+	
+
+	<link rel="stylesheet" type="text/css" href="/static/css/jquery/jquery-ui-1.13.3.min.css?20240628">
+	<link rel="stylesheet" type="text/css" href="/static/css/jquery/jquery-ui-dialogs.min.css?20160614">
+	<link rel="stylesheet" type="text/css" href="/static/css/yahoo/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/yahoo/base-min.css">
+
+	
+	<link rel="stylesheet" type="text/css" href="/static/production/css/4df1b8.majestic.seo.min.cache.css">
+	
+	
+	
+	<style>
+		/* If to be shown when on IE 9, hidden by default.  Rule overwritten with conditional tag below. */
+		.ie9-show {
+			display: none !important;
+		}
+	</style>
+	
+
+	<link rel="canonical" href="https://majestic.com/help/tools/compare" />
+
+	
+		
+			<link rel="alternate" hreflang="en" href="https://majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="de" href="https://de.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="es" href="https://es.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="fr" href="https://fr.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="it" href="https://it.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="ja" href="https://ja.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="nl" href="https://nl.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="pl" href="https://pl.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="pt" href="https://pt.majestic.com/help/tools/compare"/>
+		
+	
+		
+			<link rel="alternate" hreflang="zh" href="https://zh.majestic.com/help/tools/compare"/>
+		
+	
+
+    <div class="force-hide" id="html-dataload"
+        data-monitoring-event-triggered=""
+        data-user=""
+        data-dont-show-notifications=""
+        data-solo-class=""
+        data-user-status="G"
+        data-ux-group="a"
+		data-current-path="/help/tools/compare"
+    ></div>
+
+    <div class="force-hide" id="html-translations"
+        data-translation1="Add to bucket"
+    ></div>
+
+    <div class="force-hide" id="service-config"
+        data-lang="en"
+        data-default-link-action=""
+        data-is-link-action-tab=""
+    ></div>
+	
+    
+    <script type="text/javascript" src="/static/scripts/service/messaging.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/polyfill/polyfill.min.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/jquery/jquery-3.7.1.min.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/jquery/jquery-migrate-1.4.1.min.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/jquery/jquery-ui-1.13.3.min.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/floating-ui-core.umd.js?d24000"></script>
+	<script type="text/javascript" src="/static/scripts/floating-ui-dom.umd.js?d24000"></script>
+		    <script type="text/javascript" src="/static/scripts/vue/vue.min.js?d24000"></script>
+    <script src="/static/scripts/d3/d3.v3.min.js?d24000"></script>
+    <script src="/static/scripts/d3/d3-function.js?d24000"></script>
+
+	<script type="text/javascript" src="/static/production/js/7eb473.majestic.seo.min.cache.js"></script>
+	
+	<script type="text/javascript">
+		var htmlDataload = $('#html-dataload').data();
+		var htmlTranslations = $('#html-translations').data();
+		window.config = $('#service-config').data();
+
+		var awardsNotificationText = {};
+		var backlinksDownloadText = {};
+			
+		$(document).ready(function()
+		{
+			$(".concertina").concertina();
+			$("a.youtube").YouTubePopup();
+			
+			$.fn.userNotifications({
+				
+				uxGroup: htmlDataload.uxGroup,
+				currentPath: htmlDataload.currentPath
+			});
+			
+			
+			
+			bindDefaultEvents();
+		});
+		
+		function bindDefaultEvents()
+		{
+			$('.hoverHint, .technicalTerm').majesticPopover(defaultTooltipOptions());
+			$('.actionsIcon').majesticPopover(defaultPopoverActionOptions());
+			$('.ajax-popup-marker').majesticPopover({
+				content: function()
+				{
+					return '<img src="/static/images/icons/loading.gif" />';
+				},
+				defaultPosition: 'right',
+				onClick: false
+			});
+			
+			bindDefaultLinkActions( false );
+			
+            var bucketText = $('#bucketTextTranslations').data();
+		}
+
+		(function() {
+    if(typeof(require) == "function") {
+        require(["vue", 'jquery', 'rque!mj-modal', 'rque!download-all-backlinks', 'd3-function', 'timeout'], registerDownloadAllBacklinksDialog);
+    }
+    else {
+		registerDownloadAllBacklinksDialog(Vue, jQuery);
+    }
+
+	function registerDownloadAllBacklinksDialog(Vue, $) {
+		window.openDownloadAllBacklinksDialog = function(query, index, wildcard) {
+			var width = 400;
+
+			let args = {
+                'query': query,
+                'index_data_source': index,
+				'no_wrapper': 1,
+				'extractType': 'BACKLINKS_BETA'
+            }
+
+			if(wildcard)
+				args.usePrefix = wildcard
+
+			Promise.resolve($.post('/data-output/download-all-backlinks', args)).then(function(response) {
+                var rawExportInformation = response;
+                rawExportInformation['usePrefix'] = wildcard;
+                if(rawExportInformation['noResults']) {
+                    rawExportInformation['index_item_info'] = {
+                        numberOfExternalBacklinks: null,
+                        numberOfAnalysisUnits: null
+                    };
+                    rawExportInformation['default_site_explorer_options'] = {
+                        backlinksShowDeleted: null
+                    };
+                    rawExportInformation['enableAdvancedExportOptions'] = null;
+                    rawExportInformation['analysis_units_remaining'] = null;
+                    rawExportInformation['total_initial_analysis_units'] = null;
+                    rawExportInformation['singleDomainMessage'] = null;
+                    rawExportInformation['mutltipleSubdomainMessage'] = null;
+                    rawExportInformation['singleSubdomainMessage'] = null;
+                    rawExportInformation['multiplePagesMessage'] = null;
+                    rawExportInformation['singlePagesMessage'] = null;
+                    rawExportInformation['analysisCostNear1PtMultiple'] = null;
+                    rawExportInformation['analysisCostNear1PtSingle'] = null;
+                    rawExportInformation['analysisCostNear100PtMultiple'] = null;
+                    rawExportInformation['analysisCostNear100PtSingle'] = null;
+                    rawExportInformation['analysisCostMultiple'] = null;
+                    rawExportInformation['analysisCostSingle'] = null;
+                    rawExportInformation['QueryType'] = null;
+                    rawExportInformation['downloadExists'] = null;
+                    rawExportInformation['DomainVerified'] = null;
+                }
+				
+				rawExportInformation['extract'] = rawExportInformation['extractPopoverVisibility'];
+				rawExportInformation['tabName'] = 'backlinks';
+				rawExportInformation['progressBarTooltipMessages'] = {
+					lessThanOnePercent: 'This download will charge you <b>%1</b> analysis units which is less than <b>1&#37;</b> of your monthly analysis units.',
+					highEnd: 'This download will cost you <b>%1</b> analysis units which is almost <b>100&#37;</b> of your monthly analysis units.',
+					over100Percent: 'This download requires <b>%1</b> analysis units and you have <b>%2</b> analysis units remaining.',
+					other: 'This download will cost you <b>%1</b> analysis units which is approximately <b>%2&#37;</b> of your monthly analysis units.'
+				}
+
+                var parentEl = document.body;
+                var modalDiv = document.createElement('div');
+                modalDiv.id = "modal_div";
+                parentEl.appendChild(modalDiv);
+
+                hideAllPopovers();
+
+                var vm = new Vue({
+					template: '<mj-modal :width="width" :modalTitle="modal.title" :useCloseButton="true" v-on:modalState="onModalStateSwitch" :maxHeight="800"><download-all-backlinks-dialog :dialogData="contentData" UserStatus="G" :modalState="modal.state" :showFullExport="true" v-on:methodSwitch="onMethodSwitch"></download-all-backlinks-dialog></mj-modal>',
+                    data: {
+                        contentData: rawExportInformation,
+                        width: width,
+						modal: {
+							title: 'Download All Backlinks',
+							state: 'open'
+						}
+                    },
+					methods: {
+						onMethodSwitch: function(method) {
+							if(method === 'extract') {
+								this.modal.title = 'Download All Backlinks 2.0';
+							} else {
+								this.modal.title = 'Download All Backlinks';
+							}
+						},
+						onModalStateSwitch: function(state) {
+							this.modal.state = state;
+
+							if(this.modal.state === 'closed')
+							{
+								this.$destroy();
+							}
+						},
+						getInitialTitle: function(extract){
+							if(extract) {
+								return 'Download All Backlinks 2.0';
+							} else {
+								return 'Download All Backlinks'
+							}
+						}
+					},
+					mounted: function() {
+						this.modal.title = this.getInitialTitle(parseInt(this.contentData['extract']));
+					}
+                });
+
+                vm.$mount('#modal_div');
+            });
+        }
+    }
+})();
+
+
+function showDownloadReadyState(downloadPath)
+{
+	$('.download-all-backlinks.active #downloadButton')
+		.removeClass("loading_gif")
+		.addClass("download_ready")
+		.val("Download Ready")
+		.off('click')
+		.on('click', function()
+		{
+			location.href = downloadPath;
+		});
+
+	$('.download-all-backlinks.active .beforeReady').hide();
+	$('.download-all-backlinks.active .statusContent').html(decodeHtmlEntities('&lt;b&gt;Your download is complete.&lt;/b&gt; If it hasn&#39;t downloaded automatically please use the &quot;Download Ready&quot; button. We have also added your file to your &lt;a href=&quot;/reports/downloads&quot;&gt;downloads&lt;/a&gt; folder, should you need it later.'));
+}
+
+function openDownloadAllBacklinksDialogNoSubscription()
+{
+	hideAllPopovers();
+
+	$.post(
+		'/data-output/download-all-backlinks/no-subscription',
+		function(response)
+		{
+			$('<div id="dialog-container" title="' + decodeHtmlEntities('Download All Backlinks') + '"></div>')
+				.html(response)
+				.dialog({
+					modal: true,
+					resizable: false,
+					draggable: false,
+					width: 600,
+					close: function()
+					{
+						$(this).dialog('destroy').remove();
+						hideAllPopovers();
+					}
+				});
+		}
+	);
+}
+
+function updateAllowanceCharts(verified)
+{
+	if(! verified)
+	{
+		$('.download-all-backlinks.active #allowance_before').hide();
+		$('.download-all-backlinks.active #allowance_after').show();
+		$('.download-all-backlinks.active .allowance_before_label').hide();
+
+		var totalInitialAnalysisUnits = $("#js-total-initial-analysis-units").val();
+		var analysisUnitsRemaining = $("#js-analysis-units-remaining").val();
+		var analysisUnitsCost = $("#js-analysis-res-units").val();
+
+		var percentLeft = 0;
+
+		if(totalInitialAnalysisUnits != 0)
+			percentLeft = ((analysisUnitsRemaining - analysisUnitsCost) / totalInitialAnalysisUnits) * 100;
+
+		if(percentLeft == 0)
+		{
+			$('.download-all-backlinks.active .allowance_after_label').html(decodeHtmlEntities('No allowance&lt;br&gt;remaining'));
+		}
+		else if(percentLeft < 1)
+		{
+			$('.download-all-backlinks.active .allowance_after_label').html(decodeHtmlEntities('less than &lt;b&gt;1%&lt;/b&gt;&lt;br&gt;remaining'));
+		}
+		else if(percentLeft > 99)
+		{
+			$('.download-all-backlinks.active .allowance_after_label').html(decodeHtmlEntities('almost &lt;b&gt;100%&lt;/b&gt;&lt;br&gt;remaining'));
+		}
+		else
+		{
+			$('.download-all-backlinks.active .allowance_after_label').html('<b>' + percentLeft.toFixed(0) + '%</b><br />' + decodeHtmlEntities('remaining'));
+		}
+	}
+
+	$('.download-all-backlinks.active .statusContent').html(decodeHtmlEntities('<b>Your download is being prepared. It can be found in your &lt;a href=&quot;&quot;&gt;downloads&lt;/a&gt; folder. You can safely close this message box.</b>'));
+}
+
+		
+	</script>
+
+	<script type="text/javascript" src="/static/production/js/66934f.vue-filters.min.js"></script>
+
+    
+
+	
+	
+	
+
+	
+</head>
+
+<body data-lang="en" class="en us-g">
+
+	
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL6MF3T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	
+
+	
+
+    <div id="bucketTextTranslations" class="hide"
+        data-add-hover-text="Add to your bucket"
+        data-added-hover-text="Added to your bucket"
+        data-added-notification-text="Added to bucket"
+        data-already-added-notification-text="Item already in bucket"
+        data-removed-notification-text="Removed from bucket"
+        data-bucket-full-notification-text="Bucket is full"
+        data-ajax-error-notification-text="Error adding to bucket"
+    ></div>
+
+	
+
+	
+
+	<style>
+		#container {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: auto minmax(350px, 1fr) auto;
+			grid-template-areas:
+				"header"
+				"content"
+				"footer";
+			min-height: 100%;
+			width: 100%;
+			margin: 0;
+		}
+		#header { grid-area: header; }
+		#content_container_holder { grid-area: content; }
+		#footer { grid-area: footer; }
+		
+		.sidebar-content-container {
+			height: 100%;
+		}
+	</style>
+	
+	<div id="container">
+		<div id="header">
+			
+
+<style>
+div.contentPanelWhite {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.monitor-banner{
+	background: #484979;
+	border-radius: 3px;
+	padding: 10px 20px;
+	color: #fff;
+	margin-bottom: 2em;
+}
+	.monitor-banner .mj-btn {
+		background: transparent !important;
+		border: 1px solid #fff !important;
+	}
+	.account-dd .monitor-banner{
+		margin: 5px 10px;
+	}
+</style>
+
+
+<script type="text/javascript">
+	var showingLogout = false;
+
+	$(document).ready(function() {
+		
+
+		
+		if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+			$("#container").on("click", function() {
+				$('body').focus();
+			});
+		}
+
+		$(window).on("resize", function(){
+			var menuLinks = "#header ul.horzMenu li.dd-link a.head, #header ul.horzMenu li.dd-link ul.dd-content li a.dd-sub-head";
+			if($(window).width() <= 640)
+			{
+				makeMobMenuTogglable();
+				$(menuLinks).removeClass('up');
+				$(menuLinks).siblings("ul, div ul").hide();
+			}
+			else
+			{
+				$(menuLinks).off("click").removeClass('toggle-set');
+				$(menuLinks).toggleClass('up');
+				$(menuLinks).siblings("ul, div ul").show();
+			}
+		});
+
+		if($(window).width() <= 640)
+		{
+			makeMobMenuTogglable();
+		}
+
+		$(".account-dd .dd-content").css("left", -($(".account-dd .dd-content").outerWidth() - $(".account-dd .head").outerWidth()));
+		$("#lang .dd-content").css("left", -($("#lang .dd-content").outerWidth() - $("#lang .head").outerWidth() - 5));
+
+		$('.logout_header_link').on("click", trigger_logout);
+	});
+
+	function makeMobMenuTogglable()
+	{
+		var menuLinks = "#header ul.horzMenu li.dd-link a.head, #header ul.horzMenu li.dd-link ul.dd-content li a.dd-sub-head";
+
+		$(menuLinks)
+			.not('.toggle-set')
+			.on("click", function()
+			{
+				$(this).toggleClass('up');
+				$(this).siblings("ul, div ul").slideToggle();
+			})
+			.addClass('toggle-set');
+	}
+
+	var tagsToReplace = {
+		'&': '&amp;',
+		'<': '&lt;',
+		'>': '&gt;'
+	};
+
+	function trigger_logout()
+	{
+		var tag = $(".logout_header_link");
+		tag.text(decodeHtmlEntities("Logging out..."));
+		tag.css("background-image", "url('/static/images/icons/loading.gif')").css("background-repeat", "no-repeat").css("background-position", "100% 60%");
+	}
+
+	function replaceTag(tag) {
+		return tagsToReplace[tag] || tag;
+	}
+
+	function escapeTags(str) {
+		return str.replace(/[&<>]/g, replaceTag);
+	}
+</script>
+
+
+
+
+	
+
+
+<div id="nav-top" class="nav-wrapper ">
+	<button id="hamburger-icon" class="nav-icon" aria-label="Open nav menu">
+		<img src="/static/images/icons/hamburger-icon.png" width="32px" height="32px" />
+		<div>MENU</div>
+	</button>
+	<div id="majestic_logo">
+		<h1  id="normal" >
+			<a id="mj-logo" href="/">Majestic</a>
+		</h1>
+	</div>
+
+	
+		
+
+
+
+
+
+	<script src="/static/scripts/vue-mixins/has-mounted.js?d24000"></script>
+	
+    
+        
+        
+<script type="text/javascript" src="/static/scripts/util/promise/timeout.js?d24000"></script>
+<script type="text/javascript" src="/static/scripts/vue-components/popover-component.js?d28a8f"></script>
+<script id="popover-component-template" type="text/x-template">
+
+    
+    <div id="popover-component">
+        <div class="popover in" :class="currentPopoverPosition" :style="popoverStyle" style="display: block; z-index: 10001;" ref="popover-box" @mouseenter="$emit('mouseenter')" @mouseleave="$emit('mouseleave')">
+            <div class="arrow" ref="arrow" :style="{ marginTop : arrowMarginTop + 'px' }" ></div>
+            <div class="popover-content">
+                <div class="item headerURL"><span>{{itemHeader | truncate(25) }}</span></div>
+                <div class="item">
+                    <a :href="itemLink | prepend-http" rel="nofollow noopener" class="goToUrlLink" target="_blank">
+                        <img width="16" height="16" src="/static/images/icons/cog-link.png" alt="Go to the site">
+                        <span class="action">Go to URL</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <span :title="'Explore ' + item + ' in Site Explorer'">
+                        <a :href="'/reports/site-explorer?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <img width="16" height="16" src="/static/images/icons/cog-explorer.png" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Site Explorer</span>
+                        </a>
+                    </span> 
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item"  v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/referring-domains?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Ref Domains</span>
+                        </a>
+                    </span> 
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item"  v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/top-backlinks?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Backlinks</span>
+                        </a>
+                    </span> 
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item"  v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/link-context?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Context</span>
+                        </a>
+                    </span> 
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item"  v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/anchor-text?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Anchor Text</span>
+                        </a>
+                    </span>
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item"  v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/top-pages?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Pages</span>
+                        </a>
+                    </span>
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item" v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/topics?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Topics</span>
+                        </a>
+                    </span>
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item" v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/related-sites?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Related Sites</span>
+                        </a>
+                    </span>
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item" v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/link-graph?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Link Graph</span>
+                        </a>
+                    </span>
+                    <span :title="'Explore ' + item + ' in Site Explorer'" class="sub_item" v-bind:class="{ locked : !userSubscriptionStatus }">
+                        <a :href="'/reports/site-explorer/advanced-tools?q=' + encodeURIComponent(item) + scopeParam + wildcard + '&IndexDataSource=' + indexDataSource" :alt="'Explore ' + item + ' in Site Explorer'">
+                            <span class="action">Advanced Tools</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item" v-bind:class="{ locked : !userSubscriptionStatus}">
+                    <a :href="'/reports/ngrams-near-links?seed=' + encodeURIComponent(item)" title="Extract N-grams">
+                        <img width="16" height="16" :src="userSubscriptionStatus ? '/static/images/icons/cog-keyword.png' : '/static/images/icons/padlock-closed-yellow.png'" alt="Extract N-grams">
+                        <span class="action">Extract N-grams</span>
+                    </a>
+                </div>
+                <div class="item" v-bind:class="{ locked : !user}">
+                        <span title="Add to Campaigns" v-on:click="addToCampaign">
+                            <template v-if="user">
+                                <img width="16" height="16" src="/static/images/icons/cog-add-to-campaign.png" alt="Add to Campaigns">
+                            </template>
+                            <template v-else>
+                                <img width="16" height="16" src="/static/images/icons/padlock-closed-yellow.png" alt="Add to Campaigns">
+                            </template>
+                            <span class="action">Add to Campaigns</span>
+                        </span>
+                </div>
+                <div class="item">
+                    <span title="Raw Export" v-on:click="downloadBacklinks(indexInUse)">
+                        <img src="/static/images/icons/cog-export.png" alt="Raw Export" border="0" height="16" width="16" />
+                        <span class="action">Download</span>
+                    </span>
+                    <span title="Raw Export" v-on:click="downloadBacklinks('Fresh')" class="sub_item" v-bind:class="{ locked : !rawExport }">
+                        <img v-if="!rawExport" src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                        <span class="action">Fresh Backlinks</span>
+                    </span>
+                    <span title="Raw Export" v-on:click="downloadBacklinks('Historic')" class="sub_item" v-bind:class="{ locked : !hasHistoric }">
+                        <img v-if="!hasHistoric" src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                        <span class="action">Historic Backlinks</span>
+                    </span>
+
+                    <span title="Raw Export" class="sub_item" v-bind:class="{ locked : !hasHistoric || !rawExport}">
+                        <a :href="'/experimental/index-merger?q=' + encodeURIComponent(item)">
+                            <img v-if="!hasExperimentalTools" src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                            <span class="action">Merged Indexes</span>
+                        </a>
+                    </span>
+                    <span :title="'Create a report for ' + item + ''"
+                        class="sub_item" v-bind:class="{ locked : !userSubscriptionStatus }" @click="pdfReportAction()">
+                        <img v-if="!userSubscriptionStatus" src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                        <a href="javascript:void(0)" >
+                    <span class="action">PDF Report</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item" v-bind:class="{ locked : !compareTools }">
+                    <span title="Backlink History shows how many links to a given domain our web crawlers have found in the past. As our crawlers are prolific, the charts can be indicative of the backlinks growth associated with the given domain.">
+                        <a :href="'/reports/compare-domain-backlink-history?q1=' + encodeURIComponent(item) + '&IndexDataSource=' + indexDataSource" >
+                            <img v-if="compareTools" src="/static/images/icons/cog-backlink-history.png" alt="Backlink History" border="0" height="16" width="16"/>
+                            <img v-else src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                            <span class="action">Backlink History</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item"  v-bind:class="{ locked : !hasLinkMapTools }">
+                    <span title="The Neighbourhood tool returns the most backlinked domains (by referring domains) hosted on any given IP or subnet.">
+                        <a :href="'/reports/neighbourhood-checker?d=' + encodeURIComponent(item) + '&IndexDataSource=' + indexDataSource" >
+                            <img v-if="hasLinkMapTools" src="/static/images/icons/cog-neighbourhood.png" alt="Neighbourhood Checker" border="0" height="16" width="16"/>
+                            <img v-else src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                            <span class="action">Neighbourhood Checker</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item" v-bind:class="{ locked : !hasReports }">
+                    <span :title="'Create a report for ' + item + ''">
+                        <a :href="'/reports/create-report?url=' + encodeURIComponent(item)" >
+                            <img v-if="!hasReports" src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                            <img v-else src="/static/images/icons/cog-report.png" alt="Click here to order the report" border="0" height="16" width="16">
+                            <span class="action">Create a report</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item" v-if="enableVerification" v-bind:class="{ locked : !user || !hasVerifiedDomains }">
+                    <span title="Verify">
+                        <a :href="'/reports/verified-domains/verify-domain?items=' + encodeURIComponent(item)" >
+                            <img v-if="user && hasVerifiedDomains" src='/static/images/icons/cog-verify-domain.png' border="0" height="16" width="16"/>
+                            <img v-else src="/static/images/icons/padlock-closed-yellow.png" alt="locked" border="0" height="16" width="16" />
+                            <span class="action">Verify</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="item" v-bind:class="{ locked: !user}" ref="bucketOption">
+                    <a v-if="!user" href="/bucket">
+                        <span title="Add to your bucket">
+                            <img width="16" height="16" src="/static/images/icons/padlock-closed-yellow.png" alt="locked">
+                            <span class="action">Add to bucket</span>
+                        </span>
+                    </a>
+                    
+                    <span v-else-if="bucketState === 'before'" title="Add to bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket.png" alt="Add to bucket" >
+                        <span class="action">Add to bucket</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'adding'" title="Adding to bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket-adding.gif" alt="Adding to bucket" >
+                        <span class="action">Adding to bucket</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'added'" title="Added to bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket-added.png" alt="Added to bucket" >
+                        <span class="action">Added to bucket</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'alreadyInBucket'" title="Item already in bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket-added.png" alt="Item already in bucket" >
+                        <span class="action">Item already in bucket</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'removedFromBucket'" title="Removed from bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket.png" alt="Removed from bucket" >
+                        <span class="action">Removed from bucket</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'fullBucket'" title="Bucket is full" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket.png" alt="Bucket is full" >
+                        <span class="action">Bucket is full</span>
+                    </span>    
+                    
+                    <span v-else-if="bucketState === 'bucketError'" title="Error adding to bucket" v-on:click.once="addToBucket">
+                        <img width="16" height="16" src="/static/images/icons/cog-bucket.png" alt="Error adding to bucket" >
+                        <span class="action">Error adding to bucket</span>
+                    </span>
+
+                    <span class="sub_item">
+                        <a v-if="!user" href="/bucket">
+                            <span title="Add domain to bucket">
+                                <img width="16" height="16" src="/static/images/icons/padlock-closed-yellow.png" alt="locked">
+                                <span class="action">Add domain to bucket</span>
+                            </span>
+                        </a>
+                        
+                        <span v-else-if="bucketStateDomain === 'before'" title="Add domain to bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Add domain to bucket</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'adding'" title="Adding to bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Adding to bucket</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'added'" title="Added to bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Added to bucket</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'alreadyInBucket'" title="Domain already in bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Domain already in bucket</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'removedFromBucket'" title="Removed from bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Removed from bucket</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'fullBucket'" title="Bucket is full" v-on:click.once="addDomainToBucket">
+                            <span class="action">Bucket is full</span>
+                        </span>
+                        
+                        <span v-else-if="bucketStateDomain === 'bucketError'" title="Error adding to bucket" v-on:click.once="addDomainToBucket">
+                            <span class="action">Error adding to bucket</span>
+                        </span>
+                    </span>
+                    <span class="sub_item">
+                        <img v-if="!user" width="16" height="16" src="/static/images/icons/padlock-closed-yellow.png" alt="locked">
+                        <a href="/bucket" style="color: #1c3b51"><span class="action">Manage Buckets</span></a>
+                    </span>
+                </div>
+                <div class="item settings" v-if="user">
+                    <span style="padding-left: 14px;">
+                        <img width="16" height="16" src="/static/images/icons/cog-16.png">
+                        <a href="/account/settings/general?fromcog=1" class="settings" style="margin-left: 3px;">Set default action</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+
+    
+    
+        
+        
+<script type="text/javascript" src="/static/scripts/uri/URI.min.js?d24000"></script>
+<script type="text/javascript" src="/static/scripts/vue-components/downloads/pdf-report-dialog.js?d28a8f"></script>
+<script type="text/javascript" src="/static/scripts/vue-components/generic/mj-modal.js?d28a8f"></script>
+
+<script id="pdf-report-dialog-template" type="text/x-template">
+
+<mj-modal :modal-title="'PDF Report'">
+    <div class="mj-columns">
+		<div class="mj-column is-3-4">
+			<div v-if="isSubscribed" class="pdf-dialog active">
+				<p>
+					This report will deliver a downloadable PDF of top-level Site Explorer Summary information for <span class="ellipsis-overflow is-inline-block" style="max-width: 100%; vertical-align: bottom;" v-tooltip='query'><b>{{ query }}</b>.</span>
+				</p>
+				<p style="margin-bottom: 0 !important">It will contain&hellip;</p>
+				<ul style="margin-bottom: 1em !important">
+					<li>Site Explorer key metrics like Trust Flow and Citation Flow</li>
+					<li>Inbound Link, Referring Domain, IP, and Subnet counts</li>
+					<li>Link Profile Charts</li>
+					<li>Topical Trust Flow breakdown</li>
+					<li>Anchor Text report</li>
+				</ul>
+				<p>PDFs may take a few moments to complete, and when ready will be available to <a href='/reports/downloads' target="_blank">download</a> for up to 7 days.</p>
+				<div v-if="pdfState === 'Failed' || pdfState === 'BlockedFairUsage' || pdfState === 'NotPresentInIndex' || pdfBuildError" class="mj-alert is-danger">
+					<template v-if="pdfState === 'BlockedFairUsage'">
+						<p v-if="fairUsageBlockReason === 'rate-limit'">In order to maintain a reliable service for eveyone, we rate limit some actions on the site.</p>
+						<p v-else="fairUsageBlockReason === 'domain-limit'">In order to maintain a reliable service for eveyone, we limit the number of domains you can query in a short space of time.</p>
+						<p>Waiting a moment and then trying again should solve the issue. If this persists, <a href="/help/contact-us">contact Customer Support</a>.</p>
+					</template>
+					<template v-else-if="pdfBuildError">
+						<p>Sorry, something went wrong whilst trying to build your PDF Report, please try again. If the problem persists, please <a href="/help/contact-us?subject=PDF Report">contact us</a>.</p>
+					</template>
+					<template v-else-if="pdfState === 'NotPresentInIndex'">
+						<p>We were unable to create a report for <b class="truncate-block hoverHint" v-tooltip='query' style="vertical-align: bottom">{{ query }}</b> at this time.</p>
+						<p v-if="scope !== '' && scope !== 'Domain'">You may prefer to try a domain-level report.</p>
+						<p>If this is a page that you would like us to visit, you can request a URL crawl.</p>
+					</template>
+					<template v-else>
+						Failed to create the PDF Report, please try again.
+					</template>
+				</div>
+				<div v-else-if="pdfState === 'Complete'" class="mj-alert is-info">
+					<p><b>Your download is complete.</b> Please use the "Download PDF Report" button, to get your PDF Report.</p>
+					<p class="is-marginless">We have also added your PDF to your <a href="/reports/downloads">downloads</a> folder, should you need it later. PDFs expire after 7 days and are automatically deleted after the "Expires" date.</p>
+				</div>
+				<div v-if="pdfState !== 'NotPresentInIndex'" class="mj-btn is-light" :class="{'has-loading-gif' : requestState === 'Processing'}" @click="buttonAction()">
+					<span v-if="requestState === 'Processing'" style="margin-left: 1.5em">Building PDF Report</span>
+					<span v-else-if="requestState === 'Completed'">Download PDF Report</span>
+					<span v-else-if="requestState === 'Ready' && (pdfState === 'Failed' || pdfState === 'BlockedFairUsage' || pdfBuildError)">Try Again</span>
+					<span v-else>Build PDF Report</span>
+				</div>
+			</div>
+			<div v-else>
+				<p>PDF Reports are available to all subscribers, with plans starting from £39.99 a month.</p>
+				<a href="/plans-pricing"><div class="mj-btn is-primary">Subscribe</div></a>
+			</div>
+		</div>
+		<div class="mj-column is-1-4">
+			<img src="/static/images/icons/pdf_tf_cf.png" alt="Report icon" />
+		</div>
+	</div>			
+</mj-modal>
+
+</script>
+
+    
+<script type="text/javascript" src="/static/scripts/vue-components/cog-actions.js?d28a8f"></script>
+<script id="cog-action-template" type="text/x-template">
+
+<span class="inline-block" @mouseenter="hoverOn" @mouseleave="hoverOff">
+    <slot>
+        <img src="/static/images/icons/actions.png" alt="Actions Menu for URL" height="20px" width="20px" :style="titleExists" ref="triggerCog" class="cogActions">
+    </slot>
+</span>
+
+</script>
+
+
+	
+<script type="text/javascript" src="/static/scripts/vue-components/generic/mj-modal.js?d28a8f"></script>
+<script type="text/javascript" src="/static/scripts/vue-plugins/keyword-suggestions/v-off-click.js?d24000"></script>
+<script type="text/javascript" src="/static/scripts/vue-plugins/keyword-suggestions/v-on-click.js?d24000"></script>
+<script id="mj-modal-template" type="text/x-template">
+
+    <div class="mj-modal-container" v-off-click>
+        <div :id="id" class="mj-modal" v-bind:style="{ width: width + 'px', maxHeight: `min(90vh, ${maxHeight}px)` }" v-on-click>
+            <div class="mj-modal-title ellipsis-overflow">
+                <span :title="modalTitle">{{modalTitle}}</span>
+                <button class="mj-modal-close" v-on:click="destruct" v-if="closeButton">
+                    <span class="mj-modal-close-icon"></span>
+                </button>
+            </div>
+            <div class="mj-modal-content" v-bind:style="{ boxSizing: 'border-box', maxHeight: `min(calc(100% - 39px), ${maxHeight}px)` }">
+                <slot></slot>
+                <button class="modal-titlebar-ok" v-on:click="$emit('ok')" v-if="okButton">
+                    <span>OK</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</script>
+
+
+	
+<script type="text/javascript" src="/static/scripts/util/promise/timeout.js?d24000"></script>
+<script type="text/javascript" src="/static/scripts/vue-components/downloads/full-export.js?d28a8f"></script>
+
+<style>
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#fullExport .flex-row-align-center{
+		display: block;
+	}
+}
+</style>
+
+<script id="full-export-template" type="text/x-template">
+
+<div id="fullExport">
+	<template v-if="componentData.noResults">
+		<p><b>{{ componentData.form.query | truncate(50) }}</b> has no backlinks, and nothing to export.</p>
+
+		<div class="grey-bg flex-row-align-center is-gapless mj-vert-margin" :class="[switchingIndex ? 'mj-pos-center' : 'mj-pos-left-and-right']">
+			<div v-if="!switchingIndex" class="mj-pos-center is-gapless is-v-centred" style="margin: 0 auto;">
+				<span class="download-all-backlinks-index pointer " v-on:click="switchIndex('Fresh')" v-bind:class="{'selected' : componentData.form.index_data_source == 'Fresh'}">
+					<span class="flex-row-align-center">
+						<img src="/static/images/icons/tools/fresh-index.png" height="16" width="16" border="0">&nbsp;
+						<label class="pointer" for="freshIndexDataSourceForDownload">Fresh</label>&nbsp;
+						<input class="pointer" id="freshIndexDataSourceForDownload" type="radio" v-model="componentData.form.index_data_source" value="Fresh" style="margin-top: 2px;"/>
+					</span>
+				</span>
+				<span>|</span>
+				<span class="download-all-backlinks-index pointer" v-on:click="switchIndex('Historic')" v-bind:class="{'selected' : componentData.form.index_data_source == 'Historic'}">
+					<span class="flex-row-align-center">
+						<img src="/static/images/icons/tools/historic-index.png" height="16" width="16" border="0">&nbsp;
+						<label class="pointer" for="historicIndexDataSourceForDownload">Historic</label>&nbsp;
+						<input class="pointer" id="historicIndexDataSourceForDownload" type="radio" v-model="componentData.form.index_data_source" value="Historic" style="margin-top: 2px;"/>
+					</span>
+				</span>
+			</div>
+			<template v-else>
+				<template v-if="switchingIndexError">
+					<p>Sorry! An error has occurred, please refresh the page and try again.</p>
+				</template>
+				<template v-else>
+					<span class="index_switch_delay mj-vert-pad is-small">Switching index</span>
+				</template>
+			</template>
+		</div>
+	</template>
+	<template v-if="!componentData.noResults">
+		<div>
+			<div>
+				<p>
+					<template v-if="numberOfResultsAvailable">
+						<template v-if="componentData.QueryType == 'Domain'">
+							The domain <b class="query-tooltip" v-bind:title="componentData.form.query">{{ componentData.form.query | truncate(50) }}</b> has <b>{{ numberOfTotalResults | numerical-format }}</b> external referring urls.
+						</template>
+
+						<template v-else-if="componentData.QueryType == 'Subdomain'">
+							The sub-domain <b class="query-tooltip" v-bind:title="componentData.form.query">{{ componentData.form.query | truncate(50) }}</b> has <b>{{ numberOfTotalResults | numerical-format }}</b> external referring urls.
+						</template>
+
+						<template v-else-if="componentData.QueryType == 'URL' && isPrefixQuery">
+							The Path <b>{{componentData.form.query}}</b> has approximately <b>{{ numberOfTotalResults | numerical-format }}</b> external referring urls.
+						</template>
+
+						<template v-else-if="componentData.QueryType == 'URL' && !isPrefixQuery">
+							The URL <b class="query-tooltip" v-bind:title="componentData.form.query">{{ componentData.form.query | truncate(50) }}</b> has <b>{{ numberOfTotalResults | numerical-format }}</b> external referring urls.
+						</template>
+						
+						<span v-if="showSupplementalLinks" v-bind:style="{'margin':'5px 0'}">
+							<template v-if="supplementalLinks == 1">Plus <b>{{ supplementalLinks | numerical-format }}</b> supplemental link.</template>
+							<template v-else>Plus <b>{{ supplementalLinks | numerical-format }}</b> supplemental links.</template>
+						</span>
+					</template>
+				</p>
+			</div>
+
+			<div v-if="!tooManyBacklinks">
+				<div class="mj-help-text is-small is-bold" style="padding: 5px 0">
+					<span>Analysis units remaining: {{remainingAnalysisUnitsPercentage + '%'}}</span>
+					<span class="is-float-right">Total:  <span v-html="totalAnalysisUnitsInM"></span></span>
+				</div>
+				<div class="mj-progress-bar-container">
+					<div class="mj-progress-bar" v-bind:style="{'width': remainingAnalysisUnitsPercentage + '%'}" v-tooltip.html="getAnalysisCostTooltip">&nbsp;</div>
+					<div class="mj-progress-bar is-current-usage-indicator" v-bind:class="{ 'is-danger' : componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits }" v-bind:style="{'maxWidth': currentUsageBarMaxWidth + '%','width': allowanceCostWidth + '%', 'right': 100 - currentUsageBarMaxWidth + '%', 'minWidth': '1%', 'borderRadius' : currentUsageBarBorderRadius , 'cursor': 'default'}" v-tooltip.html="getAnalysisCostTooltip" style="overflow-x: hidden;">
+						<span v-if="analysisUnitsCostPercentage > remainingAnalysisUnitsPercentage" class="no-wrap">Insufficient analysis units!</span>
+						<span v-else-if="analysisUnitsCostPercentage > 4 && analysisUnitsCostPercentage <= remainingAnalysisUnitsPercentage">{{allowanceCostWidth}}%</span>
+						<span v-else>&nbsp;</span>
+					</div>
+				</div>
+			</div>
+			<div class="mj-vert-margin">			
+				<template v-if="componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits && !tooManyBacklinks">
+					<div id="insufficient_resources" class="mj-alert is-danger">
+						<p>
+							We cannot prepare your download, it would use more resources than are available on your current subscription plan. <a style="color: #AA4643" href="/account/subscriptions/change">Upgrade now</a> for more data.
+						</p>
+					</div>
+				</template>
+
+				<template v-else>
+					<div id="default_download_content" v-if="!tooManyBacklinks">
+						<p>You will have approximately <b>{{ approximateAnalaysisCost }}&#37;</b> of your monthly analysis units left after this download.</p>
+					</div>
+				</template>
+				<section v-if="!tooManyBacklinks && componentData.analysis_units_remaining > componentData.index_item_info.numberOfAnalysisResUnits" class="mj-box is-rounded" v-bind:style="[componentData.benefitsSectionVisibility === 'hide' ? {'display': 'none'} : {'padding-right': '1em'} ]">
+					<div class="mj-pos-left-and-right">
+						<h6>Full Export Benefits</h6>
+						<img class="is-pointer" src="/static/images/icons/icon-close-14-gray.png" alt="Close benefits section" v-on:click="closeBenefitsSection"/>
+					</div>
+					<p>The Full Export contains:</p>
+						<ul>
+							<li>Self explanatory column headings</li>
+							<li>Link Context Data</li>
+							<li>Flow Metric scores of the Source Domain</li>
+							<li>Language and Outlink counts of the Source URL</li>
+						</ul>
+				</section>
+			</div>
+
+			<div class="mj-alert is-danger" v-if="componentData.extractDownloadExists && !buildingExtractDownload && !extractDownloadComplete && !switchingIndex">
+				<template v-if="componentData.extractDownloadExists && componentData.extractDownloadExists.state == 'COMPLETED'">
+					<p>This download already exists in your <a href="/reports/downloads">downloads</a> folder, and was last built at  {{ componentData.extractDownloadExists.created | date-time-format }}. Click <a href="javascript:void(0);" v-on:click="navigateTo('/reports/downloads/2/' + componentData.extractDownloadExists.uid)">here</a> to download it again.</p>
+				</template>
+				<template v-else>
+					<b>Download already requested</b>
+					<p>We are building the download you have already requested for this domain.If you re-build the download, it may result in another allowance charge.</p>
+					<p>Your download will appear in your <a href="/reports/downloads">downloads</a> page.</p>
+				</template>
+			</div>
+			
+			<div class="grey-bg flex-row-align-center is-gapless mj-vert-margin" :class="[switchingIndex ? 'mj-pos-center' : 'mj-pos-left-and-right']">
+				<template v-if="!switchingIndex">
+					<div class="mj-pos-center is-gapless is-v-centred" style="margin: 0 auto;">
+						<span class="download-all-backlinks-index pointer" v-on:click="switchIndex('Fresh')" v-bind:class="{'selected' : componentData.form.index_data_source == 'Fresh'}">
+							<span class="flex-row-align-center">
+								<img src="/static/images/icons/tools/fresh-index.png" height="16" width="16" border="0">&nbsp;
+								<label class="pointer" for="freshIndexDataSourceForDownload">Fresh</label>&nbsp;
+								<input class="pointer" id="freshIndexDataSourceForDownload" type="radio" v-model="componentData.form.index_data_source" value="Fresh" style="margin-top: 2px;" />
+							</span>
+						</span>
+						<span>|</span>
+						<span class="download-all-backlinks-index pointer" v-on:click="switchIndex('Historic')" v-bind:class="{'selected' : componentData.form.index_data_source == 'Historic'}">
+							<span class="flex-row-align-center">
+								<img src="/static/images/icons/tools/historic-index.png" height="16" width="16" border="0">&nbsp;
+								<label class="pointer" for="historicIndexDataSourceForDownload">Historic</label>&nbsp;
+								<input class="pointer" id="historicIndexDataSourceForDownload" type="radio" v-model="componentData.form.index_data_source" value="Historic" style="margin-top: 2px;" />
+							</span>
+						</span>
+					</div>
+					<input id="downloadButton" v-if="!tooManyBacklinks && !(componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits)" type="submit" class="btn_lrg_green inline-block download-all-backlinks-button mj-line-height-2x" v-bind:class="{'loading_gif' : buildingExtractDownload, 'download_ready' : extractDownloadComplete}" :value="downloadExtractButtonText" style="margin: 0; overflow: visible;" :disabled="switchingIndex" v-on:click="extractDownloadComplete ? navigateTo(downloadExtractPath) : buildingExtractDownload ? null : downloadExtract()"/>
+				</template>
+				<template v-else>
+					<template v-if="switchingIndexError">
+						<p>Sorry! An error has occurred, please refresh the page and try again.</p>
+					</template>
+					<template v-else>
+						<span class="index_switch_delay mj-vert-pad is-small">Switching index</span>
+					</template>
+				</template>
+			</div>
+			
+			<div v-if="tooManyBacklinks" class="mj-alert is-danger mj-vert-margin">
+				<p>
+					<b>Too many backlinks</b>
+				</p>
+				<p>
+					Sorry. Some sites have too many backlinks for us to process automatically.
+				</p>
+				<p>
+					Please create a support ticket to discuss routes for obtaining this data.
+				</p>
+				<a href="/help/contact-us?subject=Raw Backlinks Export"><input class="mj-btn is-light" type="button" value="Contact Support"/></a>
+			</div>
+			
+			<div class="mj-alert is-danger" v-if="buildExtractError && !extractDownloadComplete && !tooManyBacklinks && !(componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits )">
+				<h3 class="has-no-horz-pad">Sorry!</h3>
+				<p>An error has occurred, please refresh the page and try again.</p>
+			</div>
+
+			<div class="mj-alert is-info is-small" v-if="extractStatusMessage && !buildExtractError && !extractDownloadComplete && !tooManyBacklinks && !(componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits)">
+				<p>Your download is being prepared. It can be found in your <a href="/reports/downloads">downloads</a> folder. You can safely close this message box.</p>
+			</div>
+			
+			<div class="mj-alert is-info is-small" v-if="extractDownloadComplete && !tooManyBacklinks && !(componentData.analysis_units_remaining < componentData.index_item_info.numberOfAnalysisResUnits)">
+				<p><b>Your download is complete.</b> If it hasn't downloaded automatically please use the "Download Ready" button. We have also added your file to your <a href="/reports/downloads">downloads</a> folder, should you need it later.</p>
+			</div>
+			
+			<p v-if="!tooManyBacklinks && componentData.analysis_units_remaining > componentData.index_item_info.numberOfAnalysisResUnits">
+				<a v-if="showLegacyOption" class="mj-help-text" href="javascript:void(0);" v-on:click="showRawExportDownload()">Use legacy 'Download All Data/Raw Export'</a>
+				<a v-else-if="!showLegacyOption && componentData.fullExportDecision != 'undecided'" class="mj-help-text" href="javascript:void(0);" v-on:click="changeFullExportType()">&laquo; Change Full Export Type</a>
+			</p>
+		</div>
+	</template>
+</div>
+
+</script>
+
+
+
+
+
+<div id="searchBarPassthrough" data-passthrough-data="{&quot;scopeSelectorMethod&quot;:&quot;&quot;,&quot;noHistoryDNT&quot;:&quot;&quot;,&quot;noHistory&quot;:&quot;&quot;}"></div>
+
+<script type="text/javascript">
+	var passthrough = JSON.parse(document.getElementById('searchBarPassthrough').getAttribute('data-passthrough-data'))
+
+	function getUpdatedURL(oldURL, scope, index) {
+		var newQuery = $('#search_text').val()
+
+		var domain = $('#js-scope-domain').val();
+		var subdomain = $('#js-scope-subdomain').val();
+		var url = $('#js-scope-url').val();
+
+		var newUrl = new URL(oldURL)
+
+		if(newQuery != domain && newQuery != subdomain && newQuery != url)
+		{
+			newUrl.searchParams.set("q", newQuery)
+
+			if(scope)
+			{
+				newUrl.searchParams.set("scope", scope)
+			}
+			else if(index)
+			{
+				newUrl.searchParams.set("IndexDataSource", index)
+			}
+		}
+		return newUrl.href
+	}
+
+	function popupShareWindow(url, title, w, h) {
+		var left = (screen.width/2)-(w/2);
+		var top = (screen.height/2)-(h/2);
+		return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+	}
+
+	function SearchEntryOnFocus(element)
+	{
+		if ( element == null ) return;
+		if ( element.value == decodeHtmlEntities('Enter a domain, URL OR search phrase') ) element.value = '';
+	}
+
+	function submitScope(scope)
+	{
+		var query = $('#search_text').val();
+		var oq = $('#query-oq').val();
+		var domain = $('#js-scope-domain').val();
+		var subdomain = $('#js-scope-subdomain').val();
+		var url = $('#js-scope-url').val();
+
+		if($("#urlSearch input[name='scope']").length)
+		{
+			$("#urlSearch input[name='scope']").val(scope);
+		}
+		else
+		{
+			var scopeInput = $(document.createElement('input'))
+					.attr('type', 'hidden')
+					.attr('name', 'scope')
+					.val(scope);
+			$("#urlSearch").append(scopeInput);
+		}
+
+		if(query == domain || query == subdomain || query == url)
+		{
+			if($("#urlSearch input[name='oq']").length)
+			{
+				$("#urlSearch input[name='oq']").val(oq);
+			}
+			else
+			{
+				var newQueryInput = $(document.createElement('input'))
+					.attr('type', 'hidden')
+					.attr('name', 'oq')
+					.val(oq);
+
+				$("#urlSearch").append(newQueryInput);
+			}
+		}
+
+		$("#urlSearch").submit();
+	}
+</script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$("input#search_text").blur(function()
+			{
+				var inputvalue = $('input#search_text').val();
+				$("input.rpt_val").val(inputvalue);
+			});
+
+			$('.checkIndex').click(function()
+			{
+				$('.indexCheck').removeClass('selected');
+				$(this).parents('.indexCheck').addClass('selected');
+			});
+
+			$('input#search_text').on('change keyup blur', function() {
+				if(this.value == this.defaultValue)
+				{
+					$(this).siblings('.actionsContainer').show();
+					$(this).siblings('.verification-state').css('display', 'block');
+				}
+				else
+				{
+					$(this).siblings('.actionsContainer').hide();
+					$(this).siblings('.verification-state').css('display', 'none');
+				}
+			});
+
+			$('#searchBar .hoverHint').majesticPopover($.extend({}, defaultTooltipOptions(), {defaultPosition: 'bottom'}));
+
+			$('div.indexCheck input[type=radio][name=IndexDataSource]').click(function() {
+				if(typeof gaEvent === 'function')
+				{
+					var event = $(this).val();
+					gaEvent('site-explorer', 'index-changed', event);
+				}
+			});
+
+			$("#scope").change(function(){
+				var scope = $(this).children(":selected").data("scope");
+				submitScope(scope);
+			});
+
+			$("#radioDivGroup > a").on("keydown mousedown", function(e) {
+				var currentHref = $(this).prop('href')
+				var scope = $(this).data('scope')
+				var newHref = getUpdatedURL(currentHref, scope)
+				e.originalEvent.currentTarget.href = newHref
+			})
+
+			$(".radio-index > a").on("keydown mousedown", function(e) {
+				var currentHref = $(this).prop('href')
+				var index = $(this).children(":first").data('index')
+				var newHref = getUpdatedURL(currentHref, undefined, index)
+				e.originalEvent.currentTarget.href = newHref
+			})
+
+			$("#urlSearch").submit(function() {
+				let newQuery = $('#search_text').val()
+
+				let domain = $('#js-scope-domain').val();
+				let subdomain = $('#js-scope-subdomain').val();
+				let url = $('#js-scope-url').val();
+
+				if(newQuery != domain && newQuery != subdomain && newQuery != url)
+				{
+					$("#urlSearch input[name='oq']").val(newQuery)
+				}
+			})
+		});
+	</script>
+
+	
+	
+<div id="searchBar" class="search-bar site_explorer search-bar-cosy">
+
+	
+
+	<form id="urlSearch" name="urlSearch" method="get" class="search-form  scope-selector-" action="/reports/site-explorer">
+		<input name="oq" value="" type="hidden" />
+		<input name="IndexDataSource" value="" type="hidden">
+
+		
+		
+		
+
+		<div id="search_entry" class="search-query">
+			<span>
+				
+			</span>
+			<input name="q" id="search_text" class="search-text ellipsis-overflow" value="" placeholder="Enter a domain, URL OR search phrase" type="text" autocapitalize="off" autocorrect="off" inputmode="url">
+			
+		</div>
+
+		<div class="search-options has-no-scope-and-index ">
+			
+
+			<div class="submit">
+				<input type="submit" value="Search">
+			</div>
+
+		
+		</div>
+	</form>
+	
+
+	
+		<script>
+			$('#search_entry .actionsContainer[v-cloak]').each(function() {
+				new Vue({
+					el: this,
+					mixins: [window.hasMountedMixin]
+				})
+			})
+		</script>
+	
+</div>
+
+	
+	<input id="js-add-to-bucket-text" type="hidden" value="Add  to your bucket" />
+
+	<input id="js-scope-domain"		type="hidden" value="">
+	<input id="js-scope-subdomain"	type="hidden" value="">
+	<input id="js-scope-url"		type="hidden" value="">
+
+	<input type="hidden" id="js-wildcard" value="0">
+
+
+	
+	
+	<div id="menu_list" class="mob-dd-menu ">
+		
+			
+				<ul id="nav-user-status-action" class="horzMenu">
+					<li class="nav-btn"><a href="/account/register">Sign Up for FREE</a></li>
+				</ul>
+			
+		
+
+		<ul class="horzMenu" >
+
+			
+			<li class="separator u-g"><a href="/plans-pricing" style="color: #FFCC00">Plans &amp; Pricing</a></li>
+			
+
+			
+				
+					<li class="separator header-login"><a href="/account/login?redirect=%2Fhelp%2Ftools%2Fcompare">Login</a></li>
+				
+			
+
+			<li id="lang" class="lang-dd dd-link separator simplified-menu">
+				<a class="head flex rounded" aria-haspopup="true" href="JavaScript:;">
+					<img class="lang-icon en" alt="Language flag icon" height="24" width="24" src="/static/images/backgrounds/1px.png">
+					<i class="toggle-arrow"></i>
+				</a>
+				<ul class="dd-content langs">
+					
+					<li class="lang en"><a href="https://majestic.com/help/tools/compare"><i class="lang-icon en"></i>English					</a></li>
+					
+					<li class="lang de"><a href="https://de.majestic.com/help/tools/compare"><i class="lang-icon de"></i>Deutsch					</a></li>
+					
+					<li class="lang es"><a href="https://es.majestic.com/help/tools/compare"><i class="lang-icon es"></i>Español					</a></li>
+					
+					<li class="lang fr"><a href="https://fr.majestic.com/help/tools/compare"><i class="lang-icon fr"></i>Fran&#231;ais					</a></li>
+					
+					<li class="lang it"><a href="https://it.majestic.com/help/tools/compare"><i class="lang-icon it"></i>Italiano					</a></li>
+					
+					<li class="lang ja"><a href="https://ja.majestic.com/help/tools/compare"><i class="lang-icon ja"></i>日本語					</a></li>
+					
+					<li class="lang nl"><a href="https://nl.majestic.com/help/tools/compare"><i class="lang-icon nl"></i>Nederlands					</a></li>
+					
+					<li class="lang pl"><a href="https://pl.majestic.com/help/tools/compare"><i class="lang-icon pl"></i>Polski					</a></li>
+					
+					<li class="lang pt"><a href="https://pt.majestic.com/help/tools/compare"><i class="lang-icon pt"></i>Português					</a></li>
+					
+					<li class="lang zh"><a href="https://zh.majestic.com/help/tools/compare"><i class="lang-icon zh"></i>中文					</a></li>
+					
+				</ul>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+
+		</div>
+
+		<div id="content_container_holder">
+			<div class="mj-columns is-gapless sidebar-content-container">
+	<div class="mj-column is-narrow">
+		
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const nav = document.getElementsByClassName("side")[0]
+		document.getElementById('hamburger-icon').addEventListener("click", function() {
+			if(!nav.classList.contains('mob-nav-open')) {
+				nav.classList.add('mob-nav-open')
+				// On menu open, focus menu for accessibility (can tab through items)
+				document.querySelector('nav.side #close-left-nav').focus();
+			}
+		})
+
+		function closeMenu() {
+			if(nav.classList.contains('mob-nav-open'))
+				nav.classList.remove('mob-nav-open')
+		}
+
+		document.getElementById('close-left-nav').addEventListener("click", closeMenu)
+
+		function closeOnClickOff(event){
+			if (!(document.getElementById('hamburger-icon').contains(event.target)
+					|| document.getElementsByClassName('side')[0].contains(event.target))) {
+				closeMenu()
+			}
+		}
+
+		['container', 'home'].forEach(function(containerId){
+			var container = document.getElementById(containerId)
+			if(container) {
+				container.addEventListener('click', closeOnClickOff)
+			}
+		})
+	})
+</script>
+
+<nav class="side">
+	<button id="close-left-nav" class="flex-justify-end" style="margin-top: -1.5em" aria-label="Close nav menu">
+		<img src="/static/images/icons/cancel.png" width="15px" height="15px"/>
+	</button>
+
+	<ul>
+		
+		<li class="header pad-lvl-1">Get started</li>
+
+		
+
+		<li class="nav-link"><a href="/account/login?redirect=%2Fhelp%2Ftools%2Fcompare">Login</a></li>
+		<li class="nav-link "><a href="/plans-pricing">Plans &amp; Pricing</a></li>
+		<li class="cta pad-lvl-1">
+			
+				<a href="/account/register" class="is-subcription-link">Sign Up for FREE</a>
+			
+		</li>
+		
+
+		
+
+		
+		
+		
+
+		<li data-self="site-explorer" class="can-collapse" style="margin-top: 2em;">
+			<button aria-label="Site Explorer section" aria-expanded="false">
+				Site Explorer
+			</button>
+		</li>
+		
+		
+
+		<li data-for="site-explorer" style="display: none;" aria-label="Site Explorer">
+			<ul>
+				
+				
+
+				
+
+				
+
+				<li class="nav-link ">
+					<a href="/reports/site-explorer?q=">Summary</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/referring-domains?q=">Ref Domains</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link sub ">
+					<a href="/reports/site-explorer/map?q=">Map</a>
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/top-backlinks?q=">Backlinks</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link sub ">
+					<a href="/reports/site-explorer/new-backlinks?q=">New</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link sub ">
+					<a href="/reports/site-explorer/lost-backlinks?q=">Lost</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+				
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/link-context?q=">Context</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/anchor-text?q=">Anchor Text</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+				
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/top-pages?q=">Pages</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+				
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/topics?q=">Topics</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/link-graph?q=">Link Graph</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+				
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/related-sites?q=">Related Sites</a>
+					
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+				
+				<li class="nav-link ">
+					<a href="/reports/site-explorer/advanced-tools?q=">Advanced Tools</a>
+					
+					<div class="link-right">						
+					</div>
+				
+				</li>
+			
+			</ul>
+		</li>
+		
+		<li data-self="compare-domains" class="can-collapse">
+			<button aria-label="Compare section" aria-expanded="false">
+				Compare
+			</button>
+		</li>
+		
+		<li data-for="compare-domains" style="display: none;">
+			<ul>
+				
+				<li class="nav-link ">
+					<a href="/reports/comparator?q1=&">Summary</a>
+					
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/compare-domain-backlink-history?q1=&&type=0">Backlink History</a>
+					
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/flow-metrics-history?q1=&">Flow Metric History</a>
+					
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/compare-topics?q1=&">Topics</a>
+					
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/cliquehunter?q1=&">Clique Hunter</a>
+					
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+			</ul>
+		</li>
+		
+		<li class="nav-link ">
+			<a href="/reports/bulk-backlink-checker">Bulk Backlinks</a>
+			
+			
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+		</li>
+
+		<li data-self="keywords" class="can-collapse">
+			<button aria-label="Keywords & N-grams section" aria-expanded="false">
+				Keywords & N-grams
+				<sup class="new-indicator hoverHint" title="N-gram Reports now include Backlink source data" style="padding: 3px 4px">!</sup>
+			</button>
+		</li>
+		
+		<li data-for="keywords" style="display: none;">
+			<ul>
+				<li class="nav-link ">
+					<a href="/reports/ngrams-near-links">N-grams Near Links</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/keyword-checker">Keyword Checker</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="https://majestic.com/reports/search-explorer?q=&scope=">
+							Search Explorer
+					</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				
+			</ul>
+		</li>
+
+		<li class="nav-link ">
+			<a href="/reports/neighbourhood-checker?d=">Neighbourhood Checker</a>
+			
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+		</li>	
+		<li data-self="experimental" class="can-collapse parent">
+			<button aria-label="Experimental section" aria-expanded="false">
+				Experimental
+				<sup class="new-indicator new-parent-alert hoverHint" title="NEW: Check your domain name prefix across thousands of TLDs and gTLDs on TLD Checker" style="padding: 3px 4px">!</sup>
+			</button>
+		</li>
+			<li data-for="experimental" style="display: none;">
+				<ul>
+					<li class="nav-link ">
+						<a href="/experimental/index-merger">Index Merger</a>
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+						<a href="/experimental/link-profile-fight?d0=&d1=">Link Profile Fight</a>
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+						<a href="/experimental/mutual-links?d0=&d1=">Mutual Links</a>
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+						<a href="/experimental/solo-links?d0=&d1=">Solo Links</a>
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+						<a href="/experimental/pdf-report">PDF Report</a>
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+						<a href="/experimental/typo-domain">Typo Domain</a>
+
+			            
+						
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+					</li>
+					<li class="nav-link ">
+					    <a href="/experimental/tld-checker">
+					        TLD Checker
+                            <sup class="new-indicator is-uppercase">New</sup>
+                        </a>
+					    
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+                    </li>
+				</ul>
+			</li>
+		
+		<li class="nav-link ">
+			<a href="/reports/url-submitter">Submit URLs</a>
+			
+			
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+		</li>
+		<li data-self="monitor" class="can-collapse parent">
+			<button aria-label="Open Author Explorer submenu">
+				Author Explorer
+				<sup class="new-indicator is-uppercase">Beta</sup>
+			</button>
+		</li>
+		<li data-for="monitor" style="display: none;">
+			<ul>
+				<li class="nav-link ">
+					<a href="/author-explorer?q=">Summary</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/author-explorer/similar-profiles?q=">Similar Profiles</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/author-explorer/backlinks?q=">Profile Backlinks</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+				<li class="nav-link ">
+					<a href="/author-explorer/attributions?q=">Attributions</a>
+					
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+				</li>
+			</ul>
+		</li>
+		<li class="nav-link ">
+			<a href="/reports">Custom Reports</a>
+			
+					<div class="link-right show-on-hover"><div class="padlocked">
+	
+	<div class="min-subscription">
+		Pro
+	</div>
+	
+	<svg viewBox="0 0 1000 1000" class="padlock">
+		<use href="/static/images/icons/padlock.svg#closed" xlink:href="/static/images/icons/padlock.svg#closed"></use>
+	</svg>
+</div>						
+					</div>
+				
+		</li>
+
+		<li data-self="free-seo-tools" class="can-collapse parent">
+			<button aria-label="Free SEO Tools section" aria-expanded="false">
+				Free SEO Tools
+			</button>
+		</li>
+		<li data-for="free-seo-tools" style="display: none;">
+			<ul>
+				<li class="nav-link ">
+					<a href="/free-seo-tools">Get started</a>
+				</li>
+				<li class="nav-link  ">
+					<a href="/backlink-checker?ln">Backlink Checker</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/reports/majestic-million">Majestic Million</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/majestic-widgets/plugins">Browser Plugins</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/majestic-widgets/google-sheets-addon">Google Sheets</a>
+				</li>
+				<li class="nav-link">
+					<a href="/post-popularity">Post Popularity</a>
+				</li>
+				<li class="nav-link">
+					<a href="/social-explorer">Social Explorer</a>
+				</li>
+			</ul>
+		</li>
+
+		
+
+		<li data-self="support" class="can-collapse" style="margin-top: 1.5em;">
+			<button aria-label="Support section" aria-expanded="false">
+				Support
+			</button>
+		</li>
+		<li data-for="support" >
+			<ul>
+				<li class="nav-link ">
+					<a href="/help">Get started</a>
+				</li>
+				<li class="nav-link  selected">
+					<a href="/help/tools">Tools</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/help/subscriptions">Subscriptions & Billing</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/help/faq">FAQs</a>
+				</li>
+				<li class="nav-link ">
+					<a href="/help/glossary">Glossary</a>
+				</li>
+				<li class="nav-link"><a href="/help/how-to-videos">How To Videos</a></li>
+				
+				<li class="nav-link"><a href="https://developer-support.majestic.com/api/" target="_blank">API Reference Guide <img class="no-sprite ext-link-icon"  src="/static/images/icons/external-link-blue.png" width="12px" height="10px" title="External Link" alt="External Link" /></a></li>
+				<li class="nav-link ">
+					<a href="/help/contact-us">Contact Us</a>
+				</li>
+				<li class="nav-link "><a href="/account/site-updates">Site Updates</a></li>
+
+				
+			</ul>
+		</li>
+
+		<li data-self="about-majestic" class="can-collapse">
+			<button aria-label="About Majestic section" aria-expanded="false">
+				About Majestic
+			</button>
+		</li>
+		<li data-for="about-majestic" style="display: none;">
+			<ul>
+				<li class="nav-link "><a href="/company/about">The Company</a></li>
+				<li class="nav-link "><a href="/company/style-guide">Style Guide</a></li>
+				<li class="nav-link "><a href="/company/terms">Terms &amp; Conditions</a></li>
+				<li class="nav-link "><a href="/company/privacy-policy">Privacy Policy</a></li>
+				<li class="nav-link "><a href="/company/gdpr">GDPR</a></li>
+				<li class="nav-link"><a href="/help/contact-us">Contact Us</a></li>
+			</ul>
+		</li>
+
+		<li data-self="about-backlinks" class="can-collapse">
+			<button aria-label="About Backlinks and SEO section" aria-expanded="false">
+				About Backlinks and SEO
+			</button>
+		</li>
+		<li data-for="about-backlinks" style="display: none;">
+			<ul>
+				<li class="nav-link"><a href="/seo-in-2026" ">SEO in 2026</a></li>
+				<li class="nav-link"><a href="/majestic-seo-podcast">The Majestic SEO Podcast</a></li>
+				<li class="nav-link"><a href="/podcasts">All Podcasts</a></li>
+				<li class="nav-link "><a href="/trust-flow">What is Trust Flow?</a></li>
+				<li class="nav-link"><a href="/guides">Link Building Guides</a></li>
+			</ul>
+		</li>
+
+		<li class="nav-link"><a href="https://blog.majestic.com/" target="_blank" rel="noopener">Blog <img class="no-sprite ext-link-icon" src="/static/images/icons/external-link-blue.png" width="12px" height="10px" title="External Link" alt="External Link" /></a></li>
+
+		
+		
+		<li data-self="languages" class="can-collapse" style="margin-top: 2em; margin-bottom: 0.5em;">
+			<button aria-label="Language section" aria-expanded="false">
+				<span class="mj-border mj-vert-pad mj-horz-pad is-small">
+					<img class="lang-icon en" alt="Language flag icon" height="24" width="24" src="/static/images/backgrounds/1px.png" style="margin-right: 5px;">
+					<span>English					</span>
+				</span>
+			</button>
+		</li>
+		<li data-for="languages" class="languages" style="display: none;">
+			<ul>
+				<li class="nav-link lang en">
+					<a href="https://majestic.com/help/tools/compare">
+						<div class="lang-icon en"></div>
+						<span>English						</span>
+					</a>
+				</li>
+				<li class="nav-link lang de">
+					<a href="https://de.majestic.com/help/tools/compare">
+						<div class="lang-icon de"></div>
+						<span>Deutsch						</span>
+					</a>
+				</li>
+				<li class="nav-link lang es">
+					<a href="https://es.majestic.com/help/tools/compare">
+						<div class="lang-icon es"></div>
+						<span>Español						</span>
+					</a>
+				</li>
+				<li class="nav-link lang fr">
+					<a href="https://fr.majestic.com/help/tools/compare">
+						<div class="lang-icon fr"></div>
+						<span>Fran&#231;ais						</span>
+					</a>
+				</li>
+				<li class="nav-link lang it">
+					<a href="https://it.majestic.com/help/tools/compare">
+						<div class="lang-icon it"></div>
+						<span>Italiano						</span>
+					</a>
+				</li>
+				<li class="nav-link lang ja">
+					<a href="https://ja.majestic.com/help/tools/compare">
+						<div class="lang-icon ja"></div>
+						<span>日本語						</span>
+					</a>
+				</li>
+				<li class="nav-link lang nl">
+					<a href="https://nl.majestic.com/help/tools/compare">
+						<div class="lang-icon nl"></div>
+						<span>Nederlands						</span>
+					</a>
+				</li>
+				<li class="nav-link lang pl">
+					<a href="https://pl.majestic.com/help/tools/compare">
+						<div class="lang-icon pl"></div>
+						<span>Polski						</span>
+					</a>
+				</li>
+				<li class="nav-link lang pt">
+					<a href="https://pt.majestic.com/help/tools/compare">
+						<div class="lang-icon pt"></div>
+						<span>Português						</span>
+					</a>
+				</li>
+				<li class="nav-link lang zh">
+					<a href="https://zh.majestic.com/help/tools/compare">
+						<div class="lang-icon zh"></div>
+						<span>中文						</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+
+
+
+<script>
+	function menuItemToggle() {
+		const selectedSubsectionLists = $('.side .selected').parents('li')
+		selectedSubsectionLists.css('display', '')
+		selectedSubsectionLists.each(function() {
+			$('li[data-self=' + $(this).data('for') + ']').children('button').attr('aria-expanded', true)
+		})
+
+		let currentPage = $('.side.is-sub-nav .selected')
+		if (currentPage.length === 0) currentPage = $('.side .selected')
+		currentPage.attr('aria-current', 'page')
+
+		$('.can-collapse > button').click(function(){
+			var listElem = $('li[data-for=' + $(this).parent().data('self') + ']')
+
+			if (listElem.css('display') === 'none') {
+				listElem.css('display', '')
+				$(this).attr('aria-expanded', true)
+			} else {
+				listElem.css('display', 'none')
+				$(this).attr('aria-expanded', false)
+			}
+		});
+	}
+
+	function bindTooltipPopover() {
+		$('.hoverHintHTML').majesticPopover({
+			content: function()
+			{
+				return $(this).attr('data-original-title');
+			},
+			cssClass: 'majestic-tooltip',
+			type: 'hover'
+		});
+	}
+</script>
+
+
+<script>
+	$(document).ready(function() {
+		menuItemToggle()
+		bindTooltipPopover()
+	})
+</script>
+
+	</div>
+	<div class="mj-column right-content">
+		<div class="mj-content-container mob-no-whitespace">
+			<noscript>
+	<div class="padded-div js-warning" style="padding-right: 0; margin-top: 20px;">
+		<div class="warningMessage red">
+			<STRONG>Warning:</STRONG> Javascript appears to be deactivated on this browser - this may effect your user experience and functionality of this site.
+		</div>
+	</div>
+</noscript>
+
+			
+
+
+
+
+
+
+
+
+<div class="mj-content is-width-restricted">
+    
+        
+        
+        <div class="mj-vert-margin">
+            <a href="/help/tools" class="">Tools</a>
+            
+                <span class="is-nested breadcrumb-selected">
+                    <a href="/help/tools/compare">Compare</a>
+                </span>
+            
+            
+        </div>
+    
+
+    
+        
+        
+    <div class="mj-separator is-top">
+        <h3 class="has-no-horz-pad is-marginless">Compare Tools</h3>
+        <p>Compare the summary metrics for up to 10 sites. This includes Trust Flow, Citation Flow, Referring Domains and External Inbound Links.</p>
+        <div class="flex has-gap-max-10">
+            <a href="/manual/compare" class="mj-btn is-light is-uppercase">Want to find out more?</a>
+            <a href="/reports/comparator" class="mj-btn is-bordered is-uppercase">Try it!</a>
+        </div>
+    </div>
+
+    
+
+    <div class="mj-separator is-top">
+        
+            <div class="mj-cards has-3-columns mj-vert-margin is-small">
+            
+                <div class="mj-card">
+    
+    <div class="mj-card-media">
+        <figure>
+            
+                <a href="/reports/comparator?what-is-this-tool" ><img src="/static/images/plans/LPA-Plans/screen-compare-summary-2023.png" alt="Majestic Compare Summary screen"/></a>
+            
+        </figure>
+    </div>
+    
+    <div class="mj-card-content">
+        <div class="mj-pos-left-and-right">
+            <h4 class="title has-no-vert-pad flex has-gap-max-10" style="align-items: end;">
+                <a href="/reports/comparator?what-is-this-tool" >Summary</a>
+                
+            </h4>
+            
+            <div class="status-badge status-badge-pro hoverHintHTML" title="Compare Tool is available for subscribers on our &lt;b&gt;Pro&lt;/b&gt; plan">
+                Pro
+            </div>
+            
+        </div>
+        <p class="is-marginless" style="flex-grow: 1;">Compare the summary metrics for up to 10 sites. This includes Trust Flow, Citation Flow, Referring Domains and External Inbound Links. The Compare Tool also allows you to drilldown into some of these metrics, in order to get a detail breakdown of them.</p>
+        <div>
+            
+
+                
+                    <a href="/reports/comparator?what-is-this-tool"  class="mj-btn is-multiline is-uppercase" style="margin-top: 1em;">
+                        More Help
+                        
+                    </a>
+                
+                    <a href="/reports/comparator" target="_blank" class="mj-btn is-multiline is-bordered is-uppercase" style="margin-top: 1em;">
+                        Try it!
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+            
+                <div class="mj-card">
+    
+    <div class="mj-card-media">
+        <figure>
+            
+                <a href="/reports/compare-domain-backlink-history?what-is-this-tool" ><img src="/static/images/plans/LPA-Plans/screen-backlink-history.png" alt="Majestic Backlink History screen"/></a>
+            
+        </figure>
+    </div>
+    
+    <div class="mj-card-content">
+        <div class="mj-pos-left-and-right">
+            <h4 class="title has-no-vert-pad flex has-gap-max-10" style="align-items: end;">
+                <a href="/reports/compare-domain-backlink-history?what-is-this-tool" >Backlink History</a>
+                
+            </h4>
+            
+            <div class="status-badge status-badge-pro hoverHintHTML" title="Compare Tool is available for subscribers on our &lt;b&gt;Pro&lt;/b&gt; plan">
+                Pro
+            </div>
+            
+        </div>
+        <p class="is-marginless" style="flex-grow: 1;">Backlink History shows how many links to a given domain our web crawlers have found in the past. As our crawlers are prolific, the charts can be indicative of the backlinks growth associated with the given domain.</p>
+        <div>
+            
+
+                
+                    <a href="/reports/compare-domain-backlink-history?what-is-this-tool"  class="mj-btn is-multiline is-uppercase" style="margin-top: 1em;">
+                        More Help
+                        
+                    </a>
+                
+                    <a href="/reports/compare-domain-backlink-history" target="_blank" class="mj-btn is-multiline is-bordered is-uppercase" style="margin-top: 1em;">
+                        Try it!
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+            
+                <div class="mj-card">
+    
+    <div class="mj-card-media">
+        <figure>
+            
+                <a href="/reports/flow-metrics-history?what-is-this-tool" ><img src="/static/images/plans/LPA-Plans/screen-flow-metrics-history.png" alt="Majestic Flow Metrics History screen"/></a>
+            
+        </figure>
+    </div>
+    
+    <div class="mj-card-content">
+        <div class="mj-pos-left-and-right">
+            <h4 class="title has-no-vert-pad flex has-gap-max-10" style="align-items: end;">
+                <a href="/reports/flow-metrics-history?what-is-this-tool" >Flow Metric History</a>
+                
+            </h4>
+            
+            <div class="status-badge status-badge-pro hoverHintHTML" title="Compare Tool is available for subscribers on our &lt;b&gt;Pro&lt;/b&gt; plan">
+                Pro
+            </div>
+            
+        </div>
+        <p class="is-marginless" style="flex-grow: 1;">Flow Metric History allows you to compare the strength and stability of domains over many years using Trust Flow and Citation Flow.</p>
+        <div>
+            
+
+                
+                    <a href="/reports/flow-metrics-history?what-is-this-tool"  class="mj-btn is-multiline is-uppercase" style="margin-top: 1em;">
+                        More Help
+                        
+                    </a>
+                
+                    <a href="/reports/flow-metrics-history" target="_blank" class="mj-btn is-multiline is-bordered is-uppercase" style="margin-top: 1em;">
+                        Upgrade
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+            
+                <div class="mj-card">
+    
+    <div class="mj-card-media">
+        <figure>
+            
+                <a href="/reports/compare-topics?what-is-this-tool" ><img src="/static/images/plans/LPA-Plans/screen-compare-topics-2023.png" alt="Majestic Compare Topics screen"/></a>
+            
+        </figure>
+    </div>
+    
+    <div class="mj-card-content">
+        <div class="mj-pos-left-and-right">
+            <h4 class="title has-no-vert-pad flex has-gap-max-10" style="align-items: end;">
+                <a href="/reports/compare-topics?what-is-this-tool" >Topics</a>
+                
+            </h4>
+            
+            <div class="status-badge status-badge-pro hoverHintHTML" title="Compare Tool is available for subscribers on our &lt;b&gt;Pro&lt;/b&gt; plan">
+                Pro
+            </div>
+            
+        </div>
+        <p class="is-marginless" style="flex-grow: 1;">Topics allows you to fully explore and drill into the individual Topical Trust Flow values that arrive at any website. domain or URL. You can check and categorise the incoming external backlinks to any site. This can help you figure out if a page classification is due to direct links coming in, or from indirect topics where the classification may be carried through from external inbound links to other pages on the same domain.</p>
+        <div>
+            
+
+                
+                    <a href="/reports/compare-topics?what-is-this-tool"  class="mj-btn is-multiline is-uppercase" style="margin-top: 1em;">
+                        More Help
+                        
+                    </a>
+                
+                    <a href="/reports/compare-topics" target="_blank" class="mj-btn is-multiline is-bordered is-uppercase" style="margin-top: 1em;">
+                        Upgrade
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+            
+                <div class="mj-card">
+    
+    <div class="mj-card-media">
+        <figure>
+            
+                <a href="/reports/cliquehunter?what-is-this-tool" ><img src="/static/images/plans/LPA-Plans/screen-clique-hunter.png" alt="Majestic Clique Hunter screen"/></a>
+            
+        </figure>
+    </div>
+    
+    <div class="mj-card-content">
+        <div class="mj-pos-left-and-right">
+            <h4 class="title has-no-vert-pad flex has-gap-max-10" style="align-items: end;">
+                <a href="/reports/cliquehunter?what-is-this-tool" >Clique Hunter</a>
+                
+            </h4>
+            
+            <div class="status-badge status-badge-pro hoverHintHTML" title="Compare Tool is available for subscribers on our &lt;b&gt;Pro&lt;/b&gt; plan">
+                Pro
+            </div>
+            
+        </div>
+        <p class="is-marginless" style="flex-grow: 1;">Clique Hunter is a link opportunity discovery tool. Find links which link to competitor websites, but not your own.</p>
+        <div>
+            
+
+                
+                    <a href="/reports/cliquehunter?what-is-this-tool"  class="mj-btn is-multiline is-uppercase" style="margin-top: 1em;">
+                        More Help
+                        
+                    </a>
+                
+                    <a href="/reports/cliquehunter" target="_blank" class="mj-btn is-multiline is-bordered is-uppercase" style="margin-top: 1em;">
+                        Upgrade
+                        
+                    </a>
+                
+            
+        </div>
+    </div>
+</div>
+            
+            </div>
+        
+            
+            
+                
+                
+    </div>
+
+    <div class="mj-border-top mj-border-bottom mj-vert-margin is-center-aligned " style="padding: 2em 0;">
+    <span><b>Can't find what you're looking for?</b> <a href="/help/contact-us?subject=Compare Help Page">Contact us</a></span>
+</div>
+</div>
+
+<style>
+    .breadcrumb-selected { font-weight: bold; }
+    .is-nested:before { content: '\2192 \0020'; }
+    .mj-card .mj-card-media {
+		overflow: hidden;
+		max-height: 137px;
+	}
+	.mj-card .mj-card-content { white-space: normal; }
+
+    .status-badge, .index-badge {
+        text-align: center;
+        font-size: 0.8em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 3px;
+        padding: 0 5px;
+        color: #fff;
+		margin: 1em 0 8px;
+    }
+    .status-badge-lite { background-color: #4f81bd; }
+    .status-badge-pro { background-color: #009900; }
+</style>
+		</div>
+	</div>
+</div>
+		</div>
+
+		<div id="footer" class="footer-container">
+	
+	
+	<div class="footer-panel">
+		<div class="footer-panel-content">
+			<div class="text-center">
+				
+				<p>Could we improve this page for you? <b><a href="/help/contact-us?Topic=feedback&subject=Feedback%20for%20page%20%22/help/tools/compare%22" style="color: #fff;">Please tell us</a></b></p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="index-stats-panel" class="footer-panel index-stats">
+		
+
+
+<style>
+	#footer .index-stats {
+		column-gap: 5%;
+	}
+	#footer .index-stats .index-stat-row {
+		margin: var(--vert-cat) 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--vert-mouse) 20px;
+	}
+	#footer .index-stats .index-stat-row > * {
+		flex-grow: 1;
+	}
+</style>
+
+<div class="footer-panel-content index-stats flex flex-wrap">
+	<div class="f-grow-1">
+		<h3>
+			Fresh Index
+			<a href="/backlink-database/fresh-index" class="hoverHint mj-horz-margin is-small" title="The Fresh Index contains backlinks we've seen in the past 120 days. Click to learn more." style="vertical-align: bottom;"><img src="/static/images/icons/q-circle-blue-accent.png" alt="More info about Fresh Index icon" width="16px" height="16px" style="filter: grayscale(1);" /></a>
+		</h3>
+		<div class="index-stat-row">
+			<span>Unique URLs crawled</span>
+			<span class="text-right">184,139,575,263</span>
+		</div>
+		<div class="index-stat-row">
+			<span>Unique URLs found</span>
+			<span class="text-right">549,806,163,452</span>
+		</div>
+		<div class="index-stat-row">
+			<span>Date range</span>
+			<span class="text-right">30 May 2026 to 27 Sep 2026</span>
+		</div>
+		<div class="index-stat-row">
+			<span><a href="/help/glossary#IndexBuildDate">Last updated</a></span>
+			<span class="text-right">
+				
+						57 minutes ago
+					
+			</span>
+		</div>
+	</div>
+	<div class="f-grow-1">
+		<h3>
+			Historic Index
+			<a href="/backlink-database/historic-index" class="hoverHint mj-horz-margin is-small" title="The Historic Index contains all backlinks we've seen since 2006. Click to learn more." style="vertical-align: bottom;"><img src="/static/images/icons/q-circle-blue-accent.png" alt="More info about Fresh Index icon" width="16px" height="16px" style="filter: grayscale(1);" /></a>
+		</h3>
+		<div class="index-stat-row">
+			<span>Unique URLs crawled</span>
+			<span class="text-right">4,502,566,935,407</span>
+		</div>
+		<div class="index-stat-row">
+			<span>Unique URLs found</span>
+			<span class="text-right"> 21,743,308,221,308</span>
+		</div>
+		<div class="index-stat-row">
+			<span>Date range</span>
+			<span class="text-right">06 Jun 2006 to 26 Mar 2024</span>
+		</div>
+		<div class="index-stat-row">
+			<span><a href="/help/glossary#IndexBuildDate">Last updated</a></span>
+			<span class="text-right">03 May 2024</span>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="footer-panel">
+		<div class="footer-panel-content flex">
+			<div class="footer-columns f-grow-1">
+				<div class="find-us footer-column">
+					<h3>SOCIAL</h3>
+					<ul>
+						<li class="linkedin"><a href="https://www.linkedin.com/groups/4343451" title="LinkedIn" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li class="youtube"><a href="https://youtube.com/c/majesticseo" title="YouTube" target="_blank" rel="noopener">YouTube</a></li>
+						<li class="facebook"><a href="https://www.facebook.com/MajesticSite" title="Facebook" target="_blank" rel="noopener">Facebook</a></li>
+						<li class="blueSky"><a href="https://bsky.app/profile/majestic.com" title="Bluesky" target="_blank" rel="noopener">Bluesky</a></li>
+						<li class="twitter">
+							<a href="https://x.com/Majestic" title="Twitter / X" target="_blank" rel="noopener">
+							Twitter / X</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="company footer-column">
+					<h3>COMPANY</h3>
+					<ul>
+						<li class="blog"><a href="https://blog.majestic.com" title="Blog" target="_blank" rel="noopener">Blog</a>  <img src="/static/images/icons/external-link.png" title="External Link" alt="External Link" /></li>
+						<li><a href="/company/about">About</a></li>
+						<li><a href="/company/terms">Terms and Conditions</a></li>
+						<li><a href="/company/privacy-policy">Privacy Policy</a></li>
+						<li><a href="/company/gdpr">GDPR</a></li>
+						<li><a href="/help/contact-us">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="empty footer-column">
+					<h3>TOOLS</h3>
+					<ul>
+						<li><a href="/plans-pricing">Plans &amp; Pricing</a></li>
+						<li><a href="/reports/site-explorer">Site Explorer</a></li>
+						<li><a href="/reports/comparator?q1=example.com">Compare Domains</a></li>
+						<li><a href="/reports/bulk-backlink-checker">Bulk Backlinks</a></li>
+						<li><a href="https://majestic.com/reports/search-explorer?q=google">Search Explorer</a></li>
+						<li><a href="https://developer-support.majestic.com/" target="_blank" rel="noopener">Developer API</a> <img src="/static/images/icons/external-link.png" title="External Link " alt="External Link" /></li>
+					</ul>
+				</div>
+
+				<div class="empty footer-column">
+					<h3>MAJESTIC FOR</h3>
+					<ul>
+						<li><a href="/trust-flow">Trust Flow</a></li>
+						<li><a href="/flow-metric-scores">Flow Metric Scores</a></li>
+						<li><a href="/link-context">Link Context</a></li>
+						<li><a href="/backlink-checker">Backlink Checker</a></li>
+						<li><a href="/monitor">Influencer Discovery</a></li>
+						<li><a href="https://majesticanalytics.com" target="_blank" rel="noopener">Enterprise</a> <img src="/static/images/icons/external-link.png" title="External Link" alt="External Link" /></li>
+					</ul>
+				</div>
+				
+				<div class="empty footer-column">
+					<h3>PODCASTS &AMP; PUBLICATIONS</h3>
+					<ul>
+						<li><a href="/majestic-seo-podcast">The Majestic SEO Podcast</a></li>
+						<li><a href="/seo-in-2026">SEO in 2026</a></li>
+						<li><a href="/seo-in-2025">SEO in 2025</a></li>
+						<li><a href="/seo-in-2024">SEO in 2024</a></li>
+						<li><a href="/seo-in-2023">SEO in 2023</a></li>
+						<li><a href="/seo-in-2022">SEO in 2022</a></li>
+						<li><a href="/podcasts">All Podcasts</a></li>
+					</ul>
+				</div>				
+
+				<div class="awards footer-column">
+
+					<div class="up">
+						<a href="javascript:scrollToTop()">top ^</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--
+    Third party attributions:
+
+    * Font Awesome Free by @fontawesome - https://fontawesome.com
+    * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+-->
+	</div>
+
+	
+		
+<script type="text/javascript">
+  var _paq = _paq || [];
+  
+
+	_paq.push(['setDocumentTitle',document.domain + "/" + document.title + "/version=a/usr=G"]);	
+  
+
+	_paq.push(['setCustomVariable',  1,"Subdomain", "en", "page"]); 
+	_paq.push(['setCustomVariable',  2,"Usr", "G", "page"]);
+	_paq.push(['setCustomVariable',  3,"Domain", "Majestic", "page"]);	
+	
+	
+	_paq.push(['trackPageView']); 
+	_paq.push(['enableLinkTracking']); 
+	_paq.push(['setDomains',"*.majestic.com"]);
+	_paq.push(['setCookieDomain','*.majestic.com']);
+
+	(function() {
+		var secure = ("https:" == document.location.protocol);
+		var u=(secure ? "https" : "http") + "://analytics.majestic.com/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 2]);
+		_paq.push(['setSecureCookie', secure]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+		g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+	
+</script>
+<noscript><p><img src="//analytics.majestic.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+
+
+	
+
+	
+</body>
+</html>

@@ -763,9 +763,6 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
-if __name__ == "__main__":
-    raise SystemExit(main())
-
 
 # --------------------------------------------------------------------------
 # Mevcut laboratuvar iddialarinin dogrulanmasi
@@ -850,3 +847,6 @@ def iddialari_dogrula(kontrol: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "hizmet_ettigi_soru": iddia["hizmet_ettigi_soru"][:80],
         })
     return satirlar
+
+if __name__ == "__main__":
+    raise SystemExit(main())

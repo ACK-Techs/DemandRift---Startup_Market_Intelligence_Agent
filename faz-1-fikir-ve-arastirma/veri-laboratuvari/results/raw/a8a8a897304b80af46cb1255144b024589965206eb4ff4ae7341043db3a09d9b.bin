@@ -1,0 +1,2077 @@
+
+<!DOCTYPE html>
+
+<html lang="tr-TR">
+<!--[if IE 7]><html lang="tr-TR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="tr-TR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="tr-TR" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="tr-TR"><![endif]-->
+<!--[if !IE]><html lang="tr-TR"><![endif]-->
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-9">
+    <meta http-equiv="content-type" content="text/html;charset=windows-1254">
+    <meta http-equiv="content-type" content="text/html;charset=x-mac-turkish">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="robots" content="ALL" />
+    <meta name="Rating" content="General" />
+    <meta name="Distribution" content="Global" />
+    <meta name="Copyright" content="KOSGEB" />
+    <meta name="DC.Title" content="KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı">
+    <meta name="DC.Creator" content="KOSGEB">
+    <meta name="DC.Subject" content="KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı">
+    <meta name="DC.Description" content="KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı">
+    <meta name="DC.Publisher" content="KOSGEB">
+    <meta name="DC.Contributor" content="KOSGEB">
+    <meta name="DC.Type" content="Text">
+    <meta name="DC.Source" content="KOSGEB">
+    <meta name="DC.Language" content="tr-TR">
+
+    
+    <script src="/Web/Content/assets/scripts/jquery-1.12.1.js?v=1.05" type="text/javascript"></script>
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/content/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/content/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/content/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/content/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/content/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/content/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/content/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/content/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/content/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/content/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/content/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/content/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/content/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/content/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/content/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/content/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V94VGS8C1D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V94VGS8C1D');
+    </script>
+
+    <style>
+        .twitter-logo {
+            filter: invert(75%) sepia(7%) saturate(8%) hue-rotate(332deg) brightness(83%) contrast(77%);
+            height: 15px;
+        }
+
+            .twitter-logo:hover {
+                filter: invert(13%) sepia(12%) saturate(4755%) hue-rotate(188deg) brightness(97%) contrast(87%);
+            }
+
+
+        .nsosyallogo a img {
+            width: 16px;
+            height: 16px;
+            transition: opacity 0.3s ease;
+        }
+
+        /* hoverda mavi versiyon */
+        .nsosyallogo a:hover img {
+            content: url('/Web/Content/assets/img/NSOSYAL_OGO-mavi.ico'); /* mavi ikon yolu */
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="/Web/Content/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/Web/Content/assets/css/bootstrap-multiselect.css" type="text/css" />
+    <link href="/Web/Content/assets/css/sumoselect.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="/Web/Content/assets/css/fonts/font-awesome/css/font-awesome.css" onload="this.media='all'">
+    <link rel="stylesheet" href="/Web/Content/assets/css/animations.css" media="screen">
+    <link rel="stylesheet" href="/Web/Content/assets/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="/Web/Content/assets/css/revolution-slider/css/settings.css" media="screen" onload="this.media='all'">
+    <link rel="stylesheet" href="/Web/Content/assets/css/prettyPhoto.css" media="screen">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/Web/Content/assets/css/style.css">
+    <link href="/Web/Content/assets/css/menu/style.css" rel="stylesheet" onload="this.media='all'">
+
+    <!-- Fontello CSS -->
+    <link href="/Web/Content/assets/css/menu/fontello.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <!-- Skin -->
+    <link rel="stylesheet" href="/Web/Content/assets/css/colors/blue.css" class="colors">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/Web/Content/assets/css/theme-responsive.css">
+    <!-- Switcher CSS -->
+
+    <link rel="stylesheet" href="/Web/Content/assets/css/Ortak.css?v=1.05" />
+
+    <link href="/Web/Content/assets/plugins/FuncyBox/jquery.fancybox.css?v=1.05" rel="stylesheet" />
+    
+    <title>KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı</title>
+    <meta property="og:url" content="http://kosgeb.gov.tr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı" />
+    <meta property="og:description" content="KOSGEB web sitesi anasayfasıdır." />
+
+    <meta name="description" content="KOSGEB web sitesi anasayfasıdır.  KOSGEB T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı" />
+    <meta name="keywords" content="KOSGEB, KOSGEB websitesi KOSGEB, Kredi, KREDİ, Kobi, KOBİ, kosgeb, Destek, Makina, Tedarikçi Duyuru, Eğitim Duyuru, Fuar Duyuru, İhale Duyuru, Finansman Duyuru, Kredi Faiz, Bilişim,Bölgesel" />
+
+    
+    <link href="/Web/Content/assets/plugins/ninja-slider/ninja-slider.css?v=1.05" rel="stylesheet" />
+    <script src="/Web/Content/assets/plugins/ninja-slider/ninja-slider.js?v=1.05"></script>
+    
+
+</head>
+
+
+
+
+<script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- 1. Değişken Tanımlamaları ---
+            var button = document.getElementById('accessibility-button');
+            var menu = document.getElementById('accessibility-menu');
+            var body = document.body;
+
+            var menuItems = menu ? menu.querySelectorAll('.menu-item') : null;
+            var resetButton = document.getElementById('reset-accessibility');
+
+            var contentWrapper = document.getElementById('main-content-wrapper') || body;
+
+            // Okuma Aracı Değişkenleri
+            var readingGuide = document.getElementById('reading-guide');
+            var maskTop = document.getElementById('reading-mask-top');
+            var maskBottom = document.getElementById('reading-mask-bottom');
+
+            // Sesli Okuma Değişkenleri
+            var isSpeaking = false;
+            var speechUtterance = null;
+            var synth = window.speechSynthesis;
+
+            // Durum Değişkenleri
+            var isScreenReaderActive = false;
+            var isSelectionReaderActive = false;
+
+            // Özellik Eşlemesi
+            var features = {
+                'Ekran Okuyucu': 'screen-reader-active',
+                'Seçili Alan Okuyucu': 'highlight-focus',
+                'Bağlantı Vurgula': 'highlight-links',
+                'Büyük Metin': 'large-text',
+                'Metni Sola Hizala': 'align-left',
+                'İmleç': 'large-cursor',
+                'Okuma Kılavuzu': 'reading-guide-active',
+                'Okuma Maskesi': 'reading-mask-active',
+                'Disleksi Dostu': 'dyslexia-friendly',
+                'Kontrast': 'high-contrast',
+                'Solgunlaştırma': 'desaturate',
+                'Düşük Doygunluk': 'low-saturation',
+                'Yüksek Doygunluk': 'high-saturation'
+            };
+
+            var colorClasses = ['high-contrast', 'desaturate', 'low-saturation', 'high-saturation'];
+
+
+            // --- 2. Yardımcı Fonksiyonlar ---
+
+            function moveGuide(e) {
+                if (readingGuide && body.classList.contains('reading-guide-active')) {
+                    var guideHeight = readingGuide.offsetHeight;
+                    readingGuide.style.top = (e.clientY - (guideHeight / 2)) + 'px';
+                }
+            }
+            function moveMask(e) {
+                if (maskTop && maskBottom && body.classList.contains('reading-mask-active')) {
+                    var lineFocus = 40;
+                    maskTop.style.height = Math.max(0, e.clientY - lineFocus) + 'px';
+                    maskBottom.style.height = Math.max(0, window.innerHeight - e.clientY - lineFocus) + 'px';
+                }
+            }
+
+
+            // Sesli Okuma Fonksiyonu
+            function toggleSpeech(textToRead) {
+                if (!('speechSynthesis' in window)) {
+                    console.error("Tarayıcınız Metin Okuma özelliğini desteklemiyor.");
+                    return;
+                }
+
+                if (isSpeaking) {
+                    synth.cancel();
+                    isSpeaking = false;
+                    updateActiveState();
+                    return;
+                }
+
+                if (!textToRead || textToRead.trim().length === 0) {
+                    return;
+                }
+
+                if (synth.speaking) {
+                    synth.cancel();
+                    isSpeaking = false;
+                    updateActiveState();
+                }
+
+                speechUtterance = new SpeechSynthesisUtterance(textToRead);
+                speechUtterance.lang = document.documentElement.lang || 'tr-TR';
+
+                speechUtterance.onend = function () { isSpeaking = false; updateActiveState(); };
+                speechUtterance.onerror = function (event) {
+                    console.error('Speech Synthesis Error:', event);
+                    isSpeaking = false; updateActiveState();
+                };
+
+                synth.speak(speechUtterance);
+                isSpeaking = true;
+                updateActiveState();
+            }
+
+            // Seçili Metni Alıp Okuyan Fonksiyon
+            function readSelectedTextAfterSelection() {
+                if (!isSelectionReaderActive || isSpeaking) {
+                    return;
+                }
+
+                var selectedText = '';
+                if (window.getSelection) {
+                    selectedText = window.getSelection().toString();
+                } else if (document.selection && document.selection.type !== "Control") {
+                    selectedText = document.selection.createRange().text;
+                }
+
+                if (selectedText && selectedText.trim().length > 0) {
+                    toggleSpeech(selectedText.trim());
+                }
+            }
+
+            // Tüm Sayfayı Okuma Mantığı
+            function readFullPage() {
+                var targetElement = contentWrapper || body;
+
+                var contentText = targetElement.innerText || targetElement.textContent;
+                if (menu) {
+                    // Menü metnini temizle
+                    contentText = contentText.replace(new RegExp(menu.textContent.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), '');
+                }
+                contentText = contentText.replace(/\s\s+/g, ' ').trim();
+                toggleSpeech(contentText);
+            }
+
+            // Aktif Buton Durumunu Güncelleme
+            function updateActiveState() {
+                if (!menuItems) return;
+
+                menuItems.forEach(function (item) {
+                    var itemText = item.textContent.trim();
+                    var itemClass = features[itemText];
+                    var isActive = false;
+
+                    var elementToTest = colorClasses.includes(itemClass) ? contentWrapper : body;
+
+                    if (itemText === 'Ekran Okuyucu') {
+                        isActive = isScreenReaderActive;
+                    } else if (itemText === 'Seçili Alan Okuyucu') {
+                        isActive = isSelectionReaderActive || elementToTest.classList.contains(itemClass);
+                    } else if (itemClass) {
+                        isActive = elementToTest.classList.contains(itemClass);
+                    }
+
+                    if (isActive) {
+                        item.classList.add('active-feature');
+                    } else {
+                        item.classList.remove('active-feature');
+                    }
+                });
+            }
+
+
+            // --- 3. Olay Dinleyicileri ---
+
+            // Menü Açma/Kapama 
+            if (button && menu) button.addEventListener('click', function () { menu.classList.toggle('hidden'); updateActiveState(); });
+            if (document.getElementById('close-menu') && menu) document.getElementById('close-menu').addEventListener('click', function () { menu.classList.add('hidden'); });
+
+            // KRİTİK GÜNCELLEME: Menü Dışına Tıklama ile Kapatma
+            document.addEventListener('click', function (event) {
+                // Metin seçimi aktifse ve tıklanan yer menü veya buton değilse, menüyü kapatma.
+                if (isSelectionReaderActive) {
+                    // Metin seçme işlemi menünün kapanmasını engeller
+                    return;
+                }
+
+                var isClickInside = menu && button && (menu.contains(event.target) || button.contains(event.target));
+
+                if (menu && !isClickInside && !menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+
+            // Ana Menü Öğesi Tıklama İşleyicisi
+            if (menuItems && menuItems.length > 0) {
+                menuItems.forEach(function (item) {
+                    item.addEventListener('click', function () {
+                        var text = item.textContent.trim();
+                        var className = features[text];
+
+                        if (!className) return;
+
+                        var targetElement = colorClasses.includes(className) ? contentWrapper : body;
+
+                        // ÖZEL İŞLEV: EKRAN OKUYUCU (Tüm Sayfayı Okuma)
+                        if (text === 'Ekran Okuyucu') {
+                            if (isScreenReaderActive) {
+                                if (isSpeaking) synth.cancel();
+                                isSpeaking = false;
+                                isScreenReaderActive = false;
+                            } else {
+                                isScreenReaderActive = true;
+                                readFullPage();
+                            }
+                            body.classList.toggle('screen-reader-active');
+                            updateActiveState();
+                            return;
+                        }
+
+                        // ÖZEL İŞLEV: SEÇİLİ ALAN OKUYUCU (Seçili Metni Okuma)
+                        if (text === 'Seçili Alan Okuyucu') {
+
+                            body.classList.toggle(className);
+
+                            if (isSelectionReaderActive) {
+                                isSelectionReaderActive = false;
+                                document.removeEventListener('mouseup', readSelectedTextAfterSelection);
+                                document.removeEventListener('keyup', readSelectedTextAfterSelection);
+                                if (isSpeaking) synth.cancel();
+                                isSpeaking = false;
+                            } else {
+                                isSelectionReaderActive = true;
+                                // Olay dinleyicileri eklendiğinde, menü dışına tıklama kuralı engellenecek (Yukarıdaki click dinleyicisini kontrol edin)
+                                document.addEventListener('mouseup', readSelectedTextAfterSelection);
+                                document.addEventListener('keyup', readSelectedTextAfterSelection);
+                            }
+                            updateActiveState();
+                            return;
+                        }
+
+
+                        // Diğer özelliklerin toggle mantığı
+                        targetElement.classList.toggle(className);
+                        var isActive = targetElement.classList.contains(className);
+
+                        // Birbirini Dışlayan Özellikler (Kontrast/Doygunluk Yönetimi)
+                        if (isActive && colorClasses.includes(className)) {
+                            colorClasses.forEach(function (cls) {
+                                if (cls !== className) {
+                                    contentWrapper.classList.remove(cls);
+                                }
+                            });
+                        }
+
+                        // Özel Durum Yönetimi (Mouse Dinleyicileri - Okuma Kılavuzu/Maskesi)
+                        if (className === 'reading-guide-active') {
+                            if (isActive) { document.addEventListener('mousemove', moveGuide); }
+                            else { document.removeEventListener('mousemove', moveGuide); }
+                        }
+                        if (className === 'reading-mask-active') {
+                            if (isActive) { document.addEventListener('mousemove', moveMask); }
+                            else {
+                                document.removeEventListener('mousemove', moveMask);
+                                if (maskTop && maskBottom) {
+                                    maskTop.style.height = '0';
+                                    maskBottom.style.height = '0';
+                                }
+                            }
+                        }
+
+                        updateActiveState();
+                    });
+                });
+            }
+
+            // --- Temizle Butonuna Tıklama Olayı ---
+            if (resetButton) resetButton.addEventListener('click', function () {
+
+                colorClasses.forEach(function (cls) {
+                    contentWrapper.classList.remove(cls);
+                });
+
+                for (var key in features) {
+                    var cls = features[key];
+                    if (!colorClasses.includes(cls)) {
+                        body.classList.remove(cls);
+                    }
+                }
+
+                if (isSpeaking) synth.cancel();
+                isSpeaking = false;
+
+                isScreenReaderActive = false;
+                isSelectionReaderActive = false;
+
+                document.removeEventListener('mouseup', readSelectedTextAfterSelection);
+                document.removeEventListener('keyup', readSelectedTextAfterSelection);
+
+                document.removeEventListener('mousemove', moveGuide);
+                document.removeEventListener('mousemove', moveMask);
+                if (maskTop && maskBottom) {
+                    maskTop.style.height = '0';
+                    maskBottom.style.height = '0';
+                }
+
+                updateActiveState();
+            });
+
+            // Sayfa yüklendiğinde mevcut aktif ayarları işaretle
+            updateActiveState();
+        });
+    </script>
+
+<body class="home">
+
+    <div id="reading-guide"></div>
+    <div id="reading-mask-top"></div>
+    <div id="reading-mask-bottom"></div>
+
+    <div id="accessibility-button">
+        <img src="/Web/Content/accessability.png" alt="Erişilebilirlik Menüsü" />
+    </div>
+
+    <div id="accessibility-menu" class="hidden">
+        <div class="menu-header">
+            <span><strong>Erişilebilirlik Menüsü</strong></span>
+            <button id="close-menu" aria-label="Kapat">×</button>
+        </div>
+
+        <button class="menu-item">Ekran Okuyucu</button>
+        <button class="menu-item">Seçili Alan Okuyucu</button>
+        <button class="menu-item">Bağlantı Vurgula</button>
+        <button class="menu-item">Büyük Metin</button>
+        <button class="menu-item">Metni Sola Hizala</button>
+        <button class="menu-item">İmleç</button>
+        <button class="menu-item">Okuma Kılavuzu</button>
+        <button class="menu-item">Okuma Maskesi</button>
+        <button class="menu-item">Disleksi Dostu</button>
+        <button class="menu-item">Kontrast</button>
+        <button class="menu-item">Solgunlaştırma</button>
+        <button class="menu-item">Düşük Doygunluk</button>
+        <button class="menu-item">Yüksek Doygunluk</button>
+
+        <div class="menu-footer">
+            <button id="reset-accessibility">Erişilebilirlik Ayarlarını Temizle</button>
+        </div>
+    </div>
+    <div id="main-content-wrapper">
+        <div class="page-wrapper">
+
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-6" tabindex="0">
+                            <!-- header-top-first start -->
+                            <!-- ================ -->
+                            <div class="header-top-first clearfix">
+                                <ul class="social-links clearfix hidden-xs">
+                                    <li class="twitter"><a target="_blank" href="https://twitter.com/kosgeb                                " alt="kosgeb">
+                                        <img class="twitter-logo" src="/Web/Content/assets/img/x-twitter.svg" /></a></li>
+                                    <li class="linkedin"><a target="_blank" href="https://tr.linkedin.com/company/kosgeb" alt=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="instagram"><a target="_blank" href="https://www.instagram.com/kosgeb         " alt="kosgeb"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="nsosyallogo"><a target="_blank" href="https://sosyal.teknofest.app/@kosgebkurumsal" alt="kosgeb">
+                                        <img class="nsosyallogo" src="/Web/Content/assets/img/NSOSYAL_LOGO.ico" /></a></li>
+                                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/kosgeb" alt="kosgeb"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="youtube"><a target="_blank" href="https://www.youtube.com/KOSGEB" alt=""><i class="fa fa-youtube-play"></i></a></li>
+                                    <li class="iletisim"><a target="_blank" href="/site/tr/genel/iletisim" alt=""><i class="fa fa-phone"></i></a></li>
+
+                                    
+
+                                    <a class="text-mavi" href="/site/tr/genel/liste/7/haftanin-kobi-girisimcisi">Tüm Liste</a>
+
+                                    
+                                    
+                                </ul>
+                                <div class="social-links hidden-lg hidden-md hidden-sm">
+                                    <div class="btn-group dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
+                                        <ul class="dropdown-menu dropdown-animation">
+                                            <li class="twitter"><a target="_blank" href="https://twitter.com/kosgeb                                " alt="kosgeb">
+                                                <img class="twitter-logo" src="/Web/Content/assets/img/x-twitter.svg" /></a></li>
+                                            <li class="linkedin"><a target="_blank" href="https://tr.linkedin.com/company/kosgeb" alt=""><i class="fa fa-linkedin"></i></a></li>
+                                            <li class="instagram"><a target="_blank" href="https://www.instagram.com/kosgeb         " alt="kosgeb"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="nsosyallogo"><a target="_blank" href="https://sosyal.teknofest.app/@kosgebkurumsal" alt="kosgeb">
+                                                <img class="nsosyallogo" src="/Web/Content/assets/img/NSOSYAL_LOGO.ico" /></a></li>
+                                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/kosgeb" alt="kosgeb"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="youtube"><a target="_blank" href="https://www.youtube.com/KOSGEB" alt=""><i class="fa fa-youtube-play"></i></a></li>
+                                            <li class="iletisim"><a target="_blank" href="/site/tr/genel/iletisim" alt=""><i class="fa fa-phone"></i></a></li>
+
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- header-top-first end -->
+                        </div>
+                        <div class="col-xs-10 col-sm-6">
+                            <!-- header-top-second start -->
+                            <!-- ================ -->
+                            <div id="header-top-second" class="clearfix">
+                                <!-- header top dropdowns start -->
+                                <!-- ================ -->
+                                <div class="header-top-dropdown">
+                                    <div class="btn-group dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i>Site içi arama</button>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
+                                            <li>
+                                                <form method="get" action="/site/tr/genel/arama" role="search" class="search-box">
+                                                    <div class="form-group has-feedback">
+                                                        
+                                                        <input type="text" id="input" name="ara" value="" class="search-input form-control" placeholder="Aranacak kelimeyi giriniz" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Aranacak kelimeyi giriniz'" />
+                                                        <i class="fa fa-search form-control-feedback"></i>
+                                                    </div>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="btn-group dropdown">
+                                        <a href="https://edevlet.kosgeb.gov.tr/" target="_blank">
+                                            <button type="button" formtarget="_blank" onclick="this.parentNode.click()" class="btn dropdown-toggle kobi-giris" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;e-hizmetler</button>
+                                        </a>
+                                        <br>
+                                    </div>
+
+                                </div>
+                                <!--  header top dropdowns end -->
+
+                            </div>
+                            <!-- header-top-second end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top end -->
+            <header class="header fixed clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12">
+                            <div class="UstMenuLogoMobil" style="display: flex; justify-content: flex-start;">
+                                <span><a href="/site">
+                                    <img id="logo" src="/Web/Content/assets/img/logo.png" alt="T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı" title="T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı"></a></span>
+
+                            </div>
+                            <!-- header-left start -->
+                            <!-- ================ -->
+                            <div class="header-left clearfix">
+
+                                <!-- logo -->
+                                <div class="Logo">
+                                    <a href="/site">
+                                        <img id="logo" src="/Web/Content/assets/img/logo.png" alt="T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı" title="T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı"></a>
+                                </div>
+                                <!-- name-and-slogan -->
+                                <div class="site-slogan"></div>
+                            </div>
+                            <!-- header-left end -->
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-3 col-xs-12">
+
+                            <!-- header-right start -->
+                            <!-- ================ -->
+                            <div class="header-right clearfix">
+
+                                <!-- main-navigation start -->
+                                <!-- ================ -->
+                                <div class="main-navigation animated">
+
+                                    <!-- navbar start -->
+                                    <!-- ================ -->
+                                    <nav class="navbar navbar-default" role="navigation">
+                                        <div class="container-fluid">
+
+                                            <!-- Toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"><span class="sr-only">MENU</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                            </div>
+
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                                
+
+<ul class="nav navbar-nav navbar-center">
+    
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Kurumsal </a>
+        <ul class="dropdown-menu menu">
+
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6164/baskan"><i class="fa fa-angle-right"></i>Başkan</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6561/baskan-yardimcilari"><i class="fa fa-angle-right"></i>Başkan Yardımcıları</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6165/mevzuat"><i class="fa fa-angle-right"></i>Mevzuat</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6452/tarihce"><i class="fa fa-angle-right"></i>Tarihçe</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/31/genel-kurul-ve-icra-komitesi"><i class="fa fa-angle-right"></i>Genel Kurul ve İcra Komitesi</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/39/istirakler"><i class="fa fa-angle-right"></i>İştirakler</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/35/vizyon-misyon-ve-temel-degerler"><i class="fa fa-angle-right"></i>Vizyon, Misyon ve Temel Değerler</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/38/rapor-ve-istatistikler"><i class="fa fa-angle-right"></i>Rapor ve İstatistikler</a>
+            </li>
+            
+
+            
+
+            <li><a href="https://envanter.kaysis.gov.tr/?Kurum=80228899"><i class="fa fa-angle-right"></i>Hizmet Envanteri ve Hizmet Standartları Tablosu</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6340/kvkk-aydinlatma-metni"><i class="fa fa-angle-right"></i>KVKK Aydınlatma Metni</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6451/kurumsal-kimlik"><i class="fa fa-angle-right"></i>Kurumsal Kimlik</a>
+            </li>
+            
+
+            
+
+            <li><a href="/site/tr/genel/liste/6453/bilgi-guvenligi-politikasi"><i class="fa fa-angle-right"></i>Bilgi Güvenliği Politikası</a>
+            </li>
+            
+        </ul>
+    </li>
+
+    
+    <li class="dropdown"><a href="/site/tr/genel/destekler/3/destekler" class="dropdown-toggle" data-toggle="dropdown">Destekler </a>
+        <ul class="dropdown-menu">
+
+            <!--Üst menüsü aktif türlere bağlı olan içerikler listeleniyor. -->
+            
+
+            <li><a href="/site/tr/genel/destekdetay/1231/girisimci-destek-programi"><i class="fa fa-angle-right"></i>Girişimci Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi"><i class="fa fa-angle-right"></i>Kapasite Geliştirme Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9206/kuresel-rekabetcilik-destek-programi"><i class="fa fa-angle-right"></i>Küresel Rekabetçilik Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi"><i class="fa fa-angle-right"></i>KOBİ Dijital Dönüşüm Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi"><i class="fa fa-angle-right"></i>YÖNDE - Yönderlik ve Değerlendirme Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi"><i class="fa fa-angle-right"></i>İstihdamı Koruma Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi"><i class="fa fa-angle-right"></i>Teknoloji Merkezi Destek Programı</a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9327/sektorel-gelisim-merkezi-segem-destek-programi"><i class="fa fa-angle-right"></i>Sektörel Gelişim Merkezi (SEGEM) Destek Programı </a>
+            </li>
+            
+
+            <li><a href="/site/tr/genel/destekdetay/9414/yapay-zek-kredisi"><i class="fa fa-angle-right"></i>Yapay Zekâ Kredisi</a>
+            </li>
+            
+
+
+            <!--Üst menüsü ve menü statüsü aktif türler listeleniyor. -->
+            
+
+            <li><a href="/site/tr/genel/destekler/3/destekler"><i class="fa fa-angle-right"></i>
+                Diğer Destekler  </a>
+            </li>
+        </ul>
+    </li>
+
+
+    <li class="dropdown"><a href="https://edevlet.kosgeb.gov.tr/EHizmetler.aspx" target="_blank" class="dropdown-toggle" data-toggle="dropdown">KOBİ</a>
+        <ul class="dropdown-menu">
+
+            <li class="sf-with-ul"><a href="/site/tr/genel/detay/180/nereden-baslamaliyim" alt="Nereden Başlamalıyım?"><i class="fa fa-angle-right"></i>Nereden Başlamalıyım?</a></li>
+            <li class="sf-with-ul"><a href="https://edevlet.kosgeb.gov.tr/OAuth?h=D9E66E8A-A6E1-4E2F-941B-69EC050C849F" target="_blank" alt="İşletme Beyanı İşlemleri"><i class="fa fa-angle-right"></i>İşletme Beyanı İşlemleri</a></li>
+            <li class="sf-with-ul"><a href="/site/tr/baglanti/DesteklenenSektor" alt="Desteklenen Sektörler"><i class="fa fa-angle-right"></i>Desteklenen Sektörler</a></li>
+            <li class="sf-with-ul"><a href="https://edevlet.kosgeb.gov.tr/EHizmetler.aspx" alt="e-Hizmetlerimiz"><i class="fa fa-angle-right"></i>e-Hizmetlerimiz</a></li>
+
+        </ul>
+    </li>
+
+    
+    <li class="dropdown"><a href="/site/tr/genel/liste/2/duyurular" class="dropdown-toggle" data-toggle="dropdown">Duyurular</a>
+        <ul class="dropdown-menu">
+            
+        </ul>
+    </li>
+
+    <li class="dropdown"><a href="/site/tr/genel/iletisim" class="dropdown-toggle" data-toggle="dropdown">İletişim </a>
+        <ul class="dropdown-menu">
+            <li class="sf-with-ul"><a href="/site/tr/genel/iletisim"><i class="fa fa-angle-right"></i>İLETİŞİM</a></li>
+            <li class="sf-with-ul"><a href="/site/tr/genel/mudurlukler"><i class="fa fa-angle-right"></i>MÜDÜRLÜKLER</a></li>
+            <li class="sf-with-ul"><a href="/site/tr/genel/tekmerlerimiz"><i class="fa fa-angle-right"></i>TEKMERLER</a></li>
+            <li class="sf-with-ul"><a href="/site/tr/genel/segemler"><i class="fa fa-angle-right"></i>SEGEMLER</a></li>
+            <li class="sf-with-ul"><a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/8535/kosgeb-temsilcilik-ofisi-bilgileri"><i class="fa fa-angle-right"></i>TEMSİLCİLİKLER</a></li>
+
+            <li class="sf-with-ul"><a href="/site/tr/genel/iletisimmerkezi"><i class="fa fa-angle-right"></i>BİLGİ EDİNME</a></li>
+
+            
+
+
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+                                            </div>
+                                        </div>
+                                    </nav>
+                                    <!-- navbar end -->
+
+                                </div>
+                                <!-- main-navigation end -->
+
+                            </div>
+                            <!-- header-right end -->
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 header-logo DigerLogo">
+                            <span>
+                                <img src="/Web/Content/assets/img/CagriMerkezi.png" alt="" /></span>
+                            <span><a href="https://www.sanayi.gov.tr/" target="_blank">
+                                <img src="/Web/Content/assets/img/bsblogo.jpg" alt="" width="250" /></a></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header end -->
+        </div>
+
+        <div class="wrap">
+
+            
+    <!-- Content Start -->
+    <div id="main">
+        <!-- Slider Start-->
+        
+<script src="https://www.kosgeb.gov.tr/Web/Content/assets/js/jssor.slider-27.5.0.min.js"></script>
+<script type="text/javascript">
+    jssor_1_slider_init = function () {
+
+        var jssor_1_options = {
+            $AutoPlay: 1,
+            $SlideDuration: 800,
+            $LazyLoading: 1,
+            $SlideEasing: $Jease$.$Late,
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+            }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 3000;
+
+        function ScaleSlider() {
+            var containerElement = jssor_1_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                jssor_1_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+
+        ScaleSlider();
+
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+    };
+</script>
+
+<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1920px; height: 380px; overflow: hidden; visibility: hidden;">
+    <!-- Loading Screen -->
+    
+                <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1920px; height: 380px; overflow: hidden;"> 
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639243740627984971.jpg" alt="Kür"></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639240508381828650.jpg" alt="İstihdamı Koruma 2026 -2"></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639241440162441500.jpg" alt="İDR"></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639186337993743024.jpg" alt="Yapay Zekâ Kredi Programı"></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9389/savunma-uzay-ve-havacilik-sanayii-kobilerine-kosgebden-30-milyon-liralik-destek">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639139324102564492.jpg" alt="Savunma, Uzay ve Havacılık Sanayii KOBİ’lerine KOSGEB’den 30 Milyon Liralık Destek"></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9385/kosgeb-girisim-sermayesi-yatirim-fonlarina-katiliyor">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639215436455072782.jpg" alt="Girişim Sermayesi Yatırım Fonları Yatırımları "></a>
+
+              
+        
+
+            <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9340/refinansman-kefalet-programi-hayata-gecirildi">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb639215381837921785.jpg" alt="Refinansman Kefalet Programı Hayata Geçirildi"></a>
+
+              
+        
+
+            <a href="https://kosgeb.gov.tr/site/tr/genel/detay/9256/kobiler-icin-destek-ve-donusum-programlari-devam-ediyor">
+                <img data-u="image" data-src="https://webdosya.kosgeb.gov.tr/Content/upload/image/kosgeb638836057244733077.jpg" alt="KOBİ'ler İçin Destek ve Dönüşüm Programları Devam Ediyor"></a>
+
+              
+        
+             </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb032" style="position: absolute; bottom: 12px; right: 12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width: 16px; height: 16px;">
+            <svg viewbox="0 0 16000 16000" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg>
+        </div>
+    </div>
+    <!-- Arrow Navigator -->
+    <div data-u="arrowleft" class="jssora051" style="width: 65px; height: 65px; top: 0px; left: 25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+        <svg viewbox="0 0 16000 16000" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+        </svg>
+    </div>
+    <div data-u="arrowright" class="jssora051" style="width: 65px; height: 65px; top: 0px; right: 25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+        <svg viewbox="0 0 16000 16000" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+        </svg>
+    </div>
+</div>
+<script type="text/javascript">jssor_1_slider_init();</script>
+<br />
+<br />
+<br />
+
+
+
+
+        <!-- Slider End-->
+        <div class="container">
+            <div class="row d1">
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/girisimci.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/girisimci.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            
+                            <a href="/site/tr/genel/destekdetay/1231/girisimci-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Girişimci &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Destek Programı </h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/kapasite_gelistirme.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/kapasite_gelistirme.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Kapasite Geliştirme &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Destek Programı</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/kuresel_rekabetcilik.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/kuresel_rekabetcilik.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/destekdetay/9206/kuresel-rekabetcilik-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Küresel Rekabetçilik &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Destek Programı</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+            <div class="row d1">
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/KOBI_digital_donusum.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/KOBI_digital_donusum.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp KOBİ Dijital Dönüşüm &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  Destek Programı</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big margin-top25">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/GO_Dijital.png" style="max-width: 80%; height: auto; display: block;" alt="GO Dijital" />
+                                </div>
+                                <div class="ch-info-back" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/GO_Dijital.png" style="max-width: 80%; height: auto; display: block;" alt="GO Dijital" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            <a href="https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi" target="_blank">
+                                <h3>  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp Yapay Zekâ  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp   Kredi Programı  </h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                                
+                            </a>
+
+                            
+                            
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/teknoloji_merkezi.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/teknoloji_merkezi.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp Teknoloji Merkezi &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Destek Programı</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/SEGEM.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/SEGEM.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/destekdetay/9327/sektorel-gelisim-merkezi-segem-destek-programi" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  SEGEM &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp Destek Programı &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big girisimcidestek" id="blinking-border">
+                                <div class="ch-info-front ch-img-1" style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="/Web/Content/assets/images/destekler/TEKMER.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                                <div class="ch-info-back">
+                                    <img src="/Web/Content/assets/images/destekler/TEKMER.png" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            
+                            <a href="/site/tr/genel/tekmerlerimiz" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp TEKMER'ler &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</h3>
+                                <p>Detaylı bilgi için tıklayınız.</p>
+                                <p></p>
+                            </a>
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="content-box big ch-item bottom-pad-small">
+                        <div class="ch-info-wrap ch-info-wrap-big">
+                            <div class="ch-info ch-info-big">
+                                <div class="ch-info-front ch-img-1"><i class="fa fa-graduation-cap"></i></div>
+                                <div class="ch-info-back"><i class="fa fa-graduation-cap"></i></div>
+                            </div>
+                        </div>
+                        <div class="content-box-info">
+                            <a href="https://lms.kosgeb.gov.tr/" target="_blank">
+                                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Çevrimiçi Eğitimler &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</h3>
+                                <p>Giriş için tıklayınız.</p>
+                                <p></p>
+                                
+                            </a>
+
+                            
+                            
+                        </div>
+                        <div class="border-bottom margin-top30"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                
+                            </a>
+            </div>
+            <div class="border-bottom margin-top30"></div>
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+
+
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+            </div>
+        </div>
+
+
+        <div class="our-clients">
+            <div class="container">
+                <div class="row">
+                    <!-- Haberler Start-->
+                    
+<div class="col-lg-6 col-md-6 com-sm-12 col-xs-12">
+    <div class="heading">
+        <h3><a class="haber-slider-baslik" href="/site/tr/genel/liste/4/tum-haberler"><i class="fa fa-calendar-o"></i>Haberler</a></h3>
+    </div>
+    <div class="carousel-controls pull-right">
+        <a class="prev" href="#client-carousel-news" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="next" href="#client-carousel-news" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div id="client-carousel-news" class="client-carousel-news carousel slide">
+            <div class="carousel-inner">
+                
+                
+
+                <div class="item active">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639243737337851329.jpg" alt="KOBİ'lerin Küresel Rekabet Gücünü Artıracak Destek Programına Başvurular Başladı!" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi">KOBİ'lerin Küresel Rekabet Gücünü Artıracak Destek Programına Başvurular Başladı!</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi">
+                                    KOBİ'lerin küresel pazarlarda daha güçlü bir konuma ulaşmaları, uluslararası rekabet güçlerini artırmaları ve sürdürüleb...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;07 Eylül 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9476/kobilerin-kuresel-rekabet-gucunu-artiracak-destek-programina-basvurular-basladi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639241438089324554.jpg" alt="KOSGEB İşletme Değerlendirme Raporu ile İşletmenizin Geleceğini Planlayın" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin">KOSGEB İşletme Değerlendirme Raporu ile İşletmenizin Geleceğini Planlayın</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin">
+                                    İşletme Değerlendirme Raporu (İDR), işletmelerin ticari ilişkilerinden finansmana erişim süreçlerine kadar birçok alanda...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;04 Eylül 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9474/kosgeb-isletme-degerlendirme-raporu-ile-isletmenizin-gelecegini-planlayin">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639235208807793795.jpg" alt="İstihdamı Koruma Destek Programının Kapsamı Genişletildi" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi">İstihdamı Koruma Destek Programının Kapsamı Genişletildi</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi">
+                                    İmalat sanayinde üretim ve istihdamın sürekliliğini desteklemek, işletmelerin finansmana erişimini kolaylaştırmak ve sek...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;28 Ağustos 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639230031601335072.jpg" alt="KOBİ’lerin Büyümesine Güçlü Destek, Yeni Başvuru Dönemi Başladı!" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi">KOBİ’lerin Büyümesine Güçlü Destek, Yeni Başvuru Dönemi Başladı!</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi">
+                                    KOBİ’lerin verimliliğini, dayanıklılığını, üretim kapasitesini, pazar büyüklüğünü ve kurumsal yapısını güçlendirmeye yön...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;22 Ağustos 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9467/kobilerin-buyumesine-guclu-destek-yeni-basvuru-donemi-basladi">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639217736431230843.jpg" alt="KOSGEB’den COP31 Odaklı Hızlandırma Desteği Çağrısı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi">KOSGEB’den COP31 Odaklı Hızlandırma Desteği Çağrısı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi">
+                                    Çağrı ile temiz enerji dönüşümü, döngüsel ekonomi, sürdürülebilir tarım ve iklim teknolojileri gibi alanlarda faaliyet g...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;08 Ağustos 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9453/kosgebden-cop31-odakli-hizlandirma-destegi-cagrisi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639191866913766142.jpg" alt="KOSGEB'DEN TEKNOLOJİ GİRİŞİMLERİNE YAPAY ZEKÂ KREDİ PROGRAMI" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi">KOSGEB'DEN TEKNOLOJİ GİRİŞİMLERİNE YAPAY ZEKÂ KREDİ PROGRAMI</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi">
+                                    Teknoloji ve yenilik odaklı girişimlerin yapay zekâ alanındaki gelişimini hızlandırmak amacıyla, teknoloji girişimcileri...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;09 Temmuz 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9427/kosgebden-teknoloji-girisimlerine-yapay-zek-kredi-programi">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9391/ureten-kobilere-guclu-destek-yeni-basvuru-donemi-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639148926322161070.jpg" alt="Üreten KOBİ’lere Güçlü Destek, Yeni Başvuru Dönemi Başladı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9391/ureten-kobilere-guclu-destek-yeni-basvuru-donemi-basladi">Üreten KOBİ’lere Güçlü Destek, Yeni Başvuru Dönemi Başladı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9391/ureten-kobilere-guclu-destek-yeni-basvuru-donemi-basladi">
+                                    Kapasite Geliştirme Destek Programı’nın 2026 Yılı 2. Başvuru Dönemi Başladı...
+                                   
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;06 Haziran 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9391/ureten-kobilere-guclu-destek-yeni-basvuru-donemi-basladi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9389/savunma-uzay-ve-havacilik-sanayii-kobilerine-kosgebden-30-milyon-liralik-destek">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639139322199040809.jpg" alt="Savunma, Uzay ve Havacılık Sanayii KOBİ’lerine KOSGEB’den 30 Milyon Liralık Destek" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9389/savunma-uzay-ve-havacilik-sanayii-kobilerine-kosgebden-30-milyon-liralik-destek">Savunma, Uzay ve Havacılık Sanayii KOBİ’lerine KOSGEB’den 30 Milyon Liralık Destek</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9389/savunma-uzay-ve-havacilik-sanayii-kobilerine-kosgebden-30-milyon-liralik-destek">
+                                    Kapasite Geliştirme Destek Programı kapsamında savunma, uzay ve havacılık sektörlerinde faaliyet gösteren KOBİ’lere yöne...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;09 Mayıs 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9389/savunma-uzay-ve-havacilik-sanayii-kobilerine-kosgebden-30-milyon-liralik-destek">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9388/teknoloji-gelistirme-ekosistem-bulusmasi-gerceklestirildi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639138452285058334.jpg" alt="Teknoloji Geliştirme Ekosistem Buluşması Gerçekleştirildi" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9388/teknoloji-gelistirme-ekosistem-bulusmasi-gerceklestirildi">Teknoloji Geliştirme Ekosistem Buluşması Gerçekleştirildi</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9388/teknoloji-gelistirme-ekosistem-bulusmasi-gerceklestirildi">
+                                    KOSGEB tarafından, girişimcilik ve inovasyon ekosisteminin güçlendirilmesi amacıyla “Teknoloji Geliştirme Ekosistem Bulu...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;08 Mayıs 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9388/teknoloji-gelistirme-ekosistem-bulusmasi-gerceklestirildi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9385/kosgeb-girisim-sermayesi-yatirim-fonlarina-katiliyor">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639136713272741581.jpg" alt="KOSGEB, Girişim Sermayesi Yatırım Fonlarına Katılıyor " class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9385/kosgeb-girisim-sermayesi-yatirim-fonlarina-katiliyor">KOSGEB, Girişim Sermayesi Yatırım Fonlarına Katılıyor </a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9385/kosgeb-girisim-sermayesi-yatirim-fonlarina-katiliyor">
+                                    KOBİ’lerin finansmana erişimini kolaylaştırmak ve teknoloji tabanlı girişimciliği desteklemek için önemli adım ...
+                                   
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;06 Mayıs 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9385/kosgeb-girisim-sermayesi-yatirim-fonlarina-katiliyor">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639122774954203849.jpg" alt="Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 2. Dönem Başvuruları Başladı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi">Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 2. Dönem Başvuruları Başladı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi">
+                                    KOSGEB tarafından yürütülen Girişimci Destek Programı İş Geliştirme Çağrısı kapsamında 2026 yılı 2. dönem başvuruları, 2...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;20 Nisan 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9363/imalat-sanayine-100-milyar-tllik-kapsamli-finansman-programi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639074644512805933.jpg" alt="İmalat Sanayine 100 Milyar TL’lik Kapsamlı Finansman Programı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9363/imalat-sanayine-100-milyar-tllik-kapsamli-finansman-programi">İmalat Sanayine 100 Milyar TL’lik Kapsamlı Finansman Programı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9363/imalat-sanayine-100-milyar-tllik-kapsamli-finansman-programi">
+                                    İmalat Sanayi Finansmanı ve İstihdamı Koruma Programı Başladı...
+                                   
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;23 Şubat 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9363/imalat-sanayine-100-milyar-tllik-kapsamli-finansman-programi">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639057122243696918.jpg" alt="KOBİ’lerin Büyüme ve Gelişimine Güçlü Destek" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek">KOBİ’lerin Büyüme ve Gelişimine Güçlü Destek</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek">
+                                    Kapasite Geliştirme Destek Programı’nın 2026 Yılı 1. Başvuru Dönemi Başladı...
+                                   
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;03 Şubat 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9353/kobilerin-buyume-ve-gelisimine-guclu-destek">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9340/refinansman-kefalet-programi-hayata-gecirildi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639054846284884747.jpg" alt="Refinansman Kefalet Programı Hayata Geçirildi" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9340/refinansman-kefalet-programi-hayata-gecirildi">Refinansman Kefalet Programı Hayata Geçirildi</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9340/refinansman-kefalet-programi-hayata-gecirildi">
+                                    KOSGEB koordinasyonunda, Kredi Garanti Fonu (KGF) desteği ve bankalar iş birliğiyle hayata geçirilen Refinansman Kefalet...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;31 Ocak 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9340/refinansman-kefalet-programi-hayata-gecirildi">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="item ">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639030450400413086.jpg" alt="Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 1. Dönem Başvuruları Başladı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 1. Dönem Başvuruları Başladı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">
+                                    KOSGEB tarafından yürütülen Girişimci Destek Programı İş Geliştirme Çağrısı kapsamında 2026 yılı 1. dönem başvuruları, 3...
+                                    
+
+                                </a>
+                            </p>
+                            <div class="news-bottom">
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;01 Ocak 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">devamı <i class="fa fa-angle-right"></i></a></div></div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="container-news dropshadow">
+                            <div class="thumbnail">
+                                <a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">
+                                    <img src="https://webdosya.kosgeb.gov.tr/Content/upload/Image/thumb/260X195-kosgeb639030450400413086.jpg" alt="Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 1. Dönem Başvuruları Başladı" class="img-responsive"></a>
+                            </div>
+                            <h5 class="title"><a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">Girişimci Destek Programı İş Geliştirme Çağrısı 2026 Yılı 1. Dönem Başvuruları Başladı</a> </h5>
+
+                            <p>
+                                <a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">
+                                    KOSGEB tarafından yürütülen Girişimci Destek Programı İş Geliştirme Çağrısı kapsamında 2026 yılı 1. dönem başvuruları, 3...
+                                    
+
+                                </a>
+                            </p>
+                            <span class="news-date"><i class="fa fa-calendar"></i>&nbsp;01 Ocak 2026</span>
+                            <div class="link"><a href="/site/tr/genel/detay/9335/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-1-donem-basvurulari-basladi">devamı <i class="fa fa-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <!-- Haberler End-->
+
+                    <!-- Eğitim Duyuruları Start-->
+                    
+<div class="col-lg-6 col-md-6 com-sm-12 col-xs-12">
+    <div class="heading">
+        <h3><a href="/site/tr/genel/liste/2/duyurular"><i class="fa fa-bell-o"></i>Duyurular</a></h3>
+    </div>
+    <div class="pull-right Diger">
+         
+        <a href="/site/tr/genel/liste/2/duyurular">diğer duyurular</a>
+        <div class="clearfix"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 com-sm-12 col-xs-12">
+            <div class="duyuru dropshadow">
+
+               
+                
+                 
+                <div class="duyuru-item">
+                    <div class="col-lg-2 col-md-2 com-sm-3 tarih">24<div class="Ok"></div>
+                        <span>Eylül 2026</span></div>
+                    <div class="col-lg-10 col-md-10 com-sm-9 icerik">
+                        <p><h5 class="title"><a href="/site/tr/genel/detay/9491/tunus-10-uluslararasi-yedek-parca-ekipman-ve-endustriyel-hizmetler-fuari-sapri2026">Tunus 10. Uluslararası Yedek Parça, Ekipman ve Endüstriyel Hizmetler Fuarı (SAPRI2026) </a></h5></p> 
+                      <span class="news-date"> </span>
+                    </div>
+                    <div class="content-box"></div>
+                </div>
+               
+                <div class=" cizgi"></div>
+             
+                
+                <div class="duyuru-item">
+                    <div class="col-lg-2 col-md-2 com-sm-3 tarih">23<div class="Ok"></div>
+                        <span>Eylül 2026</span></div>
+                    <div class="col-lg-10 col-md-10 com-sm-9 icerik">
+                        <p><h5 class="title"><a href="/site/tr/genel/detay/9490/idari-hizmet-sozlesmeli-destek-elemani-alimi-sonuclari-hakkinda-duyuru">İdari Hizmet Sözleşmeli Destek Elemanı Alımı Sonuçları Hakkında Duyuru</a></h5></p> 
+                      <span class="news-date"> </span>
+                    </div>
+                    <div class="content-box"></div>
+                </div>
+               
+                <div class=" cizgi"></div>
+             
+                
+                <div class="duyuru-item">
+                    <div class="col-lg-2 col-md-2 com-sm-3 tarih">27<div class="Ok"></div>
+                        <span>Ağustos 2026</span></div>
+                    <div class="col-lg-10 col-md-10 com-sm-9 icerik">
+                        <p><h5 class="title"><a href="/site/tr/genel/detay/9469/turkchem-azerbaijan-2027-sergisi-duyurusu">"TURKCHEM AZERBAIJAN 2027 SERGİSİ" DUYURUSU</a></h5></p> 
+                      <span class="news-date"> </span>
+                    </div>
+                    <div class="content-box"></div>
+                </div>
+               
+                <div class=" cizgi"></div>
+             
+                
+                <div class="duyuru-item">
+                    <div class="col-lg-2 col-md-2 com-sm-3 tarih">18<div class="Ok"></div>
+                        <span>Ağustos 2026</span></div>
+                    <div class="col-lg-10 col-md-10 com-sm-9 icerik">
+                        <p><h5 class="title"><a href="/site/tr/genel/detay/9466/17-orta-dogu-uluslararasi-icat-fuari-iifme">"17. Orta Doğu Uluslararası İcat Fuarı" (IIFME) </a></h5></p> 
+                      <span class="news-date"> </span>
+                    </div>
+                    <div class="content-box"></div>
+                </div>
+               
+                <div class=" bitis"></div>
+             
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- Eğitim Duyuruları End-->
+
+</div>
+
+                </div>
+            </div>
+        </div>
+    <!-- Slogan Start-->
+
+    
+
+                     <div class="mobilevisible">
+<div class="product-lead">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="baskan-slogan">
+                    KOBİ'leri yenilikçi, rekabetçi, ikiz dönüşüm ve ihracat odaklı bir yapıya kavuşturarak sürdürülebilir bir ekonomik gelecek inşa ediyoruz.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     </div>
+
+
+    <!-- Slogan end-->
+    <!-- Video Haberler Start-->
+    
+    <!-- Video Haberler End -->
+    <br />
+    <br />
+    <!-- Köprüler start -->
+    <div class="latest-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 com-sm-12 col-xs-12">
+                    <div class="heading">
+                        <h3><i class="fa fa-link"></i>Bağlantılar</h3>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="main-content">
+                    <div class="container">
+                        <div class="row d2">
+
+                            <div class="col-lg-4 col-md-3 col-sm-6 d2">
+                                <div class="content-box big ch-item bottom-pad-small">
+                                    <div class="ch-info-wrap">
+                                        <div class="ch-info">
+                                            <div class="ch-info-front ch-img-1"><i class="fa fa-question-circle"></i></div>
+                                            <div class="ch-info-back"><i class="fa fa-question-circle"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-box-info">
+                                        <a target="_blank" href="/site/tr/genel/sss/0/sikca-sorulan-sorular">
+                                            <h4>Sıkça Sorulan </h4>
+                                            <p>Sorular </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="col-lg-4 col-md-3 col-sm-6 d7">
+                                <div class="content-box big ch-item bottom-pad-small">
+                                    <div class="ch-info-wrap">
+                                        <div class="ch-info">
+                                            <div class="ch-info-front ch-img-1"><i class="fa fa-clipboard"></i></div>
+                                            <div class="ch-info-back"><i class="fa fa-clipboard"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-box-info">
+                                        <a href="/site/tr/genel/detay/203/ekatalog-edergi">
+                                            <h4>e-Katalog</h4>
+                                            <p>e-Dergi </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-3 col-sm-6 d6">
+                                <div class="content-box big ch-item bottom-pad-small">
+                                    <div class="ch-info-wrap">
+                                        <div class="ch-info">
+                                            <div class="ch-info-front ch-img-1"><i class="fa fa-users"></i></div>
+                                            <div class="ch-info-back"><i class="fa fa-users"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="content-box-info">
+                                        <a href="/site/tr/genel/liste/43/cosme">
+                                            <h4>coSME</h4>
+                                            <p></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <!-- Köprüler End -->
+    </div>
+    <!-- Content End -->
+
+    
+
+    
+
+    <!-- HTML İçerik Popup -->
+    <div id="kosgeb_popup" style="display:none; cursor:pointer;">
+        <a href="https://www.kosgeb.gov.tr/site/tr/genel/detay/9471/istihdami-koruma-destek-programinin-kapsami-genisletildi" 
+           target="_blank" 
+           style="display:block; text-decoration:none;">
+            <p><img src="https://webdosya.kosgeb.gov.tr/Content/Upload/Resim/Popup/2026/I%CC%87stihdam%C4%B1-Koruma-POPUP-800X500.jpg" alt="" width="800" /></p>
+        </a>
+    </div>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery.fancybox({
+                href: '#kosgeb_popup',
+                autoScale: true,
+                autoDimensions: true,
+                titleShow: false,
+                maxWidth: '70%',
+                maxHeight: '70%',
+                type: 'inline',
+                scrolling: false,
+                showCloseButton: false,
+                padding: 0,
+                afterShow: function () {
+                    jQuery('.fancybox-inner').css('overflow', 'visible');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+            <!-- Footer Start -->
+
+            <footer id="footer">
+                <!-- Footer Top Start -->
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- İletişim Bilgileri -->
+                            
+                            <section class="col-lg-3 col-md-3 col-xs-12 col-sm-4 footer-one" tabindex="0">
+                                <ul class="contact-us">
+                                    <li><i class="fa fa-home"></i>
+                                        <p>
+                                            <strong>
+                                                T.C. Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı
+                                            </strong>
+                                        </p>
+                                    </li>
+                                    <li><i class="fa fa-map-marker"></i>
+                                        <p>
+                                            Hacı Bayram Mah. İstanbul Cad. No: 32<br />
+                                            06050 Ulus / Altındağ / ANKARA 
+                                        </p>
+                                    </li>
+                                    <li><i class="fa fa-phone"></i>
+                                        <p>0 312 595 28 00 (pbx)</p>
+                                    </li>
+                                    <li><i class="fa fa-fax"></i>
+                                        <p>0 312 368 07 15</p>
+                                    </li>
+                                    <li><i class="fa fa-headphones"></i>
+                                        <p>444 1 567</p>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <!-- Kayıt İşlemleri -->
+                            <section class="col-lg-3 col-md-4 col-xs-12 col-sm-4 footer-three">
+                                <div class="heading">
+                                    <h4>Kayıt İşlemleri</h4>
+                                </div>
+                                <ul>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="/site/tr/genel/detay/180/nereden-baslamaliyim" alt="">Nereden Başlamalıyım?</a></li>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="/site/tr/baglanti/DesteklenenSektor" alt="">Desteklenen Sektörler Nelerdir? (NACE)</a></li>
+                                    
+                                </ul>
+                            </section>
+
+                            <!-- KOSGEB -->
+                            <section class="col-lg-3 col-md-4 col-xs-12 col-sm-4 footer-four">
+                                <div class="heading">
+                                    <h4>KOSGEB</h4>
+                                </div>
+                                <ul>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="https://edevlet.kosgeb.gov.tr/" alt="">e-Hizmetler</a></li>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="http://kds.kosgeb.gov.tr/UI/UILogin.aspx" alt="">e-Personel</a></li>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="https://www.kosgeb.gov.tr/site/tr/genel/IletisimMerkezi" alt="">Bilgi Edinme</a></li>
+                                    
+                                    <li><i class="fa fa-angle-right"></i>&nbsp;<a href="https://www.kosgeb.gov.tr/site/tr/genel/siteharitasi" alt="">Site Haritası</a></li>
+                                    
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Top End -->
+                <!-- Footer Bottom Start -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12">
+                             
+                                   <img src="/Web/Content/assets/img/KOSGEBLogo.png" alt="" />
+                            </div>
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                <a href="https://www.cimer.gov.tr/" target="_blank">
+                                    <img src="/Web/Content/assets/img/cimer.png" /></a>
+
+                                <a href="https://www.turkiye.gov.tr/" target="_blank">
+                                    <img src="/Web/Content/assets/img/edevletkapisi.png" /></a>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                 <a href="https://www.sanayi.gov.tr/" target="_blank">
+                                    <img src="/Web/Content/assets/img/SanayiBakanlikLogo.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom End -->
+            </footer>
+            <!-- Scroll To Top -->
+            <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+
+
+        </div>
+
+    </div>
+    <!-- Wrap End -->
+
+    <!-- The Scripts -->
+    <script src="/Web/Content/assets/js/jquery.min.js"></script>
+    <script src="/Web/Content/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/Web/Content/assets/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="/Web/Content/assets/js/jquery.sumoselect.js"></script>
+    <script src="/Web/Content/assets/js/jquery.parallax.js"></script>
+    <script src="/Web/Content/assets/js/jquery.wait.js"></script>
+    <script src="/Web/Content/assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="/Web/Content/assets/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/Web/Content/assets/js/jquery.nivo.slider.pack.js"></script>
+    <script src="/Web/Content/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="/Web/Content/assets/js/superfish.js"></script>
+
+    <script src="/Web/Content/assets/plugins/FuncyBox/jquery.fancybox.js?v=1.05"></script>
+
+    <script src="/Web/Content/assets/js/tytabs.js"></script>
+    <script src="/Web/Content/assets/js/jquery.gmap.min.js"></script>
+    <script src="/Web/Content/assets/js/circularnav.js"></script>
+    <script src="/Web/Content/assets/js/jquery.sticky.js"></script>
+    <script src="/Web/Content/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/Web/Content/assets/js/waypoints.min.js"></script>
+    <script src="/Web/Content/assets/js/custom.js"></script>
+
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="/Web/Content/assets/js/menu/modernizr.js"></script>
+
+    <!-- SmoothScroll javascript -->
+    <script type="text/javascript" src="/Web/Content/assets/js/menu/jquery.browser.js"></script>
+    <script type="text/javascript" src="/Web/Content/assets/js/menu/SmoothScroll.js"></script>
+
+    <!-- Initialization of Plugins -->
+    <script type="text/javascript" src="/Web/Content/assets/js/menu/template.js"></script>
+
+    <script>
+
+        jQuery('.haber-ozet ul li.gecerlitur').parents('li').addClass('activeMenuli');
+
+        jQuery('.haber-ozet ul li.gecerlitur').addClass('active');
+        a = jQuery('.haber-ozet ul li.activeMenuli ul').html();
+        jQuery('.haber-ozet ul li.activeMenuli ul').html('<div style="padding-left:15px">' + a + '</div>');
+
+        jQuery('.haber-ozet li').each(function () {
+            if (!jQuery(this).find('ul')[0]) {
+
+                jQuery(this).find('i').addClass('fa-angle-right').removeClass('fa-chevron-right');
+
+            }
+        });
+        jQuery('.haber-ozet ul li icon').click(function () {
+
+            if (jQuery(this).parent('li.activeMenuli')[0]) {
+                jQuery('.haber-ozet li').removeClass('activeMenuli');
+            }
+            else if (jQuery(this).parent('li').find('ul')[0]) {
+
+                if (!jQuery(this).parents('li.activeMenuli')[0])
+                    jQuery('.haber-ozet li').removeClass('activeMenuli');
+
+                jQuery(this).parent('li').addClass('activeMenuli');
+            }
+
+            return false;
+        });
+
+        //jQuery("input").on("keyup", function (e) {
+
+        //    //$(this).val(encodeURIComponent($(this).val));
+
+        //    var value = $(this).val() || "";
+        //    var regex = /<(\/?\w+[^\n>]*\/?)>/ig;
+        //    if (regex.test(value)) {
+
+        //        $(this).val("");
+        //        e.preventDefault();
+        //        return false;
+        //    }
+        //});
+    </script>
+    <style>
+        /* Footer genel container */
+        .footer-top .container {
+            max-width: 1200px; /* İstediğiniz maksimum genişlik */
+            width: 100%;
+            margin: 0 auto; /* Yatayda ortalama */
+            padding: 0 15px; /* Kenarlardan boşluk */
+        }
+
+        /* Row'un içindeki section'ların düzeni için */
+        .footer-top .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Yatayda ortalama */
+            margin: 0 -15px; /* Grid boşlukları için negatif margin */
+        }
+
+        /* Column'lar için */
+        .footer-top [class*="col-"] {
+            padding: 0 15px; /* Grid boşlukları */
+            box-sizing: border-box;
+        }
+
+        /* Responsive düzenlemeler */
+        @media (min-width: 992px) {
+            .footer-top .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .footer-top .col-md-4 {
+                flex: 0 0 33.333%;
+                max-width: 33.333%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-top .col-sm-4 {
+                flex: 0 0 33.333%;
+                max-width: 33.333%;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .footer-top .col-xs-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+</body>
+</html>

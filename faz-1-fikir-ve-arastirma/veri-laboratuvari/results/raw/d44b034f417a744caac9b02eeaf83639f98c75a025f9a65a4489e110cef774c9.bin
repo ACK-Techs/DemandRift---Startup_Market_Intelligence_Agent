@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="tr" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"/><script type="7eccba2b1a8bd9bc61adacd4-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="7eccba2b1a8bd9bc61adacd4-text/javascript">class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+	
+		
+		<link rel="profile" href="https://gmpg.org/xfn/11" />
+		
+				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+		<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Röportaj - Galata Business Angels</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Muli%3A300%2C400%2C400i%2C700%2C700i%7CPlayfair%20Display%3A300%2C400%2C400i%2C700%2C700i%7CRaleway%3A300%2C400%2C400i%2C700%2C700i&#038;subset=latin-ext&#038;display=swap" /><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7eccba2b1a8bd9bc61adacd4-|49"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%3A300%2C400%2C400i%2C700%2C700i%7CPlayfair%20Display%3A300%2C400%2C400i%2C700%2C700i%7CRaleway%3A300%2C400%2C400i%2C700%2C700i&#038;subset=latin-ext&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli%3A300%2C400%2C400i%2C700%2C700i%7CPlayfair%20Display%3A300%2C400%2C400i%2C700%2C700i%7CRaleway%3A300%2C400%2C400i%2C700%2C700i&#038;subset=latin-ext&#038;display=swap" /></noscript><link rel="stylesheet" href="https://galatabusinessangels.com/wp-content/cache/min/1/32d19554e65adda29028e515fc3a45fd.css" media="all" data-minify="1" />
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://galatabusinessangels.com/tr/kategori/roportaj/" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Röportaj - Galata Business Angels" />
+<meta property="og:url" content="https://galatabusinessangels.com/tr/kategori/roportaj/" />
+<meta property="og:site_name" content="Galata Business Angels" />
+<meta property="article:publisher" content="https://www.facebook.com/galatabusinessangels/" />
+<meta property="og:image" content="https://galatabusinessangels.com/wp-content/uploads/2020/11/gba-icon@2x.png" />
+<meta property="og:image:secure_url" content="https://galatabusinessangels.com/wp-content/uploads/2020/11/gba-icon@2x.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="1024" />
+<meta property="og:image:type" content="image/png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Röportaj - Galata Business Angels" />
+<meta name="twitter:site" content="@GalataBA" />
+<meta name="twitter:image" content="https://galatabusinessangels.com/wp-content/uploads/2020/11/gba-icon@2x.png" />
+<meta name="twitter:label1" content="Yazılar" />
+<meta name="twitter:data1" content="9" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://galatabusinessangels.com/tr/#organization","name":"Galata Business Angels","sameAs":["https://www.facebook.com/galatabusinessangels/","https://twitter.com/GalataBA"]},{"@type":"WebSite","@id":"https://galatabusinessangels.com/tr/#website","url":"https://galatabusinessangels.com/tr","name":"Galata Business Angels","publisher":{"@id":"https://galatabusinessangels.com/tr/#organization"},"inLanguage":"tr"},{"@type":"CollectionPage","@id":"https://galatabusinessangels.com/tr/kategori/roportaj/#webpage","url":"https://galatabusinessangels.com/tr/kategori/roportaj/","name":"R\u00f6portaj - Galata Business Angels","isPartOf":{"@id":"https://galatabusinessangels.com/tr/#website"},"inLanguage":"tr"}]}</script>
+<!-- /Rank Math WordPress SEO eklentisi -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Galata Business Angels &raquo; beslemesi" href="https://galatabusinessangels.com/tr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Galata Business Angels &raquo; yorum beslemesi" href="https://galatabusinessangels.com/tr/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Galata Business Angels &raquo; Röportaj kategori beslemesi" href="https://galatabusinessangels.com/tr/kategori/roportaj/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+<style id='rank-math-toc-block-style-inline-css' type='text/css'>
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+
+</style>
+
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://galatabusinessangels.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery/jquery-1.12.4-wp.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-migrate/jquery-migrate-1.4.1-wp.js?ver=1750925142' id='jquery-migrate-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js?ver=6.0' id='tp-tools-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.0.8' id='revmin-js'></script>
+
+<!-- Site Kit tarafından eklenen Google etiketi (gtag.js) snippet&#039;i -->
+<!-- Google Analytics snippet&#039;i, Site Kit tarafından eklendi -->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=G-97GBEB101C' id='google_gtagjs-js' async></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["galatabusinessangels.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-97GBEB101C");
+</script>
+<link rel="https://api.w.org/" href="https://galatabusinessangels.com/tr/wp-json/" /><link rel="alternate" type="application/json" href="https://galatabusinessangels.com/tr/wp-json/wp/v2/categories/294" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://galatabusinessangels.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://galatabusinessangels.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="Site Kit by Google 1.188.0" /><meta name="generator" content="qTranslate-XT 3.13.1.dev.2" />
+<link hreflang="x-default" href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="alternate" />
+<link hreflang="en" href="https://galatabusinessangels.com/en/category/roportaj/" rel="alternate" />
+<link hreflang="tr" href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="alternate" />
+<meta name="google-site-verification" content="d0YxeCEGn9Mt4hZOCrVE51J5h8SItviJD1-N90Vskk4"><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.0.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://galatabusinessangels.com/wp-content/uploads/2020/11/cropped-gba-icon@2x-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://galatabusinessangels.com/wp-content/uploads/2020/11/cropped-gba-icon@2x-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://galatabusinessangels.com/wp-content/uploads/2020/11/cropped-gba-icon@2x-300x300.png" />
+<meta name="msapplication-TileImage" content="https://galatabusinessangels.com/wp-content/uploads/2020/11/cropped-gba-icon@2x-300x300.png" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">function setREVStartSize(a){try{var b,c=document.getElementById(a.c).parentNode.offsetWidth;if(c=0===c||isNaN(c)?window.innerWidth:c,a.tabw=void 0===a.tabw?0:parseInt(a.tabw),a.thumbw=void 0===a.thumbw?0:parseInt(a.thumbw),a.tabh=void 0===a.tabh?0:parseInt(a.tabh),a.thumbh=void 0===a.thumbh?0:parseInt(a.thumbh),a.tabhide=void 0===a.tabhide?0:parseInt(a.tabhide),a.thumbhide=void 0===a.thumbhide?0:parseInt(a.thumbhide),a.mh=void 0===a.mh||""==a.mh?0:a.mh,"fullscreen"===a.layout||"fullscreen"===a.l)b=Math.max(a.mh,window.innerHeight);else{for(var d in a.gw=Array.isArray(a.gw)?a.gw:[a.gw],a.rl)(void 0===a.gw[d]||0===a.gw[d])&&(a.gw[d]=a.gw[d-1]);for(var d in a.gh=void 0===a.el||""===a.el||Array.isArray(a.el)&&0==a.el.length?a.gh:a.el,a.gh=Array.isArray(a.gh)?a.gh:[a.gh],a.rl)(void 0===a.gh[d]||0===a.gh[d])&&(a.gh[d]=a.gh[d-1]);var e,f=Array(a.rl.length),g=0;for(var d in a.tabw=a.tabhide>=c?0:a.tabw,a.thumbw=a.thumbhide>=c?0:a.thumbw,a.tabh=a.tabhide>=c?0:a.tabh,a.thumbh=a.thumbhide>=c?0:a.thumbh,a.rl)f[d]=a.rl[d]<window.innerWidth?0:a.rl[d];for(var d in e=f[0],f)e>f[d]&&0<f[d]&&(e=f[d],g=d);var h=c>a.gw[g]+a.tabw+a.thumbw?1:(c-(a.tabw+a.thumbw))/a.gw[g];b=a.gh[g]*h+(a.tabh+a.thumbh)}void 0===window.rs_init_css&&(window.rs_init_css=document.head.appendChild(document.createElement("style"))),document.getElementById(a.c).height=b,window.rs_init_css.innerHTML+="#"+a.c+"_wrapper { height: "+b+"px }"}catch(a){console.log("Failure at Presize of Slider:"+a)}};</script>
+		<style type="text/css" id="wp-custom-css">
+			.edgtf-logo-wrapper a img {
+max-height: 120px;}
+.edgtf-mobile-header .edgtf-mobile-logo-wrapper img{
+max-height: 20px; padding: 43px 0}
+
+.edgtf-mobile-header .edgtf-icon-ion-icon {color: black}
+
+.edge-menu-underline {color: white}
+
+.edgtf-vertical-align-containers{padding: 0 !important}
+
+nav.edgtf-fullscreen-menu > ul > li > a {font-size: 28px;}
+
+.edgtf-content-has-sidebar {padding-top: 40px;}
+
+.edgtf-post-info-bottom{display: none;}
+
+.wpjb_job_application_wrapper{display: none;}
+
+.edgtf-post-info-top{display: none;}
+
+.wpjb_exp_date span{display: none;}
+
+ul.job_listings li.job_listing a img.company_logo{position: relative !important;margin: 0 30px 10px 0;border: 1px solid #010326; }
+
+@media only screen and (max-width: 767px){
+ul.job_listings li.job_listing a img.company_logo{
+visibility: inherit !important;
+}}
+
+.load_more_jobs{font-size: 20px;background: #010326; color: white !important; border: 1px solid #010326; padding: 15px}
+
+.load_more_jobs:hover{background: #f24304 !important; color: white !important;border: 1px solid #f24304;}
+
+.location{padding: 0 !important;}
+
+input[type=submit]{font-size: 20px;background: #010326; color: white; border: 1px solid #010326; padding: 15px}		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="archive category category-roportaj category-294 maree-core-1.0.1 maree-ver-1.2 edgtf-smooth-scroll edgtf-grid-1200 edgtf-empty-google-api edgtf-wide-dropdown-menu-content-in-grid edgtf-light-header edgtf-no-behavior edgtf-dropdown-animate-height edgtf-header-minimal edgtf-menu-area-shadow-disable edgtf-menu-area-in-grid-shadow-disable edgtf-menu-area-border-disable edgtf-menu-area-in-grid-border-disable edgtf-logo-area-border-disable edgtf-logo-area-in-grid-border-disable edgtf-header-vertical-shadow-disable edgtf-header-vertical-border-disable maree edgtf-default-mobile-header edgtf-sticky-up-mobile-header edgtf-header-top-enabled edgtf-top-bar-in-grid-padding edgtf-fullscreen-search edgtf-search-fade wpb-js-composer js-comp-ver-6.4.1 vc_responsive edgtf-fade-push-text-right tr" itemscope itemtype="http://schema.org/WebPage">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+    <div class="edgtf-wrapper">
+        <div class="edgtf-wrapper-inner">
+            	
+		
+	<div class="edgtf-top-bar">
+				
+					<div class="edgtf-grid">
+						
+			<div class="edgtf-vertical-align-containers">
+				<div class="edgtf-position-left"><!--
+				 --><div class="edgtf-position-left-inner">
+													<div id="text-8" class="widget widget_text edgtf-top-bar-widget">			<div class="textwidget"><p>Türkiye’nin İlk Melek Yatırım Ağı</p>
+</div>
+		</div>											</div>
+				</div>
+				<div class="edgtf-position-right"><!--
+				 --><div class="edgtf-position-right-inner">
+													<div id="nav_menu-2" class="widget widget_nav_menu edgtf-top-bar-widget"><div class="menu-top-menu-container"><ul id="menu-top-menu" class="menu"><li id="menu-item-2777" class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom menu-item-2777"><a title="English" href="https://galatabusinessangels.com/en/category/roportaj/">English</a></li>
+</ul></div></div>											</div>
+				</div>
+			</div>
+				
+					</div>
+				
+			</div>
+	
+	<div class="edgtf-fullscreen-search-holder">
+	<a class="edgtf-search-close edgtf-search-close-icon-pack" href="javascript:void(0)">
+			</a>
+	<div class="edgtf-fullscreen-search-table">
+		<div class="edgtf-fullscreen-search-cell">
+			<div class="edgtf-fullscreen-search-inner">
+				<form action="https://galatabusinessangels.com/tr/" class="edgtf-fullscreen-search-form" method="get">
+					<div class="edgtf-form-holder">
+						<div class="edgtf-form-holder-inner">
+							<div class="edgtf-field-holder">
+								<input type="text" placeholder="Search..." name="s" class="edgtf-search-field" autocomplete="off" required />
+							</div>
+							<button type="submit" class="edgtf-search-submit edgtf-search-submit-icon-pack">
+															</button>
+							<div class="edgtf-line"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="edgtf-page-header">
+		
+				
+	<div class="edgtf-menu-area">
+				
+					<div class="edgtf-grid">
+						
+			<div class="edgtf-vertical-align-containers">
+				<div class="edgtf-position-left"><!--
+				 --><div class="edgtf-position-left-inner">
+						
+	
+	<div class="edgtf-logo-wrapper">
+		<a itemprop="url" href="https://galatabusinessangels.com/tr/" >
+			<img itemprop="image" class="edgtf-normal-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202%202'%3E%3C/svg%3E" width="2" height="2"  alt="logo" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-light.svg"/><noscript><img itemprop="image" class="edgtf-normal-logo" src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-light.svg" width="2" height="2"  alt="logo"/></noscript>
+			<img itemprop="image" class="edgtf-dark-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202%202'%3E%3C/svg%3E" width="2" height="2"  alt="dark logo" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-dark.svg"/><noscript><img itemprop="image" class="edgtf-dark-logo" src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-dark.svg" width="2" height="2"  alt="dark logo"/></noscript>			<img itemprop="image" class="edgtf-light-logo" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202%202'%3E%3C/svg%3E" width="2" height="2"  alt="light logo" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-light.svg"/><noscript><img itemprop="image" class="edgtf-light-logo" src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-square-light.svg" width="2" height="2"  alt="light logo"/></noscript>		</a>
+	</div>
+
+					</div>
+				</div>
+				<div class="edgtf-position-right"><!--
+				 --><div class="edgtf-position-right-inner">
+						<a href="javascript:void(0)" class="edgtf-fullscreen-menu-opener edgtf-fullscreen-menu-opener-icon-pack">
+							<span class="edgtf-fullscreen-menu-close-icon">
+								<i class="edgtf-icon-font-awesome fa fa-times "></i>							</span>
+							<span class="edgtf-fullscreen-menu-opener-icon">
+                                <i class="edgtf-icon-font-awesome fa fa-bars "></i>							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+				
+					</div>
+			</div>
+			
+		
+		
+	</header>
+<header class="edgtf-mobile-header">
+		
+	<div class="edgtf-mobile-header-inner">
+		<div class="edgtf-mobile-header-holder">
+			<div class="edgtf-grid">
+				<div class="edgtf-vertical-align-containers">
+					<div class="edgtf-position-left"><!--
+					 --><div class="edgtf-position-left-inner">
+							
+<div class="edgtf-mobile-logo-wrapper">
+	<a itemprop="url" href="https://galatabusinessangels.com/tr/" >
+		<img itemprop="image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202%202'%3E%3C/svg%3E" width="2" height="2"  alt="Mobile Logo" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-horizon-light.svg"/><noscript><img itemprop="image" src="https://galatabusinessangels.com/wp-content/uploads/2020/10/gba-logo-horizon-light.svg" width="2" height="2"  alt="Mobile Logo"/></noscript>
+	</a>
+</div>
+
+						</div>
+					</div>
+					<div class="edgtf-position-right"><!--
+					 --><div class="edgtf-position-right-inner">
+							<a href="javascript:void(0)" class="edgtf-fullscreen-menu-opener edgtf-fullscreen-menu-opener-icon-pack">
+								<span class="edgtf-fullscreen-menu-close-icon">
+									<i class="edgtf-icon-font-awesome fa fa-times "></i>								</span>
+								<span class="edgtf-fullscreen-menu-opener-icon">
+                                    <i class="edgtf-icon-font-awesome fa fa-bars "></i>								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</header>
+
+			<a id='edgtf-back-to-top' href='#'>
+                <span>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
+						<line fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="10" y1="21.5" x2="10" y2="2.5"/>
+						<g>
+							<path fill="#FFFFFF" d="M3.926,7.484c-0.388-0.404-0.388-0.801,0-1.188l5.493-5.493c0.14-0.176,0.334-0.264,0.58-0.264
+								s0.44,0.088,0.582,0.264l5.493,5.493c0.387,0.388,0.387,0.784,0,1.188c-0.389,0.405-0.775,0.396-1.162-0.026L9.999,2.599
+								L5.088,7.458C4.7,7.88,4.313,7.89,3.926,7.484z"/>
+						</g>
+					</svg>
+                </span>
+			</a>
+		<div class="edgtf-fullscreen-menu-holder-outer">
+	<div class="edgtf-fullscreen-menu-holder">
+		<div class="edgtf-fullscreen-menu-holder-inner">
+							<div class="edgtf-container-inner">
+						
+						
+			<nav class="edgtf-fullscreen-menu">
+	<ul id="menu-gba-menu" class=""><li id="popup-menu-item-2377" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://galatabusinessangels.com/tr/yatirimcilar/" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">Yatırımcılar</span></a></li>
+<li id="popup-menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://galatabusinessangels.com/tr/portfolio/" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">Portföy</span></a></li>
+<li id="popup-menu-item-2380" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSev2cZqeW0e_y2msK3hwdgRHVNli3DNDK70QYAci6RiMs4WTQ/viewform?usp=dialog" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">Yatırım Arıyorum</span></a></li>
+<li id="popup-menu-item-2382" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://galatabusinessangels.com/tr/blog/" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">Blog</span></a></li>
+<li id="popup-menu-item-2506" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://galatabusinessangels.com/tr/jobs/" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">İş İlanları</span></a></li>
+<li id="popup-menu-item-2841" class="qtranxs-lang-menu qtranxs-lang-menu-en menu-item menu-item-type-custom menu-item-object-custom "><a title="English" href="https://galatabusinessangels.com/en/category/roportaj/" class=""><span class="edge-menu-underline" style="background-image: linear-gradient(transparent calc(100% - 13px), #f24405 0);">English</span></a></li>
+</ul></nav>			
+						
+							</div>
+					</div>
+	</div>
+</div>	        
+            <div class="edgtf-content" style="margin-top: -130px">
+                <div class="edgtf-content-inner">
+<div class="edgtf-title-holder edgtf-standard-type edgtf-title-va-header-bottom" style="height: 280px;background-color: #010326" data-height="280">
+		<div class="edgtf-title-wrapper" style="height: 150px;padding-top: 130px">
+		<div class="edgtf-title-inner">
+			<div class="edgtf-grid">
+									<h1 class="edgtf-page-title entry-title" >Röportaj</h1>
+											</div>
+	    </div>
+	</div>
+</div>
+
+
+<div class="edgtf-container">
+		
+	<div class="edgtf-container-inner clearfix">
+		<div class="edgtf-grid-row edgtf-grid-large-gutter">
+	<div class="edgtf-page-content-holder edgtf-grid-col-12">
+		<div class="edgtf-blog-holder edgtf-blog-standard edgtf-blog-pagination-load-more" data-blog-type= standard data-next-page= 2 data-max-num-pages= 1 data-post-number= 10 data-excerpt-length= 40 data-archive-category= 294 >
+	<div class="edgtf-blog-holder-inner">
+		<article id="post-3095" class="edgtf-post-has-media post-3095 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/kurumsal-hayat-mi-girisimcilik-mi/" title="Kurumsal Hayat mı, Girişimcilik mi?">
+					<img width="1198" height="1198" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201198%201198'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="ata e1609263806999 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite.png 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-650x650.png 650w" data-lazy-sizes="(max-width: 1198px) 100vw, 1198px" title="[:en]Corporate or Entrepreneurship?[:tr]Kurumsal Hayat mı, Girişimcilik mi?[:] 1" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite.png" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite.png 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-150x150.png.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-650x650.png 650w"><noscript><img width="1198" height="1198" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite.png" class="attachment-full size-full wp-post-image" alt="ata e1609263806999 blackwhite" decoding="async" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite.png 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/ata-e1609263806999-blackwhite-650x650.png 650w" sizes="(max-width: 1198px) 100vw, 1198px" title="[:en]Corporate or Entrepreneurship?[:tr]Kurumsal Hayat mı, Girişimcilik mi?[:] 1"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/kurumsal-hayat-mi-girisimcilik-mi/" title="Kurumsal Hayat mı, Girişimcilik mi?">
+            Kurumsal Hayat mı, Girişimcilik mi?            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Kurumsal hayattan girişimcilik ekosistemine geçişin 2 sene oldu. Öncelikle kurumsal hayattan gelen bir insan olarak bu iş modelinin insana kattıkları hakkında neler söyleyebilirsin?
+Bana kalırsa kurumsal hayatta her girişimcinin görmesi gereken bir şey var. O da şu, nasıl olsa her küçük			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3095-411" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/kurumsal-hayat-mi-girisimcilik-mi/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3089" class="edgtf-post-has-media post-3089 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/girisimlere-kucak-acan-ekosistem-sili/" title="Girişimlere Kucak Açan Ekosistem: Şili">
+					<img width="1198" height="1198" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201198%201198'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Şili e1609263166268 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-650x650.png 650w" data-lazy-sizes="(max-width: 1198px) 100vw, 1198px" title="[:en]The Ecosystem That Embraces the Start-ups: Chile[:tr]Girişimlere Kucak Açan Ekosistem: Şili[:] 2" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png.webp 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-1024x1024.png.webp 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-150x150.png.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-768x768.png.webp 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-650x650.png.webp 650w"><noscript><img width="1198" height="1198" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png" class="attachment-full size-full wp-post-image" alt="Şili e1609263166268 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite.png 1198w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Şili-e1609263166268-blackwhite-650x650.png 650w" sizes="(max-width: 1198px) 100vw, 1198px" title="[:en]The Ecosystem That Embraces the Start-ups: Chile[:tr]Girişimlere Kucak Açan Ekosistem: Şili[:] 2"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/girisimlere-kucak-acan-ekosistem-sili/" title="Girişimlere Kucak Açan Ekosistem: Şili">
+            Girişimlere Kucak Açan Ekosistem: Şili            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Okan seni önce bir tanıyalım, hikayen nedir? Kuruculuğunu yaptığın Nörolize nasıl kuruldu?
+Adım Okan, Boğaziçi Üniversitesi İşletme Bölümü 2012 mezunuyum. Nöropazarlama ile 2011’de ABD’ye exchange’e gittiğimde tanıştım. Mezun olduktan sonra TeknoGirişim sermaye desteği başlamıştı. Biz de bir denemeye karar verdik; çünkü			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3089-970" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/girisimlere-kucak-acan-ekosistem-sili/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3085" class="edgtf-post-has-media post-3085 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/girisiminiz-vitamin-mi-agri-kesici-mi/" title="Girişiminiz Vitamin mi Ağrı Kesici mi?">
+					<img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Bulent celebi blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" title="[:en]Is Your Start-up a Vitamin or a Pain Killer?[:tr]Girişiminiz Vitamin mi Ağrı Kesici mi?[:] 3" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg.webp 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg.webp 150w"><noscript><img width="500" height="500" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg" class="attachment-full size-full wp-post-image" alt="Bulent celebi blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg 150w" sizes="(max-width: 500px) 100vw, 500px" title="[:en]Is Your Start-up a Vitamin or a Pain Killer?[:tr]Girişiminiz Vitamin mi Ağrı Kesici mi?[:] 3"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/girisiminiz-vitamin-mi-agri-kesici-mi/" title="Girişiminiz Vitamin mi Ağrı Kesici mi?">
+            Girişiminiz Vitamin mi Ağrı Kesici mi?            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Sizi tam olarak tanımayanlar için biraz kendinizden bahsedebilir misiniz?
+Türkiye’de doğdum ve büyüdüm. Daha sonra ailemle beraber Amerika’ya gittik. Liseyi ve üniversiteyi orada okudum. Üniversite eğitimimi University of California, Berkeley’de Elektronik Mühendisliği’nde tamamladım. Okul bitince bir süre San Francisco’da mühendis olarak			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3085-964" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/girisiminiz-vitamin-mi-agri-kesici-mi/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3078" class="edgtf-post-has-media post-3078 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/zaman-yatirmak-mi-para-yatirmak-mi/" title="Zaman Yatırmak mı, Para Yatırmak mı?">
+					<img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Bulent celebi blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" title="[:en]To Invest Time or to Invest Money?[:tr]Zaman Yatırmak mı, Para Yatırmak mı?[:] 4" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg.webp 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg.webp 150w"><noscript><img width="500" height="500" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg" class="attachment-full size-full wp-post-image" alt="Bulent celebi blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite.jpg 500w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Bulent-celebi-blackwhite-150x150.jpg 150w" sizes="(max-width: 500px) 100vw, 500px" title="[:en]To Invest Time or to Invest Money?[:tr]Zaman Yatırmak mı, Para Yatırmak mı?[:] 4"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/zaman-yatirmak-mi-para-yatirmak-mi/" title="Zaman Yatırmak mı, Para Yatırmak mı?">
+            Zaman Yatırmak mı, Para Yatırmak mı?            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				
+Siz ABD'den Türkiye ye dönmüş bir mühendis, girişimci ve yatırımcısınız. Bu üç farklı kimliğinizi de göze alarak Silikon Vadisi’ni Silikon Vadisi yapan bileşenler sizce ne? 
+Oranın aynısını yapmak çok çok zor. Bu sadece Stanford, Berkeley gibi bir üniversitenin olması ile Venture			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3078-747" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/zaman-yatirmak-mi-para-yatirmak-mi/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3073" class="edgtf-post-has-media post-3073 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/pabbler-yolculugunda-girisimcilik-uzerine/" title="Pabbler Yolculuğunda Girişimcilik Üzerine">
+					<img width="930" height="930" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20930%20930'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Pabbler e1609260818505 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png 930w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-650x650.png 650w" data-lazy-sizes="(max-width: 930px) 100vw, 930px" title="[:en]About Entrepreneurship on the Way of Pabbler[:tr]Pabbler Yolculuğunda Girişimcilik Üzerine[:] 5" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png.webp 930w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-150x150.png.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-768x768.png.webp 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-650x650.png.webp 650w"><noscript><img width="930" height="930" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png" class="attachment-full size-full wp-post-image" alt="Pabbler e1609260818505 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite.png 930w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pabbler-e1609260818505-blackwhite-650x650.png 650w" sizes="(max-width: 930px) 100vw, 930px" title="[:en]About Entrepreneurship on the Way of Pabbler[:tr]Pabbler Yolculuğunda Girişimcilik Üzerine[:] 5"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/pabbler-yolculugunda-girisimcilik-uzerine/" title="Pabbler Yolculuğunda Girişimcilik Üzerine">
+            Pabbler Yolculuğunda Girişimcilik Üzerine            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Ceren seni biraz tanıyabilir miyiz?
+ 
+
+Ben İzmirliyim, Bilkent Üniversitesi ve Hacettepe’de aynı anda okudum. Staj yaptığım yer İstanbul’da bir pozisyon önerince başladı buradaki maceram. Hep çok çalışmayı sevdim ve her işe koşturdum. Özellikle müdürlerim rutinin dışında bir iş yapılacağı zaman işi			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3073-861" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/pabbler-yolculugunda-girisimcilik-uzerine/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3066" class="edgtf-post-has-media post-3066 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/6-bin-yillik-bira-seruveninde-son-durak-pubinno/" title="6 Bin Yıllık Bira Serüveninde Son Durak Pubinno">
+					<img width="1240" height="1240" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201240%201240'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Pubinno e1609260003805 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png 1240w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-650x650.png 650w" data-lazy-sizes="(max-width: 1240px) 100vw, 1240px" title="[:en]The Last Stop of the 6-Thousand-Year Beer Adventure: Pubinno[:tr]6 Bin Yıllık Bira Serüveninde Son Durak Pubinno[:] 6" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png.webp 1240w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-1024x1024.png.webp 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-150x150.png.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-768x768.png.webp 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-650x650.png.webp 650w"><noscript><img width="1240" height="1240" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png" class="attachment-full size-full wp-post-image" alt="Pubinno e1609260003805 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite.png 1240w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-1024x1024.png 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-768x768.png 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Pubinno-e1609260003805-blackwhite-650x650.png 650w" sizes="(max-width: 1240px) 100vw, 1240px" title="[:en]The Last Stop of the 6-Thousand-Year Beer Adventure: Pubinno[:tr]6 Bin Yıllık Bira Serüveninde Son Durak Pubinno[:] 6"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/6-bin-yillik-bira-seruveninde-son-durak-pubinno/" title="6 Bin Yıllık Bira Serüveninde Son Durak Pubinno">
+            6 Bin Yıllık Bira Serüveninde Son Durak Pubinno            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Girişimcilik uzun ve meşakkatli bir yol. Her girişim ayrı bir hikayeye hayat veriyor ve her girişimci de ayrı bir hikaye yazıyor. Can Algül de Pubinno ile Türkiye başta olmak üzere dünyaya bira üzerinden yeni ve yaratıcı bir hikaye anlatıyor. Yaşadığı			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3066-965" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/6-bin-yillik-bira-seruveninde-son-durak-pubinno/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3051" class="edgtf-post-has-media post-3051 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/denebunu-roportaj/" title="DENEBUNU!!">
+					<img width="679" height="679" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20679%20679'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="Denebunu e1609262169314 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png 679w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-650x650.png 650w" data-lazy-sizes="(max-width: 679px) 100vw, 679px" title="DENEBUNU!! 7" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png.webp 679w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-150x150.png.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-650x650.png.webp 650w"><noscript><img width="679" height="679" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png" class="attachment-full size-full wp-post-image" alt="Denebunu e1609262169314 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite.png 679w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-150x150.png 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/Denebunu-e1609262169314-blackwhite-650x650.png 650w" sizes="(max-width: 679px) 100vw, 679px" title="DENEBUNU!! 7"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/denebunu-roportaj/" title="DENEBUNU!!">
+            DENEBUNU!!            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Duygu, kendinden bahsedebilir misin?
+Ben Koç Üniversitesi işletme bölümünde okudum. 1. sınıfta okurken bir otelde çalıştım, 2. sınıfta Hızlı Tüketim Malları (FMCG) dünyasına girdim ve Fritolay’ de staj yaptım. Daha sonra Coca Cola’ ya girdim, orada da belli bir süre staj			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3051-254" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/denebunu-roportaj/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3046" class="edgtf-post-has-media post-3046 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/bir-araba-hikayesine-dogru-garaj-sepeti/" title="Bir Araba Hikayesine Doğru: Garaj Sepeti">
+					<img width="1510" height="1510" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201510%201510'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="GarajSepeti scaled e1609258331630 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg 1510w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1024x1024.jpg 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-150x150.jpg 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-768x768.jpg 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-650x650.jpg 650w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1300x1300.jpg 1300w" data-lazy-sizes="(max-width: 1510px) 100vw, 1510px" title="[:en]About a Car Story: Garaj Sepeti[:tr]Bir Araba Hikayesine Doğru: Garaj Sepeti[:] 8" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg.webp 1510w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-300x300.jpg.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1024x1024.jpg.webp 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-150x150.jpg.webp 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-768x768.jpg.webp 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-650x650.jpg.webp 650w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1300x1300.jpg.webp 1300w"><noscript><img width="1510" height="1510" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg" class="attachment-full size-full wp-post-image" alt="GarajSepeti scaled e1609258331630 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite.jpg 1510w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-300x300.jpg 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1024x1024.jpg 1024w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-150x150.jpg 150w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-768x768.jpg 768w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-650x650.jpg 650w, https://galatabusinessangels.com/wp-content/uploads/2020/12/GarajSepeti-scaled-e1609258331630-blackwhite-1300x1300.jpg 1300w" sizes="(max-width: 1510px) 100vw, 1510px" title="[:en]About a Car Story: Garaj Sepeti[:tr]Bir Araba Hikayesine Doğru: Garaj Sepeti[:] 8"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/bir-araba-hikayesine-dogru-garaj-sepeti/" title="Bir Araba Hikayesine Doğru: Garaj Sepeti">
+            Bir Araba Hikayesine Doğru: Garaj Sepeti            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Mehmet, sen girişimcilik ekosisteminde tanınıyorsun; ama seni bilmeyenler için, seni tanıyabilir miyiz?
+Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunuyum. MBA eğitimine ek olarak Marmara Üniversitesi’nde İletişim ve Özyeğin Üniversitesi’nde Girişimcilik yüksek lisans eğitimleri aldım. Profesyonel hayatıma Turkcell’de Portal Kategori Yöneticiliği ile başladım hemen			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3046-247" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/bir-araba-hikayesine-dogru-garaj-sepeti/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article><article id="post-3038" class="edgtf-post-has-media post-3038 post type-post status-publish format-standard has-post-thumbnail hentry category-roportaj">
+    <div class="edgtf-post-content">
+        <div class="edgtf-post-heading">
+                        
+	<div class="edgtf-post-image">
+					<a itemprop="url" href="https://galatabusinessangels.com/tr/userguiding-her-kullanicinin-bir-rehbere-ihtiyaci-vardir/" title="Userguiding: Her Kullanıcının Bir Rehbere İhtiyacı Vardır">
+					<img width="591" height="591" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20591%20591'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image ewww_webp_lazy_load" alt="userguiding 1 e1609258696381 blackwhite" decoding="async" data-lazy-srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png 591w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-150x150.png 150w" data-lazy-sizes="(max-width: 591px) 100vw, 591px" title="[:en]Userguiding: Every User Needs a Guide[:tr]Userguiding: Her Kullanıcının Bir Rehbere İhtiyacı Vardır[:] 9" data-lazy-src="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png" data-lazy-src-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png.webp" data-lazy-srcset-webp="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png.webp 591w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-300x300.png.webp 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-150x150.png.webp 150w"><noscript><img width="591" height="591" src="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png" class="attachment-full size-full wp-post-image" alt="userguiding 1 e1609258696381 blackwhite" decoding="async" loading="lazy" srcset="https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite.png 591w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-300x300.png 300w, https://galatabusinessangels.com/wp-content/uploads/2020/12/userguiding-1-e1609258696381-blackwhite-150x150.png 150w" sizes="(max-width: 591px) 100vw, 591px" title="[:en]Userguiding: Every User Needs a Guide[:tr]Userguiding: Her Kullanıcının Bir Rehbere İhtiyacı Vardır[:] 9"></noscript>					</a>
+					</div>
+        </div>
+        <div class="edgtf-post-text">
+            <div class="edgtf-post-text-inner">
+                <div class="edgtf-post-text-main">
+                    
+<h2 itemprop="name" class="entry-title edgtf-post-title" >
+            <a itemprop="url" href="https://galatabusinessangels.com/tr/userguiding-her-kullanicinin-bir-rehbere-ihtiyaci-vardir/" title="Userguiding: Her Kullanıcının Bir Rehbere İhtiyacı Vardır">
+            Userguiding: Her Kullanıcının Bir Rehbere İhtiyacı Vardır            </a>
+    </h2>                    <div class="edgtf-post-info-top">
+                        <div class="edgtf-post-info-author">
+    <span class="edgtf-post-info-author-text">
+        By    </span>
+    <a itemprop="author" class="edgtf-post-info-author-link" href="https://galatabusinessangels.com/tr/author/gba-admin/">
+        GBA Team    </a>
+</div>                                                <div class="edgtf-post-info-category">
+    <a href="https://galatabusinessangels.com/tr/kategori/roportaj/" rel="category tag">Röportaj</a></div>                                            </div>
+                    		<div class="edgtf-post-excerpt-holder">
+			<p itemprop="description" class="edgtf-post-excerpt">
+				Seni öncelikle tanıyabilir miyiz?
+Ben Osman Koç, UserGuiding’in kurucu ortağıyım. Şirketteki satış, müşteri geliştirme ve finans konuları ile ilgileniyorum. 27 yaşındayım. Boğaziçi Üniversitesi İşletme Bölümü mezunuyum. UserGuiding bizim ilk ürünümüz. UserGuiding öncesinde, yine aynı ekiple yazılım geliştirme şirketimiz vardı. Oradan elde			</p>
+		</div>
+	                                    </div>
+                <div class="edgtf-post-info-bottom clearfix">
+                    <div class="edgtf-post-info-bottom-left">
+                                            </div>
+                    <div class="edgtf-post-info-bottom-right">
+                            <div class="edgtf-blog-like">
+        <a href="#" class="edgtf-like" id="edgtf-like-3038-530" title="Like this"><i class="icon_heart"></i><span>0</span></a>    </div>
+                        	<div class="edgtf-post-info-comments-holder">
+		<a itemprop="url" class="edgtf-post-info-comments" href="https://galatabusinessangels.com/tr/userguiding-her-kullanicinin-bir-rehbere-ihtiyaci-vardir/#respond">
+			<i class="icon_comment"></i>
+			0		</a>
+	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>	</div>
+	</div>	</div>
+	</div>	</div>
+	
+	</div>
+
+</div> <!-- close div.content_inner -->
+	</div>  <!-- close div.content -->
+					<footer class="edgtf-page-footer ">
+				<div class="edgtf-footer-top-holder">
+    <div class="edgtf-footer-top-inner edgtf-grid">
+        <div class="edgtf-grid-row edgtf-footer-top-alignment-left">
+                            <div class="edgtf-column-content edgtf-grid-col-6">
+                    <div id="text-4" class="widget edgtf-footer-column-1 widget_text">			<div class="textwidget"><p>Galata Business Angels Türkiye’nin ilk melek yatırımcılık ağı olup yüksek potansiyelli girişimcilerle sektöründe en deneyimli yatırımcılar arasında bir köprü olmayı ve başarılı girişimcilik serüvenleri yaratmayı hedefler.</p>
+</div>
+		</div><div id="text-10" class="widget edgtf-footer-column-1 widget_text">			<div class="textwidget"><p><i class="fas fa-map-marker-alt"></i> <strong>Kolektif House Levent</strong> | Esentepe Mahallesi, Talatpaşa Caddesi, Harman Sokağı No:5 İstanbul | Türkiye</p>
+</div>
+		</div><div class="widget edgtf-social-icons-group-widget text-align-left">									<a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"  style="font-size: 20px" href="https://www.facebook.com/galatabusinessangels/" target="_blank">
+						<span class="edgtf-social-icon-widget fab fa-facebook"></span>					</a>
+													<a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"  style="font-size: 20px" href="https://twitter.com/GalataBA" target="_blank">
+						<span class="edgtf-social-icon-widget fab fa-twitter"></span>					</a>
+													<a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"  style="font-size: 20px" href="https://www.instagram.com/galatabusinessangels/" target="_blank">
+						<span class="edgtf-social-icon-widget fab fa-instagram"></span>					</a>
+													<a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"  style="font-size: 20px" href="https://www.youtube.com/user/galatabusinessangels" target="_blank">
+						<span class="edgtf-social-icon-widget fab fa-youtube"></span>					</a>
+													<a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"  style="font-size: 20px" href="https://medium.com/@galatabusinessangels" target="_blank">
+						<span class="edgtf-social-icon-widget fab fa-medium"></span>					</a>
+								</div>                </div>
+                            <div class="edgtf-column-content edgtf-grid-col-6">
+                    <div id="mc4wp_form_widget-2" class="widget edgtf-footer-column-2 widget_mc4wp_form_widget"><div class="edgtf-widget-title-holder"><h5 class="edgtf-widget-title">Bültenimize Abone Olun</h5></div><script type="rocketlazyloadscript">(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><!-- Mailchimp for WordPress v4.9.10 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-2784 mc4wp-form-theme mc4wp-form-theme-light" method="post" data-id="2784" data-name="GBA Newsletter" ><div class="mc4wp-form-fields"><p>
+	<label>
+	
+    <input type="email" name="EMAIL" placeholder="E postanızı yazınız" required />
+</label>
+</p>
+
+<p>
+    <label>
+        <input name="AGREE_TO_TERMS" type="checkbox" value="1" required=""> <a href="https://galatabusinessangels.com/wp-content/uploads/2021/03/GBA-03-Bülten-Aydinlatma-Metni.pdf"
+        target="_blank">Hüküm ve koşulları okudum, kabul ediyorum</a>
+    </label>
+</p>
+
+<div id="cf-turnstile-mc4wp" class="cf-turnstile" data-sitekey="0x4AAAAAAADeJKhYrer4oy3n" data-theme="light" data-language="auto" data-retry="auto" data-retry-interval="1000" data-action="mc4wp" data-appearance="always"></div> <script type="rocketlazyloadscript">document.addEventListener("DOMContentLoaded",(function(){var e=document.getElementById("cf-turnstile-mc4wp");e&&turnstile.render("#cf-turnstile-mc4wp",{sitekey:"0x4AAAAAAADeJKhYrer4oy3n"})}));</script> <style>#cf-turnstile-mc4wp iframe { margin-bottom: 15px; }</style> <style>#cf-turnstile-mc4wp { margin-left: -15px; }</style>
+
+<p>
+	
+	<input type="submit" value="Kayıt olun" />
+</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1790482400" /><input type="hidden" name="_mc4wp_form_id" value="2784" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>                </div>
+                    </div>
+    </div>
+</div><div class="edgtf-footer-bottom-holder">
+    <div class="edgtf-footer-bottom-inner edgtf-grid">
+        <div class="edgtf-grid-row ">
+                            <div class="edgtf-grid-col-12">
+                    <div id="text-9" class="widget edgtf-footer-bottom-column-1 widget_text">			<div class="textwidget"><p>Copyright © 2020 * Galata İş Melekleri / <a href="https://galatabusinessangels.com/tr/kkvk/">Çerez Politikası ve Aydınlatma Metni</a> &#8211; <span style="color: #bbbbbc;">Made by <a href="https://fozdigital.com/go/GBA" target="_blank" rel="noopener"><strong><span style="color: #bbbbbc;">FozDigital London</span></strong></a></span></p>
+</div>
+		</div>                </div>
+                    </div>
+    </div>
+</div>			</footer>
+			</div> <!-- close div.edgtf-wrapper-inner  -->
+</div> <!-- close div.edgtf-wrapper -->
+<script type="rocketlazyloadscript">(function() {function maybePrefixUrlField () {
+  const value = this.value.trim()
+  if (value !== '' && value.indexOf('http') !== 0) {
+    this.value = 'http://' + value
+  }
+}
+
+const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+for (let j = 0; j < urlFields.length; j++) {
+  urlFields[j].addEventListener('blur', maybePrefixUrlField)
+}
+})();</script><script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="7eccba2b1a8bd9bc61adacd4-text/javascript" id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/tr(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/galatabusinessangels.com\/tr","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-ui/core.min.js?ver=1.11.4-wp' id='jquery-ui-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-ui/widget.min.js?ver=1.11.4-wp' id='jquery-ui-widget-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/enable-jquery-migrate-helper/js/jquery-ui/tabs.min.js?ver=1.11.4-wp' id='jquery-ui-tabs-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"tr","strings":{"mejs.download-file":"Dosyay\u0131 indir","mejs.install-flash":"Flash oynat\u0131c\u0131 etkinle\u015ftirilmemi\u015f ya da kurulmam\u0131\u015f bir taray\u0131c\u0131 kullanmaktas\u0131n\u0131z. L\u00fctfen Flash oynat\u0131c\u0131 eklentinizi a\u00e7\u0131n ya da son s\u00fcr\u00fcm\u00fc https:\/\/get.adobe.com\/flashplayer\/ adresinden indirin","mejs.fullscreen":"Tam ekran","mejs.play":"Oynat","mejs.pause":"Durdur","mejs.time-slider":"Zaman kayd\u0131rac\u0131","mejs.time-help-text":"Sol\/sa\u011f tu\u015falr\u0131 ile bir saniye, yukar\u0131\/a\u015fa\u011f\u0131 tu\u015flar\u0131 ile 10 saniye ilerletin.","mejs.live-broadcast":"Canl\u0131 yay\u0131n","mejs.volume-help-text":"Yukar\u0131\/a\u015fa\u011f\u0131 tu\u015flar\u0131 ile sesi art\u0131r\u0131n ya da azalt\u0131n.","mejs.unmute":"Sesi geri a\u00e7","mejs.mute":"Sessiz","mejs.volume-slider":"Ses  kayd\u0131rac\u0131","mejs.video-player":"Video oynat\u0131c\u0131","mejs.audio-player":"Ses oynat\u0131c\u0131","mejs.captions-subtitles":"Ba\u015fl\u0131klar\/altyaz\u0131lar","mejs.captions-chapters":"B\u00f6l\u00fcmler","mejs.none":"Hi\u00e7biri","mejs.afrikaans":"Afrikanca","mejs.albanian":"Arnavut\u00e7a","mejs.arabic":"Arap\u00e7a","mejs.belarusian":"Beyaz Rus\u00e7a","mejs.bulgarian":"Bulgarca","mejs.catalan":"Katalanca","mejs.chinese":"\u00c7ince","mejs.chinese-simplified":"\u00c7ince (Basitle\u015ftirilmi\u015f)","mejs.chinese-traditional":"\u00c7ince (Geleneksel)","mejs.croatian":"H\u0131rvat\u00e7a","mejs.czech":"\u00c7ek\u00e7e","mejs.danish":"Danca","mejs.dutch":"Hollandal\u0131","mejs.english":"\u0130ngilizce","mejs.estonian":"Estonyaca","mejs.filipino":"Filipince","mejs.finnish":"Fince","mejs.french":"Frans\u0131z","mejs.galician":"Gali\u00e7yaca","mejs.german":"Almanca","mejs.greek":"Yunanca","mejs.haitian-creole":"Haiti kreyolu","mejs.hebrew":"\u0130branice","mejs.hindi":"Hint\u00e7e","mejs.hungarian":"Macarca","mejs.icelandic":"\u0130zlandaca","mejs.indonesian":"Endonezyaca","mejs.irish":"\u0130rlandaca","mejs.italian":"\u0130talyanca","mejs.japanese":"Japonca","mejs.korean":"Korece","mejs.latvian":"Letonca","mejs.lithuanian":"Litvanca","mejs.macedonian":"Makedonyaca","mejs.malay":"Malayaca","mejs.maltese":"Malta Dili","mejs.norwegian":"Norve\u00e7ce","mejs.persian":"Fars\u00e7a","mejs.polish":"Leh\u00e7e","mejs.portuguese":"Portekizce","mejs.romanian":"Romence","mejs.russian":"Rus\u00e7a","mejs.serbian":"S\u0131rp\u00e7a","mejs.slovak":"Slovak\u00e7a","mejs.slovenian":"Sloven Dili","mejs.spanish":"\u0130spanyolca","mejs.swahili":"Svahili Dili","mejs.swedish":"\u0130sve\u00e7\u00e7e","mejs.tagalog":"Tagalogca","mejs.thai":"Tay Dili","mejs.turkish":"T\u00fcrk\u00e7e","mejs.ukrainian":"Ukraynaca","mejs.vietnamese":"Vietnamca","mejs.welsh":"Galler Dili","mejs.yiddish":"Eskenazi Dili"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17' id='mediaelement-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.1.14' id='mediaelement-migrate-js'></script>
+<script type="7eccba2b1a8bd9bc61adacd4-text/javascript" id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.1.14' id='wp-mediaelement-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.appear.js?ver=1750925143' id='appear-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/modernizr.min.js?ver=6.1.14' id='modernizr-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.plugin.js?ver=1750925143' id='jquery-plugin-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/jquery.mousewheel.min.js?ver=6.1.14' id='jquery-mousewheel-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/owl.carousel.min.js?ver=6.1.14' id='owl-carousel-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/jquery.waypoints.min.js?ver=6.1.14' id='waypoints-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/fluidvids.min.js?ver=6.1.14' id='fluidvids-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/perfect-scrollbar.jquery.min.js?ver=6.1.14' id='perfect-scrollbar-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/ScrollToPlugin.min.js?ver=6.1.14' id='ScrollToPlugin-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/parallax.min.js?ver=6.1.14' id='parallax-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.waitforimages.js?ver=1750925143' id='waitforimages-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.prettyPhoto.js?ver=1750925143' id='prettyphoto-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.easing.1.3.js?ver=1750925143' id='jquery-easing-1.3-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=6.4.1' id='isotope-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/packery-mode.pkgd.min.js?ver=6.1.14' id='packery-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/jquery.parallax-scroll.js?ver=1750925143' id='parallax-scroll-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/slick.min.js?ver=6.1.14' id='slick-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules/plugins/TweenLite.min.js?ver=6.1.14' id='tweenLite-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/themes/maree/assets/js/modules/plugins/smoothPageScroll.js?ver=1750925213' id='smoothPageScroll-js'></script>
+<script type="7eccba2b1a8bd9bc61adacd4-text/javascript" id='maree-edge-modules-js-extra'>
+/* <![CDATA[ */
+var edgtfGlobalVars = {"vars":{"edgtfAddForAdminBar":0,"edgtfElementAppearAmount":-100,"edgtfAjaxUrl":"https:\/\/galatabusinessangels.com\/wp-admin\/admin-ajax.php","sliderNavPrevArrow":"arrow_carrot-left_alt","sliderNavNextArrow":"arrow_carrot-right_alt","ppExpand":"Expand the image","ppNext":"Next","ppPrev":"Previous","ppClose":"Close","edgtfStickyHeaderHeight":0,"edgtfStickyHeaderTransparencyHeight":70,"edgtfTopBarHeight":46,"edgtfLogoAreaHeight":0,"edgtfMenuAreaHeight":176,"edgtfMobileHeaderHeight":100}};
+var edgtfPerPageVars = {"vars":{"edgtfMobileHeaderHeight":100,"edgtfStickyScrollAmount":0,"edgtfHeaderTransparencyHeight":0,"edgtfHeaderVerticalWidth":0}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://galatabusinessangels.com/wp-content/themes/maree/assets/js/modules.min.js?ver=6.1.14' id='maree-edge-modules-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' data-cfasync='false' src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit' id='cfturnstile-js'></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' defer src='https://galatabusinessangels.com/wp-content/cache/min/1/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=1750925143' id='mc4wp-forms-api-js'></script>
+<script type="7eccba2b1a8bd9bc61adacd4-text/javascript">window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://galatabusinessangels.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js" type="7eccba2b1a8bd9bc61adacd4-text/javascript"></script><script type="7eccba2b1a8bd9bc61adacd4-text/javascript">function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7eccba2b1a8bd9bc61adacd4-|49" defer></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"f59bc2af1c9b498dbb66cc81bc635699","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1790482400 -->

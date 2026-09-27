@@ -226,6 +226,142 @@ BULGULAR: list[dict[str, str]] = [
                           "test_as01_kaynak_kontrol.CikarilanSayininKaynagiDepodaTests",
         "commit": "474a09c",
     },
+    {
+        "bulgu_id": "CG-12",
+        "baslik": "Arşiv kopyalarının kendi tarihi hiçbir tabloda yoktu",
+        "ne_denendi": "104 Common Crawl kopyasının warc_timestamp'i koşu JSON'undan "
+                      "okundu ve dizindeki tarihle karşılaştırıldı",
+        "tarih": "2026-09-25", "script": "alternatif_fark.py",
+        "once": "ARTEFAKT-DIZINI.csv hepsine 2026-09-03 (bizim indirme tarihimiz) yazıyordu",
+        "sonra": "94 kopya 180 günü, 93'ü bir yılı aşıyor; en eskisi 596 gün. "
+                 "Her satır kendi tarihini ve guncel_veri_mi=hayır taşıyor",
+        "durum": "cozuldu",
+        "kalan_sinir": "Arşiv içeriği tazelenemez; yalnız yaşı görünür oldu.",
+        "fb_id": "—", "yeniden_uretim": "python3 alternatif_fark.py --yaz",
+        "commit": "af28f5f",
+    },
+    {
+        "bulgu_id": "CG-13",
+        "baslik": "Alan çıkarımı sayfaya değil kaynağın ailesine bakıyordu",
+        "ne_denendi": "Fiyat yüzeyi olarak çekilmiş 48 sayfada fiyat çıkmıyordu; "
+                      "25'inin gövdesinde apaçık fiyat vardı (Kagi, Sistrix, "
+                      "Exploding Topics)",
+        "tarih": "2026-09-25", "script": "normalize_belgeler.py",
+        "once": "alan 212, fiyat 56, fiyat sayfası olup fiyat çıkmayan 48",
+        "sonra": "alan 273, fiyat 108, fiyat çıkmayan 16",
+        "durum": "cozuldu",
+        "kalan_sinir": "Kalan 16 sayfada gövdede gerçekten fiyat yok.",
+        "fb_id": "—", "yeniden_uretim": "python3 normalize_belgeler.py --yaz",
+        "commit": "bc7bf2a",
+    },
+    {
+        "bulgu_id": "CG-14",
+        "baslik": "Filtre gerçek kanıt eliyordu",
+        "ne_denendi": "'Ölçüm kanıtı üretmez' diye elenen 76 belgede fiyat çıktı; "
+                      "bağlamları tek tek okundu",
+        "tarih": "2026-09-25", "script": "hata_incelemesi.py",
+        "once": "76 belge elenmişti, hangisinin gerçek olduğu bilinmiyordu",
+        "sonra": "10'u gerçek kanıt (Airbnb ₺4.733 + 4.78 puan, AppSumo $39 + "
+                 "3 yorum), 66'sı gürültü ('$2.3 billion in AUM' gibi)",
+        "durum": "kismen",
+        "kalan_sinir": "Ayrım kuralı yazıldı ama filtreye henüz uygulanmadı; "
+                       "10 kanıt hâlâ elenmiş durumda.",
+        "fb_id": "—", "yeniden_uretim": "python3 hata_incelemesi.py --yaz",
+        "commit": "bc7bf2a",
+    },
+    {
+        "bulgu_id": "CG-15",
+        "baslik": "Yoklama artefaktları kanıt zincirine hiç girmiyordu",
+        "ne_denendi": "AS-01 ve AS-03 scriptleri artefaktı diske yazıyor ama "
+                      "EK-ARTEFAKT-DIZINI.csv'ye satır eklemiyordu",
+        "tarih": "2026-09-27", "script": "normalize_belgeler.py",
+        "once": "Fresha'nın TRY fiyatı, Booksy'nin no-show yorumu, Filestage ve "
+                "Ziflow raporlarda kanıt diye gösteriliyordu ama veri kümesinde yoktu; "
+                "AS-04'ün iki karşıt bulgusu sayımda görünmüyordu",
+        "sonra": "21 artefakt dizine işlendi; belge 1249→1270, alan 273→307, "
+                 "karşıt bulgular sayımda göründü",
+        "durum": "cozuldu",
+        "kalan_sinir": "Scriptler hâlâ dizine kendileri yazmıyor; geri dolduruldu.",
+        "fb_id": "—", "yeniden_uretim": "python3 kanit_sayimi.py --yaz",
+        "commit": "b24fcbe",
+    },
+    {
+        "bulgu_id": "CG-16",
+        "baslik": "Aynı şirketin farklı markaları bağımsız sayılıyordu",
+        "ne_denendi": "3/2 sayımı geçen hücrelerde ortak sahiplik arandı",
+        "tarih": "2026-09-27", "script": "source_fit_matrix.py",
+        "once": "GetApp ve Software Advice (ikisi de Gartner'ın) "
+                "b2b-web-yazilimi/competitor_discovery'de 2 bağımsız kaynak sayılıyordu",
+        "sonra": "Bilinen sahiplik gruplamaya eklendi; 421→415 grup, geçen hiçbir "
+                 "hücrede aynı sahibin iki markası ayrı değil",
+        "durum": "cozuldu",
+        "kalan_sinir": "Sahiplik listesi BEYAN EDİLMİŞ bilgidir, ölçülmüş değil; "
+                       "Batuhan'ın incelemesine açık. Listede olmayan ortak "
+                       "sahiplikler hâlâ ayrı sayılır.",
+        "fb_id": "—", "yeniden_uretim": "python3 -m unittest "
+                  "test_source_fit_matrix.KopyalarBagimsizSayilmazTests",
+        "commit": "3bce1e3",
+    },
+    {
+        "bulgu_id": "CG-17",
+        "baslik": "Yakalanan sayfalarda üçüncü taraf API anahtarları vardı",
+        "ne_denendi": "GitHub push protection iki kez reddetti; tüm sağlayıcı "
+                      "desenleri (Replicate, Stripe, Clerk, JWT...) tarandı",
+        "tarih": "2026-09-25", "script": "ic_sayfa_gecisi.py",
+        "once": "push reddi: 'Push cannot contain secrets' — bir Replicate token, "
+                "iki pk_live, bir JWT",
+        "sonra": "4 artefakt redakte edildi; orijinaller local-originals/ altına, "
+                 "shared-redactions.json'a 9 kayıt",
+        "durum": "cozuldu",
+        "kalan_sinir": "Anahtarlar sitelerin kendi yayımladığı değerlerdi, bizim "
+                       "değil. Yeni artefakt eklenirken tarama tekrarlanmalı.",
+        "fb_id": "—", "yeniden_uretim": "grep -rE 'r8_[A-Za-z0-9]{35,}|pk_live_' results/raw/",
+        "commit": "952f4b5",
+    },
+    {
+        "bulgu_id": "CG-18",
+        "baslik": "as01_kaynak_kontrol.py komut satırından çalışmıyordu",
+        "ne_denendi": "Batuhan'ın source_plan.py'si bu scripti LAB_SCRIPT olarak "
+                      "çağırıyor; çalıştırılınca NameError veriyordu",
+        "tarih": "2026-09-27", "script": "as01_kaynak_kontrol.py",
+        "once": "`python3 as01_kaynak_kontrol.py --canli` → "
+                "NameError: iddialari_dogrula is not defined",
+        "sonra": "if __name__ bloğu dosya sonuna taşındı; script çalışıyor",
+        "durum": "cozuldu",
+        "kalan_sinir": "Modül olarak import edilince sorun yoktu, bu yüzden "
+                       "testler yakalamamıştı. CLI yolu test edilmiyor.",
+        "fb_id": "—", "yeniden_uretim": "python3 as01_kaynak_kontrol.py --yaz",
+        "commit": "—",
+    },
+    {
+        "bulgu_id": "CG-19",
+        "baslik": "İçerik-adresli yazıcı redaksiyon sözleşmesiyle çarpışıyor",
+        "ne_denendi": "BT-02 sağlık taraması redakte edilmiş bir sayfayı yeniden "
+                      "çekince yazıcı durdu",
+        "tarih": "2026-09-27", "script": "saglik_taramasi.py",
+        "once": "ValueError: existing_raw_artifact_hash_mismatch — tarama çöktü",
+        "sonra": "Saklama tarama tarafından yönetiliyor; redakte dosyanın üzerine "
+                 "yazılmıyor. 305 kaynak tarandı",
+        "durum": "cozuldu",
+        "kalan_sinir": "İki sözleşme yapısal olarak çelişiyor: dosya adı orijinal "
+                       "hash'i korurken baytlar farklı. Yeni yazan her modül bunu "
+                       "bilmek zorunda.",
+        "fb_id": "—", "yeniden_uretim": "python3 saglik_taramasi.py --canli --sinir 6",
+        "commit": "—",
+    },
+    {
+        "bulgu_id": "CG-20",
+        "baslik": "Normalize taşınmadan sonra artefaktların çoğunu bulamıyordu",
+        "ne_denendi": "Depo üç fazlı yapıya taşındıktan sonra script ilk kez koşturuldu",
+        "tarih": "2026-09-25", "script": "normalize_belgeler.py",
+        "once": "1249 belge 179'a düştü; iyi bir veri kümesi eksik olanla üzerine yazıldı",
+        "sonra": "İki arşiv konumuna da bakıyor; 1249 geri geldi",
+        "durum": "cozuldu",
+        "kalan_sinir": "Artefaktların 1021'i hâlâ yalnız yerel arşivde; depoya "
+                       "yalnız sayı çıkarılanlar alındı.",
+        "fb_id": "—", "yeniden_uretim": "python3 normalize_belgeler.py --yaz",
+        "commit": "bc7bf2a",
+    },
 ]
 
 
@@ -277,11 +413,22 @@ def saglik_kayitlari() -> list[dict[str, Any]]:
     envanter = {r["source_id"]: r for r in _oku("VERI-ENVANTERI.csv")}
     kontrol = _oku("AS01-KAYNAK-KONTROL.csv")
     alternatif = _oku("AS01-ALTERNATIF-KAYNAK.csv")
+    # BT-02 saglik taramasi 305 kaynagi canli yokladi; saglik kaydi artik
+    # yalniz F01-F10 matrisindeki 14 kaynakla sinirli degil.
+    tarama = _oku("BT02-ADAY-KAYNAKLAR.csv")
     dizin = _oku("ARTEFAKT-DIZINI.csv") + _oku("EK-ARTEFAKT-DIZINI.csv")
 
     son_deneme: dict[str, dict[str, str]] = {}
     for satir in kontrol:
         son_deneme.setdefault(satir["source_id"], satir)
+    for satir in tarama:
+        sid = satir["source_id"]
+        if sid not in son_deneme:
+            son_deneme[sid] = {"bugun_erisim": satir["bugun_erisim"],
+                               "bugun_icerik": satir["bugun_icerik"],
+                               "denenen_url": satir["yoklanan_url"],
+                               "kayitli_icerik": satir["kayitli_icerik"],
+                               "degisti_mi": "", "bugun_artefakt": satir["artefakt"]}
     for satir in alternatif:
         sid = satir["source_id"]
         if sid.startswith("source-") and sid not in son_deneme:
@@ -312,7 +459,7 @@ def saglik_kayitlari() -> list[dict[str, Any]]:
             "kaynak_adi": kayit.get("ad", "?"),
             "saglik": sinif,
             "sebep": sebep,
-            "son_olcum": "2026-09-24",
+            "son_olcum": "2026-09-27",
             "son_denenen_url": deneme.get("denenen_url", ""),
             "bugun_erisim": erisim,
             "bugun_icerik": icerik,

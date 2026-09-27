@@ -92,7 +92,11 @@ class KanitZorunluTests(unittest.TestCase):
                 continue
             yol = HERE / r["bugun_artefakt_dosya"]
             self.assertTrue(yol.exists(), r["source_id"])
-            self.assertEqual(r["bugun_artefakt"],
+            # Redakte edilmis kopyanin dosya adi ORIJINAL ozeti korur ama
+            # baytlarin ozeti degisir; dogrulama shared_sha256 ile yapilir.
+            temizlenmis = CikarilanSayininKaynagiDepodaTests._paylasilan_ozetler()
+            beklenen = temizlenmis.get(r["bugun_artefakt"], r["bugun_artefakt"])
+            self.assertEqual(beklenen,
                              hashlib.sha256(yol.read_bytes()).hexdigest(), r["source_id"])
             kontrol_edilen += 1
         self.assertGreater(kontrol_edilen, 0)

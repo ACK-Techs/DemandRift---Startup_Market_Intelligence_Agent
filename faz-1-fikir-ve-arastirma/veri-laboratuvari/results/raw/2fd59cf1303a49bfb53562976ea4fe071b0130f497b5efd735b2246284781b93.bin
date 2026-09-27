@@ -1,0 +1,436 @@
+<!DOCTYPE html><!-- Last Published: Fri Sep 25 2026 20:05:45 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="webflow.sprig.com" data-wf-page="655642a27755a50e246fe469" data-wf-site="651206cc884d0caef0f4c520"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Integrations | Sprig</title><meta content="Connect Sprig to your favorite tools to easily share user events, attributes, and insights. Explore our integrations including Figma, Slack, and Mixpanel." name="description"/><meta content="Integrations | Sprig" property="og:title"/><meta content="Connect Sprig to your favorite tools to easily share user events, attributes, and insights. Explore our integrations including Figma, Slack, and Mixpanel." property="og:description"/><meta content="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69c2fd5f6882434c7781fd39_meta-img-new.png" property="og:image"/><meta content="Integrations | Sprig" name="twitter:title"/><meta content="Connect Sprig to your favorite tools to easily share user events, attributes, and insights. Explore our integrations including Figma, Slack, and Mixpanel." name="twitter:description"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/css/sprigs-groovy-site.webflow.shared.dc6b6d996.min.css" rel="stylesheet" type="text/css" integrity="sha384-3GttmW3neLbpm/6bGe1MYLdUfU8NUQ97+WzD4vwnGlPI9QeJ+qDtbVr3dIDq1tYF" crossorigin="anonymous"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c4840254eb1502a623f_favicon.png" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c4840254eb1502a623f_favicon.png" rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c4841004e99a0bb51e9_favicon.png" rel="icon" type="image/png" sizes="48x48"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c481128dde2351373d4_favicon.png" rel="apple-touch-icon" sizes="180x180"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c4821272afa99a6e117_favicon.png" rel="icon" type="image/png" sizes="192x192"/><link href="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3c48054debea297393ee_favicon.png" rel="icon" type="image/png" sizes="512x512"/><link href="https://sprig.com/integrations" rel="canonical"/><script>
+      const loadScript = (src, id, async = true, otherAtributes = []) => {
+        const f = document.getElementsByTagName('head')[0];
+        const s = document.createElement('script');
+        s.src = src;
+
+        if (async) {
+          s.async = true;
+          s.defer = true;
+        }
+
+        if (id) {
+          s.id = id;
+        }
+        otherAtributes.forEach(({ key, value }) => {
+          if (!key || !value) {
+            return;
+          }
+          s.setAttribute(key, value);
+        });
+        f.appendChild(s);
+        return s;
+      };
+
+      const gtmTag = location.host === 'staging.sprig.com' || location.host === 'sprigs-groovy-site.webflow.io' ? 'GTM-TQX3DPQW' : 'GTM-N2JG399';
+      let gtmLoaded = false;
+
+      // create the datalayer
+      window.dataLayer = window.dataLayer || [{ 'gtm.start': new Date().getTime(), event: 'gtm.js' }];
+
+      // create unify stub
+      window.unify ||
+        (window.unify = Object.assign(
+          [],
+          ['identify', 'page', 'startAutoPage', 'stopAutoPage', 'startAutoIdentify', 'stopAutoIdentify'].reduce(
+            function (t, e) {
+              return (
+                (t[e] = function () {
+                  return unify.push([e, [].slice.call(arguments)]), unify;
+                }),
+                t
+              );
+            },
+            {}
+          )
+        ));
+
+      const loadGTM = (w, d, s, l, i) => {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.defer = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'once',
+              'off',
+              'on',
+              'addSourceMiddleware',
+              'addIntegrationMiddleware',
+              'setAnonymousId',
+              'addDestinationMiddleware',
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement('script');
+              t.type = 'text/javascript';
+              t.async = !0;
+              t.src = 'https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';
+              var n = document.getElementsByTagName('script')[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = 'EeHSrLVyDVgdTyWvwT9bYfimHlfpn2B2';
+            analytics.SNIPPET_VERSION = '4.15.3';
+            analytics.load('EeHSrLVyDVgdTyWvwT9bYfimHlfpn2B2');
+            analytics.page();
+          }
+      };
+
+      const loadThridParty = () => {
+        if (gtmLoaded) {
+          return;
+        }
+        gtmLoaded = true;
+
+        loadGTM(window, document, 'script', 'dataLayer', `${gtmTag}`);
+        loadScript('https://tag.unifyintent.com/v1/2UvY3BxJ31svEb5vdB9H4S/script.js', 'unifytag', true, [
+          { key: 'data-api-key', value: 'wk_girKqUXA_CSkNotqHyvq1mjyCPsne2x7xJTxq2JrD' },
+        ]);
+        loadScript('https://js.hs-scripts.com/8224380.js', 'hs-script-loader');
+      };
+
+      window.addEventListener('load', () => {
+        setTimeout(
+          () => {
+            loadThridParty();
+          },
+          3500
+        );
+      });
+
+      document.addEventListener('scroll', loadThridParty);
+      document.addEventListener('mousemove', loadThridParty);
+      document.addEventListener('touchstart', loadThridParty);
+</script>
+
+<!-- Finsweet Attributes for no scroll when nav is open -->
+<script async type="module"
+src="https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+fs-scrolldisable
+></script></head><body><div class="page-wrapper background-color-white_v2"><div class="hide w-embed"><style>
+  /* Anti alias on text */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Global rich text styling */
+  .text-rich-text p:last-child {
+    margin-bottom: 0px;
+  }
+  .w-richtext b {
+    font-weight: 500 !important;
+  }
+  .w-richtext strong {
+    font-weight: 500 !important;
+  }
+  /* List style with numbers */
+  .list-style-v2-numbers ol {
+    padding-left: 0 !important;
+  }
+  .list-style-v2-numbers li {
+    padding: 0.75rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid var(--border--subtle);
+    border-bottom: 1px solid var(--border--subtle);
+    display: flex;
+    align-items: flex-start;
+    /* gap: 10px; */
+    counter-increment: list-counter;
+  }
+  /* gap between numbers and start*/
+  .list-style-v2-numbers li::before {
+    margin-right: 10px;
+  }
+  .list-style-v2-numbers li + li {
+    border-top: none;
+  }
+  .list-style-v2-numbers li::before {
+    content: counter(list-counter);
+    color: var(--text--neutral);
+    min-width: 1rem;
+  }
+  /* List style with drop arrow */
+  .list-style-v2-arrows ul {
+    padding-left: 0 !important;
+    font-family:
+      ABC Diatype,
+      Arial,
+      sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .list-style-v2-arrows li::before {
+    content: '';
+    background-image: url('https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b70758646bd86ef33c46a4_Vector%20(3).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .list-style-v2-arrows li {
+    padding: 0.75rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid var(--border--subtle);
+    border-bottom: 1px solid var(--border--subtle);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .list-style-v2-arrows li + li {
+    border-top: none;
+  }
+  .list-style-v2-arrows.is-dark li + li {
+    border-top: none;
+  }
+  /* Dark background list styling */
+  .list-style-v2-arrows.is-dark li {
+    border-top: 1px solid var(--border--neutral);
+    border-bottom: 1px solid var(--border--neutral);
+    color: #fff;
+  }
+
+  /* List style for checkmarks exp. pricing page */
+  .list-style-v2-checkmarks li::before {
+    content: '';
+    background-image: url('https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69c880127fe94077a0b0b303_check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  /* has larger padding than arrows */
+  .list-style-v2-checkmarks li {
+    padding: 1.2rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid var(--border--subtle);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .list-style-v2-checkmarks li:last-child {
+    border-bottom: 1px solid var(--border--subtle);
+  }
+  .list-style-v2-checkmarks.is-extra-strong li {
+    border-top: 1px solid var(--border--neutral);
+  }
+  .list-style-v2-checkmarks.is-extra-strong li:last-child {
+    border-bottom: 1px solid var(--border--neutral);
+  }
+
+  /* For xmark style that is a check for compare tables */
+  .list-style-v2-checkmarks.is-xmarkstyle li::before {
+    background-image: url(https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a39c2522e322725c881af3c_check-medium.svg);
+  }
+  .list-style-v2-checkmarks.is-xmarkstyle li {
+    border-top: 1px solid #dddcd9;
+  }
+  .list-style-v2-checkmarks.is-xmarkstyle li:last-child {
+    border-bottom: 1px solid #dddcd9;
+  }
+
+  /* Dark mode for checkmarks */
+  .list-style-v2-checkmarks.is-dark-mode li::before {
+    content: '';
+    background-image: url('https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69d02ca98343fa3418480ed8_check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .list-style-v2-checkmarks.is-dark-mode li {
+    border-top: 1px solid var(--border--neutral);
+  }
+  .list-style-v2-checkmarks.is-dark-mode li:last-child {
+    border-bottom: 1px solid var(--border--neutral);
+  }
+  /* List style for x mark list (compare pages) */
+  .list-style-v2-xmark li::before {
+    content: '';
+    background-image: url('https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a31db58f2c45b6772886e9d_Frame%20(2).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  /* has larger padding than arrows */
+  .list-style-v2-xmark li {
+    padding: 1.2rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid #dddcd9;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .list-style-v2-xmark li:last-child {
+    border-bottom: 1px solid #dddcd9;
+  }
+
+  /* Coming soon tag styling on list item */
+  .list-style-v2-arrows li.li-item_eyebrow {
+    align-items: center;
+  }
+
+  .list-style-v2-arrows li.li-item_eyebrow::before {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+
+  .list-style-v2-arrows li.li-item_eyebrow::after {
+    content: 'Coming soon';
+    font-family:
+      ABC Diatype,
+      Arial,
+      sans-serif;
+    font-size: 0.75rem;
+    color: #6e6d6a;
+    background: #e8e7e6;
+    border-radius: 100px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    align-self: center;
+    margin-left: auto;
+  }
+  /* List styles for heading lists (no bullets + big text) */
+  .list-style-v2-headings li {
+    padding: 1.25rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid var(--border--subtle);
+    border-bottom: 1px solid var(--border--subtle);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .list-style-v2-headings li + li {
+    border-top: none;
+  }
+  .list-style-v2-headings li:last-child {
+    border-bottom: none;
+  }
+
+  /* Pricing page section with left dashed lines */
+  .dashed-border-line_vertical-dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    border-top: 1px dashed var(--border--neutral);
+  }
+  .dashed-border-line_vertical-dark::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    border-bottom: 1px dashed var(--border--neutral);
+  }
+  @media (max-width: 991px) {
+    .dashed-border-line_vertical-dark::before {
+      width: 1.25rem;
+    }
+    .dashed-border-line_vertical-dark::after {
+      width: 1.25rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .navbar-wrapper[data-wf--nav-april-2026--variant='clear-mode']:has(.w--open) {
+      background-color: var(--background--mid-tone) !important;
+      transition: none !important;
+    }
+  }
+  /* Integrations link styling */
+  .integrations-list_link:hover .integrations-list_link_arrow {
+    transform: translateX(5px); /* move right */
+    filter: invert(100%);
+  }
+  .integrations-list_link.is-nolink .integrations-list_link_arrow {
+    opacity: 0;
+  }
+  .integrations-list_container:last-child .integrations-list_link {
+    border-top: 1px solid var(--border--subtle);
+  }
+  .integrations-list_container .integrations-list_link:last-child {
+    border-bottom: 1px solid var(--border--subtle);
+  }
+
+  /* Compare pages table stylings  */
+  .comparison-grid_v2 li {
+    height: 100%;
+  }
+  .comparison-grid_v2 ol {
+    height: 100%;
+  }
+  .comparison-grid_v2 ul {
+    height: 100%;
+  }
+  .comparison-grid_row.is-multiple-list-items li {
+    border-top: 0px solid transparent;
+  }
+  /*Individual competitor table styles */
+  .comparison-grid_v2.is-single-items li {
+    border-top: 0px solid transparent;
+    padding-top: 0rem;
+  }
+</style></div><div><div class="navbar_banner w-dyn-list"><div role="list" class="nav-banner is-v2 w-dyn-items"><div role="listitem" class="nav-banner_inner w-dyn-item"><div class="text-size-small_v2 is-inline text-color-white">Sprig Surveys just got a major upgrade.</div><a href="/blog/new-sprig-surveys" class="text-size-small_v2 text-link-gradient">See what’s new →</a></div></div></div></div><div data-wf--nav-april-2026--variant="light-mode" data-animation="default" class="navbar-wrapper w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="b0ce1155-7d2e-eb51-6ab3-d3bd518d5ae7" role="banner" data-no-scroll="1" data-duration="400"><div class="padding-global"><div class="container-large w-container"><div class="navbar-inner"><a href="/" class="navbar-logo w-nav-brand"><img width="399" height="150" alt="" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b0b2e42b98b28ddbf9a387_Sprig_Logo.svg" loading="eager" class="nav-logo_v2"/></a><nav role="navigation" fs-scrolldisable-element="smart-nav" class="navbar-links_container w-nav-menu"><div class="navbar-links_container-inner"><div data-delay="0" data-hover="true" class="navbar-dropdown w-dropdown"><div class="navbar-link is-dropdown-toggle w-dropdown-toggle"><div>Solutions</div></div><nav class="nav-dropdown_item is-regular w-dropdown-list"><div class="nav-dropdown_item-inner"><a href="/solutions/experience-measurement" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b9f0eedc31dc345a698086_diameter.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Experience measurement</div><div class="text-size-small_v2 text-color-medium">Track sentiment and KPIs with AI-driven gap analysis</div></div></a><a href="/solutions/strategic-foundational-research" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b9f1676dd2fab8b23e04e9_squares-subtract.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Strategic &amp; foundational discovery</div><div class="text-size-small_v2 text-color-medium">Uncover market whitespace with AI-led foundational studies</div></div></a><a href="/solutions/journey-behavioral-research" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b9f15ce828e11b6feeb3db_route.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Journey &amp; behavioral research</div><div class="text-size-small_v2 text-color-medium">Connect user actions to motivations across the lifecycle</div></div></a><a href="/solutions/market-consumer-insights" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21ac12b23d113bef0016e2_Frame.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Market &amp; consumer Insights</div><div class="text-size-small_v2 text-color-medium">Understanding markets, audiences, &amp; opportunity</div></div></a><a href="/solutions/concept-prototype-testing" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b9f14fb2bb6f3a78534a56_drafting-compass.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Concept &amp; prototype testing</div><div class="text-size-small_v2 text-color-medium">Test designs and prototypes with rapid feedback</div></div></a></div></nav></div><div data-delay="0" data-hover="true" class="navbar-dropdown w-dropdown"><div class="navbar-link is-dropdown-toggle w-dropdown-toggle"><div>Agents</div></div><nav class="nav-dropdown_item is-regular w-dropdown-list"><div class="nav-dropdown_item-inner"><a href="/agent/design" class="nav-dropdrom_item-inner-item w-inline-block"><div class="heading-circle"></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Design</div><div class="text-size-small_v2 text-color-medium">Structure rigorous studies</div></div></a><a href="/agent/field" class="nav-dropdrom_item-inner-item w-inline-block"><div class="heading-circle is-field"></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Field</div><div class="text-size-small_v2 text-color-medium">Run adaptive studies at scale</div></div></a><a href="/agent/synthesize" class="nav-dropdrom_item-inner-item w-inline-block"><div class="heading-circle is-synthesize"></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Synthesize</div><div class="text-size-small_v2 text-color-medium">Turn results into research reports</div></div></a></div></nav></div><div data-delay="0" data-hover="true" class="navbar-dropdown w-dropdown"><div class="navbar-link is-dropdown-toggle w-dropdown-toggle"><div>Deploy</div></div><nav class="nav-dropdown_item is-regular w-dropdown-list"><div class="nav-dropdown_item-inner"><a href="/deploy/email" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69bb3f816dc93358dd7dbbc2_send.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Email</div><div class="text-size-small_v2 text-color-medium">Reach external audiences with native deliverability</div></div></a><a href="/deploy/panels" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a5fee75679425a7c4027659_Frame%20(7).svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Panels</div><div class="text-size-small_v2 text-color-medium">Recruit from 300K+ verified participants</div></div></a><a href="/deploy/web-apps-websites" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69bb3f87badbe7831efc3cfa_laptop-minimal.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Web apps and websites</div><div class="text-size-small_v2 text-color-medium">Embed studies in web experiences</div></div></a><a href="/deploy/mobile-apps" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69bb3f8dc1010b311e93b958_smartphone.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Mobile apps</div><div class="text-size-small_v2 text-color-medium">Run studies in iOS and Android apps</div></div></a></div></nav></div><a href="/customers" class="navbar-link w-nav-link">Customers</a><div data-delay="0" data-hover="true" class="navbar-dropdown w-dropdown"><div class="navbar-link is-dropdown-toggle w-dropdown-toggle"><div>Community</div></div><nav class="nav-dropdown_item is-regular w-dropdown-list"><div class="nav-dropdown_item-inner"><a href="/events" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69bb3ff0429bad5d220c7d11_calendar.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Events</div><div class="text-size-small_v2 text-color-medium">Join curated gatherings shaping the future of research</div></div></a><a href="/blog" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69bb3ff70954aae4d0312315_globe.svg" loading="lazy" width="20" alt="" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Blog</div><div class="text-size-small_v2 text-color-medium">Insights on integrating AI into research craft</div></div></a><a href="/guides" class="nav-dropdrom_item-inner-item w-inline-block"><div class="solutions_icon-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a594128d24987caaed874fa_Sprig-Guides.svg" loading="lazy" width="20" alt="Book icon" class="solutions_icon"/></div><div class="nav-dropdrom_item-inner-item_text-container"><div class="text-size-small_v2">Guides</div><div class="text-size-small_v2 text-color-medium">Ultimate playbooks for enterprise survey research</div></div></a></div></nav></div><a href="/pricing" class="navbar-link w-nav-link">Pricing</a></div><div class="navbar-inner_mobile-only-container"><a href="https://app.sprig.com/login" target="_blank" class="navbar-link is-login w-nav-link">Sign in</a><a href="/demo" class="button_v2 is-arrow is-grow w-inline-block"><div>Book a demo</div><img loading="lazy" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69af6a39b0f21be29de2cd48_arrow-right.svg" alt=""/></a></div></nav><div class="navbar-buttons"><a href="https://app.sprig.com/login" target="_blank" class="navbar-link is-login w-nav-link">Sign in</a><a data-wf--button-arrow--design-variant="dark" href="/demo" class="button_v2 is-arrow w-inline-block"><div>Book a demo</div><img loading="lazy" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69af6a39b0f21be29de2cd48_arrow-right.svg" alt=""/></a></div><div class="navbar-mobile_button w-nav-button"><div class="nav_mobile-button"><img width="32" height="32" alt="" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69c1df621cb91b00b1ba2713_hamburger%20nav%201.svg" loading="lazy" class="icon-1x1-xlarge is-open"/><img width="32" height="32" alt="" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69c1df5e5ec385db48d54f6d_close%20icon%201.svg" loading="lazy" class="icon-1x1-xlarge is-close"/></div></div></div></div></div></div><main class="main-wrapper"><section class="section_hero"><div class="padding-global"><div class="spacer-xxhuge"></div><aside class="container-medium"><div class="max-width-40 align-center position-relative"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e73e539bc82db563ef_dovetail-icon_hero.svg" loading="eager" alt="" class="integrations-hero_top-left"/><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e73d584c533bd44dd7_zapier-icon_hero.svg" loading="eager" alt="" class="integrations-hero_mid-left"/><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e6315e453a55a218f1_chat-icon_hero.svg" loading="eager" alt="" class="integrations-hero_bottom-left"/><div class="text-size-small_v2 text-color-medium text-align-center">Integrations</div><div class="spacer-medium"></div><h1 class="heading-style-h1_v2 text-align-center">Integrate Sprig across your research stack</h1><div class="spacer-medium"></div><p class="text-size-small_v2 text-color-medium text-align-center">Connect Sprig with your research tools to centralize user insights, streamline research operations, and maximize your impact.</p><div class="spacer-large"></div><div class="hero-buttons_v2"><a data-wf--button-fill--design-variant="dark" href="/demo" class="button_v2 w-button is-large">Book a demo</a></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e7c0c53144bcd1e722_user-interview_hero.svg" loading="eager" alt="" class="integrations-hero_bottom-right"/><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e7315e453a55a2193b_Figma-icon_hero.svg" loading="eager" alt="" class="integrations-hero_mid-right"/><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e68dae8b81d39f1a9c_claude-icon_hero.svg" loading="eager" alt="" class="integrations-hero_top-right"/></div></aside><div class="spacer-xxhuge"></div></div></section><section class="section_integrations-overview"><div class="padding-global"><aside class="container-large"><div class="divider_v2"></div><div class="spacer-xxlarge"></div><div class="side-text-img_container"><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Test with external panels &amp; tap into new audiences.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Recruit panel participants and manage incentives when you’re looking for feedback outside your own user base.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/user-interviews" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/655651855c020a03b7e8f639_user%20interviews.svg" loading="lazy" width="100" height="100" alt="user interviews" class="integrations_link-img"/><p class="text-size-small_v2">User Interviews</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f39d9c9f294707500909b_Frame%201321314327%20(2).avif" loading="eager" sizes="100vw" srcset="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f39d9c9f294707500909b_Frame%201321314327%20(2)-p-500.avif 500w, https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f39d9c9f294707500909b_Frame%201321314327%20(2).avif 1446w" alt="" class="img_100"/></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container reverse"><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21b0f588945cd7b955ee02_Frame%201321314327%20(1).svg" loading="lazy" alt="" class="img_100"/></div><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Bring customer research data to wherever you work.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Sprig MCP connects live surveys, responses, and user themes directly to your LLM tools, instantly generating real-time insights within your daily workflow.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/claude" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10c3e68dae8b81d39f1a9c_claude-icon_hero.svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Claude</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/chatgpt" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21b5a33032b94b8fce6a51_image%205%20(2).svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">ChatGPT</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/gemini" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21b7b27f47a797da3a7b3c_gemini_logo.avif" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Gemini</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/copilot" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21b5ab99d21f72870aa011_image%205%20(3).svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Copilot</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/cursor" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a21b5d2294c444ec743f0d6_image%205%20(4).svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Cursor</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container"><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Centralize feedback in your research hub.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Automatically send Sprig insights to your research repository for easy access and collaboration.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/dovetail" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/682e642f98238bbf4304077d_linear.svg" loading="lazy" width="100" height="100" alt="Dovetail logo" class="integrations_link-img"/><p class="text-size-small_v2">Dovetail</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/notion" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa9d42e2708ff7f97caa8_image%205%20(1).svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Notion</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3a018d4d748bcba828bd_Frame%201321314303%20(2).svg" loading="lazy" alt="" class="img_100"/></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container reverse"><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10ba876dc07829c64fbcef_Share%20User%20Insights.svg" loading="lazy" alt="" class="img_100"/></div><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Share user insights for seamless collaboration.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Share user insights instantly across teams by connecting Sprig to your team’s communication workflows.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/slack" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65565078771ddfee64172682_slack.svg" loading="lazy" width="100" height="100" alt="slack logo" class="integrations_link-img"/><p class="text-size-small_v2">Slack</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/zapier" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6556507993d130851f14be57_zapier.svg" loading="lazy" width="100" height="100" alt="zapier" class="integrations_link-img"/><p class="text-size-small_v2">Zapier</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container"><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Test designs &amp; prototypes built in your favorite tools.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Leverage Sprig’s 1-click integrations with 12 top design tools and easily embed them into your prototype tests.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/figma" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffaa6d380b1137fb431427_image%206%20(1).svg" loading="lazy" width="100" height="100" alt="" class="integrations_link-img"/><p class="text-size-small_v2">Figma</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/sketch" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65565186bb377e2faf35baf0_sketch.svg" loading="lazy" width="100" height="100" alt="sketch logo" class="integrations_link-img"/><p class="text-size-small_v2">Sketch</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/adobe-xd" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/655651853277f7f3fba8458d_adobe%20xd.svg" loading="lazy" width="100" height="100" alt="adobe xd" class="integrations_link-img"/><p class="text-size-small_v2">Adobe XD</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3a228d4d748bcba85cd0_Frame%201321314285%20(3).svg" loading="lazy" alt="" class="img_100"/></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container reverse"><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bacdde52cfd0c419f0de_Frame%202087329490.avif" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bacdde52cfd0c419f0de_Frame%202087329490-p-500.avif 500w, https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bacdde52cfd0c419f0de_Frame%202087329490-p-800.avif 800w, https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bacdde52cfd0c419f0de_Frame%202087329490.avif 1446w" alt="" class="img_100"/></div><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Embed Sprig into your product in just a few hours.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Using Segment or Google Tag Manager? Easily import your user events and attributes to trigger your Sprig In-Product Surveys.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/segment-web" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564d7110c1832d9f35cd90_segment.svg" loading="lazy" width="100" height="100" alt="segment logo" class="integrations_link-img"/><p class="text-size-small_v2">Segment</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/google-tag-manager" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564d71463db4540f14891d_google%20tag%20manager.svg" loading="lazy" width="100" height="100" alt="gtm logo" class="integrations_link-img"/><p class="text-size-small_v2">Google Tag Manger</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container"><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Leverage user data for enhanced targeting.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Get targeted insights from specific users with the user event &amp; attribute data your product already tracks.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/census" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564eb7af7bb36d7c3f8fa4_census.svg" loading="lazy" width="100" height="100" alt="census logo" class="integrations_link-img"/><p class="text-size-small_v2">Census</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/segment-web" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564d7110c1832d9f35cd90_segment.svg" loading="lazy" width="100" height="100" alt="segment logo" class="integrations_link-img"/><p class="text-size-small_v2">Segment</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/rudderstack" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65a7089dea431f26e653debe_rudderstack.svg" loading="lazy" width="100" height="100" alt="rudderstack logo" class="integrations_link-img"/><p class="text-size-small_v2">RudderStack</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3a3d1b7dda25511ea562_Enhanced%20Targeting.svg" loading="lazy" alt="" class="img_100"/></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container reverse"><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bb44b09619d4debebda8_Share%20User%20Insights.avif" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bb44b09619d4debebda8_Share%20User%20Insights-p-500.avif 500w, https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bb44b09619d4debebda8_Share%20User%20Insights-p-800.avif 800w, https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a10bb44b09619d4debebda8_Share%20User%20Insights.avif 1446w" alt="" class="img_100"/></div><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Combine quant &amp; qual data for deeper insights.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Integrate Sprig with your analytics platforms to uncover the &#x27;why&#x27; behind the &#x27;what&#x27; in user actions.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/mixpanel" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564f87053d5641403853ed_mixpanel.svg" loading="lazy" width="100" height="100" alt="mixpanel logo" class="integrations_link-img"/><p class="text-size-small_v2">Mixpanel</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/amplitude" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/65564f8613b018e9e64a68c4_amplitude.svg" loading="lazy" width="100" height="100" alt="amplitude logo" class="integrations_link-img"/><p class="text-size-small_v2">Amplitude</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div></div><div class="spacer-xxhuge"></div><div class="side-text-img_container"><div class="side-text-img_text-wrapper"><h2 class="heading-style-h3_v2 display-inline">Understand the “why” behind A/B test results.</h2><div class="heading-style-h3_v2 text-color-neutral display-inline"> Capture user sentiment data alongside metrics in your A/B tests to reveal why a specific variant won.</div><div class="spacer-xxlarge"></div><div class="integrations-list_container"><a href="/integrations/optimizely" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6556501a507f6a9d81725fb8_optimizely.svg" loading="lazy" width="100" height="100" alt="optimizely logo" class="integrations_link-img"/><p class="text-size-small_v2">Optimizely</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a><a href="/integrations/launchdarkly" class="integrations-list_link w-inline-block"><div class="integrations-list-inner_link"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6556501a0b094bbeae1f3c16_launchdarkly.svg" loading="lazy" width="100" height="100" alt="launchdarkly logo" class="integrations_link-img"/><p class="text-size-small_v2">LaunchDarkly</p></div><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69ffa6624a9e5aa15f36cdac_arrow-right_faint.svg" loading="lazy" alt="" class="integrations-list_link_arrow"/></a></div></div><div class="side-text-img_img-wrapper"><img src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/6a0f3a4e8cffb1788f157e18_AB%20Testing.svg" loading="lazy" alt="" class="img_100"/></div></div><div class="spacer-xxhuge"></div></aside></div></section><section class="section_integrations"><div class="padding-global"><aside class="container-large"><div class="divider_v2"></div><div class="spacer-xxlarge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h2 class="heading-style-h3_v2">All Integrations</h2></div><div class="side-split-heading_main-container is-75"><div class="max-width-75"><h2 class="heading-style-h3_v2">Connect Sprig with your (other) favorite apps <span class="text-color-neutral">to easily share user insights across your team‘s favorite tools.</span></h2></div></div></div><div class="spacer-xxhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Panels</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/user-interviews" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/65314f1baacd0a6685ef6235_user%20interviews.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">User Interviews</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig studies to User Interviews to test with the right users at the right moment</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">LLMs</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/claude" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c2c73efa0b10cfcaf2a48_claude-icon.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Claude</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Connect Sprig with Claude to power multi-system workflows</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/chatgpt" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c2f636b54ea0d8ff055af_Frame%202087329502%20(1).svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">ChatGPT</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Connect Sprig with ChatGPT to power multi-system workflows.</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/gemini" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c3053dae8837408aebbef_Frame%202087329501.png" sizes="100px" srcset="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c3053dae8837408aebbef_Frame%202087329501-p-500.png 500w, https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c3053dae8837408aebbef_Frame%202087329501.png 699w" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Gemini</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Connect Sprig with Gemini to power multi-system workflows</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/copilot" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c30986d5f7071aa9b34e0_Frame%202087329501%20(1).svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Copilot</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Connect Sprig with Copilot to power multi-system workflows</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/cursor" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2c30fd4f1d7675ec50bc72_image%205%20(6).svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Cursor</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Connect Sprig with Cursor to power multi-system workflows</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Repository</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/dovetail" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f451523431c4f84ac8e25_dovetail.png" sizes="100px" srcset="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f451523431c4f84ac8e25_dovetail-p-500.png 500w, https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f451523431c4f84ac8e25_dovetail.png 800w" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Dovetail</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Dovetail to centralize insights in your research hub</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/notion" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f4a11f3d65d18f7a44885_notion.png" sizes="100px" srcset="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f4a11f3d65d18f7a44885_notion-p-500.png 500w, https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/682f4a11f3d65d18f7a44885_notion.png 800w" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Notion</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Notion to keep your team's research in one place</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Collaboration</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/slack" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cd1033ae98e27cfb4c2c_slack.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Slack</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig alerts to Slack to keep your team in the loop on new insights</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/zapier" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cd424e42184ae5238bbd_zapier.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Zapier</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Zapier  to create your own Zaps</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Prototyping</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/figma" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d0323ef8e42ad8dc1454_figma.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Figma</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Figma designs to validate prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/sketch" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d16d472d95c348265644_sketch.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Sketch</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Sketch designs to validate prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/adobe-xd" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cfdb3bccd78d290a9397_adobe%20xd.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Adobe XD</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Adobe XD designs to validate prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/miro" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d107716d15db2b0a6e73_miro.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Miro</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Miro designs to test concepts straight from your whiteboard</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/framer" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d05b408954ccc7324447_framer.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Framer</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Framer designs to validate prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/marvel" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d0da4cbed4a57c512a09_marvel.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Marvel</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Marvel designs to validate prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/protopie" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d14a64016fc268ea0358_protopie.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">ProtoPie</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on ProtoPie designs to validate interactive prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/justinmind" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d0ae0ce6a5d808a4bf5f_justinmind.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Justinmind</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Justinmind designs to test prototypes before you build</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/axure" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515d00a7ef361492078d9f5_axure.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Axure</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Capture feedback on Axure designs to validate prototypes before you build</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Native installation</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/javascript" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cf8f265110c9546ceef1_javascript.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Javascript</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via JavaScript to capture feedback directly on your website</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/ios" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cf638e201c206240c005_ios.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">iOS</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig in your iOS app  to track behavior and send studies</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/android" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cf3c93809f80cb3861cd_android.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Android</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig in your Android app to track behavior and send studies</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/react-native" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cfb1078d134e72fd9093_react%20native.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">React Native</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig in your React Native app to capture feedback from mobile users</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Low-code installation</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-web" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cf0d408954ccc730e8e8_segment%20web.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment Web</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Segment to track behavior and send studies on the web</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-ios" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cca05bb084c5b201239e_stream.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment iOS</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Segment to track behavior and send studies on iOS</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-android" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cca05bb084c5b201239e_stream.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment Android</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Segment to track behavior and send studies on Android</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-react-native" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cca05bb084c5b201239e_stream.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment React Native</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Segment to track behavior and send studies in React Native</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/google-tag-manager" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515ce5a14ba3b6c9b22a0cb_google%20tag%20manager.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Google Tag Manager</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Google Tag Manager to track behavior and send studies on your website</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Enrichment</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-classic" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cd74a2a1bfac90e73325_segment%20classic.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment Classic</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Install Sprig via Segment Classic to send additional user events and attributes into Sprig</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/census" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cdae7ef361492075c72b_census.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Census</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Census to sync user attributes from your data warehouse</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/rudderstack" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/65a70852deb513eb2443b723_rudderstack.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">RudderStack</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to RudderStack to target surveys with your warehouse data</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/public-api" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6a2a10585bef461cf0b362d8_Sprig%20logo%20-%20square%20rounded.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Public API</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Access Sprig via the Public API to send user data from any source</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Analytics</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/data-export-api" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cc3d8b89ba6e33449d44_data%20export%20api-1.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Data Export API</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Export Sprig data via the Data Export API to analyze and transform study results</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/webhooks" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515ccdcac091f50c74d8954_webhooks.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Webhooks</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data via Webhooks to trigger workflows in any tool you use</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/mixpanel" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/655640004dd19e816a2e33d6_mixpanel.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Mixpanel</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Mixpanel to uncover the "why" behind user behavior</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/amplitude" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/65563fe6b6ea8f2b5af9fb75_amplitude.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Amplitude</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Amplitude to connect user insights with product analytics</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/segment-stream" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cca05bb084c5b201239e_stream.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Segment Stream</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Segment Stream to route study responses to your favorite tools</p></div></div></a></div></div></div></div></div><div class="spacer-xhuge"></div><div class="side-split-heading_wrapper"><div class="side-split-heading_headings-container is-25"><h3 class="heading-style-h4_v2">Experimentation</h3></div><div class="side-split-heading_main-container is-75"><div class="w-dyn-list"><div role="list" class="integrations_collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/integrations/optimizely" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515ce3235adf1bb4dcc8372_optimizely.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">Optimizely</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to Optimizely to target users who belong to an experiment</p></div></div></a></div><div role="listitem" class="w-dyn-item"><a href="/integrations/launchdarkly" class="cms-link-block w-inline-block"><div class="integration-card"><img alt="" loading="lazy" width="100" height="100" src="https://cdn.prod.website-files.com/6515c0b8d248616d9d2aedf6/6515cdf3be6b6e6d22fa08ec_launchdarkly.svg" class="integration-card_logo"/><div class="spacer-large"></div><h4 class="heading-style-h4_v2">LaunchDarkly</h4><div class="spacer-small"></div><div class="w-embed"><p class="text-size-small_v2 text-color-medium">Send Sprig data to LaunchDarkly to target users who belong to an experiment</p></div></div></a></div></div></div></div></div><div class="spacer-xxhuge"></div></aside></div></section></main><div data-wf--footer-april-2026--variant="light-mode" class="footer_v2"><div class="padding-global"><aside class="container-large"><div class="spacer-giant"></div><div class="footer-wrapper"><div class="footer-wrapper_left-inner"><img width="95" height="37" alt="" src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/69b0b2e42b98b28ddbf9a387_Sprig_Logo.svg" loading="lazy" class="footer-logo is-v2"/></div><div class="footer-wrapper_right-inner"><div class="w-layout-grid footer-grid is-v2"><div id="w-node-_34d59ded-6daa-31d8-b4c0-9c90249d9ddd-249d9dd4" class="footer-column"><div class="footer-column_inner"><div class="text-size-regular_v2">Solutions</div><a href="/solutions/experience-measurement" class="text-size-regular_v2 is-footer-link">Experience measurement</a><a href="/solutions/strategic-foundational-research" class="text-size-regular_v2 is-footer-link">Strategic &amp; foundational discovery</a><a href="/solutions/journey-behavioral-research" class="text-size-regular_v2 is-footer-link">Journey &amp; behavioral research</a><a href="/solutions/market-consumer-insights" class="text-size-regular_v2 is-footer-link">Market &amp; consumer insights</a><a href="/solutions/concept-prototype-testing" class="text-size-regular_v2 is-footer-link">Concept &amp; prototype testing</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><div class="text-size-regular_v2">Agents</div><a href="/agent/design" class="text-size-regular_v2 is-footer-link">Design</a><a href="/agent/field" class="text-size-regular_v2 is-footer-link">Field</a><a href="/agent/synthesize" class="text-size-regular_v2 is-footer-link">Synthesize</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><div class="text-size-regular_v2">Deploy</div><a href="/deploy/email" class="text-size-regular_v2 is-footer-link">Email</a><a href="/deploy/panels" class="text-size-regular_v2 is-footer-link">Panels</a><a href="/deploy/web-apps-websites" class="text-size-regular_v2 is-footer-link">Web apps and websites</a><a href="/deploy/mobile-apps" class="text-size-regular_v2 is-footer-link">Mobile app</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><a href="/pricing" class="text-size-regular_v2 is-footer-link">Pricing</a></div></div><div id="w-node-_34d59ded-6daa-31d8-b4c0-9c90249d9e07-249d9dd4" class="footer-column is-uneven"><div class="footer-column_inner"><div class="text-size-regular_v2">Community</div><a href="/events" class="text-size-regular_v2 is-footer-link">Events</a><a href="/blog" class="text-size-regular_v2 is-footer-link">Blog</a><a href="/guides" class="text-size-regular_v2 is-footer-link">Guides</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><a href="/customers" class="text-size-regular_v2 is-footer-link">Customers</a><a href="/integrations" aria-current="page" class="text-size-regular_v2 is-footer-link w--current">Integrations</a><a href="/compare" class="text-size-regular_v2 is-footer-link">Compare</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><div class="text-size-regular_v2">Company</div><a href="/company" class="text-size-regular_v2 is-footer-link">About us</a><a href="/careers" class="text-size-regular_v2 is-footer-link">Careers</a><a href="/ssa" class="text-size-regular_v2 is-footer-link">Service agreement</a><a href="/privacy-policy" class="text-size-regular_v2 is-footer-link">Privacy policy</a><a href="/dpa" class="text-size-regular_v2 is-footer-link">Data addendum</a><a href="https://status.sprig.com/" target="_blank" class="text-size-regular_v2 is-footer-link">System status</a></div><div class="spacer-xxlarge"></div><div class="footer-column_inner"><div class="text-size-regular_v2">Socials</div><a href="https://www.linkedin.com/company/sprig-official" target="_blank" class="text-size-regular_v2 is-footer-link">LinkedIn</a><a href="https://x.com/Sprig" target="_blank" class="text-size-regular_v2 is-footer-link">X</a></div><div class="spacer-xxlarge"></div></div></div></div></div><div class="spacer-giant"></div></aside></div><div class="hide w-embed"><style>
+  @media (max-width: 1200px) and (min-width: 992px) {
+ 	.footer-wrapper_left-inner {
+      width: 40%;
+    }
+    .footer-wrapper_right-inner {
+      width: 60%;
+    }
+}
+</style></div></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=651206cc884d0caef0f4c520" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/js/webflow.schunk.2bb22d155830a832.js" type="text/javascript" integrity="sha384-QJUFHXXZOHN/sEL3Im2FoYzEtvTi6jRJUKUfd1s3d0mHyrm3M3x9kbKI7GN977TD" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/js/webflow.schunk.5f7e199aea1de1f6.js" type="text/javascript" integrity="sha384-32pgRtEZAnb5hrsH9EXowR8VZwFPqx6d6dv3EhU5RhJnij1duhbuF5lVgXZ7WlB/" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/651206cc884d0caef0f4c520/js/webflow.a5ad1caa.d28c025d0b1cd190.js" type="text/javascript" integrity="sha384-N2Z4/H86th8SahbwK46IAAyc9L0yhyj6HHuSgfjhHaxL5oxIuEU+NzJJvmi7fmY0" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script><script type="text/javascript">gsap.registerPlugin(SplitText);</script><style>
+.is-nav-button, .nav-login-link-block {
+	transition: all .7s ease;
+}
+</style></body></html>

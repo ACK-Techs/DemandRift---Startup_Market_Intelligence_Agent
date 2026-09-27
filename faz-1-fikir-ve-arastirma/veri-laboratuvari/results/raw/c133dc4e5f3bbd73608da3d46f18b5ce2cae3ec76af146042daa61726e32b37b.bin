@@ -1,0 +1,6266 @@
+<!DOCTYPE html>
+
+
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+
+            
+                <title>Semrush App Center</title>
+            
+
+            <meta property="og:site_name" content="Semrush"><meta property="og:type" content="website"><meta property="og:url" content="https://www.semrush.com/apps/"><meta property="og:image" content="https://static.semrush.com/app-center/sharing_opengraph.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@semrush"><meta name="twitter:site" content="@semrush"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta property="og:title" content="Semrush App Center"><meta name="twitter:title" content="Semrush App Center"><meta name="description" content="Semrush App Center features diverse marketing apps to grow your business. Use apps hand-picked by Semrush and manage them under one account!"><meta name="twitter:description" content="Semrush App Center features diverse marketing apps to grow your business. Use apps hand-picked by Semrush and manage them under one account!"><meta property="og:description" content="Semrush App Center features diverse marketing apps to grow your business. Use apps hand-picked by Semrush and manage them under one account!">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="preconnect" href="https://static.semrush.com">
+            <link rel="preconnect" href="https://www.googletagmanager.com">
+            <link rel="preconnect" href="https://cookiehub.net">
+            <link rel="preconnect" href="https://cdn.cookiehub.eu">
+
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+            <link rel="stylesheet"
+                  href="/__static__/fonts/lazzer/v2/lazzer.css">
+            <link rel="stylesheet"
+                  href="/__static__/fonts/factor_a/v2/factor_a.css">
+
+            <link rel="stylesheet" href="/__static__/webpack/base.316e54e343c32d7f.css">
+            
+                <link rel="stylesheet" href="/__static__/webpack/toolkit.6bdaf813131b9fd4.css">
+            
+
+            <script>window.__sm2mfp = 'https://static.semrush.com/remote-integrations'</script>
+
+            
+
+
+
+
+            
+    <script>
+    
+    window.ANALYTICS_GTM_ID = "GTM-5K82J2";
+    
+
+    window.pendingAnalytics = window.pendingAnalytics || [];
+    window.analytics = {};
+
+    ["track", "setDefaults", "deleteDefaults"].forEach((name) => {
+        window.analytics[name] = function () {
+            pendingAnalytics.push([name, arguments]);
+        };
+    });
+
+    
+        window.analytics.setDefaults("user_type", "unlogged");
+    
+    </script>
+    <script async src="https://static.semrush.com/ajst/ajst.js"></script>
+
+
+
+            
+
+    <script>window[Symbol.for("sm2.WebVitalsReporter.config")] = {"team": "avocado", "product": "app-center", "ip": "176.54.155.67", "userType": "unlogged"};</script>
+    <script src="/__static__/webpack/runtime.1c02d506c9fc9881.js"></script>
+<script src="/__static__/webpack/smrwv.df437c4620bb452d.js" defer></script>
+
+
+
+            
+
+    <script>window[Symbol.for("sm2.AmplitudeSessionReplay.config")] = {"api_key": "03db6de0e8473c8ee9cfa19a87990a86", "user_id": null, "sample_rate": 0.02, "product_name": "app-center"};</script>
+    <script src="/__static__/webpack/amplitude_session_replay.819f8b7ecea4db81.js" defer></script>
+
+
+
+            
+                
+                
+
+
+            
+
+            <script>
+                window.sm2 = Object.assign(window.sm2 || {}, {"GAexperiments": [], "language": "en", "isSessionCreatedByAdmin": false, "abTestsLabels": ["sidebar.social_content_ai_cleanup", "sidebar.outdated_tools_cleanup", "new_header_launch"], "ipCountryCode": "TR"});
+                
+                window.sm2.limitOptions = Object.freeze({});
+
+                window.__sm2_get_initial_state__ ??= (() => {
+                    let cache;
+                    const domReady = document.readyState === 'loading'
+                        ? new Promise((resolve) => document.addEventListener('DOMContentLoaded', resolve, { once: true }))
+                        : Promise.resolve();
+                    return () => (cache ??= domReady.then(() => {
+                        const el = document.getElementById('sm2_initial_state');
+                        if (!el) {
+                            throw new Error('sm2_initial_state element missing');
+                        }
+                        return JSON.parse(el.textContent);
+                    }));
+                })();
+
+                window.__sm2_get_initial_state__().then((state) => {
+                    if (typeof window.__sm2init_base__ !== 'function') {
+                        throw new Error(
+                            'window.__sm2init_base__ is not registered. The init_base bundle likely failed to load.',
+                        );
+                    }
+                    window.__sm2init_base__(state.base);
+                });
+            </script>
+
+            
+
+<link rel="stylesheet" href="/__static__/webpack/global_spinner.c7fe2aad87f1e52f.css">
+<script src="/__static__/webpack/global_spinner.8c31e1be1dd0689d.js"></script>
+
+
+            
+
+
+    <script src="/__static__/webpack/observer_limit_options.6abbcc4bcfc16905.js" data-sample-rate="0.005" data-team="avocado" data-product="app-center"></script>
+
+
+            <script>
+  window.sm2.getComponent = function queueGetComponentRequest(...args) {
+    const queue = (window[Symbol.for("sm2.getComponent.pending")] ??= []);
+    let resolve;
+    let reject;
+    const promise = new Promise((res, rej) => {
+      resolve = res;
+      reject = rej;
+    });
+    queue.push({args, resolve, reject});
+    return promise;
+  };
+</script>
+
+            
+
+<script src="/__static__/webpack/mf_widgets.ea30f97dd41e06a8.js"></script>
+
+
+            <script>
+window.__sm2_get_initial_state__().then(() => {
+  if (typeof window.__sm2init_component_provider__ !== 'function') {
+    throw new Error(
+      'window.__sm2init_component_provider__ is not registered. The init_component_provider bundle likely failed to load.',
+    );
+  }
+  window.__sm2init_component_provider__();
+});
+</script>
+
+
+            
+                <script>
+  
+  
+  
+  dataLayer = window.dataLayer || [];
+  dataLayer.push({site_is_controlling_cookie_settings_widget: true});
+</script>
+
+            
+
+            
+                <script>
+window.__sm2_get_initial_state__().then((state) => {
+  if (typeof window.__sm2init_searchbar_api__ !== 'function') {
+    throw new Error(
+      'window.__sm2init_searchbar_api__ is not registered. The init_searchbar_api bundle likely failed to load.',
+    );
+  }
+  window.__sm2init_searchbar_api__(state.searchbarApiV1Config);
+});
+
+window.sm2.getSearchbarApi = function queueSearchbarApiRequest(...args) {
+  const queue = (window[Symbol.for("sm2.getSearchbarApi.pending")] ??= []);
+  let resolve;
+  let reject;
+  const promise = new Promise((res, rej) => {
+    resolve = res;
+    reject = rej;
+  });
+  queue.push({ args, resolve, reject });
+  return promise;
+};
+</script>
+
+            
+
+            
+                <script>
+window.__sm2_get_initial_state__().then((state) => {
+  if (typeof window.__sm2init_folders_api__ !== 'function') {
+    throw new Error(
+      'window.__sm2init_folders_api__ is not registered. The init_folders_api bundle likely failed to load.',
+    );
+  }
+  window.__sm2init_folders_api__(state.foldersApiV1Config);
+});
+
+window.sm2.getFoldersApi = function queueProjectsApiRequest(...args) {
+  const queue = (window[Symbol.for("sm2.getFoldersApi.pending")] ??= []);
+  let resolve;
+  let reject;
+  const promise = new Promise((res, rej) => {
+    resolve = res;
+    reject = rej;
+  });
+  queue.push({ args, resolve, reject });
+  return promise;
+};
+</script>
+
+            
+
+            
+
+            
+
+            <script>
+  (function (i) {
+    window[i] =
+      window[i] ||
+      function () {
+        (window[i].dataLayerProxyQueue = window[i].dataLayerProxyQueue || []).push(
+          arguments,
+        );
+      };
+  })('ga');
+</script>
+
+<script src="/__static__/webpack/data_layer_proxy.e14b3fea736b645f.js"></script>
+<script>ga("set", "dimension2", "Unlogged-User")
+ga("set", "dimension3", "not set")
+ga("set", "dimension5", "{}")
+ga("set", "dimension16", "all tools")</script>
+
+            
+            
+
+            <script src="/jsi18n/" defer></script>
+
+            
+
+
+
+
+    <script src="/__static__/webpack/track_billing_info_usage.0d096cf4bd3be18c.js" data-sample-rate="0.005" data-team="avocado" data-product="app-center"></script>
+
+
+
+            <link rel="dns-prefetch" href="https://www.google.com">
+            <link rel="dns-prefetch" href="https://a.quora.com">
+            <link rel="dns-prefetch" href="https://snap.licdn.com">
+            <link rel="dns-prefetch" href="https://bat.bing.com">
+            <link rel="dns-prefetch" href="https://connect.facebook.net">
+            <link rel="dns-prefetch" href="https://munchkin.marketo.net">
+            <link rel="dns-prefetch" href="https://s.yimg.com">
+            <link rel="dns-prefetch" href="https://analytics.tiktok.com">
+            <link rel="dns-prefetch" href="https://www.google-analytics.com">
+            <link rel="dns-prefetch" href="https://q.quora.com">
+            <link rel="dns-prefetch" href="https://data.adxcel-ec2.com">
+            <link rel="dns-prefetch" href="https://cdn.speedcurve.com">
+            <link rel="dns-prefetch" href="https://streaming.bi.owox.com">
+            <link rel="dns-prefetch" href="https://td.doubleclick.net">
+            <link rel="dns-prefetch" href="https://ad.doubleclick.net">
+            <link rel="dns-prefetch" href="https://google-analytics.bi.owox.com">
+            <link rel="dns-prefetch" href="https://widget.intercom.io">
+            <link rel="dns-prefetch" href="https://sp.analytics.yahoo.com">
+            <link rel="dns-prefetch" href="https://www.facebook.com">
+            <link rel="dns-prefetch" href="https://px.ads.linkedin.com">
+            <link rel="dns-prefetch" href="https://bat.bing.net">
+            <link rel="dns-prefetch" href="https://cdn.mouseflow.com">
+            <link rel="dns-prefetch" href="https://region1.analytics.google.com">
+            <link rel="dns-prefetch" href="https://api.amplitude.com">
+
+            <meta name="theme-color"
+                  media="(prefers-color-scheme: light)"
+                  content="#F6F7F8">
+            <meta name="theme-color"
+                  media="(prefers-color-scheme: dark)"
+                  content="#111317">
+            <meta name="format-detection" content="telephone=no">
+
+            
+
+
+
+
+            <link rel="canonical" href="https://www.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="en" href="https://www.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="de" href="https://de.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="es" href="https://es.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="fr" href="https://fr.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="it" href="https://it.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="nl" href="https://nl.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="pl" href="https://pl.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="pt" href="https://pt.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="sv" href="https://sv.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="vi" href="https://vi.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="tr" href="https://tr.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="zh" href="https://zh.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="ja" href="https://ja.semrush.com/apps/">
+            
+                <link rel="alternate" hreflang="ko" href="https://ko.semrush.com/apps/">
+            
+
+            <link rel="manifest" href="/__static__/manifest.c126ad9aade5.json">
+            <link rel="apple-touch-icon"
+                  sizes="180x180"
+                  href="/__static__/apple-touch-icon.fe16ae843d17.png">
+            <link rel="icon" href="/__static__/favicon.d8fbaa3a030a.ico" sizes="any">
+            <link rel="icon"
+                  href="/__static__/favicon.37cab19e6995.svg"
+                  type="image/svg+xml">
+
+            <link rel="search"
+                  type="application/opensearchdescription+xml"
+                  href="/__static__/semrush-opensearch.xml"
+                  title="Semrush.com">
+
+            <!-- #region Remote Component snippet "head_bottom" -->
+<link rel="stylesheet" href="https://static.semrush.com/semrush-navigation/static/18b3724a/069b0b23.976.css">
+<link rel="stylesheet" href="https://static.semrush.com/semrush-navigation/static/18b3724a/eac32b0f.sidebar.css">
+<link rel="stylesheet" href="https://static.semrush.com/semrush-navigation/static/18b3724a/f925b238.header.css">
+<!-- #endregion -->
+        </head>
+
+        <body>
+            
+
+            <div class="srf-layout"
+                 >
+                
+
+<script src="/__static__/webpack/skip_to_content.d1ccae2c2a38d2fb.js" defer></script>
+
+<div class="srf-layout__skip-to-content">
+    <button id="skip-to-content">Skip to content</button>
+</div>
+
+
+                <div class="srf-layout__notification">
+                    
+
+
+                    
+    
+    <!--googleoff: all-->
+    <div role="complementary"
+         id="srf-browser-unhappy"
+         class="srf-browser-unhappy">
+        
+            <p>
+                <b>Your browser or operating system is out of date and Semrush might not be displayed correctly.</b> Please update your browser or operating system.
+            </p>
+        
+        <button id="srf-browser-unhappy-btn-close"
+                class="srf-browser-unhappy--btn-close">
+            <svg width="16"
+                 height="16"
+                 viewBox="0 0 16 16"
+                 class="srf-icon"
+                 aria-label="Close outdated browser notice">
+                <path d="M3.323 3.323c-.43.43-.43 1.128 0 1.559L6.44 8l-3.118 3.118a1.102 1.102 0 1 0 1.559 1.56L8 9.558l3.118 3.118a1.102 1.102 0 0 0 1.56-1.559L9.558 8l3.118-3.118a1.102 1.102 0 0 0-1.559-1.56L8 6.442 4.882 3.323a1.102 1.102 0 0 0-1.56 0Z" shape-rendering="geometricPrecision">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <script>
+    (function () {
+      var el = document.getElementById("srf-browser-unhappy");
+      var closeBtn = document.getElementById("srf-browser-unhappy-btn-close");
+
+      function handler() {
+        var d = new Date();
+        // we don't use max-age here because it's not supported by IE < 9
+        d.setTime(d.getTime() + 2592000000); // 30 days
+        document.cookie =
+          "browser-unhappy-closed=true; expires=" +
+          d.toGMTString() +
+          "; path=/; domain=.semrush.com;";
+        el.setAttribute("class", "srf-browser-unhappy--hide");
+      }
+
+      if (closeBtn.attachEvent) {
+        closeBtn.attachEvent("onclick", handler);
+      } else {
+        closeBtn.addEventListener("click", handler);
+      }
+    })();
+    </script>
+    <!--googleon: all-->
+
+
+                    
+
+
+
+                    
+
+
+                    
+
+
+                    
+
+
+
+
+                    
+                        
+                        
+
+
+
+                    
+                </div>
+
+                <div class="srf-layout__header">
+                    
+                        <!-- #region Page Slot "page_header_slot" -->
+
+    
+    
+
+<link rel="stylesheet" href="/__static__/webpack/remote_component.886f2a13d4c01e36.css">
+
+
+    <!-- #region Remote Component "toolkit/header" -->
+    <div id="raspberry-semrush-navigation-header">
+  
+  <header class="snav-header" id="snav-header">
+    <div class="snav-header__wrapper">
+      <a
+        class="snav-header__home-button"
+        href="/home/"
+        data-ga4-click
+        data-ga4-item-location="navigation.header.logo"
+        aria-label="Home">
+        <span class="snav-header__home-logo"></span>
+      </a>
+
+      <button
+        class="snav-header__burger"
+        data-ga4-click
+        data-ga4-item-location="navigation.header.sidebarburger"
+        aria-label="Open navigation sidebar"></button>
+
+      <div class="snav-header__start">
+        
+          <div class="snav-header__preloader"></div>
+        
+
+        
+
+        <div
+          id="snav-global-searchbar"
+          class="snav-header__search-wrapper"></div>
+      </div>
+
+      <div class="snav-header__end">
+        <nav class="snav-header__nav">
+          <div class="snav-header__preloader"></div>
+          <ul class="snav-header__menu preloader" role="menubar">
+            
+
+            
+
+            
+            
+
+            
+
+            
+              
+                <li
+  class="snav-header__menu-item snav-header__menu-item--collapsible"
+  role="none"
+  data-id="header_pricing">
+  <a
+    class="snav-header__menu-link"
+    href="/pricing/"
+    role="menuitem"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.index.pricing"
+    
+    data-test="header_prices"
+    data-nav-item="index:pricing"
+    >Pricing</a
+  >
+</li>
+              
+            
+              
+                <li
+  class="snav-header__menu-item snav-header__menu-item--collapsible"
+  role="none"
+  data-id="header_enterprise">
+  <a
+    class="snav-header__menu-link"
+    href="/enterprise/"
+    role="menuitem"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.enterprise"
+    
+    data-test="header_enterprise"
+    data-nav-item="index:enterprise"
+    >Enterprise</a
+  >
+</li>
+              
+            
+              
+                <li class="snav-header__menu-item" role="none">
+  <button
+    class="snav-header__menu-link snav-header__has-submenu-link"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    role="menuitem"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.more.dropdown"
+    
+    >
+    More
+  </button>
+  <ul class="snav-header__submenu" role="menu">
+    
+      
+        
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  
+    data-id="header_pricing"
+    hidden
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/pricing/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.index.pricing"
+    
+    data-test="header_pricing"
+    data-nav-item="index:pricing"
+    role="menuitem"
+    >Pricing</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/solutions/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.index.solutions"
+    
+    data-test="header_solutions"
+    data-nav-item="index:solutions"
+    role="menuitem"
+    >Solutions</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/features/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.features.index"
+    
+    data-test="header_features"
+    data-nav-item="features:index"
+    role="menuitem"
+    >Features</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/blog/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.blog.index"
+    
+    data-test="header_blog"
+    data-nav-item="blog:index"
+    role="menuitem"
+    >Blog</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li class="snav-header__submenu-item" role="none">
+  <button
+    class="snav-header__submenu-link"
+    role="menuitem"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.resources.dropdown"
+    
+    data-test="header_resources">
+    Resources
+  </button>
+  <ul class="snav-header__submenu" role="menu">
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/kb/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.kb.index"
+    
+    data-test="header_knowledge"
+    data-nav-item="kb:index"
+    role="menuitem"
+    >Help Center</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/news/releases/product-news/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.news.product.news"
+    
+    data-test="header_news"
+    data-nav-item="news:product-news"
+    role="menuitem"
+    >What&#39;s new</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/academy/webinars/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.webinars.index"
+    
+    data-test="header_webinars"
+    data-nav-item="webinars:index"
+    role="menuitem"
+    >Webinars</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/news/releases/data-insights/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.news.insights"
+    
+    data-test="header_insights"
+    data-nav-item="news:insights"
+    role="menuitem"
+    >Insights</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/agencies/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.agencies.index"
+    
+    data-test="header_agency_partners"
+    data-nav-item="agencies:index"
+    role="menuitem"
+    >Hire a Trusted Agency</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/academy/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.academy.index"
+    
+    data-test="header_academy"
+    data-nav-item="academy:index"
+    role="menuitem"
+    >Academy</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/website/top/?from_page=header"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.website.top"
+    
+    data-test="header_top_websites"
+    data-nav-item="website:top"
+    role="menuitem"
+    >Top Websites</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="https://ai-visibility-index.semrush.com/?utm_source=semrush&amp;utm_medium=product_header"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.ai.visibility.index"
+    
+    data-test="header_ai_visibility_index"
+    
+    role="menuitem"
+    >AI Visibility Index</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/local/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.local.marketing.index"
+    
+    data-test="header_local_marketing"
+    data-nav-item="local-marketing:index"
+    role="menuitem"
+    >Local Marketing Hub</a
+  >
+</li>
+        
+      
+    
+  </ul>
+</li>
+            
+          
+        
+          
+            
+              <li class="snav-header__submenu-item" role="none">
+  <button
+    class="snav-header__submenu-link"
+    role="menuitem"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.dropdown"
+    
+    data-test="header_company">
+    Company
+  </button>
+  <ul class="snav-header__submenu" role="menu">
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/company/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.index"
+    
+    data-test="header_about_us"
+    data-nav-item="company:index"
+    role="menuitem"
+    >About Us</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/news/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.news.index"
+    
+    data-test="header_newsroom"
+    data-nav-item="news:index"
+    role="menuitem"
+    >Newsroom</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="https://careers.semrush.com/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.careers"
+    
+    data-test="header_careers"
+    data-nav-item="company:careers"
+    role="menuitem"
+    >Careers</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/semrush-free-trial/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.free.trial"
+    
+    data-test="header_free_trial"
+    data-nav-item="semrush-free-trial:index"
+    role="menuitem"
+    >Free Trial</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/vs/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.semrush.versus"
+    
+    data-test="header_semrush_versus"
+    data-nav-item="semrush-versus:index"
+    role="menuitem"
+    >Compare Semrush</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/company/stories/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.stories"
+    
+    data-test="header_success_stories"
+    data-nav-item="company:stories"
+    role="menuitem"
+    >Success Stories</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/lp/affiliate-program/en/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.berush.index"
+    
+    data-test="header_affiliate_program"
+    data-nav-item="berush:index"
+    role="menuitem"
+    >Affiliate Program</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/company/partner-integrations/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.partner.integrations"
+    
+    data-test="header_partner_integrations"
+    data-nav-item="company:partner-integrations"
+    role="menuitem"
+    >Partner Integrations</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/company/contacts/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.company.contacts"
+    
+    data-test="header_contacts"
+    data-nav-item="company:contacts"
+    role="menuitem"
+    >Contacts</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/stats/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.stats.index"
+    
+    data-test="header_stats_and_facts"
+    data-nav-item="stats:index"
+    role="menuitem"
+    >Stats and Facts</a
+  >
+</li>
+        
+      
+    
+  </ul>
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  
+    data-id="header_enterprise"
+    hidden
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/enterprise/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.dropdown.enterprise"
+    
+    data-test="header_enterprise"
+    
+    role="menuitem"
+    >Enterprise</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/api-documentation/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.dropdown.api.documentation"
+    
+    
+    
+    role="menuitem"
+    >Semrush API</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li class="snav-header__submenu-item" role="none">
+  <button
+    class="snav-header__submenu-link"
+    role="menuitem"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.mcp.dropdown"
+    
+    data-test="header_mcp">
+    Semrush MCP
+  </button>
+  <ul class="snav-header__submenu" role="menu">
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/mcp/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.mcplp.index"
+    
+    data-test="header_mcplp"
+    data-nav-item="mcplp:index"
+    role="menuitem"
+    >About MCP</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/mcp/prompt-library/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.mcplib.index"
+    
+    data-test="header_mcplib"
+    data-nav-item="mcplib:index"
+    role="menuitem"
+    >Prompt Library</a
+  >
+</li>
+        
+      
+    
+      
+        
+          <li
+  class="snav-header__submenu-item "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="https://developer.semrush.com/api/v4/introduction/semrush-mcp/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.mcpdocs.index"
+    
+    data-test="header_mcpdocs"
+    data-nav-item="mcpdocs:index"
+    role="menuitem"
+    >Documentation</a
+  >
+</li>
+        
+      
+    
+  </ul>
+</li>
+            
+          
+        
+      
+    
+      
+        
+          <li
+            class="snav-header__submenu-item snav-header__submenu-item--hr"
+            role="none">
+            &nbsp;
+          </li>
+        
+        
+          
+            
+              <li
+  class="snav-header__submenu-item 
+    snav-header__submenu-item--with-icon
+    snav-header__submenu-item--demo
+  "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/kb/request-demo/"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.dropdown.online.demo"
+    
+    
+    
+    role="menuitem"
+    >Request live demo</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item 
+    snav-header__submenu-item--with-icon
+    snav-header__submenu-item--academy
+  "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/academy/courses/?utm_source=semrush&amp;utm_medium=menu_extra&amp;utm_campaign=academy_awareness"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.dropdown.academy"
+    
+    
+    
+    role="menuitem"
+    >Learn with Semrush courses</a
+  >
+</li>
+            
+          
+        
+          
+            
+              <li
+  class="snav-header__submenu-item 
+    snav-header__submenu-item--with-icon
+    snav-header__submenu-item--agency
+  "
+  role="none"
+  >
+  <a
+    class="snav-header__submenu-link"
+    href="/agencies/?utm_source=left_menu&amp;utm_medium=menu_extra&amp;utm_campaign=agency_partners_awareness"
+    target="_blank"
+    tabindex="0"
+    
+      data-ga4-click data-ga4-item-location="navigation.header.dropdown.agencies"
+    
+    
+    
+    role="menuitem"
+    >Hire a digital agency</a
+  >
+</li>
+            
+          
+        
+      
+    
+  </ul>
+</li>
+              
+            
+
+            
+              <li class="snav-header__menu-item" role="none">
+                <a
+                  id="snav-header-log-in-button"
+                  class="snav-header__menu-link snav-header__menu-link--secondary snav-header__menu-link--login-button"
+                  href="/login/?src=header&amp;redirect_to=/apps/"
+                  role="menuitem"
+                  data-ga4-click
+                  data-ga4-item-location="navigation.header.login"
+                  data-test="auth-popup__btn-login"
+                  >Log In</a
+                >
+              </li>
+              <li
+                id="snav-header-signup-button"
+                class="snav-header__menu-item"
+                role="none">
+                <a
+                  id="snav-header-sign-up-button"
+                  class="snav-header__menu-link snav-header__menu-link--success"
+                  href="/signup/?src=header&amp;redirect_to=/apps/"
+                  role="menuitem"
+                  data-ga4-click
+                  data-ga4-item-location="navigation.header.signup"
+                  data-test="auth-popup__btn-register"
+                  >Sign Up</a
+                >
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+</div>
+    <!-- #endregion -->
+
+
+
+<!-- #endregion -->
+
+                    
+                </div>
+
+                <div class="srf-layout__sidebar">
+                    
+                        <!-- #region Page Slot "page_sidebar_slot" -->
+
+    
+    
+
+
+
+
+    <!-- #region Remote Component "toolkit/sidebar" -->
+    <div id="raspberry-semrush-navigation-sidebar">
+  
+  <snav-sidebar
+    active-nav-item="app_center"
+    tool-query-type="domain"
+    back-to-toolkits-label="Back to toolkits">
+    <nav id="snav-sidebar">
+      <div class="snav-sidebar-ribbon">
+        <ul data-test="active-toolkits">
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="crossroad"
+    
+      nav-item="home:index"
+    
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/home/"
+      aria-label="Home"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.home"
+      data-path="navigation.sidebar.ribbon.home">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M16.6138 5.00187C20.6763 5.00187 24 8.19134 24 12.0018C24 15.8122 20.8024 18.9017 16.8012 19H6.24204L12.6258 15.7686H0L11.4681 9.96829H5.15708L12.8593 6.07601C14.2409 5.39148 15.4791 5 16.6138 5V5.00187Z" fill="#181E15"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M16.6138 5.00187C20.6763 5.00187 24 8.19134 24 12.0018C24 15.8122 20.8024 18.9017 16.8012 19H6.24204L12.6258 15.7686H0L11.4681 9.96829H5.15708L12.8593 6.07601C14.2409 5.39148 15.4791 5 16.6138 5V5.00187Z" fill="#181E15"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Home</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_seo"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_seo"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/seo/"
+      aria-label="SEO"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.seo"
+      data-path="navigation.sidebar.ribbon.toolkits.seo">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M20.9612 19.73L19.2212 17.99C18.4912 17.26 17.6212 16.96 16.8012 16.92C18.0812 15.44 18.8512 13.52 18.8512 11.43C18.8512 11.19 18.8412 10.96 18.8212 10.73L20.6812 9.81L19.8012 8.02L18.3912 8.71L16.5812 9.6L12.6912 11.52L11.4312 8.31H11.0812L4.03122 11.98C4.01122 11.8 4.00122 11.62 4.00122 11.43C4.00122 7.89 6.88122 5 10.4312 5C12.6212 5 14.5612 6.11 15.7212 7.79L17.5212 6.9C16.0212 4.56 13.4012 3 10.4312 3C5.79122 3 2.00122 6.79 2.00122 11.43C2.00122 16.07 5.79122 19.86 10.4312 19.86C12.1812 19.86 13.8112 19.32 15.1612 18.4L18.7312 21.97L20.9612 19.74V19.73ZM4.53122 13.97L10.3312 10.95L11.5812 14.13H11.9212L16.8412 11.7C16.7012 15.12 13.8812 17.86 10.4312 17.86C7.79122 17.86 5.52122 16.26 4.53122 13.97Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M20.9593 18.7298L19.2193 16.9898C18.4893 16.2598 17.6193 15.9598 16.7993 15.9198C18.0793 14.4398 18.8493 12.5198 18.8493 10.4298C18.8493 10.1898 18.8293 9.9598 18.8093 9.7298L11.9093 13.1298H11.5693L10.3193 9.9498L2.74927 13.8898C4.07927 16.8098 7.01927 18.8498 10.4193 18.8498C12.1693 18.8498 13.7993 18.3098 15.1493 17.3898L18.7193 20.9598L20.9493 18.7198L20.9593 18.7298Z" fill="#6A6C6A"/>
+  <path d="M11.431 7.30024L12.691 10.5102L18.391 7.70023C17.251 4.39023 14.111 1.99023 10.421 1.99023C5.79098 2.00023 2.00098 5.79024 2.00098 10.4302C2.00098 10.9502 2.05098 11.4602 2.15098 11.9602L11.081 7.31023H11.431V7.30024Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >SEO</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_ai_seo"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_ai_seo"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/ai-seo/overview/"
+      aria-label="AI"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.ai-seo"
+      data-path="navigation.sidebar.ribbon.toolkits.ai-seo">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M12.0006 5.20023C12.3906 5.71023 12.8006 6.20023 13.2206 6.68023C13.9306 7.49023 14.6906 8.26023 15.4806 9.00023C14.6906 9.73023 13.9306 10.5102 13.2206 11.3202C12.8006 11.8002 12.3906 12.2902 12.0006 12.8002C11.6106 12.2902 11.2006 11.8002 10.7806 11.3202C10.0706 10.5102 9.31062 9.74023 8.52062 9.00023C9.31062 8.27023 10.0706 7.49023 10.7806 6.68023C11.2006 6.20023 11.6106 5.71023 12.0006 5.20023ZM12.1706 1.99023H11.8306C11.1506 3.03023 10.3106 4.18023 9.27062 5.35023C8.01062 6.78023 6.75062 7.93023 5.63062 8.83023V9.14023C6.75062 10.0402 8.01062 11.1902 9.27062 12.6202C10.3106 13.8002 11.1506 14.9402 11.8306 15.9802H12.1706C12.8506 14.9402 13.6906 13.7902 14.7306 12.6202C15.9906 11.1902 17.2506 10.0402 18.3706 9.14023V8.83023C17.2506 7.93023 15.9906 6.78023 14.7306 5.35023C13.6906 4.17023 12.8506 3.03023 12.1706 1.99023Z" fill="currentColor"/>
+  <path d="M9.50932 22.0002L21.0493 16.2802L20.1593 14.4902L10.2793 19.3802L8.94932 15.9802H8.60932L2.54932 19.0102L3.44932 20.8002L7.82932 18.6102L9.15932 22.0002H9.50932Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M21.0508 16.29L9.51074 22.0098H9.16016L7.83008 18.6201L3.4502 20.8096L2.5498 19.0195L8.61035 15.9893H8.9502L10.2803 19.3896L20.1602 14.5L21.0508 16.29ZM12.1709 1.99902C12.8509 3.039 13.6907 4.18038 14.7207 5.36035C15.9804 6.78996 17.2406 7.94 18.3604 8.83984V9.15039C17.2405 10.0603 15.9805 11.2 14.7207 12.6396C13.6908 13.8095 12.8508 14.9601 12.1709 16H11.8311C11.1511 14.9601 10.3101 13.8095 9.28027 12.6396C8.0206 11.2001 6.76038 10.0602 5.64062 9.15039V8.83984C6.76047 7.93996 8.02046 6.79008 9.28027 5.36035C10.3103 4.18035 11.1511 3.03902 11.8311 1.99902H12.1709Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >AI</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_ci"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_ci"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/analytics/traffic/"
+      aria-label="Traffic &amp; Market"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.ci"
+      data-path="navigation.sidebar.ribbon.toolkits.ci">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M16.2205 8.37961V3.09961H7.78049V10.4996H2.50049V19.9996C4.80049 19.5796 8.72049 19.2396 12.0005 19.2396C15.2805 19.2396 19.2005 19.5796 21.5005 19.9996V8.37961H16.2205ZM7.78049 17.3896C6.65049 17.4696 5.52049 17.5696 4.50049 17.6896V12.4996H7.78049V17.3896ZM14.2205 17.2896C13.4605 17.2596 12.7105 17.2396 12.0005 17.2396C11.2905 17.2396 10.5405 17.2596 9.78049 17.2896V5.09961H14.2205V17.2896ZM19.5005 17.6896C18.4805 17.5696 17.3505 17.4696 16.2205 17.3896V10.3796H19.5005V17.6896Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M20.9995 19.7397V10.0397H15.9995V19.1897C17.6795 19.2997 19.3395 19.4797 20.9995 19.7297V19.7397Z" fill="#6A6C6A"/>
+  <path d="M7.00098 19.2997V12.0497H2.00098V19.9997C3.65098 19.6897 5.32098 19.4597 7.00098 19.2997Z" fill="#6A6C6A"/>
+  <path d="M12.0002 19.05C12.6702 19.05 13.3402 19.08 14.0002 19.1V4.05005H9.00024V19.15C10.0002 19.09 11.0002 19.05 12.0002 19.05Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Traffic &amp; Market</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_local"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_local"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/local-business/"
+      aria-label="Local"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.local"
+      data-path="navigation.sidebar.ribbon.toolkits.local">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M12 3.95898C15.31 3.95898 18 6.41898 18 9.44898V12.869C15.61 14.299 13.56 16.199 12 18.399C10.44 16.189 8.39 14.299 6 12.869V9.44898C6 6.41898 8.69 3.95898 12 3.95898ZM12 1.95898C7.59 1.95898 4 5.31898 4 9.44898V14.039C7.36 15.779 10.07 18.469 11.68 21.759C11.75 21.889 11.82 22.029 11.82 22.029H12.18C12.18 22.029 12.29 21.809 12.32 21.759C13.93 18.489 16.64 15.779 20 14.039V9.44898C20 5.31898 16.41 1.95898 12 1.95898Z" fill="currentColor"/>
+  <path d="M12.0013 12C13.4759 12 14.6713 10.8807 14.6713 9.5C14.6713 8.11929 13.4759 7 12.0013 7C10.5267 7 9.3313 8.11929 9.3313 9.5C9.3313 10.8807 10.5267 12 12.0013 12Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M11.999 1.95996C16.4089 1.96008 19.999 5.32027 19.999 9.4502V14.04C16.639 15.78 13.9284 18.4898 12.3184 21.7598C12.2883 21.8099 12.1787 22.0303 12.1787 22.0303H11.8184C11.8184 22.0303 11.7487 21.8898 11.6787 21.7598C10.0687 18.4699 7.35886 15.78 3.99902 14.04V9.4502C3.99902 5.3202 7.58902 1.95996 11.999 1.95996ZM11.999 7C10.529 7 9.3291 8.12 9.3291 9.5C9.32916 10.88 10.5291 12 11.999 12C13.4689 11.9999 14.6689 10.8799 14.6689 9.5C14.6689 8.12008 13.4689 7.00012 11.999 7Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Local</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_content"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_content"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/content/"
+      aria-label="Content"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.content"
+      data-path="navigation.sidebar.ribbon.toolkits.content">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M4.00024 2V13C4.85024 13 6.00024 12.24 6.00024 11V4H15.0002V2H4.00024Z" fill="currentColor"/>
+  <path d="M18.9993 8V18.19C18.6493 18.18 18.3093 18.17 17.9593 18.17C17.4493 18.17 16.9293 18.18 16.4193 18.21C14.2393 18.33 12.0893 18.72 9.98927 19.35V8H18.9893M20.9993 6H7.99927V22H8.49927C10.4593 21.22 13.1993 20.4 16.5393 20.21C17.0293 20.18 17.4993 20.17 17.9593 20.17C19.0693 20.17 20.0793 20.24 20.9993 20.35V6Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M4 1.99951V12.9995C4.85 12.9995 6 12.2395 6 10.9995V3.99951H15V1.99951H4Z" fill="#6A6C6A"/>
+  <path d="M21.0015 5.99988V20.3505C20.0815 20.2405 19.0714 20.1698 17.9614 20.1698C17.5015 20.1698 17.0315 20.1798 16.5415 20.2098C13.2015 20.3998 10.4615 21.2199 8.50146 21.9999H8.00146V5.99988H21.0015Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Content</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_ad"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_ad"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/advertising/"
+      aria-label="Ad"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.ad"
+      data-path="navigation.sidebar.ribbon.toolkits.ad">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M11.001 18C7.14098 18 4.00098 14.86 4.00098 11C4.00098 7.14 7.14098 4 11.001 4C14.861 4 18.001 7.14 18.001 11H20.001C20.001 6.05 15.951 2 11.001 2C6.05098 2 2.00098 6.05 2.00098 11C2.00098 15.95 6.05098 20 11.001 20V18Z" fill="currentColor"/>
+  <path d="M11 14.21C9.34 14.15 8 12.79 8 11.11C8 9.43 9.4 8 11.11 8C12.82 8 14.15 9.34 14.21 11H16.21C16.15 8.23 13.89 6 11.11 6C8.33 6 6 8.29 6 11.11C6 13.93 8.23 16.15 11 16.21V14.21Z" fill="currentColor"/>
+  <path d="M20.7115 19.29L19.2915 20.71L15.0015 16.41V20H13.0015V13H20.0015V15H16.4115L20.7115 19.29Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M14.9298 13.5175L13.5156 14.9318L19.2927 20.7088L20.7069 19.2946L14.9298 13.5175Z" fill="#6A6C6A"/>
+  <path d="M10.9985 1.99951C6.04854 1.99951 1.99854 6.04951 1.99854 10.9995C1.99854 15.9495 6.04854 19.9995 10.9985 19.9995V14.2095C9.33854 14.1495 7.99854 12.7895 7.99854 11.1095C7.99854 9.42951 9.39853 7.99951 11.1085 7.99951C12.8185 7.99951 14.1485 9.33951 14.2085 10.9995H19.9985C19.9985 6.04951 15.9485 1.99951 10.9985 1.99951ZM7.99854 7.08951V6.99951H8.09854C8.09854 6.99951 8.02854 7.05951 7.99854 7.08951Z" fill="#6A6C6A"/>
+  <path d="M14.999 13.0001H12.999V20.0001H14.999V13.0001Z" fill="#6A6C6A"/>
+  <path d="M19.999 13.0001H12.999V15.0001H19.999V13.0001Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Ad</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_pr"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_pr"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/pr-toolkit/"
+      aria-label="AI PR"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.pr"
+      data-path="navigation.sidebar.ribbon.toolkits.pr">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path fill="#62646E" d="m12.515 3.097-.696-.544-5.14 5.14H2.692v8.623H6.68l5.14 5.14.696-.545a11.234 11.234 0 0 0 4.35-8.904c0-3.5-1.586-6.75-4.35-8.904v-.006Zm-7.82 11.216V9.69h2.727A5.76 5.76 0 0 1 7.902 12c0 .808-.17 1.587-.48 2.312H4.694Zm7.258 4.444L8.94 15.742a7.766 7.766 0 0 0 0-7.482l3.014-3.014A9.224 9.224 0 0 1 14.87 12a9.224 9.224 0 0 1-2.916 6.756ZM22.134 11h-3.261v1.996h3.26V11ZM20.44 5.038l-2.824 1.63.999 1.729 2.823-1.63-.998-1.73ZM18.61 15.61l-.997 1.728 2.824 1.63.998-1.729-2.824-1.63Z"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M22.3281 11.0012H19.0674V12.9974H22.3281V11.0012Z" fill="#6A6C6A"/>
+  <path d="M20.6368 5.0336L17.813 6.66394L18.8111 8.39271L21.6349 6.76237L20.6368 5.0336Z" fill="#6A6C6A"/>
+  <path d="M18.8084 15.607L17.8103 17.3358L20.6341 18.9662L21.6322 17.2374L18.8084 15.607Z" fill="#6A6C6A"/>
+  <path d="M6.17106 7.6936H2.89282V16.3166H6.17106C7.35357 15.2511 8.09703 13.7174 8.09703 12.008C8.09703 10.2986 7.34772 8.76489 6.17106 7.69946V7.6936Z" fill="#6A6C6A"/>
+  <path d="M12.7158 3.09826L12.0192 2.55383L7.94482 6.63407C9.27954 8.03318 10.0991 9.92402 10.0991 12.008C10.0991 14.0921 9.27368 15.9771 7.94482 17.382L12.0192 21.4564L12.7158 20.912C15.4848 18.7519 17.0654 15.5087 17.0654 12.008C17.0654 8.50736 15.4789 5.25838 12.7158 3.10411V3.09826Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >AI PR</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="toolkit_social"
+    
+      nav-item="groups.social_media:index"
+    
+    
+      ribbon-interest-target="snav-sidebar-toolkit-toolkit_social"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/social-media/"
+      aria-label="Social"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.toolkits.social"
+      data-path="navigation.sidebar.ribbon.toolkits.social">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M8.99829 11.0605H6.99829V13.0605H8.99829V11.0605Z" fill="currentColor"/>
+  <path d="M12.9995 11.0605H10.9995V13.0605H12.9995V11.0605Z" fill="currentColor"/>
+  <path d="M17.0007 11.0605H15.0007V13.0605H17.0007V11.0605Z" fill="currentColor"/>
+  <path d="M11.8598 5C15.2398 5 18.9098 7.04 18.9998 11.49C19.0098 14.07 17.9398 16.15 15.6398 17.99C13.3398 17.99 8.93979 17.99 6.05979 17.99C6.25979 16.86 6.19979 15.64 5.82979 14.57C5.76979 14.38 5.68979 14.18 5.61979 13.97C5.24979 12.97 4.86979 11.93 5.03979 10.63C5.59979 6.47 9.05979 4.99 11.8498 4.99M11.8598 3C7.77979 3 3.72979 5.4 3.05979 10.37C2.77979 12.48 3.53979 14.05 3.93979 15.22C4.41979 16.64 4.13979 18.57 3.27979 19.5V20C3.27979 20 13.2398 20 16.2798 20H16.3098C19.7698 17.46 20.9998 14.53 20.9898 11.49C20.8798 5.91 16.3398 3.01 11.8498 3.01L11.8598 3Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M3.06101 10.3699C2.78101 12.4799 3.54101 14.0499 3.94101 15.2199C4.42101 16.6399 4.14101 18.5699 3.28101 19.4999V19.9999C3.28101 19.9999 13.301 19.9999 16.301 19.9999C19.761 17.4599 20.991 14.5299 20.981 11.4899C20.791 0.839853 4.46101 -0.0701468 3.06101 10.3699ZM9.00101 13.0599H7.00101V11.0599H9.00101V13.0599ZM13.001 13.0599H11.001V11.0599H13.001V13.0599ZM17.001 13.0599H15.001V11.0599H17.001V13.0599Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Social</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+        </ul>
+        
+        <ul>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="reports"
+    
+    
+      ribbon-interest-target="snav-sidebar-extra-reports"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/my_reports/grid/"
+      aria-label="Reports"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.reports"
+      data-path="navigation.sidebar.ribbon.reports">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M20.9988 8.45V4C18.3488 4.3 15.3888 4.5 12.1688 4.51C12.1088 4.51 12.0588 4.51 11.9988 4.51C8.70878 4.51 5.68878 4.31 2.99878 4V13.25V15.55V20C5.68878 19.7 8.70878 19.49 11.9988 19.49C12.0588 19.49 12.1088 19.49 12.1688 19.49C15.3888 19.49 18.3488 19.7 20.9988 20V8.45ZM4.99878 6.21C7.32878 6.41 9.66878 6.51 11.9988 6.51H12.1688C14.4388 6.51 16.7288 6.4 18.9988 6.21V9.42L12.9988 12.38L11.6688 9H11.1688L4.99878 12.21V6.21ZM18.9988 17.79C16.7288 17.6 14.4388 17.5 12.1688 17.49H11.9988C9.66878 17.49 7.32878 17.59 4.99878 17.79V14.46L10.5388 11.58L11.8588 14.93H12.3588L19.0088 11.66V17.8L18.9988 17.79Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M11.1698 8.98988H11.6698L12.9998 12.3699L20.6798 8.58988L20.9998 8.44988V3.99988C18.3498 4.29988 15.3898 4.49988 12.1698 4.50988C8.80976 4.50988 5.73976 4.30988 2.99976 3.99988V13.2499L11.1698 8.98988Z" fill="#6A6C6A"/>
+  <path d="M21.0005 10.6697L12.3505 14.9297H11.8505L10.5305 11.5797L3.91048 15.0297L2.99048 15.5597V20.0097C5.73048 19.6997 8.80048 19.4997 12.1605 19.4997C15.3805 19.4997 18.3405 19.7097 20.9905 20.0097V9.5697V10.6797L21.0005 10.6697Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Reports</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+            <li>
+              
+  <snav-sidebar-ribbon-item
+    class="snav-sidebar-ribbon-item"
+    ribbon-item-id="apps"
+    
+    
+      ribbon-interest-target="snav-sidebar-extra-apps"
+    >
+    <a
+      class="snav-sidebar-ribbon-item__link"
+      href="/apps/"
+      aria-label="Apps"
+      tabindex="0"
+      data-ga4-click
+      data-ga4-item-location="navigation.sidebar.ribbon.app_center"
+      data-path="navigation.sidebar.ribbon.app_center">
+      
+        <span class="snav-sidebar-ribbon-item__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M5.55151 5.74883C6.69151 5.83883 7.84151 5.90883 9.00151 5.95883V8.97883H5.55151V5.74883ZM3.55151 3.54883V10.9788H11.0015V4.00883C8.30151 3.96883 5.80151 3.79883 3.55151 3.54883Z" fill="currentColor"/>
+  <path d="M18.45 5.74883V8.97883H15V5.95883C16.16 5.91883 17.31 5.84883 18.45 5.74883ZM20.45 3.54883C18.2 3.80883 15.7 3.97883 13 4.01883V10.9888H20.45V3.54883Z" fill="currentColor"/>
+  <path d="M18.45 15V18.25C17.31 18.16 16.16 18.09 15 18.04V15H18.45ZM20.45 13H13V19.99C15.7 20.03 18.2 20.2 20.45 20.46V13.01V13Z" fill="currentColor"/>
+  <path d="M9.00151 15V18.04C7.84151 18.08 6.68151 18.15 5.55151 18.25V15H9.00151ZM11.0015 13H3.55151V20.45C5.80151 20.2 8.30151 20.02 11.0015 19.99V13Z" fill="currentColor"/>
+</svg>
+        </span>
+        <span
+          class="snav-sidebar-ribbon-item__icon snav-sidebar-ribbon-item__icon--active"
+          aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+  <path d="M4.55029 9.97918V4.65918C6.33029 4.82918 8.15029 4.94918 10.0003 4.98918V9.97918H4.55029Z" fill="#6A6C6A"/>
+  <path d="M5.55054 5.74932C6.69054 5.83932 7.84054 5.90932 9.00054 5.95932V8.97932H5.55054V5.74932ZM3.55054 3.54932V10.9793H11.0005V4.00932C8.30054 3.96932 5.80054 3.79932 3.55054 3.54932Z" fill="#6A6C6A"/>
+  <path d="M13.999 9.97918V4.98918C15.839 4.93918 17.669 4.82918 19.449 4.65918V9.97918H13.999Z" fill="#6A6C6A"/>
+  <path d="M18.4495 5.74944V8.97944H14.9995V5.95944C16.1595 5.91944 17.3195 5.84944 18.4495 5.74944ZM20.4495 3.54944C18.1995 3.80944 15.6995 3.97944 12.9995 4.01944V10.9894H20.4495V3.54944Z" fill="#6A6C6A"/>
+  <path d="M19.4493 19.3399C17.6693 19.1699 15.8393 19.0499 13.9993 19.0099V13.9999H19.4493V19.3399Z" fill="#6A6C6A"/>
+  <path d="M18.4495 15.0002V18.2502C17.3095 18.1602 16.1595 18.0902 14.9995 18.0402V15.0002H18.4495ZM20.4495 13.0002H12.9995V19.9902C15.6995 20.0302 18.1995 20.2002 20.4495 20.4602V13.0102V13.0002Z" fill="#6A6C6A"/>
+  <path d="M4.55029 13.9999H10.0003V19.0099C8.15029 19.0599 6.32029 19.1699 4.55029 19.3399V13.9999Z" fill="#6A6C6A"/>
+  <path d="M9.00054 15.0002V18.0402C7.84054 18.0802 6.68054 18.1502 5.55054 18.2502V15.0002H9.00054ZM11.0005 13.0002H3.55054V20.4502C5.80054 20.2002 8.30054 20.0202 11.0005 19.9902V13.0002Z" fill="#6A6C6A"/>
+</svg>
+        </span>
+      
+      <span class="snav-sidebar-ribbon-item__label"
+        >Apps</span
+      >
+    </a>
+  </snav-sidebar-ribbon-item>
+
+            </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    
+      
+  
+
+    
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_seo">
+      <div class="snav-sidebar-heading-group-title">
+        SEO
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Dashboard"
+    label="Dashboard"
+    
+    href="/seo/"
+    
+      nav-item="dashboards.seo:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.dashboards.seo.index"
+      data-path="navigation.sidebar.dashboards.seo.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Site Performance"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Site Audit"
+    label="Site Audit"
+    
+    href="/siteaudit/"
+    
+      nav-item="projects.site_audit:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.site.audit.index"
+      data-path="navigation.sidebar.projects.site.audit.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Position Tracking"
+    label="Position Tracking"
+    
+    href="/position-tracking/"
+    
+      nav-item="projects.position_tracking:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.position.tracking.index"
+      data-path="navigation.sidebar.projects.position.tracking.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Competitive Analysis"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Domain Overview"
+    label="Domain Overview"
+    
+    href="/analytics/overview/"
+    
+      nav-item="analytics.domain_overview:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.domain.overview.index"
+      data-path="navigation.sidebar.analytics.domain.overview.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/overview/?q={domain}\u0026searchType=domain\u0026db=us&#34;, &#34;no_project&#34;: &#34;/analytics/overview/?q={domain}\u0026searchType=domain\u0026db=us&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Organic Rankings"
+    label="Organic Rankings"
+    
+    href="/analytics/organic/overview"
+    
+      nav-item="analytics.organic:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.organic.research.domain.index"
+      data-path="navigation.sidebar.analytics.organic.research.domain.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/organic/overview/?db=us\u0026q={domain}\u0026searchType=domain&#34;, &#34;no_project&#34;: &#34;/analytics/organic/overview/?db=us\u0026q={domain}\u0026searchType=domain&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Top Pages"
+    label="Top Pages"
+    
+    href="/analytics/toppages/"
+    
+      nav-item="analytics.toppages:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.toppages.domain.index"
+      data-path="navigation.sidebar.analytics.toppages.domain.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/toppages/?db=us\u0026q={domain}\u0026searchType=domain&#34;, &#34;no_project&#34;: &#34;/analytics/toppages/?db=us\u0026q={domain}\u0026searchType=domain&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Compare Domains"
+    label="Compare Domains"
+    
+    href="/analytics/comparedomains/"
+    
+      nav-item="analytics.comparedomains:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.domain.overview.index"
+      data-path="navigation.sidebar.analytics.domain.overview.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/comparedomains/?searchType=domain\u0026q={domain}&#34;, &#34;no_project&#34;: &#34;/analytics/comparedomains/?searchType=domain\u0026q={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Keyword Gap"
+    label="Keyword Gap"
+    
+    href="/analytics/keywordgap/"
+    
+      nav-item="analytics.keywordgap:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.keywordgap.index"
+      data-path="navigation.sidebar.analytics.keywordgap.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/keywordgap/?q={domain}\u0026searchType=domain&#34;, &#34;no_project&#34;: &#34;/analytics/keywordgap/?q={domain}\u0026searchType=domain&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Backlink Gap"
+    label="Backlink Gap"
+    
+    href="/analytics/gap/backlinks/"
+    
+      nav-item="analytics.gap:backlink"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.gap.backlink"
+      data-path="navigation.sidebar.analytics.gap.backlink"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/gap/backlinks/?q={domain}\u0026searchType=domain&#34;, &#34;no_project&#34;: &#34;/analytics/gap/backlinks/?q={domain}\u0026searchType=domain&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Keyword Research"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Keyword Overview"
+    label="Keyword Overview"
+    
+    href="/analytics/keywordoverview/"
+    
+      nav-item="analytics.keyword_overview:index"
+    
+    
+    
+      data-has-keyword-query
+    
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.keyword.overview.index"
+      data-path="navigation.sidebar.analytics.keyword.overview.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/keywordoverview/?db=us\u0026domain={domain}&#34;, &#34;no_project&#34;: &#34;/analytics/keywordoverview/?db=us\u0026domain={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Keyword Magic Tool"
+    label="Keyword Magic Tool"
+    
+    href="/analytics/keywordmagic/"
+    
+      nav-item="analytics.keyword_magic_new:index"
+    
+    
+    
+      data-has-keyword-query
+    
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.keyword.magic.new.index"
+      data-path="navigation.sidebar.analytics.keyword.magic.new.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/keywordmagic/?db=us\u0026domain={domain}&#34;, &#34;no_project&#34;: &#34;/analytics/keywordmagic/?db=us\u0026domain={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Keyword Strategy Builder"
+    label="Keyword Strategy Builder"
+    
+    href="/analytics/keywordmanager/"
+    
+      nav-item="analytics.keyword_manager:index"
+    
+    
+    
+      data-has-keyword-query
+    
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.keyword.manager.index"
+      data-path="navigation.sidebar.analytics.keyword.manager.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Content Ideas"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="SEO Writing Assistant"
+    label="SEO Writing Assistant"
+    
+    href="/swa/"
+    
+      nav-item="tools.swa:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.swa.index"
+      data-path="navigation.sidebar.tools.swa.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Topic Research"
+    label="Topic Research"
+    
+    href="/topic-research/"
+    
+      nav-item="tools.topic_research:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.topic.research.index"
+      data-path="navigation.sidebar.tools.topic.research.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Link Building"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Backlinks"
+    label="Backlinks"
+    
+    href="/analytics/backlinks/overview/"
+    
+      nav-item="analytics.backlinks:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.backlinks.index"
+      data-path="navigation.sidebar.analytics.backlinks.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/backlinks/overview/?q={domain}\u0026searchType=domain\u0026db=us&#34;, &#34;no_project&#34;: &#34;/analytics/backlinks/overview/?q={domain}\u0026searchType=domain\u0026db=us&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Referring Domains"
+    label="Referring Domains"
+    
+    href="/analytics/refdomains/report/"
+    
+      nav-item="analytics.refdomains"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.referring.index"
+      data-path="navigation.sidebar.analytics.referring.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/analytics/refdomains/report/?q={domain}\u0026searchType=domain&#34;, &#34;no_project&#34;: &#34;/analytics/refdomains/report/?q={domain}\u0026searchType=domain&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Backlink Audit"
+    label="Backlink Audit"
+    
+    href="/backlink_audit/"
+    
+      nav-item="projects.backlink_audit:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.backlink.audit.index"
+      data-path="navigation.sidebar.projects.backlink.audit.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/backlink_audit/{project_id}/audit/&#34;, &#34;no_project&#34;: &#34;/backlink_audit/?start={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Extras"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Sensor"
+    label="Sensor"
+    
+    href="/sensor/?utm_source=semrush&amp;utm_medium=footer"
+    
+      nav-item="tools.sensor:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.sensor"
+      data-path="navigation.sidebar.sensor"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="SEOquake"
+    label="SEOquake"
+    
+    href="https://www.seoquake.com/"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.seoquake"
+      data-path="navigation.sidebar.seoquake"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Semrush Rank"
+    label="Semrush Rank"
+    
+    href="/analytics/ranks/rank/"
+    
+      nav-item="analytics.ranks:rank"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ranks"
+      data-path="navigation.sidebar.ranks"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Other"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="On Page SEO Checker"
+    label="On Page SEO Checker"
+    
+    href="/on-page-seo-checker/"
+    
+      nav-item="projects.seo_ideas:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.seo.ideas.index"
+      data-path="navigation.sidebar.projects.seo.ideas.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/on-page-seo-checker/{project_id}/overview/&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Organic Traffic Insights"
+    label="Organic Traffic Insights"
+    
+    href="/organic_traffic_insights/"
+    
+      nav-item="tools.organic_traffic_insights:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.organic.traffic.insights.index"
+      data-path="navigation.sidebar.tools.organic.traffic.insights.index"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/organic-traffic-insights/project/{project_id}/&#34;, &#34;no_project&#34;: &#34;/projects/#instantcreate/{domain}/{domain}/gat/wizard:open/&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_ai_seo">
+      <div class="snav-sidebar-heading-group-title">
+        AI Visibility
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="AI Analysis"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Visibility Overview"
+    label="Visibility Overview"
+    
+    href="/ai-seo/overview/"
+    
+      nav-item="ai-seo:overview"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.overview"
+      data-path="navigation.sidebar.ai-seo.overview"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/ai-seo/overview/?q={domain}&#34;, &#34;no_project&#34;: &#34;/ai-seo/overview/?q={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Competitor Research"
+    label="Competitor Research"
+    
+    href="/ai-seo/competitor-research/"
+    
+      nav-item="ai-seo:competitors-research"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.competitors-research"
+      data-path="navigation.sidebar.ai-seo.competitors-research"
+    
+    
+    
+    
+    
+      dynamic-url-overrides="{&#34;has_project&#34;: &#34;/ai-seo/competitor-research/?q={domain}&#34;, &#34;no_project&#34;: &#34;/ai-seo/competitor-research/?q={domain}&#34;}"
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Prompt Research"
+    label="Prompt Research"
+    
+    href="/ai-seo/prompt-research/"
+    
+      nav-item="ai-seo:prompt-research"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.topic-analysis"
+      data-path="navigation.sidebar.ai-seo.topic-analysis"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Brand Performance"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Brand Performance"
+    label="Brand Performance"
+    
+    href="/ai-seo/brand-performance/"
+    
+      nav-item="ai-seo:brand-performance"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.brand-performance"
+      data-path="navigation.sidebar.ai-seo.brand-performance"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Perception"
+    label="Perception"
+    
+    href="/ai-seo/perception/"
+    
+      nav-item="ai-seo:perception"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.perception"
+      data-path="navigation.sidebar.ai-seo.perception"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Narrative Drivers"
+    label="Narrative Drivers"
+    
+    href="/ai-seo/narrative-drivers/"
+    
+      nav-item="ai-seo:narrative-drivers"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.narrative-drivers"
+      data-path="navigation.sidebar.ai-seo.narrative-drivers"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Questions"
+    label="Questions"
+    
+    href="/ai-seo/questions/"
+    
+      nav-item="ai-seo:questions"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.questions"
+      data-path="navigation.sidebar.ai-seo.questions"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Boost &amp; Monitor"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Site Audit"
+    label="Site Audit"
+    
+    href="/siteaudit/"
+    
+      nav-item="projects.site_audit:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.site-audit"
+      data-path="navigation.sidebar.ai-seo.site-audit"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Prompt Tracking"
+    label="Prompt Tracking"
+    
+    href="/position-tracking/?filter=geo"
+    
+      nav-item="projects.position_tracking:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.mentions-tracking"
+      data-path="navigation.sidebar.ai-seo.mentions-tracking"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Content Creation"
+    label="Content Creation"
+    
+    href="/content/"
+    
+      nav-item="tools.contentshake:index"
+    
+    
+      target="_blank"
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ai-seo.content"
+      data-path="navigation.sidebar.ai-seo.content"
+    
+    
+    
+    
+      external
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_ci">
+      <div class="snav-sidebar-heading-group-title">
+        Traffic &amp; Market
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Get Started"
+    label="Get Started"
+    
+    href="/analytics/traffic/"
+    
+      nav-item="tm-get-started"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.analytics"
+      data-path="navigation.sidebar.analytics.traffic.analytics"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Traffic Analytics"
+    label="Traffic Analytics"
+    
+    href="/analytics/traffic/traffic-overview/"
+    
+      nav-item="tm-traffic-overview"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.overview"
+      data-path="navigation.sidebar.analytics.traffic.overview"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Market Overview"
+    label="Market Overview"
+    
+    href="/analytics/traffic/market-overview/"
+    
+      nav-item="tm-market-overview"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.market.overview"
+      data-path="navigation.sidebar.analytics.traffic.market.overview"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Top Pages"
+    label="Top Pages"
+    
+    href="/analytics/traffic/top-pages/"
+    
+      nav-item="tm-top-pages"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.top.pages"
+      data-path="navigation.sidebar.analytics.traffic.top.pages"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Competitor Monitoring"
+    label="Competitor Monitoring"
+    
+    href="/analytics/traffic/competitor-monitoring/"
+    
+      nav-item="tm-competitor-monitoring"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.cm"
+      data-path="navigation.sidebar.analytics.traffic.cm"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Traffic Distribution"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="AI Traffic"
+    label="AI Traffic"
+    
+    href="/analytics/traffic/ai-traffic/"
+    
+      nav-item="tm-ai-traffic"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.ai.traffic"
+      data-path="navigation.sidebar.analytics.traffic.ai.traffic"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Referral"
+    label="Referral"
+    
+    href="/analytics/traffic/referral/"
+    
+      nav-item="tm-referral"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.referral"
+      data-path="navigation.sidebar.analytics.traffic.referral"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Organic Search"
+    label="Organic Search"
+    
+    href="/analytics/traffic/organic-search/"
+    
+      nav-item="tm-organic-search"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.organic.search"
+      data-path="navigation.sidebar.analytics.traffic.organic.search"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Paid Search"
+    label="Paid Search"
+    
+    href="/analytics/traffic/paid-search/"
+    
+      nav-item="tm-paid-search"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.paid.search"
+      data-path="navigation.sidebar.analytics.traffic.paid.search"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Organic Social"
+    label="Organic Social"
+    
+    href="/analytics/traffic/organic-social/"
+    
+      nav-item="tm-organic-social"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.organic.social"
+      data-path="navigation.sidebar.analytics.traffic.organic.social"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Paid Social"
+    label="Paid Social"
+    
+    href="/analytics/traffic/paid-social/"
+    
+      nav-item="tm-paid-social"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.paid.social"
+      data-path="navigation.sidebar.analytics.traffic.paid.social"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Email"
+    label="Email"
+    
+    href="/analytics/traffic/email/"
+    
+      nav-item="tm-email"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.email"
+      data-path="navigation.sidebar.analytics.traffic.email"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Display Ads"
+    label="Display Ads"
+    
+    href="/analytics/traffic/display-ads/"
+    
+      nav-item="tm-display-ads"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.display.ads"
+      data-path="navigation.sidebar.analytics.traffic.display.ads"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Sources &amp; Destinations"
+    label="Sources &amp; Destinations"
+    
+    href="/analytics/traffic/sources-destinations/"
+    
+      nav-item="tm-sources-destinations"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.sources.destinations"
+      data-path="navigation.sidebar.analytics.traffic.sources.destinations"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Pages and Categories"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Subfolders &amp; Subdomains"
+    label="Subfolders &amp; Subdomains"
+    
+    href="/analytics/traffic/subfolders-subdomains/"
+    
+      nav-item="tm-subfolders-subdomains"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.subfolders.subdomains"
+      data-path="navigation.sidebar.analytics.traffic.subfolders.subdomains"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Page Groups"
+    label="Page Groups"
+    
+    href="/analytics/traffic/page-groups/"
+    
+      nav-item="tm-page-groups"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.page-groups"
+      data-path="navigation.sidebar.analytics.traffic.page-groups"
+    
+    
+    
+      release="beta"
+      
+        release-description="Early access"
+      
+      
+        release-tooltip-title="Compare any sets of pages"
+        release-tooltip-text="Group pages by category, product, or topic to see how each group performs."
+        release-tooltip-content-raw="Compare any sets of pages Group pages by category, product, or topic to see how each group performs."
+      
+    
+    
+    >
+    
+      
+  <snav-sidebar-badge variant="beta">
+    beta
+  </snav-sidebar-badge>
+
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Regional Trends"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="USA"
+    label="USA"
+    
+    href="/analytics/traffic/usa/"
+    
+      nav-item="tm-usa"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.usa"
+      data-path="navigation.sidebar.analytics.traffic.usa"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Countries"
+    label="Countries"
+    
+    href="/analytics/traffic/countries/"
+    
+      nav-item="tm-countries"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.countries"
+      data-path="navigation.sidebar.analytics.traffic.countries"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Business Regions"
+    label="Business Regions"
+    
+    href="/analytics/traffic/business-regions/"
+    
+      nav-item="tm-business-regions"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.business.regions"
+      data-path="navigation.sidebar.analytics.traffic.business.regions"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Geographical Regions"
+    label="Geographical Regions"
+    
+    href="/analytics/traffic/geographical-regions/"
+    
+      nav-item="tm-geographical-regions"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.geographical.regions"
+      data-path="navigation.sidebar.analytics.traffic.geographical.regions"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Audience Profile"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Demographics"
+    label="Demographics"
+    
+    href="/analytics/traffic/demographics/"
+    
+      nav-item="tm-demographics"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.demographics"
+      data-path="navigation.sidebar.analytics.traffic.demographics"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Audience Overlap"
+    label="Audience Overlap"
+    
+    href="/analytics/traffic/audience-overlap/"
+    
+      nav-item="tm-audience-overlap"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.audience.overlap"
+      data-path="navigation.sidebar.analytics.traffic.audience.overlap"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Socioeconomics"
+    label="Socioeconomics"
+    
+    href="/analytics/traffic/socioeconomics/"
+    
+      nav-item="tm-socioeconomics"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.socioeconomics"
+      data-path="navigation.sidebar.analytics.traffic.socioeconomics"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Behavior"
+    label="Behavior"
+    
+    href="/analytics/traffic/behavior/"
+    
+      nav-item="tm-behavior"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.behavior"
+      data-path="navigation.sidebar.analytics.traffic.behavior"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Advanced"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Daily Trends"
+    label="Daily Trends"
+    
+    href="/analytics/traffic/daily-trends/"
+    
+      nav-item="tm-daily-trends"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.daily.trends"
+      data-path="navigation.sidebar.analytics.traffic.daily.trends"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Industry &amp; Bulk Analysis"
+    label="Industry &amp; Bulk Analysis"
+    
+    href="/analytics/traffic/industry-and-bulk-analysis/"
+    
+      nav-item="tm-industry-bulk-analysis"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.industry.bulk.analysis"
+      data-path="navigation.sidebar.analytics.traffic.industry.bulk.analysis"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Trends API"
+    label="Trends API"
+    
+    href="/analytics/traffic/trends-api"
+    
+      nav-item="tm-trends-api"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.trends.api"
+      data-path="navigation.sidebar.analytics.traffic.trends.api"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Trending Websites"
+    label="Trending Websites"
+    
+    href="/trending-websites/global/all/"
+    
+      nav-item="tm-open-trends"
+    
+    
+      target="_blank"
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.traffic.trending.websites"
+      data-path="navigation.sidebar.analytics.traffic.trending.websites"
+    
+    
+    
+    
+      external
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_local">
+      <div class="snav-sidebar-heading-group-title">
+        Local
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Dashboard"
+    label="Dashboard"
+    
+    href="/local-business/"
+    
+      nav-item="tools.local_business:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.local.business.index"
+      data-path="navigation.sidebar.tools.local.business.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Listing Management"
+    label="Listing Management"
+    
+    href="/listings-management/"
+    
+      nav-item="tools.listings_management:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.listings.management.index"
+      data-path="navigation.sidebar.tools.listings.management.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Review Management"
+    label="Review Management"
+    
+    href="/review-management/"
+    
+      nav-item="tools.review_management:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.review.management.index"
+      data-path="navigation.sidebar.tools.review.management.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="GBP Optimization"
+    label="GBP Optimization"
+    
+    href="/gbp-optimization/"
+    
+      nav-item="tools.gbp_optimization:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.gbp.optimization.index"
+      data-path="navigation.sidebar.tools.gbp.optimization.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Automations"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="GBP AI Agent"
+    label="GBP AI Agent"
+    
+    href="/gbp-ai-agent/"
+    
+      nav-item="tools.gbp_ai_agent:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.gbp.ai.agent.index"
+      data-path="navigation.sidebar.tools.gbp.ai.agent.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Competitive Analysis"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Map Rank Tracker"
+    label="Map Rank Tracker"
+    
+    href="/map-rank-tracker/"
+    
+      nav-item="tools.map_rank_tracker:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.map.rank.tracker.index"
+      data-path="navigation.sidebar.tools.map.rank.tracker.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_content">
+      <div class="snav-sidebar-heading-group-title">
+        Content
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Dashboard"
+    label="Dashboard"
+    
+    href="/content/"
+    
+      nav-item="tools.contentshake:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.index"
+      data-path="navigation.sidebar.tools.content.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="AI Article Generator"
+    label="AI Article Generator"
+    
+    href="/content/articles/create/"
+    
+      nav-item="tools.content_articles:create"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.articles.create"
+      data-path="navigation.sidebar.tools.content.articles.create"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Content Optimizer"
+    label="Content Optimizer"
+    
+    href="/content/articles/optimize/"
+    
+      nav-item="tools.content_articles:optimize"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.articles.optimize"
+      data-path="navigation.sidebar.tools.content.articles.optimize"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Content Repurposing"
+    label="Content Repurposing"
+    
+    href="/content/articles/repurpose/"
+    
+      nav-item="tools.content_articles:repurpose"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.articles.repurpose"
+      data-path="navigation.sidebar.tools.content.articles.repurpose"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Topic Finder"
+    label="Topic Finder"
+    
+    href="/content/topic-finder/"
+    
+      nav-item="tools.content_topic_finder:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.topicfinder.index"
+      data-path="navigation.sidebar.tools.content.topicfinder.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="SEO Brief Generator"
+    label="SEO Brief Generator"
+    
+    href="/content/briefs/create/"
+    
+      nav-item="tools.content_briefs:create"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.content.briefs.create"
+      data-path="navigation.sidebar.tools.content.briefs.create"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_ad">
+      <div class="snav-sidebar-heading-group-title">
+        Advertising
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Get Started"
+    label="Get Started"
+    
+    href="/advertising/"
+    
+      nav-item="advertising:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.advertising"
+      data-path="navigation.sidebar.advertising"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Ads Launch Assistant"
+    label="Ads Launch Assistant"
+    
+    href="/advertising/ads-launch-assistant"
+    
+      nav-item="advertising.ads_launch_assistant"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ads.launch.assistant"
+      data-path="navigation.sidebar.ads.launch.assistant"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Ads AI Agent"
+    label="Ads AI Agent"
+    
+    href="/advertising/ads-ai-agent"
+    
+      nav-item="advertising.ads-ai-agent"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.ads.ai.agent"
+      data-path="navigation.sidebar.ads.ai.agent"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Advertising Research"
+    label="Advertising Research"
+    
+    href="/analytics/adwords/positions/"
+    
+      nav-item="analytics.advertising_research:domain:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.advertising.research.domain.index"
+      data-path="navigation.sidebar.analytics.advertising.research.domain.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="PLA Research"
+    label="PLA Research"
+    
+    href="/analytics/pla/positions/"
+    
+      nav-item="analytics.pla_research:domain:index"
+    
+    
+    
+    
+      data-has-domain-query
+    
+    
+      data-has-db
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.analytics.pla.research.domain.index"
+      data-path="navigation.sidebar.analytics.pla.research.domain.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="AdClarity"
+    label="AdClarity"
+    
+    href="/apps/adclarity-advertising-intelligence/"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.adclarity"
+      data-path="navigation.sidebar.adclarity"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_pr">
+      <div class="snav-sidebar-heading-group-title">
+        AI PR
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Dashboard"
+    label="Dashboard"
+    
+    href="/pr-toolkit/"
+    
+      nav-item="pr_toolkit:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.dashboard.index"
+      data-path="navigation.sidebar.projects.pr.dashboard.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="AI-Cited Media"
+    label="AI-Cited Media"
+    
+    href="/pr-toolkit/ai-cited-media/"
+    
+      nav-item="pr_toolkit:ai_cited_media"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.ai.cited.media.index"
+      data-path="navigation.sidebar.projects.pr.ai.cited.media.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Media Database"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Contact Search"
+    label="Contact Search"
+    
+    href="/pr-toolkit/media-database/"
+    
+      nav-item="pr_toolkit:media_database"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.contact.search.index"
+      data-path="navigation.sidebar.projects.pr.contact.search.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Media Lists"
+    label="Media Lists"
+    
+    href="/pr-toolkit/media-lists/"
+    
+      nav-item="pr_toolkit:media_lists"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.media.lists.index"
+      data-path="navigation.sidebar.projects.pr.media.lists.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Emails"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Your Emails"
+    label="Your Emails"
+    
+    href="/pr-toolkit/emails"
+    
+      nav-item="pr_toolkit:emails_index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.your.emails.index"
+      data-path="navigation.sidebar.projects.pr.your.emails.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Senders and Domains"
+    label="Senders and Domains"
+    
+    href="/pr-toolkit/emails/settings/senders/"
+    
+      nav-item="pr_toolkit:emails_senders"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.senders.index"
+      data-path="navigation.sidebar.projects.pr.senders.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Media Monitoring"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Media Monitoring"
+    label="Media Monitoring"
+    
+    href="/pr-toolkit/media-monitoring/"
+    
+      nav-item="pr_toolkit:media_monitoring"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.media.monitoring.index"
+      data-path="navigation.sidebar.projects.pr.media.monitoring.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Alerts and Digests"
+    label="Alerts and Digests"
+    
+    href="/pr-toolkit/media-monitoring/emails/"
+    
+      nav-item="pr_toolkit:media_monitoring_emails"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.pr.email.notifications.index"
+      data-path="navigation.sidebar.projects.pr.email.notifications.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+      
+  
+    <template id="snav-sidebar-toolkit-toolkit_social">
+      <div class="snav-sidebar-heading-group-title">
+        Social
+        
+        
+      </div>
+
+      
+        
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Dashboard"
+    label="Dashboard"
+    
+    href="/social-media/"
+    
+      nav-item="dashboards.social_media:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.dashboards.social.media.index"
+      data-path="navigation.sidebar.dashboards.social.media.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Core"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Social Poster"
+    label="Social Poster"
+    
+    href="/social-media/?tool=poster"
+    
+      nav-item="projects.social_media_poster:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.social.media.poster.index"
+      data-path="navigation.sidebar.projects.social.media.poster.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Social Tracker"
+    label="Social Tracker"
+    
+    href="/social-media/?tool=tracker"
+    
+      nav-item="projects.social_media_tracker:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.social.media.tracker.index"
+      data-path="navigation.sidebar.projects.social.media.tracker.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Social Content Insights"
+    label="Social Content Insights"
+    
+    href="/social-media/?tool=content-insights"
+    
+      nav-item="projects.social_media_content_insights:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.social.media.content.insights.index"
+      data-path="navigation.sidebar.projects.social.media.content.insights.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Social Analytics"
+    label="Social Analytics"
+    
+    href="/social-media/?tool=analytics"
+    
+      nav-item="projects.social_media_analytics:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.social.media.analytics.index"
+      data-path="navigation.sidebar.projects.social.media.analytics.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Advanced"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Influencer Analytics"
+    label="Influencer Analytics"
+    
+    href="/apps/influencer-marketing-platform/"
+    
+    
+      target="_blank"
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.influencer.marketing.platform.index"
+      data-path="navigation.sidebar.projects.influencer.marketing.platform.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Media Monitoring"
+    label="Media Monitoring"
+    
+    href="/media-monitoring/"
+    
+      nav-item="projects.media_monitoring:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.projects.media.monitoring.index"
+      data-path="navigation.sidebar.projects.media.monitoring.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+      
+    </template>
+  
+
+    
+
+    
+      
+        
+  
+    <template id="snav-sidebar-extra-reports">
+      <div class="snav-sidebar-heading-group-title">
+        Reports
+        
+        
+      </div>
+
+      
+        
+          
+  <snav-sidebar-reports>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="My Reports"
+    label="My Reports"
+    
+    href="/my_reports/grid/"
+    
+      nav-item="tools.reports:index"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.tools.reports.index"
+      data-path="navigation.sidebar.tools.reports.index"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+          data-id="dynamic-reports-recent"
+        
+        
+          name="Recently updated"
+        
+        >
+        
+        
+        
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+          name="Top Templates"
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Google Analytics 4"
+    label="Google Analytics 4"
+    
+    href="/my_reports/constructor?action=openPopup&amp;type=template&amp;templateName=tc_ga4_atomic_widgets"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.ga4"
+      data-path="navigation.sidebar.reports.ga4"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Google Search Console"
+    label="Google Search Console"
+    
+    href="/my_reports/constructor?action=openPopup&amp;type=template&amp;templateName=tc_google_search_console_atomic_widgets"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.gsc"
+      data-path="navigation.sidebar.reports.gsc"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Monthly SEO"
+    label="Monthly SEO"
+    
+    href="/my_reports/constructor?action=openPopup&amp;type=template&amp;templateName=tc_monthly_seo_v2"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.monthly.seo"
+      data-path="navigation.sidebar.reports.monthly.seo"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Create report"
+    label="Create report"
+    
+    href="/my_reports/constructor?action=openBlank&amp;accordionTab=integrations&amp;isPremium=false"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.create.report"
+      data-path="navigation.sidebar.reports.create.report"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Templates"
+    label="Templates"
+    
+    href="/my_reports/constructor?accordionTab=integrations&amp;isPremium=false"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.templates"
+      data-path="navigation.sidebar.reports.templates"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Themes"
+    label="Themes"
+    
+    href="/my_reports/constructor?action=openBlank&amp;accordionTab=themes&amp;isPremium=false"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.themes"
+      data-path="navigation.sidebar.reports.themes"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="About My Reports Suite"
+    label="About My Reports Suite"
+    
+    href="/my_reports/suite"
+    
+    
+      target="_blank"
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.reports.about.suite"
+      data-path="navigation.sidebar.reports.about.suite"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+    <snav-sidebar-list-group
+      data-id="dynamic-reports-recent-skeleton"
+      inert
+      aria-busy="true">
+      <div class="snav-sidebar-reports-skeleton-group-name"></div>
+      <div class="snav-sidebar-reports-skeleton-item"></div>
+      <div class="snav-sidebar-reports-skeleton-item"></div>
+      <div class="snav-sidebar-reports-skeleton-item"></div>
+      <div class="snav-sidebar-reports-skeleton-item"></div>
+      <div class="snav-sidebar-reports-skeleton-item"></div>
+    </snav-sidebar-list-group>
+  </snav-sidebar-reports>
+
+        
+      
+    </template>
+  
+
+      
+    
+      
+        
+  
+    <template id="snav-sidebar-extra-apps">
+      <div class="snav-sidebar-heading-group-title">
+        App Center
+        
+        
+      </div>
+
+      
+        
+          <snav-sidebar-app-center>
+            
+  
+    
+      <snav-sidebar-list-group
+        
+        
+        >
+        
+        
+        
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="Store"
+    label="Store"
+    
+    href="/apps/"
+    
+      nav-item="app_center"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.app_center.store"
+      data-path="navigation.sidebar.app_center.store"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+    
+      
+  
+  
+  <snav-sidebar-list-item
+    raw-label="My Apps"
+    label="My Apps"
+    
+    href="/apps/my-apps/"
+    
+      nav-item="app_center:my_apps"
+    
+    
+    
+    
+    
+    
+      data-ga4-click data-ga4-item-location="navigation.sidebar.app_center.my_apps"
+      data-path="navigation.sidebar.app_center.my_apps"
+    
+    
+    
+    
+    >
+    
+  </snav-sidebar-list-item>
+
+    
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+          data-id="dynamic-app-center-active"
+        
+        
+          name="Active"
+        
+        >
+        
+        
+        
+  
+
+      </snav-sidebar-list-group>
+    
+  
+    
+      <snav-sidebar-list-group
+        
+          data-id="dynamic-app-center-best-for-you"
+        
+        
+          name="Try for free"
+        
+        >
+        
+        
+        
+  
+
+      </snav-sidebar-list-group>
+    
+  
+
+          </snav-sidebar-app-center>
+        
+      
+    </template>
+  
+
+      
+    
+  </snav-sidebar>
+
+  
+    <div class="snav-collapse">
+      <button
+        type="button"
+        class="snav-collapse__button"
+        aria-expanded="true"
+        aria-label="Hide navigation"
+        data-ga4-click
+        data-ga4-item-location="navigation.sidebar.open-collapse-button"
+        data-path="navigation.sidebar.open-collapse-button">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path
+            d="M7.707 4.707a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L4.414 8l3.293-3.293Z" />
+          <path
+            d="M13.707 4.707a1 1 0 0 0-1.414-1.414l-4 4a1 1 0 0 0 0 1.414l4 4a1 1 0 0 0 1.414-1.414L10.414 8l3.293-3.293Z" />
+        </svg>
+      </button>
+    </div>
+  
+
+</div>
+    <!-- #endregion -->
+
+
+
+<!-- #endregion -->
+
+                    
+                </div>
+
+                <div class="srf-layout-main-content-wrapper">
+                    <main class="srf-layout__body" id="root-content">
+                        
+                            
+                                <script type="text/plain" data-src="//cdn.mouseflow.com/projects/d9c989f2-d510-4d22-905d-958ad8dfc14d.js" data-consent="analytics"></script><script id="app-center-data" type="application/json">{"pageData": {"isSpecificCollectionShown": false, "collectionsTags": [{"label": "Store", "gaId": "store", "url": "/apps/", "isActive": true}, {"label": "SEO", "gaId": "seo", "isActive": false, "url": "/apps/collection/seo/"}, {"label": "Social Media", "gaId": "social-media", "isActive": false, "url": "/apps/collection/social-media/"}, {"label": "Content", "gaId": "content-creation", "isActive": false, "url": "/apps/collection/content-creation/"}, {"label": "Advertising", "gaId": "advertising", "isActive": false, "url": "/apps/collection/advertising/"}, {"label": "AI Apps", "gaId": "ai-apps", "isActive": false, "url": "/apps/collection/ai-apps/"}, {"label": "Competitors", "gaId": "competitor-analysis", "isActive": false, "url": "/apps/collection/competitor-analysis/"}, {"label": "SMB", "gaId": "smb", "isActive": false, "url": "/apps/collection/smb/"}, {"label": "Mobile", "gaId": "mobile-aso-apps", "isActive": false, "url": "/apps/collection/mobile-aso-apps/"}, {"label": "Workflows", "gaId": "Workflows", "isActive": false, "url": "/apps/collection/Workflows/"}, {"label": "Ecommerce", "gaId": "for-ecommerce", "isActive": false, "url": "/apps/collection/for-ecommerce/"}, {"label": "Video", "gaId": "video-marketing", "isActive": false, "url": "/apps/collection/video-marketing/"}, {"label": "Brand", "gaId": "Brand", "isActive": false, "url": "/apps/collection/Brand/"}, {"label": "LeadGen", "gaId": "LeadGen", "isActive": false, "url": "/apps/collection/LeadGen/"}, {"label": "Toolkits", "gaId": "Toolkits", "isActive": false, "url": "/apps/collection/Toolkits/"}], "collections": [{"id": 1, "title": "Most Popular", "description": null, "collectionUrl": "/apps/collection/most-popular/", "collectionGaId": "most-popular", "itemsList": {"items": [{"id": "31540712-735e-4523-8cbe-452da295ae03", "gaId": "callrail", "name": "CallRail", "icon": "https://static.semrush.com/apps/static/CallRail_brandmark_newblue2024%20(1)-HKKUNY80FYMYR.png", "caption": "Know which ads, keywords, and campaigns drive phone leads", "location": "callrail", "badges": [{"text": "Free trial", "style": 2}, {"text": "$125/mo", "style": 1}], "type": "APP"}, {"id": "f49996c3-412c-497b-92b7-3be08124100e", "gaId": "serp-gap-analyzer", "name": "SERP Gap Analyzer", "icon": "https://static.semrush.com/apps/static/SERP%20Gap%20Analyzer-AOLKTP3WDUIU7.png", "caption": "Find SERP opportunities. See where your brand stands in AI Search. Fix decaying pages.", "location": "serp-gap-analyzer", "badges": [{"text": "Free trial", "style": 2}, {"text": "$99/mo", "style": 1}], "type": "APP"}, {"id": "a007e13b-f89e-42cb-ab2d-69b77fb61b9b", "gaId": "new-adclarity-advertising-intelegence", "name": "AdClarity - Advertising Intelligence", "icon": "https://static.semrush.com/apps/static/logo-EG68L9FVVIO0Z.png", "caption": "Unwrap competitors' digital ads, ad spend and impressions", "location": "adclarity-advertising-intelligence", "badges": [{"text": "Free trial", "style": 2}, {"text": "$298/mo", "style": 1}], "type": "APP"}, {"id": "2543d90a-71e5-406c-b6de-5d02aee7ddbc", "gaId": "buzzguru-influencer-marketing-platform", "name": "Influencer Analytics", "icon": "https://static.semrush.com/apps/static/Logo%20IA%20SemRush-9UOL1AT9YKDJH.png", "caption": "Improve your influencer marketing campaign\u2019s performance. From discovery to clicks.", "location": "influencer-marketing-platform", "badges": [{"text": "Free trial", "style": 2}, {"text": "$249/mo", "style": 1}], "type": "APP"}, {"id": "52731458-6ee3-4232-85e7-3187e0c07f2c", "gaId": "exploding-topics", "name": "Exploding Topics", "icon": "https://static.semrush.com/apps/static/et-icon-D9052E5AQQH5P.png", "caption": "Discover trending topics before they take off", "location": "exploding-topics", "badges": [{"text": "Free trial", "style": 2}, {"text": "$99/mo", "style": 1}], "type": "APP"}, {"id": "fbf55ace-348d-44d3-9853-08a1f6c7ba79", "gaId": "llm-gap-analyzer", "name": "LLM Gap Analyzer", "icon": "https://static.semrush.com/apps/static/LLM-Gap-Analyzer-256x2562x-5SINT2ICCITY0.png", "caption": "Outrank the competitors currently winning in Google AI and ChatGPT.", "location": "llm-gap-analyzer", "badges": [{"text": "Free trial", "style": 2}, {"text": "$49/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}, {"id": 4, "title": "New Apps", "description": null, "collectionUrl": "/apps/collection/new/", "collectionGaId": "new", "itemsList": {"items": [{"id": "6ae23a70-58e0-43d9-9551-ea50f8053981", "gaId": "crazy-egg", "name": "Crazy Egg", "icon": "https://static.semrush.com/apps/static/crazyegg-logo-white-background-26C739DFQ3JOR.png", "caption": "Get more conversions from the traffic you\u2019ve already earned", "location": "crazy-egg", "badges": [{"text": "Free trial", "style": 2}, {"text": "$249/mo", "style": 1}], "type": "APP"}, {"id": "98733c8d-f1c1-40f6-b683-30913d8c9d05", "gaId": "voiceassist", "name": "Voice Assist by CallRail", "icon": "https://static.semrush.com/apps/static/Voice%20Assist-%20Semrush-1TQ7OOAF6V19X.png", "caption": "Answer all calls. Convert more leads.", "location": "voiceassist", "badges": [{"text": "Free trial", "style": 2}, {"text": "$50/mo", "style": 1}], "type": "APP"}, {"id": "fbf55ace-348d-44d3-9853-08a1f6c7ba79", "gaId": "llm-gap-analyzer", "name": "LLM Gap Analyzer", "icon": "https://static.semrush.com/apps/static/LLM-Gap-Analyzer-256x2562x-5SINT2ICCITY0.png", "caption": "Outrank the competitors currently winning in Google AI and ChatGPT.", "location": "llm-gap-analyzer", "badges": [{"text": "Free trial", "style": 2}, {"text": "$49/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}, {"id": 21, "title": "AI & Automation Apps: The Best AI Tools for Your Marketing Strategy", "description": null, "collectionUrl": "/apps/collection/ai-apps/", "collectionGaId": "ai-apps", "itemsList": {"items": [{"id": "98733c8d-f1c1-40f6-b683-30913d8c9d05", "gaId": "voiceassist", "name": "Voice Assist by CallRail", "icon": "https://static.semrush.com/apps/static/Voice%20Assist-%20Semrush-1TQ7OOAF6V19X.png", "caption": "Answer all calls. Convert more leads.", "location": "voiceassist", "badges": [{"text": "Free trial", "style": 2}, {"text": "$50/mo", "style": 1}], "type": "APP"}, {"id": "77d06a7e-6ecc-46e3-9cab-fbc0600d1f12", "gaId": "ai-marketing-agent", "name": "AI Marketing Agent", "icon": "https://static.semrush.com/apps/static/logo%20ai_marketing_agent-GQOVD35R3YODG.png", "caption": "Turn marketing ideas into campaign-ready, on-brand creatives", "location": "ai-marketing-agent", "badges": [{"text": "Free trial", "style": 2}, {"text": "$79/mo", "style": 1}], "type": "APP"}, {"id": "b9503930-433c-40f7-90db-e50263bc7fd4", "gaId": "Instant-Video-Creator", "name": "AI Video Marketing Automator", "icon": "https://static.semrush.com/apps/static/logo-8OFHBJOG2WN6B.png", "caption": "Automate video marketing for SEO and Social Media", "location": "ai-video-marketing-automator", "badges": [{"text": "Free trial", "style": 2}, {"text": "$39/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}, {"id": 90, "title": "SEO & Link Building Apps", "description": null, "collectionUrl": "/apps/collection/seo/", "collectionGaId": "seo", "itemsList": {"items": [{"id": "57bbf3be-aa55-4150-a5fb-a1357aec2ac0", "gaId": "ai-backlink-builder", "name": "AI Backlink Builder", "icon": "https://static.semrush.com/apps/static/respona-logo-C5JTM6F3H6JKS.png", "caption": "Automate link building, find contacts, and personalize outreach with AI", "location": "ai-backlink-builder", "badges": [{"text": "Free trial", "style": 2}, {"text": "$169/mo", "style": 1}], "type": "APP"}, {"id": "250c942a-e67a-40a5-be18-48dc76805337", "gaId": "testing-bot-website-testing", "name": "AI Website Testing", "icon": "https://static.semrush.com/app-center/apps_images/website-testing/website-testing-icon.png", "caption": "Make sure your website looks and behaves correctly, everywhere", "location": "ai-website-testing", "badges": [{"text": "Free trial", "style": 2}, {"text": "$69/mo", "style": 1}], "type": "APP"}, {"id": "a6cbdf62-393e-11eb-adc1-0242ac120002", "gaId": "ma-insights", "name": "Mobile App Insights", "icon": "https://static.semrush.com/app-center/apps_images/mobile-app-insights/Mobile_App_Insights_app_logo.png", "caption": "All the essentials to maximize your mobile app's visibility and ASO", "location": "mobile-app-insights", "badges": [{"text": "Free trial", "style": 2}, {"text": "$59/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}, {"id": 11, "title": "Social Media Apps: Grow Your Audience In All Social Media Platforms", "description": null, "collectionUrl": "/apps/collection/social-media/", "collectionGaId": "social-media", "itemsList": {"items": [{"id": "fe0bc152-dac3-4b39-887d-b1094f3ccd72", "gaId": "ai-social-content-generator", "name": "AI Social Content Generator", "icon": "https://static.semrush.com/apps/static/predis-logo-square-KBZ349QDGDKNZ.png", "caption": "Generate & publish social media videos, ads, and posts in your brand language", "location": "ai-social-content-generator", "badges": [{"text": "Free trial", "style": 2}, {"text": "$35/mo", "style": 1}], "type": "APP"}, {"id": "2543d90a-71e5-406c-b6de-5d02aee7ddbc", "gaId": "buzzguru-influencer-marketing-platform", "name": "Influencer Analytics", "icon": "https://static.semrush.com/apps/static/Logo%20IA%20SemRush-9UOL1AT9YKDJH.png", "caption": "Improve your influencer marketing campaign\u2019s performance. From discovery to clicks.", "location": "influencer-marketing-platform", "badges": [{"text": "Free trial", "style": 2}, {"text": "$249/mo", "style": 1}], "type": "APP"}, {"id": "f016f773-2580-4c0f-ab42-d0d5fc01f9f1", "gaId": "news-alerts", "name": "Brand Monitoring", "icon": "https://static.semrush.com/apps/static/news%20alerts%20icon-9B9NSL21JULV.png", "caption": "Track social mentions, press hits, and backlinks across the web", "location": "brand-monitoring", "badges": [{"text": "Free trial", "style": 2}, {"text": "$79/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}, {"id": 19, "title": "Advertising Apps", "description": null, "collectionUrl": "/apps/collection/advertising/", "collectionGaId": "advertising", "itemsList": {"items": [{"id": "a007e13b-f89e-42cb-ab2d-69b77fb61b9b", "gaId": "new-adclarity-advertising-intelegence", "name": "AdClarity - Advertising Intelligence", "icon": "https://static.semrush.com/apps/static/logo-EG68L9FVVIO0Z.png", "caption": "Unwrap competitors' digital ads, ad spend and impressions", "location": "adclarity-advertising-intelligence", "badges": [{"text": "Free trial", "style": 2}, {"text": "$298/mo", "style": 1}], "type": "APP"}, {"id": "41365e55-4920-4c76-878d-0b8affa24b4d", "gaId": "adcreative-ai", "name": "AdCreative.ai", "icon": "https://static.semrush.com/apps/static/Logo1%20(1)-GXAJG1BMBZBSG.png", "caption": "Generate ad creatives, ad copy and product photoshoots with AI to outperform competitors", "location": "adcreative-ai", "badges": [{"text": "Free trial", "style": 2}, {"text": "$109/mo", "style": 1}], "type": "APP"}, {"id": "6ae23a70-58e0-43d9-9551-ea50f8053981", "gaId": "crazy-egg", "name": "Crazy Egg", "icon": "https://static.semrush.com/apps/static/crazyegg-logo-white-background-26C739DFQ3JOR.png", "caption": "Get more conversions from the traffic you\u2019ve already earned", "location": "crazy-egg", "badges": [{"text": "Free trial", "style": 2}, {"text": "$249/mo", "style": 1}], "type": "APP"}]}, "showSeeAll": true}], "faq": null}, "sentry": {"dsn": "https://a2f4815d701447e4a31fea8b0627118b@www.semrush.com/_sentry/312", "environment": "production.gke.k1"}, "amplitude": {"apiKey": "2f2ffcd828c37cca1ef54e78e4e57b18", "environment": "prod"}, "mockThirdPartyJS": false}</script><link href="/apps/frontend-build/static/css/665.ffd537c7.css" rel="stylesheet"><link href="/apps/frontend-build/static/css/577.50dc9fb4.css" rel="stylesheet"><link href="/apps/frontend-build/static/css/SmbStorePage.2abc9c48.css" rel="stylesheet"><div id="root" class="rootContainer"></div><script src="/apps/frontend-build/static/js/runtime.d9cac69a.js"></script><script src="/apps/frontend-build/static/js/71.3eb11019.js"></script><script src="/apps/frontend-build/static/js/481.2e05e741.js"></script><script src="/apps/frontend-build/static/js/899.46b48870.js"></script><script src="/apps/frontend-build/static/js/734.dd270607.js"></script><script src="/apps/frontend-build/static/js/SmbStorePage.c2583f0f.js"></script>
+                            
+
+                            
+                                
+                                
+
+
+                            
+                        
+                    </main>
+
+                    <div class="srf-layout__footer">
+                        
+                            <!-- #region Page Slot "page_footer_slot" -->
+
+    <!-- #region BuiltIn Component "smb_footer" -->
+    
+        
+        
+
+<link rel="stylesheet" href="/__static__/webpack/smb_footer.30843f24d89935e2.css">
+
+<footer class="srf-footer" id="srf-footer">
+    <div class="srf-footer__line">
+        <div class="srf-footer__line-start">
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="/company/contacts/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.contacts">Contact us</a>
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="/company/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.About.Us">About us</a>
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="/blog/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.Blog">Blog</a>
+            <div class="srf-footer__lang-switcher">
+                <button class="srf-footer__button srf-footer__button--lang">English</button>
+                <ul class="srf-footer__submenu"
+                    role="menu"
+                    aria-label="List of available languages"
+                    onclick="sm2.switchLanguage(arguments[0].target.value)">
+                    
+                        <li class="srf-footer__submenu-item srf-footer__submenu-item--active"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="en"
+                                    lang="en"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.en"
+                                    data-test="footer_lang_en"
+                                    aria-current="true">
+                                English
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="de"
+                                    lang="de"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.de"
+                                    data-test="footer_lang_de"
+                                    >
+                                Deutsch
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="es"
+                                    lang="es"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.es"
+                                    data-test="footer_lang_es"
+                                    >
+                                Español
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="fr"
+                                    lang="fr"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.fr"
+                                    data-test="footer_lang_fr"
+                                    >
+                                Français
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="it"
+                                    lang="it"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.it"
+                                    data-test="footer_lang_it"
+                                    >
+                                Italiano
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="nl"
+                                    lang="nl"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.nl"
+                                    data-test="footer_lang_nl"
+                                    >
+                                Nederlands
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="pl"
+                                    lang="pl"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.pl"
+                                    data-test="footer_lang_pl"
+                                    >
+                                Polski
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="pt"
+                                    lang="pt"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.pt"
+                                    data-test="footer_lang_pt"
+                                    >
+                                Português (Brasil)
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="sv"
+                                    lang="sv"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.sv"
+                                    data-test="footer_lang_sv"
+                                    >
+                                Svenska
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="vi"
+                                    lang="vi"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.vi"
+                                    data-test="footer_lang_vi"
+                                    >
+                                Tiếng Việt
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="tr"
+                                    lang="tr"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.tr"
+                                    data-test="footer_lang_tr"
+                                    >
+                                Türkçe
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="zh"
+                                    lang="zh"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.zh"
+                                    data-test="footer_lang_zh"
+                                    >
+                                中文
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="ja"
+                                    lang="ja"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.ja"
+                                    data-test="footer_lang_ja"
+                                    >
+                                日本語
+                            </button>
+                        </li>
+                    
+                        <li class="srf-footer__submenu-item"
+                            role="none">
+                            <button class="srf-footer__submenu-link"
+                                    role="menuitem"
+                                    value="ko"
+                                    lang="ko"
+                                    data-ga4-click
+                                    data-ga4-item-location="navigation.footer.lang_button.ko"
+                                    data-test="footer_lang_ko"
+                                    >
+                                한국어
+                            </button>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="srf-footer__line-end">
+            <a class="srf-footer__hide-mobile srf-footer__button"
+               href="/pricing/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.get_started.link">See plans and pricing</a>
+            <a class="srf-footer__hide-mobile srf-footer__button srf-footer__button--success"
+               href="/signup/?src=footer"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.get_started.button">Get started with Semrush</a>
+        </div>
+    </div>
+    <div class="srf-footer__line">
+        <div class="srf-footer__line-start">
+            <a class="srf-footer__hide-desktop srf-footer__link"
+               href="/company/contacts/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.contacts">Contact us</a>
+            <a class="srf-footer__link"
+               href="javascript:window.showConsentSettings();"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.Cookie.Settings">Cookie settings</a>
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="/company/legal/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.Legal.Info">Legal info</a>
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="/company/legal/privacy-policy/"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.Privacy.Policy">Privacy policy</a>
+            <a class="srf-footer__hide-mobile srf-footer__link"
+               href="javascript:window.showConsentSettings();"
+               data-ga4-click
+               data-ga4-item-location="navigation.footer.menu.item.Personal.Info">Do not sell my personal info</a>
+        </div>
+        <div class="srf-footer__line-end srf-footer__copyright">
+            <span>© 2026 Semrush Holdings. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="/__static__/webpack/smb_footer.a05b86784be95697.js" defer></script>
+
+    
+    <!-- #endregion -->
+
+<!-- #endregion -->
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="srf-notice-bubble-container"
+                 role="region"
+                 aria-label="Notifications"></div>
+            <div class="srf-overlay"></div>
+            <div class="srf-popup-manager"></div>
+            <div id="srf-sso-login-form"></div>
+            <div id="srf-limit-popup"></div>
+            <div id="srf-billing-popup"></div>
+            <div id="srf-sharing-popup"></div>
+            <div id="srf-multi-invite-popup"></div>
+
+            
+                
+
+
+
+                
+
+
+    <script>window.intercomSettings = {"app_id": "cs07vi2k", "GA Client ID": ""};</script>
+    <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cs07vi2k';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onDOMContentLoaded',l);}else{w.addEventListener('DOMContentLoaded',l,false);}}})();
+</script>
+
+
+
+            
+
+            
+            <script>
+            if (window.ga) {
+                if (window.sm2.GAexperiments.length) {
+                    window.ga('set', 'exp', window.sm2.GAexperiments.join('!'));
+                }
+                
+                    window.ga('send', 'pageview');
+                
+            }
+            </script>
+
+            <!--
+            Don't read and rely on this data from external integrated services or scripts,
+            as it is subject to change and not backward compatible.
+            -->
+            <script id="sm2_initial_state" type="application/json">{"base": {"cookie_domain": ".semrush.com", "csrfToken": "IeMRuinbpqYVegqKY0W8eXVcRNBzqI8otHnRnalH4npOPGhLniXfVNXxJc9VZTRx", "language_code": "en", "PopupManager": {"popups": {"need_confirm_email": null, "disabled_user": false, "reset_password": false}}, "switchLanguageApiEndpoint": "/i18n/switch_language_api/", "sso": {"enable_preload": false, "env": "production", "root_url": "/sso", "root_semrush_url": "https://www.semrush.com"}}, "searchbarApiV1Config": {"autocompleteUrl": "https://www.semrush.com/search-bar/api/search/suggestions?type=1", "tldsUrl": "/__static__/default-tld-list.txt", "redirectToKeyword": false, "allowProtocol": false, "formAction": "/apps", "gaLabel": "App Center apps", "defaultQuery": "", "device": null, "date": null, "currency": null, "defaultProtocol": null, "defaultSearchType": null, "defaultVisible": true, "supportedSearchTypes": ["domain"], "spaMode": true, "updateBrowserHistory": false, "toolCode": "app-center", "theme": "primary", "tldFileName": "default"}, "foldersApiV1Config": {"enable": false, "defaultVisible": false, "gaLabel": "(not-set-in-config)"}, "toolQueryType": "domain"}</script>
+
+            <script src="/__static__/webpack/3486.9a3861808f67a01d.js" defer></script>
+<script src="/__static__/webpack/9327.97f6c4dc41b8d94d.js" defer></script>
+<script src="/__static__/webpack/8808.a9163c1b4fbad5b3.js" defer></script>
+<script src="/__static__/webpack/base.737bc8ef0ead0b23.js" defer></script>
+            <script src="/__static__/webpack/5650.f2fdfb62812125e1.js" defer></script>
+<script src="/__static__/webpack/init_component_provider.46cf0f11e2e13acf.js" defer></script>
+            
+                <script src="/__static__/webpack/init_searchbar_api.038d16157f97bf7a.js" defer></script>
+            
+            
+                <script src="/__static__/webpack/init_folders_api.c744486b04f9146c.js" defer></script>
+            
+
+            <!-- #region Remote Component snippet "body_bottom" -->
+<script src="https://static.semrush.com/semrush-navigation/static/18b3724a/d3d933c5.runtime.js"></script>
+<script defer src="https://static.semrush.com/semrush-navigation/static/18b3724a/5e302240.976.js"></script>
+<script defer src="https://static.semrush.com/semrush-navigation/static/18b3724a/84b0362d.sidebar.js"></script>
+<script defer src="https://static.semrush.com/semrush-navigation/static/18b3724a/15b7a178.header.js"></script>
+<script type="application/json" id="raspberry-semrush-navigation-data">{"static_url": "https://static.semrush.com/semrush-navigation/static/18b3724a/", "translations": {"collapse.hint.expand": "Open navigation", "collapse.hint.collapse": "Hide navigation"}}</script>
+<!-- #endregion -->
+
+            
+                <div id="csat-feedback-widget"></div>
+                <script>
+                sm2.getComponent("CSATFeedbackInit").then((component) => {
+                    const container = document.getElementById("csat-feedback-widget");
+                    component.mount(container);
+                });
+                </script>
+            
+
+            <script>
+            
+            </script>
+        </body>
+    </html>
+
+<!--sm_log_id:"flb-06a17adffe1917fb922fda7205d2be82"-->
+<!--otel_trace_id:"06a17adffe1917fb922fda7205d2be82"-->
+<!--template:"toolkit"-->
