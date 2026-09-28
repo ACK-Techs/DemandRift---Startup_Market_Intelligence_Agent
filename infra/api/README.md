@@ -24,6 +24,11 @@ Yönetici `infra/backend-build/demandrift-build` ve `infra/api/demandrift-api-de
 
 Servis yalnız `127.0.0.1:18082` üzerinde. Kontrol: `curl -fsS http://127.0.0.1:18082/health`. Uzak geliştirme için `ssh -L 18082:127.0.0.1:18082 root@167.235.158.118` ile tünel açılabilir. Public domain/TLS ve Vercel CORS entegrasyonu ürün API'siyle ayrıca yapılır. Mevcut Gemini dosyası bu sağlık servisine verilmez.
 
+F03 ham API yanıtları için Compose yalnız bu projeye ait `demandrift_api_artifacts`
+named volume'unu `/data/artifacts` olarak bağlar. API container'ı salt-okunur
+kalır; bu volume dışında yazamaz. Volume mount'ı, Dockerfile içindeki UID/GID
+10001 sahipliğindeki dizinden ilk kullanımda izinleri devralır.
+
 `demandrift-api` Compose projesi başka servislere dokunmaz. Container root değildir, salt okunur, capabilities kapalı, kaynakları sınırlıdır. API kaynakları regular dosyalarla ve boyut sınırıyla çıkarılır. Dependencies build aşamasında indirilir; test container'ının ağı kapalıdır. Repo Dockerfile'ı build kodudur: `main` yazma yetkisi güvenilen geliştiricilerde olmalıdır.
 
 Başlangıçta ve build sonrasında güncel main SHA kontrol edilir; eski SHA reddedilirse yeni main için komutu tekrar çalıştırın. Build/test başarısızsa servis değişmez. Sağlık kontrolü başarısızsa önceki başarılı imaj geri alınır; ilk kurulumda başarısız proje kaldırılır. Başarı işareti yalnız sağlık kontrolünden sonra `/opt/demandrift-api/last-successful-sha` olarak güncellenir. Sağlık kontrollü güncelleme kısa kesinti yaratabilir; DB migration kapsamda değildir. Loglar `/opt/demandrift-api/logs`; SHA imajları rollback için tutulur, otomatik retention yoktur.

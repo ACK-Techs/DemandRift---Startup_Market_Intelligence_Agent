@@ -3,6 +3,7 @@ services:
     image: demandrift-api:${APP_REVISION:?APP_REVISION required}
     environment:
       APP_REVISION: ${APP_REVISION}
+      ARTIFACT_ROOT: /data/artifacts
     ports:
       - '127.0.0.1:18082:8000'
     restart: unless-stopped
@@ -14,9 +15,15 @@ services:
     cpus: 1
     tmpfs:
       - /tmp:rw,noexec,nosuid,size=64m
+    volumes:
+      - demandrift_artifacts:/data/artifacts
     healthcheck:
       test: ['CMD', 'python', '-c', "import json,os,urllib.request; d=json.load(urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=3)); assert d['status']=='ok' and d['revision']==os.environ['APP_REVISION']"]
       interval: 5s
       timeout: 4s
       retries: 12
       start_period: 5s
+
+volumes:
+  demandrift_artifacts:
+    name: demandrift_api_artifacts

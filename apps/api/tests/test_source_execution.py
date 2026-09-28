@@ -1,10 +1,11 @@
 import asyncio
+import hashlib
 
 import httpx
 from fastapi.testclient import TestClient
 
 from app.main import create_app
-from app.source_execution import F03LiveRunRequest, execute_f03_sources
+from app.source_execution import ArtifactStore, F03LiveRunRequest, execute_f03_sources
 
 
 def test_live_f03_endpoint_rejects_unplanned_source_ids():
@@ -25,7 +26,7 @@ def test_duplicate_source_ids_are_rejected():
     assert "duplicates" in response.text
 
 
-def test_github_success_is_evaluated_without_real_network_access():
+def test_github_success_is_evaluated_and_persisted_without_real_network_access(tmp_path):
     def handler(request: httpx.Request) -> httpx.Response:
         assert request.url.host == "api.github.com"
         assert request.url.path == "/search/issues"
@@ -35,7 +36,8 @@ def test_github_success_is_evaluated_without_real_network_access():
         }]})
 
     result = asyncio.run(execute_f03_sources(
-        F03LiveRunRequest(source_ids=["source-0017"]), transport=httpx.MockTransport(handler)
+        F03LiveRunRequest(source_ids=["source-0017"]), transport=httpx.MockTransport(handler),
+        artifact_store=ArtifactStore(tmp_path),
     ))
 
     source_result = result.results[0]
@@ -43,6 +45,10 @@ def test_github_success_is_evaluated_without_real_network_access():
     assert source_result.result_count == 1
     assert source_result.field_evaluation.returned_fields == ["baslik", "etiket", "kaynak_url", "yayin_tarihi"]
     assert "surum" in source_result.field_evaluation.missing_fields
+    assert source_result.raw_artifact is not None
+    artifact_path = tmp_path / source_result.raw_artifact.ref
+    assert artifact_path.exists()
+    assert source_result.raw_artifact.sha256 == hashlib.sha256(artifact_path.read_bytes()).hexdigest()
 
 
 def test_rate_limit_is_not_misrepresented_as_no_results():

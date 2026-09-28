@@ -21,6 +21,7 @@ ARG APP_REVISION=development
 ENV APP_REVISION=${APP_REVISION}
 RUN groupadd --gid 10001 api && useradd --uid 10001 --gid api --no-create-home api
 COPY --chown=10001:10001 app ./app
+RUN install --directory --owner=10001 --group=10001 --mode=0750 /data/artifacts
 USER 10001:10001
 EXPOSE 8000
 HEALTHCHECK --interval=15s --timeout=3s --start-period=10s --retries=3 \

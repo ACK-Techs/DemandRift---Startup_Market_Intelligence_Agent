@@ -8,8 +8,12 @@ persisted evidence or a decision.
 
 from __future__ import annotations
 
+import hashlib
+import json
+import os
 from datetime import datetime, timezone
 from enum import StrEnum
+from pathlib import Path
 from typing import Annotated, Any, Literal
 
 import httpx
@@ -22,6 +26,7 @@ from app.initial_runs import find_scenario_run_seed
 F03_SOURCE_IDS = ("source-0017", "source-0023", "source-0022")
 MAX_ITEMS_PER_SOURCE = 5
 REQUEST_TIMEOUT_SECONDS = 10.0
+MAX_RESPONSE_BYTES = 1_000_000
 
 
 class SourceExecutionStatus(StrEnum):
@@ -61,6 +66,13 @@ class SourceFieldEvaluation(BaseModel):
     missing_fields: list[str]
 
 
+class RawArtifactReference(BaseModel):
+    ref: str
+    sha256: str
+    byte_count: Annotated[int, Field(ge=1)]
+    collected_at: datetime
+
+
 class F03SourceExecutionResult(BaseModel):
     source_id: str
     source_name: str
@@ -71,6 +83,7 @@ class F03SourceExecutionResult(BaseModel):
     http_status: int | None = None
     result_count: Annotated[int, Field(ge=0)] = 0
     field_evaluation: SourceFieldEvaluation
+    raw_artifact: RawArtifactReference | None = None
     previews: list[SourceItemPreview] = Field(default_factory=list)
     error: str | None = None
 
@@ -79,8 +92,8 @@ class F03LiveRunResponse(BaseModel):
     scenario_id: str
     executed_at: datetime
     execution_notice: str = (
-        "Yanıt kalıcı artefakt veya karar değildir. Başarılı sonuçlar, ham artefakt "
-        "ve insan etiketi olmadan run-record olarak kaydedilemez."
+        "Yanıtın ham API gövdesi proje-izole artefakt volume'unda saklanır; bu yine "
+        "karar değildir. Başarılı sonuçlar insan etiketi olmadan run-record olarak kabul edilemez."
     )
     results: list[F03SourceExecutionResult]
 
@@ -112,6 +125,33 @@ SOURCE_DEFINITIONS = {
         expected_fields=["baslik", "govde", "kaynak_url", "yayin_tarihi", "yazar"],
     ),
 }
+
+
+class ArtifactStore:
+    """Content-addressed raw artefacts rooted only in the DemandRift volume."""
+
+    def __init__(self, root: Path):
+        if not root.is_absolute():
+            raise ValueError("artifact root must be absolute")
+        self.root = root
+
+    def save(self, source_id: str, content: bytes, collected_at: datetime) -> RawArtifactReference:
+        digest = hashlib.sha256(content).hexdigest()
+        relative = Path("f03") / source_id / f"{digest}.json"
+        target = self.root / relative
+        target.parent.mkdir(mode=0o750, parents=True, exist_ok=True)
+        if not target.exists():
+            target.write_bytes(content)
+        return RawArtifactReference(
+            ref=relative.as_posix(), sha256=digest, byte_count=len(content), collected_at=collected_at
+        )
+
+
+def artifact_store_from_environment() -> ArtifactStore:
+    root = os.environ.get("ARTIFACT_ROOT")
+    if not root:
+        raise RuntimeError("ARTIFACT_ROOT is not configured")
+    return ArtifactStore(Path(root))
 
 
 def _iso_timestamp(value: Any) -> str | None:
@@ -188,8 +228,9 @@ async def execute_f03_sources(
     request: F03LiveRunRequest,
     *,
     transport: httpx.AsyncBaseTransport | None = None,
+    artifact_store: ArtifactStore | None = None,
 ) -> F03LiveRunResponse:
-    """Call a small allowlist and return only structured, non-persisted previews."""
+    """Call the allowlist and persist bounded raw responses when a store is configured."""
     seed = find_scenario_run_seed(request.scenario_id)
     if seed is None or seed.idea_id != "F03":  # Defensive guard against future model drift.
         raise ValueError("scenario_id is not a planned F03 scenario")
@@ -207,45 +248,77 @@ async def execute_f03_sources(
         for source_id in request.source_ids:
             source = SOURCE_DEFINITIONS[source_id]
             url, params = _source_request(source_id, query)
+            response_content: bytes | None = None
+            response_status: int | None = None
             try:
-                response = await client.get(url, params=params)
+                async with client.stream("GET", url, params=params) as response:
+                    content_length = response.headers.get("content-length")
+                    if content_length and content_length.isdigit() and int(content_length) > MAX_RESPONSE_BYTES:
+                        results.append(F03SourceExecutionResult(
+                            source_id=source_id, source_name=source.source_name,
+                            status=SourceExecutionStatus.INVALID_OUTPUT, query_text=query,
+                            http_status=response.status_code, field_evaluation=_field_evaluation(source_id, []),
+                            error="Source API response exceeded the allowed size.",
+                        ))
+                        continue
+                    raw_content = bytearray()
+                    async for chunk in response.aiter_bytes():
+                        raw_content.extend(chunk)
+                        if len(raw_content) > MAX_RESPONSE_BYTES:
+                            results.append(F03SourceExecutionResult(
+                                source_id=source_id, source_name=source.source_name,
+                                status=SourceExecutionStatus.INVALID_OUTPUT, query_text=query,
+                                http_status=response.status_code, field_evaluation=_field_evaluation(source_id, []),
+                                error="Source API response exceeded the allowed size.",
+                            ))
+                            break
+                    else:
+                        response_content = bytes(raw_content)
+                        response_status = response.status_code
+                        # The complete response has been read; continue with status/JSON handling below.
+                        pass
             except httpx.RequestError as error:
                 results.append(F03SourceExecutionResult(
                     source_id=source_id, source_name=source.source_name, status=SourceExecutionStatus.SOURCE_UNAVAILABLE,
                     query_text=query, field_evaluation=_field_evaluation(source_id, []), error=str(error),
                 ))
                 continue
-            if response.status_code == 429:
+            if response_content is None or response_status is None:
+                # Size-limit branch has already recorded a structured result.
+                continue
+            if response_status == 429:
                 results.append(F03SourceExecutionResult(
                     source_id=source_id, source_name=source.source_name, status=SourceExecutionStatus.RATE_LIMITED,
-                    query_text=query, http_status=response.status_code, field_evaluation=_field_evaluation(source_id, []),
+                    query_text=query, http_status=response_status, field_evaluation=_field_evaluation(source_id, []),
                     error="Source API rate limit returned.",
                 ))
                 continue
-            if response.status_code < 200 or response.status_code >= 300:
+            if response_status < 200 or response_status >= 300:
                 results.append(F03SourceExecutionResult(
                     source_id=source_id, source_name=source.source_name, status=SourceExecutionStatus.SOURCE_UNAVAILABLE,
-                    query_text=query, http_status=response.status_code, field_evaluation=_field_evaluation(source_id, []),
+                    query_text=query, http_status=response_status, field_evaluation=_field_evaluation(source_id, []),
                     error="Source API returned a non-success status.",
                 ))
                 continue
             try:
-                payload = response.json()
-            except ValueError:
+                payload = json.loads(response_content)
+            except (TypeError, ValueError):
                 payload = None
             previews = _previews(source_id, payload) if isinstance(payload, dict) else None
             if previews is None:
                 results.append(F03SourceExecutionResult(
                     source_id=source_id, source_name=source.source_name, status=SourceExecutionStatus.INVALID_OUTPUT,
-                    query_text=query, http_status=response.status_code, field_evaluation=_field_evaluation(source_id, []),
+                    query_text=query, http_status=response_status, field_evaluation=_field_evaluation(source_id, []),
                     error="Source API response did not contain the expected result collection.",
                 ))
                 continue
+            collected_at = datetime.now(timezone.utc)
+            artifact = artifact_store.save(source_id, response_content, collected_at) if artifact_store else None
             results.append(F03SourceExecutionResult(
                 source_id=source_id, source_name=source.source_name,
                 status=SourceExecutionStatus.SUCCESS if previews else SourceExecutionStatus.NO_RESULTS,
-                query_text=query, http_status=response.status_code, result_count=len(previews),
-                field_evaluation=_field_evaluation(source_id, previews), previews=previews,
+                query_text=query, http_status=response_status, result_count=len(previews),
+                field_evaluation=_field_evaluation(source_id, previews), raw_artifact=artifact, previews=previews,
             ))
 
     return F03LiveRunResponse(scenario_id=request.scenario_id, executed_at=datetime.now(timezone.utc), results=results)
@@ -257,4 +330,4 @@ router = APIRouter(prefix="/api/v1/research", tags=["research-execution"])
 @router.post("/source-runs/f03", response_model=F03LiveRunResponse)
 async def run_f03_sources(request: F03LiveRunRequest) -> F03LiveRunResponse:
     """Execute the fixed F03 API allowlist; accepts no URL, query, token, or secret."""
-    return await execute_f03_sources(request)
+    return await execute_f03_sources(request, artifact_store=artifact_store_from_environment())

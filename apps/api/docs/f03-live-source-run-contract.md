@@ -10,7 +10,10 @@ olarak çalışır. Yanıt kaynak başına `success`, `no_results`, `rate_limite
 `source_unavailable` veya `invalid_output` durumunu döndürür. `rate_limited`
 ve `source_unavailable`, sıfır sonuç olarak yorumlanmaz.
 
-Endpoint yalnız geçici özet kayıtlar döndürür. Ham artefakt depolamaz, kaynaklı
-iddia üretmez ve karar vermez. Bu nedenle endpointten dönen `success`, tek
-başına `run-records/validate` için yeterli değildir: kalıcı ham artefakt
-referansı ve insan etiketi ayrıca üretilmelidir.
+Endpoint başarılı veya boş API yanıtının ham JSON gövdesini, yalnız DemandRift
+Compose projesine ait `demandrift_api_artifacts` named volume'unda tutar.
+Container içinde tek yazılabilir yol `/data/artifacts`tır; dönen `raw_artifact`
+referansı SHA-256 ve byte sayısını içerir. Yanıt boyutu 1 MiB ile sınırlıdır.
+
+Bu kalıcılık kaynaklı iddia veya karar üretmez. `success`, insan etiketi
+olmaktan ve `run-records/validate` ile denetlenmekten muaf değildir.
