@@ -2,11 +2,11 @@
 
 Calendar kullanıcı adı: **aysenurdemezoglu**. [İçe aktarılacak görev dosyası](../calendar-import/demandrift-aysenurdemezoglu.json).
 
-Tüm işler **planlandı**; bu dosya tamamlanma raporu değildir. Kabul eden ve düzeltmeleri yeniden kontrol eden: **Batuhan**. [Ortak takip/geri bildirim kuralları](../ekip-ve-teslim.md).
+AY-01'in dashboard alt teslimi **devam ediyor**; diğer işler **planlandı**. Bu dosya tüm işlerin tamamlanma raporu değildir. Kabul eden ve düzeltmeleri yeniden kontrol eden: **Batuhan**. [Ortak takip/geri bildirim kuralları](../ekip-ve-teslim.md).
 
 | ID | Faz | Görev | Bağımlılık | Teslim / kabul koşulu | Durum | Kanıt / FB / son güncelleme |
 |---|---|---|---|---|---|---|
-| AY-01 | Tümü | Mevcut ekran eksiklerini ve ortak tasarım durumlarını düzenle | Kod envanteri; frontend rehberi | Öncelikli ekran listesi; responsive/klavye/okunabilirlik kontrolleri | planlandı | — |
+| AY-01 | Tümü | Mevcut ekran eksiklerini ve ortak tasarım durumlarını düzenle | Kod envanteri; frontend rehberi | Öncelikli ekran listesi; responsive/klavye/okunabilirlik kontrolleri | devam ediyor — dashboard alt teslimi | [28 Eylül teslim ve kalan envanter](../raporlar/ay01-dashboard-2026-09-28.md); Batuhan kabulü bekleniyor |
 | AY-02 | Tümü | Batuhan ile sürümlü istek/yanıt/hata ve ekran alanlarını eşleştir | Her fazın BT teslimi | Eksik API alan listesi ve gerçek payload eşlemesi | planlandı | — |
 | AY-03 | 1 | Fikir, netleştirme, kategori ve plan ekranını bağla | BT-01 + BT-04 API ilk teslimi; AY-02 | Gerçek kayıt, kullanıcı girdisinin korunması ve hata durumları | planlandı | — |
 | AY-04 | 2 | Kaynak ilerlemesi, kanıt, problem ve rakip ekranlarını bağla | BT-05 API ilk teslimi; AY-02 (BT-06 sonraki kabul) | Gerçek ilerleme, kısmi/erişim durumu, kaynak/alıntı/tarih ve alanlar | planlandı | — |
