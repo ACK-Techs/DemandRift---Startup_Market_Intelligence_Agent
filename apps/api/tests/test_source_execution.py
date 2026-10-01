@@ -2,6 +2,7 @@ import asyncio
 import hashlib
 
 import httpx
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import create_app
@@ -32,6 +33,7 @@ def test_github_success_is_evaluated_and_persisted_without_real_network_access(t
         assert request.url.path == "/search/issues"
         return httpx.Response(200, json={"items": [{
             "title": "Breaking API change", "html_url": "https://github.com/acme/widget/issues/1",
+            "body": "A breaking API change affects clients.",
             "created_at": "2026-09-27T10:00:00Z", "labels": [{"name": "api"}],
         }]})
 
@@ -43,8 +45,10 @@ def test_github_success_is_evaluated_and_persisted_without_real_network_access(t
     source_result = result.results[0]
     assert source_result.status == "success"
     assert source_result.result_count == 1
-    assert source_result.field_evaluation.returned_fields == ["baslik", "etiket", "kaynak_url", "yayin_tarihi"]
-    assert "surum" in source_result.field_evaluation.missing_fields
+    assert source_result.previews[0].body == "A breaking API change affects clients."
+    assert source_result.field_evaluation.returned_fields == ["baslik", "etiket", "govde", "kaynak_url", "yayin_tarihi"]
+    assert source_result.field_evaluation.missing_fields == []
+    assert source_result.field_evaluation.not_applicable_fields == ["surum"]
     assert source_result.raw_artifact is not None
     artifact_path = tmp_path / source_result.raw_artifact.ref
     assert artifact_path.exists()
@@ -61,3 +65,60 @@ def test_rate_limit_is_not_misrepresented_as_no_results():
 
     assert result.results[0].status == "rate_limited"
     assert result.results[0].result_count == 0
+
+
+def test_hacker_news_uses_the_comment_permalink_and_body():
+    def handler(request: httpx.Request) -> httpx.Response:
+        assert request.url.host == "hn.algolia.com"
+        return httpx.Response(200, json={"hits": [{
+            "objectID": "424242", "title": None, "story_title": "Breaking API discussion",
+            "comment_text": "The migration breaks my client.",
+            "url": "https://example.com/the-linked-story", "created_at": "2026-09-27T10:00:00Z",
+            "author": "researcher",
+        }]})
+
+    result = asyncio.run(execute_f03_sources(
+        F03LiveRunRequest(source_ids=["source-0022"]), transport=httpx.MockTransport(handler)
+    ))
+
+    preview = result.results[0].previews[0]
+    assert preview.body == "The migration breaks my client."
+    assert preview.source_url == "https://news.ycombinator.com/item?id=424242"
+    assert result.results[0].field_evaluation.missing_fields == []
+
+
+@pytest.mark.parametrize("source_id,payload", [
+    ("source-0017", {"items": [{"body": ["private malformed body"]}]}),
+    ("source-0022", {"hits": [{"comment_text": {"private": "malformed body"}}]}),
+    ("source-0017", {"items": [{"labels": None}]}),
+    ("source-0017", {"items": [{"title": {"private": "malformed title"}}]}),
+    ("source-0023", {"items": [{"creation_date": 2 ** 80}]}),
+    ("source-0023", {"items": [{"tags": {"private": "malformed tags"}}]}),
+])
+def test_malformed_source_fields_do_not_leak_or_interrupt_the_batch(source_id, payload, tmp_path):
+    following_id = "source-0023" if source_id != "source-0023" else "source-0017"
+    malformed_host = {
+        "source-0017": "api.github.com", "source-0022": "hn.algolia.com",
+        "source-0023": "api.stackexchange.com",
+    }[source_id]
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(request.url.host)
+        return httpx.Response(200, json=payload if request.url.host == malformed_host else {"items": []})
+
+    result = asyncio.run(execute_f03_sources(
+        F03LiveRunRequest(source_ids=[source_id, following_id]),
+        transport=httpx.MockTransport(handler), artifact_store=ArtifactStore(tmp_path),
+    ))
+
+    invalid, following = result.results
+    assert len(calls) == 2
+    assert invalid.source_id == source_id
+    assert invalid.status == "invalid_output"
+    assert invalid.result_count == 0 and invalid.previews == [] and invalid.raw_artifact is None
+    assert invalid.error == "Source API response did not match the expected result format."
+    assert "private" not in invalid.model_dump_json()
+    assert following.source_id == following_id and following.status == "no_results"
+    assert following.raw_artifact is not None
+    assert len(list(tmp_path.rglob("*.json"))) == 1
