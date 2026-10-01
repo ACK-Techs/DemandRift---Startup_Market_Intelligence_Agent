@@ -219,9 +219,13 @@ def test_approval_is_bound_to_exact_confirmed_plan(postgres_database, failure):
 def test_query_cannot_reference_unplanned_source_or_another_plan(postgres_database):
     db = postgres_database; users, projects, research = seed(db["admin"])
     dto = brief(users[0], projects[0], research[0]); planned = plan(dto)
+    # This test isolates the query FK. Native membership also requires the
+    # source child to be represented exactly in its owning immutable plan.
     scope = dict(user_id=users[0], project_id=projects[0], research_id=research[0], research_plan_id=planned.research_plan_id, plan_version=1)
+    planned_row = plan_record(planned)
+    planned_row.payload["source_plan"] = [{"source_id": "source-0017"}]
     with db["app"].transaction(users[0]) as s:
-        s.add(brief_record(dto)); s.flush(); s.add(plan_record(planned)); s.flush()
+        s.add(brief_record(dto)); s.flush(); s.add(planned_row); s.flush()
         s.add(PlannedSourceRecord(**scope, source_id="source-0017", payload={"source_id": "source-0017"}))
     for bad_source, bad_plan in [("unplanned", planned.research_plan_id), ("source-0017", uuid4())]:
         query_id = uuid4(); wrong = {**scope, "research_plan_id": bad_plan}
@@ -237,4 +241,4 @@ def test_migration_downgrade_and_reupgrade_only_disposable_database(postgres_dat
     command.upgrade(db["config"], "head")
     db["app"].assert_application_role()
     with db["admin"].transaction() as s:
-        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == "20261001_0001"
+        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == "20261001_0002"

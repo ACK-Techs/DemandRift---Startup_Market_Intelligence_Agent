@@ -9,6 +9,7 @@ from uuid import uuid4
 from pydantic import ValidationError
 import pytest
 from sqlalchemy import func, select, text
+from sqlalchemy.exc import IntegrityError
 
 from app.contracts import BriefContent, BudgetLimits, SourceLimits
 from app.db.engine import Database
@@ -207,16 +208,16 @@ def test_mid_insert_failure_rolls_back_all_plan_and_profile_rows(postgres_databa
     assert repo.append_plan(rid,brief.brief_id,1,**content_plan()).plan_version==1
 
 
-def test_readback_rejects_extra_unplanned_relational_child_and_timestamp_drift(postgres_database):
+def test_database_rejects_extra_unplanned_relational_child_and_timestamp_drift(postgres_database):
     db=postgres_database;_,_,repos,rid,brief=prepared(db);repo=repos[0]
     pending=repo.append_plan(rid,brief.brief_id,1,**content_plan())
-    with db["admin"].transaction() as s:s.add(PlannedSourceRecord(user_id=brief.user_id,project_id=brief.project_id,research_id=rid,
+    with pytest.raises(IntegrityError),db["admin"].transaction() as s:s.add(PlannedSourceRecord(user_id=brief.user_id,project_id=brief.project_id,research_id=rid,
         research_plan_id=pending.research_plan_id,plan_version=1,source_id="unplanned",payload={"source_id":"unplanned"}))
-    with pytest.raises(StoredSnapshotError):repo.get_plan(rid,pending.research_plan_id,1)
+    assert repo.get_plan(rid,pending.research_plan_id,1)==pending
     payload=brief.model_dump(mode="json");payload.update(brief_version=2);payload["versions"]["brief"]=2
-    with db["admin"].transaction() as s:s.add(BriefRecord(user_id=brief.user_id,project_id=brief.project_id,research_id=rid,
+    with pytest.raises(IntegrityError),db["admin"].transaction() as s:s.add(BriefRecord(user_id=brief.user_id,project_id=brief.project_id,research_id=rid,
         brief_id=brief.brief_id,brief_version=2,payload=payload,created_at=brief.created_at+timedelta(seconds=1)))
-    with pytest.raises(StoredSnapshotError):repo.get_brief(rid,brief.brief_id,2)
+    with pytest.raises(RecordNotFound):repo.get_brief(rid,brief.brief_id,2)
 
 
 @pytest.mark.parametrize("kind",["brief","plan"])
