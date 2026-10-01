@@ -1,4 +1,4 @@
-export type Decision = "BUILD" | "MODIFY" | "KILL" | "INVESTIGATE MORE";
+export type Decision = "positive_findings" | "modify" | "kill" | "investigate_more";
 
 export type DashboardMetric = {
   label: string;
@@ -14,7 +14,6 @@ export type Validation = {
   name: string;
   segment: string;
   decision: Decision;
-  confidence: number;
   updatedAt: string;
 };
 
