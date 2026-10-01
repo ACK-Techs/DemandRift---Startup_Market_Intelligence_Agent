@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "scope": [
+    "ortak/raporlar/devam-notu-2026-10-01.md",
+    ".orchestrator/archives/tamamlama-20261001/README.md",
+    ".orchestrator/archives/tamamlama-20261001/state.json",
+    ".orchestrator/archives/tamamlama-20261001/evidence.jsonl",
+    ".orchestrator/archives/tamamlama-20261001/manifest.json",
+    ".orchestrator/catalog/repo-context.json"
+  ],
+  "source_sha256": {
+    "ortak/raporlar/devam-notu-2026-10-01.md": "814cd4e0a644a81452d6606edb0c770aac591b00578e5ff0e71d7bd2e8eac911",
+    ".orchestrator/archives/tamamlama-20261001/README.md": "8394b7efe379f3e9e57d4ceca458a72c3d4823312fb4b9929f4e77edf0de9f4d",
+    ".orchestrator/archives/tamamlama-20261001/state.json": "6136d810ca48f2834c038c602e6da79ba16fc205e6f3c8c4a9c3706afd82ff3c",
+    ".orchestrator/archives/tamamlama-20261001/evidence.jsonl": "6fc194d0b049670f45e0836342ebc8953edee05f8f36a3a0fed56ea4927ec3b2",
+    ".orchestrator/archives/tamamlama-20261001/manifest.json": "f54f87068b973e3d2922f1e92276c7f980dc82c8a8a6678c7e171caf85c9406f",
+    ".orchestrator/catalog/repo-context.json": "aec161ce2029e9de6e963f738fa7f120aa60beb1479d113efe3ec1159fb151f8"
+  },
+  "archive_revision": 504,
+  "state_files": 433,
+  "evidence_files": 1408,
+  "decoded_SHA_verified": 1841,
+  "all_paths_safe": true,
+  "actual_runtime_credential_matches": 0,
+  "initial_user_reports_unchanged": true,
+  "completed_main_packages": 6,
+  "open_main_packages": 36,
+  "mandatory87": "not_started",
+  "core_published_SHA": "f611a1d56f0a600fc9b9e029a998d395a66038db",
+  "core_Linux_CI": 36884845994,
+  "product_work": "paused_by_user",
+  "no_frontend_or_backend_deployment": true
+}
