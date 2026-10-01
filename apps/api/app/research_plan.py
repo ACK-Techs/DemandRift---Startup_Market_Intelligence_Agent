@@ -1,13 +1,15 @@
-"""Deterministic Phase 2 ResearchPlan contract; no network or AI execution."""
+"""Legacy stateless Phase 1 plan preview; no network or AI execution."""
 
 from __future__ import annotations
 
 from enum import StrEnum
+import hashlib
+import json
 from typing import Annotated
 from uuid import UUID, uuid5
 
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel, Field, field_validator, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class ResearchCategory(StrEnum):
@@ -50,6 +52,8 @@ class FieldOrigin(StrEnum):
 
 
 class BudgetContract(BaseModel):
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
+
     hard_limit: Annotated[float, Field(ge=0)]
     soft_limit: Annotated[float, Field(ge=0)]
     currency: Annotated[str, Field(min_length=3, max_length=3)] = "USD"
@@ -102,6 +106,8 @@ CATEGORY_CATALOG = CategoryCatalog(
 
 
 class ResearchPlanRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     idea_brief_id: UUID
     idea_brief_version: Annotated[int, Field(gt=0)]
     product_type: Annotated[str, Field(min_length=1, max_length=80)]
@@ -153,6 +159,7 @@ class ResearchPlanRequest(BaseModel):
 
 class ResearchPlanDraft(BaseModel):
     research_plan_id: UUID
+    plan_fingerprint: Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
     plan_version: int = 1
     idea_brief_id: UUID
     idea_brief_version: int
@@ -184,20 +191,18 @@ DEFAULT_INTENTS = [
 
 def build_research_plan(request: ResearchPlanRequest) -> ResearchPlanDraft:
     category = next(item for item in CATEGORY_CATALOG.primary_categories if item.id == request.primary_category)
-    plan_key = ":".join(
-        [
-            str(request.idea_brief_id),
-            str(request.idea_brief_version),
-            request.primary_category.value,
-            request.research_mode.value,
-            request.source_registry_version,
-        ]
-    )
+    snapshot = request.model_dump(mode="json")
+    # The only set-valued input is semantically unordered. Sort it before
+    # hashing; all other sequence ordering remains part of the snapshot.
+    snapshot["user_confirmed_fields"] = sorted(request.user_confirmed_fields)
+    canonical = json.dumps(snapshot, sort_keys=True, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+    fingerprint = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
     known_unknowns = ["source_plan and query_plan require the qualified Source Registry mapping"]
     if request.clarity_status == ClarityStatus.BROAD_BUT_CONTINUE:
         known_unknowns.append("idea brief continues with broad scope")
     return ResearchPlanDraft(
-        research_plan_id=uuid5(PLAN_NAMESPACE, plan_key),
+        research_plan_id=uuid5(PLAN_NAMESPACE, fingerprint),
+        plan_fingerprint=fingerprint,
         idea_brief_id=request.idea_brief_id,
         idea_brief_version=request.idea_brief_version,
         primary_category=request.primary_category,

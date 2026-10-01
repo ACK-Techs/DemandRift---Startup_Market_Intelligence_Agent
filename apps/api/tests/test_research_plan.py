@@ -72,3 +72,61 @@ def test_clarification_and_invalid_budget_are_rejected():
         response = client.post("/api/v1/research/plans", json=request)
     assert response.status_code == 422
     assert "soft_limit cannot exceed hard_limit" in response.text
+
+
+def test_preview_identity_changes_with_every_execution_affecting_input():
+    from copy import deepcopy
+
+    request = valid_plan_request()
+    variants = [
+        {"market_scope": "EU"},
+        {"language_scope": ["en", "tr"]},
+        {"add_on_packages": ["egitim", "turkiye-pazari"]},
+        {"budget_contract": {"soft_limit": 10, "hard_limit": 21, "currency": "USD"}},
+        {"budget_contract": {"soft_limit": 9, "hard_limit": 20, "currency": "USD"}},
+        {"product_type": "education_saas"},
+        {"scope_fields": ["target_user"]},
+        {"field_origins": {"product_type": "user_confirmed", "target_user": "user_confirmed"}},
+        {"assumption_ids": ["assumption-2"]},
+        {"research_mode": "deep_research"},
+        {"clarity_status": "broad_but_continue"},
+        {"source_registry_version": "registry-v2"},
+    ]
+    with TestClient(create_app()) as client:
+        baseline = client.post("/api/v1/research/plans", json=request).json()
+        for change in variants:
+            modified = deepcopy(request)
+            modified.update(change)
+            response = client.post("/api/v1/research/plans", json=modified)
+            assert response.status_code == 201, change
+            assert response.json()["plan_fingerprint"] != baseline["plan_fingerprint"], change
+            assert response.json()["research_plan_id"] != baseline["research_plan_id"], change
+
+
+def test_preview_fingerprint_ignores_mapping_and_confirmation_set_order():
+    from copy import deepcopy
+
+    request = valid_plan_request()
+    request["user_confirmed_fields"] = ["product_type", "target_user"]
+    reordered = deepcopy(request)
+    reordered["user_confirmed_fields"].reverse()
+    reordered["field_origins"] = dict(reversed(list(request["field_origins"].items())))
+    with TestClient(create_app()) as client:
+        first = client.post("/api/v1/research/plans", json=request).json()
+        second = client.post("/api/v1/research/plans", json=reordered).json()
+    assert first["plan_fingerprint"] == second["plan_fingerprint"]
+    assert first["research_plan_id"] == second["research_plan_id"]
+
+
+def test_preview_rejects_unknown_fields_and_nonfinite_budget():
+    import pytest
+    from pydantic import ValidationError
+    from app.research_plan import BudgetContract
+
+    request = valid_plan_request()
+    request["unapproved_scope"] = "silent expansion"
+    with TestClient(create_app()) as client:
+        assert client.post("/api/v1/research/plans", json=request).status_code == 422
+    for nonfinite in (float("inf"), float("nan"), -float("inf")):
+        with pytest.raises(ValidationError):
+            BudgetContract(hard_limit=nonfinite, soft_limit=0)

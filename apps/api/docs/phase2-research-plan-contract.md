@@ -1,7 +1,7 @@
-# Faz 2 ResearchPlan API sözleşmesi — taslak v1
+# Faz 1 stateless plan önizleme API sözleşmesi — v1.1
 
 Bu belge, `apps/api` içindeki ilk ResearchPlan uygulamasının sözleşme sınırıdır.
-Faz 2 yalnızca plan üretir; web crawl, kaynak çağrısı, Gemini çağrısı veya
+Aktif Faz 1 planı üretir; web crawl, kaynak çağrısı, Gemini çağrısı veya
 araştırma sonucu üretmez.
 
 ## Kanonik kategori girdisi
@@ -32,13 +32,13 @@ tek etiket altında birleştirilmez.
 | --- | --- | --- |
 | `GET` | `/health` | Süreç canlılığı; araştırma hazırlığını göstermez. |
 | `GET` | `/api/v1/research/categories` | Kanonik ana kategori ve ek paket kataloğunu döndürür. |
-| `POST` | `/api/v1/research-plans` | Doğrulanmış bir Idea Brief için, dış çağrı yapmadan sürümlü ResearchPlan taslağı üretir. |
+| `POST` | `/api/v1/research/plans` | Doğrulanmış bir Idea Brief için, dış çağrı yapmadan sürümlü ResearchPlan taslağı üretir. |
 | `GET` | `/api/v1/research/source-plans/{category}` | AS-01 sağlık kaydına göre kategori → kaynak → script → alan eşlemesini döndürür; script çalıştırmaz. |
 | `GET` | `/api/v1/research/initial-runs` | BT-02 için 10 fikir × net/eksik/yanlış-etiket olmak üzere 30 senaryoluk manifest ve aday kaynakları döndürür; canlı sorgu veya kaynak çalıştırmaz. |
 | `POST` | `/api/v1/research/run-records/validate` | Gerçek sorgudan sonra oluşan kaynak kaydını doğrular; kayıt yazmaz ve sorgu çalıştırmaz. |
 
-`POST /api/v1/research-plans` yalnız planlama kontratını uygular. Kaynak
-çalıştırma Faz 3'ün sorumluluğudur ve bu endpointten başlatılamaz.
+`POST /api/v1/research/plans` yalnız planlama kontratını uygular. Kaynak
+çalıştırma aktif Faz 2'nin sorumluluğudur ve bu endpointten başlatılamaz.
 
 `GET /api/v1/research/source-plans/{category}` BT-02'nin ilk eşleme yüzeyidir.
 Kaynak satırları 2026-09-24 AS-01 sağlık ölçümünü taşır. `eligible_for_first_run`
@@ -104,30 +104,23 @@ Kurallar:
 
 ## Plan çıktısı
 
-Her plan şunları taşır:
+Her stateless önizleme: research_plan_id, plan_fingerprint, plan_version=1,
+idea_brief_id/version, primary_category, add_on_packages, research_mode,
+research_questions, search_intents, market_scope, language_scope,
+source_family_hints, source_registry_version, budget_contract, known_unknowns,
+scope_origins ve assumption_ids döndürür. Source/query yürütme planı henüz yoktur;
+known_unknowns bunu açıkça bildirir. Bu endpoint kalıcı/onaylı ürün planı değildir.
 
-```text
-research_plan_id
-plan_version
-idea_brief_id/version
-primary_category + add_on_packages
-research_mode
-research_questions
-search_intents
-market/language scope
-source_plan (yalnız referans; kaynak çalıştırmaz)
-query_plan (yalnız taslak; sorgu çalıştırmaz)
-coverage_budget
-known_unknowns
-scope_origins
-source_registry_version
-estimated_cost_envelope
-budget_contract
-```
+Plan fingerprint'i doğrulanmış isteğin tamamının canonical JSON SHA-256'sıdır.
+Mapping anahtarları ve user_confirmed_fields kümesi sıralanır; diğer dizilerin
+sırası korunur. Pazar, dil, ek paket, bütçe, köken/onay veya kapsam değişimi
+başka fingerprint ve UUID üretir. Aynı doğrulanmış snapshot aynı kimliği üretir.
+Non-finite bütçe ve bilinmeyen request alanları reddedilir.
 
-İlk uygulama kalıcı veri tabanı yazımı yapmaz; bu yüzden dönen plan,
-deterministik sözleşme doğrulaması için geçici bir taslaktır. PostgreSQL ile
-kalıcı plan sürümlemesi ayrı bir work item'dır.
+Bu endpoint DB yazmaz; plan_version=1 yalnız önizleme sürümüdür. Kalıcı UUID,
+artan immutable plan sürümleri, source/query/onay snapshot'ı ve start
+idempotency ayrı BE-02/BE-07/BE-04 teslimlerinde uygulanır. İçerik fingerprint'i
+idempotency anahtarı veya run başlatma yetkisi yerine kullanılamaz.
 
 ## Test kabulü
 
@@ -135,7 +128,7 @@ kalıcı plan sürümlemesi ayrı bir work item'dır.
 - Geçersiz kategori veya tekrarlanan ek paket 422 ile reddedilir.
 - `needs_clarification` statüsündeki brief plan üretemez.
 - Onaysız `ai_hypothesis` kapsam girdisi plana geçemez.
-- `standard` dışındaki modlar ve geçersiz bütçe sınırları reddedilir.
+- `standard` ve `deep_research` dışında modlar; geçersiz/non-finite bütçe reddedilir.
 - Endpointin testleri herhangi bir ağ, Gemini veya secret gerektirmez.
 
 ## Sonraki bağımlılıklar
