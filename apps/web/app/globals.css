@@ -81,7 +81,7 @@ button:focus-visible, a:focus-visible {
 .overflow-x-auto { -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
 
 @media (max-width: 639px) {
-  html, body { overflow-x: hidden; }
+  html, body { overflow-x: clip; }
   input, textarea, select { font-size: 16px; }
 }
 
