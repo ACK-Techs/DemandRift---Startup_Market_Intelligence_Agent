@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'packages/contracts/**'
       - '.github/workflows/api-ci.yml'
       - '.github/workflows/api-deploy.yml'
       - 'infra/api/**'
@@ -10,6 +11,7 @@ on:
     branches: [main]
     paths:
       - 'apps/api/**'
+      - 'packages/contracts/**'
       - '.github/workflows/api-ci.yml'
       - '.github/workflows/api-deploy.yml'
       - 'infra/api/**'
@@ -29,6 +31,22 @@ jobs:
         run: docker build --target test --tag demandrift-api:test apps/api
       - name: Run tests without network access
         run: docker run --rm --network none --read-only --tmpfs /tmp:rw,noexec,nosuid,size=64m --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 1 --pids-limit 128 demandrift-api:test
+      - name: Reject generated contract drift
+        run: >-
+          docker run --rm --network none --read-only --cap-drop ALL
+          --security-opt no-new-privileges --memory 512m --cpus 1 --pids-limit 128
+          --volume "$PWD/apps/api:/repo/apps/api:ro"
+          --volume "$PWD/packages/contracts:/repo/packages/contracts:ro"
+          demandrift-api:test python /repo/apps/api/scripts/generate_contracts.py --check
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: packages/contracts/package-lock.json
+      - name: Check generated TypeScript consumers
+        run: |
+          npm ci --ignore-scripts --prefix packages/contracts
+          npm run typecheck --prefix packages/contracts
       - name: Build runtime image
         run: docker build --target runtime --build-arg APP_REVISION="$GITHUB_SHA" --tag demandrift-api:ci apps/api
       - name: Verify runtime as non-root with deployment restrictions

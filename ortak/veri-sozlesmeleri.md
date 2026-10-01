@@ -1,6 +1,6 @@
 # Ortak veri sözleşmeleri
 
-Bu belge sözleşme **taslağıdır**. Gerçek API/DB şeması veya çalışan doğrulayıcı değildir. Kodlama öncesi producer ve consumer aynı sürümlü şemayı kabul eder; alanlar birbirinden bağımsız kopyalanmaz.
+Bu belge fazlar arası anlamları açıklar. Uygulanan Pydantic wire şemalarının tek kaynağı `apps/api/app/contracts.py`, üretilmiş JSON Schema/TypeScript tüketicisi `packages/contracts` ve sürüm/komut/validator sınırları [kanonik wire sözleşmesi](../apps/api/docs/canonical-wire-contract.md) içindedir. DB/auth/worker ve tam citation doğrulaması ayrı teslimlerdir; wire şemasının varlığı onların tamamlandığı anlamına gelmez.
 
 ## Ortak zarf
 

@@ -1,5 +1,6 @@
-# Veri sözleşmeleri — taslak v0.1
+# Faz sözleşmesinin anlamları ve kanonik wire eşlemesi
 
+Kanonik DTO alan/ad/sürüm kaynağı [Pydantic wire sözleşmesi](../../apps/api/docs/canonical-wire-contract.md) ve `apps/api/app/contracts.py` dosyasıdır. Aşağıdaki faz tasarımı runtime kabul şartlarını açıklar; DB/auth/acquisition/citation/policy davranışlarının tamamlandığını iddia etmez. Wire DTO varlığı ayrı, bu davranışların gerçek kabulü ayrıdır.
 Girdi [Faz 2 EvidenceBundle](../../faz-2-veri-toplama-ve-hazirlama/docs/veri-sozlesmeleri.md) ve ilişkili ResearchPlan/brief'tir. Ortak zarf [ortak sözleşmededir](../../ortak/veri-sozlesmeleri.md). Buradaki taslak henüz çalışan API değildir.
 
 ## DecisionReport
@@ -61,3 +62,5 @@ Geçerli kanıt yetersizliği hata değildir: `Investigate More` raporu olarak d
 ## Yeterlilik politikası v1
 
 [Onaylı politika](../../ortak/kanit-yeterliligi-ve-karar-kurallari.md): min_independent_examples=3, min_distinct_sources=2 ve nitel kontroller birlikte uygulanır. evidence_sufficiency çıktısı destekleyen/karşıt/belirsiz sayımları, gate_results, critical_gaps ve policy_version içerir. Erişim/alan pilotlarından gelecek diğer eşikler bu onaylı tabanın yerine geçmez.
+
+Wire eşlemesi: decision_id→report_id, evidence_bundle_id→bundle_id, previous_decision_id→previous_report_id; outcome uygunluğu sufficiency.eligible_outcomes içindedir. evidence_sufficiency→sufficiency, challenging_claim_ids→opposing_claim_ids. primary_validation/decision_stability/next_actions ve outcome özel modification/investigation kanonik modellerdir. Yayımlanabilir DTO status=published; teknik run status=completed ayrıdır. costs→usage, validation ReportValidation ve schema_check/identity/source_binding/outcome_policy/scope sonuçlarıdır.

@@ -1,12 +1,13 @@
-# Veri sözleşmeleri — taslak v0.1
+# Faz sözleşmesinin anlamları ve kanonik wire eşlemesi
 
+Kanonik DTO alan/ad/sürüm kaynağı [Pydantic wire sözleşmesi](../../apps/api/docs/canonical-wire-contract.md) ve `apps/api/app/contracts.py` dosyasıdır. Aşağıdaki faz tasarımı runtime kabul şartlarını açıklar; DB/auth/acquisition/citation/policy davranışlarının tamamlandığını iddia etmez. Wire DTO varlığı ayrı, bu davranışların gerçek kabulü ayrıdır.
 Bu alan listeleri uygulanacak sözleşmedir; mevcut scriptlerin bunları döndürdüğü iddia edilmez. Kanonik ortak zarf [ortak veri sözleşmelerinde](../../ortak/veri-sozlesmeleri.md) tutulur. Alanlar açıkça opsiyonel denmedikçe zorunludur. Bilinmeyen skaler `null`, boş koleksiyon `[]` olur; bilinmeme gerekçesi kalite/eksik alanına yazılır.
 
 ## Ortak zarf ve giriş
 
 Her faz çıktısı `schema_version`, `project_id`, `research_id`, `status`, `versions` taşır. Bu faz ayrıca `evidence_bundle_id`, `created_at` kullanır. Girdi doğrulanmış `ResearchPlan`: `brief`, `categories`, `intents`, `source_plan`, `query_plan`, `budget`, `unknowns`. `versions` içinde kullanılan `brief`, `plan`, `source_registry`, `connector`, `normalization`, `extraction`, `prompt`, `model`, `policy` sürümleri kaydedilir; çoklu connector için ID→sürüm eşlemesi kullanılır, kullanılmayan AI sürümü `null` olur.
 
-Faz 2'nin zarf `status` değeri completed/partial/failed/cancelled olabilir; bu paket hazırlama durumudur. Kaynak işi sonuçları aşağıdaki `SourceReport.status` enum'udur ve bu iki kayıt türü karıştırılmaz. Yalnız Faz 1 `status=ready` planı yürütülür; `versions.plan` değeri değiştirilmeden devralınır.
+Faz 2'nin zarf `status` değeri completed/partial/failed/cancelled olabilir; bu paket hazırlama durumudur. Kaynak işi sonuçları aşağıdaki `SourceReport.status` enum'udur ve bu iki kayıt türü karıştırılmaz. Yalnız Faz 1 wire `status=confirmed` ve onay zamanlı plan yürütülür; `versions.plan` değeri değiştirilmeden devralınır.
 
 ## SourceProfile ve çalışma bütçesi
 
@@ -76,3 +77,5 @@ Fırsat hipotezi `hypothesis`, `supporting_claim_ids`, `challenging_claim_ids`, 
 `ResearchGapRequest`: `gap_id`, `research_id`, `parent_bundle_id`, `gap_type` (secondary_research_gap/primary_validation_gap), `intent_id`, `reason`, `severity`, `proposed_queries`, `eligible_source_ids`, `expected_evidence_type`, `remaining_budget`, `stop_condition`. Faz 3'ten gelirse `parent_decision_id` eklenir. Birincil boşlukta önerilen web sorguları boş olmalıdır. Backend yalnız secondary türünü doğrulanmış plan revizyonuna dönüştürür.
 
 Hata zarfı: `code`, `stage`, `source_id` (genel hata için null), `query_id` (yoksa null), `retryable`, `message`, `details_ref`. Kodlar: invalid_plan/unsupported_source/policy_blocked/network_unavailable/rate_limited/budget_exhausted/payload_too_large/parse_failed/invalid_provenance/citation_mismatch/stale_binding/model_schema_invalid/cancelled. Hata, iş sonucuyla birlikte taşınır; ham response sır/kişisel veri filtrelenmeden log'a yazılmaz.
+
+Wire eşlemesi: raw_content_ref→body_ref, content_type→media_type, body_normalized→normalized_text, Segment→TextSegment (text_hash ve normalized_content_hash), claim yorum→statement ve polarity→direction. SourceProfile çalışma görünümü SourcePlanItem; ayrı bağımsız katalog değildir. Bundle kimliği bundle_id, maliyet usage, findings/counter_findings supporting_claim_ids/opposing_claim_ids, relation DocumentRelation, maps EvidenceMaps nesnesindedir.

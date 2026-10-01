@@ -38,6 +38,7 @@ def test_unimplemented_business_routes_are_not_advertised():
         schema = client.get("/openapi.json").json()
     assert set(schema["paths"]) == {
         "/health",
+        "/api/v1/contracts",
         "/api/v1/research/categories",
         "/api/v1/research/plans",
         "/api/v1/research/source-plans/{category}",

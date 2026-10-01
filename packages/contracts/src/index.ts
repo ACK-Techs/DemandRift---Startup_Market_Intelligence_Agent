@@ -1,1 +1,1 @@
-export * from "./idea-brief";
+export * from "./generated";

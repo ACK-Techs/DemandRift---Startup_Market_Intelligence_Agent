@@ -1,12 +1,16 @@
 {
-    "name": "@demandrift/contracts",
-    "version": "0.1.0",
-    "private": true,
-    "type": "module",
-    "dependencies": {
-        "zod": "latest"
-    },
-    "devDependencies": {
-        "typescript": "latest"
-    }
+  "name": "@demandrift/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
 }

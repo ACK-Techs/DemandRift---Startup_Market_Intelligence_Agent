@@ -1,5 +1,6 @@
-# Veri sözleşmeleri — taslak
+# Faz sözleşmesinin anlamları ve kanonik wire eşlemesi
 
+Kanonik DTO alan/ad/sürüm kaynağı [Pydantic wire sözleşmesi](../../apps/api/docs/canonical-wire-contract.md) ve `apps/api/app/contracts.py` dosyasıdır. Aşağıdaki faz tasarımı runtime kabul şartlarını açıklar; DB/auth/acquisition/citation/policy davranışlarının tamamlandığını iddia etmez. Wire DTO varlığı ayrı, bu davranışların gerçek kabulü ayrıdır.
 Bu alanlar uygulanacak sözleşmenin tasarımıdır; henüz API ya da doğrulayıcı implementasyonu değildir. Ortak zarf [ortak/veri-sozlesmeleri.md](../../ortak/veri-sozlesmeleri.md) ile birlikte sürümlenir.
 
 ## ResearchPlan
@@ -7,8 +8,8 @@ Bu alanlar uygulanacak sözleşmenin tasarımıdır; henüz API ya da doğrulay�
 | Alan | Gereklilik |
 |---|---|
 | `schema_version`, `project_id`, `research_id` | Zorunlu ortak kimlik ve sözleşme sürümü |
-| `status` | `draft`, `needs_clarification`, `ready` veya `failed`; yalnız `ready` yürütülebilir |
-| `versions` | `brief`, `plan`, `taxonomy`, `source_registry`, `prompt` ve `model`; kullanılan sürümler değiştirilemez |
+| `status` | Wire plan: `draft`, `awaiting_user`, `confirmed`; yalnız `confirmed` ve onay zamanı yürütülebilir. Netlik `brief.clarity_status` içinde ayrıdır. |
+| `versions` | `brief`, `plan`, `category_catalog`, `source_registry`, `prompts` ve `model`; kullanılan sürümler değiştirilemez |
 | `brief` | Orijinal ve normalize fikir; ürün, müşteri, problem, pazar, dil, kısıtlar; alan kökenleri ve kullanıcının devam seçimi |
 | `categories` | `primary`, `secondary`, `modifiers`, `classification_status`, `rationale`; ana kategori eşleşmiyorsa null ve `unmatched` |
 | `intents` | Araştırma sorusu, amaç kimliği, öncelik, brief dayanağı, gereken kanıt/alan, ikincil/birincil doğrulama ayrımı |
@@ -39,3 +40,5 @@ Ortak Source Registry kaydına bağlı profil `source_id`, `family`, `allowed_ca
 - Erişim belirsiz/engelli kaynak yürütülebilir plana girmez; kapsama boşluğu ve uygun fallback taşınır.
 - `ready` plan şeması, kaynak sorgu uygunluğu ve sürüm doğrulamasını geçmiştir; bu, araştırmanın başarılı olduğu anlamına gelmez.
 - `invalid_input`, `schema_invalid`, `category_unmatched`, `no_eligible_source`, `provider_error`, `budget_invalid` hata kodları ayrı tutulur; hata detayına sır veya ham özel veri yazılmaz.
+
+Wire eşlemesi: categories bilgisi BriefContent primary/secondary_categories/modifiers/category_rationale ve category_origin/category_confirmed alanlarında tutulur; primary=null unmatched demektir. unknowns→known_unknowns, sorguda market→market_scope, query limitleri SourceLimits, kaynak capability/policy/fallback profili SourcePlanItem içindedir. Kaynak limiti run bütçesini; sorgu limiti kaynak profilini aşamaz.
