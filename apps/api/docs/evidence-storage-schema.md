@@ -1,0 +1,17 @@
+# Native evidence storage
+
+Migration `20261001_0003` adds 11 explicit evidence/lifecycle records and 13 association tables. Every record retains its full canonical JSON snapshot. Composite foreign keys bind owner, project, research, identity and selected version. All 24 tables enable and force owner RLS; the runtime role can only insert/read immutable records and associations. Only run/execution lifecycle rows permit updates, with their original parent identity preserved.
+
+Known plan/brief/normalizer/bundle version tags match the explicit selected native columns. Run records also bind a dedicated anchor ID to their research UUID and complete owner/project/research scope. A run anchor must identify its own research, preventing a different scope from reserving another research's run identity. Upgrade refuses inconsistent preexisting anchors atomically and preserves their old migration/data state for diagnosis.
+
+Versioned documents, claims, bundles, reports and gaps append contiguous versions under a research lock. Versionless wire references have explicit internal selected versions. Old source reports and bundles retain their chosen claim/document versions. Deferred graph checks compare ordered embedded snapshots and association children, including both directions of citation reciprocity for the selected claim version. Declared maps and independence groups can only refer to selected claims; arbitrary metadata keys remain data.
+
+Document/segment hashes use SHA-256 over UTF-8 bytes. Offsets use Unicode code points. A validated citation must select the exact artifact, source, document/segment versions and hashes; its quote, URL and capture time must match stored normalized content. Candidate/rejected quotes remain auditable. These constraints do not prove external source truth, raw-body persistence or semantic support; those remain BE08/BE11 acceptance gates.
+
+Reports select an exact bundle version. A report gap either belongs to that selected bundle or has the exact current report/bundle parent context. This permits Faz 3 to create a new gap without modifying a published Faz 2 bundle. Independently valid but mismatched parent versions are rejected.
+
+This slice persists proposals under the original approved plan. Gap intents and eligible sources must belong to that plan, proposed-query sources must be eligible, and primary gaps cannot propose web queries. BE14 must implement a separately approved plan revision, honest execution plan versions and a shared original run budget before dispatching additional queries. This migration does not accept that execution behavior.
+
+`0001` and `0002` stay frozen. The new migration also contains frozen SQL and imports no live models. Downgrade drops the new evidence tables and is tested only on disposable databases; production rollback must preserve data through a compatible image or the separately verified backup/restore procedure. This file is a storage contract, not final product acceptance.
+
+`test_evidence_schema.py` exercises direct SQL, bypassing repository helpers. The canonical fixture uses only synthetic users and `.invalid` URLs. Its counts, validation stamps and costs are test expectations. Native graph/history/RLS, selected-reference failures, content binding and nonempty preparation upgrade/downgrade are tested against actual PostgreSQL; restart, typed repository and exact Linux CI have separate gates.

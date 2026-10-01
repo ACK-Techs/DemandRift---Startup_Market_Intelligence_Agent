@@ -8,6 +8,7 @@ from sqlalchemy.engine import make_url
 from sqlalchemy.pool import NullPool
 
 from app.db.models import Base
+from app.db import evidence_models  # Register the explicit evidence metadata.
 
 
 def database_url():

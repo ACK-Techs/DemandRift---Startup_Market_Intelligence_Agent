@@ -139,6 +139,7 @@ class PlanRecord(Snapshot, Base):
         scoped_parent("idea_briefs", "brief_id", "brief_version"),
         UniqueConstraint("project_id", "plan_version"),
         UniqueConstraint(*SCOPE, "research_plan_id", "plan_version", "plan_fingerprint"),
+        UniqueConstraint(*SCOPE, "research_plan_id", "plan_version", "plan_fingerprint", "brief_id", "brief_version", name="uq_plans_approved_brief_tuple"),
         Index("ix_plans_brief", *SCOPE, "brief_id", "brief_version"),
         Index("ix_plans_logical_scope", *SCOPE, "identity_kind", "research_plan_id"),
         CheckConstraint("COALESCE(plan_fingerprint ~ '^[0-9a-f]{64}$' AND payload->>'plan_fingerprint' = plan_fingerprint, false)", name="fingerprint"),
@@ -197,6 +198,7 @@ class SnapshotIdentityRecord(Scoped, Base):
         UniqueConstraint(*SCOPE, "kind", "logical_id"),
         Index("ix_snapshot_identities_scope", *SCOPE),
         CheckConstraint("kind IN ('brief','plan','run','execution','artifact','document','segment','claim','citation','source_report','bundle','report','gap')", name="kind"),
+        CheckConstraint("kind <> 'run' OR logical_id=research_id", name="run_identity"),
     )
 
 
