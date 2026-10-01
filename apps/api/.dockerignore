@@ -3,7 +3,14 @@
 !app/**
 !tests/
 !tests/**
+!migrations/
+!migrations/**
+!alembic.ini
+!pytest.ini
 !requirements.txt
 !requirements-dev.txt
 **/__pycache__/
 **/*.pyc
+**/.env
+**/.env.*
+**/*.key
