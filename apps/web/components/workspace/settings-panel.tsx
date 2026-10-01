@@ -1,7 +1,15 @@
-"use client";
+import { BackendUnavailable } from "@/components/workspace/backend-unavailable";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
-import { Check } from "lucide-react";
-import { useState } from "react";
-
-function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) { return <section className={`rounded-xl border border-[var(--line)] bg-white ${className}`}>{children}</section>; }
-export function SettingsPanel() { const [saved, setSaved] = useState(false); return <div className="space-y-5"><div className="grid gap-5 xl:grid-cols-2"><Card className="p-6"><h2 className="text-sm font-semibold">Profile</h2><div className="mt-5 grid gap-4 sm:grid-cols-2">{[["Full name", "Batuhan Evleksiz"], ["Workspace", "Research workspace"], ["Default market", "Turkey"], ["Default language", "English"]].map(([label, value]) => <label className="text-xs font-medium text-[#656671]" key={label}>{label}<input className="mt-2 w-full rounded-lg border border-[var(--line)] bg-transparent px-3 py-2.5 text-sm text-[var(--ink)] outline-none focus:border-[var(--brand)] focus:ring-4 focus:ring-[var(--brand-soft)]" defaultValue={value} /></label>)}</div></Card><Card className="p-6"><h2 className="text-sm font-semibold">Research preferences</h2><div className="mt-5 space-y-4">{["Notify me when a research run completes", "Include evidence-quality warnings", "Show research plan before execution"].map((option, index) => <label className="flex items-center justify-between gap-4 text-xs" key={option}><span>{option}</span><input aria-label={option} className="h-4 w-4 accent-[var(--brand)]" defaultChecked={index !== 1} type="checkbox" /></label>)}</div><div className="mt-7 border-t border-[var(--line)] pt-5"><p className="text-xs font-semibold">Appearance</p><p className="mt-1 text-[11px] leading-4 text-[#777883]">Use the toggle in the top bar to switch between the light and dark DemandRift themes.</p></div></Card></div><div className="flex items-center justify-end gap-3"><span className="text-xs font-medium text-[var(--positive)]">{saved && <span className="inline-flex items-center gap-1"><Check className="h-3.5 w-3.5" />Changes saved</span>}</span><button className="rounded-lg bg-[var(--brand)] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[var(--brand-deep)]" onClick={() => setSaved(true)} type="button">Save changes</button></div></div>; }
+export function SettingsPanel() {
+  return <div className="space-y-5">
+    <BackendUnavailable title="Account preferences unavailable" description="Account and research preferences cannot be read or saved until the settings API is connected.">
+      <button className="mt-5 rounded-lg border border-[var(--line)] px-3 py-2 text-xs font-semibold opacity-50" disabled type="button">Save unavailable</button>
+    </BackendUnavailable>
+    <section className="rounded-xl border border-[var(--line)] bg-white p-5 sm:p-6">
+      <h2 className="text-sm font-semibold text-[var(--ink)]">Appearance</h2>
+      <p className="mb-4 mt-2 text-xs leading-5 text-[#73747e]">Theme is a local browser preference.</p>
+      <ThemeToggle />
+    </section>
+  </div>;
+}
