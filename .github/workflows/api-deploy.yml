@@ -1,16 +1,18 @@
-name: FastAPI build, test and deploy
+name: Deploy accepted DemandRift backend revision
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'apps/api/**'
-      - 'infra/api/**'
-      - 'infra/backend-build/demandrift-build'
-      - '.github/workflows/api-deploy.yml'
-      - 'scripts/build-backend.sh'
   workflow_dispatch:
+    inputs:
+      release_sha:
+        description: Exact main revision accepted for backend deployment
+        required: true
+        type: string
+      acceptance_run:
+        description: Persistent orchestrator run whose release gates passed
+        required: true
+        type: string
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: demandrift-api-deploy
   cancel-in-progress: false
@@ -20,12 +22,38 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
+      - name: Require exact main revision and successful API CI
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_SHA: ${{ inputs.release_sha }}
+          ACCEPTANCE_RUN: ${{ inputs.acceptance_run }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! "$RELEASE_SHA" =~ ^[0-9a-f]{40}$ ]]; then exit 64; fi
+          if [[ ! "$ACCEPTANCE_RUN" =~ ^[a-zA-Z0-9][a-zA-Z0-9_-]{0,127}$ ]]; then exit 64; fi
+          main_sha=$(gh api "repos/$REPOSITORY/git/ref/heads/main" --jq '.object.sha')
+          test "$main_sha" = "$RELEASE_SHA"
+          gh api "repos/$REPOSITORY/actions/workflows/api-ci.yml/runs?head_sha=$RELEASE_SHA&branch=main&per_page=100" > "$RUNNER_TEMP/api-checks.json"
+          python3 - "$RUNNER_TEMP/api-checks.json" <<'PY'
+          import json, os, sys
+          runs = json.load(open(sys.argv[1]))["workflow_runs"]
+          matching = [r for r in runs if r["head_sha"] == os.environ["RELEASE_SHA"]
+                      and r["head_branch"] == "main" and r["event"] in ("push", "workflow_dispatch")]
+          if not matching:
+              raise SystemExit("API CI has not run for the accepted revision")
+          latest = max(matching, key=lambda c: c["id"])
+          if latest["status"] != "completed" or latest["conclusion"] != "success":
+              raise SystemExit("API CI did not pass")
+          PY
+          printf 'Deploying accepted revision %s from run %s\n' "$RELEASE_SHA" "$ACCEPTANCE_RUN"
       - name: Test, build and deploy exact main API commit on Hetzner
         env:
           BUILD_KEY: ${{ secrets.HETZNER_BUILD_SSH_KEY }}
           KNOWN_HOSTS: ${{ secrets.HETZNER_BUILD_KNOWN_HOSTS }}
           TARGET: ${{ vars.HETZNER_BUILD_HOST }}
-          COMMIT: ${{ github.sha }}
+          COMMIT: ${{ inputs.release_sha }}
         shell: bash
         run: |
           set -euo pipefail
