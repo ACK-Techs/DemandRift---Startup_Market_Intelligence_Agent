@@ -7,6 +7,8 @@ export type AddOnPackage = "saglik" | "fintech" | "egitim" | "gayrimenkul" | "se
 
 export type ApiError = { "schema_version": "1.0.0"; "code": string; "message": string; "request_id": string; "operation": (string | null); "stage": (Phase | null); "query_id": (string | null); "details_ref": (string | null); "source_id": (string | null); "retryable": boolean; "retry_after_seconds": (number | null); "usage": (Usage | null); "remaining_work": Array<string>; "next_step": (string | null); };
 
+export type AuthCredentials = { "email": string; "password": string; };
+
 export type BriefContent = { "original_idea": string; "normalized_idea": (string | null); "product_type": ProvenanceField; "target_user": ProvenanceField; "problem_or_job": ProvenanceField; "context_or_niche": ProvenanceField; "market_scope": ProvenanceField; "business_model": ProvenanceField; "alternatives": ProvenanceField; "constraints": { [key: string]: ProvenanceField; }; "clarity_status": ClarityStatus; "missing_fields": Array<string>; "clarifying_questions": Array<string>; "assumption_ids": Array<string>; "skipped_clarification": boolean; "continue_with_unknowns": boolean; "language_scope": Array<string>; "primary_category": (ResearchCategory | null); "category_origin": (FieldOrigin | null); "category_confirmed": boolean; "add_on_packages": Array<AddOnPackage>; "secondary_categories": Array<ResearchCategory>; "modifiers": Array<string>; "category_rationale": (string | null); "known_unknowns": Array<string>; };
 
 export type BudgetLimits = { "max_requests": number; "max_bytes": number; "max_pages": number; "max_records": number; "max_duration_seconds": number; "max_tokens": number; "max_cost_usd": string; "soft_cost_usd": string; "max_concurrency": number; };
@@ -71,6 +73,8 @@ export type PrimaryValidation = { "status": "not_started" | "partial" | "availab
 
 export type Project = { "schema_version": "1.0.0"; "project_id": string; "user_id": string; "name": string; "created_at": string; "archived_at": (string | null); };
 
+export type ProjectCreate = { "name": string; };
+
 export type ProjectPage = { "schema_version": "1.0.0"; "items": Array<Project>; "page": PageInfo; };
 
 export type ProvenanceField = { "value": (string | null); "state": FieldState; "origin": (FieldOrigin | null); "assumption_id": (string | null); "conflicting_values": Array<string>; "prior_origins": Array<FieldOrigin>; "confirmed": boolean; };
@@ -105,7 +109,7 @@ export type RunStatus = "draft" | "awaiting_user" | "planned" | "queued" | "acqu
 
 export type SearchIntent = "problem_demand" | "existing_alternatives" | "dissatisfaction" | "observed_market_pricing" | "use_case" | "competitor_discovery" | "counter_evidence" | "stated_wtp_weak_signal" | "technical_feasibility" | "regulatory_constraints" | "adoption_signals";
 
-export type Session = { "schema_version": "1.0.0"; "user": User; "expires_at": string; };
+export type Session = { "schema_version": "1.0.0"; "user": User; "expires_at": string; "csrf_token": string; };
 
 export type SourceCounts = { "discovered": number; "fetched": number; "normalized": number; "eligible": number; "unique": number; "independent": number; "claims": number; };
 

@@ -9,7 +9,7 @@ from pydantic import ValidationError
 import pytest
 
 from app.contract_catalog import wire_catalog
-from app.contracts import (BriefContent, BudgetLimits, Citation, Claim, DecisionReport,
+from app.contracts import (AuthCredentials, ProjectCreate, Session, User, BriefContent, BudgetLimits, Citation, Claim, DecisionReport,
                           EvidenceBundle, IdeaBrief, NormalizedDocument, ProvenanceField,
                           RawArtifact, ResearchGapRequest, ResearchPlan, SourceCounts,
                           SourceReport, TextSegment, Usage)
@@ -23,6 +23,33 @@ BUDGET = dict(max_requests=20, max_bytes=1000000, max_pages=10, max_records=10,
               soft_cost_usd="0.500000", max_concurrency=1)
 BRIEF = dict(original_idea="  Uzun Türkçe fikir: öğrenciler için not aracı.\n", clarity_status="broad_but_continue",
              language_scope=["tr"], primary_category="gelistirici-araci", category_origin="user_stated", category_confirmed=True)
+
+
+def test_account_request_contract_keeps_password_secret_and_rejects_owner_claims():
+    password = "  Çöğü 🙂 private fixture only  "
+    request = AuthCredentials(email="owner@example.invalid", password=password)
+    assert request.password.get_secret_value() == password
+    assert password not in repr(request) and password not in request.model_dump_json()
+    for value in ["a" * 14, "a" * 129, 123, True, None, [password]]:
+        with pytest.raises(ValidationError):
+            AuthCredentials(email="owner@example.invalid", password=value)
+    with pytest.raises(ValidationError):
+        AuthCredentials(email="owner@example.invalid", password=password, user_id=USER)
+    for value in ["", " \n ", 12, True]:
+        with pytest.raises(ValidationError):
+            ProjectCreate(name=value)
+    with pytest.raises(ValidationError):
+        ProjectCreate(name="Alpha", user_id=USER)
+
+
+def test_public_session_contract_requires_csrf_hash_and_never_accepts_raw_session_or_password():
+    user = User(user_id=USER, email="owner@example.invalid", created_at=NOW)
+    session = Session(user=user, expires_at=NOW, csrf_token="a" * 64)
+    assert set(session.model_dump()) == {"schema_version", "user", "expires_at", "csrf_token"}
+    for changed in [{"csrf_token": None}, {"csrf_token": "raw-session-value"},
+                    {"session_token": "raw-session-value"}, {"password": "private fixture"}]:
+        with pytest.raises(ValidationError):
+            Session(**{**session.model_dump(), **changed})
 
 
 def plan_payload():
@@ -54,7 +81,7 @@ def test_public_catalog_and_openapi_have_the_same_wire_version_and_resolved_refs
         openapi = client.get("/openapi.json").json()
     assert catalog == wire_catalog()
     assert catalog["schema_version"] == openapi["info"]["x-wire-schema-version"] == "1.0.0"
-    assert len(catalog["models"]) == 30
+    assert len(catalog["models"]) == 32
     assert "secret-never-in-contract" not in json.dumps(catalog)
     for name, definition in catalog["$defs"].items():
         expected = json.loads(json.dumps(definition).replace('"#/$defs/', '"#/components/schemas/Wire_'))

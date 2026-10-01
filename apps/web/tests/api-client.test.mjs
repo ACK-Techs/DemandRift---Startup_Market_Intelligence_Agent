@@ -17,8 +17,8 @@ const error = (code = "rate_limited") => ({ schema_version: "1.0.0", code, messa
   request_id: other, operation: "request", stage: null, query_id: null, details_ref: null, source_id: null,
   retryable: true, retry_after_seconds: 2, usage: null, remaining_work: [], next_step: null });
 
-test("all thirty generated wire model schemas compile and report a concrete missing field", () => {
-  assert.equal(Object.keys(schema.models).length, 30);
+test("all thirty-two generated wire model schemas compile and report a concrete missing field", () => {
+  assert.equal(Object.keys(schema.models).length, 32);
   for (const model of Object.keys(schema.models)) {
     const result = parseWire(model, "{}");
     assert.equal(result.reason, "schema_mismatch", model);
@@ -54,7 +54,7 @@ test("unsafe JSON integers and monetary coercion cannot silently corrupt usage",
 });
 
 test("scope checks apply to nested list contents and run evidence identities", () => {
-  const session = { schema_version: "1.0.0", user, expires_at: "2026-10-02T00:00:00Z" };
+  const session = { schema_version: "1.0.0", user, expires_at: "2026-10-02T00:00:00Z", csrf_token: "a".repeat(64) };
   assert.equal(parseWire("Session", JSON.stringify(session), { user_id: owner }).ok, true);
   assert.equal(parseWire("Session", JSON.stringify(session), { user_id: other }).reason, "scope_mismatch");
   assert.equal(parseWire("RawArtifact", JSON.stringify(rawArtifact), { research_id: other }).reason, "scope_mismatch");

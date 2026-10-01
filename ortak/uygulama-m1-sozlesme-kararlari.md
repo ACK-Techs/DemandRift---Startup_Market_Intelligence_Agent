@@ -26,6 +26,14 @@ Raw content özel `demandrift_api_artifacts` volume'unda; DB dosya ref/hash/byte
 
 Genel kayıt açık. Argon2id parola hash; yüksek entropili opaque session, DB'de yalnız hash/expiry/revocation. Generic auth hatası ve rate limit. Proje/list/detail/status/raw/citation/report/export sahiplik kontrolleri zorunlu. Session süresi ve şifre limitleri sürümlü auth config'de; session expiry sonrası eski kullanıcı verisi ekranda kalmaz.
 
+Auth v1 girdisi 15–128 Unicode karakterlik parola kabul eder; parola trim veya
+case dönüşümü uygulanmaz. MFA bulunmayan bu dilimde minimum 15 seçimi güncel
+[NIST 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/) ve
+[OWASP Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+kılavuzuyla eşleşir. Argon2id RFC9106_LOW_MEMORY (64 MiB, 3 geçiş, 4 lane),
+24 saat mutlak session expiry ve PostgreSQL'de ortak account/peer limitleri
+auth core tesliminde doğrulanır; tam NIST uyumluluğu iddiası değildir.
+
 Local Next.js same-origin `/api/backend/...` proxy üzerinden sabit upstream HTTPS Hetzner API'ye bağlanır. Upstream base server-only env; kullanıcı URL/proxy target seçemez. Model anahtarı NEXT_PUBLIC, proxy veya client response içine girmez. HttpOnly cookie, local geliştirmede same-origin cookie, prod backend route için güvenli session/CSRF ayarları. Mutating request exact Origin+CSRF token ile denetlenir; GET mutation yapmaz. Backend allowlist exact local origin; wildcard+credentials yok. Doğrudan cross-origin browser smoke OP-03'te ayrıca gerçek HTTPS/CORS ile değerlendirilir.
 
 Route contract: `/api/v1/auth/{register,login,logout,session}`, `/api/v1/projects`, `/api/v1/projects/{project_id}`, `/api/v1/projects/{project_id}/briefs`, brief clarification/confirmation/plan revision, plan approval/start, `/api/v1/research/{research_id}` status/cancel/evidence/reports/gaps, owner kontrollü artifact/export, dashboard ve settings. GET aynı ID/version'ı yeniden okuyabilir. POST idempotency key ve payload fingerprint taşır. Exact alan/route isimleri BE-01/OpenAPI üretiminde sabitlenir. Mevcut stateless plan endpoint'i deprecation açıklamasıyla korunur; public F03 dış çağrı endpoint'i production'da kapalı olacak.

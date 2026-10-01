@@ -10,7 +10,7 @@ from enum import StrEnum
 from typing import Annotated, Literal
 from uuid import UUID
 
-from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, HttpUrl, model_validator
+from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, HttpUrl, SecretStr, model_validator
 
 from app.research_plan import AddOnPackage, ClarityStatus, FieldOrigin, ResearchCategory, ResearchMode
 
@@ -1042,6 +1042,16 @@ class Session(Contract):
     schema_version: Literal["1.0.0"] = SCHEMA_VERSION
     user: User
     expires_at: AwareDatetime
+    csrf_token: Hash
+
+
+class AuthCredentials(Contract):
+    email: Annotated[str, Field(min_length=3, max_length=254, strict=True)]
+    password: Annotated[SecretStr, Field(min_length=15, max_length=128)]
+
+
+class ProjectCreate(Contract):
+    name: Annotated[str, Field(min_length=1, max_length=200, pattern=r"\S", strict=True)]
 
 
 class Project(Contract):
@@ -1075,4 +1085,4 @@ WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefCo
                SourcePlanItem, QueryPlanItem, ResearchPlan, SourceCounts, QueryExecution,
                RawArtifact, TextSegment, NormalizedDocument, Claim, Citation, SourceReport,
                EvidenceBundle, SufficiencyAssessment, ResearchGapRequest, ReportStatement,
-               DecisionReport, ResearchRun, User, Session, Project, PageInfo, ProjectPage, RunPage)
+               DecisionReport, ResearchRun, User, Session, AuthCredentials, ProjectCreate, Project, PageInfo, ProjectPage, RunPage)

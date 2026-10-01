@@ -16,6 +16,15 @@ CI Python 3.13 test imajıyla ağsız pytest ve üretilmiş dosya drift kontrol�
 
 `GET /api/v1/contracts` aynı katalog ve `schema_version=1.0.0` döndürür. OpenAPI içinde aynı şemalar `Wire_` önekiyle bulunur; `$defs` referansları `components/schemas/Wire_` referansına çevrilir. Bu ayrım eski preview `SourceHealth/AccessMethod` değerlerini üretim yeterliliği olarak yorumlamayı önler. `/health` yalnız süreç canlılığıdır.
 
+Hesap dilimi katalogda 32 model taşır. `AuthCredentials` yalnız email ve
+`SecretStr` password (15–128 Unicode karakter), `ProjectCreate` yalnız boş
+olmayan name kabul eder; kullanıcı/proje UUID'si request sahibinden alınmaz.
+`Session` public user, expires_at ve 64 karakterlik csrf_token taşır. Opaque
+oturum değeri yalnız HttpOnly cookie'dedir; JSON ve frontend storage'a yazılmaz.
+Parola secret tipinin repr/JSON maskesi ham değeri gizler; request validation
+yanıtının da girdiyi içermemesi ayrıca auth HTTP kapısında doğrulanır. Bu şema
+teslimi oturum endpoint'i veya gerçek Hetzner/browser kabulü yerine geçmez.
+
 Faz kayıtları server kaynaklı user/project/research UUID'leri, timezone içeren created_at, schema_version ve ilgili versions taşır. Brief/plan/document/bundle/report/gap kimlik ve pozitif sürümleri ayrıdır. Persistence ve immutable sürüm oluşturma BE-02/07/14 işidir; DTO doğrulaması kaydın kalıcı veya yetkili olduğunu kanıtlamaz.
 
 Unknown `value=null, state=missing, origin=null, confirmed=false` olur. State known/inferred/missing/conflicting; AI kökenli alan assumption_id taşır. Çelişen adaylar conflicting_values, eski köken prior_origins içinde korunur. continue_with_unknowns kullanıcı tercihidir. original_idea boşluk ve satır sonlarıyla korunur. Kullanıcı ifadesi/onayı ve AI çıkarımı/hypothesis ayrıdır. Unmatched kategori null kalır. Onaylı plan çözümlenmemiş clarification, onaysız kategori/hypothesis veya planlanmamış kaynağa bağlı sorgu içeremez. Onay zamanı ve status uyuşur. Fingerprint idempotency değildir.
