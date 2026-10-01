@@ -13,6 +13,9 @@ COPY requirements-dev.txt ./
 RUN pip install --no-cache-dir -r requirements-dev.txt
 COPY app ./app
 COPY tests ./tests
+COPY migrations ./migrations
+COPY alembic.ini ./
+COPY pytest.ini ./
 RUN python -m pytest -q
 CMD ["python", "-m", "pytest", "-q", "-p", "no:cacheprovider"]
 
@@ -21,6 +24,8 @@ ARG APP_REVISION=development
 ENV APP_REVISION=${APP_REVISION}
 RUN groupadd --gid 10001 api && useradd --uid 10001 --gid api --no-create-home api
 COPY --chown=10001:10001 app ./app
+COPY --chown=10001:10001 migrations ./migrations
+COPY --chown=10001:10001 alembic.ini ./
 RUN install --directory --owner=10001 --group=10001 --mode=0750 /data/artifacts
 USER 10001:10001
 EXPOSE 8000

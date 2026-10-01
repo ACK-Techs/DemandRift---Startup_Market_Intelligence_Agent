@@ -22,6 +22,30 @@ concurrency:
   group: api-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  postgres-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    container: python:3.13-slim
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: demandrift-ci-only
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned API test dependencies
+        run: python -m pip install -r apps/api/requirements-dev.txt
+      - name: Test actual PostgreSQL isolation and migrations
+        env:
+          PYTHONPATH: apps/api
+          DEMANDRIFT_DB_TESTS: '1'
+          DEMANDRIFT_TEST_ADMIN_URL: postgresql+psycopg://postgres:demandrift-ci-only@postgres:5432/postgres
+        run: python -m pytest -q -m postgres apps/api/tests
   test-build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
