@@ -14,6 +14,8 @@ Dort sorun sinifi ayri tutulur cunku dordu farkli duzeltme ister:
 * ``erisim``            — siteye ulasilamiyor (robots, bot korumasi, hiz siniri)
 * ``yanlis-bos-icerik`` — yanit geldi ama govde bos ya da konu disi
 * ``alan-cikarimi``     — icerik dogru, bizim cikarici alani alamiyor
+* ``sozlesme-disi``     — beklenen alan adi bizim sozlugumuzde yok;
+                          bu makine o alani olcemez, yargi vermez
 * ``dil-pazar``         — icerik dogru ama yanlis dil ya da yanlis pazar
 
 Ayrim onemli: "sorgu calismadi" uc farkli seyi ayni kefeye koyar. Sitenin
@@ -61,6 +63,19 @@ BILDIRIM_SUTUNLARI: tuple[str, ...] = (
 # Icerik dogru geldiginde alan cikarimini sinamak icin: hangi alanlar bekleniyor.
 # Bos birakilirsa alan kontrolu yapilmaz, yalniz erisim ve icerik olculur.
 BEKLENEN_ALANLAR_SUTUNU = "beklenen_alanlar"
+
+# Bu makinenin cikaricisinin uretebildigi alanlarin tamami. Liste
+# `normalize_belgeler.ALAN_DESENLERI` + `ETKILESIM_DESENLERI`'nden gelir ve
+# PAZAR SINYALI sozlugudur (fiyat, yildiz, lisans...). Batuhan'in
+# `expected_fields` listesi ise BELGE KAYDI sozlugudur (baslik, govde,
+# yazar...). Ikisi ayni sey degil: bu makineye belge-kaydi alani sorulursa
+# "cikarilamadi" demesi yanlis olur, cunku hic aramiyor. O yuzden sozluk
+# disi istekler `sozlesme-disi` olarak ayrilir.
+CIKARICI_SOZLUGU = frozenset({
+    "engagement_indirme_sayisi", "engagement_yildiz", "engagement_yorum_sayisi",
+    "fiyat", "gosterge", "issue_sayisi", "lisans", "mevzuat_atfi",
+    "ozellik_basligi", "paket_adi", "repo_yolu", "surum", "yil_araligi",
+})
 
 ERISIM_SORUNLARI = {
     "robots_disallowed", "robots_preflight_blocked", "challenge",
@@ -117,6 +132,13 @@ def sorunu_ayir(erisim: str, icerik: str, metin: str, ilgili_mi: bool | None,
     if hedef_dil and dil not in ("unknown", "") and dil != hedef_dil:
         return "dil-pazar", f"içerik {dil} dilinde, hedef {hedef_dil}"
     if beklenen_alanlar:
+        sozluk_disi = beklenen_alanlar - CIKARICI_SOZLUGU
+        if sozluk_disi:
+            return "sozlesme-disi", (
+                "bu alanlar bu makinenin çıkarıcı sözlüğünde yok, bu yüzden "
+                "ölçülemez: " + ", ".join(sorted(sozluk_disi))
+                + " — belge-kaydı alanları API yanıtından doğrudan "
+                  "sınanmalı (bkz. bt03_alan_analizi.py)")
         eksik = beklenen_alanlar - bulunan_alanlar
         if eksik:
             return "alan-cikarimi", ("içerik doğru ama şu alanlar çıkarılamadı: "
@@ -136,6 +158,76 @@ GENEL_KELIMELER = frozenset({
     "program", "uygulama", "best", "free", "ucretsiz", "ücretsiz",
     "download", "indir", "review", "reviews", "yorum", "yorumlar",
 })
+
+
+# `name` BILEREK listede degil: GitHub yanitinda etiketlerin, kullanicilarin
+# ve lisanslarin da `name`'i var; dahil edilince 5 issue 23 "baslik" sayildi.
+BASLIK_ANAHTARLARI = ("title", "story_title", "headline", "subject")
+
+
+def baslik_ayikla(govde: bytes, mime: str) -> list[str]:
+    """Yanittan baslik(lar)i ayirir; ilgililik testi basliga ayrica bakar.
+
+    JSON yanitta kayit basliklarini anahtar adindan toplar; HTML'de <title>
+    ve <h1>'i alir. Bulamazsa bos doner — o zaman ilgililik `uncertain` kalir,
+    "ilgisiz" denmez.
+    """
+    if mime == "application/json":
+        try:
+            veri = json.loads(govde)
+        except ValueError:
+            return []
+        # YALNIZ kayit duzeyindeki basliklar. Ic ice gezinmek yanlis sayar:
+        # GitHub'da `milestone.title` ("v5.0.0") da baslik sanilip 5 issue
+        # 7 baslik olarak olculuyordu, oran bozuluyordu.
+        kayitlar = veri if isinstance(veri, list) else next(
+            (veri[a] for a in ("items", "hits", "results", "data", "resultCount")
+             if isinstance(veri.get(a), list)), [])
+        return [kayit[anahtar] for kayit in kayitlar if isinstance(kayit, dict)
+                for anahtar in BASLIK_ANAHTARLARI
+                if isinstance(kayit.get(anahtar), str) and kayit[anahtar].strip()]
+    metin = govde.decode("utf-8", "replace")
+    parcalar = re.findall(r"<(?:title|h1)[^>]*>(.*?)</(?:title|h1)>", metin,
+                          re.I | re.S)
+    return [t for t in (re.sub(r"<[^>]+>", " ", p).strip() for p in parcalar) if t]
+
+
+def ilgililik_uc_degerli(basliklar: list[str], govde: str,
+                         sorgu: str) -> tuple[str, str]:
+    """(etiket, gerekce) — relevant / uncertain / irrelevant.
+
+    BT-03'te olculen bir kalibrasyon sorunu: uzun teknik gövdelerde sorgunun
+    kelimeleri alakasiz baglamlarda da geciyor. "API breaking changes backward
+    compatibility" aramasinda Hacker News'in "Ask HN: favorite line in your
+    agent prompt" sonucu ilgili cikti, cunku govdede "breaking" ve
+    "compatibility" gecen cumleler vardi.
+
+    Bu yuzden **relevant** icin BASLIKTA kanit aranir: konu basliktadir,
+    govde tartismadir. Baslikta kanit yoksa `irrelevant` DENMEZ — "Why
+    Semantic Versioning Isn't" basliginda sorgunun hicbir kelimesi yok ama
+    konu gercekten ilgili. Boyle durumlar `uncertain` kalir ve **insan
+    etiketine** birakilir; otomatik etiket onun yerine gecmez.
+    """
+    govde_ilgili = _ilgili_mi((" ".join(basliklar) + " " + govde), sorgu)
+    if govde_ilgili is None:
+        return "uncertain", "sorgu ayırt edici kelime taşımıyor; ölçülemedi"
+    if not govde_ilgili:
+        return "irrelevant", "ne başlıkta ne gövdede nişin kelimesi var"
+    if not basliklar:
+        return "uncertain", ("gövdede eşleşme var ama yanıttan başlık "
+                             "ayıklanamadı; insan etiketi gerekir")
+    # Basligi tek tek sina: uzun gövde eşleşmeyi şişirmesin diye her başlık
+    # dolgu metinle ayrı ölçülür.
+    eslesen = sum(1 for b in basliklar
+                  if _ilgili_mi("x" * 400 + " " + b, sorgu))
+    oran = f"{eslesen}/{len(basliklar)} kaydın başlığı eşleşti"
+    if eslesen * 2 > len(basliklar):
+        return "relevant", f"başlık kanıtı çoğunlukta: {oran}"
+    if eslesen:
+        return "uncertain", (f"{oran}; çoğunluk değil, konu uygunluğu "
+                             "insan etiketi gerektirir")
+    return "uncertain", (f"{oran}; gövdede eşleşme var ama hiçbir başlıkta "
+                         "yok — insan etiketi gerekir")
 
 
 def _ilgili_mi(metin: str, sorgu: str) -> bool | None:
@@ -182,6 +274,7 @@ def bir_bildirimi_kos(bildirim: dict[str, str], asama: str) -> dict[str, Any]:
         "erisim": "", "icerik": "", "metin_uzunlugu": 0, "dil": "",
         "bulunan_alanlar": "", "artefakt": "", "artefakt_dosya": "",
         "ilgili_mi": "", "http_durum": "",
+        "ilgililik": "", "ilgililik_gerekce": "", "baslik_ornegi": "",
     }
 
     runtime = OriginRuntime(origin, lease=4, live=True)
@@ -228,8 +321,14 @@ def bir_bildirimi_kos(bildirim: dict[str, str], asama: str) -> dict[str, Any]:
                 bulunan = {b["alan"] for sinif in ("urun", "teknik", "kamu")
                            for b in nb.alan_cikar(sinif, metin, "")}
                 temel["bulunan_alanlar"] = ", ".join(sorted(bulunan))
-                ilgili = _ilgili_mi(metin, bildirim.get("sorgu_metni", ""))
-                temel["ilgili_mi"] = "" if ilgili is None else ("evet" if ilgili else "hayir")
+                basliklar = baslik_ayikla(govde, mime)
+                temel["baslik_ornegi"] = " | ".join(basliklar)[:160]
+                ilgililik, ilgi_gerekce = ilgililik_uc_degerli(
+                    basliklar, metin, bildirim.get("sorgu_metni", ""))
+                temel["ilgililik"] = ilgililik
+                temel["ilgililik_gerekce"] = ilgi_gerekce
+                temel["ilgili_mi"] = {"relevant": "evet", "irrelevant": "hayir",
+                                      "uncertain": ""}[ilgililik]
 
     bulunan_kume = {a.strip() for a in temel["bulunan_alanlar"].split(",") if a.strip()}
     ilgili_deger = {"evet": True, "hayir": False, "": None}[temel["ilgili_mi"]]

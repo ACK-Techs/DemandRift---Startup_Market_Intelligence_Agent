@@ -362,6 +362,72 @@ BULGULAR: list[dict[str, str]] = [
         "fb_id": "—", "yeniden_uretim": "python3 normalize_belgeler.py --yaz",
         "commit": "bc7bf2a",
     },
+    {
+        "bulgu_id": "CG-21",
+        "baslik": "AS-02 makinesi ölçemediği alan için 'çıkarılamadı' diyordu",
+        "ne_denendi": "BT-03 bildirimindeki expected_fields `beklenen_alanlar` "
+                      "kolonuna yazıldı ve makine koşturuldu",
+        "tarih": "2026-10-01", "script": "yeniden_uret.py",
+        "once": "Üç kaynak da `alan-cikarimi`; Batuhan'ın 'tam' dediği Stack "
+                "Overflow için bile 'baslik çıkarılamadı' dedi",
+        "sonra": "Üçü de `sozlesme-disi`; makine ölçemediğini söylüyor, "
+                 "yargı vermiyor",
+        "durum": "cozuldu",
+        "kalan_sinir": "İki sözlük ayrı: bizimki pazar sinyali (fiyat, lisans), "
+                       "Batuhan'ınki belge kaydı (baslik, govde). Ortak tek isim "
+                       "`surum` ve o bile aynı şeyi anlatmıyor.",
+        "fb_id": "BT03-01, BT03-02, BT03-03",
+        "yeniden_uretim": "python3 yeniden_uret.py --asama once --yaz",
+        "commit": "—",
+    },
+    {
+        "bulgu_id": "CG-22",
+        "baslik": "İlgililik testi gevşekti; başlık kanıtı istemiyordu",
+        "ne_denendi": "Batuhan HN sonuçlarının konu uygunluğunu zayıf buldu, "
+                      "bizim test beşini de ilgili saymıştı",
+        "tarih": "2026-10-01", "script": "yeniden_uret.py",
+        "once": "4 ayırt edici kelimeden 2 eşleşme yetiyordu; uzun teknik "
+                "gövdelerde alakasız bağlamlar da sayılıyordu",
+        "sonra": "Başlık kanıtı kayıt başına ölçülüyor, çoğunluk isteniyor ve "
+                 "üçüncü sonuç var: GitHub 5/5 relevant, Stack Overflow 1/5 "
+                 "uncertain, Hacker News 0/5 uncertain",
+        "durum": "cozuldu",
+        "kalan_sinir": "`uncertain` kayıtlar makineyle kapanmaz; AS-04 insan "
+                       "etiketi kuyruğuna giriyor.",
+        "fb_id": "BT03-03",
+        "yeniden_uretim": "python3 yeniden_uret.py --asama once --yaz",
+        "commit": "—",
+    },
+    {
+        "bulgu_id": "CG-23",
+        "baslik": "Başlık ayıklama iç içe alanları da kayıt sanıyordu",
+        "ne_denendi": "GitHub /search/issues yanıtında başlık sayısı doğrulandı",
+        "tarih": "2026-10-01", "script": "yeniden_uret.py",
+        "once": "5 issue için 23 başlık (etiket/kullanıcı `name`'leri), `name` "
+                "çıkarılınca 7 (iç içe `milestone.title`) — oran bozuluyordu",
+        "sonra": "Yalnız kayıt düzeyi: 5/5",
+        "durum": "cozuldu",
+        "kalan_sinir": "Kayıt listesi anahtarı sabit listeden tanınıyor "
+                       "(items/hits/results/data); başka şemada elle eklenmeli.",
+        "fb_id": "BT03-01",
+        "yeniden_uretim": "python3 yeniden_uret.py --asama once --yaz",
+        "commit": "—",
+    },
+    {
+        "bulgu_id": "CG-24",
+        "baslik": "HN kaynak_url yorumun değil bağlanan yazının adresini veriyor",
+        "ne_denendi": "BT-03'te bildirilmeyen alanlar da tek tek sınandı",
+        "tarih": "2026-10-01", "script": "bt03_alan_analizi.py",
+        "once": "story_url 4/5 dolu ve dolu olanlar yorumun değil dış yazının "
+                "adresi — eksik değil YANLIŞ, sessizce rapora girer",
+        "sonra": "objectID 5/5 dolu; item?id=<objectID> yorumun kanonik adresi",
+        "durum": "bildirildi",
+        "kalan_sinir": "Düzeltme Batuhan'ın tarafında; SourceItemPreview "
+                       "değişikliği gerekip gerekmediği soruldu.",
+        "fb_id": "BT03-03",
+        "yeniden_uretim": "python3 bt03_alan_analizi.py --canli --yaz",
+        "commit": "—",
+    },
 ]
 
 

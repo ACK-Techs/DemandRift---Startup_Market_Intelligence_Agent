@@ -188,6 +188,10 @@ HARITA: dict[str, tuple[str, str, str]] = {
     "AS02-ONDOGRULAMA.csv": ("AS02", "cikti", "Makinenin dört sınıfı da canlı sitelerde doğru ayırdığının kanıtı (6/6)"),
     "AS02-ONDOGRULAMA-GIRDI.csv": ("AS02", "girdi", "Ön doğrulama vakaları — Batuhan'ın bildirimi DEĞİLDİR"),
     "yeniden_uret.py": ("AS02", "kod", "Aynı sorguyu yeniden üretir; erişim/içerik/alan/dil sorununu ayırır"),
+    "bt03_alan_analizi.py": ("AS02", "kod", "BT-03 bildirimi: beklenen alan API'de yok mu, çıkarım mı kaçırıyor"),
+    "BT03-ALAN-ANALIZI.csv": ("AS02", "cikti", "Her beklenen alan için API-VERIYOR / API-SAGLAMIYOR kararı ve kanıtı"),
+    "AS02-BT03-GERI-BILDIRIM.md": ("AS02", "cikti", "Batuhan'ın BT-03 bildirimine ölçümlü yanıt"),
+    "AS03-BT03-DENEMELERI.csv": ("AS03", "cikti", "Eksik/uygunsuz alanların başarısız/kısmi deneme kaydı"),
 
     # --- AS-03 ---
     "AS03-ALTERNATIF-FARKI.md": ("AS03", "belge", "Alternatifin kapanandan farkı; **arşiv güncel veri değildir**"),

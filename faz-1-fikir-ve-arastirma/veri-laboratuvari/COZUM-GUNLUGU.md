@@ -12,10 +12,10 @@ tekrar denemeye değer, birincisi aynı duvara yeniden çarpmaktır.
 
 | Bulgu durumu | Adet |
 |---|---:|
-| Çözüldü | 13 |
+| Çözüldü | 16 |
 | Kısmen çözüldü | 4 |
 | Çözülemedi (sınır kaydı) | 3 |
-| **Toplam** | **20** |
+| **Toplam** | **24** |
 
 Her bulgu bir tarihe, bir script sürümüne ve bir commit'e bağlı; her satırın
 altında Batuhan'ın çalıştırabileceği komut var.
@@ -217,6 +217,51 @@ python3 saglik_taramasi.py --canli --sinir 6
 
 ```bash
 python3 normalize_belgeler.py --yaz
+```
+
+#### CG-21 — AS-02 makinesi ölçemediği alan için 'çıkarılamadı' diyordu
+
+| | |
+|---|---|
+| **Ne denendi** | BT-03 bildirimindeki expected_fields `beklenen_alanlar` kolonuna yazıldı ve makine koşturuldu |
+| **Tarih** | 2026-10-01 · `yeniden_uret.py` · commit `—` |
+| **Önce** | Üç kaynak da `alan-cikarimi`; Batuhan'ın 'tam' dediği Stack Overflow için bile 'baslik çıkarılamadı' dedi |
+| **Sonra** | Üçü de `sozlesme-disi`; makine ölçemediğini söylüyor, yargı vermiyor |
+| **Kalan sınır** | İki sözlük ayrı: bizimki pazar sinyali (fiyat, lisans), Batuhan'ınki belge kaydı (baslik, govde). Ortak tek isim `surum` ve o bile aynı şeyi anlatmıyor. |
+| **FB-ID** | BT03-01, BT03-02, BT03-03 |
+
+```bash
+python3 yeniden_uret.py --asama once --yaz
+```
+
+#### CG-22 — İlgililik testi gevşekti; başlık kanıtı istemiyordu
+
+| | |
+|---|---|
+| **Ne denendi** | Batuhan HN sonuçlarının konu uygunluğunu zayıf buldu, bizim test beşini de ilgili saymıştı |
+| **Tarih** | 2026-10-01 · `yeniden_uret.py` · commit `—` |
+| **Önce** | 4 ayırt edici kelimeden 2 eşleşme yetiyordu; uzun teknik gövdelerde alakasız bağlamlar da sayılıyordu |
+| **Sonra** | Başlık kanıtı kayıt başına ölçülüyor, çoğunluk isteniyor ve üçüncü sonuç var: GitHub 5/5 relevant, Stack Overflow 1/5 uncertain, Hacker News 0/5 uncertain |
+| **Kalan sınır** | `uncertain` kayıtlar makineyle kapanmaz; AS-04 insan etiketi kuyruğuna giriyor. |
+| **FB-ID** | BT03-03 |
+
+```bash
+python3 yeniden_uret.py --asama once --yaz
+```
+
+#### CG-23 — Başlık ayıklama iç içe alanları da kayıt sanıyordu
+
+| | |
+|---|---|
+| **Ne denendi** | GitHub /search/issues yanıtında başlık sayısı doğrulandı |
+| **Tarih** | 2026-10-01 · `yeniden_uret.py` · commit `—` |
+| **Önce** | 5 issue için 23 başlık (etiket/kullanıcı `name`'leri), `name` çıkarılınca 7 (iç içe `milestone.title`) — oran bozuluyordu |
+| **Sonra** | Yalnız kayıt düzeyi: 5/5 |
+| **Kalan sınır** | Kayıt listesi anahtarı sabit listeden tanınıyor (items/hits/results/data); başka şemada elle eklenmeli. |
+| **FB-ID** | BT03-01 |
+
+```bash
+python3 yeniden_uret.py --asama once --yaz
 ```
 
 ## 2. Kısmen çözülenler
