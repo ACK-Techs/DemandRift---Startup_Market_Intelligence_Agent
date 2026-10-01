@@ -1,5 +1,11 @@
 # F03 canlı kaynak çalıştırma sözleşmesi
 
+Üretim geçişi: bu eski public endpoint geçerli istekte `410 preview_unavailable`
+döndürür. Hesap ve ortak bütçe kaydı olmadan canlı çağrı başlatamaz. Aşağıdaki
+sınırlı dönüşüm davranışı ağsız harness ve mock testlerinde korunur; yeni
+kimlikli collector bu eski endpoint üzerinden çalıştırılmaz. Geçersiz senaryo
+ve kaynak seçimi giriş sözleşmesinde `422` olarak reddedilir.
+
 `POST /api/v1/research/source-runs/f03`, BT-02'nin F03 denemesi için yalnız
 manifestteki izinli üç API kaynağını çağırır: GitHub, Stack Overflow ve Hacker
 News. İstek gövdesi yalnız senaryo ve bu üç kaynaktan bir alt küme içerebilir;

@@ -347,5 +347,6 @@ router = APIRouter(prefix="/api/v1/research", tags=["research-execution"])
 
 @router.post("/source-runs/f03", response_model=F03LiveRunResponse)
 async def run_f03_sources(request: F03LiveRunRequest) -> F03LiveRunResponse:
-    """Execute the fixed F03 API allowlist; accepts no URL, query, token, or secret."""
-    return await execute_f03_sources(request, artifact_store=artifact_store_from_environment())
+    """Historical preview cannot bypass account or shared-budget authorization."""
+    from app.auth_routes import ApiProblem
+    raise ApiProblem(410, "preview_unavailable", "Live sources require an authenticated research run")

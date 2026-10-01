@@ -32,11 +32,17 @@ def test_health_does_not_expose_other_environment_values(monkeypatch):
     assert set(response.json()) == {"status", "service", "revision"}
 
 
-def test_unimplemented_business_routes_are_not_advertised():
+def test_implemented_routes_are_advertised_without_placeholder_business_routes():
     with TestClient(create_app()) as client:
         assert client.post("/research", json={}).status_code == 404
         schema = client.get("/openapi.json").json()
     assert set(schema["paths"]) == {
+        "/api/v1/auth/register",
+        "/api/v1/auth/login",
+        "/api/v1/auth/logout",
+        "/api/v1/auth/session",
+        "/api/v1/projects",
+        "/api/v1/projects/{project_id}",
         "/health",
         "/api/v1/contracts",
         "/api/v1/research/categories",

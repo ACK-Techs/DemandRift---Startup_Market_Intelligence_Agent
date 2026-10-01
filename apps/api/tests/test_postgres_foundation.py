@@ -241,4 +241,4 @@ def test_migration_downgrade_and_reupgrade_only_disposable_database(postgres_dat
     command.upgrade(db["config"], "head")
     db["app"].assert_application_role()
     with db["admin"].transaction() as s:
-        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == "20261001_0003"
+        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == "20261001_0004"
