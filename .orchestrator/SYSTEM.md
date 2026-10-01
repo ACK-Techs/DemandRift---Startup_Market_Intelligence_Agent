@@ -69,6 +69,7 @@ Kullanıcı hedefi
 - Başarısız item değiştirilmez; `relations.revises` ile yeni item oluşturulur.
 - Eski başarısız gate ancak onu veya hedef teslimini `revises` ile kapsayan yeni teslimin kendi bağımsız review, verify ve integration sonuçları kabul edildiğinde çözülür. Revision zinciri geçmiş sonuçları değiştirmez. Aynı hedefin bütün gate'leri değerlendirilir; ilk geçen review diğer başarısız gate'i gizleyemez.
 - Security/architecture review ve security/test verification uzman gate türleri revision zincirinin bütün atalarından taşınır. Genel review/verify bunların yerine geçmez; aynı uzman türü yeni teslimi bağımsız kabul etmeli ve integration bu gate'i kapsamalıdır. Daha önce geçen uzman gate de değişen teslim için yeniden gerekir.
+- Aynı gate'in bağımsız tekrarında yeni review/verify item'ı eskisini `revises` ile bağlayabilir. Türü ve reviews/verifies hedef kümesi aynı kalmalı; kabul edilmiş integration hem yeni gate'i hem hedef teslimleri içermelidir. Farklı kapsam, eksik sonuç veya henüz bitmemiş integration eski başarısızlığı çözmez.
 - `pass` sonucunda bütün check'ler `passed` olmalıdır; `failed` veya `not_run` check final kabulü engeller. Henüz çalıştırılmayan zorunlu platform kontrolleri ayrı açık gate olarak izlenir.
 - Aynı çözüm için alternatif adaylar ayrı item'dır; comparison düğümü seçer.
 - Fazlar arası contract item'ları tüketicilerden önce tamamlanır.

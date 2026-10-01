@@ -175,3 +175,57 @@ test('whole-target successors inherit passed specialist requirements through all
   second[3].relations.dependsOn.push(inheritedSecurity.id);
   assert.deepEqual(qualityGateBlockers(graph, config), []);
 });
+
+test('independent retry of the same gate resolves its failed history after scoped integration', () => {
+  for (const kind of ['review', 'verify', 'security-review', 'architecture-review', 'security-verify', 'test']) {
+    const original = delivery('original-item');
+    const oldGate = specialistGate('original-item', kind, 'failed'); oldGate.id = 'failed-gate';
+    const retry = specialistGate('original-item', kind); retry.id = 'retry-gate'; retry.relations.revises = [oldGate.id];
+    const graph = run([...original, oldGate, retry]);
+    assert.ok(qualityGateBlockers(graph, config).some((blocker) => blocker.gateItemId === oldGate.id));
+    original[3].relations.integrates.push(retry.id); original[3].relations.dependsOn.push(retry.id);
+    const before = JSON.stringify(graph);
+    assert.deepEqual(qualityGateBlockers(graph, config), []);
+    assert.equal(JSON.stringify(graph), before);
+  }
+});
+
+test('gate retry must retain exact kind, target scope, independence and result', () => {
+  for (const fault of ['kind', 'scope', 'independence', 'result', 'integration-scope', 'integration-status']) {
+    const original = delivery('original-item'); original[2].status = 'failed';
+    const unrelated = delivery('unrelated-item');
+    const retry = specialistGate('original-item', 'verify'); retry.id = 'retry-gate'; retry.relations.revises = [original[2].id];
+    original[3].relations.integrates = ['original-item', retry.id]; original[3].relations.dependsOn = [original[1].id, retry.id];
+    if (fault === 'kind') retry.kind = 'test';
+    if (fault === 'scope') retry.relations.verifies = ['unrelated-item'];
+    if (fault === 'independence') retry.execution.independent = false;
+    if (fault === 'result') retry.resultRef = null;
+    if (fault === 'integration-scope') original[3].relations.integrates = [retry.id];
+    if (fault === 'integration-status') original[3].status = 'draft';
+    assert.ok(qualityGateBlockers(run([...original, ...unrelated, retry]), config).some((blocker) => blocker.gateItemId === original[2].id), fault);
+  }
+});
+
+test('transitive gate retry cannot hide retargeting or replace a whole implementation', () => {
+  for (const fault of ['retarget', 'implementation']) {
+    const original = delivery('original-item'); original[2].status = 'failed';
+    const other = delivery('other-item');
+    const first = specialistGate('other-item', 'verify', 'failed'); first.id = 'first-retry';
+    first.relations.revises = [fault === 'retarget' ? original[2].id : original[0].id];
+    const second = specialistGate('other-item', 'verify'); second.id = 'second-retry'; second.relations.revises = [first.id];
+    other[3].relations.integrates.push(second.id); other[3].relations.dependsOn.push(second.id);
+    const blockers = qualityGateBlockers(run([...original, ...other, first, second]), config);
+    assert.ok(blockers.some((blocker) => blocker.gateItemId === original[2].id), fault);
+  }
+});
+
+test('gate retry cannot use generic delivery fallback to bypass its own strict acceptance', () => {
+  for (const fault of ['independence', 'integration-scope']) {
+    const original = delivery('original-item'); original[2].status = 'failed';
+    const retryDelivery = delivery('retry-gate', [original[2].id]);
+    const retry = retryDelivery[0]; retry.kind = 'verify'; retry.execution.independent = fault !== 'independence';
+    retry.relations.verifies = ['original-item'];
+    if (fault !== 'integration-scope') retryDelivery[3].relations.integrates.push('original-item');
+    assert.ok(qualityGateBlockers(run([...original, ...retryDelivery]), config).some((blocker) => blocker.gateItemId === original[2].id), fault);
+  }
+});

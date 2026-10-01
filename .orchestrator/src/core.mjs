@@ -153,9 +153,24 @@ function acceptedReplacement(run, targetId, visiting = new Set()) {
   const next = new Set([...visiting, targetId]);
   const map = itemMap(run);
   for (const candidate of asArray(run.items).filter((item) => relation(item, 'revises').includes(targetId))) {
+    const target = map.get(targetId);
+    const isGate = [...REVIEW_KINDS, ...VERIFY_KINDS].includes(candidate.kind);
+    const sameScope = ['reviews', 'verifies'].every((key) => JSON.stringify([...relation(candidate, key)].sort()) === JSON.stringify([...relation(target, key)].sort()));
+    // Check every edge before following successors: a later retry cannot repair
+    // an intermediate retargeting or replace an implementation with one gate.
+    if (isGate && (candidate.kind !== target?.kind || !sameScope)) continue;
     const successor = acceptedReplacement(run, candidate.id, next);
     if (successor) return successor;
     if (candidate.status !== 'done' || !candidate.resultRef) continue;
+    if (isGate && candidate.execution?.independent) {
+      const targets = [...relation(candidate, 'reviews'), ...relation(candidate, 'verifies')];
+      const sameSpecialist = [...requiredSpecialistKinds(run, candidate.id)].every((kind) => kind === candidate.kind);
+      const integrated = asArray(run.items).some((item) => item.kind === 'integration' && item.status === 'done' && item.resultRef &&
+        dependenciesDone(item, map) && relation(item, 'integrates').includes(candidate.id) &&
+        targets.every((id) => map.get(id)?.status === 'done' && map.get(id)?.resultRef && relation(item, 'integrates').includes(id)));
+      if (targets.length && sameScope && sameSpecialist && integrated) return candidate;
+    }
+    if (isGate) continue;
     const gates = [
       dependentGates(run, candidate.id, 'reviews', REVIEW_KINDS),
       dependentGates(run, candidate.id, 'verifies', VERIFY_KINDS),
