@@ -123,8 +123,51 @@ function needsGates(item, config) {
     asArray(config.riskPolicy.requireVerificationAt).includes(item.risk?.level);
 }
 
-function dependentGate(run, targetId, relationName, kinds) {
-  return asArray(run.items).find((item) => kinds.includes(item.kind) && relation(item, relationName).includes(targetId));
+const REVIEW_KINDS = ['review', 'security-review', 'architecture-review'];
+const VERIFY_KINDS = ['verify', 'test', 'security-verify'];
+
+function dependentGates(run, targetId, relationName, kinds) {
+  return asArray(run.items).filter((item) => kinds.includes(item.kind) && relation(item, relationName).includes(targetId));
+}
+
+function requiredSpecialistKinds(run, targetId, visiting = new Set()) {
+  if (visiting.has(targetId)) return new Set();
+  const next = new Set([...visiting, targetId]);
+  const target = itemMap(run).get(targetId);
+  const specialist = (kind) => [...REVIEW_KINDS, ...VERIFY_KINDS].includes(kind) && !['review', 'verify'].includes(kind);
+  const required = new Set([
+    ...(specialist(target?.kind) ? [target.kind] : []),
+    ...dependentGates(run, targetId, 'reviews', REVIEW_KINDS).map((gate) => gate.kind).filter(specialist),
+    ...dependentGates(run, targetId, 'verifies', VERIFY_KINDS).map((gate) => gate.kind).filter(specialist),
+  ]);
+  for (const ancestor of relation(target, 'revises')) {
+    for (const kind of requiredSpecialistKinds(run, ancestor, next)) required.add(kind);
+  }
+  return required;
+}
+
+// A revision resolves history only after its own gates and integration pass.
+// Merely creating a revision, or recording its implementation, cannot hide failure.
+function acceptedReplacement(run, targetId, visiting = new Set()) {
+  if (visiting.has(targetId)) return null;
+  const next = new Set([...visiting, targetId]);
+  const map = itemMap(run);
+  for (const candidate of asArray(run.items).filter((item) => relation(item, 'revises').includes(targetId))) {
+    const successor = acceptedReplacement(run, candidate.id, next);
+    if (successor) return successor;
+    if (candidate.status !== 'done' || !candidate.resultRef) continue;
+    const gates = [
+      dependentGates(run, candidate.id, 'reviews', REVIEW_KINDS),
+      dependentGates(run, candidate.id, 'verifies', VERIFY_KINDS),
+    ];
+    if (gates.some((group) => !group.length || group.some((gate) => gate.status !== 'done' || !gate.resultRef || !gate.execution?.independent))) continue;
+    if ([...requiredSpecialistKinds(run, candidate.id)].some((kind) => !gates.flat().some((gate) => gate.kind === kind))) continue;
+    const integration = asArray(run.items).find((item) => item.kind === 'integration' && item.status === 'done' && item.resultRef &&
+      relation(item, 'integrates').includes(candidate.id) && dependenciesDone(item, map) &&
+      gates.flat().every((gate) => relation(item, 'dependsOn').includes(gate.id) || relation(item, 'integrates').includes(gate.id)));
+    if (integration) return candidate;
+  }
+  return null;
 }
 
 export function validateRun(run, config, catalog = null) {
@@ -153,8 +196,8 @@ export function validateRun(run, config, catalog = null) {
     }
     if (item.status === 'ready' && !dependenciesDone(item, map)) errors.push(`${item.id}: bağımlılıklar bitmeden ready.`);
     if (needsGates(item, config)) {
-      if (!dependentGate(run, item.id, 'reviews', ['review', 'security-review', 'architecture-review'])) warnings.push(`${item.id}: bağımsız review gate eksik.`);
-      if (!dependentGate(run, item.id, 'verifies', ['verify', 'test', 'security-verify'])) warnings.push(`${item.id}: verify gate eksik.`);
+      if (!dependentGates(run, item.id, 'reviews', REVIEW_KINDS).length) warnings.push(`${item.id}: bağımsız review gate eksik.`);
+      if (!dependentGates(run, item.id, 'verifies', VERIFY_KINDS).length) warnings.push(`${item.id}: verify gate eksik.`);
     }
   }
   if (hasCycle(items)) errors.push('Dependency graph cycle içeriyor.');
@@ -196,10 +239,14 @@ export function pendingApprovalBoundaries(run, item, config) {
 export function qualityGateBlockers(run, config) {
   const blockers = [];
   for (const item of asArray(run.items).filter((candidate) => needsGates(candidate, config))) {
-    const review = dependentGate(run, item.id, 'reviews', ['review', 'security-review', 'architecture-review']);
-    const verify = dependentGate(run, item.id, 'verifies', ['verify', 'test', 'security-verify']);
-    if (!review || review.status !== 'done') blockers.push({ itemId: item.id, gate: 'review', gateItemId: review?.id ?? null });
-    if (!verify || verify.status !== 'done') blockers.push({ itemId: item.id, gate: 'verify', gateItemId: verify?.id ?? null });
+    if (acceptedReplacement(run, item.id)) continue;
+    for (const [name, relationName, kinds] of [['review', 'reviews', REVIEW_KINDS], ['verify', 'verifies', VERIFY_KINDS]]) {
+      const gates = dependentGates(run, item.id, relationName, kinds);
+      if (!gates.length) blockers.push({ itemId: item.id, gate: name, gateItemId: null });
+      for (const gate of gates) if (gate.status !== 'done' && !acceptedReplacement(run, gate.id)) {
+        blockers.push({ itemId: item.id, gate: name, gateItemId: gate.id });
+      }
+    }
   }
   return blockers;
 }
@@ -287,7 +334,7 @@ export function validateResult(result, run, item, config = null) {
   const acceptance = asArray(result.acceptance); const expected = asArray(item.acceptanceCriteria);
   for (const criterion of expected) if (!acceptance.some((entry) => entry.criterion === criterion)) errors.push(`Acceptance eksik: ${criterion}`);
   if (result.outcome === 'pass' && acceptance.some((entry) => entry.status !== 'passed')) errors.push('pass için bütün acceptance kriterleri passed olmalı.');
-  if (result.outcome === 'pass' && asArray(result.checks).some((check) => check.status === 'failed')) errors.push('Başarısız check varken pass olamaz.');
+  if (result.outcome === 'pass' && asArray(result.checks).some((check) => check.status !== 'passed')) errors.push('Başarısız veya çalıştırılmamış check varken pass olamaz.');
   for (const artifact of asArray(result.artifacts)) {
     if (artifact.path && (path.isAbsolute(artifact.path) || normalizePath(artifact.path).startsWith('../'))) errors.push(`Artifact repo-relative olmalı: ${artifact.path}`);
   }

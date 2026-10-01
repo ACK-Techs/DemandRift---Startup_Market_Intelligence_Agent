@@ -2,18 +2,17 @@
 
 ## Amaç
 
-Bu dizin Faz 1–7 araştırma ve karar platformunun agent control plane'idir. Konuşma belleği yerine sürümlü run graph, append-only event geçmişi, doğrulanabilir sonuç ve bağımsız kalite kapıları kullanır.
+Bu dizin aktif üç fazlı DemandRift araştırma ve karar platformunun agent işlerini yönetir. Konuşma belleği yerine sürümlü run graph, append-only event geçmişi, doğrulanabilir sonuç ve bağımsız kalite kapıları kullanır. Eski yedi faz belgeleri tarihsel kayıttır; zorunlu mimari değildir.
 
-Bu sistem ürün runtime'ı değildir. Temporal, connector, AI Gateway veya uygulama servislerini çalıştırmaz; onları geliştirecek agent işlerini planlar, sınırlar, dispatch eder ve kabul eder.
+Bu sistem ürün runtime'ı değildir. API/worker, connector ve model adaptörünü geliştirecek agent işlerini planlar, sınırlar, dispatch eder ve kabul eder.
 
 ## Değişmez kaynak sırası
 
-1. `Ust-Yonetim-Ana-Mimari-Plani.md`
-2. `Platform-Temeli.md`
-3. İlgili `FazN-Plan.md`
-4. `.orchestrator/ARCHITECTURE.md`
-5. Aktif `runs/<run-id>/run.json`
-6. İlgili rol dosyası
+1. Kullanıcının aktif görev kapsamı ve yetkilendirmeleri
+2. `ortak/mimari-ve-kararlar.md` ve `ortak/uygulama-m1-sozlesme-kararlari.md`
+3. Aktif `faz-1-fikir-ve-arastirma`, `faz-2-veri-toplama-ve-hazirlama`, `faz-3-karar-ve-rapor` belgeleri
+4. Aktif `runs/<run-id>/run.json`, kabul sonuçları ve append-only geçmiş
+5. `.orchestrator/ARCHITECTURE.md` ve ilgili rol dosyası
 
 Tarihsel `Gerekli-Iyilestirmeler.md` çelişki halinde bağlayıcı değildir.
 
@@ -25,11 +24,11 @@ Tek graph ve ürün teslim sahibidir. Kullanıcı hedefini work item'lara böler
 
 ### Architecture Manager
 
-Faz sınırlarını, Platform Temeli'ni, contracts ve ADR'leri korur. Yeni teknoloji veya cross-cutting değişikliklerde implementasyondan önce specification/contract üretir.
+Üç faz sınırlarını, ortak mimariyi ve sözleşmeleri korur. Yeni teknoloji veya ortak davranış değişikliklerinde implementasyondan önce specification/contract üretir.
 
 ### Code Implementer
 
-Yalnız atanmış work item, input ve write scope içinde kod/test/doküman değiştirir. Mimariyi sessizce değiştirmez; eksik contract veya risk varsa blocker döndürür. Aktif run açık kullanıcı commit onayı taşıyorsa kontroller geçince write scope'unu atomik Conventional Commit ile kaydeder ve commit SHA'yı result'a ekler; push yapmaz.
+Yalnız atanmış work item, input ve write scope içinde kod/test/doküman değiştirir. Mimariyi sessizce değiştirmez; eksik contract veya risk varsa blocker döndürür. Aktif tamamlama run'ında ana agent uygular; bağımsız agent'lar review/verify yapar. Kabul edilen küçük teslimin tam dosya listesi, hashleri ve kanıtları tek Git yayıncıya checkpoint olarak gönderilir. Index/commit/push yalnız bu yayıncının sorumluluğundadır; yayıncı uygulama kodu yazmaz.
 
 ### Independent Reviewer
 
@@ -68,10 +67,13 @@ Kullanıcı hedefi
 - Her work item tek amaç, tek sorumluluk ve doğrulanabilir acceptance taşır.
 - Review, verify, revision ve integration lifecycle state değil ayrı graph item'ıdır.
 - Başarısız item değiştirilmez; `relations.revises` ile yeni item oluşturulur.
+- Eski başarısız gate ancak onu veya hedef teslimini `revises` ile kapsayan yeni teslimin kendi bağımsız review, verify ve integration sonuçları kabul edildiğinde çözülür. Revision zinciri geçmiş sonuçları değiştirmez. Aynı hedefin bütün gate'leri değerlendirilir; ilk geçen review diğer başarısız gate'i gizleyemez.
+- Security/architecture review ve security/test verification uzman gate türleri revision zincirinin bütün atalarından taşınır. Genel review/verify bunların yerine geçmez; aynı uzman türü yeni teslimi bağımsız kabul etmeli ve integration bu gate'i kapsamalıdır. Daha önce geçen uzman gate de değişen teslim için yeniden gerekir.
+- `pass` sonucunda bütün check'ler `passed` olmalıdır; `failed` veya `not_run` check final kabulü engeller. Henüz çalıştırılmayan zorunlu platform kontrolleri ayrı açık gate olarak izlenir.
 - Aynı çözüm için alternatif adaylar ayrı item'dır; comparison düğümü seçer.
 - Fazlar arası contract item'ları tüketicilerden önce tamamlanır.
-- Faz 5 ayrı acquisition implementation'ı oluşturamaz; Faz 3 runtime'ını kullanır.
-- Faz 8 için `faz8-start` kullanıcı approval boundary zorunludur.
+- Faz 3 secondary gap ayrı acquisition hattı oluşturamaz; Faz 2 hattını kalan bütçeyle kullanır. Primary validation web toplama işi değildir.
+- Aktif üç fazın dışında yeni faz kullanıcı kapsamı olmadan eklenmez. Frontend yalnız local çalışır; bu run Vercel veya başka frontend yayını yapmaz.
 
 ## Lifecycle
 
@@ -139,7 +141,7 @@ Artifact path'leri repo-relative olmalı; secret, token, cookie, PII blob veya h
 ## PM başlangıç protokolü
 
 1. `discover` çalıştır.
-2. Ana mimari, Platform Temeli ve hedef fazı oku.
+2. Ortak mimari, aktif üç faz ve hedef yol haritasını oku.
 3. Mevcut aktif run'ları ve kod durumunu kontrol et.
 4. Yeni hedef için run oluştur veya mevcut run'dan devam et.
 5. Contract-first graph kur.
@@ -148,8 +150,8 @@ Artifact path'leri repo-relative olmalı; secret, token, cookie, PII blob veya h
 8. İlk güvenli batch'i dispatch et.
 9. Sonuçları `record` ile kabul et; eksikte revision item'ı oluştur.
 10. Integration ve PM acceptance tamamlanmadan kullanıcıya bitmiş deme.
-11. Run'da commit onayı varsa her tamamlanan write item'ı atomik `type(scope): summary` commit'iyle kaydet; work item ID'sini commit body/footer'unda taşı.
-12. Ayrı push onayı varsa review, verify ve integration kabulü tamamlanan checkpoint'i üst manager olarak push et; force-push yapma.
+11. Review/verify/integration geçen küçük teslimi tek Git yayıncıya dosya/hash/kanıt checkpoint'iyle gönder; yayıncı atomik `type(scope): summary` commit gövdesinde iş kimliği ve doğrulama kanıtını taşır.
+12. Kullanıcının bu run için verdiği commit/push yetkisiyle yayıncı her commit ardından normal push yapar ve uzak SHA'yı doğrular. Ana agent bağımsız geliştirmeye devam eder; force-push yoktur.
 
 ## Resume protokolü
 
@@ -177,11 +179,11 @@ node .orchestrator/bin/orchestrator.mjs verify-system
 ## Yasaklar
 
 - Süre tahmini uğruna planlı kapsamı silmek.
-- Faz 8'i approval olmadan başlatmak.
+- Kullanıcı kapsamı dışında yeni faz başlatmak.
 - AI'a hard gate/policy/citation/budget bypass yetkisi vermek.
 - Implementer self-review'unu bağımsız gate saymak.
 - Failed item/result/event geçmişini yeniden yazmak.
 - Alt agent'ın onaysız, scope dışı, doğrulanmamış veya birbiriyle ilgisiz değişiklikleri commit etmesi.
-- Implementer veya alt agent'ın push yapması; push yalnız ayrı açık kullanıcı onayıyla kabul edilmiş integration checkpoint'inde üst manager tarafından yapılır.
+- Tek Git yayıncı dışında index/commit/push yapmak; yayıncıya doğrulanmamış veya dosya hash'i değişmiş checkpoint yayınlatmak.
 - Belirsiz commit mesajı, boş read-only commit veya force-push kullanmak.
 - Kullanıcı veya platform approval'ını manager adına uydurmak.
