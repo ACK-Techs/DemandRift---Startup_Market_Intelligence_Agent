@@ -17,3 +17,11 @@ referansı SHA-256 ve byte sayısını içerir. Yanıt boyutu 1 MiB ile sınırl
 
 Bu kalıcılık kaynaklı iddia veya karar üretmez. `success`, insan etiketi
 olmaktan ve `run-records/validate` ile denetlenmekten muaf değildir.
+
+`previews` kaynakta bulunan belge gövdesini `body` alanında taşır. Hacker News
+için `source_url`, bağlı haber URL'si değil, her zaman `objectID` ile kurulan
+kanonik `news.ycombinator.com/item?id=...` yorum/permalink adresidir.
+
+GitHub issue aramasında `surum` alanı uygulanamaz olarak işaretlenir: issue
+kaydı bir release/tag'a zorunlu olarak bağlı değildir. Release sürümü ayrı bir
+araştırma sinyali gerektiğinde ayrı kaynak planı ve endpoint ile toplanır.

@@ -54,6 +54,7 @@ class F03LiveRunRequest(BaseModel):
 
 class SourceItemPreview(BaseModel):
     title: str | None = None
+    body: str | None = None
     source_url: str | None = None
     published_at: str | None = None
     author: str | None = None
@@ -64,6 +65,8 @@ class SourceFieldEvaluation(BaseModel):
     expected_fields: list[str]
     returned_fields: list[str]
     missing_fields: list[str]
+    not_applicable_fields: list[str] = Field(default_factory=list)
+    not_applicable_reasons: dict[str, str] = Field(default_factory=dict)
 
 
 class RawArtifactReference(BaseModel):
@@ -103,6 +106,7 @@ class SourceDefinition(BaseModel):
     source_name: str
     url: str
     expected_fields: list[str]
+    not_applicable_fields: dict[str, str] = Field(default_factory=dict)
 
 
 SOURCE_DEFINITIONS = {
@@ -110,7 +114,10 @@ SOURCE_DEFINITIONS = {
         source_id="source-0017",
         source_name="GitHub",
         url="https://api.github.com/search/issues",
-        expected_fields=["baslik", "govde", "kaynak_url", "yayin_tarihi", "surum"],
+        expected_fields=["baslik", "govde", "kaynak_url", "yayin_tarihi"],
+        not_applicable_fields={
+            "surum": "GitHub issue arama kayıtları bir sürüme bağlı değildir; sürüm/release sinyali ayrı bir kaynak gerektirir."
+        },
     ),
     "source-0023": SourceDefinition(
         source_id="source-0023",
@@ -181,7 +188,7 @@ def _previews(source_id: str, payload: dict[str, Any]) -> list[SourceItemPreview
             continue
         if source_id == "source-0017":
             previews.append(SourceItemPreview(
-                title=item.get("title"), source_url=item.get("html_url"),
+                title=item.get("title"), body=item.get("body"), source_url=item.get("html_url"),
                 published_at=item.get("created_at"), tags=[label.get("name", "") for label in item.get("labels", []) if isinstance(label, dict)],
             ))
         elif source_id == "source-0023":
@@ -193,7 +200,8 @@ def _previews(source_id: str, payload: dict[str, Any]) -> list[SourceItemPreview
             object_id = item.get("objectID")
             previews.append(SourceItemPreview(
                 title=item.get("title") or item.get("story_title"),
-                source_url=item.get("url") or (f"https://news.ycombinator.com/item?id={object_id}" if object_id else None),
+                body=item.get("comment_text"),
+                source_url=f"https://news.ycombinator.com/item?id={object_id}" if object_id else None,
                 published_at=item.get("created_at"), author=item.get("author"),
             ))
     return previews
@@ -203,6 +211,8 @@ def _returned_fields(source_id: str, previews: list[SourceItemPreview]) -> list[
     fields: set[str] = set()
     if any(item.title for item in previews):
         fields.add("baslik")
+    if any(item.body for item in previews):
+        fields.add("govde")
     if any(item.source_url for item in previews):
         fields.add("kaynak_url")
     if any(item.published_at for item in previews):
@@ -215,12 +225,15 @@ def _returned_fields(source_id: str, previews: list[SourceItemPreview]) -> list[
 
 
 def _field_evaluation(source_id: str, previews: list[SourceItemPreview]) -> SourceFieldEvaluation:
-    expected = SOURCE_DEFINITIONS[source_id].expected_fields
+    source = SOURCE_DEFINITIONS[source_id]
+    expected = source.expected_fields
     returned = _returned_fields(source_id, previews)
     return SourceFieldEvaluation(
         expected_fields=expected,
         returned_fields=returned,
         missing_fields=[field for field in expected if field not in returned],
+        not_applicable_fields=list(source.not_applicable_fields),
+        not_applicable_reasons=source.not_applicable_fields,
     )
 
 
