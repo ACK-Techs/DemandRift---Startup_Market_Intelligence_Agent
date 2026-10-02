@@ -82,13 +82,14 @@ owner-bound stores and never display old private DOM during checking.
 
 ## Persistence boundary and verification
 
-Draft, body, key, CSRF capture and private responses are memory-only. They are not
-logged or stored in browser storage, navigation URLs or analytics. Same-page passive session
+Draft, body, CSRF capture and private responses are memory-only. They are not
+logged or stored in browser storage, navigation URLs or analytics. An opaque
+request UUID and its scope can use the bounded locator described below. Same-page passive session
 checks preserve this memory through matching identity verification. Leaving the
 route/project, losing or changing the session, expiry, or reloading clears it.
-Durable recovery after navigation or a full reload needs a separately designed
-opaque locator and remains an open FE-05 follow-up; this delivery does not claim
-complete FE-05 or full-reload acceptance.
+After navigation or reload, the bounded opaque locator can recover a saved
+receipt under a newly verified session. It cannot restore the draft or authorize
+a replay. This delivery does not claim complete FE-05 or live Host acceptance.
 
 Run `npm run test:preparation-mutations` with the supported Node runtime. Tests
 exercise canonical Unicode/sparse input, request capture, deduplication,
@@ -133,7 +134,7 @@ verified owner+CSRF restores the same operation. Failed, malformed or network
 GET remains paused. Logout/expiry/rotation/account change/navigation and broadcast
 purge immediately, including broadcast during pending auth reconciliation.
 Canonical private401 runs captured lineage CAS before stale-drop; malformed401,
-403/404 and transport do not globally reset auth. No token, key, body or private
+403/404 and transport do not globally reset auth. No token, body or private
 DTO is written to browser storage, navigation URLs, analytics or logs.
 
 For a revision response with Retry-After, passive suspension cancels the old
@@ -145,7 +146,82 @@ retains the original UUID and sparse body. Generation, research, owner and CSRF
 guards prevent a stale countdown from affecting another scope.
 
 Run `npm run test:brief-revisions`. Local native/browser proof uses synthetic
-responses, with desktop/mobile and passive-session recovery checks. RAM recovery
-does not survive reload/navigation; the separate opaque locator remains open.
+responses, with desktop/mobile and passive-session recovery checks. RAM drafts
+and same-body replay do not survive reload/navigation; the bounded locator below
+supports receipt-only recovery.
 This author delivery does not approve a plan, start research, run AI/provider calls,
 host the frontend, prove Hetzner behavior or close the remaining FE-05 scope.
+
+## Bounded opaque reload locator
+
+The accepted create/revise factories are adapted inside `SessionProvider` without
+changing their public APIs or SessionStore. Before an initial POST publishes
+pending, the same request UUID is stored in the tab's sessionStorage namespace
+`demandrift.preparation-receipts.v1`. Each entry contains only `v=1`, `owner_id`,
+`project_id`, `operation`, `request_key`, `research_id` and `expires_at_ms`.
+Creation has no research ID before its receipt, so that field is null; revision
+requires its existing research UUID. The deadline is a fixed 30 minutes from
+capture. At most 16 unresolved entries are allowed; they are never silently
+evicted or overwritten to make room. An unavailable/quota-blocked store refuses
+the new POST before sending it. Input, original/patch body, expected version,
+email, DTO, fingerprint, Session, token, CSRF or their hashes are never persisted.
+No locator key is placed in browser navigation URLs, analytics or application
+logs. The existing authenticated receipt API necessarily carries the UUID in
+its request path; no backend access-log behavior is changed here.
+
+After RAM loss, opaque entries stay quarantined until a canonical current Session
+verifies the same owner. Only the matching current project/research route exposes
+receipt recovery; foreign/malformed hints cannot authorize a request. The
+ordinary mutation form is gated while that unresolved hint is present. The
+recovery panel offers an explicit authenticated GET and existing-record
+navigation. It never reconstructs an idea/patch, expected version or old CSRF,
+offers resend, polls, starts a POST or generates a replacement key. If the
+original source instance and RAM body are still intact, its accepted explicit
+same-key/body replay remains available instead of the reload-only panel.
+
+Receipt404 stays unknown and preserves the same locator/deadline. Network/5xx,
+abort, malformed success or wrong operation/key/scope/nested version similarly
+remain unconfirmed. A verified200 receipt must have the exact locator identity,
+consistent brief identity/version, awaiting-user state, `versions.brief` matching
+the brief version and `versions.plan=null`; creation is version1 and revision is
+at least version2. With no body, the frontend cannot repeat its original
+field-by-field comparison: the backend's receipt repository validates its stored
+input payload/fingerprint and resulting content. Success proves the earlier
+operation, removes its persisted hint and links the actual research. It does not
+overwrite a newer reader, redraft input or claim the recorded brief is current.
+Opening that preparation reads current state. Positive Retry-After uses one RAM
+deadline; passive verification resumes its countdown without extending it or
+sending a request.
+
+Passive checks hide private DOM and abort receipt reads before the owner Fragment
+unmounts. Failed/malformed/network sessionGET remains quarantined or suspended.
+Canonical session401, logout/credential mutation, authenticated absolute expiry,
+observed owner/CSRF change and broadcast purge immediately; captured protected401
+CAS runs before stale-drop and cannot erase a newer owner/token. A late matching
+private401 also purges a suspended locator when a failed sessionGET dropped global
+CAS lineage. Cleanup detaches the locator before account invalidation so a normal
+unmount/reload preserves the opaque hint. Route change hides/aborts the previous
+view and drops source RAM; recovery can reappear only on its scoped route.
+
+TTL expiry removes the UUID and leaves a visible expired/unconfirmed state with
+existing-record navigation, without a replacement action. Expiry is not proof
+the operation failed. Reload, verification,404 and RAM replay do not renew TTL.
+Browser storage denial produces generic failures; if the browser prevents
+physical deletion, private RAM/DOM still purge and any remaining bytes must be
+revalidated before use. sessionStorage is per tab: an independent new tab or
+browser storage clearing is outside persistence acceptance. A duplicate/opener
+copy carries only a GET hint, never another tab's private body. Each tab purges
+its namespace on the existing session broadcast.
+
+No stored session/CSRF binding can prove historical token continuity through an
+unseen reload gap. A freshly verified same owner may only GET its old receipt;
+observed rotation remains a hard purge. After TTL, storage loss or a hard purge,
+another reload cannot remember the missing operation. Missing local metadata is
+never represented as absent backend state and never triggers a POST. This is a
+bounded same-tab recovery window, not indefinite exactly-once memory.
+
+Run the existing native test glob with supported Node22/25; it includes
+`tests/preparation-recovery-store.test.mjs`. Local Chrome controls use synthetic
+API responses for reload, two owners/tabs, quarantine, TTL/storage failure,
+receipt identity, hard purge and explicit recovery on desktop/mobile. They do
+not prove actual Hetzner/API behavior or the remaining full FE-05 acceptance.
