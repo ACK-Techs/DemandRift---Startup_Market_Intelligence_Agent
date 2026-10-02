@@ -69,6 +69,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build test image
         run: docker build --target test --tag demandrift-api:test apps/api
+      - name: Test infrastructure release boundaries without network access
+        run: >-
+          docker run --rm --network none --read-only
+          --tmpfs /tmp:rw,noexec,nosuid,size=64m --cap-drop ALL
+          --security-opt no-new-privileges --memory 512m --cpus 1 --pids-limit 128
+          --volume "$PWD/infra/api:/repo/infra/api:ro"
+          demandrift-api:test python -m pytest -q /repo/infra/api/tests
       - name: Run tests without network access
         run: docker run --rm --network none --read-only --tmpfs /tmp:rw,noexec,nosuid,size=64m --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 1 --pids-limit 128 demandrift-api:test
       - name: Reject generated contract drift
