@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install as the restricted build-api entrypoint only after release gates pass.
+set -Eeuo pipefail
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+export GIT_TERMINAL_PROMPT=0
+umask 077
+exec /usr/bin/python3 /usr/local/lib/demandrift/runtime_release.py "$@"
