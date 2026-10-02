@@ -83,7 +83,7 @@ owner-bound stores and never display old private DOM during checking.
 ## Persistence boundary and verification
 
 Draft, body, key, CSRF capture and private responses are memory-only. They are not
-logged or stored in browser storage, URLs or analytics. Same-page passive session
+logged or stored in browser storage, navigation URLs or analytics. Same-page passive session
 checks preserve this memory through matching identity verification. Leaving the
 route/project, losing or changing the session, expiry, or reloading clears it.
 Durable recovery after navigation or a full reload needs a separately designed
@@ -99,3 +99,53 @@ Existing contract/auth/project/preparation suites, lint, typecheck and isolated
 webpack build remain baseline checks. Local desktop/mobile browser tests use
 synthetic route responses; they are not live Hetzner or Gemini verification.
 Frontend hosting and shared canonical contracts/API/routes are outside this scope.
+
+## Latest-only human brief revision
+
+The latest brief view now offers explicit human edits. Historical selections remain
+read-only. `POST /api/v1/projects/{project}/research/{research}/briefs` sends a
+canonical sparse `HumanBriefPatch` and receives `IdeaBrief` (201 created, 200 replay).
+Only canonical fields are editable; original idea, identities, provenance claims
+and expected version are not form inputs. Omitted fields stay omitted; clearing a
+nullable text/category or constraint value sends explicit null. Constraint entries
+merge by name on the backend; an empty dictionary changes no existing entries.
+Lists retain order and exact Unicode, empty modifiers are permitted, and omitted
+languages acquire no frontend defaults. Text uses code-point validation up to
+10,000 characters without UTF-16 maxlength/truncation. Booleans stay strict.
+
+Before pending, one UUID, exact body, owner/project/research, CSRF and selected
+original/brief identity are captured. No autosave, merge, POST retry or recovery
+polling occurs. Unknown results lock edits and retain original same-key/body
+replay; `GET .../preparation-mutations/revise_brief/{key}` is explicit. Receipt404
+remains unknown. Receipts validate operation/key/scope, nested identities, original
+idea, expected+1 brief version, awaiting-user state and actually submitted values.
+A saved receipt may be historical and never overwrites a current read selection.
+
+A definitive initial409 requires “Read latest and start a new draft”: a fresh latest
+read followed by explicit discarding/redrafting. It never rewrites the existing
+expected version or merges changes. A409 during unknown replay keeps the original
+unknown capture. Switching to a historical selection hides the editor and blocks
+its actions; returning to latest retains unresolved captured input.
+
+Revision resources register with the accepted SessionStore public private-resource
+API above the owner Fragment. Passive refresh suspends/hides/aborts; matching
+verified owner+CSRF restores the same operation. Failed, malformed or network
+GET remains paused. Logout/expiry/rotation/account change/navigation and broadcast
+purge immediately, including broadcast during pending auth reconciliation.
+Canonical private401 runs captured lineage CAS before stale-drop; malformed401,
+403/404 and transport do not globally reset auth. No token, key, body or private
+DTO is written to browser storage, navigation URLs, analytics or logs.
+
+For a revision response with Retry-After, passive suspension cancels the old
+generation's countdown. Matching verified owner+CSRF resumes it against the
+original absolute deadline, including after repeated checks or a deadline that
+elapsed while hidden. Verification never restarts or extends the wait. On expiry,
+manual receipt/replay controls become available; the timer sends no request and
+retains the original UUID and sparse body. Generation, research, owner and CSRF
+guards prevent a stale countdown from affecting another scope.
+
+Run `npm run test:brief-revisions`. Local native/browser proof uses synthetic
+responses, with desktop/mobile and passive-session recovery checks. RAM recovery
+does not survive reload/navigation; the separate opaque locator remains open.
+This author delivery does not approve a plan, start research, run AI/provider calls,
+host the frontend, prove Hetzner behavior or close the remaining FE-05 scope.

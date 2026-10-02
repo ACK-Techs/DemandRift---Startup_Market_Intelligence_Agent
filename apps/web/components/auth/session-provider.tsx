@@ -4,17 +4,21 @@ import { Fragment, createContext, useContext, useEffect, useLayoutEffect, useSta
 import { usePathname } from "next/navigation";
 import { createPreparationResources } from "@/lib/preparation/preparation-mutation-store";
 import type { PreparationResources } from "@/lib/preparation/preparation-mutation-store";
+import { createBriefRevisionResources } from "@/lib/preparation/brief-revision-store";
+import type { BriefRevisionResources } from "@/lib/preparation/brief-revision-store";
 import { createSessionStore } from "@/lib/auth/session-store";
 import type { SessionStore } from "@/lib/auth/session-store";
 
 const SessionContext = createContext<SessionStore | null>(null);
 const PreparationResourcesContext = createContext<PreparationResources | null>(null);
+const BriefRevisionResourcesContext = createContext<BriefRevisionResources | null>(null);
 
 export function SessionProvider({ children }: { children: React.ReactNode }) {
   const [store] = useState(() => createSessionStore());
   const [resources] = useState(() => createPreparationResources(store));
+  const [revisions] = useState(() => createBriefRevisionResources(store));
   const pathname = usePathname();
-  useLayoutEffect(() => { resources.selectRoute(pathname); }, [pathname, resources]);
+  useLayoutEffect(() => { resources.selectRoute(pathname); revisions.selectRoute(pathname); }, [pathname, resources, revisions]);
   useEffect(() => {
     void store.refresh();
     const channel = typeof BroadcastChannel === "undefined" ? null : new BroadcastChannel("demandrift-session");
@@ -29,7 +33,7 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
       if (deferredReconcile && store.getSnapshot().pending === null) queueMicrotask(reconcile);
     });
     const receive = (event: MessageEvent) => {
-      if (event.data === "session_changed") { resources.clear(); reconcile(); }
+      if (event.data === "session_changed") { resources.clear(); revisions.clear(); reconcile(); }
     };
     const checkVisible = () => {
       if (document.visibilityState === "visible") { store.checkExpiry(); void store.refresh(); }
@@ -42,10 +46,10 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
       channel?.close();
       window.removeEventListener("focus", checkVisible);
       document.removeEventListener("visibilitychange", checkVisible);
-      resources.clear(); store.invalidate();
+      resources.clear(); revisions.clear(); store.invalidate();
     };
-  }, [store, resources]);
-  return <SessionContext.Provider value={store}><PreparationResourcesContext.Provider value={resources}><SessionContent>{children}</SessionContent></PreparationResourcesContext.Provider></SessionContext.Provider>;
+  }, [store, resources, revisions]);
+  return <SessionContext.Provider value={store}><PreparationResourcesContext.Provider value={resources}><BriefRevisionResourcesContext.Provider value={revisions}><SessionContent>{children}</SessionContent></BriefRevisionResourcesContext.Provider></PreparationResourcesContext.Provider></SessionContext.Provider>;
 }
 
 function SessionContent({ children }: { children: React.ReactNode }) {
@@ -74,4 +78,12 @@ export function announceSessionChange() {
   const channel = new BroadcastChannel("demandrift-session");
   channel.postMessage("session_changed");
   channel.close();
+}
+
+export function useBriefRevisionResource(projectId: string, researchId: string) {
+  const resources = useContext(BriefRevisionResourcesContext);
+  const pathname = usePathname();
+  if (!resources) throw new Error("SessionProvider is required");
+  const [store] = useState(() => resources.acquire(pathname, projectId, researchId));
+  return store;
 }

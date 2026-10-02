@@ -12,7 +12,8 @@
     "test:auth": "node --experimental-strip-types --test tests/session-store.test.mjs",
     "test:projects": "node --experimental-strip-types --test tests/project-store.test.mjs",
     "test:preparation": "node --experimental-strip-types --test tests/preparation-store.test.mjs",
-    "test:preparation-mutations": "node --experimental-strip-types --test tests/preparation-mutation-store.test.mjs"
+    "test:preparation-mutations": "node --experimental-strip-types --test tests/preparation-mutation-store.test.mjs",
+    "test:brief-revisions": "node --experimental-strip-types --test tests/brief-revision-store.test.mjs"
   },
   "dependencies": {
     "ajv": "8.20.0",
