@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test:contracts": "node --experimental-strip-types --test tests/api-client.test.mjs",
     "test:auth": "node --experimental-strip-types --test tests/session-store.test.mjs",
-    "test:projects": "node --experimental-strip-types --test tests/project-store.test.mjs"
+    "test:projects": "node --experimental-strip-types --test tests/project-store.test.mjs",
+    "test:preparation": "node --experimental-strip-types --test tests/preparation-store.test.mjs"
   },
   "dependencies": {
     "ajv": "8.20.0",
