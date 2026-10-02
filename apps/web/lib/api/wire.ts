@@ -37,14 +37,14 @@ const ajv = new Ajv2020({ strict: true, coerceTypes: false, useDefaults: false,
   removeAdditional: false, allErrors: false });
 addFormats(ajv);
 const preparationModels = new Set<ModelName>(["ResearchCreate", "HumanBriefPatch", "BriefReference", "ResearchPreparation",
-  "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt"]);
+  "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt", "IdeaBrief"]);
 // Rust regex uses Unicode White_Space: NEL is whitespace; BOM and C0 U001C–1F are not.
 const rustNonSpace = /[^\u0009-\u000D\u0020\u0085\u00A0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/u;
 const preparationRegExp = Object.assign((pattern: string, flags: string) =>
   new RegExp(pattern === "\\S" ? rustNonSpace.source : pattern, flags), {
   code: `(pattern, flags) => new RegExp(pattern === ${JSON.stringify("\\S")} ? ${JSON.stringify(rustNonSpace.source)} : pattern, flags)`,
 });
-// Interpret the original schema with its producer's regex semantics only for new preparation roots.
+// Single briefs and their preparation envelopes must interpret the same producer schema equally.
 const preparationAjv = new Ajv2020({ strict: true, coerceTypes: false, useDefaults: false,
   removeAdditional: false, allErrors: false, code: { regExp: preparationRegExp } });
 addFormats(preparationAjv);

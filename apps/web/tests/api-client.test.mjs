@@ -93,7 +93,7 @@ test("new preparation roots distinguish Rust White_Space from Python strip C0 an
   for (const [name, expected] of [["🙂".repeat(128), true], ["🙂".repeat(129), false], ["\uFEFF".repeat(128), true], ["\uFEFF".repeat(129), false]]) {
     assert.equal(parseWire("HumanBriefPatch", JSON.stringify({ expected_brief_version: 1, constraints: { [name]: null } })).ok, expected);
   }
-  // R1's regex engine is intentionally limited to the seven new preparation roots.
+  // Other legacy roots retain their existing behavior; single IdeaBrief joins preparation envelopes.
   assert.equal(parseWire("BriefContent", JSON.stringify({ ...brief, original_idea: "\u0085" })).ok, true);
   assert.equal(parseWire("BriefContent", JSON.stringify({ ...brief, original_idea: "\uFEFF" })).ok, false);
 });
@@ -124,6 +124,59 @@ test("new preparation roots reject escaped lone surrogates while preserving vali
   }
   const raw = '{"original_idea":"\\ud800\\udfff"}', result = parseWire("ResearchCreate", raw);
   assert.equal(result.ok, true); assert.equal(result.raw, raw); assert.equal(result.data.original_idea, "\uD800\uDFFF");
+});
+
+test("single IdeaBrief and history use identical producer whitespace for content, provenance and dictionary names", () => {
+  for (const [token, valid] of [["\uFEFF", true], ["\u0085", false], ["\u001C", true], ["🙂", true]]) {
+    for (const field of ["original_idea", "target_user", "constraint_name", "connector_name"]) {
+      const value = preparationBrief();
+      if (field === "original_idea") value.content.original_idea = token;
+      if (field === "target_user") value.content.target_user = { ...brief.target_user, value: token };
+      if (field === "constraint_name") value.content.constraints = { [token]: { ...brief.target_user } };
+      if (field === "connector_name") value.versions.connectors = { [token]: "connector-v1" };
+      const page = { schema_version: "1.0.0", items: [value], page: { limit: 25, next_cursor: null } };
+      for (const [model, body] of [["IdeaBrief", value], ["BriefPage", page]]) {
+        const raw = JSON.stringify(body), result = parseWire(model, raw, preparationScope);
+        assert.equal(result.ok, valid, `${model} ${field} U${token.codePointAt(0).toString(16)}`);
+        assert.equal(result.raw, raw);
+        if (result.ok) assert.deepEqual(result.data, body);
+      }
+    }
+  }
+});
+
+test("single IdeaBrief scalar and code-point limits preserve valid pairs and reject lone surrogate values or names", () => {
+  for (const token of ["\uD800", "\uDFFF", "X\uD800"]) {
+    for (const field of ["original_idea", "constraint_name"]) {
+      const value = preparationBrief();
+      if (field === "original_idea") value.content.original_idea = token;
+      else value.content.constraints = { [token]: { ...brief.target_user } };
+      const raw = JSON.stringify(value), result = parseWire("IdeaBrief", raw);
+      assert.equal(result.reason, "schema_mismatch"); assert.equal(result.raw, raw);
+    }
+  }
+  for (const [token, valid] of [["🙂".repeat(10000), true], ["🙂".repeat(10001), false], ["\uD800\uDFFF", true]]) {
+    const value = preparationBrief(); value.content.original_idea = token;
+    const raw = JSON.stringify(value), result = parseWire("IdeaBrief", raw, preparationScope);
+    assert.equal(result.ok, valid); assert.equal(result.raw, raw);
+    if (result.ok) assert.equal(result.data.content.original_idea, token);
+  }
+});
+
+test("latest and exact historical GETs retain canonical BOM briefs and continue to reject foreign tenant scope", async () => {
+  for (const field of ["original_idea", "target_user"]) {
+    const value = preparationBrief();
+    if (field === "original_idea") value.content.original_idea = "\uFEFF";
+    else value.content.target_user = { ...brief.target_user, value: "\uFEFF" };
+    for (const tail of ["briefs/latest", `briefs/${preparationBriefId}/versions/1`]) {
+      const calls = [], path = `/api/v1/projects/${preparationProject}/research/${preparationResearch}/${tail}`;
+      const client = createApiClient(async (url, init) => { calls.push([url, init]); return json(value); });
+      const result = await client.request("IdeaBrief", path, { scope: preparationScope });
+      assert.equal(result.ok, true); assert.deepEqual(result.data, value); assert.equal(result.raw, JSON.stringify(value));
+      assert.equal(calls.length, 1); assert.equal(calls[0][1].method, "GET");
+      assert.equal((await client.request("IdeaBrief", path, { scope: { ...preparationScope, user_id: other } })).category, "contract");
+    }
+  }
 });
 
 test("HumanBriefPatch preserves sparse edit/null intent and mirrors genuine Python edit/list/name validators", () => {
