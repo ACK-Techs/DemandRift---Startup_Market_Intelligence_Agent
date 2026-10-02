@@ -34,8 +34,13 @@ recovery consumer restart sonrasında mevcut dispatched/held/settled/overrun
 attempt'i doğrular; missing/reserved attempt için yeni admission açmaz ve HTTP
 göndermez. Ducktyped offline fixture spool accounting'i taklit edemez.
 
-Live enablement açıkça reddedilir: runtime wiring ve canlı provider-format
-kabul kapıları ayrıca tamamlanmalıdır. Native recovery testlerindeki HTTP yanıtları
+Generic constructor live enablement'i reddeder. Ayrı trusted native runtime
+factory aynı scope'ta açık server konfigürasyonuyla çalışır; default/absent provider
+kapalıdır. Lazy bounded private FILE okuması native remaining→fresh dispatch
+sırasını korur. Historical complete output recovery key/HTTP olmadan native
+COMMIT→ACK→validation yapar. Production router wiring ve gerçek chosen-provider
+format kabulü ayrı açık kapılardır; ilk kabul çağrısı için önceden live-PASS aranmaz.
+Native recovery testlerindeki HTTP yanıtları
 sentetiktir; fixture suite gerçek kullanıcının ortak canlı bütçesi değildir.
 MockTransport fiziksel ağ yapamaz. Native gerçek producer ile mocked HTTP kanıtı
 ayrı integration gate'tir; ducktyped offline fixture ledger native DB kanıtı

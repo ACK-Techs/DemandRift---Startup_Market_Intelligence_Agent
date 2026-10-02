@@ -145,6 +145,16 @@ def test_offline_fixture_cannot_impersonate_native_spool_accounting(tmp_path):
                           runtime_secret=SECRET, receipt_spool=spool)
 
 
+def test_internal_runtime_factory_cannot_enable_a_fixture_ledger(tmp_path):
+    from app.receipt_spool import ReceiptSpool
+    ledger = FixtureLedger()
+    with ReceiptSpool(tmp_path.resolve() / "spool") as spool:
+        with pytest.raises(GatewayConfigurationError):
+            GeminiGateway._native_runtime(ledger, ledger, GeminiPolicy("developer"),
+                GeminiTransport(live_enabled=True), spool, enabled=True)
+    assert ledger.calls == [] and not ledger.states
+
+
 def test_known_usage_commits_before_output_validation_and_counts_both_payloads():
     gateway, ledger, calls = fixture()
     result = asyncio.run(generate(gateway, model=ObservedAnswer))
