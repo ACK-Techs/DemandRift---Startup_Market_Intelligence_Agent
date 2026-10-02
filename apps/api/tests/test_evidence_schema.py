@@ -47,7 +47,7 @@ def test_nonempty_native_graph_exact_history_fresh_connections_and_owner_rls(gra
             flags = session.execute(text('SELECT relrowsecurity,relforcerowsecurity FROM pg_class WHERE oid=to_regclass(:table)'), {'table': 'public.'+table.name}).one()
             assert tuple(flags) == (True, True)
         # Evidence graph functions stay invoker-only. Only the budget RPC and
-        # trigger-bound job journal/outbox writer may hold privileged writes.
+        # trigger-bound job journal/outbox writer and coupled admission RPC hold privileged writes.
         privileged = session.execute(text("""
             SELECT proname, oidvectortypes(proargtypes), proconfig
             FROM pg_proc JOIN pg_namespace n ON n.oid=pronamespace
@@ -57,7 +57,10 @@ def test_nonempty_native_graph_exact_history_fresh_connections_and_owner_rls(gra
         assert privileged == [("demandrift_budget_operate",
             "text, uuid, uuid, uuid, uuid, uuid, text, jsonb, jsonb, jsonb, jsonb",
             ["search_path=pg_catalog, pg_temp"]),
-            ("demandrift_job_append", "", ["search_path=pg_catalog, pg_temp"])]
+            ("demandrift_job_append", "", ["search_path=pg_catalog, pg_temp"]),
+            ("demandrift_job_budget_operate",
+             "text, uuid, uuid, uuid, uuid, uuid, text, jsonb, jsonb, jsonb, integer",
+             ["search_path=pg_catalog, pg_temp"])]
 
 
 def persist_bundle_sql(session, scope, data, payload):

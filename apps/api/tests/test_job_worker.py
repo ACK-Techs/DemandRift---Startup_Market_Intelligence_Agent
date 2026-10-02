@@ -1,5 +1,7 @@
 """Actual Celery subprocess loss/restart and owned queue-loss recovery, on PG."""
 
+from app.job_budget_contract import AdmissionContext
+from native_budget_dispatch import dispatch as dispatch_budget_attempt
 from contextlib import contextmanager
 import multiprocessing
 import os
@@ -289,7 +291,8 @@ def test_unknown_provider_attempt_blocks_worker_recovery_and_redrive(
         budget, attempt = budget_for_job(
             postgres_database, repo, repo.get(job.research_id, "run", job.research_id)
         )
-        assert budget.dispatch(attempt.attempt_id).dispatch_permitted
+        assert dispatch_budget_attempt(budget, attempt.attempt_id, context=AdmissionContext(
+            "job", job.brief_id, job.brief_version, job.job_id, token.owner, token.fence)).dispatch_permitted
         budget.mark_unknown(attempt.attempt_id)
         time.sleep(1.05)
         entered = []
@@ -312,7 +315,7 @@ def test_unknown_provider_attempt_blocks_worker_recovery_and_redrive(
         assert sender.redrive_sent(message) == "not_permitted"
         assert (
             budget.snapshot()["held"]["requests"] == 1
-            and not budget.dispatch(attempt.attempt_id).dispatch_permitted
+            and not dispatch_budget_attempt(budget, attempt.attempt_id).dispatch_permitted
         )
     finally:
         application.close()

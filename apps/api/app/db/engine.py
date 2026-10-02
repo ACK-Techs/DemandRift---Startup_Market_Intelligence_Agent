@@ -99,7 +99,12 @@ class Database:
                   OR EXISTS (
                     SELECT 1 FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
                     CROSS JOIN pg_roles r
-                    WHERE n.nspname='public' AND p.proname='demandrift_preparation_mutation_guard'
+                    WHERE n.nspname='public' AND p.proname IN (
+                        'demandrift_preparation_mutation_guard',
+                        'demandrift_job_budget_guard',
+                        'demandrift_job_budget_current',
+                        'demandrift_job_budget_receipt'
+                    )
                       AND (pg_has_role(current_user,r.oid,'MEMBER')
                            OR pg_has_role(session_user,r.oid,'MEMBER'))
                       AND has_function_privilege(r.oid,p.oid,'EXECUTE')

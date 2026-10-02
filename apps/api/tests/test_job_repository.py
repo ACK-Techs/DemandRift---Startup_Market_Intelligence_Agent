@@ -13,6 +13,8 @@ from sqlalchemy.exc import DBAPIError
 from app import contracts as wire
 from app.db import job_models as tables
 from app.db.budget_repository import BudgetRepository
+from app.job_budget_contract import AdmissionContext
+from native_budget_dispatch import dispatch as dispatch_budget_attempt
 from app.db import budget_models
 from app.budget_contract import BudgetCapacity, ResourceAmount
 from app.db.engine import Database
@@ -265,7 +267,8 @@ def test_unknown_budget_attempt_holds_recovery_until_known_settlement(postgres_d
     _, token = claim(repo, job, seconds=1)
     repo.advance(run.research_id, job.job_id, token, 4)
     budget, attempt = budget_for_job(db, repo, run)
-    assert budget.dispatch(attempt.attempt_id).dispatch_permitted
+    assert dispatch_budget_attempt(budget, attempt.attempt_id, context=AdmissionContext(
+        "job", job.brief_id, job.brief_version, job.job_id, token.owner, token.fence)).dispatch_permitted
     budget.mark_unknown(attempt.attempt_id)
     with pytest.raises(JobConflict):
         repo.finish(run.research_id, job.job_id, token, succeeded=True)
@@ -274,7 +277,7 @@ def test_unknown_budget_attempt_holds_recovery_until_known_settlement(postgres_d
     assert held.state == "held_unknown" and held.checkpoint == 4 and held.attempts == 1
     assert not repo.claim(run.research_id, job.job_id, uuid4()).permitted
     assert not repo.recover(run.research_id, job.job_id).permitted
-    assert not budget.dispatch(attempt.attempt_id).dispatch_permitted
+    assert not dispatch_budget_attempt(budget, attempt.attempt_id).dispatch_permitted
     assert budget.snapshot()["held"]["requests"] == 1
     budget.settle(attempt.attempt_id, ResourceAmount(requests=1, tokens=80),
         dict(response_id="offline-known", model_version="offline", usage_version="offline-v1"))
@@ -287,14 +290,15 @@ def test_unknown_budget_attempt_holds_recovery_until_known_settlement(postgres_d
 def test_cancellation_never_releases_unknown_budget_hold(postgres_database):
     db = postgres_database
     repo, run, _, job, _ = enqueue(db)
-    claim(repo, job)
+    _, token = claim(repo, job)
     budget, attempt = budget_for_job(db, repo, run)
-    budget.dispatch(attempt.attempt_id)
+    dispatch_budget_attempt(budget, attempt.attempt_id, context=AdmissionContext(
+        "job", job.brief_id, job.brief_version, job.job_id, token.owner, token.fence))
     budget.mark_unknown(attempt.attempt_id)
     repo.cancel(run.research_id, job.job_id)
     assert repo.get_job(run.research_id, job.job_id).state == "cancelled"
     assert budget.snapshot()["held"]["requests"] == 1
-    assert not budget.dispatch(attempt.attempt_id).dispatch_permitted
+    assert not dispatch_budget_attempt(budget, attempt.attempt_id).dispatch_permitted
 
 
 def test_waiting_worker_checks_fresh_clock_after_job_lock(postgres_database):

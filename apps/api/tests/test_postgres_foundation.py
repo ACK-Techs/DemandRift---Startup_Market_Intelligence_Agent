@@ -10,6 +10,7 @@ from sqlalchemy.exc import DBAPIError, IntegrityError
 
 from app.contracts import BriefContent, IdeaBrief, ResearchPlan
 from app.db.engine import DatabaseConfigurationError
+from app.db.migration_head import REQUIRED_MIGRATION
 from app.db.models import ApprovalRecord, BriefRecord, PlanRecord, PlannedQueryRecord, PlannedSourceRecord, ProjectRecord, ResearchRecord, TENANT_TABLES, UserRecord
 
 pytestmark = pytest.mark.postgres
@@ -241,4 +242,4 @@ def test_migration_downgrade_and_reupgrade_only_disposable_database(postgres_dat
     command.upgrade(db["config"], "head")
     db["app"].assert_application_role()
     with db["admin"].transaction() as s:
-        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == "20261002_0007"
+        assert s.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == REQUIRED_MIGRATION

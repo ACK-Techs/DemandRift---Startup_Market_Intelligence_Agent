@@ -15,7 +15,9 @@ from app.db.budget_repository import BudgetRepository, BudgetConflict, BudgetExh
 from app.db.engine import Database
 from app.db.preparation_repository import RecordNotFound
 from test_budget_contract import approved_limits
-from test_postgres_foundation import seed
+from test_postgres_foundation import seed, brief, brief_record
+from native_budget_dispatch import dispatch as dispatch_budget_attempt
+from app.db.migration_head import REQUIRED_MIGRATION
 
 pytestmark = pytest.mark.postgres
 META = {
@@ -37,6 +39,11 @@ FINGERPRINT = "a" * 64
 
 def setup_ledger(db, *, capacity=None):
     users, projects, researches = seed(db["admin"])
+    # Head008 preparation admission requires real immutable briefs even for
+    # these historic offline accounting controls. No native dispatch bypass.
+    with db["admin"].transaction() as session:
+        for index, research in enumerate(researches):
+            session.add(brief_record(brief(users[1] if index == 2 else users[0], projects[index], research)))
     capacity = capacity or BudgetCapacity.from_wire(approved_limits())
     suite = uuid4()
     with db["admin"].transaction() as s:
@@ -93,17 +100,17 @@ def test_live_clock_begins_only_once_at_first_committed_dispatch(postgres_databa
         suite_snapshot(db, suite)["started_at"] is None
         and repo.snapshot()["started_at"] is None
     )
-    assert repo.dispatch(first.attempt_id).dispatch_permitted
+    assert dispatch_budget_attempt(repo, first.attempt_id).dispatch_permitted
     started = suite_snapshot(db, suite)["started_at"]
     assert started is not None
-    assert not repo.dispatch(first.attempt_id).dispatch_permitted
+    assert not dispatch_budget_attempt(repo, first.attempt_id).dispatch_permitted
     repo.settle(
         first.attempt_id,
         ResourceAmount(requests=1, tokens=1, cost_picousd=250000),
         RECEIPT,
     )
     second = reserve(repos[2])
-    assert repos[2].dispatch(second.attempt_id).dispatch_permitted
+    assert dispatch_budget_attempt(repos[2], second.attempt_id).dispatch_permitted
     assert suite_snapshot(db, suite)["started_at"] == started
     row = repo.snapshot()
     assert row["spent"]["requests"] == 1 and row["spent"]["cost_picousd"] == 250000
@@ -149,7 +156,7 @@ def test_global_limit_is_enforced_even_when_other_tenant_usage_is_hidden(
         )
         first = ResourceAmount(requests=1)
     receipt = reserve(repos[0], first)
-    repos[0].dispatch(receipt.attempt_id)
+    dispatch_budget_attempt(repos[0], receipt.attempt_id)
     repos[0].settle(receipt.attempt_id, first, RECEIPT)
     extra = ResourceAmount(**{"requests": 1, dimension: 1})
     with pytest.raises(BudgetExhausted):
@@ -184,7 +191,7 @@ def test_concurrent_duplicate_delivery_reserves_and_dispatches_once(postgres_dat
 
         def dispatch(_):
             barrier.wait(timeout=10)
-            return repo.dispatch(attempt)
+            return dispatch_budget_attempt(repo, attempt)
 
         with ThreadPoolExecutor(max_workers=6) as pool:
             sent = list(pool.map(dispatch, range(6)))
@@ -253,7 +260,7 @@ def test_conflicting_replay_and_unauthorized_scope_do_not_touch_counters(
         ),
     ]:
         with pytest.raises(RecordNotFound):
-            other.dispatch(first.attempt_id)
+            dispatch_budget_attempt(other, first.attempt_id)
     assert suite_snapshot(db, suite)["held"]["requests"] == 1
     with db["app"].transaction(repos[2].user_id) as s:
         assert (
@@ -274,10 +281,10 @@ def test_unknown_outcome_holds_capacity_across_new_connection_and_cancellation(
     repo = repos[0]
     amount = ResourceAmount(requests=1, tokens=120, cost_picousd=1000000)
     first = reserve(repo, amount)
-    repo.dispatch(first.attempt_id)
+    dispatch_budget_attempt(repo, first.attempt_id)
     assert repo.mark_unknown(first.attempt_id).state == "held_unknown"
     second = reserve(repos[2])
-    repos[2].dispatch(second.attempt_id)
+    dispatch_budget_attempt(repos[2], second.attempt_id)
     repo.cancel_account()
     assert repo.cancel_attempt(first.attempt_id).state == "held_unknown"
     repo.create_account(
@@ -289,7 +296,7 @@ def test_unknown_outcome_holds_capacity_across_new_connection_and_cancellation(
         recovered = BudgetRepository(
             fresh, suite, repo.user_id, repo.project_id, repo.research_id
         )
-        assert not recovered.dispatch(first.attempt_id).dispatch_permitted
+        assert not dispatch_budget_attempt(recovered, first.attempt_id).dispatch_permitted
         assert (
             recovered.snapshot()["held"] == amount.to_json()
             and recovered.snapshot()["active"] == 1
@@ -317,11 +324,11 @@ def test_cancel_refunds_only_unsent_attempts_and_is_idempotent(postgres_database
     repo = repos[0]
     sent = reserve(repo)
     pending = reserve(repo)
-    repo.dispatch(sent.attempt_id)
+    dispatch_budget_attempt(repo, sent.attempt_id)
     repo.cancel_account()
     repo.cancel_account()
     assert repo.cancel_attempt(pending.attempt_id).state == "cancelled"
-    assert not repo.dispatch(pending.attempt_id).dispatch_permitted
+    assert not dispatch_budget_attempt(repo, pending.attempt_id).dispatch_permitted
     assert (
         repo.snapshot()["held"]["requests"] == 1
         and suite_snapshot(db, suite)["active"] == 1
@@ -341,7 +348,7 @@ def test_actual_overrun_is_durable_then_closes_global_admission(postgres_databas
     suite, repos, _ = setup_ledger(db)
     repo = repos[0]
     attempt = reserve(repo, ResourceAmount(requests=1, tokens=1))
-    repo.dispatch(attempt.attempt_id)
+    dispatch_budget_attempt(repo, attempt.attempt_id)
     actual = ResourceAmount(requests=1, tokens=2, cost_picousd=1)
     assert repo.settle(attempt.attempt_id, actual, RECEIPT).state == "overrun"
     assert repo.settle(attempt.attempt_id, actual, RECEIPT).state == "overrun"
@@ -415,7 +422,7 @@ def test_policy_start_and_spent_are_immutable_even_for_accidental_operator_updat
     suite, repos, capacity = setup_ledger(db)
     repo = repos[0]
     attempt = reserve(repo)
-    repo.dispatch(attempt.attempt_id)
+    dispatch_budget_attempt(repo, attempt.attempt_id)
     repo.settle(attempt.attempt_id, ResourceAmount(requests=1), RECEIPT)
     for sql in [
         "UPDATE public.budget_suites SET concurrency=8",
@@ -444,7 +451,7 @@ def test_waiting_dispatch_checks_fresh_clock_after_lock_crosses_deadline(
     repo = repos[0]
     first = reserve(repo)
     second = reserve(repos[2])
-    repo.dispatch(first.attempt_id)
+    dispatch_budget_attempt(repo, first.attempt_id)
     ready = Event()
     release = Event()
     attempted = Event()
@@ -461,7 +468,7 @@ def test_waiting_dispatch_checks_fresh_clock_after_lock_crosses_deadline(
 
     def dispatch():
         attempted.set()
-        return repos[2].dispatch(second.attempt_id)
+        return dispatch_budget_attempt(repos[2], second.attempt_id)
 
     with ThreadPoolExecutor(max_workers=2) as pool:
         holding = pool.submit(hold)
@@ -477,7 +484,7 @@ def test_waiting_dispatch_checks_fresh_clock_after_lock_crosses_deadline(
         with pytest.raises(BudgetExhausted):
             waiting.result(timeout=4)
     assert suite_snapshot(db, suite)["active"] == 2
-    assert not repo.dispatch(first.attempt_id).dispatch_permitted
+    assert not dispatch_budget_attempt(repo, first.attempt_id).dispatch_permitted
 
 
 def test_explicit_database_head_and_disposable_roundtrip_cover_new_tables(
@@ -488,7 +495,7 @@ def test_explicit_database_head_and_disposable_roundtrip_cover_new_tables(
     with db["admin"].transaction() as s:
         assert (
             s.scalar(text("SELECT version_num FROM public.alembic_version"))
-            == "20261002_0007"
+            == REQUIRED_MIGRATION
         )
     command.downgrade(db["config"], "20261001_0004")
     with db["admin"].transaction() as s:
@@ -543,7 +550,7 @@ def test_missing_version_or_empty_receipt_does_not_free_a_dispatched_hold(
             repo.reserve(uuid4(), FINGERPRINT, ResourceAmount(requests=1), bad)
     assert suite_snapshot(db, suite)["active"] == 0
     receipt = reserve(repo)
-    repo.dispatch(receipt.attempt_id)
+    dispatch_budget_attempt(repo, receipt.attempt_id)
     with pytest.raises(BudgetConflict):
         repo.settle(
             receipt.attempt_id,
@@ -568,7 +575,7 @@ def test_unknown_budget_is_recovered_by_a_separate_python_process(postgres_datab
     repo = repos[0]
     amount = ResourceAmount(requests=1, tokens=100, cost_picousd=500000)
     attempt = reserve(repo, amount)
-    repo.dispatch(attempt.attempt_id)
+    dispatch_budget_attempt(repo, attempt.attempt_id)
     repo.mark_unknown(attempt.attempt_id)
     code = """import json,os,sys
 from uuid import UUID
@@ -641,12 +648,12 @@ def test_extreme_measured_overrun_preserves_truth_beyond_bigint_aggregate(
     suite, repos, _ = setup_ledger(db)
     repo = repos[0]
     first = reserve(repo)
-    second = reserve(repo)
-    repo.dispatch(first.attempt_id)
-    repo.dispatch(second.attempt_id)
+    second = reserve(repos[1])
+    dispatch_budget_attempt(repo, first.attempt_id)
+    dispatch_budget_attempt(repos[1], second.attempt_id)
     actual = ResourceAmount(requests=1, tokens=MAX_COUNTER)
     assert repo.settle(first.attempt_id, actual, RECEIPT).state == "overrun"
-    assert repo.settle(second.attempt_id, actual, RECEIPT).state == "overrun"
+    assert repos[1].settle(second.attempt_id, actual, RECEIPT).state == "overrun"
     row = suite_snapshot(db, suite)
     assert row["closed"] and row["spent"]["tokens"] == 2 * MAX_COUNTER
     assert row["spent"]["requests"] == 2 and row["active"] == 0
@@ -823,7 +830,7 @@ def test_blank_receipt_cannot_settle_or_release_unknown_capacity(
     suite, repos, _ = setup_ledger(db)
     repo = repos[0]
     attempt = reserve(repo)
-    repo.dispatch(attempt.attempt_id)
+    dispatch_budget_attempt(repo, attempt.attempt_id)
     repo.mark_unknown(attempt.attempt_id)
     with pytest.raises(BudgetConflict):
         repo.settle(

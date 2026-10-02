@@ -101,6 +101,14 @@ attempts = Table(
     Column("input_fingerprint", Text, nullable=False),
     Column("metadata", JSONB, nullable=False),
     Column("reserved", JSONB, nullable=False),
+    Column("admission_kind", Text),
+    identity("brief_id", nullable=True),
+    Column("brief_version", Integer),
+    identity("job_id", nullable=True),
+    Column("job_fence", BigInteger),
+    identity("job_lease_owner", nullable=True),
+    Column("dispatch_deadline_at", DateTime(timezone=True)),
+    Column("model_timeout_ms", Integer),
     Column("actual", JSONB),
     Column("receipt", JSONB),
     Column("state", Text, nullable=False),
@@ -118,6 +126,26 @@ attempts = Table(
         ondelete="RESTRICT",
     ),
     UniqueConstraint("suite_id", *SCOPE, "attempt_id"),
+    ForeignKeyConstraint(
+        [*SCOPE, "brief_id", "brief_version"],
+        ["idea_briefs." + n for n in [*SCOPE, "brief_id", "brief_version"]],
+        ondelete="RESTRICT",
+    ),
+    ForeignKeyConstraint(
+        [*SCOPE, "job_id"],
+        ["research_jobs." + n for n in [*SCOPE, "job_id"]],
+        ondelete="RESTRICT",
+    ),
+    CheckConstraint(
+        "COALESCE(((admission_kind IS NULL AND brief_id IS NULL AND brief_version IS NULL AND "
+        "job_id IS NULL AND job_fence IS NULL AND job_lease_owner IS NULL AND "
+        "dispatch_deadline_at IS NULL AND model_timeout_ms IS NULL) OR "
+        "(admission_kind IN ('preparation','job') AND brief_id IS NOT NULL AND brief_version>0 AND "
+        "dispatch_deadline_at IS NOT NULL AND model_timeout_ms BETWEEN 1 AND 60000 AND "
+        "((admission_kind='preparation' AND job_id IS NULL AND job_fence IS NULL AND job_lease_owner IS NULL) OR "
+        "(admission_kind='job' AND job_id IS NOT NULL AND job_fence>0 AND job_lease_owner IS NOT NULL)))),false)",
+        name="attempt_binding",
+    ),
     CheckConstraint("input_fingerprint ~ '^[0-9a-f]{64}$'", name="attempt_fingerprint"),
     CheckConstraint(
         "public.demandrift_budget_amount_valid(reserved,true) AND reserved->>'requests'='1'",
