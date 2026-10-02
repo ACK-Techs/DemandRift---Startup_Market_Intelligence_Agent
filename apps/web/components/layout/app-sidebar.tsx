@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { AccountStatus } from "@/components/auth/account-status";
 import { BrandMark } from "@/components/ui/brand-mark";
 import { useEffect, useRef, useState } from "react";
 
@@ -61,7 +62,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
         <NavigationGroup items={workspaceNavigation} title="Workspace" onNavigate={onClose} />
         <div className="mt-auto space-y-1 border-t border-[var(--line)] pt-4">
           {[{ label: "Settings", icon: Settings, href: "/settings" }, { label: "Help", icon: CircleHelp, href: "/help" }].map(({ label, icon: Icon, href }) => <Link className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-[#5f606b] transition hover:bg-[#f3f3f5] hover:text-[var(--ink)]" href={href} key={label} onClick={onClose}><Icon aria-hidden="true" className="h-4 w-4 text-[#858691]" strokeWidth={1.9} />{label}</Link>)}
-          <p className="mt-3 rounded-xl border border-[var(--line)] p-3 text-xs leading-5 text-[#767781]">Account connection pending</p>
+          <AccountStatus />
         </div>
       </nav>
     </>
