@@ -11,6 +11,8 @@ from app.contracts import (
     BriefPage,
     BriefReference,
     HumanBriefPatch,
+    HumanBriefConfirm,
+    PreparationAnalysis,
     IdeaBrief,
     PageInfo,
     PreparationMutationReceipt,
@@ -50,7 +52,7 @@ class PreparationHttpRepository(PreparationRepository):
             operation=operation,
             research_id=str(research_id) if research_id is not None else None,
             body=body.model_dump(
-                mode="json", exclude_unset=operation == "revise_brief"
+                mode="json", exclude_unset=operation in ("revise_brief", "revise_plan")
             ),
         )
 
@@ -95,7 +97,7 @@ class PreparationHttpRepository(PreparationRepository):
         return self._checked_brief(row, research)
 
     def _mutation_row(self, session, operation, key):
-        if operation not in ("create_research", "revise_brief"):
+        if operation not in ("create_research", "revise_brief", "confirm_brief"):
             raise ValueError("Known preparation operation required")
         return (
             session.execute(
@@ -131,7 +133,7 @@ class PreparationHttpRepository(PreparationRepository):
                     raise ValueError()
                 expected_content = initial_content(body)
                 expected_versions = {"brief": 1, "plan": None}
-            else:
+            elif row["operation"] == "revise_brief":
                 body = HumanBriefPatch.model_validate(payload["body"])
                 if (
                     payload["research_id"] != str(research.research_id)
@@ -144,8 +146,53 @@ class PreparationHttpRepository(PreparationRepository):
                 expected_content = human_content(previous.content, body)
                 expected_versions = previous.versions.model_dump()
                 expected_versions.update(brief=brief.brief_version, plan=None)
+            else:
+                from app.phase1_confirmation import confirmed_content
+                from app.db.phase1_models import analysis_results
+
+                body = HumanBriefConfirm.model_validate(payload["body"])
+                if (
+                    payload["research_id"] != str(research.research_id)
+                    or body.expected_brief_id != brief.brief_id
+                    or body.expected_brief_version + 1 != brief.brief_version
+                ):
+                    raise ValueError()
+                previous = self._selected(
+                    session,
+                    research,
+                    body.expected_brief_id,
+                    body.expected_brief_version,
+                )
+                analysis = None
+                if body.analysis_id is not None:
+                    analysis_payload = session.scalar(
+                        select(analysis_results.c.payload).where(
+                            analysis_results.c.user_id == self.user_id,
+                            analysis_results.c.project_id == self.project_id,
+                            analysis_results.c.research_id == research.research_id,
+                            analysis_results.c.analysis_id == body.analysis_id,
+                            analysis_results.c.status == "completed",
+                            analysis_results.c.operation == "analyze_brief",
+                        )
+                    )
+                    if analysis_payload is None:
+                        raise ValueError()
+                    analysis = PreparationAnalysis.model_validate(analysis_payload)
+                    if (analysis.input_brief_id, analysis.input_brief_version) != (
+                        previous.brief_id,
+                        previous.brief_version,
+                    ):
+                        raise ValueError()
+                expected_content = confirmed_content(previous.content, body, analysis)
+                expected_versions = previous.versions.model_dump()
+                expected_versions.update(brief=brief.brief_version, plan=None)
             if (
-                brief.status != "awaiting_user"
+                brief.status
+                != (
+                    "confirmed"
+                    if row["operation"] == "confirm_brief"
+                    else "awaiting_user"
+                )
                 or brief.content != expected_content
                 or brief.versions != type(brief.versions)(**expected_versions)
             ):
@@ -163,7 +210,9 @@ class PreparationHttpRepository(PreparationRepository):
         except (ValueError, TypeError, KeyError, ValidationError):
             raise StoredSnapshotError("Invalid stored preparation receipt") from None
 
-    def _append(self, session, research, content, *, previous=None):
+    def _append(
+        self, session, research, content, *, previous=None, status="awaiting_user"
+    ):
         version = previous.brief_version + 1 if previous is not None else 1
         if version > 2147483647:
             raise PreparationConflict("Brief version limit reached")
@@ -177,7 +226,7 @@ class PreparationHttpRepository(PreparationRepository):
             versions=versions,
             brief_id=previous.brief_id if previous else uuid4(),
             brief_version=version,
-            status="awaiting_user",
+            status=status,
             content=content,
         )
         session.add(

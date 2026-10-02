@@ -38,7 +38,7 @@ mutations = Table(
         ondelete="RESTRICT",
     ),
     CheckConstraint(
-        "operation IN ('create_research','revise_brief') AND brief_version>0",
+        "operation IN ('create_research','revise_brief','confirm_brief') AND brief_version>0",
         name="operation",
     ),
     CheckConstraint(

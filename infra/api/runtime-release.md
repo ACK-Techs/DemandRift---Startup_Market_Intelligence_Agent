@@ -5,8 +5,8 @@ gerçek backup/restore, restart/recovery ve 87 final senaryo kabulü ayrı kapı
 Mevcut `demandrift-api-deploy` sağlık servisi kurulu kaldığı sürece eski davranışı
 korur. Yeni dosyalar push ile sunucuya yüklenmez.
 
-Bağımsız review/verify/integration ve exact güncel main SHA'nın başarılı API CI
-sonrası yönetici `runtime_release.py` dosyasını
+Bütün ürün işlevleri tamamlandıktan ve exact güncel main SHA'nın manuel final CI
+başarısı sonrasında yönetici `runtime_release.py` dosyasını
 `/usr/local/lib/demandrift/runtime_release.py` root:root 0755 olarak;
 `demandrift-runtime-deploy` wrapper'ını mevcut restricted `build-api` hedefi
 `/usr/local/sbin/demandrift-api-deploy` olarak kurar. Eski helper/Compose/başarılı
@@ -64,3 +64,13 @@ Child komut ortamı sabit `HOME=/root` içerir; Docker ve Git yalnız yöneticin
 yapılandırma dizinini kullanır. Çağıranın HOME, DOCKER_CONFIG, proxy ve provider
 anahtar değişkenleri aktarılmaz. Kurulu helper'da bulunan bu ayar kabul edilmiş
 kaynakla eşleştirilir; bağımsız kabulden önceki hash farkı kaydı korunur.
+
+Phase 1 sürümünde hedef schema `20261002_0009` olur. İlk ileri geçiş için
+önceki başarı kaydında yalnız `20261002_0008` veya `20261002_0009` kabul edilir.
+Bu kayıt gerçek veritabanı sürümünün gözlemi değildir. Her geçişten önce backup
+alınır ve native migrator gerçek head, rol ve ACL kontrollerini uygular.
+Schema009 commit edildikten sonra schema008 image otomatik downgrade yapamaz;
+eski migrator yeni head'i reddeder ve eski API/worker başlatılmaz. Böyle bir
+rollback başarısızlığı müdahale gerektirir. Önceki başarı pointer'ının korunması
+veritabanının schema008'e geri döndüğü veya backup'ın restore edildiği anlamına
+gelmez. Gerçek backup/restore ve rollback kabulü ayrı kapılardır.

@@ -25,6 +25,7 @@ from app.db.preparation_repository import RecordNotFound, StoredSnapshotError
 from app.job_contract import EnqueueJob, LeaseToken
 from native_evidence_fixture import fixture_data, seed_preparation
 from test_budget_contract import approved_limits
+from native_phase1_fixture import NativePhase1Fixture, budget_for_research, current_head, historical_database
 
 pytestmark = pytest.mark.postgres
 
@@ -227,11 +228,16 @@ def test_native_stale_command_and_journal_sequence(postgres_database):
     assert [r["event"] for r in rows] == ["enqueue", "claim", "advance"]
 
 
-def test_job_migration_frozen_roundtrip(postgres_database):
-    db = postgres_database
+@pytest.fixture
+def historical_head8_database(monkeypatch):
+    yield from historical_database(monkeypatch, head="20261002_0008")
+
+
+def test_job_migration_frozen_roundtrip(historical_head8_database):
+    db = historical_head8_database
     enqueue(db)
     with db["admin"].transaction() as s:
-        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == REQUIRED_MIGRATION
+        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == "20261002_0008"
     command.downgrade(db["config"], "20261001_0005")
     with db["admin"].transaction() as s:
         assert s.scalar(text("SELECT to_regclass('public.research_jobs')")) is None
@@ -246,15 +252,18 @@ def test_job_migration_frozen_roundtrip(postgres_database):
 
 
 def budget_for_job(db, repo, run):
-    capacity = BudgetCapacity.from_wire(approved_limits())
-    suite = uuid4()
-    with db["admin"].transaction() as s:
-        s.execute(budget_models.suites.insert().values(suite_id=suite,
-            ceiling=capacity.ceiling.to_json(), soft_cost_picousd=capacity.soft_cost_picousd,
-            duration_seconds=capacity.duration_seconds, concurrency=capacity.concurrency,
-            spent=ResourceAmount().to_json(), held=ResourceAmount().to_json()))
-    budget = BudgetRepository(db["app"], suite, repo.user_id, repo.project_id, run.research_id)
-    budget.create_account(capacity)
+    if current_head(db["app"]) == "20261002_0009":
+        budget = budget_for_research(db, repo.user_id, repo.project_id, run.research_id)
+    else:
+        capacity = BudgetCapacity.from_wire(approved_limits())
+        suite = uuid4()
+        with db["admin"].transaction() as s:
+            s.execute(budget_models.suites.insert().values(suite_id=suite,
+                ceiling=capacity.ceiling.to_json(), soft_cost_picousd=capacity.soft_cost_picousd,
+                duration_seconds=capacity.duration_seconds, concurrency=capacity.concurrency,
+                spent=ResourceAmount().to_json(), held=ResourceAmount().to_json()))
+        budget = BudgetRepository(db["app"], suite, repo.user_id, repo.project_id, run.research_id)
+        budget.create_account(capacity)
     metadata = dict(kind="model", operation_version="offline-v1", provider="offline",
         model="offline", prompt_version="offline-v1", schema_version="1.0.0", pricing_version="offline-v1")
     attempt = budget.reserve(uuid4(), "b" * 64, ResourceAmount(requests=1, tokens=100), metadata)
@@ -374,7 +383,7 @@ def test_new_enqueue_refuses_stale_brief_and_native_unapproved_tuple(postgres_da
     db = postgres_database
     repo, run, request, _ = setup_job(db)
     brief = repo.get_brief(run.research_id, run.brief_id, run.brief_version)
-    repo.append_brief(run.research_id, brief.content, status="confirmed")
+    NativePhase1Fixture(db, repo.user_id, repo.project_id).append_brief(run.research_id, brief.content, status="confirmed")
     with pytest.raises(JobConflict):
         repo.enqueue(run.research_id, request)
     values = request.model_dump()
@@ -387,16 +396,17 @@ def test_new_enqueue_refuses_stale_brief_and_native_unapproved_tuple(postgres_da
 
 
 def test_replayed_alias_key_cannot_be_reused_for_another_run(postgres_database):
-    repo, run, request, job, _ = enqueue(postgres_database)
+    db = postgres_database; repo, run, request, job, _ = enqueue(db)
     alias = request.model_copy(update={"request_key": uuid4()})
     repo.enqueue(run.research_id, alias)
     plan = repo.get_plan(run.research_id, run.research_plan_id, run.plan_version)
-    research = repo.create_research(plan.brief.original_idea)
-    brief = repo.append_brief(research, plan.brief, status="confirmed")
-    drafted = repo.append_plan(research, brief.brief_id, brief.brief_version,
+    preparation = NativePhase1Fixture(db, repo.user_id, repo.project_id)
+    research = preparation.create_research(plan.brief.original_idea)
+    brief = preparation.append_brief(research, plan.brief, status="confirmed")
+    drafted = preparation.append_plan(research, brief.brief_id, brief.brief_version,
         research_mode=plan.research_mode, intents=plan.intents, source_plan=plan.source_plan,
         query_plan=plan.query_plan, budget=plan.budget, known_unknowns=plan.known_unknowns)
-    approved = repo.approve_plan(research, drafted.research_plan_id, drafted.plan_version, drafted.plan_fingerprint)
+    approved = preparation.approve_plan(research, drafted.research_plan_id, drafted.plan_version, drafted.plan_fingerprint)
     body = run.model_dump(mode="json")
     body.update(research_id=str(research), brief_id=str(brief.brief_id), brief_version=brief.brief_version,
         research_plan_id=str(approved.research_plan_id), plan_version=approved.plan_version,
@@ -444,17 +454,18 @@ def test_corrupted_restored_job_selection_is_rejected_on_read_and_replay(postgre
     db = postgres_database
     repo, run, request, job, _ = enqueue(db)
     plan = repo.get_plan(run.research_id, run.research_plan_id, run.plan_version)
-    drafted = repo.append_plan(run.research_id, plan.brief_id, plan.brief_version,
+    preparation = NativePhase1Fixture(db, repo.user_id, repo.project_id)
+    drafted = preparation.append_plan(run.research_id, plan.brief_id, plan.brief_version,
         research_mode=plan.research_mode, intents=plan.intents, source_plan=plan.source_plan,
         query_plan=plan.query_plan, budget=plan.budget, known_unknowns=plan.known_unknowns)
-    approved = repo.approve_plan(run.research_id, drafted.research_plan_id, drafted.plan_version, drafted.plan_fingerprint)
+    approved = preparation.approve_plan(run.research_id, drafted.research_plan_id, drafted.plan_version, drafted.plan_fingerprint)
     # Model a bad privileged restore using this test's disposable database only.
     # Both tuples independently satisfy relational FKs; the run selection differs.
     with db["admin"].transaction() as s:
         s.execute(text("ALTER TABLE public.research_jobs DISABLE TRIGGER job_guard"))
         s.execute(text("ALTER TABLE public.research_jobs DISABLE TRIGGER job_append"))
         s.execute(tables.jobs.update().where(tables.jobs.c.job_id == job.job_id)
-            .values(plan_version=approved.plan_version, plan_fingerprint=approved.plan_fingerprint))
+            .values(research_plan_id=approved.research_plan_id, plan_version=approved.plan_version, plan_fingerprint=approved.plan_fingerprint))
         s.execute(text("ALTER TABLE public.research_jobs ENABLE TRIGGER job_guard"))
         s.execute(text("ALTER TABLE public.research_jobs ENABLE TRIGGER job_append"))
     with pytest.raises(StoredSnapshotError, match="selected run"):

@@ -12,29 +12,30 @@ from app.contracts import BriefContent, IdeaBrief, ResearchPlan
 from app.db.engine import DatabaseConfigurationError
 from app.db.migration_head import REQUIRED_MIGRATION
 from app.db.models import ApprovalRecord, BriefRecord, PlanRecord, PlannedQueryRecord, PlannedSourceRecord, ProjectRecord, ResearchRecord, TENANT_TABLES, UserRecord
+from native_phase1_fixture import historical_database
 
 pytestmark = pytest.mark.postgres
 NOW = datetime(2026, 10, 1, tzinfo=timezone.utc)
 IDEA = "  Öğrencilerin notlarında arama\nTam özgün fikir.  "
 
 
-def seed(db):
+def seed(db, *, include_researches=True):
     users = [uuid4(), uuid4()]; projects = [uuid4(), uuid4(), uuid4()]; research = [uuid4(), uuid4(), uuid4()]
     with db.transaction() as session:
         session.add_all([UserRecord(user_id=u, email=f"{u}@example.org", password_hash="not-an-auth-test") for u in users]); session.flush()
         for index, pid in enumerate(projects):
             session.add(ProjectRecord(project_id=pid, user_id=users[1] if index == 2 else users[0], name=f"Project {index}"))
         session.flush()
-        for index, rid in enumerate(research):
+        for index, rid in enumerate(research if include_researches else []):
             session.add(ResearchRecord(research_id=rid, project_id=projects[index], user_id=users[1] if index == 2 else users[0], original_idea=IDEA))
-    return users, projects, research
+    return users, projects, research if include_researches else []
 
 
 def brief(owner, project, research, *, brief_id=None, version=1):
     return IdeaBrief(user_id=owner, project_id=project, research_id=research, created_at=NOW,
         versions={"brief": version}, brief_id=brief_id or uuid4(), brief_version=version,
-        status="confirmed", content=BriefContent(original_idea=IDEA, clarity_status="broad_but_continue",
-        language_scope=["tr"], primary_category="gelistirici-araci", category_origin="user_stated", category_confirmed=True))
+        status="awaiting_user", content=BriefContent(original_idea=IDEA, clarity_status="broad_but_continue",
+        language_scope=["tr"], primary_category="gelistirici-araci", category_origin="user_stated", category_confirmed=False))
 
 
 def brief_record(dto):
@@ -204,39 +205,48 @@ def test_altered_original_or_brief_snapshot_cannot_seed_a_plan(postgres_database
 
 @pytest.mark.parametrize("failure", ["unconfirmed", "wrong_fingerprint", "foreign_research"])
 def test_approval_is_bound_to_exact_confirmed_plan(postgres_database, failure):
-    db = postgres_database; users, projects, research = seed(db["admin"])
-    dto = brief(users[0], projects[0], research[0]); planned = plan(dto, status="awaiting_user" if failure == "unconfirmed" else "confirmed")
-    with db["app"].transaction(users[0]) as s: s.add(brief_record(dto)); s.flush(); s.add(plan_record(planned))
-    kwargs = dict(user_id=users[0], project_id=projects[0], research_id=research[0], research_plan_id=planned.research_plan_id,
-        plan_version=1, plan_fingerprint="a" * 64)
+    from test_preparation_repository import prepared, content_plan
+    db = postgres_database; _, _, repos, research, dto = prepared(db); repo = repos[0]
+    pending = repo.append_plan(research, dto.brief_id, dto.brief_version, **content_plan())
+    planned = pending if failure == "unconfirmed" else repo.approve_plan(
+        research, pending.research_plan_id, pending.plan_version, pending.plan_fingerprint)
+    kwargs = dict(user_id=dto.user_id, project_id=dto.project_id, research_id=research, research_plan_id=planned.research_plan_id,
+        plan_version=planned.plan_version, plan_fingerprint=planned.plan_fingerprint)
     if failure == "wrong_fingerprint": kwargs["plan_fingerprint"] = "b" * 64
-    if failure == "foreign_research": kwargs["research_id"] = research[1]
+    if failure == "foreign_research": kwargs["research_id"] = repo.create_research(IDEA)
     with pytest.raises(IntegrityError), db["admin"].transaction() as s: s.add(ApprovalRecord(**kwargs)); s.flush()
     if failure != "unconfirmed":
-        kwargs.update(research_id=research[0], plan_fingerprint="a" * 64)
-        with db["app"].transaction(users[0]) as s: s.add(ApprovalRecord(**kwargs))
+        with db["app"].transaction(dto.user_id) as s:
+            row = s.scalar(select(ApprovalRecord).where(ApprovalRecord.research_id == research))
+            assert (row.research_plan_id, row.plan_version, row.plan_fingerprint) == (
+                planned.research_plan_id, planned.plan_version, planned.plan_fingerprint)
+    else:
+        with db["app"].transaction(dto.user_id) as s:
+            assert s.scalar(select(ApprovalRecord)) is None
 
 
 def test_query_cannot_reference_unplanned_source_or_another_plan(postgres_database):
-    db = postgres_database; users, projects, research = seed(db["admin"])
-    dto = brief(users[0], projects[0], research[0]); planned = plan(dto)
-    # This test isolates the query FK. Native membership also requires the
-    # source child to be represented exactly in its owning immutable plan.
-    scope = dict(user_id=users[0], project_id=projects[0], research_id=research[0], research_plan_id=planned.research_plan_id, plan_version=1)
-    planned_row = plan_record(planned)
-    planned_row.payload["source_plan"] = [{"source_id": "source-0017"}]
-    with db["app"].transaction(users[0]) as s:
-        s.add(brief_record(dto)); s.flush(); s.add(planned_row); s.flush()
-        s.add(PlannedSourceRecord(**scope, source_id="source-0017", payload={"source_id": "source-0017"}))
-    for bad_source, bad_plan in [("unplanned", planned.research_plan_id), ("source-0017", uuid4())]:
+    from test_preparation_repository import prepared, content_plan
+    db = postgres_database; _, _, repos, research, dto = prepared(db)
+    planned = repos[0].append_plan(research, dto.brief_id, dto.brief_version, **content_plan())
+    scope = dict(user_id=dto.user_id, project_id=dto.project_id, research_id=research,
+        research_plan_id=planned.research_plan_id, plan_version=planned.plan_version, created_at=planned.created_at)
+    for bad_source, bad_plan in [("source-9999", planned.research_plan_id), (planned.source_plan[0].source_id, uuid4())]:
         query_id = uuid4(); wrong = {**scope, "research_plan_id": bad_plan}
-        with pytest.raises(IntegrityError), db["app"].transaction(users[0]) as s:
-            s.add(PlannedQueryRecord(**wrong, query_id=query_id, source_id=bad_source, payload={"query_id": str(query_id), "source_id": bad_source})); s.flush()
+        payload = planned.query_plan[0].model_dump(mode="json"); payload.update(query_id=str(query_id), source_id=bad_source)
+        with pytest.raises(IntegrityError) as error, db["app"].transaction(dto.user_id) as s:
+            s.add(PlannedQueryRecord(**wrong, query_id=query_id, source_id=bad_source, payload=payload)); s.flush()
+        assert error.value.orig.sqlstate == "23503"
 
 
-def test_migration_downgrade_and_reupgrade_only_disposable_database(postgres_database):
-    db = postgres_database
-    assert db["name"].startswith("demandrift_test_")
+@pytest.fixture
+def historical_head8_database(monkeypatch):
+    yield from historical_database(monkeypatch, head="20261002_0008")
+
+
+def test_migration_downgrade_and_reupgrade_only_disposable_database(historical_head8_database):
+    db = historical_head8_database
+    assert db["name"].startswith("demandrift_history_")
     command.downgrade(db["config"], "base")
     with db["admin"].transaction() as s: assert s.execute(text("SELECT to_regclass('public.projects')")).scalar_one() is None
     command.upgrade(db["config"], "head")

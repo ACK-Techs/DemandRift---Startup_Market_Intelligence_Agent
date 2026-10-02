@@ -19,7 +19,8 @@ import urllib.request
 BASE = Path('/opt/demandrift-api')
 REPOSITORY = Path('/opt/demandrift-build/repository')
 BUILD_LOCK = Path('/opt/demandrift-build/build.lock')
-SCHEMA = '20261002_0008'
+SCHEMA = '20261002_0009'
+PREVIOUS_SCHEMA = '20261002_0008'
 SHA = re.compile(r'[0-9a-f]{40}\Z')
 BACKUP_LIMIT = 1024 ** 3
 COMMAND_ENVIRONMENT = {'PATH': '/usr/sbin:/usr/bin:/sbin:/bin',
@@ -163,7 +164,8 @@ class Release:
             private_file(runtime)
             data = json.loads(runtime.read_text())
             if (type(data) is not dict or set(data) != {'revision', 'schema', 'backup'}
-                    or type(data['revision']) is not str or not SHA.fullmatch(data['revision']) or data['schema'] != SCHEMA
+                    or type(data['revision']) is not str or not SHA.fullmatch(data['revision'])
+                    or data['schema'] not in (PREVIOUS_SCHEMA, SCHEMA)
                     or type(data['backup']) is not str):
                 raise ReleaseError('Invalid previous runtime state')
             return data['revision'], False

@@ -3,6 +3,8 @@
 !app/**
 !tests/
 !tests/**
+!scripts/
+!scripts/**
 !migrations/
 !migrations/**
 !alembic.ini

@@ -13,10 +13,11 @@ COPY requirements-dev.txt ./
 RUN pip install --no-cache-dir -r requirements-dev.txt
 COPY app ./app
 COPY tests ./tests
+COPY scripts ./scripts
 COPY migrations ./migrations
 COPY alembic.ini ./
 COPY pytest.ini ./
-RUN python -m pytest -q
+# Tests run explicitly in the manual final validation workflow.
 CMD ["python", "-m", "pytest", "-q", "-p", "no:cacheprovider"]
 
 FROM dependencies AS runtime

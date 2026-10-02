@@ -31,7 +31,7 @@ def test_script_is_fixed_release_chain_and_does_not_use_environment_paths(monkey
     root = Path(migration.__file__).resolve().parents[1]
     assert Path(config.config_file_name) == root / "alembic.ini"
     assert Path(script.dir) == root / "migrations"
-    assert script.get_heads() == [REQUIRED_MIGRATION] == ["20261002_0008"]
+    assert script.get_heads() == [REQUIRED_MIGRATION] == ["20261002_0009"]
     assert [revision.revision for revision in reversed(list(script.walk_revisions()))] == list(migration._REVISIONS)
     assert not config.get_main_option("sqlalchemy.url")
 
@@ -40,13 +40,13 @@ def test_script_is_fixed_release_chain_and_does_not_use_environment_paths(monkey
 def test_release_drift_is_rejected_before_database_access(monkeypatch, alteration):
     _, script = migration._trusted_script()
     if alteration == "head":
-        monkeypatch.setattr(script, "get_heads", lambda: ["20261002_0009"])
+        monkeypatch.setattr(script, "get_heads", lambda: ["20261002_0010"])
     elif alteration == "extra":
         monkeypatch.setattr(script, "walk_revisions", lambda: [])
     elif alteration == "required":
         monkeypatch.setattr(migration, "REQUIRED_MIGRATION", "20261002_0007")
     else:
-        revision = script.get_revision("20261002_0008")
+        revision = script.get_revision("20261002_0009")
         monkeypatch.setattr(revision, {"branch": "branch_labels", "dependency": "dependencies", "parent": "down_revision"}[alteration],
                             {"branch": {"other"}, "dependency": "20261001_0001", "parent": "20261001_0005"}[alteration])
     monkeypatch.setattr(migration.ScriptDirectory, "from_config", lambda config: script)
@@ -176,9 +176,10 @@ def test_fresh_database_bootstraps_before_full_migration_and_repeat_preserves_ro
 
 
 @pytest.mark.postgres
-def test_current_database_forward_upgrade_preserves_rows(fresh_database, monkeypatch):
+@pytest.mark.parametrize('previous_revision', ['20261002_0007', '20261002_0008'])
+def test_current_database_forward_upgrade_preserves_rows(fresh_database, monkeypatch, previous_revision):
     db = fresh_database
-    _prepare_revision(db, monkeypatch, "20261002_0007")
+    _prepare_revision(db, monkeypatch, previous_revision)
     owner = uuid4()
     with db["admin"].transaction() as session:
         session.execute(text("INSERT INTO public.users(user_id,email,password_hash) VALUES (:owner,:email,'fixture-hash')"),
@@ -225,7 +226,7 @@ def test_restricted_role_native_grants_and_rls_remain_effective(fresh_database):
 
 
 @pytest.mark.postgres
-@pytest.mark.parametrize("heads", [("20261002_0009",), ("unknown",), ("20261001_0001", "20261002_0007")])
+@pytest.mark.parametrize("heads", [("20261002_0010",), ("unknown",), ("20261001_0001", "20261002_0007")])
 def test_unknown_ahead_multiple_database_heads_fail_before_role_creation(fresh_database, heads):
     db = fresh_database
     with db["admin"].transaction() as session:
@@ -244,12 +245,12 @@ def test_version_table_is_public_even_with_shadowing_database_search_path(fresh_
     with db["admin"].transaction() as session:
         session.execute(text("CREATE SCHEMA shadow"))
         session.execute(text("CREATE TABLE shadow.alembic_version(version_num varchar(32) PRIMARY KEY)"))
-        session.execute(text("INSERT INTO shadow.alembic_version VALUES ('20261002_0009')"))
+        session.execute(text("INSERT INTO shadow.alembic_version VALUES ('20261002_0010')"))
         session.execute(text(f"ALTER DATABASE {quote(db['name'])} SET search_path TO shadow, public"))
     migration.migrate_runtime(db["configuration"])
     with db["admin"].transaction() as session:
         assert session.execute(text("SELECT version_num FROM public.alembic_version")).scalar_one() == REQUIRED_MIGRATION
-        assert session.execute(text("SELECT version_num FROM shadow.alembic_version")).scalar_one() == "20261002_0009"
+        assert session.execute(text("SELECT version_num FROM shadow.alembic_version")).scalar_one() == "20261002_0010"
 
 
 @pytest.mark.postgres
@@ -354,7 +355,7 @@ def test_preflight_change_is_rechecked_before_schema_writes(fresh_database, monk
         if change == "head":
             with db["admin"].transaction() as session:
                 session.execute(text("CREATE TABLE public.alembic_version(version_num varchar(32) PRIMARY KEY)"))
-                session.execute(text("INSERT INTO public.alembic_version VALUES ('20261002_0009')"))
+                session.execute(text("INSERT INTO public.alembic_version VALUES ('20261002_0010')"))
         else:
             monkeypatch.setenv("DATABASE_APP_ROLE", "unrelated")
         return result
@@ -362,7 +363,7 @@ def test_preflight_change_is_rechecked_before_schema_writes(fresh_database, monk
     monkeypatch.setattr(migration, "bootstrap_application_role", changed_after_preflight)
     with pytest.raises(migration.RuntimeMigrationError):
         migration.migrate_runtime(db["configuration"])
-    assert _revision_state(db) == (("20261002_0009",) if change == "head" else ())
+    assert _revision_state(db) == (("20261002_0010",) if change == "head" else ())
     with db["admin"].engine.connect() as connection:
         assert connection.execute(text("SELECT to_regclass('public.projects')")).scalar_one() is None
 

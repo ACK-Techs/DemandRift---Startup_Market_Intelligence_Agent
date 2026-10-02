@@ -11,6 +11,7 @@ from app import contracts as wire
 from app.db.evidence_models import TABLES, EDGES, IMMUTABLE
 from app.db.models import SnapshotIdentityRecord
 from native_evidence_fixture import fixture_data, seed_preparation, native_graph, SPECS
+from native_phase1_fixture import historical_database
 
 pytestmark = pytest.mark.postgres
 
@@ -41,7 +42,7 @@ def test_nonempty_native_graph_exact_history_fresh_connections_and_owner_rls(gra
     with db['app'].transaction() as session:
         for table in [*TABLES.values(), *EDGES.values()]:
             assert session.execute(select(table)).first() is None
-    assert prep.get_brief(scope['research_id'], records['IdeaBrief'][0].brief_id, 1).content.original_idea == records['IdeaBrief'][0].content.original_idea
+    assert prep.get_brief(scope['research_id'], records['IdeaBrief'][0].brief_id, records['IdeaBrief'][0].brief_version).content.original_idea == records['IdeaBrief'][0].content.original_idea
     with db['admin'].transaction() as session:
         for table in [*TABLES.values(), *EDGES.values()]:
             flags = session.execute(text('SELECT relrowsecurity,relforcerowsecurity FROM pg_class WHERE oid=to_regclass(:table)'), {'table': 'public.'+table.name}).one()
@@ -151,8 +152,13 @@ def test_all_evidence_snapshots_and_associations_reject_admin_update(graph):
         assert error.value.orig.sqlstate == '23514'
 
 
-def test_nonempty_preparation_survives_schema_downgrade_and_reupgrade(postgres_database):
-    db = postgres_database; data = fixture_data(); scope, prep = seed_preparation(db,data)
+@pytest.fixture
+def historical_head8_database(monkeypatch):
+    yield from historical_database(monkeypatch, head="20261002_0008")
+
+
+def test_nonempty_preparation_survives_schema_downgrade_and_reupgrade(historical_head8_database):
+    db = historical_head8_database; data = fixture_data(); scope, prep = seed_preparation(db,data)
     command.downgrade(db['config'], '20261001_0002')
     assert prep.get_plan(scope['research_id'], UUID(data['records']['ResearchPlan'][1]['research_plan_id']), 2).model_dump(mode='json') == data['records']['ResearchPlan'][1]
     command.upgrade(db['config'], 'head'); db['app'].close(); db['app'].assert_application_role()
@@ -209,8 +215,8 @@ def test_other_scope_cannot_preclaim_global_run_identity_anchor(postgres_databas
         assert session.execute(select(TABLES['run'])).first() is None
 
 
-def test_upgrade_refuses_inconsistent_legacy_run_anchor_without_rewriting_it(postgres_database):
-    db = postgres_database; first = fixture_data(); second = fixture_data('B')
+def test_upgrade_refuses_inconsistent_legacy_run_anchor_without_rewriting_it(historical_head8_database):
+    db = historical_head8_database; first = fixture_data(); second = fixture_data('B')
     scope_a, _ = seed_preparation(db,first); scope_b, _ = seed_preparation(db,second)
     command.downgrade(db['config'],'20261001_0002')
     with db['app'].transaction(scope_b['user_id']) as session:

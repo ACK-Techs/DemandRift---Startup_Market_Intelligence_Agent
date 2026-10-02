@@ -75,3 +75,75 @@ def test_safe_receipt_insert_and_select_are_intentionally_allowed(postgres_datab
         assert session.scalar(text("SELECT has_table_privilege(current_user,'public.preparation_mutations','INSERT')"))
         assert not session.scalar(text("SELECT has_function_privilege(current_user,'public.demandrift_preparation_mutation_guard()','EXECUTE')"))
         assert list(session.execute(text("SELECT * FROM public.preparation_mutations"))) == []
+
+
+PHASE1_OWNER_TABLES = ('plan_mutations', 'preparation_analysis_requests',
+                      'preparation_analysis_results')
+PHASE1_AUTHORITY_TABLES = ('source_qualification_snapshots', 'source_qualification_current')
+
+
+@pytest.mark.parametrize('table', PHASE1_OWNER_TABLES)
+@pytest.mark.parametrize('privilege', ['UPDATE', 'DELETE', 'TRUNCATE', 'TRIGGER',
+                                      'REFERENCES', 'UPDATE(user_id)', 'REFERENCES(user_id)'])
+def test_phase1_private_immutable_grant_escalation_rejected(postgres_database, table, privilege):
+    db = postgres_database
+    with db['admin'].transaction() as session:
+        session.execute(text(f'GRANT {privilege} ON public.{table} TO "{db["role"]}"'))
+    with pytest.raises(DatabaseConfigurationError):
+        db['app'].assert_application_role()
+
+
+@pytest.mark.parametrize('table', PHASE1_AUTHORITY_TABLES)
+@pytest.mark.parametrize('privilege', ['INSERT', 'UPDATE', 'DELETE', 'TRUNCATE', 'TRIGGER',
+                                      'REFERENCES', 'INSERT(qualification_version)',
+                                      'UPDATE(qualification_version)', 'REFERENCES(qualification_version)'])
+def test_phase1_shared_qualification_cannot_be_written_by_application(postgres_database, table, privilege):
+    db = postgres_database
+    with db['admin'].transaction() as session:
+        session.execute(text(f'GRANT {privilege} ON public.{table} TO "{db["role"]}"'))
+    with pytest.raises(DatabaseConfigurationError):
+        db['app'].assert_application_role()
+
+
+@pytest.mark.parametrize('function', ['qualification_guard', 'analysis_guard',
+                                     'plan_mutation_guard', 'snapshot_membership'])
+def test_phase1_private_trigger_execute_escalation_rejected(postgres_database, function):
+    db = postgres_database
+    with db['admin'].transaction() as session:
+        session.execute(text(f'GRANT EXECUTE ON FUNCTION public.demandrift_phase1_{function}() '
+                             f'TO "{db["role"]}"'))
+    with pytest.raises(DatabaseConfigurationError):
+        db['app'].assert_application_role()
+
+
+@pytest.mark.parametrize('table', PHASE1_OWNER_TABLES)
+@pytest.mark.parametrize('alteration', ['DISABLE ROW LEVEL SECURITY', 'NO FORCE ROW LEVEL SECURITY'])
+def test_phase1_private_data_cannot_lose_native_rls(postgres_database, table, alteration):
+    db = postgres_database
+    with db['admin'].transaction() as session:
+        session.execute(text(f'ALTER TABLE public.{table} {alteration}'))
+    with pytest.raises(DatabaseConfigurationError):
+        db['app'].assert_application_role()
+
+
+def test_phase1_shared_metadata_and_readonly_rpc_are_intentionally_readable(postgres_database):
+    db = postgres_database
+    db['app'].assert_application_role()
+    with db['app'].transaction() as session:
+        for table in PHASE1_AUTHORITY_TABLES:
+            assert session.scalar(text(f"SELECT has_table_privilege(current_user,'public.{table}','SELECT')"))
+            assert list(session.execute(text(f'SELECT * FROM public.{table}'))) == []
+        assert session.scalar(text("SELECT has_function_privilege(current_user,"
+            "'public.demandrift_phase1_plan_eligibility(uuid,uuid,uuid,uuid,integer,text)','EXECUTE')"))
+
+
+@pytest.mark.parametrize('function', ['qualification_guard()', 'analysis_guard()',
+    'plan_mutation_guard()', 'snapshot_membership()',
+    'plan_eligibility(uuid,uuid,uuid,uuid,integer,text)'])
+@pytest.mark.parametrize('mutation', ['SECURITY DEFINER', 'SET search_path = public, pg_temp'])
+def test_phase1_functions_cannot_gain_definer_authority_or_unsafe_search_path(postgres_database, function, mutation):
+    db = postgres_database
+    with db['admin'].transaction() as session:
+        session.execute(text(f'ALTER FUNCTION public.demandrift_phase1_{function} {mutation}'))
+    with pytest.raises(DatabaseConfigurationError):
+        db['app'].assert_application_role()

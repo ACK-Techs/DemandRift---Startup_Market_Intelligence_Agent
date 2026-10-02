@@ -127,7 +127,11 @@ class Database:
                         'demandrift_preparation_mutation_guard',
                         'demandrift_job_budget_guard',
                         'demandrift_job_budget_current',
-                        'demandrift_job_budget_receipt'
+                        'demandrift_job_budget_receipt',
+                        'demandrift_phase1_qualification_guard',
+                        'demandrift_phase1_analysis_guard',
+                        'demandrift_phase1_plan_mutation_guard',
+                        'demandrift_phase1_snapshot_membership'
                     )
                       AND (pg_has_role(current_user,r.oid,'MEMBER')
                            OR pg_has_role(session_user,r.oid,'MEMBER'))
@@ -145,6 +149,69 @@ class Database:
                           AND pg_get_expr(p.polqual,p.polrelid)=:owner_policy
                           AND pg_get_expr(p.polwithcheck,p.polrelid)=:owner_policy
                       )
+                  )
+                  OR (SELECT count(*) FROM pg_class c
+                      JOIN pg_namespace n ON n.oid=c.relnamespace
+                      WHERE n.nspname='public' AND c.relkind='r'
+                        AND c.relname IN ('plan_mutations',
+                          'preparation_analysis_requests','preparation_analysis_results',
+                          'source_qualification_snapshots','source_qualification_current')) <> 5
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public'
+                      AND c.relname IN ('plan_mutations','preparation_analysis_requests',
+                        'preparation_analysis_results','source_qualification_snapshots',
+                        'source_qualification_current')
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND (has_table_privilege(r.oid,c.oid,'UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER')
+                           OR has_any_column_privilege(r.oid,c.oid,'UPDATE,REFERENCES')
+                           OR (c.relname IN ('source_qualification_snapshots',
+                                  'source_qualification_current')
+                               AND (has_table_privilege(r.oid,c.oid,'INSERT')
+                                    OR has_any_column_privilege(r.oid,c.oid,'INSERT'))))
+                  )
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    WHERE n.nspname='public'
+                      AND c.relname IN ('plan_mutations','preparation_analysis_requests',
+                                       'preparation_analysis_results')
+                      AND (NOT c.relrowsecurity OR NOT c.relforcerowsecurity
+                        OR (SELECT count(*) FROM pg_policy p WHERE p.polrelid=c.oid)<>1
+                        OR NOT EXISTS (
+                          SELECT 1 FROM pg_policy p WHERE p.polrelid=c.oid
+                            AND p.polname='owner_scope' AND p.polcmd='*'
+                            AND p.polpermissive AND p.polroles=ARRAY[0]::oid[]
+                            AND pg_get_expr(p.polqual,p.polrelid)=:owner_policy
+                            AND pg_get_expr(p.polwithcheck,p.polrelid)=:owner_policy
+                        ))
+                  )
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    WHERE n.nspname='public'
+                      AND c.relname IN ('source_qualification_snapshots',
+                                       'source_qualification_current')
+                      AND (c.relrowsecurity OR c.relforcerowsecurity)
+                  )
+                  OR (SELECT count(*) FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
+                      WHERE n.nspname='public' AND p.proname IN (
+                        'demandrift_phase1_qualification_guard', 'demandrift_phase1_analysis_guard',
+                        'demandrift_phase1_plan_mutation_guard', 'demandrift_phase1_snapshot_membership')
+                        AND p.pronargs=0 AND p.prorettype='pg_catalog.trigger'::regtype) <> 4
+                  OR EXISTS (
+                    SELECT 1 FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
+                    WHERE n.nspname='public' AND p.proname IN (
+                      'demandrift_phase1_qualification_guard', 'demandrift_phase1_analysis_guard',
+                      'demandrift_phase1_plan_mutation_guard', 'demandrift_phase1_snapshot_membership')
+                      AND (p.prosecdef OR p.proconfig IS DISTINCT FROM
+                           ARRAY['search_path=pg_catalog, pg_temp']::text[])
+                  )
+                  OR NOT EXISTS (
+                    SELECT 1 FROM pg_proc p WHERE p.oid=to_regprocedure(
+                      'public.demandrift_phase1_plan_eligibility(uuid,uuid,uuid,uuid,integer,text)')
+                      AND NOT p.prosecdef AND p.proconfig=ARRAY['search_path=pg_catalog, pg_temp']::text[]
+                      AND has_function_privilege(current_user,p.oid,'EXECUTE')
                   )
             """), {"owner_policy": "(user_id = (NULLIF(current_setting('app.user_id'::text, true), ''::text))::uuid)"}).scalar_one()
             if unsafe:

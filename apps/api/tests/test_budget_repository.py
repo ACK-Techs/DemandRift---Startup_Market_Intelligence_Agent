@@ -15,7 +15,8 @@ from app.db.budget_repository import BudgetRepository, BudgetConflict, BudgetExh
 from app.db.engine import Database
 from app.db.preparation_repository import RecordNotFound
 from test_budget_contract import approved_limits
-from test_postgres_foundation import seed, brief, brief_record
+from test_postgres_foundation import seed, IDEA
+from native_phase1_fixture import NativePhase1Fixture, historical_database
 from native_budget_dispatch import dispatch as dispatch_budget_attempt
 from app.db.migration_head import REQUIRED_MIGRATION
 
@@ -38,12 +39,9 @@ FINGERPRINT = "a" * 64
 
 
 def setup_ledger(db, *, capacity=None):
-    users, projects, researches = seed(db["admin"])
-    # Head008 preparation admission requires real immutable briefs even for
-    # these historic offline accounting controls. No native dispatch bypass.
-    with db["admin"].transaction() as session:
-        for index, research in enumerate(researches):
-            session.add(brief_record(brief(users[1] if index == 2 else users[0], projects[index], research)))
+    users, projects, _ = seed(db["admin"], include_researches=False)
+    researches = [NativePhase1Fixture(db, users[1] if i == 2 else users[0], project).create_research(IDEA)
+                  for i, project in enumerate(projects)]
     capacity = capacity or BudgetCapacity.from_wire(approved_limits())
     suite = uuid4()
     with db["admin"].transaction() as s:
@@ -487,18 +485,22 @@ def test_waiting_dispatch_checks_fresh_clock_after_lock_crosses_deadline(
     assert not dispatch_budget_attempt(repo, first.attempt_id).dispatch_permitted
 
 
-def test_explicit_database_head_and_disposable_roundtrip_cover_new_tables(
-    postgres_database,
-):
-    db = postgres_database
+@pytest.fixture
+def historical_head8_database(monkeypatch):
+    yield from historical_database(monkeypatch, head="20261002_0008")
+
+
+def test_historical_budget_roundtrip_and_upgrade_to_required_head(historical_head8_database):
+    db = historical_head8_database
     suite, repos, _ = setup_ledger(db)
     with db["admin"].transaction() as s:
         assert (
             s.scalar(text("SELECT version_num FROM public.alembic_version"))
-            == REQUIRED_MIGRATION
+            == "20261002_0008"
         )
     command.downgrade(db["config"], "20261001_0004")
     with db["admin"].transaction() as s:
+        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == REQUIRED_MIGRATION
         assert s.scalar(text("SELECT to_regclass('public.budget_suites')")) is None
     command.upgrade(db["config"], "head")
     db["app"].assert_application_role()

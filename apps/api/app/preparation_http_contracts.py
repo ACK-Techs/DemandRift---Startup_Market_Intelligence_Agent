@@ -1,4 +1,4 @@
-"""Canonical preparation HTTP adapters: no AI inference or confirmation."""
+"""Canonical human preparation adapters; confirmation is a separate explicit event."""
 
 import base64
 import json
@@ -122,7 +122,11 @@ def decode_cursor(value, *, owner, project, kind, research=None):
         if body["r"] != (str(research) if research is not None else None):
             raise ValueError()
         identity = UUID(body["i"])
-        if kind == "research":
+        if kind == "research" or kind in (
+            "analysis-all",
+            "analysis-brief",
+            "analysis-plan",
+        ):
             if (
                 type(body["t"]) is not str
                 or len(body["t"]) > 64
@@ -134,7 +138,7 @@ def decode_cursor(value, *, owner, project, kind, research=None):
                 raise ValueError()
             return stamp, identity
         if (
-            kind != "brief"
+            kind not in ("brief", "plan")
             or body["t"] is not None
             or type(body["v"]) is not int
             or not 1 <= body["v"] <= 2147483647

@@ -19,6 +19,25 @@ CURRENT = 'c' * 40
 PREVIOUS = 'a' * 40
 
 
+@pytest.mark.parametrize('schema', ['20261002_0008', '20261002_0009'])
+def test_phase1_release_accepts_explicit_previous_eight_or_nine_pointer(tmp_path, monkeypatch, schema):
+    pointer = {'revision': PREVIOUS, 'schema': schema, 'backup': 'private.pgdump'}
+    (tmp_path / 'runtime-success.json').write_text(json.dumps(pointer))
+    # Isolate pointer version parsing; native administrator FILE checks have separate controls.
+    monkeypatch.setattr(release, 'private_file', lambda path: path.lstat())
+    assert release.SCHEMA == '20261002_0009'
+    assert release.Release(CURRENT, base=tmp_path).previous() == (PREVIOUS, False)
+
+
+@pytest.mark.parametrize('schema', ['20261001_0007', '20261002_0010', None, 9])
+def test_phase1_release_rejects_unsupported_previous_pointer_schema(tmp_path, monkeypatch, schema):
+    (tmp_path / 'runtime-success.json').write_text(json.dumps(
+        {'revision': PREVIOUS, 'schema': schema, 'backup': 'private.pgdump'}))
+    monkeypatch.setattr(release, 'private_file', lambda path: path.lstat())
+    with pytest.raises(release.ReleaseError, match='Invalid previous runtime state'):
+        release.Release(CURRENT, base=tmp_path).previous()
+
+
 def test_release_children_use_fixed_administrator_home_without_ambient_secrets(monkeypatch):
     monkeypatch.setenv('HOME', '/untrusted-home')
     monkeypatch.setenv('DOCKER_CONFIG', '/untrusted-docker-config')
