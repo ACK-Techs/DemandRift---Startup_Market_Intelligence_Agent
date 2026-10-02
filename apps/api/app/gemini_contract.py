@@ -80,10 +80,11 @@ class GeminiPolicy:
         return f"{base}{self.model}:generateContent"
 
     def reservation(self, *, prompt_token_ceiling: int) -> ResourceAmount:
-        """Caller must establish this input ceiling before admission.
+        """Caller must version its input reservation policy before admission.
 
         maxOutputTokens includes both hidden thinking and visible output. The
-        transport/consumer must enforce the same request and input bound.
+        historical argument name does not prove a mathematical input bound.
+        A conservative estimate consumer must say so and retain actual overrun.
         """
         _integer(prompt_token_ceiling, minimum=1, maximum=1048576)
         return ResourceAmount(

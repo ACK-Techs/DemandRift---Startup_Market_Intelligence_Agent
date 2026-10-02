@@ -10,13 +10,18 @@ Sabit model `gemini-3.1-flash-lite` ve yalnız metin kullanılır. Resmî
 [model sayfası](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite)
 1.048.576 giriş ve 65.536 çıktı token tavanını doğrular. Seçilen route/anahtarın
 gerçek erişimi ayrı zorunlu canlı kapıdır; dokümanda listelenmesi erişim kanıtı
-değildir. Gemini policy giriş tavanını kendisi tahmin etmez. Consumer aynı
-request için güvenilir giriş tavanını kanıtlamadan rezervasyon/gönderim açamaz.
+değildir. Gemini policy giriş rezervasyonunu kendisi seçmez. Consumer aynı
+request için sürümlü giriş admission politikasını uygular. Yeni compact policy
+tam kanonik isteği en fazla 32KiB ile sınırlar ve 65.536 giriş tokenını temkinli
+**tahmin** olarak rezerve eder; bu matematiksel üst sınır veya sağlayıcının gerçek
+tahsilatına kesin limit garantisi değildir. `prompt_token_ceiling` tarihsel argüman
+adı korunur. Bilinen actual aşımı kaydedilip suite/account kapatılır; unknown
+rezervasyon/slot iade edilmez. Gerçek formatusage testi hâlâ zorunludur.
 
 [GenerateContent thinking kılavuzu](https://ai.google.dev/gemini-api/docs/generate-content/thinking?hl=en)
 `maxOutputTokens` tavanının hem düşünme hem görünen çıktıyı kapsadığını açıklar.
-`MINIMAL` düşünmeyi sıfıra indirme garantisi değildir. Rezervasyon bilinen giriş
-tavanı + istenen toplam çıktı tavanını ve tamamı normal giriş fiyatından giriş
+`MINIMAL` düşünmeyi sıfıra indirme garantisi değildir. Rezervasyon sürümlü giriş
+rezervasyonu + istenen toplam çıktı tavanını ve tamamı normal giriş fiyatından giriş
 maliyetini tutar. Consumer gerçek response byte sınırını ayrıca uygular.
 
 Resmî [usage alanları](https://ai.google.dev/api/generate-content) ve
