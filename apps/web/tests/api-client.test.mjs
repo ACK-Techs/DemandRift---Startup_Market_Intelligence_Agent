@@ -3,7 +3,7 @@ import { test } from "node:test";
 import { parseWire } from "../lib/api/wire.ts";
 import { createApiClient } from "../lib/api/client.ts";
 import { runStates, sourceStates, outcomeLabels, presentState } from "../lib/api/status.ts";
-import { versions, brief, raw as rawArtifact, assessment as insufficient } from "../../../packages/contracts/tests/producer-consumer.ts";
+import { versions, brief, raw as rawArtifact, assessment as insufficient, humanBriefConfirmation, analysisCreate, preparationAnalysis, analysisOperation, analysisPage, planDraftCreate, humanPlanPatch, planApprovalCreate, planReference, planPage, planPreparation, planMutationReceipt } from "../../../packages/contracts/tests/producer-consumer.ts";
 import schema from "../../../packages/contracts/schema/wire.schema.json" with { type: "json" };
 import { runInNewContext } from "node:vm";
 
@@ -17,13 +17,13 @@ const error = (code = "rate_limited") => ({ schema_version: "1.0.0", code, messa
   request_id: other, operation: "request", stage: null, query_id: null, details_ref: null, source_id: null,
   retryable: true, retry_after_seconds: 2, usage: null, remaining_work: [], next_step: null });
 
-test("the accepted thirty-nine-model producer catalog includes exactly the typed preparation exports and compiles", () => {
+test("the accepted fifty-one-model producer catalog includes exactly the typed Phase 1 exports and compiles", () => {
   const expected = ["ApiError", "BudgetLimits", "Usage", "Versions", "ProvenanceField", "BriefContent", "IdeaBrief",
     "SourcePlanItem", "QueryPlanItem", "ResearchPlan", "SourceCounts", "QueryExecution", "RawArtifact", "TextSegment",
     "NormalizedDocument", "Claim", "Citation", "SourceReport", "EvidenceBundle", "SufficiencyAssessment", "ResearchGapRequest",
     "ReportStatement", "DecisionReport", "ResearchRun", "User", "Session", "AuthCredentials", "ProjectCreate", "Project",
     "PageInfo", "ProjectPage", "RunPage", "ResearchCreate", "HumanBriefPatch", "BriefReference", "ResearchPreparation",
-    "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt"];
+    "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt", "HumanBriefConfirm","PreparationAnalysisCreate","PreparationAnalysis","PreparationAnalysisOperation","PreparationAnalysisPage","PlanDraftCreate","HumanPlanPatch","PlanApprovalCreate","PlanReference","ResearchPlanPage","ResearchPlanPreparation","PlanMutationReceipt"];
   assert.deepEqual(Object.keys(schema.models).sort(), expected.sort());
   for (const model of Object.keys(schema.models)) {
     const result = parseWire(model, "{}");
@@ -447,4 +447,254 @@ test("logout rejects unexpected success and preserves authenticated/error/unknow
   assert.equal(calls, 1);
   const ordinary = await createApiClient(async () => new Response(null, { status: 204 })).request("Session", "/api/v1/auth/session");
   assert.equal(ordinary.ok, false); assert.equal(ordinary.category, "contract");
+});
+
+const phase1Examples = { HumanBriefConfirm: humanBriefConfirmation, PreparationAnalysisCreate: analysisCreate,
+  PreparationAnalysis: preparationAnalysis, PreparationAnalysisOperation: analysisOperation, PreparationAnalysisPage: analysisPage,
+  PlanDraftCreate: planDraftCreate, HumanPlanPatch: humanPlanPatch, PlanApprovalCreate: planApprovalCreate,
+  PlanReference: planReference, ResearchPlanPage: planPage, ResearchPlanPreparation: planPreparation, PlanMutationReceipt: planMutationReceipt };
+const copyPhase1 = model => structuredClone(phase1Examples[model]);
+const rejectsPhase1 = (model, value) => assert.equal(parseWire(model, JSON.stringify(value)).ok, false, `${model}: ${JSON.stringify(value)}`);
+for (const [model, value] of Object.entries(phase1Examples)) test(`Phase 1 producer ${model} roundtrips exact serialized values`, () => {
+  const source = JSON.stringify(value), parsed = parseWire(model, source);
+  assert.equal(parsed.ok, true, JSON.stringify(parsed)); assert.deepEqual(parsed.data, value); assert.equal(parsed.raw, source);
+});
+
+test("Phase 1 sparse plan edits keep omitted defaults and explicit empty exclusions distinct", () => {
+  const patch = copyPhase1("HumanPlanPatch");
+  const selected = Object.fromEntries(Object.entries(patch).filter(([key]) => key.startsWith("expected_")));
+  const minimal = { ...selected, excluded_query_ids: [] }, parsed = parseWire("HumanPlanPatch", JSON.stringify(minimal));
+  assert.equal(parsed.ok, true); assert.deepEqual(parsed.data, minimal); assert.equal(Object.hasOwn(parsed.data, "budget"), false);
+  rejectsPhase1("HumanPlanPatch", selected);
+  for (const key of ["budget", "research_mode", "excluded_query_ids", "excluded_source_ids", "query_edits", "intent_decisions"])
+    rejectsPhase1("HumanPlanPatch", { ...minimal, [key]: null });
+  rejectsPhase1("HumanPlanPatch", { ...minimal, query_edits: [{ query_id: other, query_text: "first" }], excluded_query_ids: [other] });
+  rejectsPhase1("HumanPlanPatch", { ...minimal, query_edits: [{ query_id: other, query_text: "first" }, { query_id: other, query_text: "second" }] });
+  rejectsPhase1("HumanPlanPatch", { ...minimal, intent_decisions: [{ intent_id: other, included: false }] });
+  rejectsPhase1("HumanPlanPatch", { ...minimal, excluded_source_ids: ["https://example.org/"] });
+});
+
+test("Phase 1 request selections reject float, exponential, unsafe, boolean and string identity versions", () => {
+  for (const model of ["HumanBriefConfirm", "PreparationAnalysisCreate", "PlanDraftCreate", "HumanPlanPatch", "PlanApprovalCreate"]) {
+    const value = copyPhase1(model), field = model === "HumanPlanPatch" || model === "PlanApprovalCreate" ? "expected_plan_version" : "expected_brief_version";
+    for (const token of ["1.0", "1e0", "true", '"1"', "0", "-1", "2147483648", "9007199254740992"]) {
+      const raw = JSON.stringify(value).replace(new RegExp(`"${field}":${value[field]}\\b`), `"${field}":${token}`);
+      assert.equal(parseWire(model, raw).ok, false, `${model}: ${token}`);
+    }
+  }
+});
+
+test("Phase 1 human requests reject caller identity, URLs, model provenance and execution permissions", () => {
+  for (const model of ["HumanBriefConfirm", "PreparationAnalysisCreate", "PlanDraftCreate", "HumanPlanPatch", "PlanApprovalCreate"])
+    for (const [key, value] of Object.entries({ user_id: owner, original_idea: "changed", origin: "user_confirmed", status: "confirmed", permission: "permitted", runtime_enabled: true, allowed_origins: ["https://example.org/"], model: "caller-selected", provider_origin: "https://example.org/" }))
+      rejectsPhase1(model, { ...copyPhase1(model), [key]: value });
+});
+
+test("Phase 1 brief confirmation retains exact proposal selection and explicit clarification preference", () => {
+  for (const patch of [{ analysis_id: null }, { accepted_proposal_ids: ["field-target", "field-target"] }, { category_proposal_id: null },
+    { category_choice: "current" }, { accepted_proposal_ids: ["category-tool"] }, { skipped_clarification: true, continue_with_unknowns: false }, { skipped_clarification: 1 }])
+    rejectsPhase1("HumanBriefConfirm", { ...copyPhase1("HumanBriefConfirm"), ...patch });
+  const minimal = { expected_brief_id: humanBriefConfirmation.expected_brief_id, expected_brief_version: 1, category_choice: "unmatched" };
+  assert.deepEqual(parseWire("HumanBriefConfirm", JSON.stringify(minimal)).data, minimal);
+});
+
+test("Phase 1 analysis plan selection is all-or-none and stays separate from brief analysis", () => {
+  for (const patch of [{ expected_plan_id: other }, { expected_plan_version: 1 }, { expected_plan_fingerprint: "a".repeat(64) },
+    { expected_plan_id: other, expected_plan_version: 1, expected_plan_fingerprint: "a".repeat(64) }])
+    rejectsPhase1("PreparationAnalysisCreate", { ...copyPhase1("PreparationAnalysisCreate"), ...patch });
+  const positive = { ...copyPhase1("PreparationAnalysisCreate"), kind: "plan", expected_plan_id: other, expected_plan_version: 1, expected_plan_fingerprint: "a".repeat(64) };
+  assert.equal(parseWire("PreparationAnalysisCreate", JSON.stringify(positive)).ok, true);
+});
+
+test("Phase 1 proposal lineage rejects duplicate, immutable, excluded and foreign-version hypotheses", () => {
+  const mutations = [a => a.query_hypotheses[0].proposal_id = a.field_proposals[0].proposal_id,
+    a => a.query_hypotheses[0].intent_proposal_id = "unknown", a => { a.intent_proposals[0].included = false; a.intent_proposals[0].exclusion_reason = "Excluded"; },
+    a => a.versions.brief = 2, a => a.field_proposals.push({ ...a.field_proposals[0], proposal_id: "other-field", assumption_id: "other-assumption" }),
+    a => a.field_proposals.push({ ...a.field_proposals[0], proposal_id: "other-field", field_path: "market_scope" }),
+    a => a.field_proposals[0].field_path = "original_idea", a => a.clarifying_questions = ["one", "two", "three", "four"]];
+  for (const mutate of mutations) { const value = copyPhase1("PreparationAnalysis"); mutate(value); rejectsPhase1("PreparationAnalysis", value); }
+  for (const field of ["source_id", "allowed_origins", "permission", "user_confirmed", "query_kind", "limits", "profile_version"]) {
+    const value = copyPhase1("PreparationAnalysis"); value.query_hypotheses[0][field] = true; rejectsPhase1("PreparationAnalysis", value);
+  }
+});
+
+test("Phase 1 operation receipt binds nested scope, identity, kind and usage uncertainty exactly", () => {
+  for (const key of ["user_id", "project_id", "research_id", "analysis_id", "input_brief_id", "input_brief_version"]) {
+    const value = copyPhase1("PreparationAnalysisOperation"); value[key] = key.endsWith("version") ? 2 : "ffffffff-ffff-4fff-8fff-ffffffffffff"; rejectsPhase1("PreparationAnalysisOperation", value);
+  }
+  for (const patch of [{ operation: "propose_plan" }, { status: "pending" }, { analysis: null }, { attempt_id: null }, { status: "provider_unknown" }])
+    rejectsPhase1("PreparationAnalysisOperation", { ...copyPhase1("PreparationAnalysisOperation"), ...patch });
+  const unknown = { ...copyPhase1("PreparationAnalysisOperation"), status: "provider_unknown", analysis: null };
+  unknown.usage.provider_result_unknown = true;
+  assert.equal(parseWire("PreparationAnalysisOperation", JSON.stringify(unknown)).ok, true);
+});
+
+test("Phase 1 history and nested envelopes retain the requested tenant scope", () => {
+  const scope = { user_id: preparationAnalysis.user_id, project_id: preparationAnalysis.project_id, research_id: preparationAnalysis.research_id };
+  for (const model of ["PreparationAnalysis", "PreparationAnalysisOperation", "PreparationAnalysisPage", "ResearchPlanPage", "ResearchPlanPreparation", "PlanMutationReceipt"]) {
+    assert.equal(parseWire(model, JSON.stringify(copyPhase1(model)), scope).ok, true, model);
+    const result = parseWire(model, JSON.stringify(copyPhase1(model)), { ...scope, user_id: "ffffffff-ffff-4fff-8fff-ffffffffffff" });
+    assert.equal(result.ok, false, model); assert.equal(result.reason, "scope_mismatch", model);
+  }
+  for (const model of ["PreparationAnalysisPage", "ResearchPlanPage"]) {
+    for (const mode of ["duplicate", "foreign", "over-limit"]) {
+      const value = copyPhase1(model); value.items.push(structuredClone(value.items[0]));
+      if (mode === "foreign") { value.items[1].research_id = other; value.items[1][model === "PreparationAnalysisPage" ? "analysis_id" : "research_plan_id"] = other; }
+      if (mode === "over-limit") value.page.limit = 1;
+      rejectsPhase1(model, value);
+    }
+  }
+});
+
+test("Phase 1 receipts retain historical result fingerprint and append project-wide versions", () => {
+  for (const key of ["user_id", "project_id", "research_id", "result_plan_id", "result_plan_version", "result_plan_fingerprint", "input_brief_id", "input_brief_version"]) {
+    const value = copyPhase1("PlanMutationReceipt"); value[key] = key.endsWith("version") ? value[key] + 1 : key.endsWith("fingerprint") ? "d".repeat(64) : other;
+    rejectsPhase1("PlanMutationReceipt", value);
+  }
+  for (const patch of [{ input_plan_id: other }, { operation: "approve_plan" }, { operation: "revise_plan" }])
+    rejectsPhase1("PlanMutationReceipt", { ...copyPhase1("PlanMutationReceipt"), ...patch });
+  const revised = copyPhase1("PlanMutationReceipt");
+  Object.assign(revised, { operation: "revise_plan", input_plan_id: revised.result_plan_id, input_plan_version: 1, input_plan_fingerprint: "c".repeat(64), result_plan_version: 3 });
+  revised.plan.plan_version = 3; revised.plan.versions.plan = 3;
+  assert.equal(parseWire("PlanMutationReceipt", JSON.stringify(revised)).ok, true);
+});
+
+test("Phase 1 closed source scope, even legacy confirmed empty plans, cannot claim approval or start", () => {
+  for (const flag of ["can_approve", "can_start"]) {
+    const value = copyPhase1("ResearchPlanPreparation");
+    Object.assign(value.eligibility, { [flag]: true, blocking_reasons: [], qualification_version: "qualified-v1", qualification_digest: "a".repeat(64), valid_until: "2027-10-02T00:00:00Z" });
+    value.plan.versions.source_registry = "qualified-v1";
+    if (flag === "can_start") Object.assign(value.plan, { status: "confirmed", confirmed_at: "2026-10-02T00:00:00Z" });
+    rejectsPhase1("ResearchPlanPreparation", value);
+  }
+  for (const patch of [{ qualification_digest: "a".repeat(64) }, { coverage_gaps: [{ gap_id: "gap", reason: "Missing", required: true, intent_id: null, source_ids: [], missing_fields: [] }, { gap_id: "gap", reason: "Missing", required: true, intent_id: null, source_ids: [], missing_fields: [] }] }]) {
+    const value = copyPhase1("ResearchPlanPreparation"); Object.assign(value.eligibility, patch); rejectsPhase1("ResearchPlanPreparation", value);
+  }
+});
+
+test("Phase 1 nested plan provenance rejects unknown facts, fake confirmation and category drift", () => {
+  for (const model of ["ResearchPlanPreparation", "PlanMutationReceipt", "ResearchPlanPage"]) {
+    for (const mutate of [b => b.target_user.value = "asserted without origin", b => { b.target_user.state = "known"; },
+      b => { b.target_user.state = "inferred"; b.target_user.value = "AI"; b.target_user.origin = "user_stated"; },
+      b => { b.target_user.state = "conflicting"; b.target_user.conflicting_values = ["one"]; },
+      b => b.category_origin = null, b => { b.category_origin = "user_confirmed"; b.category_confirmed = false; },
+      b => b.language_scope = ["tr", "tr"], b => { b.skipped_clarification = true; b.continue_with_unknowns = false; }]) {
+      const value = copyPhase1(model), plan = model === "ResearchPlanPage" ? value.items[0] : value.plan;
+      mutate(plan.brief); rejectsPhase1(model, value);
+    }
+  }
+});
+
+test("Phase 1 Unicode query hypotheses keep scalar code-point bounds and Rust whitespace", () => {
+  for (const [text, valid] of [["\uFEFF", true], ["\u0085", false], ["\u001C", true], ["\ud800", false], ["🙂".repeat(1000), true], ["🙂".repeat(1001), false]]) {
+    const value = copyPhase1("PreparationAnalysis"); value.query_hypotheses[0].query_text = text;
+    const result = parseWire("PreparationAnalysis", JSON.stringify(value)); assert.equal(result.ok, valid);
+    if (result.ok) assert.equal(result.data.query_hypotheses[0].query_text, text);
+  }
+});
+
+test("Phase 1 nested budgets compare fixed-decimal amounts and cannot widen a soft limit", () => {
+  for (const model of ["PreparationAnalysisCreate", "PlanDraftCreate", "HumanPlanPatch"]) {
+    const value = copyPhase1(model); value.budget = { ...analysisCreate.budget, max_cost_usd: "1.000000", soft_cost_usd: "1.000001" }; rejectsPhase1(model, value);
+    value.budget.soft_cost_usd = "0.999999"; assert.equal(parseWire(model, JSON.stringify(value)).ok, true);
+  }
+});
+
+test("additive confirm_brief receipt keeps the exact accepted brief binding", () => {
+  const value = receipt(); value.operation = "confirm_brief";
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(value)).ok, true);
+  value.brief_id = other; rejectsPhase1("PreparationMutationReceipt", value);
+});
+
+function syntheticQualifiedPhase1() {
+  const p = copyPhase1("ResearchPlanPreparation"), limits = { max_items: 1, max_pages: 1, max_requests: 1, max_response_bytes: 100,
+    max_total_bytes: 100, max_seconds: 1, max_retries: 0, max_llm_tokens: 0 };
+  p.plan.intents = [{ intent_id: owner, intent: "problem_demand", question: "Evidence?", priority: 1, brief_basis: ["original_idea"],
+    expected_fields: ["text"], required_evidence_types: ["direct_experience"], validation_kind: "investigate_secondary", included: true, exclusion_reason: null }];
+  p.plan.source_plan = [{ source_id: "source-0000", profile_version: "unit-v1", connector_id: "unit", connector_version: "unit-v1", family: "official_web",
+    permission: "permitted", health: "qualified", access_method: "permitted_http", allowed_origins: ["https://example.org/"], surface_id: "unit-text", capabilities: ["search"],
+    allowed_content_types: ["text/plain"], eligible_categories: ["gelistirici-araci"], supported_intents: ["problem_demand"], extract_fields: [],
+    access_policy_version: "unit-v1", retention_policy_version: "unit-v1", rate_limit_policy_version: "unit-v1", access_reviewed_at: "2026-10-02T00:00:00Z",
+    fallback_source_ids: [], limits, expected_fields: ["text"], language_scope: ["tr"], market_scope: null, ownership_key: null, limitations: [] }];
+  p.plan.query_plan = [{ query_id: other, intent_id: owner, question: "Evidence?", intent: "problem_demand", source_id: "source-0000",
+    query_text: "Unconfirmed hypothesis", language: "tr", market_scope: null, origin: "ai_hypothesis", user_confirmed: false, query_kind: "fulltext",
+    surface_id: "unit-text", priority: 1, expected_fields: ["text"], origin_refs: ["unit-assumption"], limits: { ...limits } }];
+  p.plan.versions.source_registry = "unit-qualification-v1";
+  Object.assign(p.eligibility, { can_approve: true, blocking_reasons: [], qualification_version: "unit-qualification-v1", qualification_digest: "a".repeat(64),
+    checked_at: "2026-10-02T00:00:00.000000Z", valid_until: "2026-10-02T00:00:00.000001Z" });
+  return p;
+}
+
+test("Phase 1 approval preview preserves hypotheses and exact microsecond expiry; execution requires confirmation", () => {
+  const p = syntheticQualifiedPhase1(), preview = parseWire("ResearchPlanPreparation", JSON.stringify(p));
+  assert.equal(preview.ok, true, JSON.stringify(preview)); assert.equal(preview.data.plan.query_plan[0].user_confirmed, false);
+  p.eligibility.can_approve = false; p.eligibility.can_start = true; Object.assign(p.plan, { status: "confirmed", confirmed_at: "2026-10-02T00:00:00Z" });
+  rejectsPhase1("ResearchPlanPreparation", p);
+  p.plan.query_plan[0].user_confirmed = true; assert.equal(parseWire("ResearchPlanPreparation", JSON.stringify(p)).ok, true);
+});
+
+for (const [label, mutate] of Object.entries({ expired: p => p.eligibility.valid_until = p.eligibility.checked_at,
+  "both-flags": p => p.eligibility.can_start = true, "old-brief": p => p.current_brief.brief_version += 1,
+  "not-latest": p => p.is_latest = false, "source-permission": p => p.plan.source_plan[0].permission = "unknown",
+  "source-health": p => p.plan.source_plan[0].health = "deferred", "query-surface": p => p.plan.query_plan[0].surface_id = "another-surface",
+  "query-language": p => p.plan.query_plan[0].language = "en", "query-limit": p => p.plan.query_plan[0].limits.max_requests = 2,
+  "hypothesis-brief": p => Object.assign(p.plan.brief.target_user, { state: "inferred", value: "AI", origin: "ai_hypothesis", assumption_id: "unit-assumption" }) }))
+  test(`Phase 1 approval ${label} guard rejects synthetic qualified scope`, () => { const p = syntheticQualifiedPhase1(); mutate(p); rejectsPhase1("ResearchPlanPreparation", p); });
+
+const phase1DatedPaths = [
+  ["PlanReference", "created_at"], ["PreparationAnalysis", "created_at"],
+  ["PreparationAnalysisOperation", "created_at"], ["PreparationAnalysisOperation", "analysis.created_at"],
+  ["PreparationAnalysisPage", "items.0.created_at"], ["ResearchPlanPage", "items.0.created_at"],
+  ["ResearchPlanPage", "items.0.confirmed_at"], ["ResearchPlanPage", "items.0.source_plan.0.access_reviewed_at"],
+  ["ResearchPlanPreparation", "plan.created_at"], ["ResearchPlanPreparation", "plan.confirmed_at"],
+  ["ResearchPlanPreparation", "current_brief.created_at"], ["ResearchPlanPreparation", "eligibility.checked_at"],
+  ["ResearchPlanPreparation", "eligibility.valid_until"], ["ResearchPlanPreparation", "plan.source_plan.0.access_reviewed_at"],
+  ["PlanMutationReceipt", "created_at"], ["PlanMutationReceipt", "plan.created_at"],
+  ["PlanMutationReceipt", "plan.confirmed_at"], ["PlanMutationReceipt", "plan.source_plan.0.access_reviewed_at"] ];
+const phase1ValidTimestamps = ["2026-10-02T00:00:00Z", "2026-10-02T00:00:00.000001+03:00", "2026-10-02T00:00:00-03:30",
+  "2026-10-02T00:00:00.123456789Z", "2000-02-29T23:59:59Z", "2024-02-29T12:00:00Z", "0001-01-01T00:00:00Z",
+  "9999-12-31T23:59:59-23:59", "2026-10-02T00:00:00+23:59", "2026-10-02t00:00:00z", "2026-10-02 00:00:00+03:00",
+  "2026-10-02T00:00:00+0300", "2026-10-02T00:00:00,1Z", "2026-10-02T00:00Z", "2026-10-02T00:00:00-00:00"];
+const phase1InvalidTimestamps = ["2026-10-02T23:59:60Z", "2026-02-29T00:00:00Z", "1900-02-29T00:00:00Z", "2026-02-30T00:00:00Z",
+  "2026-04-31T00:00:00Z", "2026-00-01T00:00:00Z", "2026-13-01T00:00:00Z", "2026-10-00T00:00:00Z", "2026-10-32T00:00:00Z",
+  "0000-01-01T00:00:00Z", "2026-10-02T24:00:00Z", "2026-10-02T00:60:00Z", "2026-10-02T00:00:61Z", "2026-10-02T00:00:00+24:00",
+  "2026-10-02T00:00:00+00:60", "2026-10-02T00:00:00", "2026-10-02T00:00:00+03", "2026-10-02T00:00:00Z\n", "2026-10-02T00:00:00Z ", "2026-10-02T00:00:00.Z"];
+
+function phase1DatedPayload(model, path) {
+  const p = copyPhase1(model);
+  if (path.includes("source_plan")) {
+    const synthetic = syntheticQualifiedPhase1();
+    if (path.startsWith("items.")) p.items = [synthetic.plan]; else p.plan = synthetic.plan;
+  }
+  if (path.endsWith("confirmed_at")) {
+    const plan = model === "ResearchPlanPage" ? p.items[0] : p.plan;
+    Object.assign(plan, { status: "confirmed", confirmed_at: "2026-10-02T00:00:00Z" });
+    if (model === "PlanMutationReceipt") {
+      plan.plan_version = 2; plan.versions.plan = 2;
+      Object.assign(p, { operation: "approve_plan", input_plan_id: plan.research_plan_id, input_plan_version: 1, input_plan_fingerprint: "a".repeat(64), result_plan_version: 2 });
+    }
+  }
+  if (path === "eligibility.valid_until") Object.assign(p.eligibility, { qualification_version: "unit-v1", qualification_digest: "a".repeat(64), valid_until: "2026-10-03T00:00:00Z" });
+  return p;
+}
+function setPhase1Date(payload, path, value) {
+  const parts = path.split("."), last = parts.pop();
+  const parent = parts.reduce((current, part) => current[part], payload);
+  parent[last] = value;
+}
+for (const [model, path] of phase1DatedPaths)
+  test(`Phase 1 ${model}.${path} checks real calendar/time/offset and retains exact aware input`, () => {
+    const original = phase1DatedPayload(model, path);
+    for (const value of phase1InvalidTimestamps) { const p = structuredClone(original); setPhase1Date(p, path, value); rejectsPhase1(model, p); }
+    for (const value of phase1ValidTimestamps) {
+      const p = structuredClone(original); setPhase1Date(p, path, value); const raw = JSON.stringify(p), result = parseWire(model, raw);
+      assert.equal(result.ok, true, `${model}.${path}: ${value}: ${JSON.stringify(result)}`); assert.deepEqual(result.data, p); assert.equal(result.raw, raw);
+    }
+  });
+
+test("Phase 1 timestamps use declared schema format, preserve free text and leave accepted39 decoding unchanged", () => {
+  const p = copyPhase1("PreparationAnalysis"); p.known_unknowns = ["2026-10-02T23:59:60Z"]; p.versions.prompts = { created_at: "2026-10-02T23:59:60Z" };
+  assert.equal(parseWire("PreparationAnalysis", JSON.stringify(p)).ok, true);
+  const legacy = briefReference(); legacy.created_at = "2026-10-02T23:59:60Z";
+  assert.equal(parseWire("BriefReference", JSON.stringify(legacy)).ok, true);
 });

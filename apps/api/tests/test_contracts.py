@@ -81,7 +81,7 @@ def test_public_catalog_and_openapi_have_the_same_wire_version_and_resolved_refs
         openapi = client.get("/openapi.json").json()
     assert catalog == wire_catalog()
     assert catalog["schema_version"] == openapi["info"]["x-wire-schema-version"] == "1.0.0"
-    assert len(catalog["models"]) == 39
+    assert len(catalog["models"]) == 51
     assert "secret-never-in-contract" not in json.dumps(catalog)
     for name, definition in catalog["$defs"].items():
         expected = json.loads(json.dumps(definition).replace('"#/$defs/', '"#/components/schemas/Wire_'))
@@ -269,3 +269,573 @@ def test_bundle_source_reports_cannot_misattribute_or_duplicate_evidence():
         with pytest.raises(ValidationError): EvidenceBundle(**bad)
     payload["source_reports"].append(report)
     with pytest.raises(ValidationError): EvidenceBundle(**payload)
+
+
+# Phase 1 DTO checks use fixed synthetic producer data; no provider or native DB.
+def phase1_examples():
+    import sys
+    from pathlib import Path
+
+    scripts = str(Path(__file__).resolve().parents[1] / "scripts")
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    from contract_examples import producer_examples
+
+    return producer_examples()
+
+
+def phase1_payload(name):
+    dto = phase1_examples()[name]
+    return deepcopy(dto.model_dump(mode="json", exclude_unset=dto.model_config.get("json_schema_serialization_defaults_required") is False))
+
+
+@pytest.mark.parametrize(
+    "name",
+    [
+        "humanBriefConfirmation",
+        "analysisCreate",
+        "preparationAnalysis",
+        "analysisOperation",
+        "analysisPage",
+        "planDraftCreate",
+        "humanPlanPatch",
+        "planApprovalCreate",
+        "planReference",
+        "planPage",
+        "planPreparation",
+        "planMutationReceipt",
+    ],
+)
+def test_phase1_producer_roundtrip_keeps_bounded_hypotheses_and_closed_plan(name):
+    model = phase1_examples()[name]
+    restored = type(model).model_validate_json(model.model_dump_json(exclude_unset=model.model_config.get("json_schema_serialization_defaults_required") is False))
+    assert restored == model
+    assert restored.model_dump(mode="json") == model.model_dump(mode="json")
+
+
+@pytest.mark.parametrize(
+    "name,field",
+    [
+        ("humanBriefConfirmation", "expected_brief_version"),
+        ("analysisCreate", "expected_brief_version"),
+        ("planDraftCreate", "expected_brief_version"),
+        ("humanPlanPatch", "expected_plan_version"),
+        ("planApprovalCreate", "expected_plan_version"),
+    ],
+)
+@pytest.mark.parametrize("invalid", [True, "1", 1.0, 0, -1, 2147483648])
+def test_phase1_selection_rejects_coerced_or_out_of_range_versions(
+    name, field, invalid
+):
+    dto = phase1_examples()[name]
+    payload = phase1_payload(name)
+    payload[field] = invalid
+    with pytest.raises(ValidationError):
+        type(dto).model_validate(payload)
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("user_id", USER),
+        ("original_idea", "changed"),
+        ("origin", "user_confirmed"),
+        ("status", "confirmed"),
+        ("permission", "permitted"),
+        ("runtime_enabled", True),
+        ("allowed_origins", ["https://example.org/"]),
+    ],
+)
+def test_phase1_human_requests_cannot_submit_owner_or_execution_authority(field, value):
+    for name in (
+        "humanBriefConfirmation",
+        "analysisCreate",
+        "planDraftCreate",
+        "humanPlanPatch",
+        "planApprovalCreate",
+    ):
+        payload = phase1_payload(name)
+        payload[field] = value
+        with pytest.raises(ValidationError):
+            type(phase1_examples()[name]).model_validate(payload)
+
+
+def test_phase1_sparse_plan_edits_clear_by_explicit_empty_lists_without_default_materialization():
+    from app.contracts import HumanPlanPatch
+
+    full = phase1_payload("humanPlanPatch")
+    selection = {k: v for k, v in full.items() if k.startswith("expected_")}
+    sparse = selection | {"excluded_query_ids": []}
+    dto = HumanPlanPatch.model_validate(sparse)
+    assert dto.model_dump(mode="json", exclude_unset=True) == sparse
+    with pytest.raises(ValidationError):
+        HumanPlanPatch.model_validate(selection)
+    for field in (
+        "budget",
+        "research_mode",
+        "query_edits",
+        "intent_decisions",
+        "excluded_query_ids",
+    ):
+        with pytest.raises(ValidationError):
+            HumanPlanPatch.model_validate(selection | {field: None})
+    for edits in [
+        dict(query_edits=[dict(query_id=str(USER), query_text="x")] * 2),
+        dict(
+            query_edits=[dict(query_id=str(USER), query_text="x")],
+            excluded_query_ids=[str(USER)],
+        ),
+        dict(intent_decisions=[dict(intent_id=str(USER), included=False, reason=None)]),
+        dict(excluded_source_ids=["https://127.0.0.1/"]),
+    ]:
+        with pytest.raises(ValidationError):
+            HumanPlanPatch.model_validate(selection | edits)
+
+
+def test_phase1_human_confirmation_needs_exact_analysis_for_proposal_and_explicit_skip_unknown():
+    from app.contracts import HumanBriefConfirm
+
+    valid = phase1_payload("humanBriefConfirmation")
+    for patch in [
+        dict(analysis_id=None),
+        dict(accepted_proposal_ids=["same", "same"]),
+        dict(category_proposal_id=None),
+        dict(category_choice="current"),
+        dict(accepted_proposal_ids=[valid["category_proposal_id"]]),
+        dict(skipped_clarification=True, continue_with_unknowns=False),
+        dict(skipped_clarification=1),
+    ]:
+        with pytest.raises(ValidationError):
+            HumanBriefConfirm.model_validate(valid | patch)
+    unmatched = {
+        k: v
+        for k, v in valid.items()
+        if k not in ("analysis_id", "accepted_proposal_ids", "category_proposal_id")
+    }
+    unmatched.update(
+        category_choice="unmatched",
+        skipped_clarification=True,
+        continue_with_unknowns=True,
+    )
+    assert HumanBriefConfirm.model_validate(unmatched).category_choice == "unmatched"
+
+
+def test_phase1_analysis_selection_is_all_or_none_and_cannot_reclassify_brief_as_plan():
+    from app.contracts import PreparationAnalysisCreate
+
+    p = phase1_payload("analysisCreate")
+    for patch in [
+        dict(expected_plan_id=str(USER)),
+        dict(expected_plan_version=1),
+        dict(expected_plan_fingerprint="a" * 64),
+        dict(
+            expected_plan_id=str(USER),
+            expected_plan_version=1,
+            expected_plan_fingerprint="a" * 64,
+        ),
+    ]:
+        with pytest.raises(ValidationError):
+            PreparationAnalysisCreate.model_validate(p | patch)
+    assert (
+        PreparationAnalysisCreate.model_validate(
+            p
+            | dict(
+                kind="plan",
+                expected_plan_id=str(USER),
+                expected_plan_version=1,
+                expected_plan_fingerprint="a" * 64,
+            )
+        ).kind
+        == "plan"
+    )
+
+
+def test_phase1_analysis_rejects_orphan_excluded_or_duplicate_query_intent_lineage():
+    from app.contracts import PreparationAnalysis
+
+    original = phase1_payload("preparationAnalysis")
+    for kind in [
+        "duplicate-id",
+        "orphan-query",
+        "excluded-intent",
+        "wrong-versions",
+        "duplicate-field",
+        "duplicate-assumption",
+        "immutable-original",
+        "too-many-questions",
+    ]:
+        p = deepcopy(original)
+        if kind == "duplicate-id":
+            p["query_hypotheses"][0]["proposal_id"] = p["field_proposals"][0][
+                "proposal_id"
+            ]
+        elif kind == "orphan-query":
+            p["query_hypotheses"][0]["intent_proposal_id"] = "unseen"
+        elif kind == "excluded-intent":
+            p["intent_proposals"][0].update(
+                included=False, exclusion_reason="Not applicable"
+            )
+        elif kind == "wrong-versions":
+            p["versions"]["brief"] = 2
+        elif kind in ("duplicate-field", "duplicate-assumption"):
+            other = deepcopy(p["field_proposals"][0])
+            other["proposal_id"] = "another"
+            other["assumption_id"] = "another-assumption"
+            if kind == "duplicate-assumption":
+                other["field_path"] = "market_scope"
+                other["assumption_id"] = p["field_proposals"][0]["assumption_id"]
+            p["field_proposals"].append(other)
+        elif kind == "immutable-original":
+            p["field_proposals"][0]["field_path"] = "original_idea"
+        else:
+            p["clarifying_questions"] = ["One?"] * 4
+        with pytest.raises(ValidationError):
+            PreparationAnalysis.model_validate(p)
+    for forbidden in (
+        "source_url",
+        "source_id",
+        "permission",
+        "confirmed",
+        "user_confirmed",
+        "query_kind",
+        "limits",
+    ):
+        p = deepcopy(original)
+        p["query_hypotheses"][0][forbidden] = "model cannot authorize"
+        with pytest.raises(ValidationError):
+            PreparationAnalysis.model_validate(p)
+
+
+def test_phase1_analysis_operation_pairs_scope_selection_status_unknown_usage_and_kind():
+    from app.contracts import PreparationAnalysisOperation
+
+    original = phase1_payload("analysisOperation")
+    for field in (
+        "user_id",
+        "project_id",
+        "research_id",
+        "analysis_id",
+        "input_brief_id",
+        "input_brief_version",
+    ):
+        p = deepcopy(original)
+        p["analysis"][field] = 2 if field.endswith("version") else str(uuid4())
+        if field == "input_brief_version":
+            p["analysis"]["versions"]["brief"] = 2
+        with pytest.raises(ValidationError):
+            PreparationAnalysisOperation.model_validate(p)
+    for patch in [
+        dict(operation="propose_plan"),
+        dict(status="pending"),
+        dict(analysis=None),
+        dict(attempt_id=None),
+        dict(usage={"provider_result_unknown": True}),
+    ]:
+        with pytest.raises(ValidationError):
+            PreparationAnalysisOperation.model_validate(original | patch)
+    unknown = original | dict(
+        status="provider_unknown",
+        analysis=None,
+        usage={"provider_result_unknown": True},
+    )
+    assert (
+        PreparationAnalysisOperation.model_validate(
+            unknown
+        ).usage.provider_result_unknown
+        is True
+    )
+    with pytest.raises(ValidationError):
+        PreparationAnalysisOperation.model_validate(unknown | {"usage": {}})
+
+
+def test_phase1_plan_receipt_retains_exact_historical_result_and_pending_input_tuple():
+    from app.contracts import PlanMutationReceipt
+
+    original = phase1_payload("planMutationReceipt")
+    for field in (
+        "user_id",
+        "project_id",
+        "research_id",
+        "result_plan_id",
+        "result_plan_version",
+        "result_plan_fingerprint",
+        "input_brief_id",
+        "input_brief_version",
+    ):
+        p = deepcopy(original)
+        p[field] = (
+            original[field] + 1
+            if field.endswith("version")
+            else "d" * 64
+            if field.endswith("fingerprint")
+            else str(uuid4())
+        )
+        with pytest.raises(ValidationError):
+            PlanMutationReceipt.model_validate(p)
+    for patch in [
+        dict(input_plan_id=str(USER)),
+        dict(operation="approve_plan"),
+        dict(operation="revise_plan"),
+    ]:
+        with pytest.raises(ValidationError):
+            PlanMutationReceipt.model_validate(original | patch)
+    revised = deepcopy(original)
+    revised.update(
+        operation="revise_plan",
+        input_plan_id=original["result_plan_id"],
+        input_plan_version=1,
+        input_plan_fingerprint="c" * 64,
+        result_plan_version=3,
+    )
+    revised["plan"]["plan_version"] = 3
+    revised["plan"]["versions"]["plan"] = 3
+    assert (
+        PlanMutationReceipt.model_validate(revised).result_plan_version == 3
+    )  # project-wide versions can skip.
+
+
+def test_phase1_closed_scope_never_claims_approval_or_start_even_when_legacy_status_is_confirmed():
+    from app.contracts import ResearchPlanPreparation
+
+    original = phase1_payload("planPreparation")
+    assert original["eligibility"]["blocking_reasons"] == ["no_eligible_source"]
+    for flag in ("can_approve", "can_start"):
+        p = deepcopy(original)
+        p["eligibility"].update(
+            {
+                flag: True,
+                "blocking_reasons": [],
+                "qualification_version": "qualified-v1",
+                "qualification_digest": "a" * 64,
+                "valid_until": "2027-10-02T00:00:00Z",
+            }
+        )
+        p["plan"]["versions"]["source_registry"] = "qualified-v1"
+        if flag == "can_start":
+            p["plan"].update(status="confirmed", confirmed_at=NOW.isoformat())
+        with pytest.raises(ValidationError):
+            ResearchPlanPreparation.model_validate(p)
+    for patch in [
+        dict(qualification_digest="a" * 64),
+        dict(
+            coverage_gaps=[dict(gap_id="gap", reason="Missing fields", required=True)]
+            * 2
+        ),
+    ]:
+        p = deepcopy(original)
+        p["eligibility"].update(patch)
+        with pytest.raises(ValidationError):
+            ResearchPlanPreparation.model_validate(p)
+
+
+def test_phase1_history_pages_reject_mixed_research_duplicate_identity_and_over_limit():
+    from app.contracts import PreparationAnalysisPage, ResearchPlanPage
+
+    for name, model in [
+        ("analysisPage", PreparationAnalysisPage),
+        ("planPage", ResearchPlanPage),
+    ]:
+        original = phase1_payload(name)
+        for mode in ("duplicate", "foreign", "over-limit"):
+            p = deepcopy(original)
+            p["items"].append(deepcopy(p["items"][0]))
+            if mode == "foreign":
+                p["items"][1]["research_id"] = str(uuid4())
+                p["items"][1][
+                    "analysis_id" if name == "analysisPage" else "research_plan_id"
+                ] = str(uuid4())
+            if mode == "over-limit":
+                p["page"]["limit"] = 1
+            with pytest.raises(ValidationError):
+                model.model_validate(p)
+
+
+def test_phase1_unicode_is_scalar_and_rust_whitespace_without_normalizing_query_text():
+    from app.contracts import PreparationAnalysis
+
+    p = phase1_payload("preparationAnalysis")
+    for text, valid in [
+        ("\ufeff", True),
+        ("\u0085", False),
+        ("\u001c", True),
+        ("\ud800", False),
+        ("🙂" * 1000, True),
+        ("🙂" * 1001, False),
+    ]:
+        p["query_hypotheses"][0]["query_text"] = text
+        if valid:
+            assert (
+                PreparationAnalysis.model_validate(p).query_hypotheses[0].query_text
+                == text
+            )
+        else:
+            with pytest.raises(ValidationError):
+                PreparationAnalysis.model_validate(p)
+
+
+def test_generated_examples_reject_unknown_or_duplicate_model_types_before_writing(
+    monkeypatch,
+):
+    phase1_examples()  # adds the app-only scripts path.
+    import generate_contracts
+    from app.contracts import Versions
+
+    for examples in [
+        {"one": Versions(), "two": Versions()},
+        {"one": object()},
+        {"invalid-name": Versions()},
+        {"class": Versions()},
+        {42: Versions()},
+    ]:
+        monkeypatch.setattr(generate_contracts, "producer_examples", lambda: examples)
+        with pytest.raises(ValueError):
+            generate_contracts.generated_files()
+
+
+def synthetic_phase1_qualified_preparation():
+    """Contract-only hypothetical scope, never inserted in the closed registry."""
+    p = phase1_payload("planPreparation")
+    limits = dict(max_items=1, max_pages=1, max_requests=1, max_response_bytes=100,
+                  max_total_bytes=100, max_seconds=1, max_retries=0, max_llm_tokens=0)
+    intent_id, query_id = str(uuid4()), str(uuid4())
+    p["plan"]["intents"] = [dict(intent_id=intent_id, intent="problem_demand", question="Evidence?", priority=1,
+        brief_basis=["original_idea"], expected_fields=["text"], required_evidence_types=["direct_experience"],
+        validation_kind="investigate_secondary", included=True, exclusion_reason=None)]
+    p["plan"]["source_plan"] = [dict(source_id="source-0000", profile_version="unit-v1", connector_id="unit",
+        connector_version="unit-v1", family="official_web", permission="permitted", health="qualified", access_method="permitted_http",
+        allowed_origins=["https://example.org/"], surface_id="unit-text", capabilities=["search"], allowed_content_types=["text/plain"],
+        eligible_categories=["gelistirici-araci"], supported_intents=["problem_demand"], extract_fields=[], access_policy_version="unit-v1",
+        retention_policy_version="unit-v1", rate_limit_policy_version="unit-v1", access_reviewed_at="2026-10-02T00:00:00Z",
+        fallback_source_ids=[], limits=limits, expected_fields=["text"], language_scope=["tr"], market_scope=None, ownership_key=None, limitations=[])]
+    p["plan"]["query_plan"] = [dict(query_id=query_id, intent_id=intent_id, question="Evidence?", intent="problem_demand", source_id="source-0000",
+        query_text="Unconfirmed hypothesis", language="tr", market_scope=None, origin="ai_hypothesis", user_confirmed=False,
+        query_kind="fulltext", surface_id="unit-text", priority=1, expected_fields=["text"], origin_refs=["unit-assumption"], limits=dict(limits))]
+    p["plan"]["versions"]["source_registry"] = "unit-qualification-v1"
+    p["eligibility"].update(can_approve=True, blocking_reasons=[], qualification_version="unit-qualification-v1", qualification_digest="a"*64,
+        checked_at="2026-10-02T00:00:00.000000Z", valid_until="2026-10-02T00:00:00.000001Z")
+    return p
+
+
+def test_phase1_approval_preview_preserves_hypothesis_then_start_requires_actual_confirmation():
+    from app.contracts import ResearchPlanPreparation
+    p = synthetic_phase1_qualified_preparation()
+    preview = ResearchPlanPreparation.model_validate(p)
+    assert not preview.plan.query_plan[0].user_confirmed
+    p["eligibility"].update(can_approve=False, can_start=True)
+    p["plan"].update(status="confirmed", confirmed_at="2026-10-02T00:00:00Z")
+    with pytest.raises(ValidationError):
+        ResearchPlanPreparation.model_validate(p)
+    p["plan"]["query_plan"][0]["user_confirmed"] = True
+    assert ResearchPlanPreparation.model_validate(p).eligibility.can_start
+
+
+@pytest.mark.parametrize("mutation", ["expired", "both-flags", "old-brief", "not-latest", "source-permission", "source-health", "query-surface", "query-language", "query-limit", "hypothesis-brief"])
+def test_phase1_current_qualified_contract_keeps_each_approval_gate(mutation):
+    from app.contracts import ResearchPlanPreparation
+    p = synthetic_phase1_qualified_preparation()
+    if mutation == "expired":
+        p["eligibility"]["valid_until"] = p["eligibility"]["checked_at"]
+    elif mutation == "both-flags":
+        p["eligibility"]["can_start"] = True
+    elif mutation == "old-brief":
+        p["current_brief"]["brief_version"] += 1
+    elif mutation == "not-latest":
+        p["is_latest"] = False
+    elif mutation == "source-permission":
+        p["plan"]["source_plan"][0]["permission"] = "unknown"
+    elif mutation == "source-health":
+        p["plan"]["source_plan"][0]["health"] = "deferred"
+    elif mutation == "query-surface":
+        p["plan"]["query_plan"][0]["surface_id"] = "another-surface"
+    elif mutation == "query-language":
+        p["plan"]["query_plan"][0]["language"] = "en"
+    elif mutation == "query-limit":
+        p["plan"]["query_plan"][0]["limits"]["max_requests"] = 2
+    elif mutation == "hypothesis-brief":
+        p["plan"]["brief"]["target_user"].update(state="inferred", value="AI", origin="ai_hypothesis", assumption_id="unit-assumption")
+    with pytest.raises(ValidationError):
+        ResearchPlanPreparation.model_validate(p)
+
+
+PHASE1_DATED_PATHS = [
+    ("PlanReference", "created_at"),
+    ("PreparationAnalysis", "created_at"),
+    ("PreparationAnalysisOperation", "created_at"),
+    ("PreparationAnalysisOperation", "analysis.created_at"),
+    ("PreparationAnalysisPage", "items.0.created_at"),
+    ("ResearchPlanPage", "items.0.created_at"),
+    ("ResearchPlanPage", "items.0.confirmed_at"),
+    ("ResearchPlanPage", "items.0.source_plan.0.access_reviewed_at"),
+    ("ResearchPlanPreparation", "plan.created_at"),
+    ("ResearchPlanPreparation", "plan.confirmed_at"),
+    ("ResearchPlanPreparation", "current_brief.created_at"),
+    ("ResearchPlanPreparation", "eligibility.checked_at"),
+    ("ResearchPlanPreparation", "eligibility.valid_until"),
+    ("ResearchPlanPreparation", "plan.source_plan.0.access_reviewed_at"),
+    ("PlanMutationReceipt", "created_at"),
+    ("PlanMutationReceipt", "plan.created_at"),
+    ("PlanMutationReceipt", "plan.confirmed_at"),
+    ("PlanMutationReceipt", "plan.source_plan.0.access_reviewed_at"),
+]
+PHASE1_VALID_TIMESTAMPS = [
+    "2026-10-02T00:00:00Z", "2026-10-02T00:00:00.000001+03:00",
+    "2026-10-02T00:00:00-03:30", "2026-10-02T00:00:00.123456789Z",
+    "2000-02-29T23:59:59Z", "2024-02-29T12:00:00Z",
+    "0001-01-01T00:00:00Z", "9999-12-31T23:59:59-23:59",
+    "2026-10-02T00:00:00+23:59", "2026-10-02t00:00:00z",
+    "2026-10-02 00:00:00+03:00", "2026-10-02T00:00:00+0300",
+    "2026-10-02T00:00:00,1Z", "2026-10-02T00:00Z",
+    "2026-10-02T00:00:00-00:00",
+]
+PHASE1_INVALID_TIMESTAMPS = [
+    "2026-10-02T23:59:60Z", "2026-02-29T00:00:00Z", "1900-02-29T00:00:00Z",
+    "2026-02-30T00:00:00Z", "2026-04-31T00:00:00Z", "2026-00-01T00:00:00Z",
+    "2026-13-01T00:00:00Z", "2026-10-00T00:00:00Z", "2026-10-32T00:00:00Z",
+    "0000-01-01T00:00:00Z", "2026-10-02T24:00:00Z", "2026-10-02T00:60:00Z",
+    "2026-10-02T00:00:61Z", "2026-10-02T00:00:00+24:00", "2026-10-02T00:00:00+00:60",
+    "2026-10-02T00:00:00", "2026-10-02T00:00:00+03", "2026-10-02T00:00:00Z\n",
+    "2026-10-02T00:00:00Z ", "2026-10-02T00:00:00.Z",
+]
+
+
+def phase1_dated_payload(model_name, path):
+    examples = phase1_examples()
+    dto = next(v for v in examples.values() if type(v).__name__ == model_name)
+    p = json.loads(dto.model_dump_json())
+    if "source_plan" in path:
+        synthetic = synthetic_phase1_qualified_preparation()
+        p["plan" if path.startswith("plan.") else "items"] = synthetic["plan"] if path.startswith("plan.") else [synthetic["plan"]]
+    if path.endswith("confirmed_at"):
+        plan = p["items"][0] if model_name == "ResearchPlanPage" else p["plan"]
+        plan.update(status="confirmed", confirmed_at="2026-10-02T00:00:00Z")
+        if model_name == "PlanMutationReceipt":
+            plan["plan_version"] = 2
+            plan["versions"]["plan"] = 2
+            p.update(operation="approve_plan", input_plan_id=plan["research_plan_id"], input_plan_version=1,
+                     input_plan_fingerprint="a"*64, result_plan_version=2)
+    if path == "eligibility.valid_until":
+        p["eligibility"].update(qualification_version="unit-v1", qualification_digest="a"*64,
+                                valid_until="2026-10-03T00:00:00Z")
+    return dto, p
+
+
+def set_phase1_date(payload, path, value):
+    parts = path.split(".")
+    current = payload
+    for part in parts[:-1]:
+        current = current[int(part)] if isinstance(current, list) else current[part]
+    current[parts[-1]] = value
+
+
+@pytest.mark.parametrize("model_name,path", PHASE1_DATED_PATHS)
+def test_phase1_declared_datetime_paths_reject_impossible_calendar_time_offset_and_preserve_aware_values(model_name, path):
+    dto, original = phase1_dated_payload(model_name, path)
+    for value in PHASE1_INVALID_TIMESTAMPS:
+        p = deepcopy(original)
+        set_phase1_date(p, path, value)
+        with pytest.raises(ValidationError):
+            type(dto).model_validate_json(json.dumps(p))
+    for value in PHASE1_VALID_TIMESTAMPS:
+        p = deepcopy(original)
+        set_phase1_date(p, path, value)
+        assert type(dto).model_validate_json(json.dumps(p))

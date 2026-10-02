@@ -11,6 +11,7 @@ API_ROOT = Path(__file__).resolve().parents[1]
 ROOT = API_ROOT.parent.parent
 sys.path.insert(0, str(API_ROOT))
 from app.contract_catalog import wire_catalog  # noqa: E402
+from app.contracts import WIRE_MODELS  # noqa: E402
 from contract_examples import producer_examples  # noqa: E402
 
 
@@ -62,9 +63,16 @@ def generated_files() -> dict[Path, str]:
     ts = header + 'export const schemaVersion = "' + catalog["schema_version"] + '" as const;\n\n'
     ts += "\n\n".join(f"export type {name} = {ts_type(schema)};" for name, schema in catalog["$defs"].items()) + "\n"
     examples = producer_examples()
-    fixture = header + 'import type { Versions, BriefContent, RawArtifact, SufficiencyAssessment } from "../src/generated";\n'
+    reserved = set("break case catch class const continue debugger default delete do else enum export extends false finally for function if import in instanceof new null return super switch this throw true try typeof var void while with implements interface let package private protected public static yield await".split())
+    if type(examples) is not dict or any(type(name) is not str or name in reserved or not re.fullmatch(r"[A-Za-z_$][A-Za-z0-9_$]*", name) for name in examples):
+        raise ValueError("invalid producer fixture export")
+    classes = [type(example) for example in examples.values()]
+    if any(cls not in WIRE_MODELS for cls in classes) or len(classes) != len(set(classes)):
+        raise ValueError("unknown or duplicate producer fixture model")
+    imports = ", ".join(sorted({cls.__name__ for cls in classes} | {"Versions", "SufficiencyAssessment"}))
+    fixture = header + f'import type {{ {imports} }} from "../src/generated";\n'
     for name, example in examples.items():
-        fixture += f"\nexport const {name}: {example.__class__.__name__} = " + json.dumps(example.model_dump(mode="json"), ensure_ascii=False, indent=2) + ";\n"
+        fixture += f"\nexport const {name}: {example.__class__.__name__} = " + json.dumps(example.model_dump(mode="json", exclude_unset=example.model_config.get("json_schema_serialization_defaults_required") is False), ensure_ascii=False, indent=2) + ";\n"
     fixture += '\n// These invalid consumer values must remain rejected by the generated types.\n'
     fixture += '// @ts-expect-error connector versions are strings\nconst invalidConnector: Versions["connectors"] = { "source-0017": 42 };\n'
     fixture += '// @ts-expect-error qualitative check values are an exact status union\nconst invalidCheck: SufficiencyAssessment["qualitative_checks"] = { "market": "verified" };\n'

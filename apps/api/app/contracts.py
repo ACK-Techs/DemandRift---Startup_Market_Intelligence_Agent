@@ -1154,7 +1154,7 @@ class BriefPage(Contract):
 
 class PreparationMutationReceipt(Contract):
     schema_version: Literal["1.0.0"] = SCHEMA_VERSION
-    operation: Literal["create_research", "revise_brief"]
+    operation: Literal["create_research", "revise_brief", "confirm_brief"]
     request_key: UUID
     input_fingerprint: Hash
     user_id: UUID
@@ -1173,6 +1173,459 @@ class PreparationMutationReceipt(Contract):
         return self
 
 
+# Additive Phase 1 HTTP contracts. These are DTOs, not approval or send authority.
+Phase1Version = Annotated[int, Field(strict=True, ge=1, le=2147483647)]
+ProposalId = Annotated[str, Field(pattern=r"^[A-Za-z][A-Za-z0-9_.:-]{0,63}$")]
+Phase1FieldPath = Annotated[str, Field(pattern=r"^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\.[A-Za-z_][A-Za-z0-9_-]{0,63})$")]
+Phase1SourceId = Annotated[str, Field(pattern=r"^source-[0-9]{4}$")]
+Phase1QueryText = Annotated[str, Field(min_length=1, max_length=1000, pattern=r"\S")]
+
+
+def _phase1_unique(values, label):
+    if len(values) != len(set(values)):
+        raise ValueError(f"duplicate {label}")
+
+
+def _phase1_plan_tuple(identity, version, fingerprint):
+    if any(v is None for v in (identity, version, fingerprint)) and not all(v is None for v in (identity, version, fingerprint)):
+        raise ValueError("plan identity, version and fingerprint must appear together")
+
+
+class Phase1Contract(Contract):
+    @model_validator(mode="after")
+    def scalar_unicode(self):
+        pending = [self.model_dump(mode="python")]
+        while pending:
+            value = pending.pop()
+            if isinstance(value, str):
+                value.encode("utf-8", errors="strict")
+            elif isinstance(value, dict):
+                pending.extend(value.keys())
+                pending.extend(value.values())
+            elif isinstance(value, (list, tuple)):
+                pending.extend(value)
+        return self
+
+
+class HumanBriefConfirm(Phase1Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+    analysis_id: UUID | None = None
+    accepted_proposal_ids: Annotated[list[ProposalId], Field(max_length=64)] = Field(default_factory=list)
+    category_choice: Literal["current", "proposal", "unmatched"]
+    category_proposal_id: ProposalId | None = None
+    skipped_clarification: Annotated[bool, Field(strict=True)] = False
+    continue_with_unknowns: Annotated[bool, Field(strict=True)] = False
+
+    @model_validator(mode="after")
+    def explicit_choices(self):
+        _phase1_unique(self.accepted_proposal_ids, "accepted proposal")
+        if self.accepted_proposal_ids and self.analysis_id is None:
+            raise ValueError("proposal acceptance needs an exact analysis")
+        if self.category_choice == "proposal":
+            if self.analysis_id is None or self.category_proposal_id is None:
+                raise ValueError("category proposal needs an exact analysis and proposal")
+        elif self.category_proposal_id is not None:
+            raise ValueError("only proposal category selection has a proposal ID")
+        if self.category_proposal_id in self.accepted_proposal_ids:
+            raise ValueError("category and field proposal selections are separate")
+        if self.skipped_clarification and not self.continue_with_unknowns:
+            raise ValueError("skipped clarification needs explicit continue with unknowns")
+        return self
+
+
+class PreparationAnalysisCreate(Phase1Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    kind: Literal["brief", "plan"]
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+    budget: BudgetLimits
+    expected_plan_id: UUID | None = None
+    expected_plan_version: Phase1Version | None = None
+    expected_plan_fingerprint: Hash | None = None
+
+    @model_validator(mode="after")
+    def selected_plan(self):
+        _phase1_plan_tuple(self.expected_plan_id, self.expected_plan_version, self.expected_plan_fingerprint)
+        if self.kind == "brief" and self.expected_plan_id is not None:
+            raise ValueError("brief analysis cannot select a plan")
+        return self
+
+
+class BriefFieldProposal(Phase1Contract):
+    proposal_id: ProposalId
+    field_path: Phase1FieldPath
+    value: Text | None
+    origin: Literal["ai_inferred", "ai_hypothesis"]
+    assumption_id: ProposalId
+    basis_refs: Annotated[list[Phase1FieldPath], Field(min_length=1, max_length=64)]
+
+    @model_validator(mode="after")
+    def immutable_original(self):
+        if self.field_path == "original_idea":
+            raise ValueError("a model cannot propose changing the original idea")
+        _phase1_unique(self.basis_refs, "basis reference")
+        return self
+
+
+class CategoryProposal(Phase1Contract):
+    proposal_id: ProposalId
+    primary_category: ResearchCategory | None
+    rationale: Text
+    secondary_categories: Annotated[list[ResearchCategory], Field(max_length=6)] = Field(default_factory=list)
+    add_on_packages: Annotated[list[AddOnPackage], Field(max_length=8)] = Field(default_factory=list)
+    modifiers: Annotated[list[Name], Field(max_length=32)] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def distinct_categories(self):
+        for name in ("secondary_categories", "add_on_packages", "modifiers"):
+            _phase1_unique(getattr(self, name), name)
+        if self.primary_category in self.secondary_categories:
+            raise ValueError("primary category cannot also be secondary")
+        return self
+
+
+class IntentProposal(Phase1Contract):
+    proposal_id: ProposalId
+    intent: SearchIntent
+    question: Text
+    priority: Annotated[int, Field(strict=True, ge=1, le=5)]
+    brief_basis: Annotated[list[Phase1FieldPath], Field(min_length=1, max_length=64)]
+    expected_fields: Annotated[list[Name], Field(max_length=64)]
+    required_evidence_types: Annotated[list[EvidenceType], Field(max_length=8)]
+    validation_kind: GapKind
+    included: Annotated[bool, Field(strict=True)]
+    exclusion_reason: Text | None = None
+
+    @model_validator(mode="after")
+    def applicability(self):
+        if self.included != (self.exclusion_reason is None):
+            raise ValueError("only excluded intents require an exclusion reason")
+        for name in ("brief_basis", "expected_fields", "required_evidence_types"):
+            _phase1_unique(getattr(self, name), name)
+        return self
+
+
+class QueryHypothesis(Phase1Contract):
+    proposal_id: ProposalId
+    intent_proposal_id: ProposalId
+    query_text: Phase1QueryText
+    language: Name
+    market_scope: Text | None
+    origin: Literal["ai_inferred", "ai_hypothesis"]
+    basis_refs: Annotated[list[Phase1FieldPath], Field(min_length=1, max_length=64)]
+
+    @model_validator(mode="after")
+    def distinct_basis(self):
+        _phase1_unique(self.basis_refs, "basis reference")
+        return self
+
+
+class PreparationAnalysis(Envelope, Phase1Contract):
+    analysis_id: UUID
+    analysis_kind: Literal["brief", "plan"]
+    input_brief_id: UUID
+    input_brief_version: Phase1Version
+    input_plan_id: UUID | None = None
+    input_plan_version: Phase1Version | None = None
+    input_plan_fingerprint: Hash | None = None
+    field_proposals: Annotated[list[BriefFieldProposal], Field(max_length=64)] = Field(default_factory=list)
+    normalized_idea: Text | None = None
+    category_proposal: CategoryProposal | None = None
+    clarifying_questions: Annotated[list[Text], Field(max_length=3)] = Field(default_factory=list)
+    missing_fields: Annotated[list[Phase1FieldPath], Field(max_length=64)] = Field(default_factory=list)
+    known_unknowns: Annotated[list[Text], Field(max_length=128)] = Field(default_factory=list)
+    intent_proposals: Annotated[list[IntentProposal], Field(max_length=64)] = Field(default_factory=list)
+    query_hypotheses: Annotated[list[QueryHypothesis], Field(max_length=512)] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def proposal_lineage(self):
+        _phase1_plan_tuple(self.input_plan_id, self.input_plan_version, self.input_plan_fingerprint)
+        if self.analysis_kind == "brief" and self.input_plan_id is not None:
+            raise ValueError("brief analysis cannot select a plan")
+        if self.versions.brief != self.input_brief_version or self.versions.plan != self.input_plan_version:
+            raise ValueError("analysis versions must pin their input selection")
+        proposals = [p.proposal_id for p in self.field_proposals + self.intent_proposals + self.query_hypotheses]
+        if self.category_proposal is not None:
+            proposals.append(self.category_proposal.proposal_id)
+        _phase1_unique(proposals, "proposal identity")
+        _phase1_unique([p.field_path for p in self.field_proposals], "field proposal")
+        _phase1_unique([p.assumption_id for p in self.field_proposals], "assumption identity")
+        _phase1_unique(self.missing_fields, "missing field")
+        included = {i.proposal_id for i in self.intent_proposals if i.included}
+        if any(q.intent_proposal_id not in included for q in self.query_hypotheses):
+            raise ValueError("query hypothesis needs an included proposed intent")
+        return self
+
+
+class PreparationAnalysisOperation(Phase1Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    operation: Literal["analyze_brief", "propose_plan"]
+    request_key: UUID
+    input_fingerprint: Hash
+    analysis_id: UUID | None
+    attempt_id: UUID | None
+    input_brief_id: UUID
+    input_brief_version: Phase1Version
+    input_plan_id: UUID | None = None
+    input_plan_version: Phase1Version | None = None
+    input_plan_fingerprint: Hash | None = None
+    status: Literal["pending", "completed", "invalid_output", "provider_unknown", "overrun", "not_dispatched", "disabled"]
+    analysis: PreparationAnalysis | None
+    usage: Usage
+    created_at: AwareDatetime
+    current_scope_matches: Annotated[bool, Field(strict=True)]
+
+    @model_validator(mode="after")
+    def exact_analysis(self):
+        _phase1_plan_tuple(self.input_plan_id, self.input_plan_version, self.input_plan_fingerprint)
+        if self.operation == "analyze_brief" and self.input_plan_id is not None:
+            raise ValueError("brief analysis cannot select a plan")
+        if (self.status == "completed") != (self.analysis is not None):
+            raise ValueError("only completed operations release an analysis")
+        if self.status in ("completed", "invalid_output", "provider_unknown", "overrun") and self.attempt_id is None:
+            raise ValueError("a dispatched result needs its server attempt identity")
+        if (self.status == "provider_unknown") != self.usage.provider_result_unknown:
+            raise ValueError("unknown provider accounting must stay explicit")
+        if self.analysis is not None:
+            for key in ("user_id", "project_id", "research_id", "analysis_id", "input_brief_id", "input_brief_version", "input_plan_id", "input_plan_version", "input_plan_fingerprint"):
+                if getattr(self, key) != getattr(self.analysis, key):
+                    raise ValueError("operation must retain its exact analysis selection")
+            if self.analysis.analysis_kind != ("brief" if self.operation == "analyze_brief" else "plan"):
+                raise ValueError("operation and analysis kind must agree")
+        return self
+
+
+class PreparationAnalysisPage(Phase1Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: Annotated[list[PreparationAnalysis], Field(max_length=100)]
+    page: PageInfo
+
+    @model_validator(mode="after")
+    def bounded_history(self):
+        _phase1_unique([i.analysis_id for i in self.items], "analysis identity")
+        if len(self.items) > self.page.limit or len({(i.user_id, i.project_id, i.research_id) for i in self.items}) > 1:
+            raise ValueError("analysis page must retain bounded single-research history")
+        return self
+
+
+class PlanDraftCreate(Phase1Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+    analysis_id: UUID | None = None
+    research_mode: ResearchMode
+    budget: BudgetLimits
+
+
+class PlanQueryEdit(Phase1Contract):
+    query_id: UUID
+    query_text: Phase1QueryText
+
+
+class PlanIntentDecision(Phase1Contract):
+    intent_id: UUID
+    included: Annotated[bool, Field(strict=True)]
+    reason: Text | None = None
+
+    @model_validator(mode="after")
+    def applicability(self):
+        if self.included != (self.reason is None):
+            raise ValueError("only excluded intents require a reason")
+        return self
+
+
+class HumanPlanPatch(Phase1Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    expected_plan_id: UUID
+    expected_plan_version: Phase1Version
+    expected_plan_fingerprint: Hash
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+    research_mode: ResearchMode | None = None
+    budget: BudgetLimits | None = None
+    excluded_source_ids: Annotated[list[Phase1SourceId], Field(max_length=128)] = Field(default_factory=list)
+    excluded_query_ids: Annotated[list[UUID], Field(max_length=512)] = Field(default_factory=list)
+    query_edits: Annotated[list[PlanQueryEdit], Field(max_length=512)] = Field(default_factory=list)
+    intent_decisions: Annotated[list[PlanIntentDecision], Field(max_length=64)] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def explicit_edits(self):
+        selections = {"expected_plan_id", "expected_plan_version", "expected_plan_fingerprint", "expected_brief_id", "expected_brief_version"}
+        if not self.model_fields_set - selections:
+            raise ValueError("at least one explicit plan edit is required")
+        for name in ("research_mode", "budget"):
+            if name in self.model_fields_set and getattr(self, name) is None:
+                raise ValueError("this edit cannot be null")
+        for name in ("excluded_source_ids", "excluded_query_ids"):
+            _phase1_unique(getattr(self, name), name)
+        _phase1_unique([q.query_id for q in self.query_edits], "edited query")
+        _phase1_unique([i.intent_id for i in self.intent_decisions], "intent decision")
+        if set(self.excluded_query_ids).intersection(q.query_id for q in self.query_edits):
+            raise ValueError("a query cannot be edited and excluded together")
+        return self
+
+
+class PlanApprovalCreate(Phase1Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    expected_plan_id: UUID
+    expected_plan_version: Phase1Version
+    expected_plan_fingerprint: Hash
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+    confirmed_query_ids: Annotated[list[UUID], Field(max_length=512)] = Field(default_factory=list)
+    acknowledged_gap_ids: Annotated[list[ProposalId], Field(max_length=128)] = Field(default_factory=list)
+
+    @model_validator(mode="after")
+    def distinct_selections(self):
+        _phase1_unique(self.confirmed_query_ids, "confirmed query")
+        _phase1_unique(self.acknowledged_gap_ids, "acknowledged gap")
+        return self
+
+
+class PlanReference(Phase1Contract):
+    research_plan_id: UUID
+    plan_version: Phase1Version
+    plan_fingerprint: Hash
+    status: Literal["draft", "awaiting_user", "confirmed"]
+    brief_id: UUID
+    brief_version: Phase1Version
+    created_at: AwareDatetime
+
+
+class ResearchPlanPage(Phase1Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: Annotated[list[ResearchPlan], Field(max_length=100)]
+    page: PageInfo
+
+    @model_validator(mode="after")
+    def bounded_history(self):
+        _phase1_unique([(i.research_plan_id, i.plan_version) for i in self.items], "plan version")
+        if len(self.items) > self.page.limit or len({(i.user_id, i.project_id, i.research_id) for i in self.items}) > 1:
+            raise ValueError("plan page must retain bounded single-research history")
+        return self
+
+
+class PlanCoverageGap(Phase1Contract):
+    gap_id: ProposalId
+    intent_id: UUID | None = None
+    reason: Text
+    source_ids: Annotated[list[Phase1SourceId], Field(max_length=128)] = Field(default_factory=list)
+    missing_fields: Annotated[list[Name], Field(max_length=64)] = Field(default_factory=list)
+    required: Annotated[bool, Field(strict=True)]
+
+    @model_validator(mode="after")
+    def distinct_coverage(self):
+        _phase1_unique(self.source_ids, "gap source")
+        _phase1_unique(self.missing_fields, "gap field")
+        return self
+
+
+class PlanExecutionEligibility(Phase1Contract):
+    can_approve: Annotated[bool, Field(strict=True)]
+    can_start: Annotated[bool, Field(strict=True)]
+    blocking_reasons: Annotated[list[Name], Field(max_length=128)]
+    coverage_gaps: Annotated[list[PlanCoverageGap], Field(max_length=128)]
+    qualification_version: Version | None
+    qualification_digest: Hash | None
+    checked_at: AwareDatetime
+    valid_until: AwareDatetime | None
+
+    @model_validator(mode="after")
+    def qualification_is_explicit(self):
+        _phase1_plan_tuple(self.qualification_version, self.valid_until, self.qualification_digest)
+        _phase1_unique(self.blocking_reasons, "blocking reason")
+        _phase1_unique([g.gap_id for g in self.coverage_gaps], "coverage gap")
+        if self.can_approve and self.can_start:
+            raise ValueError("an awaiting approval is not an executable confirmed plan")
+        if self.can_approve or self.can_start:
+            if self.blocking_reasons or self.valid_until is None or self.valid_until <= self.checked_at:
+                raise ValueError("current qualification and no blocking reasons are required")
+        return self
+
+
+class ResearchPlanPreparation(Phase1Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    plan: ResearchPlan
+    is_latest: Annotated[bool, Field(strict=True)]
+    current_brief: BriefReference
+    eligibility: PlanExecutionEligibility
+
+    @model_validator(mode="after")
+    def selected_plan(self):
+        if any(getattr(self, key) != getattr(self.plan, key) for key in ("user_id", "project_id", "research_id")):
+            raise ValueError("preparation must retain its scoped plan")
+        eligibility = self.eligibility
+        if eligibility.can_approve or eligibility.can_start:
+            if (not self.is_latest or (self.plan.brief_id, self.plan.brief_version) != (self.current_brief.brief_id, self.current_brief.brief_version)
+                    or self.current_brief.status != "confirmed" or not self.plan.source_plan or not self.plan.query_plan
+                    or not any(i.included for i in self.plan.intents)
+                    or self.plan.versions.source_registry != eligibility.qualification_version):
+                raise ValueError("only exact current qualified nonempty scope is actionable")
+            payload = self.plan.model_dump(mode="python")
+            payload.update(status="confirmed", confirmed_at=eligibility.checked_at)
+            if eligibility.can_approve:
+                # The approval form must explicitly confirm these displayed IDs;
+                # preview eligibility itself neither changes nor approves the plan.
+                for query in payload["query_plan"]:
+                    if query["origin"] == FieldOrigin.AI_HYPOTHESIS:
+                        query["user_confirmed"] = True
+            ResearchPlan.model_validate(payload)  # Retain every existing scope/provenance/permission hard gate.
+        if eligibility.can_approve and self.plan.status != "awaiting_user":
+            raise ValueError("only an awaiting plan can be approved")
+        if eligibility.can_start and self.plan.status != "confirmed":
+            raise ValueError("only a confirmed plan can start")
+        return self
+
+
+class PlanMutationReceipt(Phase1Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    operation: Literal["draft_plan", "revise_plan", "approve_plan"]
+    request_key: UUID
+    input_fingerprint: Hash
+    input_brief_id: UUID
+    input_brief_version: Phase1Version
+    input_plan_id: UUID | None
+    input_plan_version: Phase1Version | None
+    input_plan_fingerprint: Hash | None
+    result_plan_id: UUID
+    result_plan_version: Phase1Version
+    result_plan_fingerprint: Hash
+    created_at: AwareDatetime
+    plan: ResearchPlan
+
+    @model_validator(mode="after")
+    def exact_selection(self):
+        _phase1_plan_tuple(self.input_plan_id, self.input_plan_version, self.input_plan_fingerprint)
+        if any(getattr(self, key) != getattr(self.plan, key) for key in ("user_id", "project_id", "research_id")):
+            raise ValueError("receipt must retain its scoped plan")
+        for actual, selected in ((self.result_plan_id, self.plan.research_plan_id), (self.result_plan_version, self.plan.plan_version),
+                                 (self.result_plan_fingerprint, self.plan.plan_fingerprint), (self.input_brief_id, self.plan.brief_id),
+                                 (self.input_brief_version, self.plan.brief_version)):
+            if actual != selected:
+                raise ValueError("receipt must retain its exact result plan")
+        if self.operation == "draft_plan":
+            if self.input_plan_id is not None or self.plan.status != "awaiting_user":
+                raise ValueError("draft receipts select only their new awaiting plan")
+        else:
+            if self.input_plan_id != self.result_plan_id or self.input_plan_version is None or self.input_plan_version >= self.result_plan_version:
+                raise ValueError("revision and approval append a newer version of the selected plan")
+            expected = "confirmed" if self.operation == "approve_plan" else "awaiting_user"
+            if self.plan.status != expected:
+                raise ValueError("operation and result plan status must agree")
+        return self
+
+
 # Explicit export list prevents helpers/legacy preview schemas leaking into the wire catalog.
 WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefContent, IdeaBrief,
                SourcePlanItem, QueryPlanItem, ResearchPlan, SourceCounts, QueryExecution,
@@ -1180,4 +1633,6 @@ WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefCo
                EvidenceBundle, SufficiencyAssessment, ResearchGapRequest, ReportStatement,
                DecisionReport, ResearchRun, User, Session, AuthCredentials, ProjectCreate, Project, PageInfo, ProjectPage, RunPage,
                ResearchCreate, HumanBriefPatch, BriefReference, ResearchPreparation, ResearchPreparationPage,
-               BriefPage, PreparationMutationReceipt)
+               BriefPage, PreparationMutationReceipt, HumanBriefConfirm, PreparationAnalysisCreate, PreparationAnalysis,
+               PreparationAnalysisOperation, PreparationAnalysisPage, PlanDraftCreate, HumanPlanPatch, PlanApprovalCreate,
+               PlanReference, ResearchPlanPage, ResearchPlanPreparation, PlanMutationReceipt)

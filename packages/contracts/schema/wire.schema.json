@@ -442,6 +442,68 @@
       "title": "BriefContent",
       "type": "object"
     },
+    "BriefFieldProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "assumption_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Assumption Id",
+          "type": "string"
+        },
+        "basis_refs": {
+          "items": {
+            "pattern": "^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\\.[A-Za-z_][A-Za-z0-9_-]{0,63})$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Basis Refs",
+          "type": "array"
+        },
+        "field_path": {
+          "pattern": "^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\\.[A-Za-z_][A-Za-z0-9_-]{0,63})$",
+          "title": "Field Path",
+          "type": "string"
+        },
+        "origin": {
+          "enum": [
+            "ai_inferred",
+            "ai_hypothesis"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "proposal_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Proposal Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "proposal_id",
+        "field_path",
+        "value",
+        "origin",
+        "assumption_id",
+        "basis_refs"
+      ],
+      "title": "BriefFieldProposal",
+      "type": "object"
+    },
     "BriefPage": {
       "additionalProperties": false,
       "properties": {
@@ -569,6 +631,70 @@
         "max_concurrency"
       ],
       "title": "BudgetLimits",
+      "type": "object"
+    },
+    "CategoryProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "add_on_packages": {
+          "items": {
+            "$ref": "#/$defs/AddOnPackage"
+          },
+          "maxItems": 8,
+          "title": "Add On Packages",
+          "type": "array"
+        },
+        "modifiers": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Modifiers",
+          "type": "array"
+        },
+        "primary_category": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchCategory"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "proposal_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Proposal Id",
+          "type": "string"
+        },
+        "rationale": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "secondary_categories": {
+          "items": {
+            "$ref": "#/$defs/ResearchCategory"
+          },
+          "maxItems": 6,
+          "title": "Secondary Categories",
+          "type": "array"
+        }
+      },
+      "required": [
+        "proposal_id",
+        "primary_category",
+        "rationale",
+        "secondary_categories",
+        "add_on_packages",
+        "modifiers"
+      ],
+      "title": "CategoryProposal",
       "type": "object"
     },
     "Citation": {
@@ -2013,6 +2139,83 @@
       "title": "GapKind",
       "type": "string"
     },
+    "HumanBriefConfirm": {
+      "additionalProperties": false,
+      "properties": {
+        "accepted_proposal_ids": {
+          "items": {
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Accepted Proposal Ids",
+          "type": "array"
+        },
+        "analysis_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Analysis Id"
+        },
+        "category_choice": {
+          "enum": [
+            "current",
+            "proposal",
+            "unmatched"
+          ],
+          "title": "Category Choice",
+          "type": "string"
+        },
+        "category_proposal_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Category Proposal Id"
+        },
+        "continue_with_unknowns": {
+          "default": false,
+          "title": "Continue With Unknowns",
+          "type": "boolean"
+        },
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "skipped_clarification": {
+          "default": false,
+          "title": "Skipped Clarification",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "expected_brief_id",
+        "expected_brief_version",
+        "category_choice"
+      ],
+      "title": "HumanBriefConfirm",
+      "type": "object"
+    },
     "HumanBriefPatch": {
       "additionalProperties": false,
       "properties": {
@@ -2202,6 +2405,103 @@
       "title": "HumanBriefPatch",
       "type": "object"
     },
+    "HumanPlanPatch": {
+      "additionalProperties": false,
+      "properties": {
+        "budget": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BudgetLimits"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "excluded_query_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "maxItems": 512,
+          "title": "Excluded Query Ids",
+          "type": "array"
+        },
+        "excluded_source_ids": {
+          "items": {
+            "pattern": "^source-[0-9]{4}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Excluded Source Ids",
+          "type": "array"
+        },
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "expected_plan_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Expected Plan Fingerprint",
+          "type": "string"
+        },
+        "expected_plan_id": {
+          "format": "uuid",
+          "title": "Expected Plan Id",
+          "type": "string"
+        },
+        "expected_plan_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Plan Version",
+          "type": "integer"
+        },
+        "intent_decisions": {
+          "items": {
+            "$ref": "#/$defs/PlanIntentDecision"
+          },
+          "maxItems": 64,
+          "title": "Intent Decisions",
+          "type": "array"
+        },
+        "query_edits": {
+          "items": {
+            "$ref": "#/$defs/PlanQueryEdit"
+          },
+          "maxItems": 512,
+          "title": "Query Edits",
+          "type": "array"
+        },
+        "research_mode": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchMode"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "expected_plan_id",
+        "expected_plan_version",
+        "expected_plan_fingerprint",
+        "expected_brief_id",
+        "expected_brief_version"
+      ],
+      "title": "HumanPlanPatch",
+      "type": "object"
+    },
     "IdeaBrief": {
       "additionalProperties": false,
       "properties": {
@@ -2350,6 +2650,97 @@
         "ownership_key"
       ],
       "title": "IndependenceGroup",
+      "type": "object"
+    },
+    "IntentProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "brief_basis": {
+          "items": {
+            "pattern": "^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\\.[A-Za-z_][A-Za-z0-9_-]{0,63})$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Brief Basis",
+          "type": "array"
+        },
+        "exclusion_reason": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Exclusion Reason"
+        },
+        "expected_fields": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Expected Fields",
+          "type": "array"
+        },
+        "included": {
+          "title": "Included",
+          "type": "boolean"
+        },
+        "intent": {
+          "$ref": "#/$defs/SearchIntent"
+        },
+        "priority": {
+          "maximum": 5,
+          "minimum": 1,
+          "title": "Priority",
+          "type": "integer"
+        },
+        "proposal_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Proposal Id",
+          "type": "string"
+        },
+        "question": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Question",
+          "type": "string"
+        },
+        "required_evidence_types": {
+          "items": {
+            "$ref": "#/$defs/EvidenceType"
+          },
+          "maxItems": 8,
+          "title": "Required Evidence Types",
+          "type": "array"
+        },
+        "validation_kind": {
+          "$ref": "#/$defs/GapKind"
+        }
+      },
+      "required": [
+        "proposal_id",
+        "intent",
+        "question",
+        "priority",
+        "brief_basis",
+        "expected_fields",
+        "required_evidence_types",
+        "validation_kind",
+        "included",
+        "exclusion_reason"
+      ],
+      "title": "IntentProposal",
       "type": "object"
     },
     "Investigation": {
@@ -3040,6 +3431,998 @@
       "title": "PillarProfile",
       "type": "object"
     },
+    "PlanApprovalCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "acknowledged_gap_ids": {
+          "items": {
+            "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Acknowledged Gap Ids",
+          "type": "array"
+        },
+        "confirmed_query_ids": {
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "maxItems": 512,
+          "title": "Confirmed Query Ids",
+          "type": "array"
+        },
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "expected_plan_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Expected Plan Fingerprint",
+          "type": "string"
+        },
+        "expected_plan_id": {
+          "format": "uuid",
+          "title": "Expected Plan Id",
+          "type": "string"
+        },
+        "expected_plan_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Plan Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "expected_plan_id",
+        "expected_plan_version",
+        "expected_plan_fingerprint",
+        "expected_brief_id",
+        "expected_brief_version"
+      ],
+      "title": "PlanApprovalCreate",
+      "type": "object"
+    },
+    "PlanCoverageGap": {
+      "additionalProperties": false,
+      "properties": {
+        "gap_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Gap Id",
+          "type": "string"
+        },
+        "intent_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Intent Id"
+        },
+        "missing_fields": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Missing Fields",
+          "type": "array"
+        },
+        "reason": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Reason",
+          "type": "string"
+        },
+        "required": {
+          "title": "Required",
+          "type": "boolean"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^source-[0-9]{4}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Source Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "gap_id",
+        "intent_id",
+        "reason",
+        "source_ids",
+        "missing_fields",
+        "required"
+      ],
+      "title": "PlanCoverageGap",
+      "type": "object"
+    },
+    "PlanDraftCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Analysis Id"
+        },
+        "budget": {
+          "$ref": "#/$defs/BudgetLimits"
+        },
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "research_mode": {
+          "$ref": "#/$defs/ResearchMode"
+        }
+      },
+      "required": [
+        "expected_brief_id",
+        "expected_brief_version",
+        "research_mode",
+        "budget"
+      ],
+      "title": "PlanDraftCreate",
+      "type": "object"
+    },
+    "PlanExecutionEligibility": {
+      "additionalProperties": false,
+      "properties": {
+        "blocking_reasons": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Blocking Reasons",
+          "type": "array"
+        },
+        "can_approve": {
+          "title": "Can Approve",
+          "type": "boolean"
+        },
+        "can_start": {
+          "title": "Can Start",
+          "type": "boolean"
+        },
+        "checked_at": {
+          "format": "date-time",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "coverage_gaps": {
+          "items": {
+            "$ref": "#/$defs/PlanCoverageGap"
+          },
+          "maxItems": 128,
+          "title": "Coverage Gaps",
+          "type": "array"
+        },
+        "qualification_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Qualification Digest"
+        },
+        "qualification_version": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Qualification Version"
+        },
+        "valid_until": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Valid Until"
+        }
+      },
+      "required": [
+        "can_approve",
+        "can_start",
+        "blocking_reasons",
+        "coverage_gaps",
+        "qualification_version",
+        "qualification_digest",
+        "checked_at",
+        "valid_until"
+      ],
+      "title": "PlanExecutionEligibility",
+      "type": "object"
+    },
+    "PlanIntentDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "included": {
+          "title": "Included",
+          "type": "boolean"
+        },
+        "intent_id": {
+          "format": "uuid",
+          "title": "Intent Id",
+          "type": "string"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        }
+      },
+      "required": [
+        "intent_id",
+        "included",
+        "reason"
+      ],
+      "title": "PlanIntentDecision",
+      "type": "object"
+    },
+    "PlanMutationReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "input_brief_id": {
+          "format": "uuid",
+          "title": "Input Brief Id",
+          "type": "string"
+        },
+        "input_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Input Brief Version",
+          "type": "integer"
+        },
+        "input_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Input Fingerprint",
+          "type": "string"
+        },
+        "input_plan_fingerprint": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Input Plan Fingerprint"
+        },
+        "input_plan_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Input Plan Id"
+        },
+        "input_plan_version": {
+          "anyOf": [
+            {
+              "maximum": 2147483647,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Input Plan Version"
+        },
+        "operation": {
+          "enum": [
+            "draft_plan",
+            "revise_plan",
+            "approve_plan"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "plan": {
+          "$ref": "#/$defs/ResearchPlan"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "request_key": {
+          "format": "uuid",
+          "title": "Request Key",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "result_plan_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Result Plan Fingerprint",
+          "type": "string"
+        },
+        "result_plan_id": {
+          "format": "uuid",
+          "title": "Result Plan Id",
+          "type": "string"
+        },
+        "result_plan_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Result Plan Version",
+          "type": "integer"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "user_id",
+        "project_id",
+        "research_id",
+        "operation",
+        "request_key",
+        "input_fingerprint",
+        "input_brief_id",
+        "input_brief_version",
+        "input_plan_id",
+        "input_plan_version",
+        "input_plan_fingerprint",
+        "result_plan_id",
+        "result_plan_version",
+        "result_plan_fingerprint",
+        "created_at",
+        "plan"
+      ],
+      "title": "PlanMutationReceipt",
+      "type": "object"
+    },
+    "PlanQueryEdit": {
+      "additionalProperties": false,
+      "properties": {
+        "query_id": {
+          "format": "uuid",
+          "title": "Query Id",
+          "type": "string"
+        },
+        "query_text": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Query Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query_id",
+        "query_text"
+      ],
+      "title": "PlanQueryEdit",
+      "type": "object"
+    },
+    "PlanReference": {
+      "additionalProperties": false,
+      "properties": {
+        "brief_id": {
+          "format": "uuid",
+          "title": "Brief Id",
+          "type": "string"
+        },
+        "brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Brief Version",
+          "type": "integer"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "plan_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Plan Fingerprint",
+          "type": "string"
+        },
+        "plan_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Plan Version",
+          "type": "integer"
+        },
+        "research_plan_id": {
+          "format": "uuid",
+          "title": "Research Plan Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "awaiting_user",
+            "confirmed"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "research_plan_id",
+        "plan_version",
+        "plan_fingerprint",
+        "status",
+        "brief_id",
+        "brief_version",
+        "created_at"
+      ],
+      "title": "PlanReference",
+      "type": "object"
+    },
+    "PreparationAnalysis": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_id": {
+          "format": "uuid",
+          "title": "Analysis Id",
+          "type": "string"
+        },
+        "analysis_kind": {
+          "enum": [
+            "brief",
+            "plan"
+          ],
+          "title": "Analysis Kind",
+          "type": "string"
+        },
+        "category_proposal": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CategoryProposal"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clarifying_questions": {
+          "items": {
+            "maxLength": 10000,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 3,
+          "title": "Clarifying Questions",
+          "type": "array"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "field_proposals": {
+          "items": {
+            "$ref": "#/$defs/BriefFieldProposal"
+          },
+          "maxItems": 64,
+          "title": "Field Proposals",
+          "type": "array"
+        },
+        "input_brief_id": {
+          "format": "uuid",
+          "title": "Input Brief Id",
+          "type": "string"
+        },
+        "input_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Input Brief Version",
+          "type": "integer"
+        },
+        "input_plan_fingerprint": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Fingerprint"
+        },
+        "input_plan_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Id"
+        },
+        "input_plan_version": {
+          "anyOf": [
+            {
+              "maximum": 2147483647,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Version"
+        },
+        "intent_proposals": {
+          "items": {
+            "$ref": "#/$defs/IntentProposal"
+          },
+          "maxItems": 64,
+          "title": "Intent Proposals",
+          "type": "array"
+        },
+        "known_unknowns": {
+          "items": {
+            "maxLength": 10000,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Known Unknowns",
+          "type": "array"
+        },
+        "missing_fields": {
+          "items": {
+            "pattern": "^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\\.[A-Za-z_][A-Za-z0-9_-]{0,63})$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Missing Fields",
+          "type": "array"
+        },
+        "normalized_idea": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Idea"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "query_hypotheses": {
+          "items": {
+            "$ref": "#/$defs/QueryHypothesis"
+          },
+          "maxItems": 512,
+          "title": "Query Hypotheses",
+          "type": "array"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        },
+        "versions": {
+          "$ref": "#/$defs/Versions"
+        }
+      },
+      "required": [
+        "schema_version",
+        "user_id",
+        "project_id",
+        "research_id",
+        "created_at",
+        "versions",
+        "analysis_id",
+        "analysis_kind",
+        "input_brief_id",
+        "input_brief_version",
+        "input_plan_id",
+        "input_plan_version",
+        "input_plan_fingerprint",
+        "field_proposals",
+        "normalized_idea",
+        "category_proposal",
+        "clarifying_questions",
+        "missing_fields",
+        "known_unknowns",
+        "intent_proposals",
+        "query_hypotheses"
+      ],
+      "title": "PreparationAnalysis",
+      "type": "object"
+    },
+    "PreparationAnalysisCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "budget": {
+          "$ref": "#/$defs/BudgetLimits"
+        },
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "expected_plan_fingerprint": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Plan Fingerprint"
+        },
+        "expected_plan_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Plan Id"
+        },
+        "expected_plan_version": {
+          "anyOf": [
+            {
+              "maximum": 2147483647,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Plan Version"
+        },
+        "kind": {
+          "enum": [
+            "brief",
+            "plan"
+          ],
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "expected_brief_id",
+        "expected_brief_version",
+        "budget"
+      ],
+      "title": "PreparationAnalysisCreate",
+      "type": "object"
+    },
+    "PreparationAnalysisOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PreparationAnalysis"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "analysis_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Analysis Id"
+        },
+        "attempt_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Attempt Id"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "current_scope_matches": {
+          "title": "Current Scope Matches",
+          "type": "boolean"
+        },
+        "input_brief_id": {
+          "format": "uuid",
+          "title": "Input Brief Id",
+          "type": "string"
+        },
+        "input_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Input Brief Version",
+          "type": "integer"
+        },
+        "input_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Input Fingerprint",
+          "type": "string"
+        },
+        "input_plan_fingerprint": {
+          "anyOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Fingerprint"
+        },
+        "input_plan_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Id"
+        },
+        "input_plan_version": {
+          "anyOf": [
+            {
+              "maximum": 2147483647,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Input Plan Version"
+        },
+        "operation": {
+          "enum": [
+            "analyze_brief",
+            "propose_plan"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "request_key": {
+          "format": "uuid",
+          "title": "Request Key",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "completed",
+            "invalid_output",
+            "provider_unknown",
+            "overrun",
+            "not_dispatched",
+            "disabled"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "usage": {
+          "$ref": "#/$defs/Usage"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "user_id",
+        "project_id",
+        "research_id",
+        "operation",
+        "request_key",
+        "input_fingerprint",
+        "analysis_id",
+        "attempt_id",
+        "input_brief_id",
+        "input_brief_version",
+        "input_plan_id",
+        "input_plan_version",
+        "input_plan_fingerprint",
+        "status",
+        "analysis",
+        "usage",
+        "created_at",
+        "current_scope_matches"
+      ],
+      "title": "PreparationAnalysisOperation",
+      "type": "object"
+    },
+    "PreparationAnalysisPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/PreparationAnalysis"
+          },
+          "maxItems": 100,
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "PreparationAnalysisPage",
+      "type": "object"
+    },
     "PreparationMutationReceipt": {
       "additionalProperties": false,
       "properties": {
@@ -3069,7 +4452,8 @@
         "operation": {
           "enum": [
             "create_research",
-            "revise_brief"
+            "revise_brief",
+            "confirm_brief"
           ],
           "title": "Operation",
           "type": "string"
@@ -3468,6 +4852,78 @@
         "finished_at"
       ],
       "title": "QueryExecution",
+      "type": "object"
+    },
+    "QueryHypothesis": {
+      "additionalProperties": false,
+      "properties": {
+        "basis_refs": {
+          "items": {
+            "pattern": "^(original_idea|product_type|target_user|problem_or_job|context_or_niche|market_scope|business_model|alternatives|constraints\\.[A-Za-z_][A-Za-z0-9_-]{0,63})$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Basis Refs",
+          "type": "array"
+        },
+        "intent_proposal_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Intent Proposal Id",
+          "type": "string"
+        },
+        "language": {
+          "maxLength": 128,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Language",
+          "type": "string"
+        },
+        "market_scope": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Market Scope"
+        },
+        "origin": {
+          "enum": [
+            "ai_inferred",
+            "ai_hypothesis"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "proposal_id": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_.:-]{0,63}$",
+          "title": "Proposal Id",
+          "type": "string"
+        },
+        "query_text": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Query Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "proposal_id",
+        "intent_proposal_id",
+        "query_text",
+        "language",
+        "market_scope",
+        "origin",
+        "basis_refs"
+      ],
+      "title": "QueryHypothesis",
       "type": "object"
     },
     "QueryPlanItem": {
@@ -4512,6 +5968,86 @@
         "confirmed_at"
       ],
       "title": "ResearchPlan",
+      "type": "object"
+    },
+    "ResearchPlanPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/ResearchPlan"
+          },
+          "maxItems": 100,
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "ResearchPlanPage",
+      "type": "object"
+    },
+    "ResearchPlanPreparation": {
+      "additionalProperties": false,
+      "properties": {
+        "current_brief": {
+          "$ref": "#/$defs/BriefReference"
+        },
+        "eligibility": {
+          "$ref": "#/$defs/PlanExecutionEligibility"
+        },
+        "is_latest": {
+          "title": "Is Latest",
+          "type": "boolean"
+        },
+        "plan": {
+          "$ref": "#/$defs/ResearchPlan"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "user_id",
+        "project_id",
+        "research_id",
+        "plan",
+        "is_latest",
+        "current_brief",
+        "eligibility"
+      ],
+      "title": "ResearchPlanPreparation",
       "type": "object"
     },
     "ResearchPreparation": {
@@ -6019,8 +7555,14 @@
     "EvidenceBundle": {
       "$ref": "#/$defs/EvidenceBundle"
     },
+    "HumanBriefConfirm": {
+      "$ref": "#/$defs/HumanBriefConfirm"
+    },
     "HumanBriefPatch": {
       "$ref": "#/$defs/HumanBriefPatch"
+    },
+    "HumanPlanPatch": {
+      "$ref": "#/$defs/HumanPlanPatch"
     },
     "IdeaBrief": {
       "$ref": "#/$defs/IdeaBrief"
@@ -6030,6 +7572,30 @@
     },
     "PageInfo": {
       "$ref": "#/$defs/PageInfo"
+    },
+    "PlanApprovalCreate": {
+      "$ref": "#/$defs/PlanApprovalCreate"
+    },
+    "PlanDraftCreate": {
+      "$ref": "#/$defs/PlanDraftCreate"
+    },
+    "PlanMutationReceipt": {
+      "$ref": "#/$defs/PlanMutationReceipt"
+    },
+    "PlanReference": {
+      "$ref": "#/$defs/PlanReference"
+    },
+    "PreparationAnalysis": {
+      "$ref": "#/$defs/PreparationAnalysis"
+    },
+    "PreparationAnalysisCreate": {
+      "$ref": "#/$defs/PreparationAnalysisCreate"
+    },
+    "PreparationAnalysisOperation": {
+      "$ref": "#/$defs/PreparationAnalysisOperation"
+    },
+    "PreparationAnalysisPage": {
+      "$ref": "#/$defs/PreparationAnalysisPage"
     },
     "PreparationMutationReceipt": {
       "$ref": "#/$defs/PreparationMutationReceipt"
@@ -6066,6 +7632,12 @@
     },
     "ResearchPlan": {
       "$ref": "#/$defs/ResearchPlan"
+    },
+    "ResearchPlanPage": {
+      "$ref": "#/$defs/ResearchPlanPage"
+    },
+    "ResearchPlanPreparation": {
+      "$ref": "#/$defs/ResearchPlanPreparation"
     },
     "ResearchPreparation": {
       "$ref": "#/$defs/ResearchPreparation"
