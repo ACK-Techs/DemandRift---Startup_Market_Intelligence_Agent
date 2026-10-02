@@ -6,7 +6,8 @@ from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
 from app.research_plan import ResearchCategory
-from app.source_plan import LAB_SCRIPT, SEARCH_SCRIPT, SourceHealth
+from app.source_plan import SourceHealth
+from app.source_registry import LAB_SCRIPT, SEARCH_SCRIPT, get_registry
 
 
 class ExecutionStatus(StrEnum):
@@ -43,58 +44,38 @@ class InitialRunManifest(BaseModel):
     runs: list[ScenarioRunSeed]
 
 
-def candidate(
-    source_id: str,
-    source_name: str,
-    health: SourceHealth,
-    eligible: bool,
-    reason: str,
-    fields: list[str],
-) -> RunSource:
+def candidate(source_id: str) -> RunSource:
+    registry = get_registry()
+    profile = registry.profile(source_id)
     return RunSource(
         source_id=source_id,
-        source_name=source_name,
-        health=health,
-        eligible_for_execution=eligible,
-        preflight_reason=reason,
-        expected_fields=fields,
+        source_name=registry.identity(source_id).display_name,
+        health=SourceHealth(profile.observation.health),
+        eligible_for_execution=profile.trial_eligible,
+        preflight_reason=(f"{profile.observation.measured_at} tarihli ölçüm: {profile.observation.reason}; "
+                          "tarihsel adaylık üretim erişim onayı değildir."),
+        expected_fields=list(profile.trial_expected_fields),
     )
 
 
-CONTENT_FIELDS = ["baslik", "govde", "kaynak_url", "yayin_tarihi"]
-REDDIT = candidate("source-0075", "Reddit", SourceHealth.POLICY_BLOCKED, False, "Robots/policy kısıtı nedeniyle izinli alternatif olmadan yürütülmez.", CONTENT_FIELDS)
-APPLE = candidate("source-0096", "Apple App Store", SourceHealth.ELIGIBLE, True, "AS-01 ölçümünde gerçek içerik yüzeyi doğrulandı.", CONTENT_FIELDS + ["yazar", "puan"])
-GOOGLE_PLAY = candidate("source-0097", "Google Play Store", SourceHealth.CONTENT_INSUFFICIENT, False, "Düz çekimde yalnız JS kabuğu görüldü; görünür içerik kanıt değildir.", CONTENT_FIELDS)
-G2 = candidate("source-0134", "G2", SourceHealth.BOT_CHALLENGED, False, "Bot challenge döndü; canlı sonuç yokmuş gibi yorumlanamaz.", CONTENT_FIELDS + ["fiyat", "para_birimi"])
-CAPTERRA = candidate("source-0135", "Capterra", SourceHealth.BOT_CHALLENGED, False, "Bot challenge döndü; izinli alternatif olmadan yürütülmez.", CONTENT_FIELDS + ["fiyat", "para_birimi"])
-GITHUB = candidate("source-0017", "GitHub", SourceHealth.ELIGIBLE, True, "Resmî API ile teknik kayıt yüzeyi doğrulandı.", ["baslik", "govde", "kaynak_url", "yayin_tarihi", "surum"])
-STACK_OVERFLOW = candidate("source-0023", "Stack Overflow", SourceHealth.ELIGIBLE, True, "Resmî API ile soru metadatası yüzeyi doğrulandı.", ["baslik", "etiket", "kaynak_url", "yayin_tarihi"])
-HACKER_NEWS = candidate("source-0022", "Hacker News", SourceHealth.ELIGIBLE, True, "Resmî API ile içerik yüzeyi doğrulandı.", CONTENT_FIELDS + ["yazar"])
-SHOPIFY = candidate("source-0114", "Shopify App Store", SourceHealth.ELIGIBLE, True, "Marketplace yüzeyinde doğrulanmış kayıtlar var.", ["baslik", "kaynak_url", "puan", "yayin_tarihi"])
-HUGGING_FACE = candidate("source-0534", "Hugging Face", SourceHealth.ELIGIBLE, True, "API yanıtında teknik katalog alanları doğrulandı.", ["model_kimligi", "etiket", "kaynak_url", "son_guncelleme"])
-STEAM = candidate("source-0518", "Steam", SourceHealth.ELIGIBLE, True, "Fiyat ve gözlemlenmiş etkileşim alanları doğrulandı.", ["baslik", "fiyat", "para_birimi", "kaynak_url"])
-ARMUT = candidate("source-0319", "Armut", SourceHealth.ELIGIBLE, True, "Türkçe yerel hizmet için gerçek içerik alanları doğrulandı.", CONTENT_FIELDS + ["konum", "puan", "fiyat", "para_birimi"])
-TRUSTPILOT = candidate("source-0148", "Trustpilot", SourceHealth.POLICY_BLOCKED, False, "Robots/policy kısıtı nedeniyle izinli alternatif olmadan yürütülmez.", CONTENT_FIELDS + ["puan"])
-CAPTERRA_EDUCATION = candidate("source-0466", "Capterra Education Software", SourceHealth.BOT_CHALLENGED, False, "Capterra challenge durumu eğitim yüzeyi için de çözülmedi.", CONTENT_FIELDS + ["fiyat", "para_birimi"])
-
-
 RUN_MATRIX = [
-    ("F01", "Vardiyalı çalışanlar için uyku takibi", ResearchCategory.MOBILE_APP, "shift worker sleep tracking app complaints", [APPLE, GOOGLE_PLAY, REDDIT]),
-    ("F02", "Ajans müşteri onayı ve revizyon SaaS", ResearchCategory.B2B_WEB_SOFTWARE, "agency client approval revision tracking software", [G2, CAPTERRA, REDDIT]),
-    ("F03", "API geriye uyumluluk CLI", ResearchCategory.DEVELOPER_TOOL, "API breaking changes backward compatibility CLI", [GITHUB, STACK_OVERFLOW, HACKER_NEWS]),
-    ("F04", "Shopify iade nedenleri eklentisi", ResearchCategory.EXTENSION_INTEGRATION, "Shopify return reasons analytics app reviews", [SHOPIFY, REDDIT]),
-    ("F05", "Self-host Türkçe konuşma tanıma API", ResearchCategory.AI_PRODUCT, "Turkish speech recognition self hosted API", [HUGGING_FACE, GITHUB, HACKER_NEWS]),
-    ("F06", "PC için iki kişilik bulmaca oyunu", ResearchCategory.GAME, "PC two player co op puzzle game reviews", [STEAM, REDDIT]),
-    ("F07", "İstanbul ev temizliği rezervasyonu", ResearchCategory.LOCAL_SERVICE, "İstanbul ev temizliği rezervasyon şikayetleri", [ARMUT, TRUSTPILOT, REDDIT]),
-    ("F08", "Günlük mobil kelime bulmacası", ResearchCategory.GAME, "daily mobile word puzzle game reviews", [APPLE, GOOGLE_PLAY, REDDIT]),
-    ("F09", "Berber randevu ve gelmeme SaaS", ResearchCategory.B2B_WEB_SOFTWARE, "barbershop scheduling software no show problems", [CAPTERRA, G2, REDDIT]),
-    ("F10", "Öğretmen notlarından AI alıştırma mobil uygulaması", ResearchCategory.MOBILE_APP, "teacher notes to exercises AI app reviews", [APPLE, GOOGLE_PLAY, CAPTERRA_EDUCATION]),
+    ("F01", "Vardiyalı çalışanlar için uyku takibi", ResearchCategory.MOBILE_APP, "shift worker sleep tracking app complaints", ["source-0096", "source-0097", "source-0075"]),
+    ("F02", "Ajans müşteri onayı ve revizyon SaaS", ResearchCategory.B2B_WEB_SOFTWARE, "agency client approval revision tracking software", ["source-0134", "source-0135", "source-0075"]),
+    ("F03", "API geriye uyumluluk CLI", ResearchCategory.DEVELOPER_TOOL, "API breaking changes backward compatibility CLI", ["source-0017", "source-0023", "source-0022"]),
+    ("F04", "Shopify iade nedenleri eklentisi", ResearchCategory.EXTENSION_INTEGRATION, "Shopify return reasons analytics app reviews", ["source-0114", "source-0075"]),
+    ("F05", "Self-host Türkçe konuşma tanıma API", ResearchCategory.AI_PRODUCT, "Turkish speech recognition self hosted API", ["source-0534", "source-0017", "source-0022"]),
+    ("F06", "PC için iki kişilik bulmaca oyunu", ResearchCategory.GAME, "PC two player co op puzzle game reviews", ["source-0518", "source-0075"]),
+    ("F07", "İstanbul ev temizliği rezervasyonu", ResearchCategory.LOCAL_SERVICE, "İstanbul ev temizliği rezervasyon şikayetleri", ["source-0319", "source-0148", "source-0075"]),
+    ("F08", "Günlük mobil kelime bulmacası", ResearchCategory.GAME, "daily mobile word puzzle game reviews", ["source-0096", "source-0097", "source-0075"]),
+    ("F09", "Berber randevu ve gelmeme SaaS", ResearchCategory.B2B_WEB_SOFTWARE, "barbershop scheduling software no show problems", ["source-0135", "source-0134", "source-0075"]),
+    ("F10", "Öğretmen notlarından AI alıştırma mobil uygulaması", ResearchCategory.MOBILE_APP, "teacher notes to exercises AI app reviews", ["source-0096", "source-0097", "source-0466"]),
 ]
 
 
 def build_initial_run_manifest() -> InitialRunManifest:
     runs: list[ScenarioRunSeed] = []
-    for idea_id, idea_name, category, query_text, sources in RUN_MATRIX:
+    for idea_id, idea_name, category, query_text, source_ids in RUN_MATRIX:
+        sources = [candidate(source_id) for source_id in source_ids]
         scripts = [LAB_SCRIPT]
         if any(source.eligible_for_execution for source in sources):
             scripts.append(SEARCH_SCRIPT)
@@ -107,7 +88,7 @@ def build_initial_run_manifest() -> InitialRunManifest:
                     variant=variant,
                     category=category,
                     query_texts=[query_text],
-                    source_candidates=sources,
+                    source_candidates=[source.model_copy(deep=True) for source in sources],
                     script_paths=scripts,
                 )
             )

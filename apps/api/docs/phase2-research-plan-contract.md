@@ -41,9 +41,17 @@ tek etiket altında birleştirilmez.
 çalıştırma aktif Faz 2'nin sorumluluğudur ve bu endpointten başlatılamaz.
 
 `GET /api/v1/research/source-plans/{category}` BT-02'nin ilk eşleme yüzeyidir.
-Kaynak satırları 2026-09-24 AS-01 sağlık ölçümünü taşır. `eligible_for_first_run`
-değeri yalnız ilk deneme uygunluğunu anlatır; kaynak güncelliği ve izin durumu
-her gerçek koşuda yeniden doğrulanır.
+Kaynak satırları kanonik bundled Source Registry üzerinden, gerçek
+`KAYNAK-SAGLIK.csv` dosyasındaki 2026-09-27 ölçümünü taşır.
+`source_registry_version` registry içeriğinin SHA-256 digestine bağlıdır;
+`last_measured_at` ilgili gözlemin tarihidir. Eski 2026-09-24 AS-01 hardcoded
+görünüm registry history kaydında korunur; daha yeni doğrulama gibi sunulmaz.
+`eligible_for_first_run` yalnız tarihsel deneme adaylığıdır; bütün güncel runtime
+profilleri kapalıdır. Kaynak güncelliği, alan/yüzey, izin, bütçe ve worker
+yetkisi her üretim koşusunda ayrı kabul gerektirir. Katalogdaki doğrulanmış alan
+etiketi tam yüzey/tarih/hash bağı içermediğinde bu endpointin
+`verified_fields` listesine geçirilmez; beklenen alanlar bundan ayrıdır.
+Ayrıntılar [Source Registry sözleşmesinde](source-registry.md).
 
 `GET /api/v1/research/initial-runs` bir sonuç API'si değildir. Her satırın
 `execution_status` değeri başlangıçta `not_run` olur; `raw_artifact_refs` ve

@@ -1,6 +1,7 @@
 from fastapi.testclient import TestClient
 
 from app.main import create_app
+from app.source_registry import get_registry
 
 
 def test_mobile_plan_uses_apple_and_excludes_empty_google_play_content():
@@ -9,7 +10,10 @@ def test_mobile_plan_uses_apple_and_excludes_empty_google_play_content():
 
     assert response.status_code == 200
     payload = response.json()
-    assert payload["source_registry_version"] == "as01-2026-09-24"
+    assert payload["source_registry_version"] == get_registry().registry_version
+    assert payload["eligible_sources"][0]["last_measured_at"] == "2026-09-27"
+    assert payload["eligible_sources"][0]["verified_fields"] == []
+    assert get_registry().profile("source-0096").runtime_enabled is False
     assert payload["eligible_sources"][0]["source_id"] == "source-0096"
     assert payload["eligible_sources"][0]["eligible_for_first_run"] is True
     assert payload["excluded_sources"][0]["source_id"] == "source-0097"

@@ -21,9 +21,10 @@ from fastapi import APIRouter
 from pydantic import BaseModel, Field, model_validator
 
 from app.initial_runs import find_scenario_run_seed
+from app.source_registry import compile_preview_request, get_registry
 
 
-F03_SOURCE_IDS = ("source-0017", "source-0023", "source-0022")
+F03_SOURCE_IDS = get_registry().f03_source_ids
 MAX_ITEMS_PER_SOURCE = 5
 REQUEST_TIMEOUT_SECONDS = 10.0
 MAX_RESPONSE_BYTES = 1_000_000
@@ -109,30 +110,24 @@ class SourceDefinition(BaseModel):
     not_applicable_fields: dict[str, str] = Field(default_factory=dict)
 
 
-SOURCE_DEFINITIONS = {
-    "source-0017": SourceDefinition(
-        source_id="source-0017",
-        source_name="GitHub",
-        url="https://api.github.com/search/issues",
-        expected_fields=["baslik", "govde", "kaynak_url", "yayin_tarihi"],
-        not_applicable_fields={
-            "surum": "GitHub issue arama kayıtları bir sürüme bağlı değildir; sürüm/release sinyali ayrı bir kaynak gerektirir."
-        },
-    ),
-    "source-0023": SourceDefinition(
-        source_id="source-0023",
-        source_name="Stack Overflow",
-        url="https://api.stackexchange.com/2.3/search/advanced",
-        expected_fields=["baslik", "etiket", "kaynak_url", "yayin_tarihi"],
-    ),
-    "source-0022": SourceDefinition(
-        source_id="source-0022",
-        source_name="Hacker News",
-        url="https://hn.algolia.com/api/v1/search",
-        expected_fields=["baslik", "govde", "kaynak_url", "yayin_tarihi", "yazar"],
-    ),
-}
+def _source_definitions() -> dict[str, SourceDefinition]:
+    registry = get_registry()
+    definitions = {}
+    for source_id in registry.f03_source_ids:
+        surface = registry.profile(source_id).preview_surface
+        if surface is None:
+            raise ValueError("source preview unavailable")
+        definitions[source_id] = SourceDefinition(
+            source_id=source_id,
+            source_name=registry.identity(source_id).display_name,
+            url=surface.url,
+            expected_fields=list(surface.expected_fields),
+            not_applicable_fields={field.name: field.reason for field in surface.not_applicable_fields},
+        )
+    return definitions
 
+
+SOURCE_DEFINITIONS = _source_definitions()
 
 class ArtifactStore:
     """Content-addressed raw artefacts rooted only in the DemandRift volume."""
@@ -170,12 +165,7 @@ def _iso_timestamp(value: Any) -> str | None:
 
 
 def _source_request(source_id: str, query: str) -> tuple[str, dict[str, str | int]]:
-    source = SOURCE_DEFINITIONS[source_id]
-    if source_id == "source-0017":
-        return source.url, {"q": query, "per_page": MAX_ITEMS_PER_SOURCE}
-    if source_id == "source-0023":
-        return source.url, {"site": "stackoverflow", "q": query, "pagesize": MAX_ITEMS_PER_SOURCE}
-    return source.url, {"query": query, "hitsPerPage": MAX_ITEMS_PER_SOURCE}
+    return compile_preview_request(source_id, query, max_items=MAX_ITEMS_PER_SOURCE)
 
 
 def _previews(source_id: str, payload: dict[str, Any]) -> list[SourceItemPreview] | None:
@@ -225,7 +215,7 @@ def _returned_fields(source_id: str, previews: list[SourceItemPreview]) -> list[
 
 
 def _field_evaluation(source_id: str, previews: list[SourceItemPreview]) -> SourceFieldEvaluation:
-    source = SOURCE_DEFINITIONS[source_id]
+    source = _source_definitions()[source_id]
     expected = source.expected_fields
     returned = _returned_fields(source_id, previews)
     return SourceFieldEvaluation(
@@ -259,7 +249,7 @@ async def execute_f03_sources(
 
     async with httpx.AsyncClient(**client_args) as client:
         for source_id in request.source_ids:
-            source = SOURCE_DEFINITIONS[source_id]
+            source = _source_definitions()[source_id]
             url, params = _source_request(source_id, query)
             response_content: bytes | None = None
             response_status: int | None = None
