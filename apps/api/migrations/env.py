@@ -6,6 +6,7 @@ from alembic import context
 from sqlalchemy import create_engine
 from sqlalchemy.engine import make_url
 from sqlalchemy.pool import NullPool
+from app.runtime_secrets import runtime_secret
 
 from app.db.models import Base
 from app.db import job_models  # noqa: F401 -- register durable job metadata.
@@ -17,7 +18,8 @@ from app.db import preparation_http_models  # noqa: F401 -- register immutable o
 
 def database_url():
     try:
-        url = make_url(os.environ["DATABASE_URL"])
+        url = make_url(runtime_secret("DATABASE_URL",
+            allow_environment=os.environ.get("APP_ENV") != "production"))
         if url.drivername != "postgresql+psycopg" or not url.database:
             raise ValueError()
         return url

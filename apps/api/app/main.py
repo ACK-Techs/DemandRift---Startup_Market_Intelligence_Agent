@@ -19,6 +19,7 @@ from app.preparation_body_guard import PreparationBodyGuard
 from app.db.engine import Database, DatabaseConfigurationError
 from app.db.migration_head import REQUIRED_MIGRATION
 from app.http_errors import install_errors
+from app.runtime_secrets import runtime_secret
 
 from app.research_plan import router as research_plan_router
 from app.initial_runs import router as initial_runs_router
@@ -49,7 +50,7 @@ def create_app(
         owns_database = False
         application.state.auth_service = None
         if configured is None and production:
-            configured = Database(os.environ.get("DATABASE_URL", ""))
+            configured = Database(runtime_secret("DATABASE_URL", allow_environment=False))
             owns_database = True
         try:
             if configured is not None:
@@ -86,11 +87,13 @@ def create_app(
         """Process liveness and deployed revision; does not check dependencies."""
         return HealthResponse(revision=revision)
 
-    application.include_router(research_plan_router)
-    application.include_router(source_plan_router)
-    application.include_router(initial_runs_router)
-    application.include_router(run_record_router)
-    application.include_router(source_execution_router)
+    if not production and database is None:
+        # Historical offline planning fixtures never serve as live tenant APIs.
+        application.include_router(research_plan_router)
+        application.include_router(source_plan_router)
+        application.include_router(initial_runs_router)
+        application.include_router(run_record_router)
+        application.include_router(source_execution_router)
     application.include_router(contract_router)
     application.include_router(auth_router)
     application.include_router(preparation_router)

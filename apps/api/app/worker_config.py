@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 import os
 import re
 from urllib.parse import urlsplit
+from app.runtime_secrets import RuntimeSecretError, runtime_secret
 
 TASK_NAME = "demandrift.jobs.wake"
 
@@ -59,11 +60,12 @@ class WorkerSettings:
     def from_environment(cls):
         try:
             return cls(
-                broker_url=os.environ["DEMANDRIFT_BROKER_URL"],
+                broker_url=runtime_secret("DEMANDRIFT_BROKER_URL",
+                    allow_environment=os.environ.get("APP_ENV") != "production"),
                 queue=os.environ.get("DEMANDRIFT_WORKER_QUEUE", "demandrift.jobs"),
                 key_prefix=os.environ.get(
                     "DEMANDRIFT_WORKER_KEY_PREFIX", "demandrift:"
                 ),
             )
-        except KeyError:
+        except (KeyError, RuntimeSecretError):
             raise ValueError("Explicit worker broker configuration required") from None
