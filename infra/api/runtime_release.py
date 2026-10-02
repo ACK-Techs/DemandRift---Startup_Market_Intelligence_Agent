@@ -23,6 +23,7 @@ SCHEMA = '20261002_0008'
 SHA = re.compile(r'[0-9a-f]{40}\Z')
 BACKUP_LIMIT = 1024 ** 3
 COMMAND_ENVIRONMENT = {'PATH': '/usr/sbin:/usr/bin:/sbin:/bin',
+                       'HOME': '/root',
                        'GIT_TERMINAL_PROMPT': '0', 'LANG': 'C.UTF-8'}
 
 

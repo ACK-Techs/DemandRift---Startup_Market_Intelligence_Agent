@@ -19,6 +19,36 @@ CURRENT = 'c' * 40
 PREVIOUS = 'a' * 40
 
 
+def test_release_children_use_fixed_administrator_home_without_ambient_secrets(monkeypatch):
+    monkeypatch.setenv('HOME', '/untrusted-home')
+    monkeypatch.setenv('DOCKER_CONFIG', '/untrusted-docker-config')
+    monkeypatch.setenv('HTTPS_PROXY', 'http://untrusted-proxy.invalid')
+    monkeypatch.setenv('GEMINI_API_KEY', 'synthetic-private-canary')
+    calls = []
+    def command(argv, **kwargs):
+        calls.append((argv, kwargs))
+        return type('Result', (), {'stdout': b'bounded-public-output'})()
+    monkeypatch.setattr(release.subprocess, 'run', command)
+    assert release.run(['docker', 'version']) == b'bounded-public-output'
+    assert calls[0][1]['env'] == {
+        'PATH': '/usr/sbin:/usr/bin:/sbin:/bin', 'HOME': '/root',
+        'GIT_TERMINAL_PROMPT': '0', 'LANG': 'C.UTF-8',
+    }
+    assert calls[0][1]['stdin'] is release.subprocess.DEVNULL
+    assert calls[0][1]['check'] is True
+
+
+def test_actual_child_observes_fixed_home_without_ambient_provider_value(monkeypatch):
+    monkeypatch.setenv('HOME', '/untrusted-home')
+    monkeypatch.setenv('GEMINI_API_KEY', 'synthetic-private-canary')
+    observed = json.loads(release.run([
+        sys.executable, '-I', '-S', '-c',
+        "import json,os; print(json.dumps({'home':os.environ.get('HOME'),"
+        "'providerPresent':'GEMINI_API_KEY' in os.environ}))",
+    ]))
+    assert observed == {'home': '/root', 'providerPresent': False}
+
+
 class Controlled(release.Release):
     def __init__(self, path, *, fault=None, legacy=False):
         super().__init__(CURRENT, base=path)

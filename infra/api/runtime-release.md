@@ -59,3 +59,8 @@ hesaplanır. Private archive, header/byte sınırları, aynı hash ve fsync davr
 korunur; gerçek hedef Python import/hash kontrolü kurulum kapısında yapılır.
 Release işleminde kısa kesinti beklenir; mevcut diğer backend projelerine komut
 uygulanmaz. Frontend yalnız local çalışır, bu coordinator frontend yayını yapmaz.
+
+Child komut ortamı sabit `HOME=/root` içerir; Docker ve Git yalnız yöneticinin
+yapılandırma dizinini kullanır. Çağıranın HOME, DOCKER_CONFIG, proxy ve provider
+anahtar değişkenleri aktarılmaz. Kurulu helper'da bulunan bu ayar kabul edilmiş
+kaynakla eşleştirilir; bağımsız kabulden önceki hash farkı kaydı korunur.
