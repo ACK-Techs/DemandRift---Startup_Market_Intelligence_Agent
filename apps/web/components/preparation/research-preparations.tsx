@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import { CreateResearch } from "@/components/preparation/create-research";
 import { ProjectAccess } from "@/components/projects/project-access";
 import { usePreparationStore } from "@/lib/preparation/use-preparation-store";
 import type { ReadSlice } from "@/lib/preparation/preparation-store";
@@ -43,7 +44,8 @@ export function ResearchPreparations({ projectId }: { projectId: string }) {
     </li>)}</ul> : null}
     {selectionReady && state.list.data ? <PreparationPages count={state.list.data.items.length} cursor={state.list.cursor} next={state.list.data.page.next_cursor} disabled={disabled} read={store.loadList} label="Research" /> : null}
     {state.retryAfterSeconds !== null ? <p className="mt-3 text-xs text-[#686973]">Wait {state.retryAfterSeconds} seconds before another request.</p> : null}
-    <p className="mt-5 text-xs leading-5 text-[#686973]">Pages may change when new records are saved. Refresh the first page to read recent records. Creating ideas and editing briefs will be available when their save flow is connected.</p>
+    <p className="mt-5 text-xs leading-5 text-[#686973]">Pages may change when new records are saved. Refresh the first page to read recent records.</p>
+    {selectionReady ? <CreateResearch key={projectId} projectId={projectId} onCreated={store.loadList} /> : null}
     <Link className={`${preparationButton} mt-6 inline-flex items-center`} href={`/projects/${projectId}`}>Back to project</Link>
   </section>;
 }

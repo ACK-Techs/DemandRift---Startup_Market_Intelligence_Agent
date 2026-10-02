@@ -316,3 +316,31 @@ test("broad invalidation and disposal discard the retained identity tuple", asyn
     assert.equal(store.invalidateSession("a".repeat(64), owner), false); assert.equal(store.getSnapshot(), after);
   }
 });
+
+
+test("private resources suspend before public checking notifications and only verified session resumes them", async t => {
+  let reads = 0, release; const events = [];
+  const store = fixture(t, async () => ++reads === 1 ? json(session()) : new Promise(resolve => { release = () => resolve(json(session())); }));
+  const resource = { suspend: () => events.push("suspend"), bindSession: value => events.push(value ? "verified" : "clear") };
+  const unregister = store.registerPrivateResource(resource); t.after(unregister); await store.refresh(); events.length = 0;
+  const unsubscribe = store.subscribe(() => { if (store.getSnapshot().pending === "refresh") { assert.equal(events.at(-1), "suspend"); assert.equal(store.getSnapshot().session, null); } }); t.after(unsubscribe);
+  const checking = store.refresh(); assert.equal(store.isContinuityRefresh(), true); assert.deepEqual(events, ["suspend"]);
+  release(); assert.equal(await checking, true); assert.deepEqual(events, ["suspend", "verified"]); assert.equal(store.isContinuityRefresh(), false);
+  assert.equal(Object.hasOwn(store.getSnapshot(), "privateContinuityDeadline"), false);
+});
+
+test("resource continuity deadline keeps absolute expiry active through a hidden pending refresh", async t => {
+  let reads = 0, release, signal; const events = [];
+  const store = fixture(t, async (_path, init) => ++reads === 1 ? json(session(owner, new Date(Date.now() + 45).toISOString())) : new Promise(resolve => { signal = init.signal; release = () => resolve(json(session())); }));
+  const unregister = store.registerPrivateResource({ suspend: () => events.push("suspend"), bindSession: value => events.push(value ? "verified" : "clear") }); t.after(unregister);
+  await store.refresh(); const checking = store.refresh(); await new Promise(resolve => setTimeout(resolve, 75));
+  assert.equal(store.getSnapshot().status, "expired"); assert.equal(signal.aborted, true); assert.equal(events.at(-1), "clear");
+  release(); assert.equal(await checking, false); assert.equal(events.at(-1), "clear");
+});
+
+test("unregister and disposal clear registered private resources synchronously", async t => {
+  const store = fixture(t, async () => json(session())); const events = [];
+  await store.refresh(); const unregister = store.registerPrivateResource({ suspend: () => events.push("suspend"), bindSession: value => events.push(value ? "verified" : "clear") });
+  unregister(); assert.deepEqual(events, ["verified", "clear"]);
+  store.registerPrivateResource({ suspend: () => events.push("suspend"), bindSession: value => events.push(value ? "verified" : "clear") }); store.dispose(); assert.equal(events.at(-1), "clear");
+});

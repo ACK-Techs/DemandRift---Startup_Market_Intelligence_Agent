@@ -1,26 +1,36 @@
 "use client";
 
-import { Fragment, createContext, useContext, useEffect, useState, useSyncExternalStore } from "react";
+import { Fragment, createContext, useContext, useEffect, useLayoutEffect, useState, useSyncExternalStore } from "react";
+import { usePathname } from "next/navigation";
+import { createPreparationResources } from "@/lib/preparation/preparation-mutation-store";
+import type { PreparationResources } from "@/lib/preparation/preparation-mutation-store";
 import { createSessionStore } from "@/lib/auth/session-store";
 import type { SessionStore } from "@/lib/auth/session-store";
 
 const SessionContext = createContext<SessionStore | null>(null);
+const PreparationResourcesContext = createContext<PreparationResources | null>(null);
 
 export function SessionProvider({ children }: { children: React.ReactNode }) {
   const [store] = useState(() => createSessionStore());
+  const [resources] = useState(() => createPreparationResources(store));
+  const pathname = usePathname();
+  useLayoutEffect(() => { resources.selectRoute(pathname); }, [pathname, resources]);
   useEffect(() => {
     void store.refresh();
     const channel = typeof BroadcastChannel === "undefined" ? null : new BroadcastChannel("demandrift-session");
     let deferredReconcile = false;
     const reconcile = () => {
-      if (store.getSnapshot().pending !== null) { deferredReconcile = true; return; }
+      const pending = store.getSnapshot().pending;
+      if (pending !== null && pending !== "refresh") { deferredReconcile = true; return; }
       deferredReconcile = false;
       store.invalidate(); void store.refresh();
     };
     const unsubscribe = store.subscribe(() => {
       if (deferredReconcile && store.getSnapshot().pending === null) queueMicrotask(reconcile);
     });
-    const receive = (event: MessageEvent) => { if (event.data === "session_changed") reconcile(); };
+    const receive = (event: MessageEvent) => {
+      if (event.data === "session_changed") { resources.clear(); reconcile(); }
+    };
     const checkVisible = () => {
       if (document.visibilityState === "visible") { store.checkExpiry(); void store.refresh(); }
     };
@@ -32,10 +42,10 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
       channel?.close();
       window.removeEventListener("focus", checkVisible);
       document.removeEventListener("visibilitychange", checkVisible);
-      store.invalidate();
+      resources.clear(); store.invalidate();
     };
-  }, [store]);
-  return <SessionContext.Provider value={store}><SessionContent>{children}</SessionContent></SessionContext.Provider>;
+  }, [store, resources]);
+  return <SessionContext.Provider value={store}><PreparationResourcesContext.Provider value={resources}><SessionContent>{children}</SessionContent></PreparationResourcesContext.Provider></SessionContext.Provider>;
 }
 
 function SessionContent({ children }: { children: React.ReactNode }) {
@@ -49,6 +59,14 @@ export function useSession() {
   if (!store) throw new Error("SessionProvider is required");
   const state = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getServerSnapshot);
   return { ...state, refresh: store.refresh, authenticate: store.authenticate, logout: store.logout, invalidateSession: store.invalidateSession };
+}
+
+export function usePreparationMutationResource(projectId: string) {
+  const resources = useContext(PreparationResourcesContext);
+  const pathname = usePathname();
+  if (!resources) throw new Error("SessionProvider is required");
+  const [store] = useState(() => resources.acquire(pathname, projectId));
+  return store;
 }
 
 export function announceSessionChange() {

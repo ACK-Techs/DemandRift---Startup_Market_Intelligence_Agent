@@ -6,7 +6,7 @@ Cookie yalnız aynı origin `/api/backend` üzerinden gönderilir. Login/registe
 
 Pending submit/çıkış aynı store'da senkron kilitlenir; çift tıklama ikinci POST üretmez. Canonical pozitif `Retry-After` credential POST'larını süre boyunca durdurur; süre dolunca form tekrar açılır. Kanonik sıfır bekleme süresi formu durdurmaz ve hemen manuel tekrar yapılabilir; istemci sıfır veya pozitif değer nedeniyle otomatik retry başlatmaz. Logout boş204 veya401 ile yerel oturumu kaldırır. Mutation sonucu timeout/network/5xx/malformed response nedeniyle belirsizse hesap içeriği temizlenir ve yeni mutation durur; kullanıcı yalnız açık bir GET session kontrolüyle uzlaştırır. Başarı gösterimi backend yanıtına bağlıdır.
 
-Absolute expiry timer ve görünürlük/focus kontrolü user/CSRF verisini kaldırır. Logout, expiry, scope hatası ve user değişiminde provider owner anahtarı bileşen ağacını yeniden kurar; eski kullanıcıya ait component-local state taşınmaz. BroadcastChannel yalnız `session_changed` kontrol mesajı taşır, kimlik/parola/token göndermez; bekleyen mutation tamamlanmadan başka sekme sinyali onu iptal edip sessizce sonucu kaybettirmez.
+Absolute expiry timer user/CSRF verisini kaldırır. Görünürlük/focus kontrolü güvenli GET başlatır; doğrulama sırasında public session ve private DOM gizlenir. Logout, expiry, scope hatası ve user değişiminde provider owner anahtarı bileşen ağacını yeniden kurar; eski kullanıcıya ait component-local state taşınmaz. BroadcastChannel yalnız `session_changed` kontrol mesajı taşır, kimlik/parola/token göndermez; bekleyen mutation tamamlanmadan başka sekme sinyali onu iptal edip sessizce sonucu kaybettirmez.
 
 `useSession().invalidateSession(expectedCsrfToken, expectedUserId)` korunan bir isteğin doğrulanmış401 sonucu için eşleştirerek temizleme API'sidir. Çağıran taraf isteğin başında kanonik Session'dan aldığı primitive CSRF token ve user UUID değerlerini saklar; yalnız iki değer de mevcut oturum kimliğiyle birebir eşleşirse store kullanıcı verisini kaldırır. Mevcut Session sözleşmesinde `session_id` yoktur: kimlik karşılaştırması oturuma bağlı mevcut `csrf_token` ile yapılır; yeni wire alanı üretilmez. Boxed string/array/nesne kimlikleri dönüştürülmeden reddedilir. Store tuple değerlerini kopyalar ve yalnız memory içinde tutar.
 
@@ -17,3 +17,30 @@ Bu dilim yalnız producer'ı sunar; proje401 tüketicisinin bu API'ye bağlanmas
 Session kaybolması backend authorization kontrolünün yerine geçmez. Henüz backend route'u bulunmayan ayarlar ve araştırma ekranları unavailable kalır. Mevcut generated JSON Schema dosyasının gerçekten client bundle'a girebilmesi için `next.config.ts` Turbopack root'u uygulama ve `packages/contracts` ortak repo köküne sabitler; dosya kopyalama veya ikinci schema producer yoktur. [Next.js Turbopack root belgesi](https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack) bu çözümleme sınırını açıklar.
 
 `npm run test:auth` fixture HTTP yanıtlarıyla session isolation/expiry/unknown/pending/password/Retry-After durumlarını test eder. `test:contracts`, `typecheck`, `lint`, `build` ilgili geliştirme kapılarıdır. Offline Playwright kontrolleri mocked account API yanıtlarıyla sayfa kimliğini, desktop/mobile görünümü, semantic form/keyboard geçişini ve kayıt/giriş/çıkış/expiry/unknown/unavailable akışlarını doğrular. Bu testler gerçek Hetzner session cookie/proxy/CORS veya canlı sağlayıcı erişiminin kanıtı değildir; OP-03 ve parent FE-03 gerçek kabulü açık kalır. Frontend deployment yapılmaz; model anahtarı bu modüllerin girdisi değildir.
+
+
+## FE-05 R1: gizli hazırlık işlemi sürekliliği
+
+`registerPrivateResource` yalnız memory içindeki private resource yaşam döngüsünü
+bağlar. `SessionProvider` hazırlık resource'unu owner Fragment üstündeki tek
+route/project holder'da tutar. Session GET başladığında public Session yine null,
+eski private component ağacı yine kaldırılır. Resource'un dış snapshot'ı da owner,
+fikir ve sonuç içermez; `suspend` yazmayı/receipt okumayı durdurur ve bekleyen
+private HTTP'yi abort eder. Belirsiz yaratma UUID/body bilgisi bu sırada yalnız
+kapalı memory'de kalır; storage, DOM, log veya URL'ye taşınmaz.
+
+Kanonik doğrulanmış GET aynı owner+CSRF'yi döndürürse resource aynı operasyonu
+geri açar. Farklı owner veya CSRF, logout başlangıcı, expiry, doğrulanmış401,
+explicit invalidate ve broadcast capture'ı hemen temizler. Session GET sırasında
+eski absolute expiry timer iptal edilmez; expiry geç bir GET'in hesabı veya
+capture'ı geri getirmesini engeller. Transport/5xx/malformed session lookup
+capture'ı gizli ve yetkisiz bırakır; doğrulama veya eski expiry olmadan yeni key
+üretilmez. Bu durum public auth hata enum'larını veya mevcut captured401 CAS
+kurallarını değiştirmez.
+
+Broadcast hazırlık resource'unu hemen purge/abort eder. Pending GET refresh
+iptal edilip yeniden doğrulanır; login/register/logout mutation'ları önceki
+accepted deferral kuralını korur. Pathname değişimi eski route resource'unu
+bırakır. Diğer private ekranların owner/session isolation davranışı genişletilmez;
+checking sırasında private DOM tutan bir görünür-session workaround yoktur.
+Full reload/navigation sonrasında opaque locator ile recovery ayrı FE-05 işidir.
