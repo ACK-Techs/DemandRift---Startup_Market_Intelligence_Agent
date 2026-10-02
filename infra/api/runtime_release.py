@@ -30,6 +30,14 @@ class ReleaseError(Exception):
     """Public errors intentionally contain no subprocess output or credentials."""
 
 
+def archive_hash(source):
+    """Portable SHA256 for the actual Python3.10 administrator runtime."""
+    digest = hashlib.sha256()
+    for chunk in iter(lambda: source.read(65536), b''):
+        digest.update(chunk)
+    return digest.hexdigest()
+
+
 def run(argv, *, timeout=180, env=None):
     try:
         result = subprocess.run(argv, stdin=subprocess.DEVNULL, capture_output=True,
@@ -216,7 +224,7 @@ class Release:
                 if source.read(5) != b'PGDMP':
                     raise ReleaseError('Invalid backup archive')
                 source.seek(0)
-                digest = hashlib.file_digest(source, 'sha256').hexdigest()
+                digest = archive_hash(source)
             atomic_json(path.with_suffix('.json'), {'revision': self.sha, 'archive': path.name,
                         'sha256': digest, 'bytes': path.stat().st_size,
                         'scope': 'database objects/data; role secrets and artifact volume require separate backups'})

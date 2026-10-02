@@ -272,6 +272,13 @@ def test_backup_real_subprocess_pipe_archive_bounds_and_private_cleanup(tmp_path
     assert '/run/secrets/postgres-password' in calls[0][-1]
 
 
+def test_complete_backup_works_without_python311_file_digest(tmp_path, monkeypatch):
+    monkeypatch.delattr(release.hashlib, 'file_digest', raising=False)
+    body = b'PGDMP' + b'x' * 65536 + b'last-block'
+    test_backup_real_subprocess_pipe_archive_bounds_and_private_cleanup(
+        tmp_path, monkeypatch, body, 0, 70000, True)
+
+
 def test_previous_dangling_symlink_is_rejected_not_legacy_fallback(tmp_path):
     (tmp_path / 'runtime-success.json').symlink_to(tmp_path / 'missing')
     with pytest.raises(release.ReleaseError, match='Unsafe administrator file'):

@@ -53,5 +53,9 @@ olursa başarısız yeni SHA başarı kaydı olarak kalmaz. Kayıt geri yazımı
 uygulama servisleri durdurulur ve otomatik geri dönüş başarı olarak bildirilmez.
 
 Unit failure-path testleri gerçek Hetzner deploy veya restore kanıtı değildir.
+Yönetici helper'ı hedef sunucunun Python3.10 sürümünde çalışır. Backup SHA256,
+Python3.11'de eklenen `hashlib.file_digest` yerine bounded64KiB stream okumalarıyla
+hesaplanır. Private archive, header/byte sınırları, aynı hash ve fsync davranışı
+korunur; gerçek hedef Python import/hash kontrolü kurulum kapısında yapılır.
 Release işleminde kısa kesinti beklenir; mevcut diğer backend projelerine komut
 uygulanmaz. Frontend yalnız local çalışır, bu coordinator frontend yayını yapmaz.
