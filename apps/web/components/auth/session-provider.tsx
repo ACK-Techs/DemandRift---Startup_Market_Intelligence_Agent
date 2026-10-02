@@ -8,20 +8,25 @@ import { createPreparationRecovery } from "@/lib/preparation/preparation-recover
 import type { PreparationRecovery } from "@/lib/preparation/preparation-recovery-store";
 import { createSessionStore } from "@/lib/auth/session-store";
 import type { SessionStore } from "@/lib/auth/session-store";
+import { createProjectResources } from "@/lib/projects/project-resources";
+import type { ProjectResources } from "@/lib/projects/project-resources";
 
 const SessionContext = createContext<SessionStore | null>(null);
 const PreparationResourcesContext = createContext<PreparationResources | null>(null);
 const BriefRevisionResourcesContext = createContext<BriefRevisionResources | null>(null);
+const ProjectResourcesContext = createContext<ProjectResources | null>(null);
 
 export function SessionProvider({ children }: { children: React.ReactNode }) {
   const [recovery] = useState(() => createPreparationRecovery());
   const [store] = useState(() => createSessionStore(recovery.sessionClient));
   const [resources] = useState(() => recovery.creationResources(store));
   const [revisions] = useState(() => recovery.revisionResources(store));
+  const [projects] = useState(() => createProjectResources(store));
   const pathname = usePathname();
   useLayoutEffect(() => { recovery.selectRoute(pathname); resources.selectRoute(pathname); revisions.selectRoute(pathname); }, [pathname, resources, revisions, recovery]);
   useEffect(() => {
     recovery.attach(store);
+    projects.attach();
     void store.refresh();
     const channel = typeof BroadcastChannel === "undefined" ? null : new BroadcastChannel("demandrift-session");
     let deferredReconcile = false;
@@ -35,7 +40,7 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
       if (deferredReconcile && store.getSnapshot().pending === null) queueMicrotask(reconcile);
     });
     const receive = (event: MessageEvent) => {
-      if (event.data === "session_changed") { recovery.hardPurge(); resources.clear(); revisions.clear(); reconcile(); }
+      if (event.data === "session_changed") { recovery.hardPurge(); resources.clear(); revisions.clear(); projects.clear(); reconcile(); }
     };
     const checkVisible = () => {
       if (document.visibilityState === "visible") { store.checkExpiry(); void store.refresh(); }
@@ -48,10 +53,10 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
       channel?.close();
       window.removeEventListener("focus", checkVisible);
       document.removeEventListener("visibilitychange", checkVisible);
-      recovery.detachPreservingLocators(); resources.clear(); revisions.clear(); store.invalidate();
+      recovery.detachPreservingLocators(); resources.clear(); revisions.clear(); projects.detach(); store.invalidate();
     };
-  }, [store, resources, revisions, recovery]);
-  return <SessionContext.Provider value={store}><PreparationResourcesContext.Provider value={resources}><BriefRevisionResourcesContext.Provider value={revisions}><SessionContent recovery={recovery}>{children}</SessionContent></BriefRevisionResourcesContext.Provider></PreparationResourcesContext.Provider></SessionContext.Provider>;
+  }, [store, resources, revisions, recovery, projects]);
+  return <SessionContext.Provider value={store}><PreparationResourcesContext.Provider value={resources}><BriefRevisionResourcesContext.Provider value={revisions}><ProjectResourcesContext.Provider value={projects}><SessionContent recovery={recovery}>{children}</SessionContent></ProjectResourcesContext.Provider></BriefRevisionResourcesContext.Provider></PreparationResourcesContext.Provider></SessionContext.Provider>;
 }
 
 function SessionContent({ children, recovery }: { children: React.ReactNode; recovery: PreparationRecovery }) {
@@ -115,4 +120,10 @@ export function useBriefRevisionResource(projectId: string, researchId: string) 
   if (!resources) throw new Error("SessionProvider is required");
   const [store] = useState(() => resources.acquire(pathname, projectId, researchId));
   return store;
+}
+
+export function useProjectResource() {
+  const resources = useContext(ProjectResourcesContext);
+  if (!resources) throw new Error("SessionProvider is required");
+  return resources.getStore();
 }

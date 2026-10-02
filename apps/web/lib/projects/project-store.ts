@@ -6,8 +6,8 @@ import type { FailureCategory } from "../api/status.ts";
 
 type Project = WireModels["Project"];
 type Session = WireModels["Session"];
-type ReadStatus = "idle" | "loading" | "ready" | "empty" | FailureCategory;
-type CreateStatus = "idle" | "pending" | "created" | "unknown" | FailureCategory;
+type ReadStatus = "idle" | "checking" | "loading" | "ready" | "empty" | FailureCategory;
+type CreateStatus = "idle" | "checking" | "pending" | "created" | "unknown" | FailureCategory;
 export type ProjectState = {
   ownerId: string | null;
   list: { status: ReadStatus; data: WireModels["ProjectPage"] | null; cursor: string | null; message: string | null };
@@ -22,61 +22,118 @@ const initial: ProjectState = {
   create: { status: "idle", data: null, message: null, fieldError: null, reconciled: false },
   retryAfterSeconds: null,
 };
+const hidden: ProjectState = { ...initial, list: { ...initial.list, status: "checking" },
+  detail: { ...initial.detail, status: "checking" }, create: { ...initial.create, status: "checking" } };
 type Client = ReturnType<typeof createApiClient>;
 type Failure = Extract<ApiResult<"Project">, { ok: false }>;
+type Identity = { ownerId: string; csrfToken: string; expiresAt: number };
+type Creation = { controller: AbortController; current: number; identity: Identity; name: string; sent: boolean };
+const unknownMessage = "Project creation could not be confirmed. Check saved projects before another creation attempt.";
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /** Only server-confirmed owner/project data is cached, in memory. */
 export function createProjectStore(client: Client = createApiClient(), now: () => number = Date.now,
   invalidateSession: (expectedCsrfToken: string, expectedUserId: string) => boolean = () => false) {
-  let state = initial, session: Session | null = null, generation = 0, disposed = false;
+  let state = initial, identity: Identity | null = null, generation = 0, disposed = false, suspended = false;
+  let capture: Creation | null = null, pendingCreate: Creation | null = null;
   let retryUntil = 0, cooldown: ReturnType<typeof setTimeout> | null = null;
   const listeners = new Set<() => void>();
   const controllers = new Set<AbortController>();
   const update = (next: ProjectState) => { state = next; for (const listener of listeners) listener(); };
-  function clear() {
+  function clear(next: ProjectState = initial) {
     generation++;
     for (const controller of controllers) controller.abort();
-    controllers.clear(); session = null; retryUntil = 0;
+    controllers.clear(); identity = null; retryUntil = 0; suspended = false; capture = null; pendingCreate = null;
     if (cooldown !== null) clearTimeout(cooldown); cooldown = null;
-    update(initial);
+    update(next);
   }
   function bindSession(value: Session | null) {
-    if (value === null || !parseWire("Session", JSON.stringify(value)).ok || Date.parse(value.expires_at) <= now()) { clear(); return; }
-    if (session?.user.user_id !== value.user.user_id || session.csrf_token !== value.csrf_token) {
-      clear(); session = value; update({ ...initial, ownerId: value.user.user_id });
-    } else session = value;
+    if (disposed) return;
+    let valid = false;
+    try { valid = value !== null && parseWire("Session", JSON.stringify(value)).ok && Date.parse(value.expires_at) > now(); }
+    catch { /* An unverified DTO cannot authorize a project operation. */ }
+    if (!valid || value === null) { clear(); return; }
+    if (identity !== null && identity.expiresAt <= now()) clear();
+    const next = { ownerId: value.user.user_id, csrfToken: value.csrf_token, expiresAt: Date.parse(value.expires_at) };
+    if (identity?.ownerId !== next.ownerId || identity.csrfToken !== next.csrfToken) {
+      clear(); identity = next; update({ ...initial, ownerId: next.ownerId });
+    } else {
+      identity = next;
+      if (suspended) {
+        suspended = false;
+        update({ ...state, retryAfterSeconds: retryUntil > now() ? Math.ceil((retryUntil - now()) / 1000) : null });
+        armCooldown();
+      }
+    }
+  }
+  function suspend() {
+    if (disposed || suspended || identity === null) return;
+    if (identity.expiresAt <= now()) { clear(); return; }
+    suspended = true; generation++;
+    for (const controller of controllers) controller.abort();
+    controllers.clear();
+    if (cooldown !== null) clearTimeout(cooldown); cooldown = null;
+    if (pendingCreate !== null) {
+      state = { ...state, create: { ...initial.create, status: pendingCreate.sent ? "unknown" : "idle",
+        message: pendingCreate.sent ? unknownMessage : "Creation paused before it was sent." } };
+      if (!pendingCreate.sent) capture = null;
+      pendingCreate = null;
+    }
+    if (state.list.status === "loading") state = { ...state, list: { ...state.list, status: "cancelled", data: null,
+      message: "Reading projects was paused. Read the saved list explicitly after your session is verified." } };
+    if (state.detail.status === "loading") state = { ...state, detail: { ...state.detail, status: "cancelled", data: null,
+      message: "Reading this project was paused. Read it explicitly after your session is verified." } };
+    for (const listener of listeners) listener();
   }
   function authorized() {
-    if (disposed || session === null) return false;
-    if (Date.parse(session.expires_at) <= now()) { clear(); return false; }
+    if (disposed || suspended || identity === null) return false;
+    if (identity.expiresAt <= now()) { clear(); return false; }
     return true;
+  }
+  function matchesSession(value: Session | null) {
+    return !disposed && !suspended && identity !== null && value !== null && identity.expiresAt > now() &&
+      identity.ownerId === value.user.user_id && identity.csrfToken === value.csrf_token;
+  }
+  function armCooldown() {
+    if (cooldown !== null) clearTimeout(cooldown); cooldown = null;
+    if (!authorized()) return;
+    const current = generation, owner = identity!.ownerId, csrf = identity!.csrfToken;
+    function tick() {
+      if (!fresh(current) || identity!.ownerId !== owner || identity!.csrfToken !== csrf) return;
+      const remaining = retryUntil - now();
+      update({ ...state, retryAfterSeconds: remaining > 0 ? Math.ceil(remaining / 1000) : null });
+      if (remaining > 0 && fresh(current) && identity!.ownerId === owner && identity!.csrfToken === csrf)
+        cooldown = setTimeout(tick, Math.min(remaining, 2_147_483_647));
+    }
+    tick();
   }
   function wait(error: Failure) {
     const count = error.apiError?.retry_after_seconds;
     if (typeof count !== "number" || !Number.isSafeInteger(count) || count <= 0) return;
     retryUntil = Math.max(retryUntil, now() + count * 1000);
-    function tick() {
-      const remaining = retryUntil - now();
-      update({ ...state, retryAfterSeconds: remaining > 0 ? Math.ceil(remaining / 1000) : null });
-      if (remaining > 0) cooldown = setTimeout(tick, Math.min(remaining, 2_147_483_647)); else cooldown = null;
-    }
-    if (cooldown !== null) clearTimeout(cooldown); tick();
+    armCooldown();
   }
   function deny(error: Failure) {
-    if (error.category === "authentication") { clear(); update({ ...initial, list: { ...initial.list, status: "authentication", message: error.message }, detail: { ...initial.detail, status: "authentication", message: error.message } }); return true; }
-    wait(error); return false;
+    if (error.status === 401 && error.category === "authentication" && error.apiError !== undefined) {
+      clear({ ...initial, list: { ...initial.list, status: "authentication", message: error.message }, detail: { ...initial.detail, status: "authentication", message: error.message } }); return true;
+    }
+    return false;
   }
   function begin() {
-    const identity = { ownerId: session!.user.user_id, csrfToken: session!.csrf_token };
+    const capturedIdentity = { ...identity! };
     const controller = new AbortController(); controllers.add(controller);
-    return { controller, current: generation, identity };
+    return { controller, current: generation, identity: capturedIdentity };
   }
   function rejectSession(result: ApiResult<"Project" | "ProjectPage">, identity: { ownerId: string; csrfToken: string }) {
     // A stale project result can still reject the current account GET lineage. CAS owns that decision.
     if (!result.ok && result.status === 401 && result.category === "authentication" && result.apiError !== undefined) {
       invalidateSession(identity.csrfToken, identity.ownerId);
+      // Failed passive GET can drop global CAS lineage while this exact private resource is still paused.
+      if (suspended && currentIdentityMatches(identity)) clear();
     }
+  }
+  function currentIdentityMatches(value: { ownerId: string; csrfToken: string }) {
+    return identity !== null && identity.ownerId === value.ownerId && identity.csrfToken === value.csrfToken;
   }
   const fresh = (current: number) => !disposed && current === generation && authorized();
   async function loadList(cursor: string | null = null, reconcile = false) {
@@ -84,10 +141,15 @@ export function createProjectStore(client: Client = createApiClient(), now: () =
     if (cursor !== null && (typeof cursor !== "string" || cursor.length < 1 || cursor.length > 512)) return false;
     const { controller, current, identity } = begin();
     update({ ...state, list: { status: "loading", data: null, cursor, message: null } });
+    if (!fresh(current)) return false;
     const result = await client.request("ProjectPage", "/api/v1/projects", { query: { limit: "25", ...(cursor !== null ? { cursor } : {}) }, scope: { user_id: identity.ownerId }, signal: controller.signal });
     controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
     if (!result.ok) {
-      if (!deny(result)) update({ ...state, list: { ...state.list, status: result.category, data: null, message: result.message } });
+      if (!deny(result)) {
+        update({ ...state, list: { ...state.list, status: result.category === "authentication" ? "contract" : result.category,
+          data: null, message: result.message } });
+        if (fresh(current) && currentIdentityMatches(identity)) wait(result);
+      }
       return false;
     }
     if (result.status !== 200 || result.data.page.limit !== 25 || result.data.items.length > 25 ||
@@ -106,39 +168,57 @@ export function createProjectStore(client: Client = createApiClient(), now: () =
     }
     const { controller, current, identity } = begin();
     update({ ...state, detail: { status: "loading", data: null, projectId, message: null } });
+    if (!fresh(current)) return false;
     const result = await client.request("Project", `/api/v1/projects/${projectId}`, { scope: { user_id: identity.ownerId, project_id: projectId }, signal: controller.signal });
     controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
     if (!result.ok) {
-      if (!deny(result)) update({ ...state, detail: { ...state.detail, status: result.category, data: null, message: result.message } }); return false;
+      if (!deny(result)) {
+        update({ ...state, detail: { ...state.detail, status: result.category === "authentication" ? "contract" : result.category,
+          data: null, message: result.message } });
+        if (fresh(current) && currentIdentityMatches(identity)) wait(result);
+      }
+      return false;
     }
     if (result.status !== 200) { update({ ...state, detail: { ...state.detail, status: "contract", data: null, message: "The project response could not be verified." } }); return false; }
     update({ ...state, detail: { status: "ready", data: result.data, projectId, message: null } }); return true;
   }
   async function createProject(name: string) {
-    if (!authorized() || state.create.status === "pending" || state.create.status === "unknown" || now() < retryUntil) return false;
-    if (!parseWire("ProjectCreate", JSON.stringify({ name })).ok) {
+    if (!authorized() || pendingCreate !== null || capture !== null || state.create.status === "pending" || state.create.status === "unknown" || now() < retryUntil) return false;
+    if (typeof name !== "string" || !parseWire("ProjectCreate", JSON.stringify({ name })).ok) {
       update({ ...state, create: { ...initial.create, status: "validation", fieldError: "Use 1–200 characters with at least one non-space character.", message: "Check the project name." } }); return false;
     }
-    const { controller, current, identity } = begin();
+    const operation: Creation = { ...begin(), name, sent: false };
+    const { controller, current, identity } = operation;
+    capture = operation; pendingCreate = operation;
     update({ ...state, create: { ...initial.create, status: "pending" } });
+    if (!fresh(current) || capture !== operation || pendingCreate !== operation) return false;
+    operation.sent = true;
     const result = await client.request("Project", "/api/v1/projects", { method: "POST", body: { name }, csrfToken: identity.csrfToken, scope: { user_id: identity.ownerId }, signal: controller.signal });
     controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
+    pendingCreate = null;
     if (!result.ok) {
-      if (!deny(result)) update({ ...state, create: { ...initial.create, status: result.operationState === "unknown" ? "unknown" : result.category,
-        message: result.operationState === "unknown" ? "Project creation could not be confirmed. Check saved projects before another creation attempt." : result.message,
-        fieldError: result.category === "validation" ? "Check the project name requirements." : null } }); return false;
+      if (!deny(result)) {
+        const unknown = result.operationState === "unknown" || result.category === "authentication";
+        if (!unknown) capture = null;
+        update({ ...state, create: { ...initial.create, status: unknown ? "unknown" : result.category,
+          message: unknown ? unknownMessage : result.message, fieldError: !unknown && result.category === "validation" ? "Check the project name requirements." : null } });
+        if (fresh(current) && currentIdentityMatches(identity)) wait(result);
+      }
+      return false;
     }
     if (result.status !== 201 || result.data.name !== name || result.data.archived_at !== null) {
       update({ ...state, create: { ...initial.create, status: "unknown", message: "Project creation returned an unexpected receipt. Check saved projects before another creation attempt." } }); return false;
     }
+    capture = null;
     update({ ...state, create: { ...initial.create, status: "created", data: result.data, message: "Project created." } }); return true;
   }
   function finishReconciliation() {
-    if (state.create.status !== "unknown" || !state.create.reconciled) return false;
+    if (!authorized() || pendingCreate !== null || now() < retryUntil || state.create.status !== "unknown" || !state.create.reconciled) return false;
+    capture = null;
     update({ ...state, create: { ...initial.create, message: "The earlier creation result remains unconfirmed. A new submission creates a separate project." } }); return true;
   }
-  return { getSnapshot: () => state, getServerSnapshot: () => initial, subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
-    bindSession, loadList, getProject, createProject, finishReconciliation,
-    dispose: () => { clear(); disposed = true; listeners.clear(); } };
+  return { getSnapshot: () => suspended ? hidden : state, getServerSnapshot: () => initial, subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
+    bindSession, suspend, matchesSession, loadList, getProject, createProject, finishReconciliation,
+    dispose: () => { disposed = true; clear(); listeners.clear(); } };
 }
 export type ProjectStore = ReturnType<typeof createProjectStore>;

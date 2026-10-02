@@ -1,6 +1,11 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { createServer } from 'node:http';
+import { createServer as createHttpsServer } from 'node:https';
+import { execFileSync } from 'node:child_process';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { createBackendProxy, backendRequestLimit, backendResponseLimit, backendDeadlineMs } from '../lib/api/backend-proxy.ts';
 import { createApiClient } from '../lib/api/client.ts';
 import { parseWire } from '../lib/api/wire.ts';
@@ -26,6 +31,55 @@ async function safeError(response,status) {
   assert.equal(/^[0-9a-f-]{36}$/.test(parsed.data.request_id),true,'opaque fresh UUID');
   return parsed.data;
 }
+
+async function tlsFixture(t, handler, { san='demandrift-api.ack-techs.com', deadlineMs=1000 }={}) {
+  const directory=await mkdtemp(join(tmpdir(),'demandrift-proxy-tls-'));
+  t.after(()=>rm(directory,{recursive:true,force:true}));
+  const key=join(directory,'synthetic-key.pem'),cert=join(directory,'synthetic-cert.pem');
+  execFileSync('openssl',['req','-x509','-newkey','rsa:2048','-nodes','-days','1',
+    '-keyout',key,'-out',cert,'-subj',`/CN=${san}`,'-addext',`subjectAltName=DNS:${san}`],{stdio:'pipe'});
+  const ca=await readFile(cert,'utf8');let count=0,connections=0;
+  const server=createHttpsServer({key:await readFile(key),cert:ca},(req,res)=>{count++;handler(req,res);});
+  server.on('secureConnection',()=>{connections++;});
+  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(async()=>{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));});
+  const controls={port:server.address().port,deadlineMs,httpsLoopbackCA:ca};
+  return {server,ca,controls,proxy:createBackendProxy('https://demandrift-api.ack-techs.com',controls),count:()=>count,connections:()=>connections};
+}
+
+test('approved HTTPS forwards one TLS-verified request and cookies to its configured host',async(t)=>{
+  const body='😀 synthetic exact HTTPS body',cookies=['one=synthetic; Path=/; HttpOnly','two=synthetic; Path=/'];let exact=false;
+  const f=await tlsFixture(t,(req,res)=>{const chunks=[];req.on('data',chunk=>chunks.push(chunk));req.on('end',()=>{
+    exact=req.socket.servername==='demandrift-api.ack-techs.com'&&req.headers.host==='demandrift-api.ack-techs.com'&&req.headers.cookie==='synthetic=one'&&req.headers.origin==='http://127.0.0.1:3100'&&req.headers['x-csrf-token']==='a'.repeat(64)&&Buffer.concat(chunks).equals(Buffer.from(body));
+    res.setHeader('Set-Cookie',cookies);res.writeHead(201);res.end('accepted');});});
+  const result=await f.proxy(input('/api/v1/projects',{method:'POST',body,headers:{Cookie:'synthetic=one',Origin:'http://127.0.0.1:3100','X-CSRF-Token':'a'.repeat(64),Host:'evil.example'}}));
+  assert.equal(result.status,201);assert.equal(await result.text(),'accepted');assert.deepEqual(result.headers.getSetCookie(),cookies);assert.equal(exact,true);assert.equal(f.count(),1);
+});
+
+test('HTTPS refuses mismatched certificate names and unrelated trust without HTTP fallback',async(t)=>{
+  const wrong=await tlsFixture(t,(_req,res)=>res.end('unexpected'),{san:'other.example'});
+  await safeError(await wrong.proxy(input()),502);assert.equal(wrong.count(),0,'name verification fails before sending HTTP');
+  const right=await tlsFixture(t,(_req,res)=>res.end('unexpected'));
+  const untrusted=createBackendProxy('https://demandrift-api.ack-techs.com',{...right.controls,httpsLoopbackCA:wrong.ca});
+  await safeError(await untrusted(input()),502);assert.equal(right.count(),0,'untrusted issuer fails before sending HTTP');
+  assert.throws(()=>createBackendProxy(origin,{port:1,httpsLoopbackCA:right.ca}));
+  assert.throws(()=>createBackendProxy('https://demandrift-api.ack-techs.com',{port:1}));
+});
+
+test('HTTPS committed mutation drop and redirect each have exactly one attempt',async(t)=>{
+  let committed=0;const f=await tlsFixture(t,(req,res)=>{req.resume();req.once('end',()=>{if(req.url.endsWith('/redirect')){res.writeHead(302,{Location:'https://other.example'});res.end();}else{committed++;res.destroy();}});});
+  const client=createApiClient((path,init)=>f.proxy(new Request('http://127.0.0.1:3100'+path,init)));
+  const result=await client.request('Project','/api/v1/projects',{method:'POST',body:{name:'synthetic'},csrfToken:'a'.repeat(64),idempotencyKey:crypto.randomUUID()});
+  assert.equal(result.ok,false);assert.equal(result.operationState,'unknown');assert.equal(committed,1);assert.equal(f.count(),1);
+  await safeError(await f.proxy(input('/api/v1/redirect')),502);await delay(80);assert.equal(f.count(),2);assert.equal(committed,1);
+});
+
+test('HTTPS idle sockets are not reused and the total deadline cancels held upstream',async(t)=>{
+  let closed=false;const f=await tlsFixture(t,(req,res)=>{if(req.url.endsWith('/held')){req.socket.once('close',()=>{closed=true;});req.resume();}else{res.setHeader('Connection','keep-alive');res.end('ok');}},{deadlineMs:150});
+  assert.equal(await (await f.proxy(input())).text(),'ok');await delay(100);
+  assert.equal(await (await f.proxy(input())).text(),'ok');assert.equal(f.connections(),2);
+  await safeError(await f.proxy(input('/api/v1/held')),504);await delay(30);assert.equal(closed,true);assert.equal(f.count(),3);
+});
 
 test('fixed runtime target uses strict existing origin validator, safe unconfigured503 and no rewrite bypass',async()=>{
   await safeError(await createBackendProxy(undefined)(input()),503);

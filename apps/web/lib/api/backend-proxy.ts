@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { request as httpRequest } from "node:http";
+import { request as httpsRequest } from "node:https";
 import type { ClientRequest, IncomingMessage } from "node:http";
 import { backendRewrites } from "./backend-origin.ts";
 
@@ -10,7 +11,7 @@ const headerLimit = 32 * 1024;
 const methods = new Set(["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]);
 const hopHeaders = new Set(["connection", "keep-alive", "proxy-authenticate", "proxy-authorization",
   "te", "trailer", "transfer-encoding", "upgrade", "proxy-connection"]);
-type FixtureControls = { port: number; deadlineMs?: number };
+type FixtureControls = { port: number; deadlineMs?: number; httpsLoopbackCA?: string };
 class ProxyFailure extends Error {
   readonly status: number;
   constructor(status: number) { super("Backend transport failed"); this.status = status; }
@@ -65,10 +66,17 @@ async function bodyBytes(request: Request, signal: AbortSignal): Promise<Buffer>
 /** Production caller supplies only the strict origin. Fixture controls are an explicit internal test seam, never an environment/request target. */
 export function createBackendProxy(origin: string | undefined, fixture?: FixtureControls) {
   const configured = backendRewrites(origin).length !== 0;
-  const port = fixture?.port ?? 18082, deadline = fixture?.deadlineMs ?? backendDeadlineMs;
+  const tls = origin === "https://demandrift-api.ack-techs.com";
+  const port = fixture?.port ?? (tls ? 443 : 18082), deadline = fixture?.deadlineMs ?? backendDeadlineMs;
   if (!Number.isInteger(port) || port < 1 || port > 65535 || !Number.isInteger(deadline) || deadline < 1 || deadline > backendDeadlineMs) {
     throw new Error("Invalid backend fixture controls");
   }
+  if (fixture && (tls ? typeof fixture.httpsLoopbackCA !== "string" ||
+    !fixture.httpsLoopbackCA.length || fixture.httpsLoopbackCA.length > 65536 : fixture.httpsLoopbackCA !== undefined)) {
+    throw new Error("Invalid backend TLS fixture controls");
+  }
+  const hostname = tls && !fixture ? "demandrift-api.ack-techs.com" : "127.0.0.1";
+  const transport = tls ? httpsRequest : httpRequest;
   return async function proxy(request: Request): Promise<Response> {
     if (!configured) return failure(503);
     if (!methods.has(request.method)) return failure(405);
@@ -89,6 +97,7 @@ export function createBackendProxy(origin: string | undefined, fixture?: Fixture
     }
     if (headerBytes > headerLimit) return failure(400);
     headers.connection = "close";
+    if (tls) headers.host = "demandrift-api.ack-techs.com";
     const controller = new AbortController();
     let timedOut = false, upstream: ClientRequest | null = null, response: IncomingMessage | null = null;
     const cancel = () => { controller.abort(); upstream?.destroy(); response?.destroy(); };
@@ -112,8 +121,9 @@ export function createBackendProxy(origin: string | undefined, fixture?: Fixture
         controller.signal.addEventListener("abort", aborted, { once: true });
         try {
           // agent:false bypasses globalAgent and Next's independently constructed keepalive agent.
-          // http.request performs exactly one attempt, including ambiguous mutation failures.
-          upstream = httpRequest({ hostname: "127.0.0.1", port, path, method: request.method, headers,
+          // Native HTTP/HTTPS performs one attempt with normal TLS verification, including ambiguous mutations.
+          upstream = transport({ hostname, port, path, method: request.method, headers,
+            ...(tls ? { servername: "demandrift-api.ack-techs.com", ...(fixture ? { ca: fixture.httpsLoopbackCA } : {}) } : {}),
             agent: false, maxHeaderSize: headerLimit }, (incoming) => {
             response = incoming;
             if (settled) { incoming.destroy(); return; }

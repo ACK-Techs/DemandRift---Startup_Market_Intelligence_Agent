@@ -1,13 +1,17 @@
 # Local backend connection
 
-The frontend's `/api/backend/{path}` server route connects only to the dedicated
-SSH tunnel at `http://127.0.0.1:18082`. Set `DEMANDRIFT_BACKEND_ORIGIN` to that exact
-origin when starting the local frontend. Any other value fails startup through
-the existing strict `backendRewrites` validator. An unconfigured frontend returns
+The local frontend's `/api/backend/{path}` server route accepts two exact server
+origins: the dedicated SSH tunnel `http://127.0.0.1:18082` or the approved Hetzner
+API `https://demandrift-api.ack-techs.com`. Set `DEMANDRIFT_BACKEND_ORIGIN` to the
+chosen exact origin. Every other value fails startup through the existing strict
+`backendRewrites` validator. The transport uses that configured protocol and host;
+HTTPS never silently falls back to the tunnel. This task keeps the frontend local. An unconfigured frontend returns
 a canonical, generic503 without making an upstream request. There is no browser,
 query, header, environment-port or alternate-host target override.
 
-The App Router uses Node's `http.request` with `agent:false` and `Connection:close`.
+The App Router uses Node's `http.request` or `https.request` with `agent:false`
+and `Connection:close`. HTTPS uses the system trust store and verifies the fixed
+API hostname; runtime configuration cannot override its CA or TLS verification.
 Every incoming request gets one new upstream connection. Next16.3.6's external
 rewrite implementation constructs its own keepalive agent; `httpAgentOptions`
 cannot disable that separate agent. The external rewrite has therefore been
@@ -43,7 +47,9 @@ no claim is made that project uncertainty survives that remount. Explicit saved
 project list reconciliation without a remount is covered by the local controls.
 
 The exported factory accepts an explicit internal fixture port/deadline for native
-tests and an isolated browser snapshot. Production calls it with only the strict
+tests and an isolated browser snapshot. HTTPS fixtures additionally require an
+explicit test CA and connect only to their own loopback listener while verifying
+the fixed production hostname. HTTP fixtures cannot supply TLS controls. Production calls it with only the strict
 origin. The fixture seam cannot be selected through runtime environment, browser
 input or a general proxy URL. Tests use own loopback ports, synthetic identities
 and cookies, and do not touch the actual tunnel, Root frontend or API credentials.
