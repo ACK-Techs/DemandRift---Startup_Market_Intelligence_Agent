@@ -9,6 +9,9 @@ export type ApiResult<K extends ModelName> =
   | { ok: false; category: FailureCategory; message: string; status: number | null;
       operationState: "not_sent" | "rejected" | "unknown" | "cancelled";
       raw?: string; apiError?: WireModels["ApiError"] };
+export type EmptyApiResult =
+  | { ok: true; data: undefined; raw: ""; status: 204 }
+  | Extract<ApiResult<ModelName>, { ok: false }>;
 export type RequestOptions = {
   method?: Method; body?: unknown; query?: Record<string, string>; scope?: Scope;
   csrfToken?: string; idempotencyKey?: string; signal?: AbortSignal; timeoutMs?: number;
@@ -17,14 +20,13 @@ const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const maxResponseBytes = 2 * 1024 * 1024;
 
 function failure<K extends ModelName>(category: FailureCategory, state: Extract<ApiResult<K>, { ok: false }>["operationState"],
-  status: number | null = null, raw?: string, apiError?: WireModels["ApiError"]): ApiResult<K> {
+  status: number | null = null, raw?: string, apiError?: WireModels["ApiError"]): Extract<ApiResult<K>, { ok: false }> {
   return { ok: false, category, message: failureMessages[category], operationState: state, status, raw, apiError };
 }
 
 /** Fixed same-origin proxy only. Mutations are never automatically retried. */
 export function createApiClient(fetcher: typeof fetch = fetch) {
-  return {
-    async request<K extends ModelName>(model: K, path: string, options: RequestOptions = {}): Promise<ApiResult<K>> {
+  async function perform<K extends ModelName>(model: K, path: string, options: RequestOptions = {}, empty = false): Promise<ApiResult<K> | EmptyApiResult> {
       const method = options.method ?? "GET";
       const mutation = method !== "GET";
       const timeout = options.timeoutMs ?? 15000;
@@ -78,6 +80,10 @@ export function createApiClient(fetcher: typeof fetch = fetch) {
         let raw: string;
         try { raw = new TextDecoder("utf-8", { fatal: true }).decode(content); }
         catch { return failure("contract", mutation ? "unknown" : "rejected", response.status); }
+        if (empty && response.ok) {
+          return response.status === 204 && raw === "" ? { ok: true, data: undefined, raw: "", status: 204 } :
+            failure("contract", "unknown", response.status, raw);
+        }
         const json = /^application\/(?:[a-z0-9.+-]+\+)?json(?:;|$)/i.test(response.headers.get("content-type") ?? "");
         if (!json) return failure("contract", mutation ? "unknown" : "rejected", response.status, raw);
         if (!response.ok) {
@@ -94,6 +100,16 @@ export function createApiClient(fetcher: typeof fetch = fetch) {
       } finally {
         clearTimeout(timer); options.signal?.removeEventListener("abort", abort);
       }
+  }
+  return {
+    request<K extends ModelName>(model: K, path: string, options: RequestOptions = {}): Promise<ApiResult<K>> {
+      // This entry point always validates the requested JSON model.
+      return perform(model, path, options) as Promise<ApiResult<K>>;
+    },
+    logout(csrfToken: string, options: Pick<RequestOptions, "signal" | "timeoutMs"> = {}): Promise<EmptyApiResult> {
+      if (typeof csrfToken !== "string" || !/^[0-9a-f]{64}$/.test(csrfToken)) return Promise.resolve(failure("validation", "not_sent"));
+      // Empty success is restricted to the canonical logout route and status.
+      return perform("Session", "/api/v1/auth/logout", { ...options, method: "POST", csrfToken }, true) as Promise<EmptyApiResult>;
     },
   };
 }

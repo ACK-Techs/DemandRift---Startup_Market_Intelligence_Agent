@@ -175,3 +175,47 @@ test("invalid UTF-8 and extreme/unknown schema input produce safe contract failu
     headers: { "Content-Type": "application/json" } })).request("User", "/api/v1/auth/me");
   assert.equal(result.category, "contract");
 });
+
+
+test("canonical logout accepts only an empty 204 and sends the session CSRF token once", async () => {
+  const seen = [];
+  const token = "a".repeat(64);
+  const client = createApiClient(async (path, init) => {
+    seen.push([path, init]); return new Response(null, { status: 204 });
+  });
+  const result = await client.logout(token);
+  assert.deepEqual(result, { ok: true, data: undefined, raw: "", status: 204 });
+  assert.equal(seen.length, 1); assert.equal(seen[0][0], "/api/backend/api/v1/auth/logout");
+  assert.equal(seen[0][1].method, "POST"); assert.equal(seen[0][1].body, undefined);
+  assert.equal(seen[0][1].headers["X-CSRF-Token"], token);
+  assert.equal(seen[0][1].credentials, "same-origin");
+  assert.equal(seen[0][1].redirect, "error");
+  let coerced = 0;
+  const coercible = { toString() { coerced++; return token; } };
+  for (const invalid of ["", "csrf-value", "A".repeat(64), "a".repeat(63), new String(token), [token], coercible]) {
+    assert.equal((await client.logout(invalid)).operationState, "not_sent");
+  }
+  assert.equal(seen.length, 1); assert.equal(coerced, 0);
+});
+
+test("logout rejects unexpected success and preserves authenticated/error/unknown semantics", async () => {
+  const token = "a".repeat(64);
+  for (const response of [json(user), new Response(null, { status: 205 })]) {
+    const result = await createApiClient(async () => response).logout(token);
+    assert.equal(result.ok, false); assert.equal(result.category, "contract");
+    assert.equal(result.operationState, "unknown");
+  }
+  for (const [status, category, state] of [[401, "authentication", "rejected"], [403, "permission", "rejected"], [503, "unavailable", "unknown"]]) {
+    const result = await createApiClient(async () => json(error(), status)).logout(token);
+    assert.equal(result.category, category); assert.equal(result.operationState, state);
+    assert.equal(result.apiError.request_id, other);
+  }
+  let calls = 0;
+  const result = await createApiClient(async () => { calls++; throw new Error("network"); }).logout(token);
+  assert.equal(result.category, "network"); assert.equal(result.operationState, "unknown"); assert.equal(calls, 1);
+  const aborted = new AbortController(); aborted.abort();
+  assert.equal((await createApiClient(async () => { calls++; return json(user); }).logout(token, { signal: aborted.signal })).operationState, "not_sent");
+  assert.equal(calls, 1);
+  const ordinary = await createApiClient(async () => new Response(null, { status: 204 })).request("Session", "/api/v1/auth/session");
+  assert.equal(ordinary.ok, false); assert.equal(ordinary.category, "contract");
+});
