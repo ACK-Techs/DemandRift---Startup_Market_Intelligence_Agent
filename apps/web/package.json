@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:recovery": "node --experimental-strip-types --test tests/preparation-recovery-store.test.mjs",
     "test:contracts": "node --experimental-strip-types --test tests/api-client.test.mjs",
     "test:auth": "node --experimental-strip-types --test tests/session-store.test.mjs",
     "test:projects": "node --experimental-strip-types --test tests/project-store.test.mjs",

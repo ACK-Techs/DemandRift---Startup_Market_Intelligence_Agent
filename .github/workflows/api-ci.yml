@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'apps/api/**'
+      - 'apps/web/**'
       - 'packages/contracts/**'
       - '.github/workflows/api-ci.yml'
       - '.github/workflows/api-deploy.yml'
@@ -11,6 +12,7 @@ on:
     branches: [main]
     paths:
       - 'apps/api/**'
+      - 'apps/web/**'
       - 'packages/contracts/**'
       - '.github/workflows/api-ci.yml'
       - '.github/workflows/api-deploy.yml'
@@ -22,6 +24,26 @@ concurrency:
   group: api-ci-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  web-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            apps/web/package-lock.json
+            packages/contracts/package-lock.json
+      - name: Install locked web and contract dependencies
+        run: |
+          npm ci --ignore-scripts --prefix packages/contracts
+          npm ci --ignore-scripts --prefix apps/web
+      - name: Check web types and every native frontend suite
+        run: |
+          npm run typecheck --prefix apps/web
+          npm test --prefix apps/web
   postgres-test:
     runs-on: ubuntu-latest
     timeout-minutes: 10
