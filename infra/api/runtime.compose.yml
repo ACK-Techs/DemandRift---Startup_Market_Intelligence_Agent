@@ -1,0 +1,153 @@
+# Install only after the exact release's independent gates and successful CI.
+x-application: &application
+  image: demandrift-api:${APP_REVISION:?APP_REVISION required}
+  user: '10001:10001'
+  restart: unless-stopped
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ['no-new-privileges:true']
+  pids_limit: 128
+  mem_limit: 512m
+  cpus: 1
+  tmpfs: ['/tmp:rw,noexec,nosuid,size=64m,mode=1777']
+  volumes: ['demandrift_artifacts:/data/artifacts']
+  networks: [default, data]
+  logging:
+    driver: json-file
+    options: {max-size: '10m', max-file: '3'}
+
+x-environment: &environment
+  APP_REVISION: ${APP_REVISION}
+  APP_ENV: production
+  DEMANDRIFT_REQUIRE_DATABASE: '1'
+  DATABASE_URL_FILE: /run/secrets/application-database-url
+  DEMANDRIFT_BROKER_URL_FILE: /run/secrets/broker-url
+  DEMANDRIFT_WORKER_QUEUE: demandrift.jobs
+  DEMANDRIFT_WORKER_KEY_PREFIX: 'demandrift:'
+  GEMINI_API_KEY_FILE: /run/secrets/gemini-api-key
+  ARTIFACT_ROOT: /data/artifacts
+
+services:
+  api:
+    <<: *application
+    environment:
+      <<: *environment
+      DEMANDRIFT_REQUIRE_QUEUE: '1'
+      CORS_ALLOWED_ORIGINS: 'http://127.0.0.1:3100'
+    ports: ['127.0.0.1:18082:8000']
+    secrets: [application-database-url, broker-url, gemini-api-key]
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ['CMD', 'python', '-m', 'app.runtime_health']
+      interval: 10s
+      timeout: 15s
+      retries: 6
+      start_period: 30s
+
+  worker:
+    <<: *application
+    environment: *environment
+    secrets: [application-database-url, broker-url, gemini-api-key]
+    command: ['celery', '-A', 'app.runtime_worker:app', 'worker', '--concurrency=2', '--hostname=demandrift@%h', '--without-gossip', '--without-mingle', '--without-heartbeat', '--loglevel=WARNING']
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ['CMD', 'python', '-m', 'app.runtime_health']
+      interval: 10s
+      timeout: 15s
+      retries: 6
+      start_period: 30s
+
+  postgres:
+    image: postgres:16
+    user: '999:999'
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    pids_limit: 128
+    mem_limit: 768m
+    cpus: 1
+    environment:
+      POSTGRES_DB: demandrift
+      POSTGRES_USER: demandrift_admin
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres-password
+      POSTGRES_INITDB_ARGS: '--auth-host=scram-sha-256 --auth-local=scram-sha-256'
+    secrets: [postgres-password]
+    volumes: ['demandrift_postgres:/var/lib/postgresql/data']
+    tmpfs: ['/tmp:rw,noexec,nosuid,size=32m,mode=1777', '/var/run/postgresql:rw,noexec,nosuid,size=8m,uid=999,gid=999,mode=0750']
+    networks: [data]
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'demandrift_admin', '-d', 'demandrift']
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 20s
+    logging:
+      driver: json-file
+      options: {max-size: '10m', max-file: '3'}
+
+  redis:
+    image: redis:7.4
+    user: '999:999'
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ['no-new-privileges:true']
+    pids_limit: 64
+    mem_limit: 192m
+    cpus: 0.5
+    command: ['redis-server', '/run/secrets/redis-config']
+    secrets: [redis-config, redis-password]
+    volumes: ['demandrift_redis:/data']
+    tmpfs: ['/tmp:rw,noexec,nosuid,size=16m,mode=1777']
+    networks: [data]
+    healthcheck:
+      test: ['CMD-SHELL', 'redis-cli --user demandrift --askpass ping < /run/secrets/redis-password | tail -n 1 | grep -qx PONG']
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    logging:
+      driver: json-file
+      options: {max-size: '10m', max-file: '3'}
+
+  migrate:
+    <<: *application
+    restart: 'no'
+    profiles: [operations]
+    environment:
+      APP_ENV: production
+      DATABASE_URL_FILE: /run/secrets/admin-database-url
+      DATABASE_APP_ROLE: demandrift_app
+    secrets: [admin-database-url]
+    command: ['alembic', '-c', 'alembic.ini', 'upgrade', 'head']
+    volumes: []
+    networks: [data]
+    mem_limit: 384m
+    cpus: 0.5
+    depends_on:
+      postgres: {condition: service_healthy}
+
+networks:
+  default:
+    name: demandrift-api_default
+  data:
+    name: demandrift-api_data
+    internal: true
+
+volumes:
+  demandrift_artifacts: {name: demandrift_api_artifacts}
+  demandrift_postgres: {name: demandrift_api_postgres}
+  demandrift_redis: {name: demandrift_api_redis}
+
+secrets:
+  application-database-url: {file: /etc/demandrift/runtime/application-database-url}
+  admin-database-url: {file: /etc/demandrift/runtime/admin-database-url}
+  broker-url: {file: /etc/demandrift/runtime/broker-url}
+  gemini-api-key: {file: /etc/demandrift/runtime/gemini-api-key}
+  postgres-password: {file: /etc/demandrift/runtime/postgres-password}
+  redis-config: {file: /etc/demandrift/runtime/redis-config}
+  redis-password: {file: /etc/demandrift/runtime/redis-password}
