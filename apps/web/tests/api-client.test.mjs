@@ -17,13 +17,189 @@ const error = (code = "rate_limited") => ({ schema_version: "1.0.0", code, messa
   request_id: other, operation: "request", stage: null, query_id: null, details_ref: null, source_id: null,
   retryable: true, retry_after_seconds: 2, usage: null, remaining_work: [], next_step: null });
 
-test("all thirty-two generated wire model schemas compile and report a concrete missing field", () => {
-  assert.equal(Object.keys(schema.models).length, 32);
+test("the accepted thirty-nine-model producer catalog includes exactly the typed preparation exports and compiles", () => {
+  const expected = ["ApiError", "BudgetLimits", "Usage", "Versions", "ProvenanceField", "BriefContent", "IdeaBrief",
+    "SourcePlanItem", "QueryPlanItem", "ResearchPlan", "SourceCounts", "QueryExecution", "RawArtifact", "TextSegment",
+    "NormalizedDocument", "Claim", "Citation", "SourceReport", "EvidenceBundle", "SufficiencyAssessment", "ResearchGapRequest",
+    "ReportStatement", "DecisionReport", "ResearchRun", "User", "Session", "AuthCredentials", "ProjectCreate", "Project",
+    "PageInfo", "ProjectPage", "RunPage", "ResearchCreate", "HumanBriefPatch", "BriefReference", "ResearchPreparation",
+    "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt"];
+  assert.deepEqual(Object.keys(schema.models).sort(), expected.sort());
   for (const model of Object.keys(schema.models)) {
     const result = parseWire(model, "{}");
     assert.equal(result.reason, "schema_mismatch", model);
     assert.ok(result.issues.some((issue) => issue.endsWith(":required")), `${model}: compilation must succeed before validation`);
   }
+});
+
+const preparationProject = "00000000-0000-4000-8000-000000000010", preparationResearch = "00000000-0000-4000-8000-000000000011", preparationBriefId = "00000000-0000-4000-8000-000000000012";
+const preparationBrief = () => ({ schema_version: "1.0.0", user_id: owner, project_id: preparationProject, research_id: preparationResearch,
+  created_at: "2026-10-01T00:00:00Z", versions: { ...versions, brief: 1, plan: null }, brief_id: preparationBriefId, brief_version: 1, status: "awaiting_user", content: { ...brief } });
+const briefReference = () => ({ brief_id: preparationBriefId, brief_version: 1, status: "awaiting_user", created_at: "2026-10-01T00:00:00Z" });
+const preparation = () => ({ schema_version: "1.0.0", user_id: owner, project_id: preparationProject, research_id: preparationResearch,
+  original_idea: "  Çağlar'ın 🙂 fikri\nÇöğü aynen kalır  ", created_at: "2026-10-01T00:00:00Z", latest_brief: briefReference() });
+const receipt = () => ({ schema_version: "1.0.0", operation: "create_research", request_key: other, input_fingerprint: "a".repeat(64),
+  user_id: owner, project_id: preparationProject, research_id: preparationResearch, brief_id: preparationBriefId, brief_version: 1, created_at: "2026-10-01T00:00:00Z", brief: preparationBrief() });
+const preparationScope = { user_id: owner, project_id: preparationProject, research_id: preparationResearch };
+
+test("all seven preparation models consume real canonical shapes without materializing request defaults", () => {
+  const values = [["ResearchCreate", { original_idea: preparation().original_idea }],
+    ["HumanBriefPatch", { expected_brief_version: 1, target_user: null }], ["BriefReference", briefReference()],
+    ["ResearchPreparation", preparation()], ["ResearchPreparationPage", { schema_version: "1.0.0", items: [preparation()], page: { limit: 25, next_cursor: null } }],
+    ["BriefPage", { schema_version: "1.0.0", items: [preparationBrief()], page: { limit: 25, next_cursor: null } }], ["PreparationMutationReceipt", receipt()]];
+  for (const [model, value] of values) {
+    const raw = JSON.stringify(value), result = parseWire(model, raw, preparationScope);
+    assert.equal(result.ok, true, `${model}: ${JSON.stringify(result)}`); assert.deepEqual(result.data, value); assert.equal(result.raw, raw);
+  }
+  assert.equal(Object.hasOwn(parseWire("ResearchCreate", JSON.stringify(values[0][1])).data, "language_scope"), false);
+  const patch = parseWire("HumanBriefPatch", JSON.stringify(values[1][1])).data;
+  assert.deepEqual(Object.keys(patch).sort(), ["expected_brief_version", "target_user"]); assert.equal(patch.target_user, null);
+});
+
+test("ResearchCreate keeps exact Unicode and rejects blank, oversized, duplicate or invalid language inputs", () => {
+  assert.equal(parseWire("ResearchCreate", JSON.stringify({ original_idea: "😀".repeat(10000), language_scope: ["tr", "en"] })).ok, true);
+  for (const value of [{ original_idea: "  \n\t" }, { original_idea: "😀".repeat(10001) },
+    { original_idea: "Original", language_scope: ["tr", "tr"] }, { original_idea: "Original", language_scope: [] },
+    { original_idea: "Original", language_scope: null }, { original_idea: "Original", language_scope: Array.from({ length: 9 }, (_, i) => "l" + i) },
+    { original_idea: "Original", user_id: owner }]) assert.equal(parseWire("ResearchCreate", JSON.stringify(value)).ok, false);
+});
+
+test("all six independent NEL/BOM regressions use normative Rust whitespace in schema and sparse Name dictionaries", () => {
+  for (const [token, valid] of [["\u0085", false], ["\uFEFF", true]]) {
+    for (const [model, value] of [["ResearchCreate", { original_idea: token }],
+      ["HumanBriefPatch", { expected_brief_version: 1, constraints: { [token]: "nonblank value" } }],
+      ["ResearchCreate", { original_idea: "Original", language_scope: [token] }]]) {
+      const raw = JSON.stringify(value), result = parseWire(model, raw);
+      assert.equal(result.ok, valid, `${model} U${token.codePointAt(0).toString(16)}`); assert.equal(result.raw, raw);
+      if (result.ok) assert.deepEqual(result.data, value);
+    }
+  }
+});
+
+test("new preparation roots distinguish Rust White_Space from Python strip C0 and preserve code-point boundaries", () => {
+  const rustWhitespace = [0x9, 0xa, 0xb, 0xc, 0xd, 0x20, 0x85, 0xa0, 0x1680, ...Array.from({ length: 11 }, (_, i) => 0x2000 + i), 0x2028, 0x2029, 0x202f, 0x205f, 0x3000];
+  for (const code of rustWhitespace) {
+    const token = String.fromCodePoint(code);
+    assert.equal(parseWire("ResearchCreate", JSON.stringify({ original_idea: token })).ok, false, code.toString(16));
+    assert.equal(parseWire("HumanBriefPatch", JSON.stringify({ expected_brief_version: 1, modifiers: [token] })).ok, false, code.toString(16));
+  }
+  for (const code of [0x1c, 0x1d, 0x1e, 0x1f, 0x180e, 0x200b, 0xfeff]) {
+    const value = { original_idea: String.fromCodePoint(code) }, result = parseWire("ResearchCreate", JSON.stringify(value));
+    assert.equal(result.ok, true, code.toString(16)); assert.deepEqual(result.data, value);
+  }
+  for (const [text, expected] of [["\uFEFF".repeat(10000), true], ["\uFEFF".repeat(10001), false]]) {
+    assert.equal(parseWire("ResearchCreate", JSON.stringify({ original_idea: text })).ok, expected);
+  }
+  for (const [name, expected] of [["🙂".repeat(128), true], ["🙂".repeat(129), false], ["\uFEFF".repeat(128), true], ["\uFEFF".repeat(129), false]]) {
+    assert.equal(parseWire("HumanBriefPatch", JSON.stringify({ expected_brief_version: 1, constraints: { [name]: null } })).ok, expected);
+  }
+  // R1's regex engine is intentionally limited to the seven new preparation roots.
+  assert.equal(parseWire("BriefContent", JSON.stringify({ ...brief, original_idea: "\u0085" })).ok, true);
+  assert.equal(parseWire("BriefContent", JSON.stringify({ ...brief, original_idea: "\uFEFF" })).ok, false);
+});
+
+test("new preparation pages/receipts apply the same Rust rules to nested strings and Name keys without changing free-key scope", () => {
+  for (const [token, valid] of [["\u0085", false], ["\uFEFF", true]]) {
+    const value = preparationBrief(); value.content = { ...brief, original_idea: token };
+    const recovery = receipt(); recovery.brief = value;
+    for (const [model, record] of [["BriefPage", { schema_version: "1.0.0", items: [value], page: { limit: 25, next_cursor: null } }], ["PreparationMutationReceipt", recovery]]) {
+      assert.equal(parseWire(model, JSON.stringify(record), preparationScope).ok, valid);
+    }
+    const names = preparationBrief(); names.content = { ...brief, constraints: { [token]: { ...brief.target_user } } };
+    assert.equal(parseWire("BriefPage", JSON.stringify({ schema_version: "1.0.0", items: [names], page: { limit: 25, next_cursor: null } })).ok, valid);
+  }
+  const value = receipt(); value.brief.content.constraints = { "\uFEFF": { ...brief.target_user }, user_id: { ...brief.target_user } };
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(value), preparationScope).ok, true);
+  value.brief.versions.connectors = { "\u0085": "connector-v1" };
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(value)).reason, "schema_mismatch");
+});
+
+test("new preparation roots reject escaped lone surrogates while preserving valid scalar pairs and raw JSON", () => {
+  for (const token of ["\uD800", "X\uD800", "\uDFFF"]) {
+    for (const [model, value] of [["ResearchCreate", { original_idea: token }],
+      ["HumanBriefPatch", { expected_brief_version: 1, constraints: { [token]: "value" } }]]) {
+      const raw = JSON.stringify(value), result = parseWire(model, raw);
+      assert.equal(result.ok, false); assert.equal(result.reason, "schema_mismatch"); assert.equal(result.raw, raw);
+    }
+  }
+  const raw = '{"original_idea":"\\ud800\\udfff"}', result = parseWire("ResearchCreate", raw);
+  assert.equal(result.ok, true); assert.equal(result.raw, raw); assert.equal(result.data.original_idea, "\uD800\uDFFF");
+});
+
+test("HumanBriefPatch preserves sparse edit/null intent and mirrors genuine Python edit/list/name validators", () => {
+  for (const value of [{ expected_brief_version: 1, target_user: null }, { expected_brief_version: 1, constraints: {} },
+    { expected_brief_version: 1, modifiers: [] }, { expected_brief_version: 1, skipped_clarification: false },
+    { expected_brief_version: 1, constraints: { user_id: null, expected_brief_version: "literal constraint value" } }]) {
+    const raw = JSON.stringify(value), result = parseWire("HumanBriefPatch", raw, preparationScope);
+    assert.equal(result.ok, true); assert.deepEqual(result.data, value); assert.equal(result.raw, raw);
+  }
+  for (const value of [{ expected_brief_version: 1 }, { expected_brief_version: 1, constraints: { "   ": "text" } },
+    { expected_brief_version: 1, language_scope: ["tr", "tr"] }, { expected_brief_version: 1, modifiers: ["same", "same"] },
+    { expected_brief_version: 1, language_scope: null }, { expected_brief_version: 1, modifiers: null },
+    { expected_brief_version: 1, constraints: null }, { expected_brief_version: 1, continue_with_unknowns: null },
+    { expected_brief_version: 1, status: "confirmed", target_user: "Students" }]) assert.equal(parseWire("HumanBriefPatch", JSON.stringify(value)).ok, false);
+});
+
+test("HumanBriefPatch rejects strict version coercion and fractional/exponent JSON tokens before numeric identity is lost", () => {
+  for (const token of ["true", '"1"', "0", "-1", "1.0", "1.00", "1e0", "2147483648", "9007199254740993"]) {
+    const raw = '{"expected_brief_version":' + token + ',"target_user":"Students"}', result = parseWire("HumanBriefPatch", raw);
+    assert.equal(result.ok, false, token); assert.equal(result.raw, raw);
+  }
+  for (const version of [1, 2147483647]) assert.equal(parseWire("HumanBriefPatch", JSON.stringify({ expected_brief_version: version, target_user: "Students" })).ok, true);
+});
+
+test("missing native JSON source metadata fails closed for strict patches and preserves existing-model parsing", () => {
+  const nativeParse = JSON.parse;
+  try {
+    JSON.parse = (raw, reviver) => nativeParse(raw, reviver ? function(key, value) { return reviver.call(this, key, value); } : undefined);
+    const result = parseWire("HumanBriefPatch", '{"expected_brief_version":1,"target_user":"Students"}');
+    assert.equal(result.ok, false); assert.equal(result.reason, "schema_mismatch");
+    assert.equal(parseWire("User", JSON.stringify(user)).ok, true);
+    assert.equal(parseWire("ResearchCreate", JSON.stringify({ original_idea: "Original" })).ok, true);
+  } finally { JSON.parse = nativeParse; }
+});
+
+test("preparation pages and nested immutable briefs enforce owner/project/research scope without inspecting free metadata", () => {
+  for (const key of ["user_id", "project_id", "research_id"]) {
+    const changedResearch = { ...preparation(), [key]: other }, changedBrief = { ...preparationBrief(), [key]: other };
+    for (const [model, value] of [["ResearchPreparation", changedResearch],
+      ["ResearchPreparationPage", { schema_version: "1.0.0", items: [changedResearch], page: { limit: 25, next_cursor: null } }],
+      ["BriefPage", { schema_version: "1.0.0", items: [changedBrief], page: { limit: 25, next_cursor: null } }]]) {
+      assert.equal(parseWire(model, JSON.stringify(value), preparationScope).reason, "scope_mismatch");
+    }
+  }
+  const value = receipt(); value.brief.content = { ...brief, constraints: { user_id: { ...brief.target_user } } };
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(value), preparationScope).ok, true);
+});
+
+test("receipt top-level selection must exactly match every nested brief identity/version even without caller scope", () => {
+  for (const key of ["user_id", "project_id", "research_id", "brief_id", "brief_version"]) {
+    const value = receipt(); value.brief[key] = key === "brief_version" ? 2 : other;
+    if (key === "brief_version") value.brief.versions.brief = 2;
+    assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(value)).reason, "schema_mismatch", key);
+  }
+  const foreign = receipt(); foreign.user_id = other; foreign.brief.user_id = other;
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(foreign), preparationScope).reason, "scope_mismatch");
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(foreign)).ok, true);
+});
+
+test("brief version consistency mirrors Python including its explicitly allowed null version record", () => {
+  const changed = preparationBrief(); changed.versions.brief = 2;
+  const recovery = receipt(); recovery.brief = changed;
+  for (const [model, value] of [["IdeaBrief", changed], ["BriefPage", { schema_version: "1.0.0", items: [changed], page: { limit: 25, next_cursor: null } }], ["PreparationMutationReceipt", recovery]]) {
+    assert.equal(parseWire(model, JSON.stringify(value)).ok, false);
+  }
+  changed.versions.brief = null;
+  assert.equal(parseWire("IdeaBrief", JSON.stringify(changed)).ok, true);
+  assert.equal(parseWire("PreparationMutationReceipt", JSON.stringify(recovery)).ok, true);
+});
+
+test("the shared client consumes canonical preparation recovery receipts without transport changes or automatic retry", async () => {
+  const calls = []; const value = receipt();
+  const result = await createApiClient(async (path, init) => { calls.push([path, init]); return json(value); })
+    .request("PreparationMutationReceipt", `/api/v1/projects/${preparationProject}/preparation-mutations/create_research/${other}`, { scope: preparationScope });
+  assert.equal(result.ok, true); assert.deepEqual(result.data, value); assert.equal(calls.length, 1);
+  assert.equal(calls[0][1].method, "GET"); assert.equal(calls[0][1].credentials, "same-origin"); assert.equal(calls[0][1].cache, "no-store");
 });
 
 test("actual Python producer fixtures validate without losing original text, IDs, decimals or nulls", () => {
