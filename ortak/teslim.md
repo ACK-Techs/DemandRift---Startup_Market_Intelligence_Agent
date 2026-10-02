@@ -1,3 +1,5 @@
+> 3 Ekim 2026 süreç güncellemesi: `gelistirme-plani.md` geçerlidir. Aşağıdaki per-teslim test, yeniden kontrol ve kabul adımları geliştirme aşamasında uygulanmaz; tüm işlevlerden sonra tek final test/kontrol ve hata düzeltme turunda ele alınır. Yeni branch/worktree yoktur; Git code pusher tarafından main üzerinde yürütülür.
+
 # Planlama ve görev teslimi
 
 **Durum: planlama paketi teslim edildi.** Backend geliştirme, ekip görevlerinin uygulanması, test çalıştırma ve deployment tamamlandı anlamına gelmez.
@@ -22,7 +24,7 @@ Batuhan fikir/kategori/sorgu/backend ve ilk kaynak denemeleriyle başlar. Ayseli
 
 ## Çağlar ile sonraki ayrı çalışma
 
-Hetzner bağlantısı ve Docker ortamı; private repository erişimi ve deployment branch’i; runner/otomatik build; API HTTPS adresi; Vercel repo/proje ve ortam ayarları; frontend/backend bağlantısı ve gerçek ortam kabulü. Bunlar bu planlama tesliminde çalıştırılmadı. Gerekli erişim/URL bilgileri o çalışma başlarken topluca alınacak.
+Hetzner bağlantısı ve Docker ortamı; private repository erişimi ve main dalı; runner/otomatik build; API HTTPS adresi; Vercel repo/proje ve ortam ayarları; frontend/backend bağlantısı ve gerçek ortam kabulü. Bunlar bu planlama tesliminde çalıştırılmadı. Gerekli erişim/URL bilgileri o çalışma başlarken topluca alınacak.
 
 Paket sürümleri, ORM/migration kütüphanesi, auth ayrıntıları, kaynak limitleri, güncellik/saklama ve etiketli kalite eşikleri Batuhan’ın ilgili hazırlık görevlerinde somutlaştırılacak; açık olmaları tamamlanmış uygulama gibi gizlenmez. Onaylı kapsam veya maliyet tercihi değişirse Çağlar’a iletilir.
 

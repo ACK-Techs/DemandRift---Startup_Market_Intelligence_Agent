@@ -1,4 +1,4 @@
 interface:
-  display_name: "Research Platform Orchestrator"
-  short_description: "Plan, implement, review, and verify the platform"
-  default_prompt: "Use $orchestrate-research-platform to plan and execute the next verified project work graph."
+  display_name: "DemandRift geliştirme"
+  short_description: "Main üzerinde geliştir; finalde test et"
+  default_prompt: "AGENTS.md ve ortak/gelistirme-plani.md ile main üzerinde geliştirmeyi tamamla. Git için code_pusher kullan; test ve kontrolü proje sonunda yap."

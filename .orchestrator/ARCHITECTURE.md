@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu dosyanın aşağıdaki kısmı tarihsel kayıttır. Güncel geliştirme düzeni `AGENTS.md` ve `ortak/gelistirme-plani.md`: yalnız main, code pusher, test/kontrol yalnız proje sonunda. Eski çok rollü graph ve acceptance talimatları aktif değildir; ürünün bugünkü durumu koddan okunur.
+
 # Orchestrator Mimari Kararları
 
 ## Kontrol düzlemi

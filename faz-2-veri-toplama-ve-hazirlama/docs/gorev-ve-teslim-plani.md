@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Görev ve teslim planı
 
 ## Sorumluluklar

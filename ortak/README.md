@@ -22,6 +22,10 @@ Mevcut kaynak laboratuvarı kullanıcı isteğiyle [Faz 1 altında](../faz-1-fik
 
 API kullanım/dağıtım tercihi ve testlerin hangi makine/sunucuda yürütüleceği bu pakette karara bağlanmamıştır. Frontend tasarım/bağlantı görevleri Ayşenur dosyası ve ortak frontend rehberindedir.
 
+## Güncel geliştirme süreci — 3 Ekim 2026
+
+[Geliştirme planı](gelistirme-plani.md) ve [AI promptu](ai-gelistirme-promptu.md) aktif girişlerdir. Çalışma main üzerinde yapılır; code pusher yalnız Git işlemlerini yürütür. Test ve kontrol tüm işlevler tamamlandıktan sonra yapılır. Aşağıdaki eski görev/kabul belgelerindeki per-adım kontrol hükümleri bu kararla değiştirilmiştir.
+
 ## Güncel çalışma dosyaları
 
 - [RULES — model, yetki ve kapsam](RULES.md)

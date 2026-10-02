@@ -12,9 +12,9 @@ gh workflow run build-test.yml --repo ACK-Techs/DemandRift---Startup_Market_Inte
 
 Repo içinden alternatif: `bash scripts/build-backend.sh lab`.
 
-Sonuç: GitHub → Actions → **Hetzner backend build and test**. `gh run list --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --workflow build-test.yml --limit 5` ve `gh run watch RUN_ID --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --exit-status` ile izlenebilir.
+Sonuç: GitHub → Actions → **DemandRift final laboratory build and test**. `gh run list --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --workflow build-test.yml --limit 5` ve `gh run watch RUN_ID --repo ACK-Techs/DemandRift---Startup_Market_Intelligence_Agent --exit-status` ile izlenebilir.
 
-`main` branch'ine veri scripti veya build dosyası değişikliği push edilmesi de tetikler. Yalnız frontend/docs değişikliklerinde backend build atlanır. PR/fork ve başka branch deploy edemez. Kuyrukta eski kalan SHA mevcut main değilse açık hata ile reddedilir; yeni main sürümünü tetikleyin.
+3 Ekim 2026 kararıyla push otomatik build/test başlatmaz. Bu workflow yalnız bütün işlevler tamamlandıktan sonraki final aşamasında manuel tetiklenir. PR/fork ve başka branch deploy edemez. Kuyrukta eski kalan SHA mevcut main değilse açık hata ile reddedilir; yeni main sürümünü tetikleyin.
 
 ## Kurulum
 

@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Aşağıdaki not tarihsel uygulama/erişim kaydıdır. Devam etmek için `../gelistirme-plani.md` ve `../ai-gelistirme-promptu.md` kullanılır. Eski run graph, revision, hash checkpoint, bağımsız review/verify, ara CI ve branch/worktree süreçleri kaldırıldı; test ve kontrol bütün işlevlerden sonra yapılır. Kayıtlı erişim/bütçe bilgileri kendi kapsamıyla korunur.
+
 # DemandRift — durma ve devam notu, 1 Ekim 2026
 
 Kullanıcı mevcut çalışmanın kabul edilmiş değişikliklerini pushlayıp kalan işleri kaydetmemizi istedi. Yeni ürün işi başlatılmıyor. Proje tamamlanmadı: **42 ana paketin 6'i kabul edildi; 36 ana paket açık. 87 zorunlu final senaryosu henüz çalıştırılmadı.** Sayım beş uygulama/altyapı entegrasyonunu ve tamamlanmış QA-01 başlangıç doğrulamasını içerir. Alt teslimlerin commit sayısı ana paketlerin tamamlandığı anlamına gelmez.

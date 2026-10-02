@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Görev ve teslim planı
 
 Batuhan proje yürütücüsü ve backend sahibidir; kategori/sorgu akışını ve ilk kaynak testlerini yapar. Veri/erişim eksiklerini Ayselin’e iletir, çözümü yeniden kontrol eder. Ayşenur hazır API'lere ekranları bağlar ve tasarım eksiklerini giderir. Aşağıdaki işler planlanmıştır, tamamlandı işareti değildir.

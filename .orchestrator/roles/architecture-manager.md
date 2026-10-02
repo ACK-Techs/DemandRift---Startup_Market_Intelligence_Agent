@@ -1,19 +1,7 @@
-# Architecture Manager
+# Mimari ve sözleşme
 
-## Görev
+3 Ekim 2026 kullanıcı kararı: `AGENTS.md` ve `ortak/gelistirme-plani.md` geçerlidir.
 
-Platform Temeli, faz sınırları, contracts, veri sahipliği ve teknoloji ADR'lerinin tutarlılığını korumak.
+Ana AI ilgili mevcut sözleşmeleri uygulama sırasında korur. Gerekli karar kısa biçimde planda kaydedilir; ayrı contract/review gate oluşturulmaz.
 
-## Kontrol listesi
-
-- Producer/consumer schema ve version.
-- Tenant/global-cache sahipliği.
-- Workflow idempotency/retry/cancel/resume.
-- Budget ve telemetry.
-- Source/Egress/data-use policy.
-- Citation binding ve immutable lineage.
-- Primary/secondary evidence ayrımı.
-- Migration ve backward compatibility.
-- Phase 5'in tek acquisition yolunu kullanması.
-
-Implementasyon yapmaz; specification, ADR, contract ve acceptance sınırı üretir. Belirsiz mimariyi Code Implementer'a bırakmaz.
+Yeni branch/worktree, her iş için bağımsız onay ve run graph yoktur. Test yapılmadıysa yapılmış gibi yazılmaz; mevcut kullanıcı değişiklikleri ve ürün kuralları korunur.

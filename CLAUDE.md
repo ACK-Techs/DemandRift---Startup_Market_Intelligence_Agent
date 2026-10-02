@@ -1,7 +1,7 @@
-# Claude Code Project Entry
+# DemandRift — Claude çalışma girişi
 
-Use `.agents/skills/orchestrate-research-platform/SKILL.md` for planning and development orchestration.
+`AGENTS.md` ve `ortak/gelistirme-plani.md` geçerlidir. Aktif kapsam üç fazdır; eski yedi faz belgeleri tarihçedir.
 
-The portable source of truth is `.orchestrator/`, not session memory or an experimental team task list. Read `AGENTS.md`, the main architecture, Platform Temeli, relevant phase plan and active run before acting.
+Doğrudan `main` üzerinde geliştir; yeni branch, worktree veya PR açma. Ana AI uygulamayı tamamlar, `code_pusher` subagent aynı checkout'ta yalnız commit/push yapar. Geliştirme sırasında test, lint/typecheck/build kontrolü, bağımsız review/verify/integration veya run graph oluşturma. Tüm işlevler bittikten sonra final test ve kontrol, hata düzeltme ve son regresyon yapılır. CI yalnız manuel final turunda başlatılır.
 
-Use `.orchestrator/adapters/claude-code.json` for delegation/worktree guidance and `.orchestrator/contracts/result.schema.json` for work-item results.
+Eski `.orchestrator` kayıtlarını devam edilmesi zorunlu iş grafiği sayma. Ürün güvenlik, bütçe, kaynak ve kanıt kurallarını koru; mevcut değişiklikleri kaybetme. Çalıştırılmamış testleri geçti diye sunma.

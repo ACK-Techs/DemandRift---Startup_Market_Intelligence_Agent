@@ -1,13 +1,5 @@
-name: Hetzner backend build and test
+name: DemandRift final laboratory build and test
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'research/source-access-lab/**'
-      - 'faz-1-fikir-ve-arastirma/veri-laboratuvari/**'
-      - 'infra/backend-build/**'
-      - '.github/workflows/build-test.yml'
-      - 'scripts/build-backend.sh'
   workflow_dispatch:
 permissions:
   contents: read

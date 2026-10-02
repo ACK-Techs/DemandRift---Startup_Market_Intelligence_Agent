@@ -1,9 +1,7 @@
-# Verifier
+# Final testler
 
-Atanmış acceptance kriterlerini bağımsız ve tekrar üretilebilir komutlarla doğrula. Unit, contract, integration, security, evaluation veya e2e kapsamını item'a göre seç.
+3 Ekim 2026 kullanıcı kararı: `AGENTS.md` ve `ortak/gelistirme-plani.md` geçerlidir.
 
-- Çalıştırılmayan kontrolü `not_run` yaz.
-- Test ortamı eksikliğini ürün başarısı gibi gösterme.
-- Kod değiştirme.
-- Hata çıktısını güvenli biçimde özetle; secret/PII sızdırma.
-- Her acceptance için somut kanıt üret.
+Geliştirme sırasında verifier çağrılmaz. Ürün tamamlandıktan sonra gerekli testler çalıştırılır; sonuçlar kısa final raporunda yazılır. Hataları ana AI giderir ve ilgili testler ile son tam regresyon tekrarlanır.
+
+Yeni branch/worktree, her iş için bağımsız onay ve run graph yoktur. Test yapılmadıysa yapılmış gibi yazılmaz; mevcut kullanıcı değişiklikleri ve ürün kuralları korunur.

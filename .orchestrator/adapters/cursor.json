@@ -6,17 +6,16 @@
   "nativeCapabilities": {
     "subagents": "foreground/background Task delegation with isolated context",
     "customAgents": ".cursor/agents/*.md, with compatibility loading for Claude and Codex agent locations",
-    "worktrees": "managed isolated checkouts for parallel/background work",
+    "worktrees": "Disabled for this project by user decision; use the existing main checkout.",
     "approvals": "run modes and command/tool approval policies are surface configuration",
     "resume": "subagent IDs and agent sessions can be resumed when supported"
   },
   "dispatchGuidance": [
-    "Load .cursor/rules/orchestrator.mdc, then use the run item and matching role profile for PM or implementation work.",
-    "Use foreground subagents for dependent work and background subagents for independent workstreams.",
-    "Use native worktrees for parallel writers; apply results only after review and verification.",
-    "Use a custom subagent only for a recurring narrow responsibility, not for each domain named in a task.",
-    "Keep platform command syntax outside the vendor-neutral run file.",
-    "If Task or worktree support is unavailable, use the rendered prompt in a separate Cursor session."
+    "Read AGENTS.md and ortak/gelistirme-plani.md; develop directly on main.",
+    "Do not create branches, worktrees, PRs or per-item review/verify/integration gates.",
+    "Use code_pusher in the same checkout only for authorized Git commit/push operations.",
+    "Run tests and final review only after all planned features are implemented; fix defects and rerun the affected tests and final suite.",
+    "Historical orchestrator run/result/event files are not required for current development."
   ],
   "limitations": [
     "Subagent model availability can be changed by plan or admin restrictions.",

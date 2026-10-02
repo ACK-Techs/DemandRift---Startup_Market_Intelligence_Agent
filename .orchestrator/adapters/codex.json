@@ -6,17 +6,16 @@
   "nativeCapabilities": {
     "subagents": "available in current local releases when requested or required by AGENTS.md/skills",
     "customAgents": ".codex/agents/*.toml",
-    "worktrees": "native in the ChatGPT desktop app; availability differs by surface",
+    "worktrees": "Disabled for this project by user decision; use the existing main checkout.",
     "approvals": "sandbox and approval policy are inherited by subagents",
     "resume": "agent threads and app tasks are inspectable; persisted run files remain the portable source of truth"
   },
   "dispatchGuidance": [
-    "PM Manager must keep the run graph as source of truth and assign bounded items; Code Implementer must follow the assigned role file and write scopes.",
-    "Use native subagents for bounded independent work when the current Codex surface exposes delegation tools.",
-    "Keep read-heavy exploration and independent review in separate agent threads when useful.",
-    "Use a worktree only when the current Codex surface actually supports it; otherwise serialize writers or use disjoint write scopes.",
-    "Do not change sandbox or approval settings on behalf of a child agent.",
-    "If native delegation is unavailable, return or use the rendered prompt as a separate-task handoff."
+    "Read AGENTS.md and ortak/gelistirme-plani.md; develop directly on main.",
+    "Do not create branches, worktrees, PRs or per-item review/verify/integration gates.",
+    "Use code_pusher in the same checkout only for authorized Git commit/push operations.",
+    "Run tests and final review only after all planned features are implemented; fix defects and rerun the affected tests and final suite.",
+    "Historical orchestrator run/result/event files are not required for current development."
   ],
   "limitations": [
     "Native worktrees are surface-specific.",

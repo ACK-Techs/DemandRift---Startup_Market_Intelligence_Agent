@@ -27,16 +27,15 @@ Web arayüzü örnek veri kullanıyor. Bağımsız Python erişim/arama scriptle
 
 ## Ekip için okuma sırası
 
-1. Bu README ve [ortak belgeler](ortak/README.md).
-2. Atanılan fazın README'si ve altı dokümanı.
-3. Fazın test planı, senaryoları ve gerçek veri örnekleri.
-4. Gerekiyorsa [Ayselin araştırma referansı](ortak/arastirmalar/ayselin/README.md).
+1. [Güncel geliştirme planı](ortak/gelistirme-plani.md) ve `AGENTS.md`.
+2. Yapılacak işin ilgili kodu ve faz/sözleşme belgesi.
+3. Bütün işlevler tamamlandığında [final test ilkeleri](ortak/kalite-ve-test-ilkeleri.md).
 
 API anahtarını Çağlar Batuhan’a verecek. Yerel kayıtlı-veri testleri ve ortak entegrasyon ortamı onaylandı; Hetzner kurulumu/uzaktan build ve Vercel/API bağlantısının ayrıntıları [ortak mimari kaydına](ortak/mimari-ve-kararlar.md) göre netleştirilecek.
 
 ## Belge geçişi
 
-22 Eylül 2026'daki kullanıcı kararıyla eski yedi faz yerine bu üç aşamalı yapı kullanılmaktadır. [Eski–yeni eşleme](ortak/raporlar/belge-esleme.md) taşınan içerikleri gösterir. Agent talimat dosyaları değiştirilmedi; içlerindeki eski belge yolları tarihsel kaldı. Eski planlara ihtiyaç olursa `trash/eski-planlar/` altında bulunur. `.orchestrator` geliştirme araçlarıdır, ürünün araştırma motoru değildir.
+22 Eylül 2026'daki kullanıcı kararıyla eski yedi faz yerine bu üç aşamalı yapı kullanılmaktadır. [Eski–yeni eşleme](ortak/raporlar/belge-esleme.md) taşınan içerikleri gösterir. 3 Ekim 2026 kararıyla agent talimatları sadeleştirildi; aktif giriş `AGENTS.md` ve aşağıdaki geliştirme planıdır. Eski planlara ihtiyaç olursa `trash/eski-planlar/` altında bulunur. `.orchestrator` geliştirme araçlarıdır, ürünün araştırma motoru değildir.
 
 ## Lisans
 
@@ -47,3 +46,7 @@ API anahtarını Çağlar Batuhan’a verecek. Yerel kayıtlı-veri testleri ve 
 Batuhan yürütücü/backend, Ayselin veri sorunları, Ayşenur tasarım ve kademeli frontend bağlantısı. [Kişi görevleri](ortak/ekip-ve-teslim.md), [AI kuralları](ortak/RULES.md) ve [onaylı 3/2 kanıt politikası](ortak/kanit-yeterliligi-ve-karar-kurallari.md) aktif planın parçasıdır.
 
 [Planlama teslimi](ortak/teslim.md) hazır. Backend hedefi Hetzner, frontend hedefi Vercel, repo private; ortamların kurulması ve bağlanması Çağlar ile sonraki ayrı çalışmadır.
+
+## Güncel geliştirme süreci — 3 Ekim 2026
+
+[Geliştirme planı](ortak/gelistirme-plani.md): doğrudan main, code pusher ile Git, tüm işlevlerden sonra final test/kontrol ve hata düzeltme. Yeni branch/worktree ve her değişiklikte review/verify/integration yoktur. CI yalnız manuel final turunda çalışır. [Devam edecek AI için hazır prompt](ortak/ai-gelistirme-promptu.md).

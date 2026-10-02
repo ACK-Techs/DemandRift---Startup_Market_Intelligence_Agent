@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Görev ve teslim planı
 
 **Kapsam kararı — Çağlar:** Build kararı, MVP/PRD önerisi, geliştirilecek ürünün özellikleri ve geliştirme yol haritası mevcut üç fazın hiçbirine dahil değildir. Bunlar projenin sonraki aşamasıdır; yönetici Çağlar tarafından daha sonra değerlendirilip planlanacaktır. Bu aşama kanıtları, araştırma değerlendirmesini ve eksikleri raporlar. Olumlu bulgu otomatik geliştirme kararı üretmez.

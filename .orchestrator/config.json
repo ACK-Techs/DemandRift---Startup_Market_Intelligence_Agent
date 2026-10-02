@@ -81,30 +81,9 @@
       "high",
       "critical"
     ],
-    "independentGateKinds": [
-      "implement",
-      "contract",
-      "workflow",
-      "connector",
-      "crawler",
-      "ai-gateway",
-      "tenant-security",
-      "cost-budget",
-      "citation",
-      "claim-extraction",
-      "decision-policy",
-      "data-storage",
-      "migration",
-      "deployment"
-    ],
-    "requireIndependentReviewAt": [
-      "high",
-      "critical"
-    ],
-    "requireVerificationAt": [
-      "high",
-      "critical"
-    ],
+    "independentGateKinds": [],
+    "requireIndependentReviewAt": [],
+    "requireVerificationAt": [],
     "requireHumanDecisionFor": [
       "production-write",
       "destructive-operation",
@@ -115,18 +94,7 @@
       "schema-policy-change",
       "faz8-start"
     ],
-    "forceQualityGateKinds": [
-      "contract",
-      "connector",
-      "crawler",
-      "ai-gateway",
-      "tenant-security",
-      "cost-budget",
-      "citation",
-      "decision-policy",
-      "data-storage",
-      "migration"
-    ]
+    "forceQualityGateKinds": []
   },
   "authorityPolicy": {
     "managerHasDelegatedProjectAuthority": true,
@@ -134,10 +102,10 @@
     "platformApprovalsRemainExternal": true
   },
   "parallelPolicy": {
-    "defaultMaxWriters": 3,
+    "defaultMaxWriters": 1,
     "serializeUnknownWriteScope": true,
     "readOnlyItemsMayShareBatch": true,
-    "preferWorktreeForParallelWriters": true
+    "preferWorktreeForParallelWriters": false
   },
   "historyPolicy": {
     "format": "jsonl",
@@ -162,14 +130,26 @@
     "doNotTouch": [],
     "controlledWritePaths": [],
     "commitRequiresExplicitRequest": true,
-    "commitAfterValidatedWriteItemWhenApproved": true,
+    "commitAfterValidatedWriteItemWhenApproved": false,
     "commitMessageConvention": "conventional-commits",
     "commitMessageFormat": "type(scope): summary",
     "commitWorkItemIdInBodyOrFooter": true,
     "pushRequiresExplicitRequest": true,
     "defaultTargetBranch": "main",
     "atomicCommitsRequired": true,
-    "pushAcceptedIntegrationOnly": true,
-    "forcePushAllowed": false
+    "pushAcceptedIntegrationOnly": false,
+    "forcePushAllowed": false,
+    "mainOnly": true,
+    "allowBranchCreation": false,
+    "allowWorktreeCreation": false
+  },
+  "developmentWorkflow": {
+    "mode": "main-final-validation",
+    "plan": "ortak/gelistirme-plani.md",
+    "orchestratorRequired": false,
+    "testTiming": "after-all-features",
+    "gitRole": "code_pusher",
+    "allowBranchCreation": false,
+    "allowWorktreeCreation": false
   }
 }

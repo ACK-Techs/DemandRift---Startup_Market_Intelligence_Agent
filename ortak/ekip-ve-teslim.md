@@ -1,3 +1,5 @@
+> 3 Ekim 2026 süreç güncellemesi: `gelistirme-plani.md` geçerlidir. Aşağıdaki per-teslim test, yeniden kontrol ve kabul adımları geliştirme aşamasında uygulanmaz; tüm işlevlerden sonra tek final test/kontrol ve hata düzeltme turunda ele alınır. Yeni branch/worktree yoktur; Git code pusher tarafından main üzerinde yürütülür.
+
 # Ekip, görev takibi ve kabul
 
 ## Kesinleşen sorumluluklar

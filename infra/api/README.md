@@ -7,14 +7,14 @@ Hedef klasör `apps/api`. Bu teslim çalışan `/health` endpoint'i olan API tem
 Repo kökünde GitHub CLI ile oturum açmış, Actions çalıştırma yetkili kullanıcı:
 
 ```sh
-bash scripts/build-backend.sh api <accepted-main-SHA> <acceptance-run-id>
+bash scripts/build-backend.sh api <final-tested-main-SHA>
 ```
 
-Bu komut kabul edilmiş 40 karakterli `main` SHA'sı ve kalıcı `.orchestrator` run kimliğiyle `api-deploy.yml` başlatır; yerel değişiklikleri yüklemez. Çağıran kişi önce ilgili bağımsız review/verify/integration ve dağıtım kapılarının geçtiğini doğrular. Run kimliği şimdilik izlenebilir etikettir; workflow bu yerel kanıtı doğrulamaz. OP-04 tam runtime release/migration/readiness kapısını ekleyene kadar bu iş final deployment kabulü değildir. Laboratuvar için `bash scripts/build-backend.sh lab`.
+Bu komut final testleri geçen 40 karakterli güncel `main` SHA'sıyla `api-deploy.yml` başlatır; yerel değişiklikleri yüklemez. `.orchestrator` run kimliği veya bağımsız ara review/verify/integration kaydı gerekmez. Önce tüm işlevler tamamlanır, ardından manuel final CI çalıştırılır. Sunucu helper'ının hazır olması tek başına bütün ürünün final kabulü değildir. Laboratuvar için `bash scripts/build-backend.sh lab`.
 
-- `api-ci.yml`: PR/main/API değişikliklerinde secrets kullanmadan test Docker target'ı, runtime build ve sağlık smoke testi.
+- `api-ci.yml`: yalnız main üzerinde manuel final test turu; secrets kullanmadan API/DB/worker/frontend/infra testleri, runtime build ve sağlık kontrolü. PR veya push otomatik test başlatmaz.
 - `api-deploy.yml`: yalnız manuel tetikleme; exact güncel `main` SHA ve o SHA'nın son başarılı API CI kontrolü zorunludur. Push deployment başlatmaz. Bu kapılardan sonra mevcut Hetzner test → build → servis güncelleme → sağlık kontrolü çalışır. PR ve diğer branch'ler deploy edemez.
-- Mevcut `build-test.yml` laboratuvar için korunur.
+- `build-test.yml`: laboratuvar final testi için yalnız manuel çalışır.
 
 ## Sunucu
 

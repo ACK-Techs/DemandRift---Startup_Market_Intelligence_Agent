@@ -1,8 +1,8 @@
 ---
-description: Central project orchestration for current three-phase platform work
+description: DemandRift main üzerinde geliştirme ve final test süreci
 alwaysApply: true
 ---
 
-Use `.agents/skills/orchestrate-research-platform/SKILL.md` and `.orchestrator/SYSTEM.md` for non-trivial work. The active run graph is the source of truth. Do not reduce approved scope, bypass independent gates, or begin Faz 8 without explicit approval.
+AGENTS.md ve ortak/gelistirme-plani.md geçerlidir. Yeni branch/worktree/PR açma; main üzerinde çalış. Ana AI planı uygular, code_pusher subagent aynı checkout'ta yalnız Git commit/push yapar.
 
-Current product scope and AI restrictions are in `ortak/RULES.md` and `demandrift-product.mdc`. Historical seven-phase/Build instructions do not override these user decisions.
+Geliştirme sırasında test/lint/typecheck/build doğrulaması, ayrı review/verify/integration kapısı veya .orchestrator run graph oluşturma. Bütün işlevler tamamlandıktan sonra final test/kontrol, hata düzeltme ve son regresyon yapılır. CI yalnız manuel final turunda çalışır. Ürün kapsamı, runtime güvenlik/bütçe/kanıt kuralları ve mevcut kullanıcı değişiklikleri korunur.

@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Test planı
 
 **Durum: planlandı.** Bu doküman ve [JSON senaryoları](../tests/planlanan-senaryolar.json) çalıştırılmış test sonucu değildir. Mevcut site verileri ve mevcut script testleri [Faz 1 laboratuvarında](../../faz-1-fikir-ve-arastirma/veri-laboratuvari/) korunur. Testlerin hangi bilgisayar/sunucuda çalıştırılacağı açık karardır.

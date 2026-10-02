@@ -10,7 +10,7 @@ Read `ortak/RULES.md` and `ortak/kanit-yeterliligi-ve-karar-kurallari.md` for cu
 - Evidence floor: 3 independent user/organization examples across 2 different sources plus qualitative gates. Copies/reposts are not independent. Missing or inaccessible data is not evidence of no demand.
 - No Build decision, MVP/PRD recommendation or downstream product/experiment plan in the current output. That later stage belongs to manager Çağlar. DemandRift's own backend/frontend integration remains authorized.
 - Batuhan owns execution/backend, feedback and acceptance; Ayselin fixes source/data issues; Ayşenur improves design and integrates screens as backend outputs become available.
-- Follow named task files and phase control guides. Do not mark unrun tests or unreviewed deliveries complete. Leave infrastructure choices open until discussed with Çağlar.
+- Use ortak/gelistirme-plani.md for execution timing. Phase control guides describe final scenarios; they do not require per-step review or tests. Implement all functions on main, then run final tests and fix defects. Keep unrun results honest.
 
 - Main backend language is Python (user approved). FastAPI + Pydantic are approved; exact runtime/package versions remain to be pinned.
 

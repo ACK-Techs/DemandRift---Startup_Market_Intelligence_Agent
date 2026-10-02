@@ -1,6 +1,6 @@
 # DemandRift M1 uygulama sözleşmesi ve kararları
 
-1 Ekim 2026, Europe/Istanbul. Run: `.orchestrator/runs/tamamlama-20261001/run.json`. Bu belge uygulanacak üretici/tüketici sınırlarını sabitler; bir davranış yalnız ayrı review, verification ve integration sonucu varsa kabul edilmiştir. Kullanıcının bu çalışma için yetkilendirdiği atomik commit/push işlemlerini yalnız `/root/git_publisher` yürütür.
+1 Ekim 2026 ürün sözleşmesi; süreç 3 Ekim 2026 kararına göre güncellendi. Bu belge üretici/tüketici davranışlarını tanımlar. Uygulama main üzerinde yapılır; test/kontrol bütün işlevlerden sonra final turundadır. Ayrı review/verify/integration, run graph veya acceptance kaydı gerekmez. Git işlemlerini aynı checkout'ta code_pusher yürütür.
 
 Aktif kapsam üç faz: fikir ve araştırma hazırlığı; veri toplama ve hazırlama; karar ve rapor. Eski yedi faz, Temporal ve eski paket ağacı zorunlu değildir. Araştırılan fikrin Build/MVP/PRD, ürün özellikleri, geliştirme veya deney planı hiçbir çıktıda üretilmez. DemandRift uygulamasının geliştirilmesi bu sınırın dışındadır.
 
@@ -66,7 +66,7 @@ Report kaynaklı rationale, pillar/market/constraints, unknown/limitations, prim
 
 Mevcut tasarım korunur. Her görünür kontrol gerçek route/işlem veya açık unavailable; mock success/verified/confidence/count/progress kaldırılır. Notifications ve destek mesajı gönderimi kapsamda backend contract yokken unavailable. Pause/resume yerine desteklenen cancel; gerçek backend pause contract olmadan pause yok. Export ilk teslim owner kontrollü aynı report_version JSON; evidence CSV yalnız canonical kayıt alanlarıyla. PDF yeni zorunluluk değil.
 
-Frontend yalnız local. `apps/web/vercel.json` ile bütün Git otomatik deployment'ları kapalı. Mevcut GitHub main path workflow'ları ilk push öncesi incelenir; backend deploy yalnız review/test/integration kabul checkpoint'lerinde. Kod push'ı production kabulünün yerine geçmez.
+Frontend yalnız local. `apps/web/vercel.json` ile bütün Git otomatik deployment'ları kapalı. GitHub test workflow'ları yalnız manuel final turunda çalışır; backend deploy tamamlanan işlevlerin final testleri geçen exact main SHA'sıyla yapılır. Kod push'ı production kabulünün yerine geçmez.
 
 Hetzner mevcut `/opt/demandrift-api`, Compose proje adı `demandrift-api`, loopback18082 ve artifact volume korunur. Projeye özel API/worker/PostgreSQL/Redis network/volume; DB/Redis public port yok. API/worker non-root, read-only rootfs, limit/restart/log rotation. Gemini yalnız API/worker runtime secret; env içeriği log/inspect/artifact'e dökülmez. OP-01 diğer servis fingerprints ve smoke baseline alır; deploy öncesi/sonrası karşılaştırılır. Global prune veya başka proje DB/Redis değişikliği yok.
 
@@ -74,6 +74,6 @@ Migration ayrı kontrollü adım; başlangıç DB/raw backup. Restore ayrı test
 
 ## Kabul ve doküman eşleşmesi
 
-BE-01: contract fixture roundtrip, invalid/unknown/error örnekleri, generated type/schema drift, plan içerik değişimlerinin fingerprint/sürüm etkisi. BE-02–06: gerçek PostgreSQL A/B izolasyon, concurrent start/reservation/cancel, duplicate delivery ve Redis/worker restart; secret/SSRF/tool/citation kontrolleri bağımsız gate.
+BE-01: contract fixture roundtrip, invalid/unknown/error örnekleri, generated type/schema drift, plan içerik değişimlerinin fingerprint/sürüm etkisi. BE-02–06: gerçek PostgreSQL A/B izolasyon, concurrent start/reservation/cancel, duplicate delivery ve Redis/worker restart; secret/SSRF/tool/citation kontrolleri final paketinde yapılır.
 
-30 Faz 1, 24 Faz 2, 33 Faz 3 senaryosu fiili actual/evidence/evaluator/model/prompt/policy/schema/version/usage kaydı taşır; model semantiği ve etiketli precision/recall ayrıca ölçülür. Browser local→Hetzner, desktop/mobile/keyboard/theme/refresh iki kullanıcı akışı; OP backup/restore/rollback ve diğer sistemlerin korunduğu kanıt. Mandatory fail/not_run/not_verified finali engeller. Bu specification hiçbir testi çalışmış veya paketi tamamlanmış saymaz.
+30 Faz 1, 24 Faz 2, 33 Faz 3 senaryosu proje sonunda fiili çıktıyla değerlendirilir; kısa sonuç, kullanılan sürüm ve maliyet özeti yeterlidir; model semantiği ve etiketli precision/recall ayrıca ölçülür. Browser local→Hetzner, desktop/mobile/keyboard/theme/refresh iki kullanıcı akışı; OP backup/restore/rollback ve diğer sistemlerin korunduğu kanıt. Mandatory fail/not_run/not_verified finali engeller. Bu specification hiçbir testi çalışmış veya paketi tamamlanmış saymaz.

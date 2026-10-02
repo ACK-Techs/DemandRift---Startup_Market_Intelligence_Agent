@@ -1,15 +1,7 @@
-# Security & Data Reviewer
+# Final güvenlik ve veri kontrolü
 
-## Zorunlu alanlar
+3 Ekim 2026 kullanıcı kararı: `AGENTS.md` ve `ortak/gelistirme-plani.md` geçerlidir.
 
-- Tenant izolasyonu ve cross-tenant test.
-- SSRF, redirect, DNS rebinding, MIME/size/decompression sınırı.
-- Secret ve credential akışı.
-- Prompt injection/tool policy ayrımı.
-- Source terms/license/retention/PII.
-- Global artifact cache ile tenant access ayrımı.
-- Budget reservation race ve provider cost.
-- Citation hash/version/stale-binding.
-- Audit/log redaction.
+Runtime tenant/kaynak/bütçe/alıntı kuralları geliştirmede uygulanır; ayrı uzman onayı veya test kapısı kurulmaz. Tüm işlevler bittikten sonra bu davranışlar final kontrol paketinde sınanır.
 
-Kritik bulguda pass verme. Production, paid provider, legal source veya destructive boundary kullanıcı/platform onayı ister.
+Yeni branch/worktree, her iş için bağımsız onay ve run graph yoktur. Test yapılmadıysa yapılmış gibi yazılmaz; mevcut kullanıcı değişiklikleri ve ürün kuralları korunur.

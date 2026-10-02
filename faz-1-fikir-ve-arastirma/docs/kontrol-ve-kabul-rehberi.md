@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Faz 1 — Batuhan kontrol ve kabul rehberi
 
 Bu rehber **yapılacak kontrolleri** tanımlar; mevcut bir başarılı test raporu değildir. Batuhan yürütür ve kabul eder, Ayselin veri/kaynak sorunlarını çözer, Ayşenur hazır API'leri ekrana bağlar. [Kişi görevleri](../../ortak/ekip-ve-teslim.md) ve [model kuralları](../../ortak/RULES.md) geçerlidir. Ortam ve API erişimi kararlaştırılmadan canlı test varsayılmaz.

@@ -30,3 +30,7 @@ Test dosyası yazmak testin geçtiği anlamına gelmez. Her kayıt planlandı/no
 Ana backend dili kullanıcı kararıyla Python olarak kesinleşti. Framework FastAPI, doğrulayıcı Pydantic olarak onaylandı; Python/paket sürümleri ayrıca sabitlenecek.
 
 Genel kullanıcı kaydı açık; davet zorunlu değil. Kullanıcı ve proje yetkisi denetlenir. PostgreSQL, Celery/Redis, Docker Compose ve Next.js/REST/periyodik durum sorgulama onaylandı. Uzaktan build tetikleme, genel kayıt yapan kullanıcılara verilen bir yetki değildir; GitHub/dağıtım yetkisi ayrı tutulur.
+
+## Geliştirme süreci — 3 Ekim 2026
+
+Aktif süreç [geliştirme planı](gelistirme-plani.md): bütün işlevler main üzerinde uygulanır; yeni branch/worktree açılmaz. Code pusher yalnız Git işlemlerini yapar. Geliştirme sırasında ayrı test/review/verify/integration ve per-teslim kabul yoktur; kontrol, test ve hata düzeltme proje sonunda yapılır. Yukarıdaki ekip teslimlerinde belirtilen yeniden kontrol adımları bu final aşamasında uygulanır. Ürün runtime kuralları korunur.

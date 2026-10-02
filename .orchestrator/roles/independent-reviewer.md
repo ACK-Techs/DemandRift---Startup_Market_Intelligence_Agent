@@ -1,5 +1,7 @@
-# Independent Reviewer
+# Final kod incelemesi
 
-Implementer'ın açıklamasından bağımsız olarak diff, gerçek dosya, tests ve contracts'i incele. Öncelik sırası: güvenlik/veri bütünlüğü, faz invariant'ları, acceptance, hata davranışı, maintainability.
+3 Ekim 2026 kullanıcı kararı: `AGENTS.md` ve `ortak/gelistirme-plani.md` geçerlidir.
 
-Her bulguyu önem, dosya/konum, kanıt, etkisi ve gerekli düzeltmeyle yaz. Kanıt yoksa pass verme. Kod düzeltme; `pass`, `revise`, `blocked` veya `fail` sonucu üret.
+Geliştirme sırasında ayrı reviewer çağrılmaz. Tüm işlevler tamamlandıktan sonra kod, sözleşme ve kullanıcı akışı final kontrol turunda değerlendirilir; ayrı gate/sonuç JSON oluşturulmaz.
+
+Yeni branch/worktree, her iş için bağımsız onay ve run graph yoktur. Test yapılmadıysa yapılmış gibi yazılmaz; mevcut kullanıcı değişiklikleri ve ürün kuralları korunur.

@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-10-01",
+  "timezone": "Europe/Istanbul",
+  "stage": "planning_only",
+  "repository": {
+    "path": "/Users/caglarkc/Desktop/ACK TECHS/DemandRift---Startup_Market_Intelligence_Agent",
+    "head": "9f36ead7bacbc16f4b777147e423ce6b10b40348",
+    "worktree_clean_at_start": true,
+    "scope": "three_active_phases"
+  },
+  "sources": {
+    "scope": "README.md and ortak active docs",
+    "pm_skill": ".agents/skills/orchestrate-research-platform/SKILL.md",
+    "pm_role": ".orchestrator/roles/pm-manager.md",
+    "server_inventory": "/Users/caglarkc/Desktop/ACK TECHS/sunucu-envanteri/2026-10-01",
+    "evidence_method": "static code/document reads; structured manifest reads; read-only SSH metadata"
+  },
+  "current_server_metadata": {
+    "method": "read-only SSH; no HTTP/source/model test",
+    "server": "167.235.158.118",
+    "container": "demandrift-api-api-1",
+    "image": "demandrift-api:c74fdb66d2f6343abc67526d8a18a7c597b74d45",
+    "state": "running",
+    "docker_health": "healthy",
+    "host_binding": "127.0.0.1:18082",
+    "container_port": 8000,
+    "last_successful_sha": "c74fdb66d2f6343abc67526d8a18a7c597b74d45",
+    "running_container_count": 34,
+    "memory_mib": {
+      "total": 7747,
+      "available": 4533,
+      "swap": 0
+    },
+    "public_nginx_route": {
+      "status": "not_rechecked",
+      "inventory_observation": "No DemandRift public route in 1 October inventory"
+    },
+    "api_diff_to_local_head": "none; 8 changed files are 6 frontend dashboard components and 2 documents"
+  },
+  "schedule": {
+    "task_count": 22,
+    "blank_deadline_count": 22,
+    "blank_estimate_count": 22,
+    "calendar_delay": "not_computable",
+    "elapsed_calendar_days_since_planning": 9,
+    "elapsed_days_are_delay": false,
+    "fully_closed_frontend_tasks_in_tracking": 0,
+    "frontend_tasks": 7,
+    "full_closure_evidence_for_all_22_tasks": "not_found"
+  },
+  "static_test_inventory": {
+    "api_files": 6,
+    "api_function_definitions": 26,
+    "lab_files": 29,
+    "lab_method_definitions": 695,
+    "not_execution_or_coverage": true
+  },
+  "scenario_tracking": {
+    "phase1": {
+      "count": 30,
+      "status": "not_run"
+    },
+    "phase2": {
+      "count": 24,
+      "status": "planned",
+      "execution_result": null
+    },
+    "phase3": {
+      "count": 33,
+      "status": "planned",
+      "execution_result": null
+    },
+    "total": 87
+  },
+  "checks_this_stage": {
+    "application_tests": "not_run",
+    "frontend_build_lint_typecheck": "not_run",
+    "browser_e2e": "not_run",
+    "live_source_tests": "not_run",
+    "gemini_calls": "not_run",
+    "deployment": "not_run",
+    "secret_read_or_change": "not_run"
+  },
+  "future_target": {
+    "backend": "Hetzner isolated API/worker/PostgreSQL/Redis; existing loopback18082 and controlled HTTPS route",
+    "frontend": "local only; Vercel later"
+  },
+  "artifacts": [
+    "ortak/raporlar/proje-durum-raporu-2026-10-01.md",
+    "ortak/raporlar/tamamlama-test-ve-hetzner-yol-haritasi-2026-10-01.md"
+  ],
+  "limitations": [
+    "Docker health is process liveness, not product functional acceptance.",
+    "Historical test runs are not current run results.",
+    "No numerical lateness or completion percentage can be derived from undated unweighted tasks.",
+    "Gemini model ID/access and new key are pending application-stage verification."
+  ]
+}

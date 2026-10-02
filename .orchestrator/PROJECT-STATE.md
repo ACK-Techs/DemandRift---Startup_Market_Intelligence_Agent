@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu dosyanın aşağıdaki kısmı tarihsel kayıttır. Güncel geliştirme düzeni `AGENTS.md` ve `ortak/gelistirme-plani.md`: yalnız main, code pusher, test/kontrol yalnız proje sonunda. Eski çok rollü graph ve acceptance talimatları aktif değildir; ürünün bugünkü durumu koddan okunur.
+
 # Güncel proje durumu
 
 22 Eylül 2026: Kullanıcı ürün planını üç faz + ortak düzenine geçirdi. Aktif giriş noktası [README](../README.md) ve [ortak belgeler](../ortak/README.md).

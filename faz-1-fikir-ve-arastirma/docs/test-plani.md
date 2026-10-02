@@ -1,3 +1,5 @@
+> 3 Ekim 2026: Bu belgedeki test ve kabul senaryoları yalnız proje bütün işlevleriyle tamamlandıktan sonraki final aşamasında çalıştırılır. Geliştirme sırasında ayrı test/review/verify/integration veya per-teslim kabul yoktur. Güncel süreç: [geliştirme planı](../../ortak/gelistirme-plani.md). Yeni branch/worktree açılmaz; main kullanılır.
+
 # Test planı ve tüm test gereksinimleri
 
 Bu bir **planlanan kabul paketi**dir. Buradaki yeni senaryolar çalıştırılmadı; çalışan ürün backend'i veya ölçülmüş model başarısı iddiası yoktur. Yerel kayıtlı veri ve ortak entegrasyon düzeni onaylandı; Hetzner ve Vercel/API bağlantı ayrıntıları sonraki kurulumda tamamlanacak.
