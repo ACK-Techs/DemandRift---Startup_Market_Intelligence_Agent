@@ -15,6 +15,7 @@ from app.auth_service import AuthService
 from app.auth_body_guard import AuthBodyGuard
 from app.auth_routes import router as auth_router
 from app.db.engine import Database, DatabaseConfigurationError
+from app.db.migration_head import REQUIRED_MIGRATION
 from app.http_errors import install_errors
 
 from app.research_plan import router as research_plan_router
@@ -59,7 +60,7 @@ def create_app(
                     version = session.execute(
                         text("SELECT version_num FROM public.alembic_version")
                     ).scalar_one()
-                    if version != "20261001_0004":
+                    if version != REQUIRED_MIGRATION:
                         raise DatabaseConfigurationError(
                             "Authentication requires the accepted database migration"
                         )

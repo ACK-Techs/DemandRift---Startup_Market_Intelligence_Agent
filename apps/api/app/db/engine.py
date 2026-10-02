@@ -47,6 +47,19 @@ class Database:
                            OR pg_has_role(session_user, n.nspowner, 'MEMBER'))
                 ) OR has_schema_privilege(current_user, 'public', 'CREATE')
                   OR has_schema_privilege(session_user, 'public', 'CREATE')
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public'
+                      AND c.relname IN ('budget_suites','budget_accounts','budget_attempts','budget_journal')
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND (has_table_privilege(r.oid,c.oid,'INSERT,UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER')
+                           OR has_any_column_privilege(r.oid,c.oid,'INSERT,UPDATE,REFERENCES')
+                           OR (c.relname='budget_suites'
+                               AND (has_table_privilege(r.oid,c.oid,'SELECT')
+                                    OR has_any_column_privilege(r.oid,c.oid,'SELECT'))))
+                  )
             """)).scalar_one()
             if unsafe:
                 raise DatabaseConfigurationError("Application database role must not administer schemas, own tables or bypass RLS")
