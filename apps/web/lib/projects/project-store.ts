@@ -27,7 +27,8 @@ type Failure = Extract<ApiResult<"Project">, { ok: false }>;
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /** Only server-confirmed owner/project data is cached, in memory. */
-export function createProjectStore(client: Client = createApiClient(), now: () => number = Date.now) {
+export function createProjectStore(client: Client = createApiClient(), now: () => number = Date.now,
+  invalidateSession: (expectedCsrfToken: string, expectedUserId: string) => boolean = () => false) {
   let state = initial, session: Session | null = null, generation = 0, disposed = false;
   let retryUntil = 0, cooldown: ReturnType<typeof setTimeout> | null = null;
   const listeners = new Set<() => void>();
@@ -66,16 +67,25 @@ export function createProjectStore(client: Client = createApiClient(), now: () =
     if (error.category === "authentication") { clear(); update({ ...initial, list: { ...initial.list, status: "authentication", message: error.message }, detail: { ...initial.detail, status: "authentication", message: error.message } }); return true; }
     wait(error); return false;
   }
-  function begin() { const controller = new AbortController(); controllers.add(controller); return { controller, current: generation }; }
+  function begin() {
+    const identity = { ownerId: session!.user.user_id, csrfToken: session!.csrf_token };
+    const controller = new AbortController(); controllers.add(controller);
+    return { controller, current: generation, identity };
+  }
+  function rejectSession(result: ApiResult<"Project" | "ProjectPage">, identity: { ownerId: string; csrfToken: string }) {
+    // A stale project result can still reject the current account GET lineage. CAS owns that decision.
+    if (!result.ok && result.status === 401 && result.category === "authentication" && result.apiError !== undefined) {
+      invalidateSession(identity.csrfToken, identity.ownerId);
+    }
+  }
   const fresh = (current: number) => !disposed && current === generation && authorized();
   async function loadList(cursor: string | null = null, reconcile = false) {
     if (!authorized() || state.list.status === "loading" || state.create.status === "pending" || now() < retryUntil) return false;
     if (cursor !== null && (typeof cursor !== "string" || cursor.length < 1 || cursor.length > 512)) return false;
-    const owner = session!.user.user_id;
-    const { controller, current } = begin();
+    const { controller, current, identity } = begin();
     update({ ...state, list: { status: "loading", data: null, cursor, message: null } });
-    const result = await client.request("ProjectPage", "/api/v1/projects", { query: { limit: "25", ...(cursor !== null ? { cursor } : {}) }, scope: { user_id: owner }, signal: controller.signal });
-    controllers.delete(controller); if (!fresh(current)) return false;
+    const result = await client.request("ProjectPage", "/api/v1/projects", { query: { limit: "25", ...(cursor !== null ? { cursor } : {}) }, scope: { user_id: identity.ownerId }, signal: controller.signal });
+    controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
     if (!result.ok) {
       if (!deny(result)) update({ ...state, list: { ...state.list, status: result.category, data: null, message: result.message } });
       return false;
@@ -94,10 +104,10 @@ export function createProjectStore(client: Client = createApiClient(), now: () =
     if (typeof projectId !== "string" || !uuid.test(projectId)) {
       update({ ...state, detail: { status: "validation", data: null, projectId: null, message: "The project address is invalid." } }); return false;
     }
-    const { controller, current } = begin();
+    const { controller, current, identity } = begin();
     update({ ...state, detail: { status: "loading", data: null, projectId, message: null } });
-    const result = await client.request("Project", `/api/v1/projects/${projectId}`, { scope: { user_id: session!.user.user_id, project_id: projectId }, signal: controller.signal });
-    controllers.delete(controller); if (!fresh(current)) return false;
+    const result = await client.request("Project", `/api/v1/projects/${projectId}`, { scope: { user_id: identity.ownerId, project_id: projectId }, signal: controller.signal });
+    controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
     if (!result.ok) {
       if (!deny(result)) update({ ...state, detail: { ...state.detail, status: result.category, data: null, message: result.message } }); return false;
     }
@@ -109,11 +119,10 @@ export function createProjectStore(client: Client = createApiClient(), now: () =
     if (!parseWire("ProjectCreate", JSON.stringify({ name })).ok) {
       update({ ...state, create: { ...initial.create, status: "validation", fieldError: "Use 1–200 characters with at least one non-space character.", message: "Check the project name." } }); return false;
     }
-    const owner = session!.user.user_id, csrf = session!.csrf_token;
-    const { controller, current } = begin();
+    const { controller, current, identity } = begin();
     update({ ...state, create: { ...initial.create, status: "pending" } });
-    const result = await client.request("Project", "/api/v1/projects", { method: "POST", body: { name }, csrfToken: csrf, scope: { user_id: owner }, signal: controller.signal });
-    controllers.delete(controller); if (!fresh(current)) return false;
+    const result = await client.request("Project", "/api/v1/projects", { method: "POST", body: { name }, csrfToken: identity.csrfToken, scope: { user_id: identity.ownerId }, signal: controller.signal });
+    controllers.delete(controller); rejectSession(result, identity); if (!fresh(current)) return false;
     if (!result.ok) {
       if (!deny(result)) update({ ...state, create: { ...initial.create, status: result.operationState === "unknown" ? "unknown" : result.category,
         message: result.operationState === "unknown" ? "Project creation could not be confirmed. Check saved projects before another creation attempt." : result.message,
