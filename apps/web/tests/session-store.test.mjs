@@ -175,3 +175,144 @@ test("any canonical positive one-second Retry-After clears the UI pause without 
     assert.equal(await store.authenticate("login", "owner@example.org", "a".repeat(15)), true); assert.equal(writes, 2);
   }
 });
+
+test("a confirmed protected401 invalidates only the exact current owner and CSRF identity", async (t) => {
+  let calls = 0;
+  const store = fixture(t, async () => { calls++; return json(session()); });
+  await store.refresh(); const before = store.getSnapshot();
+  assert.equal(store.invalidateSession("b".repeat(64), owner), false);
+  assert.equal(store.invalidateSession("a".repeat(64), other), false);
+  assert.equal(store.getSnapshot(), before);
+  assert.equal(store.invalidateSession("a".repeat(64), owner), true);
+  assert.equal(store.getSnapshot().status, "anonymous"); assert.equal(store.getSnapshot().session, null);
+  assert.equal(store.getSnapshot().pending, null); assert.equal(calls, 1);
+  assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+});
+
+test("CAS rejects nonprimitive identity inputs without coercion or changing the session", async (t) => {
+  const store = fixture(t, async () => json(session()));
+  await store.refresh(); const before = store.getSnapshot(); let coercions = 0;
+  for (const [csrf, userId] of [
+    [new String("a".repeat(64)), owner], [["a".repeat(64)], owner],
+    [{ toString() { coercions++; return "a".repeat(64); } }, owner],
+    ["a".repeat(64), new String(owner)], ["a".repeat(64), [owner]],
+    ["a".repeat(64), { toString() { coercions++; return owner; } }],
+    [null, owner], ["a".repeat(64), undefined],
+  ]) assert.equal(store.invalidateSession(csrf, userId), false);
+  assert.equal(coercions, 0); assert.equal(store.getSnapshot(), before);
+});
+
+test("a delayed401 from a rotated session cannot clear the same user's newer session", async (t) => {
+  let reads = 0;
+  const store = fixture(t, async () => json({ ...session(), csrf_token: ++reads === 1 ? "a".repeat(64) : "b".repeat(64) }));
+  await store.refresh(); await store.refresh(); const latest = store.getSnapshot();
+  assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+  assert.equal(store.getSnapshot(), latest); assert.equal(latest.session.csrf_token, "b".repeat(64));
+  assert.equal(store.invalidateSession("b".repeat(64), owner), true);
+});
+
+test("a delayed401 from the old owner cannot clear a newer owner even with the same CSRF value", async (t) => {
+  let reads = 0;
+  const store = fixture(t, async (_path, init) => init.method === "GET" ?
+    (++reads === 1 ? json(session()) : json(error("authentication_required"), 401)) : json(session(other), 201));
+  await store.refresh(); store.invalidate(); await store.refresh();
+  assert.equal(await store.authenticate("register", "other@example.org", "a".repeat(15)), true);
+  const latest = store.getSnapshot();
+  assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+  assert.equal(store.getSnapshot(), latest); assert.equal(latest.session.user.user_id, other);
+});
+
+test("an old protected401 never cancels a pending newer login or registration", async (t) => {
+  for (const mode of ["login", "register"]) {
+    let reads = 0, release, mutationSignal;
+    const store = fixture(t, async (_path, init) => {
+      if (init.method === "GET") return ++reads === 1 ? json(session()) : json(error("authentication_required"), 401);
+      mutationSignal = init.signal;
+      return new Promise((resolve) => { release = () => resolve(json({ ...session(other), csrf_token: "b".repeat(64) }, mode === "register" ? 201 : 200)); });
+    });
+    await store.refresh(); store.invalidate(); await store.refresh();
+    const mutation = store.authenticate(mode, "other@example.org", "a".repeat(15)); const pending = store.getSnapshot();
+    assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+    assert.equal(store.getSnapshot(), pending); assert.equal(pending.pending, mode); assert.equal(mutationSignal.aborted, false);
+    release(); assert.equal(await mutation, true); assert.equal(store.getSnapshot().session.user.user_id, other);
+    assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+  }
+});
+
+test("an old protected401 never cancels a pending logout or discards its successful204 receipt", async (t) => {
+  let release, mutationSignal;
+  const store = fixture(t, async (_path, init) => {
+    if (init.method === "GET") return json(session());
+    mutationSignal = init.signal;
+    return new Promise((resolve) => { release = () => resolve(new Response(null, { status: 204 })); });
+  });
+  await store.refresh(); const out = store.logout(); const pending = store.getSnapshot();
+  assert.equal(store.invalidateSession("a".repeat(64), owner), false);
+  assert.equal(store.getSnapshot(), pending); assert.equal(mutationSignal.aborted, false);
+  release(); assert.equal(await out, true); assert.equal(store.getSnapshot().message, "You are signed out.");
+});
+
+test("a matching401 aborts the old GET lineage and its late session receipt cannot restore the account", async (t) => {
+  let reads = 0, release, readSignal;
+  const store = fixture(t, async (_path, init) => {
+    if (++reads === 1) return json(session());
+    readSignal = init.signal;
+    return new Promise((resolve) => { release = () => resolve(json(session())); });
+  });
+  await store.refresh(); const refresh = store.refresh();
+  assert.equal(store.getSnapshot().pending, "refresh"); assert.equal(store.getSnapshot().session, null);
+  assert.equal(store.invalidateSession("a".repeat(64), owner), true); assert.equal(readSignal.aborted, true);
+  release(); assert.equal(await refresh, false);
+  assert.equal(store.getSnapshot().status, "anonymous"); assert.equal(store.getSnapshot().session, null);
+});
+
+test("old identity invalidation cannot erase unknown logout recovery or unavailable refresh states", async (t) => {
+  for (const operation of ["logout", "refresh"]) {
+    let calls = 0;
+    const store = fixture(t, async () => {
+      if (++calls === 1) return json(session());
+      if (operation === "logout") throw new Error("disconnected after send");
+      return json(error("service_unavailable"), 503);
+    });
+    await store.refresh(); await store[operation](); const failed = store.getSnapshot();
+    assert.equal(failed.status, operation === "logout" ? "uncertain" : "unavailable");
+    assert.equal(store.invalidateSession("a".repeat(64), owner), false); assert.equal(store.getSnapshot(), failed);
+    assert.equal(await store.authenticate("login", "owner@example.org", "a".repeat(15)), false); assert.equal(calls, 2);
+  }
+});
+
+test("a late invalidated GET cannot overwrite a successful newer login receipt", async (t) => {
+  let reads = 0, release;
+  const store = fixture(t, async (_path, init) => {
+    if (init.method === "POST") return json({ ...session(other), csrf_token: "b".repeat(64) });
+    if (++reads === 1) return json(session());
+    return new Promise((resolve) => { release = () => resolve(json(session())); });
+  });
+  await store.refresh(); const oldRead = store.refresh();
+  assert.equal(store.invalidateSession("a".repeat(64), owner), true);
+  assert.equal(await store.authenticate("login", "other@example.org", "a".repeat(15)), true);
+  const latest = store.getSnapshot(); release(); assert.equal(await oldRead, false);
+  assert.equal(store.getSnapshot(), latest); assert.equal(latest.session.user.user_id, other);
+  assert.equal(latest.session.csrf_token, "b".repeat(64));
+});
+
+test("CAS preserves an existing credential cooldown and never starts another request", async (t) => {
+  let clock = Date.now(), reads = 0, writes = 0;
+  const store = fixture(t, async (_path, init) => {
+    if (init.method === "GET") return ++reads === 1 ? json(error("authentication_required"), 401) : json(session());
+    writes++; return json({ ...error("rate_limited"), retry_after_seconds: 2 }, 429);
+  }, () => clock);
+  await store.refresh(); await store.authenticate("login", "owner@example.org", "a".repeat(15)); await store.refresh();
+  assert.equal(store.invalidateSession("a".repeat(64), owner), true); assert.equal(store.getSnapshot().retryAfterSeconds, 2);
+  assert.equal(await store.authenticate("login", "owner@example.org", "a".repeat(15)), false);
+  assert.equal(writes, 1); assert.equal(reads, 2);
+  clock += 2001; await store.authenticate("login", "owner@example.org", "a".repeat(15)); assert.equal(writes, 2);
+});
+
+test("broad invalidation and disposal discard the retained identity tuple", async (t) => {
+  for (const operation of ["invalidate", "dispose"]) {
+    const store = fixture(t, async () => json(session()));
+    await store.refresh(); store[operation](); const after = store.getSnapshot();
+    assert.equal(store.invalidateSession("a".repeat(64), owner), false); assert.equal(store.getSnapshot(), after);
+  }
+});

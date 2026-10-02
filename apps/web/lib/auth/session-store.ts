@@ -22,6 +22,8 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
   let expiry: ReturnType<typeof setTimeout> | null = null;
   let retryUntil = 0;
   let cooldown: ReturnType<typeof setTimeout> | null = null;
+  // Keep only immutable identity primitives during a GET refresh, when the public session is hidden.
+  let currentIdentity: { userId: string; csrfToken: string } | null = null;
   let generation = 0;
   let disposed = false;
   const listeners = new Set<() => void>();
@@ -41,6 +43,7 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
     cooldown = setTimeout(armCooldown, Math.min(remaining, 2_147_483_647));
   }
   function expire() {
+    currentIdentity = null;
     clearExpiry();
     generation++;
     request?.abort();
@@ -58,11 +61,13 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
   }
   function accept(session: WireModels["Session"]) {
     if (Date.parse(session.expires_at) <= now()) { expire(); return false; }
+    currentIdentity = { userId: session.user.user_id, csrfToken: session.csrf_token };
     update({ ...initial, status: "authenticated", session });
     armExpiry(session);
     return true;
   }
   function rejected(result: Failure, mutation: boolean) {
+    currentIdentity = null;
     clearExpiry();
     const retryAfter = result.apiError?.retry_after_seconds;
     // Canonical zero means no wait. Only a positive count can pause the form.
@@ -102,6 +107,7 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
       return false;
     }
     const current = ++generation;
+    currentIdentity = null;
     request = new AbortController();
     update({ ...initial, status: "anonymous", pending: mode });
     const result = await client.request("Session", `/api/v1/auth/${mode}`, { method: "POST", body, signal: request.signal });
@@ -117,6 +123,7 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
     if (Date.parse(state.session.expires_at) <= now()) { expire(); return false; }
     clearExpiry();
     const current = ++generation;
+    currentIdentity = null;
     request = new AbortController();
     // Hide account content immediately; an unknown logout never leaves it visible.
     update({ ...initial, status: "checking", pending: "logout" });
@@ -131,18 +138,30 @@ export function createSessionStore(client: Client = createApiClient(), now: () =
     return false;
   }
   function invalidate() {
+    currentIdentity = null;
     generation++;
     request?.abort(); request = null;
     clearExpiry();
     update({ ...initial, status: "checking" });
   }
+  /** Call only for a confirmed protected 401, using the request's captured canonical identity. */
+  function invalidateSession(expectedCsrfToken: string, expectedUserId: string) {
+    if (disposed || typeof expectedCsrfToken !== "string" || typeof expectedUserId !== "string" ||
+      currentIdentity === null || currentIdentity.csrfToken !== expectedCsrfToken || currentIdentity.userId !== expectedUserId) return false;
+    currentIdentity = null;
+    generation++;
+    request?.abort(); request = null;
+    clearExpiry();
+    update({ ...initial, status: "anonymous", message: "Your session is no longer valid. Sign in again." });
+    return true;
+  }
   return {
     getSnapshot: () => state,
     getServerSnapshot: () => initial,
     subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; },
-    refresh, authenticate, logout, invalidate,
+    refresh, authenticate, logout, invalidate, invalidateSession,
     checkExpiry: () => { if (state.session && Date.parse(state.session.expires_at) <= now()) expire(); },
-    dispose: () => { disposed = true; generation++; request?.abort(); clearExpiry(); if (cooldown !== null) clearTimeout(cooldown); listeners.clear(); },
+    dispose: () => { disposed = true; currentIdentity = null; generation++; request?.abort(); clearExpiry(); if (cooldown !== null) clearTimeout(cooldown); listeners.clear(); },
   };
 }
 export type SessionStore = ReturnType<typeof createSessionStore>;

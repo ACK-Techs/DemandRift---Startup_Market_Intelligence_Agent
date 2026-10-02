@@ -48,7 +48,7 @@ export function useSession() {
   const store = useContext(SessionContext);
   if (!store) throw new Error("SessionProvider is required");
   const state = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getServerSnapshot);
-  return { ...state, refresh: store.refresh, authenticate: store.authenticate, logout: store.logout };
+  return { ...state, refresh: store.refresh, authenticate: store.authenticate, logout: store.logout, invalidateSession: store.invalidateSession };
 }
 
 export function announceSessionChange() {
