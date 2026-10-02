@@ -14,6 +14,8 @@ from app.auth_config import AuthPolicy
 from app.auth_service import AuthService
 from app.auth_body_guard import AuthBodyGuard
 from app.auth_routes import router as auth_router
+from app.preparation_routes import router as preparation_router
+from app.preparation_body_guard import PreparationBodyGuard
 from app.db.engine import Database, DatabaseConfigurationError
 from app.db.migration_head import REQUIRED_MIGRATION
 from app.http_errors import install_errors
@@ -91,10 +93,12 @@ def create_app(
     application.include_router(source_execution_router)
     application.include_router(contract_router)
     application.include_router(auth_router)
+    application.include_router(preparation_router)
     install_errors(application)
     application.add_middleware(
         AuthBodyGuard, max_bytes=policy.max_body_bytes if policy else 16384
     )
+    application.add_middleware(PreparationBodyGuard, max_bytes=65536)
     if policy is not None:
         application.add_middleware(
             CORSMiddleware,

@@ -11,6 +11,10 @@ export type AuthCredentials = { "email": string; "password": string; };
 
 export type BriefContent = { "original_idea": string; "normalized_idea": (string | null); "product_type": ProvenanceField; "target_user": ProvenanceField; "problem_or_job": ProvenanceField; "context_or_niche": ProvenanceField; "market_scope": ProvenanceField; "business_model": ProvenanceField; "alternatives": ProvenanceField; "constraints": { [key: string]: ProvenanceField; }; "clarity_status": ClarityStatus; "missing_fields": Array<string>; "clarifying_questions": Array<string>; "assumption_ids": Array<string>; "skipped_clarification": boolean; "continue_with_unknowns": boolean; "language_scope": Array<string>; "primary_category": (ResearchCategory | null); "category_origin": (FieldOrigin | null); "category_confirmed": boolean; "add_on_packages": Array<AddOnPackage>; "secondary_categories": Array<ResearchCategory>; "modifiers": Array<string>; "category_rationale": (string | null); "known_unknowns": Array<string>; };
 
+export type BriefPage = { "schema_version": "1.0.0"; "items": Array<IdeaBrief>; "page": PageInfo; };
+
+export type BriefReference = { "brief_id": string; "brief_version": number; "status": "draft" | "awaiting_user" | "confirmed"; "created_at": string; };
+
 export type BudgetLimits = { "max_requests": number; "max_bytes": number; "max_pages": number; "max_records": number; "max_duration_seconds": number; "max_tokens": number; "max_cost_usd": string; "soft_cost_usd": string; "max_concurrency": number; };
 
 export type Citation = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "citation_id": string; "claim_ids": Array<string>; "artifact_id": string; "document_id": string; "document_version": number; "segment_id": string; "source_id": string; "verbatim_quote": string; "start_offset": number; "end_offset": number; "segment_text_hash": string; "normalized_content_hash": string; "normalization_version": string; "source_url": string; "collected_at": string; "published_at": (string | null); "validation_status": ValidationStatus; "validated_at": (string | null); "rejection_reason": (string | null); };
@@ -47,6 +51,8 @@ export type FieldState = "known" | "inferred" | "missing" | "conflicting";
 
 export type GapKind = "investigate_secondary" | "validate_primary";
 
+export type HumanBriefPatch = { "expected_brief_version": number; "product_type"?: (string | null); "target_user"?: (string | null); "problem_or_job"?: (string | null); "context_or_niche"?: (string | null); "market_scope"?: (string | null); "business_model"?: (string | null); "alternatives"?: (string | null); "constraints"?: { [key: string]: (string | null); }; "language_scope"?: Array<string>; "primary_category"?: (ResearchCategory | null); "modifiers"?: Array<string>; "skipped_clarification"?: boolean; "continue_with_unknowns"?: boolean; };
+
 export type IdeaBrief = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "brief_id": string; "brief_version": number; "status": "draft" | "awaiting_user" | "confirmed"; "content": BriefContent; };
 
 export type IndependenceGroup = { "group_id": string; "claim_ids": Array<string>; "document_ids": Array<string>; "status": "known" | "unknown"; "reason": string; "identity_key": (string | null); "ownership_key": (string | null); };
@@ -68,6 +74,8 @@ export type PermissionStatus = "permitted" | "blocked" | "requires_authorization
 export type Phase = "planning" | "evidence" | "decision";
 
 export type PillarProfile = { "pillar": "problem" | "customer" | "competition" | "opportunity" | "feasibility" | "evidence_quality"; "status": "strong" | "mixed" | "weak" | "insufficient"; "supporting_claim_ids": Array<string>; "opposing_claim_ids": Array<string>; "known_unknowns": Array<string>; };
+
+export type PreparationMutationReceipt = { "schema_version": "1.0.0"; "operation": "create_research" | "revise_brief"; "request_key": string; "input_fingerprint": string; "user_id": string; "project_id": string; "research_id": string; "brief_id": string; "brief_version": number; "created_at": string; "brief": IdeaBrief; };
 
 export type PrimaryValidation = { "status": "not_started" | "partial" | "available"; "observation_refs": Array<string>; "observation_count": number; "unvalidated_behaviors": Array<string>; };
 
@@ -93,6 +101,8 @@ export type ReportValidation = { "schema_check": "passed"; "identity": "passed";
 
 export type ResearchCategory = "mobil-uygulama" | "b2b-web-yazilimi" | "gelistirici-araci" | "eklenti-entegrasyon" | "yapay-zeka-urunu" | "oyun" | "yerel-hizmet";
 
+export type ResearchCreate = { "original_idea": string; "language_scope"?: Array<string>; };
+
 export type ResearchGapRequest = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "gap_id": string; "gap_version": number; "parent_bundle_id": string; "parent_bundle_version": number; "parent_report_id": (string | null); "parent_report_version": (number | null); "intent_id": (string | null); "severity": "critical" | "high" | "medium" | "low"; "eligible_source_ids": Array<string>; "expected_evidence_type": (EvidenceType | null); "kind": GapKind; "question": string; "missing_evidence": Array<string>; "proposed_queries": Array<QueryPlanItem>; "remaining_budget": (BudgetLimits | null); "cycle": number; "max_cycles": number; "stop_conditions": Array<string>; "status": "proposed" | "approved" | "running" | "closed" | "stopped"; };
 
 export type ResearchIntent = { "intent_id": string; "intent": SearchIntent; "question": string; "priority": number; "brief_basis": Array<string>; "expected_fields": Array<string>; "required_evidence_types": Array<EvidenceType>; "validation_kind": GapKind; "included": boolean; "exclusion_reason": (string | null); };
@@ -100,6 +110,10 @@ export type ResearchIntent = { "intent_id": string; "intent": SearchIntent; "que
 export type ResearchMode = "standard" | "deep_research";
 
 export type ResearchPlan = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "research_plan_id": string; "plan_version": number; "plan_fingerprint": string; "status": "draft" | "awaiting_user" | "confirmed"; "brief_id": string; "brief_version": number; "brief": BriefContent; "research_mode": ResearchMode; "intents": Array<ResearchIntent>; "source_plan": Array<SourcePlanItem>; "query_plan": Array<QueryPlanItem>; "budget": BudgetLimits; "known_unknowns": Array<string>; "confirmed_at": (string | null); };
+
+export type ResearchPreparation = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "original_idea": string; "created_at": string; "latest_brief": (BriefReference | null); };
+
+export type ResearchPreparationPage = { "schema_version": "1.0.0"; "items": Array<ResearchPreparation>; "page": PageInfo; };
 
 export type ResearchRun = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "status": RunStatus; "phase": Phase; "brief_id": string; "brief_version": number; "research_plan_id": string; "plan_version": number; "plan_fingerprint": string; "budget": BudgetLimits; "usage": Usage; "cancel_requested": boolean; "source_executions": Array<QueryExecution>; "bundle_id": (string | null); "report_id": (string | null); "errors": Array<ApiError>; "started_at": (string | null); "finished_at": (string | null); };
 

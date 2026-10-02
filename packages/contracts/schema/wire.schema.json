@@ -442,6 +442,71 @@
       "title": "BriefContent",
       "type": "object"
     },
+    "BriefPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/IdeaBrief"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "BriefPage",
+      "type": "object"
+    },
+    "BriefReference": {
+      "additionalProperties": false,
+      "properties": {
+        "brief_id": {
+          "format": "uuid",
+          "title": "Brief Id",
+          "type": "string"
+        },
+        "brief_version": {
+          "exclusiveMinimum": 0,
+          "title": "Brief Version",
+          "type": "integer"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "awaiting_user",
+            "confirmed"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "brief_id",
+        "brief_version",
+        "status",
+        "created_at"
+      ],
+      "title": "BriefReference",
+      "type": "object"
+    },
     "BudgetLimits": {
       "additionalProperties": false,
       "properties": {
@@ -1948,6 +2013,195 @@
       "title": "GapKind",
       "type": "string"
     },
+    "HumanBriefPatch": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alternatives"
+        },
+        "business_model": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Business Model"
+        },
+        "constraints": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "\\S": {
+              "anyOf": [
+                {
+                  "maxLength": 10000,
+                  "minLength": 1,
+                  "pattern": "\\S",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "propertyNames": {
+            "maxLength": 128,
+            "minLength": 1
+          },
+          "title": "Constraints",
+          "type": "object"
+        },
+        "context_or_niche": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Context Or Niche"
+        },
+        "continue_with_unknowns": {
+          "default": false,
+          "title": "Continue With Unknowns",
+          "type": "boolean"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "language_scope": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "title": "Language Scope",
+          "type": "array"
+        },
+        "market_scope": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Market Scope"
+        },
+        "modifiers": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 32,
+          "title": "Modifiers",
+          "type": "array"
+        },
+        "primary_category": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ResearchCategory"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "problem_or_job": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Problem Or Job"
+        },
+        "product_type": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Type"
+        },
+        "skipped_clarification": {
+          "default": false,
+          "title": "Skipped Clarification",
+          "type": "boolean"
+        },
+        "target_user": {
+          "anyOf": [
+            {
+              "maxLength": 10000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Target User"
+        }
+      },
+      "required": [
+        "expected_brief_version"
+      ],
+      "title": "HumanBriefPatch",
+      "type": "object"
+    },
     "IdeaBrief": {
       "additionalProperties": false,
       "properties": {
@@ -2784,6 +3038,83 @@
         "known_unknowns"
       ],
       "title": "PillarProfile",
+      "type": "object"
+    },
+    "PreparationMutationReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "brief": {
+          "$ref": "#/$defs/IdeaBrief"
+        },
+        "brief_id": {
+          "format": "uuid",
+          "title": "Brief Id",
+          "type": "string"
+        },
+        "brief_version": {
+          "exclusiveMinimum": 0,
+          "title": "Brief Version",
+          "type": "integer"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "input_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Input Fingerprint",
+          "type": "string"
+        },
+        "operation": {
+          "enum": [
+            "create_research",
+            "revise_brief"
+          ],
+          "title": "Operation",
+          "type": "string"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "request_key": {
+          "format": "uuid",
+          "title": "Request Key",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "operation",
+        "request_key",
+        "input_fingerprint",
+        "user_id",
+        "project_id",
+        "research_id",
+        "brief_id",
+        "brief_version",
+        "created_at",
+        "brief"
+      ],
+      "title": "PreparationMutationReceipt",
       "type": "object"
     },
     "PrimaryValidation": {
@@ -3688,6 +4019,35 @@
       "title": "ResearchCategory",
       "type": "string"
     },
+    "ResearchCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "language_scope": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 8,
+          "minItems": 1,
+          "title": "Language Scope",
+          "type": "array"
+        },
+        "original_idea": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Original Idea",
+          "type": "string"
+        }
+      },
+      "required": [
+        "original_idea"
+      ],
+      "title": "ResearchCreate",
+      "type": "object"
+    },
     "ResearchGapRequest": {
       "additionalProperties": false,
       "properties": {
@@ -4152,6 +4512,93 @@
         "confirmed_at"
       ],
       "title": "ResearchPlan",
+      "type": "object"
+    },
+    "ResearchPreparation": {
+      "additionalProperties": false,
+      "properties": {
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "latest_brief": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BriefReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_idea": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Original Idea",
+          "type": "string"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "user_id",
+        "project_id",
+        "research_id",
+        "original_idea",
+        "created_at",
+        "latest_brief"
+      ],
+      "title": "ResearchPreparation",
+      "type": "object"
+    },
+    "ResearchPreparationPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/ResearchPreparation"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "ResearchPreparationPage",
       "type": "object"
     },
     "ResearchRun": {
@@ -5551,6 +5998,12 @@
     "BriefContent": {
       "$ref": "#/$defs/BriefContent"
     },
+    "BriefPage": {
+      "$ref": "#/$defs/BriefPage"
+    },
+    "BriefReference": {
+      "$ref": "#/$defs/BriefReference"
+    },
     "BudgetLimits": {
       "$ref": "#/$defs/BudgetLimits"
     },
@@ -5566,6 +6019,9 @@
     "EvidenceBundle": {
       "$ref": "#/$defs/EvidenceBundle"
     },
+    "HumanBriefPatch": {
+      "$ref": "#/$defs/HumanBriefPatch"
+    },
     "IdeaBrief": {
       "$ref": "#/$defs/IdeaBrief"
     },
@@ -5574,6 +6030,9 @@
     },
     "PageInfo": {
       "$ref": "#/$defs/PageInfo"
+    },
+    "PreparationMutationReceipt": {
+      "$ref": "#/$defs/PreparationMutationReceipt"
     },
     "Project": {
       "$ref": "#/$defs/Project"
@@ -5599,11 +6058,20 @@
     "ReportStatement": {
       "$ref": "#/$defs/ReportStatement"
     },
+    "ResearchCreate": {
+      "$ref": "#/$defs/ResearchCreate"
+    },
     "ResearchGapRequest": {
       "$ref": "#/$defs/ResearchGapRequest"
     },
     "ResearchPlan": {
       "$ref": "#/$defs/ResearchPlan"
+    },
+    "ResearchPreparation": {
+      "$ref": "#/$defs/ResearchPreparation"
+    },
+    "ResearchPreparationPage": {
+      "$ref": "#/$defs/ResearchPreparationPage"
     },
     "ResearchRun": {
       "$ref": "#/$defs/ResearchRun"

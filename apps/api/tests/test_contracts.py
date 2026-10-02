@@ -81,7 +81,7 @@ def test_public_catalog_and_openapi_have_the_same_wire_version_and_resolved_refs
         openapi = client.get("/openapi.json").json()
     assert catalog == wire_catalog()
     assert catalog["schema_version"] == openapi["info"]["x-wire-schema-version"] == "1.0.0"
-    assert len(catalog["models"]) == 32
+    assert len(catalog["models"]) == 39
     assert "secret-never-in-contract" not in json.dumps(catalog)
     for name, definition in catalog["$defs"].items():
         expected = json.loads(json.dumps(definition).replace('"#/$defs/', '"#/components/schemas/Wire_'))

@@ -488,7 +488,7 @@ def test_explicit_database_head_and_disposable_roundtrip_cover_new_tables(
     with db["admin"].transaction() as s:
         assert (
             s.scalar(text("SELECT version_num FROM public.alembic_version"))
-            == "20261002_0006"
+            == "20261002_0007"
         )
     command.downgrade(db["config"], "20261001_0004")
     with db["admin"].transaction() as s:

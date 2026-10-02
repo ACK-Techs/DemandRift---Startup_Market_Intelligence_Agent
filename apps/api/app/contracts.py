@@ -1080,9 +1080,104 @@ class RunPage(Contract):
     page: PageInfo
 
 
+class ResearchCreate(Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    original_idea: Annotated[str, Field(min_length=1, max_length=10000, pattern=r"\S", strict=True)]
+    language_scope: Annotated[list[Name], Field(min_length=1, max_length=8)] = Field(default_factory=lambda: ["tr"])
+
+    @model_validator(mode="after")
+    def unique_languages(self):
+        if len(set(self.language_scope)) != len(self.language_scope):
+            raise ValueError("languages must be unique")
+        return self
+
+
+class HumanBriefPatch(Contract):
+    model_config = ConfigDict(json_schema_serialization_defaults_required=False)
+    expected_brief_version: Annotated[int, Field(strict=True, ge=1, le=2147483647)]
+    product_type: Text | None = None
+    target_user: Text | None = None
+    problem_or_job: Text | None = None
+    context_or_niche: Text | None = None
+    market_scope: Text | None = None
+    business_model: Text | None = None
+    alternatives: Text | None = None
+    constraints: Annotated[dict[Name, Text | None], Field(max_length=64)] = Field(default_factory=dict)
+    language_scope: Annotated[list[Name], Field(min_length=1, max_length=8)] = Field(default_factory=lambda: ["tr"])
+    primary_category: ResearchCategory | None = None
+    modifiers: Annotated[list[Name], Field(max_length=32)] = Field(default_factory=list)
+    skipped_clarification: Annotated[bool, Field(strict=True)] = False
+    continue_with_unknowns: Annotated[bool, Field(strict=True)] = False
+
+    @model_validator(mode="after")
+    def explicit_edits(self):
+        if self.model_fields_set == {"expected_brief_version"}:
+            raise ValueError("at least one human edit is required")
+        for name in ("constraints", "language_scope", "modifiers", "skipped_clarification", "continue_with_unknowns"):
+            if name in self.model_fields_set and getattr(self, name) is None:
+                raise ValueError("this edit cannot be null")
+        for name in ("language_scope", "modifiers"):
+            values = getattr(self, name)
+            if values is not None and len(values) != len(set(values)):
+                raise ValueError("list edits must be unique")
+        return self
+
+
+class BriefReference(Contract):
+    brief_id: UUID
+    brief_version: Positive
+    status: Literal["draft", "awaiting_user", "confirmed"]
+    created_at: AwareDatetime
+
+
+class ResearchPreparation(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    original_idea: Text
+    created_at: AwareDatetime
+    latest_brief: BriefReference | None
+
+
+class ResearchPreparationPage(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: list[ResearchPreparation]
+    page: PageInfo
+
+
+class BriefPage(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: list[IdeaBrief]
+    page: PageInfo
+
+
+class PreparationMutationReceipt(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    operation: Literal["create_research", "revise_brief"]
+    request_key: UUID
+    input_fingerprint: Hash
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    brief_id: UUID
+    brief_version: Positive
+    created_at: AwareDatetime
+    brief: IdeaBrief
+
+    @model_validator(mode="after")
+    def exact_selection(self):
+        if any(getattr(self, name) != getattr(self.brief, name) for name in (
+            "user_id", "project_id", "research_id", "brief_id", "brief_version")):
+            raise ValueError("receipt must retain its selected immutable brief")
+        return self
+
+
 # Explicit export list prevents helpers/legacy preview schemas leaking into the wire catalog.
 WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefContent, IdeaBrief,
                SourcePlanItem, QueryPlanItem, ResearchPlan, SourceCounts, QueryExecution,
                RawArtifact, TextSegment, NormalizedDocument, Claim, Citation, SourceReport,
                EvidenceBundle, SufficiencyAssessment, ResearchGapRequest, ReportStatement,
-               DecisionReport, ResearchRun, User, Session, AuthCredentials, ProjectCreate, Project, PageInfo, ProjectPage, RunPage)
+               DecisionReport, ResearchRun, User, Session, AuthCredentials, ProjectCreate, Project, PageInfo, ProjectPage, RunPage,
+               ResearchCreate, HumanBriefPatch, BriefReference, ResearchPreparation, ResearchPreparationPage,
+               BriefPage, PreparationMutationReceipt)

@@ -12,6 +12,7 @@ from app.db import job_models  # noqa: F401 -- register durable job metadata.
 from app.db import budget_models  # noqa: F401 -- register native ledger metadata.
 from app.db import auth_models  # noqa: F401 -- register auth throttling metadata.
 from app.db import evidence_models  # noqa: F401 -- register evidence metadata.
+from app.db import preparation_http_models  # noqa: F401 -- register immutable operation receipts.
 
 
 def database_url():

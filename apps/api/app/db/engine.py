@@ -87,7 +87,37 @@ class Database:
                            OR pg_has_role(session_user,r.oid,'MEMBER'))
                       AND has_function_privilege(r.oid,p.oid,'EXECUTE')
                   )
-            """)).scalar_one()
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public' AND c.relname='preparation_mutations'
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND (has_table_privilege(r.oid,c.oid,'UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER')
+                           OR has_any_column_privilege(r.oid,c.oid,'UPDATE,REFERENCES'))
+                  )
+                  OR EXISTS (
+                    SELECT 1 FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public' AND p.proname='demandrift_preparation_mutation_guard'
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND has_function_privilege(r.oid,p.oid,'EXECUTE')
+                  )
+                  OR NOT EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    WHERE n.nspname='public' AND c.relname='preparation_mutations'
+                      AND c.relrowsecurity AND c.relforcerowsecurity
+                      AND (SELECT count(*) FROM pg_policy p WHERE p.polrelid=c.oid)=1
+                      AND EXISTS (
+                        SELECT 1 FROM pg_policy p WHERE p.polrelid=c.oid
+                          AND p.polname='owner_scope' AND p.polcmd='*'
+                          AND p.polpermissive AND p.polroles=ARRAY[0]::oid[]
+                          AND pg_get_expr(p.polqual,p.polrelid)=:owner_policy
+                          AND pg_get_expr(p.polwithcheck,p.polrelid)=:owner_policy
+                      )
+                  )
+            """), {"owner_policy": "(user_id = (NULLIF(current_setting('app.user_id'::text, true), ''::text))::uuid)"}).scalar_one()
             if unsafe:
                 raise DatabaseConfigurationError("Application database role must not administer schemas, own tables or bypass RLS")
 
