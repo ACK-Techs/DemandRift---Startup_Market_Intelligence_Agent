@@ -26,9 +26,17 @@ cancel, non2xx, invalid usage/receipt unknown hold bırakır. Cancellation unkno
 kalıcı kaydından sonra dışarı iletilir. DB settlement/unknown hatası safe generic
 exception olur, successful output yayımlanmaz. Retry/fallback/suite reset yoktur.
 
-Bu teslim yalnız offline metered consumer temelidir. Live enablement açıkça
-reddedilir: durable provider receipt inbox/spool ve restart settlement recovery,
-native8 producer kabulü/runtime wiring ve canlı format kapıları tamamlanmalıdır.
+Native consumer aynı Database nesnesi ve suite/owner/project/research scope'undaki
+somut JobBudgetRepository/BudgetRepository ile private ReceiptSpool gerektirir.
+Tam yanıt, non2xx ve hatalı usage dahil, parsing/settlement öncesinde raw olarak
+fsync edilir. Native COMMIT ve immutable ack doğrulanmadan çıktı verilmez. Native
+recovery consumer restart sonrasında mevcut dispatched/held/settled/overrun
+attempt'i doğrular; missing/reserved attempt için yeni admission açmaz ve HTTP
+göndermez. Ducktyped offline fixture spool accounting'i taklit edemez.
+
+Live enablement açıkça reddedilir: runtime wiring ve canlı provider-format
+kabul kapıları ayrıca tamamlanmalıdır. Native recovery testlerindeki HTTP yanıtları
+sentetiktir; fixture suite gerçek kullanıcının ortak canlı bütçesi değildir.
 MockTransport fiziksel ağ yapamaz. Native gerçek producer ile mocked HTTP kanıtı
 ayrı integration gate'tir; ducktyped offline fixture ledger native DB kanıtı
 sayılmaz. Main router/worker handler veya ürün başarısı bu modülden oluşmaz.

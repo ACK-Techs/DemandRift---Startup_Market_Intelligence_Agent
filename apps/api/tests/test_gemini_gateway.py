@@ -136,6 +136,15 @@ def test_live_enablement_is_closed_until_receipt_recovery_acceptance():
                       runtime_secret=SECRET, live_enabled=True)
 
 
+def test_offline_fixture_cannot_impersonate_native_spool_accounting(tmp_path):
+    from app.receipt_spool import ReceiptSpool
+    ledger = FixtureLedger()
+    with ReceiptSpool(tmp_path.resolve() / "spool") as spool:
+        with pytest.raises(GatewayConfigurationError):
+            GeminiGateway(ledger, ledger, GeminiPolicy("developer"), GeminiTransport(),
+                          runtime_secret=SECRET, receipt_spool=spool)
+
+
 def test_known_usage_commits_before_output_validation_and_counts_both_payloads():
     gateway, ledger, calls = fixture()
     result = asyncio.run(generate(gateway, model=ObservedAnswer))

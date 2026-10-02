@@ -1,4 +1,4 @@
-"""Metered generation foundation; production receipt recovery is a later gate.
+"""Metered generation with native durable receipts; live runtime remains gated.
 
 Only a freshly committed native admission can authorize one fixed send. Known
 accounting settles before any output validator runs. This is backend internal.
@@ -17,8 +17,10 @@ from app.gemini_contract import (
     GeminiContractError, GeminiPolicy, GeminiUsage, PRICING_VERSION, ledger_receipt,
 )
 from app.gemini_transport import GeminiTransport, TransportRequest, UnknownObservation
+from app.gemini_receipt_recovery import ADMISSION_VERSION, GeminiReceiptRecovery
+from app.db.budget_repository import BudgetRepository
+from app.db.job_budget_repository import JobBudgetRepository
 
-ADMISSION_VERSION = "compact-32k-estimate65536-totalpayload-v1"
 MAX_COMPACT_REQUEST_BYTES = 32768
 INPUT_RESERVATION_ESTIMATE = 65536
 
@@ -48,15 +50,20 @@ class GeminiGateway:
     """
 
     def __init__(self, dispatcher, ledger, policy, transport, *, runtime_secret=None,
-                 live_enabled=False):
+                 live_enabled=False, receipt_spool=None):
         if type(policy) is not GeminiPolicy or type(transport) is not GeminiTransport:
             raise GatewayConfigurationError("Pinned backend services are required")
         if type(live_enabled) is not bool:
             raise GatewayConfigurationError("Explicit live configuration is required")
         if live_enabled:
-            # The receipt spool/recovery consumer has not been accepted yet.
-            # Keep this foundation closed even with an enabled HTTP transport.
-            raise GatewayConfigurationError("Durable production receipt recovery is required")
+            raise GatewayConfigurationError("Accepted live runtime and provider format are required")
+        self._recovery = None
+        if (receipt_spool is not None or type(dispatcher) is JobBudgetRepository
+                or type(ledger) is BudgetRepository):
+            try:
+                self._recovery = GeminiReceiptRecovery(dispatcher, ledger, policy, receipt_spool)
+            except Exception:
+                raise GatewayConfigurationError("Exact native durable receipt services required") from None
         self.dispatcher, self.ledger = dispatcher, ledger
         self.policy, self.transport = policy, transport
         self._runtime_secret = runtime_secret
@@ -111,10 +118,24 @@ class GeminiGateway:
         except Exception:
             self._unknown(attempt_id)
             return GenerationOutcome(attempt_id, "unknown")
-        if isinstance(observation, UnknownObservation) or not 200 <= observation.status_code < 300:
+        if isinstance(observation, UnknownObservation):
             self._unknown(attempt_id)
             if isinstance(observation, UnknownObservation) and observation.reason == "cancelled":
                 raise asyncio.CancelledError
+            return GenerationOutcome(attempt_id, "unknown", observation=observation)
+        binding = None
+        if self._recovery is not None:
+            try:
+                binding = self._recovery.binding(context, attempt_id=attempt_id,
+                                                fingerprint=prepared.fingerprint,
+                                                reserved=reserved, metadata=metadata)
+                self._recovery.spool.store_complete(binding, observation,
+                    outgoing_bytes=len(prepared.body), response_limit_bytes=self.policy.max_response_bytes)
+            except Exception:
+                self._unknown(attempt_id)
+                raise GatewayAccountingUnavailable("Durable observation storage is unavailable") from None
+        if not 200 <= observation.status_code < 300:
+            self._unknown(attempt_id)
             return GenerationOutcome(attempt_id, "unknown", observation=observation)
         try:
             envelope = _decode(observation.raw_bytes.decode("utf-8"))
@@ -125,7 +146,8 @@ class GeminiGateway:
             self._unknown(attempt_id)
             return GenerationOutcome(attempt_id, "unknown", observation=observation)
         try:
-            settlement = self.ledger.settle(attempt_id, actual, receipt)
+            settlement = (self._recovery.reconcile(binding) if self._recovery is not None
+                          else self.ledger.settle(attempt_id, actual, receipt))
         except Exception:
             raise GatewayAccountingUnavailable("Durable accounting is unavailable") from None
         if settlement.state == "overrun":
