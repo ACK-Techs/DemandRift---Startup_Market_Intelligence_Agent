@@ -24,7 +24,7 @@ from app.source_registry import (
     compile_preview_request, content_digest, get_registry, parse_registry,
 )
 
-ROOT = Path(__file__).resolve().parents[3]
+ROOT = Path(__file__).resolve().parents[1].parent.parent
 LAB = ROOT / "faz-1-fikir-ve-arastirma/veri-laboratuvari"
 
 
