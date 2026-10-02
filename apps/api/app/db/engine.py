@@ -2,11 +2,15 @@
 
 from collections.abc import Iterator
 from contextlib import contextmanager
+import time
 from uuid import UUID
 
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine, event, text
 from sqlalchemy.engine import make_url
 from sqlalchemy.orm import Session
+from sqlalchemy.pool import NullPool
+
+from app.db.bounded_connection import bounded_connection
 
 
 class DatabaseConfigurationError(RuntimeError):
@@ -14,19 +18,39 @@ class DatabaseConfigurationError(RuntimeError):
 
 
 class Database:
-    def __init__(self, dsn: str, *, pool_size: int = 5) -> None:
+    def __init__(self, dsn: str, *, pool_size: int = 5, probe: bool = False) -> None:
         try:
             url = make_url(dsn)
             if url.drivername != "postgresql+psycopg" or not url.database:
                 raise ValueError("unsupported database")
+            # libpq applies connect_timeout per host. Runtime uses one project
+            # database, so a list must not multiply the connection deadline.
+            for host in (url.host, url.query.get("host"), url.query.get("hostaddr")):
+                if host is not None and (type(host) is not str or "," in host):
+                    raise ValueError("single database host required")
+            if type(probe) is not bool:
+                raise ValueError("explicit probe mode required")
         except Exception:
             # Never include a DSN, password or provider credential in diagnostics.
             raise DatabaseConfigurationError("A valid PostgreSQL psycopg DATABASE_URL is required") from None
         self.engine = create_engine(
-            url, pool_size=pool_size, max_overflow=0, pool_timeout=5,
-            pool_pre_ping=True, echo=False, hide_parameters=True,
-            connect_args={"options": "-c statement_timeout=10000 -c lock_timeout=5000"},
+            url, **({"poolclass": NullPool} if probe else {
+                "pool_size": pool_size, "max_overflow": 0, "pool_timeout": 5,
+                "pool_pre_ping": True,
+            }), echo=False, hide_parameters=True,
+            connect_args={"connect_timeout": 2, "tcp_user_timeout": 2000,
+                          "options": ("-c statement_timeout=500 -c lock_timeout=250" if probe
+                                      else "-c statement_timeout=10000 -c lock_timeout=5000")},
         )
+        probe_deadline = time.monotonic() + 3 if probe else None
+
+        @event.listens_for(self.engine, "do_connect")
+        def connect(dialect, record, args, parameters):
+            return bounded_connection(*args, probe_deadline=probe_deadline, **parameters)
+
+    def readiness_probe(self) -> "Database":
+        """Fresh bounded connections never queue behind application transactions."""
+        return Database(self.engine.url.render_as_string(hide_password=False), probe=True)
 
     def assert_application_role(self) -> None:
         with self.engine.connect() as connection:

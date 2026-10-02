@@ -8,6 +8,7 @@ from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from sqlalchemy import text
 
 from app.auth_config import AuthPolicy
@@ -19,7 +20,9 @@ from app.preparation_body_guard import PreparationBodyGuard
 from app.db.engine import Database, DatabaseConfigurationError
 from app.db.migration_head import REQUIRED_MIGRATION
 from app.http_errors import install_errors
-from app.runtime_secrets import runtime_secret
+from app.runtime_secrets import RuntimeSecretError, runtime_secret
+from app.runtime_health import readiness, queue_connection, WORKER_KEY
+from app.worker_config import WorkerSettings
 
 from app.research_plan import router as research_plan_router
 from app.initial_runs import router as initial_runs_router
@@ -42,6 +45,9 @@ def create_app(
     if required not in ("0", "1"):
         raise DatabaseConfigurationError("Database requirement must be explicit")
     production = os.environ.get("APP_ENV") == "production" or required == "1"
+    require_queue = os.environ.get("DEMANDRIFT_REQUIRE_QUEUE", "0")
+    if require_queue not in ("0", "1"):
+        raise DatabaseConfigurationError("Queue requirement must be explicit")
     policy = auth_policy or (AuthPolicy.from_environment() if production else None)
 
     @asynccontextmanager
@@ -49,8 +55,14 @@ def create_app(
         configured = database
         owns_database = False
         application.state.auth_service = None
+        application.state.runtime_queue = None
+        application.state.runtime_worker_key = WORKER_KEY
         if configured is None and production:
-            configured = Database(runtime_secret("DATABASE_URL", allow_environment=False))
+            try:
+                dsn = runtime_secret("DATABASE_URL", allow_environment=False)
+            except RuntimeSecretError:
+                raise DatabaseConfigurationError("Explicit private application database required") from None
+            configured = Database(dsn)
             owns_database = True
         try:
             if configured is not None:
@@ -68,9 +80,18 @@ def create_app(
                             "Authentication requires the accepted database migration"
                         )
                 application.state.auth_service = AuthService(configured, policy)
+            if require_queue == "1":
+                if not production:
+                    raise DatabaseConfigurationError("Queue runtime requires production configuration")
+                settings = WorkerSettings.from_environment()
+                application.state.runtime_queue = queue_connection(settings)
+                application.state.runtime_worker_key = settings.key_prefix + "runtime:worker"
             yield
         finally:
             application.state.auth_service = None
+            if application.state.runtime_queue is not None:
+                application.state.runtime_queue.close()
+                application.state.runtime_queue = None
             if owns_database and configured is not None:
                 configured.close()
 
@@ -86,6 +107,15 @@ def create_app(
     def health() -> HealthResponse:
         """Process liveness and deployed revision; does not check dependencies."""
         return HealthResponse(revision=revision)
+
+    @application.get("/ready", tags=["operations"], responses={503: {"description": "Dependencies unavailable"}})
+    def ready():
+        service = application.state.auth_service
+        report = readiness(service.database if service else None,
+                           application.state.runtime_queue, revision,
+                           key=application.state.runtime_worker_key)
+        return JSONResponse(report, status_code=200 if report["status"] == "ready" else 503,
+                            headers={"Cache-Control": "no-store"})
 
     if not production and database is None:
         # Historical offline planning fixtures never serve as live tenant APIs.

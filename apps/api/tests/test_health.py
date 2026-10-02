@@ -50,6 +50,7 @@ def test_implemented_routes_are_advertised_without_placeholder_business_routes()
         "/api/v1/projects/{project_id}/research/{research_id}/briefs/{brief_id}/versions/{version}",
         "/api/v1/projects/{project_id}/preparation-mutations/{operation}/{request_key}",
         "/health",
+        "/ready",
         "/api/v1/contracts",
         "/api/v1/research/categories",
         "/api/v1/research/plans",
