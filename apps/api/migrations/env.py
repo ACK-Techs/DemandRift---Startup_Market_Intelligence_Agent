@@ -8,9 +8,10 @@ from sqlalchemy.engine import make_url
 from sqlalchemy.pool import NullPool
 
 from app.db.models import Base
-from app.db import budget_models  # Register the shared native ledger metadata.
-from app.db import auth_models  # Register auth throttling metadata.
-from app.db import evidence_models  # Register the explicit evidence metadata.
+from app.db import job_models  # noqa: F401 -- register durable job metadata.
+from app.db import budget_models  # noqa: F401 -- register native ledger metadata.
+from app.db import auth_models  # noqa: F401 -- register auth throttling metadata.
+from app.db import evidence_models  # noqa: F401 -- register evidence metadata.
 
 
 def database_url():

@@ -128,7 +128,8 @@ def test_upgrade_refuses_preexisting_rehomed_identity_without_rewriting_history(
 
 
 def test_actual_migration_columns_keys_and_indexes_match_application_metadata(postgres_database):
-    from sqlalchemy import inspect
+    from sqlalchemy import Column, inspect
+    from sqlalchemy.schema import CreateIndex
     from app.db.models import Base
     engine=postgres_database['admin'].engine;inspector=inspect(engine)
     assert set(inspector.get_table_names(schema='public'))-{'alembic_version'}=={t.name for t in Base.metadata.tables.values()}
@@ -142,5 +143,29 @@ def test_actual_migration_columns_keys_and_indexes_match_application_metadata(po
         actual={(tuple(c['constrained_columns']),c['referred_table'],tuple(c['referred_columns']),c['options'].get('ondelete')) for c in inspector.get_foreign_keys(table.name,schema='public')}
         expected={(tuple(c.column_keys),next(iter(c.elements)).column.table.name,tuple(e.column.name for e in c.elements),c.ondelete) for c in table.foreign_key_constraints}
         assert actual==expected
-        actual_indexes={tuple(i['column_names']) for i in inspector.get_indexes(table.name,schema='public')}
-        assert {tuple(c.name for c in i.columns) for i in table.indexes}<=actual_indexes
+        actual_indexes={i['name']:i for i in inspector.get_indexes(table.name,schema='public')}
+        for index in table.indexes:
+            actual_index=actual_indexes[index.name]
+            assert bool(actual_index['unique']) == bool(index.unique)
+            if all(isinstance(expression, Column) for expression in index.expressions):
+                assert tuple(actual_index['column_names']) == tuple(c.name for c in index.expressions)
+                continue
+            # An expression is reflected as None, not as its input Column name.
+            # Compare actual PostgreSQL-parsed expression AND partial predicate;
+            # do not ignore a unique replay-key constraint merely to pass tests.
+            expected_name='demandrift_expected_'+uuid4().hex
+            ddl=str(CreateIndex(index).compile(dialect=engine.dialect,
+                compile_kwargs={'literal_binds':True}))
+            original=engine.dialect.identifier_preparer.quote(index.name)
+            ddl=ddl.replace(f'INDEX {original} ON ', f'INDEX {expected_name} ON ', 1)
+            assert expected_name in ddl and postgres_database['name'].startswith('demandrift_test_')
+            with postgres_database['admin'].transaction() as session:
+                session.execute(text(ddl))
+                try:
+                    query=text('SELECT pg_get_expr(indexprs,indrelid),pg_get_expr(indpred,indrelid),indisunique '
+                        'FROM pg_index WHERE indexrelid=CAST(:name AS regclass)')
+                    actual=session.execute(query,{'name':'public.'+index.name}).one()
+                    expected=session.execute(query,{'name':'public.'+expected_name}).one()
+                    assert actual == expected
+                finally:
+                    session.execute(text(f'DROP INDEX public.{expected_name}'))

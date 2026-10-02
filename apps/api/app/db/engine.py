@@ -60,6 +60,33 @@ class Database:
                                AND (has_table_privilege(r.oid,c.oid,'SELECT')
                                     OR has_any_column_privilege(r.oid,c.oid,'SELECT'))))
                   )
+                  OR EXISTS (
+                    SELECT 1 FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public'
+                      AND c.relname IN ('research_jobs','job_outbox','job_journal')
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND (has_table_privilege(r.oid,c.oid,'UPDATE,DELETE,TRUNCATE,REFERENCES,TRIGGER')
+                           OR has_any_column_privilege(r.oid,c.oid,'REFERENCES')
+                           OR (c.relname IN ('job_outbox','job_journal')
+                               AND (has_table_privilege(r.oid,c.oid,'INSERT')
+                                    OR has_any_column_privilege(r.oid,c.oid,'INSERT')))
+                           OR EXISTS (
+                             SELECT 1 FROM pg_attribute a
+                             WHERE a.attrelid=c.oid AND a.attnum>0 AND NOT a.attisdropped
+                               AND (a.attname<>'command' OR c.relname='job_journal')
+                               AND has_column_privilege(r.oid,c.oid,a.attnum,'UPDATE')
+                           ))
+                  )
+                  OR EXISTS (
+                    SELECT 1 FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace
+                    CROSS JOIN pg_roles r
+                    WHERE n.nspname='public' AND p.proname='demandrift_job_append'
+                      AND (pg_has_role(current_user,r.oid,'MEMBER')
+                           OR pg_has_role(session_user,r.oid,'MEMBER'))
+                      AND has_function_privilege(r.oid,p.oid,'EXECUTE')
+                  )
             """)).scalar_one()
             if unsafe:
                 raise DatabaseConfigurationError("Application database role must not administer schemas, own tables or bypass RLS")
