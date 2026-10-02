@@ -121,9 +121,10 @@ services:
     environment:
       APP_ENV: production
       DATABASE_URL_FILE: /run/secrets/admin-database-url
+      DEMANDRIFT_APPLICATION_DATABASE_FILE: /run/secrets/application-database-url
       DATABASE_APP_ROLE: demandrift_app
-    secrets: [admin-database-url]
-    command: ['alembic', '-c', 'alembic.ini', 'upgrade', 'head']
+    secrets: [admin-database-url, application-database-url]
+    command: ['python', '-m', 'app.runtime_migrate']
     volumes: []
     networks: [data]
     mem_limit: 384m
