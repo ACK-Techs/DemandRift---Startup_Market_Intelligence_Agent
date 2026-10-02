@@ -16,6 +16,7 @@ from app.db.budget_repository import BudgetRepository
 from app.db import budget_models
 from app.budget_contract import BudgetCapacity, ResourceAmount
 from app.db.engine import Database
+from app.db.migration_head import REQUIRED_MIGRATION
 from app.db.job_repository import JobConflict, JobLeaseLost, JobRepository
 from app.db.evidence_repository import EvidenceRepository
 from app.db.preparation_repository import RecordNotFound, StoredSnapshotError
@@ -228,14 +229,18 @@ def test_job_migration_frozen_roundtrip(postgres_database):
     db = postgres_database
     enqueue(db)
     with db["admin"].transaction() as s:
-        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == "20261002_0006"
+        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == REQUIRED_MIGRATION
     command.downgrade(db["config"], "20261001_0005")
     with db["admin"].transaction() as s:
         assert s.scalar(text("SELECT to_regclass('public.research_jobs')")) is None
     command.upgrade(db["config"], "20261002_0006")
-    db["app"].assert_application_role()
     with db["admin"].transaction() as s:
+        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == "20261002_0006"
         assert s.scalar(text("SELECT to_regclass('public.job_journal')")) == "job_journal"
+    # Verify the frozen job migration itself, then restore the accepted release
+    # schema before applying its additional production privilege requirements.
+    command.upgrade(db["config"], REQUIRED_MIGRATION)
+    db["app"].assert_application_role()
 
 
 def budget_for_job(db, repo, run):
