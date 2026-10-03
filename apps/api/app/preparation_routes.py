@@ -20,6 +20,7 @@ from app.db.preparation_http_repository import (
     PreparationHttpRepository,
 )
 from app.db.preparation_repository import RecordNotFound, StoredSnapshotError
+from app.db.job_repository import JobConflict
 
 router = APIRouter(prefix="/api/v1/projects/{project_id}", tags=["preparation"])
 
@@ -54,10 +55,12 @@ def execute(call):
         raise ApiProblem(
             500, "service_unavailable", "Stored preparation could not be read"
         ) from None
-    except PreparationConflict:
+    except (PreparationConflict, JobConflict):
         raise ApiProblem(
             409, "conflict", "Preparation changed or operation input differs"
         ) from None
+    except (RuntimeError, OSError):
+        raise ApiProblem(503, "service_unavailable", "Required runtime access is unavailable") from None
     except ValueError:
         raise ApiProblem(
             422, "validation_error", "Check the submitted values"

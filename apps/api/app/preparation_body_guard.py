@@ -22,6 +22,7 @@ class PreparationBodyGuard:
             and parts[1:4] == ["api", "v1", "projects"]
             and (parts[5] == "research" or parts[5] == "preparation-mutations")
         )
+        selected = selected or path in ("/api/v1/settings", "/api/v1/dashboard")
         if not selected:
             return await self.app(scope, receive, send)
         downstream = send

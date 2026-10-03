@@ -11,6 +11,8 @@ from app.runtime_health import database_ready, publish_worker_pulse, queue_conne
 from app.runtime_secrets import runtime_secret
 from app.worker_app import make_worker_app
 from app.worker_config import WorkerSettings
+from app.research_pipeline import pipeline
+from app.runtime_delivery import RuntimeDelivery
 
 
 class RuntimeWorkerUnavailable(RuntimeError):
@@ -28,7 +30,7 @@ def configured_application():
         connection = queue_connection(settings)
         if connection.ping() is not True:
             raise ValueError()
-        application = make_worker_app(settings, database=database)
+        application = make_worker_app(settings, database=database, handler=pipeline)
     except Exception:
         if connection is not None:
             connection.close()
@@ -41,11 +43,14 @@ def configured_application():
     instance = str(uuid4())
     revision = os.environ.get("APP_REVISION", "development")
 
+    delivery = RuntimeDelivery(database, application)
+
     def beat():
         while not stop.is_set():
             try:
                 publish_worker_pulse(connection, database, revision, instance,
                                      key=settings.key_prefix + "runtime:worker")
+                delivery.tick()
             except Exception:
                 # An unavailable dependency expires the prior pulse without secret diagnostics.
                 pass

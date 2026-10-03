@@ -63,6 +63,8 @@ class WorkerSettings:
                 broker_url=runtime_secret("DEMANDRIFT_BROKER_URL",
                     allow_environment=os.environ.get("APP_ENV") != "production"),
                 queue=os.environ.get("DEMANDRIFT_WORKER_QUEUE", "demandrift.jobs"),
+                handler_seconds=int(os.environ.get("DEMANDRIFT_HANDLER_SECONDS", "1800")),
+                visibility_seconds=int(os.environ.get("DEMANDRIFT_VISIBILITY_SECONDS", "1800")),
                 key_prefix=os.environ.get(
                     "DEMANDRIFT_WORKER_KEY_PREFIX", "demandrift:"
                 ),

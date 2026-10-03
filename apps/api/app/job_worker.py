@@ -109,6 +109,12 @@ def handle_wake(database, settings, payload, handler=None, *, task_id=None):
                 message.research_id, message.job_id, context.token, succeeded=True
             )
             return "completed"
+        if result == 'failed':
+            run = repo.get(message.research_id, 'run', message.research_id)
+            if run.status != 'failed':
+                raise WorkerHandlerFailed('Handler failure lacks a canonical failed run')
+            repo.finish(message.research_id,message.job_id,context.token,succeeded=False)
+            return 'failed'
         if result is not None:
             raise WorkerHandlerFailed("Unknown handler outcome")
         # A checkpoint-only handler has not completed research. The lease stays

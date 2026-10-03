@@ -459,6 +459,15 @@ def _request_url(policy: SourcePolicy, path: str, query: tuple[tuple[str, str], 
     return policy.grant.origin + path + ("?" + encoded if encoded else "")
 
 
+class SourceHttpFailure(SourceEgressError):
+    def __init__(self, status, wire_bytes, digest, size):
+        self.status = status
+        self.wire_bytes = wire_bytes
+        self.digest = digest
+        self.size = size
+        super().__init__('Source returned a bounded unsuccessful response')
+
+
 def _response_type(response, policy) -> str:
     if response.status != 200:
         raise _deny()  # Includes every redirect, error, not-found and no-content.
@@ -487,10 +496,15 @@ def _response_type(response, policy) -> str:
 
 def fetch_source(source_id: str, *, path: str, query: tuple[tuple[str, str], ...] = ()) -> SourceResponse:
     """GET an authorized compiled target; callers cannot supply authority or I/O."""
+    return _fetch_policy(build_source_policy(source_id), path=path, query=query)
+
+
+def _fetch_policy(policy: SourcePolicy, *, path: str, query: tuple[tuple[str, str], ...] = ()) -> SourceResponse:
+    """Internal reviewed-policy consumer; never mounted as a public URL fetcher."""
     backend = None
     try:
         started = time.monotonic()
-        policy = build_source_policy(source_id)
+        source_id = policy.source_id
         url = _request_url(policy, path, query)
         host = _origin(policy.grant.origin)
         deadline = _Deadline(policy, started)
@@ -508,7 +522,7 @@ def fetch_source(source_id: str, *, path: str, query: tuple[tuple[str, str], ...
                                                      "read": limits.read_ms / 1000,
                                                      "write": limits.connect_ms / 1000,
                                                      "pool": deadline.limit()}}) as response:
-                content_type = _response_type(response, policy)
+                content_type = _response_type(response, policy) if response.status == 200 else 'application/octet-stream'
                 body = bytearray()
                 for part in response.iter_stream():
                     deadline.limit()
@@ -517,7 +531,13 @@ def fetch_source(source_id: str, *, path: str, query: tuple[tuple[str, str], ...
                     body.extend(part)
                 deadline.limit()
                 content = bytes(body)
-                return SourceResponse(source_id, url, content_type, content, hashlib.sha256(content).hexdigest(), backend.stream.wire_bytes)
+                digest = hashlib.sha256(content).hexdigest()
+                if response.status != 200:
+                    category = 'rate_limited' if response.status == 429 else 'no_results' if response.status in (204, 404) else 'blocked_by_policy' if response.status in (301,302,303,307,308,401,403) else 'source_unavailable'
+                    raise SourceHttpFailure(category, backend.stream.wire_bytes, digest, len(content))
+                return SourceResponse(source_id, url, content_type, content, digest, backend.stream.wire_bytes)
+    except SourceHttpFailure:
+        raise
     except Exception:
         raise _deny() from None
     finally:

@@ -63,3 +63,16 @@ def model_runtime(database, owner, project, research, spool):
 
 def spool_root():
     return os.path.join(os.environ.get("ARTIFACT_ROOT", "/data/artifacts"), "receipts")
+
+
+def historical_context(database, owner, project, research, attempt, current):
+    """Recovery retains the original fence; it never creates send authority."""
+    from app.job_budget_contract import AdmissionContext
+    with database.transaction(owner) as session:
+        row = session.execute(select(budget_models.attempts).where(
+            budget_models.attempts.c.user_id == owner, budget_models.attempts.c.project_id == project,
+            budget_models.attempts.c.research_id == research, budget_models.attempts.c.attempt_id == attempt)).mappings().one_or_none()
+        if row is None:
+            return current
+        return AdmissionContext(row['admission_kind'], row['brief_id'], row['brief_version'],
+            row['job_id'], row['job_lease_owner'], row['job_fence'])

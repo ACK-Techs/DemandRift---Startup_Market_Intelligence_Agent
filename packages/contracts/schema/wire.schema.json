@@ -1225,6 +1225,140 @@
       "title": "CoverageAssessment",
       "type": "object"
     },
+    "DashboardResearch": {
+      "additionalProperties": false,
+      "properties": {
+        "original_idea": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Original Idea",
+          "type": "string"
+        },
+        "outcome": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Outcome"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "project_name": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Project Name",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "status": {
+          "maxLength": 10000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Status",
+          "type": "string"
+        },
+        "updated_at": {
+          "format": "date-time",
+          "title": "Updated At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "project_id",
+        "project_name",
+        "research_id",
+        "original_idea",
+        "status",
+        "outcome",
+        "updated_at"
+      ],
+      "title": "DashboardResearch",
+      "type": "object"
+    },
+    "DashboardSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "active_projects": {
+          "minimum": 0,
+          "title": "Active Projects",
+          "type": "integer"
+        },
+        "checked_at": {
+          "format": "date-time",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "outcome_counts": {
+          "patternProperties": {
+            "\\S": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "propertyNames": {
+            "maxLength": 128,
+            "minLength": 1
+          },
+          "title": "Outcome Counts",
+          "type": "object"
+        },
+        "recent": {
+          "items": {
+            "$ref": "#/$defs/DashboardResearch"
+          },
+          "maxItems": 20,
+          "title": "Recent",
+          "type": "array"
+        },
+        "research_count": {
+          "minimum": 0,
+          "title": "Research Count",
+          "type": "integer"
+        },
+        "run_status_counts": {
+          "patternProperties": {
+            "\\S": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "propertyNames": {
+            "maxLength": 128,
+            "minLength": 1
+          },
+          "title": "Run Status Counts",
+          "type": "object"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_id",
+        "active_projects",
+        "research_count",
+        "run_status_counts",
+        "outcome_counts",
+        "recent",
+        "checked_at"
+      ],
+      "title": "DashboardSummary",
+      "type": "object"
+    },
     "DecisionReport": {
       "additionalProperties": false,
       "properties": {
@@ -1557,6 +1691,35 @@
         "errors"
       ],
       "title": "DecisionReport",
+      "type": "object"
+    },
+    "DecisionReportPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/DecisionReport"
+          },
+          "maxItems": 100,
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "DecisionReportPage",
       "type": "object"
     },
     "DecisionStability": {
@@ -2130,6 +2293,74 @@
       ],
       "title": "FieldState",
       "type": "string"
+    },
+    "GapApprovalCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "confirmed": {
+          "const": true,
+          "title": "Confirmed",
+          "type": "boolean"
+        },
+        "expected_gap_version": {
+          "exclusiveMinimum": 0,
+          "title": "Expected Gap Version",
+          "type": "integer"
+        },
+        "expected_report_id": {
+          "format": "uuid",
+          "title": "Expected Report Id",
+          "type": "string"
+        },
+        "expected_report_version": {
+          "exclusiveMinimum": 0,
+          "title": "Expected Report Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "expected_gap_version",
+        "expected_report_id",
+        "expected_report_version",
+        "confirmed"
+      ],
+      "title": "GapApprovalCreate",
+      "type": "object"
+    },
+    "GapApprovalReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "gap": {
+          "$ref": "#/$defs/ResearchGapRequest"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "run": {
+          "$ref": "#/$defs/ResearchRun"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_id",
+        "project_id",
+        "research_id",
+        "gap",
+        "run"
+      ],
+      "title": "GapApprovalReceipt",
+      "type": "object"
     },
     "GapKind": {
       "enum": [
@@ -5504,6 +5735,35 @@
       "title": "ResearchCreate",
       "type": "object"
     },
+    "ResearchGapPage": {
+      "additionalProperties": false,
+      "properties": {
+        "items": {
+          "items": {
+            "$ref": "#/$defs/ResearchGapRequest"
+          },
+          "maxItems": 100,
+          "title": "Items",
+          "type": "array"
+        },
+        "page": {
+          "$ref": "#/$defs/PageInfo"
+        },
+        "schema_version": {
+          "const": "1.0.0",
+          "default": "1.0.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema_version",
+        "items",
+        "page"
+      ],
+      "title": "ResearchGapPage",
+      "type": "object"
+    },
     "ResearchGapRequest": {
       "additionalProperties": false,
       "properties": {
@@ -6302,6 +6562,47 @@
         "finished_at"
       ],
       "title": "ResearchRun",
+      "type": "object"
+    },
+    "ResearchStartCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "expected_brief_id": {
+          "format": "uuid",
+          "title": "Expected Brief Id",
+          "type": "string"
+        },
+        "expected_brief_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Brief Version",
+          "type": "integer"
+        },
+        "expected_plan_fingerprint": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Expected Plan Fingerprint",
+          "type": "string"
+        },
+        "expected_plan_id": {
+          "format": "uuid",
+          "title": "Expected Plan Id",
+          "type": "string"
+        },
+        "expected_plan_version": {
+          "maximum": 2147483647,
+          "minimum": 1,
+          "title": "Expected Plan Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "expected_plan_id",
+        "expected_plan_version",
+        "expected_plan_fingerprint",
+        "expected_brief_id",
+        "expected_brief_version"
+      ],
+      "title": "ResearchStartCreate",
       "type": "object"
     },
     "RunPage": {
@@ -7316,6 +7617,85 @@
       "title": "User",
       "type": "object"
     },
+    "UserSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "default_budget": {
+          "$ref": "#/$defs/BudgetLimits"
+        },
+        "default_research_mode": {
+          "$ref": "#/$defs/ResearchMode"
+        },
+        "language_scope": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 4,
+          "minItems": 1,
+          "title": "Language Scope",
+          "type": "array"
+        },
+        "updated_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Updated At"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "default_research_mode",
+        "language_scope",
+        "default_budget",
+        "user_id",
+        "updated_at"
+      ],
+      "title": "UserSettings",
+      "type": "object"
+    },
+    "UserSettingsUpdate": {
+      "additionalProperties": false,
+      "properties": {
+        "default_budget": {
+          "$ref": "#/$defs/BudgetLimits"
+        },
+        "default_research_mode": {
+          "$ref": "#/$defs/ResearchMode"
+        },
+        "language_scope": {
+          "items": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "\\S",
+            "type": "string"
+          },
+          "maxItems": 4,
+          "minItems": 1,
+          "title": "Language Scope",
+          "type": "array"
+        }
+      },
+      "required": [
+        "default_research_mode",
+        "language_scope",
+        "default_budget"
+      ],
+      "title": "UserSettingsUpdate",
+      "type": "object"
+    },
     "ValidationStatus": {
       "enum": [
         "pending",
@@ -7549,11 +7929,26 @@
     "Claim": {
       "$ref": "#/$defs/Claim"
     },
+    "DashboardResearch": {
+      "$ref": "#/$defs/DashboardResearch"
+    },
+    "DashboardSummary": {
+      "$ref": "#/$defs/DashboardSummary"
+    },
     "DecisionReport": {
       "$ref": "#/$defs/DecisionReport"
     },
+    "DecisionReportPage": {
+      "$ref": "#/$defs/DecisionReportPage"
+    },
     "EvidenceBundle": {
       "$ref": "#/$defs/EvidenceBundle"
+    },
+    "GapApprovalCreate": {
+      "$ref": "#/$defs/GapApprovalCreate"
+    },
+    "GapApprovalReceipt": {
+      "$ref": "#/$defs/GapApprovalReceipt"
     },
     "HumanBriefConfirm": {
       "$ref": "#/$defs/HumanBriefConfirm"
@@ -7627,6 +8022,9 @@
     "ResearchCreate": {
       "$ref": "#/$defs/ResearchCreate"
     },
+    "ResearchGapPage": {
+      "$ref": "#/$defs/ResearchGapPage"
+    },
     "ResearchGapRequest": {
       "$ref": "#/$defs/ResearchGapRequest"
     },
@@ -7647,6 +8045,9 @@
     },
     "ResearchRun": {
       "$ref": "#/$defs/ResearchRun"
+    },
+    "ResearchStartCreate": {
+      "$ref": "#/$defs/ResearchStartCreate"
     },
     "RunPage": {
       "$ref": "#/$defs/RunPage"
@@ -7674,6 +8075,12 @@
     },
     "User": {
       "$ref": "#/$defs/User"
+    },
+    "UserSettings": {
+      "$ref": "#/$defs/UserSettings"
+    },
+    "UserSettingsUpdate": {
+      "$ref": "#/$defs/UserSettingsUpdate"
     },
     "Versions": {
       "$ref": "#/$defs/Versions"

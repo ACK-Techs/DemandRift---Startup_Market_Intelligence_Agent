@@ -1626,7 +1626,73 @@ class PlanMutationReceipt(Phase1Contract):
         return self
 
 
+class ResearchStartCreate(Phase1Contract):
+    expected_plan_id: UUID
+    expected_plan_version: Phase1Version
+    expected_plan_fingerprint: Hash
+    expected_brief_id: UUID
+    expected_brief_version: Phase1Version
+
+
+class DecisionReportPage(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: Annotated[list[DecisionReport], Field(max_length=100)]
+    page: PageInfo
+
+
+class ResearchGapPage(Contract):
+    schema_version: Literal["1.0.0"] = SCHEMA_VERSION
+    items: Annotated[list[ResearchGapRequest], Field(max_length=100)]
+    page: PageInfo
+
+
 # Explicit export list prevents helpers/legacy preview schemas leaking into the wire catalog.
+class GapApprovalCreate(Contract):
+    expected_gap_version: Positive
+    expected_report_id: UUID
+    expected_report_version: Positive
+    confirmed: Literal[True]
+
+
+class GapApprovalReceipt(Contract):
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    gap: ResearchGapRequest
+    run: ResearchRun
+
+
+class UserSettingsUpdate(Contract):
+    default_research_mode: ResearchMode
+    language_scope: Annotated[list[Name], Field(min_length=1, max_length=4)]
+    default_budget: BudgetLimits
+
+
+class UserSettings(UserSettingsUpdate):
+    user_id: UUID
+    updated_at: AwareDatetime | None
+
+
+class DashboardResearch(Contract):
+    project_id: UUID
+    project_name: Text
+    research_id: UUID
+    original_idea: Text
+    status: Text
+    outcome: Outcome | None
+    updated_at: AwareDatetime
+
+
+class DashboardSummary(Contract):
+    user_id: UUID
+    active_projects: Count
+    research_count: Count
+    run_status_counts: dict[Name, Count]
+    outcome_counts: dict[Name, Count]
+    recent: Annotated[list[DashboardResearch], Field(max_length=20)]
+    checked_at: AwareDatetime
+
+
 WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefContent, IdeaBrief,
                SourcePlanItem, QueryPlanItem, ResearchPlan, SourceCounts, QueryExecution,
                RawArtifact, TextSegment, NormalizedDocument, Claim, Citation, SourceReport,
@@ -1635,4 +1701,4 @@ WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefCo
                ResearchCreate, HumanBriefPatch, BriefReference, ResearchPreparation, ResearchPreparationPage,
                BriefPage, PreparationMutationReceipt, HumanBriefConfirm, PreparationAnalysisCreate, PreparationAnalysis,
                PreparationAnalysisOperation, PreparationAnalysisPage, PlanDraftCreate, HumanPlanPatch, PlanApprovalCreate,
-               PlanReference, ResearchPlanPage, ResearchPlanPreparation, PlanMutationReceipt)
+               PlanReference, ResearchPlanPage, ResearchPlanPreparation, PlanMutationReceipt, ResearchStartCreate, DecisionReportPage, ResearchGapPage, GapApprovalCreate, GapApprovalReceipt, UserSettingsUpdate, UserSettings, DashboardResearch, DashboardSummary)

@@ -15,7 +15,7 @@ from app.source_qualification import load_current_qualification
 from app.source_plan_compiler import compile_draft_plan, compile_revised_plan
 from app.job_budget_contract import AdmissionContext
 from app.receipt_spool import ReceiptSpool
-from app.research_runtime import model_runtime, current_usage, validate_budget, suite_id, spool_root, AUTHORIZED_LIMITS
+from app.research_runtime import model_runtime, current_usage, validate_budget, suite_id, spool_root, AUTHORIZED_LIMITS, ledger
 
 router = APIRouter(prefix="/api/v1/projects/{project_id}", tags=["phase1"])
 
@@ -66,7 +66,14 @@ def analyze(project_id: UUID, research_id: UUID, body: c.PreparationAnalysisCrea
                 attempt_id=operation.attempt_id, **arguments))
             if result.status in ("unknown", "replay", "disabled"):
                 return repository.read_analysis_operation(operation.operation, key)
-            usage = current_usage(repository.database, auth.user.user_id, project_id, research_id)
+            from app.db import budget_models
+            from app.budget_contract import ResourceAmount
+            from sqlalchemy import select
+            with repository.database.transaction(auth.user.user_id) as session:
+                actual = session.scalar(select(budget_models.attempts.c.actual).where(budget_models.attempts.c.attempt_id == operation.attempt_id))
+            amount = ResourceAmount.from_json(actual)
+            usage = c.Usage(requests=amount.requests, bytes=amount.bytes, pages=amount.pages, records=amount.records,
+                input_tokens=amount.tokens, cost_usd=amount.cost_usd)
             analysis = None
             if result.value is not None and result.output_status == "valid":
                 analysis = c.PreparationAnalysis(user_id=auth.user.user_id, project_id=project_id,
@@ -104,6 +111,8 @@ def draft(project_id: UUID, research_id: UUID, body: c.PlanDraftCreate,
     repository = repo(request, auth, project_id)
     def build():
         validate_budget(body.budget)
+        from app.budget_contract import BudgetCapacity
+        ledger(repository.database, auth.user.user_id, project_id, research_id).create_account(BudgetCapacity.from_wire(body.budget))
         brief = repository.latest_brief(research_id)
         analysis = repository.get_analysis(research_id, body.analysis_id) if body.analysis_id else None
         now = datetime.now(timezone.utc)
