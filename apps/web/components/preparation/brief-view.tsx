@@ -40,6 +40,16 @@ export function BriefView({ projectId, researchId }: { projectId: string; resear
   const { account, store, state, ownerReady, selectionReady } = usePreparationStore(projectId, researchId);
   const revisions = useBriefRevisionResource(projectId, researchId);
   useEffect(() => {
+    const refresh = (event: Event) => {
+      const detail = (event as CustomEvent<{ projectId: string; researchId: string }>).detail;
+      if (detail?.projectId === projectId && detail.researchId === researchId && selectionReady) {
+        void store.getSummary(); void store.getLatestBrief(); void store.loadHistory();
+      }
+    };
+    window.addEventListener("demandrift:brief-changed", refresh);
+    return () => window.removeEventListener("demandrift:brief-changed", refresh);
+  }, [projectId, researchId, selectionReady, store]);
+  useEffect(() => {
     revisions.select(projectId, researchId);
     revisions.observeLatest(selectionReady && state.brief.status === "ready" && state.brief.selection?.kind === "latest" ? state.brief.data : null);
   }, [revisions, projectId, researchId, selectionReady, state.brief.status, state.brief.selection, state.brief.data]);

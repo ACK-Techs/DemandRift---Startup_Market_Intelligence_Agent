@@ -1,5 +1,3 @@
-import { BackendUnavailable } from "@/components/workspace/backend-unavailable";
+import { ResearchSelection } from "@/components/research/research-selection";
 
-export function PainPointsBoard() {
-  return <BackendUnavailable title="Problem evidence unavailable" description="Problem findings have not been loaded. Document counts, independent examples and contrary findings require a validated evidence bundle." />;
-}
+export function PainPointsBoard() { return <ResearchSelection view="problems" />; }

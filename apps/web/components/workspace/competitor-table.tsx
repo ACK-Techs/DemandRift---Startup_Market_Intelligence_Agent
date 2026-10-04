@@ -1,5 +1,3 @@
-import { BackendUnavailable } from "@/components/workspace/backend-unavailable";
+import { ResearchSelection } from "@/components/research/research-selection";
 
-export function CompetitorTable() {
-  return <BackendUnavailable title="Competitor evidence unavailable" description="Competitor claims and pricing have not been loaded. Official product claims and customer experiences are shown separately when source citations are available." />;
-}
+export function CompetitorTable() { return <ResearchSelection view="competitors" />; }

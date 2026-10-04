@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useId, useRef, useSyncExternalStore } from "react";
+import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { useSession, usePreparationMutationResource } from "@/components/auth/session-provider";
+import { createApiClient } from "@/lib/api/client";
 import { validateResearchCreate } from "@/lib/preparation/preparation-mutation-store";
 
 const button = "min-h-11 rounded-lg border border-[var(--line)] px-4 py-2 text-sm font-semibold text-[var(--brand-deep)] focus-visible:outline-2 focus-visible:outline-[var(--brand)] disabled:opacity-50";
@@ -14,6 +15,7 @@ export function CreateResearch({ projectId, onCreated }: { projectId: string; on
   const state = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getServerSnapshot);
   const id = useId(), statusRef = useRef<HTMLParagraphElement>(null), ideaRef = useRef<HTMLTextAreaElement>(null);
   const previousStatus = useRef(state.status);
+  const [preferenceMessage, setPreferenceMessage] = useState<string | null>(null);
   useEffect(() => {
     store.select(projectId);
   }, [projectId, store]);
@@ -46,6 +48,15 @@ export function CreateResearch({ projectId, onCreated }: { projectId: string; on
         <input type="checkbox" checked={optionalLanguages} disabled={locked} className="h-4 w-4" onChange={event => store.setInput({ original_idea: state.input.original_idea,
           ...(event.target.checked ? { language_scope: [] } : {}) })} />Specify languages (optional)
       </label>
+      <button className={`${button} mt-3`} disabled={locked} type="button" onClick={() => {
+        const selected = account.session;
+        if (!selected) return;
+        void createApiClient().request("UserSettings", "/api/v1/settings", { scope: { user_id: selected.user.user_id } }).then(result => {
+          if (!store.matchesSession(selected) || store.getSnapshot().projectId !== projectId || store.getSnapshot().status !== "idle") return;
+          if (result.ok) { store.setInput({ ...store.getSnapshot().input, language_scope: result.data.language_scope }); setPreferenceMessage("Saved language preferences applied to this draft."); }
+          else setPreferenceMessage(result.message);
+        });
+      }}>Use saved language preferences</button>{preferenceMessage ? <p role="status" className="mt-2 text-xs">{preferenceMessage}</p> : null}
       {optionalLanguages ? <div className="mt-2"><label className="text-sm font-semibold text-[var(--ink)]" htmlFor={`${id}-languages`}>Languages, one per line</label>
         <textarea id={`${id}-languages`} rows={3} className={field} disabled={locked} value={state.input.language_scope!.join("\n")}
           aria-describedby={`${id}-languages-help`} onChange={event => store.setInput({ ...state.input, language_scope: event.target.value.split("\n") })} />

@@ -17,7 +17,7 @@ export type RequestOptions = {
   csrfToken?: string; idempotencyKey?: string; signal?: AbortSignal; timeoutMs?: number;
 };
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const maxResponseBytes = 2 * 1024 * 1024;
+const maxResponseBytes = 10 * 1024 * 1024;
 
 function failure<K extends ModelName>(category: FailureCategory, state: Extract<ApiResult<K>, { ok: false }>["operationState"],
   status: number | null = null, raw?: string, apiError?: WireModels["ApiError"]): Extract<ApiResult<K>, { ok: false }> {

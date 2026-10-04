@@ -34,6 +34,10 @@ export type WireModels = {
   ResearchPlanPage: Wire.ResearchPlanPage;
   ResearchPlanPreparation: Wire.ResearchPlanPreparation;
   PlanMutationReceipt: Wire.PlanMutationReceipt;
+  ResearchStartCreate: Wire.ResearchStartCreate; DecisionReportPage: Wire.DecisionReportPage;
+  ResearchGapPage: Wire.ResearchGapPage; GapApprovalCreate: Wire.GapApprovalCreate;
+  GapApprovalReceipt: Wire.GapApprovalReceipt; UserSettingsUpdate: Wire.UserSettingsUpdate;
+  UserSettings: Wire.UserSettings; DashboardResearch: Wire.DashboardResearch; DashboardSummary: Wire.DashboardSummary;
 };
 export type ModelName = keyof WireModels;
 type AssertNever<T extends never> = T;
@@ -48,7 +52,7 @@ export type Snapshot<K extends ModelName> =
 const ajv = new Ajv2020({ strict: true, coerceTypes: false, useDefaults: false,
   removeAdditional: false, allErrors: false });
 addFormats(ajv);
-const phase1Models = new Set<ModelName>(["HumanBriefConfirm","PreparationAnalysisCreate","PreparationAnalysis","PreparationAnalysisOperation","PreparationAnalysisPage","PlanDraftCreate","HumanPlanPatch","PlanApprovalCreate","PlanReference","ResearchPlanPage","ResearchPlanPreparation","PlanMutationReceipt"]);
+const phase1Models = new Set<ModelName>(["HumanBriefConfirm","PreparationAnalysisCreate","PreparationAnalysis","PreparationAnalysisOperation","PreparationAnalysisPage","PlanDraftCreate","HumanPlanPatch","PlanApprovalCreate","PlanReference","ResearchPlanPage","ResearchPlanPreparation","PlanMutationReceipt","ResearchStartCreate"]);
 const preparationModels = new Set<ModelName>(["ResearchCreate", "HumanBriefPatch", "BriefReference", "ResearchPreparation",
   "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt", "IdeaBrief", ...phase1Models]);
 // Rust regex uses Unicode White_Space: NEL is whitespace; BOM and C0 U001C–1F are not.
