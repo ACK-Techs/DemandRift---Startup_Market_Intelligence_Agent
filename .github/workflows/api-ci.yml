@@ -91,10 +91,12 @@ jobs:
           --tmpfs /tmp:rw,noexec,nosuid,size=64m --cap-drop ALL
           --security-opt no-new-privileges --memory 512m --cpus 1 --pids-limit 128
           --env DEMANDRIFT_SCENARIO_ROOT=/scenarios
+          --volume "$PWD/apps/api:/repo/apps/api:ro"
+          --volume "$PWD/faz-1-fikir-ve-arastirma/veri-laboratuvari:/repo/faz-1-fikir-ve-arastirma/veri-laboratuvari:ro"
           --volume "$PWD/faz-1-fikir-ve-arastirma/tests:/scenarios/faz-1-fikir-ve-arastirma/tests:ro"
           --volume "$PWD/faz-2-veri-toplama-ve-hazirlama/tests:/scenarios/faz-2-veri-toplama-ve-hazirlama/tests:ro"
           --volume "$PWD/faz-3-karar-ve-rapor/tests:/scenarios/faz-3-karar-ve-rapor/tests:ro"
-          demandrift-api:test python -m pytest -q -p no:cacheprovider -m 'not postgres' 
+          demandrift-api:test python -m pytest -q -p no:cacheprovider -m 'not postgres' /repo/apps/api/tests
       - name: Reject generated contract drift
         run: >-
           docker run --rm --network none --read-only --cap-drop ALL
