@@ -46,7 +46,7 @@ PLAN_BUDGET_GUARD = r"""
      RAISE EXCEPTION 'selected plan budget exhausted' USING ERRCODE='P0001';
     END IF;
    END LOOP;
-   IF a.active>=(limits->>'max_concurrency')::integer OR clock_timestamp()>=COALESCE(a.started_at,clock_timestamp())+make_interval(secs=>(limits->>'max_duration_seconds')::integer) THEN
+   IF a.active>(limits->>'max_concurrency')::integer OR clock_timestamp()>=COALESCE(a.started_at,clock_timestamp())+make_interval(secs=>(limits->>'max_duration_seconds')::integer) THEN
     RAISE EXCEPTION 'selected plan budget unavailable' USING ERRCODE='P0001';
    END IF;
    IF OLD.admission_kind IS NULL THEN
@@ -60,8 +60,8 @@ def upgrade():
     if not re.fullmatch(r'[a-z][a-z0-9_]{0,62}', role):
         raise RuntimeError('Invalid application role')
     quoted = op.get_bind().dialect.identifier_preparer.quote(role)
-    op.execute('CREATE TABLE public.user_settings(user_id uuid PRIMARY KEY REFERENCES public.users(user_id),payload jsonb NOT NULL,updated_at timestamptz NOT NULL DEFAULT now())')
-    op.execute('''CREATE TABLE public.research_gap_actions(user_id uuid NOT NULL,project_id uuid NOT NULL,research_id uuid NOT NULL,gap_id uuid NOT NULL,gap_version integer NOT NULL,request_key uuid NOT NULL,fingerprint text NOT NULL CHECK(fingerprint ~ '^[0-9a-f]{64}$'),cycle integer NOT NULL CHECK(cycle BETWEEN 0 AND 2),created_at timestamptz NOT NULL DEFAULT now(),PRIMARY KEY(user_id,project_id,research_id,gap_id),UNIQUE(user_id,project_id,request_key),FOREIGN KEY(user_id,project_id,research_id,gap_id,gap_version) REFERENCES public.research_gaps(user_id,project_id,research_id,gap_id,gap_version))''')
+    op.execute('CREATE TABLE public.user_settings(user_id uuid PRIMARY KEY REFERENCES public.users(user_id) ON DELETE RESTRICT,payload jsonb NOT NULL,updated_at timestamptz NOT NULL DEFAULT now())')
+    op.execute('''CREATE TABLE public.research_gap_actions(user_id uuid NOT NULL,project_id uuid NOT NULL,research_id uuid NOT NULL,gap_id uuid NOT NULL,gap_version integer NOT NULL,request_key uuid NOT NULL,fingerprint text NOT NULL CHECK(fingerprint ~ '^[0-9a-f]{64}$'),cycle integer NOT NULL CHECK(cycle BETWEEN 0 AND 2),created_at timestamptz NOT NULL DEFAULT now(),PRIMARY KEY(user_id,project_id,research_id,gap_id),UNIQUE(user_id,project_id,request_key),FOREIGN KEY(user_id,project_id,research_id,gap_id,gap_version) REFERENCES public.research_gaps(user_id,project_id,research_id,gap_id,gap_version) ON DELETE RESTRICT)''')
     for table in ('user_settings','research_gap_actions'):
         op.execute(f'ALTER TABLE public.{table} ENABLE ROW LEVEL SECURITY')
         op.execute(f'ALTER TABLE public.{table} FORCE ROW LEVEL SECURITY')
@@ -79,7 +79,7 @@ def upgrade():
     earlier=importlib.util.module_from_spec(earlier_spec)
     earlier_spec.loader.exec_module(earlier)
     dispatch_guard=earlier.GUARD.replace('CREATE FUNCTION','CREATE OR REPLACE FUNCTION',1)
-    dispatch_guard=dispatch_guard.replace('t timestamptz;', 't timestamptz; limits jsonb; k text; cap numeric;')
+    dispatch_guard=dispatch_guard.replace('t timestamptz;', 't timestamptz; limits jsonb; k text; cap numeric;',1)
     dispatch_guard=dispatch_guard.replace('  t:=clock_timestamp();', PLAN_BUDGET_GUARD+'\n  t:=clock_timestamp();')
     op.execute(DDL(dispatch_guard.replace('%','%%')))
     op.execute(DDL(guard.replace('%','%%')))
@@ -93,4 +93,4 @@ def upgrade():
     op.execute(f'GRANT EXECUTE ON FUNCTION public.demandrift_pending_wakes() TO {quoted}')
 
 def downgrade():
-    raise RuntimeError('Restore the validated pre-migration backup to reverse the runtime migration')
+    raise RuntimeError('Runtime migration is forward-only; restore the validated pre-migration backup to reverse it')

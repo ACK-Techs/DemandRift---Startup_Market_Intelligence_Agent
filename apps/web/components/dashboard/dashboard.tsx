@@ -19,7 +19,7 @@ export function Dashboard() {
     const controller = new AbortController();
     void client.request("DashboardSummary", "/api/v1/dashboard", { scope: { user_id: owner }, signal: controller.signal }).then(result => {
       if (controller.signal.aborted) return;
-      if (result.ok) { setSummary(result.data); setMessage(null); } else { if (result.category === "authentication") account.invalidateSession(); setMessage(result.apiError?.message ?? result.message); }
+      if (result.ok) { setSummary(result.data); setMessage(null); } else { if (result.category === "authentication") account.invalidateSession(account.session!.csrf_token, owner); setMessage(result.apiError?.message ?? result.message); }
     });
     return () => controller.abort();
   }, [owner, client, account.invalidateSession]);

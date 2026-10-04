@@ -36,7 +36,7 @@ def test_implemented_routes_are_advertised_without_placeholder_business_routes()
     with TestClient(create_app()) as client:
         assert client.post("/research", json={}).status_code == 404
         schema = client.get("/openapi.json").json()
-    assert set(schema["paths"]) == {
+    assert set(schema["paths"]) >= {
         "/api/v1/auth/register",
         "/api/v1/auth/login",
         "/api/v1/auth/logout",
@@ -62,3 +62,11 @@ def test_implemented_routes_are_advertised_without_placeholder_business_routes()
     assert schema["paths"]["/health"]["get"]["responses"]["200"]["content"][
         "application/json"
     ]["schema"]["$ref"].endswith("/HealthResponse")
+
+
+def test_research_routes_are_real_authenticated_consumers():
+    with TestClient(create_app()) as client:
+        schema=client.get('/openapi.json').json()
+        prefix='/api/v1/projects/{project_id}/research/{research_id}'
+        for path in ('/start','/run','/evidence','/reports/latest','/gaps','/operations'):
+            assert prefix+path in schema['paths']

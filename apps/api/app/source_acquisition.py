@@ -12,7 +12,7 @@ from app.budget_contract import ResourceAmount
 from app.db.job_budget_repository import JobBudgetRepository
 from app.job_budget_contract import AdmissionContext, AdmissionUnavailable
 from app.source_qualification import load_current_qualification
-from app.source_egress import ServerGrant, QueryRule, EgressLimits, SourcePolicy, _fetch_policy, _request_url, SourceEgressError, SourceHttpFailure
+from app.source_egress import ServerGrant, QueryRule, EgressLimits, SourcePolicy, _fetch_policy, _request_url, SourceEgressError, SourceHttpFailure, SourcePayloadTooLarge
 from app.source_registry import get_registry
 from app.research_runtime import ledger, suite_id, historical_context
 from app.raw_storage import RawStorage
@@ -30,9 +30,10 @@ class Capture:
 
 
 class AcquisitionFailure(RuntimeError):
-    def __init__(self, status, reason):
+    def __init__(self, status, reason, *, code=None):
         super().__init__(reason)
         self.status = status
+        self.code = code or status
 
 
 def _read_grants():
@@ -168,7 +169,7 @@ def acquire(context, plan, query, *, ordinal=0):
     admission = historical_context(repository.database, * (repository.user_id, repository.project_id, plan.research_id), attempt, admission)
     receipt = dispatcher.admit(admission, attempt_id=attempt, fingerprint=fingerprint, reserved=amount,
         metadata=dict(kind='source', operation_version='source-acquisition-v1', provider=query.source_id,
-            model='none', prompt_version='none', schema_version='1.0.0', pricing_version='no-fee'), model_timeout_ms=10000)
+            model='none', prompt_version='none', schema_version='1.0.0', pricing_version='no-fee'), model_timeout_ms=min(10000,query.limits.max_seconds*1000))
     account = ledger(repository.database, repository.user_id, repository.project_id, plan.research_id)
     storage = RawStorage(os.environ.get('ARTIFACT_ROOT', '/data/artifacts'))
     scope = (repository.user_id, repository.project_id, plan.research_id)
@@ -184,14 +185,14 @@ def acquire(context, plan, query, *, ordinal=0):
             output = captures(response, config, query) if content else []
             if receipt.state in ('dispatched', 'held_unknown'):
                 account.settle(attempt, ResourceAmount(requests=1, bytes=response.wire_bytes, pages=1, records=manifest['records']),
-                    {'receipt_version': 'source-capture-v1', 'response_sha256': response.content_sha256})
+                    {'usage_version': 'source-capture-v1', 'response_id': response.content_sha256, 'model_version': 'none'})
             return response, output
         except AcquisitionFailure:
             raise
         except Exception:
             raise AcquisitionFailure('source_unavailable', 'Historical acquisition lacks a durable complete capture; no repeated send.') from None
     try:
-        milliseconds=min(policy.grant.limits.overall_ms,receipt.remaining_ms)
+        milliseconds=min(policy.grant.limits.overall_ms,receipt.remaining_ms,query.limits.max_seconds*1000)
         limits=replace(policy.grant.limits,overall_ms=milliseconds,dns_ms=min(policy.grant.limits.dns_ms,milliseconds),connect_ms=min(policy.grant.limits.connect_ms,milliseconds),read_ms=min(policy.grant.limits.read_ms,milliseconds))
         response = _fetch_policy(replace(policy,grant=replace(policy.grant,limits=limits)), path=path, query=request_query)
         if not response.content:
@@ -212,7 +213,7 @@ def acquire(context, plan, query, *, ordinal=0):
             size=len(response.content), wire_bytes=response.wire_bytes, records=len(output or []), error='challenge' if response.content and challenge else None)
         storage.put(*scope, manifest_id, json.dumps(manifest, sort_keys=True).encode())
         account.settle(attempt, ResourceAmount(requests=1, bytes=response.wire_bytes, pages=1, records=len(output or [])),
-            {'receipt_version': 'source-capture-v1', 'response_sha256': response.content_sha256})
+            {'usage_version': 'source-capture-v1', 'response_id': response.content_sha256, 'model_version': 'none'})
         if manifest['error']:
             raise AcquisitionFailure('challenge','Source requires a browser challenge; no bypass is attempted.')
         if output is None:
@@ -222,10 +223,13 @@ def acquire(context, plan, query, *, ordinal=0):
         manifest = dict(error=error.status, wire_bytes=error.wire_bytes, records=0, size=0, digest=error.digest)
         storage.put(*scope, manifest_id, json.dumps(manifest, sort_keys=True).encode())
         account.settle(attempt, ResourceAmount(requests=1, bytes=error.wire_bytes, pages=1),
-            {'receipt_version':'source-capture-v1', 'response_sha256':error.digest})
+            {'usage_version': 'source-capture-v1', 'response_id': error.digest, 'model_version': 'none'})
         raise AcquisitionFailure(error.status, 'Source returned an unsuccessful response; measured usage is charged.') from None
     except AcquisitionFailure:
         raise
+    except SourcePayloadTooLarge:
+        account.mark_unknown(attempt)
+        raise AcquisitionFailure('failed','Source response exceeds the approved byte limit; no page continuation is permitted.',code='payload_too_large') from None
     except Exception:
         account.mark_unknown(attempt)
         raise AcquisitionFailure('source_unavailable', 'Source access failed; provider accounting is unresolved.') from None

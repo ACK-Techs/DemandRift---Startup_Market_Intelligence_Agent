@@ -39,8 +39,12 @@ export function ResearchWorkspace({ projectId, researchId, view = "all" }: { pro
   const analysis = workspace.analyses.data?.items.filter(item => item.analysis_kind === "brief" && brief && item.input_brief_id === brief.brief_id && item.input_brief_version === brief.brief_version).at(-1);
   const planAnalysis = workspace.analyses.data?.items.filter(item => item.analysis_kind === "plan" && brief && item.input_brief_id === brief.brief_id && item.input_brief_version === brief.brief_version).at(-1);
   const locked = workspace.busy || workspace.pending !== null;
-  useEffect(() => { setAccepted([]); setCategory("current"); setContinueUnknown(false); }, [brief?.brief_id, brief?.brief_version, analysis?.analysis_id]);
-  useEffect(() => { setConfirmedQueries([]); setAcknowledged([]); setExcludedSources([]); setExcludedQueries([]); setQueryEdits({}); setIntentEdits({}); if (plan) { setBudget(plan.budget); setMode(plan.research_mode); } }, [plan?.research_plan_id, plan?.plan_version]);
+  const briefFormVersion = `${brief?.brief_id}:${brief?.brief_version}:${analysis?.analysis_id}`;
+  const [briefFormSelection, setBriefFormSelection] = useState(briefFormVersion);
+  if (briefFormSelection !== briefFormVersion) { setBriefFormSelection(briefFormVersion); setAccepted([]); setCategory("current"); setContinueUnknown(false); }
+  const planFormVersion = `${plan?.research_plan_id}:${plan?.plan_version}`;
+  const [planFormSelection,setPlanFormSelection] = useState(planFormVersion);
+  if (planFormSelection !== planFormVersion) { setPlanFormSelection(planFormVersion); setConfirmedQueries([]); setAcknowledged([]); setExcludedSources([]); setExcludedQueries([]); setQueryEdits({}); setIntentEdits({}); if (plan) { setBudget(plan.budget); setMode(plan.research_mode); } }
   useEffect(() => { if (!account.session || plan) return; void workspace.request("UserSettings", "/api/v1/settings").then(result => { if (result?.ok) { setBudget(result.data.default_budget); setMode(result.data.default_research_mode); } }); }, [account.session?.user.user_id, plan, workspace.request]);
   const toggle = (values: string[], value: string, enabled: boolean) => enabled ? [...new Set([...values, value])] : values.filter(item => item !== value);
   const expectedBrief = brief ? { expected_brief_id: brief.brief_id, expected_brief_version: brief.brief_version } : null;

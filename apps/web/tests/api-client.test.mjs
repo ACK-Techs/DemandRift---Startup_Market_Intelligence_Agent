@@ -17,13 +17,13 @@ const error = (code = "rate_limited") => ({ schema_version: "1.0.0", code, messa
   request_id: other, operation: "request", stage: null, query_id: null, details_ref: null, source_id: null,
   retryable: true, retry_after_seconds: 2, usage: null, remaining_work: [], next_step: null });
 
-test("the accepted fifty-one-model producer catalog includes exactly the typed Phase 1 exports and compiles", () => {
+test("the canonical producer catalog includes all typed research and operations consumers", () => {
   const expected = ["ApiError", "BudgetLimits", "Usage", "Versions", "ProvenanceField", "BriefContent", "IdeaBrief",
     "SourcePlanItem", "QueryPlanItem", "ResearchPlan", "SourceCounts", "QueryExecution", "RawArtifact", "TextSegment",
     "NormalizedDocument", "Claim", "Citation", "SourceReport", "EvidenceBundle", "SufficiencyAssessment", "ResearchGapRequest",
     "ReportStatement", "DecisionReport", "ResearchRun", "User", "Session", "AuthCredentials", "ProjectCreate", "Project",
     "PageInfo", "ProjectPage", "RunPage", "ResearchCreate", "HumanBriefPatch", "BriefReference", "ResearchPreparation",
-    "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt", "HumanBriefConfirm","PreparationAnalysisCreate","PreparationAnalysis","PreparationAnalysisOperation","PreparationAnalysisPage","PlanDraftCreate","HumanPlanPatch","PlanApprovalCreate","PlanReference","ResearchPlanPage","ResearchPlanPreparation","PlanMutationReceipt"];
+    "ResearchPreparationPage", "BriefPage", "PreparationMutationReceipt", "HumanBriefConfirm","PreparationAnalysisCreate","PreparationAnalysis","PreparationAnalysisOperation","PreparationAnalysisPage","PlanDraftCreate","HumanPlanPatch","PlanApprovalCreate","PlanReference","ResearchPlanPage","ResearchPlanPreparation","PlanMutationReceipt", "ResearchStartCreate", "DecisionReportPage", "ResearchGapPage", "GapApprovalCreate", "GapApprovalReceipt", "UserSettingsUpdate", "UserSettings", "DashboardResearch", "DashboardSummary", "ResearchOperations"];
   assert.deepEqual(Object.keys(schema.models).sort(), expected.sort());
   for (const model of Object.keys(schema.models)) {
     const result = parseWire(model, "{}");
@@ -392,7 +392,7 @@ test("timeouts, mutation network/500 failures and aborts never retry or imply no
 
 test("response byte cap cancels oversized streams and rejects before JSON validation", async () => {
   let cancelled = false;
-  const body = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(2 * 1024 * 1024 + 1)); }, cancel() { cancelled = true; } });
+  const body = new ReadableStream({ start(controller) { controller.enqueue(new Uint8Array(10 * 1024 * 1024 + 1)); }, cancel() { cancelled = true; } });
   const result = await createApiClient(async () => new Response(body, { headers: { "Content-Type": "application/json" } })).request("User", "/api/v1/auth/me");
   assert.equal(result.category, "contract"); assert.equal(cancelled, true);
 });

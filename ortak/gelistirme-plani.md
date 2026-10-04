@@ -23,8 +23,8 @@ Bu yeniden planlama sırasında ürün geliştirmesi veya test başlatılmadı. 
 | 4 | Kaynak edinme, ham kayıt, normalizasyon/dedup, ilgililik, claim/citation ve EvidenceBundle; kaynak/kanıt ekranları | BE-08–12, BE-15B, FE-07/08 | Kod ve frontend bağlantıları tamamlandı; final doğrulaması bekliyor |
 | 5 | Yeterlilik, dört outcome, rapor/gap/sürüm/export; dashboard/ayar ve tüm ekran durumları | BE-13/14, BE-15C/16B, FE-09–12 | Kod ve frontend bağlantıları tamamlandı; final doğrulaması bekliyor |
 | 6 | Hetzner Compose/secret/migration/yedek/rollback/route ve işletim talimatını hazırla | OP-02–05 | Kalıcı izin/bütçe, toparlanma, log/metric ve DB+raw yedek/restore kodlandı; yayın ve kontrol finalde |
-| 7 | Bütün ürün için test/kontrol, hata düzeltme ve son suite | QA-01–08; 30+24+33=87 senaryo | Ürün işlevleri bitene kadar çalıştırılmaz |
-| 8 | Final Hetzner yayını ve gerçek local FE akışı; kısa teslim özeti | OP-06 | Final offline suite sonrası |
+| 7 | Bütün ürün için test/kontrol, hata düzeltme ve son suite | QA-01–08; 30+24+33=87 senaryo | Final başladı: 87 girdi için offline davranış/sınır ve 10 runtime regresyonu geçti; son tam paket sürüyor. Canlı model semantiği ve 71 eksik pilot artifact doğrulanmadı |
+| 8 | Final Hetzner yayını ve gerçek local FE akışı; kısa teslim özeti | OP-06 | Exact main CI ve Hetzner işletim/FE akışı sırada; mevcut kalıcı bütçe suite’i ve incelenmiş kaynak izinleri bulunamadı |
 
 BE-01/02 ve FE-01/02 gibi geçmiş tamamlanmış paketleri tekrar planlama. BE-15/16 alt kimlikleri uygulama sırasını anlatır; ayrı kontrol veya kabul işleri değildir. Backend dilimi uygulanınca ilgili frontend'i bağla; ürünün responsive/klavye/hata durumlarını uygularken düşün, browser testi finalde yapılır.
 

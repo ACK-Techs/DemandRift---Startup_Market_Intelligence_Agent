@@ -25,7 +25,8 @@ export function useResearchWorkspace(projectId: string, researchId: string) {
   const [notice, setNotice] = useState<string | null>(null);
   const [pending, setPending] = useState<Pending | null>(null);
   const generation = useRef(0), busyRef = useRef(false);
-  const sessionRef = useRef(session); sessionRef.current = session;
+  const sessionRef = useRef(session);
+  useEffect(() => { sessionRef.current = session; }, [session]);
   const controllers = useRef(new Set<AbortController>());
   const base = `/api/v1/projects/${projectId}/research/${researchId}`;
   const scope = { user_id: session?.user.user_id, project_id: projectId, research_id: researchId };
@@ -34,7 +35,7 @@ export function useResearchWorkspace(projectId: string, researchId: string) {
     generation.current += 1;
     const active = controllers.current;
     if (storageKey) {
-      try { const saved = sessionStorage.getItem(storageKey); if (saved) { const value = JSON.parse(saved) as Pending; if (value.path.startsWith(base + "/") && typeof value.key === "string") setPending(value); } } catch { /* Unavailable local recovery storage. */ }
+      try { const saved = sessionStorage.getItem(storageKey); if (saved) { const value = JSON.parse(saved) as Pending; if (value.path.startsWith(base + "/") && typeof value.key === "string") queueMicrotask(() => setPending(value)); } } catch { /* Unavailable local recovery storage. */ }
     }
     return () => { generation.current += 1; for (const controller of active) controller.abort(); active.clear(); };
   }, [base, storageKey]);
@@ -46,7 +47,7 @@ export function useResearchWorkspace(projectId: string, researchId: string) {
     const result = await client.request(model, path, { ...options, scope: { user_id: selected.user.user_id, project_id: projectId, research_id: researchId }, csrfToken: selected.csrf_token, signal: controller.signal });
     controllers.current.delete(controller);
     if (epoch !== generation.current || sessionRef.current?.user.user_id !== selected.user.user_id) return null;
-    if (!result.ok && result.category === "authentication") account.invalidateSession();
+    if (!result.ok && result.category === "authentication") account.invalidateSession(selected.csrf_token, selected.user.user_id);
     return result;
   }, [client, projectId, researchId, account.invalidateSession]);
   const read = useCallback(async <K extends ModelName>(model: K, path: string, setter: (value: Read<K>) => void, quiet = false) => {

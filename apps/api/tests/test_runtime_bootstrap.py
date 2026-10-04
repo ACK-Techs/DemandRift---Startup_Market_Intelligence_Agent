@@ -236,9 +236,15 @@ def test_restricted_account_cannot_bootstrap_roles(postgres_database):
     postgres_database["app"].assert_application_role()
 
 
+@pytest.fixture
+def bootstrap_history_database(monkeypatch):
+    from native_phase1_fixture import historical_database
+    yield from historical_database(monkeypatch, head="20261001_0001")
+
+
 @pytest.mark.postgres
-def test_new_role_precedes_first_migration_and_cannot_administer_afterwards(postgres_database, monkeypatch):
-    db = postgres_database
+def test_new_role_precedes_first_migration_and_cannot_administer_afterwards(bootstrap_history_database, monkeypatch):
+    db = bootstrap_history_database
     role = "demandrift_bootstrap_" + uuid4().hex[:12]
     password = "bootstrap-fixture-'quote-$-\\-123456789"
     quote = db["admin"].engine.dialect.identifier_preparer.quote

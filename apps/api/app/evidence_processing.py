@@ -76,11 +76,16 @@ def normalize(artifact, text, *, fields=None, previous=()):
     flags = []
     if identity is None: flags.append('identity_unknown')
     if ownership is None: flags.append('ownership_unknown')
-    if artifact.published_at is None: flags.append('publication_date_unknown')
+    if artifact.published_at is None: flags.extend(['publication_date_unknown','missing_published_date'])
     if artifact.artifact_origin == 'archive_copy': flags.append('archive_evidence')
+    from urllib.parse import urlsplit,urlunsplit,parse_qsl,urlencode
+    original=urlsplit(str(artifact.source_url))
+    parameters=[(key,value) for key,value in parse_qsl(original.query,keep_blank_values=True)
+        if not key.casefold().startswith('utm_') and key.casefold() not in ('gclid','fbclid','msclkid')]
+    canonical=urlunsplit((original.scheme,original.netloc,original.path,urlencode(parameters),''))
     return c.NormalizedDocument(**base, document_id=document_id, artifact_id=artifact.artifact_id,
         external_id=fields.get('external_id'), document_type=fields.get('document_type', 'other'),
-        title=fields.get('title'), body_original_ref=artifact.body_ref, canonical_url=artifact.source_url,
+        title=fields.get('title'), body_original_ref=artifact.body_ref, canonical_url=canonical,
         author_reference=fields.get('author_reference'), collected_at=artifact.collected_at,
         document_version=1, status='normalized', normalized_text=value, normalized_content_hash=digest,
         normalization_version=NORMALIZER, language=language, published_at=artifact.published_at,
@@ -138,6 +143,8 @@ def validate_citation(citation, document, artifact, claim=None):
 
 
 def bind_claims(draft, document, artifact, query, plan):
+    if artifact.content_kind != "fetched_content" or artifact.status != "succeeded":
+        return [], []
     claims, citations = [], []
     for index, item in enumerate(draft.claims):
         segment = next((s for s in document.segments if str(s.segment_id) == item.segment_id), None)
@@ -165,7 +172,7 @@ def bind_claims(draft, document, artifact, query, plan):
         if market_match is True and market:
             tokens=set(re.findall(r'[\w]{3,}', market.casefold()))
             observed=set(re.findall(r'[\w]{3,}', ((supplied_market or '')+' '+document.normalized_text).casefold()))
-            if not tokens or not tokens.issubset(observed):
+            if (supplied_market or '').strip().casefold()!=market.strip().casefold() and (not tokens or not tokens.issubset(observed)):
                 market_match=None
                 item=item.model_copy(update={'limitations':[*item.limitations,'Market match lacks a backend supplied geographic/segment reference.']})
         if document.document_type == 'official_page' and item.evidence_type in (c.EvidenceType.DIRECT_EXPERIENCE, c.EvidenceType.OBSERVED_USAGE):
@@ -174,7 +181,7 @@ def bind_claims(draft, document, artifact, query, plan):
             item = item.model_copy(update={'limitations':[*item.limitations, 'Archived content cannot establish current live conditions.']})
         claim = c.Claim(**base, claim_id=claim_id, claim_version=1, claim_type=item.claim_type,
             intent_ids=[query.intent_id], independence_group_ids=[group_id], thesis=query.question,
-            statement=item.statement, direction=item.direction, evidence_type=item.evidence_type,
+            statement=item.quote, direction=item.direction, evidence_type=item.evidence_type,
             citation_ids=[citation_id], validation_status='validated', relevant=item.relevant,
             market_match=market_match, independent_identity_key=identity, ownership_key=ownership,
             limitations=item.limitations)

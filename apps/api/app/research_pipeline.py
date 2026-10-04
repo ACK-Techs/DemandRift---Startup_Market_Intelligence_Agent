@@ -16,6 +16,19 @@ from app.job_budget_contract import AdmissionContext
 from app.research_service import ResearchService
 
 
+def ordered_queries(plan):
+    """Spend on independent voices and contrary searches before promotion.
+
+    Execute only exact approved queries. Volume of one publisher cannot give it
+    priority over a smaller user source while the shared budget is finite.
+    """
+    profiles={source.source_id:source for source in plan.source_plan}
+    return sorted(plan.query_plan,key=lambda query:(
+        profiles[query.source_id].family==c.SourceFamily.OFFICIAL_WEB,
+        query.intent!=c.SearchIntent.COUNTER_EVIDENCE,
+        query.priority,str(query.query_id)))
+
+
 def _all(repository, research, kind):
     values, cursor = [], None
     while True:
@@ -108,7 +121,9 @@ def pipeline(context):
             payload.update(report_id=str(result_report.report_id), finished_at=datetime.now(timezone.utc).isoformat())
         run = c.ResearchRun.model_validate(payload)
         with repository.transaction(research) as writer:
-            pins = repository.selections(research,'run',research)['record']
+            current=repository._get(writer.session,research,'run',research)
+            if current.cancel_requested: return False
+            pins = repository._row(writer.session,research,'run',research)
             writer.put_run(run, bundle_version=result_bundle.bundle_version if result_bundle else pins['bundle_version'],
                 report_version=result_report.report_version if result_report else pins['report_version'])
         from app.runtime_observability import record
@@ -116,7 +131,7 @@ def pipeline(context):
             job_id=context.job.job_id, stage=run.phase.value, status=state, requests=run.usage.requests,
             bytes=run.usage.bytes, tokens=run.usage.input_tokens+run.usage.output_tokens, cost_usd=run.usage.cost_usd)
         return True
-    for query in plan.query_plan:
+    for query in ordered_queries(plan):
         if query.query_id in completed:
             continue
         if not persist('acquiring'):
@@ -126,7 +141,7 @@ def pipeline(context):
         execution.status = c.SourceStatus.RUNNING
         execution.started_at = datetime.now(timezone.utc)
         try:
-            for retry in range(min(2, query.limits.max_requests)):
+            for retry in range(min(2, query.limits.max_requests, query.limits.max_retries+1)):
                 try:
                     response, captured = acquire(context, plan, query,ordinal=cycle*3+retry)
                     break
@@ -134,7 +149,7 @@ def pipeline(context):
                     if error.status=='no_results':
                         response,captured=None,[]
                         break
-                    if retry+1>=min(2,query.limits.max_requests) or error.status not in ('rate_limited','source_unavailable'):
+                    if retry+1>=min(2,query.limits.max_requests,query.limits.max_retries+1) or error.status not in ('rate_limited','source_unavailable'):
                         raise
                     __import__('time').sleep(2)
             execution.counts.discovered = len(captured)
@@ -173,6 +188,7 @@ def pipeline(context):
                 execution.counts.normalized += 1
             if not persist('analyzing'):
                 return None
+            execution=next(item for item in reversed(run.source_executions) if item.query_id==query.query_id)
             selected_documents = [item for item in retained if not item.exact_duplicate_of and not item.near_duplicate_of]
             for document in selected_documents:
                 if any(citation.document_id == document.document_id and citation.source_id == query.source_id for citation in citations):
@@ -216,7 +232,7 @@ def pipeline(context):
             execution.counts.independent = len({item.independent_identity_key for item in selected_documents if item.independent_identity_key and item.ownership_key})
         except (AcquisitionFailure, ValueError, OSError, RuntimeError) as error:
             execution.status = c.SourceStatus(error.status) if isinstance(error, AcquisitionFailure) else c.SourceStatus.SOURCE_UNAVAILABLE
-            execution.error = c.ApiError(code=execution.status.value, message=str(error) if isinstance(error, AcquisitionFailure) else 'Source processing did not complete.',
+            execution.error = c.ApiError(code=error.code if isinstance(error, AcquisitionFailure) else execution.status.value, message=str(error) if isinstance(error, AcquisitionFailure) else 'Source processing did not complete.',
                 request_id=uuid5(execution.execution_id, 'error'), source_id=query.source_id, query_id=query.query_id, stage='evidence')
         execution.finished_at = datetime.now(timezone.utc)
         after_usage = current_usage(repository.database,plan.user_id,plan.project_id,research)
@@ -225,6 +241,7 @@ def pipeline(context):
             input_tokens=max(0,after_usage.input_tokens-before_usage.input_tokens),duration_seconds=(execution.finished_at-execution.started_at).total_seconds(),
             cost_usd=format(__import__('decimal').Decimal(after_usage.cost_usd)-__import__('decimal').Decimal(before_usage.cost_usd),'.6f'),
             provider_result_unknown=after_usage.provider_result_unknown,reserved_cost_usd=after_usage.reserved_cost_usd)
+        run.usage=after_usage
         source_claims = [claim for claim in claims if query.intent_id in claim.intent_ids and any(citation.source_id == query.source_id and citation.citation_id in claim.citation_ids for citation in citations)]
         source_citations = [citation for citation in citations if citation.source_id == query.source_id and any(citation.citation_id in claim.citation_ids for claim in source_claims)]
         execution.counts.claims = len(source_claims)
@@ -238,7 +255,7 @@ def pipeline(context):
             known_unknowns=[execution.error.message] if execution.error else [], limitations=[], usage=execution.usage,
             errors=[execution.error] if execution.error else [])
         with repository.transaction(research) as writer:
-            pins=repository.selections(research,'run',research)['record']
+            pins=repository._row(writer.session,research,'run',research)
             writer.put_run(run,bundle_version=pins['bundle_version'],report_version=pins['report_version'])
             writer.put_source_report(source_report, claim_versions={item.claim_id: item.claim_version for item in source_claims})
         reports.append(source_report)
@@ -277,7 +294,7 @@ def pipeline(context):
         report=repository.get(research,'report',report_id,cycle+1)
     except RecordNotFound:
         try:
-            report,gaps=synthesize(context,plan,bundle,previous=previous,cycle=cycle)
+            report,gaps=synthesize(context,plan,bundle,previous=previous,cycle=cycle,previous_bundle=previous_bundle)
         except (ReportSynthesisFailure,ValueError,RuntimeError) as error:
             usage=current_usage(repository.database,plan.user_id,plan.project_id,research)
             if usage.provider_result_unknown:

@@ -159,7 +159,7 @@ class Release:
             data = json.loads(runtime.read_text())
             if (type(data) is not dict or set(data) != {'revision', 'schema', 'backup'}
                     or type(data['revision']) is not str or not SHA.fullmatch(data['revision'])
-                    or data['schema'] not in (PREVIOUS_SCHEMA, SCHEMA)
+                    or data['schema'] not in ('20261002_0008', PREVIOUS_SCHEMA, SCHEMA)
                     or type(data['backup']) is not str):
                 raise ReleaseError('Invalid previous runtime state')
             return data['revision'], False
@@ -296,6 +296,43 @@ class Release:
     def migrate(self, revision):
         self.compose(revision, '--profile', 'operations', 'run', '--rm', '--no-deps', 'migrate')
 
+    def restore_database(self, backup, expected_schema):
+        """Validate in a new DB, then swap names; retain the failed DB intact.
+
+        API/worker are already stopped. This restores the quiesced pre-migration
+        snapshot without dropping the current DB or touching another application.
+        """
+        from runtime_restore import checked_archive
+        from uuid import uuid4
+        if not re.fullmatch(r'[A-Za-z0-9._-]+\.pgdump', backup):
+            raise ReleaseError('Managed database backup required')
+        manifest=self.base/'backups'/Path(backup).with_suffix('.json').name
+        private_file(manifest)
+        if manifest.stat().st_size>4096: raise ReleaseError('Bounded backup manifest required')
+        data=json.loads(manifest.read_text())
+        archive=checked_archive(manifest.parent,{key:data[key] for key in ('archive','sha256','bytes')})
+        if archive.name!=backup: raise ReleaseError('Database backup selection differs')
+        restored='demandrift_rollback_'+uuid4().hex
+        retained='demandrift_retained_'+uuid4().hex
+        prefix=['docker','compose','-p','demandrift-api','-f',str(self.base/'runtime.compose.yml'),'exec','-T','postgres','sh','-eu','-c']
+        env=dict(COMMAND_ENVIRONMENT,APP_REVISION=self.sha)
+        setup='IFS= read -r PGPASSWORD < /run/secrets/postgres-password || [ -n "$PGPASSWORD" ]; export PGPASSWORD; '
+        self.command([*prefix,setup+f'exec createdb -U demandrift_admin {restored}'],env=env)
+        try:
+            with archive.open('rb') as source:
+                subprocess.run([*prefix,setup+f'exec pg_restore --exit-on-error -U demandrift_admin -d {restored}'],
+                    stdin=source,capture_output=True,check=True,timeout=180,env=env)
+        except (OSError,subprocess.SubprocessError):
+            raise ReleaseError('Database restore failed; current database preserved') from None
+        actual=self.command([*prefix,setup+f'exec psql -X -A -t -v ON_ERROR_STOP=1 -U demandrift_admin -d {restored} -c "SELECT version_num FROM public.alembic_version"'],env=env)
+        if actual.decode('ascii').strip()!=expected_schema:
+            raise ReleaseError('Restored schema differs; current database preserved')
+        # ALTER DATABASE RENAME runs in one transaction after terminating only
+        # DemandRift connections. Failure rolls both names back automatically.
+        sql=("SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname='demandrift' AND pid<>pg_backend_pid(); "
+             f'BEGIN; ALTER DATABASE demandrift RENAME TO {retained}; ALTER DATABASE {restored} RENAME TO demandrift; COMMIT;')
+        self.command([*prefix,setup+"exec psql -X -v ON_ERROR_STOP=1 -U demandrift_admin -d postgres -c '"+sql.replace("'","'\"'\"'")+"'"],env=env)
+
     def rollback(self, previous, legacy):
         self.compose(self.sha, 'stop', 'api', 'worker')
         try:
@@ -337,6 +374,8 @@ class Release:
                 self.compose(self.sha, 'up', '-d', '--wait', '--wait-timeout', '90', 'postgres', 'redis')
                 quiesced = False
                 writing_receipt = False
+                backup = None
+                previous_schema = json.loads(original)['schema'] if original else None
                 try:
                     # Once stop is attempted, a partially stopped service also
                     # requires rollback. Data volumes are never removed.
@@ -358,6 +397,9 @@ class Release:
                             # actual schema/ACL or cannot start old services.
                             if writing_receipt:
                                 self.restore_success_pointer(original)
+                            self.compose(self.sha, 'stop', 'api', 'worker')
+                            if backup is not None and previous_schema is not None:
+                                self.restore_database(backup,previous_schema)
                             self.rollback(previous, legacy)
                         except BaseException:
                             try:
@@ -383,7 +425,7 @@ def main(arguments):
         print(f'SUCCESS runtime revision={release.sha} loopback=127.0.0.1:18082')
         return 0
     except (Exception, KeyboardInterrupt):
-        print('Runtime release failed; consult private acceptance evidence', file=sys.stderr)
+        print('Runtime release failed; consult private administrator logs', file=sys.stderr)
         return 1
 
 

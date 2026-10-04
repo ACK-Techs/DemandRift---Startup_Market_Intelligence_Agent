@@ -500,7 +500,7 @@ def test_historical_budget_roundtrip_and_upgrade_to_required_head(historical_hea
         )
     command.downgrade(db["config"], "20261001_0004")
     with db["admin"].transaction() as s:
-        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == REQUIRED_MIGRATION
+        assert s.scalar(text("SELECT version_num FROM public.alembic_version")) == "20261001_0004"
         assert s.scalar(text("SELECT to_regclass('public.budget_suites')")) is None
     command.upgrade(db["config"], "head")
     db["app"].assert_application_role()

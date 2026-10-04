@@ -45,7 +45,7 @@ def reconcile_receipts(database, message):
             if manifest.get('size', 0):
                 storage.read(*scope, row['attempt_id'], manifest['digest'], manifest['size'])
             amount = ResourceAmount(requests=1, pages=1, bytes=manifest['wire_bytes'], records=manifest['records'])
-            account.settle(row['attempt_id'], amount, {'receipt_version':'source-capture-v1', 'response_sha256':manifest['digest']})
+            account.settle(row['attempt_id'], amount, {'usage_version':'source-capture-v1','response_id':manifest['digest'],'model_version':'none'})
         except (ValueError, OSError, RuntimeError, KeyError):
             # Missing/partial observations remain charged as unresolved holds.
             continue
@@ -100,13 +100,14 @@ class RuntimeDelivery:
                     from app.contracts import ResearchRun, ApiError
                     from datetime import datetime, timezone
                     from app.research_runtime import current_usage
+                    usage=current_usage(self.database,*scope_from(message))
                     with repository.transaction(message.research_id) as writer:
-                        run=repository.get(message.research_id,'run',message.research_id)
-                        pins=repository.selections(message.research_id,'run',message.research_id)['record']
+                        run=repository._get(writer.session,message.research_id,'run',message.research_id)
+                        pins=repository._row(writer.session,message.research_id,'run',message.research_id)
                         state='failed' if recovered.job.state=='failed' else 'partial'
                         if run.status!=state:
                             payload=run.model_dump(mode='json')
-                            payload.update(status=state,usage=current_usage(self.database,*scope_from(message)).model_dump(mode='json'))
+                            payload.update(status=state,usage=usage.model_dump(mode='json'))
                             if state=='failed': payload['finished_at']=datetime.now(timezone.utc).isoformat()
                             payload['errors'].append(ApiError(code='worker_'+recovered.job.state,
                                 message='Research stopped after finite recovery attempts.' if state=='failed' else 'Provider accounting is unresolved; further requests are held.',

@@ -37,7 +37,7 @@ class DortSinifAyriTests(unittest.TestCase):
 
     def test_eksik_alan_cikarim_sorunu(self):
         sinif, gerekce = yu.sorunu_ayir(
-            "ok", "gercek-icerik", "", True, {"baslik"}, {"baslik", "fiyat"}, "en", "en")
+            "ok", "gercek-icerik", "", True, {"surum"}, {"surum", "fiyat"}, "en", "en")
         self.assertEqual("alan-cikarimi", sinif)
         self.assertIn("fiyat", gerekce)
 

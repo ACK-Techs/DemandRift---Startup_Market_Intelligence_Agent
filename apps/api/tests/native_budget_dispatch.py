@@ -60,7 +60,7 @@ def dispatch(repo, attempt_id, *, context=None):
         return repo.dispatch(attempt_id)
     from native_phase1_fixture import current_head, wire_capacity
 
-    if current_head(repo.database) == "20261002_0009" and context.mode == "preparation":
+    if current_head(repo.database) in ("20261002_0009", "20261003_0010") and context.mode == "preparation":
         if values["metadata"]["kind"] != "model":
             raise AdmissionConflict(
                 "Source fixture dispatch requires an actual qualified job lease"

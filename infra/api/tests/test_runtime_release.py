@@ -25,7 +25,7 @@ def test_phase1_release_accepts_explicit_previous_eight_or_nine_pointer(tmp_path
     (tmp_path / 'runtime-success.json').write_text(json.dumps(pointer))
     # Isolate pointer version parsing; native administrator FILE checks have separate controls.
     monkeypatch.setattr(release, 'private_file', lambda path: path.lstat())
-    assert release.SCHEMA == '20261002_0009'
+    assert release.SCHEMA == '20261003_0010'
     assert release.Release(CURRENT, base=tmp_path).previous() == (PREVIOUS, False)
 
 
@@ -100,6 +100,9 @@ class Controlled(release.Release):
     def backup(self):
         self.step('backup')
         return 'private.pgdump'
+
+    def restore_database(self, backup, schema):
+        self.step('restore-database',backup,schema)
 
     def migrate(self, revision):
         self.step('migration' if revision == CURRENT else 'rollback-revalidation', revision)
@@ -304,6 +307,9 @@ def test_backup_real_subprocess_pipe_archive_bounds_and_private_cleanup(tmp_path
     monkeypatch.setattr(release, 'BACKUP_LIMIT', limit)
     item = release.Release(CURRENT, base=tmp_path)
     if valid:
+        # This existing test isolates the PostgreSQL dump pipe; artifact backup
+        # integrity/restore has a separate end-to-end regression.
+        monkeypatch.setattr(item,'backup_artifacts',lambda _: {'archive':'fixture.tar','sha256':'e'*64,'bytes':0})
         name = item.backup()
         archive = folder / name
         manifest = json.loads(archive.with_suffix('.json').read_text())
@@ -404,3 +410,54 @@ def test_backup_actual_shell_accepts_optional_lf_private_file_contract(tmp_path,
     result = release.subprocess.run(['sh', '-eu', '-c', script], capture_output=True, timeout=2)
     assert (result.returncode == 0) is accepted
     assert result.stdout == result.stderr == b''
+
+
+def test_postmigration_failure_restores_verified_snapshot_before_old_image(operation):
+    (operation/'runtime-success.json').write_text(json.dumps({'revision':PREVIOUS,'schema':'20261002_0008','backup':'prior.pgdump'}))
+    item=Controlled(operation,fault='ready')
+    with pytest.raises(release.ReleaseError,match='previous service restored'):
+        item.deploy()
+    names=[event[0] for event in item.events]
+    assert names.index('restore-database')<names.index('rollback-revalidation')
+    assert ('restore-database','private.pgdump','20261002_0008') in item.events
+    assert json.loads((operation/'runtime-success.json').read_text())['revision']==PREVIOUS
+
+
+def test_database_rollback_validates_archive_and_schema_before_preserving_name_swap(operation,monkeypatch):
+    import hashlib
+    import importlib.util
+    module_spec=importlib.util.spec_from_file_location('runtime_restore',Path(__file__).resolve().parents[1]/'runtime_restore.py')
+    restore=importlib.util.module_from_spec(module_spec);sys.modules['runtime_restore']=restore;module_spec.loader.exec_module(restore)
+    monkeypatch.setattr(release,'private_file',lambda path:path.lstat());monkeypatch.setattr(restore,'private_file',lambda path:path.lstat())
+    folder=operation/'backups';folder.mkdir();archive=folder/'before.pgdump';archive.write_bytes(b'PGDMP-synthetic-control')
+    manifest=folder/'before.json';manifest.write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size}))
+    events=[]
+    def command(argv,**kwargs):
+        events.append(argv[-1]);return b'20261002_0008\n' if 'SELECT version_num' in argv[-1] else b''
+    def process(argv,**kwargs):
+        events.append(argv[-1]);assert kwargs['stdin'].read()==archive.read_bytes()
+    monkeypatch.setattr(release.subprocess,'run',process)
+    item=release.Release(CURRENT,base=operation,command=command)
+    item.restore_database(archive.name,'20261002_0008')
+    assert 'createdb' in events[0] and 'pg_restore --exit-on-error' in events[1]
+    assert 'SELECT version_num' in events[2]
+    assert 'BEGIN; ALTER DATABASE demandrift RENAME TO demandrift_retained_' in events[3]
+    assert 'COMMIT;' in events[3] and all('DROP DATABASE' not in event for event in events)
+    events.clear();archive.write_bytes(b'PGDMP-corrupted')
+    with pytest.raises(release.ReleaseError,match='size differs|hash differs'):
+        item.restore_database(archive.name,'20261002_0008')
+    assert not events
+
+
+def test_database_rollback_schema_mismatch_never_swaps_current_name(operation,monkeypatch):
+    import hashlib
+    import runtime_restore as restore
+    monkeypatch.setattr(release,'private_file',lambda path:path.lstat());monkeypatch.setattr(restore,'private_file',lambda path:path.lstat())
+    folder=operation/'backups';folder.mkdir();archive=folder/'before.pgdump';archive.write_bytes(b'PGDMP-synthetic-control')
+    (folder/'before.json').write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size}))
+    events=[]
+    def command(argv,**kwargs): events.append(argv[-1]);return b'20261003_0010\n'
+    monkeypatch.setattr(release.subprocess,'run',lambda *args,**kwargs:None)
+    with pytest.raises(release.ReleaseError,match='Restored schema differs'):
+        release.Release(CURRENT,base=operation,command=command).restore_database(archive.name,'20261002_0008')
+    assert all('ALTER DATABASE' not in event for event in events)

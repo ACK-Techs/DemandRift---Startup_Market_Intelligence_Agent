@@ -31,7 +31,7 @@ def test_script_is_fixed_release_chain_and_does_not_use_environment_paths(monkey
     root = Path(migration.__file__).resolve().parents[1]
     assert Path(config.config_file_name) == root / "alembic.ini"
     assert Path(script.dir) == root / "migrations"
-    assert script.get_heads() == [REQUIRED_MIGRATION] == ["20261002_0009"]
+    assert script.get_heads() == [REQUIRED_MIGRATION] == ["20261003_0010"]
     assert [revision.revision for revision in reversed(list(script.walk_revisions()))] == list(migration._REVISIONS)
     assert not config.get_main_option("sqlalchemy.url")
 

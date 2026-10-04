@@ -19,7 +19,9 @@ def assess(bundle, plan, *, thesis=None, direction=c.Direction.SUPPORTS, now=Non
     candidates = [claim for claim in bundle.claims if claim.thesis == thesis and claim.direction == direction
         and claim.relevant and claim.market_match is True and claim.validation_status == c.ValidationStatus.VALIDATED
         and claim.evidence_type in (c.EvidenceType.DIRECT_EXPERIENCE, c.EvidenceType.OBSERVED_USAGE, c.EvidenceType.OBSERVED_PAYMENT)
-        and claim.independent_identity_key in known_groups and claim.ownership_key]
+        and claim.independent_identity_key in known_groups and claim.ownership_key
+        and known_groups[claim.independent_identity_key].ownership_key==claim.ownership_key
+        and 'Archived content cannot establish current live conditions.' not in claim.limitations]
     eligible = []
     for claim in candidates:
         linked = [citations.get(identity) for identity in claim.citation_ids]
@@ -79,6 +81,12 @@ def validate_report(report, bundle):
         raise ValueError('Report scope differs')
     claims = {claim.claim_id: claim for claim in bundle.claims}
     citations = {citation.citation_id: citation for citation in bundle.citations}
+    for item in [*bundle.claims,*bundle.citations]:
+        if any(getattr(item,key)!=getattr(bundle,key) for key in ('user_id','project_id','research_id')) or item.validation_status!=c.ValidationStatus.VALIDATED:
+            raise ValueError('Report evidence has a stale or foreign binding')
+    required_counter={claim.claim_id for claim in bundle.claims if claim.relevant and claim.direction==c.Direction.OPPOSES}
+    mentioned={identity for block in report.rationale for identity in block.claim_ids}
+    if not required_counter.issubset(mentioned): raise ValueError('Report omitted required counter evidence')
     for name in ('summary', 'market_assessment', 'counter_evidence', 'target_customer', 'problem', 'competitors', 'opportunity_hypotheses'):
         for statement in getattr(report, name):
             if any(identity not in claims for identity in statement.claim_ids) or any(identity not in citations for identity in statement.citation_ids):
@@ -112,7 +120,7 @@ def validate_report(report, bundle):
     return report
 
 
-def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cycles=2, modification_draft=None, remaining=None):
+def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cycles=2, modification_draft=None, remaining=None, previous_bundle=None):
     positive = assess(bundle, plan)
     negative = assess(bundle, plan, thesis=positive.thesis, direction=c.Direction.OPPOSES)
     sufficient = positive if positive.status == 'sufficient' else negative if negative.status == 'sufficient' else positive
@@ -128,6 +136,10 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
     report_version = bundle.bundle_version
     gaps = []
     no_new_evidence=bool(previous and set(previous.supporting_claim_ids+previous.opposing_claim_ids)>=set(claim.claim_id for claim in bundle.claims if claim.relevant))
+    if previous_bundle:
+        old_groups={(item.identity_key,item.ownership_key) for item in previous_bundle.independence if item.status=='known'}
+        new_groups={(item.identity_key,item.ownership_key) for item in bundle.independence if item.status=='known'}
+        no_new_evidence=not bool(new_groups-old_groups)
     if outcome == c.Outcome.INVESTIGATE_MORE:
         for kind, question, missing in (
             (c.GapKind.INVESTIGATE_SECONDARY, 'Eksik bağımsız ve karşıt kaynak kanıtı nedir?', sufficient.blocking_reasons),
@@ -136,11 +148,11 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
                 parent_bundle_id=bundle.bundle_id, parent_bundle_version=bundle.bundle_version,
                 parent_report_id=report_id, parent_report_version=report_version,
                 severity='high', eligible_source_ids=[s.source_id for s in plan.source_plan] if kind == c.GapKind.INVESTIGATE_SECONDARY else [],
-                kind=kind, expected_evidence_type=None, question=question, missing_evidence=missing or ['Primary verification is missing.'],
+                kind=kind, expected_evidence_type=None, question=question, missing_evidence=[*(missing or ['Primary verification is missing.']), *(['no_new_evidence'] if no_new_evidence else []), *(['budget_exhausted'] if remaining is None and kind==c.GapKind.INVESTIGATE_SECONDARY else [])],
                 proposed_queries=plan.query_plan if kind == c.GapKind.INVESTIGATE_SECONDARY else [],
                 remaining_budget=remaining, cycle=cycle, max_cycles=max_cycles,
                 stop_conditions=['Remaining shared budget exhausted.', 'No new evidence.', 'Maximum cycles reached.', 'User cancels.'],
-                status='stopped' if kind==c.GapKind.INVESTIGATE_SECONDARY and (cycle >= max_cycles or remaining is None or no_new_evidence) else 'proposed'))
+                status='stopped' if kind==c.GapKind.INVESTIGATE_SECONDARY and (cycle >= max_cycles or remaining is None or no_new_evidence or not plan.query_plan) else 'proposed'))
     supporting = [claim for claim in bundle.claims if claim.direction == c.Direction.SUPPORTS and claim.relevant]
     opposing = [claim for claim in bundle.claims if claim.direction == c.Direction.OPPOSES and claim.relevant]
     def statements(items):
@@ -168,7 +180,7 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
         bundle_id=bundle.bundle_id, bundle_version=bundle.bundle_version, outcome=outcome, status='published',
         market_assessment=statements([claim for claim in bundle.claims if claim.claim_type == 'market_signal']),
         summary=statements(supporting[:8] if outcome != c.Outcome.KILL else opposing[:8]),
-        rationale=[c.RationaleBlock(block_id=uuid4(), statement=claim.statement, kind='evidence_interpretation', claim_ids=[claim.claim_id], citation_ids=claim.citation_ids) for claim in (supporting + opposing)[:12]],
+        rationale=[c.RationaleBlock(block_id=uuid4(), statement=claim.statement, kind='evidence_interpretation', claim_ids=[claim.claim_id], citation_ids=claim.citation_ids) for claim in (opposing + supporting[:12])],
         counter_evidence=statements(opposing), known_unknowns=bundle.known_unknowns,
         limitations=list(dict.fromkeys([*bundle.limitations, 'Secondary evidence does not establish primary behavioral validation.'])),
         sufficiency=sufficient, gap_ids=[gap.gap_id for gap in gaps],
@@ -187,7 +199,7 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
             change_assumption=modification_draft.change_assumption, proposed_focus=modification_draft.proposed_focus,
             avoid=['Unconfirmed changes to the original idea.'], evidence_to_reassess=modification_draft.evidence_to_reassess,
             basis_claim_ids=[claim.claim_id for claim in bundle.claims if str(claim.claim_id) in modification_draft.preserve_claim_ids],
-            assumptions=['Proposed focus is a research hypothesis requiring user approval.']) if outcome==c.Outcome.MODIFY else None, investigation=c.Investigation(subtype='mixed', gap_ids=[gap.gap_id for gap in gaps], priority_reason='Evidence or primary observations are insufficient.') if gaps else None,
+            assumptions=['Proposed focus is a research hypothesis requiring user approval.']) if outcome==c.Outcome.MODIFY else None, investigation=c.Investigation(subtype='mixed' if any(gap.kind==c.GapKind.INVESTIGATE_SECONDARY and gap.status=='proposed' and gap.proposed_queries for gap in gaps) else 'validate_primary', gap_ids=[gap.gap_id for gap in gaps], priority_reason='Evidence or primary observations are insufficient.') if gaps else None,
         usage=bundle.usage, validation=c.ReportValidation(schema_check='passed', identity='passed', source_binding='passed', outcome_policy='passed', scope='passed', validator_version=VALIDATOR_VERSION), errors=[])
     # Explain sensitivity by removing each independently cited critical signal.
     critical = []
@@ -198,7 +210,12 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
             reduced=bundle.model_copy(update={'claims':[item for item in bundle.claims if item.claim_id!=claim.claim_id]})
             if assess(reduced,plan,thesis=sufficient.thesis,direction=sufficient.direction).status!='sufficient':
                 critical.append(claim.claim_id)
-        report.decision_stability=c.DecisionStability(status='fragile' if critical else 'stable',method='leave-one-claim-out-v1',
+        report.decision_stability=c.DecisionStability(status='sensitive' if critical else 'stable',method='leave-one-claim-out-v1',
             critical_claim_ids=critical,assumptions_that_change_outcome=sufficient.blocking_reasons)
+    report.next_actions.extend(c.NextAction(action_id=uuid5(gap.gap_id,'next-action'),
+        kind='secondary_research' if gap.kind==c.GapKind.INVESTIGATE_SECONDARY else 'report_primary_gap',
+        target_segment=plan.brief.target_user.value, question_or_hypothesis=gap.question,
+        evidence_to_capture=gap.missing_evidence,priority_reason='Missing evidence prevents the current thesis from meeting the recorded decision policy.',
+        reassessment_trigger='New independent cited evidence addressing this gap; explicit user approval and remaining shared budget are required.') for gap in gaps)
     validate_report(report, bundle)
     return report, gaps

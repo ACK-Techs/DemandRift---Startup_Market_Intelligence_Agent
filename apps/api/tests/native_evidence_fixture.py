@@ -133,7 +133,7 @@ def _legacy_seed_preparation(db, data):
 def seed_preparation(db, data):
     from native_phase1_fixture import current_head, seed_phase1_graph
 
-    if current_head(db["app"]) == "20261002_0009":
+    if current_head(db["app"]) in ("20261002_0009", "20261003_0010"):
         return seed_phase1_graph(db, data)
     return _legacy_seed_preparation(db, data)
 

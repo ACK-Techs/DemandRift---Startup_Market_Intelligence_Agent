@@ -506,10 +506,8 @@ def historical_database(monkeypatch, *, head="20261002_0008"):
                     "SELECT NOT (rolsuper OR rolbypassrls OR rolcreaterole OR rolcreatedb) FROM pg_roles WHERE rolname=current_user"
                 )
             )
-            assert (
-                session.scalar(text("SELECT version_num FROM public.alembic_version"))
-                == head
-            )
+        with admin.transaction() as session:
+            assert session.scalar(text("SELECT version_num FROM public.alembic_version")) == head
         yield dict(admin=admin, app=app, config=config, role=role, name=name)
     finally:
         if app:

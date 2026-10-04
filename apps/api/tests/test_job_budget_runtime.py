@@ -20,17 +20,18 @@ HELPERS = [
 ]
 
 
-def test_head008_startup_accepts_restricted_role_and_rejects_previous_head(postgres_database):
+def test_head008_startup_accepts_restricted_role_and_rejects_previous_head(postgres_database, monkeypatch):
     db = postgres_database
-    assert REQUIRED_MIGRATION == "20261002_0008"
+    assert REQUIRED_MIGRATION == "20261003_0010"
     policy = AuthPolicy(origins=("http://127.0.0.1:3100",))
     with TestClient(create_app(database=db["app"], auth_policy=policy)) as client:
         assert client.get("/api/v1/auth/session").status_code == 401
-    command.downgrade(db["config"], "20261002_0007")
-    with pytest.raises(DatabaseConfigurationError):
-        with TestClient(create_app(database=db["app"], auth_policy=policy)):
-            pytest.fail("Previous schema must not serve authenticated traffic")
-    command.upgrade(db["config"], REQUIRED_MIGRATION)
+    from native_phase1_fixture import historical_database
+    from contextlib import contextmanager
+    with contextmanager(historical_database)(monkeypatch, head="20261002_0007") as previous:
+        with pytest.raises(DatabaseConfigurationError):
+            with TestClient(create_app(database=previous["app"], auth_policy=policy)):
+                pytest.fail("Previous schema must not serve authenticated traffic")
     db["app"].assert_application_role()
 
 

@@ -318,8 +318,14 @@ def test_corrupt_selected_snapshot_fails_closed_without_replaying(postgres_datab
             call()
 
 
-def test_0007_only_roundtrip_and_metadata_column_parity(postgres_database):
-    db = postgres_database
+@pytest.fixture
+def preparation_mutation_history_database(monkeypatch):
+    from native_phase1_fixture import historical_database
+    yield from historical_database(monkeypatch, head="20261002_0007")
+
+
+def test_0007_only_roundtrip_and_metadata_column_parity(preparation_mutation_history_database):
+    db = preparation_mutation_history_database
     with db["admin"].transaction() as session:
         columns = set(
             session.scalars(

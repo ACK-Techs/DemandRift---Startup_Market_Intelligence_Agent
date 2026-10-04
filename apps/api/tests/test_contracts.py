@@ -81,7 +81,7 @@ def test_public_catalog_and_openapi_have_the_same_wire_version_and_resolved_refs
         openapi = client.get("/openapi.json").json()
     assert catalog == wire_catalog()
     assert catalog["schema_version"] == openapi["info"]["x-wire-schema-version"] == "1.0.0"
-    assert len(catalog["models"]) == 51
+    assert len(catalog["models"]) == 61
     assert "secret-never-in-contract" not in json.dumps(catalog)
     for name, definition in catalog["$defs"].items():
         expected = json.loads(json.dumps(definition).replace('"#/$defs/', '"#/components/schemas/Wire_'))
@@ -94,7 +94,7 @@ def test_public_catalog_and_openapi_have_the_same_wire_version_and_resolved_refs
             for v in value: yield from refs(v)
     for ref in refs(catalog): assert ref.removeprefix("#/$defs/") in catalog["$defs"]
     # Legacy measured source health remains isolated, not reinterpreted as production qualification.
-    assert openapi["components"]["schemas"]["SourceHealth"]["enum"] != catalog["$defs"]["SourceHealth"]["enum"]
+    assert openapi["components"]["schemas"]["app__source_plan__SourceHealth"]["enum"] != catalog["$defs"]["SourceHealth"]["enum"]
 
 
 def test_original_idea_and_explicit_unknown_provenance_round_trip_without_loss():

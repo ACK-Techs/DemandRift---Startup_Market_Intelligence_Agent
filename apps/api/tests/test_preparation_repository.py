@@ -65,7 +65,7 @@ def prepared(db):
     repos = [
         (
             NativePhase1Fixture(db, p.user_id, p.project_id)
-            if current_head(db["app"]) == "20261002_0009"
+            if current_head(db["app"]) in ("20261002_0009", "20261003_0010")
             else PreparationRepository(db["app"], p.user_id, p.project_id)
         )
         for p in projects

@@ -29,6 +29,10 @@ class SourceEgressError(ValueError):
     """Unavailable/denied acquisition, never a successful empty result."""
 
 
+class SourcePayloadTooLarge(SourceEgressError):
+    """Bounded response stopped before content could be accepted."""
+
+
 def _deny() -> SourceEgressError:
     return SourceEgressError("Source acquisition unavailable")
 
@@ -374,7 +378,7 @@ class _PinnedStream(httpcore.NetworkStream):
         self.wire_bytes += len(part)
         if self.wire_bytes > self.maximum:
             self.close()
-            raise _deny()
+            raise SourcePayloadTooLarge('Source response exceeds its byte limit')
         return part
 
     def read(self, max_bytes, timeout=None):
@@ -486,9 +490,10 @@ def _response_type(response, policy) -> str:
         raise _deny()
     if b"content-length" in headers:
         length = headers[b"content-length"]
-        if (not re.fullmatch(rb"[0-9]{1,10}", length) or int(length) > policy.grant.limits.max_decoded_bytes
-                or b"transfer-encoding" in headers):
+        if not re.fullmatch(rb"[0-9]{1,10}", length) or b"transfer-encoding" in headers:
             raise _deny()
+        if int(length)>policy.grant.limits.max_decoded_bytes:
+            raise SourcePayloadTooLarge('Source response exceeds its byte limit')
     if headers.get(b"transfer-encoding", b"chunked") != b"chunked":
         raise _deny()
     return mime
@@ -527,7 +532,7 @@ def _fetch_policy(policy: SourcePolicy, *, path: str, query: tuple[tuple[str, st
                 for part in response.iter_stream():
                     deadline.limit()
                     if len(body) + len(part) > limits.max_decoded_bytes:
-                        raise _deny()
+                        raise SourcePayloadTooLarge('Source response exceeds its byte limit')
                     body.extend(part)
                 deadline.limit()
                 content = bytes(body)
@@ -536,7 +541,7 @@ def _fetch_policy(policy: SourcePolicy, *, path: str, query: tuple[tuple[str, st
                     category = 'rate_limited' if response.status == 429 else 'no_results' if response.status in (204, 404) else 'blocked_by_policy' if response.status in (301,302,303,307,308,401,403) else 'source_unavailable'
                     raise SourceHttpFailure(category, backend.stream.wire_bytes, digest, len(content))
                 return SourceResponse(source_id, url, content_type, content, digest, backend.stream.wire_bytes)
-    except SourceHttpFailure:
+    except (SourceHttpFailure,SourcePayloadTooLarge):
         raise
     except Exception:
         raise _deny() from None

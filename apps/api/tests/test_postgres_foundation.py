@@ -198,7 +198,7 @@ def test_altered_original_or_brief_snapshot_cannot_seed_a_plan(postgres_database
     row.payload["content"]["original_idea"] = IDEA.strip()
     with pytest.raises(IntegrityError), db["admin"].transaction() as s: s.add(row); s.flush()
     with db["app"].transaction(users[0]) as s: s.add(brief_record(dto))
-    planned = plan_record(plan(dto)); planned.payload = deepcopy(planned.payload)
+    planned = plan_record(plan(dto, status="draft")); planned.payload = deepcopy(planned.payload)
     planned.payload["brief"]["language_scope"] = ["en"]
     with pytest.raises(IntegrityError), db["app"].transaction(users[0]) as s: s.add(planned); s.flush()
 

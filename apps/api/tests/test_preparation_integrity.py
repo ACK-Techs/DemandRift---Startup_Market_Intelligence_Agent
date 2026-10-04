@@ -316,7 +316,7 @@ def test_current_phase1_migration_refuses_downgrade_without_rewriting_history(
     with db["admin"].transaction() as session:
         assert (
             session.scalar(text("SELECT version_num FROM public.alembic_version"))
-            == "20261002_0009"
+            == "20261003_0010"
         )
     assert repos[0].get_brief(rid, brief.brief_id, brief.brief_version) == before
 

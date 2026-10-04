@@ -252,7 +252,7 @@ def test_job_migration_frozen_roundtrip(historical_head8_database):
 
 
 def budget_for_job(db, repo, run):
-    if current_head(db["app"]) == "20261002_0009":
+    if current_head(db["app"]) in ("20261002_0009", "20261003_0010"):
         budget = budget_for_research(db, repo.user_id, repo.project_id, run.research_id)
     else:
         capacity = BudgetCapacity.from_wire(approved_limits())

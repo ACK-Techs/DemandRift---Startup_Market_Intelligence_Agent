@@ -61,7 +61,8 @@ def test_nonempty_native_graph_exact_history_fresh_connections_and_owner_rls(gra
             ("demandrift_job_append", "", ["search_path=pg_catalog, pg_temp"]),
             ("demandrift_job_budget_operate",
              "text, uuid, uuid, uuid, uuid, uuid, text, jsonb, jsonb, jsonb, integer",
-             ["search_path=pg_catalog, pg_temp"])]
+             ["search_path=pg_catalog, pg_temp"]),
+            ("demandrift_pending_wakes", "", ["search_path=pg_catalog, pg_temp"])]
 
 
 def persist_bundle_sql(session, scope, data, payload):

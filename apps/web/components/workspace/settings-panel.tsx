@@ -12,14 +12,14 @@ export function SettingsPanel() {
   const [saved, setSaved] = useState<WireModels["UserSettings"] | null>(null);
   const [draft, setDraft] = useState<WireModels["UserSettingsUpdate"] | null>(null);
   const [message, setMessage] = useState<string | null>(null), [busy, setBusy] = useState(false);
-  const sending = useRef(false), current = useRef(account.session); current.current = account.session;
+  const sending = useRef(false), current = useRef(account.session); useEffect(() => { current.current = account.session; }, [account.session]);
   const owner = account.session?.user.user_id;
   const read = useCallback(async (signal?: AbortSignal) => {
     const selected = current.current;
     if (!selected) return;
     const result = await client.request("UserSettings", "/api/v1/settings", { signal, scope: { user_id: selected.user.user_id } });
     if (signal?.aborted || current.current?.user.user_id !== selected.user.user_id) return;
-    if (result.ok) { setSaved(result.data); setDraft({ default_research_mode: result.data.default_research_mode, default_budget: result.data.default_budget, language_scope: result.data.language_scope }); setMessage(null); } else { if (result.category === "authentication") account.invalidateSession(); setMessage(result.apiError?.message ?? result.message); }
+    if (result.ok) { setSaved(result.data); setDraft({ default_research_mode: result.data.default_research_mode, default_budget: result.data.default_budget, language_scope: result.data.language_scope }); setMessage(null); } else { if (result.category === "authentication") account.invalidateSession(selected.csrf_token, selected.user.user_id); setMessage(result.apiError?.message ?? result.message); }
   }, [client, account.invalidateSession]);
   useEffect(() => { const controller = new AbortController(); void read(controller.signal); return () => controller.abort(); }, [owner, read]);
   async function save() {
@@ -29,7 +29,7 @@ export function SettingsPanel() {
     try {
       const result = await client.request("UserSettings", "/api/v1/settings", { method: "PATCH", body: draft, csrfToken: selected.csrf_token, scope: { user_id: selected.user.user_id } });
       if (current.current?.user.user_id !== selected.user.user_id) return;
-      if (result.ok) { setSaved(result.data); setMessage("Preferences saved by the backend."); } else { if (result.category === "authentication") account.invalidateSession(); setMessage(`${result.apiError?.message ?? result.message}${result.operationState === "unknown" ? " Result unknown: read saved settings before saving again." : ""}`); }
+      if (result.ok) { setSaved(result.data); setMessage("Preferences saved by the backend."); } else { if (result.category === "authentication") account.invalidateSession(selected.csrf_token, selected.user.user_id); setMessage(`${result.apiError?.message ?? result.message}${result.operationState === "unknown" ? " Result unknown: read saved settings before saving again." : ""}`); }
     } finally { sending.current = false; setBusy(false); }
   }
   if (!account.session) return <ProjectAccess status={account.status} message={account.message} refresh={account.refresh} />;
