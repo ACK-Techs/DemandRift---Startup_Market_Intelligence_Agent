@@ -10,6 +10,10 @@ import { researchButton } from "@/components/research/research-workspace";
 
 export function Dashboard() {
   const account = useSession();
+  return <DashboardContent key={account.session?.user.user_id ?? account.status} />;
+}
+function DashboardContent() {
+  const account = useSession();
   const [client] = useState(() => createApiClient());
   const [summary, setSummary] = useState<WireModels["DashboardSummary"] | null>(null);
   const [message, setMessage] = useState<string | null>(null);

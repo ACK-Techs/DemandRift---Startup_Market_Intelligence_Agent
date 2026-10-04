@@ -1,4 +1,5 @@
 "use client";
+import { useSession } from "@/components/auth/session-provider";
 import { useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import type { WireModels } from "@/lib/api/wire";
@@ -18,7 +19,11 @@ export function BudgetFields({ value, change, disabled = false }: { value: WireM
   return <fieldset disabled={disabled} className="grid gap-3 sm:grid-cols-3"><legend className="mb-2 text-sm font-semibold">Sert araştırma sınırları</legend>{Object.entries(value).map(([name, amount]) => <label className="min-w-0 text-xs" key={name}>{name.replaceAll("_", " ")}<input className={input} type="number" min={name === "max_concurrency" ? 1 : 0} max={Number(authorizedBudget[name as keyof typeof authorizedBudget])} step={typeof amount === "string" ? "0.000001" : 1} value={amount} onChange={event => { const next = event.target.value; if (typeof amount === "string") change({ ...value, [name]: next }); else if (Number.isSafeInteger(Number(next))) change({ ...value, [name]: Number(next) }); }} /></label>)}</fieldset>;
 }
 
-export function ResearchWorkspace({ projectId, researchId, view = "all" }: { projectId: string; researchId: string; view?: ResearchView }) {
+export function ResearchWorkspace(props: { projectId: string; researchId: string; view?: ResearchView }) {
+  const account = useSession();
+  return <ResearchWorkspaceContent key={account.session?.user.user_id ?? account.status} {...props} />;
+}
+function ResearchWorkspaceContent({ projectId, researchId, view = "all" }: { projectId: string; researchId: string; view?: ResearchView }) {
   const workspace = useResearchWorkspace(projectId, researchId);
   const { base, account } = workspace;
   const brief = workspace.brief.data;

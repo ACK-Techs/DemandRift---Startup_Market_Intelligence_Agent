@@ -8,6 +8,10 @@ import { createApiClient } from "@/lib/api/client";
 import type { WireModels } from "@/lib/api/wire";
 export function SettingsPanel() {
   const account = useSession();
+  return <SettingsPanelContent key={account.session?.user.user_id ?? account.status} />;
+}
+function SettingsPanelContent() {
+  const account = useSession();
   const [client] = useState(() => createApiClient());
   const [saved, setSaved] = useState<WireModels["UserSettings"] | null>(null);
   const [draft, setDraft] = useState<WireModels["UserSettingsUpdate"] | null>(null);

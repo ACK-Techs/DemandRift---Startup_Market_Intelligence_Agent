@@ -8,7 +8,11 @@ import { ProjectAccess } from "@/components/projects/project-access";
 import { ResearchWorkspace, researchButton } from "./research-workspace";
 import type { ResearchView } from "./research-workspace";
 const control = "mt-2 min-h-11 w-full rounded-lg border border-[var(--line)] bg-white px-3 py-2 text-sm";
-export function ResearchSelection({ view }: { view: ResearchView }) {
+export function ResearchSelection(props: { view: ResearchView }) {
+  const account = useSession();
+  return <ResearchSelectionContent key={account.session?.user.user_id ?? account.status} {...props} />;
+}
+function ResearchSelectionContent({ view }: { view: ResearchView }) {
   const account = useSession();
   const [client] = useState(() => createApiClient());
   const [projects, setProjects] = useState<WireModels["ProjectPage"] | null>(null);
