@@ -7,7 +7,6 @@ from app.contracts import Usage, BudgetLimits
 from app.budget_contract import ResourceAmount
 from app.db.budget_repository import BudgetRepository
 from app.db import budget_models
-from app.db.preparation_repository import RecordNotFound
 from app.gemini_runtime import RuntimeGeminiConfig, make_native_runtime
 from app.receipt_spool import ReceiptSpool
 
@@ -24,7 +23,9 @@ def suite_id():
         return UUID(runtime_secret("DEMANDRIFT_BUDGET_SUITE_ID",
             allow_environment=os.environ.get("APP_ENV") != "production"))
     except (KeyError, ValueError):
-        raise RecordNotFound("Authorized persistent budget suite is not configured") from None
+        from app.auth_routes import ApiProblem
+        raise ApiProblem(503, "budget_authority_unavailable",
+            "Authorized persistent budget suite is not configured") from None
 
 
 def ledger(database, user_id, project_id, research_id):

@@ -70,3 +70,31 @@ def test_main_rejects_receipt_admin_rights_before_serving_http(postgres_database
         session.execute(text(f'GRANT UPDATE(input_payload) ON public.preparation_mutations TO "{db["role"]}"'))
     with pytest.raises(DatabaseConfigurationError), client_for(db["app"]):
         pass
+
+
+def test_missing_budget_authority_is_runtime_error_and_foreign_research_remains_hidden(postgres_database, monkeypatch):
+    from app.research_runtime import AUTHORIZED_LIMITS
+    monkeypatch.delenv("DEMANDRIFT_BUDGET_SUITE_ID", raising=False)
+    monkeypatch.delenv("DEMANDRIFT_BUDGET_SUITE_ID_FILE", raising=False)
+    with client_for(postgres_database["app"]) as client:
+        account = client.post("/api/v1/auth/register", headers={"Origin": ORIGIN},
+            json={"email": "budget-missing@example.invalid", "password": "isolated runtime fixture"}).json()
+        headers = {"Origin": ORIGIN, "X-CSRF-Token": account["csrf_token"]}
+        project = client.post("/api/v1/projects", headers=headers, json={"name": "Missing budget"}).json()
+        base = "/api/v1/projects/" + project["project_id"]
+        brief = client.post(base + "/research", headers={**headers, "Idempotency-Key": str(uuid4())},
+            json={"original_idea": "A shift worker sleep research hypothesis"}).json()
+        path = base + "/research/" + brief["research_id"] + "/plans"
+        body = {"expected_brief_id": brief["brief_id"], "expected_brief_version": brief["brief_version"],
+            "research_mode": "standard", "budget": AUTHORIZED_LIMITS.model_dump(mode="json")}
+        result = client.post(path, headers={**headers, "Idempotency-Key": str(uuid4())}, json=body)
+        assert result.status_code == 503
+        assert result.json()["code"] == "budget_authority_unavailable"
+        assert result.json()["message"] == "Authorized persistent budget suite is not configured"
+        assert result.headers["cache-control"] == "private, no-store"
+        foreign = client.post(f"/api/v1/projects/{uuid4()}/research/{brief['research_id']}/plans",
+            headers={**headers, "Idempotency-Key": str(uuid4())}, json=body)
+        assert foreign.status_code == 404 and foreign.json()["code"] == "not_found"
+    with postgres_database["admin"].transaction() as session:
+        assert session.execute(text("SELECT count(*) FROM public.budget_suites")).scalar_one() == 0
+        assert session.execute(text("SELECT count(*) FROM public.research_plans")).scalar_one() == 0
