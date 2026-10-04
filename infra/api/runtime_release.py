@@ -9,6 +9,7 @@ import os
 from pathlib import Path, PurePosixPath
 import re
 import selectors
+import shlex
 import stat
 import subprocess
 import sys
@@ -208,6 +209,22 @@ class Release:
             if process and process.stdout: process.stdout.close()
             path.unlink(missing_ok=True);raise
 
+    def budget_digest(self, database='demandrift'):
+        """A restore must never erase a newer dispatch, hold, debit or suite clock."""
+        if not re.fullmatch(r'demandrift(?:_(?:rollback|restore)_[0-9a-f]{32})?', database):
+            raise ReleaseError('Managed budget database required')
+        snapshots = ["COALESCE((SELECT jsonb_agg(to_jsonb(t) ORDER BY to_jsonb(t)::text) FROM public."
+                     + table + " t),'[]'::jsonb)" for table in
+                     ('budget_suites', 'budget_accounts', 'budget_attempts', 'budget_journal')]
+        sql = "SELECT encode(sha256(convert_to(jsonb_build_array(" + ','.join(snapshots) + ")::text,'UTF8')),'hex')"
+        setup = 'IFS= read -r PGPASSWORD < /run/secrets/postgres-password || [ -n "$PGPASSWORD" ]; export PGPASSWORD; '
+        value = self.compose(self.sha, 'exec', '-T', 'postgres', 'sh', '-eu', '-c',
+            setup + 'exec psql -X -A -t -v ON_ERROR_STOP=1 -U demandrift_admin -d '
+            + database + ' -c ' + shlex.quote(sql)).decode('ascii').strip()
+        if not re.fullmatch(r'[0-9a-f]{64}', value):
+            raise ReleaseError('Persistent budget state unavailable')
+        return value
+
     def backup(self):
         folder = self.base / 'backups'
         folder.mkdir(mode=0o700, exist_ok=True)
@@ -216,6 +233,7 @@ class Release:
                 or stat.S_IMODE(info.st_mode) != 0o700):
             raise ReleaseError('Unsafe backup directory')
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S')
+        budget = self.budget_digest()
         fd, name = tempfile.mkstemp(prefix=f'{stamp}-{self.sha}-', suffix='.pgdump', dir=folder)
         path = Path(name)
         # Password is read by the existing PostgreSQL UID inside its container;
@@ -258,9 +276,11 @@ class Release:
                 source.seek(0)
                 digest = archive_hash(source)
             artifacts=self.backup_artifacts(path.name)
+            if self.budget_digest() != budget:
+                raise ReleaseError('Budget changed while creating the private backup')
             atomic_json(path.with_suffix('.json'), {'revision': self.sha, 'archive': path.name,
                         'sha256': digest, 'bytes': path.stat().st_size,
-                        'artifacts':artifacts, 'scope':'database and artifact volume; existing private role credentials are retained separately'})
+                        'artifacts':artifacts, 'budget_digest':budget, 'scope':'database and artifact volume; existing private role credentials are retained separately'})
             return path.name
         except BaseException:
             if process is not None and process.poll() is None:
@@ -312,6 +332,11 @@ class Release:
         data=json.loads(manifest.read_text())
         archive=checked_archive(manifest.parent,{key:data[key] for key in ('archive','sha256','bytes')})
         if archive.name!=backup: raise ReleaseError('Database backup selection differs')
+        budget=data.get('budget_digest')
+        if type(budget) is not str or not re.fullmatch(r'[0-9a-f]{64}',budget):
+            raise ReleaseError('Backup lacks persistent budget state; current database preserved')
+        if self.budget_digest()!=budget:
+            raise ReleaseError('Budget changed after backup; current database preserved for reconciliation')
         restored='demandrift_rollback_'+uuid4().hex
         retained='demandrift_retained_'+uuid4().hex
         prefix=['docker','compose','-p','demandrift-api','-f',str(self.base/'runtime.compose.yml'),'exec','-T','postgres','sh','-eu','-c']
@@ -327,6 +352,8 @@ class Release:
         actual=self.command([*prefix,setup+f'exec psql -X -A -t -v ON_ERROR_STOP=1 -U demandrift_admin -d {restored} -c "SELECT version_num FROM public.alembic_version"'],env=env)
         if actual.decode('ascii').strip()!=expected_schema:
             raise ReleaseError('Restored schema differs; current database preserved')
+        if self.budget_digest(restored)!=budget or self.budget_digest()!=budget:
+            raise ReleaseError('Restore would change persistent budget; current database preserved')
         # ALTER DATABASE RENAME runs in one transaction after terminating only
         # DemandRift connections. Failure rolls both names back automatically.
         sql=("SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname='demandrift' AND pid<>pg_backend_pid(); "

@@ -306,6 +306,7 @@ def test_backup_real_subprocess_pipe_archive_bounds_and_private_cleanup(tmp_path
     monkeypatch.setattr(release.subprocess, 'Popen', child)
     monkeypatch.setattr(release, 'BACKUP_LIMIT', limit)
     item = release.Release(CURRENT, base=tmp_path)
+    monkeypatch.setattr(item, 'budget_digest', lambda *args: 'b'*64)
     if valid:
         # This existing test isolates the PostgreSQL dump pipe; artifact backup
         # integrity/restore has a separate end-to-end regression.
@@ -400,6 +401,7 @@ def test_backup_actual_shell_accepts_optional_lf_private_file_contract(tmp_path,
         captured.append(argv[-1])
         raise OSError('Capture only')
     monkeypatch.setattr(release.subprocess, 'Popen', no_dump)
+    monkeypatch.setattr(release.Release, 'budget_digest', lambda *args: 'b'*64)
     with pytest.raises(OSError):
         release.Release(CURRENT, base=tmp_path).backup()
     script = captured[0].split('exec pg_dump', 1)[0]
@@ -430,7 +432,7 @@ def test_database_rollback_validates_archive_and_schema_before_preserving_name_s
     restore=importlib.util.module_from_spec(module_spec);sys.modules['runtime_restore']=restore;module_spec.loader.exec_module(restore)
     monkeypatch.setattr(release,'private_file',lambda path:path.lstat());monkeypatch.setattr(restore,'private_file',lambda path:path.lstat())
     folder=operation/'backups';folder.mkdir();archive=folder/'before.pgdump';archive.write_bytes(b'PGDMP-synthetic-control')
-    manifest=folder/'before.json';manifest.write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size}))
+    manifest=folder/'before.json';manifest.write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size,'budget_digest':'b'*64}))
     events=[]
     def command(argv,**kwargs):
         events.append(argv[-1]);return b'20261002_0008\n' if 'SELECT version_num' in argv[-1] else b''
@@ -438,6 +440,7 @@ def test_database_rollback_validates_archive_and_schema_before_preserving_name_s
         events.append(argv[-1]);assert kwargs['stdin'].read()==archive.read_bytes()
     monkeypatch.setattr(release.subprocess,'run',process)
     item=release.Release(CURRENT,base=operation,command=command)
+    monkeypatch.setattr(item,'budget_digest',lambda *args:'b'*64)
     item.restore_database(archive.name,'20261002_0008')
     assert 'createdb' in events[0] and 'pg_restore --exit-on-error' in events[1]
     assert 'SELECT version_num' in events[2]
@@ -454,10 +457,30 @@ def test_database_rollback_schema_mismatch_never_swaps_current_name(operation,mo
     import runtime_restore as restore
     monkeypatch.setattr(release,'private_file',lambda path:path.lstat());monkeypatch.setattr(restore,'private_file',lambda path:path.lstat())
     folder=operation/'backups';folder.mkdir();archive=folder/'before.pgdump';archive.write_bytes(b'PGDMP-synthetic-control')
-    (folder/'before.json').write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size}))
+    (folder/'before.json').write_text(json.dumps({'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size,'budget_digest':'b'*64}))
     events=[]
     def command(argv,**kwargs): events.append(argv[-1]);return b'20261003_0010\n'
     monkeypatch.setattr(release.subprocess,'run',lambda *args,**kwargs:None)
+    monkeypatch.setattr(release.Release,'budget_digest',lambda *args:'b'*64)
     with pytest.raises(release.ReleaseError,match='Restored schema differs'):
         release.Release(CURRENT,base=operation,command=command).restore_database(archive.name,'20261002_0008')
     assert all('ALTER DATABASE' not in event for event in events)
+
+
+@pytest.mark.parametrize('saved', [None, 'b'*64])
+def test_rollback_never_erases_unrecorded_or_newer_budget(operation,monkeypatch,saved):
+    import hashlib
+    import runtime_restore as restore
+    monkeypatch.setattr(release,'private_file',lambda path:path.lstat())
+    monkeypatch.setattr(restore,'private_file',lambda path:path.lstat())
+    folder=operation/'backups';folder.mkdir();archive=folder/'before.pgdump'
+    archive.write_bytes(b'PGDMP-synthetic-control')
+    record={'archive':archive.name,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'bytes':archive.stat().st_size}
+    if saved: record['budget_digest']=saved
+    (folder/'before.json').write_text(json.dumps(record))
+    calls=[]
+    item=release.Release(CURRENT,base=operation,command=lambda argv,**kwargs:calls.append(argv))
+    monkeypatch.setattr(item,'budget_digest',lambda *args:'c'*64)
+    with pytest.raises(release.ReleaseError,match='budget state|Budget changed'):
+        item.restore_database(archive.name,'20261002_0008')
+    assert calls==[]  # No restore, name swap or old-image startup can erase the live ledger.
