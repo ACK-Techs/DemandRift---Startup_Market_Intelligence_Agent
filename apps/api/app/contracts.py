@@ -1693,6 +1693,20 @@ class DashboardSummary(Contract):
     checked_at: AwareDatetime
 
 
+class ResearchOperations(Contract):
+    user_id: UUID
+    project_id: UUID
+    research_id: UUID
+    job_state: Name | None
+    attempts: Count
+    checkpoint: Count
+    delivery_counts: dict[Name, Count]
+    provider_attempt_counts: dict[Name, Count]
+    usage: Usage
+    remaining_budget: BudgetLimits | None
+    checked_at: AwareDatetime
+
+
 WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefContent, IdeaBrief,
                SourcePlanItem, QueryPlanItem, ResearchPlan, SourceCounts, QueryExecution,
                RawArtifact, TextSegment, NormalizedDocument, Claim, Citation, SourceReport,
@@ -1701,4 +1715,4 @@ WIRE_MODELS = (ApiError, BudgetLimits, Usage, Versions, ProvenanceField, BriefCo
                ResearchCreate, HumanBriefPatch, BriefReference, ResearchPreparation, ResearchPreparationPage,
                BriefPage, PreparationMutationReceipt, HumanBriefConfirm, PreparationAnalysisCreate, PreparationAnalysis,
                PreparationAnalysisOperation, PreparationAnalysisPage, PlanDraftCreate, HumanPlanPatch, PlanApprovalCreate,
-               PlanReference, ResearchPlanPage, ResearchPlanPreparation, PlanMutationReceipt, ResearchStartCreate, DecisionReportPage, ResearchGapPage, GapApprovalCreate, GapApprovalReceipt, UserSettingsUpdate, UserSettings, DashboardResearch, DashboardSummary)
+               PlanReference, ResearchPlanPage, ResearchPlanPreparation, PlanMutationReceipt, ResearchStartCreate, DecisionReportPage, ResearchGapPage, GapApprovalCreate, GapApprovalReceipt, UserSettingsUpdate, UserSettings, DashboardResearch, DashboardSummary, ResearchOperations)

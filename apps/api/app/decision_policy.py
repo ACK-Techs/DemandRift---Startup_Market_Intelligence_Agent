@@ -112,7 +112,7 @@ def validate_report(report, bundle):
     return report
 
 
-def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cycles=2, modification_draft=None):
+def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cycles=2, modification_draft=None, remaining=None):
     positive = assess(bundle, plan)
     negative = assess(bundle, plan, thesis=positive.thesis, direction=c.Direction.OPPOSES)
     sufficient = positive if positive.status == 'sufficient' else negative if negative.status == 'sufficient' else positive
@@ -127,6 +127,7 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
     report_id = uuid5(bundle.bundle_id, 'decision-report:' + str(bundle.bundle_version))
     report_version = bundle.bundle_version
     gaps = []
+    no_new_evidence=bool(previous and set(previous.supporting_claim_ids+previous.opposing_claim_ids)>=set(claim.claim_id for claim in bundle.claims if claim.relevant))
     if outcome == c.Outcome.INVESTIGATE_MORE:
         for kind, question, missing in (
             (c.GapKind.INVESTIGATE_SECONDARY, 'Eksik bağımsız ve karşıt kaynak kanıtı nedir?', sufficient.blocking_reasons),
@@ -137,13 +138,32 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
                 severity='high', eligible_source_ids=[s.source_id for s in plan.source_plan] if kind == c.GapKind.INVESTIGATE_SECONDARY else [],
                 kind=kind, expected_evidence_type=None, question=question, missing_evidence=missing or ['Primary verification is missing.'],
                 proposed_queries=plan.query_plan if kind == c.GapKind.INVESTIGATE_SECONDARY else [],
-                remaining_budget=None, cycle=cycle, max_cycles=max_cycles,
+                remaining_budget=remaining, cycle=cycle, max_cycles=max_cycles,
                 stop_conditions=['Remaining shared budget exhausted.', 'No new evidence.', 'Maximum cycles reached.', 'User cancels.'],
-                status='stopped' if cycle >= max_cycles else 'proposed'))
+                status='stopped' if kind==c.GapKind.INVESTIGATE_SECONDARY and (cycle >= max_cycles or remaining is None or no_new_evidence) else 'proposed'))
     supporting = [claim for claim in bundle.claims if claim.direction == c.Direction.SUPPORTS and claim.relevant]
     opposing = [claim for claim in bundle.claims if claim.direction == c.Direction.OPPOSES and claim.relevant]
     def statements(items):
         return [c.ReportStatement(text=claim.statement, claim_ids=[claim.claim_id], citation_ids=claim.citation_ids) for claim in items]
+    roles={
+        'problem':{'problem_report','workaround','counter_evidence'},
+        'customer':{'problem_report','feature_request','switching_signal','counter_evidence'},
+        'competition':{'competitor_complaint','competitor_praise','switching_signal'},
+        'opportunity':{'feature_request','pricing_signal','stated_wtp_weak_signal','market_signal'},
+        'feasibility':{'workaround','switching_signal'},
+        'evidence_quality':set(claim.claim_type for claim in bundle.claims)}
+    profiles=[]
+    for pillar,types in roles.items():
+        selected=[claim for claim in bundle.claims if claim.relevant and claim.claim_type in types]
+        positives=[claim for claim in selected if claim.direction==c.Direction.SUPPORTS]
+        negatives=[claim for claim in selected if claim.direction==c.Direction.OPPOSES]
+        unknowns=list(dict.fromkeys([*[limitation for claim in selected for limitation in claim.limitations],
+            *([] if selected else [f'No validated evidence for {pillar}.']),
+            *(['Execution constraints remain user supplied conditions; technical feasibility is unverified.'] if pillar=='feasibility' else []),
+            *(sufficient.blocking_reasons if pillar=='evidence_quality' else [])]))
+        profiles.append(c.PillarProfile(pillar=pillar,status='insufficient' if not selected else 'mixed' if positives and negatives
+            else 'strong' if positives and sufficient.status=='sufficient' and pillar!='feasibility' else 'weak',
+            supporting_claim_ids=[claim.claim_id for claim in positives],opposing_claim_ids=[claim.claim_id for claim in negatives],known_unknowns=unknowns))
     report = c.DecisionReport(**base, report_id=report_id, report_version=report_version, previous_report_id=previous.report_id if previous else None,
         bundle_id=bundle.bundle_id, bundle_version=bundle.bundle_version, outcome=outcome, status='published',
         market_assessment=statements([claim for claim in bundle.claims if claim.claim_type == 'market_signal']),
@@ -152,10 +172,9 @@ def build_report(bundle, plan, *, previous=None, preferred=None, cycle=0, max_cy
         counter_evidence=statements(opposing), known_unknowns=bundle.known_unknowns,
         limitations=list(dict.fromkeys([*bundle.limitations, 'Secondary evidence does not establish primary behavioral validation.'])),
         sufficiency=sufficient, gap_ids=[gap.gap_id for gap in gaps],
-        pillar_profiles=[c.PillarProfile(pillar=pillar, status='insufficient' if sufficient.status == 'insufficient' else 'mixed' if opposing else 'strong',
-            supporting_claim_ids=[claim.claim_id for claim in supporting], opposing_claim_ids=[claim.claim_id for claim in opposing], known_unknowns=bundle.known_unknowns)
-            for pillar in ('problem', 'customer', 'competition', 'opportunity', 'feasibility', 'evidence_quality')],
-        target_customer=[], problem=statements([claim for claim in bundle.claims if claim.claim_type == 'problem_report']),
+        pillar_profiles=profiles,
+        target_customer=statements([claim for claim in bundle.claims if claim.relevant and claim.evidence_type in (c.EvidenceType.DIRECT_EXPERIENCE,c.EvidenceType.OBSERVED_USAGE)]),
+        problem=statements([claim for claim in bundle.claims if claim.claim_type in ('problem_report','workaround')]),
         competitors=statements([claim for claim in bundle.claims if claim.claim_type.startswith('competitor_')]),
         opportunity_hypotheses=[], supporting_claim_ids=[claim.claim_id for claim in supporting], opposing_claim_ids=[claim.claim_id for claim in opposing],
         citation_ids=[citation.citation_id for citation in bundle.citations], critical_unknowns=sufficient.blocking_reasons,

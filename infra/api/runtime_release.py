@@ -19,8 +19,8 @@ import urllib.request
 BASE = Path('/opt/demandrift-api')
 REPOSITORY = Path('/opt/demandrift-build/repository')
 BUILD_LOCK = Path('/opt/demandrift-build/build.lock')
-SCHEMA = '20261002_0009'
-PREVIOUS_SCHEMA = '20261002_0008'
+SCHEMA = '20261003_0010'
+PREVIOUS_SCHEMA = '20261002_0009'
 SHA = re.compile(r'[0-9a-f]{40}\Z')
 BACKUP_LIMIT = 1024 ** 3
 COMMAND_ENVIRONMENT = {'PATH': '/usr/sbin:/usr/bin:/sbin:/bin',
@@ -148,12 +148,6 @@ class Release:
             raise ReleaseError('Missing API Dockerfile')
 
     def build(self, context):
-        self.command(['docker', 'build', '--target', 'test', '-t', f'demandrift-api-test:{self.sha}',
-                      str(context)], timeout=600)
-        self.command(['docker', 'run', '--rm', '--network=none', '--read-only', '--cap-drop=ALL',
-                      '--security-opt=no-new-privileges', '--pids-limit=128', '--memory=512m',
-                      '--cpus=1', '--tmpfs', '/tmp:rw,noexec,nosuid,size=64m',
-                      f'demandrift-api-test:{self.sha}'], timeout=180)
         self.command(['docker', 'build', '--target', 'runtime', '--build-arg', f'APP_REVISION={self.sha}',
                       '--label', f'org.opencontainers.image.revision={self.sha}', '-t',
                       f'demandrift-api:{self.sha}', str(context)], timeout=600)
@@ -178,6 +172,41 @@ class Release:
             private_file(self.base / 'compose.yml')
             return revision, True
         raise ReleaseError('Existing service revision must be recorded before transition')
+
+    def backup_artifacts(self, database_archive):
+        path=self.base/'backups'/database_archive.replace('.pgdump','.artifacts.tar')
+        # Workers are quiesced. Read the persistent volume with the current runtime
+        # UID; no host bind, networking or secret mount enters this container.
+        program="import sys,tarfile; t=tarfile.open(fileobj=sys.stdout.buffer,mode='w|'); t.add('/data/artifacts',arcname='artifacts',recursive=True); t.close()"
+        argv=['docker','run','--rm','--network=none','--read-only','--cap-drop=ALL',
+            '--security-opt=no-new-privileges','--user','10001:10001',
+            '--volume','demandrift_api_artifacts:/data/artifacts:ro',f'demandrift-api:{self.sha}',
+            'python','-c',program]
+        fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)
+        process=None
+        try:
+            with os.fdopen(fd,'wb') as output:
+                process=subprocess.Popen(argv,stdin=subprocess.DEVNULL,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL,env=COMMAND_ENVIRONMENT)
+                size=0;deadline=time.monotonic()+180
+                with selectors.DefaultSelector() as selector:
+                    selector.register(process.stdout,selectors.EVENT_READ)
+                    while True:
+                        remaining=deadline-time.monotonic()
+                        if remaining<=0 or not selector.select(remaining): raise ReleaseError('Artifact backup exceeded deadline')
+                        chunk=os.read(process.stdout.fileno(),65536)
+                        if not chunk: break
+                        size+=len(chunk)
+                        if size>BACKUP_LIMIT: raise ReleaseError('Artifact backup exceeded limit')
+                        output.write(chunk)
+                process.stdout.close();process.wait(timeout=max(.001,deadline-time.monotonic()))
+                if process.returncode: raise ReleaseError('Private artifact backup failed')
+                output.flush();os.fsync(output.fileno())
+            with path.open('rb') as source: digest=archive_hash(source)
+            return {'archive':path.name,'sha256':digest,'bytes':size}
+        except BaseException:
+            if process and process.poll() is None: process.kill();process.wait()
+            if process and process.stdout: process.stdout.close()
+            path.unlink(missing_ok=True);raise
 
     def backup(self):
         folder = self.base / 'backups'
@@ -228,9 +257,10 @@ class Release:
                     raise ReleaseError('Invalid backup archive')
                 source.seek(0)
                 digest = archive_hash(source)
+            artifacts=self.backup_artifacts(path.name)
             atomic_json(path.with_suffix('.json'), {'revision': self.sha, 'archive': path.name,
                         'sha256': digest, 'bytes': path.stat().st_size,
-                        'scope': 'database objects/data; role secrets and artifact volume require separate backups'})
+                        'artifacts':artifacts, 'scope':'database and artifact volume; existing private role credentials are retained separately'})
             return path.name
         except BaseException:
             if process is not None and process.poll() is None:

@@ -160,6 +160,14 @@ def bind_claims(draft, document, artifact, query, plan):
         ownership = document.ownership_key
         group_id = uuid5(NAMESPACE_URL, identity) if identity else uuid5(document.document_id, 'unknown-identity')
         market_match = item.market_match if plan.brief.market_scope.value is not None else None
+        market = plan.brief.market_scope.value
+        supplied_market = artifact.fields.get('market')
+        if market_match is True and market:
+            tokens=set(re.findall(r'[\w]{3,}', market.casefold()))
+            observed=set(re.findall(r'[\w]{3,}', ((supplied_market or '')+' '+document.normalized_text).casefold()))
+            if not tokens or not tokens.issubset(observed):
+                market_match=None
+                item=item.model_copy(update={'limitations':[*item.limitations,'Market match lacks a backend supplied geographic/segment reference.']})
         if document.document_type == 'official_page' and item.evidence_type in (c.EvidenceType.DIRECT_EXPERIENCE, c.EvidenceType.OBSERVED_USAGE):
             item = item.model_copy(update={'evidence_type':c.EvidenceType.OFFICIAL_CLAIM, 'limitations':[*item.limitations, 'Official statements are not independent customer observations.']})
         if 'archive_evidence' in document.quality_flags:

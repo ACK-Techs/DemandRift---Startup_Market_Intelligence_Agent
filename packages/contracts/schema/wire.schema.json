@@ -6083,6 +6083,111 @@
       "title": "ResearchMode",
       "type": "string"
     },
+    "ResearchOperations": {
+      "additionalProperties": false,
+      "properties": {
+        "attempts": {
+          "minimum": 0,
+          "title": "Attempts",
+          "type": "integer"
+        },
+        "checked_at": {
+          "format": "date-time",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "checkpoint": {
+          "minimum": 0,
+          "title": "Checkpoint",
+          "type": "integer"
+        },
+        "delivery_counts": {
+          "patternProperties": {
+            "\\S": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "propertyNames": {
+            "maxLength": 128,
+            "minLength": 1
+          },
+          "title": "Delivery Counts",
+          "type": "object"
+        },
+        "job_state": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Job State"
+        },
+        "project_id": {
+          "format": "uuid",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "provider_attempt_counts": {
+          "patternProperties": {
+            "\\S": {
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "propertyNames": {
+            "maxLength": 128,
+            "minLength": 1
+          },
+          "title": "Provider Attempt Counts",
+          "type": "object"
+        },
+        "remaining_budget": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BudgetLimits"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "research_id": {
+          "format": "uuid",
+          "title": "Research Id",
+          "type": "string"
+        },
+        "usage": {
+          "$ref": "#/$defs/Usage"
+        },
+        "user_id": {
+          "format": "uuid",
+          "title": "User Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_id",
+        "project_id",
+        "research_id",
+        "job_state",
+        "attempts",
+        "checkpoint",
+        "delivery_counts",
+        "provider_attempt_counts",
+        "usage",
+        "remaining_budget",
+        "checked_at"
+      ],
+      "title": "ResearchOperations",
+      "type": "object"
+    },
     "ResearchPlan": {
       "additionalProperties": false,
       "properties": {
@@ -8027,6 +8132,9 @@
     },
     "ResearchGapRequest": {
       "$ref": "#/$defs/ResearchGapRequest"
+    },
+    "ResearchOperations": {
+      "$ref": "#/$defs/ResearchOperations"
     },
     "ResearchPlan": {
       "$ref": "#/$defs/ResearchPlan"

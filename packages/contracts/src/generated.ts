@@ -157,6 +157,8 @@ export type ResearchIntent = { "intent_id": string; "intent": SearchIntent; "que
 
 export type ResearchMode = "standard" | "deep_research";
 
+export type ResearchOperations = { "user_id": string; "project_id": string; "research_id": string; "job_state": (string | null); "attempts": number; "checkpoint": number; "delivery_counts": { [key: string]: number; }; "provider_attempt_counts": { [key: string]: number; }; "usage": Usage; "remaining_budget": (BudgetLimits | null); "checked_at": string; };
+
 export type ResearchPlan = { "schema_version": "1.0.0"; "user_id": string; "project_id": string; "research_id": string; "created_at": string; "versions": Versions; "research_plan_id": string; "plan_version": number; "plan_fingerprint": string; "status": "draft" | "awaiting_user" | "confirmed"; "brief_id": string; "brief_version": number; "brief": BriefContent; "research_mode": ResearchMode; "intents": Array<ResearchIntent>; "source_plan": Array<SourcePlanItem>; "query_plan": Array<QueryPlanItem>; "budget": BudgetLimits; "known_unknowns": Array<string>; "confirmed_at": (string | null); };
 
 export type ResearchPlanPage = { "schema_version": "1.0.0"; "items": Array<ResearchPlan>; "page": PageInfo; };

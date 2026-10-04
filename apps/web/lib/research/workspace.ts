@@ -89,6 +89,9 @@ export function useResearchWorkspace(projectId: string, researchId: string) {
     if (pending.recovery && pending.recoveryModel) {
       const path = pending.recovery.replace("{key}", pending.key);
       const result = await request(pending.recoveryModel, path);
+      if (result?.ok && pending.recoveryModel === "PreparationAnalysisOperation" && "status" in result.data && ["claimed", "unknown"].includes(String(result.data.status))) {
+        setNotice("The provider result remains unresolved; its request is retained and no new analysis is authorized."); await refresh(); return;
+      }
       if (result?.ok) { remember(null); setNotice("The saved operation was found. Check its recorded version and the current selection."); await refresh(); return; }
       setNotice("A committed receipt could not be found. The operation remains unresolved; an explicit retry retains its original key and input.");
     } else { await refresh(); setNotice("Records were refreshed. If the result remains unknown, retry the saved input explicitly with its existing key."); }

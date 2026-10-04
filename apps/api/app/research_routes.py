@@ -113,3 +113,27 @@ def approve_gap(project_id: UUID, research_id: UUID, gap_id: UUID, body: c.GapAp
 @router.get('/bundles/{bundle_id}/versions/{version}',response_model=c.EvidenceBundle)
 def historical_bundle(project_id: UUID,research_id: UUID,bundle_id: UUID,version:int,request:Request,auth=Depends(authenticated)):
     return execute(lambda:repo(request,auth,project_id).get(research_id,'bundle',bundle_id,version))
+
+
+@router.get('/operations',response_model=c.ResearchOperations)
+def operations(project_id: UUID,research_id: UUID,request: Request,auth=Depends(authenticated)):
+    def snapshot():
+        from datetime import datetime,timezone
+        from sqlalchemy import select,func
+        from app.db import job_models,budget_models
+        from app.research_runtime import current_usage,remaining_budget
+        repository=repo(request,auth,project_id)
+        run=repository.get(research_id,'run',research_id)
+        with repository.database.transaction(auth.user.user_id) as session:
+            repository._project(session)
+            repository._research(session,research_id)
+            job=session.execute(select(job_models.jobs).where(*repository._where(job_models.jobs,research_id))).mappings().one_or_none()
+            def counts(table):
+                return {state:count for state,count in session.execute(select(table.c.state,func.count()).where(*repository._where(table,research_id)).group_by(table.c.state))}
+            deliveries=counts(job_models.outbox)
+            attempts=counts(budget_models.attempts)
+        return c.ResearchOperations(user_id=auth.user.user_id,project_id=project_id,research_id=research_id,
+            job_state=job['state'] if job else None,attempts=job['attempts'] if job else 0,checkpoint=job['checkpoint'] if job else 0,
+            delivery_counts=deliveries,provider_attempt_counts=attempts,usage=current_usage(repository.database,auth.user.user_id,project_id,research_id),
+            remaining_budget=remaining_budget(repository.database,auth.user.user_id,project_id,research_id,run.budget),checked_at=datetime.now(timezone.utc))
+    return execute(snapshot)

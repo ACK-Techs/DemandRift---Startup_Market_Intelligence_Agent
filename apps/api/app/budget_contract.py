@@ -140,6 +140,13 @@ class BudgetCapacity:
             limits.max_concurrency,
         )
 
+    def permits(self, requested: "BudgetCapacity") -> bool:
+        """An existing ceiling may be narrowed without resetting its ledger."""
+        return (requested.ceiling.fits(self.ceiling)
+                and requested.soft_cost_picousd <= self.soft_cost_picousd
+                and requested.duration_seconds <= self.duration_seconds
+                and requested.concurrency <= self.concurrency)
+
     def admits(
         self,
         spent: ResourceAmount,

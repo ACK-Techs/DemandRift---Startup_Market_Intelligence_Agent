@@ -25,7 +25,7 @@ def _open_no_follow(path: Path) -> int:
 
 def runtime_secret(name: str, *, allow_environment: bool = True) -> str:
     if (type(allow_environment) is not bool
-            or name not in ("DATABASE_URL", "DEMANDRIFT_BROKER_URL", "GEMINI_API_KEY")):
+            or name not in ("DATABASE_URL", "DEMANDRIFT_BROKER_URL", "GEMINI_API_KEY", "DEMANDRIFT_BUDGET_SUITE_ID")):
         raise RuntimeSecretError("Supported backend credential required")
     try:
         value, filename = os.environ.get(name), os.environ.get(name + "_FILE")

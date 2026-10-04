@@ -729,6 +729,17 @@ class Phase1Repository(PreparationHttpRepository):
                 duration_seconds=capacity.duration_seconds,
                 concurrency=capacity.concurrency,
             )
+            from app.db.budget_models import accounts
+            account = session.execute(select(accounts).where(
+                accounts.c.user_id == self.user_id, accounts.c.project_id == self.project_id,
+                accounts.c.research_id == research_id, accounts.c.suite_id == suite_id)).mappings().one_or_none()
+            if account is not None:
+                stored = BudgetCapacity(ResourceAmount.from_json(account["ceiling"]),
+                    account["soft_cost_picousd"], account["duration_seconds"], account["concurrency"])
+                if not stored.permits(capacity):
+                    raise Phase1Conflict("Requested limits exceed the existing persistent budget")
+                policy = dict(ceiling=account["ceiling"], soft_cost_picousd=account["soft_cost_picousd"],
+                    duration_seconds=account["duration_seconds"], concurrency=account["concurrency"])
             session.scalar(
                 text(
                     "SELECT public.demandrift_budget_operate('create_account',CAST(:s AS uuid),CAST(:u AS uuid),CAST(:p AS uuid),CAST(:r AS uuid),NULL,NULL,NULL,NULL,NULL,CAST(:policy AS jsonb))"

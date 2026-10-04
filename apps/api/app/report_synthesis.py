@@ -40,10 +40,12 @@ class ReportSynthesisFailure(RuntimeError):
 
 
 def synthesize(context, plan, bundle, *, previous=None, cycle=0):
+    from app.research_runtime import remaining_budget
+    remaining=remaining_budget(context.repository.database,plan.user_id,plan.project_id,plan.research_id,plan.budget)
     positive, negative = assess(bundle, plan), assess(bundle, plan, direction=c.Direction.OPPOSES)
     sufficient = positive if positive.status=='sufficient' else negative if negative.status=='sufficient' else positive
     if not bundle.claims:
-        return build_report(bundle, plan, previous=previous,cycle=cycle)
+        return build_report(bundle, plan, previous=previous,cycle=cycle,remaining=remaining)
     selected = []
     size = 0
     # Preserve opposing signals first; account for UTF-8, not just characters.
@@ -84,7 +86,7 @@ def synthesize(context, plan, bundle, *, previous=None, cycle=0):
         prose += [draft.modification.change_assumption,draft.modification.proposed_focus,*draft.modification.evidence_to_reassess]
     if any(SCOPE_PATTERN.search(item) for item in prose):
         raise ReportSynthesisFailure('Synthesis exceeded the active research scope.')
-    report,gaps=build_report(bundle,plan,previous=previous,preferred=draft.outcome,cycle=cycle,modification_draft=draft.modification)
+    report,gaps=build_report(bundle,plan,previous=previous,preferred=draft.outcome,cycle=cycle,modification_draft=draft.modification,remaining=remaining)
     claims={str(item.claim_id):item for item in bundle.claims}
     def statements(ids):
         return [c.ReportStatement(text=claims[key].statement,claim_ids=[claims[key].claim_id],citation_ids=claims[key].citation_ids) for key in ids]

@@ -111,6 +111,10 @@ def pipeline(context):
             pins = repository.selections(research,'run',research)['record']
             writer.put_run(run, bundle_version=result_bundle.bundle_version if result_bundle else pins['bundle_version'],
                 report_version=result_report.report_version if result_report else pins['report_version'])
+        from app.runtime_observability import record
+        record('stage', user_id=plan.user_id, project_id=plan.project_id, research_id=research,
+            job_id=context.job.job_id, stage=run.phase.value, status=state, requests=run.usage.requests,
+            bytes=run.usage.bytes, tokens=run.usage.input_tokens+run.usage.output_tokens, cost_usd=run.usage.cost_usd)
         return True
     for query in plan.query_plan:
         if query.query_id in completed:
@@ -122,7 +126,7 @@ def pipeline(context):
         execution.status = c.SourceStatus.RUNNING
         execution.started_at = datetime.now(timezone.utc)
         try:
-            for retry in range(2):
+            for retry in range(min(2, query.limits.max_requests)):
                 try:
                     response, captured = acquire(context, plan, query,ordinal=cycle*3+retry)
                     break
@@ -130,7 +134,7 @@ def pipeline(context):
                     if error.status=='no_results':
                         response,captured=None,[]
                         break
-                    if retry==1 or error.status!='rate_limited':
+                    if retry+1>=min(2,query.limits.max_requests) or error.status not in ('rate_limited','source_unavailable'):
                         raise
                     __import__('time').sleep(2)
             execution.counts.discovered = len(captured)
@@ -205,7 +209,9 @@ def pipeline(context):
                 claims.extend(fresh_claims)
                 citations.extend(fresh_citations)
             execution.status = c.SourceStatus.SUCCEEDED if captured else c.SourceStatus.NO_RESULTS
-            execution.counts.eligible = len(selected_documents)
+            eligible_documents={citation.document_id for claim in claims if claim.relevant
+                and query.intent_id in claim.intent_ids for citation in citations if citation.citation_id in claim.citation_ids}
+            execution.counts.eligible = len([item for item in selected_documents if item.document_id in eligible_documents])
             execution.counts.unique = len(selected_documents)
             execution.counts.independent = len({item.independent_identity_key for item in selected_documents if item.independent_identity_key and item.ownership_key})
         except (AcquisitionFailure, ValueError, OSError, RuntimeError) as error:

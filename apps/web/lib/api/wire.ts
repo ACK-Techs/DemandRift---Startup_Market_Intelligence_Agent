@@ -5,6 +5,7 @@ import type * as Wire from "../../../../packages/contracts/src/generated";
 import schema from "../../../../packages/contracts/schema/wire.schema.json" with { type: "json" };
 
 export type WireModels = {
+  ResearchOperations: Wire.ResearchOperations;
   AuthCredentials: Wire.AuthCredentials; ProjectCreate: Wire.ProjectCreate;
   ApiError: Wire.ApiError; BriefContent: Wire.BriefContent; BudgetLimits: Wire.BudgetLimits;
   Citation: Wire.Citation; Claim: Wire.Claim; DecisionReport: Wire.DecisionReport;

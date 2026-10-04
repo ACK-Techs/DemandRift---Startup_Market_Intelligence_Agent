@@ -131,6 +131,18 @@ class BudgetRepository:
             raise BudgetConflict("Immutable capacity is required")
         self._operate("create_account", capacity=capacity)
 
+    def ensure_account(self, capacity: BudgetCapacity):
+        try:
+            existing = self.snapshot()
+        except RecordNotFound:
+            self.create_account(capacity)
+            return self.snapshot()
+        stored = BudgetCapacity(ResourceAmount.from_json(existing["ceiling"]),
+            existing["soft_cost_picousd"], existing["duration_seconds"], existing["concurrency"])
+        if not stored.permits(capacity):
+            raise BudgetConflict("Requested limits exceed the existing persistent budget")
+        return existing
+
     def reserve(
         self, attempt_id: UUID, fingerprint: str, amount: ResourceAmount, metadata: dict
     ) -> AttemptReceipt:

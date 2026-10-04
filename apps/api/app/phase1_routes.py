@@ -112,7 +112,7 @@ def draft(project_id: UUID, research_id: UUID, body: c.PlanDraftCreate,
     def build():
         validate_budget(body.budget)
         from app.budget_contract import BudgetCapacity
-        ledger(repository.database, auth.user.user_id, project_id, research_id).create_account(BudgetCapacity.from_wire(body.budget))
+        ledger(repository.database, auth.user.user_id, project_id, research_id).ensure_account(BudgetCapacity.from_wire(body.budget))
         brief = repository.latest_brief(research_id)
         analysis = repository.get_analysis(research_id, body.analysis_id) if body.analysis_id else None
         now = datetime.now(timezone.utc)

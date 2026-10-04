@@ -65,11 +65,25 @@ def reconcile_receipts(database, message):
             after = page.next_after_attempt_id
 
 
+def scope_from(message):
+    return (message.user_id,message.project_id,message.research_id)
+
+
 class RuntimeDelivery:
     def __init__(self, database, application):
         self.database, self.publisher = database, JobPublisher(database, application)
+        self.last_retention=0
 
     def tick(self):
+        import time
+        if time.monotonic()-self.last_retention>=3600:
+            self.last_retention=time.monotonic()
+            try:
+                from app.runtime_retention import cleanup
+                from app.runtime_observability import record
+                removed=cleanup(os.environ.get('ARTIFACT_ROOT','/data/artifacts'))
+                if removed: record('retention',status='scratch_removed',checkpoint=removed)
+            except (OSError,ValueError): pass
         # Definer returns scoped identifiers only. Full data remains owner RLS.
         with self.database.transaction() as session:
             messages = [WakeMessage.model_validate(dict(row)) for row in session.execute(text('SELECT * FROM public.demandrift_pending_wakes()')).mappings()]
@@ -78,6 +92,26 @@ class RuntimeDelivery:
                 reconcile_receipts(self.database, message)
                 repository, _, _ = selected_delivery(self.database, message)
                 recovered = repository.recover(message.research_id, message.job_id)
+                from app.runtime_observability import record
+                record('recovery', user_id=message.user_id, project_id=message.project_id,
+                    research_id=message.research_id, job_id=message.job_id, status=recovered.job.state,
+                    attempts=recovered.job.attempts, checkpoint=recovered.job.checkpoint)
+                if recovered.job.state in ('failed', 'held_unknown'):
+                    from app.contracts import ResearchRun, ApiError
+                    from datetime import datetime, timezone
+                    from app.research_runtime import current_usage
+                    with repository.transaction(message.research_id) as writer:
+                        run=repository.get(message.research_id,'run',message.research_id)
+                        pins=repository.selections(message.research_id,'run',message.research_id)['record']
+                        state='failed' if recovered.job.state=='failed' else 'partial'
+                        if run.status!=state:
+                            payload=run.model_dump(mode='json')
+                            payload.update(status=state,usage=current_usage(self.database,*scope_from(message)).model_dump(mode='json'))
+                            if state=='failed': payload['finished_at']=datetime.now(timezone.utc).isoformat()
+                            payload['errors'].append(ApiError(code='worker_'+recovered.job.state,
+                                message='Research stopped after finite recovery attempts.' if state=='failed' else 'Provider accounting is unresolved; further requests are held.',
+                                request_id=message.job_id,stage='runtime').model_dump(mode='json'))
+                            writer.put_run(ResearchRun.model_validate(payload),bundle_version=pins['bundle_version'],report_version=pins['report_version'])
                 if recovered.job.state not in ('queued', 'retry_wait'):
                     continue
                 pending = repository.pending_deliveries(message.research_id, message.job_id)

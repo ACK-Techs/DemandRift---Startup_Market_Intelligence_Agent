@@ -17,12 +17,12 @@ Bu yeniden planlama sırasında ürün geliştirmesi veya test başlatılmadı. 
 
 | Sıra | İş | Korunan iş kimlikleri | Durum |
 |---|---|---|---|
-| 1 | Mevcut ilerleme ve eksik işlevleri main'den belirle | Tüm BE/FE/OP | Sonraki uygulama başlangıcında koddan belirle |
-| 2 | Hesap/proje, worker, Gemini+bütçe, source registry ve erken read API; frontend hesap/proje bağlantısı | BE-03–06, BE-15A/16A, FE-03/04 | Tamamlanan kısmı koru; eksikten devam et |
-| 3 | Fikir/netleştirme/kategori/sorgu/onaylı plan ve tek araştırma başlatma | BE-07, FE-05/06 | Tamamlanan kısmı koru; eksikten devam et |
-| 4 | Kaynak edinme, ham kayıt, normalizasyon/dedup, ilgililik, claim/citation ve EvidenceBundle; kaynak/kanıt ekranları | BE-08–12, BE-15B, FE-07/08 | Tamamlanan kısmı koru; eksikten devam et |
-| 5 | Yeterlilik, dört outcome, rapor/gap/sürüm/export; dashboard/ayar ve tüm ekran durumları | BE-13/14, BE-15C/16B, FE-09–12 | Tamamlanan kısmı koru; eksikten devam et |
-| 6 | Hetzner Compose/secret/migration/yedek/rollback/route ve işletim talimatını hazırla | OP-02–05 | Yayın ve canlı kontrol finalde |
+| 1 | Mevcut ilerleme ve eksik işlevleri main'den belirle | Tüm BE/FE/OP | 3 Ekim: taşınmış aynı main checkout okundu; auth/DB/bütçe/Faz 1 çekirdeği korundu; worker ve Faz 2/3 bağlantıları eksik |
+| 2 | Hesap/proje, worker, Gemini+bütçe, source registry ve erken read API; frontend hesap/proje bağlantısı | BE-03–06, BE-15A/16A, FE-03/04 | Temel ve runtime/API bağlantıları kodlandı; final doğrulaması bekliyor |
+| 3 | Fikir/netleştirme/kategori/sorgu/onaylı plan ve tek araştırma başlatma | BE-07, FE-05/06 | Kod ve frontend bağlantıları tamamlandı; final doğrulaması bekliyor |
+| 4 | Kaynak edinme, ham kayıt, normalizasyon/dedup, ilgililik, claim/citation ve EvidenceBundle; kaynak/kanıt ekranları | BE-08–12, BE-15B, FE-07/08 | Kod ve frontend bağlantıları tamamlandı; final doğrulaması bekliyor |
+| 5 | Yeterlilik, dört outcome, rapor/gap/sürüm/export; dashboard/ayar ve tüm ekran durumları | BE-13/14, BE-15C/16B, FE-09–12 | Kod ve frontend bağlantıları tamamlandı; final doğrulaması bekliyor |
+| 6 | Hetzner Compose/secret/migration/yedek/rollback/route ve işletim talimatını hazırla | OP-02–05 | Kalıcı izin/bütçe, toparlanma, log/metric ve DB+raw yedek/restore kodlandı; yayın ve kontrol finalde |
 | 7 | Bütün ürün için test/kontrol, hata düzeltme ve son suite | QA-01–08; 30+24+33=87 senaryo | Ürün işlevleri bitene kadar çalıştırılmaz |
 | 8 | Final Hetzner yayını ve gerçek local FE akışı; kısa teslim özeti | OP-06 | Final offline suite sonrası |
 

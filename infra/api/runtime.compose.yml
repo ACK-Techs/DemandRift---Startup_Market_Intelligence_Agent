@@ -1,4 +1,4 @@
-# Install only after the exact release's independent gates and successful CI.
+# Install after successful final CI for the exact main revision.
 x-application: &application
   image: demandrift-api:${APP_REVISION:?APP_REVISION required}
   user: '10001:10001'
@@ -10,7 +10,7 @@ x-application: &application
   mem_limit: 512m
   cpus: 1
   tmpfs: ['/tmp:rw,noexec,nosuid,size=64m,mode=1777']
-  volumes: ['demandrift_artifacts:/data/artifacts']
+  volumes: ['demandrift_artifacts:/data/artifacts', '/etc/demandrift/authority:/run/authority:ro']
   networks: [default, data]
   logging:
     driver: json-file
@@ -26,6 +26,12 @@ x-environment: &environment
   DEMANDRIFT_WORKER_KEY_PREFIX: 'demandrift:'
   GEMINI_API_KEY_FILE: /run/secrets/gemini-api-key
   ARTIFACT_ROOT: /data/artifacts
+  DEMANDRIFT_BUDGET_SUITE_ID_FILE: /run/authority/budget-suite-id
+  DEMANDRIFT_SOURCE_GRANTS_FILE: /run/authority/source-grants.json
+  DEMANDRIFT_GEMINI_PROVIDER: developer
+  DEMANDRIFT_GEMINI_LIVE_ENABLED: '1'
+  DEMANDRIFT_HANDLER_SECONDS: '1800'
+  DEMANDRIFT_VISIBILITY_SECONDS: '1800'
 
 services:
   api:
@@ -131,6 +137,23 @@ services:
     cpus: 0.5
     depends_on:
       postgres: {condition: service_healthy}
+
+  authority:
+    <<: *application
+    restart: 'no'
+    profiles: [operations]
+    environment:
+      APP_ENV: production
+      DATABASE_URL_FILE: /run/secrets/admin-database-url
+      DEMANDRIFT_BUDGET_SUITE_ID_FILE: /run/authority/budget-suite-id
+      DEMANDRIFT_QUALIFICATION_FILE: /run/authority/source-qualification.json
+      DEMANDRIFT_SOURCE_GRANTS_FILE: /run/authority/source-grants.json
+    secrets: [admin-database-url]
+    command: ['python', '-m', 'app.runtime_authority']
+    volumes: ['/etc/demandrift/authority:/run/authority:ro']
+    networks: [data]
+    mem_limit: 384m
+    cpus: 0.5
 
 networks:
   default:

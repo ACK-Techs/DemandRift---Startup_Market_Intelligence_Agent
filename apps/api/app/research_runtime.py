@@ -20,7 +20,9 @@ AUTHORIZED_LIMITS = BudgetLimits(max_requests=300, max_bytes=50_000_000,
 
 def suite_id():
     try:
-        return UUID(os.environ["DEMANDRIFT_BUDGET_SUITE_ID"])
+        from app.runtime_secrets import runtime_secret
+        return UUID(runtime_secret("DEMANDRIFT_BUDGET_SUITE_ID",
+            allow_environment=os.environ.get("APP_ENV") != "production"))
     except (KeyError, ValueError):
         raise RecordNotFound("Authorized persistent budget suite is not configured") from None
 
@@ -76,3 +78,23 @@ def historical_context(database, owner, project, research, attempt, current):
             return current
         return AdmissionContext(row['admission_kind'], row['brief_id'], row['brief_version'],
             row['job_id'], row['job_lease_owner'], row['job_fence'])
+
+
+def remaining_budget(database, owner, project, research, limits):
+    """Conservative owner-visible remainder; native shared admission is final authority."""
+    from decimal import Decimal
+    row=ledger(database,owner,project,research).snapshot()
+    usage=account_usage(row)
+    if row['closed'] or usage.provider_result_unknown:
+        return None
+    spent=ResourceAmount.from_json(row['spent'])+ResourceAmount.from_json(row['held'])
+    cap=ResourceAmount.from_json(row['ceiling'])
+    values={name:max(0,min(getattr(limits,'max_'+name),getattr(cap,name))-getattr(spent,name))
+            for name in ('requests','bytes','pages','records','tokens')}
+    seconds=max(0,min(limits.max_duration_seconds,row['duration_seconds'])-int(usage.duration_seconds+0.999))
+    cost=min(Decimal(limits.max_cost_usd),Decimal(cap.cost_usd))-Decimal(usage.cost_usd)-Decimal(usage.reserved_cost_usd)
+    if min(values.values())<=0 or seconds<=0 or cost<=0: return None
+    return BudgetLimits(**{'max_'+key:value for key,value in values.items()},
+        max_duration_seconds=seconds,max_cost_usd=format(cost,'.6f'),
+        soft_cost_usd=format(min(cost,Decimal(limits.soft_cost_usd)),'.6f'),
+        max_concurrency=min(limits.max_concurrency,row['concurrency']))

@@ -69,7 +69,9 @@ def authorized_adapter(database, owner, project, source):
     records = [item for item in records['sources'] if item.get('source_id') == source.source_id and item.get('surface_id') == source.surface_id]
     if len(records) != 1:
         raise AcquisitionFailure('source_unavailable', 'No reviewed adapter exists for this source surface.')
-    record = records[0]
+    return parse_adapter(records[0], source, now)
+
+def parse_adapter(record, source, now):
     grant_fields = set(ServerGrant.__dataclass_fields__)
     adapter_fields = {'surface_id', 'adapter', 'query_parameter', 'limit_parameter', 'fixed_parameters', 'records_locator', 'field_locators', 'content_kind', 'document_type', 'language', 'market'}
     if set(record) != grant_fields | adapter_fields:
@@ -86,6 +88,16 @@ def authorized_adapter(database, owner, project, source):
         raise AcquisitionFailure('blocked_by_policy', 'Current origin permission is unavailable.')
     if record['adapter'] not in ('json_records', 'html_page', 'text_page') or record['content_kind'] not in ('fetched_content', 'discovery'):
         raise AcquisitionFailure('source_unavailable', 'Reviewed adapter capability is unsupported.')
+    if (type(record['fixed_parameters']) is not dict or len(record['fixed_parameters'])>24
+            or type(record['field_locators']) is not dict or len(record['field_locators'])>24
+            or type(record['query_parameter']) is not str or not record['query_parameter']
+            or record['limit_parameter'] is not None and type(record['limit_parameter']) is not str
+            or len(grant.paths)!=1 or record['surface_id']!=source.surface_id
+            or not set(grant.allowed_content_types).issubset(source.allowed_content_types)):
+        raise AcquisitionFailure('blocked_by_policy', 'Reviewed adapter scope is invalid.')
+    permitted_names={rule.name for rule in grant.query_rules}
+    if not (set(record['fixed_parameters'])|{record['query_parameter']}|({record['limit_parameter']} if record['limit_parameter'] else set())).issubset(permitted_names):
+        raise AcquisitionFailure('blocked_by_policy', 'Reviewed adapter parameters exceed the grant.')
     return SourcePolicy(source.source_id, get_registry().registry_version, grant), record
 
 
@@ -102,7 +114,7 @@ def locate(value, path):
 def captures(response, config, query):
     if config['adapter'] in ('html_page', 'text_page'):
         return [Capture(response.content, response.content_type, response.request_url,
-            {'document_type': config['document_type'], 'language': config['language'], 'ownership_key': None}, content_kind=config['content_kind'])]
+            {'document_type': config['document_type'], 'language': config['language'], 'ownership_key': None, 'market': config['market']}, content_kind=config['content_kind'])]
     payload = json.loads(response.content.decode('utf-8'))
     records = locate(payload, config['records_locator'])
     if type(records) is not list:
@@ -124,7 +136,7 @@ def captures(response, config, query):
             if published and published.tzinfo is None:
                 published = None
             fields = {key: value for key, value in values.items() if key in ('external_id', 'title', 'author_reference', 'identity_key', 'ownership_key') and type(value) is str and 0 < len(value) <= (10000 if key == 'title' else 128)}
-            fields.update(document_type=config['document_type'], language=config['language'])
+            fields.update(document_type=config['document_type'], language=config['language'], market=config['market'])
             result.append(Capture(text.encode('utf-8'), 'text/html' if '<' in text and '>' in text else 'text/plain', url, fields,
                 published, config['content_kind']))
         except (ValueError, TypeError):
@@ -167,9 +179,9 @@ def acquire(context, plan, query, *, ordinal=0):
             manifest = read_manifest(storage, scope, manifest_id)
             if manifest.get('error'):
                 raise AcquisitionFailure(manifest['error'], 'Source returned an unsuccessful response.')
-            content = storage.read(*scope, attempt, manifest['digest'], manifest['size'])
+            content = storage.read(*scope, attempt, manifest['digest'], manifest['size']) if manifest['size'] else b''
             response = SourceResponse(query.source_id, manifest['url'], manifest['mime'], content, manifest['digest'], manifest['wire_bytes'])
-            output = captures(response, config, query)
+            output = captures(response, config, query) if content else []
             if receipt.state in ('dispatched', 'held_unknown'):
                 account.settle(attempt, ResourceAmount(requests=1, bytes=response.wire_bytes, pages=1, records=manifest['records']),
                     {'receipt_version': 'source-capture-v1', 'response_sha256': response.content_sha256})
@@ -187,14 +199,22 @@ def acquire(context, plan, query, *, ordinal=0):
         else:
             storage.put(*scope, attempt, response.content)
             try:
-                output = captures(response, config, query)
+                prefix=response.content[:65536].decode('utf-8',errors='ignore').casefold()
+                challenge=response.content_type=='text/html' and any(marker in prefix for marker in
+                    ('cf-chl-','verify you are human','captcha','checking your browser','enable javascript and cookies to continue'))
+                if challenge:
+                    output=[]
+                else:
+                    output = captures(response, config, query)
             except (ValueError, AcquisitionFailure):
                 output = None
         manifest = dict(url=response.request_url, mime=response.content_type, digest=response.content_sha256,
-            size=len(response.content), wire_bytes=response.wire_bytes, records=len(output or []))
+            size=len(response.content), wire_bytes=response.wire_bytes, records=len(output or []), error='challenge' if response.content and challenge else None)
         storage.put(*scope, manifest_id, json.dumps(manifest, sort_keys=True).encode())
         account.settle(attempt, ResourceAmount(requests=1, bytes=response.wire_bytes, pages=1, records=len(output or [])),
             {'receipt_version': 'source-capture-v1', 'response_sha256': response.content_sha256})
+        if manifest['error']:
+            raise AcquisitionFailure('challenge','Source requires a browser challenge; no bypass is attempted.')
         if output is None:
             raise AcquisitionFailure('invalid_output', 'Source returned an invalid record structure; measured usage is charged.')
         return response, output
